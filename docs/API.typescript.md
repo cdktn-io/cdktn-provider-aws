@@ -1178,6 +1178,8 @@ The following submodules are available:
 - [ec2ManagedPrefixListEntry](./ec2ManagedPrefixListEntry.typescript.md)
 - [ec2NetworkInsightsAnalysis](./ec2NetworkInsightsAnalysis.typescript.md)
 - [ec2NetworkInsightsPath](./ec2NetworkInsightsPath.typescript.md)
+- [ec2SecondaryNetwork](./ec2SecondaryNetwork.typescript.md)
+- [ec2SecondarySubnet](./ec2SecondarySubnet.typescript.md)
 - [ec2SerialConsoleAccess](./ec2SerialConsoleAccess.typescript.md)
 - [ec2SubnetCidrReservation](./ec2SubnetCidrReservation.typescript.md)
 - [ec2Tag](./ec2Tag.typescript.md)
