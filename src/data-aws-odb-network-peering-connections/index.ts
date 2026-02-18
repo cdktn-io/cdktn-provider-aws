@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network_peering_connections
+// https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_network_peering_connections
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,20 +15,14 @@ export interface DataAwsOdbNetworkPeeringConnectionsConfig extends cdktf.Terrafo
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network_peering_connections#region DataAwsOdbNetworkPeeringConnections#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_network_peering_connections#region DataAwsOdbNetworkPeeringConnections#region}
   */
   readonly region?: string;
-  /**
-  * odb_peering_connections block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network_peering_connections#odb_peering_connections DataAwsOdbNetworkPeeringConnections#odb_peering_connections}
-  */
-  readonly odbPeeringConnections?: DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections[] | cdktf.IResolvable;
 }
 export interface DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections {
 }
 
-export function dataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsToTerraform(struct?: DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections | cdktf.IResolvable): any {
+export function dataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsToTerraform(struct?: DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -38,7 +32,7 @@ export function dataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsToTerraf
 }
 
 
-export function dataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsToHclTerraform(struct?: DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections | cdktf.IResolvable): any {
+export function dataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsToHclTerraform(struct?: DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -50,7 +44,6 @@ export function dataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsToHclTer
 
 export class DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -62,33 +55,48 @@ export class DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsOutputRefer
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
+  }
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // display_name - computed: true, optional: false, required: false
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // odb_network_arn - computed: true, optional: false, required: false
+  public get odbNetworkArn() {
+    return this.getStringAttribute('odb_network_arn');
+  }
+
+  // peer_network_arn - computed: true, optional: false, required: false
+  public get peerNetworkArn() {
+    return this.getStringAttribute('peer_network_arn');
   }
 }
 
 export class DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -108,7 +116,7 @@ export class DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network_peering_connections aws_odb_network_peering_connections}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_network_peering_connections aws_odb_network_peering_connections}
 */
 export class DataAwsOdbNetworkPeeringConnections extends cdktf.TerraformDataSource {
 
@@ -124,7 +132,7 @@ export class DataAwsOdbNetworkPeeringConnections extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataAwsOdbNetworkPeeringConnections resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbNetworkPeeringConnections to import
-  * @param importFromId The id of the existing DataAwsOdbNetworkPeeringConnections that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network_peering_connections#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOdbNetworkPeeringConnections that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_network_peering_connections#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbNetworkPeeringConnections to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -136,7 +144,7 @@ export class DataAwsOdbNetworkPeeringConnections extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network_peering_connections aws_odb_network_peering_connections} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_network_peering_connections aws_odb_network_peering_connections} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -147,7 +155,7 @@ export class DataAwsOdbNetworkPeeringConnections extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_odb_network_peering_connections',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.31.0',
+        providerVersion: '6.32.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -159,12 +167,17 @@ export class DataAwsOdbNetworkPeeringConnections extends cdktf.TerraformDataSour
       forEach: config.forEach
     });
     this._region = config.region;
-    this._odbPeeringConnections.internalValue = config.odbPeeringConnections;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // odb_peering_connections - computed: true, optional: false, required: false
+  private _odbPeeringConnections = new DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList(this, "odb_peering_connections", false);
+  public get odbPeeringConnections() {
+    return this._odbPeeringConnections;
+  }
 
   // region - computed: true, optional: true, required: false
   private _region?: string; 
@@ -182,22 +195,6 @@ export class DataAwsOdbNetworkPeeringConnections extends cdktf.TerraformDataSour
     return this._region;
   }
 
-  // odb_peering_connections - computed: false, optional: true, required: false
-  private _odbPeeringConnections = new DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList(this, "odb_peering_connections", false);
-  public get odbPeeringConnections() {
-    return this._odbPeeringConnections;
-  }
-  public putOdbPeeringConnections(value: DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections[] | cdktf.IResolvable) {
-    this._odbPeeringConnections.internalValue = value;
-  }
-  public resetOdbPeeringConnections() {
-    this._odbPeeringConnections.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get odbPeeringConnectionsInput() {
-    return this._odbPeeringConnections.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -205,7 +202,6 @@ export class DataAwsOdbNetworkPeeringConnections extends cdktf.TerraformDataSour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       region: cdktf.stringToTerraform(this._region),
-      odb_peering_connections: cdktf.listMapper(dataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsToTerraform, true)(this._odbPeeringConnections.internalValue),
     };
   }
 
@@ -216,12 +212,6 @@ export class DataAwsOdbNetworkPeeringConnections extends cdktf.TerraformDataSour
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      odb_peering_connections: {
-        value: cdktf.listMapperHcl(dataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsToHclTerraform, true)(this._odbPeeringConnections.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList",
       },
     };
 
