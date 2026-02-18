@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WafregionalRateBasedRuleConfig extends cdktf.TerraformMetaArguments {
+export interface WafregionalRateBasedRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_rate_based_rule#id WafregionalRateBasedRule#id}
   *
@@ -54,7 +54,7 @@ export interface WafregionalRateBasedRuleConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_rate_based_rule#predicate WafregionalRateBasedRule#predicate}
   */
-  readonly predicate?: WafregionalRateBasedRulePredicate[] | cdktf.IResolvable;
+  readonly predicate?: WafregionalRateBasedRulePredicate[] | cdktn.IResolvable;
 }
 export interface WafregionalRateBasedRulePredicate {
   /**
@@ -64,46 +64,46 @@ export interface WafregionalRateBasedRulePredicate {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_rate_based_rule#negated WafregionalRateBasedRule#negated}
   */
-  readonly negated: boolean | cdktf.IResolvable;
+  readonly negated: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_rate_based_rule#type WafregionalRateBasedRule#type}
   */
   readonly type: string;
 }
 
-export function wafregionalRateBasedRulePredicateToTerraform(struct?: WafregionalRateBasedRulePredicate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafregionalRateBasedRulePredicateToTerraform(struct?: WafregionalRateBasedRulePredicate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_id: cdktf.stringToTerraform(struct!.dataId),
-    negated: cdktf.booleanToTerraform(struct!.negated),
-    type: cdktf.stringToTerraform(struct!.type),
+    data_id: cdktn.stringToTerraform(struct!.dataId),
+    negated: cdktn.booleanToTerraform(struct!.negated),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function wafregionalRateBasedRulePredicateToHclTerraform(struct?: WafregionalRateBasedRulePredicate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafregionalRateBasedRulePredicateToHclTerraform(struct?: WafregionalRateBasedRulePredicate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_id: {
-      value: cdktf.stringToHclTerraform(struct!.dataId),
+      value: cdktn.stringToHclTerraform(struct!.dataId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negated: {
-      value: cdktf.booleanToHclTerraform(struct!.negated),
+      value: cdktn.booleanToHclTerraform(struct!.negated),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,9 +114,9 @@ export function wafregionalRateBasedRulePredicateToHclTerraform(struct?: Wafregi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafregionalRateBasedRulePredicateOutputReference extends cdktf.ComplexObject {
+export class WafregionalRateBasedRulePredicateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -124,11 +124,11 @@ export class WafregionalRateBasedRulePredicateOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WafregionalRateBasedRulePredicate | cdktf.IResolvable | undefined {
+  public get internalValue(): WafregionalRateBasedRulePredicate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -149,7 +149,7 @@ export class WafregionalRateBasedRulePredicateOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafregionalRateBasedRulePredicate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WafregionalRateBasedRulePredicate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class WafregionalRateBasedRulePredicateOutputReference extends cdktf.Comp
       this._negated = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -184,11 +184,11 @@ export class WafregionalRateBasedRulePredicateOutputReference extends cdktf.Comp
   }
 
   // negated - computed: false, optional: false, required: true
-  private _negated?: boolean | cdktf.IResolvable; 
+  private _negated?: boolean | cdktn.IResolvable; 
   public get negated() {
     return this.getBooleanAttribute('negated');
   }
-  public set negated(value: boolean | cdktf.IResolvable) {
+  public set negated(value: boolean | cdktn.IResolvable) {
     this._negated = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -210,15 +210,15 @@ export class WafregionalRateBasedRulePredicateOutputReference extends cdktf.Comp
   }
 }
 
-export class WafregionalRateBasedRulePredicateList extends cdktf.ComplexList {
-  public internalValue? : WafregionalRateBasedRulePredicate[] | cdktf.IResolvable
+export class WafregionalRateBasedRulePredicateList extends cdktn.ComplexList {
+  public internalValue? : WafregionalRateBasedRulePredicate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -233,7 +233,7 @@ export class WafregionalRateBasedRulePredicateList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule}
 */
-export class WafregionalRateBasedRule extends cdktf.TerraformResource {
+export class WafregionalRateBasedRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -244,14 +244,14 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WafregionalRateBasedRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WafregionalRateBasedRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafregionalRateBasedRule to import
   * @param importFromId The id of the existing WafregionalRateBasedRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_rate_based_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafregionalRateBasedRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafregional_rate_based_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafregional_rate_based_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -422,7 +422,7 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
   public get predicate() {
     return this._predicate;
   }
-  public putPredicate(value: WafregionalRateBasedRulePredicate[] | cdktf.IResolvable) {
+  public putPredicate(value: WafregionalRateBasedRulePredicate[] | cdktn.IResolvable) {
     this._predicate.internalValue = value;
   }
   public resetPredicate() {
@@ -439,70 +439,70 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      metric_name: cdktf.stringToTerraform(this._metricName),
-      name: cdktf.stringToTerraform(this._name),
-      rate_key: cdktf.stringToTerraform(this._rateKey),
-      rate_limit: cdktf.numberToTerraform(this._rateLimit),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      predicate: cdktf.listMapper(wafregionalRateBasedRulePredicateToTerraform, true)(this._predicate.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      metric_name: cdktn.stringToTerraform(this._metricName),
+      name: cdktn.stringToTerraform(this._name),
+      rate_key: cdktn.stringToTerraform(this._rateKey),
+      rate_limit: cdktn.numberToTerraform(this._rateLimit),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      predicate: cdktn.listMapper(wafregionalRateBasedRulePredicateToTerraform, true)(this._predicate.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_name: {
-        value: cdktf.stringToHclTerraform(this._metricName),
+        value: cdktn.stringToHclTerraform(this._metricName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rate_key: {
-        value: cdktf.stringToHclTerraform(this._rateKey),
+        value: cdktn.stringToHclTerraform(this._rateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rate_limit: {
-        value: cdktf.numberToHclTerraform(this._rateLimit),
+        value: cdktn.numberToHclTerraform(this._rateLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       predicate: {
-        value: cdktf.listMapperHcl(wafregionalRateBasedRulePredicateToHclTerraform, true)(this._predicate.internalValue),
+        value: cdktn.listMapperHcl(wafregionalRateBasedRulePredicateToHclTerraform, true)(this._predicate.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WafregionalRateBasedRulePredicateList",

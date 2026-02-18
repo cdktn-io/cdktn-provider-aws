@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Wafv2RuleGroupConfig extends cdktf.TerraformMetaArguments {
+export interface Wafv2RuleGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}
   */
@@ -62,13 +62,13 @@ export interface Wafv2RuleGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#custom_response_body Wafv2RuleGroup#custom_response_body}
   */
-  readonly customResponseBody?: Wafv2RuleGroupCustomResponseBody[] | cdktf.IResolvable;
+  readonly customResponseBody?: Wafv2RuleGroupCustomResponseBody[] | cdktn.IResolvable;
   /**
   * rule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#rule Wafv2RuleGroup#rule}
   */
-  readonly rule?: Wafv2RuleGroupRule[] | cdktf.IResolvable;
+  readonly rule?: Wafv2RuleGroupRule[] | cdktn.IResolvable;
   /**
   * visibility_config block
   *
@@ -91,39 +91,39 @@ export interface Wafv2RuleGroupCustomResponseBody {
   readonly key: string;
 }
 
-export function wafv2RuleGroupCustomResponseBodyToTerraform(struct?: Wafv2RuleGroupCustomResponseBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupCustomResponseBodyToTerraform(struct?: Wafv2RuleGroupCustomResponseBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    key: cdktf.stringToTerraform(struct!.key),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
-export function wafv2RuleGroupCustomResponseBodyToHclTerraform(struct?: Wafv2RuleGroupCustomResponseBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupCustomResponseBodyToHclTerraform(struct?: Wafv2RuleGroupCustomResponseBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -134,9 +134,9 @@ export function wafv2RuleGroupCustomResponseBodyToHclTerraform(struct?: Wafv2Rul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupCustomResponseBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupCustomResponseBodyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -144,11 +144,11 @@ export class Wafv2RuleGroupCustomResponseBodyOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupCustomResponseBody | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupCustomResponseBody | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -169,7 +169,7 @@ export class Wafv2RuleGroupCustomResponseBodyOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupCustomResponseBody | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupCustomResponseBody | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class Wafv2RuleGroupCustomResponseBodyOutputReference extends cdktf.Compl
       this._contentType = undefined;
       this._key = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -230,15 +230,15 @@ export class Wafv2RuleGroupCustomResponseBodyOutputReference extends cdktf.Compl
   }
 }
 
-export class Wafv2RuleGroupCustomResponseBodyList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupCustomResponseBody[] | cdktf.IResolvable
+export class Wafv2RuleGroupCustomResponseBodyList extends cdktn.ComplexList {
+  public internalValue? : Wafv2RuleGroupCustomResponseBody[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -260,32 +260,32 @@ export interface Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader 
   readonly value: string;
 }
 
-export function wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -296,9 +296,9 @@ export function wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -306,11 +306,11 @@ export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -327,14 +327,14 @@ export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -373,15 +373,15 @@ export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutpu
   }
 }
 
-export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList extends cdktn.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -398,28 +398,28 @@ export interface Wafv2RuleGroupRuleActionAllowCustomRequestHandling {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
   */
-  readonly insertHeader: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader[] | cdktf.IResolvable;
+  readonly insertHeader: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader[] | cdktn.IResolvable;
 }
 
 export function wafv2RuleGroupRuleActionAllowCustomRequestHandlingToTerraform(struct?: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference | Wafv2RuleGroupRuleActionAllowCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insert_header: cdktf.listMapper(wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToTerraform, true)(struct!.insertHeader),
+    insert_header: cdktn.listMapper(wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToTerraform, true)(struct!.insertHeader),
   }
 }
 
 
 export function wafv2RuleGroupRuleActionAllowCustomRequestHandlingToHclTerraform(struct?: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference | Wafv2RuleGroupRuleActionAllowCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insert_header: {
-      value: cdktf.listMapperHcl(wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToHclTerraform, true)(struct!.insertHeader),
+      value: cdktn.listMapperHcl(wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToHclTerraform, true)(struct!.insertHeader),
       isBlock: true,
       type: "set",
       storageClassType: "Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList",
@@ -430,14 +430,14 @@ export function wafv2RuleGroupRuleActionAllowCustomRequestHandlingToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -467,7 +467,7 @@ export class Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference e
   public get insertHeader() {
     return this._insertHeader;
   }
-  public putInsertHeader(value: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader[] | cdktf.IResolvable) {
+  public putInsertHeader(value: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader[] | cdktn.IResolvable) {
     this._insertHeader.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -485,8 +485,8 @@ export interface Wafv2RuleGroupRuleActionAllow {
 }
 
 export function wafv2RuleGroupRuleActionAllowToTerraform(struct?: Wafv2RuleGroupRuleActionAllowOutputReference | Wafv2RuleGroupRuleActionAllow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -496,8 +496,8 @@ export function wafv2RuleGroupRuleActionAllowToTerraform(struct?: Wafv2RuleGroup
 
 
 export function wafv2RuleGroupRuleActionAllowToHclTerraform(struct?: Wafv2RuleGroupRuleActionAllowOutputReference | Wafv2RuleGroupRuleActionAllow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -513,14 +513,14 @@ export function wafv2RuleGroupRuleActionAllowToHclTerraform(struct?: Wafv2RuleGr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionAllowOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionAllowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -572,32 +572,32 @@ export interface Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader {
   readonly value: string;
 }
 
-export function wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -608,9 +608,9 @@ export function wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -618,11 +618,11 @@ export class Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -639,14 +639,14 @@ export class Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -685,15 +685,15 @@ export class Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputRefe
   }
 }
 
-export class Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList extends cdktn.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -718,42 +718,42 @@ export interface Wafv2RuleGroupRuleActionBlockCustomResponse {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#response_header Wafv2RuleGroup#response_header}
   */
-  readonly responseHeader?: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader[] | cdktf.IResolvable;
+  readonly responseHeader?: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader[] | cdktn.IResolvable;
 }
 
 export function wafv2RuleGroupRuleActionBlockCustomResponseToTerraform(struct?: Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference | Wafv2RuleGroupRuleActionBlockCustomResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_response_body_key: cdktf.stringToTerraform(struct!.customResponseBodyKey),
-    response_code: cdktf.numberToTerraform(struct!.responseCode),
-    response_header: cdktf.listMapper(wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToTerraform, true)(struct!.responseHeader),
+    custom_response_body_key: cdktn.stringToTerraform(struct!.customResponseBodyKey),
+    response_code: cdktn.numberToTerraform(struct!.responseCode),
+    response_header: cdktn.listMapper(wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToTerraform, true)(struct!.responseHeader),
   }
 }
 
 
 export function wafv2RuleGroupRuleActionBlockCustomResponseToHclTerraform(struct?: Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference | Wafv2RuleGroupRuleActionBlockCustomResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_response_body_key: {
-      value: cdktf.stringToHclTerraform(struct!.customResponseBodyKey),
+      value: cdktn.stringToHclTerraform(struct!.customResponseBodyKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     response_code: {
-      value: cdktf.numberToHclTerraform(struct!.responseCode),
+      value: cdktn.numberToHclTerraform(struct!.responseCode),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     response_header: {
-      value: cdktf.listMapperHcl(wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToHclTerraform, true)(struct!.responseHeader),
+      value: cdktn.listMapperHcl(wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToHclTerraform, true)(struct!.responseHeader),
       isBlock: true,
       type: "set",
       storageClassType: "Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList",
@@ -764,14 +764,14 @@ export function wafv2RuleGroupRuleActionBlockCustomResponseToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -842,7 +842,7 @@ export class Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference extends 
   public get responseHeader() {
     return this._responseHeader;
   }
-  public putResponseHeader(value: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader[] | cdktf.IResolvable) {
+  public putResponseHeader(value: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader[] | cdktn.IResolvable) {
     this._responseHeader.internalValue = value;
   }
   public resetResponseHeader() {
@@ -863,8 +863,8 @@ export interface Wafv2RuleGroupRuleActionBlock {
 }
 
 export function wafv2RuleGroupRuleActionBlockToTerraform(struct?: Wafv2RuleGroupRuleActionBlockOutputReference | Wafv2RuleGroupRuleActionBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -874,8 +874,8 @@ export function wafv2RuleGroupRuleActionBlockToTerraform(struct?: Wafv2RuleGroup
 
 
 export function wafv2RuleGroupRuleActionBlockToHclTerraform(struct?: Wafv2RuleGroupRuleActionBlockOutputReference | Wafv2RuleGroupRuleActionBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -891,14 +891,14 @@ export function wafv2RuleGroupRuleActionBlockToHclTerraform(struct?: Wafv2RuleGr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionBlockOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionBlockOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -950,32 +950,32 @@ export interface Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeade
   readonly value: string;
 }
 
-export function wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -986,9 +986,9 @@ export function wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -996,11 +996,11 @@ export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1017,14 +1017,14 @@ export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1063,15 +1063,15 @@ export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOut
   }
 }
 
-export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList extends cdktn.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1088,28 +1088,28 @@ export interface Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
   */
-  readonly insertHeader: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader[] | cdktf.IResolvable;
+  readonly insertHeader: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader[] | cdktn.IResolvable;
 }
 
 export function wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingToTerraform(struct?: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference | Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insert_header: cdktf.listMapper(wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderToTerraform, true)(struct!.insertHeader),
+    insert_header: cdktn.listMapper(wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderToTerraform, true)(struct!.insertHeader),
   }
 }
 
 
 export function wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingToHclTerraform(struct?: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference | Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insert_header: {
-      value: cdktf.listMapperHcl(wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderToHclTerraform, true)(struct!.insertHeader),
+      value: cdktn.listMapperHcl(wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderToHclTerraform, true)(struct!.insertHeader),
       isBlock: true,
       type: "set",
       storageClassType: "Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList",
@@ -1120,14 +1120,14 @@ export function wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1157,7 +1157,7 @@ export class Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference
   public get insertHeader() {
     return this._insertHeader;
   }
-  public putInsertHeader(value: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader[] | cdktf.IResolvable) {
+  public putInsertHeader(value: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader[] | cdktn.IResolvable) {
     this._insertHeader.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1175,8 +1175,8 @@ export interface Wafv2RuleGroupRuleActionCaptcha {
 }
 
 export function wafv2RuleGroupRuleActionCaptchaToTerraform(struct?: Wafv2RuleGroupRuleActionCaptchaOutputReference | Wafv2RuleGroupRuleActionCaptcha): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1186,8 +1186,8 @@ export function wafv2RuleGroupRuleActionCaptchaToTerraform(struct?: Wafv2RuleGro
 
 
 export function wafv2RuleGroupRuleActionCaptchaToHclTerraform(struct?: Wafv2RuleGroupRuleActionCaptchaOutputReference | Wafv2RuleGroupRuleActionCaptcha): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1203,14 +1203,14 @@ export function wafv2RuleGroupRuleActionCaptchaToHclTerraform(struct?: Wafv2Rule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionCaptchaOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionCaptchaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1262,32 +1262,32 @@ export interface Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHea
   readonly value: string;
 }
 
-export function wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1298,9 +1298,9 @@ export function wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHead
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1308,11 +1308,11 @@ export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1329,14 +1329,14 @@ export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1375,15 +1375,15 @@ export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderO
   }
 }
 
-export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderList extends cdktn.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1400,28 +1400,28 @@ export interface Wafv2RuleGroupRuleActionChallengeCustomRequestHandling {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
   */
-  readonly insertHeader: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader[] | cdktf.IResolvable;
+  readonly insertHeader: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader[] | cdktn.IResolvable;
 }
 
 export function wafv2RuleGroupRuleActionChallengeCustomRequestHandlingToTerraform(struct?: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingOutputReference | Wafv2RuleGroupRuleActionChallengeCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insert_header: cdktf.listMapper(wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderToTerraform, true)(struct!.insertHeader),
+    insert_header: cdktn.listMapper(wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderToTerraform, true)(struct!.insertHeader),
   }
 }
 
 
 export function wafv2RuleGroupRuleActionChallengeCustomRequestHandlingToHclTerraform(struct?: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingOutputReference | Wafv2RuleGroupRuleActionChallengeCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insert_header: {
-      value: cdktf.listMapperHcl(wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderToHclTerraform, true)(struct!.insertHeader),
+      value: cdktn.listMapperHcl(wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderToHclTerraform, true)(struct!.insertHeader),
       isBlock: true,
       type: "set",
       storageClassType: "Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderList",
@@ -1432,14 +1432,14 @@ export function wafv2RuleGroupRuleActionChallengeCustomRequestHandlingToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1469,7 +1469,7 @@ export class Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingOutputReferen
   public get insertHeader() {
     return this._insertHeader;
   }
-  public putInsertHeader(value: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader[] | cdktf.IResolvable) {
+  public putInsertHeader(value: Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader[] | cdktn.IResolvable) {
     this._insertHeader.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1487,8 +1487,8 @@ export interface Wafv2RuleGroupRuleActionChallenge {
 }
 
 export function wafv2RuleGroupRuleActionChallengeToTerraform(struct?: Wafv2RuleGroupRuleActionChallengeOutputReference | Wafv2RuleGroupRuleActionChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1498,8 +1498,8 @@ export function wafv2RuleGroupRuleActionChallengeToTerraform(struct?: Wafv2RuleG
 
 
 export function wafv2RuleGroupRuleActionChallengeToHclTerraform(struct?: Wafv2RuleGroupRuleActionChallengeOutputReference | Wafv2RuleGroupRuleActionChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1515,14 +1515,14 @@ export function wafv2RuleGroupRuleActionChallengeToHclTerraform(struct?: Wafv2Ru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionChallengeOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionChallengeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1574,32 +1574,32 @@ export interface Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader 
   readonly value: string;
 }
 
-export function wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToHclTerraform(struct?: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1610,9 +1610,9 @@ export function wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1620,11 +1620,11 @@ export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1641,14 +1641,14 @@ export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1687,15 +1687,15 @@ export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutpu
   }
 }
 
-export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList extends cdktn.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1712,28 +1712,28 @@ export interface Wafv2RuleGroupRuleActionCountCustomRequestHandling {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
   */
-  readonly insertHeader: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader[] | cdktf.IResolvable;
+  readonly insertHeader: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader[] | cdktn.IResolvable;
 }
 
 export function wafv2RuleGroupRuleActionCountCustomRequestHandlingToTerraform(struct?: Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference | Wafv2RuleGroupRuleActionCountCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    insert_header: cdktf.listMapper(wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToTerraform, true)(struct!.insertHeader),
+    insert_header: cdktn.listMapper(wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToTerraform, true)(struct!.insertHeader),
   }
 }
 
 
 export function wafv2RuleGroupRuleActionCountCustomRequestHandlingToHclTerraform(struct?: Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference | Wafv2RuleGroupRuleActionCountCustomRequestHandling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     insert_header: {
-      value: cdktf.listMapperHcl(wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToHclTerraform, true)(struct!.insertHeader),
+      value: cdktn.listMapperHcl(wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToHclTerraform, true)(struct!.insertHeader),
       isBlock: true,
       type: "set",
       storageClassType: "Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList",
@@ -1744,14 +1744,14 @@ export function wafv2RuleGroupRuleActionCountCustomRequestHandlingToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1781,7 +1781,7 @@ export class Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference e
   public get insertHeader() {
     return this._insertHeader;
   }
-  public putInsertHeader(value: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader[] | cdktf.IResolvable) {
+  public putInsertHeader(value: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader[] | cdktn.IResolvable) {
     this._insertHeader.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1799,8 +1799,8 @@ export interface Wafv2RuleGroupRuleActionCount {
 }
 
 export function wafv2RuleGroupRuleActionCountToTerraform(struct?: Wafv2RuleGroupRuleActionCountOutputReference | Wafv2RuleGroupRuleActionCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1810,8 +1810,8 @@ export function wafv2RuleGroupRuleActionCountToTerraform(struct?: Wafv2RuleGroup
 
 
 export function wafv2RuleGroupRuleActionCountToHclTerraform(struct?: Wafv2RuleGroupRuleActionCountOutputReference | Wafv2RuleGroupRuleActionCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1827,14 +1827,14 @@ export function wafv2RuleGroupRuleActionCountToHclTerraform(struct?: Wafv2RuleGr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionCountOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionCountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1909,8 +1909,8 @@ export interface Wafv2RuleGroupRuleAction {
 }
 
 export function wafv2RuleGroupRuleActionToTerraform(struct?: Wafv2RuleGroupRuleActionOutputReference | Wafv2RuleGroupRuleAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1924,8 +1924,8 @@ export function wafv2RuleGroupRuleActionToTerraform(struct?: Wafv2RuleGroupRuleA
 
 
 export function wafv2RuleGroupRuleActionToHclTerraform(struct?: Wafv2RuleGroupRuleActionOutputReference | Wafv2RuleGroupRuleAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1965,14 +1965,14 @@ export function wafv2RuleGroupRuleActionToHclTerraform(struct?: Wafv2RuleGroupRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleActionOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2109,24 +2109,24 @@ export interface Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty {
 }
 
 export function wafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyToTerraform(struct?: Wafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyOutputReference | Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    immunity_time: cdktf.numberToTerraform(struct!.immunityTime),
+    immunity_time: cdktn.numberToTerraform(struct!.immunityTime),
   }
 }
 
 
 export function wafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyToHclTerraform(struct?: Wafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyOutputReference | Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     immunity_time: {
-      value: cdktf.numberToHclTerraform(struct!.immunityTime),
+      value: cdktn.numberToHclTerraform(struct!.immunityTime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2137,14 +2137,14 @@ export function wafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2195,8 +2195,8 @@ export interface Wafv2RuleGroupRuleCaptchaConfig {
 }
 
 export function wafv2RuleGroupRuleCaptchaConfigToTerraform(struct?: Wafv2RuleGroupRuleCaptchaConfigOutputReference | Wafv2RuleGroupRuleCaptchaConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2206,8 +2206,8 @@ export function wafv2RuleGroupRuleCaptchaConfigToTerraform(struct?: Wafv2RuleGro
 
 
 export function wafv2RuleGroupRuleCaptchaConfigToHclTerraform(struct?: Wafv2RuleGroupRuleCaptchaConfigOutputReference | Wafv2RuleGroupRuleCaptchaConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2223,14 +2223,14 @@ export function wafv2RuleGroupRuleCaptchaConfigToHclTerraform(struct?: Wafv2Rule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleCaptchaConfigOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleCaptchaConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2278,25 +2278,25 @@ export interface Wafv2RuleGroupRuleRuleLabel {
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleRuleLabelToTerraform(struct?: Wafv2RuleGroupRuleRuleLabel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleRuleLabelToTerraform(struct?: Wafv2RuleGroupRuleRuleLabel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function wafv2RuleGroupRuleRuleLabelToHclTerraform(struct?: Wafv2RuleGroupRuleRuleLabel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleRuleLabelToHclTerraform(struct?: Wafv2RuleGroupRuleRuleLabel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2307,9 +2307,9 @@ export function wafv2RuleGroupRuleRuleLabelToHclTerraform(struct?: Wafv2RuleGrou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleRuleLabelOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleRuleLabelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2317,11 +2317,11 @@ export class Wafv2RuleGroupRuleRuleLabelOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleRuleLabel | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleRuleLabel | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2334,13 +2334,13 @@ export class Wafv2RuleGroupRuleRuleLabelOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleRuleLabel | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleRuleLabel | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2365,15 +2365,15 @@ export class Wafv2RuleGroupRuleRuleLabelOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class Wafv2RuleGroupRuleRuleLabelList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleRuleLabel[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleRuleLabelList extends cdktn.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleRuleLabel[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2388,7 +2388,7 @@ export interface Wafv2RuleGroupRuleVisibilityConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}
   */
-  readonly cloudwatchMetricsEnabled: boolean | cdktf.IResolvable;
+  readonly cloudwatchMetricsEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}
   */
@@ -2396,42 +2396,42 @@ export interface Wafv2RuleGroupRuleVisibilityConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}
   */
-  readonly sampledRequestsEnabled: boolean | cdktf.IResolvable;
+  readonly sampledRequestsEnabled: boolean | cdktn.IResolvable;
 }
 
 export function wafv2RuleGroupRuleVisibilityConfigToTerraform(struct?: Wafv2RuleGroupRuleVisibilityConfigOutputReference | Wafv2RuleGroupRuleVisibilityConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_metrics_enabled: cdktf.booleanToTerraform(struct!.cloudwatchMetricsEnabled),
-    metric_name: cdktf.stringToTerraform(struct!.metricName),
-    sampled_requests_enabled: cdktf.booleanToTerraform(struct!.sampledRequestsEnabled),
+    cloudwatch_metrics_enabled: cdktn.booleanToTerraform(struct!.cloudwatchMetricsEnabled),
+    metric_name: cdktn.stringToTerraform(struct!.metricName),
+    sampled_requests_enabled: cdktn.booleanToTerraform(struct!.sampledRequestsEnabled),
   }
 }
 
 
 export function wafv2RuleGroupRuleVisibilityConfigToHclTerraform(struct?: Wafv2RuleGroupRuleVisibilityConfigOutputReference | Wafv2RuleGroupRuleVisibilityConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_metrics_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.cloudwatchMetricsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.cloudwatchMetricsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metric_name: {
-      value: cdktf.stringToHclTerraform(struct!.metricName),
+      value: cdktn.stringToHclTerraform(struct!.metricName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sampled_requests_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.sampledRequestsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.sampledRequestsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2442,14 +2442,14 @@ export function wafv2RuleGroupRuleVisibilityConfigToHclTerraform(struct?: Wafv2R
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleVisibilityConfigOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleVisibilityConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2487,11 +2487,11 @@ export class Wafv2RuleGroupRuleVisibilityConfigOutputReference extends cdktf.Com
   }
 
   // cloudwatch_metrics_enabled - computed: false, optional: false, required: true
-  private _cloudwatchMetricsEnabled?: boolean | cdktf.IResolvable; 
+  private _cloudwatchMetricsEnabled?: boolean | cdktn.IResolvable; 
   public get cloudwatchMetricsEnabled() {
     return this.getBooleanAttribute('cloudwatch_metrics_enabled');
   }
-  public set cloudwatchMetricsEnabled(value: boolean | cdktf.IResolvable) {
+  public set cloudwatchMetricsEnabled(value: boolean | cdktn.IResolvable) {
     this._cloudwatchMetricsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2513,11 +2513,11 @@ export class Wafv2RuleGroupRuleVisibilityConfigOutputReference extends cdktf.Com
   }
 
   // sampled_requests_enabled - computed: false, optional: false, required: true
-  private _sampledRequestsEnabled?: boolean | cdktf.IResolvable; 
+  private _sampledRequestsEnabled?: boolean | cdktn.IResolvable; 
   public get sampledRequestsEnabled() {
     return this.getBooleanAttribute('sampled_requests_enabled');
   }
-  public set sampledRequestsEnabled(value: boolean | cdktf.IResolvable) {
+  public set sampledRequestsEnabled(value: boolean | cdktn.IResolvable) {
     this._sampledRequestsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2551,7 +2551,7 @@ export interface Wafv2RuleGroupRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#rule_label Wafv2RuleGroup#rule_label}
   */
-  readonly ruleLabel?: Wafv2RuleGroupRuleRuleLabel[] | cdktf.IResolvable;
+  readonly ruleLabel?: Wafv2RuleGroupRuleRuleLabel[] | cdktn.IResolvable;
   /**
   * statement block
   *
@@ -2566,37 +2566,37 @@ export interface Wafv2RuleGroupRule {
   readonly visibilityConfig: Wafv2RuleGroupRuleVisibilityConfig;
 }
 
-export function wafv2RuleGroupRuleToTerraform(struct?: Wafv2RuleGroupRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleToTerraform(struct?: Wafv2RuleGroupRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    priority: cdktf.numberToTerraform(struct!.priority),
+    name: cdktn.stringToTerraform(struct!.name),
+    priority: cdktn.numberToTerraform(struct!.priority),
     action: wafv2RuleGroupRuleActionToTerraform(struct!.action),
     captcha_config: wafv2RuleGroupRuleCaptchaConfigToTerraform(struct!.captchaConfig),
-    rule_label: cdktf.listMapper(wafv2RuleGroupRuleRuleLabelToTerraform, true)(struct!.ruleLabel),
-    statement: cdktf.anyToTerraform(struct!.statement),
+    rule_label: cdktn.listMapper(wafv2RuleGroupRuleRuleLabelToTerraform, true)(struct!.ruleLabel),
+    statement: cdktn.anyToTerraform(struct!.statement),
     visibility_config: wafv2RuleGroupRuleVisibilityConfigToTerraform(struct!.visibilityConfig),
   }
 }
 
 
-export function wafv2RuleGroupRuleToHclTerraform(struct?: Wafv2RuleGroupRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2RuleGroupRuleToHclTerraform(struct?: Wafv2RuleGroupRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2614,13 +2614,13 @@ export function wafv2RuleGroupRuleToHclTerraform(struct?: Wafv2RuleGroupRule | c
       storageClassType: "Wafv2RuleGroupRuleCaptchaConfigList",
     },
     rule_label: {
-      value: cdktf.listMapperHcl(wafv2RuleGroupRuleRuleLabelToHclTerraform, true)(struct!.ruleLabel),
+      value: cdktn.listMapperHcl(wafv2RuleGroupRuleRuleLabelToHclTerraform, true)(struct!.ruleLabel),
       isBlock: true,
       type: "set",
       storageClassType: "Wafv2RuleGroupRuleRuleLabelList",
     },
     statement: {
-      value: cdktf.anyToHclTerraform(struct!.statement),
+      value: cdktn.anyToHclTerraform(struct!.statement),
       isBlock: false,
       type: "simple",
       storageClassType: "any",
@@ -2637,9 +2637,9 @@ export function wafv2RuleGroupRuleToHclTerraform(struct?: Wafv2RuleGroupRule | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupRuleOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2647,11 +2647,11 @@ export class Wafv2RuleGroupRuleOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRule | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2688,7 +2688,7 @@ export class Wafv2RuleGroupRuleOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2700,7 +2700,7 @@ export class Wafv2RuleGroupRuleOutputReference extends cdktf.ComplexObject {
       this._statement = undefined;
       this._visibilityConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2777,7 +2777,7 @@ export class Wafv2RuleGroupRuleOutputReference extends cdktf.ComplexObject {
   public get ruleLabel() {
     return this._ruleLabel;
   }
-  public putRuleLabel(value: Wafv2RuleGroupRuleRuleLabel[] | cdktf.IResolvable) {
+  public putRuleLabel(value: Wafv2RuleGroupRuleRuleLabel[] | cdktn.IResolvable) {
     this._ruleLabel.internalValue = value;
   }
   public resetRuleLabel() {
@@ -2818,15 +2818,15 @@ export class Wafv2RuleGroupRuleOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class Wafv2RuleGroupRuleList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRule[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleList extends cdktn.ComplexList {
+  public internalValue? : Wafv2RuleGroupRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2841,7 +2841,7 @@ export interface Wafv2RuleGroupVisibilityConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}
   */
-  readonly cloudwatchMetricsEnabled: boolean | cdktf.IResolvable;
+  readonly cloudwatchMetricsEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}
   */
@@ -2849,42 +2849,42 @@ export interface Wafv2RuleGroupVisibilityConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}
   */
-  readonly sampledRequestsEnabled: boolean | cdktf.IResolvable;
+  readonly sampledRequestsEnabled: boolean | cdktn.IResolvable;
 }
 
 export function wafv2RuleGroupVisibilityConfigToTerraform(struct?: Wafv2RuleGroupVisibilityConfigOutputReference | Wafv2RuleGroupVisibilityConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_metrics_enabled: cdktf.booleanToTerraform(struct!.cloudwatchMetricsEnabled),
-    metric_name: cdktf.stringToTerraform(struct!.metricName),
-    sampled_requests_enabled: cdktf.booleanToTerraform(struct!.sampledRequestsEnabled),
+    cloudwatch_metrics_enabled: cdktn.booleanToTerraform(struct!.cloudwatchMetricsEnabled),
+    metric_name: cdktn.stringToTerraform(struct!.metricName),
+    sampled_requests_enabled: cdktn.booleanToTerraform(struct!.sampledRequestsEnabled),
   }
 }
 
 
 export function wafv2RuleGroupVisibilityConfigToHclTerraform(struct?: Wafv2RuleGroupVisibilityConfigOutputReference | Wafv2RuleGroupVisibilityConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_metrics_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.cloudwatchMetricsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.cloudwatchMetricsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     metric_name: {
-      value: cdktf.stringToHclTerraform(struct!.metricName),
+      value: cdktn.stringToHclTerraform(struct!.metricName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sampled_requests_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.sampledRequestsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.sampledRequestsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2895,14 +2895,14 @@ export function wafv2RuleGroupVisibilityConfigToHclTerraform(struct?: Wafv2RuleG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2RuleGroupVisibilityConfigOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupVisibilityConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2940,11 +2940,11 @@ export class Wafv2RuleGroupVisibilityConfigOutputReference extends cdktf.Complex
   }
 
   // cloudwatch_metrics_enabled - computed: false, optional: false, required: true
-  private _cloudwatchMetricsEnabled?: boolean | cdktf.IResolvable; 
+  private _cloudwatchMetricsEnabled?: boolean | cdktn.IResolvable; 
   public get cloudwatchMetricsEnabled() {
     return this.getBooleanAttribute('cloudwatch_metrics_enabled');
   }
-  public set cloudwatchMetricsEnabled(value: boolean | cdktf.IResolvable) {
+  public set cloudwatchMetricsEnabled(value: boolean | cdktn.IResolvable) {
     this._cloudwatchMetricsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2966,11 +2966,11 @@ export class Wafv2RuleGroupVisibilityConfigOutputReference extends cdktf.Complex
   }
 
   // sampled_requests_enabled - computed: false, optional: false, required: true
-  private _sampledRequestsEnabled?: boolean | cdktf.IResolvable; 
+  private _sampledRequestsEnabled?: boolean | cdktn.IResolvable; 
   public get sampledRequestsEnabled() {
     return this.getBooleanAttribute('sampled_requests_enabled');
   }
-  public set sampledRequestsEnabled(value: boolean | cdktf.IResolvable) {
+  public set sampledRequestsEnabled(value: boolean | cdktn.IResolvable) {
     this._sampledRequestsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2982,7 +2982,7 @@ export class Wafv2RuleGroupVisibilityConfigOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group aws_wafv2_rule_group}
 */
-export class Wafv2RuleGroup extends cdktf.TerraformResource {
+export class Wafv2RuleGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2993,14 +2993,14 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Wafv2RuleGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Wafv2RuleGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Wafv2RuleGroup to import
   * @param importFromId The id of the existing Wafv2RuleGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_rule_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Wafv2RuleGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_rule_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_rule_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -3218,7 +3218,7 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
   public get customResponseBody() {
     return this._customResponseBody;
   }
-  public putCustomResponseBody(value: Wafv2RuleGroupCustomResponseBody[] | cdktf.IResolvable) {
+  public putCustomResponseBody(value: Wafv2RuleGroupCustomResponseBody[] | cdktn.IResolvable) {
     this._customResponseBody.internalValue = value;
   }
   public resetCustomResponseBody() {
@@ -3234,7 +3234,7 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: Wafv2RuleGroupRule[] | cdktf.IResolvable) {
+  public putRule(value: Wafv2RuleGroupRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -3264,18 +3264,18 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity: cdktf.numberToTerraform(this._capacity),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      region: cdktf.stringToTerraform(this._region),
-      rules_json: cdktf.stringToTerraform(this._rulesJson),
-      scope: cdktf.stringToTerraform(this._scope),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      custom_response_body: cdktf.listMapper(wafv2RuleGroupCustomResponseBodyToTerraform, true)(this._customResponseBody.internalValue),
-      rule: cdktf.listMapper(wafv2RuleGroupRuleToTerraform, true)(this._rule.internalValue),
+      capacity: cdktn.numberToTerraform(this._capacity),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      region: cdktn.stringToTerraform(this._region),
+      rules_json: cdktn.stringToTerraform(this._rulesJson),
+      scope: cdktn.stringToTerraform(this._scope),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      custom_response_body: cdktn.listMapper(wafv2RuleGroupCustomResponseBodyToTerraform, true)(this._customResponseBody.internalValue),
+      rule: cdktn.listMapper(wafv2RuleGroupRuleToTerraform, true)(this._rule.internalValue),
       visibility_config: wafv2RuleGroupVisibilityConfigToTerraform(this._visibilityConfig.internalValue),
     };
   }
@@ -3283,73 +3283,73 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity: {
-        value: cdktf.numberToHclTerraform(this._capacity),
+        value: cdktn.numberToHclTerraform(this._capacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rules_json: {
-        value: cdktf.stringToHclTerraform(this._rulesJson),
+        value: cdktn.stringToHclTerraform(this._rulesJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       custom_response_body: {
-        value: cdktf.listMapperHcl(wafv2RuleGroupCustomResponseBodyToHclTerraform, true)(this._customResponseBody.internalValue),
+        value: cdktn.listMapperHcl(wafv2RuleGroupCustomResponseBodyToHclTerraform, true)(this._customResponseBody.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "Wafv2RuleGroupCustomResponseBodyList",
       },
       rule: {
-        value: cdktf.listMapperHcl(wafv2RuleGroupRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(wafv2RuleGroupRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "Wafv2RuleGroupRuleList",

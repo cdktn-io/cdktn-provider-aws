@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlueClassifierConfig extends cdktf.TerraformMetaArguments {
+export interface GlueClassifierConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_classifier#id GlueClassifier#id}
   *
@@ -58,7 +58,7 @@ export interface GlueClassifierCsvClassifier {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}
   */
-  readonly allowSingleColumn?: boolean | cdktf.IResolvable;
+  readonly allowSingleColumn?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}
   */
@@ -66,7 +66,7 @@ export interface GlueClassifierCsvClassifier {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}
   */
-  readonly customDatatypeConfigured?: boolean | cdktf.IResolvable;
+  readonly customDatatypeConfigured?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}
   */
@@ -78,7 +78,7 @@ export interface GlueClassifierCsvClassifier {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}
   */
-  readonly disableValueTrimming?: boolean | cdktf.IResolvable;
+  readonly disableValueTrimming?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_classifier#header GlueClassifier#header}
   */
@@ -94,80 +94,80 @@ export interface GlueClassifierCsvClassifier {
 }
 
 export function glueClassifierCsvClassifierToTerraform(struct?: GlueClassifierCsvClassifierOutputReference | GlueClassifierCsvClassifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_single_column: cdktf.booleanToTerraform(struct!.allowSingleColumn),
-    contains_header: cdktf.stringToTerraform(struct!.containsHeader),
-    custom_datatype_configured: cdktf.booleanToTerraform(struct!.customDatatypeConfigured),
-    custom_datatypes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.customDatatypes),
-    delimiter: cdktf.stringToTerraform(struct!.delimiter),
-    disable_value_trimming: cdktf.booleanToTerraform(struct!.disableValueTrimming),
-    header: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.header),
-    quote_symbol: cdktf.stringToTerraform(struct!.quoteSymbol),
-    serde: cdktf.stringToTerraform(struct!.serde),
+    allow_single_column: cdktn.booleanToTerraform(struct!.allowSingleColumn),
+    contains_header: cdktn.stringToTerraform(struct!.containsHeader),
+    custom_datatype_configured: cdktn.booleanToTerraform(struct!.customDatatypeConfigured),
+    custom_datatypes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.customDatatypes),
+    delimiter: cdktn.stringToTerraform(struct!.delimiter),
+    disable_value_trimming: cdktn.booleanToTerraform(struct!.disableValueTrimming),
+    header: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.header),
+    quote_symbol: cdktn.stringToTerraform(struct!.quoteSymbol),
+    serde: cdktn.stringToTerraform(struct!.serde),
   }
 }
 
 
 export function glueClassifierCsvClassifierToHclTerraform(struct?: GlueClassifierCsvClassifierOutputReference | GlueClassifierCsvClassifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_single_column: {
-      value: cdktf.booleanToHclTerraform(struct!.allowSingleColumn),
+      value: cdktn.booleanToHclTerraform(struct!.allowSingleColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     contains_header: {
-      value: cdktf.stringToHclTerraform(struct!.containsHeader),
+      value: cdktn.stringToHclTerraform(struct!.containsHeader),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_datatype_configured: {
-      value: cdktf.booleanToHclTerraform(struct!.customDatatypeConfigured),
+      value: cdktn.booleanToHclTerraform(struct!.customDatatypeConfigured),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     custom_datatypes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.customDatatypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.customDatatypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      value: cdktn.stringToHclTerraform(struct!.delimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disable_value_trimming: {
-      value: cdktf.booleanToHclTerraform(struct!.disableValueTrimming),
+      value: cdktn.booleanToHclTerraform(struct!.disableValueTrimming),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     header: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.header),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.header),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     quote_symbol: {
-      value: cdktf.stringToHclTerraform(struct!.quoteSymbol),
+      value: cdktn.stringToHclTerraform(struct!.quoteSymbol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     serde: {
-      value: cdktf.stringToHclTerraform(struct!.serde),
+      value: cdktn.stringToHclTerraform(struct!.serde),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -178,14 +178,14 @@ export function glueClassifierCsvClassifierToHclTerraform(struct?: GlueClassifie
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObject {
+export class GlueClassifierCsvClassifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -259,11 +259,11 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   }
 
   // allow_single_column - computed: false, optional: true, required: false
-  private _allowSingleColumn?: boolean | cdktf.IResolvable; 
+  private _allowSingleColumn?: boolean | cdktn.IResolvable; 
   public get allowSingleColumn() {
     return this.getBooleanAttribute('allow_single_column');
   }
-  public set allowSingleColumn(value: boolean | cdktf.IResolvable) {
+  public set allowSingleColumn(value: boolean | cdktn.IResolvable) {
     this._allowSingleColumn = value;
   }
   public resetAllowSingleColumn() {
@@ -291,11 +291,11 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   }
 
   // custom_datatype_configured - computed: false, optional: true, required: false
-  private _customDatatypeConfigured?: boolean | cdktf.IResolvable; 
+  private _customDatatypeConfigured?: boolean | cdktn.IResolvable; 
   public get customDatatypeConfigured() {
     return this.getBooleanAttribute('custom_datatype_configured');
   }
-  public set customDatatypeConfigured(value: boolean | cdktf.IResolvable) {
+  public set customDatatypeConfigured(value: boolean | cdktn.IResolvable) {
     this._customDatatypeConfigured = value;
   }
   public resetCustomDatatypeConfigured() {
@@ -339,11 +339,11 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   }
 
   // disable_value_trimming - computed: false, optional: true, required: false
-  private _disableValueTrimming?: boolean | cdktf.IResolvable; 
+  private _disableValueTrimming?: boolean | cdktn.IResolvable; 
   public get disableValueTrimming() {
     return this.getBooleanAttribute('disable_value_trimming');
   }
-  public set disableValueTrimming(value: boolean | cdktf.IResolvable) {
+  public set disableValueTrimming(value: boolean | cdktn.IResolvable) {
     this._disableValueTrimming = value;
   }
   public resetDisableValueTrimming() {
@@ -418,38 +418,38 @@ export interface GlueClassifierGrokClassifier {
 }
 
 export function glueClassifierGrokClassifierToTerraform(struct?: GlueClassifierGrokClassifierOutputReference | GlueClassifierGrokClassifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classification: cdktf.stringToTerraform(struct!.classification),
-    custom_patterns: cdktf.stringToTerraform(struct!.customPatterns),
-    grok_pattern: cdktf.stringToTerraform(struct!.grokPattern),
+    classification: cdktn.stringToTerraform(struct!.classification),
+    custom_patterns: cdktn.stringToTerraform(struct!.customPatterns),
+    grok_pattern: cdktn.stringToTerraform(struct!.grokPattern),
   }
 }
 
 
 export function glueClassifierGrokClassifierToHclTerraform(struct?: GlueClassifierGrokClassifierOutputReference | GlueClassifierGrokClassifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classification: {
-      value: cdktf.stringToHclTerraform(struct!.classification),
+      value: cdktn.stringToHclTerraform(struct!.classification),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_patterns: {
-      value: cdktf.stringToHclTerraform(struct!.customPatterns),
+      value: cdktn.stringToHclTerraform(struct!.customPatterns),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grok_pattern: {
-      value: cdktf.stringToHclTerraform(struct!.grokPattern),
+      value: cdktn.stringToHclTerraform(struct!.grokPattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -460,14 +460,14 @@ export function glueClassifierGrokClassifierToHclTerraform(struct?: GlueClassifi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexObject {
+export class GlueClassifierGrokClassifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -554,24 +554,24 @@ export interface GlueClassifierJsonClassifier {
 }
 
 export function glueClassifierJsonClassifierToTerraform(struct?: GlueClassifierJsonClassifierOutputReference | GlueClassifierJsonClassifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    json_path: cdktf.stringToTerraform(struct!.jsonPath),
+    json_path: cdktn.stringToTerraform(struct!.jsonPath),
   }
 }
 
 
 export function glueClassifierJsonClassifierToHclTerraform(struct?: GlueClassifierJsonClassifierOutputReference | GlueClassifierJsonClassifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     json_path: {
-      value: cdktf.stringToHclTerraform(struct!.jsonPath),
+      value: cdktn.stringToHclTerraform(struct!.jsonPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -582,14 +582,14 @@ export function glueClassifierJsonClassifierToHclTerraform(struct?: GlueClassifi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexObject {
+export class GlueClassifierJsonClassifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -639,31 +639,31 @@ export interface GlueClassifierXmlClassifier {
 }
 
 export function glueClassifierXmlClassifierToTerraform(struct?: GlueClassifierXmlClassifierOutputReference | GlueClassifierXmlClassifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classification: cdktf.stringToTerraform(struct!.classification),
-    row_tag: cdktf.stringToTerraform(struct!.rowTag),
+    classification: cdktn.stringToTerraform(struct!.classification),
+    row_tag: cdktn.stringToTerraform(struct!.rowTag),
   }
 }
 
 
 export function glueClassifierXmlClassifierToHclTerraform(struct?: GlueClassifierXmlClassifierOutputReference | GlueClassifierXmlClassifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classification: {
-      value: cdktf.stringToHclTerraform(struct!.classification),
+      value: cdktn.stringToHclTerraform(struct!.classification),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     row_tag: {
-      value: cdktf.stringToHclTerraform(struct!.rowTag),
+      value: cdktn.stringToHclTerraform(struct!.rowTag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -674,14 +674,14 @@ export function glueClassifierXmlClassifierToHclTerraform(struct?: GlueClassifie
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObject {
+export class GlueClassifierXmlClassifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -742,7 +742,7 @@ export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_classifier aws_glue_classifier}
 */
-export class GlueClassifier extends cdktf.TerraformResource {
+export class GlueClassifier extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -753,14 +753,14 @@ export class GlueClassifier extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlueClassifier resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlueClassifier resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueClassifier to import
   * @param importFromId The id of the existing GlueClassifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_classifier#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueClassifier to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_classifier", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_classifier", importId: importFromId, provider });
       }
 
   // ===========
@@ -918,9 +918,9 @@ export class GlueClassifier extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
       csv_classifier: glueClassifierCsvClassifierToTerraform(this._csvClassifier.internalValue),
       grok_classifier: glueClassifierGrokClassifierToTerraform(this._grokClassifier.internalValue),
       json_classifier: glueClassifierJsonClassifierToTerraform(this._jsonClassifier.internalValue),
@@ -931,19 +931,19 @@ export class GlueClassifier extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

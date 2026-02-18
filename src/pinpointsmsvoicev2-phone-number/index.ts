@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Pinpointsmsvoicev2PhoneNumberConfig extends cdktf.TerraformMetaArguments {
+export interface Pinpointsmsvoicev2PhoneNumberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpointsmsvoicev2_phone_number#deletion_protection_enabled Pinpointsmsvoicev2PhoneNumber#deletion_protection_enabled}
   */
-  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpointsmsvoicev2_phone_number#iso_country_code Pinpointsmsvoicev2PhoneNumber#iso_country_code}
   */
@@ -49,7 +49,7 @@ export interface Pinpointsmsvoicev2PhoneNumberConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpointsmsvoicev2_phone_number#self_managed_opt_outs_enabled Pinpointsmsvoicev2PhoneNumber#self_managed_opt_outs_enabled}
   */
-  readonly selfManagedOptOutsEnabled?: boolean | cdktf.IResolvable;
+  readonly selfManagedOptOutsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpointsmsvoicev2_phone_number#tags Pinpointsmsvoicev2PhoneNumber#tags}
   */
@@ -61,7 +61,7 @@ export interface Pinpointsmsvoicev2PhoneNumberConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpointsmsvoicev2_phone_number#two_way_channel_enabled Pinpointsmsvoicev2PhoneNumber#two_way_channel_enabled}
   */
-  readonly twoWayChannelEnabled?: boolean | cdktf.IResolvable;
+  readonly twoWayChannelEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpointsmsvoicev2_phone_number#two_way_channel_role Pinpointsmsvoicev2PhoneNumber#two_way_channel_role}
   */
@@ -94,39 +94,39 @@ export interface Pinpointsmsvoicev2PhoneNumberTimeouts {
   readonly update?: string;
 }
 
-export function pinpointsmsvoicev2PhoneNumberTimeoutsToTerraform(struct?: Pinpointsmsvoicev2PhoneNumberTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pinpointsmsvoicev2PhoneNumberTimeoutsToTerraform(struct?: Pinpointsmsvoicev2PhoneNumberTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function pinpointsmsvoicev2PhoneNumberTimeoutsToHclTerraform(struct?: Pinpointsmsvoicev2PhoneNumberTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pinpointsmsvoicev2PhoneNumberTimeoutsToHclTerraform(struct?: Pinpointsmsvoicev2PhoneNumberTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,19 +137,19 @@ export function pinpointsmsvoicev2PhoneNumberTimeoutsToHclTerraform(struct?: Pin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Pinpointsmsvoicev2PhoneNumberTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Pinpointsmsvoicev2PhoneNumberTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Pinpointsmsvoicev2PhoneNumberTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Pinpointsmsvoicev2PhoneNumberTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -170,7 +170,7 @@ export class Pinpointsmsvoicev2PhoneNumberTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Pinpointsmsvoicev2PhoneNumberTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Pinpointsmsvoicev2PhoneNumberTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -178,7 +178,7 @@ export class Pinpointsmsvoicev2PhoneNumberTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class Pinpointsmsvoicev2PhoneNumberTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number}
 */
-export class Pinpointsmsvoicev2PhoneNumber extends cdktf.TerraformResource {
+export class Pinpointsmsvoicev2PhoneNumber extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class Pinpointsmsvoicev2PhoneNumber extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Pinpointsmsvoicev2PhoneNumber resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Pinpointsmsvoicev2PhoneNumber resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Pinpointsmsvoicev2PhoneNumber to import
   * @param importFromId The id of the existing Pinpointsmsvoicev2PhoneNumber that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpointsmsvoicev2_phone_number#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Pinpointsmsvoicev2PhoneNumber to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpointsmsvoicev2_phone_number", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpointsmsvoicev2_phone_number", importId: importFromId, provider });
       }
 
   // ===========
@@ -317,11 +317,11 @@ export class Pinpointsmsvoicev2PhoneNumber extends cdktf.TerraformResource {
   }
 
   // deletion_protection_enabled - computed: true, optional: true, required: false
-  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _deletionProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get deletionProtectionEnabled() {
     return this.getBooleanAttribute('deletion_protection_enabled');
   }
-  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set deletionProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._deletionProtectionEnabled = value;
   }
   public resetDeletionProtectionEnabled() {
@@ -371,7 +371,7 @@ export class Pinpointsmsvoicev2PhoneNumber extends cdktf.TerraformResource {
   // number_capabilities - computed: false, optional: false, required: true
   private _numberCapabilities?: string[]; 
   public get numberCapabilities() {
-    return cdktf.Fn.tolist(this.getListAttribute('number_capabilities'));
+    return cdktn.Fn.tolist(this.getListAttribute('number_capabilities'));
   }
   public set numberCapabilities(value: string[]) {
     this._numberCapabilities = value;
@@ -448,11 +448,11 @@ export class Pinpointsmsvoicev2PhoneNumber extends cdktf.TerraformResource {
   }
 
   // self_managed_opt_outs_enabled - computed: true, optional: true, required: false
-  private _selfManagedOptOutsEnabled?: boolean | cdktf.IResolvable; 
+  private _selfManagedOptOutsEnabled?: boolean | cdktn.IResolvable; 
   public get selfManagedOptOutsEnabled() {
     return this.getBooleanAttribute('self_managed_opt_outs_enabled');
   }
-  public set selfManagedOptOutsEnabled(value: boolean | cdktf.IResolvable) {
+  public set selfManagedOptOutsEnabled(value: boolean | cdktn.IResolvable) {
     this._selfManagedOptOutsEnabled = value;
   }
   public resetSelfManagedOptOutsEnabled() {
@@ -480,7 +480,7 @@ export class Pinpointsmsvoicev2PhoneNumber extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -502,11 +502,11 @@ export class Pinpointsmsvoicev2PhoneNumber extends cdktf.TerraformResource {
   }
 
   // two_way_channel_enabled - computed: true, optional: true, required: false
-  private _twoWayChannelEnabled?: boolean | cdktf.IResolvable; 
+  private _twoWayChannelEnabled?: boolean | cdktn.IResolvable; 
   public get twoWayChannelEnabled() {
     return this.getBooleanAttribute('two_way_channel_enabled');
   }
-  public set twoWayChannelEnabled(value: boolean | cdktf.IResolvable) {
+  public set twoWayChannelEnabled(value: boolean | cdktn.IResolvable) {
     this._twoWayChannelEnabled = value;
   }
   public resetTwoWayChannelEnabled() {
@@ -555,19 +555,19 @@ export class Pinpointsmsvoicev2PhoneNumber extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
-      iso_country_code: cdktf.stringToTerraform(this._isoCountryCode),
-      message_type: cdktf.stringToTerraform(this._messageType),
-      number_capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._numberCapabilities),
-      number_type: cdktf.stringToTerraform(this._numberType),
-      opt_out_list_name: cdktf.stringToTerraform(this._optOutListName),
-      region: cdktf.stringToTerraform(this._region),
-      registration_id: cdktf.stringToTerraform(this._registrationId),
-      self_managed_opt_outs_enabled: cdktf.booleanToTerraform(this._selfManagedOptOutsEnabled),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      two_way_channel_arn: cdktf.stringToTerraform(this._twoWayChannelArn),
-      two_way_channel_enabled: cdktf.booleanToTerraform(this._twoWayChannelEnabled),
-      two_way_channel_role: cdktf.stringToTerraform(this._twoWayChannelRole),
+      deletion_protection_enabled: cdktn.booleanToTerraform(this._deletionProtectionEnabled),
+      iso_country_code: cdktn.stringToTerraform(this._isoCountryCode),
+      message_type: cdktn.stringToTerraform(this._messageType),
+      number_capabilities: cdktn.listMapper(cdktn.stringToTerraform, false)(this._numberCapabilities),
+      number_type: cdktn.stringToTerraform(this._numberType),
+      opt_out_list_name: cdktn.stringToTerraform(this._optOutListName),
+      region: cdktn.stringToTerraform(this._region),
+      registration_id: cdktn.stringToTerraform(this._registrationId),
+      self_managed_opt_outs_enabled: cdktn.booleanToTerraform(this._selfManagedOptOutsEnabled),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      two_way_channel_arn: cdktn.stringToTerraform(this._twoWayChannelArn),
+      two_way_channel_enabled: cdktn.booleanToTerraform(this._twoWayChannelEnabled),
+      two_way_channel_role: cdktn.stringToTerraform(this._twoWayChannelRole),
       timeouts: pinpointsmsvoicev2PhoneNumberTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -575,79 +575,79 @@ export class Pinpointsmsvoicev2PhoneNumber extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_protection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._deletionProtectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       iso_country_code: {
-        value: cdktf.stringToHclTerraform(this._isoCountryCode),
+        value: cdktn.stringToHclTerraform(this._isoCountryCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       message_type: {
-        value: cdktf.stringToHclTerraform(this._messageType),
+        value: cdktn.stringToHclTerraform(this._messageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       number_capabilities: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._numberCapabilities),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._numberCapabilities),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       number_type: {
-        value: cdktf.stringToHclTerraform(this._numberType),
+        value: cdktn.stringToHclTerraform(this._numberType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       opt_out_list_name: {
-        value: cdktf.stringToHclTerraform(this._optOutListName),
+        value: cdktn.stringToHclTerraform(this._optOutListName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       registration_id: {
-        value: cdktf.stringToHclTerraform(this._registrationId),
+        value: cdktn.stringToHclTerraform(this._registrationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       self_managed_opt_outs_enabled: {
-        value: cdktf.booleanToHclTerraform(this._selfManagedOptOutsEnabled),
+        value: cdktn.booleanToHclTerraform(this._selfManagedOptOutsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       two_way_channel_arn: {
-        value: cdktf.stringToHclTerraform(this._twoWayChannelArn),
+        value: cdktn.stringToHclTerraform(this._twoWayChannelArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       two_way_channel_enabled: {
-        value: cdktf.booleanToHclTerraform(this._twoWayChannelEnabled),
+        value: cdktn.booleanToHclTerraform(this._twoWayChannelEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       two_way_channel_role: {
-        value: cdktf.stringToHclTerraform(this._twoWayChannelRole),
+        value: cdktn.stringToHclTerraform(this._twoWayChannelRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

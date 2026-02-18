@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TranscribeLanguageModelConfig extends cdktf.TerraformMetaArguments {
+export interface TranscribeLanguageModelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transcribe_language_model#base_model_name TranscribeLanguageModel#base_model_name}
   */
@@ -74,38 +74,38 @@ export interface TranscribeLanguageModelInputDataConfig {
 }
 
 export function transcribeLanguageModelInputDataConfigToTerraform(struct?: TranscribeLanguageModelInputDataConfigOutputReference | TranscribeLanguageModelInputDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_access_role_arn: cdktf.stringToTerraform(struct!.dataAccessRoleArn),
-    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
-    tuning_data_s3_uri: cdktf.stringToTerraform(struct!.tuningDataS3Uri),
+    data_access_role_arn: cdktn.stringToTerraform(struct!.dataAccessRoleArn),
+    s3_uri: cdktn.stringToTerraform(struct!.s3Uri),
+    tuning_data_s3_uri: cdktn.stringToTerraform(struct!.tuningDataS3Uri),
   }
 }
 
 
 export function transcribeLanguageModelInputDataConfigToHclTerraform(struct?: TranscribeLanguageModelInputDataConfigOutputReference | TranscribeLanguageModelInputDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dataAccessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.dataAccessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      value: cdktn.stringToHclTerraform(struct!.s3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tuning_data_s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.tuningDataS3Uri),
+      value: cdktn.stringToHclTerraform(struct!.tuningDataS3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,14 +116,14 @@ export function transcribeLanguageModelInputDataConfigToHclTerraform(struct?: Tr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TranscribeLanguageModelInputDataConfigOutputReference extends cdktf.ComplexObject {
+export class TranscribeLanguageModelInputDataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -209,25 +209,25 @@ export interface TranscribeLanguageModelTimeouts {
   readonly create?: string;
 }
 
-export function transcribeLanguageModelTimeoutsToTerraform(struct?: TranscribeLanguageModelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transcribeLanguageModelTimeoutsToTerraform(struct?: TranscribeLanguageModelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function transcribeLanguageModelTimeoutsToHclTerraform(struct?: TranscribeLanguageModelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transcribeLanguageModelTimeoutsToHclTerraform(struct?: TranscribeLanguageModelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -238,19 +238,19 @@ export function transcribeLanguageModelTimeoutsToHclTerraform(struct?: Transcrib
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TranscribeLanguageModelTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TranscribeLanguageModelTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TranscribeLanguageModelTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TranscribeLanguageModelTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -263,13 +263,13 @@ export class TranscribeLanguageModelTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TranscribeLanguageModelTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TranscribeLanguageModelTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -300,7 +300,7 @@ export class TranscribeLanguageModelTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transcribe_language_model aws_transcribe_language_model}
 */
-export class TranscribeLanguageModel extends cdktf.TerraformResource {
+export class TranscribeLanguageModel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -311,14 +311,14 @@ export class TranscribeLanguageModel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TranscribeLanguageModel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TranscribeLanguageModel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TranscribeLanguageModel to import
   * @param importFromId The id of the existing TranscribeLanguageModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transcribe_language_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TranscribeLanguageModel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transcribe_language_model", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transcribe_language_model", importId: importFromId, provider });
       }
 
   // ===========
@@ -506,13 +506,13 @@ export class TranscribeLanguageModel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      base_model_name: cdktf.stringToTerraform(this._baseModelName),
-      id: cdktf.stringToTerraform(this._id),
-      language_code: cdktf.stringToTerraform(this._languageCode),
-      model_name: cdktf.stringToTerraform(this._modelName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      base_model_name: cdktn.stringToTerraform(this._baseModelName),
+      id: cdktn.stringToTerraform(this._id),
+      language_code: cdktn.stringToTerraform(this._languageCode),
+      model_name: cdktn.stringToTerraform(this._modelName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       input_data_config: transcribeLanguageModelInputDataConfigToTerraform(this._inputDataConfig.internalValue),
       timeouts: transcribeLanguageModelTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -521,43 +521,43 @@ export class TranscribeLanguageModel extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       base_model_name: {
-        value: cdktf.stringToHclTerraform(this._baseModelName),
+        value: cdktn.stringToHclTerraform(this._baseModelName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language_code: {
-        value: cdktf.stringToHclTerraform(this._languageCode),
+        value: cdktn.stringToHclTerraform(this._languageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_name: {
-        value: cdktf.stringToHclTerraform(this._modelName),
+        value: cdktn.stringToHclTerraform(this._modelName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

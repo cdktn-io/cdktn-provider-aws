@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodestarnotificationsNotificationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface CodestarnotificationsNotificationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codestarnotifications_notification_rule#detail_type CodestarnotificationsNotificationRule#detail_type}
   */
@@ -58,7 +58,7 @@ export interface CodestarnotificationsNotificationRuleConfig extends cdktf.Terra
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codestarnotifications_notification_rule#target CodestarnotificationsNotificationRule#target}
   */
-  readonly target?: CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable;
+  readonly target?: CodestarnotificationsNotificationRuleTarget[] | cdktn.IResolvable;
 }
 export interface CodestarnotificationsNotificationRuleTarget {
   /**
@@ -71,32 +71,32 @@ export interface CodestarnotificationsNotificationRuleTarget {
   readonly type?: string;
 }
 
-export function codestarnotificationsNotificationRuleTargetToTerraform(struct?: CodestarnotificationsNotificationRuleTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codestarnotificationsNotificationRuleTargetToTerraform(struct?: CodestarnotificationsNotificationRuleTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    type: cdktf.stringToTerraform(struct!.type),
+    address: cdktn.stringToTerraform(struct!.address),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function codestarnotificationsNotificationRuleTargetToHclTerraform(struct?: CodestarnotificationsNotificationRuleTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codestarnotificationsNotificationRuleTargetToHclTerraform(struct?: CodestarnotificationsNotificationRuleTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,9 +107,9 @@ export function codestarnotificationsNotificationRuleTargetToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodestarnotificationsNotificationRuleTargetOutputReference extends cdktf.ComplexObject {
+export class CodestarnotificationsNotificationRuleTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -117,11 +117,11 @@ export class CodestarnotificationsNotificationRuleTargetOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodestarnotificationsNotificationRuleTarget | cdktf.IResolvable | undefined {
+  public get internalValue(): CodestarnotificationsNotificationRuleTarget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -138,14 +138,14 @@ export class CodestarnotificationsNotificationRuleTargetOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodestarnotificationsNotificationRuleTarget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodestarnotificationsNotificationRuleTarget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._address = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -192,15 +192,15 @@ export class CodestarnotificationsNotificationRuleTargetOutputReference extends 
   }
 }
 
-export class CodestarnotificationsNotificationRuleTargetList extends cdktf.ComplexList {
-  public internalValue? : CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable
+export class CodestarnotificationsNotificationRuleTargetList extends cdktn.ComplexList {
+  public internalValue? : CodestarnotificationsNotificationRuleTarget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -215,7 +215,7 @@ export class CodestarnotificationsNotificationRuleTargetList extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule}
 */
-export class CodestarnotificationsNotificationRule extends cdktf.TerraformResource {
+export class CodestarnotificationsNotificationRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -226,14 +226,14 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodestarnotificationsNotificationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodestarnotificationsNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodestarnotificationsNotificationRule to import
   * @param importFromId The id of the existing CodestarnotificationsNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codestarnotifications_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodestarnotificationsNotificationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codestarnotifications_notification_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codestarnotifications_notification_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -300,7 +300,7 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   // event_type_ids - computed: false, optional: false, required: true
   private _eventTypeIds?: string[]; 
   public get eventTypeIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('event_type_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('event_type_ids'));
   }
   public set eventTypeIds(value: string[]) {
     this._eventTypeIds = value;
@@ -421,7 +421,7 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   public get target() {
     return this._target;
   }
-  public putTarget(value: CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable) {
+  public putTarget(value: CodestarnotificationsNotificationRuleTarget[] | cdktn.IResolvable) {
     this._target.internalValue = value;
   }
   public resetTarget() {
@@ -438,77 +438,77 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      detail_type: cdktf.stringToTerraform(this._detailType),
-      event_type_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._eventTypeIds),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      resource: cdktf.stringToTerraform(this._resource),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target: cdktf.listMapper(codestarnotificationsNotificationRuleTargetToTerraform, true)(this._target.internalValue),
+      detail_type: cdktn.stringToTerraform(this._detailType),
+      event_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._eventTypeIds),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      resource: cdktn.stringToTerraform(this._resource),
+      status: cdktn.stringToTerraform(this._status),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target: cdktn.listMapper(codestarnotificationsNotificationRuleTargetToTerraform, true)(this._target.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       detail_type: {
-        value: cdktf.stringToHclTerraform(this._detailType),
+        value: cdktn.stringToHclTerraform(this._detailType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_type_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._eventTypeIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._eventTypeIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource: {
-        value: cdktf.stringToHclTerraform(this._resource),
+        value: cdktn.stringToHclTerraform(this._resource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target: {
-        value: cdktf.listMapperHcl(codestarnotificationsNotificationRuleTargetToHclTerraform, true)(this._target.internalValue),
+        value: cdktn.listMapperHcl(codestarnotificationsNotificationRuleTargetToHclTerraform, true)(this._target.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CodestarnotificationsNotificationRuleTargetList",

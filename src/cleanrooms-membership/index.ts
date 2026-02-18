@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CleanroomsMembershipConfig extends cdktf.TerraformMetaArguments {
+export interface CleanroomsMembershipConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_membership#collaboration_id CleanroomsMembership#collaboration_id}
   */
@@ -35,13 +35,13 @@ export interface CleanroomsMembershipConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_membership#default_result_configuration CleanroomsMembership#default_result_configuration}
   */
-  readonly defaultResultConfiguration?: CleanroomsMembershipDefaultResultConfiguration[] | cdktf.IResolvable;
+  readonly defaultResultConfiguration?: CleanroomsMembershipDefaultResultConfiguration[] | cdktn.IResolvable;
   /**
   * payment_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_membership#payment_configuration CleanroomsMembership#payment_configuration}
   */
-  readonly paymentConfiguration?: CleanroomsMembershipPaymentConfiguration[] | cdktf.IResolvable;
+  readonly paymentConfiguration?: CleanroomsMembershipPaymentConfiguration[] | cdktn.IResolvable;
 }
 export interface CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 {
   /**
@@ -58,39 +58,39 @@ export interface CleanroomsMembershipDefaultResultConfigurationOutputConfigurati
   readonly resultFormat: string;
 }
 
-export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key_prefix: cdktf.stringToTerraform(struct!.keyPrefix),
-    result_format: cdktf.stringToTerraform(struct!.resultFormat),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key_prefix: cdktn.stringToTerraform(struct!.keyPrefix),
+    result_format: cdktn.stringToTerraform(struct!.resultFormat),
   }
 }
 
 
-export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToHclTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToHclTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.keyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.keyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     result_format: {
-      value: cdktf.stringToHclTerraform(struct!.resultFormat),
+      value: cdktn.stringToHclTerraform(struct!.resultFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,9 +101,9 @@ export function cleanroomsMembershipDefaultResultConfigurationOutputConfiguratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3OutputReference extends cdktf.ComplexObject {
+export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -111,11 +111,11 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktf.IResolvable | undefined {
+  public get internalValue(): CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -136,7 +136,7 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -144,7 +144,7 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3
       this._keyPrefix = undefined;
       this._resultFormat = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -200,15 +200,15 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3
   }
 }
 
-export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3List extends cdktf.ComplexList {
-  public internalValue? : CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3[] | cdktf.IResolvable
+export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3List extends cdktn.ComplexList {
+  public internalValue? : CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -225,28 +225,28 @@ export interface CleanroomsMembershipDefaultResultConfigurationOutputConfigurati
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_membership#s3 CleanroomsMembership#s3}
   */
-  readonly s3?: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3[] | cdktf.IResolvable;
+  readonly s3?: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3[] | cdktn.IResolvable;
 }
 
-export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3: cdktf.listMapper(cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToTerraform, true)(struct!.s3),
+    s3: cdktn.listMapper(cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToTerraform, true)(struct!.s3),
   }
 }
 
 
-export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToHclTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToHclTerraform(struct?: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3: {
-      value: cdktf.listMapperHcl(cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToHclTerraform, true)(struct!.s3),
+      value: cdktn.listMapperHcl(cleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3ToHclTerraform, true)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3List",
@@ -257,9 +257,9 @@ export function cleanroomsMembershipDefaultResultConfigurationOutputConfiguratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOutputReference extends cdktf.ComplexObject {
+export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -267,11 +267,11 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -284,13 +284,13 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -306,7 +306,7 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOu
   public get s3() {
     return this._s3;
   }
-  public putS3(value: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3[] | cdktf.IResolvable) {
+  public putS3(value: CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3[] | cdktn.IResolvable) {
     this._s3.internalValue = value;
   }
   public resetS3() {
@@ -318,15 +318,15 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOu
   }
 }
 
-export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationList extends cdktf.ComplexList {
-  public internalValue? : CleanroomsMembershipDefaultResultConfigurationOutputConfiguration[] | cdktf.IResolvable
+export class CleanroomsMembershipDefaultResultConfigurationOutputConfigurationList extends cdktn.ComplexList {
+  public internalValue? : CleanroomsMembershipDefaultResultConfigurationOutputConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -347,35 +347,35 @@ export interface CleanroomsMembershipDefaultResultConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_membership#output_configuration CleanroomsMembership#output_configuration}
   */
-  readonly outputConfiguration?: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration[] | cdktf.IResolvable;
+  readonly outputConfiguration?: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration[] | cdktn.IResolvable;
 }
 
-export function cleanroomsMembershipDefaultResultConfigurationToTerraform(struct?: CleanroomsMembershipDefaultResultConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipDefaultResultConfigurationToTerraform(struct?: CleanroomsMembershipDefaultResultConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    output_configuration: cdktf.listMapper(cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToTerraform, true)(struct!.outputConfiguration),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    output_configuration: cdktn.listMapper(cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToTerraform, true)(struct!.outputConfiguration),
   }
 }
 
 
-export function cleanroomsMembershipDefaultResultConfigurationToHclTerraform(struct?: CleanroomsMembershipDefaultResultConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipDefaultResultConfigurationToHclTerraform(struct?: CleanroomsMembershipDefaultResultConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_configuration: {
-      value: cdktf.listMapperHcl(cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToHclTerraform, true)(struct!.outputConfiguration),
+      value: cdktn.listMapperHcl(cleanroomsMembershipDefaultResultConfigurationOutputConfigurationToHclTerraform, true)(struct!.outputConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "CleanroomsMembershipDefaultResultConfigurationOutputConfigurationList",
@@ -386,9 +386,9 @@ export function cleanroomsMembershipDefaultResultConfigurationToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CleanroomsMembershipDefaultResultConfigurationOutputReference extends cdktf.ComplexObject {
+export class CleanroomsMembershipDefaultResultConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -396,11 +396,11 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CleanroomsMembershipDefaultResultConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): CleanroomsMembershipDefaultResultConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -417,14 +417,14 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CleanroomsMembershipDefaultResultConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CleanroomsMembershipDefaultResultConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._roleArn = undefined;
       this._outputConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -457,7 +457,7 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputReference exten
   public get outputConfiguration() {
     return this._outputConfiguration;
   }
-  public putOutputConfiguration(value: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration[] | cdktf.IResolvable) {
+  public putOutputConfiguration(value: CleanroomsMembershipDefaultResultConfigurationOutputConfiguration[] | cdktn.IResolvable) {
     this._outputConfiguration.internalValue = value;
   }
   public resetOutputConfiguration() {
@@ -469,15 +469,15 @@ export class CleanroomsMembershipDefaultResultConfigurationOutputReference exten
   }
 }
 
-export class CleanroomsMembershipDefaultResultConfigurationList extends cdktf.ComplexList {
-  public internalValue? : CleanroomsMembershipDefaultResultConfiguration[] | cdktf.IResolvable
+export class CleanroomsMembershipDefaultResultConfigurationList extends cdktn.ComplexList {
+  public internalValue? : CleanroomsMembershipDefaultResultConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -492,28 +492,28 @@ export interface CleanroomsMembershipPaymentConfigurationQueryCompute {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_membership#is_responsible CleanroomsMembership#is_responsible}
   */
-  readonly isResponsible: boolean | cdktf.IResolvable;
+  readonly isResponsible: boolean | cdktn.IResolvable;
 }
 
-export function cleanroomsMembershipPaymentConfigurationQueryComputeToTerraform(struct?: CleanroomsMembershipPaymentConfigurationQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipPaymentConfigurationQueryComputeToTerraform(struct?: CleanroomsMembershipPaymentConfigurationQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_responsible: cdktf.booleanToTerraform(struct!.isResponsible),
+    is_responsible: cdktn.booleanToTerraform(struct!.isResponsible),
   }
 }
 
 
-export function cleanroomsMembershipPaymentConfigurationQueryComputeToHclTerraform(struct?: CleanroomsMembershipPaymentConfigurationQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipPaymentConfigurationQueryComputeToHclTerraform(struct?: CleanroomsMembershipPaymentConfigurationQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_responsible: {
-      value: cdktf.booleanToHclTerraform(struct!.isResponsible),
+      value: cdktn.booleanToHclTerraform(struct!.isResponsible),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -524,9 +524,9 @@ export function cleanroomsMembershipPaymentConfigurationQueryComputeToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CleanroomsMembershipPaymentConfigurationQueryComputeOutputReference extends cdktf.ComplexObject {
+export class CleanroomsMembershipPaymentConfigurationQueryComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -534,11 +534,11 @@ export class CleanroomsMembershipPaymentConfigurationQueryComputeOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CleanroomsMembershipPaymentConfigurationQueryCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): CleanroomsMembershipPaymentConfigurationQueryCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -551,13 +551,13 @@ export class CleanroomsMembershipPaymentConfigurationQueryComputeOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CleanroomsMembershipPaymentConfigurationQueryCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CleanroomsMembershipPaymentConfigurationQueryCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._isResponsible = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -569,11 +569,11 @@ export class CleanroomsMembershipPaymentConfigurationQueryComputeOutputReference
   }
 
   // is_responsible - computed: false, optional: false, required: true
-  private _isResponsible?: boolean | cdktf.IResolvable; 
+  private _isResponsible?: boolean | cdktn.IResolvable; 
   public get isResponsible() {
     return this.getBooleanAttribute('is_responsible');
   }
-  public set isResponsible(value: boolean | cdktf.IResolvable) {
+  public set isResponsible(value: boolean | cdktn.IResolvable) {
     this._isResponsible = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -582,15 +582,15 @@ export class CleanroomsMembershipPaymentConfigurationQueryComputeOutputReference
   }
 }
 
-export class CleanroomsMembershipPaymentConfigurationQueryComputeList extends cdktf.ComplexList {
-  public internalValue? : CleanroomsMembershipPaymentConfigurationQueryCompute[] | cdktf.IResolvable
+export class CleanroomsMembershipPaymentConfigurationQueryComputeList extends cdktn.ComplexList {
+  public internalValue? : CleanroomsMembershipPaymentConfigurationQueryCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -607,28 +607,28 @@ export interface CleanroomsMembershipPaymentConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_membership#query_compute CleanroomsMembership#query_compute}
   */
-  readonly queryCompute?: CleanroomsMembershipPaymentConfigurationQueryCompute[] | cdktf.IResolvable;
+  readonly queryCompute?: CleanroomsMembershipPaymentConfigurationQueryCompute[] | cdktn.IResolvable;
 }
 
-export function cleanroomsMembershipPaymentConfigurationToTerraform(struct?: CleanroomsMembershipPaymentConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipPaymentConfigurationToTerraform(struct?: CleanroomsMembershipPaymentConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_compute: cdktf.listMapper(cleanroomsMembershipPaymentConfigurationQueryComputeToTerraform, true)(struct!.queryCompute),
+    query_compute: cdktn.listMapper(cleanroomsMembershipPaymentConfigurationQueryComputeToTerraform, true)(struct!.queryCompute),
   }
 }
 
 
-export function cleanroomsMembershipPaymentConfigurationToHclTerraform(struct?: CleanroomsMembershipPaymentConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cleanroomsMembershipPaymentConfigurationToHclTerraform(struct?: CleanroomsMembershipPaymentConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_compute: {
-      value: cdktf.listMapperHcl(cleanroomsMembershipPaymentConfigurationQueryComputeToHclTerraform, true)(struct!.queryCompute),
+      value: cdktn.listMapperHcl(cleanroomsMembershipPaymentConfigurationQueryComputeToHclTerraform, true)(struct!.queryCompute),
       isBlock: true,
       type: "list",
       storageClassType: "CleanroomsMembershipPaymentConfigurationQueryComputeList",
@@ -639,9 +639,9 @@ export function cleanroomsMembershipPaymentConfigurationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CleanroomsMembershipPaymentConfigurationOutputReference extends cdktf.ComplexObject {
+export class CleanroomsMembershipPaymentConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -649,11 +649,11 @@ export class CleanroomsMembershipPaymentConfigurationOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CleanroomsMembershipPaymentConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): CleanroomsMembershipPaymentConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -666,13 +666,13 @@ export class CleanroomsMembershipPaymentConfigurationOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CleanroomsMembershipPaymentConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CleanroomsMembershipPaymentConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._queryCompute.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -688,7 +688,7 @@ export class CleanroomsMembershipPaymentConfigurationOutputReference extends cdk
   public get queryCompute() {
     return this._queryCompute;
   }
-  public putQueryCompute(value: CleanroomsMembershipPaymentConfigurationQueryCompute[] | cdktf.IResolvable) {
+  public putQueryCompute(value: CleanroomsMembershipPaymentConfigurationQueryCompute[] | cdktn.IResolvable) {
     this._queryCompute.internalValue = value;
   }
   public resetQueryCompute() {
@@ -700,15 +700,15 @@ export class CleanroomsMembershipPaymentConfigurationOutputReference extends cdk
   }
 }
 
-export class CleanroomsMembershipPaymentConfigurationList extends cdktf.ComplexList {
-  public internalValue? : CleanroomsMembershipPaymentConfiguration[] | cdktf.IResolvable
+export class CleanroomsMembershipPaymentConfigurationList extends cdktn.ComplexList {
+  public internalValue? : CleanroomsMembershipPaymentConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -723,7 +723,7 @@ export class CleanroomsMembershipPaymentConfigurationList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_membership aws_cleanrooms_membership}
 */
-export class CleanroomsMembership extends cdktf.TerraformResource {
+export class CleanroomsMembership extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -734,14 +734,14 @@ export class CleanroomsMembership extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CleanroomsMembership resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CleanroomsMembership resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CleanroomsMembership to import
   * @param importFromId The id of the existing CleanroomsMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cleanrooms_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CleanroomsMembership to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cleanrooms_membership", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cleanrooms_membership", importId: importFromId, provider });
       }
 
   // ===========
@@ -887,7 +887,7 @@ export class CleanroomsMembership extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -902,7 +902,7 @@ export class CleanroomsMembership extends cdktf.TerraformResource {
   public get defaultResultConfiguration() {
     return this._defaultResultConfiguration;
   }
-  public putDefaultResultConfiguration(value: CleanroomsMembershipDefaultResultConfiguration[] | cdktf.IResolvable) {
+  public putDefaultResultConfiguration(value: CleanroomsMembershipDefaultResultConfiguration[] | cdktn.IResolvable) {
     this._defaultResultConfiguration.internalValue = value;
   }
   public resetDefaultResultConfiguration() {
@@ -918,7 +918,7 @@ export class CleanroomsMembership extends cdktf.TerraformResource {
   public get paymentConfiguration() {
     return this._paymentConfiguration;
   }
-  public putPaymentConfiguration(value: CleanroomsMembershipPaymentConfiguration[] | cdktf.IResolvable) {
+  public putPaymentConfiguration(value: CleanroomsMembershipPaymentConfiguration[] | cdktn.IResolvable) {
     this._paymentConfiguration.internalValue = value;
   }
   public resetPaymentConfiguration() {
@@ -935,49 +935,49 @@ export class CleanroomsMembership extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      collaboration_id: cdktf.stringToTerraform(this._collaborationId),
-      query_log_status: cdktf.stringToTerraform(this._queryLogStatus),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      default_result_configuration: cdktf.listMapper(cleanroomsMembershipDefaultResultConfigurationToTerraform, true)(this._defaultResultConfiguration.internalValue),
-      payment_configuration: cdktf.listMapper(cleanroomsMembershipPaymentConfigurationToTerraform, true)(this._paymentConfiguration.internalValue),
+      collaboration_id: cdktn.stringToTerraform(this._collaborationId),
+      query_log_status: cdktn.stringToTerraform(this._queryLogStatus),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      default_result_configuration: cdktn.listMapper(cleanroomsMembershipDefaultResultConfigurationToTerraform, true)(this._defaultResultConfiguration.internalValue),
+      payment_configuration: cdktn.listMapper(cleanroomsMembershipPaymentConfigurationToTerraform, true)(this._paymentConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       collaboration_id: {
-        value: cdktf.stringToHclTerraform(this._collaborationId),
+        value: cdktn.stringToHclTerraform(this._collaborationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_log_status: {
-        value: cdktf.stringToHclTerraform(this._queryLogStatus),
+        value: cdktn.stringToHclTerraform(this._queryLogStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       default_result_configuration: {
-        value: cdktf.listMapperHcl(cleanroomsMembershipDefaultResultConfigurationToHclTerraform, true)(this._defaultResultConfiguration.internalValue),
+        value: cdktn.listMapperHcl(cleanroomsMembershipDefaultResultConfigurationToHclTerraform, true)(this._defaultResultConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CleanroomsMembershipDefaultResultConfigurationList",
       },
       payment_configuration: {
-        value: cdktf.listMapperHcl(cleanroomsMembershipPaymentConfigurationToHclTerraform, true)(this._paymentConfiguration.internalValue),
+        value: cdktn.listMapperHcl(cleanroomsMembershipPaymentConfigurationToHclTerraform, true)(this._paymentConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CleanroomsMembershipPaymentConfigurationList",

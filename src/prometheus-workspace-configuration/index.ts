@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrometheusWorkspaceConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface PrometheusWorkspaceConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -31,7 +31,7 @@ export interface PrometheusWorkspaceConfigurationConfig extends cdktf.TerraformM
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/prometheus_workspace_configuration#limits_per_label_set PrometheusWorkspaceConfiguration#limits_per_label_set}
   */
-  readonly limitsPerLabelSet?: PrometheusWorkspaceConfigurationLimitsPerLabelSet[] | cdktf.IResolvable;
+  readonly limitsPerLabelSet?: PrometheusWorkspaceConfigurationLimitsPerLabelSet[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -46,25 +46,25 @@ export interface PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits {
   readonly maxSeries: number;
 }
 
-export function prometheusWorkspaceConfigurationLimitsPerLabelSetLimitsToTerraform(struct?: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusWorkspaceConfigurationLimitsPerLabelSetLimitsToTerraform(struct?: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_series: cdktf.numberToTerraform(struct!.maxSeries),
+    max_series: cdktn.numberToTerraform(struct!.maxSeries),
   }
 }
 
 
-export function prometheusWorkspaceConfigurationLimitsPerLabelSetLimitsToHclTerraform(struct?: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusWorkspaceConfigurationLimitsPerLabelSetLimitsToHclTerraform(struct?: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_series: {
-      value: cdktf.numberToHclTerraform(struct!.maxSeries),
+      value: cdktn.numberToHclTerraform(struct!.maxSeries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -75,9 +75,9 @@ export function prometheusWorkspaceConfigurationLimitsPerLabelSetLimitsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputReference extends cdktf.ComplexObject {
+export class PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -85,11 +85,11 @@ export class PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits | cdktf.IResolvable | undefined {
+  public get internalValue(): PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -102,13 +102,13 @@ export class PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maxSeries = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -133,15 +133,15 @@ export class PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputRefere
   }
 }
 
-export class PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsList extends cdktf.ComplexList {
-  public internalValue? : PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits[] | cdktf.IResolvable
+export class PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsList extends cdktn.ComplexList {
+  public internalValue? : PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -162,35 +162,35 @@ export interface PrometheusWorkspaceConfigurationLimitsPerLabelSet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/prometheus_workspace_configuration#limits PrometheusWorkspaceConfiguration#limits}
   */
-  readonly limits?: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits[] | cdktf.IResolvable;
+  readonly limits?: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits[] | cdktn.IResolvable;
 }
 
-export function prometheusWorkspaceConfigurationLimitsPerLabelSetToTerraform(struct?: PrometheusWorkspaceConfigurationLimitsPerLabelSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusWorkspaceConfigurationLimitsPerLabelSetToTerraform(struct?: PrometheusWorkspaceConfigurationLimitsPerLabelSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    label_set: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labelSet),
-    limits: cdktf.listMapper(prometheusWorkspaceConfigurationLimitsPerLabelSetLimitsToTerraform, true)(struct!.limits),
+    label_set: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labelSet),
+    limits: cdktn.listMapper(prometheusWorkspaceConfigurationLimitsPerLabelSetLimitsToTerraform, true)(struct!.limits),
   }
 }
 
 
-export function prometheusWorkspaceConfigurationLimitsPerLabelSetToHclTerraform(struct?: PrometheusWorkspaceConfigurationLimitsPerLabelSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusWorkspaceConfigurationLimitsPerLabelSetToHclTerraform(struct?: PrometheusWorkspaceConfigurationLimitsPerLabelSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     label_set: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labelSet),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labelSet),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     limits: {
-      value: cdktf.listMapperHcl(prometheusWorkspaceConfigurationLimitsPerLabelSetLimitsToHclTerraform, true)(struct!.limits),
+      value: cdktn.listMapperHcl(prometheusWorkspaceConfigurationLimitsPerLabelSetLimitsToHclTerraform, true)(struct!.limits),
       isBlock: true,
       type: "list",
       storageClassType: "PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsList",
@@ -201,9 +201,9 @@ export function prometheusWorkspaceConfigurationLimitsPerLabelSetToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrometheusWorkspaceConfigurationLimitsPerLabelSetOutputReference extends cdktf.ComplexObject {
+export class PrometheusWorkspaceConfigurationLimitsPerLabelSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -211,11 +211,11 @@ export class PrometheusWorkspaceConfigurationLimitsPerLabelSetOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrometheusWorkspaceConfigurationLimitsPerLabelSet | cdktf.IResolvable | undefined {
+  public get internalValue(): PrometheusWorkspaceConfigurationLimitsPerLabelSet | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -232,14 +232,14 @@ export class PrometheusWorkspaceConfigurationLimitsPerLabelSetOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrometheusWorkspaceConfigurationLimitsPerLabelSet | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrometheusWorkspaceConfigurationLimitsPerLabelSet | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._labelSet = undefined;
       this._limits.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -269,7 +269,7 @@ export class PrometheusWorkspaceConfigurationLimitsPerLabelSetOutputReference ex
   public get limits() {
     return this._limits;
   }
-  public putLimits(value: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits[] | cdktf.IResolvable) {
+  public putLimits(value: PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits[] | cdktn.IResolvable) {
     this._limits.internalValue = value;
   }
   public resetLimits() {
@@ -281,15 +281,15 @@ export class PrometheusWorkspaceConfigurationLimitsPerLabelSetOutputReference ex
   }
 }
 
-export class PrometheusWorkspaceConfigurationLimitsPerLabelSetList extends cdktf.ComplexList {
-  public internalValue? : PrometheusWorkspaceConfigurationLimitsPerLabelSet[] | cdktf.IResolvable
+export class PrometheusWorkspaceConfigurationLimitsPerLabelSetList extends cdktn.ComplexList {
+  public internalValue? : PrometheusWorkspaceConfigurationLimitsPerLabelSet[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -315,32 +315,32 @@ export interface PrometheusWorkspaceConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function prometheusWorkspaceConfigurationTimeoutsToTerraform(struct?: PrometheusWorkspaceConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusWorkspaceConfigurationTimeoutsToTerraform(struct?: PrometheusWorkspaceConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function prometheusWorkspaceConfigurationTimeoutsToHclTerraform(struct?: PrometheusWorkspaceConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function prometheusWorkspaceConfigurationTimeoutsToHclTerraform(struct?: PrometheusWorkspaceConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -351,19 +351,19 @@ export function prometheusWorkspaceConfigurationTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrometheusWorkspaceConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrometheusWorkspaceConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrometheusWorkspaceConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrometheusWorkspaceConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -380,14 +380,14 @@ export class PrometheusWorkspaceConfigurationTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrometheusWorkspaceConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrometheusWorkspaceConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -435,7 +435,7 @@ export class PrometheusWorkspaceConfigurationTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/prometheus_workspace_configuration aws_prometheus_workspace_configuration}
 */
-export class PrometheusWorkspaceConfiguration extends cdktf.TerraformResource {
+export class PrometheusWorkspaceConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -446,14 +446,14 @@ export class PrometheusWorkspaceConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrometheusWorkspaceConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrometheusWorkspaceConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrometheusWorkspaceConfiguration to import
   * @param importFromId The id of the existing PrometheusWorkspaceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/prometheus_workspace_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrometheusWorkspaceConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_prometheus_workspace_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_prometheus_workspace_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -544,7 +544,7 @@ export class PrometheusWorkspaceConfiguration extends cdktf.TerraformResource {
   public get limitsPerLabelSet() {
     return this._limitsPerLabelSet;
   }
-  public putLimitsPerLabelSet(value: PrometheusWorkspaceConfigurationLimitsPerLabelSet[] | cdktf.IResolvable) {
+  public putLimitsPerLabelSet(value: PrometheusWorkspaceConfigurationLimitsPerLabelSet[] | cdktn.IResolvable) {
     this._limitsPerLabelSet.internalValue = value;
   }
   public resetLimitsPerLabelSet() {
@@ -577,10 +577,10 @@ export class PrometheusWorkspaceConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      retention_period_in_days: cdktf.numberToTerraform(this._retentionPeriodInDays),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      limits_per_label_set: cdktf.listMapper(prometheusWorkspaceConfigurationLimitsPerLabelSetToTerraform, true)(this._limitsPerLabelSet.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      retention_period_in_days: cdktn.numberToTerraform(this._retentionPeriodInDays),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
+      limits_per_label_set: cdktn.listMapper(prometheusWorkspaceConfigurationLimitsPerLabelSetToTerraform, true)(this._limitsPerLabelSet.internalValue),
       timeouts: prometheusWorkspaceConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -588,25 +588,25 @@ export class PrometheusWorkspaceConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_period_in_days: {
-        value: cdktf.numberToHclTerraform(this._retentionPeriodInDays),
+        value: cdktn.numberToHclTerraform(this._retentionPeriodInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       limits_per_label_set: {
-        value: cdktf.listMapperHcl(prometheusWorkspaceConfigurationLimitsPerLabelSetToHclTerraform, true)(this._limitsPerLabelSet.internalValue),
+        value: cdktn.listMapperHcl(prometheusWorkspaceConfigurationLimitsPerLabelSetToHclTerraform, true)(this._limitsPerLabelSet.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PrometheusWorkspaceConfigurationLimitsPerLabelSetList",

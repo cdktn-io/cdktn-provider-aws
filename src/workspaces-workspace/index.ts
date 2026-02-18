@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspacesWorkspaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_workspace#bundle_id WorkspacesWorkspace#bundle_id}
   */
@@ -36,7 +36,7 @@ export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_workspace#root_volume_encryption_enabled WorkspacesWorkspace#root_volume_encryption_enabled}
   */
-  readonly rootVolumeEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly rootVolumeEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_workspace#tags WorkspacesWorkspace#tags}
   */
@@ -52,7 +52,7 @@ export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_workspace#user_volume_encryption_enabled WorkspacesWorkspace#user_volume_encryption_enabled}
   */
-  readonly userVolumeEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly userVolumeEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_workspace#volume_encryption_key WorkspacesWorkspace#volume_encryption_key}
   */
@@ -85,39 +85,39 @@ export interface WorkspacesWorkspaceTimeouts {
   readonly update?: string;
 }
 
-export function workspacesWorkspaceTimeoutsToTerraform(struct?: WorkspacesWorkspaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspacesWorkspaceTimeoutsToTerraform(struct?: WorkspacesWorkspaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function workspacesWorkspaceTimeoutsToHclTerraform(struct?: WorkspacesWorkspaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspacesWorkspaceTimeoutsToHclTerraform(struct?: WorkspacesWorkspaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,19 +128,19 @@ export function workspacesWorkspaceTimeoutsToHclTerraform(struct?: WorkspacesWor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspacesWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class WorkspacesWorkspaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspacesWorkspaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspacesWorkspaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -161,7 +161,7 @@ export class WorkspacesWorkspaceTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspacesWorkspaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspacesWorkspaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class WorkspacesWorkspaceTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -254,52 +254,52 @@ export interface WorkspacesWorkspaceWorkspaceProperties {
 }
 
 export function workspacesWorkspaceWorkspacePropertiesToTerraform(struct?: WorkspacesWorkspaceWorkspacePropertiesOutputReference | WorkspacesWorkspaceWorkspaceProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compute_type_name: cdktf.stringToTerraform(struct!.computeTypeName),
-    root_volume_size_gib: cdktf.numberToTerraform(struct!.rootVolumeSizeGib),
-    running_mode: cdktf.stringToTerraform(struct!.runningMode),
-    running_mode_auto_stop_timeout_in_minutes: cdktf.numberToTerraform(struct!.runningModeAutoStopTimeoutInMinutes),
-    user_volume_size_gib: cdktf.numberToTerraform(struct!.userVolumeSizeGib),
+    compute_type_name: cdktn.stringToTerraform(struct!.computeTypeName),
+    root_volume_size_gib: cdktn.numberToTerraform(struct!.rootVolumeSizeGib),
+    running_mode: cdktn.stringToTerraform(struct!.runningMode),
+    running_mode_auto_stop_timeout_in_minutes: cdktn.numberToTerraform(struct!.runningModeAutoStopTimeoutInMinutes),
+    user_volume_size_gib: cdktn.numberToTerraform(struct!.userVolumeSizeGib),
   }
 }
 
 
 export function workspacesWorkspaceWorkspacePropertiesToHclTerraform(struct?: WorkspacesWorkspaceWorkspacePropertiesOutputReference | WorkspacesWorkspaceWorkspaceProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     compute_type_name: {
-      value: cdktf.stringToHclTerraform(struct!.computeTypeName),
+      value: cdktn.stringToHclTerraform(struct!.computeTypeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_volume_size_gib: {
-      value: cdktf.numberToHclTerraform(struct!.rootVolumeSizeGib),
+      value: cdktn.numberToHclTerraform(struct!.rootVolumeSizeGib),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     running_mode: {
-      value: cdktf.stringToHclTerraform(struct!.runningMode),
+      value: cdktn.stringToHclTerraform(struct!.runningMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     running_mode_auto_stop_timeout_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.runningModeAutoStopTimeoutInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.runningModeAutoStopTimeoutInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     user_volume_size_gib: {
-      value: cdktf.numberToHclTerraform(struct!.userVolumeSizeGib),
+      value: cdktn.numberToHclTerraform(struct!.userVolumeSizeGib),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -310,14 +310,14 @@ export function workspacesWorkspaceWorkspacePropertiesToHclTerraform(struct?: Wo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspacesWorkspaceWorkspacePropertiesOutputReference extends cdktf.ComplexObject {
+export class WorkspacesWorkspaceWorkspacePropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -450,7 +450,7 @@ export class WorkspacesWorkspaceWorkspacePropertiesOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_workspace aws_workspaces_workspace}
 */
-export class WorkspacesWorkspace extends cdktf.TerraformResource {
+export class WorkspacesWorkspace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -461,14 +461,14 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspacesWorkspace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspacesWorkspace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspacesWorkspace to import
   * @param importFromId The id of the existing WorkspacesWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspaces_workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspacesWorkspace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspaces_workspace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspaces_workspace", importId: importFromId, provider });
       }
 
   // ===========
@@ -585,11 +585,11 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // root_volume_encryption_enabled - computed: false, optional: true, required: false
-  private _rootVolumeEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _rootVolumeEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get rootVolumeEncryptionEnabled() {
     return this.getBooleanAttribute('root_volume_encryption_enabled');
   }
-  public set rootVolumeEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set rootVolumeEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._rootVolumeEncryptionEnabled = value;
   }
   public resetRootVolumeEncryptionEnabled() {
@@ -651,11 +651,11 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // user_volume_encryption_enabled - computed: false, optional: true, required: false
-  private _userVolumeEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _userVolumeEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get userVolumeEncryptionEnabled() {
     return this.getBooleanAttribute('user_volume_encryption_enabled');
   }
-  public set userVolumeEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set userVolumeEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._userVolumeEncryptionEnabled = value;
   }
   public resetUserVolumeEncryptionEnabled() {
@@ -720,16 +720,16 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bundle_id: cdktf.stringToTerraform(this._bundleId),
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      root_volume_encryption_enabled: cdktf.booleanToTerraform(this._rootVolumeEncryptionEnabled),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      user_name: cdktf.stringToTerraform(this._userName),
-      user_volume_encryption_enabled: cdktf.booleanToTerraform(this._userVolumeEncryptionEnabled),
-      volume_encryption_key: cdktf.stringToTerraform(this._volumeEncryptionKey),
+      bundle_id: cdktn.stringToTerraform(this._bundleId),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      root_volume_encryption_enabled: cdktn.booleanToTerraform(this._rootVolumeEncryptionEnabled),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      user_name: cdktn.stringToTerraform(this._userName),
+      user_volume_encryption_enabled: cdktn.booleanToTerraform(this._userVolumeEncryptionEnabled),
+      volume_encryption_key: cdktn.stringToTerraform(this._volumeEncryptionKey),
       timeouts: workspacesWorkspaceTimeoutsToTerraform(this._timeouts.internalValue),
       workspace_properties: workspacesWorkspaceWorkspacePropertiesToTerraform(this._workspaceProperties.internalValue),
     };
@@ -738,61 +738,61 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bundle_id: {
-        value: cdktf.stringToHclTerraform(this._bundleId),
+        value: cdktn.stringToHclTerraform(this._bundleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       root_volume_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._rootVolumeEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._rootVolumeEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_volume_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._userVolumeEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._userVolumeEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       volume_encryption_key: {
-        value: cdktf.stringToHclTerraform(this._volumeEncryptionKey),
+        value: cdktn.stringToHclTerraform(this._volumeEncryptionKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

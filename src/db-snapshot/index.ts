@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DbSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface DbSnapshotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_snapshot#db_instance_identifier DbSnapshot#db_instance_identifier}
   */
@@ -59,25 +59,25 @@ export interface DbSnapshotTimeouts {
   readonly create?: string;
 }
 
-export function dbSnapshotTimeoutsToTerraform(struct?: DbSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbSnapshotTimeoutsToTerraform(struct?: DbSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function dbSnapshotTimeoutsToHclTerraform(struct?: DbSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbSnapshotTimeoutsToHclTerraform(struct?: DbSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,19 +88,19 @@ export function dbSnapshotTimeoutsToHclTerraform(struct?: DbSnapshotTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DbSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DbSnapshotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DbSnapshotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DbSnapshotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -113,13 +113,13 @@ export class DbSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DbSnapshotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DbSnapshotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -150,7 +150,7 @@ export class DbSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_snapshot aws_db_snapshot}
 */
-export class DbSnapshot extends cdktf.TerraformResource {
+export class DbSnapshot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -161,14 +161,14 @@ export class DbSnapshot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DbSnapshot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DbSnapshot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DbSnapshot to import
   * @param importFromId The id of the existing DbSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DbSnapshot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_snapshot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_snapshot", importId: importFromId, provider });
       }
 
   // ===========
@@ -328,7 +328,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
   // shared_accounts - computed: false, optional: true, required: false
   private _sharedAccounts?: string[]; 
   public get sharedAccounts() {
-    return cdktf.Fn.tolist(this.getListAttribute('shared_accounts'));
+    return cdktn.Fn.tolist(this.getListAttribute('shared_accounts'));
   }
   public set sharedAccounts(value: string[]) {
     this._sharedAccounts = value;
@@ -425,13 +425,13 @@ export class DbSnapshot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
-      db_snapshot_identifier: cdktf.stringToTerraform(this._dbSnapshotIdentifier),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      shared_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sharedAccounts),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      db_instance_identifier: cdktn.stringToTerraform(this._dbInstanceIdentifier),
+      db_snapshot_identifier: cdktn.stringToTerraform(this._dbSnapshotIdentifier),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      shared_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sharedAccounts),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: dbSnapshotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -439,43 +439,43 @@ export class DbSnapshot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       db_instance_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbInstanceIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbInstanceIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_snapshot_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbSnapshotIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbSnapshotIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shared_accounts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sharedAccounts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sharedAccounts),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

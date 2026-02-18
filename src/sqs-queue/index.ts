@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
+export interface SqsQueueConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue#content_based_deduplication SqsQueue#content_based_deduplication}
   */
-  readonly contentBasedDeduplication?: boolean | cdktf.IResolvable;
+  readonly contentBasedDeduplication?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue#deduplication_scope SqsQueue#deduplication_scope}
   */
@@ -27,7 +27,7 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue#fifo_queue SqsQueue#fifo_queue}
   */
-  readonly fifoQueue?: boolean | cdktf.IResolvable;
+  readonly fifoQueue?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue#fifo_throughput_limit SqsQueue#fifo_throughput_limit}
   */
@@ -88,7 +88,7 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue#sqs_managed_sse_enabled SqsQueue#sqs_managed_sse_enabled}
   */
-  readonly sqsManagedSseEnabled?: boolean | cdktf.IResolvable;
+  readonly sqsManagedSseEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue#tags SqsQueue#tags}
   */
@@ -123,39 +123,39 @@ export interface SqsQueueTimeouts {
   readonly update?: string;
 }
 
-export function sqsQueueTimeoutsToTerraform(struct?: SqsQueueTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqsQueueTimeoutsToTerraform(struct?: SqsQueueTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sqsQueueTimeoutsToHclTerraform(struct?: SqsQueueTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqsQueueTimeoutsToHclTerraform(struct?: SqsQueueTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -166,19 +166,19 @@ export function sqsQueueTimeoutsToHclTerraform(struct?: SqsQueueTimeouts | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqsQueueTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SqsQueueTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SqsQueueTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SqsQueueTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -199,7 +199,7 @@ export class SqsQueueTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SqsQueueTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SqsQueueTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -207,7 +207,7 @@ export class SqsQueueTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -272,7 +272,7 @@ export class SqsQueueTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue aws_sqs_queue}
 */
-export class SqsQueue extends cdktf.TerraformResource {
+export class SqsQueue extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -283,14 +283,14 @@ export class SqsQueue extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SqsQueue resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SqsQueue resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqsQueue to import
   * @param importFromId The id of the existing SqsQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqsQueue to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sqs_queue", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sqs_queue", importId: importFromId, provider });
       }
 
   // ===========
@@ -354,11 +354,11 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // content_based_deduplication - computed: false, optional: true, required: false
-  private _contentBasedDeduplication?: boolean | cdktf.IResolvable; 
+  private _contentBasedDeduplication?: boolean | cdktn.IResolvable; 
   public get contentBasedDeduplication() {
     return this.getBooleanAttribute('content_based_deduplication');
   }
-  public set contentBasedDeduplication(value: boolean | cdktf.IResolvable) {
+  public set contentBasedDeduplication(value: boolean | cdktn.IResolvable) {
     this._contentBasedDeduplication = value;
   }
   public resetContentBasedDeduplication() {
@@ -402,11 +402,11 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // fifo_queue - computed: false, optional: true, required: false
-  private _fifoQueue?: boolean | cdktf.IResolvable; 
+  private _fifoQueue?: boolean | cdktn.IResolvable; 
   public get fifoQueue() {
     return this.getBooleanAttribute('fifo_queue');
   }
-  public set fifoQueue(value: boolean | cdktf.IResolvable) {
+  public set fifoQueue(value: boolean | cdktn.IResolvable) {
     this._fifoQueue = value;
   }
   public resetFifoQueue() {
@@ -626,11 +626,11 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // sqs_managed_sse_enabled - computed: true, optional: true, required: false
-  private _sqsManagedSseEnabled?: boolean | cdktf.IResolvable; 
+  private _sqsManagedSseEnabled?: boolean | cdktn.IResolvable; 
   public get sqsManagedSseEnabled() {
     return this.getBooleanAttribute('sqs_managed_sse_enabled');
   }
-  public set sqsManagedSseEnabled(value: boolean | cdktf.IResolvable) {
+  public set sqsManagedSseEnabled(value: boolean | cdktn.IResolvable) {
     this._sqsManagedSseEnabled = value;
   }
   public resetSqsManagedSseEnabled() {
@@ -716,27 +716,27 @@ export class SqsQueue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_based_deduplication: cdktf.booleanToTerraform(this._contentBasedDeduplication),
-      deduplication_scope: cdktf.stringToTerraform(this._deduplicationScope),
-      delay_seconds: cdktf.numberToTerraform(this._delaySeconds),
-      fifo_queue: cdktf.booleanToTerraform(this._fifoQueue),
-      fifo_throughput_limit: cdktf.stringToTerraform(this._fifoThroughputLimit),
-      id: cdktf.stringToTerraform(this._id),
-      kms_data_key_reuse_period_seconds: cdktf.numberToTerraform(this._kmsDataKeyReusePeriodSeconds),
-      kms_master_key_id: cdktf.stringToTerraform(this._kmsMasterKeyId),
-      max_message_size: cdktf.numberToTerraform(this._maxMessageSize),
-      message_retention_seconds: cdktf.numberToTerraform(this._messageRetentionSeconds),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      policy: cdktf.stringToTerraform(this._policy),
-      receive_wait_time_seconds: cdktf.numberToTerraform(this._receiveWaitTimeSeconds),
-      redrive_allow_policy: cdktf.stringToTerraform(this._redriveAllowPolicy),
-      redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
-      region: cdktf.stringToTerraform(this._region),
-      sqs_managed_sse_enabled: cdktf.booleanToTerraform(this._sqsManagedSseEnabled),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      visibility_timeout_seconds: cdktf.numberToTerraform(this._visibilityTimeoutSeconds),
+      content_based_deduplication: cdktn.booleanToTerraform(this._contentBasedDeduplication),
+      deduplication_scope: cdktn.stringToTerraform(this._deduplicationScope),
+      delay_seconds: cdktn.numberToTerraform(this._delaySeconds),
+      fifo_queue: cdktn.booleanToTerraform(this._fifoQueue),
+      fifo_throughput_limit: cdktn.stringToTerraform(this._fifoThroughputLimit),
+      id: cdktn.stringToTerraform(this._id),
+      kms_data_key_reuse_period_seconds: cdktn.numberToTerraform(this._kmsDataKeyReusePeriodSeconds),
+      kms_master_key_id: cdktn.stringToTerraform(this._kmsMasterKeyId),
+      max_message_size: cdktn.numberToTerraform(this._maxMessageSize),
+      message_retention_seconds: cdktn.numberToTerraform(this._messageRetentionSeconds),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      policy: cdktn.stringToTerraform(this._policy),
+      receive_wait_time_seconds: cdktn.numberToTerraform(this._receiveWaitTimeSeconds),
+      redrive_allow_policy: cdktn.stringToTerraform(this._redriveAllowPolicy),
+      redrive_policy: cdktn.stringToTerraform(this._redrivePolicy),
+      region: cdktn.stringToTerraform(this._region),
+      sqs_managed_sse_enabled: cdktn.booleanToTerraform(this._sqsManagedSseEnabled),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      visibility_timeout_seconds: cdktn.numberToTerraform(this._visibilityTimeoutSeconds),
       timeouts: sqsQueueTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -744,127 +744,127 @@ export class SqsQueue extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content_based_deduplication: {
-        value: cdktf.booleanToHclTerraform(this._contentBasedDeduplication),
+        value: cdktn.booleanToHclTerraform(this._contentBasedDeduplication),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       deduplication_scope: {
-        value: cdktf.stringToHclTerraform(this._deduplicationScope),
+        value: cdktn.stringToHclTerraform(this._deduplicationScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delay_seconds: {
-        value: cdktf.numberToHclTerraform(this._delaySeconds),
+        value: cdktn.numberToHclTerraform(this._delaySeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       fifo_queue: {
-        value: cdktf.booleanToHclTerraform(this._fifoQueue),
+        value: cdktn.booleanToHclTerraform(this._fifoQueue),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       fifo_throughput_limit: {
-        value: cdktf.stringToHclTerraform(this._fifoThroughputLimit),
+        value: cdktn.stringToHclTerraform(this._fifoThroughputLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_data_key_reuse_period_seconds: {
-        value: cdktf.numberToHclTerraform(this._kmsDataKeyReusePeriodSeconds),
+        value: cdktn.numberToHclTerraform(this._kmsDataKeyReusePeriodSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       kms_master_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsMasterKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsMasterKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_message_size: {
-        value: cdktf.numberToHclTerraform(this._maxMessageSize),
+        value: cdktn.numberToHclTerraform(this._maxMessageSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       message_retention_seconds: {
-        value: cdktf.numberToHclTerraform(this._messageRetentionSeconds),
+        value: cdktn.numberToHclTerraform(this._messageRetentionSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       receive_wait_time_seconds: {
-        value: cdktf.numberToHclTerraform(this._receiveWaitTimeSeconds),
+        value: cdktn.numberToHclTerraform(this._receiveWaitTimeSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       redrive_allow_policy: {
-        value: cdktf.stringToHclTerraform(this._redriveAllowPolicy),
+        value: cdktn.stringToHclTerraform(this._redriveAllowPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redrive_policy: {
-        value: cdktf.stringToHclTerraform(this._redrivePolicy),
+        value: cdktn.stringToHclTerraform(this._redrivePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sqs_managed_sse_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sqsManagedSseEnabled),
+        value: cdktn.booleanToHclTerraform(this._sqsManagedSseEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       visibility_timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._visibilityTimeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._visibilityTimeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsDocdbEngineVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsDocdbEngineVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/docdb_engine_version#engine DataAwsDocdbEngineVersion#engine}
   */
@@ -46,7 +46,7 @@ export interface DataAwsDocdbEngineVersionConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/docdb_engine_version aws_docdb_engine_version}
 */
-export class DataAwsDocdbEngineVersion extends cdktf.TerraformDataSource {
+export class DataAwsDocdbEngineVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DataAwsDocdbEngineVersion extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsDocdbEngineVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsDocdbEngineVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDocdbEngineVersion to import
   * @param importFromId The id of the existing DataAwsDocdbEngineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/docdb_engine_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDocdbEngineVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_engine_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_engine_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,7 +129,7 @@ export class DataAwsDocdbEngineVersion extends cdktf.TerraformDataSource {
 
   // exportable_log_types - computed: true, optional: false, required: false
   public get exportableLogTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('exportable_log_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('exportable_log_types'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -203,7 +203,7 @@ export class DataAwsDocdbEngineVersion extends cdktf.TerraformDataSource {
 
   // valid_upgrade_targets - computed: true, optional: false, required: false
   public get validUpgradeTargets() {
-    return cdktf.Fn.tolist(this.getListAttribute('valid_upgrade_targets'));
+    return cdktn.Fn.tolist(this.getListAttribute('valid_upgrade_targets'));
   }
 
   // version - computed: true, optional: true, required: false
@@ -233,49 +233,49 @@ export class DataAwsDocdbEngineVersion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine: cdktf.stringToTerraform(this._engine),
-      id: cdktf.stringToTerraform(this._id),
-      parameter_group_family: cdktf.stringToTerraform(this._parameterGroupFamily),
-      preferred_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredVersions),
-      region: cdktf.stringToTerraform(this._region),
-      version: cdktf.stringToTerraform(this._version),
+      engine: cdktn.stringToTerraform(this._engine),
+      id: cdktn.stringToTerraform(this._id),
+      parameter_group_family: cdktn.stringToTerraform(this._parameterGroupFamily),
+      preferred_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preferredVersions),
+      region: cdktn.stringToTerraform(this._region),
+      version: cdktn.stringToTerraform(this._version),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameter_group_family: {
-        value: cdktf.stringToHclTerraform(this._parameterGroupFamily),
+        value: cdktn.stringToHclTerraform(this._parameterGroupFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_versions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredVersions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preferredVersions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBedrockagentAgentVersionsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBedrockagentAgentVersionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrockagent_agent_versions#agent_id DataAwsBedrockagentAgentVersions#agent_id}
   */
@@ -27,14 +27,14 @@ export interface DataAwsBedrockagentAgentVersionsConfig extends cdktf.TerraformM
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrockagent_agent_versions#agent_version_summaries DataAwsBedrockagentAgentVersions#agent_version_summaries}
   */
-  readonly agentVersionSummaries?: DataAwsBedrockagentAgentVersionsAgentVersionSummaries[] | cdktf.IResolvable;
+  readonly agentVersionSummaries?: DataAwsBedrockagentAgentVersionsAgentVersionSummaries[] | cdktn.IResolvable;
 }
 export interface DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration {
 }
 
-export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationToTerraform(struct?: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationToTerraform(struct?: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -42,9 +42,9 @@ export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailCo
 }
 
 
-export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationToHclTerraform(struct?: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationToHclTerraform(struct?: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -52,9 +52,9 @@ export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailCo
   return attrs;
 }
 
-export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -62,11 +62,11 @@ export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -75,12 +75,12 @@ export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -101,15 +101,15 @@ export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfi
   }
 }
 
-export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationList extends cdktf.ComplexList {
-  public internalValue? : DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration[] | cdktf.IResolvable
+export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationList extends cdktn.ComplexList {
+  public internalValue? : DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -126,28 +126,28 @@ export interface DataAwsBedrockagentAgentVersionsAgentVersionSummaries {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrockagent_agent_versions#guardrail_configuration DataAwsBedrockagentAgentVersions#guardrail_configuration}
   */
-  readonly guardrailConfiguration?: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration[] | cdktf.IResolvable;
+  readonly guardrailConfiguration?: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration[] | cdktn.IResolvable;
 }
 
-export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesToTerraform(struct?: DataAwsBedrockagentAgentVersionsAgentVersionSummaries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesToTerraform(struct?: DataAwsBedrockagentAgentVersionsAgentVersionSummaries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    guardrail_configuration: cdktf.listMapper(dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationToTerraform, true)(struct!.guardrailConfiguration),
+    guardrail_configuration: cdktn.listMapper(dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationToTerraform, true)(struct!.guardrailConfiguration),
   }
 }
 
 
-export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesToHclTerraform(struct?: DataAwsBedrockagentAgentVersionsAgentVersionSummaries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesToHclTerraform(struct?: DataAwsBedrockagentAgentVersionsAgentVersionSummaries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     guardrail_configuration: {
-      value: cdktf.listMapperHcl(dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationToHclTerraform, true)(struct!.guardrailConfiguration),
+      value: cdktn.listMapperHcl(dataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationToHclTerraform, true)(struct!.guardrailConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationList",
@@ -158,9 +158,9 @@ export function dataAwsBedrockagentAgentVersionsAgentVersionSummariesToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -168,11 +168,11 @@ export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsBedrockagentAgentVersionsAgentVersionSummaries | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsBedrockagentAgentVersionsAgentVersionSummaries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -185,13 +185,13 @@ export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsBedrockagentAgentVersionsAgentVersionSummaries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsBedrockagentAgentVersionsAgentVersionSummaries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._guardrailConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -237,7 +237,7 @@ export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReferenc
   public get guardrailConfiguration() {
     return this._guardrailConfiguration;
   }
-  public putGuardrailConfiguration(value: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration[] | cdktf.IResolvable) {
+  public putGuardrailConfiguration(value: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration[] | cdktn.IResolvable) {
     this._guardrailConfiguration.internalValue = value;
   }
   public resetGuardrailConfiguration() {
@@ -249,15 +249,15 @@ export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReferenc
   }
 }
 
-export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsBedrockagentAgentVersionsAgentVersionSummaries[] | cdktf.IResolvable
+export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesList extends cdktn.ComplexList {
+  public internalValue? : DataAwsBedrockagentAgentVersionsAgentVersionSummaries[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -272,7 +272,7 @@ export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesList extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions}
 */
-export class DataAwsBedrockagentAgentVersions extends cdktf.TerraformDataSource {
+export class DataAwsBedrockagentAgentVersions extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -283,14 +283,14 @@ export class DataAwsBedrockagentAgentVersions extends cdktf.TerraformDataSource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBedrockagentAgentVersions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBedrockagentAgentVersions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockagentAgentVersions to import
   * @param importFromId The id of the existing DataAwsBedrockagentAgentVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrockagent_agent_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockagentAgentVersions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_agent_versions", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_agent_versions", importId: importFromId, provider });
       }
 
   // ===========
@@ -363,7 +363,7 @@ export class DataAwsBedrockagentAgentVersions extends cdktf.TerraformDataSource 
   public get agentVersionSummaries() {
     return this._agentVersionSummaries;
   }
-  public putAgentVersionSummaries(value: DataAwsBedrockagentAgentVersionsAgentVersionSummaries[] | cdktf.IResolvable) {
+  public putAgentVersionSummaries(value: DataAwsBedrockagentAgentVersionsAgentVersionSummaries[] | cdktn.IResolvable) {
     this._agentVersionSummaries.internalValue = value;
   }
   public resetAgentVersionSummaries() {
@@ -380,28 +380,28 @@ export class DataAwsBedrockagentAgentVersions extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_id: cdktf.stringToTerraform(this._agentId),
-      region: cdktf.stringToTerraform(this._region),
-      agent_version_summaries: cdktf.listMapper(dataAwsBedrockagentAgentVersionsAgentVersionSummariesToTerraform, true)(this._agentVersionSummaries.internalValue),
+      agent_id: cdktn.stringToTerraform(this._agentId),
+      region: cdktn.stringToTerraform(this._region),
+      agent_version_summaries: cdktn.listMapper(dataAwsBedrockagentAgentVersionsAgentVersionSummariesToTerraform, true)(this._agentVersionSummaries.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       agent_id: {
-        value: cdktf.stringToHclTerraform(this._agentId),
+        value: cdktn.stringToHclTerraform(this._agentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       agent_version_summaries: {
-        value: cdktf.listMapperHcl(dataAwsBedrockagentAgentVersionsAgentVersionSummariesToHclTerraform, true)(this._agentVersionSummaries.internalValue),
+        value: cdktn.listMapperHcl(dataAwsBedrockagentAgentVersionsAgentVersionSummariesToHclTerraform, true)(this._agentVersionSummaries.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsBedrockagentAgentVersionsAgentVersionSummariesList",

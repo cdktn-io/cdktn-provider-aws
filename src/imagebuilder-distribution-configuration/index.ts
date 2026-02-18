@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ImagebuilderDistributionConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface ImagebuilderDistributionConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#description ImagebuilderDistributionConfiguration#description}
   */
@@ -46,7 +46,7 @@ export interface ImagebuilderDistributionConfigurationConfig extends cdktf.Terra
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#distribution ImagebuilderDistributionConfiguration#distribution}
   */
-  readonly distribution: ImagebuilderDistributionConfigurationDistribution[] | cdktf.IResolvable;
+  readonly distribution: ImagebuilderDistributionConfigurationDistribution[] | cdktn.IResolvable;
 }
 export interface ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission {
   /**
@@ -68,45 +68,45 @@ export interface ImagebuilderDistributionConfigurationDistributionAmiDistributio
 }
 
 export function imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference | ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    organization_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.organizationArns),
-    organizational_unit_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.organizationalUnitArns),
-    user_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.userGroups),
-    user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.userIds),
+    organization_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.organizationArns),
+    organizational_unit_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.organizationalUnitArns),
+    user_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.userGroups),
+    user_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.userIds),
   }
 }
 
 
 export function imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference | ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     organization_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.organizationArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.organizationArns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     organizational_unit_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.organizationalUnitArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.organizationalUnitArns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     user_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.userGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.userGroups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     user_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.userIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.userIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -117,14 +117,14 @@ export function imagebuilderDistributionConfigurationDistributionAmiDistribution
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -170,7 +170,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   // organization_arns - computed: false, optional: true, required: false
   private _organizationArns?: string[]; 
   public get organizationArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('organization_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('organization_arns'));
   }
   public set organizationArns(value: string[]) {
     this._organizationArns = value;
@@ -186,7 +186,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   // organizational_unit_arns - computed: false, optional: true, required: false
   private _organizationalUnitArns?: string[]; 
   public get organizationalUnitArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('organizational_unit_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('organizational_unit_arns'));
   }
   public set organizationalUnitArns(value: string[]) {
     this._organizationalUnitArns = value;
@@ -202,7 +202,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   // user_groups - computed: false, optional: true, required: false
   private _userGroups?: string[]; 
   public get userGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('user_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('user_groups'));
   }
   public set userGroups(value: string[]) {
     this._userGroups = value;
@@ -218,7 +218,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   // user_ids - computed: false, optional: true, required: false
   private _userIds?: string[]; 
   public get userIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('user_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('user_ids'));
   }
   public set userIds(value: string[]) {
     this._userIds = value;
@@ -261,53 +261,53 @@ export interface ImagebuilderDistributionConfigurationDistributionAmiDistributio
 }
 
 export function imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference | ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ami_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.amiTags),
-    description: cdktf.stringToTerraform(struct!.description),
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    name: cdktf.stringToTerraform(struct!.name),
-    target_account_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetAccountIds),
+    ami_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.amiTags),
+    description: cdktn.stringToTerraform(struct!.description),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    name: cdktn.stringToTerraform(struct!.name),
+    target_account_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetAccountIds),
     launch_permission: imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionToTerraform(struct!.launchPermission),
   }
 }
 
 
 export function imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference | ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ami_tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.amiTags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.amiTags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_account_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetAccountIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetAccountIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -324,14 +324,14 @@ export function imagebuilderDistributionConfigurationDistributionAmiDistribution
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -453,7 +453,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   // target_account_ids - computed: false, optional: true, required: false
   private _targetAccountIds?: string[]; 
   public get targetAccountIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('target_account_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('target_account_ids'));
   }
   public set targetAccountIds(value: string[]) {
     this._targetAccountIds = value;
@@ -494,31 +494,31 @@ export interface ImagebuilderDistributionConfigurationDistributionContainerDistr
 }
 
 export function imagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference | ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository_name: cdktf.stringToTerraform(struct!.repositoryName),
-    service: cdktf.stringToTerraform(struct!.service),
+    repository_name: cdktn.stringToTerraform(struct!.repositoryName),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
 export function imagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference | ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repository_name: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      value: cdktn.stringToHclTerraform(struct!.repositoryName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -529,14 +529,14 @@ export function imagebuilderDistributionConfigurationDistributionContainerDistri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -611,32 +611,32 @@ export interface ImagebuilderDistributionConfigurationDistributionContainerDistr
 }
 
 export function imagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference | ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.containerTags),
-    description: cdktf.stringToTerraform(struct!.description),
+    container_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.containerTags),
+    description: cdktn.stringToTerraform(struct!.description),
     target_repository: imagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryToTerraform(struct!.targetRepository),
   }
 }
 
 
 export function imagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference | ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.containerTags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.containerTags),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -653,14 +653,14 @@ export function imagebuilderDistributionConfigurationDistributionContainerDistri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -700,7 +700,7 @@ export class ImagebuilderDistributionConfigurationDistributionContainerDistribut
   // container_tags - computed: false, optional: true, required: false
   private _containerTags?: string[]; 
   public get containerTags() {
-    return cdktf.Fn.tolist(this.getListAttribute('container_tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('container_tags'));
   }
   public set containerTags(value: string[]) {
     this._containerTags = value;
@@ -758,38 +758,38 @@ export interface ImagebuilderDistributionConfigurationDistributionFastLaunchConf
 }
 
 export function imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference | ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    launch_template_id: cdktf.stringToTerraform(struct!.launchTemplateId),
-    launch_template_name: cdktf.stringToTerraform(struct!.launchTemplateName),
-    launch_template_version: cdktf.stringToTerraform(struct!.launchTemplateVersion),
+    launch_template_id: cdktn.stringToTerraform(struct!.launchTemplateId),
+    launch_template_name: cdktn.stringToTerraform(struct!.launchTemplateName),
+    launch_template_version: cdktn.stringToTerraform(struct!.launchTemplateVersion),
   }
 }
 
 
 export function imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference | ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     launch_template_id: {
-      value: cdktf.stringToHclTerraform(struct!.launchTemplateId),
+      value: cdktn.stringToHclTerraform(struct!.launchTemplateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     launch_template_name: {
-      value: cdktf.stringToHclTerraform(struct!.launchTemplateName),
+      value: cdktn.stringToHclTerraform(struct!.launchTemplateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     launch_template_version: {
-      value: cdktf.stringToHclTerraform(struct!.launchTemplateVersion),
+      value: cdktn.stringToHclTerraform(struct!.launchTemplateVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -800,14 +800,14 @@ export function imagebuilderDistributionConfigurationDistributionFastLaunchConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -900,24 +900,24 @@ export interface ImagebuilderDistributionConfigurationDistributionFastLaunchConf
 }
 
 export function imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference | ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_resource_count: cdktf.numberToTerraform(struct!.targetResourceCount),
+    target_resource_count: cdktn.numberToTerraform(struct!.targetResourceCount),
   }
 }
 
 
 export function imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference | ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_resource_count: {
-      value: cdktf.numberToHclTerraform(struct!.targetResourceCount),
+      value: cdktn.numberToHclTerraform(struct!.targetResourceCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -928,14 +928,14 @@ export function imagebuilderDistributionConfigurationDistributionFastLaunchConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -984,7 +984,7 @@ export interface ImagebuilderDistributionConfigurationDistributionFastLaunchConf
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#enabled ImagebuilderDistributionConfiguration#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#max_parallel_launches ImagebuilderDistributionConfiguration#max_parallel_launches}
   */
@@ -1003,41 +1003,41 @@ export interface ImagebuilderDistributionConfigurationDistributionFastLaunchConf
   readonly snapshotConfiguration?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration;
 }
 
-export function imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    max_parallel_launches: cdktf.numberToTerraform(struct!.maxParallelLaunches),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    max_parallel_launches: cdktn.numberToTerraform(struct!.maxParallelLaunches),
     launch_template: imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateToTerraform(struct!.launchTemplate),
     snapshot_configuration: imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationToTerraform(struct!.snapshotConfiguration),
   }
 }
 
 
-export function imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_parallel_launches: {
-      value: cdktf.numberToHclTerraform(struct!.maxParallelLaunches),
+      value: cdktn.numberToHclTerraform(struct!.maxParallelLaunches),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1060,9 +1060,9 @@ export function imagebuilderDistributionConfigurationDistributionFastLaunchConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1070,11 +1070,11 @@ export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigur
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1103,7 +1103,7 @@ export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigur
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1113,7 +1113,7 @@ export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigur
       this._launchTemplate.internalValue = undefined;
       this._snapshotConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1142,11 +1142,11 @@ export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigur
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1203,15 +1203,15 @@ export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigur
   }
 }
 
-export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration[] | cdktf.IResolvable
+export class ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1230,46 +1230,46 @@ export interface ImagebuilderDistributionConfigurationDistributionLaunchTemplate
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#default ImagebuilderDistributionConfiguration#default}
   */
-  readonly default?: boolean | cdktf.IResolvable;
+  readonly default?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#launch_template_id ImagebuilderDistributionConfiguration#launch_template_id}
   */
   readonly launchTemplateId: string;
 }
 
-export function imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    default: cdktf.booleanToTerraform(struct!.default),
-    launch_template_id: cdktf.stringToTerraform(struct!.launchTemplateId),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    default: cdktn.booleanToTerraform(struct!.default),
+    launch_template_id: cdktn.stringToTerraform(struct!.launchTemplateId),
   }
 }
 
 
-export function imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default: {
-      value: cdktf.booleanToHclTerraform(struct!.default),
+      value: cdktn.booleanToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     launch_template_id: {
-      value: cdktf.stringToHclTerraform(struct!.launchTemplateId),
+      value: cdktn.stringToHclTerraform(struct!.launchTemplateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1280,9 +1280,9 @@ export function imagebuilderDistributionConfigurationDistributionLaunchTemplateC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1290,11 +1290,11 @@ export class ImagebuilderDistributionConfigurationDistributionLaunchTemplateConf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1315,7 +1315,7 @@ export class ImagebuilderDistributionConfigurationDistributionLaunchTemplateConf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1323,7 +1323,7 @@ export class ImagebuilderDistributionConfigurationDistributionLaunchTemplateConf
       this._default = undefined;
       this._launchTemplateId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1353,11 +1353,11 @@ export class ImagebuilderDistributionConfigurationDistributionLaunchTemplateConf
   }
 
   // default - computed: false, optional: true, required: false
-  private _default?: boolean | cdktf.IResolvable; 
+  private _default?: boolean | cdktn.IResolvable; 
   public get default() {
     return this.getBooleanAttribute('default');
   }
-  public set default(value: boolean | cdktf.IResolvable) {
+  public set default(value: boolean | cdktn.IResolvable) {
     this._default = value;
   }
   public resetDefault() {
@@ -1382,15 +1382,15 @@ export class ImagebuilderDistributionConfigurationDistributionLaunchTemplateConf
   }
 }
 
-export class ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration[] | cdktf.IResolvable
+export class ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1421,45 +1421,45 @@ export interface ImagebuilderDistributionConfigurationDistributionS3ExportConfig
 }
 
 export function imagebuilderDistributionConfigurationDistributionS3ExportConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference | ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_image_format: cdktf.stringToTerraform(struct!.diskImageFormat),
-    role_name: cdktf.stringToTerraform(struct!.roleName),
-    s3_bucket: cdktf.stringToTerraform(struct!.s3Bucket),
-    s3_prefix: cdktf.stringToTerraform(struct!.s3Prefix),
+    disk_image_format: cdktn.stringToTerraform(struct!.diskImageFormat),
+    role_name: cdktn.stringToTerraform(struct!.roleName),
+    s3_bucket: cdktn.stringToTerraform(struct!.s3Bucket),
+    s3_prefix: cdktn.stringToTerraform(struct!.s3Prefix),
   }
 }
 
 
 export function imagebuilderDistributionConfigurationDistributionS3ExportConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference | ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_image_format: {
-      value: cdktf.stringToHclTerraform(struct!.diskImageFormat),
+      value: cdktn.stringToHclTerraform(struct!.diskImageFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_name: {
-      value: cdktf.stringToHclTerraform(struct!.roleName),
+      value: cdktn.stringToHclTerraform(struct!.roleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_bucket: {
-      value: cdktf.stringToHclTerraform(struct!.s3Bucket),
+      value: cdktn.stringToHclTerraform(struct!.s3Bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.s3Prefix),
+      value: cdktn.stringToHclTerraform(struct!.s3Prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1470,14 +1470,14 @@ export function imagebuilderDistributionConfigurationDistributionS3ExportConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1590,39 +1590,39 @@ export interface ImagebuilderDistributionConfigurationDistributionSsmParameterCo
   readonly parameterName: string;
 }
 
-export function imagebuilderDistributionConfigurationDistributionSsmParameterConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderDistributionConfigurationDistributionSsmParameterConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ami_account_id: cdktf.stringToTerraform(struct!.amiAccountId),
-    data_type: cdktf.stringToTerraform(struct!.dataType),
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
+    ami_account_id: cdktn.stringToTerraform(struct!.amiAccountId),
+    data_type: cdktn.stringToTerraform(struct!.dataType),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
   }
 }
 
 
-export function imagebuilderDistributionConfigurationDistributionSsmParameterConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderDistributionConfigurationDistributionSsmParameterConfigurationToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ami_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.amiAccountId),
+      value: cdktn.stringToHclTerraform(struct!.amiAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataType),
+      value: cdktn.stringToHclTerraform(struct!.dataType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1633,9 +1633,9 @@ export function imagebuilderDistributionConfigurationDistributionSsmParameterCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1643,11 +1643,11 @@ export class ImagebuilderDistributionConfigurationDistributionSsmParameterConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1668,7 +1668,7 @@ export class ImagebuilderDistributionConfigurationDistributionSsmParameterConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1676,7 +1676,7 @@ export class ImagebuilderDistributionConfigurationDistributionSsmParameterConfig
       this._dataType = undefined;
       this._parameterName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1735,15 +1735,15 @@ export class ImagebuilderDistributionConfigurationDistributionSsmParameterConfig
   }
 }
 
-export class ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration[] | cdktf.IResolvable
+export class ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1780,13 +1780,13 @@ export interface ImagebuilderDistributionConfigurationDistribution {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#fast_launch_configuration ImagebuilderDistributionConfiguration#fast_launch_configuration}
   */
-  readonly fastLaunchConfiguration?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration[] | cdktf.IResolvable;
+  readonly fastLaunchConfiguration?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration[] | cdktn.IResolvable;
   /**
   * launch_template_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#launch_template_configuration ImagebuilderDistributionConfiguration#launch_template_configuration}
   */
-  readonly launchTemplateConfiguration?: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration[] | cdktf.IResolvable;
+  readonly launchTemplateConfiguration?: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration[] | cdktn.IResolvable;
   /**
   * s3_export_configuration block
   *
@@ -1798,41 +1798,41 @@ export interface ImagebuilderDistributionConfigurationDistribution {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#ssm_parameter_configuration ImagebuilderDistributionConfiguration#ssm_parameter_configuration}
   */
-  readonly ssmParameterConfiguration?: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration[] | cdktf.IResolvable;
+  readonly ssmParameterConfiguration?: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration[] | cdktn.IResolvable;
 }
 
-export function imagebuilderDistributionConfigurationDistributionToTerraform(struct?: ImagebuilderDistributionConfigurationDistribution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderDistributionConfigurationDistributionToTerraform(struct?: ImagebuilderDistributionConfigurationDistribution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    license_configuration_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.licenseConfigurationArns),
-    region: cdktf.stringToTerraform(struct!.region),
+    license_configuration_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.licenseConfigurationArns),
+    region: cdktn.stringToTerraform(struct!.region),
     ami_distribution_configuration: imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationToTerraform(struct!.amiDistributionConfiguration),
     container_distribution_configuration: imagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationToTerraform(struct!.containerDistributionConfiguration),
-    fast_launch_configuration: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToTerraform, true)(struct!.fastLaunchConfiguration),
-    launch_template_configuration: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToTerraform, true)(struct!.launchTemplateConfiguration),
+    fast_launch_configuration: cdktn.listMapper(imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToTerraform, true)(struct!.fastLaunchConfiguration),
+    launch_template_configuration: cdktn.listMapper(imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToTerraform, true)(struct!.launchTemplateConfiguration),
     s3_export_configuration: imagebuilderDistributionConfigurationDistributionS3ExportConfigurationToTerraform(struct!.s3ExportConfiguration),
-    ssm_parameter_configuration: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionSsmParameterConfigurationToTerraform, true)(struct!.ssmParameterConfiguration),
+    ssm_parameter_configuration: cdktn.listMapper(imagebuilderDistributionConfigurationDistributionSsmParameterConfigurationToTerraform, true)(struct!.ssmParameterConfiguration),
   }
 }
 
 
-export function imagebuilderDistributionConfigurationDistributionToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistribution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderDistributionConfigurationDistributionToHclTerraform(struct?: ImagebuilderDistributionConfigurationDistribution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     license_configuration_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.licenseConfigurationArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.licenseConfigurationArns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1850,13 +1850,13 @@ export function imagebuilderDistributionConfigurationDistributionToHclTerraform(
       storageClassType: "ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationList",
     },
     fast_launch_configuration: {
-      value: cdktf.listMapperHcl(imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToHclTerraform, true)(struct!.fastLaunchConfiguration),
+      value: cdktn.listMapperHcl(imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToHclTerraform, true)(struct!.fastLaunchConfiguration),
       isBlock: true,
       type: "set",
       storageClassType: "ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList",
     },
     launch_template_configuration: {
-      value: cdktf.listMapperHcl(imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToHclTerraform, true)(struct!.launchTemplateConfiguration),
+      value: cdktn.listMapperHcl(imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToHclTerraform, true)(struct!.launchTemplateConfiguration),
       isBlock: true,
       type: "set",
       storageClassType: "ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList",
@@ -1868,7 +1868,7 @@ export function imagebuilderDistributionConfigurationDistributionToHclTerraform(
       storageClassType: "ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationList",
     },
     ssm_parameter_configuration: {
-      value: cdktf.listMapperHcl(imagebuilderDistributionConfigurationDistributionSsmParameterConfigurationToHclTerraform, true)(struct!.ssmParameterConfiguration),
+      value: cdktn.listMapperHcl(imagebuilderDistributionConfigurationDistributionSsmParameterConfigurationToHclTerraform, true)(struct!.ssmParameterConfiguration),
       isBlock: true,
       type: "set",
       storageClassType: "ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList",
@@ -1879,9 +1879,9 @@ export function imagebuilderDistributionConfigurationDistributionToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderDistributionConfigurationDistributionOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderDistributionConfigurationDistributionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1889,11 +1889,11 @@ export class ImagebuilderDistributionConfigurationDistributionOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderDistributionConfigurationDistribution | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderDistributionConfigurationDistribution | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1934,7 +1934,7 @@ export class ImagebuilderDistributionConfigurationDistributionOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderDistributionConfigurationDistribution | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderDistributionConfigurationDistribution | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1947,7 +1947,7 @@ export class ImagebuilderDistributionConfigurationDistributionOutputReference ex
       this._s3ExportConfiguration.internalValue = undefined;
       this._ssmParameterConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1968,7 +1968,7 @@ export class ImagebuilderDistributionConfigurationDistributionOutputReference ex
   // license_configuration_arns - computed: false, optional: true, required: false
   private _licenseConfigurationArns?: string[]; 
   public get licenseConfigurationArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('license_configuration_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('license_configuration_arns'));
   }
   public set licenseConfigurationArns(value: string[]) {
     this._licenseConfigurationArns = value;
@@ -2031,7 +2031,7 @@ export class ImagebuilderDistributionConfigurationDistributionOutputReference ex
   public get fastLaunchConfiguration() {
     return this._fastLaunchConfiguration;
   }
-  public putFastLaunchConfiguration(value: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration[] | cdktf.IResolvable) {
+  public putFastLaunchConfiguration(value: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration[] | cdktn.IResolvable) {
     this._fastLaunchConfiguration.internalValue = value;
   }
   public resetFastLaunchConfiguration() {
@@ -2047,7 +2047,7 @@ export class ImagebuilderDistributionConfigurationDistributionOutputReference ex
   public get launchTemplateConfiguration() {
     return this._launchTemplateConfiguration;
   }
-  public putLaunchTemplateConfiguration(value: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration[] | cdktf.IResolvable) {
+  public putLaunchTemplateConfiguration(value: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration[] | cdktn.IResolvable) {
     this._launchTemplateConfiguration.internalValue = value;
   }
   public resetLaunchTemplateConfiguration() {
@@ -2079,7 +2079,7 @@ export class ImagebuilderDistributionConfigurationDistributionOutputReference ex
   public get ssmParameterConfiguration() {
     return this._ssmParameterConfiguration;
   }
-  public putSsmParameterConfiguration(value: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration[] | cdktf.IResolvable) {
+  public putSsmParameterConfiguration(value: ImagebuilderDistributionConfigurationDistributionSsmParameterConfiguration[] | cdktn.IResolvable) {
     this._ssmParameterConfiguration.internalValue = value;
   }
   public resetSsmParameterConfiguration() {
@@ -2091,15 +2091,15 @@ export class ImagebuilderDistributionConfigurationDistributionOutputReference ex
   }
 }
 
-export class ImagebuilderDistributionConfigurationDistributionList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderDistributionConfigurationDistribution[] | cdktf.IResolvable
+export class ImagebuilderDistributionConfigurationDistributionList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderDistributionConfigurationDistribution[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2114,7 +2114,7 @@ export class ImagebuilderDistributionConfigurationDistributionList extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration}
 */
-export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResource {
+export class ImagebuilderDistributionConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2125,14 +2125,14 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ImagebuilderDistributionConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ImagebuilderDistributionConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImagebuilderDistributionConfiguration to import
   * @param importFromId The id of the existing ImagebuilderDistributionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_distribution_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImagebuilderDistributionConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_distribution_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_distribution_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -2288,7 +2288,7 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
   public get distribution() {
     return this._distribution;
   }
-  public putDistribution(value: ImagebuilderDistributionConfigurationDistribution[] | cdktf.IResolvable) {
+  public putDistribution(value: ImagebuilderDistributionConfigurationDistribution[] | cdktn.IResolvable) {
     this._distribution.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2302,56 +2302,56 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      distribution: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionToTerraform, true)(this._distribution.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      distribution: cdktn.listMapper(imagebuilderDistributionConfigurationDistributionToTerraform, true)(this._distribution.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       distribution: {
-        value: cdktf.listMapperHcl(imagebuilderDistributionConfigurationDistributionToHclTerraform, true)(this._distribution.internalValue),
+        value: cdktn.listMapperHcl(imagebuilderDistributionConfigurationDistributionToHclTerraform, true)(this._distribution.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ImagebuilderDistributionConfigurationDistributionList",

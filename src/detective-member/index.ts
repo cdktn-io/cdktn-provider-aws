@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DetectiveMemberConfig extends cdktf.TerraformMetaArguments {
+export interface DetectiveMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_member#account_id DetectiveMember#account_id}
   */
@@ -19,7 +19,7 @@ export interface DetectiveMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_member#disable_email_notification DetectiveMember#disable_email_notification}
   */
-  readonly disableEmailNotification?: boolean | cdktf.IResolvable;
+  readonly disableEmailNotification?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_member#email_address DetectiveMember#email_address}
   */
@@ -50,7 +50,7 @@ export interface DetectiveMemberConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_member aws_detective_member}
 */
-export class DetectiveMember extends cdktf.TerraformResource {
+export class DetectiveMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class DetectiveMember extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DetectiveMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DetectiveMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DetectiveMember to import
   * @param importFromId The id of the existing DetectiveMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/detective_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DetectiveMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_detective_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_detective_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -130,11 +130,11 @@ export class DetectiveMember extends cdktf.TerraformResource {
   }
 
   // disable_email_notification - computed: false, optional: true, required: false
-  private _disableEmailNotification?: boolean | cdktf.IResolvable; 
+  private _disableEmailNotification?: boolean | cdktn.IResolvable; 
   public get disableEmailNotification() {
     return this.getBooleanAttribute('disable_email_notification');
   }
-  public set disableEmailNotification(value: boolean | cdktf.IResolvable) {
+  public set disableEmailNotification(value: boolean | cdktn.IResolvable) {
     this._disableEmailNotification = value;
   }
   public resetDisableEmailNotification() {
@@ -250,56 +250,56 @@ export class DetectiveMember extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      disable_email_notification: cdktf.booleanToTerraform(this._disableEmailNotification),
-      email_address: cdktf.stringToTerraform(this._emailAddress),
-      graph_arn: cdktf.stringToTerraform(this._graphArn),
-      id: cdktf.stringToTerraform(this._id),
-      message: cdktf.stringToTerraform(this._message),
-      region: cdktf.stringToTerraform(this._region),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      disable_email_notification: cdktn.booleanToTerraform(this._disableEmailNotification),
+      email_address: cdktn.stringToTerraform(this._emailAddress),
+      graph_arn: cdktn.stringToTerraform(this._graphArn),
+      id: cdktn.stringToTerraform(this._id),
+      message: cdktn.stringToTerraform(this._message),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_email_notification: {
-        value: cdktf.booleanToHclTerraform(this._disableEmailNotification),
+        value: cdktn.booleanToHclTerraform(this._disableEmailNotification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       email_address: {
-        value: cdktf.stringToHclTerraform(this._emailAddress),
+        value: cdktn.stringToHclTerraform(this._emailAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       graph_arn: {
-        value: cdktf.stringToHclTerraform(this._graphArn),
+        value: cdktn.stringToHclTerraform(this._graphArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       message: {
-        value: cdktf.stringToHclTerraform(this._message),
+        value: cdktn.stringToHclTerraform(this._message),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

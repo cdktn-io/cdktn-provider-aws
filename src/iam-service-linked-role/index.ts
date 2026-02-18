@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamServiceLinkedRoleConfig extends cdktf.TerraformMetaArguments {
+export interface IamServiceLinkedRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_service_linked_role#aws_service_name IamServiceLinkedRole#aws_service_name}
   */
@@ -44,7 +44,7 @@ export interface IamServiceLinkedRoleConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_service_linked_role aws_iam_service_linked_role}
 */
-export class IamServiceLinkedRole extends cdktf.TerraformResource {
+export class IamServiceLinkedRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class IamServiceLinkedRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamServiceLinkedRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamServiceLinkedRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamServiceLinkedRole to import
   * @param importFromId The id of the existing IamServiceLinkedRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_service_linked_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamServiceLinkedRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_service_linked_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_service_linked_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -228,49 +228,49 @@ export class IamServiceLinkedRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_service_name: cdktf.stringToTerraform(this._awsServiceName),
-      custom_suffix: cdktf.stringToTerraform(this._customSuffix),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      aws_service_name: cdktn.stringToTerraform(this._awsServiceName),
+      custom_suffix: cdktn.stringToTerraform(this._customSuffix),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_service_name: {
-        value: cdktf.stringToHclTerraform(this._awsServiceName),
+        value: cdktn.stringToHclTerraform(this._awsServiceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_suffix: {
-        value: cdktf.stringToHclTerraform(this._customSuffix),
+        value: cdktn.stringToHclTerraform(this._customSuffix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

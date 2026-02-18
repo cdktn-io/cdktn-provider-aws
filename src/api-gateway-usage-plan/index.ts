@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayUsagePlanConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayUsagePlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_usage_plan#description ApiGatewayUsagePlan#description}
   */
@@ -50,7 +50,7 @@ export interface ApiGatewayUsagePlanConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_usage_plan#api_stages ApiGatewayUsagePlan#api_stages}
   */
-  readonly apiStages?: ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable;
+  readonly apiStages?: ApiGatewayUsagePlanApiStages[] | cdktn.IResolvable;
   /**
   * quota_settings block
   *
@@ -79,39 +79,39 @@ export interface ApiGatewayUsagePlanApiStagesThrottle {
   readonly rateLimit?: number;
 }
 
-export function apiGatewayUsagePlanApiStagesThrottleToTerraform(struct?: ApiGatewayUsagePlanApiStagesThrottle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiGatewayUsagePlanApiStagesThrottleToTerraform(struct?: ApiGatewayUsagePlanApiStagesThrottle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    burst_limit: cdktf.numberToTerraform(struct!.burstLimit),
-    path: cdktf.stringToTerraform(struct!.path),
-    rate_limit: cdktf.numberToTerraform(struct!.rateLimit),
+    burst_limit: cdktn.numberToTerraform(struct!.burstLimit),
+    path: cdktn.stringToTerraform(struct!.path),
+    rate_limit: cdktn.numberToTerraform(struct!.rateLimit),
   }
 }
 
 
-export function apiGatewayUsagePlanApiStagesThrottleToHclTerraform(struct?: ApiGatewayUsagePlanApiStagesThrottle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiGatewayUsagePlanApiStagesThrottleToHclTerraform(struct?: ApiGatewayUsagePlanApiStagesThrottle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     burst_limit: {
-      value: cdktf.numberToHclTerraform(struct!.burstLimit),
+      value: cdktn.numberToHclTerraform(struct!.burstLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rate_limit: {
-      value: cdktf.numberToHclTerraform(struct!.rateLimit),
+      value: cdktn.numberToHclTerraform(struct!.rateLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -122,9 +122,9 @@ export function apiGatewayUsagePlanApiStagesThrottleToHclTerraform(struct?: ApiG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiGatewayUsagePlanApiStagesThrottleOutputReference extends cdktf.ComplexObject {
+export class ApiGatewayUsagePlanApiStagesThrottleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -132,11 +132,11 @@ export class ApiGatewayUsagePlanApiStagesThrottleOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiGatewayUsagePlanApiStagesThrottle | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiGatewayUsagePlanApiStagesThrottle | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -157,7 +157,7 @@ export class ApiGatewayUsagePlanApiStagesThrottleOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiGatewayUsagePlanApiStagesThrottle | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiGatewayUsagePlanApiStagesThrottle | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class ApiGatewayUsagePlanApiStagesThrottleOutputReference extends cdktf.C
       this._path = undefined;
       this._rateLimit = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -224,15 +224,15 @@ export class ApiGatewayUsagePlanApiStagesThrottleOutputReference extends cdktf.C
   }
 }
 
-export class ApiGatewayUsagePlanApiStagesThrottleList extends cdktf.ComplexList {
-  public internalValue? : ApiGatewayUsagePlanApiStagesThrottle[] | cdktf.IResolvable
+export class ApiGatewayUsagePlanApiStagesThrottleList extends cdktn.ComplexList {
+  public internalValue? : ApiGatewayUsagePlanApiStagesThrottle[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -257,42 +257,42 @@ export interface ApiGatewayUsagePlanApiStages {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_usage_plan#throttle ApiGatewayUsagePlan#throttle}
   */
-  readonly throttle?: ApiGatewayUsagePlanApiStagesThrottle[] | cdktf.IResolvable;
+  readonly throttle?: ApiGatewayUsagePlanApiStagesThrottle[] | cdktn.IResolvable;
 }
 
-export function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsagePlanApiStages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsagePlanApiStages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_id: cdktf.stringToTerraform(struct!.apiId),
-    stage: cdktf.stringToTerraform(struct!.stage),
-    throttle: cdktf.listMapper(apiGatewayUsagePlanApiStagesThrottleToTerraform, true)(struct!.throttle),
+    api_id: cdktn.stringToTerraform(struct!.apiId),
+    stage: cdktn.stringToTerraform(struct!.stage),
+    throttle: cdktn.listMapper(apiGatewayUsagePlanApiStagesThrottleToTerraform, true)(struct!.throttle),
   }
 }
 
 
-export function apiGatewayUsagePlanApiStagesToHclTerraform(struct?: ApiGatewayUsagePlanApiStages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiGatewayUsagePlanApiStagesToHclTerraform(struct?: ApiGatewayUsagePlanApiStages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_id: {
-      value: cdktf.stringToHclTerraform(struct!.apiId),
+      value: cdktn.stringToHclTerraform(struct!.apiId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage: {
-      value: cdktf.stringToHclTerraform(struct!.stage),
+      value: cdktn.stringToHclTerraform(struct!.stage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     throttle: {
-      value: cdktf.listMapperHcl(apiGatewayUsagePlanApiStagesThrottleToHclTerraform, true)(struct!.throttle),
+      value: cdktn.listMapperHcl(apiGatewayUsagePlanApiStagesThrottleToHclTerraform, true)(struct!.throttle),
       isBlock: true,
       type: "set",
       storageClassType: "ApiGatewayUsagePlanApiStagesThrottleList",
@@ -303,9 +303,9 @@ export function apiGatewayUsagePlanApiStagesToHclTerraform(struct?: ApiGatewayUs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiGatewayUsagePlanApiStagesOutputReference extends cdktf.ComplexObject {
+export class ApiGatewayUsagePlanApiStagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -313,11 +313,11 @@ export class ApiGatewayUsagePlanApiStagesOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiGatewayUsagePlanApiStages | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiGatewayUsagePlanApiStages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -338,7 +338,7 @@ export class ApiGatewayUsagePlanApiStagesOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiGatewayUsagePlanApiStages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiGatewayUsagePlanApiStages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -346,7 +346,7 @@ export class ApiGatewayUsagePlanApiStagesOutputReference extends cdktf.ComplexOb
       this._stage = undefined;
       this._throttle.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -390,7 +390,7 @@ export class ApiGatewayUsagePlanApiStagesOutputReference extends cdktf.ComplexOb
   public get throttle() {
     return this._throttle;
   }
-  public putThrottle(value: ApiGatewayUsagePlanApiStagesThrottle[] | cdktf.IResolvable) {
+  public putThrottle(value: ApiGatewayUsagePlanApiStagesThrottle[] | cdktn.IResolvable) {
     this._throttle.internalValue = value;
   }
   public resetThrottle() {
@@ -402,15 +402,15 @@ export class ApiGatewayUsagePlanApiStagesOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class ApiGatewayUsagePlanApiStagesList extends cdktf.ComplexList {
-  public internalValue? : ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable
+export class ApiGatewayUsagePlanApiStagesList extends cdktn.ComplexList {
+  public internalValue? : ApiGatewayUsagePlanApiStages[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -437,38 +437,38 @@ export interface ApiGatewayUsagePlanQuotaSettings {
 }
 
 export function apiGatewayUsagePlanQuotaSettingsToTerraform(struct?: ApiGatewayUsagePlanQuotaSettingsOutputReference | ApiGatewayUsagePlanQuotaSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    limit: cdktf.numberToTerraform(struct!.limit),
-    offset: cdktf.numberToTerraform(struct!.offset),
-    period: cdktf.stringToTerraform(struct!.period),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    offset: cdktn.numberToTerraform(struct!.offset),
+    period: cdktn.stringToTerraform(struct!.period),
   }
 }
 
 
 export function apiGatewayUsagePlanQuotaSettingsToHclTerraform(struct?: ApiGatewayUsagePlanQuotaSettingsOutputReference | ApiGatewayUsagePlanQuotaSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     offset: {
-      value: cdktf.numberToHclTerraform(struct!.offset),
+      value: cdktn.numberToHclTerraform(struct!.offset),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     period: {
-      value: cdktf.stringToHclTerraform(struct!.period),
+      value: cdktn.stringToHclTerraform(struct!.period),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -479,14 +479,14 @@ export function apiGatewayUsagePlanQuotaSettingsToHclTerraform(struct?: ApiGatew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiGatewayUsagePlanQuotaSettingsOutputReference extends cdktf.ComplexObject {
+export class ApiGatewayUsagePlanQuotaSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -577,31 +577,31 @@ export interface ApiGatewayUsagePlanThrottleSettings {
 }
 
 export function apiGatewayUsagePlanThrottleSettingsToTerraform(struct?: ApiGatewayUsagePlanThrottleSettingsOutputReference | ApiGatewayUsagePlanThrottleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    burst_limit: cdktf.numberToTerraform(struct!.burstLimit),
-    rate_limit: cdktf.numberToTerraform(struct!.rateLimit),
+    burst_limit: cdktn.numberToTerraform(struct!.burstLimit),
+    rate_limit: cdktn.numberToTerraform(struct!.rateLimit),
   }
 }
 
 
 export function apiGatewayUsagePlanThrottleSettingsToHclTerraform(struct?: ApiGatewayUsagePlanThrottleSettingsOutputReference | ApiGatewayUsagePlanThrottleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     burst_limit: {
-      value: cdktf.numberToHclTerraform(struct!.burstLimit),
+      value: cdktn.numberToHclTerraform(struct!.burstLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rate_limit: {
-      value: cdktf.numberToHclTerraform(struct!.rateLimit),
+      value: cdktn.numberToHclTerraform(struct!.rateLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -612,14 +612,14 @@ export function apiGatewayUsagePlanThrottleSettingsToHclTerraform(struct?: ApiGa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiGatewayUsagePlanThrottleSettingsOutputReference extends cdktf.ComplexObject {
+export class ApiGatewayUsagePlanThrottleSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -686,7 +686,7 @@ export class ApiGatewayUsagePlanThrottleSettingsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan}
 */
-export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
+export class ApiGatewayUsagePlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -697,14 +697,14 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayUsagePlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayUsagePlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayUsagePlan to import
   * @param importFromId The id of the existing ApiGatewayUsagePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_usage_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayUsagePlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_usage_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_usage_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -869,7 +869,7 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   public get apiStages() {
     return this._apiStages;
   }
-  public putApiStages(value: ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable) {
+  public putApiStages(value: ApiGatewayUsagePlanApiStages[] | cdktn.IResolvable) {
     this._apiStages.internalValue = value;
   }
   public resetApiStages() {
@@ -918,14 +918,14 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      product_code: cdktf.stringToTerraform(this._productCode),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      api_stages: cdktf.listMapper(apiGatewayUsagePlanApiStagesToTerraform, true)(this._apiStages.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      product_code: cdktn.stringToTerraform(this._productCode),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      api_stages: cdktn.listMapper(apiGatewayUsagePlanApiStagesToTerraform, true)(this._apiStages.internalValue),
       quota_settings: apiGatewayUsagePlanQuotaSettingsToTerraform(this._quotaSettings.internalValue),
       throttle_settings: apiGatewayUsagePlanThrottleSettingsToTerraform(this._throttleSettings.internalValue),
     };
@@ -934,49 +934,49 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       product_code: {
-        value: cdktf.stringToHclTerraform(this._productCode),
+        value: cdktn.stringToHclTerraform(this._productCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       api_stages: {
-        value: cdktf.listMapperHcl(apiGatewayUsagePlanApiStagesToHclTerraform, true)(this._apiStages.internalValue),
+        value: cdktn.listMapperHcl(apiGatewayUsagePlanApiStagesToHclTerraform, true)(this._apiStages.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApiGatewayUsagePlanApiStagesList",

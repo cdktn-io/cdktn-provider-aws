@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayRequestValidatorConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayRequestValidatorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_request_validator#id ApiGatewayRequestValidator#id}
   *
@@ -36,17 +36,17 @@ export interface ApiGatewayRequestValidatorConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_request_validator#validate_request_body ApiGatewayRequestValidator#validate_request_body}
   */
-  readonly validateRequestBody?: boolean | cdktf.IResolvable;
+  readonly validateRequestBody?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_request_validator#validate_request_parameters ApiGatewayRequestValidator#validate_request_parameters}
   */
-  readonly validateRequestParameters?: boolean | cdktf.IResolvable;
+  readonly validateRequestParameters?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_request_validator aws_api_gateway_request_validator}
 */
-export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
+export class ApiGatewayRequestValidator extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayRequestValidator resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayRequestValidator resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayRequestValidator to import
   * @param importFromId The id of the existing ApiGatewayRequestValidator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_request_validator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayRequestValidator to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_request_validator", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_request_validator", importId: importFromId, provider });
       }
 
   // ===========
@@ -165,11 +165,11 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   }
 
   // validate_request_body - computed: false, optional: true, required: false
-  private _validateRequestBody?: boolean | cdktf.IResolvable; 
+  private _validateRequestBody?: boolean | cdktn.IResolvable; 
   public get validateRequestBody() {
     return this.getBooleanAttribute('validate_request_body');
   }
-  public set validateRequestBody(value: boolean | cdktf.IResolvable) {
+  public set validateRequestBody(value: boolean | cdktn.IResolvable) {
     this._validateRequestBody = value;
   }
   public resetValidateRequestBody() {
@@ -181,11 +181,11 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   }
 
   // validate_request_parameters - computed: false, optional: true, required: false
-  private _validateRequestParameters?: boolean | cdktf.IResolvable; 
+  private _validateRequestParameters?: boolean | cdktn.IResolvable; 
   public get validateRequestParameters() {
     return this.getBooleanAttribute('validate_request_parameters');
   }
-  public set validateRequestParameters(value: boolean | cdktf.IResolvable) {
+  public set validateRequestParameters(value: boolean | cdktn.IResolvable) {
     this._validateRequestParameters = value;
   }
   public resetValidateRequestParameters() {
@@ -202,49 +202,49 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      validate_request_body: cdktf.booleanToTerraform(this._validateRequestBody),
-      validate_request_parameters: cdktf.booleanToTerraform(this._validateRequestParameters),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      rest_api_id: cdktn.stringToTerraform(this._restApiId),
+      validate_request_body: cdktn.booleanToTerraform(this._validateRequestBody),
+      validate_request_parameters: cdktn.booleanToTerraform(this._validateRequestParameters),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rest_api_id: {
-        value: cdktf.stringToHclTerraform(this._restApiId),
+        value: cdktn.stringToHclTerraform(this._restApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validate_request_body: {
-        value: cdktf.booleanToHclTerraform(this._validateRequestBody),
+        value: cdktn.booleanToHclTerraform(this._validateRequestBody),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       validate_request_parameters: {
-        value: cdktf.booleanToHclTerraform(this._validateRequestParameters),
+        value: cdktn.booleanToHclTerraform(this._validateRequestParameters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

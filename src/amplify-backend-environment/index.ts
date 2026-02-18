@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AmplifyBackendEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface AmplifyBackendEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_backend_environment#app_id AmplifyBackendEnvironment#app_id}
   */
@@ -46,7 +46,7 @@ export interface AmplifyBackendEnvironmentConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_backend_environment aws_amplify_backend_environment}
 */
-export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
+export class AmplifyBackendEnvironment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AmplifyBackendEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AmplifyBackendEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AmplifyBackendEnvironment to import
   * @param importFromId The id of the existing AmplifyBackendEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_backend_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AmplifyBackendEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_amplify_backend_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_amplify_backend_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -207,49 +207,49 @@ export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_id: cdktf.stringToTerraform(this._appId),
-      deployment_artifacts: cdktf.stringToTerraform(this._deploymentArtifacts),
-      environment_name: cdktf.stringToTerraform(this._environmentName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      stack_name: cdktf.stringToTerraform(this._stackName),
+      app_id: cdktn.stringToTerraform(this._appId),
+      deployment_artifacts: cdktn.stringToTerraform(this._deploymentArtifacts),
+      environment_name: cdktn.stringToTerraform(this._environmentName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      stack_name: cdktn.stringToTerraform(this._stackName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_id: {
-        value: cdktf.stringToHclTerraform(this._appId),
+        value: cdktn.stringToHclTerraform(this._appId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deployment_artifacts: {
-        value: cdktf.stringToHclTerraform(this._deploymentArtifacts),
+        value: cdktn.stringToHclTerraform(this._deploymentArtifacts),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       environment_name: {
-        value: cdktf.stringToHclTerraform(this._environmentName),
+        value: cdktn.stringToHclTerraform(this._environmentName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stack_name: {
-        value: cdktf.stringToHclTerraform(this._stackName),
+        value: cdktn.stringToHclTerraform(this._stackName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

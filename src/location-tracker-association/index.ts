@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LocationTrackerAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface LocationTrackerAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/location_tracker_association#consumer_arn LocationTrackerAssociation#consumer_arn}
   */
@@ -51,32 +51,32 @@ export interface LocationTrackerAssociationTimeouts {
   readonly delete?: string;
 }
 
-export function locationTrackerAssociationTimeoutsToTerraform(struct?: LocationTrackerAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function locationTrackerAssociationTimeoutsToTerraform(struct?: LocationTrackerAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function locationTrackerAssociationTimeoutsToHclTerraform(struct?: LocationTrackerAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function locationTrackerAssociationTimeoutsToHclTerraform(struct?: LocationTrackerAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -87,19 +87,19 @@ export function locationTrackerAssociationTimeoutsToHclTerraform(struct?: Locati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LocationTrackerAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LocationTrackerAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LocationTrackerAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LocationTrackerAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -116,14 +116,14 @@ export class LocationTrackerAssociationTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LocationTrackerAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LocationTrackerAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -171,7 +171,7 @@ export class LocationTrackerAssociationTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/location_tracker_association aws_location_tracker_association}
 */
-export class LocationTrackerAssociation extends cdktf.TerraformResource {
+export class LocationTrackerAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -182,14 +182,14 @@ export class LocationTrackerAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LocationTrackerAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LocationTrackerAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LocationTrackerAssociation to import
   * @param importFromId The id of the existing LocationTrackerAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/location_tracker_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LocationTrackerAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_location_tracker_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_location_tracker_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -310,10 +310,10 @@ export class LocationTrackerAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      consumer_arn: cdktf.stringToTerraform(this._consumerArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tracker_name: cdktf.stringToTerraform(this._trackerName),
+      consumer_arn: cdktn.stringToTerraform(this._consumerArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tracker_name: cdktn.stringToTerraform(this._trackerName),
       timeouts: locationTrackerAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -321,25 +321,25 @@ export class LocationTrackerAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       consumer_arn: {
-        value: cdktf.stringToHclTerraform(this._consumerArn),
+        value: cdktn.stringToHclTerraform(this._consumerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tracker_name: {
-        value: cdktf.stringToHclTerraform(this._trackerName),
+        value: cdktn.stringToHclTerraform(this._trackerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

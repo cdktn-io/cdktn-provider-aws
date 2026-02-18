@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsDirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsDirectoryServiceDirectoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/directory_service_directory#directory_id DataAwsDirectoryServiceDirectory#directory_id}
   */
@@ -38,8 +38,8 @@ export interface DataAwsDirectoryServiceDirectoryConnectSettings {
 }
 
 export function dataAwsDirectoryServiceDirectoryConnectSettingsToTerraform(struct?: DataAwsDirectoryServiceDirectoryConnectSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAwsDirectoryServiceDirectoryConnectSettingsToTerraform(struc
 
 
 export function dataAwsDirectoryServiceDirectoryConnectSettingsToHclTerraform(struct?: DataAwsDirectoryServiceDirectoryConnectSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAwsDirectoryServiceDirectoryConnectSettingsToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference extends cdktf.ComplexObject {
+export class DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -87,17 +87,17 @@ export class DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference exte
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // connect_ips - computed: true, optional: false, required: false
   public get connectIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('connect_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('connect_ips'));
   }
 
   // customer_dns_ips - computed: true, optional: false, required: false
   public get customerDnsIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('customer_dns_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('customer_dns_ips'));
   }
 
   // customer_username - computed: true, optional: false, required: false
@@ -107,7 +107,7 @@ export class DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference exte
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // vpc_id - computed: true, optional: false, required: false
@@ -116,14 +116,14 @@ export class DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference exte
   }
 }
 
-export class DataAwsDirectoryServiceDirectoryConnectSettingsList extends cdktf.ComplexList {
+export class DataAwsDirectoryServiceDirectoryConnectSettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -138,8 +138,8 @@ export interface DataAwsDirectoryServiceDirectoryRadiusSettings {
 }
 
 export function dataAwsDirectoryServiceDirectoryRadiusSettingsToTerraform(struct?: DataAwsDirectoryServiceDirectoryRadiusSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -148,8 +148,8 @@ export function dataAwsDirectoryServiceDirectoryRadiusSettingsToTerraform(struct
 
 
 export function dataAwsDirectoryServiceDirectoryRadiusSettingsToHclTerraform(struct?: DataAwsDirectoryServiceDirectoryRadiusSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -157,7 +157,7 @@ export function dataAwsDirectoryServiceDirectoryRadiusSettingsToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference extends cdktf.ComplexObject {
+export class DataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -166,7 +166,7 @@ export class DataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -207,7 +207,7 @@ export class DataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference exten
 
   // radius_servers - computed: true, optional: false, required: false
   public get radiusServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('radius_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('radius_servers'));
   }
 
   // radius_timeout - computed: true, optional: false, required: false
@@ -221,14 +221,14 @@ export class DataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference exten
   }
 }
 
-export class DataAwsDirectoryServiceDirectoryRadiusSettingsList extends cdktf.ComplexList {
+export class DataAwsDirectoryServiceDirectoryRadiusSettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -243,8 +243,8 @@ export interface DataAwsDirectoryServiceDirectoryVpcSettings {
 }
 
 export function dataAwsDirectoryServiceDirectoryVpcSettingsToTerraform(struct?: DataAwsDirectoryServiceDirectoryVpcSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -253,8 +253,8 @@ export function dataAwsDirectoryServiceDirectoryVpcSettingsToTerraform(struct?: 
 
 
 export function dataAwsDirectoryServiceDirectoryVpcSettingsToHclTerraform(struct?: DataAwsDirectoryServiceDirectoryVpcSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -262,7 +262,7 @@ export function dataAwsDirectoryServiceDirectoryVpcSettingsToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.ComplexObject {
+export class DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -271,7 +271,7 @@ export class DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -292,12 +292,12 @@ export class DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference extends 
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // vpc_id - computed: true, optional: false, required: false
@@ -306,14 +306,14 @@ export class DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference extends 
   }
 }
 
-export class DataAwsDirectoryServiceDirectoryVpcSettingsList extends cdktf.ComplexList {
+export class DataAwsDirectoryServiceDirectoryVpcSettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -328,7 +328,7 @@ export class DataAwsDirectoryServiceDirectoryVpcSettingsList extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/directory_service_directory aws_directory_service_directory}
 */
-export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource {
+export class DataAwsDirectoryServiceDirectory extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -339,14 +339,14 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsDirectoryServiceDirectory resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsDirectoryServiceDirectory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDirectoryServiceDirectory to import
   * @param importFromId The id of the existing DataAwsDirectoryServiceDirectory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/directory_service_directory#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDirectoryServiceDirectory to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_directory", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_directory", importId: importFromId, provider });
       }
 
   // ===========
@@ -422,7 +422,7 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
 
   // dns_ip_addresses - computed: true, optional: false, required: false
   public get dnsIpAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
   }
 
   // edition - computed: true, optional: false, required: false
@@ -526,35 +526,35 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

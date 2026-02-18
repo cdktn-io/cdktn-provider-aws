@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TimestreaminfluxdbDbClusterConfig extends cdktf.TerraformMetaArguments {
+export interface TimestreaminfluxdbDbClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * The amount of storage to allocate for your DB storage type in GiB (gibibytes).
   * 					This field is forbidden for InfluxDB V3 clusters (when using an InfluxDB V3 db parameter group).
@@ -116,7 +116,7 @@ export interface TimestreaminfluxdbDbClusterConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreaminfluxdb_db_cluster#publicly_accessible TimestreaminfluxdbDbCluster#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
+  readonly publiclyAccessible?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -156,7 +156,7 @@ export interface TimestreaminfluxdbDbClusterConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreaminfluxdb_db_cluster#log_delivery_configuration TimestreaminfluxdbDbCluster#log_delivery_configuration}
   */
-  readonly logDeliveryConfiguration?: TimestreaminfluxdbDbClusterLogDeliveryConfiguration[] | cdktf.IResolvable;
+  readonly logDeliveryConfiguration?: TimestreaminfluxdbDbClusterLogDeliveryConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -176,35 +176,35 @@ export interface TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configurat
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreaminfluxdb_db_cluster#enabled TimestreaminfluxdbDbCluster#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
-export function timestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationToTerraform(struct?: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationToTerraform(struct?: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
-export function timestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationToHclTerraform(struct?: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationToHclTerraform(struct?: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -215,9 +215,9 @@ export function timestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -225,11 +225,11 @@ export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -246,14 +246,14 @@ export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucketName = undefined;
       this._enabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -279,11 +279,11 @@ export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationO
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -292,15 +292,15 @@ export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationO
   }
 }
 
-export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationList extends cdktf.ComplexList {
-  public internalValue? : TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration[] | cdktf.IResolvable
+export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationList extends cdktn.ComplexList {
+  public internalValue? : TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -317,28 +317,28 @@ export interface TimestreaminfluxdbDbClusterLogDeliveryConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreaminfluxdb_db_cluster#s3_configuration TimestreaminfluxdbDbCluster#s3_configuration}
   */
-  readonly s3Configuration?: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration[] | cdktf.IResolvable;
+  readonly s3Configuration?: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration[] | cdktn.IResolvable;
 }
 
-export function timestreaminfluxdbDbClusterLogDeliveryConfigurationToTerraform(struct?: TimestreaminfluxdbDbClusterLogDeliveryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreaminfluxdbDbClusterLogDeliveryConfigurationToTerraform(struct?: TimestreaminfluxdbDbClusterLogDeliveryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_configuration: cdktf.listMapper(timestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationToTerraform, true)(struct!.s3Configuration),
+    s3_configuration: cdktn.listMapper(timestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationToTerraform, true)(struct!.s3Configuration),
   }
 }
 
 
-export function timestreaminfluxdbDbClusterLogDeliveryConfigurationToHclTerraform(struct?: TimestreaminfluxdbDbClusterLogDeliveryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreaminfluxdbDbClusterLogDeliveryConfigurationToHclTerraform(struct?: TimestreaminfluxdbDbClusterLogDeliveryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_configuration: {
-      value: cdktf.listMapperHcl(timestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationToHclTerraform, true)(struct!.s3Configuration),
+      value: cdktn.listMapperHcl(timestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationToHclTerraform, true)(struct!.s3Configuration),
       isBlock: true,
       type: "list",
       storageClassType: "TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationList",
@@ -349,9 +349,9 @@ export function timestreaminfluxdbDbClusterLogDeliveryConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationOutputReference extends cdktf.ComplexObject {
+export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -359,11 +359,11 @@ export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TimestreaminfluxdbDbClusterLogDeliveryConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreaminfluxdbDbClusterLogDeliveryConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -376,13 +376,13 @@ export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreaminfluxdbDbClusterLogDeliveryConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreaminfluxdbDbClusterLogDeliveryConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3Configuration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -398,7 +398,7 @@ export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationOutputReference 
   public get s3Configuration() {
     return this._s3Configuration;
   }
-  public putS3Configuration(value: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration[] | cdktf.IResolvable) {
+  public putS3Configuration(value: TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configuration[] | cdktn.IResolvable) {
     this._s3Configuration.internalValue = value;
   }
   public resetS3Configuration() {
@@ -410,15 +410,15 @@ export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationOutputReference 
   }
 }
 
-export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationList extends cdktf.ComplexList {
-  public internalValue? : TimestreaminfluxdbDbClusterLogDeliveryConfiguration[] | cdktf.IResolvable
+export class TimestreaminfluxdbDbClusterLogDeliveryConfigurationList extends cdktn.ComplexList {
+  public internalValue? : TimestreaminfluxdbDbClusterLogDeliveryConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -450,39 +450,39 @@ export interface TimestreaminfluxdbDbClusterTimeouts {
   readonly update?: string;
 }
 
-export function timestreaminfluxdbDbClusterTimeoutsToTerraform(struct?: TimestreaminfluxdbDbClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreaminfluxdbDbClusterTimeoutsToTerraform(struct?: TimestreaminfluxdbDbClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function timestreaminfluxdbDbClusterTimeoutsToHclTerraform(struct?: TimestreaminfluxdbDbClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function timestreaminfluxdbDbClusterTimeoutsToHclTerraform(struct?: TimestreaminfluxdbDbClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -493,19 +493,19 @@ export function timestreaminfluxdbDbClusterTimeoutsToHclTerraform(struct?: Times
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TimestreaminfluxdbDbClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TimestreaminfluxdbDbClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TimestreaminfluxdbDbClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TimestreaminfluxdbDbClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -526,7 +526,7 @@ export class TimestreaminfluxdbDbClusterTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TimestreaminfluxdbDbClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TimestreaminfluxdbDbClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -534,7 +534,7 @@ export class TimestreaminfluxdbDbClusterTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -599,7 +599,7 @@ export class TimestreaminfluxdbDbClusterTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreaminfluxdb_db_cluster aws_timestreaminfluxdb_db_cluster}
 */
-export class TimestreaminfluxdbDbCluster extends cdktf.TerraformResource {
+export class TimestreaminfluxdbDbCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -610,14 +610,14 @@ export class TimestreaminfluxdbDbCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TimestreaminfluxdbDbCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TimestreaminfluxdbDbCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TimestreaminfluxdbDbCluster to import
   * @param importFromId The id of the existing TimestreaminfluxdbDbCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/timestreaminfluxdb_db_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TimestreaminfluxdbDbCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_timestreaminfluxdb_db_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_timestreaminfluxdb_db_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -885,11 +885,11 @@ export class TimestreaminfluxdbDbCluster extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: true, optional: true, required: false
-  private _publiclyAccessible?: boolean | cdktf.IResolvable; 
+  private _publiclyAccessible?: boolean | cdktn.IResolvable; 
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
+  public set publiclyAccessible(value: boolean | cdktn.IResolvable) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -938,7 +938,7 @@ export class TimestreaminfluxdbDbCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -962,7 +962,7 @@ export class TimestreaminfluxdbDbCluster extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: false, optional: false, required: true
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -975,7 +975,7 @@ export class TimestreaminfluxdbDbCluster extends cdktf.TerraformResource {
   // vpc_subnet_ids - computed: false, optional: false, required: true
   private _vpcSubnetIds?: string[]; 
   public get vpcSubnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_subnet_ids'));
   }
   public set vpcSubnetIds(value: string[]) {
     this._vpcSubnetIds = value;
@@ -990,7 +990,7 @@ export class TimestreaminfluxdbDbCluster extends cdktf.TerraformResource {
   public get logDeliveryConfiguration() {
     return this._logDeliveryConfiguration;
   }
-  public putLogDeliveryConfiguration(value: TimestreaminfluxdbDbClusterLogDeliveryConfiguration[] | cdktf.IResolvable) {
+  public putLogDeliveryConfiguration(value: TimestreaminfluxdbDbClusterLogDeliveryConfiguration[] | cdktn.IResolvable) {
     this._logDeliveryConfiguration.internalValue = value;
   }
   public resetLogDeliveryConfiguration() {
@@ -1023,25 +1023,25 @@ export class TimestreaminfluxdbDbCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocated_storage: cdktf.numberToTerraform(this._allocatedStorage),
-      bucket: cdktf.stringToTerraform(this._bucket),
-      db_instance_type: cdktf.stringToTerraform(this._dbInstanceType),
-      db_parameter_group_identifier: cdktf.stringToTerraform(this._dbParameterGroupIdentifier),
-      db_storage_type: cdktf.stringToTerraform(this._dbStorageType),
-      deployment_type: cdktf.stringToTerraform(this._deploymentType),
-      failover_mode: cdktf.stringToTerraform(this._failoverMode),
-      name: cdktf.stringToTerraform(this._name),
-      network_type: cdktf.stringToTerraform(this._networkType),
-      organization: cdktf.stringToTerraform(this._organization),
-      password: cdktf.stringToTerraform(this._password),
-      port: cdktf.numberToTerraform(this._port),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      username: cdktf.stringToTerraform(this._username),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
-      vpc_subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSubnetIds),
-      log_delivery_configuration: cdktf.listMapper(timestreaminfluxdbDbClusterLogDeliveryConfigurationToTerraform, true)(this._logDeliveryConfiguration.internalValue),
+      allocated_storage: cdktn.numberToTerraform(this._allocatedStorage),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      db_instance_type: cdktn.stringToTerraform(this._dbInstanceType),
+      db_parameter_group_identifier: cdktn.stringToTerraform(this._dbParameterGroupIdentifier),
+      db_storage_type: cdktn.stringToTerraform(this._dbStorageType),
+      deployment_type: cdktn.stringToTerraform(this._deploymentType),
+      failover_mode: cdktn.stringToTerraform(this._failoverMode),
+      name: cdktn.stringToTerraform(this._name),
+      network_type: cdktn.stringToTerraform(this._networkType),
+      organization: cdktn.stringToTerraform(this._organization),
+      password: cdktn.stringToTerraform(this._password),
+      port: cdktn.numberToTerraform(this._port),
+      publicly_accessible: cdktn.booleanToTerraform(this._publiclyAccessible),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      username: cdktn.stringToTerraform(this._username),
+      vpc_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcSecurityGroupIds),
+      vpc_subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcSubnetIds),
+      log_delivery_configuration: cdktn.listMapper(timestreaminfluxdbDbClusterLogDeliveryConfigurationToTerraform, true)(this._logDeliveryConfiguration.internalValue),
       timeouts: timestreaminfluxdbDbClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1049,115 +1049,115 @@ export class TimestreaminfluxdbDbCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allocated_storage: {
-        value: cdktf.numberToHclTerraform(this._allocatedStorage),
+        value: cdktn.numberToHclTerraform(this._allocatedStorage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_instance_type: {
-        value: cdktf.stringToHclTerraform(this._dbInstanceType),
+        value: cdktn.stringToHclTerraform(this._dbInstanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_parameter_group_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbParameterGroupIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbParameterGroupIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_storage_type: {
-        value: cdktf.stringToHclTerraform(this._dbStorageType),
+        value: cdktn.stringToHclTerraform(this._dbStorageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deployment_type: {
-        value: cdktf.stringToHclTerraform(this._deploymentType),
+        value: cdktn.stringToHclTerraform(this._deploymentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       failover_mode: {
-        value: cdktf.stringToHclTerraform(this._failoverMode),
+        value: cdktn.stringToHclTerraform(this._failoverMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_type: {
-        value: cdktf.stringToHclTerraform(this._networkType),
+        value: cdktn.stringToHclTerraform(this._networkType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization: {
-        value: cdktf.stringToHclTerraform(this._organization),
+        value: cdktn.stringToHclTerraform(this._organization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       publicly_accessible: {
-        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        value: cdktn.booleanToHclTerraform(this._publiclyAccessible),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       vpc_subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSubnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcSubnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       log_delivery_configuration: {
-        value: cdktf.listMapperHcl(timestreaminfluxdbDbClusterLogDeliveryConfigurationToHclTerraform, true)(this._logDeliveryConfiguration.internalValue),
+        value: cdktn.listMapperHcl(timestreaminfluxdbDbClusterLogDeliveryConfigurationToHclTerraform, true)(this._logDeliveryConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TimestreaminfluxdbDbClusterLogDeliveryConfigurationList",

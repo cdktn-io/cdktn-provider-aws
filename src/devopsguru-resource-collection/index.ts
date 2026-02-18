@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DevopsguruResourceCollectionConfig extends cdktf.TerraformMetaArguments {
+export interface DevopsguruResourceCollectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,13 +27,13 @@ export interface DevopsguruResourceCollectionConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_resource_collection#cloudformation DevopsguruResourceCollection#cloudformation}
   */
-  readonly cloudformation?: DevopsguruResourceCollectionCloudformation[] | cdktf.IResolvable;
+  readonly cloudformation?: DevopsguruResourceCollectionCloudformation[] | cdktn.IResolvable;
   /**
   * tags block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_resource_collection#tags DevopsguruResourceCollection#tags}
   */
-  readonly tags?: DevopsguruResourceCollectionTags[] | cdktf.IResolvable;
+  readonly tags?: DevopsguruResourceCollectionTags[] | cdktn.IResolvable;
 }
 export interface DevopsguruResourceCollectionCloudformation {
   /**
@@ -42,25 +42,25 @@ export interface DevopsguruResourceCollectionCloudformation {
   readonly stackNames: string[];
 }
 
-export function devopsguruResourceCollectionCloudformationToTerraform(struct?: DevopsguruResourceCollectionCloudformation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruResourceCollectionCloudformationToTerraform(struct?: DevopsguruResourceCollectionCloudformation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stack_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.stackNames),
+    stack_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.stackNames),
   }
 }
 
 
-export function devopsguruResourceCollectionCloudformationToHclTerraform(struct?: DevopsguruResourceCollectionCloudformation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruResourceCollectionCloudformationToHclTerraform(struct?: DevopsguruResourceCollectionCloudformation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     stack_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.stackNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.stackNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -71,9 +71,9 @@ export function devopsguruResourceCollectionCloudformationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevopsguruResourceCollectionCloudformationOutputReference extends cdktf.ComplexObject {
+export class DevopsguruResourceCollectionCloudformationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -81,11 +81,11 @@ export class DevopsguruResourceCollectionCloudformationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevopsguruResourceCollectionCloudformation | cdktf.IResolvable | undefined {
+  public get internalValue(): DevopsguruResourceCollectionCloudformation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -98,13 +98,13 @@ export class DevopsguruResourceCollectionCloudformationOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevopsguruResourceCollectionCloudformation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevopsguruResourceCollectionCloudformation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._stackNames = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -129,15 +129,15 @@ export class DevopsguruResourceCollectionCloudformationOutputReference extends c
   }
 }
 
-export class DevopsguruResourceCollectionCloudformationList extends cdktf.ComplexList {
-  public internalValue? : DevopsguruResourceCollectionCloudformation[] | cdktf.IResolvable
+export class DevopsguruResourceCollectionCloudformationList extends cdktn.ComplexList {
+  public internalValue? : DevopsguruResourceCollectionCloudformation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -159,32 +159,32 @@ export interface DevopsguruResourceCollectionTags {
   readonly tagValues: string[];
 }
 
-export function devopsguruResourceCollectionTagsToTerraform(struct?: DevopsguruResourceCollectionTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruResourceCollectionTagsToTerraform(struct?: DevopsguruResourceCollectionTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_boundary_key: cdktf.stringToTerraform(struct!.appBoundaryKey),
-    tag_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagValues),
+    app_boundary_key: cdktn.stringToTerraform(struct!.appBoundaryKey),
+    tag_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tagValues),
   }
 }
 
 
-export function devopsguruResourceCollectionTagsToHclTerraform(struct?: DevopsguruResourceCollectionTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruResourceCollectionTagsToHclTerraform(struct?: DevopsguruResourceCollectionTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_boundary_key: {
-      value: cdktf.stringToHclTerraform(struct!.appBoundaryKey),
+      value: cdktn.stringToHclTerraform(struct!.appBoundaryKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tagValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -195,9 +195,9 @@ export function devopsguruResourceCollectionTagsToHclTerraform(struct?: Devopsgu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevopsguruResourceCollectionTagsOutputReference extends cdktf.ComplexObject {
+export class DevopsguruResourceCollectionTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -205,11 +205,11 @@ export class DevopsguruResourceCollectionTagsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevopsguruResourceCollectionTags | cdktf.IResolvable | undefined {
+  public get internalValue(): DevopsguruResourceCollectionTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -226,14 +226,14 @@ export class DevopsguruResourceCollectionTagsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevopsguruResourceCollectionTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevopsguruResourceCollectionTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._appBoundaryKey = undefined;
       this._tagValues = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -272,15 +272,15 @@ export class DevopsguruResourceCollectionTagsOutputReference extends cdktf.Compl
   }
 }
 
-export class DevopsguruResourceCollectionTagsList extends cdktf.ComplexList {
-  public internalValue? : DevopsguruResourceCollectionTags[] | cdktf.IResolvable
+export class DevopsguruResourceCollectionTagsList extends cdktn.ComplexList {
+  public internalValue? : DevopsguruResourceCollectionTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -295,7 +295,7 @@ export class DevopsguruResourceCollectionTagsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection}
 */
-export class DevopsguruResourceCollection extends cdktf.TerraformResource {
+export class DevopsguruResourceCollection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -306,14 +306,14 @@ export class DevopsguruResourceCollection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DevopsguruResourceCollection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DevopsguruResourceCollection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruResourceCollection to import
   * @param importFromId The id of the existing DevopsguruResourceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_resource_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruResourceCollection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_devopsguru_resource_collection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_devopsguru_resource_collection", importId: importFromId, provider });
       }
 
   // ===========
@@ -392,7 +392,7 @@ export class DevopsguruResourceCollection extends cdktf.TerraformResource {
   public get cloudformation() {
     return this._cloudformation;
   }
-  public putCloudformation(value: DevopsguruResourceCollectionCloudformation[] | cdktf.IResolvable) {
+  public putCloudformation(value: DevopsguruResourceCollectionCloudformation[] | cdktn.IResolvable) {
     this._cloudformation.internalValue = value;
   }
   public resetCloudformation() {
@@ -408,7 +408,7 @@ export class DevopsguruResourceCollection extends cdktf.TerraformResource {
   public get tags() {
     return this._tags;
   }
-  public putTags(value: DevopsguruResourceCollectionTags[] | cdktf.IResolvable) {
+  public putTags(value: DevopsguruResourceCollectionTags[] | cdktn.IResolvable) {
     this._tags.internalValue = value;
   }
   public resetTags() {
@@ -425,35 +425,35 @@ export class DevopsguruResourceCollection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      type: cdktf.stringToTerraform(this._type),
-      cloudformation: cdktf.listMapper(devopsguruResourceCollectionCloudformationToTerraform, true)(this._cloudformation.internalValue),
-      tags: cdktf.listMapper(devopsguruResourceCollectionTagsToTerraform, true)(this._tags.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      type: cdktn.stringToTerraform(this._type),
+      cloudformation: cdktn.listMapper(devopsguruResourceCollectionCloudformationToTerraform, true)(this._cloudformation.internalValue),
+      tags: cdktn.listMapper(devopsguruResourceCollectionTagsToTerraform, true)(this._tags.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloudformation: {
-        value: cdktf.listMapperHcl(devopsguruResourceCollectionCloudformationToHclTerraform, true)(this._cloudformation.internalValue),
+        value: cdktn.listMapperHcl(devopsguruResourceCollectionCloudformationToHclTerraform, true)(this._cloudformation.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DevopsguruResourceCollectionCloudformationList",
       },
       tags: {
-        value: cdktf.listMapperHcl(devopsguruResourceCollectionTagsToHclTerraform, true)(this._tags.internalValue),
+        value: cdktn.listMapperHcl(devopsguruResourceCollectionTagsToHclTerraform, true)(this._tags.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DevopsguruResourceCollectionTagsList",

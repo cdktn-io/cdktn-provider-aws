@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CeAnomalySubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface CeAnomalySubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_anomaly_subscription#account_id CeAnomalySubscription#account_id}
   */
@@ -48,7 +48,7 @@ export interface CeAnomalySubscriptionConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_anomaly_subscription#subscriber CeAnomalySubscription#subscriber}
   */
-  readonly subscriber: CeAnomalySubscriptionSubscriber[] | cdktf.IResolvable;
+  readonly subscriber: CeAnomalySubscriptionSubscriber[] | cdktn.IResolvable;
   /**
   * threshold_expression block
   *
@@ -67,32 +67,32 @@ export interface CeAnomalySubscriptionSubscriber {
   readonly type: string;
 }
 
-export function ceAnomalySubscriptionSubscriberToTerraform(struct?: CeAnomalySubscriptionSubscriber | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceAnomalySubscriptionSubscriberToTerraform(struct?: CeAnomalySubscriptionSubscriber | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    type: cdktf.stringToTerraform(struct!.type),
+    address: cdktn.stringToTerraform(struct!.address),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function ceAnomalySubscriptionSubscriberToHclTerraform(struct?: CeAnomalySubscriptionSubscriber | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceAnomalySubscriptionSubscriberToHclTerraform(struct?: CeAnomalySubscriptionSubscriber | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,9 +103,9 @@ export function ceAnomalySubscriptionSubscriberToHclTerraform(struct?: CeAnomaly
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionSubscriberOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionSubscriberOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -113,11 +113,11 @@ export class CeAnomalySubscriptionSubscriberOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeAnomalySubscriptionSubscriber | cdktf.IResolvable | undefined {
+  public get internalValue(): CeAnomalySubscriptionSubscriber | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -134,14 +134,14 @@ export class CeAnomalySubscriptionSubscriberOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeAnomalySubscriptionSubscriber | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeAnomalySubscriptionSubscriber | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._address = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,15 +180,15 @@ export class CeAnomalySubscriptionSubscriberOutputReference extends cdktf.Comple
   }
 }
 
-export class CeAnomalySubscriptionSubscriberList extends cdktf.ComplexList {
-  public internalValue? : CeAnomalySubscriptionSubscriber[] | cdktf.IResolvable
+export class CeAnomalySubscriptionSubscriberList extends cdktn.ComplexList {
+  public internalValue? : CeAnomalySubscriptionSubscriber[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -215,38 +215,38 @@ export interface CeAnomalySubscriptionThresholdExpressionAndCostCategory {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionAndCostCategoryToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionAndCostCategoryToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -257,14 +257,14 @@ export function ceAnomalySubscriptionThresholdExpressionAndCostCategoryToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -320,7 +320,7 @@ export class CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputRefere
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -336,7 +336,7 @@ export class CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputRefere
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -365,38 +365,38 @@ export interface CeAnomalySubscriptionThresholdExpressionAndDimension {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionAndDimensionToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionAndDimensionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -407,14 +407,14 @@ export function ceAnomalySubscriptionThresholdExpressionAndDimensionToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -470,7 +470,7 @@ export class CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -486,7 +486,7 @@ export class CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -515,38 +515,38 @@ export interface CeAnomalySubscriptionThresholdExpressionAndTags {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionAndTagsToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference | CeAnomalySubscriptionThresholdExpressionAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionAndTagsToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference | CeAnomalySubscriptionThresholdExpressionAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -557,14 +557,14 @@ export function ceAnomalySubscriptionThresholdExpressionAndTagsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -620,7 +620,7 @@ export class CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference exte
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -636,7 +636,7 @@ export class CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference exte
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -670,9 +670,9 @@ export interface CeAnomalySubscriptionThresholdExpressionAnd {
   readonly tags?: CeAnomalySubscriptionThresholdExpressionAndTags;
 }
 
-export function ceAnomalySubscriptionThresholdExpressionAndToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceAnomalySubscriptionThresholdExpressionAndToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -683,9 +683,9 @@ export function ceAnomalySubscriptionThresholdExpressionAndToTerraform(struct?: 
 }
 
 
-export function ceAnomalySubscriptionThresholdExpressionAndToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceAnomalySubscriptionThresholdExpressionAndToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -713,9 +713,9 @@ export function ceAnomalySubscriptionThresholdExpressionAndToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionAndOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -723,11 +723,11 @@ export class CeAnomalySubscriptionThresholdExpressionAndOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeAnomalySubscriptionThresholdExpressionAnd | cdktf.IResolvable | undefined {
+  public get internalValue(): CeAnomalySubscriptionThresholdExpressionAnd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -748,7 +748,7 @@ export class CeAnomalySubscriptionThresholdExpressionAndOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeAnomalySubscriptionThresholdExpressionAnd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeAnomalySubscriptionThresholdExpressionAnd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -756,7 +756,7 @@ export class CeAnomalySubscriptionThresholdExpressionAndOutputReference extends 
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -818,15 +818,15 @@ export class CeAnomalySubscriptionThresholdExpressionAndOutputReference extends 
   }
 }
 
-export class CeAnomalySubscriptionThresholdExpressionAndList extends cdktf.ComplexList {
-  public internalValue? : CeAnomalySubscriptionThresholdExpressionAnd[] | cdktf.IResolvable
+export class CeAnomalySubscriptionThresholdExpressionAndList extends cdktn.ComplexList {
+  public internalValue? : CeAnomalySubscriptionThresholdExpressionAnd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -853,38 +853,38 @@ export interface CeAnomalySubscriptionThresholdExpressionCostCategory {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionCostCategoryToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionCostCategoryToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -895,14 +895,14 @@ export function ceAnomalySubscriptionThresholdExpressionCostCategoryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -958,7 +958,7 @@ export class CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -974,7 +974,7 @@ export class CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1003,38 +1003,38 @@ export interface CeAnomalySubscriptionThresholdExpressionDimension {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionDimensionToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionDimensionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1045,14 +1045,14 @@ export function ceAnomalySubscriptionThresholdExpressionDimensionToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionDimensionOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1108,7 +1108,7 @@ export class CeAnomalySubscriptionThresholdExpressionDimensionOutputReference ex
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1124,7 +1124,7 @@ export class CeAnomalySubscriptionThresholdExpressionDimensionOutputReference ex
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1153,38 +1153,38 @@ export interface CeAnomalySubscriptionThresholdExpressionNotCostCategory {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionNotCostCategoryToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionNotCostCategoryToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1195,14 +1195,14 @@ export function ceAnomalySubscriptionThresholdExpressionNotCostCategoryToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1258,7 +1258,7 @@ export class CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputRefere
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1274,7 +1274,7 @@ export class CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputRefere
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1303,38 +1303,38 @@ export interface CeAnomalySubscriptionThresholdExpressionNotDimension {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionNotDimensionToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionNotDimensionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1345,14 +1345,14 @@ export function ceAnomalySubscriptionThresholdExpressionNotDimensionToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1408,7 +1408,7 @@ export class CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1424,7 +1424,7 @@ export class CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1453,38 +1453,38 @@ export interface CeAnomalySubscriptionThresholdExpressionNotTags {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionNotTagsToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference | CeAnomalySubscriptionThresholdExpressionNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionNotTagsToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference | CeAnomalySubscriptionThresholdExpressionNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1495,14 +1495,14 @@ export function ceAnomalySubscriptionThresholdExpressionNotTagsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1558,7 +1558,7 @@ export class CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference exte
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1574,7 +1574,7 @@ export class CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference exte
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1609,8 +1609,8 @@ export interface CeAnomalySubscriptionThresholdExpressionNot {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionNotToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotOutputReference | CeAnomalySubscriptionThresholdExpressionNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1622,8 +1622,8 @@ export function ceAnomalySubscriptionThresholdExpressionNotToTerraform(struct?: 
 
 
 export function ceAnomalySubscriptionThresholdExpressionNotToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionNotOutputReference | CeAnomalySubscriptionThresholdExpressionNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1651,14 +1651,14 @@ export function ceAnomalySubscriptionThresholdExpressionNotToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionNotOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1759,38 +1759,38 @@ export interface CeAnomalySubscriptionThresholdExpressionOrCostCategory {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionOrCostCategoryToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionOrCostCategoryToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference | CeAnomalySubscriptionThresholdExpressionOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1801,14 +1801,14 @@ export function ceAnomalySubscriptionThresholdExpressionOrCostCategoryToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1864,7 +1864,7 @@ export class CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReferen
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -1880,7 +1880,7 @@ export class CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReferen
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1909,38 +1909,38 @@ export interface CeAnomalySubscriptionThresholdExpressionOrDimension {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionOrDimensionToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionOrDimensionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference | CeAnomalySubscriptionThresholdExpressionOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1951,14 +1951,14 @@ export function ceAnomalySubscriptionThresholdExpressionOrDimensionToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2014,7 +2014,7 @@ export class CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference 
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -2030,7 +2030,7 @@ export class CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference 
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2059,38 +2059,38 @@ export interface CeAnomalySubscriptionThresholdExpressionOrTags {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionOrTagsToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference | CeAnomalySubscriptionThresholdExpressionOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionOrTagsToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference | CeAnomalySubscriptionThresholdExpressionOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2101,14 +2101,14 @@ export function ceAnomalySubscriptionThresholdExpressionOrTagsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2164,7 +2164,7 @@ export class CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference exten
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -2180,7 +2180,7 @@ export class CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference exten
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2214,9 +2214,9 @@ export interface CeAnomalySubscriptionThresholdExpressionOr {
   readonly tags?: CeAnomalySubscriptionThresholdExpressionOrTags;
 }
 
-export function ceAnomalySubscriptionThresholdExpressionOrToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceAnomalySubscriptionThresholdExpressionOrToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2227,9 +2227,9 @@ export function ceAnomalySubscriptionThresholdExpressionOrToTerraform(struct?: C
 }
 
 
-export function ceAnomalySubscriptionThresholdExpressionOrToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ceAnomalySubscriptionThresholdExpressionOrToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2257,9 +2257,9 @@ export function ceAnomalySubscriptionThresholdExpressionOrToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionOrOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2267,11 +2267,11 @@ export class CeAnomalySubscriptionThresholdExpressionOrOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CeAnomalySubscriptionThresholdExpressionOr | cdktf.IResolvable | undefined {
+  public get internalValue(): CeAnomalySubscriptionThresholdExpressionOr | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2292,7 +2292,7 @@ export class CeAnomalySubscriptionThresholdExpressionOrOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CeAnomalySubscriptionThresholdExpressionOr | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CeAnomalySubscriptionThresholdExpressionOr | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2300,7 +2300,7 @@ export class CeAnomalySubscriptionThresholdExpressionOrOutputReference extends c
       this._dimension.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2362,15 +2362,15 @@ export class CeAnomalySubscriptionThresholdExpressionOrOutputReference extends c
   }
 }
 
-export class CeAnomalySubscriptionThresholdExpressionOrList extends cdktf.ComplexList {
-  public internalValue? : CeAnomalySubscriptionThresholdExpressionOr[] | cdktf.IResolvable
+export class CeAnomalySubscriptionThresholdExpressionOrList extends cdktn.ComplexList {
+  public internalValue? : CeAnomalySubscriptionThresholdExpressionOr[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2397,38 +2397,38 @@ export interface CeAnomalySubscriptionThresholdExpressionTags {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionTagsToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionTagsOutputReference | CeAnomalySubscriptionThresholdExpressionTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionTagsToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionTagsOutputReference | CeAnomalySubscriptionThresholdExpressionTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchOptions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2439,14 +2439,14 @@ export function ceAnomalySubscriptionThresholdExpressionTagsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionTagsOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2502,7 +2502,7 @@ export class CeAnomalySubscriptionThresholdExpressionTagsOutputReference extends
   // match_options - computed: false, optional: true, required: false
   private _matchOptions?: string[]; 
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
   public set matchOptions(value: string[]) {
     this._matchOptions = value;
@@ -2518,7 +2518,7 @@ export class CeAnomalySubscriptionThresholdExpressionTagsOutputReference extends
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2537,7 +2537,7 @@ export interface CeAnomalySubscriptionThresholdExpression {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_anomaly_subscription#and CeAnomalySubscription#and}
   */
-  readonly and?: CeAnomalySubscriptionThresholdExpressionAnd[] | cdktf.IResolvable;
+  readonly and?: CeAnomalySubscriptionThresholdExpressionAnd[] | cdktn.IResolvable;
   /**
   * cost_category block
   *
@@ -2561,7 +2561,7 @@ export interface CeAnomalySubscriptionThresholdExpression {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_anomaly_subscription#or CeAnomalySubscription#or}
   */
-  readonly or?: CeAnomalySubscriptionThresholdExpressionOr[] | cdktf.IResolvable;
+  readonly or?: CeAnomalySubscriptionThresholdExpressionOr[] | cdktn.IResolvable;
   /**
   * tags block
   *
@@ -2571,29 +2571,29 @@ export interface CeAnomalySubscriptionThresholdExpression {
 }
 
 export function ceAnomalySubscriptionThresholdExpressionToTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOutputReference | CeAnomalySubscriptionThresholdExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(ceAnomalySubscriptionThresholdExpressionAndToTerraform, true)(struct!.and),
+    and: cdktn.listMapper(ceAnomalySubscriptionThresholdExpressionAndToTerraform, true)(struct!.and),
     cost_category: ceAnomalySubscriptionThresholdExpressionCostCategoryToTerraform(struct!.costCategory),
     dimension: ceAnomalySubscriptionThresholdExpressionDimensionToTerraform(struct!.dimension),
     not: ceAnomalySubscriptionThresholdExpressionNotToTerraform(struct!.not),
-    or: cdktf.listMapper(ceAnomalySubscriptionThresholdExpressionOrToTerraform, true)(struct!.or),
+    or: cdktn.listMapper(ceAnomalySubscriptionThresholdExpressionOrToTerraform, true)(struct!.or),
     tags: ceAnomalySubscriptionThresholdExpressionTagsToTerraform(struct!.tags),
   }
 }
 
 
 export function ceAnomalySubscriptionThresholdExpressionToHclTerraform(struct?: CeAnomalySubscriptionThresholdExpressionOutputReference | CeAnomalySubscriptionThresholdExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     and: {
-      value: cdktf.listMapperHcl(ceAnomalySubscriptionThresholdExpressionAndToHclTerraform, true)(struct!.and),
+      value: cdktn.listMapperHcl(ceAnomalySubscriptionThresholdExpressionAndToHclTerraform, true)(struct!.and),
       isBlock: true,
       type: "set",
       storageClassType: "CeAnomalySubscriptionThresholdExpressionAndList",
@@ -2617,7 +2617,7 @@ export function ceAnomalySubscriptionThresholdExpressionToHclTerraform(struct?: 
       storageClassType: "CeAnomalySubscriptionThresholdExpressionNotList",
     },
     or: {
-      value: cdktf.listMapperHcl(ceAnomalySubscriptionThresholdExpressionOrToHclTerraform, true)(struct!.or),
+      value: cdktn.listMapperHcl(ceAnomalySubscriptionThresholdExpressionOrToHclTerraform, true)(struct!.or),
       isBlock: true,
       type: "set",
       storageClassType: "CeAnomalySubscriptionThresholdExpressionOrList",
@@ -2634,14 +2634,14 @@ export function ceAnomalySubscriptionThresholdExpressionToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CeAnomalySubscriptionThresholdExpressionOutputReference extends cdktf.ComplexObject {
+export class CeAnomalySubscriptionThresholdExpressionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2701,7 +2701,7 @@ export class CeAnomalySubscriptionThresholdExpressionOutputReference extends cdk
   public get and() {
     return this._and;
   }
-  public putAnd(value: CeAnomalySubscriptionThresholdExpressionAnd[] | cdktf.IResolvable) {
+  public putAnd(value: CeAnomalySubscriptionThresholdExpressionAnd[] | cdktn.IResolvable) {
     this._and.internalValue = value;
   }
   public resetAnd() {
@@ -2765,7 +2765,7 @@ export class CeAnomalySubscriptionThresholdExpressionOutputReference extends cdk
   public get or() {
     return this._or;
   }
-  public putOr(value: CeAnomalySubscriptionThresholdExpressionOr[] | cdktf.IResolvable) {
+  public putOr(value: CeAnomalySubscriptionThresholdExpressionOr[] | cdktn.IResolvable) {
     this._or.internalValue = value;
   }
   public resetOr() {
@@ -2796,7 +2796,7 @@ export class CeAnomalySubscriptionThresholdExpressionOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription}
 */
-export class CeAnomalySubscription extends cdktf.TerraformResource {
+export class CeAnomalySubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2807,14 +2807,14 @@ export class CeAnomalySubscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CeAnomalySubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CeAnomalySubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CeAnomalySubscription to import
   * @param importFromId The id of the existing CeAnomalySubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_anomaly_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CeAnomalySubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_anomaly_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_anomaly_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -2972,7 +2972,7 @@ export class CeAnomalySubscription extends cdktf.TerraformResource {
   public get subscriber() {
     return this._subscriber;
   }
-  public putSubscriber(value: CeAnomalySubscriptionSubscriber[] | cdktf.IResolvable) {
+  public putSubscriber(value: CeAnomalySubscriptionSubscriber[] | cdktn.IResolvable) {
     this._subscriber.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3002,14 +3002,14 @@ export class CeAnomalySubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      frequency: cdktf.stringToTerraform(this._frequency),
-      id: cdktf.stringToTerraform(this._id),
-      monitor_arn_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._monitorArnList),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      subscriber: cdktf.listMapper(ceAnomalySubscriptionSubscriberToTerraform, true)(this._subscriber.internalValue),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      frequency: cdktn.stringToTerraform(this._frequency),
+      id: cdktn.stringToTerraform(this._id),
+      monitor_arn_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._monitorArnList),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      subscriber: cdktn.listMapper(ceAnomalySubscriptionSubscriberToTerraform, true)(this._subscriber.internalValue),
       threshold_expression: ceAnomalySubscriptionThresholdExpressionToTerraform(this._thresholdExpression.internalValue),
     };
   }
@@ -3017,49 +3017,49 @@ export class CeAnomalySubscription extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       frequency: {
-        value: cdktf.stringToHclTerraform(this._frequency),
+        value: cdktn.stringToHclTerraform(this._frequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitor_arn_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._monitorArnList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._monitorArnList),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       subscriber: {
-        value: cdktf.listMapperHcl(ceAnomalySubscriptionSubscriberToHclTerraform, true)(this._subscriber.internalValue),
+        value: cdktn.listMapperHcl(ceAnomalySubscriptionSubscriberToHclTerraform, true)(this._subscriber.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CeAnomalySubscriptionSubscriberList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupRestoreTestingSelectionConfig extends cdktf.TerraformMetaArguments {
+export interface BackupRestoreTestingSelectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_restore_testing_selection#iam_role_arn BackupRestoreTestingSelection#iam_role_arn}
   */
@@ -51,7 +51,7 @@ export interface BackupRestoreTestingSelectionConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_restore_testing_selection#protected_resource_conditions BackupRestoreTestingSelection#protected_resource_conditions}
   */
-  readonly protectedResourceConditions?: BackupRestoreTestingSelectionProtectedResourceConditions[] | cdktf.IResolvable;
+  readonly protectedResourceConditions?: BackupRestoreTestingSelectionProtectedResourceConditions[] | cdktn.IResolvable;
 }
 export interface BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals {
   /**
@@ -64,32 +64,32 @@ export interface BackupRestoreTestingSelectionProtectedResourceConditionsStringE
   readonly value: string;
 }
 
-export function backupRestoreTestingSelectionProtectedResourceConditionsStringEqualsToTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupRestoreTestingSelectionProtectedResourceConditionsStringEqualsToTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function backupRestoreTestingSelectionProtectedResourceConditionsStringEqualsToHclTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupRestoreTestingSelectionProtectedResourceConditionsStringEqualsToHclTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,9 +100,9 @@ export function backupRestoreTestingSelectionProtectedResourceConditionsStringEq
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupRestoreTestingSelectionProtectedResourceConditionsStringEqualsOutputReference extends cdktf.ComplexObject {
+export class BackupRestoreTestingSelectionProtectedResourceConditionsStringEqualsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,11 +110,11 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsStringEqual
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -131,14 +131,14 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsStringEqual
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -177,15 +177,15 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsStringEqual
   }
 }
 
-export class BackupRestoreTestingSelectionProtectedResourceConditionsStringEqualsList extends cdktf.ComplexList {
-  public internalValue? : BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals[] | cdktf.IResolvable
+export class BackupRestoreTestingSelectionProtectedResourceConditionsStringEqualsList extends cdktn.ComplexList {
+  public internalValue? : BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -207,32 +207,32 @@ export interface BackupRestoreTestingSelectionProtectedResourceConditionsStringN
   readonly value: string;
 }
 
-export function backupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsToTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsToTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function backupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsToHclTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsToHclTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -243,9 +243,9 @@ export function backupRestoreTestingSelectionProtectedResourceConditionsStringNo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsOutputReference extends cdktf.ComplexObject {
+export class BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -253,11 +253,11 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEq
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -274,14 +274,14 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEq
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -320,15 +320,15 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEq
   }
 }
 
-export class BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsList extends cdktf.ComplexList {
-  public internalValue? : BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals[] | cdktf.IResolvable
+export class BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsList extends cdktn.ComplexList {
+  public internalValue? : BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -345,41 +345,41 @@ export interface BackupRestoreTestingSelectionProtectedResourceConditions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_restore_testing_selection#string_equals BackupRestoreTestingSelection#string_equals}
   */
-  readonly stringEquals?: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals[] | cdktf.IResolvable;
+  readonly stringEquals?: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals[] | cdktn.IResolvable;
   /**
   * string_not_equals block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_restore_testing_selection#string_not_equals BackupRestoreTestingSelection#string_not_equals}
   */
-  readonly stringNotEquals?: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals[] | cdktf.IResolvable;
+  readonly stringNotEquals?: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals[] | cdktn.IResolvable;
 }
 
-export function backupRestoreTestingSelectionProtectedResourceConditionsToTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupRestoreTestingSelectionProtectedResourceConditionsToTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    string_equals: cdktf.listMapper(backupRestoreTestingSelectionProtectedResourceConditionsStringEqualsToTerraform, true)(struct!.stringEquals),
-    string_not_equals: cdktf.listMapper(backupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsToTerraform, true)(struct!.stringNotEquals),
+    string_equals: cdktn.listMapper(backupRestoreTestingSelectionProtectedResourceConditionsStringEqualsToTerraform, true)(struct!.stringEquals),
+    string_not_equals: cdktn.listMapper(backupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsToTerraform, true)(struct!.stringNotEquals),
   }
 }
 
 
-export function backupRestoreTestingSelectionProtectedResourceConditionsToHclTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupRestoreTestingSelectionProtectedResourceConditionsToHclTerraform(struct?: BackupRestoreTestingSelectionProtectedResourceConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     string_equals: {
-      value: cdktf.listMapperHcl(backupRestoreTestingSelectionProtectedResourceConditionsStringEqualsToHclTerraform, true)(struct!.stringEquals),
+      value: cdktn.listMapperHcl(backupRestoreTestingSelectionProtectedResourceConditionsStringEqualsToHclTerraform, true)(struct!.stringEquals),
       isBlock: true,
       type: "list",
       storageClassType: "BackupRestoreTestingSelectionProtectedResourceConditionsStringEqualsList",
     },
     string_not_equals: {
-      value: cdktf.listMapperHcl(backupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsToHclTerraform, true)(struct!.stringNotEquals),
+      value: cdktn.listMapperHcl(backupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsToHclTerraform, true)(struct!.stringNotEquals),
       isBlock: true,
       type: "list",
       storageClassType: "BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEqualsList",
@@ -390,9 +390,9 @@ export function backupRestoreTestingSelectionProtectedResourceConditionsToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupRestoreTestingSelectionProtectedResourceConditionsOutputReference extends cdktf.ComplexObject {
+export class BackupRestoreTestingSelectionProtectedResourceConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -400,11 +400,11 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupRestoreTestingSelectionProtectedResourceConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupRestoreTestingSelectionProtectedResourceConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -421,14 +421,14 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupRestoreTestingSelectionProtectedResourceConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupRestoreTestingSelectionProtectedResourceConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._stringEquals.internalValue = undefined;
       this._stringNotEquals.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -445,7 +445,7 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsOutputRefer
   public get stringEquals() {
     return this._stringEquals;
   }
-  public putStringEquals(value: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals[] | cdktf.IResolvable) {
+  public putStringEquals(value: BackupRestoreTestingSelectionProtectedResourceConditionsStringEquals[] | cdktn.IResolvable) {
     this._stringEquals.internalValue = value;
   }
   public resetStringEquals() {
@@ -461,7 +461,7 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsOutputRefer
   public get stringNotEquals() {
     return this._stringNotEquals;
   }
-  public putStringNotEquals(value: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals[] | cdktf.IResolvable) {
+  public putStringNotEquals(value: BackupRestoreTestingSelectionProtectedResourceConditionsStringNotEquals[] | cdktn.IResolvable) {
     this._stringNotEquals.internalValue = value;
   }
   public resetStringNotEquals() {
@@ -473,15 +473,15 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsOutputRefer
   }
 }
 
-export class BackupRestoreTestingSelectionProtectedResourceConditionsList extends cdktf.ComplexList {
-  public internalValue? : BackupRestoreTestingSelectionProtectedResourceConditions[] | cdktf.IResolvable
+export class BackupRestoreTestingSelectionProtectedResourceConditionsList extends cdktn.ComplexList {
+  public internalValue? : BackupRestoreTestingSelectionProtectedResourceConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -496,7 +496,7 @@ export class BackupRestoreTestingSelectionProtectedResourceConditionsList extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_restore_testing_selection aws_backup_restore_testing_selection}
 */
-export class BackupRestoreTestingSelection extends cdktf.TerraformResource {
+export class BackupRestoreTestingSelection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -507,14 +507,14 @@ export class BackupRestoreTestingSelection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupRestoreTestingSelection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupRestoreTestingSelection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupRestoreTestingSelection to import
   * @param importFromId The id of the existing BackupRestoreTestingSelection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_restore_testing_selection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupRestoreTestingSelection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_restore_testing_selection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_restore_testing_selection", importId: importFromId, provider });
       }
 
   // ===========
@@ -588,7 +588,7 @@ export class BackupRestoreTestingSelection extends cdktf.TerraformResource {
   // protected_resource_arns - computed: true, optional: true, required: false
   private _protectedResourceArns?: string[]; 
   public get protectedResourceArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('protected_resource_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('protected_resource_arns'));
   }
   public set protectedResourceArns(value: string[]) {
     this._protectedResourceArns = value;
@@ -680,7 +680,7 @@ export class BackupRestoreTestingSelection extends cdktf.TerraformResource {
   public get protectedResourceConditions() {
     return this._protectedResourceConditions;
   }
-  public putProtectedResourceConditions(value: BackupRestoreTestingSelectionProtectedResourceConditions[] | cdktf.IResolvable) {
+  public putProtectedResourceConditions(value: BackupRestoreTestingSelectionProtectedResourceConditions[] | cdktn.IResolvable) {
     this._protectedResourceConditions.internalValue = value;
   }
   public resetProtectedResourceConditions() {
@@ -697,70 +697,70 @@ export class BackupRestoreTestingSelection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      name: cdktf.stringToTerraform(this._name),
-      protected_resource_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protectedResourceArns),
-      protected_resource_type: cdktf.stringToTerraform(this._protectedResourceType),
-      region: cdktf.stringToTerraform(this._region),
-      restore_metadata_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(this._restoreMetadataOverrides),
-      restore_testing_plan_name: cdktf.stringToTerraform(this._restoreTestingPlanName),
-      validation_window_hours: cdktf.numberToTerraform(this._validationWindowHours),
-      protected_resource_conditions: cdktf.listMapper(backupRestoreTestingSelectionProtectedResourceConditionsToTerraform, true)(this._protectedResourceConditions.internalValue),
+      iam_role_arn: cdktn.stringToTerraform(this._iamRoleArn),
+      name: cdktn.stringToTerraform(this._name),
+      protected_resource_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._protectedResourceArns),
+      protected_resource_type: cdktn.stringToTerraform(this._protectedResourceType),
+      region: cdktn.stringToTerraform(this._region),
+      restore_metadata_overrides: cdktn.hashMapper(cdktn.stringToTerraform)(this._restoreMetadataOverrides),
+      restore_testing_plan_name: cdktn.stringToTerraform(this._restoreTestingPlanName),
+      validation_window_hours: cdktn.numberToTerraform(this._validationWindowHours),
+      protected_resource_conditions: cdktn.listMapper(backupRestoreTestingSelectionProtectedResourceConditionsToTerraform, true)(this._protectedResourceConditions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protected_resource_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._protectedResourceArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._protectedResourceArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       protected_resource_type: {
-        value: cdktf.stringToHclTerraform(this._protectedResourceType),
+        value: cdktn.stringToHclTerraform(this._protectedResourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restore_metadata_overrides: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._restoreMetadataOverrides),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._restoreMetadataOverrides),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       restore_testing_plan_name: {
-        value: cdktf.stringToHclTerraform(this._restoreTestingPlanName),
+        value: cdktn.stringToHclTerraform(this._restoreTestingPlanName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validation_window_hours: {
-        value: cdktf.numberToHclTerraform(this._validationWindowHours),
+        value: cdktn.numberToHclTerraform(this._validationWindowHours),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       protected_resource_conditions: {
-        value: cdktf.listMapperHcl(backupRestoreTestingSelectionProtectedResourceConditionsToHclTerraform, true)(this._protectedResourceConditions.internalValue),
+        value: cdktn.listMapperHcl(backupRestoreTestingSelectionProtectedResourceConditionsToHclTerraform, true)(this._protectedResourceConditions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BackupRestoreTestingSelectionProtectedResourceConditionsList",

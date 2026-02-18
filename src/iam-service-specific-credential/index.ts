@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamServiceSpecificCredentialConfig extends cdktf.TerraformMetaArguments {
+export interface IamServiceSpecificCredentialConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}
   */
@@ -40,7 +40,7 @@ export interface IamServiceSpecificCredentialConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential}
 */
-export class IamServiceSpecificCredential extends cdktf.TerraformResource {
+export class IamServiceSpecificCredential extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class IamServiceSpecificCredential extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamServiceSpecificCredential resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamServiceSpecificCredential resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamServiceSpecificCredential to import
   * @param importFromId The id of the existing IamServiceSpecificCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_service_specific_credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamServiceSpecificCredential to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_service_specific_credential", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_service_specific_credential", importId: importFromId, provider });
       }
 
   // ===========
@@ -214,42 +214,42 @@ export class IamServiceSpecificCredential extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      credential_age_days: cdktf.numberToTerraform(this._credentialAgeDays),
-      id: cdktf.stringToTerraform(this._id),
-      service_name: cdktf.stringToTerraform(this._serviceName),
-      status: cdktf.stringToTerraform(this._status),
-      user_name: cdktf.stringToTerraform(this._userName),
+      credential_age_days: cdktn.numberToTerraform(this._credentialAgeDays),
+      id: cdktn.stringToTerraform(this._id),
+      service_name: cdktn.stringToTerraform(this._serviceName),
+      status: cdktn.stringToTerraform(this._status),
+      user_name: cdktn.stringToTerraform(this._userName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       credential_age_days: {
-        value: cdktf.numberToHclTerraform(this._credentialAgeDays),
+        value: cdktn.numberToHclTerraform(this._credentialAgeDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_name: {
-        value: cdktf.stringToHclTerraform(this._serviceName),
+        value: cdktn.stringToHclTerraform(this._serviceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

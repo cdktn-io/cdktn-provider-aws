@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsAmiIdsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAmiIdsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami_ids#executable_users DataAwsAmiIds#executable_users}
   */
@@ -26,7 +26,7 @@ export interface DataAwsAmiIdsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami_ids#include_deprecated DataAwsAmiIds#include_deprecated}
   */
-  readonly includeDeprecated?: boolean | cdktf.IResolvable;
+  readonly includeDeprecated?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami_ids#name_regex DataAwsAmiIds#name_regex}
   */
@@ -44,13 +44,13 @@ export interface DataAwsAmiIdsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami_ids#sort_ascending DataAwsAmiIds#sort_ascending}
   */
-  readonly sortAscending?: boolean | cdktf.IResolvable;
+  readonly sortAscending?: boolean | cdktn.IResolvable;
   /**
   * filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami_ids#filter DataAwsAmiIds#filter}
   */
-  readonly filter?: DataAwsAmiIdsFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsAmiIdsFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -69,32 +69,32 @@ export interface DataAwsAmiIdsFilter {
   readonly values: string[];
 }
 
-export function dataAwsAmiIdsFilterToTerraform(struct?: DataAwsAmiIdsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAmiIdsFilterToTerraform(struct?: DataAwsAmiIdsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsAmiIdsFilterToHclTerraform(struct?: DataAwsAmiIdsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAmiIdsFilterToHclTerraform(struct?: DataAwsAmiIdsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -105,9 +105,9 @@ export function dataAwsAmiIdsFilterToHclTerraform(struct?: DataAwsAmiIdsFilter |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsAmiIdsFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsAmiIdsFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -115,11 +115,11 @@ export class DataAwsAmiIdsFilterOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAmiIdsFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsAmiIdsFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -136,14 +136,14 @@ export class DataAwsAmiIdsFilterOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAmiIdsFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAmiIdsFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -171,7 +171,7 @@ export class DataAwsAmiIdsFilterOutputReference extends cdktf.ComplexObject {
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -182,15 +182,15 @@ export class DataAwsAmiIdsFilterOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAwsAmiIdsFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAmiIdsFilter[] | cdktf.IResolvable
+export class DataAwsAmiIdsFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsAmiIdsFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -208,25 +208,25 @@ export interface DataAwsAmiIdsTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsAmiIdsTimeoutsToTerraform(struct?: DataAwsAmiIdsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAmiIdsTimeoutsToTerraform(struct?: DataAwsAmiIdsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsAmiIdsTimeoutsToHclTerraform(struct?: DataAwsAmiIdsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAmiIdsTimeoutsToHclTerraform(struct?: DataAwsAmiIdsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -237,19 +237,19 @@ export function dataAwsAmiIdsTimeoutsToHclTerraform(struct?: DataAwsAmiIdsTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsAmiIdsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsAmiIdsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsAmiIdsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsAmiIdsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -262,13 +262,13 @@ export class DataAwsAmiIdsTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAmiIdsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAmiIdsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -299,7 +299,7 @@ export class DataAwsAmiIdsTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami_ids aws_ami_ids}
 */
-export class DataAwsAmiIds extends cdktf.TerraformDataSource {
+export class DataAwsAmiIds extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -310,14 +310,14 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsAmiIds resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsAmiIds resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAmiIds to import
   * @param importFromId The id of the existing DataAwsAmiIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami_ids#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAmiIds to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ami_ids", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ami_ids", importId: importFromId, provider });
       }
 
   // ===========
@@ -400,11 +400,11 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
   }
 
   // include_deprecated - computed: false, optional: true, required: false
-  private _includeDeprecated?: boolean | cdktf.IResolvable; 
+  private _includeDeprecated?: boolean | cdktn.IResolvable; 
   public get includeDeprecated() {
     return this.getBooleanAttribute('include_deprecated');
   }
-  public set includeDeprecated(value: boolean | cdktf.IResolvable) {
+  public set includeDeprecated(value: boolean | cdktn.IResolvable) {
     this._includeDeprecated = value;
   }
   public resetIncludeDeprecated() {
@@ -461,11 +461,11 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
   }
 
   // sort_ascending - computed: false, optional: true, required: false
-  private _sortAscending?: boolean | cdktf.IResolvable; 
+  private _sortAscending?: boolean | cdktn.IResolvable; 
   public get sortAscending() {
     return this.getBooleanAttribute('sort_ascending');
   }
-  public set sortAscending(value: boolean | cdktf.IResolvable) {
+  public set sortAscending(value: boolean | cdktn.IResolvable) {
     this._sortAscending = value;
   }
   public resetSortAscending() {
@@ -481,7 +481,7 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsAmiIdsFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsAmiIdsFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -514,14 +514,14 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      executable_users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._executableUsers),
-      id: cdktf.stringToTerraform(this._id),
-      include_deprecated: cdktf.booleanToTerraform(this._includeDeprecated),
-      name_regex: cdktf.stringToTerraform(this._nameRegex),
-      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
-      region: cdktf.stringToTerraform(this._region),
-      sort_ascending: cdktf.booleanToTerraform(this._sortAscending),
-      filter: cdktf.listMapper(dataAwsAmiIdsFilterToTerraform, true)(this._filter.internalValue),
+      executable_users: cdktn.listMapper(cdktn.stringToTerraform, false)(this._executableUsers),
+      id: cdktn.stringToTerraform(this._id),
+      include_deprecated: cdktn.booleanToTerraform(this._includeDeprecated),
+      name_regex: cdktn.stringToTerraform(this._nameRegex),
+      owners: cdktn.listMapper(cdktn.stringToTerraform, false)(this._owners),
+      region: cdktn.stringToTerraform(this._region),
+      sort_ascending: cdktn.booleanToTerraform(this._sortAscending),
+      filter: cdktn.listMapper(dataAwsAmiIdsFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsAmiIdsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -529,49 +529,49 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       executable_users: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._executableUsers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._executableUsers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_deprecated: {
-        value: cdktf.booleanToHclTerraform(this._includeDeprecated),
+        value: cdktn.booleanToHclTerraform(this._includeDeprecated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name_regex: {
-        value: cdktf.stringToHclTerraform(this._nameRegex),
+        value: cdktn.stringToHclTerraform(this._nameRegex),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owners: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._owners),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sort_ascending: {
-        value: cdktf.booleanToHclTerraform(this._sortAscending),
+        value: cdktn.booleanToHclTerraform(this._sortAscending),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsAmiIdsFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsAmiIdsFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsAmiIdsFilterList",

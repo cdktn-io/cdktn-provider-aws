@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMetaArguments {
+export interface StoragegatewayCachedIscsiVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_cached_iscsi_volume#gateway_arn StoragegatewayCachedIscsiVolume#gateway_arn}
   */
@@ -26,7 +26,7 @@ export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_cached_iscsi_volume#kms_encrypted StoragegatewayCachedIscsiVolume#kms_encrypted}
   */
-  readonly kmsEncrypted?: boolean | cdktf.IResolvable;
+  readonly kmsEncrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_cached_iscsi_volume#kms_key StoragegatewayCachedIscsiVolume#kms_key}
   */
@@ -70,7 +70,7 @@ export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume}
 */
-export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
+export class StoragegatewayCachedIscsiVolume extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -81,14 +81,14 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StoragegatewayCachedIscsiVolume resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StoragegatewayCachedIscsiVolume resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StoragegatewayCachedIscsiVolume to import
   * @param importFromId The id of the existing StoragegatewayCachedIscsiVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/storagegateway_cached_iscsi_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StoragegatewayCachedIscsiVolume to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_cached_iscsi_volume", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_storagegateway_cached_iscsi_volume", importId: importFromId, provider });
       }
 
   // ===========
@@ -176,11 +176,11 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   }
 
   // kms_encrypted - computed: false, optional: true, required: false
-  private _kmsEncrypted?: boolean | cdktf.IResolvable; 
+  private _kmsEncrypted?: boolean | cdktn.IResolvable; 
   public get kmsEncrypted() {
     return this.getBooleanAttribute('kms_encrypted');
   }
-  public set kmsEncrypted(value: boolean | cdktf.IResolvable) {
+  public set kmsEncrypted(value: boolean | cdktn.IResolvable) {
     this._kmsEncrypted = value;
   }
   public resetKmsEncrypted() {
@@ -357,91 +357,91 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
-      id: cdktf.stringToTerraform(this._id),
-      kms_encrypted: cdktf.booleanToTerraform(this._kmsEncrypted),
-      kms_key: cdktf.stringToTerraform(this._kmsKey),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      region: cdktf.stringToTerraform(this._region),
-      snapshot_id: cdktf.stringToTerraform(this._snapshotId),
-      source_volume_arn: cdktf.stringToTerraform(this._sourceVolumeArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_name: cdktf.stringToTerraform(this._targetName),
-      volume_size_in_bytes: cdktf.numberToTerraform(this._volumeSizeInBytes),
+      gateway_arn: cdktn.stringToTerraform(this._gatewayArn),
+      id: cdktn.stringToTerraform(this._id),
+      kms_encrypted: cdktn.booleanToTerraform(this._kmsEncrypted),
+      kms_key: cdktn.stringToTerraform(this._kmsKey),
+      network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
+      region: cdktn.stringToTerraform(this._region),
+      snapshot_id: cdktn.stringToTerraform(this._snapshotId),
+      source_volume_arn: cdktn.stringToTerraform(this._sourceVolumeArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_name: cdktn.stringToTerraform(this._targetName),
+      volume_size_in_bytes: cdktn.numberToTerraform(this._volumeSizeInBytes),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       gateway_arn: {
-        value: cdktf.stringToHclTerraform(this._gatewayArn),
+        value: cdktn.stringToHclTerraform(this._gatewayArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_encrypted: {
-        value: cdktf.booleanToHclTerraform(this._kmsEncrypted),
+        value: cdktn.booleanToHclTerraform(this._kmsEncrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       kms_key: {
-        value: cdktf.stringToHclTerraform(this._kmsKey),
+        value: cdktn.stringToHclTerraform(this._kmsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface_id: {
-        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        value: cdktn.stringToHclTerraform(this._networkInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snapshot_id: {
-        value: cdktf.stringToHclTerraform(this._snapshotId),
+        value: cdktn.stringToHclTerraform(this._snapshotId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_volume_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceVolumeArn),
+        value: cdktn.stringToHclTerraform(this._sourceVolumeArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_name: {
-        value: cdktf.stringToHclTerraform(this._targetName),
+        value: cdktn.stringToHclTerraform(this._targetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       volume_size_in_bytes: {
-        value: cdktf.numberToHclTerraform(this._volumeSizeInBytes),
+        value: cdktn.numberToHclTerraform(this._volumeSizeInBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

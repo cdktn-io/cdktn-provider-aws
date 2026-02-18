@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Wafv2WebAclLoggingConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface Wafv2WebAclLoggingConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_web_acl_logging_configuration#id Wafv2WebAclLoggingConfiguration#id}
   *
@@ -48,7 +48,7 @@ export interface Wafv2WebAclLoggingConfigurationConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_web_acl_logging_configuration#redacted_fields Wafv2WebAclLoggingConfiguration#redacted_fields}
   */
-  readonly redactedFields?: Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktf.IResolvable;
+  readonly redactedFields?: Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktn.IResolvable;
 }
 export interface Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition {
   /**
@@ -58,24 +58,24 @@ export interface Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActi
 }
 
 export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionToTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference | Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
+    action: cdktn.stringToTerraform(struct!.action),
   }
 }
 
 
 export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference | Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,14 +86,14 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -139,24 +139,24 @@ export interface Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabe
 }
 
 export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionToTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference | Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    label_name: cdktf.stringToTerraform(struct!.labelName),
+    label_name: cdktn.stringToTerraform(struct!.labelName),
   }
 }
 
 
 export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference | Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     label_name: {
-      value: cdktf.stringToHclTerraform(struct!.labelName),
+      value: cdktn.stringToHclTerraform(struct!.labelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -167,14 +167,14 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabel
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -227,9 +227,9 @@ export interface Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition {
   readonly labelNameCondition?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition;
 }
 
-export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -239,9 +239,9 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTer
 }
 
 
-export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -263,9 +263,9 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -273,11 +273,11 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -294,14 +294,14 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._actionCondition.internalValue = undefined;
       this._labelNameCondition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -346,15 +346,15 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputRe
   }
 }
 
-export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList extends cdktf.ComplexList {
-  public internalValue? : Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition[] | cdktf.IResolvable
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList extends cdktn.ComplexList {
+  public internalValue? : Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -379,42 +379,42 @@ export interface Wafv2WebAclLoggingConfigurationLoggingFilterFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_web_acl_logging_configuration#condition Wafv2WebAclLoggingConfiguration#condition}
   */
-  readonly condition: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition[] | cdktf.IResolvable;
+  readonly condition: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition[] | cdktn.IResolvable;
 }
 
-export function wafv2WebAclLoggingConfigurationLoggingFilterFilterToTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2WebAclLoggingConfigurationLoggingFilterFilterToTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
-    requirement: cdktf.stringToTerraform(struct!.requirement),
-    condition: cdktf.listMapper(wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTerraform, true)(struct!.condition),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    requirement: cdktn.stringToTerraform(struct!.requirement),
+    condition: cdktn.listMapper(wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTerraform, true)(struct!.condition),
   }
 }
 
 
-export function wafv2WebAclLoggingConfigurationLoggingFilterFilterToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2WebAclLoggingConfigurationLoggingFilterFilterToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     requirement: {
-      value: cdktf.stringToHclTerraform(struct!.requirement),
+      value: cdktn.stringToHclTerraform(struct!.requirement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     condition: {
-      value: cdktf.listMapperHcl(wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToHclTerraform, true)(struct!.condition),
+      value: cdktn.listMapperHcl(wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToHclTerraform, true)(struct!.condition),
       isBlock: true,
       type: "set",
       storageClassType: "Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList",
@@ -425,9 +425,9 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -435,11 +435,11 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -460,7 +460,7 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -468,7 +468,7 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference e
       this._requirement = undefined;
       this._condition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -512,7 +512,7 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference e
   public get condition() {
     return this._condition;
   }
-  public putCondition(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition[] | cdktf.IResolvable) {
+  public putCondition(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition[] | cdktn.IResolvable) {
     this._condition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -521,15 +521,15 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference e
   }
 }
 
-export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterList extends cdktf.ComplexList {
-  public internalValue? : Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktf.IResolvable
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterList extends cdktn.ComplexList {
+  public internalValue? : Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -550,35 +550,35 @@ export interface Wafv2WebAclLoggingConfigurationLoggingFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_web_acl_logging_configuration#filter Wafv2WebAclLoggingConfiguration#filter}
   */
-  readonly filter: Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktf.IResolvable;
+  readonly filter: Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktn.IResolvable;
 }
 
 export function wafv2WebAclLoggingConfigurationLoggingFilterToTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference | Wafv2WebAclLoggingConfigurationLoggingFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_behavior: cdktf.stringToTerraform(struct!.defaultBehavior),
-    filter: cdktf.listMapper(wafv2WebAclLoggingConfigurationLoggingFilterFilterToTerraform, true)(struct!.filter),
+    default_behavior: cdktn.stringToTerraform(struct!.defaultBehavior),
+    filter: cdktn.listMapper(wafv2WebAclLoggingConfigurationLoggingFilterFilterToTerraform, true)(struct!.filter),
   }
 }
 
 
 export function wafv2WebAclLoggingConfigurationLoggingFilterToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference | Wafv2WebAclLoggingConfigurationLoggingFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_behavior: {
-      value: cdktf.stringToHclTerraform(struct!.defaultBehavior),
+      value: cdktn.stringToHclTerraform(struct!.defaultBehavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter: {
-      value: cdktf.listMapperHcl(wafv2WebAclLoggingConfigurationLoggingFilterFilterToHclTerraform, true)(struct!.filter),
+      value: cdktn.listMapperHcl(wafv2WebAclLoggingConfigurationLoggingFilterFilterToHclTerraform, true)(struct!.filter),
       isBlock: true,
       type: "set",
       storageClassType: "Wafv2WebAclLoggingConfigurationLoggingFilterFilterList",
@@ -589,14 +589,14 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -645,7 +645,7 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktf.IResolvable) {
+  public putFilter(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -657,8 +657,8 @@ export interface Wafv2WebAclLoggingConfigurationRedactedFieldsMethod {
 }
 
 export function wafv2WebAclLoggingConfigurationRedactedFieldsMethodToTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsMethod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -667,8 +667,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsMethodToTerraform(s
 
 
 export function wafv2WebAclLoggingConfigurationRedactedFieldsMethodToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsMethod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -676,14 +676,14 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsMethodToHclTerrafor
   return attrs;
 }
 
-export class Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -706,8 +706,8 @@ export interface Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString {
 }
 
 export function wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringToTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -716,8 +716,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringToTerraf
 
 
 export function wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -725,14 +725,14 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringToHclTer
   return attrs;
 }
 
-export class Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -759,24 +759,24 @@ export interface Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader {
 }
 
 export function wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderToTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -787,14 +787,14 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -836,8 +836,8 @@ export interface Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath {
 }
 
 export function wafv2WebAclLoggingConfigurationRedactedFieldsUriPathToTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -846,8 +846,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsUriPathToTerraform(
 
 
 export function wafv2WebAclLoggingConfigurationRedactedFieldsUriPathToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -855,14 +855,14 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsUriPathToHclTerrafo
   return attrs;
 }
 
-export class Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -908,9 +908,9 @@ export interface Wafv2WebAclLoggingConfigurationRedactedFields {
   readonly uriPath?: Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath;
 }
 
-export function wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -922,9 +922,9 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform(struct?
 }
 
 
-export function wafv2WebAclLoggingConfigurationRedactedFieldsToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafv2WebAclLoggingConfigurationRedactedFieldsToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -958,9 +958,9 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference extends cdktf.ComplexObject {
+export class Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -968,11 +968,11 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFields | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -997,7 +997,7 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1006,7 +1006,7 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference extend
       this._singleHeader.internalValue = undefined;
       this._uriPath.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1085,15 +1085,15 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference extend
   }
 }
 
-export class Wafv2WebAclLoggingConfigurationRedactedFieldsList extends cdktf.ComplexList {
-  public internalValue? : Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktf.IResolvable
+export class Wafv2WebAclLoggingConfigurationRedactedFieldsList extends cdktn.ComplexList {
+  public internalValue? : Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1108,7 +1108,7 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsList extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration}
 */
-export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
+export class Wafv2WebAclLoggingConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1119,14 +1119,14 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Wafv2WebAclLoggingConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Wafv2WebAclLoggingConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Wafv2WebAclLoggingConfiguration to import
   * @param importFromId The id of the existing Wafv2WebAclLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_web_acl_logging_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Wafv2WebAclLoggingConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_web_acl_logging_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_web_acl_logging_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1187,7 +1187,7 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
   // log_destination_configs - computed: false, optional: false, required: true
   private _logDestinationConfigs?: string[]; 
   public get logDestinationConfigs() {
-    return cdktf.Fn.tolist(this.getListAttribute('log_destination_configs'));
+    return cdktn.Fn.tolist(this.getListAttribute('log_destination_configs'));
   }
   public set logDestinationConfigs(value: string[]) {
     this._logDestinationConfigs = value;
@@ -1247,7 +1247,7 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
   public get redactedFields() {
     return this._redactedFields;
   }
-  public putRedactedFields(value: Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktf.IResolvable) {
+  public putRedactedFields(value: Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktn.IResolvable) {
     this._redactedFields.internalValue = value;
   }
   public resetRedactedFields() {
@@ -1264,37 +1264,37 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      log_destination_configs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logDestinationConfigs),
-      region: cdktf.stringToTerraform(this._region),
-      resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      id: cdktn.stringToTerraform(this._id),
+      log_destination_configs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._logDestinationConfigs),
+      region: cdktn.stringToTerraform(this._region),
+      resource_arn: cdktn.stringToTerraform(this._resourceArn),
       logging_filter: wafv2WebAclLoggingConfigurationLoggingFilterToTerraform(this._loggingFilter.internalValue),
-      redacted_fields: cdktf.listMapper(wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform, true)(this._redactedFields.internalValue),
+      redacted_fields: cdktn.listMapper(wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform, true)(this._redactedFields.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_destination_configs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logDestinationConfigs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._logDestinationConfigs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceArn),
+        value: cdktn.stringToHclTerraform(this._resourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1306,7 +1306,7 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
         storageClassType: "Wafv2WebAclLoggingConfigurationLoggingFilterList",
       },
       redacted_fields: {
-        value: cdktf.listMapperHcl(wafv2WebAclLoggingConfigurationRedactedFieldsToHclTerraform, true)(this._redactedFields.internalValue),
+        value: cdktn.listMapperHcl(wafv2WebAclLoggingConfigurationRedactedFieldsToHclTerraform, true)(this._redactedFields.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Wafv2WebAclLoggingConfigurationRedactedFieldsList",

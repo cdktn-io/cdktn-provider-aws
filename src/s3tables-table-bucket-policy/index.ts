@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3TablesTableBucketPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface S3TablesTableBucketPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -31,7 +31,7 @@ export interface S3TablesTableBucketPolicyConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_table_bucket_policy aws_s3tables_table_bucket_policy}
 */
-export class S3TablesTableBucketPolicy extends cdktf.TerraformResource {
+export class S3TablesTableBucketPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class S3TablesTableBucketPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3TablesTableBucketPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3TablesTableBucketPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesTableBucketPolicy to import
   * @param importFromId The id of the existing S3TablesTableBucketPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_table_bucket_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesTableBucketPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3tables_table_bucket_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3tables_table_bucket_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,28 +136,28 @@ export class S3TablesTableBucketPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      resource_policy: cdktf.stringToTerraform(this._resourcePolicy),
-      table_bucket_arn: cdktf.stringToTerraform(this._tableBucketArn),
+      region: cdktn.stringToTerraform(this._region),
+      resource_policy: cdktn.stringToTerraform(this._resourcePolicy),
+      table_bucket_arn: cdktn.stringToTerraform(this._tableBucketArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_policy: {
-        value: cdktf.stringToHclTerraform(this._resourcePolicy),
+        value: cdktn.stringToHclTerraform(this._resourcePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_bucket_arn: {
-        value: cdktf.stringToHclTerraform(this._tableBucketArn),
+        value: cdktn.stringToHclTerraform(this._tableBucketArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

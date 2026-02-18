@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OpensearchserverlessSecurityConfigConfig extends cdktf.TerraformMetaArguments {
+export interface OpensearchserverlessSecurityConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Description of the security configuration.
   *
@@ -41,7 +41,7 @@ export interface OpensearchserverlessSecurityConfigConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearchserverless_security_config#saml_options OpensearchserverlessSecurityConfig#saml_options}
   */
-  readonly samlOptions?: OpensearchserverlessSecurityConfigSamlOptions[] | cdktf.IResolvable;
+  readonly samlOptions?: OpensearchserverlessSecurityConfigSamlOptions[] | cdktn.IResolvable;
 }
 export interface OpensearchserverlessSecurityConfigSamlOptions {
   /**
@@ -70,46 +70,46 @@ export interface OpensearchserverlessSecurityConfigSamlOptions {
   readonly userAttribute?: string;
 }
 
-export function opensearchserverlessSecurityConfigSamlOptionsToTerraform(struct?: OpensearchserverlessSecurityConfigSamlOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchserverlessSecurityConfigSamlOptionsToTerraform(struct?: OpensearchserverlessSecurityConfigSamlOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_attribute: cdktf.stringToTerraform(struct!.groupAttribute),
-    metadata: cdktf.stringToTerraform(struct!.metadata),
-    session_timeout: cdktf.numberToTerraform(struct!.sessionTimeout),
-    user_attribute: cdktf.stringToTerraform(struct!.userAttribute),
+    group_attribute: cdktn.stringToTerraform(struct!.groupAttribute),
+    metadata: cdktn.stringToTerraform(struct!.metadata),
+    session_timeout: cdktn.numberToTerraform(struct!.sessionTimeout),
+    user_attribute: cdktn.stringToTerraform(struct!.userAttribute),
   }
 }
 
 
-export function opensearchserverlessSecurityConfigSamlOptionsToHclTerraform(struct?: OpensearchserverlessSecurityConfigSamlOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchserverlessSecurityConfigSamlOptionsToHclTerraform(struct?: OpensearchserverlessSecurityConfigSamlOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_attribute: {
-      value: cdktf.stringToHclTerraform(struct!.groupAttribute),
+      value: cdktn.stringToHclTerraform(struct!.groupAttribute),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metadata: {
-      value: cdktf.stringToHclTerraform(struct!.metadata),
+      value: cdktn.stringToHclTerraform(struct!.metadata),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     session_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.sessionTimeout),
+      value: cdktn.numberToHclTerraform(struct!.sessionTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     user_attribute: {
-      value: cdktf.stringToHclTerraform(struct!.userAttribute),
+      value: cdktn.stringToHclTerraform(struct!.userAttribute),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,9 +120,9 @@ export function opensearchserverlessSecurityConfigSamlOptionsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchserverlessSecurityConfigSamlOptionsOutputReference extends cdktf.ComplexObject {
+export class OpensearchserverlessSecurityConfigSamlOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class OpensearchserverlessSecurityConfigSamlOptionsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OpensearchserverlessSecurityConfigSamlOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): OpensearchserverlessSecurityConfigSamlOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,7 +159,7 @@ export class OpensearchserverlessSecurityConfigSamlOptionsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OpensearchserverlessSecurityConfigSamlOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OpensearchserverlessSecurityConfigSamlOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -168,7 +168,7 @@ export class OpensearchserverlessSecurityConfigSamlOptionsOutputReference extend
       this._sessionTimeout = undefined;
       this._userAttribute = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -244,15 +244,15 @@ export class OpensearchserverlessSecurityConfigSamlOptionsOutputReference extend
   }
 }
 
-export class OpensearchserverlessSecurityConfigSamlOptionsList extends cdktf.ComplexList {
-  public internalValue? : OpensearchserverlessSecurityConfigSamlOptions[] | cdktf.IResolvable
+export class OpensearchserverlessSecurityConfigSamlOptionsList extends cdktn.ComplexList {
+  public internalValue? : OpensearchserverlessSecurityConfigSamlOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -267,7 +267,7 @@ export class OpensearchserverlessSecurityConfigSamlOptionsList extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config}
 */
-export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource {
+export class OpensearchserverlessSecurityConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -278,14 +278,14 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OpensearchserverlessSecurityConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OpensearchserverlessSecurityConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchserverlessSecurityConfig to import
   * @param importFromId The id of the existing OpensearchserverlessSecurityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchserverlessSecurityConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearchserverless_security_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearchserverless_security_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -399,7 +399,7 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
   public get samlOptions() {
     return this._samlOptions;
   }
-  public putSamlOptions(value: OpensearchserverlessSecurityConfigSamlOptions[] | cdktf.IResolvable) {
+  public putSamlOptions(value: OpensearchserverlessSecurityConfigSamlOptions[] | cdktn.IResolvable) {
     this._samlOptions.internalValue = value;
   }
   public resetSamlOptions() {
@@ -416,42 +416,42 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      type: cdktf.stringToTerraform(this._type),
-      saml_options: cdktf.listMapper(opensearchserverlessSecurityConfigSamlOptionsToTerraform, true)(this._samlOptions.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      type: cdktn.stringToTerraform(this._type),
+      saml_options: cdktn.listMapper(opensearchserverlessSecurityConfigSamlOptionsToTerraform, true)(this._samlOptions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml_options: {
-        value: cdktf.listMapperHcl(opensearchserverlessSecurityConfigSamlOptionsToHclTerraform, true)(this._samlOptions.internalValue),
+        value: cdktn.listMapperHcl(opensearchserverlessSecurityConfigSamlOptionsToHclTerraform, true)(this._samlOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OpensearchserverlessSecurityConfigSamlOptionsList",

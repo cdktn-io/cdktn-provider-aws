@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DevopsguruNotificationChannelConfig extends cdktf.TerraformMetaArguments {
+export interface DevopsguruNotificationChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -23,13 +23,13 @@ export interface DevopsguruNotificationChannelConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
   */
-  readonly filters?: DevopsguruNotificationChannelFilters[] | cdktf.IResolvable;
+  readonly filters?: DevopsguruNotificationChannelFilters[] | cdktn.IResolvable;
   /**
   * sns block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
   */
-  readonly sns?: DevopsguruNotificationChannelSns[] | cdktf.IResolvable;
+  readonly sns?: DevopsguruNotificationChannelSns[] | cdktn.IResolvable;
 }
 export interface DevopsguruNotificationChannelFilters {
   /**
@@ -42,32 +42,32 @@ export interface DevopsguruNotificationChannelFilters {
   readonly severities?: string[];
 }
 
-export function devopsguruNotificationChannelFiltersToTerraform(struct?: DevopsguruNotificationChannelFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruNotificationChannelFiltersToTerraform(struct?: DevopsguruNotificationChannelFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.messageTypes),
-    severities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.severities),
+    message_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.messageTypes),
+    severities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.severities),
   }
 }
 
 
-export function devopsguruNotificationChannelFiltersToHclTerraform(struct?: DevopsguruNotificationChannelFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruNotificationChannelFiltersToHclTerraform(struct?: DevopsguruNotificationChannelFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.messageTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.messageTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     severities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.severities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.severities),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -78,9 +78,9 @@ export function devopsguruNotificationChannelFiltersToHclTerraform(struct?: Devo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevopsguruNotificationChannelFiltersOutputReference extends cdktf.ComplexObject {
+export class DevopsguruNotificationChannelFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -88,11 +88,11 @@ export class DevopsguruNotificationChannelFiltersOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevopsguruNotificationChannelFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): DevopsguruNotificationChannelFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -109,14 +109,14 @@ export class DevopsguruNotificationChannelFiltersOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevopsguruNotificationChannelFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevopsguruNotificationChannelFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._messageTypes = undefined;
       this._severities = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -131,7 +131,7 @@ export class DevopsguruNotificationChannelFiltersOutputReference extends cdktf.C
   // message_types - computed: false, optional: true, required: false
   private _messageTypes?: string[]; 
   public get messageTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('message_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('message_types'));
   }
   public set messageTypes(value: string[]) {
     this._messageTypes = value;
@@ -147,7 +147,7 @@ export class DevopsguruNotificationChannelFiltersOutputReference extends cdktf.C
   // severities - computed: false, optional: true, required: false
   private _severities?: string[]; 
   public get severities() {
-    return cdktf.Fn.tolist(this.getListAttribute('severities'));
+    return cdktn.Fn.tolist(this.getListAttribute('severities'));
   }
   public set severities(value: string[]) {
     this._severities = value;
@@ -161,15 +161,15 @@ export class DevopsguruNotificationChannelFiltersOutputReference extends cdktf.C
   }
 }
 
-export class DevopsguruNotificationChannelFiltersList extends cdktf.ComplexList {
-  public internalValue? : DevopsguruNotificationChannelFilters[] | cdktf.IResolvable
+export class DevopsguruNotificationChannelFiltersList extends cdktn.ComplexList {
+  public internalValue? : DevopsguruNotificationChannelFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -187,25 +187,25 @@ export interface DevopsguruNotificationChannelSns {
   readonly topicArn: string;
 }
 
-export function devopsguruNotificationChannelSnsToTerraform(struct?: DevopsguruNotificationChannelSns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruNotificationChannelSnsToTerraform(struct?: DevopsguruNotificationChannelSns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function devopsguruNotificationChannelSnsToHclTerraform(struct?: DevopsguruNotificationChannelSns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruNotificationChannelSnsToHclTerraform(struct?: DevopsguruNotificationChannelSns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -216,9 +216,9 @@ export function devopsguruNotificationChannelSnsToHclTerraform(struct?: Devopsgu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevopsguruNotificationChannelSnsOutputReference extends cdktf.ComplexObject {
+export class DevopsguruNotificationChannelSnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -226,11 +226,11 @@ export class DevopsguruNotificationChannelSnsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevopsguruNotificationChannelSns | cdktf.IResolvable | undefined {
+  public get internalValue(): DevopsguruNotificationChannelSns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -243,13 +243,13 @@ export class DevopsguruNotificationChannelSnsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevopsguruNotificationChannelSns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevopsguruNotificationChannelSns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -274,15 +274,15 @@ export class DevopsguruNotificationChannelSnsOutputReference extends cdktf.Compl
   }
 }
 
-export class DevopsguruNotificationChannelSnsList extends cdktf.ComplexList {
-  public internalValue? : DevopsguruNotificationChannelSns[] | cdktf.IResolvable
+export class DevopsguruNotificationChannelSnsList extends cdktn.ComplexList {
+  public internalValue? : DevopsguruNotificationChannelSns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -297,7 +297,7 @@ export class DevopsguruNotificationChannelSnsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}
 */
-export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
+export class DevopsguruNotificationChannel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -308,14 +308,14 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DevopsguruNotificationChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DevopsguruNotificationChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruNotificationChannel to import
   * @param importFromId The id of the existing DevopsguruNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruNotificationChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_devopsguru_notification_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_devopsguru_notification_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -380,7 +380,7 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
   public get filters() {
     return this._filters;
   }
-  public putFilters(value: DevopsguruNotificationChannelFilters[] | cdktf.IResolvable) {
+  public putFilters(value: DevopsguruNotificationChannelFilters[] | cdktn.IResolvable) {
     this._filters.internalValue = value;
   }
   public resetFilters() {
@@ -396,7 +396,7 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
   public get sns() {
     return this._sns;
   }
-  public putSns(value: DevopsguruNotificationChannelSns[] | cdktf.IResolvable) {
+  public putSns(value: DevopsguruNotificationChannelSns[] | cdktn.IResolvable) {
     this._sns.internalValue = value;
   }
   public resetSns() {
@@ -413,28 +413,28 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      filters: cdktf.listMapper(devopsguruNotificationChannelFiltersToTerraform, true)(this._filters.internalValue),
-      sns: cdktf.listMapper(devopsguruNotificationChannelSnsToTerraform, true)(this._sns.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      filters: cdktn.listMapper(devopsguruNotificationChannelFiltersToTerraform, true)(this._filters.internalValue),
+      sns: cdktn.listMapper(devopsguruNotificationChannelSnsToTerraform, true)(this._sns.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filters: {
-        value: cdktf.listMapperHcl(devopsguruNotificationChannelFiltersToHclTerraform, true)(this._filters.internalValue),
+        value: cdktn.listMapperHcl(devopsguruNotificationChannelFiltersToHclTerraform, true)(this._filters.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DevopsguruNotificationChannelFiltersList",
       },
       sns: {
-        value: cdktf.listMapperHcl(devopsguruNotificationChannelSnsToHclTerraform, true)(this._sns.internalValue),
+        value: cdktn.listMapperHcl(devopsguruNotificationChannelSnsToHclTerraform, true)(this._sns.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DevopsguruNotificationChannelSnsList",

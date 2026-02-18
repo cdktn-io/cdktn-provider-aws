@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkInterfacePermissionConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkInterfacePermissionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface_permission#aws_account_id NetworkInterfacePermission#aws_account_id}
   */
@@ -52,32 +52,32 @@ export interface NetworkInterfacePermissionTimeouts {
   readonly delete?: string;
 }
 
-export function networkInterfacePermissionTimeoutsToTerraform(struct?: NetworkInterfacePermissionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfacePermissionTimeoutsToTerraform(struct?: NetworkInterfacePermissionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function networkInterfacePermissionTimeoutsToHclTerraform(struct?: NetworkInterfacePermissionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfacePermissionTimeoutsToHclTerraform(struct?: NetworkInterfacePermissionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,19 +88,19 @@ export function networkInterfacePermissionTimeoutsToHclTerraform(struct?: Networ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkInterfacePermissionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkInterfacePermissionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkInterfacePermissionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkInterfacePermissionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -117,14 +117,14 @@ export class NetworkInterfacePermissionTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkInterfacePermissionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkInterfacePermissionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -172,7 +172,7 @@ export class NetworkInterfacePermissionTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface_permission aws_network_interface_permission}
 */
-export class NetworkInterfacePermission extends cdktf.TerraformResource {
+export class NetworkInterfacePermission extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -183,14 +183,14 @@ export class NetworkInterfacePermission extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkInterfacePermission resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkInterfacePermission resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkInterfacePermission to import
   * @param importFromId The id of the existing NetworkInterfacePermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkInterfacePermission to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_interface_permission", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_interface_permission", importId: importFromId, provider });
       }
 
   // ===========
@@ -313,10 +313,10 @@ export class NetworkInterfacePermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      permission: cdktf.stringToTerraform(this._permission),
-      region: cdktf.stringToTerraform(this._region),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
+      permission: cdktn.stringToTerraform(this._permission),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: networkInterfacePermissionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -324,25 +324,25 @@ export class NetworkInterfacePermission extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface_id: {
-        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        value: cdktn.stringToHclTerraform(this._networkInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission: {
-        value: cdktf.stringToHclTerraform(this._permission),
+        value: cdktn.stringToHclTerraform(this._permission),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

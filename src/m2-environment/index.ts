@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface M2EnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface M2EnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}
   */
-  readonly applyChangesDuringMaintenanceWindow?: boolean | cdktf.IResolvable;
+  readonly applyChangesDuringMaintenanceWindow?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#description M2Environment#description}
   */
@@ -31,7 +31,7 @@ export interface M2EnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#force_update M2Environment#force_update}
   */
-  readonly forceUpdate?: boolean | cdktf.IResolvable;
+  readonly forceUpdate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#instance_type M2Environment#instance_type}
   */
@@ -51,7 +51,7 @@ export interface M2EnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
+  readonly publiclyAccessible?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -75,13 +75,13 @@ export interface M2EnvironmentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#high_availability_config M2Environment#high_availability_config}
   */
-  readonly highAvailabilityConfig?: M2EnvironmentHighAvailabilityConfig[] | cdktf.IResolvable;
+  readonly highAvailabilityConfig?: M2EnvironmentHighAvailabilityConfig[] | cdktn.IResolvable;
   /**
   * storage_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#storage_configuration M2Environment#storage_configuration}
   */
-  readonly storageConfiguration?: M2EnvironmentStorageConfiguration[] | cdktf.IResolvable;
+  readonly storageConfiguration?: M2EnvironmentStorageConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -96,25 +96,25 @@ export interface M2EnvironmentHighAvailabilityConfig {
   readonly desiredCapacity: number;
 }
 
-export function m2EnvironmentHighAvailabilityConfigToTerraform(struct?: M2EnvironmentHighAvailabilityConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentHighAvailabilityConfigToTerraform(struct?: M2EnvironmentHighAvailabilityConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    desired_capacity: cdktf.numberToTerraform(struct!.desiredCapacity),
+    desired_capacity: cdktn.numberToTerraform(struct!.desiredCapacity),
   }
 }
 
 
-export function m2EnvironmentHighAvailabilityConfigToHclTerraform(struct?: M2EnvironmentHighAvailabilityConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentHighAvailabilityConfigToHclTerraform(struct?: M2EnvironmentHighAvailabilityConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     desired_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.desiredCapacity),
+      value: cdktn.numberToHclTerraform(struct!.desiredCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -125,9 +125,9 @@ export function m2EnvironmentHighAvailabilityConfigToHclTerraform(struct?: M2Env
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class M2EnvironmentHighAvailabilityConfigOutputReference extends cdktf.ComplexObject {
+export class M2EnvironmentHighAvailabilityConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -135,11 +135,11 @@ export class M2EnvironmentHighAvailabilityConfigOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): M2EnvironmentHighAvailabilityConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): M2EnvironmentHighAvailabilityConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,13 +152,13 @@ export class M2EnvironmentHighAvailabilityConfigOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: M2EnvironmentHighAvailabilityConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: M2EnvironmentHighAvailabilityConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._desiredCapacity = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -183,15 +183,15 @@ export class M2EnvironmentHighAvailabilityConfigOutputReference extends cdktf.Co
   }
 }
 
-export class M2EnvironmentHighAvailabilityConfigList extends cdktf.ComplexList {
-  public internalValue? : M2EnvironmentHighAvailabilityConfig[] | cdktf.IResolvable
+export class M2EnvironmentHighAvailabilityConfigList extends cdktn.ComplexList {
+  public internalValue? : M2EnvironmentHighAvailabilityConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -213,32 +213,32 @@ export interface M2EnvironmentStorageConfigurationEfs {
   readonly mountPoint: string;
 }
 
-export function m2EnvironmentStorageConfigurationEfsToTerraform(struct?: M2EnvironmentStorageConfigurationEfs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentStorageConfigurationEfsToTerraform(struct?: M2EnvironmentStorageConfigurationEfs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
-    mount_point: cdktf.stringToTerraform(struct!.mountPoint),
+    file_system_id: cdktn.stringToTerraform(struct!.fileSystemId),
+    mount_point: cdktn.stringToTerraform(struct!.mountPoint),
   }
 }
 
 
-export function m2EnvironmentStorageConfigurationEfsToHclTerraform(struct?: M2EnvironmentStorageConfigurationEfs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentStorageConfigurationEfsToHclTerraform(struct?: M2EnvironmentStorageConfigurationEfs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_system_id: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount_point: {
-      value: cdktf.stringToHclTerraform(struct!.mountPoint),
+      value: cdktn.stringToHclTerraform(struct!.mountPoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -249,9 +249,9 @@ export function m2EnvironmentStorageConfigurationEfsToHclTerraform(struct?: M2En
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class M2EnvironmentStorageConfigurationEfsOutputReference extends cdktf.ComplexObject {
+export class M2EnvironmentStorageConfigurationEfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -259,11 +259,11 @@ export class M2EnvironmentStorageConfigurationEfsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): M2EnvironmentStorageConfigurationEfs | cdktf.IResolvable | undefined {
+  public get internalValue(): M2EnvironmentStorageConfigurationEfs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -280,14 +280,14 @@ export class M2EnvironmentStorageConfigurationEfsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: M2EnvironmentStorageConfigurationEfs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: M2EnvironmentStorageConfigurationEfs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fileSystemId = undefined;
       this._mountPoint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -326,15 +326,15 @@ export class M2EnvironmentStorageConfigurationEfsOutputReference extends cdktf.C
   }
 }
 
-export class M2EnvironmentStorageConfigurationEfsList extends cdktf.ComplexList {
-  public internalValue? : M2EnvironmentStorageConfigurationEfs[] | cdktf.IResolvable
+export class M2EnvironmentStorageConfigurationEfsList extends cdktn.ComplexList {
+  public internalValue? : M2EnvironmentStorageConfigurationEfs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -356,32 +356,32 @@ export interface M2EnvironmentStorageConfigurationFsx {
   readonly mountPoint: string;
 }
 
-export function m2EnvironmentStorageConfigurationFsxToTerraform(struct?: M2EnvironmentStorageConfigurationFsx | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentStorageConfigurationFsxToTerraform(struct?: M2EnvironmentStorageConfigurationFsx | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
-    mount_point: cdktf.stringToTerraform(struct!.mountPoint),
+    file_system_id: cdktn.stringToTerraform(struct!.fileSystemId),
+    mount_point: cdktn.stringToTerraform(struct!.mountPoint),
   }
 }
 
 
-export function m2EnvironmentStorageConfigurationFsxToHclTerraform(struct?: M2EnvironmentStorageConfigurationFsx | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentStorageConfigurationFsxToHclTerraform(struct?: M2EnvironmentStorageConfigurationFsx | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_system_id: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount_point: {
-      value: cdktf.stringToHclTerraform(struct!.mountPoint),
+      value: cdktn.stringToHclTerraform(struct!.mountPoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -392,9 +392,9 @@ export function m2EnvironmentStorageConfigurationFsxToHclTerraform(struct?: M2En
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class M2EnvironmentStorageConfigurationFsxOutputReference extends cdktf.ComplexObject {
+export class M2EnvironmentStorageConfigurationFsxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -402,11 +402,11 @@ export class M2EnvironmentStorageConfigurationFsxOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): M2EnvironmentStorageConfigurationFsx | cdktf.IResolvable | undefined {
+  public get internalValue(): M2EnvironmentStorageConfigurationFsx | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -423,14 +423,14 @@ export class M2EnvironmentStorageConfigurationFsxOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: M2EnvironmentStorageConfigurationFsx | cdktf.IResolvable | undefined) {
+  public set internalValue(value: M2EnvironmentStorageConfigurationFsx | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fileSystemId = undefined;
       this._mountPoint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -469,15 +469,15 @@ export class M2EnvironmentStorageConfigurationFsxOutputReference extends cdktf.C
   }
 }
 
-export class M2EnvironmentStorageConfigurationFsxList extends cdktf.ComplexList {
-  public internalValue? : M2EnvironmentStorageConfigurationFsx[] | cdktf.IResolvable
+export class M2EnvironmentStorageConfigurationFsxList extends cdktn.ComplexList {
+  public internalValue? : M2EnvironmentStorageConfigurationFsx[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -494,41 +494,41 @@ export interface M2EnvironmentStorageConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#efs M2Environment#efs}
   */
-  readonly efs?: M2EnvironmentStorageConfigurationEfs[] | cdktf.IResolvable;
+  readonly efs?: M2EnvironmentStorageConfigurationEfs[] | cdktn.IResolvable;
   /**
   * fsx block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#fsx M2Environment#fsx}
   */
-  readonly fsx?: M2EnvironmentStorageConfigurationFsx[] | cdktf.IResolvable;
+  readonly fsx?: M2EnvironmentStorageConfigurationFsx[] | cdktn.IResolvable;
 }
 
-export function m2EnvironmentStorageConfigurationToTerraform(struct?: M2EnvironmentStorageConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentStorageConfigurationToTerraform(struct?: M2EnvironmentStorageConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    efs: cdktf.listMapper(m2EnvironmentStorageConfigurationEfsToTerraform, true)(struct!.efs),
-    fsx: cdktf.listMapper(m2EnvironmentStorageConfigurationFsxToTerraform, true)(struct!.fsx),
+    efs: cdktn.listMapper(m2EnvironmentStorageConfigurationEfsToTerraform, true)(struct!.efs),
+    fsx: cdktn.listMapper(m2EnvironmentStorageConfigurationFsxToTerraform, true)(struct!.fsx),
   }
 }
 
 
-export function m2EnvironmentStorageConfigurationToHclTerraform(struct?: M2EnvironmentStorageConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentStorageConfigurationToHclTerraform(struct?: M2EnvironmentStorageConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     efs: {
-      value: cdktf.listMapperHcl(m2EnvironmentStorageConfigurationEfsToHclTerraform, true)(struct!.efs),
+      value: cdktn.listMapperHcl(m2EnvironmentStorageConfigurationEfsToHclTerraform, true)(struct!.efs),
       isBlock: true,
       type: "list",
       storageClassType: "M2EnvironmentStorageConfigurationEfsList",
     },
     fsx: {
-      value: cdktf.listMapperHcl(m2EnvironmentStorageConfigurationFsxToHclTerraform, true)(struct!.fsx),
+      value: cdktn.listMapperHcl(m2EnvironmentStorageConfigurationFsxToHclTerraform, true)(struct!.fsx),
       isBlock: true,
       type: "list",
       storageClassType: "M2EnvironmentStorageConfigurationFsxList",
@@ -539,9 +539,9 @@ export function m2EnvironmentStorageConfigurationToHclTerraform(struct?: M2Envir
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class M2EnvironmentStorageConfigurationOutputReference extends cdktf.ComplexObject {
+export class M2EnvironmentStorageConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -549,11 +549,11 @@ export class M2EnvironmentStorageConfigurationOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): M2EnvironmentStorageConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): M2EnvironmentStorageConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -570,14 +570,14 @@ export class M2EnvironmentStorageConfigurationOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: M2EnvironmentStorageConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: M2EnvironmentStorageConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._efs.internalValue = undefined;
       this._fsx.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -594,7 +594,7 @@ export class M2EnvironmentStorageConfigurationOutputReference extends cdktf.Comp
   public get efs() {
     return this._efs;
   }
-  public putEfs(value: M2EnvironmentStorageConfigurationEfs[] | cdktf.IResolvable) {
+  public putEfs(value: M2EnvironmentStorageConfigurationEfs[] | cdktn.IResolvable) {
     this._efs.internalValue = value;
   }
   public resetEfs() {
@@ -610,7 +610,7 @@ export class M2EnvironmentStorageConfigurationOutputReference extends cdktf.Comp
   public get fsx() {
     return this._fsx;
   }
-  public putFsx(value: M2EnvironmentStorageConfigurationFsx[] | cdktf.IResolvable) {
+  public putFsx(value: M2EnvironmentStorageConfigurationFsx[] | cdktn.IResolvable) {
     this._fsx.internalValue = value;
   }
   public resetFsx() {
@@ -622,15 +622,15 @@ export class M2EnvironmentStorageConfigurationOutputReference extends cdktf.Comp
   }
 }
 
-export class M2EnvironmentStorageConfigurationList extends cdktf.ComplexList {
-  public internalValue? : M2EnvironmentStorageConfiguration[] | cdktf.IResolvable
+export class M2EnvironmentStorageConfigurationList extends cdktn.ComplexList {
+  public internalValue? : M2EnvironmentStorageConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -662,39 +662,39 @@ export interface M2EnvironmentTimeouts {
   readonly update?: string;
 }
 
-export function m2EnvironmentTimeoutsToTerraform(struct?: M2EnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentTimeoutsToTerraform(struct?: M2EnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function m2EnvironmentTimeoutsToHclTerraform(struct?: M2EnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2EnvironmentTimeoutsToHclTerraform(struct?: M2EnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -705,19 +705,19 @@ export function m2EnvironmentTimeoutsToHclTerraform(struct?: M2EnvironmentTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class M2EnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class M2EnvironmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): M2EnvironmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): M2EnvironmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -738,7 +738,7 @@ export class M2EnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: M2EnvironmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: M2EnvironmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -746,7 +746,7 @@ export class M2EnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -811,7 +811,7 @@ export class M2EnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment aws_m2_environment}
 */
-export class M2Environment extends cdktf.TerraformResource {
+export class M2Environment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -822,14 +822,14 @@ export class M2Environment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a M2Environment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a M2Environment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the M2Environment to import
   * @param importFromId The id of the existing M2Environment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the M2Environment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_m2_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_m2_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -883,11 +883,11 @@ export class M2Environment extends cdktf.TerraformResource {
   // ==========
 
   // apply_changes_during_maintenance_window - computed: false, optional: true, required: false
-  private _applyChangesDuringMaintenanceWindow?: boolean | cdktf.IResolvable; 
+  private _applyChangesDuringMaintenanceWindow?: boolean | cdktn.IResolvable; 
   public get applyChangesDuringMaintenanceWindow() {
     return this.getBooleanAttribute('apply_changes_during_maintenance_window');
   }
-  public set applyChangesDuringMaintenanceWindow(value: boolean | cdktf.IResolvable) {
+  public set applyChangesDuringMaintenanceWindow(value: boolean | cdktn.IResolvable) {
     this._applyChangesDuringMaintenanceWindow = value;
   }
   public resetApplyChangesDuringMaintenanceWindow() {
@@ -954,11 +954,11 @@ export class M2Environment extends cdktf.TerraformResource {
   }
 
   // force_update - computed: false, optional: true, required: false
-  private _forceUpdate?: boolean | cdktf.IResolvable; 
+  private _forceUpdate?: boolean | cdktn.IResolvable; 
   public get forceUpdate() {
     return this.getBooleanAttribute('force_update');
   }
-  public set forceUpdate(value: boolean | cdktf.IResolvable) {
+  public set forceUpdate(value: boolean | cdktn.IResolvable) {
     this._forceUpdate = value;
   }
   public resetForceUpdate() {
@@ -1038,11 +1038,11 @@ export class M2Environment extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: true, optional: true, required: false
-  private _publiclyAccessible?: boolean | cdktf.IResolvable; 
+  private _publiclyAccessible?: boolean | cdktn.IResolvable; 
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
+  public set publiclyAccessible(value: boolean | cdktn.IResolvable) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -1072,7 +1072,7 @@ export class M2Environment extends cdktf.TerraformResource {
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1088,7 +1088,7 @@ export class M2Environment extends cdktf.TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -1118,7 +1118,7 @@ export class M2Environment extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1128,7 +1128,7 @@ export class M2Environment extends cdktf.TerraformResource {
   public get highAvailabilityConfig() {
     return this._highAvailabilityConfig;
   }
-  public putHighAvailabilityConfig(value: M2EnvironmentHighAvailabilityConfig[] | cdktf.IResolvable) {
+  public putHighAvailabilityConfig(value: M2EnvironmentHighAvailabilityConfig[] | cdktn.IResolvable) {
     this._highAvailabilityConfig.internalValue = value;
   }
   public resetHighAvailabilityConfig() {
@@ -1144,7 +1144,7 @@ export class M2Environment extends cdktf.TerraformResource {
   public get storageConfiguration() {
     return this._storageConfiguration;
   }
-  public putStorageConfiguration(value: M2EnvironmentStorageConfiguration[] | cdktf.IResolvable) {
+  public putStorageConfiguration(value: M2EnvironmentStorageConfiguration[] | cdktn.IResolvable) {
     this._storageConfiguration.internalValue = value;
   }
   public resetStorageConfiguration() {
@@ -1177,22 +1177,22 @@ export class M2Environment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_changes_during_maintenance_window: cdktf.booleanToTerraform(this._applyChangesDuringMaintenanceWindow),
-      description: cdktf.stringToTerraform(this._description),
-      engine_type: cdktf.stringToTerraform(this._engineType),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      force_update: cdktf.booleanToTerraform(this._forceUpdate),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      high_availability_config: cdktf.listMapper(m2EnvironmentHighAvailabilityConfigToTerraform, true)(this._highAvailabilityConfig.internalValue),
-      storage_configuration: cdktf.listMapper(m2EnvironmentStorageConfigurationToTerraform, true)(this._storageConfiguration.internalValue),
+      apply_changes_during_maintenance_window: cdktn.booleanToTerraform(this._applyChangesDuringMaintenanceWindow),
+      description: cdktn.stringToTerraform(this._description),
+      engine_type: cdktn.stringToTerraform(this._engineType),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      force_update: cdktn.booleanToTerraform(this._forceUpdate),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      name: cdktn.stringToTerraform(this._name),
+      preferred_maintenance_window: cdktn.stringToTerraform(this._preferredMaintenanceWindow),
+      publicly_accessible: cdktn.booleanToTerraform(this._publiclyAccessible),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      high_availability_config: cdktn.listMapper(m2EnvironmentHighAvailabilityConfigToTerraform, true)(this._highAvailabilityConfig.internalValue),
+      storage_configuration: cdktn.listMapper(m2EnvironmentStorageConfigurationToTerraform, true)(this._storageConfiguration.internalValue),
       timeouts: m2EnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1200,97 +1200,97 @@ export class M2Environment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_changes_during_maintenance_window: {
-        value: cdktf.booleanToHclTerraform(this._applyChangesDuringMaintenanceWindow),
+        value: cdktn.booleanToHclTerraform(this._applyChangesDuringMaintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_type: {
-        value: cdktf.stringToHclTerraform(this._engineType),
+        value: cdktn.stringToHclTerraform(this._engineType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_update: {
-        value: cdktf.booleanToHclTerraform(this._forceUpdate),
+        value: cdktn.booleanToHclTerraform(this._forceUpdate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_maintenance_window: {
-        value: cdktf.stringToHclTerraform(this._preferredMaintenanceWindow),
+        value: cdktn.stringToHclTerraform(this._preferredMaintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publicly_accessible: {
-        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        value: cdktn.booleanToHclTerraform(this._publiclyAccessible),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       high_availability_config: {
-        value: cdktf.listMapperHcl(m2EnvironmentHighAvailabilityConfigToHclTerraform, true)(this._highAvailabilityConfig.internalValue),
+        value: cdktn.listMapperHcl(m2EnvironmentHighAvailabilityConfigToHclTerraform, true)(this._highAvailabilityConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "M2EnvironmentHighAvailabilityConfigList",
       },
       storage_configuration: {
-        value: cdktf.listMapperHcl(m2EnvironmentStorageConfigurationToHclTerraform, true)(this._storageConfiguration.internalValue),
+        value: cdktn.listMapperHcl(m2EnvironmentStorageConfigurationToHclTerraform, true)(this._storageConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "M2EnvironmentStorageConfigurationList",

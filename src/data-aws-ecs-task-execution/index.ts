@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEcsTaskExecutionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcsTaskExecutionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#client_token DataAwsEcsTaskExecution#client_token}
   */
@@ -27,11 +27,11 @@ export interface DataAwsEcsTaskExecutionConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#enable_ecs_managed_tags DataAwsEcsTaskExecution#enable_ecs_managed_tags}
   */
-  readonly enableEcsManagedTags?: boolean | cdktf.IResolvable;
+  readonly enableEcsManagedTags?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#enable_execute_command DataAwsEcsTaskExecution#enable_execute_command}
   */
-  readonly enableExecuteCommand?: boolean | cdktf.IResolvable;
+  readonly enableExecuteCommand?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#group DataAwsEcsTaskExecution#group}
   */
@@ -82,7 +82,7 @@ export interface DataAwsEcsTaskExecutionConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#capacity_provider_strategy DataAwsEcsTaskExecution#capacity_provider_strategy}
   */
-  readonly capacityProviderStrategy?: DataAwsEcsTaskExecutionCapacityProviderStrategy[] | cdktf.IResolvable;
+  readonly capacityProviderStrategy?: DataAwsEcsTaskExecutionCapacityProviderStrategy[] | cdktn.IResolvable;
   /**
   * network_configuration block
   *
@@ -100,13 +100,13 @@ export interface DataAwsEcsTaskExecutionConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#placement_constraints DataAwsEcsTaskExecution#placement_constraints}
   */
-  readonly placementConstraints?: DataAwsEcsTaskExecutionPlacementConstraints[] | cdktf.IResolvable;
+  readonly placementConstraints?: DataAwsEcsTaskExecutionPlacementConstraints[] | cdktn.IResolvable;
   /**
   * placement_strategy block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#placement_strategy DataAwsEcsTaskExecution#placement_strategy}
   */
-  readonly placementStrategy?: DataAwsEcsTaskExecutionPlacementStrategy[] | cdktf.IResolvable;
+  readonly placementStrategy?: DataAwsEcsTaskExecutionPlacementStrategy[] | cdktn.IResolvable;
 }
 export interface DataAwsEcsTaskExecutionCapacityProviderStrategy {
   /**
@@ -123,39 +123,39 @@ export interface DataAwsEcsTaskExecutionCapacityProviderStrategy {
   readonly weight?: number;
 }
 
-export function dataAwsEcsTaskExecutionCapacityProviderStrategyToTerraform(struct?: DataAwsEcsTaskExecutionCapacityProviderStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionCapacityProviderStrategyToTerraform(struct?: DataAwsEcsTaskExecutionCapacityProviderStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    base: cdktf.numberToTerraform(struct!.base),
-    capacity_provider: cdktf.stringToTerraform(struct!.capacityProvider),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    base: cdktn.numberToTerraform(struct!.base),
+    capacity_provider: cdktn.stringToTerraform(struct!.capacityProvider),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
-export function dataAwsEcsTaskExecutionCapacityProviderStrategyToHclTerraform(struct?: DataAwsEcsTaskExecutionCapacityProviderStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionCapacityProviderStrategyToHclTerraform(struct?: DataAwsEcsTaskExecutionCapacityProviderStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     base: {
-      value: cdktf.numberToHclTerraform(struct!.base),
+      value: cdktn.numberToHclTerraform(struct!.base),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     capacity_provider: {
-      value: cdktf.stringToHclTerraform(struct!.capacityProvider),
+      value: cdktn.stringToHclTerraform(struct!.capacityProvider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -166,9 +166,9 @@ export function dataAwsEcsTaskExecutionCapacityProviderStrategyToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -176,11 +176,11 @@ export class DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcsTaskExecutionCapacityProviderStrategy | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcsTaskExecutionCapacityProviderStrategy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -201,7 +201,7 @@ export class DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcsTaskExecutionCapacityProviderStrategy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcsTaskExecutionCapacityProviderStrategy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -209,7 +209,7 @@ export class DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference exte
       this._capacityProvider = undefined;
       this._weight = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -268,15 +268,15 @@ export class DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference exte
   }
 }
 
-export class DataAwsEcsTaskExecutionCapacityProviderStrategyList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcsTaskExecutionCapacityProviderStrategy[] | cdktf.IResolvable
+export class DataAwsEcsTaskExecutionCapacityProviderStrategyList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcsTaskExecutionCapacityProviderStrategy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -291,7 +291,7 @@ export interface DataAwsEcsTaskExecutionNetworkConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#assign_public_ip DataAwsEcsTaskExecution#assign_public_ip}
   */
-  readonly assignPublicIp?: boolean | cdktf.IResolvable;
+  readonly assignPublicIp?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#security_groups DataAwsEcsTaskExecution#security_groups}
   */
@@ -303,38 +303,38 @@ export interface DataAwsEcsTaskExecutionNetworkConfiguration {
 }
 
 export function dataAwsEcsTaskExecutionNetworkConfigurationToTerraform(struct?: DataAwsEcsTaskExecutionNetworkConfigurationOutputReference | DataAwsEcsTaskExecutionNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    assign_public_ip: cdktf.booleanToTerraform(struct!.assignPublicIp),
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
+    assign_public_ip: cdktn.booleanToTerraform(struct!.assignPublicIp),
+    security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroups),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
   }
 }
 
 
 export function dataAwsEcsTaskExecutionNetworkConfigurationToHclTerraform(struct?: DataAwsEcsTaskExecutionNetworkConfigurationOutputReference | DataAwsEcsTaskExecutionNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     assign_public_ip: {
-      value: cdktf.booleanToHclTerraform(struct!.assignPublicIp),
+      value: cdktn.booleanToHclTerraform(struct!.assignPublicIp),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     security_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -345,14 +345,14 @@ export function dataAwsEcsTaskExecutionNetworkConfigurationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcsTaskExecutionNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcsTaskExecutionNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -390,11 +390,11 @@ export class DataAwsEcsTaskExecutionNetworkConfigurationOutputReference extends 
   }
 
   // assign_public_ip - computed: false, optional: true, required: false
-  private _assignPublicIp?: boolean | cdktf.IResolvable; 
+  private _assignPublicIp?: boolean | cdktn.IResolvable; 
   public get assignPublicIp() {
     return this.getBooleanAttribute('assign_public_ip');
   }
-  public set assignPublicIp(value: boolean | cdktf.IResolvable) {
+  public set assignPublicIp(value: boolean | cdktn.IResolvable) {
     this._assignPublicIp = value;
   }
   public resetAssignPublicIp() {
@@ -408,7 +408,7 @@ export class DataAwsEcsTaskExecutionNetworkConfigurationOutputReference extends 
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -424,7 +424,7 @@ export class DataAwsEcsTaskExecutionNetworkConfigurationOutputReference extends 
   // subnets - computed: false, optional: false, required: true
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -445,32 +445,32 @@ export interface DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment {
   readonly value: string;
 }
 
-export function dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -481,9 +481,9 @@ export function dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -491,11 +491,11 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -512,14 +512,14 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -558,15 +558,15 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentOutput
   }
 }
 
-export class DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment[] | cdktf.IResolvable
+export class DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -588,32 +588,32 @@ export interface DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequi
   readonly value: string;
 }
 
-export function dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -624,9 +624,9 @@ export function dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequir
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -634,11 +634,11 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequireme
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -655,14 +655,14 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequireme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -701,15 +701,15 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequireme
   }
 }
 
-export class DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements[] | cdktf.IResolvable
+export class DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -746,76 +746,76 @@ export interface DataAwsEcsTaskExecutionOverridesContainerOverrides {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#environment DataAwsEcsTaskExecution#environment}
   */
-  readonly environment?: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment[] | cdktf.IResolvable;
+  readonly environment?: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment[] | cdktn.IResolvable;
   /**
   * resource_requirements block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#resource_requirements DataAwsEcsTaskExecution#resource_requirements}
   */
-  readonly resourceRequirements?: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements[] | cdktf.IResolvable;
+  readonly resourceRequirements?: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements[] | cdktn.IResolvable;
 }
 
-export function dataAwsEcsTaskExecutionOverridesContainerOverridesToTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionOverridesContainerOverridesToTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
-    cpu: cdktf.numberToTerraform(struct!.cpu),
-    memory: cdktf.numberToTerraform(struct!.memory),
-    memory_reservation: cdktf.numberToTerraform(struct!.memoryReservation),
-    name: cdktf.stringToTerraform(struct!.name),
-    environment: cdktf.listMapper(dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToTerraform, true)(struct!.environment),
-    resource_requirements: cdktf.listMapper(dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToTerraform, true)(struct!.resourceRequirements),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
+    cpu: cdktn.numberToTerraform(struct!.cpu),
+    memory: cdktn.numberToTerraform(struct!.memory),
+    memory_reservation: cdktn.numberToTerraform(struct!.memoryReservation),
+    name: cdktn.stringToTerraform(struct!.name),
+    environment: cdktn.listMapper(dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToTerraform, true)(struct!.environment),
+    resource_requirements: cdktn.listMapper(dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToTerraform, true)(struct!.resourceRequirements),
   }
 }
 
 
-export function dataAwsEcsTaskExecutionOverridesContainerOverridesToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionOverridesContainerOverridesToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     cpu: {
-      value: cdktf.numberToHclTerraform(struct!.cpu),
+      value: cdktn.numberToHclTerraform(struct!.cpu),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     memory: {
-      value: cdktf.numberToHclTerraform(struct!.memory),
+      value: cdktn.numberToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     memory_reservation: {
-      value: cdktf.numberToHclTerraform(struct!.memoryReservation),
+      value: cdktn.numberToHclTerraform(struct!.memoryReservation),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     environment: {
-      value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToHclTerraform, true)(struct!.environment),
+      value: cdktn.listMapperHcl(dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToHclTerraform, true)(struct!.environment),
       isBlock: true,
       type: "set",
       storageClassType: "DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList",
     },
     resource_requirements: {
-      value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToHclTerraform, true)(struct!.resourceRequirements),
+      value: cdktn.listMapperHcl(dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToHclTerraform, true)(struct!.resourceRequirements),
       isBlock: true,
       type: "set",
       storageClassType: "DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsList",
@@ -826,9 +826,9 @@ export function dataAwsEcsTaskExecutionOverridesContainerOverridesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -836,11 +836,11 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcsTaskExecutionOverridesContainerOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcsTaskExecutionOverridesContainerOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -877,7 +877,7 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcsTaskExecutionOverridesContainerOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcsTaskExecutionOverridesContainerOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -889,7 +889,7 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference e
       this._environment.internalValue = undefined;
       this._resourceRequirements.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -988,7 +988,7 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference e
   public get environment() {
     return this._environment;
   }
-  public putEnvironment(value: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment[] | cdktf.IResolvable) {
+  public putEnvironment(value: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment[] | cdktn.IResolvable) {
     this._environment.internalValue = value;
   }
   public resetEnvironment() {
@@ -1004,7 +1004,7 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference e
   public get resourceRequirements() {
     return this._resourceRequirements;
   }
-  public putResourceRequirements(value: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements[] | cdktf.IResolvable) {
+  public putResourceRequirements(value: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements[] | cdktn.IResolvable) {
     this._resourceRequirements.internalValue = value;
   }
   public resetResourceRequirements() {
@@ -1016,15 +1016,15 @@ export class DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference e
   }
 }
 
-export class DataAwsEcsTaskExecutionOverridesContainerOverridesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcsTaskExecutionOverridesContainerOverrides[] | cdktf.IResolvable
+export class DataAwsEcsTaskExecutionOverridesContainerOverridesList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcsTaskExecutionOverridesContainerOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1057,56 +1057,56 @@ export interface DataAwsEcsTaskExecutionOverrides {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#container_overrides DataAwsEcsTaskExecution#container_overrides}
   */
-  readonly containerOverrides?: DataAwsEcsTaskExecutionOverridesContainerOverrides[] | cdktf.IResolvable;
+  readonly containerOverrides?: DataAwsEcsTaskExecutionOverridesContainerOverrides[] | cdktn.IResolvable;
 }
 
 export function dataAwsEcsTaskExecutionOverridesToTerraform(struct?: DataAwsEcsTaskExecutionOverridesOutputReference | DataAwsEcsTaskExecutionOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu: cdktf.stringToTerraform(struct!.cpu),
-    execution_role_arn: cdktf.stringToTerraform(struct!.executionRoleArn),
-    memory: cdktf.stringToTerraform(struct!.memory),
-    task_role_arn: cdktf.stringToTerraform(struct!.taskRoleArn),
-    container_overrides: cdktf.listMapper(dataAwsEcsTaskExecutionOverridesContainerOverridesToTerraform, true)(struct!.containerOverrides),
+    cpu: cdktn.stringToTerraform(struct!.cpu),
+    execution_role_arn: cdktn.stringToTerraform(struct!.executionRoleArn),
+    memory: cdktn.stringToTerraform(struct!.memory),
+    task_role_arn: cdktn.stringToTerraform(struct!.taskRoleArn),
+    container_overrides: cdktn.listMapper(dataAwsEcsTaskExecutionOverridesContainerOverridesToTerraform, true)(struct!.containerOverrides),
   }
 }
 
 
 export function dataAwsEcsTaskExecutionOverridesToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesOutputReference | DataAwsEcsTaskExecutionOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu: {
-      value: cdktf.stringToHclTerraform(struct!.cpu),
+      value: cdktn.stringToHclTerraform(struct!.cpu),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.executionRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.executionRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     memory: {
-      value: cdktf.stringToHclTerraform(struct!.memory),
+      value: cdktn.stringToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.taskRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.taskRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container_overrides: {
-      value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionOverridesContainerOverridesToHclTerraform, true)(struct!.containerOverrides),
+      value: cdktn.listMapperHcl(dataAwsEcsTaskExecutionOverridesContainerOverridesToHclTerraform, true)(struct!.containerOverrides),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsEcsTaskExecutionOverridesContainerOverridesList",
@@ -1117,14 +1117,14 @@ export function dataAwsEcsTaskExecutionOverridesToHclTerraform(struct?: DataAwsE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcsTaskExecutionOverridesOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcsTaskExecutionOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1242,7 +1242,7 @@ export class DataAwsEcsTaskExecutionOverridesOutputReference extends cdktf.Compl
   public get containerOverrides() {
     return this._containerOverrides;
   }
-  public putContainerOverrides(value: DataAwsEcsTaskExecutionOverridesContainerOverrides[] | cdktf.IResolvable) {
+  public putContainerOverrides(value: DataAwsEcsTaskExecutionOverridesContainerOverrides[] | cdktn.IResolvable) {
     this._containerOverrides.internalValue = value;
   }
   public resetContainerOverrides() {
@@ -1264,32 +1264,32 @@ export interface DataAwsEcsTaskExecutionPlacementConstraints {
   readonly type: string;
 }
 
-export function dataAwsEcsTaskExecutionPlacementConstraintsToTerraform(struct?: DataAwsEcsTaskExecutionPlacementConstraints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionPlacementConstraintsToTerraform(struct?: DataAwsEcsTaskExecutionPlacementConstraints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expression: cdktf.stringToTerraform(struct!.expression),
-    type: cdktf.stringToTerraform(struct!.type),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataAwsEcsTaskExecutionPlacementConstraintsToHclTerraform(struct?: DataAwsEcsTaskExecutionPlacementConstraints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionPlacementConstraintsToHclTerraform(struct?: DataAwsEcsTaskExecutionPlacementConstraints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1300,9 +1300,9 @@ export function dataAwsEcsTaskExecutionPlacementConstraintsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcsTaskExecutionPlacementConstraintsOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcsTaskExecutionPlacementConstraintsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1310,11 +1310,11 @@ export class DataAwsEcsTaskExecutionPlacementConstraintsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcsTaskExecutionPlacementConstraints | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcsTaskExecutionPlacementConstraints | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1331,14 +1331,14 @@ export class DataAwsEcsTaskExecutionPlacementConstraintsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcsTaskExecutionPlacementConstraints | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcsTaskExecutionPlacementConstraints | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._expression = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1380,15 +1380,15 @@ export class DataAwsEcsTaskExecutionPlacementConstraintsOutputReference extends 
   }
 }
 
-export class DataAwsEcsTaskExecutionPlacementConstraintsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcsTaskExecutionPlacementConstraints[] | cdktf.IResolvable
+export class DataAwsEcsTaskExecutionPlacementConstraintsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcsTaskExecutionPlacementConstraints[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1410,32 +1410,32 @@ export interface DataAwsEcsTaskExecutionPlacementStrategy {
   readonly type: string;
 }
 
-export function dataAwsEcsTaskExecutionPlacementStrategyToTerraform(struct?: DataAwsEcsTaskExecutionPlacementStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionPlacementStrategyToTerraform(struct?: DataAwsEcsTaskExecutionPlacementStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    field: cdktf.stringToTerraform(struct!.field),
-    type: cdktf.stringToTerraform(struct!.type),
+    field: cdktn.stringToTerraform(struct!.field),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataAwsEcsTaskExecutionPlacementStrategyToHclTerraform(struct?: DataAwsEcsTaskExecutionPlacementStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcsTaskExecutionPlacementStrategyToHclTerraform(struct?: DataAwsEcsTaskExecutionPlacementStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     field: {
-      value: cdktf.stringToHclTerraform(struct!.field),
+      value: cdktn.stringToHclTerraform(struct!.field),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1446,9 +1446,9 @@ export function dataAwsEcsTaskExecutionPlacementStrategyToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcsTaskExecutionPlacementStrategyOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcsTaskExecutionPlacementStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1456,11 +1456,11 @@ export class DataAwsEcsTaskExecutionPlacementStrategyOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcsTaskExecutionPlacementStrategy | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcsTaskExecutionPlacementStrategy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1477,14 +1477,14 @@ export class DataAwsEcsTaskExecutionPlacementStrategyOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcsTaskExecutionPlacementStrategy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcsTaskExecutionPlacementStrategy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._field = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1526,15 +1526,15 @@ export class DataAwsEcsTaskExecutionPlacementStrategyOutputReference extends cdk
   }
 }
 
-export class DataAwsEcsTaskExecutionPlacementStrategyList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcsTaskExecutionPlacementStrategy[] | cdktf.IResolvable
+export class DataAwsEcsTaskExecutionPlacementStrategyList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcsTaskExecutionPlacementStrategy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1549,7 +1549,7 @@ export class DataAwsEcsTaskExecutionPlacementStrategyList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution aws_ecs_task_execution}
 */
-export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
+export class DataAwsEcsTaskExecution extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1560,14 +1560,14 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEcsTaskExecution resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEcsTaskExecution resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEcsTaskExecution to import
   * @param importFromId The id of the existing DataAwsEcsTaskExecution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecs_task_execution#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEcsTaskExecution to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecs_task_execution", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecs_task_execution", importId: importFromId, provider });
       }
 
   // ===========
@@ -1669,11 +1669,11 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
   }
 
   // enable_ecs_managed_tags - computed: false, optional: true, required: false
-  private _enableEcsManagedTags?: boolean | cdktf.IResolvable; 
+  private _enableEcsManagedTags?: boolean | cdktn.IResolvable; 
   public get enableEcsManagedTags() {
     return this.getBooleanAttribute('enable_ecs_managed_tags');
   }
-  public set enableEcsManagedTags(value: boolean | cdktf.IResolvable) {
+  public set enableEcsManagedTags(value: boolean | cdktn.IResolvable) {
     this._enableEcsManagedTags = value;
   }
   public resetEnableEcsManagedTags() {
@@ -1685,11 +1685,11 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
   }
 
   // enable_execute_command - computed: false, optional: true, required: false
-  private _enableExecuteCommand?: boolean | cdktf.IResolvable; 
+  private _enableExecuteCommand?: boolean | cdktn.IResolvable; 
   public get enableExecuteCommand() {
     return this.getBooleanAttribute('enable_execute_command');
   }
-  public set enableExecuteCommand(value: boolean | cdktf.IResolvable) {
+  public set enableExecuteCommand(value: boolean | cdktn.IResolvable) {
     this._enableExecuteCommand = value;
   }
   public resetEnableExecuteCommand() {
@@ -1867,7 +1867,7 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
   public get capacityProviderStrategy() {
     return this._capacityProviderStrategy;
   }
-  public putCapacityProviderStrategy(value: DataAwsEcsTaskExecutionCapacityProviderStrategy[] | cdktf.IResolvable) {
+  public putCapacityProviderStrategy(value: DataAwsEcsTaskExecutionCapacityProviderStrategy[] | cdktn.IResolvable) {
     this._capacityProviderStrategy.internalValue = value;
   }
   public resetCapacityProviderStrategy() {
@@ -1915,7 +1915,7 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
   public get placementConstraints() {
     return this._placementConstraints;
   }
-  public putPlacementConstraints(value: DataAwsEcsTaskExecutionPlacementConstraints[] | cdktf.IResolvable) {
+  public putPlacementConstraints(value: DataAwsEcsTaskExecutionPlacementConstraints[] | cdktn.IResolvable) {
     this._placementConstraints.internalValue = value;
   }
   public resetPlacementConstraints() {
@@ -1931,7 +1931,7 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
   public get placementStrategy() {
     return this._placementStrategy;
   }
-  public putPlacementStrategy(value: DataAwsEcsTaskExecutionPlacementStrategy[] | cdktf.IResolvable) {
+  public putPlacementStrategy(value: DataAwsEcsTaskExecutionPlacementStrategy[] | cdktn.IResolvable) {
     this._placementStrategy.internalValue = value;
   }
   public resetPlacementStrategy() {
@@ -1948,123 +1948,123 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_token: cdktf.stringToTerraform(this._clientToken),
-      cluster: cdktf.stringToTerraform(this._cluster),
-      desired_count: cdktf.numberToTerraform(this._desiredCount),
-      enable_ecs_managed_tags: cdktf.booleanToTerraform(this._enableEcsManagedTags),
-      enable_execute_command: cdktf.booleanToTerraform(this._enableExecuteCommand),
-      group: cdktf.stringToTerraform(this._group),
-      id: cdktf.stringToTerraform(this._id),
-      launch_type: cdktf.stringToTerraform(this._launchType),
-      platform_version: cdktf.stringToTerraform(this._platformVersion),
-      propagate_tags: cdktf.stringToTerraform(this._propagateTags),
-      reference_id: cdktf.stringToTerraform(this._referenceId),
-      region: cdktf.stringToTerraform(this._region),
-      started_by: cdktf.stringToTerraform(this._startedBy),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      task_definition: cdktf.stringToTerraform(this._taskDefinition),
-      capacity_provider_strategy: cdktf.listMapper(dataAwsEcsTaskExecutionCapacityProviderStrategyToTerraform, true)(this._capacityProviderStrategy.internalValue),
+      client_token: cdktn.stringToTerraform(this._clientToken),
+      cluster: cdktn.stringToTerraform(this._cluster),
+      desired_count: cdktn.numberToTerraform(this._desiredCount),
+      enable_ecs_managed_tags: cdktn.booleanToTerraform(this._enableEcsManagedTags),
+      enable_execute_command: cdktn.booleanToTerraform(this._enableExecuteCommand),
+      group: cdktn.stringToTerraform(this._group),
+      id: cdktn.stringToTerraform(this._id),
+      launch_type: cdktn.stringToTerraform(this._launchType),
+      platform_version: cdktn.stringToTerraform(this._platformVersion),
+      propagate_tags: cdktn.stringToTerraform(this._propagateTags),
+      reference_id: cdktn.stringToTerraform(this._referenceId),
+      region: cdktn.stringToTerraform(this._region),
+      started_by: cdktn.stringToTerraform(this._startedBy),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      task_definition: cdktn.stringToTerraform(this._taskDefinition),
+      capacity_provider_strategy: cdktn.listMapper(dataAwsEcsTaskExecutionCapacityProviderStrategyToTerraform, true)(this._capacityProviderStrategy.internalValue),
       network_configuration: dataAwsEcsTaskExecutionNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
       overrides: dataAwsEcsTaskExecutionOverridesToTerraform(this._overrides.internalValue),
-      placement_constraints: cdktf.listMapper(dataAwsEcsTaskExecutionPlacementConstraintsToTerraform, true)(this._placementConstraints.internalValue),
-      placement_strategy: cdktf.listMapper(dataAwsEcsTaskExecutionPlacementStrategyToTerraform, true)(this._placementStrategy.internalValue),
+      placement_constraints: cdktn.listMapper(dataAwsEcsTaskExecutionPlacementConstraintsToTerraform, true)(this._placementConstraints.internalValue),
+      placement_strategy: cdktn.listMapper(dataAwsEcsTaskExecutionPlacementStrategyToTerraform, true)(this._placementStrategy.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_token: {
-        value: cdktf.stringToHclTerraform(this._clientToken),
+        value: cdktn.stringToHclTerraform(this._clientToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster: {
-        value: cdktf.stringToHclTerraform(this._cluster),
+        value: cdktn.stringToHclTerraform(this._cluster),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       desired_count: {
-        value: cdktf.numberToHclTerraform(this._desiredCount),
+        value: cdktn.numberToHclTerraform(this._desiredCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enable_ecs_managed_tags: {
-        value: cdktf.booleanToHclTerraform(this._enableEcsManagedTags),
+        value: cdktn.booleanToHclTerraform(this._enableEcsManagedTags),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_execute_command: {
-        value: cdktf.booleanToHclTerraform(this._enableExecuteCommand),
+        value: cdktn.booleanToHclTerraform(this._enableExecuteCommand),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       group: {
-        value: cdktf.stringToHclTerraform(this._group),
+        value: cdktn.stringToHclTerraform(this._group),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       launch_type: {
-        value: cdktf.stringToHclTerraform(this._launchType),
+        value: cdktn.stringToHclTerraform(this._launchType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform_version: {
-        value: cdktf.stringToHclTerraform(this._platformVersion),
+        value: cdktn.stringToHclTerraform(this._platformVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       propagate_tags: {
-        value: cdktf.stringToHclTerraform(this._propagateTags),
+        value: cdktn.stringToHclTerraform(this._propagateTags),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reference_id: {
-        value: cdktf.stringToHclTerraform(this._referenceId),
+        value: cdktn.stringToHclTerraform(this._referenceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       started_by: {
-        value: cdktf.stringToHclTerraform(this._startedBy),
+        value: cdktn.stringToHclTerraform(this._startedBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       task_definition: {
-        value: cdktf.stringToHclTerraform(this._taskDefinition),
+        value: cdktn.stringToHclTerraform(this._taskDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       capacity_provider_strategy: {
-        value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionCapacityProviderStrategyToHclTerraform, true)(this._capacityProviderStrategy.internalValue),
+        value: cdktn.listMapperHcl(dataAwsEcsTaskExecutionCapacityProviderStrategyToHclTerraform, true)(this._capacityProviderStrategy.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsEcsTaskExecutionCapacityProviderStrategyList",
@@ -2082,13 +2082,13 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
         storageClassType: "DataAwsEcsTaskExecutionOverridesList",
       },
       placement_constraints: {
-        value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionPlacementConstraintsToHclTerraform, true)(this._placementConstraints.internalValue),
+        value: cdktn.listMapperHcl(dataAwsEcsTaskExecutionPlacementConstraintsToHclTerraform, true)(this._placementConstraints.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsEcsTaskExecutionPlacementConstraintsList",
       },
       placement_strategy: {
-        value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionPlacementStrategyToHclTerraform, true)(this._placementStrategy.internalValue),
+        value: cdktn.listMapperHcl(dataAwsEcsTaskExecutionPlacementStrategyToHclTerraform, true)(this._placementStrategy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsEcsTaskExecutionPlacementStrategyList",

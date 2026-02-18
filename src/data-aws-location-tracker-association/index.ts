@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsLocationTrackerAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLocationTrackerAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/location_tracker_association#consumer_arn DataAwsLocationTrackerAssociation#consumer_arn}
   */
@@ -38,7 +38,7 @@ export interface DataAwsLocationTrackerAssociationConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/location_tracker_association aws_location_tracker_association}
 */
-export class DataAwsLocationTrackerAssociation extends cdktf.TerraformDataSource {
+export class DataAwsLocationTrackerAssociation extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataAwsLocationTrackerAssociation extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsLocationTrackerAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsLocationTrackerAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLocationTrackerAssociation to import
   * @param importFromId The id of the existing DataAwsLocationTrackerAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/location_tracker_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLocationTrackerAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_location_tracker_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_location_tracker_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class DataAwsLocationTrackerAssociation extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      consumer_arn: cdktf.stringToTerraform(this._consumerArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tracker_name: cdktf.stringToTerraform(this._trackerName),
+      consumer_arn: cdktn.stringToTerraform(this._consumerArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tracker_name: cdktn.stringToTerraform(this._trackerName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       consumer_arn: {
-        value: cdktf.stringToHclTerraform(this._consumerArn),
+        value: cdktn.stringToHclTerraform(this._consumerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tracker_name: {
-        value: cdktf.stringToHclTerraform(this._trackerName),
+        value: cdktn.stringToHclTerraform(this._trackerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

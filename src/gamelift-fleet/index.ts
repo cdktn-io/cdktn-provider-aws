@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GameliftFleetConfig extends cdktf.TerraformMetaArguments {
+export interface GameliftFleetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_fleet#build_id GameliftFleet#build_id}
   */
@@ -80,7 +80,7 @@ export interface GameliftFleetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_fleet#ec2_inbound_permission GameliftFleet#ec2_inbound_permission}
   */
-  readonly ec2InboundPermission?: GameliftFleetEc2InboundPermission[] | cdktf.IResolvable;
+  readonly ec2InboundPermission?: GameliftFleetEc2InboundPermission[] | cdktn.IResolvable;
   /**
   * resource_creation_limit_policy block
   *
@@ -108,24 +108,24 @@ export interface GameliftFleetCertificateConfiguration {
 }
 
 export function gameliftFleetCertificateConfigurationToTerraform(struct?: GameliftFleetCertificateConfigurationOutputReference | GameliftFleetCertificateConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_type: cdktf.stringToTerraform(struct!.certificateType),
+    certificate_type: cdktn.stringToTerraform(struct!.certificateType),
   }
 }
 
 
 export function gameliftFleetCertificateConfigurationToHclTerraform(struct?: GameliftFleetCertificateConfigurationOutputReference | GameliftFleetCertificateConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_type: {
-      value: cdktf.stringToHclTerraform(struct!.certificateType),
+      value: cdktn.stringToHclTerraform(struct!.certificateType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -136,14 +136,14 @@ export function gameliftFleetCertificateConfigurationToHclTerraform(struct?: Gam
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftFleetCertificateConfigurationOutputReference extends cdktf.ComplexObject {
+export class GameliftFleetCertificateConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -203,46 +203,46 @@ export interface GameliftFleetEc2InboundPermission {
   readonly toPort: number;
 }
 
-export function gameliftFleetEc2InboundPermissionToTerraform(struct?: GameliftFleetEc2InboundPermission | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftFleetEc2InboundPermissionToTerraform(struct?: GameliftFleetEc2InboundPermission | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    ip_range: cdktf.stringToTerraform(struct!.ipRange),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    ip_range: cdktn.stringToTerraform(struct!.ipRange),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function gameliftFleetEc2InboundPermissionToHclTerraform(struct?: GameliftFleetEc2InboundPermission | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftFleetEc2InboundPermissionToHclTerraform(struct?: GameliftFleetEc2InboundPermission | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ip_range: {
-      value: cdktf.stringToHclTerraform(struct!.ipRange),
+      value: cdktn.stringToHclTerraform(struct!.ipRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -253,9 +253,9 @@ export function gameliftFleetEc2InboundPermissionToHclTerraform(struct?: Gamelif
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftFleetEc2InboundPermissionOutputReference extends cdktf.ComplexObject {
+export class GameliftFleetEc2InboundPermissionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -263,11 +263,11 @@ export class GameliftFleetEc2InboundPermissionOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GameliftFleetEc2InboundPermission | cdktf.IResolvable | undefined {
+  public get internalValue(): GameliftFleetEc2InboundPermission | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -292,7 +292,7 @@ export class GameliftFleetEc2InboundPermissionOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GameliftFleetEc2InboundPermission | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GameliftFleetEc2InboundPermission | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -301,7 +301,7 @@ export class GameliftFleetEc2InboundPermissionOutputReference extends cdktf.Comp
       this._protocol = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -368,15 +368,15 @@ export class GameliftFleetEc2InboundPermissionOutputReference extends cdktf.Comp
   }
 }
 
-export class GameliftFleetEc2InboundPermissionList extends cdktf.ComplexList {
-  public internalValue? : GameliftFleetEc2InboundPermission[] | cdktf.IResolvable
+export class GameliftFleetEc2InboundPermissionList extends cdktn.ComplexList {
+  public internalValue? : GameliftFleetEc2InboundPermission[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -399,31 +399,31 @@ export interface GameliftFleetResourceCreationLimitPolicy {
 }
 
 export function gameliftFleetResourceCreationLimitPolicyToTerraform(struct?: GameliftFleetResourceCreationLimitPolicyOutputReference | GameliftFleetResourceCreationLimitPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    new_game_sessions_per_creator: cdktf.numberToTerraform(struct!.newGameSessionsPerCreator),
-    policy_period_in_minutes: cdktf.numberToTerraform(struct!.policyPeriodInMinutes),
+    new_game_sessions_per_creator: cdktn.numberToTerraform(struct!.newGameSessionsPerCreator),
+    policy_period_in_minutes: cdktn.numberToTerraform(struct!.policyPeriodInMinutes),
   }
 }
 
 
 export function gameliftFleetResourceCreationLimitPolicyToHclTerraform(struct?: GameliftFleetResourceCreationLimitPolicyOutputReference | GameliftFleetResourceCreationLimitPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     new_game_sessions_per_creator: {
-      value: cdktf.numberToHclTerraform(struct!.newGameSessionsPerCreator),
+      value: cdktn.numberToHclTerraform(struct!.newGameSessionsPerCreator),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     policy_period_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.policyPeriodInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.policyPeriodInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -434,14 +434,14 @@ export function gameliftFleetResourceCreationLimitPolicyToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftFleetResourceCreationLimitPolicyOutputReference extends cdktf.ComplexObject {
+export class GameliftFleetResourceCreationLimitPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -519,39 +519,39 @@ export interface GameliftFleetRuntimeConfigurationServerProcess {
   readonly parameters?: string;
 }
 
-export function gameliftFleetRuntimeConfigurationServerProcessToTerraform(struct?: GameliftFleetRuntimeConfigurationServerProcess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftFleetRuntimeConfigurationServerProcessToTerraform(struct?: GameliftFleetRuntimeConfigurationServerProcess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    concurrent_executions: cdktf.numberToTerraform(struct!.concurrentExecutions),
-    launch_path: cdktf.stringToTerraform(struct!.launchPath),
-    parameters: cdktf.stringToTerraform(struct!.parameters),
+    concurrent_executions: cdktn.numberToTerraform(struct!.concurrentExecutions),
+    launch_path: cdktn.stringToTerraform(struct!.launchPath),
+    parameters: cdktn.stringToTerraform(struct!.parameters),
   }
 }
 
 
-export function gameliftFleetRuntimeConfigurationServerProcessToHclTerraform(struct?: GameliftFleetRuntimeConfigurationServerProcess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftFleetRuntimeConfigurationServerProcessToHclTerraform(struct?: GameliftFleetRuntimeConfigurationServerProcess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     concurrent_executions: {
-      value: cdktf.numberToHclTerraform(struct!.concurrentExecutions),
+      value: cdktn.numberToHclTerraform(struct!.concurrentExecutions),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     launch_path: {
-      value: cdktf.stringToHclTerraform(struct!.launchPath),
+      value: cdktn.stringToHclTerraform(struct!.launchPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.stringToHclTerraform(struct!.parameters),
+      value: cdktn.stringToHclTerraform(struct!.parameters),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -562,9 +562,9 @@ export function gameliftFleetRuntimeConfigurationServerProcessToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftFleetRuntimeConfigurationServerProcessOutputReference extends cdktf.ComplexObject {
+export class GameliftFleetRuntimeConfigurationServerProcessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -572,11 +572,11 @@ export class GameliftFleetRuntimeConfigurationServerProcessOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GameliftFleetRuntimeConfigurationServerProcess | cdktf.IResolvable | undefined {
+  public get internalValue(): GameliftFleetRuntimeConfigurationServerProcess | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -597,7 +597,7 @@ export class GameliftFleetRuntimeConfigurationServerProcessOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GameliftFleetRuntimeConfigurationServerProcess | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GameliftFleetRuntimeConfigurationServerProcess | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -605,7 +605,7 @@ export class GameliftFleetRuntimeConfigurationServerProcessOutputReference exten
       this._launchPath = undefined;
       this._parameters = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -661,15 +661,15 @@ export class GameliftFleetRuntimeConfigurationServerProcessOutputReference exten
   }
 }
 
-export class GameliftFleetRuntimeConfigurationServerProcessList extends cdktf.ComplexList {
-  public internalValue? : GameliftFleetRuntimeConfigurationServerProcess[] | cdktf.IResolvable
+export class GameliftFleetRuntimeConfigurationServerProcessList extends cdktn.ComplexList {
+  public internalValue? : GameliftFleetRuntimeConfigurationServerProcess[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -694,42 +694,42 @@ export interface GameliftFleetRuntimeConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_fleet#server_process GameliftFleet#server_process}
   */
-  readonly serverProcess?: GameliftFleetRuntimeConfigurationServerProcess[] | cdktf.IResolvable;
+  readonly serverProcess?: GameliftFleetRuntimeConfigurationServerProcess[] | cdktn.IResolvable;
 }
 
 export function gameliftFleetRuntimeConfigurationToTerraform(struct?: GameliftFleetRuntimeConfigurationOutputReference | GameliftFleetRuntimeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    game_session_activation_timeout_seconds: cdktf.numberToTerraform(struct!.gameSessionActivationTimeoutSeconds),
-    max_concurrent_game_session_activations: cdktf.numberToTerraform(struct!.maxConcurrentGameSessionActivations),
-    server_process: cdktf.listMapper(gameliftFleetRuntimeConfigurationServerProcessToTerraform, true)(struct!.serverProcess),
+    game_session_activation_timeout_seconds: cdktn.numberToTerraform(struct!.gameSessionActivationTimeoutSeconds),
+    max_concurrent_game_session_activations: cdktn.numberToTerraform(struct!.maxConcurrentGameSessionActivations),
+    server_process: cdktn.listMapper(gameliftFleetRuntimeConfigurationServerProcessToTerraform, true)(struct!.serverProcess),
   }
 }
 
 
 export function gameliftFleetRuntimeConfigurationToHclTerraform(struct?: GameliftFleetRuntimeConfigurationOutputReference | GameliftFleetRuntimeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     game_session_activation_timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.gameSessionActivationTimeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.gameSessionActivationTimeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_concurrent_game_session_activations: {
-      value: cdktf.numberToHclTerraform(struct!.maxConcurrentGameSessionActivations),
+      value: cdktn.numberToHclTerraform(struct!.maxConcurrentGameSessionActivations),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     server_process: {
-      value: cdktf.listMapperHcl(gameliftFleetRuntimeConfigurationServerProcessToHclTerraform, true)(struct!.serverProcess),
+      value: cdktn.listMapperHcl(gameliftFleetRuntimeConfigurationServerProcessToHclTerraform, true)(struct!.serverProcess),
       isBlock: true,
       type: "list",
       storageClassType: "GameliftFleetRuntimeConfigurationServerProcessList",
@@ -740,14 +740,14 @@ export function gameliftFleetRuntimeConfigurationToHclTerraform(struct?: Gamelif
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftFleetRuntimeConfigurationOutputReference extends cdktf.ComplexObject {
+export class GameliftFleetRuntimeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -821,7 +821,7 @@ export class GameliftFleetRuntimeConfigurationOutputReference extends cdktf.Comp
   public get serverProcess() {
     return this._serverProcess;
   }
-  public putServerProcess(value: GameliftFleetRuntimeConfigurationServerProcess[] | cdktf.IResolvable) {
+  public putServerProcess(value: GameliftFleetRuntimeConfigurationServerProcess[] | cdktn.IResolvable) {
     this._serverProcess.internalValue = value;
   }
   public resetServerProcess() {
@@ -843,32 +843,32 @@ export interface GameliftFleetTimeouts {
   readonly delete?: string;
 }
 
-export function gameliftFleetTimeoutsToTerraform(struct?: GameliftFleetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftFleetTimeoutsToTerraform(struct?: GameliftFleetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function gameliftFleetTimeoutsToHclTerraform(struct?: GameliftFleetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gameliftFleetTimeoutsToHclTerraform(struct?: GameliftFleetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -879,19 +879,19 @@ export function gameliftFleetTimeoutsToHclTerraform(struct?: GameliftFleetTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GameliftFleetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GameliftFleetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GameliftFleetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GameliftFleetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -908,14 +908,14 @@ export class GameliftFleetTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GameliftFleetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GameliftFleetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -963,7 +963,7 @@ export class GameliftFleetTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_fleet aws_gamelift_fleet}
 */
-export class GameliftFleet extends cdktf.TerraformResource {
+export class GameliftFleet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -974,14 +974,14 @@ export class GameliftFleet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GameliftFleet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GameliftFleet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GameliftFleet to import
   * @param importFromId The id of the existing GameliftFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/gamelift_fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GameliftFleet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_gamelift_fleet", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_gamelift_fleet", importId: importFromId, provider });
       }
 
   // ===========
@@ -1283,7 +1283,7 @@ export class GameliftFleet extends cdktf.TerraformResource {
   public get ec2InboundPermission() {
     return this._ec2InboundPermission;
   }
-  public putEc2InboundPermission(value: GameliftFleetEc2InboundPermission[] | cdktf.IResolvable) {
+  public putEc2InboundPermission(value: GameliftFleetEc2InboundPermission[] | cdktn.IResolvable) {
     this._ec2InboundPermission.internalValue = value;
   }
   public resetEc2InboundPermission() {
@@ -1348,21 +1348,21 @@ export class GameliftFleet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      build_id: cdktf.stringToTerraform(this._buildId),
-      description: cdktf.stringToTerraform(this._description),
-      ec2_instance_type: cdktf.stringToTerraform(this._ec2InstanceType),
-      fleet_type: cdktf.stringToTerraform(this._fleetType),
-      id: cdktf.stringToTerraform(this._id),
-      instance_role_arn: cdktf.stringToTerraform(this._instanceRoleArn),
-      metric_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._metricGroups),
-      name: cdktf.stringToTerraform(this._name),
-      new_game_session_protection_policy: cdktf.stringToTerraform(this._newGameSessionProtectionPolicy),
-      region: cdktf.stringToTerraform(this._region),
-      script_id: cdktf.stringToTerraform(this._scriptId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      build_id: cdktn.stringToTerraform(this._buildId),
+      description: cdktn.stringToTerraform(this._description),
+      ec2_instance_type: cdktn.stringToTerraform(this._ec2InstanceType),
+      fleet_type: cdktn.stringToTerraform(this._fleetType),
+      id: cdktn.stringToTerraform(this._id),
+      instance_role_arn: cdktn.stringToTerraform(this._instanceRoleArn),
+      metric_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._metricGroups),
+      name: cdktn.stringToTerraform(this._name),
+      new_game_session_protection_policy: cdktn.stringToTerraform(this._newGameSessionProtectionPolicy),
+      region: cdktn.stringToTerraform(this._region),
+      script_id: cdktn.stringToTerraform(this._scriptId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       certificate_configuration: gameliftFleetCertificateConfigurationToTerraform(this._certificateConfiguration.internalValue),
-      ec2_inbound_permission: cdktf.listMapper(gameliftFleetEc2InboundPermissionToTerraform, true)(this._ec2InboundPermission.internalValue),
+      ec2_inbound_permission: cdktn.listMapper(gameliftFleetEc2InboundPermissionToTerraform, true)(this._ec2InboundPermission.internalValue),
       resource_creation_limit_policy: gameliftFleetResourceCreationLimitPolicyToTerraform(this._resourceCreationLimitPolicy.internalValue),
       runtime_configuration: gameliftFleetRuntimeConfigurationToTerraform(this._runtimeConfiguration.internalValue),
       timeouts: gameliftFleetTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1372,79 +1372,79 @@ export class GameliftFleet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       build_id: {
-        value: cdktf.stringToHclTerraform(this._buildId),
+        value: cdktn.stringToHclTerraform(this._buildId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ec2_instance_type: {
-        value: cdktf.stringToHclTerraform(this._ec2InstanceType),
+        value: cdktn.stringToHclTerraform(this._ec2InstanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fleet_type: {
-        value: cdktf.stringToHclTerraform(this._fleetType),
+        value: cdktn.stringToHclTerraform(this._fleetType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_role_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceRoleArn),
+        value: cdktn.stringToHclTerraform(this._instanceRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._metricGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._metricGroups),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       new_game_session_protection_policy: {
-        value: cdktf.stringToHclTerraform(this._newGameSessionProtectionPolicy),
+        value: cdktn.stringToHclTerraform(this._newGameSessionProtectionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       script_id: {
-        value: cdktf.stringToHclTerraform(this._scriptId),
+        value: cdktn.stringToHclTerraform(this._scriptId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -1456,7 +1456,7 @@ export class GameliftFleet extends cdktf.TerraformResource {
         storageClassType: "GameliftFleetCertificateConfigurationList",
       },
       ec2_inbound_permission: {
-        value: cdktf.listMapperHcl(gameliftFleetEc2InboundPermissionToHclTerraform, true)(this._ec2InboundPermission.internalValue),
+        value: cdktn.listMapperHcl(gameliftFleetEc2InboundPermissionToHclTerraform, true)(this._ec2InboundPermission.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "GameliftFleetEc2InboundPermissionList",

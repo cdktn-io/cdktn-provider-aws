@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferWebAppConfig extends cdktf.TerraformMetaArguments {
+export interface TransferWebAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}
   */
@@ -33,19 +33,19 @@ export interface TransferWebAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}
   */
-  readonly webAppUnits?: TransferWebAppWebAppUnits[] | cdktf.IResolvable;
+  readonly webAppUnits?: TransferWebAppWebAppUnits[] | cdktn.IResolvable;
   /**
   * endpoint_details block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app#endpoint_details TransferWebApp#endpoint_details}
   */
-  readonly endpointDetails?: TransferWebAppEndpointDetails[] | cdktf.IResolvable;
+  readonly endpointDetails?: TransferWebAppEndpointDetails[] | cdktn.IResolvable;
   /**
   * identity_provider_details block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
   */
-  readonly identityProviderDetails?: TransferWebAppIdentityProviderDetails[] | cdktf.IResolvable;
+  readonly identityProviderDetails?: TransferWebAppIdentityProviderDetails[] | cdktn.IResolvable;
 }
 export interface TransferWebAppWebAppUnits {
   /**
@@ -54,25 +54,25 @@ export interface TransferWebAppWebAppUnits {
   readonly provisioned?: number;
 }
 
-export function transferWebAppWebAppUnitsToTerraform(struct?: TransferWebAppWebAppUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppWebAppUnitsToTerraform(struct?: TransferWebAppWebAppUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    provisioned: cdktf.numberToTerraform(struct!.provisioned),
+    provisioned: cdktn.numberToTerraform(struct!.provisioned),
   }
 }
 
 
-export function transferWebAppWebAppUnitsToHclTerraform(struct?: TransferWebAppWebAppUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppWebAppUnitsToHclTerraform(struct?: TransferWebAppWebAppUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     provisioned: {
-      value: cdktf.numberToHclTerraform(struct!.provisioned),
+      value: cdktn.numberToHclTerraform(struct!.provisioned),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -83,9 +83,9 @@ export function transferWebAppWebAppUnitsToHclTerraform(struct?: TransferWebAppW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWebAppWebAppUnitsOutputReference extends cdktf.ComplexObject {
+export class TransferWebAppWebAppUnitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class TransferWebAppWebAppUnitsOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferWebAppWebAppUnits | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferWebAppWebAppUnits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -110,13 +110,13 @@ export class TransferWebAppWebAppUnitsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferWebAppWebAppUnits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferWebAppWebAppUnits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._provisioned = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -144,15 +144,15 @@ export class TransferWebAppWebAppUnitsOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class TransferWebAppWebAppUnitsList extends cdktf.ComplexList {
-  public internalValue? : TransferWebAppWebAppUnits[] | cdktf.IResolvable
+export class TransferWebAppWebAppUnitsList extends cdktn.ComplexList {
+  public internalValue? : TransferWebAppWebAppUnits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -178,39 +178,39 @@ export interface TransferWebAppEndpointDetailsVpc {
   readonly vpcId: string;
 }
 
-export function transferWebAppEndpointDetailsVpcToTerraform(struct?: TransferWebAppEndpointDetailsVpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppEndpointDetailsVpcToTerraform(struct?: TransferWebAppEndpointDetailsVpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
   }
 }
 
 
-export function transferWebAppEndpointDetailsVpcToHclTerraform(struct?: TransferWebAppEndpointDetailsVpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppEndpointDetailsVpcToHclTerraform(struct?: TransferWebAppEndpointDetailsVpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -221,9 +221,9 @@ export function transferWebAppEndpointDetailsVpcToHclTerraform(struct?: Transfer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWebAppEndpointDetailsVpcOutputReference extends cdktf.ComplexObject {
+export class TransferWebAppEndpointDetailsVpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -231,11 +231,11 @@ export class TransferWebAppEndpointDetailsVpcOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferWebAppEndpointDetailsVpc | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferWebAppEndpointDetailsVpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -256,7 +256,7 @@ export class TransferWebAppEndpointDetailsVpcOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferWebAppEndpointDetailsVpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferWebAppEndpointDetailsVpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -264,7 +264,7 @@ export class TransferWebAppEndpointDetailsVpcOutputReference extends cdktf.Compl
       this._subnetIds = undefined;
       this._vpcId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -280,7 +280,7 @@ export class TransferWebAppEndpointDetailsVpcOutputReference extends cdktf.Compl
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -296,7 +296,7 @@ export class TransferWebAppEndpointDetailsVpcOutputReference extends cdktf.Compl
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -325,15 +325,15 @@ export class TransferWebAppEndpointDetailsVpcOutputReference extends cdktf.Compl
   }
 }
 
-export class TransferWebAppEndpointDetailsVpcList extends cdktf.ComplexList {
-  public internalValue? : TransferWebAppEndpointDetailsVpc[] | cdktf.IResolvable
+export class TransferWebAppEndpointDetailsVpcList extends cdktn.ComplexList {
+  public internalValue? : TransferWebAppEndpointDetailsVpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -350,28 +350,28 @@ export interface TransferWebAppEndpointDetails {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app#vpc TransferWebApp#vpc}
   */
-  readonly vpc?: TransferWebAppEndpointDetailsVpc[] | cdktf.IResolvable;
+  readonly vpc?: TransferWebAppEndpointDetailsVpc[] | cdktn.IResolvable;
 }
 
-export function transferWebAppEndpointDetailsToTerraform(struct?: TransferWebAppEndpointDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppEndpointDetailsToTerraform(struct?: TransferWebAppEndpointDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    vpc: cdktf.listMapper(transferWebAppEndpointDetailsVpcToTerraform, true)(struct!.vpc),
+    vpc: cdktn.listMapper(transferWebAppEndpointDetailsVpcToTerraform, true)(struct!.vpc),
   }
 }
 
 
-export function transferWebAppEndpointDetailsToHclTerraform(struct?: TransferWebAppEndpointDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppEndpointDetailsToHclTerraform(struct?: TransferWebAppEndpointDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     vpc: {
-      value: cdktf.listMapperHcl(transferWebAppEndpointDetailsVpcToHclTerraform, true)(struct!.vpc),
+      value: cdktn.listMapperHcl(transferWebAppEndpointDetailsVpcToHclTerraform, true)(struct!.vpc),
       isBlock: true,
       type: "list",
       storageClassType: "TransferWebAppEndpointDetailsVpcList",
@@ -382,9 +382,9 @@ export function transferWebAppEndpointDetailsToHclTerraform(struct?: TransferWeb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWebAppEndpointDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWebAppEndpointDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -392,11 +392,11 @@ export class TransferWebAppEndpointDetailsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferWebAppEndpointDetails | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferWebAppEndpointDetails | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -409,13 +409,13 @@ export class TransferWebAppEndpointDetailsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferWebAppEndpointDetails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferWebAppEndpointDetails | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._vpc.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -431,7 +431,7 @@ export class TransferWebAppEndpointDetailsOutputReference extends cdktf.ComplexO
   public get vpc() {
     return this._vpc;
   }
-  public putVpc(value: TransferWebAppEndpointDetailsVpc[] | cdktf.IResolvable) {
+  public putVpc(value: TransferWebAppEndpointDetailsVpc[] | cdktn.IResolvable) {
     this._vpc.internalValue = value;
   }
   public resetVpc() {
@@ -443,15 +443,15 @@ export class TransferWebAppEndpointDetailsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class TransferWebAppEndpointDetailsList extends cdktf.ComplexList {
-  public internalValue? : TransferWebAppEndpointDetails[] | cdktf.IResolvable
+export class TransferWebAppEndpointDetailsList extends cdktn.ComplexList {
+  public internalValue? : TransferWebAppEndpointDetails[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -473,32 +473,32 @@ export interface TransferWebAppIdentityProviderDetailsIdentityCenterConfig {
   readonly role?: string;
 }
 
-export function transferWebAppIdentityProviderDetailsIdentityCenterConfigToTerraform(struct?: TransferWebAppIdentityProviderDetailsIdentityCenterConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppIdentityProviderDetailsIdentityCenterConfigToTerraform(struct?: TransferWebAppIdentityProviderDetailsIdentityCenterConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_arn: cdktf.stringToTerraform(struct!.instanceArn),
-    role: cdktf.stringToTerraform(struct!.role),
+    instance_arn: cdktn.stringToTerraform(struct!.instanceArn),
+    role: cdktn.stringToTerraform(struct!.role),
   }
 }
 
 
-export function transferWebAppIdentityProviderDetailsIdentityCenterConfigToHclTerraform(struct?: TransferWebAppIdentityProviderDetailsIdentityCenterConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppIdentityProviderDetailsIdentityCenterConfigToHclTerraform(struct?: TransferWebAppIdentityProviderDetailsIdentityCenterConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_arn: {
-      value: cdktf.stringToHclTerraform(struct!.instanceArn),
+      value: cdktn.stringToHclTerraform(struct!.instanceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -509,9 +509,9 @@ export function transferWebAppIdentityProviderDetailsIdentityCenterConfigToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputReference extends cdktf.ComplexObject {
+export class TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -519,11 +519,11 @@ export class TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferWebAppIdentityProviderDetailsIdentityCenterConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferWebAppIdentityProviderDetailsIdentityCenterConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -540,14 +540,14 @@ export class TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferWebAppIdentityProviderDetailsIdentityCenterConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferWebAppIdentityProviderDetailsIdentityCenterConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._instanceArn = undefined;
       this._role = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -597,15 +597,15 @@ export class TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputRefe
   }
 }
 
-export class TransferWebAppIdentityProviderDetailsIdentityCenterConfigList extends cdktf.ComplexList {
-  public internalValue? : TransferWebAppIdentityProviderDetailsIdentityCenterConfig[] | cdktf.IResolvable
+export class TransferWebAppIdentityProviderDetailsIdentityCenterConfigList extends cdktn.ComplexList {
+  public internalValue? : TransferWebAppIdentityProviderDetailsIdentityCenterConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -622,28 +622,28 @@ export interface TransferWebAppIdentityProviderDetails {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app#identity_center_config TransferWebApp#identity_center_config}
   */
-  readonly identityCenterConfig?: TransferWebAppIdentityProviderDetailsIdentityCenterConfig[] | cdktf.IResolvable;
+  readonly identityCenterConfig?: TransferWebAppIdentityProviderDetailsIdentityCenterConfig[] | cdktn.IResolvable;
 }
 
-export function transferWebAppIdentityProviderDetailsToTerraform(struct?: TransferWebAppIdentityProviderDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppIdentityProviderDetailsToTerraform(struct?: TransferWebAppIdentityProviderDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_center_config: cdktf.listMapper(transferWebAppIdentityProviderDetailsIdentityCenterConfigToTerraform, true)(struct!.identityCenterConfig),
+    identity_center_config: cdktn.listMapper(transferWebAppIdentityProviderDetailsIdentityCenterConfigToTerraform, true)(struct!.identityCenterConfig),
   }
 }
 
 
-export function transferWebAppIdentityProviderDetailsToHclTerraform(struct?: TransferWebAppIdentityProviderDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferWebAppIdentityProviderDetailsToHclTerraform(struct?: TransferWebAppIdentityProviderDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_center_config: {
-      value: cdktf.listMapperHcl(transferWebAppIdentityProviderDetailsIdentityCenterConfigToHclTerraform, true)(struct!.identityCenterConfig),
+      value: cdktn.listMapperHcl(transferWebAppIdentityProviderDetailsIdentityCenterConfigToHclTerraform, true)(struct!.identityCenterConfig),
       isBlock: true,
       type: "list",
       storageClassType: "TransferWebAppIdentityProviderDetailsIdentityCenterConfigList",
@@ -654,9 +654,9 @@ export function transferWebAppIdentityProviderDetailsToHclTerraform(struct?: Tra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferWebAppIdentityProviderDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferWebAppIdentityProviderDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -664,11 +664,11 @@ export class TransferWebAppIdentityProviderDetailsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferWebAppIdentityProviderDetails | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferWebAppIdentityProviderDetails | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -681,13 +681,13 @@ export class TransferWebAppIdentityProviderDetailsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferWebAppIdentityProviderDetails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferWebAppIdentityProviderDetails | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._identityCenterConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -703,7 +703,7 @@ export class TransferWebAppIdentityProviderDetailsOutputReference extends cdktf.
   public get identityCenterConfig() {
     return this._identityCenterConfig;
   }
-  public putIdentityCenterConfig(value: TransferWebAppIdentityProviderDetailsIdentityCenterConfig[] | cdktf.IResolvable) {
+  public putIdentityCenterConfig(value: TransferWebAppIdentityProviderDetailsIdentityCenterConfig[] | cdktn.IResolvable) {
     this._identityCenterConfig.internalValue = value;
   }
   public resetIdentityCenterConfig() {
@@ -715,15 +715,15 @@ export class TransferWebAppIdentityProviderDetailsOutputReference extends cdktf.
   }
 }
 
-export class TransferWebAppIdentityProviderDetailsList extends cdktf.ComplexList {
-  public internalValue? : TransferWebAppIdentityProviderDetails[] | cdktf.IResolvable
+export class TransferWebAppIdentityProviderDetailsList extends cdktn.ComplexList {
+  public internalValue? : TransferWebAppIdentityProviderDetails[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -738,7 +738,7 @@ export class TransferWebAppIdentityProviderDetailsList extends cdktf.ComplexList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app aws_transfer_web_app}
 */
-export class TransferWebApp extends cdktf.TerraformResource {
+export class TransferWebApp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -749,14 +749,14 @@ export class TransferWebApp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferWebApp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferWebApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferWebApp to import
   * @param importFromId The id of the existing TransferWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferWebApp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_web_app", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_web_app", importId: importFromId, provider });
       }
 
   // ===========
@@ -853,7 +853,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -884,7 +884,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
   public get webAppUnits() {
     return this._webAppUnits;
   }
-  public putWebAppUnits(value: TransferWebAppWebAppUnits[] | cdktf.IResolvable) {
+  public putWebAppUnits(value: TransferWebAppWebAppUnits[] | cdktn.IResolvable) {
     this._webAppUnits.internalValue = value;
   }
   public resetWebAppUnits() {
@@ -900,7 +900,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
   public get endpointDetails() {
     return this._endpointDetails;
   }
-  public putEndpointDetails(value: TransferWebAppEndpointDetails[] | cdktf.IResolvable) {
+  public putEndpointDetails(value: TransferWebAppEndpointDetails[] | cdktn.IResolvable) {
     this._endpointDetails.internalValue = value;
   }
   public resetEndpointDetails() {
@@ -916,7 +916,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
   public get identityProviderDetails() {
     return this._identityProviderDetails;
   }
-  public putIdentityProviderDetails(value: TransferWebAppIdentityProviderDetails[] | cdktf.IResolvable) {
+  public putIdentityProviderDetails(value: TransferWebAppIdentityProviderDetails[] | cdktn.IResolvable) {
     this._identityProviderDetails.internalValue = value;
   }
   public resetIdentityProviderDetails() {
@@ -933,56 +933,56 @@ export class TransferWebApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_endpoint: cdktf.stringToTerraform(this._accessEndpoint),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      web_app_endpoint_policy: cdktf.stringToTerraform(this._webAppEndpointPolicy),
-      web_app_units: cdktf.listMapper(transferWebAppWebAppUnitsToTerraform, false)(this._webAppUnits.internalValue),
-      endpoint_details: cdktf.listMapper(transferWebAppEndpointDetailsToTerraform, true)(this._endpointDetails.internalValue),
-      identity_provider_details: cdktf.listMapper(transferWebAppIdentityProviderDetailsToTerraform, true)(this._identityProviderDetails.internalValue),
+      access_endpoint: cdktn.stringToTerraform(this._accessEndpoint),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      web_app_endpoint_policy: cdktn.stringToTerraform(this._webAppEndpointPolicy),
+      web_app_units: cdktn.listMapper(transferWebAppWebAppUnitsToTerraform, false)(this._webAppUnits.internalValue),
+      endpoint_details: cdktn.listMapper(transferWebAppEndpointDetailsToTerraform, true)(this._endpointDetails.internalValue),
+      identity_provider_details: cdktn.listMapper(transferWebAppIdentityProviderDetailsToTerraform, true)(this._identityProviderDetails.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_endpoint: {
-        value: cdktf.stringToHclTerraform(this._accessEndpoint),
+        value: cdktn.stringToHclTerraform(this._accessEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       web_app_endpoint_policy: {
-        value: cdktf.stringToHclTerraform(this._webAppEndpointPolicy),
+        value: cdktn.stringToHclTerraform(this._webAppEndpointPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       web_app_units: {
-        value: cdktf.listMapperHcl(transferWebAppWebAppUnitsToHclTerraform, false)(this._webAppUnits.internalValue),
+        value: cdktn.listMapperHcl(transferWebAppWebAppUnitsToHclTerraform, false)(this._webAppUnits.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TransferWebAppWebAppUnitsList",
       },
       endpoint_details: {
-        value: cdktf.listMapperHcl(transferWebAppEndpointDetailsToHclTerraform, true)(this._endpointDetails.internalValue),
+        value: cdktn.listMapperHcl(transferWebAppEndpointDetailsToHclTerraform, true)(this._endpointDetails.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TransferWebAppEndpointDetailsList",
       },
       identity_provider_details: {
-        value: cdktf.listMapperHcl(transferWebAppIdentityProviderDetailsToHclTerraform, true)(this._identityProviderDetails.internalValue),
+        value: cdktn.listMapperHcl(transferWebAppIdentityProviderDetailsToHclTerraform, true)(this._identityProviderDetails.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TransferWebAppIdentityProviderDetailsList",

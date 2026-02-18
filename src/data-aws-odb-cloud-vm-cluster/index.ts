@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOdbCloudVmClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOdbCloudVmClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * The unique identifier of the VM cluster.
   *
@@ -32,8 +32,8 @@ export interface DataAwsOdbCloudVmClusterDataCollectionOptions {
 }
 
 export function dataAwsOdbCloudVmClusterDataCollectionOptionsToTerraform(struct?: DataAwsOdbCloudVmClusterDataCollectionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -42,8 +42,8 @@ export function dataAwsOdbCloudVmClusterDataCollectionOptionsToTerraform(struct?
 
 
 export function dataAwsOdbCloudVmClusterDataCollectionOptionsToHclTerraform(struct?: DataAwsOdbCloudVmClusterDataCollectionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,7 +51,7 @@ export function dataAwsOdbCloudVmClusterDataCollectionOptionsToHclTerraform(stru
   return attrs;
 }
 
-export class DataAwsOdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudVmClusterDataCollectionOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -60,7 +60,7 @@ export class DataAwsOdbCloudVmClusterDataCollectionOptionsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -95,14 +95,14 @@ export class DataAwsOdbCloudVmClusterDataCollectionOptionsOutputReference extend
   }
 }
 
-export class DataAwsOdbCloudVmClusterDataCollectionOptionsList extends cdktf.ComplexList {
+export class DataAwsOdbCloudVmClusterDataCollectionOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -117,8 +117,8 @@ export interface DataAwsOdbCloudVmClusterIormConfigCacheDbPlans {
 }
 
 export function dataAwsOdbCloudVmClusterIormConfigCacheDbPlansToTerraform(struct?: DataAwsOdbCloudVmClusterIormConfigCacheDbPlans): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -127,8 +127,8 @@ export function dataAwsOdbCloudVmClusterIormConfigCacheDbPlansToTerraform(struct
 
 
 export function dataAwsOdbCloudVmClusterIormConfigCacheDbPlansToHclTerraform(struct?: DataAwsOdbCloudVmClusterIormConfigCacheDbPlans): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -136,7 +136,7 @@ export function dataAwsOdbCloudVmClusterIormConfigCacheDbPlansToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsOdbCloudVmClusterIormConfigCacheDbPlansOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudVmClusterIormConfigCacheDbPlansOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -145,7 +145,7 @@ export class DataAwsOdbCloudVmClusterIormConfigCacheDbPlansOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -180,14 +180,14 @@ export class DataAwsOdbCloudVmClusterIormConfigCacheDbPlansOutputReference exten
   }
 }
 
-export class DataAwsOdbCloudVmClusterIormConfigCacheDbPlansList extends cdktf.ComplexList {
+export class DataAwsOdbCloudVmClusterIormConfigCacheDbPlansList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -202,8 +202,8 @@ export interface DataAwsOdbCloudVmClusterIormConfigCache {
 }
 
 export function dataAwsOdbCloudVmClusterIormConfigCacheToTerraform(struct?: DataAwsOdbCloudVmClusterIormConfigCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -212,8 +212,8 @@ export function dataAwsOdbCloudVmClusterIormConfigCacheToTerraform(struct?: Data
 
 
 export function dataAwsOdbCloudVmClusterIormConfigCacheToHclTerraform(struct?: DataAwsOdbCloudVmClusterIormConfigCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -221,7 +221,7 @@ export function dataAwsOdbCloudVmClusterIormConfigCacheToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsOdbCloudVmClusterIormConfigCacheOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudVmClusterIormConfigCacheOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -230,7 +230,7 @@ export class DataAwsOdbCloudVmClusterIormConfigCacheOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -271,14 +271,14 @@ export class DataAwsOdbCloudVmClusterIormConfigCacheOutputReference extends cdkt
   }
 }
 
-export class DataAwsOdbCloudVmClusterIormConfigCacheList extends cdktf.ComplexList {
+export class DataAwsOdbCloudVmClusterIormConfigCacheList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -293,7 +293,7 @@ export class DataAwsOdbCloudVmClusterIormConfigCacheList extends cdktf.ComplexLi
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster}
 */
-export class DataAwsOdbCloudVmCluster extends cdktf.TerraformDataSource {
+export class DataAwsOdbCloudVmCluster extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -304,14 +304,14 @@ export class DataAwsOdbCloudVmCluster extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOdbCloudVmCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOdbCloudVmCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbCloudVmCluster to import
   * @param importFromId The id of the existing DataAwsOdbCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbCloudVmCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_vm_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_vm_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -576,7 +576,7 @@ export class DataAwsOdbCloudVmCluster extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -597,21 +597,21 @@ export class DataAwsOdbCloudVmCluster extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

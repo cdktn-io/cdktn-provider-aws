@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkmanagerCoreNetworkConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkmanagerCoreNetworkConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_core_network#base_policy_document NetworkmanagerCoreNetwork#base_policy_document}
   */
@@ -23,7 +23,7 @@ export interface NetworkmanagerCoreNetworkConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_core_network#create_base_policy NetworkmanagerCoreNetwork#create_base_policy}
   */
-  readonly createBasePolicy?: boolean | cdktf.IResolvable;
+  readonly createBasePolicy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_core_network#description NetworkmanagerCoreNetwork#description}
   */
@@ -58,8 +58,8 @@ export interface NetworkmanagerCoreNetworkEdges {
 }
 
 export function networkmanagerCoreNetworkEdgesToTerraform(struct?: NetworkmanagerCoreNetworkEdges): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -68,8 +68,8 @@ export function networkmanagerCoreNetworkEdgesToTerraform(struct?: Networkmanage
 
 
 export function networkmanagerCoreNetworkEdgesToHclTerraform(struct?: NetworkmanagerCoreNetworkEdges): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -77,7 +77,7 @@ export function networkmanagerCoreNetworkEdgesToHclTerraform(struct?: Networkman
   return attrs;
 }
 
-export class NetworkmanagerCoreNetworkEdgesOutputReference extends cdktf.ComplexObject {
+export class NetworkmanagerCoreNetworkEdgesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -86,7 +86,7 @@ export class NetworkmanagerCoreNetworkEdgesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -121,14 +121,14 @@ export class NetworkmanagerCoreNetworkEdgesOutputReference extends cdktf.Complex
   }
 }
 
-export class NetworkmanagerCoreNetworkEdgesList extends cdktf.ComplexList {
+export class NetworkmanagerCoreNetworkEdgesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -143,8 +143,8 @@ export interface NetworkmanagerCoreNetworkSegments {
 }
 
 export function networkmanagerCoreNetworkSegmentsToTerraform(struct?: NetworkmanagerCoreNetworkSegments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -153,8 +153,8 @@ export function networkmanagerCoreNetworkSegmentsToTerraform(struct?: Networkman
 
 
 export function networkmanagerCoreNetworkSegmentsToHclTerraform(struct?: NetworkmanagerCoreNetworkSegments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -162,7 +162,7 @@ export function networkmanagerCoreNetworkSegmentsToHclTerraform(struct?: Network
   return attrs;
 }
 
-export class NetworkmanagerCoreNetworkSegmentsOutputReference extends cdktf.ComplexObject {
+export class NetworkmanagerCoreNetworkSegmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -171,7 +171,7 @@ export class NetworkmanagerCoreNetworkSegmentsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -206,14 +206,14 @@ export class NetworkmanagerCoreNetworkSegmentsOutputReference extends cdktf.Comp
   }
 }
 
-export class NetworkmanagerCoreNetworkSegmentsList extends cdktf.ComplexList {
+export class NetworkmanagerCoreNetworkSegmentsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -239,39 +239,39 @@ export interface NetworkmanagerCoreNetworkTimeouts {
   readonly update?: string;
 }
 
-export function networkmanagerCoreNetworkTimeoutsToTerraform(struct?: NetworkmanagerCoreNetworkTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerCoreNetworkTimeoutsToTerraform(struct?: NetworkmanagerCoreNetworkTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkmanagerCoreNetworkTimeoutsToHclTerraform(struct?: NetworkmanagerCoreNetworkTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerCoreNetworkTimeoutsToHclTerraform(struct?: NetworkmanagerCoreNetworkTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -282,19 +282,19 @@ export function networkmanagerCoreNetworkTimeoutsToHclTerraform(struct?: Network
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkmanagerCoreNetworkTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkmanagerCoreNetworkTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkmanagerCoreNetworkTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkmanagerCoreNetworkTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -315,7 +315,7 @@ export class NetworkmanagerCoreNetworkTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkmanagerCoreNetworkTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkmanagerCoreNetworkTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -323,7 +323,7 @@ export class NetworkmanagerCoreNetworkTimeoutsOutputReference extends cdktf.Comp
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -388,7 +388,7 @@ export class NetworkmanagerCoreNetworkTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_core_network aws_networkmanager_core_network}
 */
-export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
+export class NetworkmanagerCoreNetwork extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -399,14 +399,14 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkmanagerCoreNetwork resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkmanagerCoreNetwork resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmanagerCoreNetwork to import
   * @param importFromId The id of the existing NetworkmanagerCoreNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_core_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmanagerCoreNetwork to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_core_network", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_core_network", importId: importFromId, provider });
       }
 
   // ===========
@@ -475,7 +475,7 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
   // base_policy_regions - computed: false, optional: true, required: false
   private _basePolicyRegions?: string[]; 
   public get basePolicyRegions() {
-    return cdktf.Fn.tolist(this.getListAttribute('base_policy_regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('base_policy_regions'));
   }
   public set basePolicyRegions(value: string[]) {
     this._basePolicyRegions = value;
@@ -489,11 +489,11 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
   }
 
   // create_base_policy - computed: false, optional: true, required: false
-  private _createBasePolicy?: boolean | cdktf.IResolvable; 
+  private _createBasePolicy?: boolean | cdktn.IResolvable; 
   public get createBasePolicy() {
     return this.getBooleanAttribute('create_base_policy');
   }
-  public set createBasePolicy(value: boolean | cdktf.IResolvable) {
+  public set createBasePolicy(value: boolean | cdktn.IResolvable) {
     this._createBasePolicy = value;
   }
   public resetCreateBasePolicy() {
@@ -625,14 +625,14 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      base_policy_document: cdktf.stringToTerraform(this._basePolicyDocument),
-      base_policy_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._basePolicyRegions),
-      create_base_policy: cdktf.booleanToTerraform(this._createBasePolicy),
-      description: cdktf.stringToTerraform(this._description),
-      global_network_id: cdktf.stringToTerraform(this._globalNetworkId),
-      id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      base_policy_document: cdktn.stringToTerraform(this._basePolicyDocument),
+      base_policy_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._basePolicyRegions),
+      create_base_policy: cdktn.booleanToTerraform(this._createBasePolicy),
+      description: cdktn.stringToTerraform(this._description),
+      global_network_id: cdktn.stringToTerraform(this._globalNetworkId),
+      id: cdktn.stringToTerraform(this._id),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: networkmanagerCoreNetworkTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -640,49 +640,49 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       base_policy_document: {
-        value: cdktf.stringToHclTerraform(this._basePolicyDocument),
+        value: cdktn.stringToHclTerraform(this._basePolicyDocument),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       base_policy_regions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._basePolicyRegions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._basePolicyRegions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       create_base_policy: {
-        value: cdktf.booleanToHclTerraform(this._createBasePolicy),
+        value: cdktn.booleanToHclTerraform(this._createBasePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       global_network_id: {
-        value: cdktf.stringToHclTerraform(this._globalNetworkId),
+        value: cdktn.stringToHclTerraform(this._globalNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PaymentcryptographyKeyConfig extends cdktf.TerraformMetaArguments {
+export interface PaymentcryptographyKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#deletion_window_in_days PaymentcryptographyKey#deletion_window_in_days}
   */
@@ -19,11 +19,11 @@ export interface PaymentcryptographyKeyConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#enabled PaymentcryptographyKey#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#exportable PaymentcryptographyKey#exportable}
   */
-  readonly exportable: boolean | cdktf.IResolvable;
+  readonly exportable: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#key_check_value_algorithm PaymentcryptographyKey#key_check_value_algorithm}
   */
@@ -43,7 +43,7 @@ export interface PaymentcryptographyKeyConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#key_attributes PaymentcryptographyKey#key_attributes}
   */
-  readonly keyAttributes?: PaymentcryptographyKeyKeyAttributes[] | cdktf.IResolvable;
+  readonly keyAttributes?: PaymentcryptographyKeyKeyAttributes[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -55,116 +55,116 @@ export interface PaymentcryptographyKeyKeyAttributesKeyModesOfUse {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#decrypt PaymentcryptographyKey#decrypt}
   */
-  readonly decrypt?: boolean | cdktf.IResolvable;
+  readonly decrypt?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#derive_key PaymentcryptographyKey#derive_key}
   */
-  readonly deriveKey?: boolean | cdktf.IResolvable;
+  readonly deriveKey?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#encrypt PaymentcryptographyKey#encrypt}
   */
-  readonly encrypt?: boolean | cdktf.IResolvable;
+  readonly encrypt?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#generate PaymentcryptographyKey#generate}
   */
-  readonly generate?: boolean | cdktf.IResolvable;
+  readonly generate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#no_restrictions PaymentcryptographyKey#no_restrictions}
   */
-  readonly noRestrictions?: boolean | cdktf.IResolvable;
+  readonly noRestrictions?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#sign PaymentcryptographyKey#sign}
   */
-  readonly sign?: boolean | cdktf.IResolvable;
+  readonly sign?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#unwrap PaymentcryptographyKey#unwrap}
   */
-  readonly unwrap?: boolean | cdktf.IResolvable;
+  readonly unwrap?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#verify PaymentcryptographyKey#verify}
   */
-  readonly verify?: boolean | cdktf.IResolvable;
+  readonly verify?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#wrap PaymentcryptographyKey#wrap}
   */
-  readonly wrap?: boolean | cdktf.IResolvable;
+  readonly wrap?: boolean | cdktn.IResolvable;
 }
 
-export function paymentcryptographyKeyKeyAttributesKeyModesOfUseToTerraform(struct?: PaymentcryptographyKeyKeyAttributesKeyModesOfUse | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paymentcryptographyKeyKeyAttributesKeyModesOfUseToTerraform(struct?: PaymentcryptographyKeyKeyAttributesKeyModesOfUse | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    decrypt: cdktf.booleanToTerraform(struct!.decrypt),
-    derive_key: cdktf.booleanToTerraform(struct!.deriveKey),
-    encrypt: cdktf.booleanToTerraform(struct!.encrypt),
-    generate: cdktf.booleanToTerraform(struct!.generate),
-    no_restrictions: cdktf.booleanToTerraform(struct!.noRestrictions),
-    sign: cdktf.booleanToTerraform(struct!.sign),
-    unwrap: cdktf.booleanToTerraform(struct!.unwrap),
-    verify: cdktf.booleanToTerraform(struct!.verify),
-    wrap: cdktf.booleanToTerraform(struct!.wrap),
+    decrypt: cdktn.booleanToTerraform(struct!.decrypt),
+    derive_key: cdktn.booleanToTerraform(struct!.deriveKey),
+    encrypt: cdktn.booleanToTerraform(struct!.encrypt),
+    generate: cdktn.booleanToTerraform(struct!.generate),
+    no_restrictions: cdktn.booleanToTerraform(struct!.noRestrictions),
+    sign: cdktn.booleanToTerraform(struct!.sign),
+    unwrap: cdktn.booleanToTerraform(struct!.unwrap),
+    verify: cdktn.booleanToTerraform(struct!.verify),
+    wrap: cdktn.booleanToTerraform(struct!.wrap),
   }
 }
 
 
-export function paymentcryptographyKeyKeyAttributesKeyModesOfUseToHclTerraform(struct?: PaymentcryptographyKeyKeyAttributesKeyModesOfUse | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paymentcryptographyKeyKeyAttributesKeyModesOfUseToHclTerraform(struct?: PaymentcryptographyKeyKeyAttributesKeyModesOfUse | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     decrypt: {
-      value: cdktf.booleanToHclTerraform(struct!.decrypt),
+      value: cdktn.booleanToHclTerraform(struct!.decrypt),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     derive_key: {
-      value: cdktf.booleanToHclTerraform(struct!.deriveKey),
+      value: cdktn.booleanToHclTerraform(struct!.deriveKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encrypt: {
-      value: cdktf.booleanToHclTerraform(struct!.encrypt),
+      value: cdktn.booleanToHclTerraform(struct!.encrypt),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     generate: {
-      value: cdktf.booleanToHclTerraform(struct!.generate),
+      value: cdktn.booleanToHclTerraform(struct!.generate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_restrictions: {
-      value: cdktf.booleanToHclTerraform(struct!.noRestrictions),
+      value: cdktn.booleanToHclTerraform(struct!.noRestrictions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sign: {
-      value: cdktf.booleanToHclTerraform(struct!.sign),
+      value: cdktn.booleanToHclTerraform(struct!.sign),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     unwrap: {
-      value: cdktf.booleanToHclTerraform(struct!.unwrap),
+      value: cdktn.booleanToHclTerraform(struct!.unwrap),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     verify: {
-      value: cdktf.booleanToHclTerraform(struct!.verify),
+      value: cdktn.booleanToHclTerraform(struct!.verify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     wrap: {
-      value: cdktf.booleanToHclTerraform(struct!.wrap),
+      value: cdktn.booleanToHclTerraform(struct!.wrap),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -175,9 +175,9 @@ export function paymentcryptographyKeyKeyAttributesKeyModesOfUseToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference extends cdktf.ComplexObject {
+export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -185,11 +185,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PaymentcryptographyKeyKeyAttributesKeyModesOfUse | cdktf.IResolvable | undefined {
+  public get internalValue(): PaymentcryptographyKeyKeyAttributesKeyModesOfUse | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -234,7 +234,7 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaymentcryptographyKeyKeyAttributesKeyModesOfUse | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaymentcryptographyKeyKeyAttributesKeyModesOfUse | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -248,7 +248,7 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
       this._verify = undefined;
       this._wrap = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -268,11 +268,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 
   // decrypt - computed: true, optional: true, required: false
-  private _decrypt?: boolean | cdktf.IResolvable; 
+  private _decrypt?: boolean | cdktn.IResolvable; 
   public get decrypt() {
     return this.getBooleanAttribute('decrypt');
   }
-  public set decrypt(value: boolean | cdktf.IResolvable) {
+  public set decrypt(value: boolean | cdktn.IResolvable) {
     this._decrypt = value;
   }
   public resetDecrypt() {
@@ -284,11 +284,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 
   // derive_key - computed: true, optional: true, required: false
-  private _deriveKey?: boolean | cdktf.IResolvable; 
+  private _deriveKey?: boolean | cdktn.IResolvable; 
   public get deriveKey() {
     return this.getBooleanAttribute('derive_key');
   }
-  public set deriveKey(value: boolean | cdktf.IResolvable) {
+  public set deriveKey(value: boolean | cdktn.IResolvable) {
     this._deriveKey = value;
   }
   public resetDeriveKey() {
@@ -300,11 +300,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 
   // encrypt - computed: true, optional: true, required: false
-  private _encrypt?: boolean | cdktf.IResolvable; 
+  private _encrypt?: boolean | cdktn.IResolvable; 
   public get encrypt() {
     return this.getBooleanAttribute('encrypt');
   }
-  public set encrypt(value: boolean | cdktf.IResolvable) {
+  public set encrypt(value: boolean | cdktn.IResolvable) {
     this._encrypt = value;
   }
   public resetEncrypt() {
@@ -316,11 +316,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 
   // generate - computed: true, optional: true, required: false
-  private _generate?: boolean | cdktf.IResolvable; 
+  private _generate?: boolean | cdktn.IResolvable; 
   public get generate() {
     return this.getBooleanAttribute('generate');
   }
-  public set generate(value: boolean | cdktf.IResolvable) {
+  public set generate(value: boolean | cdktn.IResolvable) {
     this._generate = value;
   }
   public resetGenerate() {
@@ -332,11 +332,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 
   // no_restrictions - computed: true, optional: true, required: false
-  private _noRestrictions?: boolean | cdktf.IResolvable; 
+  private _noRestrictions?: boolean | cdktn.IResolvable; 
   public get noRestrictions() {
     return this.getBooleanAttribute('no_restrictions');
   }
-  public set noRestrictions(value: boolean | cdktf.IResolvable) {
+  public set noRestrictions(value: boolean | cdktn.IResolvable) {
     this._noRestrictions = value;
   }
   public resetNoRestrictions() {
@@ -348,11 +348,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 
   // sign - computed: true, optional: true, required: false
-  private _sign?: boolean | cdktf.IResolvable; 
+  private _sign?: boolean | cdktn.IResolvable; 
   public get sign() {
     return this.getBooleanAttribute('sign');
   }
-  public set sign(value: boolean | cdktf.IResolvable) {
+  public set sign(value: boolean | cdktn.IResolvable) {
     this._sign = value;
   }
   public resetSign() {
@@ -364,11 +364,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 
   // unwrap - computed: true, optional: true, required: false
-  private _unwrap?: boolean | cdktf.IResolvable; 
+  private _unwrap?: boolean | cdktn.IResolvable; 
   public get unwrap() {
     return this.getBooleanAttribute('unwrap');
   }
-  public set unwrap(value: boolean | cdktf.IResolvable) {
+  public set unwrap(value: boolean | cdktn.IResolvable) {
     this._unwrap = value;
   }
   public resetUnwrap() {
@@ -380,11 +380,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 
   // verify - computed: true, optional: true, required: false
-  private _verify?: boolean | cdktf.IResolvable; 
+  private _verify?: boolean | cdktn.IResolvable; 
   public get verify() {
     return this.getBooleanAttribute('verify');
   }
-  public set verify(value: boolean | cdktf.IResolvable) {
+  public set verify(value: boolean | cdktn.IResolvable) {
     this._verify = value;
   }
   public resetVerify() {
@@ -396,11 +396,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 
   // wrap - computed: true, optional: true, required: false
-  private _wrap?: boolean | cdktf.IResolvable; 
+  private _wrap?: boolean | cdktn.IResolvable; 
   public get wrap() {
     return this.getBooleanAttribute('wrap');
   }
-  public set wrap(value: boolean | cdktf.IResolvable) {
+  public set wrap(value: boolean | cdktn.IResolvable) {
     this._wrap = value;
   }
   public resetWrap() {
@@ -412,15 +412,15 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   }
 }
 
-export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseList extends cdktf.ComplexList {
-  public internalValue? : PaymentcryptographyKeyKeyAttributesKeyModesOfUse[] | cdktf.IResolvable
+export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseList extends cdktn.ComplexList {
+  public internalValue? : PaymentcryptographyKeyKeyAttributesKeyModesOfUse[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -449,49 +449,49 @@ export interface PaymentcryptographyKeyKeyAttributes {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#key_modes_of_use PaymentcryptographyKey#key_modes_of_use}
   */
-  readonly keyModesOfUse?: PaymentcryptographyKeyKeyAttributesKeyModesOfUse[] | cdktf.IResolvable;
+  readonly keyModesOfUse?: PaymentcryptographyKeyKeyAttributesKeyModesOfUse[] | cdktn.IResolvable;
 }
 
-export function paymentcryptographyKeyKeyAttributesToTerraform(struct?: PaymentcryptographyKeyKeyAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paymentcryptographyKeyKeyAttributesToTerraform(struct?: PaymentcryptographyKeyKeyAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_algorithm: cdktf.stringToTerraform(struct!.keyAlgorithm),
-    key_class: cdktf.stringToTerraform(struct!.keyClass),
-    key_usage: cdktf.stringToTerraform(struct!.keyUsage),
-    key_modes_of_use: cdktf.listMapper(paymentcryptographyKeyKeyAttributesKeyModesOfUseToTerraform, true)(struct!.keyModesOfUse),
+    key_algorithm: cdktn.stringToTerraform(struct!.keyAlgorithm),
+    key_class: cdktn.stringToTerraform(struct!.keyClass),
+    key_usage: cdktn.stringToTerraform(struct!.keyUsage),
+    key_modes_of_use: cdktn.listMapper(paymentcryptographyKeyKeyAttributesKeyModesOfUseToTerraform, true)(struct!.keyModesOfUse),
   }
 }
 
 
-export function paymentcryptographyKeyKeyAttributesToHclTerraform(struct?: PaymentcryptographyKeyKeyAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paymentcryptographyKeyKeyAttributesToHclTerraform(struct?: PaymentcryptographyKeyKeyAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.keyAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.keyAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_class: {
-      value: cdktf.stringToHclTerraform(struct!.keyClass),
+      value: cdktn.stringToHclTerraform(struct!.keyClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_usage: {
-      value: cdktf.stringToHclTerraform(struct!.keyUsage),
+      value: cdktn.stringToHclTerraform(struct!.keyUsage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_modes_of_use: {
-      value: cdktf.listMapperHcl(paymentcryptographyKeyKeyAttributesKeyModesOfUseToHclTerraform, true)(struct!.keyModesOfUse),
+      value: cdktn.listMapperHcl(paymentcryptographyKeyKeyAttributesKeyModesOfUseToHclTerraform, true)(struct!.keyModesOfUse),
       isBlock: true,
       type: "list",
       storageClassType: "PaymentcryptographyKeyKeyAttributesKeyModesOfUseList",
@@ -502,9 +502,9 @@ export function paymentcryptographyKeyKeyAttributesToHclTerraform(struct?: Payme
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktf.ComplexObject {
+export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -512,11 +512,11 @@ export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PaymentcryptographyKeyKeyAttributes | cdktf.IResolvable | undefined {
+  public get internalValue(): PaymentcryptographyKeyKeyAttributes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -541,7 +541,7 @@ export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaymentcryptographyKeyKeyAttributes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaymentcryptographyKeyKeyAttributes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -550,7 +550,7 @@ export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktf.Co
       this._keyUsage = undefined;
       this._keyModesOfUse.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -608,7 +608,7 @@ export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktf.Co
   public get keyModesOfUse() {
     return this._keyModesOfUse;
   }
-  public putKeyModesOfUse(value: PaymentcryptographyKeyKeyAttributesKeyModesOfUse[] | cdktf.IResolvable) {
+  public putKeyModesOfUse(value: PaymentcryptographyKeyKeyAttributesKeyModesOfUse[] | cdktn.IResolvable) {
     this._keyModesOfUse.internalValue = value;
   }
   public resetKeyModesOfUse() {
@@ -620,15 +620,15 @@ export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktf.Co
   }
 }
 
-export class PaymentcryptographyKeyKeyAttributesList extends cdktf.ComplexList {
-  public internalValue? : PaymentcryptographyKeyKeyAttributes[] | cdktf.IResolvable
+export class PaymentcryptographyKeyKeyAttributesList extends cdktn.ComplexList {
+  public internalValue? : PaymentcryptographyKeyKeyAttributes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -660,39 +660,39 @@ export interface PaymentcryptographyKeyTimeouts {
   readonly update?: string;
 }
 
-export function paymentcryptographyKeyTimeoutsToTerraform(struct?: PaymentcryptographyKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paymentcryptographyKeyTimeoutsToTerraform(struct?: PaymentcryptographyKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function paymentcryptographyKeyTimeoutsToHclTerraform(struct?: PaymentcryptographyKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paymentcryptographyKeyTimeoutsToHclTerraform(struct?: PaymentcryptographyKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -703,19 +703,19 @@ export function paymentcryptographyKeyTimeoutsToHclTerraform(struct?: Paymentcry
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaymentcryptographyKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PaymentcryptographyKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PaymentcryptographyKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PaymentcryptographyKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -736,7 +736,7 @@ export class PaymentcryptographyKeyTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaymentcryptographyKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaymentcryptographyKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -744,7 +744,7 @@ export class PaymentcryptographyKeyTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -809,7 +809,7 @@ export class PaymentcryptographyKeyTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key aws_paymentcryptography_key}
 */
-export class PaymentcryptographyKey extends cdktf.TerraformResource {
+export class PaymentcryptographyKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -820,14 +820,14 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PaymentcryptographyKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PaymentcryptographyKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PaymentcryptographyKey to import
   * @param importFromId The id of the existing PaymentcryptographyKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/paymentcryptography_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PaymentcryptographyKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_paymentcryptography_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_paymentcryptography_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -893,11 +893,11 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -909,11 +909,11 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
   }
 
   // exportable - computed: false, optional: false, required: true
-  private _exportable?: boolean | cdktf.IResolvable; 
+  private _exportable?: boolean | cdktn.IResolvable; 
   public get exportable() {
     return this.getBooleanAttribute('exportable');
   }
-  public set exportable(value: boolean | cdktf.IResolvable) {
+  public set exportable(value: boolean | cdktn.IResolvable) {
     this._exportable = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -990,7 +990,7 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1000,7 +1000,7 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
   public get keyAttributes() {
     return this._keyAttributes;
   }
-  public putKeyAttributes(value: PaymentcryptographyKeyKeyAttributes[] | cdktf.IResolvable) {
+  public putKeyAttributes(value: PaymentcryptographyKeyKeyAttributes[] | cdktn.IResolvable) {
     this._keyAttributes.internalValue = value;
   }
   public resetKeyAttributes() {
@@ -1033,13 +1033,13 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_window_in_days: cdktf.numberToTerraform(this._deletionWindowInDays),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      exportable: cdktf.booleanToTerraform(this._exportable),
-      key_check_value_algorithm: cdktf.stringToTerraform(this._keyCheckValueAlgorithm),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      key_attributes: cdktf.listMapper(paymentcryptographyKeyKeyAttributesToTerraform, true)(this._keyAttributes.internalValue),
+      deletion_window_in_days: cdktn.numberToTerraform(this._deletionWindowInDays),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      exportable: cdktn.booleanToTerraform(this._exportable),
+      key_check_value_algorithm: cdktn.stringToTerraform(this._keyCheckValueAlgorithm),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      key_attributes: cdktn.listMapper(paymentcryptographyKeyKeyAttributesToTerraform, true)(this._keyAttributes.internalValue),
       timeouts: paymentcryptographyKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1047,43 +1047,43 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_window_in_days: {
-        value: cdktf.numberToHclTerraform(this._deletionWindowInDays),
+        value: cdktn.numberToHclTerraform(this._deletionWindowInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       exportable: {
-        value: cdktf.booleanToHclTerraform(this._exportable),
+        value: cdktn.booleanToHclTerraform(this._exportable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       key_check_value_algorithm: {
-        value: cdktf.stringToHclTerraform(this._keyCheckValueAlgorithm),
+        value: cdktn.stringToHclTerraform(this._keyCheckValueAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       key_attributes: {
-        value: cdktf.listMapperHcl(paymentcryptographyKeyKeyAttributesToHclTerraform, true)(this._keyAttributes.internalValue),
+        value: cdktn.listMapperHcl(paymentcryptographyKeyKeyAttributesToHclTerraform, true)(this._keyAttributes.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PaymentcryptographyKeyKeyAttributesList",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
+export interface AlbTargetGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#connection_termination AlbTargetGroup#connection_termination}
   */
-  readonly connectionTermination?: boolean | cdktf.IResolvable;
+  readonly connectionTermination?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#deregistration_delay AlbTargetGroup#deregistration_delay}
   */
@@ -34,7 +34,7 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#lambda_multi_value_headers_enabled AlbTargetGroup#lambda_multi_value_headers_enabled}
   */
-  readonly lambdaMultiValueHeadersEnabled?: boolean | cdktf.IResolvable;
+  readonly lambdaMultiValueHeadersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#load_balancing_algorithm_type AlbTargetGroup#load_balancing_algorithm_type}
   */
@@ -74,7 +74,7 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#proxy_protocol_v2 AlbTargetGroup#proxy_protocol_v2}
   */
-  readonly proxyProtocolV2?: boolean | cdktf.IResolvable;
+  readonly proxyProtocolV2?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -122,7 +122,7 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#target_failover AlbTargetGroup#target_failover}
   */
-  readonly targetFailover?: AlbTargetGroupTargetFailover[] | cdktf.IResolvable;
+  readonly targetFailover?: AlbTargetGroupTargetFailover[] | cdktn.IResolvable;
   /**
   * target_group_health block
   *
@@ -134,13 +134,13 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#target_health_state AlbTargetGroup#target_health_state}
   */
-  readonly targetHealthState?: AlbTargetGroupTargetHealthState[] | cdktf.IResolvable;
+  readonly targetHealthState?: AlbTargetGroupTargetHealthState[] | cdktn.IResolvable;
 }
 export interface AlbTargetGroupHealthCheck {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#enabled AlbTargetGroup#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#healthy_threshold AlbTargetGroup#healthy_threshold}
   */
@@ -176,80 +176,80 @@ export interface AlbTargetGroupHealthCheck {
 }
 
 export function albTargetGroupHealthCheckToTerraform(struct?: AlbTargetGroupHealthCheckOutputReference | AlbTargetGroupHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    healthy_threshold: cdktf.numberToTerraform(struct!.healthyThreshold),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    matcher: cdktf.stringToTerraform(struct!.matcher),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    timeout: cdktf.numberToTerraform(struct!.timeout),
-    unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    healthy_threshold: cdktn.numberToTerraform(struct!.healthyThreshold),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    matcher: cdktn.stringToTerraform(struct!.matcher),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    timeout: cdktn.numberToTerraform(struct!.timeout),
+    unhealthy_threshold: cdktn.numberToTerraform(struct!.unhealthyThreshold),
   }
 }
 
 
 export function albTargetGroupHealthCheckToHclTerraform(struct?: AlbTargetGroupHealthCheckOutputReference | AlbTargetGroupHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     healthy_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.healthyThreshold),
+      value: cdktn.numberToHclTerraform(struct!.healthyThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     matcher: {
-      value: cdktf.stringToHclTerraform(struct!.matcher),
+      value: cdktn.stringToHclTerraform(struct!.matcher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout: {
-      value: cdktf.numberToHclTerraform(struct!.timeout),
+      value: cdktn.numberToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     unhealthy_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.unhealthyThreshold),
+      value: cdktn.numberToHclTerraform(struct!.unhealthyThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -260,14 +260,14 @@ export function albTargetGroupHealthCheckToHclTerraform(struct?: AlbTargetGroupH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbTargetGroupHealthCheckOutputReference extends cdktf.ComplexObject {
+export class AlbTargetGroupHealthCheckOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -341,11 +341,11 @@ export class AlbTargetGroupHealthCheckOutputReference extends cdktf.ComplexObjec
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -496,7 +496,7 @@ export interface AlbTargetGroupStickiness {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#enabled AlbTargetGroup#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#type AlbTargetGroup#type}
   */
@@ -504,45 +504,45 @@ export interface AlbTargetGroupStickiness {
 }
 
 export function albTargetGroupStickinessToTerraform(struct?: AlbTargetGroupStickinessOutputReference | AlbTargetGroupStickiness): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cookie_duration: cdktf.numberToTerraform(struct!.cookieDuration),
-    cookie_name: cdktf.stringToTerraform(struct!.cookieName),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    type: cdktf.stringToTerraform(struct!.type),
+    cookie_duration: cdktn.numberToTerraform(struct!.cookieDuration),
+    cookie_name: cdktn.stringToTerraform(struct!.cookieName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function albTargetGroupStickinessToHclTerraform(struct?: AlbTargetGroupStickinessOutputReference | AlbTargetGroupStickiness): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cookie_duration: {
-      value: cdktf.numberToHclTerraform(struct!.cookieDuration),
+      value: cdktn.numberToHclTerraform(struct!.cookieDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     cookie_name: {
-      value: cdktf.stringToHclTerraform(struct!.cookieName),
+      value: cdktn.stringToHclTerraform(struct!.cookieName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -553,14 +553,14 @@ export function albTargetGroupStickinessToHclTerraform(struct?: AlbTargetGroupSt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbTargetGroupStickinessOutputReference extends cdktf.ComplexObject {
+export class AlbTargetGroupStickinessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -636,11 +636,11 @@ export class AlbTargetGroupStickinessOutputReference extends cdktf.ComplexObject
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -675,32 +675,32 @@ export interface AlbTargetGroupTargetFailover {
   readonly onUnhealthy: string;
 }
 
-export function albTargetGroupTargetFailoverToTerraform(struct?: AlbTargetGroupTargetFailover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albTargetGroupTargetFailoverToTerraform(struct?: AlbTargetGroupTargetFailover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    on_deregistration: cdktf.stringToTerraform(struct!.onDeregistration),
-    on_unhealthy: cdktf.stringToTerraform(struct!.onUnhealthy),
+    on_deregistration: cdktn.stringToTerraform(struct!.onDeregistration),
+    on_unhealthy: cdktn.stringToTerraform(struct!.onUnhealthy),
   }
 }
 
 
-export function albTargetGroupTargetFailoverToHclTerraform(struct?: AlbTargetGroupTargetFailover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albTargetGroupTargetFailoverToHclTerraform(struct?: AlbTargetGroupTargetFailover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     on_deregistration: {
-      value: cdktf.stringToHclTerraform(struct!.onDeregistration),
+      value: cdktn.stringToHclTerraform(struct!.onDeregistration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     on_unhealthy: {
-      value: cdktf.stringToHclTerraform(struct!.onUnhealthy),
+      value: cdktn.stringToHclTerraform(struct!.onUnhealthy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -711,9 +711,9 @@ export function albTargetGroupTargetFailoverToHclTerraform(struct?: AlbTargetGro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbTargetGroupTargetFailoverOutputReference extends cdktf.ComplexObject {
+export class AlbTargetGroupTargetFailoverOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -721,11 +721,11 @@ export class AlbTargetGroupTargetFailoverOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlbTargetGroupTargetFailover | cdktf.IResolvable | undefined {
+  public get internalValue(): AlbTargetGroupTargetFailover | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -742,14 +742,14 @@ export class AlbTargetGroupTargetFailoverOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlbTargetGroupTargetFailover | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlbTargetGroupTargetFailover | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._onDeregistration = undefined;
       this._onUnhealthy = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -788,15 +788,15 @@ export class AlbTargetGroupTargetFailoverOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class AlbTargetGroupTargetFailoverList extends cdktf.ComplexList {
-  public internalValue? : AlbTargetGroupTargetFailover[] | cdktf.IResolvable
+export class AlbTargetGroupTargetFailoverList extends cdktn.ComplexList {
+  public internalValue? : AlbTargetGroupTargetFailover[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -819,31 +819,31 @@ export interface AlbTargetGroupTargetGroupHealthDnsFailover {
 }
 
 export function albTargetGroupTargetGroupHealthDnsFailoverToTerraform(struct?: AlbTargetGroupTargetGroupHealthDnsFailoverOutputReference | AlbTargetGroupTargetGroupHealthDnsFailover): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_healthy_targets_count: cdktf.stringToTerraform(struct!.minimumHealthyTargetsCount),
-    minimum_healthy_targets_percentage: cdktf.stringToTerraform(struct!.minimumHealthyTargetsPercentage),
+    minimum_healthy_targets_count: cdktn.stringToTerraform(struct!.minimumHealthyTargetsCount),
+    minimum_healthy_targets_percentage: cdktn.stringToTerraform(struct!.minimumHealthyTargetsPercentage),
   }
 }
 
 
 export function albTargetGroupTargetGroupHealthDnsFailoverToHclTerraform(struct?: AlbTargetGroupTargetGroupHealthDnsFailoverOutputReference | AlbTargetGroupTargetGroupHealthDnsFailover): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_healthy_targets_count: {
-      value: cdktf.stringToHclTerraform(struct!.minimumHealthyTargetsCount),
+      value: cdktn.stringToHclTerraform(struct!.minimumHealthyTargetsCount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     minimum_healthy_targets_percentage: {
-      value: cdktf.stringToHclTerraform(struct!.minimumHealthyTargetsPercentage),
+      value: cdktn.stringToHclTerraform(struct!.minimumHealthyTargetsPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -854,14 +854,14 @@ export function albTargetGroupTargetGroupHealthDnsFailoverToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbTargetGroupTargetGroupHealthDnsFailoverOutputReference extends cdktf.ComplexObject {
+export class AlbTargetGroupTargetGroupHealthDnsFailoverOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -936,31 +936,31 @@ export interface AlbTargetGroupTargetGroupHealthUnhealthyStateRouting {
 }
 
 export function albTargetGroupTargetGroupHealthUnhealthyStateRoutingToTerraform(struct?: AlbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference | AlbTargetGroupTargetGroupHealthUnhealthyStateRouting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_healthy_targets_count: cdktf.numberToTerraform(struct!.minimumHealthyTargetsCount),
-    minimum_healthy_targets_percentage: cdktf.stringToTerraform(struct!.minimumHealthyTargetsPercentage),
+    minimum_healthy_targets_count: cdktn.numberToTerraform(struct!.minimumHealthyTargetsCount),
+    minimum_healthy_targets_percentage: cdktn.stringToTerraform(struct!.minimumHealthyTargetsPercentage),
   }
 }
 
 
 export function albTargetGroupTargetGroupHealthUnhealthyStateRoutingToHclTerraform(struct?: AlbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference | AlbTargetGroupTargetGroupHealthUnhealthyStateRouting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_healthy_targets_count: {
-      value: cdktf.numberToHclTerraform(struct!.minimumHealthyTargetsCount),
+      value: cdktn.numberToHclTerraform(struct!.minimumHealthyTargetsCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum_healthy_targets_percentage: {
-      value: cdktf.stringToHclTerraform(struct!.minimumHealthyTargetsPercentage),
+      value: cdktn.stringToHclTerraform(struct!.minimumHealthyTargetsPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -971,14 +971,14 @@ export function albTargetGroupTargetGroupHealthUnhealthyStateRoutingToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference extends cdktf.ComplexObject {
+export class AlbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1057,8 +1057,8 @@ export interface AlbTargetGroupTargetGroupHealth {
 }
 
 export function albTargetGroupTargetGroupHealthToTerraform(struct?: AlbTargetGroupTargetGroupHealthOutputReference | AlbTargetGroupTargetGroupHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1069,8 +1069,8 @@ export function albTargetGroupTargetGroupHealthToTerraform(struct?: AlbTargetGro
 
 
 export function albTargetGroupTargetGroupHealthToHclTerraform(struct?: AlbTargetGroupTargetGroupHealthOutputReference | AlbTargetGroupTargetGroupHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1092,14 +1092,14 @@ export function albTargetGroupTargetGroupHealthToHclTerraform(struct?: AlbTarget
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbTargetGroupTargetGroupHealthOutputReference extends cdktf.ComplexObject {
+export class AlbTargetGroupTargetGroupHealthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1166,39 +1166,39 @@ export interface AlbTargetGroupTargetHealthState {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#enable_unhealthy_connection_termination AlbTargetGroup#enable_unhealthy_connection_termination}
   */
-  readonly enableUnhealthyConnectionTermination: boolean | cdktf.IResolvable;
+  readonly enableUnhealthyConnectionTermination: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#unhealthy_draining_interval AlbTargetGroup#unhealthy_draining_interval}
   */
   readonly unhealthyDrainingInterval?: number;
 }
 
-export function albTargetGroupTargetHealthStateToTerraform(struct?: AlbTargetGroupTargetHealthState | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albTargetGroupTargetHealthStateToTerraform(struct?: AlbTargetGroupTargetHealthState | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_unhealthy_connection_termination: cdktf.booleanToTerraform(struct!.enableUnhealthyConnectionTermination),
-    unhealthy_draining_interval: cdktf.numberToTerraform(struct!.unhealthyDrainingInterval),
+    enable_unhealthy_connection_termination: cdktn.booleanToTerraform(struct!.enableUnhealthyConnectionTermination),
+    unhealthy_draining_interval: cdktn.numberToTerraform(struct!.unhealthyDrainingInterval),
   }
 }
 
 
-export function albTargetGroupTargetHealthStateToHclTerraform(struct?: AlbTargetGroupTargetHealthState | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function albTargetGroupTargetHealthStateToHclTerraform(struct?: AlbTargetGroupTargetHealthState | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_unhealthy_connection_termination: {
-      value: cdktf.booleanToHclTerraform(struct!.enableUnhealthyConnectionTermination),
+      value: cdktn.booleanToHclTerraform(struct!.enableUnhealthyConnectionTermination),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     unhealthy_draining_interval: {
-      value: cdktf.numberToHclTerraform(struct!.unhealthyDrainingInterval),
+      value: cdktn.numberToHclTerraform(struct!.unhealthyDrainingInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1209,9 +1209,9 @@ export function albTargetGroupTargetHealthStateToHclTerraform(struct?: AlbTarget
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlbTargetGroupTargetHealthStateOutputReference extends cdktf.ComplexObject {
+export class AlbTargetGroupTargetHealthStateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1219,11 +1219,11 @@ export class AlbTargetGroupTargetHealthStateOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlbTargetGroupTargetHealthState | cdktf.IResolvable | undefined {
+  public get internalValue(): AlbTargetGroupTargetHealthState | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1240,14 +1240,14 @@ export class AlbTargetGroupTargetHealthStateOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlbTargetGroupTargetHealthState | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlbTargetGroupTargetHealthState | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enableUnhealthyConnectionTermination = undefined;
       this._unhealthyDrainingInterval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1260,11 +1260,11 @@ export class AlbTargetGroupTargetHealthStateOutputReference extends cdktf.Comple
   }
 
   // enable_unhealthy_connection_termination - computed: false, optional: false, required: true
-  private _enableUnhealthyConnectionTermination?: boolean | cdktf.IResolvable; 
+  private _enableUnhealthyConnectionTermination?: boolean | cdktn.IResolvable; 
   public get enableUnhealthyConnectionTermination() {
     return this.getBooleanAttribute('enable_unhealthy_connection_termination');
   }
-  public set enableUnhealthyConnectionTermination(value: boolean | cdktf.IResolvable) {
+  public set enableUnhealthyConnectionTermination(value: boolean | cdktn.IResolvable) {
     this._enableUnhealthyConnectionTermination = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1289,15 +1289,15 @@ export class AlbTargetGroupTargetHealthStateOutputReference extends cdktf.Comple
   }
 }
 
-export class AlbTargetGroupTargetHealthStateList extends cdktf.ComplexList {
-  public internalValue? : AlbTargetGroupTargetHealthState[] | cdktf.IResolvable
+export class AlbTargetGroupTargetHealthStateList extends cdktn.ComplexList {
+  public internalValue? : AlbTargetGroupTargetHealthState[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1312,7 +1312,7 @@ export class AlbTargetGroupTargetHealthStateList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group aws_alb_target_group}
 */
-export class AlbTargetGroup extends cdktf.TerraformResource {
+export class AlbTargetGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1323,14 +1323,14 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AlbTargetGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AlbTargetGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlbTargetGroup to import
   * @param importFromId The id of the existing AlbTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/alb_target_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlbTargetGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_alb_target_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_alb_target_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -1404,11 +1404,11 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   }
 
   // connection_termination - computed: true, optional: true, required: false
-  private _connectionTermination?: boolean | cdktf.IResolvable; 
+  private _connectionTermination?: boolean | cdktn.IResolvable; 
   public get connectionTermination() {
     return this.getBooleanAttribute('connection_termination');
   }
-  public set connectionTermination(value: boolean | cdktf.IResolvable) {
+  public set connectionTermination(value: boolean | cdktn.IResolvable) {
     this._connectionTermination = value;
   }
   public resetConnectionTermination() {
@@ -1468,11 +1468,11 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   }
 
   // lambda_multi_value_headers_enabled - computed: false, optional: true, required: false
-  private _lambdaMultiValueHeadersEnabled?: boolean | cdktf.IResolvable; 
+  private _lambdaMultiValueHeadersEnabled?: boolean | cdktn.IResolvable; 
   public get lambdaMultiValueHeadersEnabled() {
     return this.getBooleanAttribute('lambda_multi_value_headers_enabled');
   }
-  public set lambdaMultiValueHeadersEnabled(value: boolean | cdktf.IResolvable) {
+  public set lambdaMultiValueHeadersEnabled(value: boolean | cdktn.IResolvable) {
     this._lambdaMultiValueHeadersEnabled = value;
   }
   public resetLambdaMultiValueHeadersEnabled() {
@@ -1485,7 +1485,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
 
   // load_balancer_arns - computed: true, optional: false, required: false
   public get loadBalancerArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('load_balancer_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('load_balancer_arns'));
   }
 
   // load_balancing_algorithm_type - computed: true, optional: true, required: false
@@ -1633,11 +1633,11 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   }
 
   // proxy_protocol_v2 - computed: false, optional: true, required: false
-  private _proxyProtocolV2?: boolean | cdktf.IResolvable; 
+  private _proxyProtocolV2?: boolean | cdktn.IResolvable; 
   public get proxyProtocolV2() {
     return this.getBooleanAttribute('proxy_protocol_v2');
   }
-  public set proxyProtocolV2(value: boolean | cdktf.IResolvable) {
+  public set proxyProtocolV2(value: boolean | cdktn.IResolvable) {
     this._proxyProtocolV2 = value;
   }
   public resetProxyProtocolV2() {
@@ -1797,7 +1797,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   public get targetFailover() {
     return this._targetFailover;
   }
-  public putTargetFailover(value: AlbTargetGroupTargetFailover[] | cdktf.IResolvable) {
+  public putTargetFailover(value: AlbTargetGroupTargetFailover[] | cdktn.IResolvable) {
     this._targetFailover.internalValue = value;
   }
   public resetTargetFailover() {
@@ -1829,7 +1829,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   public get targetHealthState() {
     return this._targetHealthState;
   }
-  public putTargetHealthState(value: AlbTargetGroupTargetHealthState[] | cdktf.IResolvable) {
+  public putTargetHealthState(value: AlbTargetGroupTargetHealthState[] | cdktn.IResolvable) {
     this._targetHealthState.internalValue = value;
   }
   public resetTargetHealthState() {
@@ -1846,166 +1846,166 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_termination: cdktf.booleanToTerraform(this._connectionTermination),
-      deregistration_delay: cdktf.stringToTerraform(this._deregistrationDelay),
-      id: cdktf.stringToTerraform(this._id),
-      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
-      lambda_multi_value_headers_enabled: cdktf.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
-      load_balancing_algorithm_type: cdktf.stringToTerraform(this._loadBalancingAlgorithmType),
-      load_balancing_anomaly_mitigation: cdktf.stringToTerraform(this._loadBalancingAnomalyMitigation),
-      load_balancing_cross_zone_enabled: cdktf.stringToTerraform(this._loadBalancingCrossZoneEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      port: cdktf.numberToTerraform(this._port),
-      preserve_client_ip: cdktf.stringToTerraform(this._preserveClientIp),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      protocol_version: cdktf.stringToTerraform(this._protocolVersion),
-      proxy_protocol_v2: cdktf.booleanToTerraform(this._proxyProtocolV2),
-      region: cdktf.stringToTerraform(this._region),
-      slow_start: cdktf.numberToTerraform(this._slowStart),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_control_port: cdktf.numberToTerraform(this._targetControlPort),
-      target_type: cdktf.stringToTerraform(this._targetType),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      connection_termination: cdktn.booleanToTerraform(this._connectionTermination),
+      deregistration_delay: cdktn.stringToTerraform(this._deregistrationDelay),
+      id: cdktn.stringToTerraform(this._id),
+      ip_address_type: cdktn.stringToTerraform(this._ipAddressType),
+      lambda_multi_value_headers_enabled: cdktn.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
+      load_balancing_algorithm_type: cdktn.stringToTerraform(this._loadBalancingAlgorithmType),
+      load_balancing_anomaly_mitigation: cdktn.stringToTerraform(this._loadBalancingAnomalyMitigation),
+      load_balancing_cross_zone_enabled: cdktn.stringToTerraform(this._loadBalancingCrossZoneEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      port: cdktn.numberToTerraform(this._port),
+      preserve_client_ip: cdktn.stringToTerraform(this._preserveClientIp),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      protocol_version: cdktn.stringToTerraform(this._protocolVersion),
+      proxy_protocol_v2: cdktn.booleanToTerraform(this._proxyProtocolV2),
+      region: cdktn.stringToTerraform(this._region),
+      slow_start: cdktn.numberToTerraform(this._slowStart),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_control_port: cdktn.numberToTerraform(this._targetControlPort),
+      target_type: cdktn.stringToTerraform(this._targetType),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
       health_check: albTargetGroupHealthCheckToTerraform(this._healthCheck.internalValue),
       stickiness: albTargetGroupStickinessToTerraform(this._stickiness.internalValue),
-      target_failover: cdktf.listMapper(albTargetGroupTargetFailoverToTerraform, true)(this._targetFailover.internalValue),
+      target_failover: cdktn.listMapper(albTargetGroupTargetFailoverToTerraform, true)(this._targetFailover.internalValue),
       target_group_health: albTargetGroupTargetGroupHealthToTerraform(this._targetGroupHealth.internalValue),
-      target_health_state: cdktf.listMapper(albTargetGroupTargetHealthStateToTerraform, true)(this._targetHealthState.internalValue),
+      target_health_state: cdktn.listMapper(albTargetGroupTargetHealthStateToTerraform, true)(this._targetHealthState.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_termination: {
-        value: cdktf.booleanToHclTerraform(this._connectionTermination),
+        value: cdktn.booleanToHclTerraform(this._connectionTermination),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       deregistration_delay: {
-        value: cdktf.stringToHclTerraform(this._deregistrationDelay),
+        value: cdktn.stringToHclTerraform(this._deregistrationDelay),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_address_type: {
-        value: cdktf.stringToHclTerraform(this._ipAddressType),
+        value: cdktn.stringToHclTerraform(this._ipAddressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lambda_multi_value_headers_enabled: {
-        value: cdktf.booleanToHclTerraform(this._lambdaMultiValueHeadersEnabled),
+        value: cdktn.booleanToHclTerraform(this._lambdaMultiValueHeadersEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       load_balancing_algorithm_type: {
-        value: cdktf.stringToHclTerraform(this._loadBalancingAlgorithmType),
+        value: cdktn.stringToHclTerraform(this._loadBalancingAlgorithmType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       load_balancing_anomaly_mitigation: {
-        value: cdktf.stringToHclTerraform(this._loadBalancingAnomalyMitigation),
+        value: cdktn.stringToHclTerraform(this._loadBalancingAnomalyMitigation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       load_balancing_cross_zone_enabled: {
-        value: cdktf.stringToHclTerraform(this._loadBalancingCrossZoneEnabled),
+        value: cdktn.stringToHclTerraform(this._loadBalancingCrossZoneEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       preserve_client_ip: {
-        value: cdktf.stringToHclTerraform(this._preserveClientIp),
+        value: cdktn.stringToHclTerraform(this._preserveClientIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol_version: {
-        value: cdktf.stringToHclTerraform(this._protocolVersion),
+        value: cdktn.stringToHclTerraform(this._protocolVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       proxy_protocol_v2: {
-        value: cdktf.booleanToHclTerraform(this._proxyProtocolV2),
+        value: cdktn.booleanToHclTerraform(this._proxyProtocolV2),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       slow_start: {
-        value: cdktf.numberToHclTerraform(this._slowStart),
+        value: cdktn.numberToHclTerraform(this._slowStart),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_control_port: {
-        value: cdktf.numberToHclTerraform(this._targetControlPort),
+        value: cdktn.numberToHclTerraform(this._targetControlPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       target_type: {
-        value: cdktf.stringToHclTerraform(this._targetType),
+        value: cdktn.stringToHclTerraform(this._targetType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2023,7 +2023,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
         storageClassType: "AlbTargetGroupStickinessList",
       },
       target_failover: {
-        value: cdktf.listMapperHcl(albTargetGroupTargetFailoverToHclTerraform, true)(this._targetFailover.internalValue),
+        value: cdktn.listMapperHcl(albTargetGroupTargetFailoverToHclTerraform, true)(this._targetFailover.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AlbTargetGroupTargetFailoverList",
@@ -2035,7 +2035,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
         storageClassType: "AlbTargetGroupTargetGroupHealthList",
       },
       target_health_state: {
-        value: cdktf.listMapperHcl(albTargetGroupTargetHealthStateToHclTerraform, true)(this._targetHealthState.internalValue),
+        value: cdktn.listMapperHcl(albTargetGroupTargetHealthStateToHclTerraform, true)(this._targetHealthState.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AlbTargetGroupTargetHealthStateList",

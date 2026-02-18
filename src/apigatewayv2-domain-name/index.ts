@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Apigatewayv2DomainNameConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2DomainNameConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_domain_name#domain_name Apigatewayv2DomainName#domain_name}
   */
@@ -84,52 +84,52 @@ export interface Apigatewayv2DomainNameDomainNameConfiguration {
 }
 
 export function apigatewayv2DomainNameDomainNameConfigurationToTerraform(struct?: Apigatewayv2DomainNameDomainNameConfigurationOutputReference | Apigatewayv2DomainNameDomainNameConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_arn: cdktf.stringToTerraform(struct!.certificateArn),
-    endpoint_type: cdktf.stringToTerraform(struct!.endpointType),
-    ip_address_type: cdktf.stringToTerraform(struct!.ipAddressType),
-    ownership_verification_certificate_arn: cdktf.stringToTerraform(struct!.ownershipVerificationCertificateArn),
-    security_policy: cdktf.stringToTerraform(struct!.securityPolicy),
+    certificate_arn: cdktn.stringToTerraform(struct!.certificateArn),
+    endpoint_type: cdktn.stringToTerraform(struct!.endpointType),
+    ip_address_type: cdktn.stringToTerraform(struct!.ipAddressType),
+    ownership_verification_certificate_arn: cdktn.stringToTerraform(struct!.ownershipVerificationCertificateArn),
+    security_policy: cdktn.stringToTerraform(struct!.securityPolicy),
   }
 }
 
 
 export function apigatewayv2DomainNameDomainNameConfigurationToHclTerraform(struct?: Apigatewayv2DomainNameDomainNameConfigurationOutputReference | Apigatewayv2DomainNameDomainNameConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_arn: {
-      value: cdktf.stringToHclTerraform(struct!.certificateArn),
+      value: cdktn.stringToHclTerraform(struct!.certificateArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint_type: {
-      value: cdktf.stringToHclTerraform(struct!.endpointType),
+      value: cdktn.stringToHclTerraform(struct!.endpointType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_address_type: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddressType),
+      value: cdktn.stringToHclTerraform(struct!.ipAddressType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ownership_verification_certificate_arn: {
-      value: cdktf.stringToHclTerraform(struct!.ownershipVerificationCertificateArn),
+      value: cdktn.stringToHclTerraform(struct!.ownershipVerificationCertificateArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_policy: {
-      value: cdktf.stringToHclTerraform(struct!.securityPolicy),
+      value: cdktn.stringToHclTerraform(struct!.securityPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -140,14 +140,14 @@ export function apigatewayv2DomainNameDomainNameConfigurationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -289,31 +289,31 @@ export interface Apigatewayv2DomainNameMutualTlsAuthentication {
 }
 
 export function apigatewayv2DomainNameMutualTlsAuthenticationToTerraform(struct?: Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference | Apigatewayv2DomainNameMutualTlsAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    truststore_uri: cdktf.stringToTerraform(struct!.truststoreUri),
-    truststore_version: cdktf.stringToTerraform(struct!.truststoreVersion),
+    truststore_uri: cdktn.stringToTerraform(struct!.truststoreUri),
+    truststore_version: cdktn.stringToTerraform(struct!.truststoreVersion),
   }
 }
 
 
 export function apigatewayv2DomainNameMutualTlsAuthenticationToHclTerraform(struct?: Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference | Apigatewayv2DomainNameMutualTlsAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     truststore_uri: {
-      value: cdktf.stringToHclTerraform(struct!.truststoreUri),
+      value: cdktn.stringToHclTerraform(struct!.truststoreUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     truststore_version: {
-      value: cdktf.stringToHclTerraform(struct!.truststoreVersion),
+      value: cdktn.stringToHclTerraform(struct!.truststoreVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -324,14 +324,14 @@ export function apigatewayv2DomainNameMutualTlsAuthenticationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -402,32 +402,32 @@ export interface Apigatewayv2DomainNameTimeouts {
   readonly update?: string;
 }
 
-export function apigatewayv2DomainNameTimeoutsToTerraform(struct?: Apigatewayv2DomainNameTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2DomainNameTimeoutsToTerraform(struct?: Apigatewayv2DomainNameTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apigatewayv2DomainNameTimeoutsToHclTerraform(struct?: Apigatewayv2DomainNameTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2DomainNameTimeoutsToHclTerraform(struct?: Apigatewayv2DomainNameTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -438,19 +438,19 @@ export function apigatewayv2DomainNameTimeoutsToHclTerraform(struct?: Apigateway
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2DomainNameTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2DomainNameTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Apigatewayv2DomainNameTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Apigatewayv2DomainNameTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -467,14 +467,14 @@ export class Apigatewayv2DomainNameTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Apigatewayv2DomainNameTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Apigatewayv2DomainNameTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -522,7 +522,7 @@ export class Apigatewayv2DomainNameTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_domain_name aws_apigatewayv2_domain_name}
 */
-export class Apigatewayv2DomainName extends cdktf.TerraformResource {
+export class Apigatewayv2DomainName extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -533,14 +533,14 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Apigatewayv2DomainName resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Apigatewayv2DomainName resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2DomainName to import
   * @param importFromId The id of the existing Apigatewayv2DomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_domain_name#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2DomainName to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_domain_name", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_domain_name", importId: importFromId, provider });
       }
 
   // ===========
@@ -739,12 +739,12 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      routing_mode: cdktf.stringToTerraform(this._routingMode),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      routing_mode: cdktn.stringToTerraform(this._routingMode),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       domain_name_configuration: apigatewayv2DomainNameDomainNameConfigurationToTerraform(this._domainNameConfiguration.internalValue),
       mutual_tls_authentication: apigatewayv2DomainNameMutualTlsAuthenticationToTerraform(this._mutualTlsAuthentication.internalValue),
       timeouts: apigatewayv2DomainNameTimeoutsToTerraform(this._timeouts.internalValue),
@@ -754,37 +754,37 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_mode: {
-        value: cdktf.stringToHclTerraform(this._routingMode),
+        value: cdktn.stringToHclTerraform(this._routingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

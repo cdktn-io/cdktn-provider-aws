@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecuritylakeAwsLogSourceConfig extends cdktf.TerraformMetaArguments {
+export interface SecuritylakeAwsLogSourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -23,7 +23,7 @@ export interface SecuritylakeAwsLogSourceConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_aws_log_source#source SecuritylakeAwsLogSource#source}
   */
-  readonly source?: SecuritylakeAwsLogSourceSource[] | cdktf.IResolvable;
+  readonly source?: SecuritylakeAwsLogSourceSource[] | cdktn.IResolvable;
 }
 export interface SecuritylakeAwsLogSourceSource {
   /**
@@ -44,46 +44,46 @@ export interface SecuritylakeAwsLogSourceSource {
   readonly sourceVersion?: string;
 }
 
-export function securitylakeAwsLogSourceSourceToTerraform(struct?: SecuritylakeAwsLogSourceSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeAwsLogSourceSourceToTerraform(struct?: SecuritylakeAwsLogSourceSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accounts),
-    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
-    source_name: cdktf.stringToTerraform(struct!.sourceName),
-    source_version: cdktf.stringToTerraform(struct!.sourceVersion),
+    accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accounts),
+    regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regions),
+    source_name: cdktn.stringToTerraform(struct!.sourceName),
+    source_version: cdktn.stringToTerraform(struct!.sourceVersion),
   }
 }
 
 
-export function securitylakeAwsLogSourceSourceToHclTerraform(struct?: SecuritylakeAwsLogSourceSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeAwsLogSourceSourceToHclTerraform(struct?: SecuritylakeAwsLogSourceSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     accounts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accounts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.accounts),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.regions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     source_name: {
-      value: cdktf.stringToHclTerraform(struct!.sourceName),
+      value: cdktn.stringToHclTerraform(struct!.sourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_version: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVersion),
+      value: cdktn.stringToHclTerraform(struct!.sourceVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -94,9 +94,9 @@ export function securitylakeAwsLogSourceSourceToHclTerraform(struct?: Securityla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeAwsLogSourceSourceOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeAwsLogSourceSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -104,11 +104,11 @@ export class SecuritylakeAwsLogSourceSourceOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeAwsLogSourceSource | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeAwsLogSourceSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,7 +133,7 @@ export class SecuritylakeAwsLogSourceSourceOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeAwsLogSourceSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeAwsLogSourceSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -142,7 +142,7 @@ export class SecuritylakeAwsLogSourceSourceOutputReference extends cdktf.Complex
       this._sourceName = undefined;
       this._sourceVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -159,7 +159,7 @@ export class SecuritylakeAwsLogSourceSourceOutputReference extends cdktf.Complex
   // accounts - computed: true, optional: true, required: false
   private _accounts?: string[]; 
   public get accounts() {
-    return cdktf.Fn.tolist(this.getListAttribute('accounts'));
+    return cdktn.Fn.tolist(this.getListAttribute('accounts'));
   }
   public set accounts(value: string[]) {
     this._accounts = value;
@@ -175,7 +175,7 @@ export class SecuritylakeAwsLogSourceSourceOutputReference extends cdktf.Complex
   // regions - computed: false, optional: false, required: true
   private _regions?: string[]; 
   public get regions() {
-    return cdktf.Fn.tolist(this.getListAttribute('regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('regions'));
   }
   public set regions(value: string[]) {
     this._regions = value;
@@ -215,15 +215,15 @@ export class SecuritylakeAwsLogSourceSourceOutputReference extends cdktf.Complex
   }
 }
 
-export class SecuritylakeAwsLogSourceSourceList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeAwsLogSourceSource[] | cdktf.IResolvable
+export class SecuritylakeAwsLogSourceSourceList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeAwsLogSourceSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -238,7 +238,7 @@ export class SecuritylakeAwsLogSourceSourceList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source}
 */
-export class SecuritylakeAwsLogSource extends cdktf.TerraformResource {
+export class SecuritylakeAwsLogSource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -249,14 +249,14 @@ export class SecuritylakeAwsLogSource extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecuritylakeAwsLogSource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecuritylakeAwsLogSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecuritylakeAwsLogSource to import
   * @param importFromId The id of the existing SecuritylakeAwsLogSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_aws_log_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecuritylakeAwsLogSource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_aws_log_source", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_aws_log_source", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,7 +320,7 @@ export class SecuritylakeAwsLogSource extends cdktf.TerraformResource {
   public get source() {
     return this._source;
   }
-  public putSource(value: SecuritylakeAwsLogSourceSource[] | cdktf.IResolvable) {
+  public putSource(value: SecuritylakeAwsLogSourceSource[] | cdktn.IResolvable) {
     this._source.internalValue = value;
   }
   public resetSource() {
@@ -337,21 +337,21 @@ export class SecuritylakeAwsLogSource extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      source: cdktf.listMapper(securitylakeAwsLogSourceSourceToTerraform, true)(this._source.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      source: cdktn.listMapper(securitylakeAwsLogSourceSourceToTerraform, true)(this._source.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.listMapperHcl(securitylakeAwsLogSourceSourceToHclTerraform, true)(this._source.internalValue),
+        value: cdktn.listMapperHcl(securitylakeAwsLogSourceSourceToHclTerraform, true)(this._source.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SecuritylakeAwsLogSourceSourceList",

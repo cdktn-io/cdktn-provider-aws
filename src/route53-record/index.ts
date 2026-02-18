@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
+export interface Route53RecordConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_record#allow_overwrite Route53Record#allow_overwrite}
   */
-  readonly allowOverwrite?: boolean | cdktf.IResolvable;
+  readonly allowOverwrite?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_record#health_check_id Route53Record#health_check_id}
   */
@@ -30,7 +30,7 @@ export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_record#multivalue_answer_routing_policy Route53Record#multivalue_answer_routing_policy}
   */
-  readonly multivalueAnswerRoutingPolicy?: boolean | cdktf.IResolvable;
+  readonly multivalueAnswerRoutingPolicy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_record#name Route53Record#name}
   */
@@ -108,7 +108,7 @@ export interface Route53RecordAlias {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_record#evaluate_target_health Route53Record#evaluate_target_health}
   */
-  readonly evaluateTargetHealth: boolean | cdktf.IResolvable;
+  readonly evaluateTargetHealth: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_record#name Route53Record#name}
   */
@@ -120,38 +120,38 @@ export interface Route53RecordAlias {
 }
 
 export function route53RecordAliasToTerraform(struct?: Route53RecordAliasOutputReference | Route53RecordAlias): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    evaluate_target_health: cdktf.booleanToTerraform(struct!.evaluateTargetHealth),
-    name: cdktf.stringToTerraform(struct!.name),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+    evaluate_target_health: cdktn.booleanToTerraform(struct!.evaluateTargetHealth),
+    name: cdktn.stringToTerraform(struct!.name),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
 export function route53RecordAliasToHclTerraform(struct?: Route53RecordAliasOutputReference | Route53RecordAlias): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     evaluate_target_health: {
-      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      value: cdktn.booleanToHclTerraform(struct!.evaluateTargetHealth),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -162,14 +162,14 @@ export function route53RecordAliasToHclTerraform(struct?: Route53RecordAliasOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecordAliasOutputReference extends cdktf.ComplexObject {
+export class Route53RecordAliasOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -207,11 +207,11 @@ export class Route53RecordAliasOutputReference extends cdktf.ComplexObject {
   }
 
   // evaluate_target_health - computed: false, optional: false, required: true
-  private _evaluateTargetHealth?: boolean | cdktf.IResolvable; 
+  private _evaluateTargetHealth?: boolean | cdktn.IResolvable; 
   public get evaluateTargetHealth() {
     return this.getBooleanAttribute('evaluate_target_health');
   }
-  public set evaluateTargetHealth(value: boolean | cdktf.IResolvable) {
+  public set evaluateTargetHealth(value: boolean | cdktn.IResolvable) {
     this._evaluateTargetHealth = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -257,31 +257,31 @@ export interface Route53RecordCidrRoutingPolicy {
 }
 
 export function route53RecordCidrRoutingPolicyToTerraform(struct?: Route53RecordCidrRoutingPolicyOutputReference | Route53RecordCidrRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    collection_id: cdktf.stringToTerraform(struct!.collectionId),
-    location_name: cdktf.stringToTerraform(struct!.locationName),
+    collection_id: cdktn.stringToTerraform(struct!.collectionId),
+    location_name: cdktn.stringToTerraform(struct!.locationName),
   }
 }
 
 
 export function route53RecordCidrRoutingPolicyToHclTerraform(struct?: Route53RecordCidrRoutingPolicyOutputReference | Route53RecordCidrRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     collection_id: {
-      value: cdktf.stringToHclTerraform(struct!.collectionId),
+      value: cdktn.stringToHclTerraform(struct!.collectionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location_name: {
-      value: cdktf.stringToHclTerraform(struct!.locationName),
+      value: cdktn.stringToHclTerraform(struct!.locationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -292,14 +292,14 @@ export function route53RecordCidrRoutingPolicyToHclTerraform(struct?: Route53Rec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecordCidrRoutingPolicyOutputReference extends cdktf.ComplexObject {
+export class Route53RecordCidrRoutingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -364,24 +364,24 @@ export interface Route53RecordFailoverRoutingPolicy {
 }
 
 export function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53RecordFailoverRoutingPolicyOutputReference | Route53RecordFailoverRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function route53RecordFailoverRoutingPolicyToHclTerraform(struct?: Route53RecordFailoverRoutingPolicyOutputReference | Route53RecordFailoverRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -392,14 +392,14 @@ export function route53RecordFailoverRoutingPolicyToHclTerraform(struct?: Route5
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecordFailoverRoutingPolicyOutputReference extends cdktf.ComplexObject {
+export class Route53RecordFailoverRoutingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -453,38 +453,38 @@ export interface Route53RecordGeolocationRoutingPolicy {
 }
 
 export function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route53RecordGeolocationRoutingPolicyOutputReference | Route53RecordGeolocationRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    continent: cdktf.stringToTerraform(struct!.continent),
-    country: cdktf.stringToTerraform(struct!.country),
-    subdivision: cdktf.stringToTerraform(struct!.subdivision),
+    continent: cdktn.stringToTerraform(struct!.continent),
+    country: cdktn.stringToTerraform(struct!.country),
+    subdivision: cdktn.stringToTerraform(struct!.subdivision),
   }
 }
 
 
 export function route53RecordGeolocationRoutingPolicyToHclTerraform(struct?: Route53RecordGeolocationRoutingPolicyOutputReference | Route53RecordGeolocationRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     continent: {
-      value: cdktf.stringToHclTerraform(struct!.continent),
+      value: cdktn.stringToHclTerraform(struct!.continent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subdivision: {
-      value: cdktf.stringToHclTerraform(struct!.subdivision),
+      value: cdktn.stringToHclTerraform(struct!.subdivision),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -495,14 +495,14 @@ export function route53RecordGeolocationRoutingPolicyToHclTerraform(struct?: Rou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecordGeolocationRoutingPolicyOutputReference extends cdktf.ComplexObject {
+export class Route53RecordGeolocationRoutingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -598,32 +598,32 @@ export interface Route53RecordGeoproximityRoutingPolicyCoordinates {
   readonly longitude: string;
 }
 
-export function route53RecordGeoproximityRoutingPolicyCoordinatesToTerraform(struct?: Route53RecordGeoproximityRoutingPolicyCoordinates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecordGeoproximityRoutingPolicyCoordinatesToTerraform(struct?: Route53RecordGeoproximityRoutingPolicyCoordinates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    latitude: cdktf.stringToTerraform(struct!.latitude),
-    longitude: cdktf.stringToTerraform(struct!.longitude),
+    latitude: cdktn.stringToTerraform(struct!.latitude),
+    longitude: cdktn.stringToTerraform(struct!.longitude),
   }
 }
 
 
-export function route53RecordGeoproximityRoutingPolicyCoordinatesToHclTerraform(struct?: Route53RecordGeoproximityRoutingPolicyCoordinates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecordGeoproximityRoutingPolicyCoordinatesToHclTerraform(struct?: Route53RecordGeoproximityRoutingPolicyCoordinates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     latitude: {
-      value: cdktf.stringToHclTerraform(struct!.latitude),
+      value: cdktn.stringToHclTerraform(struct!.latitude),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     longitude: {
-      value: cdktf.stringToHclTerraform(struct!.longitude),
+      value: cdktn.stringToHclTerraform(struct!.longitude),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -634,9 +634,9 @@ export function route53RecordGeoproximityRoutingPolicyCoordinatesToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference extends cdktf.ComplexObject {
+export class Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -644,11 +644,11 @@ export class Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53RecordGeoproximityRoutingPolicyCoordinates | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53RecordGeoproximityRoutingPolicyCoordinates | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -665,14 +665,14 @@ export class Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecordGeoproximityRoutingPolicyCoordinates | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecordGeoproximityRoutingPolicyCoordinates | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._latitude = undefined;
       this._longitude = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -711,15 +711,15 @@ export class Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference ex
   }
 }
 
-export class Route53RecordGeoproximityRoutingPolicyCoordinatesList extends cdktf.ComplexList {
-  public internalValue? : Route53RecordGeoproximityRoutingPolicyCoordinates[] | cdktf.IResolvable
+export class Route53RecordGeoproximityRoutingPolicyCoordinatesList extends cdktn.ComplexList {
+  public internalValue? : Route53RecordGeoproximityRoutingPolicyCoordinates[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -748,49 +748,49 @@ export interface Route53RecordGeoproximityRoutingPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_record#coordinates Route53Record#coordinates}
   */
-  readonly coordinates?: Route53RecordGeoproximityRoutingPolicyCoordinates[] | cdktf.IResolvable;
+  readonly coordinates?: Route53RecordGeoproximityRoutingPolicyCoordinates[] | cdktn.IResolvable;
 }
 
 export function route53RecordGeoproximityRoutingPolicyToTerraform(struct?: Route53RecordGeoproximityRoutingPolicyOutputReference | Route53RecordGeoproximityRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
-    bias: cdktf.numberToTerraform(struct!.bias),
-    local_zone_group: cdktf.stringToTerraform(struct!.localZoneGroup),
-    coordinates: cdktf.listMapper(route53RecordGeoproximityRoutingPolicyCoordinatesToTerraform, true)(struct!.coordinates),
+    aws_region: cdktn.stringToTerraform(struct!.awsRegion),
+    bias: cdktn.numberToTerraform(struct!.bias),
+    local_zone_group: cdktn.stringToTerraform(struct!.localZoneGroup),
+    coordinates: cdktn.listMapper(route53RecordGeoproximityRoutingPolicyCoordinatesToTerraform, true)(struct!.coordinates),
   }
 }
 
 
 export function route53RecordGeoproximityRoutingPolicyToHclTerraform(struct?: Route53RecordGeoproximityRoutingPolicyOutputReference | Route53RecordGeoproximityRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_region: {
-      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      value: cdktn.stringToHclTerraform(struct!.awsRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bias: {
-      value: cdktf.numberToHclTerraform(struct!.bias),
+      value: cdktn.numberToHclTerraform(struct!.bias),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     local_zone_group: {
-      value: cdktf.stringToHclTerraform(struct!.localZoneGroup),
+      value: cdktn.stringToHclTerraform(struct!.localZoneGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     coordinates: {
-      value: cdktf.listMapperHcl(route53RecordGeoproximityRoutingPolicyCoordinatesToHclTerraform, true)(struct!.coordinates),
+      value: cdktn.listMapperHcl(route53RecordGeoproximityRoutingPolicyCoordinatesToHclTerraform, true)(struct!.coordinates),
       isBlock: true,
       type: "set",
       storageClassType: "Route53RecordGeoproximityRoutingPolicyCoordinatesList",
@@ -801,14 +801,14 @@ export function route53RecordGeoproximityRoutingPolicyToHclTerraform(struct?: Ro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecordGeoproximityRoutingPolicyOutputReference extends cdktf.ComplexObject {
+export class Route53RecordGeoproximityRoutingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -904,7 +904,7 @@ export class Route53RecordGeoproximityRoutingPolicyOutputReference extends cdktf
   public get coordinates() {
     return this._coordinates;
   }
-  public putCoordinates(value: Route53RecordGeoproximityRoutingPolicyCoordinates[] | cdktf.IResolvable) {
+  public putCoordinates(value: Route53RecordGeoproximityRoutingPolicyCoordinates[] | cdktn.IResolvable) {
     this._coordinates.internalValue = value;
   }
   public resetCoordinates() {
@@ -923,24 +923,24 @@ export interface Route53RecordLatencyRoutingPolicy {
 }
 
 export function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53RecordLatencyRoutingPolicyOutputReference | Route53RecordLatencyRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    region: cdktf.stringToTerraform(struct!.region),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function route53RecordLatencyRoutingPolicyToHclTerraform(struct?: Route53RecordLatencyRoutingPolicyOutputReference | Route53RecordLatencyRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -951,14 +951,14 @@ export function route53RecordLatencyRoutingPolicyToHclTerraform(struct?: Route53
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecordLatencyRoutingPolicyOutputReference extends cdktf.ComplexObject {
+export class Route53RecordLatencyRoutingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1011,39 +1011,39 @@ export interface Route53RecordTimeouts {
   readonly update?: string;
 }
 
-export function route53RecordTimeoutsToTerraform(struct?: Route53RecordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecordTimeoutsToTerraform(struct?: Route53RecordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function route53RecordTimeoutsToHclTerraform(struct?: Route53RecordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecordTimeoutsToHclTerraform(struct?: Route53RecordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1054,19 +1054,19 @@ export function route53RecordTimeoutsToHclTerraform(struct?: Route53RecordTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecordTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Route53RecordTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Route53RecordTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53RecordTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1087,7 +1087,7 @@ export class Route53RecordTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecordTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecordTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1095,7 +1095,7 @@ export class Route53RecordTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1164,24 +1164,24 @@ export interface Route53RecordWeightedRoutingPolicy {
 }
 
 export function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53RecordWeightedRoutingPolicyOutputReference | Route53RecordWeightedRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weight: cdktf.numberToTerraform(struct!.weight),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
 export function route53RecordWeightedRoutingPolicyToHclTerraform(struct?: Route53RecordWeightedRoutingPolicyOutputReference | Route53RecordWeightedRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1192,14 +1192,14 @@ export function route53RecordWeightedRoutingPolicyToHclTerraform(struct?: Route5
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecordWeightedRoutingPolicyOutputReference extends cdktf.ComplexObject {
+export class Route53RecordWeightedRoutingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1241,7 +1241,7 @@ export class Route53RecordWeightedRoutingPolicyOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_record aws_route53_record}
 */
-export class Route53Record extends cdktf.TerraformResource {
+export class Route53Record extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1252,14 +1252,14 @@ export class Route53Record extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53Record resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53Record resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53Record to import
   * @param importFromId The id of the existing Route53Record that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53Record to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_record", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_record", importId: importFromId, provider });
       }
 
   // ===========
@@ -1314,11 +1314,11 @@ export class Route53Record extends cdktf.TerraformResource {
   // ==========
 
   // allow_overwrite - computed: true, optional: true, required: false
-  private _allowOverwrite?: boolean | cdktf.IResolvable; 
+  private _allowOverwrite?: boolean | cdktn.IResolvable; 
   public get allowOverwrite() {
     return this.getBooleanAttribute('allow_overwrite');
   }
-  public set allowOverwrite(value: boolean | cdktf.IResolvable) {
+  public set allowOverwrite(value: boolean | cdktn.IResolvable) {
     this._allowOverwrite = value;
   }
   public resetAllowOverwrite() {
@@ -1367,11 +1367,11 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // multivalue_answer_routing_policy - computed: false, optional: true, required: false
-  private _multivalueAnswerRoutingPolicy?: boolean | cdktf.IResolvable; 
+  private _multivalueAnswerRoutingPolicy?: boolean | cdktn.IResolvable; 
   public get multivalueAnswerRoutingPolicy() {
     return this.getBooleanAttribute('multivalue_answer_routing_policy');
   }
-  public set multivalueAnswerRoutingPolicy(value: boolean | cdktf.IResolvable) {
+  public set multivalueAnswerRoutingPolicy(value: boolean | cdktn.IResolvable) {
     this._multivalueAnswerRoutingPolicy = value;
   }
   public resetMultivalueAnswerRoutingPolicy() {
@@ -1398,7 +1398,7 @@ export class Route53Record extends cdktf.TerraformResource {
   // records - computed: false, optional: true, required: false
   private _records?: string[]; 
   public get records() {
-    return cdktf.Fn.tolist(this.getListAttribute('records'));
+    return cdktn.Fn.tolist(this.getListAttribute('records'));
   }
   public set records(value: string[]) {
     this._records = value;
@@ -1603,16 +1603,16 @@ export class Route53Record extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_overwrite: cdktf.booleanToTerraform(this._allowOverwrite),
-      health_check_id: cdktf.stringToTerraform(this._healthCheckId),
-      id: cdktf.stringToTerraform(this._id),
-      multivalue_answer_routing_policy: cdktf.booleanToTerraform(this._multivalueAnswerRoutingPolicy),
-      name: cdktf.stringToTerraform(this._name),
-      records: cdktf.listMapper(cdktf.stringToTerraform, false)(this._records),
-      set_identifier: cdktf.stringToTerraform(this._setIdentifier),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      type: cdktf.stringToTerraform(this._type),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      allow_overwrite: cdktn.booleanToTerraform(this._allowOverwrite),
+      health_check_id: cdktn.stringToTerraform(this._healthCheckId),
+      id: cdktn.stringToTerraform(this._id),
+      multivalue_answer_routing_policy: cdktn.booleanToTerraform(this._multivalueAnswerRoutingPolicy),
+      name: cdktn.stringToTerraform(this._name),
+      records: cdktn.listMapper(cdktn.stringToTerraform, false)(this._records),
+      set_identifier: cdktn.stringToTerraform(this._setIdentifier),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      type: cdktn.stringToTerraform(this._type),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
       alias: route53RecordAliasToTerraform(this._alias.internalValue),
       cidr_routing_policy: route53RecordCidrRoutingPolicyToTerraform(this._cidrRoutingPolicy.internalValue),
       failover_routing_policy: route53RecordFailoverRoutingPolicyToTerraform(this._failoverRoutingPolicy.internalValue),
@@ -1627,61 +1627,61 @@ export class Route53Record extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_overwrite: {
-        value: cdktf.booleanToHclTerraform(this._allowOverwrite),
+        value: cdktn.booleanToHclTerraform(this._allowOverwrite),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       health_check_id: {
-        value: cdktf.stringToHclTerraform(this._healthCheckId),
+        value: cdktn.stringToHclTerraform(this._healthCheckId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multivalue_answer_routing_policy: {
-        value: cdktf.booleanToHclTerraform(this._multivalueAnswerRoutingPolicy),
+        value: cdktn.booleanToHclTerraform(this._multivalueAnswerRoutingPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       records: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._records),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._records),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       set_identifier: {
-        value: cdktf.stringToHclTerraform(this._setIdentifier),
+        value: cdktn.stringToHclTerraform(this._setIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

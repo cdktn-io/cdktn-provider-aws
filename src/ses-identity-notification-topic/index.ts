@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SesIdentityNotificationTopicConfig extends cdktf.TerraformMetaArguments {
+export interface SesIdentityNotificationTopicConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_identity_notification_topic#id SesIdentityNotificationTopic#id}
   *
@@ -26,7 +26,7 @@ export interface SesIdentityNotificationTopicConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_identity_notification_topic#include_original_headers SesIdentityNotificationTopic#include_original_headers}
   */
-  readonly includeOriginalHeaders?: boolean | cdktf.IResolvable;
+  readonly includeOriginalHeaders?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_identity_notification_topic#notification_type SesIdentityNotificationTopic#notification_type}
   */
@@ -46,7 +46,7 @@ export interface SesIdentityNotificationTopicConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic}
 */
-export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
+export class SesIdentityNotificationTopic extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SesIdentityNotificationTopic resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SesIdentityNotificationTopic resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SesIdentityNotificationTopic to import
   * @param importFromId The id of the existing SesIdentityNotificationTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_identity_notification_topic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SesIdentityNotificationTopic to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_identity_notification_topic", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_identity_notification_topic", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,11 +136,11 @@ export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
   }
 
   // include_original_headers - computed: false, optional: true, required: false
-  private _includeOriginalHeaders?: boolean | cdktf.IResolvable; 
+  private _includeOriginalHeaders?: boolean | cdktn.IResolvable; 
   public get includeOriginalHeaders() {
     return this.getBooleanAttribute('include_original_headers');
   }
-  public set includeOriginalHeaders(value: boolean | cdktf.IResolvable) {
+  public set includeOriginalHeaders(value: boolean | cdktn.IResolvable) {
     this._includeOriginalHeaders = value;
   }
   public resetIncludeOriginalHeaders() {
@@ -202,49 +202,49 @@ export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      identity: cdktf.stringToTerraform(this._identity),
-      include_original_headers: cdktf.booleanToTerraform(this._includeOriginalHeaders),
-      notification_type: cdktf.stringToTerraform(this._notificationType),
-      region: cdktf.stringToTerraform(this._region),
-      topic_arn: cdktf.stringToTerraform(this._topicArn),
+      id: cdktn.stringToTerraform(this._id),
+      identity: cdktn.stringToTerraform(this._identity),
+      include_original_headers: cdktn.booleanToTerraform(this._includeOriginalHeaders),
+      notification_type: cdktn.stringToTerraform(this._notificationType),
+      region: cdktn.stringToTerraform(this._region),
+      topic_arn: cdktn.stringToTerraform(this._topicArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity: {
-        value: cdktf.stringToHclTerraform(this._identity),
+        value: cdktn.stringToHclTerraform(this._identity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_original_headers: {
-        value: cdktf.booleanToHclTerraform(this._includeOriginalHeaders),
+        value: cdktn.booleanToHclTerraform(this._includeOriginalHeaders),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       notification_type: {
-        value: cdktf.stringToHclTerraform(this._notificationType),
+        value: cdktn.stringToHclTerraform(this._notificationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       topic_arn: {
-        value: cdktf.stringToHclTerraform(this._topicArn),
+        value: cdktn.stringToHclTerraform(this._topicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

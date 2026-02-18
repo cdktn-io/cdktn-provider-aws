@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3BucketNotificationConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketNotificationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_notification#bucket S3BucketNotification#bucket}
   */
@@ -19,7 +19,7 @@ export interface S3BucketNotificationConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_notification#eventbridge S3BucketNotification#eventbridge}
   */
-  readonly eventbridge?: boolean | cdktf.IResolvable;
+  readonly eventbridge?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_notification#id S3BucketNotification#id}
   *
@@ -38,19 +38,19 @@ export interface S3BucketNotificationConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_notification#lambda_function S3BucketNotification#lambda_function}
   */
-  readonly lambdaFunction?: S3BucketNotificationLambdaFunction[] | cdktf.IResolvable;
+  readonly lambdaFunction?: S3BucketNotificationLambdaFunction[] | cdktn.IResolvable;
   /**
   * queue block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_notification#queue S3BucketNotification#queue}
   */
-  readonly queue?: S3BucketNotificationQueue[] | cdktf.IResolvable;
+  readonly queue?: S3BucketNotificationQueue[] | cdktn.IResolvable;
   /**
   * topic block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_notification#topic S3BucketNotification#topic}
   */
-  readonly topic?: S3BucketNotificationTopic[] | cdktf.IResolvable;
+  readonly topic?: S3BucketNotificationTopic[] | cdktn.IResolvable;
 }
 export interface S3BucketNotificationLambdaFunction {
   /**
@@ -78,53 +78,53 @@ export interface S3BucketNotificationLambdaFunction {
   readonly lambdaFunctionArn?: string;
 }
 
-export function s3BucketNotificationLambdaFunctionToTerraform(struct?: S3BucketNotificationLambdaFunction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketNotificationLambdaFunctionToTerraform(struct?: S3BucketNotificationLambdaFunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
-    filter_prefix: cdktf.stringToTerraform(struct!.filterPrefix),
-    filter_suffix: cdktf.stringToTerraform(struct!.filterSuffix),
-    id: cdktf.stringToTerraform(struct!.id),
-    lambda_function_arn: cdktf.stringToTerraform(struct!.lambdaFunctionArn),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
+    filter_prefix: cdktn.stringToTerraform(struct!.filterPrefix),
+    filter_suffix: cdktn.stringToTerraform(struct!.filterSuffix),
+    id: cdktn.stringToTerraform(struct!.id),
+    lambda_function_arn: cdktn.stringToTerraform(struct!.lambdaFunctionArn),
   }
 }
 
 
-export function s3BucketNotificationLambdaFunctionToHclTerraform(struct?: S3BucketNotificationLambdaFunction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketNotificationLambdaFunctionToHclTerraform(struct?: S3BucketNotificationLambdaFunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     filter_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.filterPrefix),
+      value: cdktn.stringToHclTerraform(struct!.filterPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_suffix: {
-      value: cdktf.stringToHclTerraform(struct!.filterSuffix),
+      value: cdktn.stringToHclTerraform(struct!.filterSuffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lambda_function_arn: {
-      value: cdktf.stringToHclTerraform(struct!.lambdaFunctionArn),
+      value: cdktn.stringToHclTerraform(struct!.lambdaFunctionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,9 +135,9 @@ export function s3BucketNotificationLambdaFunctionToHclTerraform(struct?: S3Buck
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketNotificationLambdaFunctionOutputReference extends cdktf.ComplexObject {
+export class S3BucketNotificationLambdaFunctionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -145,11 +145,11 @@ export class S3BucketNotificationLambdaFunctionOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketNotificationLambdaFunction | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketNotificationLambdaFunction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -178,7 +178,7 @@ export class S3BucketNotificationLambdaFunctionOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketNotificationLambdaFunction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketNotificationLambdaFunction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -188,7 +188,7 @@ export class S3BucketNotificationLambdaFunctionOutputReference extends cdktf.Com
       this._id = undefined;
       this._lambdaFunctionArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,7 +206,7 @@ export class S3BucketNotificationLambdaFunctionOutputReference extends cdktf.Com
   // events - computed: false, optional: false, required: true
   private _events?: string[]; 
   public get events() {
-    return cdktf.Fn.tolist(this.getListAttribute('events'));
+    return cdktn.Fn.tolist(this.getListAttribute('events'));
   }
   public set events(value: string[]) {
     this._events = value;
@@ -281,15 +281,15 @@ export class S3BucketNotificationLambdaFunctionOutputReference extends cdktf.Com
   }
 }
 
-export class S3BucketNotificationLambdaFunctionList extends cdktf.ComplexList {
-  public internalValue? : S3BucketNotificationLambdaFunction[] | cdktf.IResolvable
+export class S3BucketNotificationLambdaFunctionList extends cdktn.ComplexList {
+  public internalValue? : S3BucketNotificationLambdaFunction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -326,53 +326,53 @@ export interface S3BucketNotificationQueue {
   readonly queueArn: string;
 }
 
-export function s3BucketNotificationQueueToTerraform(struct?: S3BucketNotificationQueue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketNotificationQueueToTerraform(struct?: S3BucketNotificationQueue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
-    filter_prefix: cdktf.stringToTerraform(struct!.filterPrefix),
-    filter_suffix: cdktf.stringToTerraform(struct!.filterSuffix),
-    id: cdktf.stringToTerraform(struct!.id),
-    queue_arn: cdktf.stringToTerraform(struct!.queueArn),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
+    filter_prefix: cdktn.stringToTerraform(struct!.filterPrefix),
+    filter_suffix: cdktn.stringToTerraform(struct!.filterSuffix),
+    id: cdktn.stringToTerraform(struct!.id),
+    queue_arn: cdktn.stringToTerraform(struct!.queueArn),
   }
 }
 
 
-export function s3BucketNotificationQueueToHclTerraform(struct?: S3BucketNotificationQueue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketNotificationQueueToHclTerraform(struct?: S3BucketNotificationQueue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     filter_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.filterPrefix),
+      value: cdktn.stringToHclTerraform(struct!.filterPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_suffix: {
-      value: cdktf.stringToHclTerraform(struct!.filterSuffix),
+      value: cdktn.stringToHclTerraform(struct!.filterSuffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     queue_arn: {
-      value: cdktf.stringToHclTerraform(struct!.queueArn),
+      value: cdktn.stringToHclTerraform(struct!.queueArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -383,9 +383,9 @@ export function s3BucketNotificationQueueToHclTerraform(struct?: S3BucketNotific
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketNotificationQueueOutputReference extends cdktf.ComplexObject {
+export class S3BucketNotificationQueueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -393,11 +393,11 @@ export class S3BucketNotificationQueueOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketNotificationQueue | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketNotificationQueue | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -426,7 +426,7 @@ export class S3BucketNotificationQueueOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketNotificationQueue | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketNotificationQueue | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -436,7 +436,7 @@ export class S3BucketNotificationQueueOutputReference extends cdktf.ComplexObjec
       this._id = undefined;
       this._queueArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -454,7 +454,7 @@ export class S3BucketNotificationQueueOutputReference extends cdktf.ComplexObjec
   // events - computed: false, optional: false, required: true
   private _events?: string[]; 
   public get events() {
-    return cdktf.Fn.tolist(this.getListAttribute('events'));
+    return cdktn.Fn.tolist(this.getListAttribute('events'));
   }
   public set events(value: string[]) {
     this._events = value;
@@ -526,15 +526,15 @@ export class S3BucketNotificationQueueOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class S3BucketNotificationQueueList extends cdktf.ComplexList {
-  public internalValue? : S3BucketNotificationQueue[] | cdktf.IResolvable
+export class S3BucketNotificationQueueList extends cdktn.ComplexList {
+  public internalValue? : S3BucketNotificationQueue[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -571,53 +571,53 @@ export interface S3BucketNotificationTopic {
   readonly topicArn: string;
 }
 
-export function s3BucketNotificationTopicToTerraform(struct?: S3BucketNotificationTopic | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketNotificationTopicToTerraform(struct?: S3BucketNotificationTopic | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
-    filter_prefix: cdktf.stringToTerraform(struct!.filterPrefix),
-    filter_suffix: cdktf.stringToTerraform(struct!.filterSuffix),
-    id: cdktf.stringToTerraform(struct!.id),
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
+    filter_prefix: cdktn.stringToTerraform(struct!.filterPrefix),
+    filter_suffix: cdktn.stringToTerraform(struct!.filterSuffix),
+    id: cdktn.stringToTerraform(struct!.id),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function s3BucketNotificationTopicToHclTerraform(struct?: S3BucketNotificationTopic | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3BucketNotificationTopicToHclTerraform(struct?: S3BucketNotificationTopic | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     filter_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.filterPrefix),
+      value: cdktn.stringToHclTerraform(struct!.filterPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_suffix: {
-      value: cdktf.stringToHclTerraform(struct!.filterSuffix),
+      value: cdktn.stringToHclTerraform(struct!.filterSuffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -628,9 +628,9 @@ export function s3BucketNotificationTopicToHclTerraform(struct?: S3BucketNotific
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3BucketNotificationTopicOutputReference extends cdktf.ComplexObject {
+export class S3BucketNotificationTopicOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -638,11 +638,11 @@ export class S3BucketNotificationTopicOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketNotificationTopic | cdktf.IResolvable | undefined {
+  public get internalValue(): S3BucketNotificationTopic | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -671,7 +671,7 @@ export class S3BucketNotificationTopicOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketNotificationTopic | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3BucketNotificationTopic | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -681,7 +681,7 @@ export class S3BucketNotificationTopicOutputReference extends cdktf.ComplexObjec
       this._id = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -699,7 +699,7 @@ export class S3BucketNotificationTopicOutputReference extends cdktf.ComplexObjec
   // events - computed: false, optional: false, required: true
   private _events?: string[]; 
   public get events() {
-    return cdktf.Fn.tolist(this.getListAttribute('events'));
+    return cdktn.Fn.tolist(this.getListAttribute('events'));
   }
   public set events(value: string[]) {
     this._events = value;
@@ -771,15 +771,15 @@ export class S3BucketNotificationTopicOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class S3BucketNotificationTopicList extends cdktf.ComplexList {
-  public internalValue? : S3BucketNotificationTopic[] | cdktf.IResolvable
+export class S3BucketNotificationTopicList extends cdktn.ComplexList {
+  public internalValue? : S3BucketNotificationTopic[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -794,7 +794,7 @@ export class S3BucketNotificationTopicList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_notification aws_s3_bucket_notification}
 */
-export class S3BucketNotification extends cdktf.TerraformResource {
+export class S3BucketNotification extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -805,14 +805,14 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3BucketNotification resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3BucketNotification resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketNotification to import
   * @param importFromId The id of the existing S3BucketNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketNotification to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_notification", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_notification", importId: importFromId, provider });
       }
 
   // ===========
@@ -869,11 +869,11 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   }
 
   // eventbridge - computed: false, optional: true, required: false
-  private _eventbridge?: boolean | cdktf.IResolvable; 
+  private _eventbridge?: boolean | cdktn.IResolvable; 
   public get eventbridge() {
     return this.getBooleanAttribute('eventbridge');
   }
-  public set eventbridge(value: boolean | cdktf.IResolvable) {
+  public set eventbridge(value: boolean | cdktn.IResolvable) {
     this._eventbridge = value;
   }
   public resetEventbridge() {
@@ -921,7 +921,7 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   public get lambdaFunction() {
     return this._lambdaFunction;
   }
-  public putLambdaFunction(value: S3BucketNotificationLambdaFunction[] | cdktf.IResolvable) {
+  public putLambdaFunction(value: S3BucketNotificationLambdaFunction[] | cdktn.IResolvable) {
     this._lambdaFunction.internalValue = value;
   }
   public resetLambdaFunction() {
@@ -937,7 +937,7 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   public get queue() {
     return this._queue;
   }
-  public putQueue(value: S3BucketNotificationQueue[] | cdktf.IResolvable) {
+  public putQueue(value: S3BucketNotificationQueue[] | cdktn.IResolvable) {
     this._queue.internalValue = value;
   }
   public resetQueue() {
@@ -953,7 +953,7 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   public get topic() {
     return this._topic;
   }
-  public putTopic(value: S3BucketNotificationTopic[] | cdktf.IResolvable) {
+  public putTopic(value: S3BucketNotificationTopic[] | cdktn.IResolvable) {
     this._topic.internalValue = value;
   }
   public resetTopic() {
@@ -970,56 +970,56 @@ export class S3BucketNotification extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      eventbridge: cdktf.booleanToTerraform(this._eventbridge),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      lambda_function: cdktf.listMapper(s3BucketNotificationLambdaFunctionToTerraform, true)(this._lambdaFunction.internalValue),
-      queue: cdktf.listMapper(s3BucketNotificationQueueToTerraform, true)(this._queue.internalValue),
-      topic: cdktf.listMapper(s3BucketNotificationTopicToTerraform, true)(this._topic.internalValue),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      eventbridge: cdktn.booleanToTerraform(this._eventbridge),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      lambda_function: cdktn.listMapper(s3BucketNotificationLambdaFunctionToTerraform, true)(this._lambdaFunction.internalValue),
+      queue: cdktn.listMapper(s3BucketNotificationQueueToTerraform, true)(this._queue.internalValue),
+      topic: cdktn.listMapper(s3BucketNotificationTopicToTerraform, true)(this._topic.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventbridge: {
-        value: cdktf.booleanToHclTerraform(this._eventbridge),
+        value: cdktn.booleanToHclTerraform(this._eventbridge),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lambda_function: {
-        value: cdktf.listMapperHcl(s3BucketNotificationLambdaFunctionToHclTerraform, true)(this._lambdaFunction.internalValue),
+        value: cdktn.listMapperHcl(s3BucketNotificationLambdaFunctionToHclTerraform, true)(this._lambdaFunction.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3BucketNotificationLambdaFunctionList",
       },
       queue: {
-        value: cdktf.listMapperHcl(s3BucketNotificationQueueToHclTerraform, true)(this._queue.internalValue),
+        value: cdktn.listMapperHcl(s3BucketNotificationQueueToHclTerraform, true)(this._queue.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3BucketNotificationQueueList",
       },
       topic: {
-        value: cdktf.listMapperHcl(s3BucketNotificationTopicToHclTerraform, true)(this._topic.internalValue),
+        value: cdktn.listMapperHcl(s3BucketNotificationTopicToHclTerraform, true)(this._topic.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3BucketNotificationTopicList",

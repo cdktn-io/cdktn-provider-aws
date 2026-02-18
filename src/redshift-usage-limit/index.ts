@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftUsageLimitConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftUsageLimitConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_usage_limit#amount RedshiftUsageLimit#amount}
   */
@@ -62,7 +62,7 @@ export interface RedshiftUsageLimitConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_usage_limit aws_redshift_usage_limit}
 */
-export class RedshiftUsageLimit extends cdktf.TerraformResource {
+export class RedshiftUsageLimit extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class RedshiftUsageLimit extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftUsageLimit resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftUsageLimit resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftUsageLimit to import
   * @param importFromId The id of the existing RedshiftUsageLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_usage_limit#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftUsageLimit to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_usage_limit", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_usage_limit", importId: importFromId, provider });
       }
 
   // ===========
@@ -285,77 +285,77 @@ export class RedshiftUsageLimit extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amount: cdktf.numberToTerraform(this._amount),
-      breach_action: cdktf.stringToTerraform(this._breachAction),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      feature_type: cdktf.stringToTerraform(this._featureType),
-      id: cdktf.stringToTerraform(this._id),
-      limit_type: cdktf.stringToTerraform(this._limitType),
-      period: cdktf.stringToTerraform(this._period),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      amount: cdktn.numberToTerraform(this._amount),
+      breach_action: cdktn.stringToTerraform(this._breachAction),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      feature_type: cdktn.stringToTerraform(this._featureType),
+      id: cdktn.stringToTerraform(this._id),
+      limit_type: cdktn.stringToTerraform(this._limitType),
+      period: cdktn.stringToTerraform(this._period),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       amount: {
-        value: cdktf.numberToHclTerraform(this._amount),
+        value: cdktn.numberToHclTerraform(this._amount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       breach_action: {
-        value: cdktf.stringToHclTerraform(this._breachAction),
+        value: cdktn.stringToHclTerraform(this._breachAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       feature_type: {
-        value: cdktf.stringToHclTerraform(this._featureType),
+        value: cdktn.stringToHclTerraform(this._featureType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       limit_type: {
-        value: cdktf.stringToHclTerraform(this._limitType),
+        value: cdktn.stringToHclTerraform(this._limitType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       period: {
-        value: cdktf.stringToHclTerraform(this._period),
+        value: cdktn.stringToHclTerraform(this._period),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

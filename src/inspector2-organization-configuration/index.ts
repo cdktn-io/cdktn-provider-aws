@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Inspector2OrganizationConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface Inspector2OrganizationConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_organization_configuration#id Inspector2OrganizationConfiguration#id}
   *
@@ -42,72 +42,72 @@ export interface Inspector2OrganizationConfigurationAutoEnable {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_organization_configuration#code_repository Inspector2OrganizationConfiguration#code_repository}
   */
-  readonly codeRepository?: boolean | cdktf.IResolvable;
+  readonly codeRepository?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_organization_configuration#ec2 Inspector2OrganizationConfiguration#ec2}
   */
-  readonly ec2: boolean | cdktf.IResolvable;
+  readonly ec2: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_organization_configuration#ecr Inspector2OrganizationConfiguration#ecr}
   */
-  readonly ecr: boolean | cdktf.IResolvable;
+  readonly ecr: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_organization_configuration#lambda Inspector2OrganizationConfiguration#lambda}
   */
-  readonly lambda?: boolean | cdktf.IResolvable;
+  readonly lambda?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_organization_configuration#lambda_code Inspector2OrganizationConfiguration#lambda_code}
   */
-  readonly lambdaCode?: boolean | cdktf.IResolvable;
+  readonly lambdaCode?: boolean | cdktn.IResolvable;
 }
 
 export function inspector2OrganizationConfigurationAutoEnableToTerraform(struct?: Inspector2OrganizationConfigurationAutoEnableOutputReference | Inspector2OrganizationConfigurationAutoEnable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    code_repository: cdktf.booleanToTerraform(struct!.codeRepository),
-    ec2: cdktf.booleanToTerraform(struct!.ec2),
-    ecr: cdktf.booleanToTerraform(struct!.ecr),
-    lambda: cdktf.booleanToTerraform(struct!.lambda),
-    lambda_code: cdktf.booleanToTerraform(struct!.lambdaCode),
+    code_repository: cdktn.booleanToTerraform(struct!.codeRepository),
+    ec2: cdktn.booleanToTerraform(struct!.ec2),
+    ecr: cdktn.booleanToTerraform(struct!.ecr),
+    lambda: cdktn.booleanToTerraform(struct!.lambda),
+    lambda_code: cdktn.booleanToTerraform(struct!.lambdaCode),
   }
 }
 
 
 export function inspector2OrganizationConfigurationAutoEnableToHclTerraform(struct?: Inspector2OrganizationConfigurationAutoEnableOutputReference | Inspector2OrganizationConfigurationAutoEnable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     code_repository: {
-      value: cdktf.booleanToHclTerraform(struct!.codeRepository),
+      value: cdktn.booleanToHclTerraform(struct!.codeRepository),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ec2: {
-      value: cdktf.booleanToHclTerraform(struct!.ec2),
+      value: cdktn.booleanToHclTerraform(struct!.ec2),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ecr: {
-      value: cdktf.booleanToHclTerraform(struct!.ecr),
+      value: cdktn.booleanToHclTerraform(struct!.ecr),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     lambda: {
-      value: cdktf.booleanToHclTerraform(struct!.lambda),
+      value: cdktn.booleanToHclTerraform(struct!.lambda),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     lambda_code: {
-      value: cdktf.booleanToHclTerraform(struct!.lambdaCode),
+      value: cdktn.booleanToHclTerraform(struct!.lambdaCode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -118,14 +118,14 @@ export function inspector2OrganizationConfigurationAutoEnableToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2OrganizationConfigurationAutoEnableOutputReference extends cdktf.ComplexObject {
+export class Inspector2OrganizationConfigurationAutoEnableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -175,11 +175,11 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
   }
 
   // code_repository - computed: false, optional: true, required: false
-  private _codeRepository?: boolean | cdktf.IResolvable; 
+  private _codeRepository?: boolean | cdktn.IResolvable; 
   public get codeRepository() {
     return this.getBooleanAttribute('code_repository');
   }
-  public set codeRepository(value: boolean | cdktf.IResolvable) {
+  public set codeRepository(value: boolean | cdktn.IResolvable) {
     this._codeRepository = value;
   }
   public resetCodeRepository() {
@@ -191,11 +191,11 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
   }
 
   // ec2 - computed: false, optional: false, required: true
-  private _ec2?: boolean | cdktf.IResolvable; 
+  private _ec2?: boolean | cdktn.IResolvable; 
   public get ec2() {
     return this.getBooleanAttribute('ec2');
   }
-  public set ec2(value: boolean | cdktf.IResolvable) {
+  public set ec2(value: boolean | cdktn.IResolvable) {
     this._ec2 = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -204,11 +204,11 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
   }
 
   // ecr - computed: false, optional: false, required: true
-  private _ecr?: boolean | cdktf.IResolvable; 
+  private _ecr?: boolean | cdktn.IResolvable; 
   public get ecr() {
     return this.getBooleanAttribute('ecr');
   }
-  public set ecr(value: boolean | cdktf.IResolvable) {
+  public set ecr(value: boolean | cdktn.IResolvable) {
     this._ecr = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -217,11 +217,11 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
   }
 
   // lambda - computed: false, optional: true, required: false
-  private _lambda?: boolean | cdktf.IResolvable; 
+  private _lambda?: boolean | cdktn.IResolvable; 
   public get lambda() {
     return this.getBooleanAttribute('lambda');
   }
-  public set lambda(value: boolean | cdktf.IResolvable) {
+  public set lambda(value: boolean | cdktn.IResolvable) {
     this._lambda = value;
   }
   public resetLambda() {
@@ -233,11 +233,11 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
   }
 
   // lambda_code - computed: false, optional: true, required: false
-  private _lambdaCode?: boolean | cdktf.IResolvable; 
+  private _lambdaCode?: boolean | cdktn.IResolvable; 
   public get lambdaCode() {
     return this.getBooleanAttribute('lambda_code');
   }
-  public set lambdaCode(value: boolean | cdktf.IResolvable) {
+  public set lambdaCode(value: boolean | cdktn.IResolvable) {
     this._lambdaCode = value;
   }
   public resetLambdaCode() {
@@ -263,39 +263,39 @@ export interface Inspector2OrganizationConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function inspector2OrganizationConfigurationTimeoutsToTerraform(struct?: Inspector2OrganizationConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2OrganizationConfigurationTimeoutsToTerraform(struct?: Inspector2OrganizationConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function inspector2OrganizationConfigurationTimeoutsToHclTerraform(struct?: Inspector2OrganizationConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2OrganizationConfigurationTimeoutsToHclTerraform(struct?: Inspector2OrganizationConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -306,19 +306,19 @@ export function inspector2OrganizationConfigurationTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2OrganizationConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Inspector2OrganizationConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Inspector2OrganizationConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2OrganizationConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -339,7 +339,7 @@ export class Inspector2OrganizationConfigurationTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2OrganizationConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2OrganizationConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -347,7 +347,7 @@ export class Inspector2OrganizationConfigurationTimeoutsOutputReference extends 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -412,7 +412,7 @@ export class Inspector2OrganizationConfigurationTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration}
 */
-export class Inspector2OrganizationConfiguration extends cdktf.TerraformResource {
+export class Inspector2OrganizationConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -423,14 +423,14 @@ export class Inspector2OrganizationConfiguration extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Inspector2OrganizationConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Inspector2OrganizationConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Inspector2OrganizationConfiguration to import
   * @param importFromId The id of the existing Inspector2OrganizationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_organization_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Inspector2OrganizationConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_inspector2_organization_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_inspector2_organization_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -542,8 +542,8 @@ export class Inspector2OrganizationConfiguration extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       auto_enable: inspector2OrganizationConfigurationAutoEnableToTerraform(this._autoEnable.internalValue),
       timeouts: inspector2OrganizationConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -552,13 +552,13 @@ export class Inspector2OrganizationConfiguration extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

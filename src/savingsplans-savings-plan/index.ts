@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SavingsplansSavingsPlanConfig extends cdktf.TerraformMetaArguments {
+export interface SavingsplansSavingsPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * The hourly commitment, in USD.
   *
@@ -62,32 +62,32 @@ export interface SavingsplansSavingsPlanTimeouts {
   readonly delete?: string;
 }
 
-export function savingsplansSavingsPlanTimeoutsToTerraform(struct?: SavingsplansSavingsPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function savingsplansSavingsPlanTimeoutsToTerraform(struct?: SavingsplansSavingsPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function savingsplansSavingsPlanTimeoutsToHclTerraform(struct?: SavingsplansSavingsPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function savingsplansSavingsPlanTimeoutsToHclTerraform(struct?: SavingsplansSavingsPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -98,19 +98,19 @@ export function savingsplansSavingsPlanTimeoutsToHclTerraform(struct?: Savingspl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SavingsplansSavingsPlanTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SavingsplansSavingsPlanTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SavingsplansSavingsPlanTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SavingsplansSavingsPlanTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -127,14 +127,14 @@ export class SavingsplansSavingsPlanTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SavingsplansSavingsPlanTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SavingsplansSavingsPlanTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -182,7 +182,7 @@ export class SavingsplansSavingsPlanTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/savingsplans_savings_plan aws_savingsplans_savings_plan}
 */
-export class SavingsplansSavingsPlan extends cdktf.TerraformResource {
+export class SavingsplansSavingsPlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -193,14 +193,14 @@ export class SavingsplansSavingsPlan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SavingsplansSavingsPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SavingsplansSavingsPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SavingsplansSavingsPlan to import
   * @param importFromId The id of the existing SavingsplansSavingsPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/savingsplans_savings_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SavingsplansSavingsPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_savingsplans_savings_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_savingsplans_savings_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -376,7 +376,7 @@ export class SavingsplansSavingsPlan extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -424,11 +424,11 @@ export class SavingsplansSavingsPlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      commitment: cdktf.stringToTerraform(this._commitment),
-      purchase_time: cdktf.stringToTerraform(this._purchaseTime),
-      savings_plan_offering_id: cdktf.stringToTerraform(this._savingsPlanOfferingId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      upfront_payment_amount: cdktf.stringToTerraform(this._upfrontPaymentAmount),
+      commitment: cdktn.stringToTerraform(this._commitment),
+      purchase_time: cdktn.stringToTerraform(this._purchaseTime),
+      savings_plan_offering_id: cdktn.stringToTerraform(this._savingsPlanOfferingId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      upfront_payment_amount: cdktn.stringToTerraform(this._upfrontPaymentAmount),
       timeouts: savingsplansSavingsPlanTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -436,31 +436,31 @@ export class SavingsplansSavingsPlan extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       commitment: {
-        value: cdktf.stringToHclTerraform(this._commitment),
+        value: cdktn.stringToHclTerraform(this._commitment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       purchase_time: {
-        value: cdktf.stringToHclTerraform(this._purchaseTime),
+        value: cdktn.stringToHclTerraform(this._purchaseTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       savings_plan_offering_id: {
-        value: cdktf.stringToHclTerraform(this._savingsPlanOfferingId),
+        value: cdktn.stringToHclTerraform(this._savingsPlanOfferingId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       upfront_payment_amount: {
-        value: cdktf.stringToHclTerraform(this._upfrontPaymentAmount),
+        value: cdktn.stringToHclTerraform(this._upfrontPaymentAmount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

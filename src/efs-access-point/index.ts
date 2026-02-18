@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EfsAccessPointConfig extends cdktf.TerraformMetaArguments {
+export interface EfsAccessPointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_access_point#file_system_id EfsAccessPoint#file_system_id}
   */
@@ -66,38 +66,38 @@ export interface EfsAccessPointPosixUser {
 }
 
 export function efsAccessPointPosixUserToTerraform(struct?: EfsAccessPointPosixUserOutputReference | EfsAccessPointPosixUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gid: cdktf.numberToTerraform(struct!.gid),
-    secondary_gids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.secondaryGids),
-    uid: cdktf.numberToTerraform(struct!.uid),
+    gid: cdktn.numberToTerraform(struct!.gid),
+    secondary_gids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.secondaryGids),
+    uid: cdktn.numberToTerraform(struct!.uid),
   }
 }
 
 
 export function efsAccessPointPosixUserToHclTerraform(struct?: EfsAccessPointPosixUserOutputReference | EfsAccessPointPosixUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gid: {
-      value: cdktf.numberToHclTerraform(struct!.gid),
+      value: cdktn.numberToHclTerraform(struct!.gid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     secondary_gids: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.secondaryGids),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.secondaryGids),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
     },
     uid: {
-      value: cdktf.numberToHclTerraform(struct!.uid),
+      value: cdktn.numberToHclTerraform(struct!.uid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -108,14 +108,14 @@ export function efsAccessPointPosixUserToHclTerraform(struct?: EfsAccessPointPos
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject {
+export class EfsAccessPointPosixUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -168,7 +168,7 @@ export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject 
   // secondary_gids - computed: false, optional: true, required: false
   private _secondaryGids?: number[]; 
   public get secondaryGids() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('secondary_gids')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('secondary_gids')));
   }
   public set secondaryGids(value: number[]) {
     this._secondaryGids = value;
@@ -210,38 +210,38 @@ export interface EfsAccessPointRootDirectoryCreationInfo {
 }
 
 export function efsAccessPointRootDirectoryCreationInfoToTerraform(struct?: EfsAccessPointRootDirectoryCreationInfoOutputReference | EfsAccessPointRootDirectoryCreationInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    owner_gid: cdktf.numberToTerraform(struct!.ownerGid),
-    owner_uid: cdktf.numberToTerraform(struct!.ownerUid),
-    permissions: cdktf.stringToTerraform(struct!.permissions),
+    owner_gid: cdktn.numberToTerraform(struct!.ownerGid),
+    owner_uid: cdktn.numberToTerraform(struct!.ownerUid),
+    permissions: cdktn.stringToTerraform(struct!.permissions),
   }
 }
 
 
 export function efsAccessPointRootDirectoryCreationInfoToHclTerraform(struct?: EfsAccessPointRootDirectoryCreationInfoOutputReference | EfsAccessPointRootDirectoryCreationInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     owner_gid: {
-      value: cdktf.numberToHclTerraform(struct!.ownerGid),
+      value: cdktn.numberToHclTerraform(struct!.ownerGid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     owner_uid: {
-      value: cdktf.numberToHclTerraform(struct!.ownerUid),
+      value: cdktn.numberToHclTerraform(struct!.ownerUid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     permissions: {
-      value: cdktf.stringToHclTerraform(struct!.permissions),
+      value: cdktn.stringToHclTerraform(struct!.permissions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -252,14 +252,14 @@ export function efsAccessPointRootDirectoryCreationInfoToHclTerraform(struct?: E
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EfsAccessPointRootDirectoryCreationInfoOutputReference extends cdktf.ComplexObject {
+export class EfsAccessPointRootDirectoryCreationInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -349,25 +349,25 @@ export interface EfsAccessPointRootDirectory {
 }
 
 export function efsAccessPointRootDirectoryToTerraform(struct?: EfsAccessPointRootDirectoryOutputReference | EfsAccessPointRootDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
+    path: cdktn.stringToTerraform(struct!.path),
     creation_info: efsAccessPointRootDirectoryCreationInfoToTerraform(struct!.creationInfo),
   }
 }
 
 
 export function efsAccessPointRootDirectoryToHclTerraform(struct?: EfsAccessPointRootDirectoryOutputReference | EfsAccessPointRootDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -384,14 +384,14 @@ export function efsAccessPointRootDirectoryToHclTerraform(struct?: EfsAccessPoin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObject {
+export class EfsAccessPointRootDirectoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -458,7 +458,7 @@ export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_access_point aws_efs_access_point}
 */
-export class EfsAccessPoint extends cdktf.TerraformResource {
+export class EfsAccessPoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -469,14 +469,14 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EfsAccessPoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EfsAccessPoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EfsAccessPoint to import
   * @param importFromId The id of the existing EfsAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_access_point#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EfsAccessPoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_access_point", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_access_point", importId: importFromId, provider });
       }
 
   // ===========
@@ -649,11 +649,11 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      file_system_id: cdktn.stringToTerraform(this._fileSystemId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       posix_user: efsAccessPointPosixUserToTerraform(this._posixUser.internalValue),
       root_directory: efsAccessPointRootDirectoryToTerraform(this._rootDirectory.internalValue),
     };
@@ -662,31 +662,31 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       file_system_id: {
-        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        value: cdktn.stringToHclTerraform(this._fileSystemId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

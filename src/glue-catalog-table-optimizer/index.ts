@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlueCatalogTableOptimizerConfig extends cdktf.TerraformMetaArguments {
+export interface GlueCatalogTableOptimizerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#catalog_id GlueCatalogTableOptimizer#catalog_id}
   */
@@ -39,7 +39,7 @@ export interface GlueCatalogTableOptimizerConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#configuration GlueCatalogTableOptimizer#configuration}
   */
-  readonly configuration?: GlueCatalogTableOptimizerConfiguration[] | cdktf.IResolvable;
+  readonly configuration?: GlueCatalogTableOptimizerConfiguration[] | cdktn.IResolvable;
 }
 export interface GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration {
   /**
@@ -56,39 +56,39 @@ export interface GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigu
   readonly runRateInHours?: number;
 }
 
-export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    location: cdktf.stringToTerraform(struct!.location),
-    orphan_file_retention_period_in_days: cdktf.numberToTerraform(struct!.orphanFileRetentionPeriodInDays),
-    run_rate_in_hours: cdktf.numberToTerraform(struct!.runRateInHours),
+    location: cdktn.stringToTerraform(struct!.location),
+    orphan_file_retention_period_in_days: cdktn.numberToTerraform(struct!.orphanFileRetentionPeriodInDays),
+    run_rate_in_hours: cdktn.numberToTerraform(struct!.runRateInHours),
   }
 }
 
 
-export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     orphan_file_retention_period_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.orphanFileRetentionPeriodInDays),
+      value: cdktn.numberToHclTerraform(struct!.orphanFileRetentionPeriodInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     run_rate_in_hours: {
-      value: cdktf.numberToHclTerraform(struct!.runRateInHours),
+      value: cdktn.numberToHclTerraform(struct!.runRateInHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -99,9 +99,9 @@ export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference extends cdktf.ComplexObject {
+export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -109,11 +109,11 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -134,7 +134,7 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -142,7 +142,7 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
       this._orphanFileRetentionPeriodInDays = undefined;
       this._runRateInHours = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -204,15 +204,15 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
   }
 }
 
-export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList extends cdktf.ComplexList {
-  public internalValue? : GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration[] | cdktf.IResolvable
+export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -229,28 +229,28 @@ export interface GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
   */
-  readonly icebergConfiguration?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration[] | cdktf.IResolvable;
+  readonly icebergConfiguration?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration[] | cdktn.IResolvable;
 }
 
-export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    iceberg_configuration: cdktf.listMapper(glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationToTerraform, true)(struct!.icebergConfiguration),
+    iceberg_configuration: cdktn.listMapper(glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationToTerraform, true)(struct!.icebergConfiguration),
   }
 }
 
 
-export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     iceberg_configuration: {
-      value: cdktf.listMapperHcl(glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationToHclTerraform, true)(struct!.icebergConfiguration),
+      value: cdktn.listMapperHcl(glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationToHclTerraform, true)(struct!.icebergConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList",
@@ -261,9 +261,9 @@ export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationOutputReference extends cdktf.ComplexObject {
+export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -271,11 +271,11 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -288,13 +288,13 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._icebergConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -310,7 +310,7 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
   public get icebergConfiguration() {
     return this._icebergConfiguration;
   }
-  public putIcebergConfiguration(value: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration[] | cdktf.IResolvable) {
+  public putIcebergConfiguration(value: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration[] | cdktn.IResolvable) {
     this._icebergConfiguration.internalValue = value;
   }
   public resetIcebergConfiguration() {
@@ -322,15 +322,15 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
   }
 }
 
-export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration[] | cdktf.IResolvable
+export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -345,7 +345,7 @@ export interface GlueCatalogTableOptimizerConfigurationRetentionConfigurationIce
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#clean_expired_files GlueCatalogTableOptimizer#clean_expired_files}
   */
-  readonly cleanExpiredFiles?: boolean | cdktf.IResolvable;
+  readonly cleanExpiredFiles?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#number_of_snapshots_to_retain GlueCatalogTableOptimizer#number_of_snapshots_to_retain}
   */
@@ -360,46 +360,46 @@ export interface GlueCatalogTableOptimizerConfigurationRetentionConfigurationIce
   readonly snapshotRetentionPeriodInDays?: number;
 }
 
-export function glueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    clean_expired_files: cdktf.booleanToTerraform(struct!.cleanExpiredFiles),
-    number_of_snapshots_to_retain: cdktf.numberToTerraform(struct!.numberOfSnapshotsToRetain),
-    run_rate_in_hours: cdktf.numberToTerraform(struct!.runRateInHours),
-    snapshot_retention_period_in_days: cdktf.numberToTerraform(struct!.snapshotRetentionPeriodInDays),
+    clean_expired_files: cdktn.booleanToTerraform(struct!.cleanExpiredFiles),
+    number_of_snapshots_to_retain: cdktn.numberToTerraform(struct!.numberOfSnapshotsToRetain),
+    run_rate_in_hours: cdktn.numberToTerraform(struct!.runRateInHours),
+    snapshot_retention_period_in_days: cdktn.numberToTerraform(struct!.snapshotRetentionPeriodInDays),
   }
 }
 
 
-export function glueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     clean_expired_files: {
-      value: cdktf.booleanToHclTerraform(struct!.cleanExpiredFiles),
+      value: cdktn.booleanToHclTerraform(struct!.cleanExpiredFiles),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     number_of_snapshots_to_retain: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfSnapshotsToRetain),
+      value: cdktn.numberToHclTerraform(struct!.numberOfSnapshotsToRetain),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     run_rate_in_hours: {
-      value: cdktf.numberToHclTerraform(struct!.runRateInHours),
+      value: cdktn.numberToHclTerraform(struct!.runRateInHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     snapshot_retention_period_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.snapshotRetentionPeriodInDays),
+      value: cdktn.numberToHclTerraform(struct!.snapshotRetentionPeriodInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -410,9 +410,9 @@ export function glueCatalogTableOptimizerConfigurationRetentionConfigurationIceb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference extends cdktf.ComplexObject {
+export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -420,11 +420,11 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIceberg
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -449,7 +449,7 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIceberg
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -458,7 +458,7 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIceberg
       this._runRateInHours = undefined;
       this._snapshotRetentionPeriodInDays = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -473,11 +473,11 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIceberg
   }
 
   // clean_expired_files - computed: false, optional: true, required: false
-  private _cleanExpiredFiles?: boolean | cdktf.IResolvable; 
+  private _cleanExpiredFiles?: boolean | cdktn.IResolvable; 
   public get cleanExpiredFiles() {
     return this.getBooleanAttribute('clean_expired_files');
   }
-  public set cleanExpiredFiles(value: boolean | cdktf.IResolvable) {
+  public set cleanExpiredFiles(value: boolean | cdktn.IResolvable) {
     this._cleanExpiredFiles = value;
   }
   public resetCleanExpiredFiles() {
@@ -537,15 +537,15 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIceberg
   }
 }
 
-export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationList extends cdktf.ComplexList {
-  public internalValue? : GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration[] | cdktf.IResolvable
+export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -562,28 +562,28 @@ export interface GlueCatalogTableOptimizerConfigurationRetentionConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
   */
-  readonly icebergConfiguration?: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration[] | cdktf.IResolvable;
+  readonly icebergConfiguration?: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration[] | cdktn.IResolvable;
 }
 
-export function glueCatalogTableOptimizerConfigurationRetentionConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfigurationRetentionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationRetentionConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfigurationRetentionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    iceberg_configuration: cdktf.listMapper(glueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationToTerraform, true)(struct!.icebergConfiguration),
+    iceberg_configuration: cdktn.listMapper(glueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationToTerraform, true)(struct!.icebergConfiguration),
   }
 }
 
 
-export function glueCatalogTableOptimizerConfigurationRetentionConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfigurationRetentionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationRetentionConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfigurationRetentionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     iceberg_configuration: {
-      value: cdktf.listMapperHcl(glueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationToHclTerraform, true)(struct!.icebergConfiguration),
+      value: cdktn.listMapperHcl(glueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationToHclTerraform, true)(struct!.icebergConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationList",
@@ -594,9 +594,9 @@ export function glueCatalogTableOptimizerConfigurationRetentionConfigurationToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputReference extends cdktf.ComplexObject {
+export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -604,11 +604,11 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueCatalogTableOptimizerConfigurationRetentionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueCatalogTableOptimizerConfigurationRetentionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -621,13 +621,13 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueCatalogTableOptimizerConfigurationRetentionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueCatalogTableOptimizerConfigurationRetentionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._icebergConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -643,7 +643,7 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputR
   public get icebergConfiguration() {
     return this._icebergConfiguration;
   }
-  public putIcebergConfiguration(value: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration[] | cdktf.IResolvable) {
+  public putIcebergConfiguration(value: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration[] | cdktn.IResolvable) {
     this._icebergConfiguration.internalValue = value;
   }
   public resetIcebergConfiguration() {
@@ -655,15 +655,15 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputR
   }
 }
 
-export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : GlueCatalogTableOptimizerConfigurationRetentionConfiguration[] | cdktf.IResolvable
+export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogTableOptimizerConfigurationRetentionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -678,7 +678,7 @@ export interface GlueCatalogTableOptimizerConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#enabled GlueCatalogTableOptimizer#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#role_arn GlueCatalogTableOptimizer#role_arn}
   */
@@ -688,55 +688,55 @@ export interface GlueCatalogTableOptimizerConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#orphan_file_deletion_configuration GlueCatalogTableOptimizer#orphan_file_deletion_configuration}
   */
-  readonly orphanFileDeletionConfiguration?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration[] | cdktf.IResolvable;
+  readonly orphanFileDeletionConfiguration?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration[] | cdktn.IResolvable;
   /**
   * retention_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#retention_configuration GlueCatalogTableOptimizer#retention_configuration}
   */
-  readonly retentionConfiguration?: GlueCatalogTableOptimizerConfigurationRetentionConfiguration[] | cdktf.IResolvable;
+  readonly retentionConfiguration?: GlueCatalogTableOptimizerConfigurationRetentionConfiguration[] | cdktn.IResolvable;
 }
 
-export function glueCatalogTableOptimizerConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    orphan_file_deletion_configuration: cdktf.listMapper(glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationToTerraform, true)(struct!.orphanFileDeletionConfiguration),
-    retention_configuration: cdktf.listMapper(glueCatalogTableOptimizerConfigurationRetentionConfigurationToTerraform, true)(struct!.retentionConfiguration),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    orphan_file_deletion_configuration: cdktn.listMapper(glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationToTerraform, true)(struct!.orphanFileDeletionConfiguration),
+    retention_configuration: cdktn.listMapper(glueCatalogTableOptimizerConfigurationRetentionConfigurationToTerraform, true)(struct!.retentionConfiguration),
   }
 }
 
 
-export function glueCatalogTableOptimizerConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueCatalogTableOptimizerConfigurationToHclTerraform(struct?: GlueCatalogTableOptimizerConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     orphan_file_deletion_configuration: {
-      value: cdktf.listMapperHcl(glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationToHclTerraform, true)(struct!.orphanFileDeletionConfiguration),
+      value: cdktn.listMapperHcl(glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationToHclTerraform, true)(struct!.orphanFileDeletionConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList",
     },
     retention_configuration: {
-      value: cdktf.listMapperHcl(glueCatalogTableOptimizerConfigurationRetentionConfigurationToHclTerraform, true)(struct!.retentionConfiguration),
+      value: cdktn.listMapperHcl(glueCatalogTableOptimizerConfigurationRetentionConfigurationToHclTerraform, true)(struct!.retentionConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "GlueCatalogTableOptimizerConfigurationRetentionConfigurationList",
@@ -747,9 +747,9 @@ export function glueCatalogTableOptimizerConfigurationToHclTerraform(struct?: Gl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueCatalogTableOptimizerConfigurationOutputReference extends cdktf.ComplexObject {
+export class GlueCatalogTableOptimizerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -757,11 +757,11 @@ export class GlueCatalogTableOptimizerConfigurationOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueCatalogTableOptimizerConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueCatalogTableOptimizerConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -786,7 +786,7 @@ export class GlueCatalogTableOptimizerConfigurationOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueCatalogTableOptimizerConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueCatalogTableOptimizerConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -795,7 +795,7 @@ export class GlueCatalogTableOptimizerConfigurationOutputReference extends cdktf
       this._orphanFileDeletionConfiguration.internalValue = undefined;
       this._retentionConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -810,11 +810,11 @@ export class GlueCatalogTableOptimizerConfigurationOutputReference extends cdktf
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -840,7 +840,7 @@ export class GlueCatalogTableOptimizerConfigurationOutputReference extends cdktf
   public get orphanFileDeletionConfiguration() {
     return this._orphanFileDeletionConfiguration;
   }
-  public putOrphanFileDeletionConfiguration(value: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration[] | cdktf.IResolvable) {
+  public putOrphanFileDeletionConfiguration(value: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration[] | cdktn.IResolvable) {
     this._orphanFileDeletionConfiguration.internalValue = value;
   }
   public resetOrphanFileDeletionConfiguration() {
@@ -856,7 +856,7 @@ export class GlueCatalogTableOptimizerConfigurationOutputReference extends cdktf
   public get retentionConfiguration() {
     return this._retentionConfiguration;
   }
-  public putRetentionConfiguration(value: GlueCatalogTableOptimizerConfigurationRetentionConfiguration[] | cdktf.IResolvable) {
+  public putRetentionConfiguration(value: GlueCatalogTableOptimizerConfigurationRetentionConfiguration[] | cdktn.IResolvable) {
     this._retentionConfiguration.internalValue = value;
   }
   public resetRetentionConfiguration() {
@@ -868,15 +868,15 @@ export class GlueCatalogTableOptimizerConfigurationOutputReference extends cdktf
   }
 }
 
-export class GlueCatalogTableOptimizerConfigurationList extends cdktf.ComplexList {
-  public internalValue? : GlueCatalogTableOptimizerConfiguration[] | cdktf.IResolvable
+export class GlueCatalogTableOptimizerConfigurationList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogTableOptimizerConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -891,7 +891,7 @@ export class GlueCatalogTableOptimizerConfigurationList extends cdktf.ComplexLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer}
 */
-export class GlueCatalogTableOptimizer extends cdktf.TerraformResource {
+export class GlueCatalogTableOptimizer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -902,14 +902,14 @@ export class GlueCatalogTableOptimizer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlueCatalogTableOptimizer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlueCatalogTableOptimizer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueCatalogTableOptimizer to import
   * @param importFromId The id of the existing GlueCatalogTableOptimizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_catalog_table_optimizer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueCatalogTableOptimizer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_catalog_table_optimizer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_catalog_table_optimizer", importId: importFromId, provider });
       }
 
   // ===========
@@ -1024,7 +1024,7 @@ export class GlueCatalogTableOptimizer extends cdktf.TerraformResource {
   public get configuration() {
     return this._configuration;
   }
-  public putConfiguration(value: GlueCatalogTableOptimizerConfiguration[] | cdktf.IResolvable) {
+  public putConfiguration(value: GlueCatalogTableOptimizerConfiguration[] | cdktn.IResolvable) {
     this._configuration.internalValue = value;
   }
   public resetConfiguration() {
@@ -1041,49 +1041,49 @@ export class GlueCatalogTableOptimizer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      region: cdktf.stringToTerraform(this._region),
-      table_name: cdktf.stringToTerraform(this._tableName),
-      type: cdktf.stringToTerraform(this._type),
-      configuration: cdktf.listMapper(glueCatalogTableOptimizerConfigurationToTerraform, true)(this._configuration.internalValue),
+      catalog_id: cdktn.stringToTerraform(this._catalogId),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      region: cdktn.stringToTerraform(this._region),
+      table_name: cdktn.stringToTerraform(this._tableName),
+      type: cdktn.stringToTerraform(this._type),
+      configuration: cdktn.listMapper(glueCatalogTableOptimizerConfigurationToTerraform, true)(this._configuration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog_id: {
-        value: cdktf.stringToHclTerraform(this._catalogId),
+        value: cdktn.stringToHclTerraform(this._catalogId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_name: {
-        value: cdktf.stringToHclTerraform(this._tableName),
+        value: cdktn.stringToHclTerraform(this._tableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration: {
-        value: cdktf.listMapperHcl(glueCatalogTableOptimizerConfigurationToHclTerraform, true)(this._configuration.internalValue),
+        value: cdktn.listMapperHcl(glueCatalogTableOptimizerConfigurationToHclTerraform, true)(this._configuration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "GlueCatalogTableOptimizerConfigurationList",

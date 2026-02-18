@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BatchComputeEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface BatchComputeEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_compute_environment#id BatchComputeEnvironment#id}
   *
@@ -87,39 +87,39 @@ export interface BatchComputeEnvironmentComputeResourcesEc2Configuration {
   readonly imageType?: string;
 }
 
-export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform(struct?: BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform(struct?: BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image_id_override: cdktf.stringToTerraform(struct!.imageIdOverride),
-    image_kubernetes_version: cdktf.stringToTerraform(struct!.imageKubernetesVersion),
-    image_type: cdktf.stringToTerraform(struct!.imageType),
+    image_id_override: cdktn.stringToTerraform(struct!.imageIdOverride),
+    image_kubernetes_version: cdktn.stringToTerraform(struct!.imageKubernetesVersion),
+    image_type: cdktn.stringToTerraform(struct!.imageType),
   }
 }
 
 
-export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToHclTerraform(struct?: BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToHclTerraform(struct?: BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image_id_override: {
-      value: cdktf.stringToHclTerraform(struct!.imageIdOverride),
+      value: cdktn.stringToHclTerraform(struct!.imageIdOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_kubernetes_version: {
-      value: cdktf.stringToHclTerraform(struct!.imageKubernetesVersion),
+      value: cdktn.stringToHclTerraform(struct!.imageKubernetesVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_type: {
-      value: cdktf.stringToHclTerraform(struct!.imageType),
+      value: cdktn.stringToHclTerraform(struct!.imageType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -130,9 +130,9 @@ export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference extends cdktf.ComplexObject {
+export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -140,11 +140,11 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -165,7 +165,7 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputRefere
       this._imageKubernetesVersion = undefined;
       this._imageType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,15 +235,15 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputRefere
   }
 }
 
-export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktf.IResolvable
+export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -270,38 +270,38 @@ export interface BatchComputeEnvironmentComputeResourcesLaunchTemplate {
 }
 
 export function batchComputeEnvironmentComputeResourcesLaunchTemplateToTerraform(struct?: BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference | BatchComputeEnvironmentComputeResourcesLaunchTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    launch_template_id: cdktf.stringToTerraform(struct!.launchTemplateId),
-    launch_template_name: cdktf.stringToTerraform(struct!.launchTemplateName),
-    version: cdktf.stringToTerraform(struct!.version),
+    launch_template_id: cdktn.stringToTerraform(struct!.launchTemplateId),
+    launch_template_name: cdktn.stringToTerraform(struct!.launchTemplateName),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function batchComputeEnvironmentComputeResourcesLaunchTemplateToHclTerraform(struct?: BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference | BatchComputeEnvironmentComputeResourcesLaunchTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     launch_template_id: {
-      value: cdktf.stringToHclTerraform(struct!.launchTemplateId),
+      value: cdktn.stringToHclTerraform(struct!.launchTemplateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     launch_template_name: {
-      value: cdktf.stringToHclTerraform(struct!.launchTemplateName),
+      value: cdktn.stringToHclTerraform(struct!.launchTemplateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -312,14 +312,14 @@ export function batchComputeEnvironmentComputeResourcesLaunchTemplateToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference extends cdktf.ComplexObject {
+export class BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -470,7 +470,7 @@ export interface BatchComputeEnvironmentComputeResources {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_compute_environment#ec2_configuration BatchComputeEnvironment#ec2_configuration}
   */
-  readonly ec2Configuration?: BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktf.IResolvable;
+  readonly ec2Configuration?: BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktn.IResolvable;
   /**
   * launch_template block
   *
@@ -480,130 +480,130 @@ export interface BatchComputeEnvironmentComputeResources {
 }
 
 export function batchComputeEnvironmentComputeResourcesToTerraform(struct?: BatchComputeEnvironmentComputeResourcesOutputReference | BatchComputeEnvironmentComputeResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
-    bid_percentage: cdktf.numberToTerraform(struct!.bidPercentage),
-    desired_vcpus: cdktf.numberToTerraform(struct!.desiredVcpus),
-    ec2_key_pair: cdktf.stringToTerraform(struct!.ec2KeyPair),
-    image_id: cdktf.stringToTerraform(struct!.imageId),
-    instance_role: cdktf.stringToTerraform(struct!.instanceRole),
-    instance_type: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instanceType),
-    max_vcpus: cdktf.numberToTerraform(struct!.maxVcpus),
-    min_vcpus: cdktf.numberToTerraform(struct!.minVcpus),
-    placement_group: cdktf.stringToTerraform(struct!.placementGroup),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    spot_iam_fleet_role: cdktf.stringToTerraform(struct!.spotIamFleetRole),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
-    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
-    type: cdktf.stringToTerraform(struct!.type),
-    ec2_configuration: cdktf.listMapper(batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform, true)(struct!.ec2Configuration),
+    allocation_strategy: cdktn.stringToTerraform(struct!.allocationStrategy),
+    bid_percentage: cdktn.numberToTerraform(struct!.bidPercentage),
+    desired_vcpus: cdktn.numberToTerraform(struct!.desiredVcpus),
+    ec2_key_pair: cdktn.stringToTerraform(struct!.ec2KeyPair),
+    image_id: cdktn.stringToTerraform(struct!.imageId),
+    instance_role: cdktn.stringToTerraform(struct!.instanceRole),
+    instance_type: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.instanceType),
+    max_vcpus: cdktn.numberToTerraform(struct!.maxVcpus),
+    min_vcpus: cdktn.numberToTerraform(struct!.minVcpus),
+    placement_group: cdktn.stringToTerraform(struct!.placementGroup),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    spot_iam_fleet_role: cdktn.stringToTerraform(struct!.spotIamFleetRole),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
+    type: cdktn.stringToTerraform(struct!.type),
+    ec2_configuration: cdktn.listMapper(batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform, true)(struct!.ec2Configuration),
     launch_template: batchComputeEnvironmentComputeResourcesLaunchTemplateToTerraform(struct!.launchTemplate),
   }
 }
 
 
 export function batchComputeEnvironmentComputeResourcesToHclTerraform(struct?: BatchComputeEnvironmentComputeResourcesOutputReference | BatchComputeEnvironmentComputeResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocation_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.allocationStrategy),
+      value: cdktn.stringToHclTerraform(struct!.allocationStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bid_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.bidPercentage),
+      value: cdktn.numberToHclTerraform(struct!.bidPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     desired_vcpus: {
-      value: cdktf.numberToHclTerraform(struct!.desiredVcpus),
+      value: cdktn.numberToHclTerraform(struct!.desiredVcpus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ec2_key_pair: {
-      value: cdktf.stringToHclTerraform(struct!.ec2KeyPair),
+      value: cdktn.stringToHclTerraform(struct!.ec2KeyPair),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_id: {
-      value: cdktf.stringToHclTerraform(struct!.imageId),
+      value: cdktn.stringToHclTerraform(struct!.imageId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_role: {
-      value: cdktf.stringToHclTerraform(struct!.instanceRole),
+      value: cdktn.stringToHclTerraform(struct!.instanceRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_type: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.instanceType),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.instanceType),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     max_vcpus: {
-      value: cdktf.numberToHclTerraform(struct!.maxVcpus),
+      value: cdktn.numberToHclTerraform(struct!.maxVcpus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_vcpus: {
-      value: cdktf.numberToHclTerraform(struct!.minVcpus),
+      value: cdktn.numberToHclTerraform(struct!.minVcpus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     placement_group: {
-      value: cdktf.stringToHclTerraform(struct!.placementGroup),
+      value: cdktn.stringToHclTerraform(struct!.placementGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     spot_iam_fleet_role: {
-      value: cdktf.stringToHclTerraform(struct!.spotIamFleetRole),
+      value: cdktn.stringToHclTerraform(struct!.spotIamFleetRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ec2_configuration: {
-      value: cdktf.listMapperHcl(batchComputeEnvironmentComputeResourcesEc2ConfigurationToHclTerraform, true)(struct!.ec2Configuration),
+      value: cdktn.listMapperHcl(batchComputeEnvironmentComputeResourcesEc2ConfigurationToHclTerraform, true)(struct!.ec2Configuration),
       isBlock: true,
       type: "list",
       storageClassType: "BatchComputeEnvironmentComputeResourcesEc2ConfigurationList",
@@ -620,14 +620,14 @@ export function batchComputeEnvironmentComputeResourcesToHclTerraform(struct?: B
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdktf.ComplexObject {
+export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -847,7 +847,7 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
   // instance_type - computed: false, optional: true, required: false
   private _instanceType?: string[]; 
   public get instanceType() {
-    return cdktf.Fn.tolist(this.getListAttribute('instance_type'));
+    return cdktn.Fn.tolist(this.getListAttribute('instance_type'));
   }
   public set instanceType(value: string[]) {
     this._instanceType = value;
@@ -908,7 +908,7 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -940,7 +940,7 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
   // subnets - computed: false, optional: false, required: true
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -984,7 +984,7 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
   public get ec2Configuration() {
     return this._ec2Configuration;
   }
-  public putEc2Configuration(value: BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktf.IResolvable) {
+  public putEc2Configuration(value: BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktn.IResolvable) {
     this._ec2Configuration.internalValue = value;
   }
   public resetEc2Configuration() {
@@ -1023,31 +1023,31 @@ export interface BatchComputeEnvironmentEksConfiguration {
 }
 
 export function batchComputeEnvironmentEksConfigurationToTerraform(struct?: BatchComputeEnvironmentEksConfigurationOutputReference | BatchComputeEnvironmentEksConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    eks_cluster_arn: cdktf.stringToTerraform(struct!.eksClusterArn),
-    kubernetes_namespace: cdktf.stringToTerraform(struct!.kubernetesNamespace),
+    eks_cluster_arn: cdktn.stringToTerraform(struct!.eksClusterArn),
+    kubernetes_namespace: cdktn.stringToTerraform(struct!.kubernetesNamespace),
   }
 }
 
 
 export function batchComputeEnvironmentEksConfigurationToHclTerraform(struct?: BatchComputeEnvironmentEksConfigurationOutputReference | BatchComputeEnvironmentEksConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     eks_cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.eksClusterArn),
+      value: cdktn.stringToHclTerraform(struct!.eksClusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kubernetes_namespace: {
-      value: cdktf.stringToHclTerraform(struct!.kubernetesNamespace),
+      value: cdktn.stringToHclTerraform(struct!.kubernetesNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1058,14 +1058,14 @@ export function batchComputeEnvironmentEksConfigurationToHclTerraform(struct?: B
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchComputeEnvironmentEksConfigurationOutputReference extends cdktf.ComplexObject {
+export class BatchComputeEnvironmentEksConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1130,35 +1130,35 @@ export interface BatchComputeEnvironmentUpdatePolicy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_compute_environment#terminate_jobs_on_update BatchComputeEnvironment#terminate_jobs_on_update}
   */
-  readonly terminateJobsOnUpdate?: boolean | cdktf.IResolvable;
+  readonly terminateJobsOnUpdate?: boolean | cdktn.IResolvable;
 }
 
 export function batchComputeEnvironmentUpdatePolicyToTerraform(struct?: BatchComputeEnvironmentUpdatePolicyOutputReference | BatchComputeEnvironmentUpdatePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    job_execution_timeout_minutes: cdktf.numberToTerraform(struct!.jobExecutionTimeoutMinutes),
-    terminate_jobs_on_update: cdktf.booleanToTerraform(struct!.terminateJobsOnUpdate),
+    job_execution_timeout_minutes: cdktn.numberToTerraform(struct!.jobExecutionTimeoutMinutes),
+    terminate_jobs_on_update: cdktn.booleanToTerraform(struct!.terminateJobsOnUpdate),
   }
 }
 
 
 export function batchComputeEnvironmentUpdatePolicyToHclTerraform(struct?: BatchComputeEnvironmentUpdatePolicyOutputReference | BatchComputeEnvironmentUpdatePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     job_execution_timeout_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.jobExecutionTimeoutMinutes),
+      value: cdktn.numberToHclTerraform(struct!.jobExecutionTimeoutMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     terminate_jobs_on_update: {
-      value: cdktf.booleanToHclTerraform(struct!.terminateJobsOnUpdate),
+      value: cdktn.booleanToHclTerraform(struct!.terminateJobsOnUpdate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1169,14 +1169,14 @@ export function batchComputeEnvironmentUpdatePolicyToHclTerraform(struct?: Batch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchComputeEnvironmentUpdatePolicyOutputReference extends cdktf.ComplexObject {
+export class BatchComputeEnvironmentUpdatePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1224,11 +1224,11 @@ export class BatchComputeEnvironmentUpdatePolicyOutputReference extends cdktf.Co
   }
 
   // terminate_jobs_on_update - computed: true, optional: true, required: false
-  private _terminateJobsOnUpdate?: boolean | cdktf.IResolvable; 
+  private _terminateJobsOnUpdate?: boolean | cdktn.IResolvable; 
   public get terminateJobsOnUpdate() {
     return this.getBooleanAttribute('terminate_jobs_on_update');
   }
-  public set terminateJobsOnUpdate(value: boolean | cdktf.IResolvable) {
+  public set terminateJobsOnUpdate(value: boolean | cdktn.IResolvable) {
     this._terminateJobsOnUpdate = value;
   }
   public resetTerminateJobsOnUpdate() {
@@ -1243,7 +1243,7 @@ export class BatchComputeEnvironmentUpdatePolicyOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_compute_environment aws_batch_compute_environment}
 */
-export class BatchComputeEnvironment extends cdktf.TerraformResource {
+export class BatchComputeEnvironment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1254,14 +1254,14 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BatchComputeEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BatchComputeEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BatchComputeEnvironment to import
   * @param importFromId The id of the existing BatchComputeEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_compute_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BatchComputeEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_batch_compute_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_batch_compute_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -1524,15 +1524,15 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      region: cdktf.stringToTerraform(this._region),
-      service_role: cdktf.stringToTerraform(this._serviceRole),
-      state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      region: cdktn.stringToTerraform(this._region),
+      service_role: cdktn.stringToTerraform(this._serviceRole),
+      state: cdktn.stringToTerraform(this._state),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
       compute_resources: batchComputeEnvironmentComputeResourcesToTerraform(this._computeResources.internalValue),
       eks_configuration: batchComputeEnvironmentEksConfigurationToTerraform(this._eksConfiguration.internalValue),
       update_policy: batchComputeEnvironmentUpdatePolicyToTerraform(this._updatePolicy.internalValue),
@@ -1542,55 +1542,55 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_role: {
-        value: cdktf.stringToHclTerraform(this._serviceRole),
+        value: cdktn.stringToHclTerraform(this._serviceRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

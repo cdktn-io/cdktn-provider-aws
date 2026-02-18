@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitoManagedUserPoolClientConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoManagedUserPoolClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#access_token_validity CognitoManagedUserPoolClient#access_token_validity}
   */
@@ -23,7 +23,7 @@ export interface CognitoManagedUserPoolClientConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#allowed_oauth_flows_user_pool_client CognitoManagedUserPoolClient#allowed_oauth_flows_user_pool_client}
   */
-  readonly allowedOauthFlowsUserPoolClient?: boolean | cdktf.IResolvable;
+  readonly allowedOauthFlowsUserPoolClient?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#allowed_oauth_scopes CognitoManagedUserPoolClient#allowed_oauth_scopes}
   */
@@ -43,11 +43,11 @@ export interface CognitoManagedUserPoolClientConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#enable_propagate_additional_user_context_data CognitoManagedUserPoolClient#enable_propagate_additional_user_context_data}
   */
-  readonly enablePropagateAdditionalUserContextData?: boolean | cdktf.IResolvable;
+  readonly enablePropagateAdditionalUserContextData?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#enable_token_revocation CognitoManagedUserPoolClient#enable_token_revocation}
   */
-  readonly enableTokenRevocation?: boolean | cdktf.IResolvable;
+  readonly enableTokenRevocation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#explicit_auth_flows CognitoManagedUserPoolClient#explicit_auth_flows}
   */
@@ -103,19 +103,19 @@ export interface CognitoManagedUserPoolClientConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#analytics_configuration CognitoManagedUserPoolClient#analytics_configuration}
   */
-  readonly analyticsConfiguration?: CognitoManagedUserPoolClientAnalyticsConfiguration[] | cdktf.IResolvable;
+  readonly analyticsConfiguration?: CognitoManagedUserPoolClientAnalyticsConfiguration[] | cdktn.IResolvable;
   /**
   * refresh_token_rotation block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#refresh_token_rotation CognitoManagedUserPoolClient#refresh_token_rotation}
   */
-  readonly refreshTokenRotation?: CognitoManagedUserPoolClientRefreshTokenRotation[] | cdktf.IResolvable;
+  readonly refreshTokenRotation?: CognitoManagedUserPoolClientRefreshTokenRotation[] | cdktn.IResolvable;
   /**
   * token_validity_units block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#token_validity_units CognitoManagedUserPoolClient#token_validity_units}
   */
-  readonly tokenValidityUnits?: CognitoManagedUserPoolClientTokenValidityUnits[] | cdktf.IResolvable;
+  readonly tokenValidityUnits?: CognitoManagedUserPoolClientTokenValidityUnits[] | cdktn.IResolvable;
 }
 export interface CognitoManagedUserPoolClientAnalyticsConfiguration {
   /**
@@ -137,56 +137,56 @@ export interface CognitoManagedUserPoolClientAnalyticsConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#user_data_shared CognitoManagedUserPoolClient#user_data_shared}
   */
-  readonly userDataShared?: boolean | cdktf.IResolvable;
+  readonly userDataShared?: boolean | cdktn.IResolvable;
 }
 
-export function cognitoManagedUserPoolClientAnalyticsConfigurationToTerraform(struct?: CognitoManagedUserPoolClientAnalyticsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoManagedUserPoolClientAnalyticsConfigurationToTerraform(struct?: CognitoManagedUserPoolClientAnalyticsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_arn: cdktf.stringToTerraform(struct!.applicationArn),
-    application_id: cdktf.stringToTerraform(struct!.applicationId),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    user_data_shared: cdktf.booleanToTerraform(struct!.userDataShared),
+    application_arn: cdktn.stringToTerraform(struct!.applicationArn),
+    application_id: cdktn.stringToTerraform(struct!.applicationId),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    user_data_shared: cdktn.booleanToTerraform(struct!.userDataShared),
   }
 }
 
 
-export function cognitoManagedUserPoolClientAnalyticsConfigurationToHclTerraform(struct?: CognitoManagedUserPoolClientAnalyticsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoManagedUserPoolClientAnalyticsConfigurationToHclTerraform(struct?: CognitoManagedUserPoolClientAnalyticsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_arn: {
-      value: cdktf.stringToHclTerraform(struct!.applicationArn),
+      value: cdktn.stringToHclTerraform(struct!.applicationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     application_id: {
-      value: cdktf.stringToHclTerraform(struct!.applicationId),
+      value: cdktn.stringToHclTerraform(struct!.applicationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_data_shared: {
-      value: cdktf.booleanToHclTerraform(struct!.userDataShared),
+      value: cdktn.booleanToHclTerraform(struct!.userDataShared),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -197,9 +197,9 @@ export function cognitoManagedUserPoolClientAnalyticsConfigurationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoManagedUserPoolClientAnalyticsConfigurationOutputReference extends cdktf.ComplexObject {
+export class CognitoManagedUserPoolClientAnalyticsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -207,11 +207,11 @@ export class CognitoManagedUserPoolClientAnalyticsConfigurationOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoManagedUserPoolClientAnalyticsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoManagedUserPoolClientAnalyticsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -240,7 +240,7 @@ export class CognitoManagedUserPoolClientAnalyticsConfigurationOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoManagedUserPoolClientAnalyticsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoManagedUserPoolClientAnalyticsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -250,7 +250,7 @@ export class CognitoManagedUserPoolClientAnalyticsConfigurationOutputReference e
       this._roleArn = undefined;
       this._userDataShared = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -330,11 +330,11 @@ export class CognitoManagedUserPoolClientAnalyticsConfigurationOutputReference e
   }
 
   // user_data_shared - computed: true, optional: true, required: false
-  private _userDataShared?: boolean | cdktf.IResolvable; 
+  private _userDataShared?: boolean | cdktn.IResolvable; 
   public get userDataShared() {
     return this.getBooleanAttribute('user_data_shared');
   }
-  public set userDataShared(value: boolean | cdktf.IResolvable) {
+  public set userDataShared(value: boolean | cdktn.IResolvable) {
     this._userDataShared = value;
   }
   public resetUserDataShared() {
@@ -346,15 +346,15 @@ export class CognitoManagedUserPoolClientAnalyticsConfigurationOutputReference e
   }
 }
 
-export class CognitoManagedUserPoolClientAnalyticsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : CognitoManagedUserPoolClientAnalyticsConfiguration[] | cdktf.IResolvable
+export class CognitoManagedUserPoolClientAnalyticsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : CognitoManagedUserPoolClientAnalyticsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -376,32 +376,32 @@ export interface CognitoManagedUserPoolClientRefreshTokenRotation {
   readonly retryGracePeriodSeconds?: number;
 }
 
-export function cognitoManagedUserPoolClientRefreshTokenRotationToTerraform(struct?: CognitoManagedUserPoolClientRefreshTokenRotation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoManagedUserPoolClientRefreshTokenRotationToTerraform(struct?: CognitoManagedUserPoolClientRefreshTokenRotation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    feature: cdktf.stringToTerraform(struct!.feature),
-    retry_grace_period_seconds: cdktf.numberToTerraform(struct!.retryGracePeriodSeconds),
+    feature: cdktn.stringToTerraform(struct!.feature),
+    retry_grace_period_seconds: cdktn.numberToTerraform(struct!.retryGracePeriodSeconds),
   }
 }
 
 
-export function cognitoManagedUserPoolClientRefreshTokenRotationToHclTerraform(struct?: CognitoManagedUserPoolClientRefreshTokenRotation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoManagedUserPoolClientRefreshTokenRotationToHclTerraform(struct?: CognitoManagedUserPoolClientRefreshTokenRotation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     feature: {
-      value: cdktf.stringToHclTerraform(struct!.feature),
+      value: cdktn.stringToHclTerraform(struct!.feature),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_grace_period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.retryGracePeriodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.retryGracePeriodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -412,9 +412,9 @@ export function cognitoManagedUserPoolClientRefreshTokenRotationToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoManagedUserPoolClientRefreshTokenRotationOutputReference extends cdktf.ComplexObject {
+export class CognitoManagedUserPoolClientRefreshTokenRotationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -422,11 +422,11 @@ export class CognitoManagedUserPoolClientRefreshTokenRotationOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoManagedUserPoolClientRefreshTokenRotation | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoManagedUserPoolClientRefreshTokenRotation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -443,14 +443,14 @@ export class CognitoManagedUserPoolClientRefreshTokenRotationOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoManagedUserPoolClientRefreshTokenRotation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoManagedUserPoolClientRefreshTokenRotation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._feature = undefined;
       this._retryGracePeriodSeconds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -492,15 +492,15 @@ export class CognitoManagedUserPoolClientRefreshTokenRotationOutputReference ext
   }
 }
 
-export class CognitoManagedUserPoolClientRefreshTokenRotationList extends cdktf.ComplexList {
-  public internalValue? : CognitoManagedUserPoolClientRefreshTokenRotation[] | cdktf.IResolvable
+export class CognitoManagedUserPoolClientRefreshTokenRotationList extends cdktn.ComplexList {
+  public internalValue? : CognitoManagedUserPoolClientRefreshTokenRotation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -526,39 +526,39 @@ export interface CognitoManagedUserPoolClientTokenValidityUnits {
   readonly refreshToken?: string;
 }
 
-export function cognitoManagedUserPoolClientTokenValidityUnitsToTerraform(struct?: CognitoManagedUserPoolClientTokenValidityUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoManagedUserPoolClientTokenValidityUnitsToTerraform(struct?: CognitoManagedUserPoolClientTokenValidityUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    id_token: cdktf.stringToTerraform(struct!.idToken),
-    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    id_token: cdktn.stringToTerraform(struct!.idToken),
+    refresh_token: cdktn.stringToTerraform(struct!.refreshToken),
   }
 }
 
 
-export function cognitoManagedUserPoolClientTokenValidityUnitsToHclTerraform(struct?: CognitoManagedUserPoolClientTokenValidityUnits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoManagedUserPoolClientTokenValidityUnitsToHclTerraform(struct?: CognitoManagedUserPoolClientTokenValidityUnits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id_token: {
-      value: cdktf.stringToHclTerraform(struct!.idToken),
+      value: cdktn.stringToHclTerraform(struct!.idToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_token: {
-      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      value: cdktn.stringToHclTerraform(struct!.refreshToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -569,9 +569,9 @@ export function cognitoManagedUserPoolClientTokenValidityUnitsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoManagedUserPoolClientTokenValidityUnitsOutputReference extends cdktf.ComplexObject {
+export class CognitoManagedUserPoolClientTokenValidityUnitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -579,11 +579,11 @@ export class CognitoManagedUserPoolClientTokenValidityUnitsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoManagedUserPoolClientTokenValidityUnits | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoManagedUserPoolClientTokenValidityUnits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -604,7 +604,7 @@ export class CognitoManagedUserPoolClientTokenValidityUnitsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoManagedUserPoolClientTokenValidityUnits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoManagedUserPoolClientTokenValidityUnits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -612,7 +612,7 @@ export class CognitoManagedUserPoolClientTokenValidityUnitsOutputReference exten
       this._idToken = undefined;
       this._refreshToken = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -674,15 +674,15 @@ export class CognitoManagedUserPoolClientTokenValidityUnitsOutputReference exten
   }
 }
 
-export class CognitoManagedUserPoolClientTokenValidityUnitsList extends cdktf.ComplexList {
-  public internalValue? : CognitoManagedUserPoolClientTokenValidityUnits[] | cdktf.IResolvable
+export class CognitoManagedUserPoolClientTokenValidityUnitsList extends cdktn.ComplexList {
+  public internalValue? : CognitoManagedUserPoolClientTokenValidityUnits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -697,7 +697,7 @@ export class CognitoManagedUserPoolClientTokenValidityUnitsList extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client}
 */
-export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
+export class CognitoManagedUserPoolClient extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -708,14 +708,14 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitoManagedUserPoolClient resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitoManagedUserPoolClient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoManagedUserPoolClient to import
   * @param importFromId The id of the existing CognitoManagedUserPoolClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_managed_user_pool_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoManagedUserPoolClient to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_managed_user_pool_client", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_managed_user_pool_client", importId: importFromId, provider });
       }
 
   // ===========
@@ -794,7 +794,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // allowed_oauth_flows - computed: true, optional: true, required: false
   private _allowedOauthFlows?: string[]; 
   public get allowedOauthFlows() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_oauth_flows'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_oauth_flows'));
   }
   public set allowedOauthFlows(value: string[]) {
     this._allowedOauthFlows = value;
@@ -808,11 +808,11 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   }
 
   // allowed_oauth_flows_user_pool_client - computed: true, optional: true, required: false
-  private _allowedOauthFlowsUserPoolClient?: boolean | cdktf.IResolvable; 
+  private _allowedOauthFlowsUserPoolClient?: boolean | cdktn.IResolvable; 
   public get allowedOauthFlowsUserPoolClient() {
     return this.getBooleanAttribute('allowed_oauth_flows_user_pool_client');
   }
-  public set allowedOauthFlowsUserPoolClient(value: boolean | cdktf.IResolvable) {
+  public set allowedOauthFlowsUserPoolClient(value: boolean | cdktn.IResolvable) {
     this._allowedOauthFlowsUserPoolClient = value;
   }
   public resetAllowedOauthFlowsUserPoolClient() {
@@ -826,7 +826,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // allowed_oauth_scopes - computed: true, optional: true, required: false
   private _allowedOauthScopes?: string[]; 
   public get allowedOauthScopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_oauth_scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_oauth_scopes'));
   }
   public set allowedOauthScopes(value: string[]) {
     this._allowedOauthScopes = value;
@@ -858,7 +858,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // callback_urls - computed: true, optional: true, required: false
   private _callbackUrls?: string[]; 
   public get callbackUrls() {
-    return cdktf.Fn.tolist(this.getListAttribute('callback_urls'));
+    return cdktn.Fn.tolist(this.getListAttribute('callback_urls'));
   }
   public set callbackUrls(value: string[]) {
     this._callbackUrls = value;
@@ -893,11 +893,11 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   }
 
   // enable_propagate_additional_user_context_data - computed: true, optional: true, required: false
-  private _enablePropagateAdditionalUserContextData?: boolean | cdktf.IResolvable; 
+  private _enablePropagateAdditionalUserContextData?: boolean | cdktn.IResolvable; 
   public get enablePropagateAdditionalUserContextData() {
     return this.getBooleanAttribute('enable_propagate_additional_user_context_data');
   }
-  public set enablePropagateAdditionalUserContextData(value: boolean | cdktf.IResolvable) {
+  public set enablePropagateAdditionalUserContextData(value: boolean | cdktn.IResolvable) {
     this._enablePropagateAdditionalUserContextData = value;
   }
   public resetEnablePropagateAdditionalUserContextData() {
@@ -909,11 +909,11 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   }
 
   // enable_token_revocation - computed: true, optional: true, required: false
-  private _enableTokenRevocation?: boolean | cdktf.IResolvable; 
+  private _enableTokenRevocation?: boolean | cdktn.IResolvable; 
   public get enableTokenRevocation() {
     return this.getBooleanAttribute('enable_token_revocation');
   }
-  public set enableTokenRevocation(value: boolean | cdktf.IResolvable) {
+  public set enableTokenRevocation(value: boolean | cdktn.IResolvable) {
     this._enableTokenRevocation = value;
   }
   public resetEnableTokenRevocation() {
@@ -927,7 +927,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // explicit_auth_flows - computed: true, optional: true, required: false
   private _explicitAuthFlows?: string[]; 
   public get explicitAuthFlows() {
-    return cdktf.Fn.tolist(this.getListAttribute('explicit_auth_flows'));
+    return cdktn.Fn.tolist(this.getListAttribute('explicit_auth_flows'));
   }
   public set explicitAuthFlows(value: string[]) {
     this._explicitAuthFlows = value;
@@ -964,7 +964,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // logout_urls - computed: true, optional: true, required: false
   private _logoutUrls?: string[]; 
   public get logoutUrls() {
-    return cdktf.Fn.tolist(this.getListAttribute('logout_urls'));
+    return cdktn.Fn.tolist(this.getListAttribute('logout_urls'));
   }
   public set logoutUrls(value: string[]) {
     this._logoutUrls = value;
@@ -1033,7 +1033,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // read_attributes - computed: true, optional: true, required: false
   private _readAttributes?: string[]; 
   public get readAttributes() {
-    return cdktf.Fn.tolist(this.getListAttribute('read_attributes'));
+    return cdktn.Fn.tolist(this.getListAttribute('read_attributes'));
   }
   public set readAttributes(value: string[]) {
     this._readAttributes = value;
@@ -1081,7 +1081,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // supported_identity_providers - computed: true, optional: true, required: false
   private _supportedIdentityProviders?: string[]; 
   public get supportedIdentityProviders() {
-    return cdktf.Fn.tolist(this.getListAttribute('supported_identity_providers'));
+    return cdktn.Fn.tolist(this.getListAttribute('supported_identity_providers'));
   }
   public set supportedIdentityProviders(value: string[]) {
     this._supportedIdentityProviders = value;
@@ -1110,7 +1110,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // write_attributes - computed: true, optional: true, required: false
   private _writeAttributes?: string[]; 
   public get writeAttributes() {
-    return cdktf.Fn.tolist(this.getListAttribute('write_attributes'));
+    return cdktn.Fn.tolist(this.getListAttribute('write_attributes'));
   }
   public set writeAttributes(value: string[]) {
     this._writeAttributes = value;
@@ -1128,7 +1128,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   public get analyticsConfiguration() {
     return this._analyticsConfiguration;
   }
-  public putAnalyticsConfiguration(value: CognitoManagedUserPoolClientAnalyticsConfiguration[] | cdktf.IResolvable) {
+  public putAnalyticsConfiguration(value: CognitoManagedUserPoolClientAnalyticsConfiguration[] | cdktn.IResolvable) {
     this._analyticsConfiguration.internalValue = value;
   }
   public resetAnalyticsConfiguration() {
@@ -1144,7 +1144,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   public get refreshTokenRotation() {
     return this._refreshTokenRotation;
   }
-  public putRefreshTokenRotation(value: CognitoManagedUserPoolClientRefreshTokenRotation[] | cdktf.IResolvable) {
+  public putRefreshTokenRotation(value: CognitoManagedUserPoolClientRefreshTokenRotation[] | cdktn.IResolvable) {
     this._refreshTokenRotation.internalValue = value;
   }
   public resetRefreshTokenRotation() {
@@ -1160,7 +1160,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   public get tokenValidityUnits() {
     return this._tokenValidityUnits;
   }
-  public putTokenValidityUnits(value: CognitoManagedUserPoolClientTokenValidityUnits[] | cdktf.IResolvable) {
+  public putTokenValidityUnits(value: CognitoManagedUserPoolClientTokenValidityUnits[] | cdktn.IResolvable) {
     this._tokenValidityUnits.internalValue = value;
   }
   public resetTokenValidityUnits() {
@@ -1177,175 +1177,175 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_token_validity: cdktf.numberToTerraform(this._accessTokenValidity),
-      allowed_oauth_flows: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOauthFlows),
-      allowed_oauth_flows_user_pool_client: cdktf.booleanToTerraform(this._allowedOauthFlowsUserPoolClient),
-      allowed_oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOauthScopes),
-      auth_session_validity: cdktf.numberToTerraform(this._authSessionValidity),
-      callback_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._callbackUrls),
-      default_redirect_uri: cdktf.stringToTerraform(this._defaultRedirectUri),
-      enable_propagate_additional_user_context_data: cdktf.booleanToTerraform(this._enablePropagateAdditionalUserContextData),
-      enable_token_revocation: cdktf.booleanToTerraform(this._enableTokenRevocation),
-      explicit_auth_flows: cdktf.listMapper(cdktf.stringToTerraform, false)(this._explicitAuthFlows),
-      id_token_validity: cdktf.numberToTerraform(this._idTokenValidity),
-      logout_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logoutUrls),
-      name_pattern: cdktf.stringToTerraform(this._namePattern),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      prevent_user_existence_errors: cdktf.stringToTerraform(this._preventUserExistenceErrors),
-      read_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._readAttributes),
-      refresh_token_validity: cdktf.numberToTerraform(this._refreshTokenValidity),
-      region: cdktf.stringToTerraform(this._region),
-      supported_identity_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedIdentityProviders),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
-      write_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._writeAttributes),
-      analytics_configuration: cdktf.listMapper(cognitoManagedUserPoolClientAnalyticsConfigurationToTerraform, true)(this._analyticsConfiguration.internalValue),
-      refresh_token_rotation: cdktf.listMapper(cognitoManagedUserPoolClientRefreshTokenRotationToTerraform, true)(this._refreshTokenRotation.internalValue),
-      token_validity_units: cdktf.listMapper(cognitoManagedUserPoolClientTokenValidityUnitsToTerraform, true)(this._tokenValidityUnits.internalValue),
+      access_token_validity: cdktn.numberToTerraform(this._accessTokenValidity),
+      allowed_oauth_flows: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedOauthFlows),
+      allowed_oauth_flows_user_pool_client: cdktn.booleanToTerraform(this._allowedOauthFlowsUserPoolClient),
+      allowed_oauth_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedOauthScopes),
+      auth_session_validity: cdktn.numberToTerraform(this._authSessionValidity),
+      callback_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(this._callbackUrls),
+      default_redirect_uri: cdktn.stringToTerraform(this._defaultRedirectUri),
+      enable_propagate_additional_user_context_data: cdktn.booleanToTerraform(this._enablePropagateAdditionalUserContextData),
+      enable_token_revocation: cdktn.booleanToTerraform(this._enableTokenRevocation),
+      explicit_auth_flows: cdktn.listMapper(cdktn.stringToTerraform, false)(this._explicitAuthFlows),
+      id_token_validity: cdktn.numberToTerraform(this._idTokenValidity),
+      logout_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(this._logoutUrls),
+      name_pattern: cdktn.stringToTerraform(this._namePattern),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      prevent_user_existence_errors: cdktn.stringToTerraform(this._preventUserExistenceErrors),
+      read_attributes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._readAttributes),
+      refresh_token_validity: cdktn.numberToTerraform(this._refreshTokenValidity),
+      region: cdktn.stringToTerraform(this._region),
+      supported_identity_providers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportedIdentityProviders),
+      user_pool_id: cdktn.stringToTerraform(this._userPoolId),
+      write_attributes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._writeAttributes),
+      analytics_configuration: cdktn.listMapper(cognitoManagedUserPoolClientAnalyticsConfigurationToTerraform, true)(this._analyticsConfiguration.internalValue),
+      refresh_token_rotation: cdktn.listMapper(cognitoManagedUserPoolClientRefreshTokenRotationToTerraform, true)(this._refreshTokenRotation.internalValue),
+      token_validity_units: cdktn.listMapper(cognitoManagedUserPoolClientTokenValidityUnitsToTerraform, true)(this._tokenValidityUnits.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_token_validity: {
-        value: cdktf.numberToHclTerraform(this._accessTokenValidity),
+        value: cdktn.numberToHclTerraform(this._accessTokenValidity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       allowed_oauth_flows: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedOauthFlows),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedOauthFlows),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_oauth_flows_user_pool_client: {
-        value: cdktf.booleanToHclTerraform(this._allowedOauthFlowsUserPoolClient),
+        value: cdktn.booleanToHclTerraform(this._allowedOauthFlowsUserPoolClient),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allowed_oauth_scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedOauthScopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedOauthScopes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       auth_session_validity: {
-        value: cdktf.numberToHclTerraform(this._authSessionValidity),
+        value: cdktn.numberToHclTerraform(this._authSessionValidity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       callback_urls: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._callbackUrls),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._callbackUrls),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       default_redirect_uri: {
-        value: cdktf.stringToHclTerraform(this._defaultRedirectUri),
+        value: cdktn.stringToHclTerraform(this._defaultRedirectUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_propagate_additional_user_context_data: {
-        value: cdktf.booleanToHclTerraform(this._enablePropagateAdditionalUserContextData),
+        value: cdktn.booleanToHclTerraform(this._enablePropagateAdditionalUserContextData),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_token_revocation: {
-        value: cdktf.booleanToHclTerraform(this._enableTokenRevocation),
+        value: cdktn.booleanToHclTerraform(this._enableTokenRevocation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       explicit_auth_flows: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._explicitAuthFlows),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._explicitAuthFlows),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id_token_validity: {
-        value: cdktf.numberToHclTerraform(this._idTokenValidity),
+        value: cdktn.numberToHclTerraform(this._idTokenValidity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       logout_urls: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logoutUrls),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._logoutUrls),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name_pattern: {
-        value: cdktf.stringToHclTerraform(this._namePattern),
+        value: cdktn.stringToHclTerraform(this._namePattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prevent_user_existence_errors: {
-        value: cdktf.stringToHclTerraform(this._preventUserExistenceErrors),
+        value: cdktn.stringToHclTerraform(this._preventUserExistenceErrors),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       read_attributes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._readAttributes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._readAttributes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       refresh_token_validity: {
-        value: cdktf.numberToHclTerraform(this._refreshTokenValidity),
+        value: cdktn.numberToHclTerraform(this._refreshTokenValidity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       supported_identity_providers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedIdentityProviders),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportedIdentityProviders),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       user_pool_id: {
-        value: cdktf.stringToHclTerraform(this._userPoolId),
+        value: cdktn.stringToHclTerraform(this._userPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       write_attributes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._writeAttributes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._writeAttributes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       analytics_configuration: {
-        value: cdktf.listMapperHcl(cognitoManagedUserPoolClientAnalyticsConfigurationToHclTerraform, true)(this._analyticsConfiguration.internalValue),
+        value: cdktn.listMapperHcl(cognitoManagedUserPoolClientAnalyticsConfigurationToHclTerraform, true)(this._analyticsConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CognitoManagedUserPoolClientAnalyticsConfigurationList",
       },
       refresh_token_rotation: {
-        value: cdktf.listMapperHcl(cognitoManagedUserPoolClientRefreshTokenRotationToHclTerraform, true)(this._refreshTokenRotation.internalValue),
+        value: cdktn.listMapperHcl(cognitoManagedUserPoolClientRefreshTokenRotationToHclTerraform, true)(this._refreshTokenRotation.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CognitoManagedUserPoolClientRefreshTokenRotationList",
       },
       token_validity_units: {
-        value: cdktf.listMapperHcl(cognitoManagedUserPoolClientTokenValidityUnitsToHclTerraform, true)(this._tokenValidityUnits.internalValue),
+        value: cdktn.listMapperHcl(cognitoManagedUserPoolClientTokenValidityUnitsToHclTerraform, true)(this._tokenValidityUnits.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CognitoManagedUserPoolClientTokenValidityUnitsList",

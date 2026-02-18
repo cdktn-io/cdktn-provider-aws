@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlueUserDefinedFunctionConfig extends cdktf.TerraformMetaArguments {
+export interface GlueUserDefinedFunctionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_user_defined_function#catalog_id GlueUserDefinedFunction#catalog_id}
   */
@@ -54,7 +54,7 @@ export interface GlueUserDefinedFunctionConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_user_defined_function#resource_uris GlueUserDefinedFunction#resource_uris}
   */
-  readonly resourceUris?: GlueUserDefinedFunctionResourceUris[] | cdktf.IResolvable;
+  readonly resourceUris?: GlueUserDefinedFunctionResourceUris[] | cdktn.IResolvable;
 }
 export interface GlueUserDefinedFunctionResourceUris {
   /**
@@ -67,32 +67,32 @@ export interface GlueUserDefinedFunctionResourceUris {
   readonly uri: string;
 }
 
-export function glueUserDefinedFunctionResourceUrisToTerraform(struct?: GlueUserDefinedFunctionResourceUris | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueUserDefinedFunctionResourceUrisToTerraform(struct?: GlueUserDefinedFunctionResourceUris | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_type: cdktf.stringToTerraform(struct!.resourceType),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
-export function glueUserDefinedFunctionResourceUrisToHclTerraform(struct?: GlueUserDefinedFunctionResourceUris | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function glueUserDefinedFunctionResourceUrisToHclTerraform(struct?: GlueUserDefinedFunctionResourceUris | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,9 +103,9 @@ export function glueUserDefinedFunctionResourceUrisToHclTerraform(struct?: GlueU
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueUserDefinedFunctionResourceUrisOutputReference extends cdktf.ComplexObject {
+export class GlueUserDefinedFunctionResourceUrisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -113,11 +113,11 @@ export class GlueUserDefinedFunctionResourceUrisOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlueUserDefinedFunctionResourceUris | cdktf.IResolvable | undefined {
+  public get internalValue(): GlueUserDefinedFunctionResourceUris | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -134,14 +134,14 @@ export class GlueUserDefinedFunctionResourceUrisOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlueUserDefinedFunctionResourceUris | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlueUserDefinedFunctionResourceUris | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resourceType = undefined;
       this._uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,15 +180,15 @@ export class GlueUserDefinedFunctionResourceUrisOutputReference extends cdktf.Co
   }
 }
 
-export class GlueUserDefinedFunctionResourceUrisList extends cdktf.ComplexList {
-  public internalValue? : GlueUserDefinedFunctionResourceUris[] | cdktf.IResolvable
+export class GlueUserDefinedFunctionResourceUrisList extends cdktn.ComplexList {
+  public internalValue? : GlueUserDefinedFunctionResourceUris[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,7 +203,7 @@ export class GlueUserDefinedFunctionResourceUrisList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_user_defined_function aws_glue_user_defined_function}
 */
-export class GlueUserDefinedFunction extends cdktf.TerraformResource {
+export class GlueUserDefinedFunction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -214,14 +214,14 @@ export class GlueUserDefinedFunction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlueUserDefinedFunction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlueUserDefinedFunction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueUserDefinedFunction to import
   * @param importFromId The id of the existing GlueUserDefinedFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_user_defined_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueUserDefinedFunction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_user_defined_function", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_user_defined_function", importId: importFromId, provider });
       }
 
   // ===========
@@ -394,7 +394,7 @@ export class GlueUserDefinedFunction extends cdktf.TerraformResource {
   public get resourceUris() {
     return this._resourceUris;
   }
-  public putResourceUris(value: GlueUserDefinedFunctionResourceUris[] | cdktf.IResolvable) {
+  public putResourceUris(value: GlueUserDefinedFunctionResourceUris[] | cdktn.IResolvable) {
     this._resourceUris.internalValue = value;
   }
   public resetResourceUris() {
@@ -411,70 +411,70 @@ export class GlueUserDefinedFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      class_name: cdktf.stringToTerraform(this._className),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      owner_name: cdktf.stringToTerraform(this._ownerName),
-      owner_type: cdktf.stringToTerraform(this._ownerType),
-      region: cdktf.stringToTerraform(this._region),
-      resource_uris: cdktf.listMapper(glueUserDefinedFunctionResourceUrisToTerraform, true)(this._resourceUris.internalValue),
+      catalog_id: cdktn.stringToTerraform(this._catalogId),
+      class_name: cdktn.stringToTerraform(this._className),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      owner_name: cdktn.stringToTerraform(this._ownerName),
+      owner_type: cdktn.stringToTerraform(this._ownerType),
+      region: cdktn.stringToTerraform(this._region),
+      resource_uris: cdktn.listMapper(glueUserDefinedFunctionResourceUrisToTerraform, true)(this._resourceUris.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog_id: {
-        value: cdktf.stringToHclTerraform(this._catalogId),
+        value: cdktn.stringToHclTerraform(this._catalogId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       class_name: {
-        value: cdktf.stringToHclTerraform(this._className),
+        value: cdktn.stringToHclTerraform(this._className),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_name: {
-        value: cdktf.stringToHclTerraform(this._ownerName),
+        value: cdktn.stringToHclTerraform(this._ownerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_type: {
-        value: cdktf.stringToHclTerraform(this._ownerType),
+        value: cdktn.stringToHclTerraform(this._ownerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_uris: {
-        value: cdktf.listMapperHcl(glueUserDefinedFunctionResourceUrisToHclTerraform, true)(this._resourceUris.internalValue),
+        value: cdktn.listMapperHcl(glueUserDefinedFunctionResourceUrisToHclTerraform, true)(this._resourceUris.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "GlueUserDefinedFunctionResourceUrisList",

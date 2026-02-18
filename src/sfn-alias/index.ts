@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SfnAliasConfig extends cdktf.TerraformMetaArguments {
+export interface SfnAliasConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sfn_alias#description SfnAlias#description}
   */
@@ -38,7 +38,7 @@ export interface SfnAliasConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sfn_alias#routing_configuration SfnAlias#routing_configuration}
   */
-  readonly routingConfiguration: SfnAliasRoutingConfiguration[] | cdktf.IResolvable;
+  readonly routingConfiguration: SfnAliasRoutingConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -57,32 +57,32 @@ export interface SfnAliasRoutingConfiguration {
   readonly weight: number;
 }
 
-export function sfnAliasRoutingConfigurationToTerraform(struct?: SfnAliasRoutingConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sfnAliasRoutingConfigurationToTerraform(struct?: SfnAliasRoutingConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    state_machine_version_arn: cdktf.stringToTerraform(struct!.stateMachineVersionArn),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    state_machine_version_arn: cdktn.stringToTerraform(struct!.stateMachineVersionArn),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
-export function sfnAliasRoutingConfigurationToHclTerraform(struct?: SfnAliasRoutingConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sfnAliasRoutingConfigurationToHclTerraform(struct?: SfnAliasRoutingConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     state_machine_version_arn: {
-      value: cdktf.stringToHclTerraform(struct!.stateMachineVersionArn),
+      value: cdktn.stringToHclTerraform(struct!.stateMachineVersionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -93,9 +93,9 @@ export function sfnAliasRoutingConfigurationToHclTerraform(struct?: SfnAliasRout
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SfnAliasRoutingConfigurationOutputReference extends cdktf.ComplexObject {
+export class SfnAliasRoutingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -103,11 +103,11 @@ export class SfnAliasRoutingConfigurationOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SfnAliasRoutingConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SfnAliasRoutingConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -124,14 +124,14 @@ export class SfnAliasRoutingConfigurationOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SfnAliasRoutingConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SfnAliasRoutingConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._stateMachineVersionArn = undefined;
       this._weight = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -170,15 +170,15 @@ export class SfnAliasRoutingConfigurationOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class SfnAliasRoutingConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SfnAliasRoutingConfiguration[] | cdktf.IResolvable
+export class SfnAliasRoutingConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SfnAliasRoutingConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,39 +204,39 @@ export interface SfnAliasTimeouts {
   readonly update?: string;
 }
 
-export function sfnAliasTimeoutsToTerraform(struct?: SfnAliasTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sfnAliasTimeoutsToTerraform(struct?: SfnAliasTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sfnAliasTimeoutsToHclTerraform(struct?: SfnAliasTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sfnAliasTimeoutsToHclTerraform(struct?: SfnAliasTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -247,19 +247,19 @@ export function sfnAliasTimeoutsToHclTerraform(struct?: SfnAliasTimeouts | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SfnAliasTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SfnAliasTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SfnAliasTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SfnAliasTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -280,7 +280,7 @@ export class SfnAliasTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SfnAliasTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SfnAliasTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -288,7 +288,7 @@ export class SfnAliasTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -353,7 +353,7 @@ export class SfnAliasTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sfn_alias aws_sfn_alias}
 */
-export class SfnAlias extends cdktf.TerraformResource {
+export class SfnAlias extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -364,14 +364,14 @@ export class SfnAlias extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SfnAlias resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SfnAlias resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SfnAlias to import
   * @param importFromId The id of the existing SfnAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sfn_alias#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SfnAlias to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sfn_alias", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sfn_alias", importId: importFromId, provider });
       }
 
   // ===========
@@ -489,7 +489,7 @@ export class SfnAlias extends cdktf.TerraformResource {
   public get routingConfiguration() {
     return this._routingConfiguration;
   }
-  public putRoutingConfiguration(value: SfnAliasRoutingConfiguration[] | cdktf.IResolvable) {
+  public putRoutingConfiguration(value: SfnAliasRoutingConfiguration[] | cdktn.IResolvable) {
     this._routingConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -519,11 +519,11 @@ export class SfnAlias extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      routing_configuration: cdktf.listMapper(sfnAliasRoutingConfigurationToTerraform, true)(this._routingConfiguration.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      routing_configuration: cdktn.listMapper(sfnAliasRoutingConfigurationToTerraform, true)(this._routingConfiguration.internalValue),
       timeouts: sfnAliasTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -531,31 +531,31 @@ export class SfnAlias extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_configuration: {
-        value: cdktf.listMapperHcl(sfnAliasRoutingConfigurationToHclTerraform, true)(this._routingConfiguration.internalValue),
+        value: cdktn.listMapperHcl(sfnAliasRoutingConfigurationToHclTerraform, true)(this._routingConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SfnAliasRoutingConfigurationList",

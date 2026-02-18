@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodepipelineConfig extends cdktf.TerraformMetaArguments {
+export interface CodepipelineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}
   */
@@ -54,32 +54,32 @@ export interface CodepipelineConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
   */
-  readonly artifactStore: CodepipelineArtifactStore[] | cdktf.IResolvable;
+  readonly artifactStore: CodepipelineArtifactStore[] | cdktn.IResolvable;
   /**
   * stage block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#stage Codepipeline#stage}
   */
-  readonly stage: CodepipelineStage[] | cdktf.IResolvable;
+  readonly stage: CodepipelineStage[] | cdktn.IResolvable;
   /**
   * trigger block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#trigger Codepipeline#trigger}
   */
-  readonly trigger?: CodepipelineTrigger[] | cdktf.IResolvable;
+  readonly trigger?: CodepipelineTrigger[] | cdktn.IResolvable;
   /**
   * variable block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#variable Codepipeline#variable}
   */
-  readonly variable?: CodepipelineVariable[] | cdktf.IResolvable;
+  readonly variable?: CodepipelineVariable[] | cdktn.IResolvable;
 }
 export interface CodepipelineTriggerAllGitConfigurationPullRequestBranches {
 }
 
 export function codepipelineTriggerAllGitConfigurationPullRequestBranchesToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequestBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -88,8 +88,8 @@ export function codepipelineTriggerAllGitConfigurationPullRequestBranchesToTerra
 
 
 export function codepipelineTriggerAllGitConfigurationPullRequestBranchesToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequestBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -97,7 +97,7 @@ export function codepipelineTriggerAllGitConfigurationPullRequestBranchesToHclTe
   return attrs;
 }
 
-export class CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -106,7 +106,7 @@ export class CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -136,14 +136,14 @@ export class CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputRefe
   }
 }
 
-export class CodepipelineTriggerAllGitConfigurationPullRequestBranchesList extends cdktf.ComplexList {
+export class CodepipelineTriggerAllGitConfigurationPullRequestBranchesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -158,8 +158,8 @@ export interface CodepipelineTriggerAllGitConfigurationPullRequestFilePaths {
 }
 
 export function codepipelineTriggerAllGitConfigurationPullRequestFilePathsToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequestFilePaths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -168,8 +168,8 @@ export function codepipelineTriggerAllGitConfigurationPullRequestFilePathsToTerr
 
 
 export function codepipelineTriggerAllGitConfigurationPullRequestFilePathsToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequestFilePaths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -177,7 +177,7 @@ export function codepipelineTriggerAllGitConfigurationPullRequestFilePathsToHclT
   return attrs;
 }
 
-export class CodepipelineTriggerAllGitConfigurationPullRequestFilePathsOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerAllGitConfigurationPullRequestFilePathsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -186,7 +186,7 @@ export class CodepipelineTriggerAllGitConfigurationPullRequestFilePathsOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -216,14 +216,14 @@ export class CodepipelineTriggerAllGitConfigurationPullRequestFilePathsOutputRef
   }
 }
 
-export class CodepipelineTriggerAllGitConfigurationPullRequestFilePathsList extends cdktf.ComplexList {
+export class CodepipelineTriggerAllGitConfigurationPullRequestFilePathsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -238,8 +238,8 @@ export interface CodepipelineTriggerAllGitConfigurationPullRequest {
 }
 
 export function codepipelineTriggerAllGitConfigurationPullRequestToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -248,8 +248,8 @@ export function codepipelineTriggerAllGitConfigurationPullRequestToTerraform(str
 
 
 export function codepipelineTriggerAllGitConfigurationPullRequestToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPullRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -257,7 +257,7 @@ export function codepipelineTriggerAllGitConfigurationPullRequestToHclTerraform(
   return attrs;
 }
 
-export class CodepipelineTriggerAllGitConfigurationPullRequestOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerAllGitConfigurationPullRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -266,7 +266,7 @@ export class CodepipelineTriggerAllGitConfigurationPullRequestOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -303,14 +303,14 @@ export class CodepipelineTriggerAllGitConfigurationPullRequestOutputReference ex
   }
 }
 
-export class CodepipelineTriggerAllGitConfigurationPullRequestList extends cdktf.ComplexList {
+export class CodepipelineTriggerAllGitConfigurationPullRequestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -325,8 +325,8 @@ export interface CodepipelineTriggerAllGitConfigurationPushBranches {
 }
 
 export function codepipelineTriggerAllGitConfigurationPushBranchesToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -335,8 +335,8 @@ export function codepipelineTriggerAllGitConfigurationPushBranchesToTerraform(st
 
 
 export function codepipelineTriggerAllGitConfigurationPushBranchesToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -344,7 +344,7 @@ export function codepipelineTriggerAllGitConfigurationPushBranchesToHclTerraform
   return attrs;
 }
 
-export class CodepipelineTriggerAllGitConfigurationPushBranchesOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerAllGitConfigurationPushBranchesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -353,7 +353,7 @@ export class CodepipelineTriggerAllGitConfigurationPushBranchesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -383,14 +383,14 @@ export class CodepipelineTriggerAllGitConfigurationPushBranchesOutputReference e
   }
 }
 
-export class CodepipelineTriggerAllGitConfigurationPushBranchesList extends cdktf.ComplexList {
+export class CodepipelineTriggerAllGitConfigurationPushBranchesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -405,8 +405,8 @@ export interface CodepipelineTriggerAllGitConfigurationPushFilePaths {
 }
 
 export function codepipelineTriggerAllGitConfigurationPushFilePathsToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushFilePaths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -415,8 +415,8 @@ export function codepipelineTriggerAllGitConfigurationPushFilePathsToTerraform(s
 
 
 export function codepipelineTriggerAllGitConfigurationPushFilePathsToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushFilePaths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -424,7 +424,7 @@ export function codepipelineTriggerAllGitConfigurationPushFilePathsToHclTerrafor
   return attrs;
 }
 
-export class CodepipelineTriggerAllGitConfigurationPushFilePathsOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerAllGitConfigurationPushFilePathsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -433,7 +433,7 @@ export class CodepipelineTriggerAllGitConfigurationPushFilePathsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -463,14 +463,14 @@ export class CodepipelineTriggerAllGitConfigurationPushFilePathsOutputReference 
   }
 }
 
-export class CodepipelineTriggerAllGitConfigurationPushFilePathsList extends cdktf.ComplexList {
+export class CodepipelineTriggerAllGitConfigurationPushFilePathsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -485,8 +485,8 @@ export interface CodepipelineTriggerAllGitConfigurationPushTags {
 }
 
 export function codepipelineTriggerAllGitConfigurationPushTagsToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -495,8 +495,8 @@ export function codepipelineTriggerAllGitConfigurationPushTagsToTerraform(struct
 
 
 export function codepipelineTriggerAllGitConfigurationPushTagsToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPushTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -504,7 +504,7 @@ export function codepipelineTriggerAllGitConfigurationPushTagsToHclTerraform(str
   return attrs;
 }
 
-export class CodepipelineTriggerAllGitConfigurationPushTagsOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerAllGitConfigurationPushTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -513,7 +513,7 @@ export class CodepipelineTriggerAllGitConfigurationPushTagsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -543,14 +543,14 @@ export class CodepipelineTriggerAllGitConfigurationPushTagsOutputReference exten
   }
 }
 
-export class CodepipelineTriggerAllGitConfigurationPushTagsList extends cdktf.ComplexList {
+export class CodepipelineTriggerAllGitConfigurationPushTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -565,8 +565,8 @@ export interface CodepipelineTriggerAllGitConfigurationPush {
 }
 
 export function codepipelineTriggerAllGitConfigurationPushToTerraform(struct?: CodepipelineTriggerAllGitConfigurationPush): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -575,8 +575,8 @@ export function codepipelineTriggerAllGitConfigurationPushToTerraform(struct?: C
 
 
 export function codepipelineTriggerAllGitConfigurationPushToHclTerraform(struct?: CodepipelineTriggerAllGitConfigurationPush): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -584,7 +584,7 @@ export function codepipelineTriggerAllGitConfigurationPushToHclTerraform(struct?
   return attrs;
 }
 
-export class CodepipelineTriggerAllGitConfigurationPushOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerAllGitConfigurationPushOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -593,7 +593,7 @@ export class CodepipelineTriggerAllGitConfigurationPushOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -631,14 +631,14 @@ export class CodepipelineTriggerAllGitConfigurationPushOutputReference extends c
   }
 }
 
-export class CodepipelineTriggerAllGitConfigurationPushList extends cdktf.ComplexList {
+export class CodepipelineTriggerAllGitConfigurationPushList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -653,8 +653,8 @@ export interface CodepipelineTriggerAllGitConfiguration {
 }
 
 export function codepipelineTriggerAllGitConfigurationToTerraform(struct?: CodepipelineTriggerAllGitConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -663,8 +663,8 @@ export function codepipelineTriggerAllGitConfigurationToTerraform(struct?: Codep
 
 
 export function codepipelineTriggerAllGitConfigurationToHclTerraform(struct?: CodepipelineTriggerAllGitConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -672,7 +672,7 @@ export function codepipelineTriggerAllGitConfigurationToHclTerraform(struct?: Co
   return attrs;
 }
 
-export class CodepipelineTriggerAllGitConfigurationOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerAllGitConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -681,7 +681,7 @@ export class CodepipelineTriggerAllGitConfigurationOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -718,14 +718,14 @@ export class CodepipelineTriggerAllGitConfigurationOutputReference extends cdktf
   }
 }
 
-export class CodepipelineTriggerAllGitConfigurationList extends cdktf.ComplexList {
+export class CodepipelineTriggerAllGitConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -740,8 +740,8 @@ export interface CodepipelineTriggerAll {
 }
 
 export function codepipelineTriggerAllToTerraform(struct?: CodepipelineTriggerAll): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -750,8 +750,8 @@ export function codepipelineTriggerAllToTerraform(struct?: CodepipelineTriggerAl
 
 
 export function codepipelineTriggerAllToHclTerraform(struct?: CodepipelineTriggerAll): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -759,7 +759,7 @@ export function codepipelineTriggerAllToHclTerraform(struct?: CodepipelineTrigge
   return attrs;
 }
 
-export class CodepipelineTriggerAllOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerAllOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -768,7 +768,7 @@ export class CodepipelineTriggerAllOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -799,14 +799,14 @@ export class CodepipelineTriggerAllOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class CodepipelineTriggerAllList extends cdktf.ComplexList {
+export class CodepipelineTriggerAllList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -832,31 +832,31 @@ export interface CodepipelineArtifactStoreEncryptionKey {
 }
 
 export function codepipelineArtifactStoreEncryptionKeyToTerraform(struct?: CodepipelineArtifactStoreEncryptionKeyOutputReference | CodepipelineArtifactStoreEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    type: cdktf.stringToTerraform(struct!.type),
+    id: cdktn.stringToTerraform(struct!.id),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function codepipelineArtifactStoreEncryptionKeyToHclTerraform(struct?: CodepipelineArtifactStoreEncryptionKeyOutputReference | CodepipelineArtifactStoreEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -867,14 +867,14 @@ export function codepipelineArtifactStoreEncryptionKeyToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -952,40 +952,40 @@ export interface CodepipelineArtifactStore {
   readonly encryptionKey?: CodepipelineArtifactStoreEncryptionKey;
 }
 
-export function codepipelineArtifactStoreToTerraform(struct?: CodepipelineArtifactStore | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineArtifactStoreToTerraform(struct?: CodepipelineArtifactStore | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    location: cdktf.stringToTerraform(struct!.location),
-    region: cdktf.stringToTerraform(struct!.region),
-    type: cdktf.stringToTerraform(struct!.type),
+    location: cdktn.stringToTerraform(struct!.location),
+    region: cdktn.stringToTerraform(struct!.region),
+    type: cdktn.stringToTerraform(struct!.type),
     encryption_key: codepipelineArtifactStoreEncryptionKeyToTerraform(struct!.encryptionKey),
   }
 }
 
 
-export function codepipelineArtifactStoreToHclTerraform(struct?: CodepipelineArtifactStore | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineArtifactStoreToHclTerraform(struct?: CodepipelineArtifactStore | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1002,9 +1002,9 @@ export function codepipelineArtifactStoreToHclTerraform(struct?: CodepipelineArt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineArtifactStoreOutputReference extends cdktf.ComplexObject {
+export class CodepipelineArtifactStoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1012,11 +1012,11 @@ export class CodepipelineArtifactStoreOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineArtifactStore | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineArtifactStore | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1041,7 +1041,7 @@ export class CodepipelineArtifactStoreOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineArtifactStore | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineArtifactStore | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1050,7 +1050,7 @@ export class CodepipelineArtifactStoreOutputReference extends cdktf.ComplexObjec
       this._type = undefined;
       this._encryptionKey.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1123,15 +1123,15 @@ export class CodepipelineArtifactStoreOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class CodepipelineArtifactStoreList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineArtifactStore[] | cdktf.IResolvable
+export class CodepipelineArtifactStoreList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineArtifactStore[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1197,109 +1197,109 @@ export interface CodepipelineStageAction {
   readonly version: string;
 }
 
-export function codepipelineStageActionToTerraform(struct?: CodepipelineStageAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageActionToTerraform(struct?: CodepipelineStageAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    category: cdktf.stringToTerraform(struct!.category),
-    configuration: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configuration),
-    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputArtifacts),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    output_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.outputArtifacts),
-    owner: cdktf.stringToTerraform(struct!.owner),
-    provider: cdktf.stringToTerraform(struct!.provider),
-    region: cdktf.stringToTerraform(struct!.region),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    run_order: cdktf.numberToTerraform(struct!.runOrder),
-    timeout_in_minutes: cdktf.numberToTerraform(struct!.timeoutInMinutes),
-    version: cdktf.stringToTerraform(struct!.version),
+    category: cdktn.stringToTerraform(struct!.category),
+    configuration: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.configuration),
+    input_artifacts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inputArtifacts),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    output_artifacts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.outputArtifacts),
+    owner: cdktn.stringToTerraform(struct!.owner),
+    provider: cdktn.stringToTerraform(struct!.provider),
+    region: cdktn.stringToTerraform(struct!.region),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    run_order: cdktn.numberToTerraform(struct!.runOrder),
+    timeout_in_minutes: cdktn.numberToTerraform(struct!.timeoutInMinutes),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
-export function codepipelineStageActionToHclTerraform(struct?: CodepipelineStageAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageActionToHclTerraform(struct?: CodepipelineStageAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     category: {
-      value: cdktf.stringToHclTerraform(struct!.category),
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     configuration: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configuration),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.configuration),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     input_artifacts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputArtifacts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inputArtifacts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_artifacts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.outputArtifacts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.outputArtifacts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     owner: {
-      value: cdktf.stringToHclTerraform(struct!.owner),
+      value: cdktn.stringToHclTerraform(struct!.owner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provider: {
-      value: cdktf.stringToHclTerraform(struct!.provider),
+      value: cdktn.stringToHclTerraform(struct!.provider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_order: {
-      value: cdktf.numberToHclTerraform(struct!.runOrder),
+      value: cdktn.numberToHclTerraform(struct!.runOrder),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1310,9 +1310,9 @@ export function codepipelineStageActionToHclTerraform(struct?: CodepipelineStage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageActionOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1320,11 +1320,11 @@ export class CodepipelineStageActionOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineStageAction | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineStageAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1385,7 +1385,7 @@ export class CodepipelineStageActionOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineStageAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineStageAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1403,7 +1403,7 @@ export class CodepipelineStageActionOutputReference extends cdktf.ComplexObject 
       this._timeoutInMinutes = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1620,15 +1620,15 @@ export class CodepipelineStageActionOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class CodepipelineStageActionList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineStageAction[] | cdktf.IResolvable
+export class CodepipelineStageActionList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineStageAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1659,45 +1659,45 @@ export interface CodepipelineStageBeforeEntryConditionRuleRuleTypeId {
 }
 
 export function codepipelineStageBeforeEntryConditionRuleRuleTypeIdToTerraform(struct?: CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference | CodepipelineStageBeforeEntryConditionRuleRuleTypeId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    category: cdktf.stringToTerraform(struct!.category),
-    owner: cdktf.stringToTerraform(struct!.owner),
-    provider: cdktf.stringToTerraform(struct!.provider),
-    version: cdktf.stringToTerraform(struct!.version),
+    category: cdktn.stringToTerraform(struct!.category),
+    owner: cdktn.stringToTerraform(struct!.owner),
+    provider: cdktn.stringToTerraform(struct!.provider),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function codepipelineStageBeforeEntryConditionRuleRuleTypeIdToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference | CodepipelineStageBeforeEntryConditionRuleRuleTypeId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     category: {
-      value: cdktf.stringToHclTerraform(struct!.category),
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner: {
-      value: cdktf.stringToHclTerraform(struct!.owner),
+      value: cdktn.stringToHclTerraform(struct!.owner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provider: {
-      value: cdktf.stringToHclTerraform(struct!.provider),
+      value: cdktn.stringToHclTerraform(struct!.provider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1708,14 +1708,14 @@ export function codepipelineStageBeforeEntryConditionRuleRuleTypeIdToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1853,68 +1853,68 @@ export interface CodepipelineStageBeforeEntryConditionRule {
   readonly ruleTypeId: CodepipelineStageBeforeEntryConditionRuleRuleTypeId;
 }
 
-export function codepipelineStageBeforeEntryConditionRuleToTerraform(struct?: CodepipelineStageBeforeEntryConditionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageBeforeEntryConditionRuleToTerraform(struct?: CodepipelineStageBeforeEntryConditionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
-    configuration: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configuration),
-    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputArtifacts),
-    name: cdktf.stringToTerraform(struct!.name),
-    region: cdktf.stringToTerraform(struct!.region),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    timeout_in_minutes: cdktf.numberToTerraform(struct!.timeoutInMinutes),
+    commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.commands),
+    configuration: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.configuration),
+    input_artifacts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inputArtifacts),
+    name: cdktn.stringToTerraform(struct!.name),
+    region: cdktn.stringToTerraform(struct!.region),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    timeout_in_minutes: cdktn.numberToTerraform(struct!.timeoutInMinutes),
     rule_type_id: codepipelineStageBeforeEntryConditionRuleRuleTypeIdToTerraform(struct!.ruleTypeId),
   }
 }
 
 
-export function codepipelineStageBeforeEntryConditionRuleToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageBeforeEntryConditionRuleToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     commands: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commands),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.commands),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     configuration: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configuration),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.configuration),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     input_artifacts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputArtifacts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inputArtifacts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1931,9 +1931,9 @@ export function codepipelineStageBeforeEntryConditionRuleToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageBeforeEntryConditionRuleOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageBeforeEntryConditionRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1941,11 +1941,11 @@ export class CodepipelineStageBeforeEntryConditionRuleOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineStageBeforeEntryConditionRule | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineStageBeforeEntryConditionRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1986,7 +1986,7 @@ export class CodepipelineStageBeforeEntryConditionRuleOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineStageBeforeEntryConditionRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineStageBeforeEntryConditionRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1999,7 +1999,7 @@ export class CodepipelineStageBeforeEntryConditionRuleOutputReference extends cd
       this._timeoutInMinutes = undefined;
       this._ruleTypeId.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2140,15 +2140,15 @@ export class CodepipelineStageBeforeEntryConditionRuleOutputReference extends cd
   }
 }
 
-export class CodepipelineStageBeforeEntryConditionRuleList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineStageBeforeEntryConditionRule[] | cdktf.IResolvable
+export class CodepipelineStageBeforeEntryConditionRuleList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineStageBeforeEntryConditionRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2169,35 +2169,35 @@ export interface CodepipelineStageBeforeEntryCondition {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#rule Codepipeline#rule}
   */
-  readonly rule: CodepipelineStageBeforeEntryConditionRule[] | cdktf.IResolvable;
+  readonly rule: CodepipelineStageBeforeEntryConditionRule[] | cdktn.IResolvable;
 }
 
 export function codepipelineStageBeforeEntryConditionToTerraform(struct?: CodepipelineStageBeforeEntryConditionOutputReference | CodepipelineStageBeforeEntryCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    result: cdktf.stringToTerraform(struct!.result),
-    rule: cdktf.listMapper(codepipelineStageBeforeEntryConditionRuleToTerraform, true)(struct!.rule),
+    result: cdktn.stringToTerraform(struct!.result),
+    rule: cdktn.listMapper(codepipelineStageBeforeEntryConditionRuleToTerraform, true)(struct!.rule),
   }
 }
 
 
 export function codepipelineStageBeforeEntryConditionToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionOutputReference | CodepipelineStageBeforeEntryCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     result: {
-      value: cdktf.stringToHclTerraform(struct!.result),
+      value: cdktn.stringToHclTerraform(struct!.result),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule: {
-      value: cdktf.listMapperHcl(codepipelineStageBeforeEntryConditionRuleToHclTerraform, true)(struct!.rule),
+      value: cdktn.listMapperHcl(codepipelineStageBeforeEntryConditionRuleToHclTerraform, true)(struct!.rule),
       isBlock: true,
       type: "list",
       storageClassType: "CodepipelineStageBeforeEntryConditionRuleList",
@@ -2208,14 +2208,14 @@ export function codepipelineStageBeforeEntryConditionToHclTerraform(struct?: Cod
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageBeforeEntryConditionOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageBeforeEntryConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2267,7 +2267,7 @@ export class CodepipelineStageBeforeEntryConditionOutputReference extends cdktf.
   public get rule() {
     return this._rule;
   }
-  public putRule(value: CodepipelineStageBeforeEntryConditionRule[] | cdktf.IResolvable) {
+  public putRule(value: CodepipelineStageBeforeEntryConditionRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2285,8 +2285,8 @@ export interface CodepipelineStageBeforeEntry {
 }
 
 export function codepipelineStageBeforeEntryToTerraform(struct?: CodepipelineStageBeforeEntryOutputReference | CodepipelineStageBeforeEntry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2296,8 +2296,8 @@ export function codepipelineStageBeforeEntryToTerraform(struct?: CodepipelineSta
 
 
 export function codepipelineStageBeforeEntryToHclTerraform(struct?: CodepipelineStageBeforeEntryOutputReference | CodepipelineStageBeforeEntry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2313,14 +2313,14 @@ export function codepipelineStageBeforeEntryToHclTerraform(struct?: Codepipeline
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageBeforeEntryOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageBeforeEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2378,45 +2378,45 @@ export interface CodepipelineStageOnFailureConditionRuleRuleTypeId {
 }
 
 export function codepipelineStageOnFailureConditionRuleRuleTypeIdToTerraform(struct?: CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnFailureConditionRuleRuleTypeId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    category: cdktf.stringToTerraform(struct!.category),
-    owner: cdktf.stringToTerraform(struct!.owner),
-    provider: cdktf.stringToTerraform(struct!.provider),
-    version: cdktf.stringToTerraform(struct!.version),
+    category: cdktn.stringToTerraform(struct!.category),
+    owner: cdktn.stringToTerraform(struct!.owner),
+    provider: cdktn.stringToTerraform(struct!.provider),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function codepipelineStageOnFailureConditionRuleRuleTypeIdToHclTerraform(struct?: CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnFailureConditionRuleRuleTypeId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     category: {
-      value: cdktf.stringToHclTerraform(struct!.category),
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner: {
-      value: cdktf.stringToHclTerraform(struct!.owner),
+      value: cdktn.stringToHclTerraform(struct!.owner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provider: {
-      value: cdktf.stringToHclTerraform(struct!.provider),
+      value: cdktn.stringToHclTerraform(struct!.provider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2427,14 +2427,14 @@ export function codepipelineStageOnFailureConditionRuleRuleTypeIdToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2572,68 +2572,68 @@ export interface CodepipelineStageOnFailureConditionRule {
   readonly ruleTypeId: CodepipelineStageOnFailureConditionRuleRuleTypeId;
 }
 
-export function codepipelineStageOnFailureConditionRuleToTerraform(struct?: CodepipelineStageOnFailureConditionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageOnFailureConditionRuleToTerraform(struct?: CodepipelineStageOnFailureConditionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
-    configuration: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configuration),
-    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputArtifacts),
-    name: cdktf.stringToTerraform(struct!.name),
-    region: cdktf.stringToTerraform(struct!.region),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    timeout_in_minutes: cdktf.numberToTerraform(struct!.timeoutInMinutes),
+    commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.commands),
+    configuration: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.configuration),
+    input_artifacts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inputArtifacts),
+    name: cdktn.stringToTerraform(struct!.name),
+    region: cdktn.stringToTerraform(struct!.region),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    timeout_in_minutes: cdktn.numberToTerraform(struct!.timeoutInMinutes),
     rule_type_id: codepipelineStageOnFailureConditionRuleRuleTypeIdToTerraform(struct!.ruleTypeId),
   }
 }
 
 
-export function codepipelineStageOnFailureConditionRuleToHclTerraform(struct?: CodepipelineStageOnFailureConditionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageOnFailureConditionRuleToHclTerraform(struct?: CodepipelineStageOnFailureConditionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     commands: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commands),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.commands),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     configuration: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configuration),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.configuration),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     input_artifacts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputArtifacts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inputArtifacts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2650,9 +2650,9 @@ export function codepipelineStageOnFailureConditionRuleToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOnFailureConditionRuleOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOnFailureConditionRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2660,11 +2660,11 @@ export class CodepipelineStageOnFailureConditionRuleOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineStageOnFailureConditionRule | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineStageOnFailureConditionRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2705,7 +2705,7 @@ export class CodepipelineStageOnFailureConditionRuleOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineStageOnFailureConditionRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineStageOnFailureConditionRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2718,7 +2718,7 @@ export class CodepipelineStageOnFailureConditionRuleOutputReference extends cdkt
       this._timeoutInMinutes = undefined;
       this._ruleTypeId.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2859,15 +2859,15 @@ export class CodepipelineStageOnFailureConditionRuleOutputReference extends cdkt
   }
 }
 
-export class CodepipelineStageOnFailureConditionRuleList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineStageOnFailureConditionRule[] | cdktf.IResolvable
+export class CodepipelineStageOnFailureConditionRuleList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineStageOnFailureConditionRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2888,35 +2888,35 @@ export interface CodepipelineStageOnFailureCondition {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#rule Codepipeline#rule}
   */
-  readonly rule: CodepipelineStageOnFailureConditionRule[] | cdktf.IResolvable;
+  readonly rule: CodepipelineStageOnFailureConditionRule[] | cdktn.IResolvable;
 }
 
 export function codepipelineStageOnFailureConditionToTerraform(struct?: CodepipelineStageOnFailureConditionOutputReference | CodepipelineStageOnFailureCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    result: cdktf.stringToTerraform(struct!.result),
-    rule: cdktf.listMapper(codepipelineStageOnFailureConditionRuleToTerraform, true)(struct!.rule),
+    result: cdktn.stringToTerraform(struct!.result),
+    rule: cdktn.listMapper(codepipelineStageOnFailureConditionRuleToTerraform, true)(struct!.rule),
   }
 }
 
 
 export function codepipelineStageOnFailureConditionToHclTerraform(struct?: CodepipelineStageOnFailureConditionOutputReference | CodepipelineStageOnFailureCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     result: {
-      value: cdktf.stringToHclTerraform(struct!.result),
+      value: cdktn.stringToHclTerraform(struct!.result),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule: {
-      value: cdktf.listMapperHcl(codepipelineStageOnFailureConditionRuleToHclTerraform, true)(struct!.rule),
+      value: cdktn.listMapperHcl(codepipelineStageOnFailureConditionRuleToHclTerraform, true)(struct!.rule),
       isBlock: true,
       type: "list",
       storageClassType: "CodepipelineStageOnFailureConditionRuleList",
@@ -2927,14 +2927,14 @@ export function codepipelineStageOnFailureConditionToHclTerraform(struct?: Codep
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOnFailureConditionOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOnFailureConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2986,7 +2986,7 @@ export class CodepipelineStageOnFailureConditionOutputReference extends cdktf.Co
   public get rule() {
     return this._rule;
   }
-  public putRule(value: CodepipelineStageOnFailureConditionRule[] | cdktf.IResolvable) {
+  public putRule(value: CodepipelineStageOnFailureConditionRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3002,24 +3002,24 @@ export interface CodepipelineStageOnFailureRetryConfiguration {
 }
 
 export function codepipelineStageOnFailureRetryConfigurationToTerraform(struct?: CodepipelineStageOnFailureRetryConfigurationOutputReference | CodepipelineStageOnFailureRetryConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    retry_mode: cdktf.stringToTerraform(struct!.retryMode),
+    retry_mode: cdktn.stringToTerraform(struct!.retryMode),
   }
 }
 
 
 export function codepipelineStageOnFailureRetryConfigurationToHclTerraform(struct?: CodepipelineStageOnFailureRetryConfigurationOutputReference | CodepipelineStageOnFailureRetryConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     retry_mode: {
-      value: cdktf.stringToHclTerraform(struct!.retryMode),
+      value: cdktn.stringToHclTerraform(struct!.retryMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3030,14 +3030,14 @@ export function codepipelineStageOnFailureRetryConfigurationToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOnFailureRetryConfigurationOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOnFailureRetryConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3098,12 +3098,12 @@ export interface CodepipelineStageOnFailure {
 }
 
 export function codepipelineStageOnFailureToTerraform(struct?: CodepipelineStageOnFailureOutputReference | CodepipelineStageOnFailure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    result: cdktf.stringToTerraform(struct!.result),
+    result: cdktn.stringToTerraform(struct!.result),
     condition: codepipelineStageOnFailureConditionToTerraform(struct!.condition),
     retry_configuration: codepipelineStageOnFailureRetryConfigurationToTerraform(struct!.retryConfiguration),
   }
@@ -3111,13 +3111,13 @@ export function codepipelineStageOnFailureToTerraform(struct?: CodepipelineStage
 
 
 export function codepipelineStageOnFailureToHclTerraform(struct?: CodepipelineStageOnFailureOutputReference | CodepipelineStageOnFailure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     result: {
-      value: cdktf.stringToHclTerraform(struct!.result),
+      value: cdktn.stringToHclTerraform(struct!.result),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3140,14 +3140,14 @@ export function codepipelineStageOnFailureToHclTerraform(struct?: CodepipelineSt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOnFailureOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOnFailureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3252,45 +3252,45 @@ export interface CodepipelineStageOnSuccessConditionRuleRuleTypeId {
 }
 
 export function codepipelineStageOnSuccessConditionRuleRuleTypeIdToTerraform(struct?: CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnSuccessConditionRuleRuleTypeId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    category: cdktf.stringToTerraform(struct!.category),
-    owner: cdktf.stringToTerraform(struct!.owner),
-    provider: cdktf.stringToTerraform(struct!.provider),
-    version: cdktf.stringToTerraform(struct!.version),
+    category: cdktn.stringToTerraform(struct!.category),
+    owner: cdktn.stringToTerraform(struct!.owner),
+    provider: cdktn.stringToTerraform(struct!.provider),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function codepipelineStageOnSuccessConditionRuleRuleTypeIdToHclTerraform(struct?: CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnSuccessConditionRuleRuleTypeId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     category: {
-      value: cdktf.stringToHclTerraform(struct!.category),
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner: {
-      value: cdktf.stringToHclTerraform(struct!.owner),
+      value: cdktn.stringToHclTerraform(struct!.owner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provider: {
-      value: cdktf.stringToHclTerraform(struct!.provider),
+      value: cdktn.stringToHclTerraform(struct!.provider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3301,14 +3301,14 @@ export function codepipelineStageOnSuccessConditionRuleRuleTypeIdToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3446,68 +3446,68 @@ export interface CodepipelineStageOnSuccessConditionRule {
   readonly ruleTypeId: CodepipelineStageOnSuccessConditionRuleRuleTypeId;
 }
 
-export function codepipelineStageOnSuccessConditionRuleToTerraform(struct?: CodepipelineStageOnSuccessConditionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageOnSuccessConditionRuleToTerraform(struct?: CodepipelineStageOnSuccessConditionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
-    configuration: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configuration),
-    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputArtifacts),
-    name: cdktf.stringToTerraform(struct!.name),
-    region: cdktf.stringToTerraform(struct!.region),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    timeout_in_minutes: cdktf.numberToTerraform(struct!.timeoutInMinutes),
+    commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.commands),
+    configuration: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.configuration),
+    input_artifacts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inputArtifacts),
+    name: cdktn.stringToTerraform(struct!.name),
+    region: cdktn.stringToTerraform(struct!.region),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    timeout_in_minutes: cdktn.numberToTerraform(struct!.timeoutInMinutes),
     rule_type_id: codepipelineStageOnSuccessConditionRuleRuleTypeIdToTerraform(struct!.ruleTypeId),
   }
 }
 
 
-export function codepipelineStageOnSuccessConditionRuleToHclTerraform(struct?: CodepipelineStageOnSuccessConditionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageOnSuccessConditionRuleToHclTerraform(struct?: CodepipelineStageOnSuccessConditionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     commands: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commands),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.commands),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     configuration: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configuration),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.configuration),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     input_artifacts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputArtifacts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inputArtifacts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3524,9 +3524,9 @@ export function codepipelineStageOnSuccessConditionRuleToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOnSuccessConditionRuleOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOnSuccessConditionRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3534,11 +3534,11 @@ export class CodepipelineStageOnSuccessConditionRuleOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineStageOnSuccessConditionRule | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineStageOnSuccessConditionRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3579,7 +3579,7 @@ export class CodepipelineStageOnSuccessConditionRuleOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineStageOnSuccessConditionRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineStageOnSuccessConditionRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3592,7 +3592,7 @@ export class CodepipelineStageOnSuccessConditionRuleOutputReference extends cdkt
       this._timeoutInMinutes = undefined;
       this._ruleTypeId.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3733,15 +3733,15 @@ export class CodepipelineStageOnSuccessConditionRuleOutputReference extends cdkt
   }
 }
 
-export class CodepipelineStageOnSuccessConditionRuleList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineStageOnSuccessConditionRule[] | cdktf.IResolvable
+export class CodepipelineStageOnSuccessConditionRuleList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineStageOnSuccessConditionRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3762,35 +3762,35 @@ export interface CodepipelineStageOnSuccessCondition {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#rule Codepipeline#rule}
   */
-  readonly rule: CodepipelineStageOnSuccessConditionRule[] | cdktf.IResolvable;
+  readonly rule: CodepipelineStageOnSuccessConditionRule[] | cdktn.IResolvable;
 }
 
 export function codepipelineStageOnSuccessConditionToTerraform(struct?: CodepipelineStageOnSuccessConditionOutputReference | CodepipelineStageOnSuccessCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    result: cdktf.stringToTerraform(struct!.result),
-    rule: cdktf.listMapper(codepipelineStageOnSuccessConditionRuleToTerraform, true)(struct!.rule),
+    result: cdktn.stringToTerraform(struct!.result),
+    rule: cdktn.listMapper(codepipelineStageOnSuccessConditionRuleToTerraform, true)(struct!.rule),
   }
 }
 
 
 export function codepipelineStageOnSuccessConditionToHclTerraform(struct?: CodepipelineStageOnSuccessConditionOutputReference | CodepipelineStageOnSuccessCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     result: {
-      value: cdktf.stringToHclTerraform(struct!.result),
+      value: cdktn.stringToHclTerraform(struct!.result),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule: {
-      value: cdktf.listMapperHcl(codepipelineStageOnSuccessConditionRuleToHclTerraform, true)(struct!.rule),
+      value: cdktn.listMapperHcl(codepipelineStageOnSuccessConditionRuleToHclTerraform, true)(struct!.rule),
       isBlock: true,
       type: "list",
       storageClassType: "CodepipelineStageOnSuccessConditionRuleList",
@@ -3801,14 +3801,14 @@ export function codepipelineStageOnSuccessConditionToHclTerraform(struct?: Codep
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOnSuccessConditionOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOnSuccessConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3860,7 +3860,7 @@ export class CodepipelineStageOnSuccessConditionOutputReference extends cdktf.Co
   public get rule() {
     return this._rule;
   }
-  public putRule(value: CodepipelineStageOnSuccessConditionRule[] | cdktf.IResolvable) {
+  public putRule(value: CodepipelineStageOnSuccessConditionRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3878,8 +3878,8 @@ export interface CodepipelineStageOnSuccess {
 }
 
 export function codepipelineStageOnSuccessToTerraform(struct?: CodepipelineStageOnSuccessOutputReference | CodepipelineStageOnSuccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3889,8 +3889,8 @@ export function codepipelineStageOnSuccessToTerraform(struct?: CodepipelineStage
 
 
 export function codepipelineStageOnSuccessToHclTerraform(struct?: CodepipelineStageOnSuccessOutputReference | CodepipelineStageOnSuccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3906,14 +3906,14 @@ export function codepipelineStageOnSuccessToHclTerraform(struct?: CodepipelineSt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOnSuccessOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOnSuccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3961,7 +3961,7 @@ export interface CodepipelineStage {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#action Codepipeline#action}
   */
-  readonly action: CodepipelineStageAction[] | cdktf.IResolvable;
+  readonly action: CodepipelineStageAction[] | cdktn.IResolvable;
   /**
   * before_entry block
   *
@@ -3982,14 +3982,14 @@ export interface CodepipelineStage {
   readonly onSuccess?: CodepipelineStageOnSuccess;
 }
 
-export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    action: cdktf.listMapper(codepipelineStageActionToTerraform, true)(struct!.action),
+    name: cdktn.stringToTerraform(struct!.name),
+    action: cdktn.listMapper(codepipelineStageActionToTerraform, true)(struct!.action),
     before_entry: codepipelineStageBeforeEntryToTerraform(struct!.beforeEntry),
     on_failure: codepipelineStageOnFailureToTerraform(struct!.onFailure),
     on_success: codepipelineStageOnSuccessToTerraform(struct!.onSuccess),
@@ -3997,20 +3997,20 @@ export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktf.
 }
 
 
-export function codepipelineStageToHclTerraform(struct?: CodepipelineStage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineStageToHclTerraform(struct?: CodepipelineStage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     action: {
-      value: cdktf.listMapperHcl(codepipelineStageActionToHclTerraform, true)(struct!.action),
+      value: cdktn.listMapperHcl(codepipelineStageActionToHclTerraform, true)(struct!.action),
       isBlock: true,
       type: "list",
       storageClassType: "CodepipelineStageActionList",
@@ -4039,9 +4039,9 @@ export function codepipelineStageToHclTerraform(struct?: CodepipelineStage | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
+export class CodepipelineStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4049,11 +4049,11 @@ export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineStage | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineStage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4082,7 +4082,7 @@ export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineStage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineStage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4092,7 +4092,7 @@ export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
       this._onFailure.internalValue = undefined;
       this._onSuccess.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4125,7 +4125,7 @@ export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
   public get action() {
     return this._action;
   }
-  public putAction(value: CodepipelineStageAction[] | cdktf.IResolvable) {
+  public putAction(value: CodepipelineStageAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4182,15 +4182,15 @@ export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class CodepipelineStageList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineStage[] | cdktf.IResolvable
+export class CodepipelineStageList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineStage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4213,31 +4213,31 @@ export interface CodepipelineTriggerGitConfigurationPullRequestBranches {
 }
 
 export function codepipelineTriggerGitConfigurationPullRequestBranchesToTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReference | CodepipelineTriggerGitConfigurationPullRequestBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludes),
-    includes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includes),
+    excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
+    includes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includes),
   }
 }
 
 
 export function codepipelineTriggerGitConfigurationPullRequestBranchesToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReference | CodepipelineTriggerGitConfigurationPullRequestBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excludes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     includes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4248,14 +4248,14 @@ export function codepipelineTriggerGitConfigurationPullRequestBranchesToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4330,31 +4330,31 @@ export interface CodepipelineTriggerGitConfigurationPullRequestFilePaths {
 }
 
 export function codepipelineTriggerGitConfigurationPullRequestFilePathsToTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputReference | CodepipelineTriggerGitConfigurationPullRequestFilePaths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludes),
-    includes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includes),
+    excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
+    includes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includes),
   }
 }
 
 
 export function codepipelineTriggerGitConfigurationPullRequestFilePathsToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputReference | CodepipelineTriggerGitConfigurationPullRequestFilePaths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excludes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     includes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4365,14 +4365,14 @@ export function codepipelineTriggerGitConfigurationPullRequestFilePathsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4454,27 +4454,27 @@ export interface CodepipelineTriggerGitConfigurationPullRequest {
   readonly filePaths?: CodepipelineTriggerGitConfigurationPullRequestFilePaths;
 }
 
-export function codepipelineTriggerGitConfigurationPullRequestToTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineTriggerGitConfigurationPullRequestToTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
     branches: codepipelineTriggerGitConfigurationPullRequestBranchesToTerraform(struct!.branches),
     file_paths: codepipelineTriggerGitConfigurationPullRequestFilePathsToTerraform(struct!.filePaths),
   }
 }
 
 
-export function codepipelineTriggerGitConfigurationPullRequestToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineTriggerGitConfigurationPullRequestToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPullRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4497,9 +4497,9 @@ export function codepipelineTriggerGitConfigurationPullRequestToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineTriggerGitConfigurationPullRequestOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerGitConfigurationPullRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4507,11 +4507,11 @@ export class CodepipelineTriggerGitConfigurationPullRequestOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineTriggerGitConfigurationPullRequest | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineTriggerGitConfigurationPullRequest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4532,7 +4532,7 @@ export class CodepipelineTriggerGitConfigurationPullRequestOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineTriggerGitConfigurationPullRequest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineTriggerGitConfigurationPullRequest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4540,7 +4540,7 @@ export class CodepipelineTriggerGitConfigurationPullRequestOutputReference exten
       this._branches.internalValue = undefined;
       this._filePaths.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4602,15 +4602,15 @@ export class CodepipelineTriggerGitConfigurationPullRequestOutputReference exten
   }
 }
 
-export class CodepipelineTriggerGitConfigurationPullRequestList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineTriggerGitConfigurationPullRequest[] | cdktf.IResolvable
+export class CodepipelineTriggerGitConfigurationPullRequestList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineTriggerGitConfigurationPullRequest[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4633,31 +4633,31 @@ export interface CodepipelineTriggerGitConfigurationPushBranches {
 }
 
 export function codepipelineTriggerGitConfigurationPushBranchesToTerraform(struct?: CodepipelineTriggerGitConfigurationPushBranchesOutputReference | CodepipelineTriggerGitConfigurationPushBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludes),
-    includes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includes),
+    excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
+    includes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includes),
   }
 }
 
 
 export function codepipelineTriggerGitConfigurationPushBranchesToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPushBranchesOutputReference | CodepipelineTriggerGitConfigurationPushBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excludes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     includes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4668,14 +4668,14 @@ export function codepipelineTriggerGitConfigurationPushBranchesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineTriggerGitConfigurationPushBranchesOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerGitConfigurationPushBranchesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4750,31 +4750,31 @@ export interface CodepipelineTriggerGitConfigurationPushFilePaths {
 }
 
 export function codepipelineTriggerGitConfigurationPushFilePathsToTerraform(struct?: CodepipelineTriggerGitConfigurationPushFilePathsOutputReference | CodepipelineTriggerGitConfigurationPushFilePaths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludes),
-    includes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includes),
+    excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
+    includes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includes),
   }
 }
 
 
 export function codepipelineTriggerGitConfigurationPushFilePathsToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPushFilePathsOutputReference | CodepipelineTriggerGitConfigurationPushFilePaths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excludes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     includes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4785,14 +4785,14 @@ export function codepipelineTriggerGitConfigurationPushFilePathsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineTriggerGitConfigurationPushFilePathsOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerGitConfigurationPushFilePathsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4867,31 +4867,31 @@ export interface CodepipelineTriggerGitConfigurationPushTags {
 }
 
 export function codepipelineTriggerGitConfigurationPushTagsToTerraform(struct?: CodepipelineTriggerGitConfigurationPushTagsOutputReference | CodepipelineTriggerGitConfigurationPushTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludes),
-    includes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includes),
+    excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludes),
+    includes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includes),
   }
 }
 
 
 export function codepipelineTriggerGitConfigurationPushTagsToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPushTagsOutputReference | CodepipelineTriggerGitConfigurationPushTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excludes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     includes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4902,14 +4902,14 @@ export function codepipelineTriggerGitConfigurationPushTagsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineTriggerGitConfigurationPushTagsOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerGitConfigurationPushTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4993,9 +4993,9 @@ export interface CodepipelineTriggerGitConfigurationPush {
   readonly tags?: CodepipelineTriggerGitConfigurationPushTags;
 }
 
-export function codepipelineTriggerGitConfigurationPushToTerraform(struct?: CodepipelineTriggerGitConfigurationPush | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineTriggerGitConfigurationPushToTerraform(struct?: CodepipelineTriggerGitConfigurationPush | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5006,9 +5006,9 @@ export function codepipelineTriggerGitConfigurationPushToTerraform(struct?: Code
 }
 
 
-export function codepipelineTriggerGitConfigurationPushToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPush | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineTriggerGitConfigurationPushToHclTerraform(struct?: CodepipelineTriggerGitConfigurationPush | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5036,9 +5036,9 @@ export function codepipelineTriggerGitConfigurationPushToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineTriggerGitConfigurationPushOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerGitConfigurationPushOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5046,11 +5046,11 @@ export class CodepipelineTriggerGitConfigurationPushOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineTriggerGitConfigurationPush | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineTriggerGitConfigurationPush | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5071,7 +5071,7 @@ export class CodepipelineTriggerGitConfigurationPushOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineTriggerGitConfigurationPush | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineTriggerGitConfigurationPush | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5079,7 +5079,7 @@ export class CodepipelineTriggerGitConfigurationPushOutputReference extends cdkt
       this._filePaths.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5141,15 +5141,15 @@ export class CodepipelineTriggerGitConfigurationPushOutputReference extends cdkt
   }
 }
 
-export class CodepipelineTriggerGitConfigurationPushList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineTriggerGitConfigurationPush[] | cdktf.IResolvable
+export class CodepipelineTriggerGitConfigurationPushList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineTriggerGitConfigurationPush[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5170,48 +5170,48 @@ export interface CodepipelineTriggerGitConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#pull_request Codepipeline#pull_request}
   */
-  readonly pullRequest?: CodepipelineTriggerGitConfigurationPullRequest[] | cdktf.IResolvable;
+  readonly pullRequest?: CodepipelineTriggerGitConfigurationPullRequest[] | cdktn.IResolvable;
   /**
   * push block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#push Codepipeline#push}
   */
-  readonly push?: CodepipelineTriggerGitConfigurationPush[] | cdktf.IResolvable;
+  readonly push?: CodepipelineTriggerGitConfigurationPush[] | cdktn.IResolvable;
 }
 
 export function codepipelineTriggerGitConfigurationToTerraform(struct?: CodepipelineTriggerGitConfigurationOutputReference | CodepipelineTriggerGitConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_action_name: cdktf.stringToTerraform(struct!.sourceActionName),
-    pull_request: cdktf.listMapper(codepipelineTriggerGitConfigurationPullRequestToTerraform, true)(struct!.pullRequest),
-    push: cdktf.listMapper(codepipelineTriggerGitConfigurationPushToTerraform, true)(struct!.push),
+    source_action_name: cdktn.stringToTerraform(struct!.sourceActionName),
+    pull_request: cdktn.listMapper(codepipelineTriggerGitConfigurationPullRequestToTerraform, true)(struct!.pullRequest),
+    push: cdktn.listMapper(codepipelineTriggerGitConfigurationPushToTerraform, true)(struct!.push),
   }
 }
 
 
 export function codepipelineTriggerGitConfigurationToHclTerraform(struct?: CodepipelineTriggerGitConfigurationOutputReference | CodepipelineTriggerGitConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source_action_name: {
-      value: cdktf.stringToHclTerraform(struct!.sourceActionName),
+      value: cdktn.stringToHclTerraform(struct!.sourceActionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pull_request: {
-      value: cdktf.listMapperHcl(codepipelineTriggerGitConfigurationPullRequestToHclTerraform, true)(struct!.pullRequest),
+      value: cdktn.listMapperHcl(codepipelineTriggerGitConfigurationPullRequestToHclTerraform, true)(struct!.pullRequest),
       isBlock: true,
       type: "list",
       storageClassType: "CodepipelineTriggerGitConfigurationPullRequestList",
     },
     push: {
-      value: cdktf.listMapperHcl(codepipelineTriggerGitConfigurationPushToHclTerraform, true)(struct!.push),
+      value: cdktn.listMapperHcl(codepipelineTriggerGitConfigurationPushToHclTerraform, true)(struct!.push),
       isBlock: true,
       type: "list",
       storageClassType: "CodepipelineTriggerGitConfigurationPushList",
@@ -5222,14 +5222,14 @@ export function codepipelineTriggerGitConfigurationToHclTerraform(struct?: Codep
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineTriggerGitConfigurationOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerGitConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5284,7 +5284,7 @@ export class CodepipelineTriggerGitConfigurationOutputReference extends cdktf.Co
   public get pullRequest() {
     return this._pullRequest;
   }
-  public putPullRequest(value: CodepipelineTriggerGitConfigurationPullRequest[] | cdktf.IResolvable) {
+  public putPullRequest(value: CodepipelineTriggerGitConfigurationPullRequest[] | cdktn.IResolvable) {
     this._pullRequest.internalValue = value;
   }
   public resetPullRequest() {
@@ -5300,7 +5300,7 @@ export class CodepipelineTriggerGitConfigurationOutputReference extends cdktf.Co
   public get push() {
     return this._push;
   }
-  public putPush(value: CodepipelineTriggerGitConfigurationPush[] | cdktf.IResolvable) {
+  public putPush(value: CodepipelineTriggerGitConfigurationPush[] | cdktn.IResolvable) {
     this._push.internalValue = value;
   }
   public resetPush() {
@@ -5324,26 +5324,26 @@ export interface CodepipelineTrigger {
   readonly gitConfiguration: CodepipelineTriggerGitConfiguration;
 }
 
-export function codepipelineTriggerToTerraform(struct?: CodepipelineTrigger | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineTriggerToTerraform(struct?: CodepipelineTrigger | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    provider_type: cdktf.stringToTerraform(struct!.providerType),
+    provider_type: cdktn.stringToTerraform(struct!.providerType),
     git_configuration: codepipelineTriggerGitConfigurationToTerraform(struct!.gitConfiguration),
   }
 }
 
 
-export function codepipelineTriggerToHclTerraform(struct?: CodepipelineTrigger | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineTriggerToHclTerraform(struct?: CodepipelineTrigger | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     provider_type: {
-      value: cdktf.stringToHclTerraform(struct!.providerType),
+      value: cdktn.stringToHclTerraform(struct!.providerType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5360,9 +5360,9 @@ export function codepipelineTriggerToHclTerraform(struct?: CodepipelineTrigger |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineTriggerOutputReference extends cdktf.ComplexObject {
+export class CodepipelineTriggerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5370,11 +5370,11 @@ export class CodepipelineTriggerOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineTrigger | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineTrigger | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5391,14 +5391,14 @@ export class CodepipelineTriggerOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineTrigger | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineTrigger | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._providerType = undefined;
       this._gitConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5437,15 +5437,15 @@ export class CodepipelineTriggerOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class CodepipelineTriggerList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineTrigger[] | cdktf.IResolvable
+export class CodepipelineTriggerList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineTrigger[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5471,39 +5471,39 @@ export interface CodepipelineVariable {
   readonly name: string;
 }
 
-export function codepipelineVariableToTerraform(struct?: CodepipelineVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineVariableToTerraform(struct?: CodepipelineVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_value: cdktf.stringToTerraform(struct!.defaultValue),
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
+    default_value: cdktn.stringToTerraform(struct!.defaultValue),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function codepipelineVariableToHclTerraform(struct?: CodepipelineVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineVariableToHclTerraform(struct?: CodepipelineVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_value: {
-      value: cdktf.stringToHclTerraform(struct!.defaultValue),
+      value: cdktn.stringToHclTerraform(struct!.defaultValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5514,9 +5514,9 @@ export function codepipelineVariableToHclTerraform(struct?: CodepipelineVariable
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineVariableOutputReference extends cdktf.ComplexObject {
+export class CodepipelineVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5524,11 +5524,11 @@ export class CodepipelineVariableOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5549,7 +5549,7 @@ export class CodepipelineVariableOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5557,7 +5557,7 @@ export class CodepipelineVariableOutputReference extends cdktf.ComplexObject {
       this._description = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5616,15 +5616,15 @@ export class CodepipelineVariableOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class CodepipelineVariableList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineVariable[] | cdktf.IResolvable
+export class CodepipelineVariableList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5639,7 +5639,7 @@ export class CodepipelineVariableList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline aws_codepipeline}
 */
-export class Codepipeline extends cdktf.TerraformResource {
+export class Codepipeline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -5650,14 +5650,14 @@ export class Codepipeline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Codepipeline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Codepipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Codepipeline to import
   * @param importFromId The id of the existing Codepipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Codepipeline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codepipeline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codepipeline", importId: importFromId, provider });
       }
 
   // ===========
@@ -5843,7 +5843,7 @@ export class Codepipeline extends cdktf.TerraformResource {
   public get artifactStore() {
     return this._artifactStore;
   }
-  public putArtifactStore(value: CodepipelineArtifactStore[] | cdktf.IResolvable) {
+  public putArtifactStore(value: CodepipelineArtifactStore[] | cdktn.IResolvable) {
     this._artifactStore.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5856,7 +5856,7 @@ export class Codepipeline extends cdktf.TerraformResource {
   public get stage() {
     return this._stage;
   }
-  public putStage(value: CodepipelineStage[] | cdktf.IResolvable) {
+  public putStage(value: CodepipelineStage[] | cdktn.IResolvable) {
     this._stage.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5869,7 +5869,7 @@ export class Codepipeline extends cdktf.TerraformResource {
   public get trigger() {
     return this._trigger;
   }
-  public putTrigger(value: CodepipelineTrigger[] | cdktf.IResolvable) {
+  public putTrigger(value: CodepipelineTrigger[] | cdktn.IResolvable) {
     this._trigger.internalValue = value;
   }
   public resetTrigger() {
@@ -5885,7 +5885,7 @@ export class Codepipeline extends cdktf.TerraformResource {
   public get variable() {
     return this._variable;
   }
-  public putVariable(value: CodepipelineVariable[] | cdktf.IResolvable) {
+  public putVariable(value: CodepipelineVariable[] | cdktn.IResolvable) {
     this._variable.internalValue = value;
   }
   public resetVariable() {
@@ -5902,91 +5902,91 @@ export class Codepipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      execution_mode: cdktf.stringToTerraform(this._executionMode),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      pipeline_type: cdktf.stringToTerraform(this._pipelineType),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      artifact_store: cdktf.listMapper(codepipelineArtifactStoreToTerraform, true)(this._artifactStore.internalValue),
-      stage: cdktf.listMapper(codepipelineStageToTerraform, true)(this._stage.internalValue),
-      trigger: cdktf.listMapper(codepipelineTriggerToTerraform, true)(this._trigger.internalValue),
-      variable: cdktf.listMapper(codepipelineVariableToTerraform, true)(this._variable.internalValue),
+      execution_mode: cdktn.stringToTerraform(this._executionMode),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      pipeline_type: cdktn.stringToTerraform(this._pipelineType),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      artifact_store: cdktn.listMapper(codepipelineArtifactStoreToTerraform, true)(this._artifactStore.internalValue),
+      stage: cdktn.listMapper(codepipelineStageToTerraform, true)(this._stage.internalValue),
+      trigger: cdktn.listMapper(codepipelineTriggerToTerraform, true)(this._trigger.internalValue),
+      variable: cdktn.listMapper(codepipelineVariableToTerraform, true)(this._variable.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       execution_mode: {
-        value: cdktf.stringToHclTerraform(this._executionMode),
+        value: cdktn.stringToHclTerraform(this._executionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_type: {
-        value: cdktf.stringToHclTerraform(this._pipelineType),
+        value: cdktn.stringToHclTerraform(this._pipelineType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       artifact_store: {
-        value: cdktf.listMapperHcl(codepipelineArtifactStoreToHclTerraform, true)(this._artifactStore.internalValue),
+        value: cdktn.listMapperHcl(codepipelineArtifactStoreToHclTerraform, true)(this._artifactStore.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CodepipelineArtifactStoreList",
       },
       stage: {
-        value: cdktf.listMapperHcl(codepipelineStageToHclTerraform, true)(this._stage.internalValue),
+        value: cdktn.listMapperHcl(codepipelineStageToHclTerraform, true)(this._stage.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CodepipelineStageList",
       },
       trigger: {
-        value: cdktf.listMapperHcl(codepipelineTriggerToHclTerraform, true)(this._trigger.internalValue),
+        value: cdktn.listMapperHcl(codepipelineTriggerToHclTerraform, true)(this._trigger.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CodepipelineTriggerList",
       },
       variable: {
-        value: cdktf.listMapperHcl(codepipelineVariableToHclTerraform, true)(this._variable.internalValue),
+        value: cdktn.listMapperHcl(codepipelineVariableToHclTerraform, true)(this._variable.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CodepipelineVariableList",

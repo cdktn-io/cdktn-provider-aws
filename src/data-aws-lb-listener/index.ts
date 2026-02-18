@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsLbListenerConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLbListenerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}
   */
@@ -52,8 +52,8 @@ export interface DataAwsLbListenerDefaultActionAuthenticateCognito {
 }
 
 export function dataAwsLbListenerDefaultActionAuthenticateCognitoToTerraform(struct?: DataAwsLbListenerDefaultActionAuthenticateCognito): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -62,8 +62,8 @@ export function dataAwsLbListenerDefaultActionAuthenticateCognitoToTerraform(str
 
 
 export function dataAwsLbListenerDefaultActionAuthenticateCognitoToHclTerraform(struct?: DataAwsLbListenerDefaultActionAuthenticateCognito): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -71,7 +71,7 @@ export function dataAwsLbListenerDefaultActionAuthenticateCognitoToHclTerraform(
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -80,7 +80,7 @@ export class DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -100,7 +100,7 @@ export class DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference ex
   }
 
   // authentication_request_extra_params - computed: true, optional: false, required: false
-  private _authenticationRequestExtraParams = new cdktf.StringMap(this, "authentication_request_extra_params");
+  private _authenticationRequestExtraParams = new cdktn.StringMap(this, "authentication_request_extra_params");
   public get authenticationRequestExtraParams() {
     return this._authenticationRequestExtraParams;
   }
@@ -141,14 +141,14 @@ export class DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference ex
   }
 }
 
-export class DataAwsLbListenerDefaultActionAuthenticateCognitoList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionAuthenticateCognitoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -163,8 +163,8 @@ export interface DataAwsLbListenerDefaultActionAuthenticateOidc {
 }
 
 export function dataAwsLbListenerDefaultActionAuthenticateOidcToTerraform(struct?: DataAwsLbListenerDefaultActionAuthenticateOidc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -173,8 +173,8 @@ export function dataAwsLbListenerDefaultActionAuthenticateOidcToTerraform(struct
 
 
 export function dataAwsLbListenerDefaultActionAuthenticateOidcToHclTerraform(struct?: DataAwsLbListenerDefaultActionAuthenticateOidc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -182,7 +182,7 @@ export function dataAwsLbListenerDefaultActionAuthenticateOidcToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -191,7 +191,7 @@ export class DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -211,7 +211,7 @@ export class DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference exten
   }
 
   // authentication_request_extra_params - computed: true, optional: false, required: false
-  private _authenticationRequestExtraParams = new cdktf.StringMap(this, "authentication_request_extra_params");
+  private _authenticationRequestExtraParams = new cdktn.StringMap(this, "authentication_request_extra_params");
   public get authenticationRequestExtraParams() {
     return this._authenticationRequestExtraParams;
   }
@@ -267,14 +267,14 @@ export class DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference exten
   }
 }
 
-export class DataAwsLbListenerDefaultActionAuthenticateOidcList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionAuthenticateOidcList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -289,8 +289,8 @@ export interface DataAwsLbListenerDefaultActionFixedResponse {
 }
 
 export function dataAwsLbListenerDefaultActionFixedResponseToTerraform(struct?: DataAwsLbListenerDefaultActionFixedResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -299,8 +299,8 @@ export function dataAwsLbListenerDefaultActionFixedResponseToTerraform(struct?: 
 
 
 export function dataAwsLbListenerDefaultActionFixedResponseToHclTerraform(struct?: DataAwsLbListenerDefaultActionFixedResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -308,7 +308,7 @@ export function dataAwsLbListenerDefaultActionFixedResponseToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionFixedResponseOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionFixedResponseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -317,7 +317,7 @@ export class DataAwsLbListenerDefaultActionFixedResponseOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -352,14 +352,14 @@ export class DataAwsLbListenerDefaultActionFixedResponseOutputReference extends 
   }
 }
 
-export class DataAwsLbListenerDefaultActionFixedResponseList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionFixedResponseList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -374,8 +374,8 @@ export interface DataAwsLbListenerDefaultActionForwardStickiness {
 }
 
 export function dataAwsLbListenerDefaultActionForwardStickinessToTerraform(struct?: DataAwsLbListenerDefaultActionForwardStickiness): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -384,8 +384,8 @@ export function dataAwsLbListenerDefaultActionForwardStickinessToTerraform(struc
 
 
 export function dataAwsLbListenerDefaultActionForwardStickinessToHclTerraform(struct?: DataAwsLbListenerDefaultActionForwardStickiness): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -393,7 +393,7 @@ export function dataAwsLbListenerDefaultActionForwardStickinessToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionForwardStickinessOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionForwardStickinessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -402,7 +402,7 @@ export class DataAwsLbListenerDefaultActionForwardStickinessOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -432,14 +432,14 @@ export class DataAwsLbListenerDefaultActionForwardStickinessOutputReference exte
   }
 }
 
-export class DataAwsLbListenerDefaultActionForwardStickinessList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionForwardStickinessList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -454,8 +454,8 @@ export interface DataAwsLbListenerDefaultActionForwardTargetGroup {
 }
 
 export function dataAwsLbListenerDefaultActionForwardTargetGroupToTerraform(struct?: DataAwsLbListenerDefaultActionForwardTargetGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -464,8 +464,8 @@ export function dataAwsLbListenerDefaultActionForwardTargetGroupToTerraform(stru
 
 
 export function dataAwsLbListenerDefaultActionForwardTargetGroupToHclTerraform(struct?: DataAwsLbListenerDefaultActionForwardTargetGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -473,7 +473,7 @@ export function dataAwsLbListenerDefaultActionForwardTargetGroupToHclTerraform(s
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -482,7 +482,7 @@ export class DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -512,14 +512,14 @@ export class DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference ext
   }
 }
 
-export class DataAwsLbListenerDefaultActionForwardTargetGroupList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionForwardTargetGroupList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -534,8 +534,8 @@ export interface DataAwsLbListenerDefaultActionForward {
 }
 
 export function dataAwsLbListenerDefaultActionForwardToTerraform(struct?: DataAwsLbListenerDefaultActionForward): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -544,8 +544,8 @@ export function dataAwsLbListenerDefaultActionForwardToTerraform(struct?: DataAw
 
 
 export function dataAwsLbListenerDefaultActionForwardToHclTerraform(struct?: DataAwsLbListenerDefaultActionForward): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -553,7 +553,7 @@ export function dataAwsLbListenerDefaultActionForwardToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionForwardOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionForwardOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -562,7 +562,7 @@ export class DataAwsLbListenerDefaultActionForwardOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -594,14 +594,14 @@ export class DataAwsLbListenerDefaultActionForwardOutputReference extends cdktf.
   }
 }
 
-export class DataAwsLbListenerDefaultActionForwardList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionForwardList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -616,8 +616,8 @@ export interface DataAwsLbListenerDefaultActionJwtValidationAdditionalClaim {
 }
 
 export function dataAwsLbListenerDefaultActionJwtValidationAdditionalClaimToTerraform(struct?: DataAwsLbListenerDefaultActionJwtValidationAdditionalClaim): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -626,8 +626,8 @@ export function dataAwsLbListenerDefaultActionJwtValidationAdditionalClaimToTerr
 
 
 export function dataAwsLbListenerDefaultActionJwtValidationAdditionalClaimToHclTerraform(struct?: DataAwsLbListenerDefaultActionJwtValidationAdditionalClaim): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -635,7 +635,7 @@ export function dataAwsLbListenerDefaultActionJwtValidationAdditionalClaimToHclT
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -644,7 +644,7 @@ export class DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -675,18 +675,18 @@ export class DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimOutputRef
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -701,8 +701,8 @@ export interface DataAwsLbListenerDefaultActionJwtValidation {
 }
 
 export function dataAwsLbListenerDefaultActionJwtValidationToTerraform(struct?: DataAwsLbListenerDefaultActionJwtValidation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -711,8 +711,8 @@ export function dataAwsLbListenerDefaultActionJwtValidationToTerraform(struct?: 
 
 
 export function dataAwsLbListenerDefaultActionJwtValidationToHclTerraform(struct?: DataAwsLbListenerDefaultActionJwtValidation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -720,7 +720,7 @@ export function dataAwsLbListenerDefaultActionJwtValidationToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionJwtValidationOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionJwtValidationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -729,7 +729,7 @@ export class DataAwsLbListenerDefaultActionJwtValidationOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -765,14 +765,14 @@ export class DataAwsLbListenerDefaultActionJwtValidationOutputReference extends 
   }
 }
 
-export class DataAwsLbListenerDefaultActionJwtValidationList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionJwtValidationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -787,8 +787,8 @@ export interface DataAwsLbListenerDefaultActionRedirect {
 }
 
 export function dataAwsLbListenerDefaultActionRedirectToTerraform(struct?: DataAwsLbListenerDefaultActionRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -797,8 +797,8 @@ export function dataAwsLbListenerDefaultActionRedirectToTerraform(struct?: DataA
 
 
 export function dataAwsLbListenerDefaultActionRedirectToHclTerraform(struct?: DataAwsLbListenerDefaultActionRedirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -806,7 +806,7 @@ export function dataAwsLbListenerDefaultActionRedirectToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionRedirectOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionRedirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -815,7 +815,7 @@ export class DataAwsLbListenerDefaultActionRedirectOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -865,14 +865,14 @@ export class DataAwsLbListenerDefaultActionRedirectOutputReference extends cdktf
   }
 }
 
-export class DataAwsLbListenerDefaultActionRedirectList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionRedirectList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -887,8 +887,8 @@ export interface DataAwsLbListenerDefaultAction {
 }
 
 export function dataAwsLbListenerDefaultActionToTerraform(struct?: DataAwsLbListenerDefaultAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -897,8 +897,8 @@ export function dataAwsLbListenerDefaultActionToTerraform(struct?: DataAwsLbList
 
 
 export function dataAwsLbListenerDefaultActionToHclTerraform(struct?: DataAwsLbListenerDefaultAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -906,7 +906,7 @@ export function dataAwsLbListenerDefaultActionToHclTerraform(struct?: DataAwsLbL
   return attrs;
 }
 
-export class DataAwsLbListenerDefaultActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerDefaultActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -915,7 +915,7 @@ export class DataAwsLbListenerDefaultActionOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -986,14 +986,14 @@ export class DataAwsLbListenerDefaultActionOutputReference extends cdktf.Complex
   }
 }
 
-export class DataAwsLbListenerDefaultActionList extends cdktf.ComplexList {
+export class DataAwsLbListenerDefaultActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1008,8 +1008,8 @@ export interface DataAwsLbListenerMutualAuthentication {
 }
 
 export function dataAwsLbListenerMutualAuthenticationToTerraform(struct?: DataAwsLbListenerMutualAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1018,8 +1018,8 @@ export function dataAwsLbListenerMutualAuthenticationToTerraform(struct?: DataAw
 
 
 export function dataAwsLbListenerMutualAuthenticationToHclTerraform(struct?: DataAwsLbListenerMutualAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1027,7 +1027,7 @@ export function dataAwsLbListenerMutualAuthenticationToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsLbListenerMutualAuthenticationOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerMutualAuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1036,7 +1036,7 @@ export class DataAwsLbListenerMutualAuthenticationOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1076,14 +1076,14 @@ export class DataAwsLbListenerMutualAuthenticationOutputReference extends cdktf.
   }
 }
 
-export class DataAwsLbListenerMutualAuthenticationList extends cdktf.ComplexList {
+export class DataAwsLbListenerMutualAuthenticationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1101,25 +1101,25 @@ export interface DataAwsLbListenerTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsLbListenerTimeoutsToTerraform(struct?: DataAwsLbListenerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsLbListenerTimeoutsToTerraform(struct?: DataAwsLbListenerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsLbListenerTimeoutsToHclTerraform(struct?: DataAwsLbListenerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsLbListenerTimeoutsToHclTerraform(struct?: DataAwsLbListenerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1130,19 +1130,19 @@ export function dataAwsLbListenerTimeoutsToHclTerraform(struct?: DataAwsLbListen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsLbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsLbListenerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsLbListenerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsLbListenerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1155,13 +1155,13 @@ export class DataAwsLbListenerTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsLbListenerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsLbListenerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1192,7 +1192,7 @@ export class DataAwsLbListenerTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lb_listener aws_lb_listener}
 */
-export class DataAwsLbListener extends cdktf.TerraformDataSource {
+export class DataAwsLbListener extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1203,14 +1203,14 @@ export class DataAwsLbListener extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsLbListener resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsLbListener resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLbListener to import
   * @param importFromId The id of the existing DataAwsLbListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lb_listener#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLbListener to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lb_listener", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lb_listener", importId: importFromId, provider });
       }
 
   // ===========
@@ -1403,12 +1403,12 @@ export class DataAwsLbListener extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      id: cdktf.stringToTerraform(this._id),
-      load_balancer_arn: cdktf.stringToTerraform(this._loadBalancerArn),
-      port: cdktf.numberToTerraform(this._port),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      arn: cdktn.stringToTerraform(this._arn),
+      id: cdktn.stringToTerraform(this._id),
+      load_balancer_arn: cdktn.stringToTerraform(this._loadBalancerArn),
+      port: cdktn.numberToTerraform(this._port),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: dataAwsLbListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1416,37 +1416,37 @@ export class DataAwsLbListener extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       load_balancer_arn: {
-        value: cdktf.stringToHclTerraform(this._loadBalancerArn),
+        value: cdktn.stringToHclTerraform(this._loadBalancerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

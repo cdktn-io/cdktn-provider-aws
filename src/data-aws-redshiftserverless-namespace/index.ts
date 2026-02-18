@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRedshiftserverlessNamespaceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRedshiftserverlessNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshiftserverless_namespace#id DataAwsRedshiftserverlessNamespace#id}
   *
@@ -34,7 +34,7 @@ export interface DataAwsRedshiftserverlessNamespaceConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshiftserverless_namespace aws_redshiftserverless_namespace}
 */
-export class DataAwsRedshiftserverlessNamespace extends cdktf.TerraformDataSource {
+export class DataAwsRedshiftserverlessNamespace extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class DataAwsRedshiftserverlessNamespace extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRedshiftserverlessNamespace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRedshiftserverlessNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRedshiftserverlessNamespace to import
   * @param importFromId The id of the existing DataAwsRedshiftserverlessNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshiftserverless_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRedshiftserverlessNamespace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_namespace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_namespace", importId: importFromId, provider });
       }
 
   // ===========
@@ -113,7 +113,7 @@ export class DataAwsRedshiftserverlessNamespace extends cdktf.TerraformDataSourc
 
   // iam_roles - computed: true, optional: false, required: false
   public get iamRoles() {
-    return cdktf.Fn.tolist(this.getListAttribute('iam_roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('iam_roles'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -139,7 +139,7 @@ export class DataAwsRedshiftserverlessNamespace extends cdktf.TerraformDataSourc
 
   // log_exports - computed: true, optional: false, required: false
   public get logExports() {
-    return cdktf.Fn.tolist(this.getListAttribute('log_exports'));
+    return cdktn.Fn.tolist(this.getListAttribute('log_exports'));
   }
 
   // namespace_id - computed: true, optional: false, required: false
@@ -182,28 +182,28 @@ export class DataAwsRedshiftserverlessNamespace extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      namespace_name: cdktf.stringToTerraform(this._namespaceName),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      namespace_name: cdktn.stringToTerraform(this._namespaceName),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_name: {
-        value: cdktf.stringToHclTerraform(this._namespaceName),
+        value: cdktn.stringToHclTerraform(this._namespaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

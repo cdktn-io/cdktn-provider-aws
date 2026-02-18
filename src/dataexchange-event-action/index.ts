@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataexchangeEventActionConfig extends cdktf.TerraformMetaArguments {
+export interface DataexchangeEventActionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -23,13 +23,13 @@ export interface DataexchangeEventActionConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
   */
-  readonly action?: DataexchangeEventActionAction[] | cdktf.IResolvable;
+  readonly action?: DataexchangeEventActionAction[] | cdktn.IResolvable;
   /**
   * event block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
   */
-  readonly event?: DataexchangeEventActionEvent[] | cdktf.IResolvable;
+  readonly event?: DataexchangeEventActionEvent[] | cdktn.IResolvable;
 }
 export interface DataexchangeEventActionActionExportRevisionToS3Encryption {
   /**
@@ -42,32 +42,32 @@ export interface DataexchangeEventActionActionExportRevisionToS3Encryption {
   readonly type?: string;
 }
 
-export function dataexchangeEventActionActionExportRevisionToS3EncryptionToTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3Encryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionActionExportRevisionToS3EncryptionToTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3Encryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    type: cdktf.stringToTerraform(struct!.type),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataexchangeEventActionActionExportRevisionToS3EncryptionToHclTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3Encryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionActionExportRevisionToS3EncryptionToHclTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3Encryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -78,9 +78,9 @@ export function dataexchangeEventActionActionExportRevisionToS3EncryptionToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference extends cdktf.ComplexObject {
+export class DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -88,11 +88,11 @@ export class DataexchangeEventActionActionExportRevisionToS3EncryptionOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeEventActionActionExportRevisionToS3Encryption | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeEventActionActionExportRevisionToS3Encryption | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -109,14 +109,14 @@ export class DataexchangeEventActionActionExportRevisionToS3EncryptionOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeEventActionActionExportRevisionToS3Encryption | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeEventActionActionExportRevisionToS3Encryption | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyArn = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -161,15 +161,15 @@ export class DataexchangeEventActionActionExportRevisionToS3EncryptionOutputRefe
   }
 }
 
-export class DataexchangeEventActionActionExportRevisionToS3EncryptionList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeEventActionActionExportRevisionToS3Encryption[] | cdktf.IResolvable
+export class DataexchangeEventActionActionExportRevisionToS3EncryptionList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeEventActionActionExportRevisionToS3Encryption[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -191,32 +191,32 @@ export interface DataexchangeEventActionActionExportRevisionToS3RevisionDestinat
   readonly keyPattern?: string;
 }
 
-export function dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key_pattern: cdktf.stringToTerraform(struct!.keyPattern),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key_pattern: cdktn.stringToTerraform(struct!.keyPattern),
   }
 }
 
 
-export function dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToHclTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToHclTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_pattern: {
-      value: cdktf.stringToHclTerraform(struct!.keyPattern),
+      value: cdktn.stringToHclTerraform(struct!.keyPattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -227,9 +227,9 @@ export function dataexchangeEventActionActionExportRevisionToS3RevisionDestinati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference extends cdktf.ComplexObject {
+export class DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -237,11 +237,11 @@ export class DataexchangeEventActionActionExportRevisionToS3RevisionDestinationO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -258,14 +258,14 @@ export class DataexchangeEventActionActionExportRevisionToS3RevisionDestinationO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeEventActionActionExportRevisionToS3RevisionDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucket = undefined;
       this._keyPattern = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -307,15 +307,15 @@ export class DataexchangeEventActionActionExportRevisionToS3RevisionDestinationO
   }
 }
 
-export class DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] | cdktf.IResolvable
+export class DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -332,41 +332,41 @@ export interface DataexchangeEventActionActionExportRevisionToS3 {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_event_action#encryption DataexchangeEventAction#encryption}
   */
-  readonly encryption?: DataexchangeEventActionActionExportRevisionToS3Encryption[] | cdktf.IResolvable;
+  readonly encryption?: DataexchangeEventActionActionExportRevisionToS3Encryption[] | cdktn.IResolvable;
   /**
   * revision_destination block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_event_action#revision_destination DataexchangeEventAction#revision_destination}
   */
-  readonly revisionDestination?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] | cdktf.IResolvable;
+  readonly revisionDestination?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] | cdktn.IResolvable;
 }
 
-export function dataexchangeEventActionActionExportRevisionToS3ToTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionActionExportRevisionToS3ToTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption: cdktf.listMapper(dataexchangeEventActionActionExportRevisionToS3EncryptionToTerraform, true)(struct!.encryption),
-    revision_destination: cdktf.listMapper(dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToTerraform, true)(struct!.revisionDestination),
+    encryption: cdktn.listMapper(dataexchangeEventActionActionExportRevisionToS3EncryptionToTerraform, true)(struct!.encryption),
+    revision_destination: cdktn.listMapper(dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToTerraform, true)(struct!.revisionDestination),
   }
 }
 
 
-export function dataexchangeEventActionActionExportRevisionToS3ToHclTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionActionExportRevisionToS3ToHclTerraform(struct?: DataexchangeEventActionActionExportRevisionToS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption: {
-      value: cdktf.listMapperHcl(dataexchangeEventActionActionExportRevisionToS3EncryptionToHclTerraform, true)(struct!.encryption),
+      value: cdktn.listMapperHcl(dataexchangeEventActionActionExportRevisionToS3EncryptionToHclTerraform, true)(struct!.encryption),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeEventActionActionExportRevisionToS3EncryptionList",
     },
     revision_destination: {
-      value: cdktf.listMapperHcl(dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToHclTerraform, true)(struct!.revisionDestination),
+      value: cdktn.listMapperHcl(dataexchangeEventActionActionExportRevisionToS3RevisionDestinationToHclTerraform, true)(struct!.revisionDestination),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList",
@@ -377,9 +377,9 @@ export function dataexchangeEventActionActionExportRevisionToS3ToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeEventActionActionExportRevisionToS3OutputReference extends cdktf.ComplexObject {
+export class DataexchangeEventActionActionExportRevisionToS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -387,11 +387,11 @@ export class DataexchangeEventActionActionExportRevisionToS3OutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeEventActionActionExportRevisionToS3 | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeEventActionActionExportRevisionToS3 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -408,14 +408,14 @@ export class DataexchangeEventActionActionExportRevisionToS3OutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeEventActionActionExportRevisionToS3 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeEventActionActionExportRevisionToS3 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._encryption.internalValue = undefined;
       this._revisionDestination.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -432,7 +432,7 @@ export class DataexchangeEventActionActionExportRevisionToS3OutputReference exte
   public get encryption() {
     return this._encryption;
   }
-  public putEncryption(value: DataexchangeEventActionActionExportRevisionToS3Encryption[] | cdktf.IResolvable) {
+  public putEncryption(value: DataexchangeEventActionActionExportRevisionToS3Encryption[] | cdktn.IResolvable) {
     this._encryption.internalValue = value;
   }
   public resetEncryption() {
@@ -448,7 +448,7 @@ export class DataexchangeEventActionActionExportRevisionToS3OutputReference exte
   public get revisionDestination() {
     return this._revisionDestination;
   }
-  public putRevisionDestination(value: DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] | cdktf.IResolvable) {
+  public putRevisionDestination(value: DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] | cdktn.IResolvable) {
     this._revisionDestination.internalValue = value;
   }
   public resetRevisionDestination() {
@@ -460,15 +460,15 @@ export class DataexchangeEventActionActionExportRevisionToS3OutputReference exte
   }
 }
 
-export class DataexchangeEventActionActionExportRevisionToS3List extends cdktf.ComplexList {
-  public internalValue? : DataexchangeEventActionActionExportRevisionToS3[] | cdktf.IResolvable
+export class DataexchangeEventActionActionExportRevisionToS3List extends cdktn.ComplexList {
+  public internalValue? : DataexchangeEventActionActionExportRevisionToS3[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -485,28 +485,28 @@ export interface DataexchangeEventActionAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_event_action#export_revision_to_s3 DataexchangeEventAction#export_revision_to_s3}
   */
-  readonly exportRevisionToS3?: DataexchangeEventActionActionExportRevisionToS3[] | cdktf.IResolvable;
+  readonly exportRevisionToS3?: DataexchangeEventActionActionExportRevisionToS3[] | cdktn.IResolvable;
 }
 
-export function dataexchangeEventActionActionToTerraform(struct?: DataexchangeEventActionAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionActionToTerraform(struct?: DataexchangeEventActionAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    export_revision_to_s3: cdktf.listMapper(dataexchangeEventActionActionExportRevisionToS3ToTerraform, true)(struct!.exportRevisionToS3),
+    export_revision_to_s3: cdktn.listMapper(dataexchangeEventActionActionExportRevisionToS3ToTerraform, true)(struct!.exportRevisionToS3),
   }
 }
 
 
-export function dataexchangeEventActionActionToHclTerraform(struct?: DataexchangeEventActionAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionActionToHclTerraform(struct?: DataexchangeEventActionAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     export_revision_to_s3: {
-      value: cdktf.listMapperHcl(dataexchangeEventActionActionExportRevisionToS3ToHclTerraform, true)(struct!.exportRevisionToS3),
+      value: cdktn.listMapperHcl(dataexchangeEventActionActionExportRevisionToS3ToHclTerraform, true)(struct!.exportRevisionToS3),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeEventActionActionExportRevisionToS3List",
@@ -517,9 +517,9 @@ export function dataexchangeEventActionActionToHclTerraform(struct?: Dataexchang
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeEventActionActionOutputReference extends cdktf.ComplexObject {
+export class DataexchangeEventActionActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -527,11 +527,11 @@ export class DataexchangeEventActionActionOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeEventActionAction | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeEventActionAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -544,13 +544,13 @@ export class DataexchangeEventActionActionOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeEventActionAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeEventActionAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._exportRevisionToS3.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -566,7 +566,7 @@ export class DataexchangeEventActionActionOutputReference extends cdktf.ComplexO
   public get exportRevisionToS3() {
     return this._exportRevisionToS3;
   }
-  public putExportRevisionToS3(value: DataexchangeEventActionActionExportRevisionToS3[] | cdktf.IResolvable) {
+  public putExportRevisionToS3(value: DataexchangeEventActionActionExportRevisionToS3[] | cdktn.IResolvable) {
     this._exportRevisionToS3.internalValue = value;
   }
   public resetExportRevisionToS3() {
@@ -578,15 +578,15 @@ export class DataexchangeEventActionActionOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DataexchangeEventActionActionList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeEventActionAction[] | cdktf.IResolvable
+export class DataexchangeEventActionActionList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeEventActionAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -604,25 +604,25 @@ export interface DataexchangeEventActionEventRevisionPublished {
   readonly dataSetId: string;
 }
 
-export function dataexchangeEventActionEventRevisionPublishedToTerraform(struct?: DataexchangeEventActionEventRevisionPublished | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionEventRevisionPublishedToTerraform(struct?: DataexchangeEventActionEventRevisionPublished | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_set_id: cdktf.stringToTerraform(struct!.dataSetId),
+    data_set_id: cdktn.stringToTerraform(struct!.dataSetId),
   }
 }
 
 
-export function dataexchangeEventActionEventRevisionPublishedToHclTerraform(struct?: DataexchangeEventActionEventRevisionPublished | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionEventRevisionPublishedToHclTerraform(struct?: DataexchangeEventActionEventRevisionPublished | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.dataSetId),
+      value: cdktn.stringToHclTerraform(struct!.dataSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -633,9 +633,9 @@ export function dataexchangeEventActionEventRevisionPublishedToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeEventActionEventRevisionPublishedOutputReference extends cdktf.ComplexObject {
+export class DataexchangeEventActionEventRevisionPublishedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -643,11 +643,11 @@ export class DataexchangeEventActionEventRevisionPublishedOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeEventActionEventRevisionPublished | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeEventActionEventRevisionPublished | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -660,13 +660,13 @@ export class DataexchangeEventActionEventRevisionPublishedOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeEventActionEventRevisionPublished | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeEventActionEventRevisionPublished | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataSetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -691,15 +691,15 @@ export class DataexchangeEventActionEventRevisionPublishedOutputReference extend
   }
 }
 
-export class DataexchangeEventActionEventRevisionPublishedList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeEventActionEventRevisionPublished[] | cdktf.IResolvable
+export class DataexchangeEventActionEventRevisionPublishedList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeEventActionEventRevisionPublished[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -716,28 +716,28 @@ export interface DataexchangeEventActionEvent {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_event_action#revision_published DataexchangeEventAction#revision_published}
   */
-  readonly revisionPublished?: DataexchangeEventActionEventRevisionPublished[] | cdktf.IResolvable;
+  readonly revisionPublished?: DataexchangeEventActionEventRevisionPublished[] | cdktn.IResolvable;
 }
 
-export function dataexchangeEventActionEventToTerraform(struct?: DataexchangeEventActionEvent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionEventToTerraform(struct?: DataexchangeEventActionEvent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    revision_published: cdktf.listMapper(dataexchangeEventActionEventRevisionPublishedToTerraform, true)(struct!.revisionPublished),
+    revision_published: cdktn.listMapper(dataexchangeEventActionEventRevisionPublishedToTerraform, true)(struct!.revisionPublished),
   }
 }
 
 
-export function dataexchangeEventActionEventToHclTerraform(struct?: DataexchangeEventActionEvent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeEventActionEventToHclTerraform(struct?: DataexchangeEventActionEvent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     revision_published: {
-      value: cdktf.listMapperHcl(dataexchangeEventActionEventRevisionPublishedToHclTerraform, true)(struct!.revisionPublished),
+      value: cdktn.listMapperHcl(dataexchangeEventActionEventRevisionPublishedToHclTerraform, true)(struct!.revisionPublished),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeEventActionEventRevisionPublishedList",
@@ -748,9 +748,9 @@ export function dataexchangeEventActionEventToHclTerraform(struct?: Dataexchange
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeEventActionEventOutputReference extends cdktf.ComplexObject {
+export class DataexchangeEventActionEventOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -758,11 +758,11 @@ export class DataexchangeEventActionEventOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeEventActionEvent | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeEventActionEvent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -775,13 +775,13 @@ export class DataexchangeEventActionEventOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeEventActionEvent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeEventActionEvent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._revisionPublished.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -797,7 +797,7 @@ export class DataexchangeEventActionEventOutputReference extends cdktf.ComplexOb
   public get revisionPublished() {
     return this._revisionPublished;
   }
-  public putRevisionPublished(value: DataexchangeEventActionEventRevisionPublished[] | cdktf.IResolvable) {
+  public putRevisionPublished(value: DataexchangeEventActionEventRevisionPublished[] | cdktn.IResolvable) {
     this._revisionPublished.internalValue = value;
   }
   public resetRevisionPublished() {
@@ -809,15 +809,15 @@ export class DataexchangeEventActionEventOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DataexchangeEventActionEventList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeEventActionEvent[] | cdktf.IResolvable
+export class DataexchangeEventActionEventList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeEventActionEvent[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -832,7 +832,7 @@ export class DataexchangeEventActionEventList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_event_action aws_dataexchange_event_action}
 */
-export class DataexchangeEventAction extends cdktf.TerraformResource {
+export class DataexchangeEventAction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -843,14 +843,14 @@ export class DataexchangeEventAction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataexchangeEventAction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataexchangeEventAction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataexchangeEventAction to import
   * @param importFromId The id of the existing DataexchangeEventAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_event_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataexchangeEventAction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dataexchange_event_action", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dataexchange_event_action", importId: importFromId, provider });
       }
 
   // ===========
@@ -930,7 +930,7 @@ export class DataexchangeEventAction extends cdktf.TerraformResource {
   public get action() {
     return this._action;
   }
-  public putAction(value: DataexchangeEventActionAction[] | cdktf.IResolvable) {
+  public putAction(value: DataexchangeEventActionAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   public resetAction() {
@@ -946,7 +946,7 @@ export class DataexchangeEventAction extends cdktf.TerraformResource {
   public get event() {
     return this._event;
   }
-  public putEvent(value: DataexchangeEventActionEvent[] | cdktf.IResolvable) {
+  public putEvent(value: DataexchangeEventActionEvent[] | cdktn.IResolvable) {
     this._event.internalValue = value;
   }
   public resetEvent() {
@@ -963,28 +963,28 @@ export class DataexchangeEventAction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      action: cdktf.listMapper(dataexchangeEventActionActionToTerraform, true)(this._action.internalValue),
-      event: cdktf.listMapper(dataexchangeEventActionEventToTerraform, true)(this._event.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      action: cdktn.listMapper(dataexchangeEventActionActionToTerraform, true)(this._action.internalValue),
+      event: cdktn.listMapper(dataexchangeEventActionEventToTerraform, true)(this._event.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       action: {
-        value: cdktf.listMapperHcl(dataexchangeEventActionActionToHclTerraform, true)(this._action.internalValue),
+        value: cdktn.listMapperHcl(dataexchangeEventActionActionToHclTerraform, true)(this._action.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataexchangeEventActionActionList",
       },
       event: {
-        value: cdktf.listMapperHcl(dataexchangeEventActionEventToHclTerraform, true)(this._event.internalValue),
+        value: cdktn.listMapperHcl(dataexchangeEventActionEventToHclTerraform, true)(this._event.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataexchangeEventActionEventList",

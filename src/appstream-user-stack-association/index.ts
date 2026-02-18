@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppstreamUserStackAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface AppstreamUserStackAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}
   */
@@ -32,7 +32,7 @@ export interface AppstreamUserStackAssociationConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}
   */
-  readonly sendEmailNotification?: boolean | cdktf.IResolvable;
+  readonly sendEmailNotification?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}
   */
@@ -46,7 +46,7 @@ export interface AppstreamUserStackAssociationConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association}
 */
-export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
+export class AppstreamUserStackAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppstreamUserStackAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppstreamUserStackAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppstreamUserStackAssociation to import
   * @param importFromId The id of the existing AppstreamUserStackAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_user_stack_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppstreamUserStackAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_user_stack_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_user_stack_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -152,11 +152,11 @@ export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
   }
 
   // send_email_notification - computed: false, optional: true, required: false
-  private _sendEmailNotification?: boolean | cdktf.IResolvable; 
+  private _sendEmailNotification?: boolean | cdktn.IResolvable; 
   public get sendEmailNotification() {
     return this.getBooleanAttribute('send_email_notification');
   }
-  public set sendEmailNotification(value: boolean | cdktf.IResolvable) {
+  public set sendEmailNotification(value: boolean | cdktn.IResolvable) {
     this._sendEmailNotification = value;
   }
   public resetSendEmailNotification() {
@@ -199,49 +199,49 @@ export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication_type: cdktf.stringToTerraform(this._authenticationType),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      send_email_notification: cdktf.booleanToTerraform(this._sendEmailNotification),
-      stack_name: cdktf.stringToTerraform(this._stackName),
-      user_name: cdktf.stringToTerraform(this._userName),
+      authentication_type: cdktn.stringToTerraform(this._authenticationType),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      send_email_notification: cdktn.booleanToTerraform(this._sendEmailNotification),
+      stack_name: cdktn.stringToTerraform(this._stackName),
+      user_name: cdktn.stringToTerraform(this._userName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authentication_type: {
-        value: cdktf.stringToHclTerraform(this._authenticationType),
+        value: cdktn.stringToHclTerraform(this._authenticationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       send_email_notification: {
-        value: cdktf.booleanToHclTerraform(this._sendEmailNotification),
+        value: cdktn.booleanToHclTerraform(this._sendEmailNotification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       stack_name: {
-        value: cdktf.stringToHclTerraform(this._stackName),
+        value: cdktn.stringToHclTerraform(this._stackName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

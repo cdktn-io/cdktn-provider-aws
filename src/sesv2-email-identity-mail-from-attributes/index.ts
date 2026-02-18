@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Sesv2EmailIdentityMailFromAttributesConfig extends cdktf.TerraformMetaArguments {
+export interface Sesv2EmailIdentityMailFromAttributesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_email_identity_mail_from_attributes#behavior_on_mx_failure Sesv2EmailIdentityMailFromAttributes#behavior_on_mx_failure}
   */
@@ -42,7 +42,7 @@ export interface Sesv2EmailIdentityMailFromAttributesConfig extends cdktf.Terraf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_email_identity_mail_from_attributes aws_sesv2_email_identity_mail_from_attributes}
 */
-export class Sesv2EmailIdentityMailFromAttributes extends cdktf.TerraformResource {
+export class Sesv2EmailIdentityMailFromAttributes extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class Sesv2EmailIdentityMailFromAttributes extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Sesv2EmailIdentityMailFromAttributes resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Sesv2EmailIdentityMailFromAttributes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2EmailIdentityMailFromAttributes to import
   * @param importFromId The id of the existing Sesv2EmailIdentityMailFromAttributes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_email_identity_mail_from_attributes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2EmailIdentityMailFromAttributes to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_email_identity_mail_from_attributes", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_email_identity_mail_from_attributes", importId: importFromId, provider });
       }
 
   // ===========
@@ -184,42 +184,42 @@ export class Sesv2EmailIdentityMailFromAttributes extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      behavior_on_mx_failure: cdktf.stringToTerraform(this._behaviorOnMxFailure),
-      email_identity: cdktf.stringToTerraform(this._emailIdentity),
-      id: cdktf.stringToTerraform(this._id),
-      mail_from_domain: cdktf.stringToTerraform(this._mailFromDomain),
-      region: cdktf.stringToTerraform(this._region),
+      behavior_on_mx_failure: cdktn.stringToTerraform(this._behaviorOnMxFailure),
+      email_identity: cdktn.stringToTerraform(this._emailIdentity),
+      id: cdktn.stringToTerraform(this._id),
+      mail_from_domain: cdktn.stringToTerraform(this._mailFromDomain),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       behavior_on_mx_failure: {
-        value: cdktf.stringToHclTerraform(this._behaviorOnMxFailure),
+        value: cdktn.stringToHclTerraform(this._behaviorOnMxFailure),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_identity: {
-        value: cdktf.stringToHclTerraform(this._emailIdentity),
+        value: cdktn.stringToHclTerraform(this._emailIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mail_from_domain: {
-        value: cdktf.stringToHclTerraform(this._mailFromDomain),
+        value: cdktn.stringToHclTerraform(this._mailFromDomain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

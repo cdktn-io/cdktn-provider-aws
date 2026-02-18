@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3VectorsVectorBucketPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface S3VectorsVectorBucketPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3vectors_vector_bucket_policy#policy S3VectorsVectorBucketPolicy#policy}
   */
@@ -31,7 +31,7 @@ export interface S3VectorsVectorBucketPolicyConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3vectors_vector_bucket_policy aws_s3vectors_vector_bucket_policy}
 */
-export class S3VectorsVectorBucketPolicy extends cdktf.TerraformResource {
+export class S3VectorsVectorBucketPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class S3VectorsVectorBucketPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3VectorsVectorBucketPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3VectorsVectorBucketPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3VectorsVectorBucketPolicy to import
   * @param importFromId The id of the existing S3VectorsVectorBucketPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3vectors_vector_bucket_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3VectorsVectorBucketPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3vectors_vector_bucket_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3vectors_vector_bucket_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,28 +136,28 @@ export class S3VectorsVectorBucketPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
-      vector_bucket_arn: cdktf.stringToTerraform(this._vectorBucketArn),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
+      vector_bucket_arn: cdktn.stringToTerraform(this._vectorBucketArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vector_bucket_arn: {
-        value: cdktf.stringToHclTerraform(this._vectorBucketArn),
+        value: cdktn.stringToHclTerraform(this._vectorBucketArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

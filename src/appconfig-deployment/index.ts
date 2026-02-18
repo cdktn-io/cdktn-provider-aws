@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppconfigDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface AppconfigDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appconfig_deployment#application_id AppconfigDeployment#application_id}
   */
@@ -66,7 +66,7 @@ export interface AppconfigDeploymentConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appconfig_deployment aws_appconfig_deployment}
 */
-export class AppconfigDeployment extends cdktf.TerraformResource {
+export class AppconfigDeployment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class AppconfigDeployment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppconfigDeployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppconfigDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppconfigDeployment to import
   * @param importFromId The id of the existing AppconfigDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appconfig_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppconfigDeployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appconfig_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appconfig_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -318,84 +318,84 @@ export class AppconfigDeployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      configuration_profile_id: cdktf.stringToTerraform(this._configurationProfileId),
-      configuration_version: cdktf.stringToTerraform(this._configurationVersion),
-      deployment_strategy_id: cdktf.stringToTerraform(this._deploymentStrategyId),
-      description: cdktf.stringToTerraform(this._description),
-      environment_id: cdktf.stringToTerraform(this._environmentId),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_identifier: cdktf.stringToTerraform(this._kmsKeyIdentifier),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      configuration_profile_id: cdktn.stringToTerraform(this._configurationProfileId),
+      configuration_version: cdktn.stringToTerraform(this._configurationVersion),
+      deployment_strategy_id: cdktn.stringToTerraform(this._deploymentStrategyId),
+      description: cdktn.stringToTerraform(this._description),
+      environment_id: cdktn.stringToTerraform(this._environmentId),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_identifier: cdktn.stringToTerraform(this._kmsKeyIdentifier),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration_profile_id: {
-        value: cdktf.stringToHclTerraform(this._configurationProfileId),
+        value: cdktn.stringToHclTerraform(this._configurationProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration_version: {
-        value: cdktf.stringToHclTerraform(this._configurationVersion),
+        value: cdktn.stringToHclTerraform(this._configurationVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deployment_strategy_id: {
-        value: cdktf.stringToHclTerraform(this._deploymentStrategyId),
+        value: cdktn.stringToHclTerraform(this._deploymentStrategyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       environment_id: {
-        value: cdktf.stringToHclTerraform(this._environmentId),
+        value: cdktn.stringToHclTerraform(this._environmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_identifier: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyIdentifier),
+        value: cdktn.stringToHclTerraform(this._kmsKeyIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

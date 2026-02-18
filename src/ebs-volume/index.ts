@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
+export interface EbsVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_volume#availability_zone EbsVolume#availability_zone}
   */
@@ -19,11 +19,11 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_volume#encrypted EbsVolume#encrypted}
   */
-  readonly encrypted?: boolean | cdktf.IResolvable;
+  readonly encrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_volume#final_snapshot EbsVolume#final_snapshot}
   */
-  readonly finalSnapshot?: boolean | cdktf.IResolvable;
+  readonly finalSnapshot?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_volume#id EbsVolume#id}
   *
@@ -42,7 +42,7 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_volume#multi_attach_enabled EbsVolume#multi_attach_enabled}
   */
-  readonly multiAttachEnabled?: boolean | cdktf.IResolvable;
+  readonly multiAttachEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_volume#outpost_arn EbsVolume#outpost_arn}
   */
@@ -103,39 +103,39 @@ export interface EbsVolumeTimeouts {
   readonly update?: string;
 }
 
-export function ebsVolumeTimeoutsToTerraform(struct?: EbsVolumeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ebsVolumeTimeoutsToTerraform(struct?: EbsVolumeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function ebsVolumeTimeoutsToHclTerraform(struct?: EbsVolumeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ebsVolumeTimeoutsToHclTerraform(struct?: EbsVolumeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -146,19 +146,19 @@ export function ebsVolumeTimeoutsToHclTerraform(struct?: EbsVolumeTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EbsVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EbsVolumeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EbsVolumeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EbsVolumeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -179,7 +179,7 @@ export class EbsVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EbsVolumeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EbsVolumeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -187,7 +187,7 @@ export class EbsVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -252,7 +252,7 @@ export class EbsVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_volume aws_ebs_volume}
 */
-export class EbsVolume extends cdktf.TerraformResource {
+export class EbsVolume extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -263,14 +263,14 @@ export class EbsVolume extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EbsVolume resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EbsVolume resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EbsVolume to import
   * @param importFromId The id of the existing EbsVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EbsVolume to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_volume", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_volume", importId: importFromId, provider });
       }
 
   // ===========
@@ -347,11 +347,11 @@ export class EbsVolume extends cdktf.TerraformResource {
   }
 
   // encrypted - computed: true, optional: true, required: false
-  private _encrypted?: boolean | cdktf.IResolvable; 
+  private _encrypted?: boolean | cdktn.IResolvable; 
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | cdktf.IResolvable) {
+  public set encrypted(value: boolean | cdktn.IResolvable) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -363,11 +363,11 @@ export class EbsVolume extends cdktf.TerraformResource {
   }
 
   // final_snapshot - computed: false, optional: true, required: false
-  private _finalSnapshot?: boolean | cdktf.IResolvable; 
+  private _finalSnapshot?: boolean | cdktn.IResolvable; 
   public get finalSnapshot() {
     return this.getBooleanAttribute('final_snapshot');
   }
-  public set finalSnapshot(value: boolean | cdktf.IResolvable) {
+  public set finalSnapshot(value: boolean | cdktn.IResolvable) {
     this._finalSnapshot = value;
   }
   public resetFinalSnapshot() {
@@ -427,11 +427,11 @@ export class EbsVolume extends cdktf.TerraformResource {
   }
 
   // multi_attach_enabled - computed: false, optional: true, required: false
-  private _multiAttachEnabled?: boolean | cdktf.IResolvable; 
+  private _multiAttachEnabled?: boolean | cdktn.IResolvable; 
   public get multiAttachEnabled() {
     return this.getBooleanAttribute('multi_attach_enabled');
   }
-  public set multiAttachEnabled(value: boolean | cdktf.IResolvable) {
+  public set multiAttachEnabled(value: boolean | cdktn.IResolvable) {
     this._multiAttachEnabled = value;
   }
   public resetMultiAttachEnabled() {
@@ -608,22 +608,22 @@ export class EbsVolume extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      encrypted: cdktf.booleanToTerraform(this._encrypted),
-      final_snapshot: cdktf.booleanToTerraform(this._finalSnapshot),
-      id: cdktf.stringToTerraform(this._id),
-      iops: cdktf.numberToTerraform(this._iops),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      multi_attach_enabled: cdktf.booleanToTerraform(this._multiAttachEnabled),
-      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
-      region: cdktf.stringToTerraform(this._region),
-      size: cdktf.numberToTerraform(this._size),
-      snapshot_id: cdktf.stringToTerraform(this._snapshotId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      throughput: cdktf.numberToTerraform(this._throughput),
-      type: cdktf.stringToTerraform(this._type),
-      volume_initialization_rate: cdktf.numberToTerraform(this._volumeInitializationRate),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      encrypted: cdktn.booleanToTerraform(this._encrypted),
+      final_snapshot: cdktn.booleanToTerraform(this._finalSnapshot),
+      id: cdktn.stringToTerraform(this._id),
+      iops: cdktn.numberToTerraform(this._iops),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      multi_attach_enabled: cdktn.booleanToTerraform(this._multiAttachEnabled),
+      outpost_arn: cdktn.stringToTerraform(this._outpostArn),
+      region: cdktn.stringToTerraform(this._region),
+      size: cdktn.numberToTerraform(this._size),
+      snapshot_id: cdktn.stringToTerraform(this._snapshotId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      throughput: cdktn.numberToTerraform(this._throughput),
+      type: cdktn.stringToTerraform(this._type),
+      volume_initialization_rate: cdktn.numberToTerraform(this._volumeInitializationRate),
       timeouts: ebsVolumeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -631,97 +631,97 @@ export class EbsVolume extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encrypted: {
-        value: cdktf.booleanToHclTerraform(this._encrypted),
+        value: cdktn.booleanToHclTerraform(this._encrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       final_snapshot: {
-        value: cdktf.booleanToHclTerraform(this._finalSnapshot),
+        value: cdktn.booleanToHclTerraform(this._finalSnapshot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iops: {
-        value: cdktf.numberToHclTerraform(this._iops),
+        value: cdktn.numberToHclTerraform(this._iops),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_attach_enabled: {
-        value: cdktf.booleanToHclTerraform(this._multiAttachEnabled),
+        value: cdktn.booleanToHclTerraform(this._multiAttachEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       outpost_arn: {
-        value: cdktf.stringToHclTerraform(this._outpostArn),
+        value: cdktn.stringToHclTerraform(this._outpostArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       size: {
-        value: cdktf.numberToHclTerraform(this._size),
+        value: cdktn.numberToHclTerraform(this._size),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       snapshot_id: {
-        value: cdktf.stringToHclTerraform(this._snapshotId),
+        value: cdktn.stringToHclTerraform(this._snapshotId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       throughput: {
-        value: cdktf.numberToHclTerraform(this._throughput),
+        value: cdktn.numberToHclTerraform(this._throughput),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       volume_initialization_rate: {
-        value: cdktf.numberToHclTerraform(this._volumeInitializationRate),
+        value: cdktn.numberToHclTerraform(this._volumeInitializationRate),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

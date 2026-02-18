@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LightsailLbCertificateAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailLbCertificateAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_lb_certificate_attachment#certificate_name LightsailLbCertificateAttachment#certificate_name}
   */
@@ -38,7 +38,7 @@ export interface LightsailLbCertificateAttachmentConfig extends cdktf.TerraformM
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_lb_certificate_attachment aws_lightsail_lb_certificate_attachment}
 */
-export class LightsailLbCertificateAttachment extends cdktf.TerraformResource {
+export class LightsailLbCertificateAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class LightsailLbCertificateAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LightsailLbCertificateAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LightsailLbCertificateAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LightsailLbCertificateAttachment to import
   * @param importFromId The id of the existing LightsailLbCertificateAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_lb_certificate_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LightsailLbCertificateAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_lb_certificate_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_lb_certificate_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class LightsailLbCertificateAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_name: cdktf.stringToTerraform(this._certificateName),
-      id: cdktf.stringToTerraform(this._id),
-      lb_name: cdktf.stringToTerraform(this._lbName),
-      region: cdktf.stringToTerraform(this._region),
+      certificate_name: cdktn.stringToTerraform(this._certificateName),
+      id: cdktn.stringToTerraform(this._id),
+      lb_name: cdktn.stringToTerraform(this._lbName),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_name: {
-        value: cdktf.stringToHclTerraform(this._certificateName),
+        value: cdktn.stringToHclTerraform(this._certificateName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lb_name: {
-        value: cdktf.stringToHclTerraform(this._lbName),
+        value: cdktn.stringToHclTerraform(this._lbName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

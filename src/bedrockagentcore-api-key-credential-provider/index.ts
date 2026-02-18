@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockagentcoreApiKeyCredentialProviderConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockagentcoreApiKeyCredentialProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_api_key_credential_provider#api_key BedrockagentcoreApiKeyCredentialProvider#api_key}
   */
@@ -39,8 +39,8 @@ export interface BedrockagentcoreApiKeyCredentialProviderApiKeySecretArn {
 }
 
 export function bedrockagentcoreApiKeyCredentialProviderApiKeySecretArnToTerraform(struct?: BedrockagentcoreApiKeyCredentialProviderApiKeySecretArn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -49,8 +49,8 @@ export function bedrockagentcoreApiKeyCredentialProviderApiKeySecretArnToTerrafo
 
 
 export function bedrockagentcoreApiKeyCredentialProviderApiKeySecretArnToHclTerraform(struct?: BedrockagentcoreApiKeyCredentialProviderApiKeySecretArn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -58,7 +58,7 @@ export function bedrockagentcoreApiKeyCredentialProviderApiKeySecretArnToHclTerr
   return attrs;
 }
 
-export class BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -67,7 +67,7 @@ export class BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -92,14 +92,14 @@ export class BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnOutputRefere
   }
 }
 
-export class BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnList extends cdktf.ComplexList {
+export class BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -114,7 +114,7 @@ export class BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnList extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_api_key_credential_provider aws_bedrockagentcore_api_key_credential_provider}
 */
-export class BedrockagentcoreApiKeyCredentialProvider extends cdktf.TerraformResource {
+export class BedrockagentcoreApiKeyCredentialProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -125,14 +125,14 @@ export class BedrockagentcoreApiKeyCredentialProvider extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockagentcoreApiKeyCredentialProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockagentcoreApiKeyCredentialProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreApiKeyCredentialProvider to import
   * @param importFromId The id of the existing BedrockagentcoreApiKeyCredentialProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_api_key_credential_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreApiKeyCredentialProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_api_key_credential_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_api_key_credential_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -267,42 +267,42 @@ export class BedrockagentcoreApiKeyCredentialProvider extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key: cdktf.stringToTerraform(this._apiKey),
-      api_key_wo: cdktf.stringToTerraform(this._apiKeyWo),
-      api_key_wo_version: cdktf.numberToTerraform(this._apiKeyWoVersion),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      api_key: cdktn.stringToTerraform(this._apiKey),
+      api_key_wo: cdktn.stringToTerraform(this._apiKeyWo),
+      api_key_wo_version: cdktn.numberToTerraform(this._apiKeyWoVersion),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_key: {
-        value: cdktf.stringToHclTerraform(this._apiKey),
+        value: cdktn.stringToHclTerraform(this._apiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       api_key_wo: {
-        value: cdktf.stringToHclTerraform(this._apiKeyWo),
+        value: cdktn.stringToHclTerraform(this._apiKeyWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       api_key_wo_version: {
-        value: cdktf.numberToHclTerraform(this._apiKeyWoVersion),
+        value: cdktn.numberToHclTerraform(this._apiKeyWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

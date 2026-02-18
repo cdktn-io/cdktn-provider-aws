@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsQuicksightThemeConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsQuicksightThemeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/quicksight_theme#aws_account_id DataAwsQuicksightTheme#aws_account_id}
   */
@@ -42,8 +42,8 @@ export interface DataAwsQuicksightThemeConfigurationDataColorPalette {
 }
 
 export function dataAwsQuicksightThemeConfigurationDataColorPaletteToTerraform(struct?: DataAwsQuicksightThemeConfigurationDataColorPalette): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAwsQuicksightThemeConfigurationDataColorPaletteToTerraform(s
 
 
 export function dataAwsQuicksightThemeConfigurationDataColorPaletteToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationDataColorPalette): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAwsQuicksightThemeConfigurationDataColorPaletteToHclTerrafor
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationDataColorPaletteOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationDataColorPaletteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAwsQuicksightThemeConfigurationDataColorPaletteOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -105,14 +105,14 @@ export class DataAwsQuicksightThemeConfigurationDataColorPaletteOutputReference 
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationDataColorPaletteList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationDataColorPaletteList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -127,8 +127,8 @@ export interface DataAwsQuicksightThemeConfigurationSheetTileBorder {
 }
 
 export function dataAwsQuicksightThemeConfigurationSheetTileBorderToTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTileBorder): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -137,8 +137,8 @@ export function dataAwsQuicksightThemeConfigurationSheetTileBorderToTerraform(st
 
 
 export function dataAwsQuicksightThemeConfigurationSheetTileBorderToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTileBorder): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -146,7 +146,7 @@ export function dataAwsQuicksightThemeConfigurationSheetTileBorderToHclTerraform
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileBorderOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationSheetTileBorderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -155,7 +155,7 @@ export class DataAwsQuicksightThemeConfigurationSheetTileBorderOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -180,14 +180,14 @@ export class DataAwsQuicksightThemeConfigurationSheetTileBorderOutputReference e
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileBorderList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationSheetTileBorderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -202,8 +202,8 @@ export interface DataAwsQuicksightThemeConfigurationSheetTile {
 }
 
 export function dataAwsQuicksightThemeConfigurationSheetTileToTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -212,8 +212,8 @@ export function dataAwsQuicksightThemeConfigurationSheetTileToTerraform(struct?:
 
 
 export function dataAwsQuicksightThemeConfigurationSheetTileToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -221,7 +221,7 @@ export function dataAwsQuicksightThemeConfigurationSheetTileToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationSheetTileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -230,7 +230,7 @@ export class DataAwsQuicksightThemeConfigurationSheetTileOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -256,14 +256,14 @@ export class DataAwsQuicksightThemeConfigurationSheetTileOutputReference extends
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationSheetTileList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -278,8 +278,8 @@ export interface DataAwsQuicksightThemeConfigurationSheetTileLayoutGutter {
 }
 
 export function dataAwsQuicksightThemeConfigurationSheetTileLayoutGutterToTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTileLayoutGutter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -288,8 +288,8 @@ export function dataAwsQuicksightThemeConfigurationSheetTileLayoutGutterToTerraf
 
 
 export function dataAwsQuicksightThemeConfigurationSheetTileLayoutGutterToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTileLayoutGutter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -297,7 +297,7 @@ export function dataAwsQuicksightThemeConfigurationSheetTileLayoutGutterToHclTer
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -306,7 +306,7 @@ export class DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -331,14 +331,14 @@ export class DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterOutputRefer
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -353,8 +353,8 @@ export interface DataAwsQuicksightThemeConfigurationSheetTileLayoutMargin {
 }
 
 export function dataAwsQuicksightThemeConfigurationSheetTileLayoutMarginToTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTileLayoutMargin): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -363,8 +363,8 @@ export function dataAwsQuicksightThemeConfigurationSheetTileLayoutMarginToTerraf
 
 
 export function dataAwsQuicksightThemeConfigurationSheetTileLayoutMarginToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTileLayoutMargin): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -372,7 +372,7 @@ export function dataAwsQuicksightThemeConfigurationSheetTileLayoutMarginToHclTer
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -381,7 +381,7 @@ export class DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -406,14 +406,14 @@ export class DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginOutputRefer
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -428,8 +428,8 @@ export interface DataAwsQuicksightThemeConfigurationSheetTileLayout {
 }
 
 export function dataAwsQuicksightThemeConfigurationSheetTileLayoutToTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTileLayout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -438,8 +438,8 @@ export function dataAwsQuicksightThemeConfigurationSheetTileLayoutToTerraform(st
 
 
 export function dataAwsQuicksightThemeConfigurationSheetTileLayoutToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationSheetTileLayout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -447,7 +447,7 @@ export function dataAwsQuicksightThemeConfigurationSheetTileLayoutToHclTerraform
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileLayoutOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationSheetTileLayoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -456,7 +456,7 @@ export class DataAwsQuicksightThemeConfigurationSheetTileLayoutOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -488,14 +488,14 @@ export class DataAwsQuicksightThemeConfigurationSheetTileLayoutOutputReference e
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetTileLayoutList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationSheetTileLayoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -510,8 +510,8 @@ export interface DataAwsQuicksightThemeConfigurationSheet {
 }
 
 export function dataAwsQuicksightThemeConfigurationSheetToTerraform(struct?: DataAwsQuicksightThemeConfigurationSheet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -520,8 +520,8 @@ export function dataAwsQuicksightThemeConfigurationSheetToTerraform(struct?: Dat
 
 
 export function dataAwsQuicksightThemeConfigurationSheetToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationSheet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -529,7 +529,7 @@ export function dataAwsQuicksightThemeConfigurationSheetToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationSheetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -538,7 +538,7 @@ export class DataAwsQuicksightThemeConfigurationSheetOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -570,14 +570,14 @@ export class DataAwsQuicksightThemeConfigurationSheetOutputReference extends cdk
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationSheetList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationSheetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -592,8 +592,8 @@ export interface DataAwsQuicksightThemeConfigurationTypographyFontFamilies {
 }
 
 export function dataAwsQuicksightThemeConfigurationTypographyFontFamiliesToTerraform(struct?: DataAwsQuicksightThemeConfigurationTypographyFontFamilies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -602,8 +602,8 @@ export function dataAwsQuicksightThemeConfigurationTypographyFontFamiliesToTerra
 
 
 export function dataAwsQuicksightThemeConfigurationTypographyFontFamiliesToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationTypographyFontFamilies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -611,7 +611,7 @@ export function dataAwsQuicksightThemeConfigurationTypographyFontFamiliesToHclTe
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -620,7 +620,7 @@ export class DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -645,14 +645,14 @@ export class DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputRefe
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationTypographyFontFamiliesList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationTypographyFontFamiliesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -667,8 +667,8 @@ export interface DataAwsQuicksightThemeConfigurationTypography {
 }
 
 export function dataAwsQuicksightThemeConfigurationTypographyToTerraform(struct?: DataAwsQuicksightThemeConfigurationTypography): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -677,8 +677,8 @@ export function dataAwsQuicksightThemeConfigurationTypographyToTerraform(struct?
 
 
 export function dataAwsQuicksightThemeConfigurationTypographyToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationTypography): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -686,7 +686,7 @@ export function dataAwsQuicksightThemeConfigurationTypographyToHclTerraform(stru
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationTypographyOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationTypographyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -695,7 +695,7 @@ export class DataAwsQuicksightThemeConfigurationTypographyOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -721,14 +721,14 @@ export class DataAwsQuicksightThemeConfigurationTypographyOutputReference extend
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationTypographyList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationTypographyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -743,8 +743,8 @@ export interface DataAwsQuicksightThemeConfigurationUiColorPalette {
 }
 
 export function dataAwsQuicksightThemeConfigurationUiColorPaletteToTerraform(struct?: DataAwsQuicksightThemeConfigurationUiColorPalette): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -753,8 +753,8 @@ export function dataAwsQuicksightThemeConfigurationUiColorPaletteToTerraform(str
 
 
 export function dataAwsQuicksightThemeConfigurationUiColorPaletteToHclTerraform(struct?: DataAwsQuicksightThemeConfigurationUiColorPalette): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -762,7 +762,7 @@ export function dataAwsQuicksightThemeConfigurationUiColorPaletteToHclTerraform(
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationUiColorPaletteOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationUiColorPaletteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -771,7 +771,7 @@ export class DataAwsQuicksightThemeConfigurationUiColorPaletteOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -871,14 +871,14 @@ export class DataAwsQuicksightThemeConfigurationUiColorPaletteOutputReference ex
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationUiColorPaletteList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationUiColorPaletteList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -893,8 +893,8 @@ export interface DataAwsQuicksightThemeConfiguration {
 }
 
 export function dataAwsQuicksightThemeConfigurationToTerraform(struct?: DataAwsQuicksightThemeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -903,8 +903,8 @@ export function dataAwsQuicksightThemeConfigurationToTerraform(struct?: DataAwsQ
 
 
 export function dataAwsQuicksightThemeConfigurationToHclTerraform(struct?: DataAwsQuicksightThemeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -912,7 +912,7 @@ export function dataAwsQuicksightThemeConfigurationToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsQuicksightThemeConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -921,7 +921,7 @@ export class DataAwsQuicksightThemeConfigurationOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -965,14 +965,14 @@ export class DataAwsQuicksightThemeConfigurationOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsQuicksightThemeConfigurationList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemeConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -987,8 +987,8 @@ export interface DataAwsQuicksightThemePermissions {
 }
 
 export function dataAwsQuicksightThemePermissionsToTerraform(struct?: DataAwsQuicksightThemePermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -997,8 +997,8 @@ export function dataAwsQuicksightThemePermissionsToTerraform(struct?: DataAwsQui
 
 
 export function dataAwsQuicksightThemePermissionsToHclTerraform(struct?: DataAwsQuicksightThemePermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1006,7 +1006,7 @@ export function dataAwsQuicksightThemePermissionsToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsQuicksightThemePermissionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsQuicksightThemePermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1015,7 +1015,7 @@ export class DataAwsQuicksightThemePermissionsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1036,7 +1036,7 @@ export class DataAwsQuicksightThemePermissionsOutputReference extends cdktf.Comp
 
   // actions - computed: true, optional: false, required: false
   public get actions() {
-    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('actions'));
   }
 
   // principal - computed: true, optional: false, required: false
@@ -1045,14 +1045,14 @@ export class DataAwsQuicksightThemePermissionsOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsQuicksightThemePermissionsList extends cdktf.ComplexList {
+export class DataAwsQuicksightThemePermissionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1067,7 +1067,7 @@ export class DataAwsQuicksightThemePermissionsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/quicksight_theme aws_quicksight_theme}
 */
-export class DataAwsQuicksightTheme extends cdktf.TerraformDataSource {
+export class DataAwsQuicksightTheme extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1078,14 +1078,14 @@ export class DataAwsQuicksightTheme extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsQuicksightTheme resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsQuicksightTheme resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsQuicksightTheme to import
   * @param importFromId The id of the existing DataAwsQuicksightTheme that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/quicksight_theme#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsQuicksightTheme to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_theme", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_theme", importId: importFromId, provider });
       }
 
   // ===========
@@ -1261,42 +1261,42 @@ export class DataAwsQuicksightTheme extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      theme_id: cdktf.stringToTerraform(this._themeId),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      theme_id: cdktn.stringToTerraform(this._themeId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       theme_id: {
-        value: cdktf.stringToHclTerraform(this._themeId),
+        value: cdktn.stringToHclTerraform(this._themeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

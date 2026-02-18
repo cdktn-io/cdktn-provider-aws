@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchLogTransformerConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogTransformerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#log_group_arn CloudwatchLogTransformer#log_group_arn}
   */
@@ -27,7 +27,7 @@ export interface CloudwatchLogTransformerConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#transformer_config CloudwatchLogTransformer#transformer_config}
   */
-  readonly transformerConfig?: CloudwatchLogTransformerTransformerConfig[] | cdktf.IResolvable;
+  readonly transformerConfig?: CloudwatchLogTransformerTransformerConfig[] | cdktn.IResolvable;
 }
 export interface CloudwatchLogTransformerTransformerConfigAddKeysEntry {
   /**
@@ -37,46 +37,46 @@ export interface CloudwatchLogTransformerTransformerConfigAddKeysEntry {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}
   */
-  readonly overwriteIfExists?: boolean | cdktf.IResolvable;
+  readonly overwriteIfExists?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#value CloudwatchLogTransformer#value}
   */
   readonly value: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigAddKeysEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigAddKeysEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigAddKeysEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigAddKeysEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    overwrite_if_exists: cdktf.booleanToTerraform(struct!.overwriteIfExists),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    overwrite_if_exists: cdktn.booleanToTerraform(struct!.overwriteIfExists),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigAddKeysEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigAddKeysEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigAddKeysEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigAddKeysEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_if_exists: {
-      value: cdktf.booleanToHclTerraform(struct!.overwriteIfExists),
+      value: cdktn.booleanToHclTerraform(struct!.overwriteIfExists),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -87,9 +87,9 @@ export function cloudwatchLogTransformerTransformerConfigAddKeysEntryToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -97,11 +97,11 @@ export class CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigAddKeysEntry | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigAddKeysEntry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,7 +122,7 @@ export class CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigAddKeysEntry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigAddKeysEntry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -130,7 +130,7 @@ export class CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReferenc
       this._overwriteIfExists = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -157,11 +157,11 @@ export class CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReferenc
   }
 
   // overwrite_if_exists - computed: true, optional: true, required: false
-  private _overwriteIfExists?: boolean | cdktf.IResolvable; 
+  private _overwriteIfExists?: boolean | cdktn.IResolvable; 
   public get overwriteIfExists() {
     return this.getBooleanAttribute('overwrite_if_exists');
   }
-  public set overwriteIfExists(value: boolean | cdktf.IResolvable) {
+  public set overwriteIfExists(value: boolean | cdktn.IResolvable) {
     this._overwriteIfExists = value;
   }
   public resetOverwriteIfExists() {
@@ -186,15 +186,15 @@ export class CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReferenc
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigAddKeysEntryList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigAddKeysEntry[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigAddKeysEntryList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigAddKeysEntry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -211,28 +211,28 @@ export interface CloudwatchLogTransformerTransformerConfigAddKeys {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
   */
-  readonly entry?: CloudwatchLogTransformerTransformerConfigAddKeysEntry[] | cdktf.IResolvable;
+  readonly entry?: CloudwatchLogTransformerTransformerConfigAddKeysEntry[] | cdktn.IResolvable;
 }
 
-export function cloudwatchLogTransformerTransformerConfigAddKeysToTerraform(struct?: CloudwatchLogTransformerTransformerConfigAddKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigAddKeysToTerraform(struct?: CloudwatchLogTransformerTransformerConfigAddKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigAddKeysEntryToTerraform, true)(struct!.entry),
+    entry: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigAddKeysEntryToTerraform, true)(struct!.entry),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigAddKeysToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigAddKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigAddKeysToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigAddKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigAddKeysEntryToHclTerraform, true)(struct!.entry),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigAddKeysEntryToHclTerraform, true)(struct!.entry),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigAddKeysEntryList",
@@ -243,9 +243,9 @@ export function cloudwatchLogTransformerTransformerConfigAddKeysToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigAddKeysOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigAddKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -253,11 +253,11 @@ export class CloudwatchLogTransformerTransformerConfigAddKeysOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigAddKeys | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigAddKeys | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -270,13 +270,13 @@ export class CloudwatchLogTransformerTransformerConfigAddKeysOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigAddKeys | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigAddKeys | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entry.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -292,7 +292,7 @@ export class CloudwatchLogTransformerTransformerConfigAddKeysOutputReference ext
   public get entry() {
     return this._entry;
   }
-  public putEntry(value: CloudwatchLogTransformerTransformerConfigAddKeysEntry[] | cdktf.IResolvable) {
+  public putEntry(value: CloudwatchLogTransformerTransformerConfigAddKeysEntry[] | cdktn.IResolvable) {
     this._entry.internalValue = value;
   }
   public resetEntry() {
@@ -304,15 +304,15 @@ export class CloudwatchLogTransformerTransformerConfigAddKeysOutputReference ext
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigAddKeysList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigAddKeys[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigAddKeysList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigAddKeys[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -327,7 +327,7 @@ export interface CloudwatchLogTransformerTransformerConfigCopyValueEntry {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}
   */
-  readonly overwriteIfExists?: boolean | cdktf.IResolvable;
+  readonly overwriteIfExists?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}
   */
@@ -338,39 +338,39 @@ export interface CloudwatchLogTransformerTransformerConfigCopyValueEntry {
   readonly target: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigCopyValueEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigCopyValueEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigCopyValueEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigCopyValueEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    overwrite_if_exists: cdktf.booleanToTerraform(struct!.overwriteIfExists),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    overwrite_if_exists: cdktn.booleanToTerraform(struct!.overwriteIfExists),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigCopyValueEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigCopyValueEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigCopyValueEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigCopyValueEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     overwrite_if_exists: {
-      value: cdktf.booleanToHclTerraform(struct!.overwriteIfExists),
+      value: cdktn.booleanToHclTerraform(struct!.overwriteIfExists),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -381,9 +381,9 @@ export function cloudwatchLogTransformerTransformerConfigCopyValueEntryToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -391,11 +391,11 @@ export class CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigCopyValueEntry | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigCopyValueEntry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -416,7 +416,7 @@ export class CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigCopyValueEntry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigCopyValueEntry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -424,7 +424,7 @@ export class CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputRefere
       this._source = undefined;
       this._target = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -438,11 +438,11 @@ export class CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputRefere
   }
 
   // overwrite_if_exists - computed: true, optional: true, required: false
-  private _overwriteIfExists?: boolean | cdktf.IResolvable; 
+  private _overwriteIfExists?: boolean | cdktn.IResolvable; 
   public get overwriteIfExists() {
     return this.getBooleanAttribute('overwrite_if_exists');
   }
-  public set overwriteIfExists(value: boolean | cdktf.IResolvable) {
+  public set overwriteIfExists(value: boolean | cdktn.IResolvable) {
     this._overwriteIfExists = value;
   }
   public resetOverwriteIfExists() {
@@ -480,15 +480,15 @@ export class CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputRefere
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigCopyValueEntryList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigCopyValueEntry[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigCopyValueEntryList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigCopyValueEntry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -505,28 +505,28 @@ export interface CloudwatchLogTransformerTransformerConfigCopyValue {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
   */
-  readonly entry?: CloudwatchLogTransformerTransformerConfigCopyValueEntry[] | cdktf.IResolvable;
+  readonly entry?: CloudwatchLogTransformerTransformerConfigCopyValueEntry[] | cdktn.IResolvable;
 }
 
-export function cloudwatchLogTransformerTransformerConfigCopyValueToTerraform(struct?: CloudwatchLogTransformerTransformerConfigCopyValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigCopyValueToTerraform(struct?: CloudwatchLogTransformerTransformerConfigCopyValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigCopyValueEntryToTerraform, true)(struct!.entry),
+    entry: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigCopyValueEntryToTerraform, true)(struct!.entry),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigCopyValueToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigCopyValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigCopyValueToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigCopyValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigCopyValueEntryToHclTerraform, true)(struct!.entry),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigCopyValueEntryToHclTerraform, true)(struct!.entry),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigCopyValueEntryList",
@@ -537,9 +537,9 @@ export function cloudwatchLogTransformerTransformerConfigCopyValueToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigCopyValueOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigCopyValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -547,11 +547,11 @@ export class CloudwatchLogTransformerTransformerConfigCopyValueOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigCopyValue | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigCopyValue | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -564,13 +564,13 @@ export class CloudwatchLogTransformerTransformerConfigCopyValueOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigCopyValue | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigCopyValue | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entry.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -586,7 +586,7 @@ export class CloudwatchLogTransformerTransformerConfigCopyValueOutputReference e
   public get entry() {
     return this._entry;
   }
-  public putEntry(value: CloudwatchLogTransformerTransformerConfigCopyValueEntry[] | cdktf.IResolvable) {
+  public putEntry(value: CloudwatchLogTransformerTransformerConfigCopyValueEntry[] | cdktn.IResolvable) {
     this._entry.internalValue = value;
   }
   public resetEntry() {
@@ -598,15 +598,15 @@ export class CloudwatchLogTransformerTransformerConfigCopyValueOutputReference e
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigCopyValueList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigCopyValue[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigCopyValueList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigCopyValue[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -636,46 +636,46 @@ export interface CloudwatchLogTransformerTransformerConfigCsv {
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigCsvToTerraform(struct?: CloudwatchLogTransformerTransformerConfigCsv | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigCsvToTerraform(struct?: CloudwatchLogTransformerTransformerConfigCsv | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columns),
-    delimiter: cdktf.stringToTerraform(struct!.delimiter),
-    quote_character: cdktf.stringToTerraform(struct!.quoteCharacter),
-    source: cdktf.stringToTerraform(struct!.source),
+    columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columns),
+    delimiter: cdktn.stringToTerraform(struct!.delimiter),
+    quote_character: cdktn.stringToTerraform(struct!.quoteCharacter),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigCsvToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigCsv | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigCsvToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigCsv | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.columns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.columns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      value: cdktn.stringToHclTerraform(struct!.delimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     quote_character: {
-      value: cdktf.stringToHclTerraform(struct!.quoteCharacter),
+      value: cdktn.stringToHclTerraform(struct!.quoteCharacter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -686,9 +686,9 @@ export function cloudwatchLogTransformerTransformerConfigCsvToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigCsvOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigCsvOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -696,11 +696,11 @@ export class CloudwatchLogTransformerTransformerConfigCsvOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigCsv | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigCsv | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -725,7 +725,7 @@ export class CloudwatchLogTransformerTransformerConfigCsvOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigCsv | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigCsv | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -734,7 +734,7 @@ export class CloudwatchLogTransformerTransformerConfigCsvOutputReference extends
       this._quoteCharacter = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -813,15 +813,15 @@ export class CloudwatchLogTransformerTransformerConfigCsvOutputReference extends
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigCsvList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigCsv[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigCsvList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigCsv[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -863,67 +863,67 @@ export interface CloudwatchLogTransformerTransformerConfigDateTimeConverter {
   readonly targetTimezone?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigDateTimeConverterToTerraform(struct?: CloudwatchLogTransformerTransformerConfigDateTimeConverter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigDateTimeConverterToTerraform(struct?: CloudwatchLogTransformerTransformerConfigDateTimeConverter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    locale: cdktf.stringToTerraform(struct!.locale),
-    match_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchPatterns),
-    source: cdktf.stringToTerraform(struct!.source),
-    source_timezone: cdktf.stringToTerraform(struct!.sourceTimezone),
-    target: cdktf.stringToTerraform(struct!.target),
-    target_format: cdktf.stringToTerraform(struct!.targetFormat),
-    target_timezone: cdktf.stringToTerraform(struct!.targetTimezone),
+    locale: cdktn.stringToTerraform(struct!.locale),
+    match_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchPatterns),
+    source: cdktn.stringToTerraform(struct!.source),
+    source_timezone: cdktn.stringToTerraform(struct!.sourceTimezone),
+    target: cdktn.stringToTerraform(struct!.target),
+    target_format: cdktn.stringToTerraform(struct!.targetFormat),
+    target_timezone: cdktn.stringToTerraform(struct!.targetTimezone),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigDateTimeConverterToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigDateTimeConverter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigDateTimeConverterToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigDateTimeConverter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     locale: {
-      value: cdktf.stringToHclTerraform(struct!.locale),
+      value: cdktn.stringToHclTerraform(struct!.locale),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_patterns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchPatterns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchPatterns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_timezone: {
-      value: cdktf.stringToHclTerraform(struct!.sourceTimezone),
+      value: cdktn.stringToHclTerraform(struct!.sourceTimezone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_format: {
-      value: cdktf.stringToHclTerraform(struct!.targetFormat),
+      value: cdktn.stringToHclTerraform(struct!.targetFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_timezone: {
-      value: cdktf.stringToHclTerraform(struct!.targetTimezone),
+      value: cdktn.stringToHclTerraform(struct!.targetTimezone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -934,9 +934,9 @@ export function cloudwatchLogTransformerTransformerConfigDateTimeConverterToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -944,11 +944,11 @@ export class CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigDateTimeConverter | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigDateTimeConverter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -985,7 +985,7 @@ export class CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigDateTimeConverter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigDateTimeConverter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -997,7 +997,7 @@ export class CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputRef
       this._targetFormat = undefined;
       this._targetTimezone = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1118,15 +1118,15 @@ export class CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputRef
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigDateTimeConverterList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigDateTimeConverter[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigDateTimeConverterList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigDateTimeConverter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1144,25 +1144,25 @@ export interface CloudwatchLogTransformerTransformerConfigDeleteKeys {
   readonly withKeys: string[];
 }
 
-export function cloudwatchLogTransformerTransformerConfigDeleteKeysToTerraform(struct?: CloudwatchLogTransformerTransformerConfigDeleteKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigDeleteKeysToTerraform(struct?: CloudwatchLogTransformerTransformerConfigDeleteKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    with_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.withKeys),
+    with_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.withKeys),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigDeleteKeysToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigDeleteKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigDeleteKeysToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigDeleteKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     with_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.withKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.withKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1173,9 +1173,9 @@ export function cloudwatchLogTransformerTransformerConfigDeleteKeysToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1183,11 +1183,11 @@ export class CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigDeleteKeys | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigDeleteKeys | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1200,13 +1200,13 @@ export class CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigDeleteKeys | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigDeleteKeys | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._withKeys = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1231,15 +1231,15 @@ export class CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference 
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigDeleteKeysList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigDeleteKeys[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigDeleteKeysList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigDeleteKeys[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1261,32 +1261,32 @@ export interface CloudwatchLogTransformerTransformerConfigGrok {
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigGrokToTerraform(struct?: CloudwatchLogTransformerTransformerConfigGrok | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigGrokToTerraform(struct?: CloudwatchLogTransformerTransformerConfigGrok | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match: cdktf.stringToTerraform(struct!.match),
-    source: cdktf.stringToTerraform(struct!.source),
+    match: cdktn.stringToTerraform(struct!.match),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigGrokToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigGrok | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigGrokToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigGrok | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match: {
-      value: cdktf.stringToHclTerraform(struct!.match),
+      value: cdktn.stringToHclTerraform(struct!.match),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1297,9 +1297,9 @@ export function cloudwatchLogTransformerTransformerConfigGrokToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigGrokOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigGrokOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1307,11 +1307,11 @@ export class CloudwatchLogTransformerTransformerConfigGrokOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigGrok | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigGrok | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1328,14 +1328,14 @@ export class CloudwatchLogTransformerTransformerConfigGrokOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigGrok | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigGrok | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._match = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1377,15 +1377,15 @@ export class CloudwatchLogTransformerTransformerConfigGrokOutputReference extend
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigGrokList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigGrok[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigGrokList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigGrok[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1400,7 +1400,7 @@ export interface CloudwatchLogTransformerTransformerConfigListToMap {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#flatten CloudwatchLogTransformer#flatten}
   */
-  readonly flatten?: boolean | cdktf.IResolvable;
+  readonly flatten?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#flattened_element CloudwatchLogTransformer#flattened_element}
   */
@@ -1423,60 +1423,60 @@ export interface CloudwatchLogTransformerTransformerConfigListToMap {
   readonly valueKey?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigListToMapToTerraform(struct?: CloudwatchLogTransformerTransformerConfigListToMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigListToMapToTerraform(struct?: CloudwatchLogTransformerTransformerConfigListToMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    flatten: cdktf.booleanToTerraform(struct!.flatten),
-    flattened_element: cdktf.stringToTerraform(struct!.flattenedElement),
-    key: cdktf.stringToTerraform(struct!.key),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
-    value_key: cdktf.stringToTerraform(struct!.valueKey),
+    flatten: cdktn.booleanToTerraform(struct!.flatten),
+    flattened_element: cdktn.stringToTerraform(struct!.flattenedElement),
+    key: cdktn.stringToTerraform(struct!.key),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
+    value_key: cdktn.stringToTerraform(struct!.valueKey),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigListToMapToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigListToMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigListToMapToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigListToMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     flatten: {
-      value: cdktf.booleanToHclTerraform(struct!.flatten),
+      value: cdktn.booleanToHclTerraform(struct!.flatten),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     flattened_element: {
-      value: cdktf.stringToHclTerraform(struct!.flattenedElement),
+      value: cdktn.stringToHclTerraform(struct!.flattenedElement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_key: {
-      value: cdktf.stringToHclTerraform(struct!.valueKey),
+      value: cdktn.stringToHclTerraform(struct!.valueKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1487,9 +1487,9 @@ export function cloudwatchLogTransformerTransformerConfigListToMapToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigListToMapOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigListToMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1497,11 +1497,11 @@ export class CloudwatchLogTransformerTransformerConfigListToMapOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigListToMap | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigListToMap | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1534,7 +1534,7 @@ export class CloudwatchLogTransformerTransformerConfigListToMapOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigListToMap | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigListToMap | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1545,7 +1545,7 @@ export class CloudwatchLogTransformerTransformerConfigListToMapOutputReference e
       this._target = undefined;
       this._valueKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1562,11 +1562,11 @@ export class CloudwatchLogTransformerTransformerConfigListToMapOutputReference e
   }
 
   // flatten - computed: true, optional: true, required: false
-  private _flatten?: boolean | cdktf.IResolvable; 
+  private _flatten?: boolean | cdktn.IResolvable; 
   public get flatten() {
     return this.getBooleanAttribute('flatten');
   }
-  public set flatten(value: boolean | cdktf.IResolvable) {
+  public set flatten(value: boolean | cdktn.IResolvable) {
     this._flatten = value;
   }
   public resetFlatten() {
@@ -1652,15 +1652,15 @@ export class CloudwatchLogTransformerTransformerConfigListToMapOutputReference e
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigListToMapList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigListToMap[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigListToMapList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigListToMap[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1678,25 +1678,25 @@ export interface CloudwatchLogTransformerTransformerConfigLowerCaseString {
   readonly withKeys: string[];
 }
 
-export function cloudwatchLogTransformerTransformerConfigLowerCaseStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigLowerCaseString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigLowerCaseStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigLowerCaseString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    with_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.withKeys),
+    with_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.withKeys),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigLowerCaseStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigLowerCaseString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigLowerCaseStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigLowerCaseString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     with_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.withKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.withKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1707,9 +1707,9 @@ export function cloudwatchLogTransformerTransformerConfigLowerCaseStringToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1717,11 +1717,11 @@ export class CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigLowerCaseString | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigLowerCaseString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1734,13 +1734,13 @@ export class CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigLowerCaseString | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigLowerCaseString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._withKeys = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1765,15 +1765,15 @@ export class CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputRefer
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigLowerCaseStringList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigLowerCaseString[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigLowerCaseStringList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigLowerCaseString[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1788,7 +1788,7 @@ export interface CloudwatchLogTransformerTransformerConfigMoveKeysEntry {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}
   */
-  readonly overwriteIfExists?: boolean | cdktf.IResolvable;
+  readonly overwriteIfExists?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}
   */
@@ -1799,39 +1799,39 @@ export interface CloudwatchLogTransformerTransformerConfigMoveKeysEntry {
   readonly target: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigMoveKeysEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigMoveKeysEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigMoveKeysEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigMoveKeysEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    overwrite_if_exists: cdktf.booleanToTerraform(struct!.overwriteIfExists),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    overwrite_if_exists: cdktn.booleanToTerraform(struct!.overwriteIfExists),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigMoveKeysEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigMoveKeysEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigMoveKeysEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigMoveKeysEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     overwrite_if_exists: {
-      value: cdktf.booleanToHclTerraform(struct!.overwriteIfExists),
+      value: cdktn.booleanToHclTerraform(struct!.overwriteIfExists),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1842,9 +1842,9 @@ export function cloudwatchLogTransformerTransformerConfigMoveKeysEntryToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1852,11 +1852,11 @@ export class CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigMoveKeysEntry | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigMoveKeysEntry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1877,7 +1877,7 @@ export class CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigMoveKeysEntry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigMoveKeysEntry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1885,7 +1885,7 @@ export class CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReferen
       this._source = undefined;
       this._target = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1899,11 +1899,11 @@ export class CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReferen
   }
 
   // overwrite_if_exists - computed: true, optional: true, required: false
-  private _overwriteIfExists?: boolean | cdktf.IResolvable; 
+  private _overwriteIfExists?: boolean | cdktn.IResolvable; 
   public get overwriteIfExists() {
     return this.getBooleanAttribute('overwrite_if_exists');
   }
-  public set overwriteIfExists(value: boolean | cdktf.IResolvable) {
+  public set overwriteIfExists(value: boolean | cdktn.IResolvable) {
     this._overwriteIfExists = value;
   }
   public resetOverwriteIfExists() {
@@ -1941,15 +1941,15 @@ export class CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReferen
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigMoveKeysEntryList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigMoveKeysEntry[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigMoveKeysEntryList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigMoveKeysEntry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1966,28 +1966,28 @@ export interface CloudwatchLogTransformerTransformerConfigMoveKeys {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
   */
-  readonly entry?: CloudwatchLogTransformerTransformerConfigMoveKeysEntry[] | cdktf.IResolvable;
+  readonly entry?: CloudwatchLogTransformerTransformerConfigMoveKeysEntry[] | cdktn.IResolvable;
 }
 
-export function cloudwatchLogTransformerTransformerConfigMoveKeysToTerraform(struct?: CloudwatchLogTransformerTransformerConfigMoveKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigMoveKeysToTerraform(struct?: CloudwatchLogTransformerTransformerConfigMoveKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigMoveKeysEntryToTerraform, true)(struct!.entry),
+    entry: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigMoveKeysEntryToTerraform, true)(struct!.entry),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigMoveKeysToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigMoveKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigMoveKeysToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigMoveKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigMoveKeysEntryToHclTerraform, true)(struct!.entry),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigMoveKeysEntryToHclTerraform, true)(struct!.entry),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigMoveKeysEntryList",
@@ -1998,9 +1998,9 @@ export function cloudwatchLogTransformerTransformerConfigMoveKeysToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2008,11 +2008,11 @@ export class CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigMoveKeys | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigMoveKeys | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2025,13 +2025,13 @@ export class CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigMoveKeys | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigMoveKeys | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entry.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2047,7 +2047,7 @@ export class CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference ex
   public get entry() {
     return this._entry;
   }
-  public putEntry(value: CloudwatchLogTransformerTransformerConfigMoveKeysEntry[] | cdktf.IResolvable) {
+  public putEntry(value: CloudwatchLogTransformerTransformerConfigMoveKeysEntry[] | cdktn.IResolvable) {
     this._entry.internalValue = value;
   }
   public resetEntry() {
@@ -2059,15 +2059,15 @@ export class CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference ex
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigMoveKeysList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigMoveKeys[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigMoveKeysList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigMoveKeys[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2085,25 +2085,25 @@ export interface CloudwatchLogTransformerTransformerConfigParseCloudfront {
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigParseCloudfrontToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseCloudfront | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseCloudfrontToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseCloudfront | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigParseCloudfrontToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseCloudfront | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseCloudfrontToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseCloudfront | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2114,9 +2114,9 @@ export function cloudwatchLogTransformerTransformerConfigParseCloudfrontToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2124,11 +2124,11 @@ export class CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseCloudfront | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseCloudfront | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2141,13 +2141,13 @@ export class CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseCloudfront | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseCloudfront | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2175,15 +2175,15 @@ export class CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputRefer
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseCloudfrontList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigParseCloudfront[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigParseCloudfrontList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigParseCloudfront[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2205,32 +2205,32 @@ export interface CloudwatchLogTransformerTransformerConfigParseJson {
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigParseJsonToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseJson | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseJsonToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseJson | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
-    source: cdktf.stringToTerraform(struct!.source),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigParseJsonToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseJson | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseJsonToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseJson | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2241,9 +2241,9 @@ export function cloudwatchLogTransformerTransformerConfigParseJsonToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseJsonOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigParseJsonOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2251,11 +2251,11 @@ export class CloudwatchLogTransformerTransformerConfigParseJsonOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseJson | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseJson | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2272,14 +2272,14 @@ export class CloudwatchLogTransformerTransformerConfigParseJsonOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseJson | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseJson | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destination = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2324,15 +2324,15 @@ export class CloudwatchLogTransformerTransformerConfigParseJsonOutputReference e
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseJsonList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigParseJson[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigParseJsonList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigParseJson[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2367,74 +2367,74 @@ export interface CloudwatchLogTransformerTransformerConfigParseKeyValue {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}
   */
-  readonly overwriteIfExists?: boolean | cdktf.IResolvable;
+  readonly overwriteIfExists?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}
   */
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigParseKeyValueToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseKeyValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseKeyValueToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseKeyValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
-    field_delimiter: cdktf.stringToTerraform(struct!.fieldDelimiter),
-    key_prefix: cdktf.stringToTerraform(struct!.keyPrefix),
-    key_value_delimiter: cdktf.stringToTerraform(struct!.keyValueDelimiter),
-    non_match_value: cdktf.stringToTerraform(struct!.nonMatchValue),
-    overwrite_if_exists: cdktf.booleanToTerraform(struct!.overwriteIfExists),
-    source: cdktf.stringToTerraform(struct!.source),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    field_delimiter: cdktn.stringToTerraform(struct!.fieldDelimiter),
+    key_prefix: cdktn.stringToTerraform(struct!.keyPrefix),
+    key_value_delimiter: cdktn.stringToTerraform(struct!.keyValueDelimiter),
+    non_match_value: cdktn.stringToTerraform(struct!.nonMatchValue),
+    overwrite_if_exists: cdktn.booleanToTerraform(struct!.overwriteIfExists),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigParseKeyValueToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseKeyValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseKeyValueToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseKeyValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.fieldDelimiter),
+      value: cdktn.stringToHclTerraform(struct!.fieldDelimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.keyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.keyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_value_delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.keyValueDelimiter),
+      value: cdktn.stringToHclTerraform(struct!.keyValueDelimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     non_match_value: {
-      value: cdktf.stringToHclTerraform(struct!.nonMatchValue),
+      value: cdktn.stringToHclTerraform(struct!.nonMatchValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_if_exists: {
-      value: cdktf.booleanToHclTerraform(struct!.overwriteIfExists),
+      value: cdktn.booleanToHclTerraform(struct!.overwriteIfExists),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2445,9 +2445,9 @@ export function cloudwatchLogTransformerTransformerConfigParseKeyValueToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2455,11 +2455,11 @@ export class CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseKeyValue | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseKeyValue | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2496,7 +2496,7 @@ export class CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseKeyValue | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseKeyValue | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2508,7 +2508,7 @@ export class CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReferen
       this._overwriteIfExists = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2606,11 +2606,11 @@ export class CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReferen
   }
 
   // overwrite_if_exists - computed: true, optional: true, required: false
-  private _overwriteIfExists?: boolean | cdktf.IResolvable; 
+  private _overwriteIfExists?: boolean | cdktn.IResolvable; 
   public get overwriteIfExists() {
     return this.getBooleanAttribute('overwrite_if_exists');
   }
-  public set overwriteIfExists(value: boolean | cdktf.IResolvable) {
+  public set overwriteIfExists(value: boolean | cdktn.IResolvable) {
     this._overwriteIfExists = value;
   }
   public resetOverwriteIfExists() {
@@ -2638,15 +2638,15 @@ export class CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReferen
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseKeyValueList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigParseKeyValue[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigParseKeyValueList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigParseKeyValue[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2664,25 +2664,25 @@ export interface CloudwatchLogTransformerTransformerConfigParsePostgres {
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigParsePostgresToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParsePostgres | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParsePostgresToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParsePostgres | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigParsePostgresToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParsePostgres | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParsePostgresToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParsePostgres | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2693,9 +2693,9 @@ export function cloudwatchLogTransformerTransformerConfigParsePostgresToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2703,11 +2703,11 @@ export class CloudwatchLogTransformerTransformerConfigParsePostgresOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigParsePostgres | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigParsePostgres | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2720,13 +2720,13 @@ export class CloudwatchLogTransformerTransformerConfigParsePostgresOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParsePostgres | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParsePostgres | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2754,15 +2754,15 @@ export class CloudwatchLogTransformerTransformerConfigParsePostgresOutputReferen
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigParsePostgresList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigParsePostgres[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigParsePostgresList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigParsePostgres[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2780,25 +2780,25 @@ export interface CloudwatchLogTransformerTransformerConfigParseRoute53 {
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigParseRoute53ToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseRoute53 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseRoute53ToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseRoute53 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigParseRoute53ToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseRoute53 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseRoute53ToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseRoute53 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2809,9 +2809,9 @@ export function cloudwatchLogTransformerTransformerConfigParseRoute53ToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2819,11 +2819,11 @@ export class CloudwatchLogTransformerTransformerConfigParseRoute53OutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseRoute53 | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseRoute53 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2836,13 +2836,13 @@ export class CloudwatchLogTransformerTransformerConfigParseRoute53OutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseRoute53 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseRoute53 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2870,15 +2870,15 @@ export class CloudwatchLogTransformerTransformerConfigParseRoute53OutputReferenc
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseRoute53List extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigParseRoute53[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigParseRoute53List extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigParseRoute53[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2904,39 +2904,39 @@ export interface CloudwatchLogTransformerTransformerConfigParseToOcsf {
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigParseToOcsfToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseToOcsf | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseToOcsfToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseToOcsf | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_source: cdktf.stringToTerraform(struct!.eventSource),
-    ocsf_version: cdktf.stringToTerraform(struct!.ocsfVersion),
-    source: cdktf.stringToTerraform(struct!.source),
+    event_source: cdktn.stringToTerraform(struct!.eventSource),
+    ocsf_version: cdktn.stringToTerraform(struct!.ocsfVersion),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigParseToOcsfToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseToOcsf | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseToOcsfToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseToOcsf | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_source: {
-      value: cdktf.stringToHclTerraform(struct!.eventSource),
+      value: cdktn.stringToHclTerraform(struct!.eventSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ocsf_version: {
-      value: cdktf.stringToHclTerraform(struct!.ocsfVersion),
+      value: cdktn.stringToHclTerraform(struct!.ocsfVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2947,9 +2947,9 @@ export function cloudwatchLogTransformerTransformerConfigParseToOcsfToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2957,11 +2957,11 @@ export class CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseToOcsf | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseToOcsf | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2982,7 +2982,7 @@ export class CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseToOcsf | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseToOcsf | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2990,7 +2990,7 @@ export class CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference
       this._ocsfVersion = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3046,15 +3046,15 @@ export class CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseToOcsfList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigParseToOcsf[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigParseToOcsfList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigParseToOcsf[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3072,25 +3072,25 @@ export interface CloudwatchLogTransformerTransformerConfigParseVpc {
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigParseVpcToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseVpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseVpcToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseVpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigParseVpcToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseVpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseVpcToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseVpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3101,9 +3101,9 @@ export function cloudwatchLogTransformerTransformerConfigParseVpcToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseVpcOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigParseVpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3111,11 +3111,11 @@ export class CloudwatchLogTransformerTransformerConfigParseVpcOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseVpc | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseVpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3128,13 +3128,13 @@ export class CloudwatchLogTransformerTransformerConfigParseVpcOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseVpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseVpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3162,15 +3162,15 @@ export class CloudwatchLogTransformerTransformerConfigParseVpcOutputReference ex
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseVpcList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigParseVpc[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigParseVpcList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigParseVpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3188,25 +3188,25 @@ export interface CloudwatchLogTransformerTransformerConfigParseWaf {
   readonly source?: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigParseWafToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseWaf | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseWafToTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseWaf | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigParseWafToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseWaf | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigParseWafToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigParseWaf | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3217,9 +3217,9 @@ export function cloudwatchLogTransformerTransformerConfigParseWafToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseWafOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigParseWafOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3227,11 +3227,11 @@ export class CloudwatchLogTransformerTransformerConfigParseWafOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseWaf | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigParseWaf | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3244,13 +3244,13 @@ export class CloudwatchLogTransformerTransformerConfigParseWafOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseWaf | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigParseWaf | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3278,15 +3278,15 @@ export class CloudwatchLogTransformerTransformerConfigParseWafOutputReference ex
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigParseWafList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigParseWaf[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigParseWafList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigParseWaf[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3305,46 +3305,46 @@ export interface CloudwatchLogTransformerTransformerConfigRenameKeysEntry {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}
   */
-  readonly overwriteIfExists?: boolean | cdktf.IResolvable;
+  readonly overwriteIfExists?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#rename_to CloudwatchLogTransformer#rename_to}
   */
   readonly renameTo: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigRenameKeysEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigRenameKeysEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigRenameKeysEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigRenameKeysEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    overwrite_if_exists: cdktf.booleanToTerraform(struct!.overwriteIfExists),
-    rename_to: cdktf.stringToTerraform(struct!.renameTo),
+    key: cdktn.stringToTerraform(struct!.key),
+    overwrite_if_exists: cdktn.booleanToTerraform(struct!.overwriteIfExists),
+    rename_to: cdktn.stringToTerraform(struct!.renameTo),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigRenameKeysEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigRenameKeysEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigRenameKeysEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigRenameKeysEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_if_exists: {
-      value: cdktf.booleanToHclTerraform(struct!.overwriteIfExists),
+      value: cdktn.booleanToHclTerraform(struct!.overwriteIfExists),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rename_to: {
-      value: cdktf.stringToHclTerraform(struct!.renameTo),
+      value: cdktn.stringToHclTerraform(struct!.renameTo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3355,9 +3355,9 @@ export function cloudwatchLogTransformerTransformerConfigRenameKeysEntryToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3365,11 +3365,11 @@ export class CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigRenameKeysEntry | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigRenameKeysEntry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3390,7 +3390,7 @@ export class CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigRenameKeysEntry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigRenameKeysEntry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3398,7 +3398,7 @@ export class CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputRefer
       this._overwriteIfExists = undefined;
       this._renameTo = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3425,11 +3425,11 @@ export class CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputRefer
   }
 
   // overwrite_if_exists - computed: true, optional: true, required: false
-  private _overwriteIfExists?: boolean | cdktf.IResolvable; 
+  private _overwriteIfExists?: boolean | cdktn.IResolvable; 
   public get overwriteIfExists() {
     return this.getBooleanAttribute('overwrite_if_exists');
   }
-  public set overwriteIfExists(value: boolean | cdktf.IResolvable) {
+  public set overwriteIfExists(value: boolean | cdktn.IResolvable) {
     this._overwriteIfExists = value;
   }
   public resetOverwriteIfExists() {
@@ -3454,15 +3454,15 @@ export class CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputRefer
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigRenameKeysEntryList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigRenameKeysEntry[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigRenameKeysEntryList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigRenameKeysEntry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3479,28 +3479,28 @@ export interface CloudwatchLogTransformerTransformerConfigRenameKeys {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
   */
-  readonly entry?: CloudwatchLogTransformerTransformerConfigRenameKeysEntry[] | cdktf.IResolvable;
+  readonly entry?: CloudwatchLogTransformerTransformerConfigRenameKeysEntry[] | cdktn.IResolvable;
 }
 
-export function cloudwatchLogTransformerTransformerConfigRenameKeysToTerraform(struct?: CloudwatchLogTransformerTransformerConfigRenameKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigRenameKeysToTerraform(struct?: CloudwatchLogTransformerTransformerConfigRenameKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigRenameKeysEntryToTerraform, true)(struct!.entry),
+    entry: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigRenameKeysEntryToTerraform, true)(struct!.entry),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigRenameKeysToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigRenameKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigRenameKeysToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigRenameKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigRenameKeysEntryToHclTerraform, true)(struct!.entry),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigRenameKeysEntryToHclTerraform, true)(struct!.entry),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigRenameKeysEntryList",
@@ -3511,9 +3511,9 @@ export function cloudwatchLogTransformerTransformerConfigRenameKeysToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3521,11 +3521,11 @@ export class CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigRenameKeys | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigRenameKeys | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3538,13 +3538,13 @@ export class CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigRenameKeys | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigRenameKeys | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entry.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3560,7 +3560,7 @@ export class CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference 
   public get entry() {
     return this._entry;
   }
-  public putEntry(value: CloudwatchLogTransformerTransformerConfigRenameKeysEntry[] | cdktf.IResolvable) {
+  public putEntry(value: CloudwatchLogTransformerTransformerConfigRenameKeysEntry[] | cdktn.IResolvable) {
     this._entry.internalValue = value;
   }
   public resetEntry() {
@@ -3572,15 +3572,15 @@ export class CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference 
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigRenameKeysList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigRenameKeys[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigRenameKeysList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigRenameKeys[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3602,32 +3602,32 @@ export interface CloudwatchLogTransformerTransformerConfigSplitStringEntry {
   readonly source: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigSplitStringEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigSplitStringEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigSplitStringEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigSplitStringEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delimiter: cdktf.stringToTerraform(struct!.delimiter),
-    source: cdktf.stringToTerraform(struct!.source),
+    delimiter: cdktn.stringToTerraform(struct!.delimiter),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigSplitStringEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigSplitStringEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigSplitStringEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigSplitStringEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      value: cdktn.stringToHclTerraform(struct!.delimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3638,9 +3638,9 @@ export function cloudwatchLogTransformerTransformerConfigSplitStringEntryToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3648,11 +3648,11 @@ export class CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigSplitStringEntry | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigSplitStringEntry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3669,14 +3669,14 @@ export class CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigSplitStringEntry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigSplitStringEntry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delimiter = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3715,15 +3715,15 @@ export class CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputRefe
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigSplitStringEntryList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigSplitStringEntry[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigSplitStringEntryList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigSplitStringEntry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3740,28 +3740,28 @@ export interface CloudwatchLogTransformerTransformerConfigSplitString {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
   */
-  readonly entry?: CloudwatchLogTransformerTransformerConfigSplitStringEntry[] | cdktf.IResolvable;
+  readonly entry?: CloudwatchLogTransformerTransformerConfigSplitStringEntry[] | cdktn.IResolvable;
 }
 
-export function cloudwatchLogTransformerTransformerConfigSplitStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigSplitString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigSplitStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigSplitString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigSplitStringEntryToTerraform, true)(struct!.entry),
+    entry: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigSplitStringEntryToTerraform, true)(struct!.entry),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigSplitStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigSplitString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigSplitStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigSplitString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigSplitStringEntryToHclTerraform, true)(struct!.entry),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigSplitStringEntryToHclTerraform, true)(struct!.entry),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigSplitStringEntryList",
@@ -3772,9 +3772,9 @@ export function cloudwatchLogTransformerTransformerConfigSplitStringToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigSplitStringOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigSplitStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3782,11 +3782,11 @@ export class CloudwatchLogTransformerTransformerConfigSplitStringOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigSplitString | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigSplitString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3799,13 +3799,13 @@ export class CloudwatchLogTransformerTransformerConfigSplitStringOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigSplitString | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigSplitString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entry.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3821,7 +3821,7 @@ export class CloudwatchLogTransformerTransformerConfigSplitStringOutputReference
   public get entry() {
     return this._entry;
   }
-  public putEntry(value: CloudwatchLogTransformerTransformerConfigSplitStringEntry[] | cdktf.IResolvable) {
+  public putEntry(value: CloudwatchLogTransformerTransformerConfigSplitStringEntry[] | cdktn.IResolvable) {
     this._entry.internalValue = value;
   }
   public resetEntry() {
@@ -3833,15 +3833,15 @@ export class CloudwatchLogTransformerTransformerConfigSplitStringOutputReference
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigSplitStringList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigSplitString[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigSplitStringList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigSplitString[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3867,39 +3867,39 @@ export interface CloudwatchLogTransformerTransformerConfigSubstituteStringEntry 
   readonly to: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigSubstituteStringEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigSubstituteStringEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    source: cdktf.stringToTerraform(struct!.source),
-    to: cdktf.stringToTerraform(struct!.to),
+    from: cdktn.stringToTerraform(struct!.from),
+    source: cdktn.stringToTerraform(struct!.source),
+    to: cdktn.stringToTerraform(struct!.to),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigSubstituteStringEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigSubstituteStringEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     to: {
-      value: cdktf.stringToHclTerraform(struct!.to),
+      value: cdktn.stringToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3910,9 +3910,9 @@ export function cloudwatchLogTransformerTransformerConfigSubstituteStringEntryTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3920,11 +3920,11 @@ export class CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigSubstituteStringEntry | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigSubstituteStringEntry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3945,7 +3945,7 @@ export class CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3953,7 +3953,7 @@ export class CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutpu
       this._source = undefined;
       this._to = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4006,15 +4006,15 @@ export class CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutpu
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigSubstituteStringEntry[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigSubstituteStringEntry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4031,28 +4031,28 @@ export interface CloudwatchLogTransformerTransformerConfigSubstituteString {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
   */
-  readonly entry?: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry[] | cdktf.IResolvable;
+  readonly entry?: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry[] | cdktn.IResolvable;
 }
 
-export function cloudwatchLogTransformerTransformerConfigSubstituteStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigSubstituteString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigSubstituteStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigSubstituteString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigSubstituteStringEntryToTerraform, true)(struct!.entry),
+    entry: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigSubstituteStringEntryToTerraform, true)(struct!.entry),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigSubstituteStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigSubstituteString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigSubstituteStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigSubstituteString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigSubstituteStringEntryToHclTerraform, true)(struct!.entry),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigSubstituteStringEntryToHclTerraform, true)(struct!.entry),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList",
@@ -4063,9 +4063,9 @@ export function cloudwatchLogTransformerTransformerConfigSubstituteStringToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4073,11 +4073,11 @@ export class CloudwatchLogTransformerTransformerConfigSubstituteStringOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigSubstituteString | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigSubstituteString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4090,13 +4090,13 @@ export class CloudwatchLogTransformerTransformerConfigSubstituteStringOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigSubstituteString | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigSubstituteString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entry.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4112,7 +4112,7 @@ export class CloudwatchLogTransformerTransformerConfigSubstituteStringOutputRefe
   public get entry() {
     return this._entry;
   }
-  public putEntry(value: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry[] | cdktf.IResolvable) {
+  public putEntry(value: CloudwatchLogTransformerTransformerConfigSubstituteStringEntry[] | cdktn.IResolvable) {
     this._entry.internalValue = value;
   }
   public resetEntry() {
@@ -4124,15 +4124,15 @@ export class CloudwatchLogTransformerTransformerConfigSubstituteStringOutputRefe
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigSubstituteStringList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigSubstituteString[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigSubstituteStringList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigSubstituteString[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4150,25 +4150,25 @@ export interface CloudwatchLogTransformerTransformerConfigTrimString {
   readonly withKeys: string[];
 }
 
-export function cloudwatchLogTransformerTransformerConfigTrimStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigTrimString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigTrimStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigTrimString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    with_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.withKeys),
+    with_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.withKeys),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigTrimStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigTrimString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigTrimStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigTrimString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     with_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.withKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.withKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4179,9 +4179,9 @@ export function cloudwatchLogTransformerTransformerConfigTrimStringToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigTrimStringOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigTrimStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4189,11 +4189,11 @@ export class CloudwatchLogTransformerTransformerConfigTrimStringOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigTrimString | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigTrimString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4206,13 +4206,13 @@ export class CloudwatchLogTransformerTransformerConfigTrimStringOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigTrimString | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigTrimString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._withKeys = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4237,15 +4237,15 @@ export class CloudwatchLogTransformerTransformerConfigTrimStringOutputReference 
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigTrimStringList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigTrimString[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigTrimStringList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigTrimString[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4267,32 +4267,32 @@ export interface CloudwatchLogTransformerTransformerConfigTypeConverterEntry {
   readonly type: string;
 }
 
-export function cloudwatchLogTransformerTransformerConfigTypeConverterEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigTypeConverterEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigTypeConverterEntryToTerraform(struct?: CloudwatchLogTransformerTransformerConfigTypeConverterEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    type: cdktf.stringToTerraform(struct!.type),
+    key: cdktn.stringToTerraform(struct!.key),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigTypeConverterEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigTypeConverterEntry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigTypeConverterEntryToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigTypeConverterEntry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4303,9 +4303,9 @@ export function cloudwatchLogTransformerTransformerConfigTypeConverterEntryToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4313,11 +4313,11 @@ export class CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigTypeConverterEntry | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigTypeConverterEntry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4334,14 +4334,14 @@ export class CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigTypeConverterEntry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigTypeConverterEntry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4380,15 +4380,15 @@ export class CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputRe
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigTypeConverterEntryList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigTypeConverterEntry[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigTypeConverterEntryList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigTypeConverterEntry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4405,28 +4405,28 @@ export interface CloudwatchLogTransformerTransformerConfigTypeConverter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
   */
-  readonly entry?: CloudwatchLogTransformerTransformerConfigTypeConverterEntry[] | cdktf.IResolvable;
+  readonly entry?: CloudwatchLogTransformerTransformerConfigTypeConverterEntry[] | cdktn.IResolvable;
 }
 
-export function cloudwatchLogTransformerTransformerConfigTypeConverterToTerraform(struct?: CloudwatchLogTransformerTransformerConfigTypeConverter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigTypeConverterToTerraform(struct?: CloudwatchLogTransformerTransformerConfigTypeConverter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigTypeConverterEntryToTerraform, true)(struct!.entry),
+    entry: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigTypeConverterEntryToTerraform, true)(struct!.entry),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigTypeConverterToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigTypeConverter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigTypeConverterToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigTypeConverter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigTypeConverterEntryToHclTerraform, true)(struct!.entry),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigTypeConverterEntryToHclTerraform, true)(struct!.entry),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigTypeConverterEntryList",
@@ -4437,9 +4437,9 @@ export function cloudwatchLogTransformerTransformerConfigTypeConverterToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4447,11 +4447,11 @@ export class CloudwatchLogTransformerTransformerConfigTypeConverterOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigTypeConverter | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigTypeConverter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4464,13 +4464,13 @@ export class CloudwatchLogTransformerTransformerConfigTypeConverterOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigTypeConverter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigTypeConverter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entry.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4486,7 +4486,7 @@ export class CloudwatchLogTransformerTransformerConfigTypeConverterOutputReferen
   public get entry() {
     return this._entry;
   }
-  public putEntry(value: CloudwatchLogTransformerTransformerConfigTypeConverterEntry[] | cdktf.IResolvable) {
+  public putEntry(value: CloudwatchLogTransformerTransformerConfigTypeConverterEntry[] | cdktn.IResolvable) {
     this._entry.internalValue = value;
   }
   public resetEntry() {
@@ -4498,15 +4498,15 @@ export class CloudwatchLogTransformerTransformerConfigTypeConverterOutputReferen
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigTypeConverterList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigTypeConverter[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigTypeConverterList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigTypeConverter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4524,25 +4524,25 @@ export interface CloudwatchLogTransformerTransformerConfigUpperCaseString {
   readonly withKeys: string[];
 }
 
-export function cloudwatchLogTransformerTransformerConfigUpperCaseStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigUpperCaseString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigUpperCaseStringToTerraform(struct?: CloudwatchLogTransformerTransformerConfigUpperCaseString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    with_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.withKeys),
+    with_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.withKeys),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigUpperCaseStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigUpperCaseString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigUpperCaseStringToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfigUpperCaseString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     with_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.withKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.withKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4553,9 +4553,9 @@ export function cloudwatchLogTransformerTransformerConfigUpperCaseStringToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4563,11 +4563,11 @@ export class CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfigUpperCaseString | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfigUpperCaseString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4580,13 +4580,13 @@ export class CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfigUpperCaseString | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfigUpperCaseString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._withKeys = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4611,15 +4611,15 @@ export class CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputRefer
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigUpperCaseStringList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfigUpperCaseString[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigUpperCaseStringList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfigUpperCaseString[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4636,314 +4636,314 @@ export interface CloudwatchLogTransformerTransformerConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#add_keys CloudwatchLogTransformer#add_keys}
   */
-  readonly addKeys?: CloudwatchLogTransformerTransformerConfigAddKeys[] | cdktf.IResolvable;
+  readonly addKeys?: CloudwatchLogTransformerTransformerConfigAddKeys[] | cdktn.IResolvable;
   /**
   * copy_value block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#copy_value CloudwatchLogTransformer#copy_value}
   */
-  readonly copyValue?: CloudwatchLogTransformerTransformerConfigCopyValue[] | cdktf.IResolvable;
+  readonly copyValue?: CloudwatchLogTransformerTransformerConfigCopyValue[] | cdktn.IResolvable;
   /**
   * csv block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#csv CloudwatchLogTransformer#csv}
   */
-  readonly csv?: CloudwatchLogTransformerTransformerConfigCsv[] | cdktf.IResolvable;
+  readonly csv?: CloudwatchLogTransformerTransformerConfigCsv[] | cdktn.IResolvable;
   /**
   * date_time_converter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#date_time_converter CloudwatchLogTransformer#date_time_converter}
   */
-  readonly dateTimeConverter?: CloudwatchLogTransformerTransformerConfigDateTimeConverter[] | cdktf.IResolvable;
+  readonly dateTimeConverter?: CloudwatchLogTransformerTransformerConfigDateTimeConverter[] | cdktn.IResolvable;
   /**
   * delete_keys block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#delete_keys CloudwatchLogTransformer#delete_keys}
   */
-  readonly deleteKeys?: CloudwatchLogTransformerTransformerConfigDeleteKeys[] | cdktf.IResolvable;
+  readonly deleteKeys?: CloudwatchLogTransformerTransformerConfigDeleteKeys[] | cdktn.IResolvable;
   /**
   * grok block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#grok CloudwatchLogTransformer#grok}
   */
-  readonly grok?: CloudwatchLogTransformerTransformerConfigGrok[] | cdktf.IResolvable;
+  readonly grok?: CloudwatchLogTransformerTransformerConfigGrok[] | cdktn.IResolvable;
   /**
   * list_to_map block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#list_to_map CloudwatchLogTransformer#list_to_map}
   */
-  readonly listToMap?: CloudwatchLogTransformerTransformerConfigListToMap[] | cdktf.IResolvable;
+  readonly listToMap?: CloudwatchLogTransformerTransformerConfigListToMap[] | cdktn.IResolvable;
   /**
   * lower_case_string block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#lower_case_string CloudwatchLogTransformer#lower_case_string}
   */
-  readonly lowerCaseString?: CloudwatchLogTransformerTransformerConfigLowerCaseString[] | cdktf.IResolvable;
+  readonly lowerCaseString?: CloudwatchLogTransformerTransformerConfigLowerCaseString[] | cdktn.IResolvable;
   /**
   * move_keys block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#move_keys CloudwatchLogTransformer#move_keys}
   */
-  readonly moveKeys?: CloudwatchLogTransformerTransformerConfigMoveKeys[] | cdktf.IResolvable;
+  readonly moveKeys?: CloudwatchLogTransformerTransformerConfigMoveKeys[] | cdktn.IResolvable;
   /**
   * parse_cloudfront block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#parse_cloudfront CloudwatchLogTransformer#parse_cloudfront}
   */
-  readonly parseCloudfront?: CloudwatchLogTransformerTransformerConfigParseCloudfront[] | cdktf.IResolvable;
+  readonly parseCloudfront?: CloudwatchLogTransformerTransformerConfigParseCloudfront[] | cdktn.IResolvable;
   /**
   * parse_json block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#parse_json CloudwatchLogTransformer#parse_json}
   */
-  readonly parseJson?: CloudwatchLogTransformerTransformerConfigParseJson[] | cdktf.IResolvable;
+  readonly parseJson?: CloudwatchLogTransformerTransformerConfigParseJson[] | cdktn.IResolvable;
   /**
   * parse_key_value block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#parse_key_value CloudwatchLogTransformer#parse_key_value}
   */
-  readonly parseKeyValue?: CloudwatchLogTransformerTransformerConfigParseKeyValue[] | cdktf.IResolvable;
+  readonly parseKeyValue?: CloudwatchLogTransformerTransformerConfigParseKeyValue[] | cdktn.IResolvable;
   /**
   * parse_postgres block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#parse_postgres CloudwatchLogTransformer#parse_postgres}
   */
-  readonly parsePostgres?: CloudwatchLogTransformerTransformerConfigParsePostgres[] | cdktf.IResolvable;
+  readonly parsePostgres?: CloudwatchLogTransformerTransformerConfigParsePostgres[] | cdktn.IResolvable;
   /**
   * parse_route53 block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#parse_route53 CloudwatchLogTransformer#parse_route53}
   */
-  readonly parseRoute53?: CloudwatchLogTransformerTransformerConfigParseRoute53[] | cdktf.IResolvable;
+  readonly parseRoute53?: CloudwatchLogTransformerTransformerConfigParseRoute53[] | cdktn.IResolvable;
   /**
   * parse_to_ocsf block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#parse_to_ocsf CloudwatchLogTransformer#parse_to_ocsf}
   */
-  readonly parseToOcsf?: CloudwatchLogTransformerTransformerConfigParseToOcsf[] | cdktf.IResolvable;
+  readonly parseToOcsf?: CloudwatchLogTransformerTransformerConfigParseToOcsf[] | cdktn.IResolvable;
   /**
   * parse_vpc block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#parse_vpc CloudwatchLogTransformer#parse_vpc}
   */
-  readonly parseVpc?: CloudwatchLogTransformerTransformerConfigParseVpc[] | cdktf.IResolvable;
+  readonly parseVpc?: CloudwatchLogTransformerTransformerConfigParseVpc[] | cdktn.IResolvable;
   /**
   * parse_waf block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#parse_waf CloudwatchLogTransformer#parse_waf}
   */
-  readonly parseWaf?: CloudwatchLogTransformerTransformerConfigParseWaf[] | cdktf.IResolvable;
+  readonly parseWaf?: CloudwatchLogTransformerTransformerConfigParseWaf[] | cdktn.IResolvable;
   /**
   * rename_keys block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#rename_keys CloudwatchLogTransformer#rename_keys}
   */
-  readonly renameKeys?: CloudwatchLogTransformerTransformerConfigRenameKeys[] | cdktf.IResolvable;
+  readonly renameKeys?: CloudwatchLogTransformerTransformerConfigRenameKeys[] | cdktn.IResolvable;
   /**
   * split_string block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#split_string CloudwatchLogTransformer#split_string}
   */
-  readonly splitString?: CloudwatchLogTransformerTransformerConfigSplitString[] | cdktf.IResolvable;
+  readonly splitString?: CloudwatchLogTransformerTransformerConfigSplitString[] | cdktn.IResolvable;
   /**
   * substitute_string block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#substitute_string CloudwatchLogTransformer#substitute_string}
   */
-  readonly substituteString?: CloudwatchLogTransformerTransformerConfigSubstituteString[] | cdktf.IResolvable;
+  readonly substituteString?: CloudwatchLogTransformerTransformerConfigSubstituteString[] | cdktn.IResolvable;
   /**
   * trim_string block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#trim_string CloudwatchLogTransformer#trim_string}
   */
-  readonly trimString?: CloudwatchLogTransformerTransformerConfigTrimString[] | cdktf.IResolvable;
+  readonly trimString?: CloudwatchLogTransformerTransformerConfigTrimString[] | cdktn.IResolvable;
   /**
   * type_converter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#type_converter CloudwatchLogTransformer#type_converter}
   */
-  readonly typeConverter?: CloudwatchLogTransformerTransformerConfigTypeConverter[] | cdktf.IResolvable;
+  readonly typeConverter?: CloudwatchLogTransformerTransformerConfigTypeConverter[] | cdktn.IResolvable;
   /**
   * upper_case_string block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#upper_case_string CloudwatchLogTransformer#upper_case_string}
   */
-  readonly upperCaseString?: CloudwatchLogTransformerTransformerConfigUpperCaseString[] | cdktf.IResolvable;
+  readonly upperCaseString?: CloudwatchLogTransformerTransformerConfigUpperCaseString[] | cdktn.IResolvable;
 }
 
-export function cloudwatchLogTransformerTransformerConfigToTerraform(struct?: CloudwatchLogTransformerTransformerConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigToTerraform(struct?: CloudwatchLogTransformerTransformerConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    add_keys: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigAddKeysToTerraform, true)(struct!.addKeys),
-    copy_value: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigCopyValueToTerraform, true)(struct!.copyValue),
-    csv: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigCsvToTerraform, true)(struct!.csv),
-    date_time_converter: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigDateTimeConverterToTerraform, true)(struct!.dateTimeConverter),
-    delete_keys: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigDeleteKeysToTerraform, true)(struct!.deleteKeys),
-    grok: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigGrokToTerraform, true)(struct!.grok),
-    list_to_map: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigListToMapToTerraform, true)(struct!.listToMap),
-    lower_case_string: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigLowerCaseStringToTerraform, true)(struct!.lowerCaseString),
-    move_keys: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigMoveKeysToTerraform, true)(struct!.moveKeys),
-    parse_cloudfront: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigParseCloudfrontToTerraform, true)(struct!.parseCloudfront),
-    parse_json: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigParseJsonToTerraform, true)(struct!.parseJson),
-    parse_key_value: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigParseKeyValueToTerraform, true)(struct!.parseKeyValue),
-    parse_postgres: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigParsePostgresToTerraform, true)(struct!.parsePostgres),
-    parse_route53: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigParseRoute53ToTerraform, true)(struct!.parseRoute53),
-    parse_to_ocsf: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigParseToOcsfToTerraform, true)(struct!.parseToOcsf),
-    parse_vpc: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigParseVpcToTerraform, true)(struct!.parseVpc),
-    parse_waf: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigParseWafToTerraform, true)(struct!.parseWaf),
-    rename_keys: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigRenameKeysToTerraform, true)(struct!.renameKeys),
-    split_string: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigSplitStringToTerraform, true)(struct!.splitString),
-    substitute_string: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigSubstituteStringToTerraform, true)(struct!.substituteString),
-    trim_string: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigTrimStringToTerraform, true)(struct!.trimString),
-    type_converter: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigTypeConverterToTerraform, true)(struct!.typeConverter),
-    upper_case_string: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigUpperCaseStringToTerraform, true)(struct!.upperCaseString),
+    add_keys: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigAddKeysToTerraform, true)(struct!.addKeys),
+    copy_value: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigCopyValueToTerraform, true)(struct!.copyValue),
+    csv: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigCsvToTerraform, true)(struct!.csv),
+    date_time_converter: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigDateTimeConverterToTerraform, true)(struct!.dateTimeConverter),
+    delete_keys: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigDeleteKeysToTerraform, true)(struct!.deleteKeys),
+    grok: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigGrokToTerraform, true)(struct!.grok),
+    list_to_map: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigListToMapToTerraform, true)(struct!.listToMap),
+    lower_case_string: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigLowerCaseStringToTerraform, true)(struct!.lowerCaseString),
+    move_keys: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigMoveKeysToTerraform, true)(struct!.moveKeys),
+    parse_cloudfront: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigParseCloudfrontToTerraform, true)(struct!.parseCloudfront),
+    parse_json: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigParseJsonToTerraform, true)(struct!.parseJson),
+    parse_key_value: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigParseKeyValueToTerraform, true)(struct!.parseKeyValue),
+    parse_postgres: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigParsePostgresToTerraform, true)(struct!.parsePostgres),
+    parse_route53: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigParseRoute53ToTerraform, true)(struct!.parseRoute53),
+    parse_to_ocsf: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigParseToOcsfToTerraform, true)(struct!.parseToOcsf),
+    parse_vpc: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigParseVpcToTerraform, true)(struct!.parseVpc),
+    parse_waf: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigParseWafToTerraform, true)(struct!.parseWaf),
+    rename_keys: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigRenameKeysToTerraform, true)(struct!.renameKeys),
+    split_string: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigSplitStringToTerraform, true)(struct!.splitString),
+    substitute_string: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigSubstituteStringToTerraform, true)(struct!.substituteString),
+    trim_string: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigTrimStringToTerraform, true)(struct!.trimString),
+    type_converter: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigTypeConverterToTerraform, true)(struct!.typeConverter),
+    upper_case_string: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigUpperCaseStringToTerraform, true)(struct!.upperCaseString),
   }
 }
 
 
-export function cloudwatchLogTransformerTransformerConfigToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogTransformerTransformerConfigToHclTerraform(struct?: CloudwatchLogTransformerTransformerConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     add_keys: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigAddKeysToHclTerraform, true)(struct!.addKeys),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigAddKeysToHclTerraform, true)(struct!.addKeys),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigAddKeysList",
     },
     copy_value: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigCopyValueToHclTerraform, true)(struct!.copyValue),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigCopyValueToHclTerraform, true)(struct!.copyValue),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigCopyValueList",
     },
     csv: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigCsvToHclTerraform, true)(struct!.csv),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigCsvToHclTerraform, true)(struct!.csv),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigCsvList",
     },
     date_time_converter: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigDateTimeConverterToHclTerraform, true)(struct!.dateTimeConverter),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigDateTimeConverterToHclTerraform, true)(struct!.dateTimeConverter),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigDateTimeConverterList",
     },
     delete_keys: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigDeleteKeysToHclTerraform, true)(struct!.deleteKeys),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigDeleteKeysToHclTerraform, true)(struct!.deleteKeys),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigDeleteKeysList",
     },
     grok: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigGrokToHclTerraform, true)(struct!.grok),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigGrokToHclTerraform, true)(struct!.grok),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigGrokList",
     },
     list_to_map: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigListToMapToHclTerraform, true)(struct!.listToMap),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigListToMapToHclTerraform, true)(struct!.listToMap),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigListToMapList",
     },
     lower_case_string: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigLowerCaseStringToHclTerraform, true)(struct!.lowerCaseString),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigLowerCaseStringToHclTerraform, true)(struct!.lowerCaseString),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigLowerCaseStringList",
     },
     move_keys: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigMoveKeysToHclTerraform, true)(struct!.moveKeys),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigMoveKeysToHclTerraform, true)(struct!.moveKeys),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigMoveKeysList",
     },
     parse_cloudfront: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseCloudfrontToHclTerraform, true)(struct!.parseCloudfront),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseCloudfrontToHclTerraform, true)(struct!.parseCloudfront),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigParseCloudfrontList",
     },
     parse_json: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseJsonToHclTerraform, true)(struct!.parseJson),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseJsonToHclTerraform, true)(struct!.parseJson),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigParseJsonList",
     },
     parse_key_value: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseKeyValueToHclTerraform, true)(struct!.parseKeyValue),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseKeyValueToHclTerraform, true)(struct!.parseKeyValue),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigParseKeyValueList",
     },
     parse_postgres: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigParsePostgresToHclTerraform, true)(struct!.parsePostgres),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigParsePostgresToHclTerraform, true)(struct!.parsePostgres),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigParsePostgresList",
     },
     parse_route53: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseRoute53ToHclTerraform, true)(struct!.parseRoute53),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseRoute53ToHclTerraform, true)(struct!.parseRoute53),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigParseRoute53List",
     },
     parse_to_ocsf: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseToOcsfToHclTerraform, true)(struct!.parseToOcsf),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseToOcsfToHclTerraform, true)(struct!.parseToOcsf),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigParseToOcsfList",
     },
     parse_vpc: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseVpcToHclTerraform, true)(struct!.parseVpc),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseVpcToHclTerraform, true)(struct!.parseVpc),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigParseVpcList",
     },
     parse_waf: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseWafToHclTerraform, true)(struct!.parseWaf),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigParseWafToHclTerraform, true)(struct!.parseWaf),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigParseWafList",
     },
     rename_keys: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigRenameKeysToHclTerraform, true)(struct!.renameKeys),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigRenameKeysToHclTerraform, true)(struct!.renameKeys),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigRenameKeysList",
     },
     split_string: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigSplitStringToHclTerraform, true)(struct!.splitString),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigSplitStringToHclTerraform, true)(struct!.splitString),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigSplitStringList",
     },
     substitute_string: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigSubstituteStringToHclTerraform, true)(struct!.substituteString),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigSubstituteStringToHclTerraform, true)(struct!.substituteString),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigSubstituteStringList",
     },
     trim_string: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigTrimStringToHclTerraform, true)(struct!.trimString),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigTrimStringToHclTerraform, true)(struct!.trimString),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigTrimStringList",
     },
     type_converter: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigTypeConverterToHclTerraform, true)(struct!.typeConverter),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigTypeConverterToHclTerraform, true)(struct!.typeConverter),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigTypeConverterList",
     },
     upper_case_string: {
-      value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigUpperCaseStringToHclTerraform, true)(struct!.upperCaseString),
+      value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigUpperCaseStringToHclTerraform, true)(struct!.upperCaseString),
       isBlock: true,
       type: "list",
       storageClassType: "CloudwatchLogTransformerTransformerConfigUpperCaseStringList",
@@ -4954,9 +4954,9 @@ export function cloudwatchLogTransformerTransformerConfigToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogTransformerTransformerConfigOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogTransformerTransformerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4964,11 +4964,11 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogTransformerTransformerConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogTransformerTransformerConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5069,7 +5069,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogTransformerTransformerConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogTransformerTransformerConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5097,7 +5097,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
       this._typeConverter.internalValue = undefined;
       this._upperCaseString.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5135,7 +5135,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get addKeys() {
     return this._addKeys;
   }
-  public putAddKeys(value: CloudwatchLogTransformerTransformerConfigAddKeys[] | cdktf.IResolvable) {
+  public putAddKeys(value: CloudwatchLogTransformerTransformerConfigAddKeys[] | cdktn.IResolvable) {
     this._addKeys.internalValue = value;
   }
   public resetAddKeys() {
@@ -5151,7 +5151,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get copyValue() {
     return this._copyValue;
   }
-  public putCopyValue(value: CloudwatchLogTransformerTransformerConfigCopyValue[] | cdktf.IResolvable) {
+  public putCopyValue(value: CloudwatchLogTransformerTransformerConfigCopyValue[] | cdktn.IResolvable) {
     this._copyValue.internalValue = value;
   }
   public resetCopyValue() {
@@ -5167,7 +5167,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get csv() {
     return this._csv;
   }
-  public putCsv(value: CloudwatchLogTransformerTransformerConfigCsv[] | cdktf.IResolvable) {
+  public putCsv(value: CloudwatchLogTransformerTransformerConfigCsv[] | cdktn.IResolvable) {
     this._csv.internalValue = value;
   }
   public resetCsv() {
@@ -5183,7 +5183,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get dateTimeConverter() {
     return this._dateTimeConverter;
   }
-  public putDateTimeConverter(value: CloudwatchLogTransformerTransformerConfigDateTimeConverter[] | cdktf.IResolvable) {
+  public putDateTimeConverter(value: CloudwatchLogTransformerTransformerConfigDateTimeConverter[] | cdktn.IResolvable) {
     this._dateTimeConverter.internalValue = value;
   }
   public resetDateTimeConverter() {
@@ -5199,7 +5199,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get deleteKeys() {
     return this._deleteKeys;
   }
-  public putDeleteKeys(value: CloudwatchLogTransformerTransformerConfigDeleteKeys[] | cdktf.IResolvable) {
+  public putDeleteKeys(value: CloudwatchLogTransformerTransformerConfigDeleteKeys[] | cdktn.IResolvable) {
     this._deleteKeys.internalValue = value;
   }
   public resetDeleteKeys() {
@@ -5215,7 +5215,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get grok() {
     return this._grok;
   }
-  public putGrok(value: CloudwatchLogTransformerTransformerConfigGrok[] | cdktf.IResolvable) {
+  public putGrok(value: CloudwatchLogTransformerTransformerConfigGrok[] | cdktn.IResolvable) {
     this._grok.internalValue = value;
   }
   public resetGrok() {
@@ -5231,7 +5231,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get listToMap() {
     return this._listToMap;
   }
-  public putListToMap(value: CloudwatchLogTransformerTransformerConfigListToMap[] | cdktf.IResolvable) {
+  public putListToMap(value: CloudwatchLogTransformerTransformerConfigListToMap[] | cdktn.IResolvable) {
     this._listToMap.internalValue = value;
   }
   public resetListToMap() {
@@ -5247,7 +5247,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get lowerCaseString() {
     return this._lowerCaseString;
   }
-  public putLowerCaseString(value: CloudwatchLogTransformerTransformerConfigLowerCaseString[] | cdktf.IResolvable) {
+  public putLowerCaseString(value: CloudwatchLogTransformerTransformerConfigLowerCaseString[] | cdktn.IResolvable) {
     this._lowerCaseString.internalValue = value;
   }
   public resetLowerCaseString() {
@@ -5263,7 +5263,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get moveKeys() {
     return this._moveKeys;
   }
-  public putMoveKeys(value: CloudwatchLogTransformerTransformerConfigMoveKeys[] | cdktf.IResolvable) {
+  public putMoveKeys(value: CloudwatchLogTransformerTransformerConfigMoveKeys[] | cdktn.IResolvable) {
     this._moveKeys.internalValue = value;
   }
   public resetMoveKeys() {
@@ -5279,7 +5279,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get parseCloudfront() {
     return this._parseCloudfront;
   }
-  public putParseCloudfront(value: CloudwatchLogTransformerTransformerConfigParseCloudfront[] | cdktf.IResolvable) {
+  public putParseCloudfront(value: CloudwatchLogTransformerTransformerConfigParseCloudfront[] | cdktn.IResolvable) {
     this._parseCloudfront.internalValue = value;
   }
   public resetParseCloudfront() {
@@ -5295,7 +5295,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get parseJson() {
     return this._parseJson;
   }
-  public putParseJson(value: CloudwatchLogTransformerTransformerConfigParseJson[] | cdktf.IResolvable) {
+  public putParseJson(value: CloudwatchLogTransformerTransformerConfigParseJson[] | cdktn.IResolvable) {
     this._parseJson.internalValue = value;
   }
   public resetParseJson() {
@@ -5311,7 +5311,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get parseKeyValue() {
     return this._parseKeyValue;
   }
-  public putParseKeyValue(value: CloudwatchLogTransformerTransformerConfigParseKeyValue[] | cdktf.IResolvable) {
+  public putParseKeyValue(value: CloudwatchLogTransformerTransformerConfigParseKeyValue[] | cdktn.IResolvable) {
     this._parseKeyValue.internalValue = value;
   }
   public resetParseKeyValue() {
@@ -5327,7 +5327,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get parsePostgres() {
     return this._parsePostgres;
   }
-  public putParsePostgres(value: CloudwatchLogTransformerTransformerConfigParsePostgres[] | cdktf.IResolvable) {
+  public putParsePostgres(value: CloudwatchLogTransformerTransformerConfigParsePostgres[] | cdktn.IResolvable) {
     this._parsePostgres.internalValue = value;
   }
   public resetParsePostgres() {
@@ -5343,7 +5343,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get parseRoute53() {
     return this._parseRoute53;
   }
-  public putParseRoute53(value: CloudwatchLogTransformerTransformerConfigParseRoute53[] | cdktf.IResolvable) {
+  public putParseRoute53(value: CloudwatchLogTransformerTransformerConfigParseRoute53[] | cdktn.IResolvable) {
     this._parseRoute53.internalValue = value;
   }
   public resetParseRoute53() {
@@ -5359,7 +5359,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get parseToOcsf() {
     return this._parseToOcsf;
   }
-  public putParseToOcsf(value: CloudwatchLogTransformerTransformerConfigParseToOcsf[] | cdktf.IResolvable) {
+  public putParseToOcsf(value: CloudwatchLogTransformerTransformerConfigParseToOcsf[] | cdktn.IResolvable) {
     this._parseToOcsf.internalValue = value;
   }
   public resetParseToOcsf() {
@@ -5375,7 +5375,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get parseVpc() {
     return this._parseVpc;
   }
-  public putParseVpc(value: CloudwatchLogTransformerTransformerConfigParseVpc[] | cdktf.IResolvable) {
+  public putParseVpc(value: CloudwatchLogTransformerTransformerConfigParseVpc[] | cdktn.IResolvable) {
     this._parseVpc.internalValue = value;
   }
   public resetParseVpc() {
@@ -5391,7 +5391,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get parseWaf() {
     return this._parseWaf;
   }
-  public putParseWaf(value: CloudwatchLogTransformerTransformerConfigParseWaf[] | cdktf.IResolvable) {
+  public putParseWaf(value: CloudwatchLogTransformerTransformerConfigParseWaf[] | cdktn.IResolvable) {
     this._parseWaf.internalValue = value;
   }
   public resetParseWaf() {
@@ -5407,7 +5407,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get renameKeys() {
     return this._renameKeys;
   }
-  public putRenameKeys(value: CloudwatchLogTransformerTransformerConfigRenameKeys[] | cdktf.IResolvable) {
+  public putRenameKeys(value: CloudwatchLogTransformerTransformerConfigRenameKeys[] | cdktn.IResolvable) {
     this._renameKeys.internalValue = value;
   }
   public resetRenameKeys() {
@@ -5423,7 +5423,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get splitString() {
     return this._splitString;
   }
-  public putSplitString(value: CloudwatchLogTransformerTransformerConfigSplitString[] | cdktf.IResolvable) {
+  public putSplitString(value: CloudwatchLogTransformerTransformerConfigSplitString[] | cdktn.IResolvable) {
     this._splitString.internalValue = value;
   }
   public resetSplitString() {
@@ -5439,7 +5439,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get substituteString() {
     return this._substituteString;
   }
-  public putSubstituteString(value: CloudwatchLogTransformerTransformerConfigSubstituteString[] | cdktf.IResolvable) {
+  public putSubstituteString(value: CloudwatchLogTransformerTransformerConfigSubstituteString[] | cdktn.IResolvable) {
     this._substituteString.internalValue = value;
   }
   public resetSubstituteString() {
@@ -5455,7 +5455,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get trimString() {
     return this._trimString;
   }
-  public putTrimString(value: CloudwatchLogTransformerTransformerConfigTrimString[] | cdktf.IResolvable) {
+  public putTrimString(value: CloudwatchLogTransformerTransformerConfigTrimString[] | cdktn.IResolvable) {
     this._trimString.internalValue = value;
   }
   public resetTrimString() {
@@ -5471,7 +5471,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get typeConverter() {
     return this._typeConverter;
   }
-  public putTypeConverter(value: CloudwatchLogTransformerTransformerConfigTypeConverter[] | cdktf.IResolvable) {
+  public putTypeConverter(value: CloudwatchLogTransformerTransformerConfigTypeConverter[] | cdktn.IResolvable) {
     this._typeConverter.internalValue = value;
   }
   public resetTypeConverter() {
@@ -5487,7 +5487,7 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   public get upperCaseString() {
     return this._upperCaseString;
   }
-  public putUpperCaseString(value: CloudwatchLogTransformerTransformerConfigUpperCaseString[] | cdktf.IResolvable) {
+  public putUpperCaseString(value: CloudwatchLogTransformerTransformerConfigUpperCaseString[] | cdktn.IResolvable) {
     this._upperCaseString.internalValue = value;
   }
   public resetUpperCaseString() {
@@ -5499,15 +5499,15 @@ export class CloudwatchLogTransformerTransformerConfigOutputReference extends cd
   }
 }
 
-export class CloudwatchLogTransformerTransformerConfigList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogTransformerTransformerConfig[] | cdktf.IResolvable
+export class CloudwatchLogTransformerTransformerConfigList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogTransformerTransformerConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5522,7 +5522,7 @@ export class CloudwatchLogTransformerTransformerConfigList extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer aws_cloudwatch_log_transformer}
 */
-export class CloudwatchLogTransformer extends cdktf.TerraformResource {
+export class CloudwatchLogTransformer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -5533,14 +5533,14 @@ export class CloudwatchLogTransformer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchLogTransformer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchLogTransformer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogTransformer to import
   * @param importFromId The id of the existing CloudwatchLogTransformer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogTransformer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_transformer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_transformer", importId: importFromId, provider });
       }
 
   // ===========
@@ -5613,7 +5613,7 @@ export class CloudwatchLogTransformer extends cdktf.TerraformResource {
   public get transformerConfig() {
     return this._transformerConfig;
   }
-  public putTransformerConfig(value: CloudwatchLogTransformerTransformerConfig[] | cdktf.IResolvable) {
+  public putTransformerConfig(value: CloudwatchLogTransformerTransformerConfig[] | cdktn.IResolvable) {
     this._transformerConfig.internalValue = value;
   }
   public resetTransformerConfig() {
@@ -5630,28 +5630,28 @@ export class CloudwatchLogTransformer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      log_group_arn: cdktf.stringToTerraform(this._logGroupArn),
-      region: cdktf.stringToTerraform(this._region),
-      transformer_config: cdktf.listMapper(cloudwatchLogTransformerTransformerConfigToTerraform, true)(this._transformerConfig.internalValue),
+      log_group_arn: cdktn.stringToTerraform(this._logGroupArn),
+      region: cdktn.stringToTerraform(this._region),
+      transformer_config: cdktn.listMapper(cloudwatchLogTransformerTransformerConfigToTerraform, true)(this._transformerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       log_group_arn: {
-        value: cdktf.stringToHclTerraform(this._logGroupArn),
+        value: cdktn.stringToHclTerraform(this._logGroupArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transformer_config: {
-        value: cdktf.listMapperHcl(cloudwatchLogTransformerTransformerConfigToHclTerraform, true)(this._transformerConfig.internalValue),
+        value: cdktn.listMapperHcl(cloudwatchLogTransformerTransformerConfigToHclTerraform, true)(this._transformerConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CloudwatchLogTransformerTransformerConfigList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LakeformationDataLakeSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface LakeformationDataLakeSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_data_lake_settings#admins LakeformationDataLakeSettings#admins}
   */
@@ -19,11 +19,11 @@ export interface LakeformationDataLakeSettingsConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_data_lake_settings#allow_external_data_filtering LakeformationDataLakeSettings#allow_external_data_filtering}
   */
-  readonly allowExternalDataFiltering?: boolean | cdktf.IResolvable;
+  readonly allowExternalDataFiltering?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_data_lake_settings#allow_full_table_external_data_access LakeformationDataLakeSettings#allow_full_table_external_data_access}
   */
-  readonly allowFullTableExternalDataAccess?: boolean | cdktf.IResolvable;
+  readonly allowFullTableExternalDataAccess?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_data_lake_settings#authorized_session_tag_value_list LakeformationDataLakeSettings#authorized_session_tag_value_list}
   */
@@ -66,13 +66,13 @@ export interface LakeformationDataLakeSettingsConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_data_lake_settings#create_database_default_permissions LakeformationDataLakeSettings#create_database_default_permissions}
   */
-  readonly createDatabaseDefaultPermissions?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | cdktf.IResolvable;
+  readonly createDatabaseDefaultPermissions?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | cdktn.IResolvable;
   /**
   * create_table_default_permissions block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_data_lake_settings#create_table_default_permissions LakeformationDataLakeSettings#create_table_default_permissions}
   */
-  readonly createTableDefaultPermissions?: LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | cdktf.IResolvable;
+  readonly createTableDefaultPermissions?: LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | cdktn.IResolvable;
 }
 export interface LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions {
   /**
@@ -85,32 +85,32 @@ export interface LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions {
   readonly principal?: string;
 }
 
-export function lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissions),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    permissions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.permissions),
+    principal: cdktn.stringToTerraform(struct!.principal),
   }
 }
 
 
-export function lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToHclTerraform(struct?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToHclTerraform(struct?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permissions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.permissions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.permissions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -121,9 +121,9 @@ export function lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference extends cdktf.ComplexObject {
+export class LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -131,11 +131,11 @@ export class LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,14 +152,14 @@ export class LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._permissions = undefined;
       this._principal = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -174,7 +174,7 @@ export class LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutput
   // permissions - computed: true, optional: true, required: false
   private _permissions?: string[]; 
   public get permissions() {
-    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+    return cdktn.Fn.tolist(this.getListAttribute('permissions'));
   }
   public set permissions(value: string[]) {
     this._permissions = value;
@@ -204,15 +204,15 @@ export class LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutput
   }
 }
 
-export class LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList extends cdktf.ComplexList {
-  public internalValue? : LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | cdktf.IResolvable
+export class LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList extends cdktn.ComplexList {
+  public internalValue? : LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -234,32 +234,32 @@ export interface LakeformationDataLakeSettingsCreateTableDefaultPermissions {
   readonly principal?: string;
 }
 
-export function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateTableDefaultPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateTableDefaultPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissions),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    permissions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.permissions),
+    principal: cdktn.stringToTerraform(struct!.principal),
   }
 }
 
 
-export function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToHclTerraform(struct?: LakeformationDataLakeSettingsCreateTableDefaultPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToHclTerraform(struct?: LakeformationDataLakeSettingsCreateTableDefaultPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permissions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.permissions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.permissions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -270,9 +270,9 @@ export function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference extends cdktf.ComplexObject {
+export class LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -280,11 +280,11 @@ export class LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationDataLakeSettingsCreateTableDefaultPermissions | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationDataLakeSettingsCreateTableDefaultPermissions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -301,14 +301,14 @@ export class LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationDataLakeSettingsCreateTableDefaultPermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationDataLakeSettingsCreateTableDefaultPermissions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._permissions = undefined;
       this._principal = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -323,7 +323,7 @@ export class LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputRef
   // permissions - computed: true, optional: true, required: false
   private _permissions?: string[]; 
   public get permissions() {
-    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+    return cdktn.Fn.tolist(this.getListAttribute('permissions'));
   }
   public set permissions(value: string[]) {
     this._permissions = value;
@@ -353,15 +353,15 @@ export class LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputRef
   }
 }
 
-export class LakeformationDataLakeSettingsCreateTableDefaultPermissionsList extends cdktf.ComplexList {
-  public internalValue? : LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | cdktf.IResolvable
+export class LakeformationDataLakeSettingsCreateTableDefaultPermissionsList extends cdktn.ComplexList {
+  public internalValue? : LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -376,7 +376,7 @@ export class LakeformationDataLakeSettingsCreateTableDefaultPermissionsList exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}
 */
-export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
+export class LakeformationDataLakeSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -387,14 +387,14 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LakeformationDataLakeSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LakeformationDataLakeSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakeformationDataLakeSettings to import
   * @param importFromId The id of the existing LakeformationDataLakeSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_data_lake_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakeformationDataLakeSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_data_lake_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_data_lake_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -446,7 +446,7 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   // admins - computed: true, optional: true, required: false
   private _admins?: string[]; 
   public get admins() {
-    return cdktf.Fn.tolist(this.getListAttribute('admins'));
+    return cdktn.Fn.tolist(this.getListAttribute('admins'));
   }
   public set admins(value: string[]) {
     this._admins = value;
@@ -460,11 +460,11 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   }
 
   // allow_external_data_filtering - computed: false, optional: true, required: false
-  private _allowExternalDataFiltering?: boolean | cdktf.IResolvable; 
+  private _allowExternalDataFiltering?: boolean | cdktn.IResolvable; 
   public get allowExternalDataFiltering() {
     return this.getBooleanAttribute('allow_external_data_filtering');
   }
-  public set allowExternalDataFiltering(value: boolean | cdktf.IResolvable) {
+  public set allowExternalDataFiltering(value: boolean | cdktn.IResolvable) {
     this._allowExternalDataFiltering = value;
   }
   public resetAllowExternalDataFiltering() {
@@ -476,11 +476,11 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   }
 
   // allow_full_table_external_data_access - computed: false, optional: true, required: false
-  private _allowFullTableExternalDataAccess?: boolean | cdktf.IResolvable; 
+  private _allowFullTableExternalDataAccess?: boolean | cdktn.IResolvable; 
   public get allowFullTableExternalDataAccess() {
     return this.getBooleanAttribute('allow_full_table_external_data_access');
   }
-  public set allowFullTableExternalDataAccess(value: boolean | cdktf.IResolvable) {
+  public set allowFullTableExternalDataAccess(value: boolean | cdktn.IResolvable) {
     this._allowFullTableExternalDataAccess = value;
   }
   public resetAllowFullTableExternalDataAccess() {
@@ -526,7 +526,7 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   // external_data_filtering_allow_list - computed: true, optional: true, required: false
   private _externalDataFilteringAllowList?: string[]; 
   public get externalDataFilteringAllowList() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_data_filtering_allow_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_data_filtering_allow_list'));
   }
   public set externalDataFilteringAllowList(value: string[]) {
     this._externalDataFilteringAllowList = value;
@@ -574,7 +574,7 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   // read_only_admins - computed: true, optional: true, required: false
   private _readOnlyAdmins?: string[]; 
   public get readOnlyAdmins() {
-    return cdktf.Fn.tolist(this.getListAttribute('read_only_admins'));
+    return cdktn.Fn.tolist(this.getListAttribute('read_only_admins'));
   }
   public set readOnlyAdmins(value: string[]) {
     this._readOnlyAdmins = value;
@@ -624,7 +624,7 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   public get createDatabaseDefaultPermissions() {
     return this._createDatabaseDefaultPermissions;
   }
-  public putCreateDatabaseDefaultPermissions(value: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | cdktf.IResolvable) {
+  public putCreateDatabaseDefaultPermissions(value: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | cdktn.IResolvable) {
     this._createDatabaseDefaultPermissions.internalValue = value;
   }
   public resetCreateDatabaseDefaultPermissions() {
@@ -640,7 +640,7 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   public get createTableDefaultPermissions() {
     return this._createTableDefaultPermissions;
   }
-  public putCreateTableDefaultPermissions(value: LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | cdktf.IResolvable) {
+  public putCreateTableDefaultPermissions(value: LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | cdktn.IResolvable) {
     this._createTableDefaultPermissions.internalValue = value;
   }
   public resetCreateTableDefaultPermissions() {
@@ -657,98 +657,98 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admins: cdktf.listMapper(cdktf.stringToTerraform, false)(this._admins),
-      allow_external_data_filtering: cdktf.booleanToTerraform(this._allowExternalDataFiltering),
-      allow_full_table_external_data_access: cdktf.booleanToTerraform(this._allowFullTableExternalDataAccess),
-      authorized_session_tag_value_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authorizedSessionTagValueList),
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      external_data_filtering_allow_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._externalDataFilteringAllowList),
-      id: cdktf.stringToTerraform(this._id),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      read_only_admins: cdktf.listMapper(cdktf.stringToTerraform, false)(this._readOnlyAdmins),
-      region: cdktf.stringToTerraform(this._region),
-      trusted_resource_owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._trustedResourceOwners),
-      create_database_default_permissions: cdktf.listMapper(lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform, true)(this._createDatabaseDefaultPermissions.internalValue),
-      create_table_default_permissions: cdktf.listMapper(lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform, true)(this._createTableDefaultPermissions.internalValue),
+      admins: cdktn.listMapper(cdktn.stringToTerraform, false)(this._admins),
+      allow_external_data_filtering: cdktn.booleanToTerraform(this._allowExternalDataFiltering),
+      allow_full_table_external_data_access: cdktn.booleanToTerraform(this._allowFullTableExternalDataAccess),
+      authorized_session_tag_value_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._authorizedSessionTagValueList),
+      catalog_id: cdktn.stringToTerraform(this._catalogId),
+      external_data_filtering_allow_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._externalDataFilteringAllowList),
+      id: cdktn.stringToTerraform(this._id),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      read_only_admins: cdktn.listMapper(cdktn.stringToTerraform, false)(this._readOnlyAdmins),
+      region: cdktn.stringToTerraform(this._region),
+      trusted_resource_owners: cdktn.listMapper(cdktn.stringToTerraform, false)(this._trustedResourceOwners),
+      create_database_default_permissions: cdktn.listMapper(lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform, true)(this._createDatabaseDefaultPermissions.internalValue),
+      create_table_default_permissions: cdktn.listMapper(lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform, true)(this._createTableDefaultPermissions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       admins: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._admins),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._admins),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allow_external_data_filtering: {
-        value: cdktf.booleanToHclTerraform(this._allowExternalDataFiltering),
+        value: cdktn.booleanToHclTerraform(this._allowExternalDataFiltering),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_full_table_external_data_access: {
-        value: cdktf.booleanToHclTerraform(this._allowFullTableExternalDataAccess),
+        value: cdktn.booleanToHclTerraform(this._allowFullTableExternalDataAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       authorized_session_tag_value_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authorizedSessionTagValueList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._authorizedSessionTagValueList),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       catalog_id: {
-        value: cdktf.stringToHclTerraform(this._catalogId),
+        value: cdktn.stringToHclTerraform(this._catalogId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_data_filtering_allow_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._externalDataFilteringAllowList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._externalDataFilteringAllowList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       read_only_admins: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._readOnlyAdmins),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._readOnlyAdmins),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trusted_resource_owners: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._trustedResourceOwners),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._trustedResourceOwners),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       create_database_default_permissions: {
-        value: cdktf.listMapperHcl(lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToHclTerraform, true)(this._createDatabaseDefaultPermissions.internalValue),
+        value: cdktn.listMapperHcl(lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToHclTerraform, true)(this._createDatabaseDefaultPermissions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList",
       },
       create_table_default_permissions: {
-        value: cdktf.listMapperHcl(lakeformationDataLakeSettingsCreateTableDefaultPermissionsToHclTerraform, true)(this._createTableDefaultPermissions.internalValue),
+        value: cdktn.listMapperHcl(lakeformationDataLakeSettingsCreateTableDefaultPermissionsToHclTerraform, true)(this._createTableDefaultPermissions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LakeformationDataLakeSettingsCreateTableDefaultPermissionsList",

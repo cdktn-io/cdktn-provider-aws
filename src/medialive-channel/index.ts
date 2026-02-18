@@ -39,8 +39,8 @@ medialiveChannelVpcToHclTerraform,
 MedialiveChannelVpcOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface MedialiveChannelConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface MedialiveChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_channel#channel_class MedialiveChannel#channel_class}
   */
@@ -73,7 +73,7 @@ export interface MedialiveChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_channel#start_channel MedialiveChannel#start_channel}
   */
-  readonly startChannel?: boolean | cdktf.IResolvable;
+  readonly startChannel?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_channel#tags MedialiveChannel#tags}
   */
@@ -93,7 +93,7 @@ export interface MedialiveChannelConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_channel#destinations MedialiveChannel#destinations}
   */
-  readonly destinations: MedialiveChannelDestinations[] | cdktf.IResolvable;
+  readonly destinations: MedialiveChannelDestinations[] | cdktn.IResolvable;
   /**
   * encoder_settings block
   *
@@ -105,7 +105,7 @@ export interface MedialiveChannelConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_channel#input_attachments MedialiveChannel#input_attachments}
   */
-  readonly inputAttachments: MedialiveChannelInputAttachments[] | cdktf.IResolvable;
+  readonly inputAttachments: MedialiveChannelInputAttachments[] | cdktn.IResolvable;
   /**
   * input_specification block
   *
@@ -135,7 +135,7 @@ export interface MedialiveChannelConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_channel aws_medialive_channel}
 */
-export class MedialiveChannel extends cdktf.TerraformResource {
+export class MedialiveChannel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -146,14 +146,14 @@ export class MedialiveChannel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MedialiveChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MedialiveChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MedialiveChannel to import
   * @param importFromId The id of the existing MedialiveChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MedialiveChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -307,11 +307,11 @@ export class MedialiveChannel extends cdktf.TerraformResource {
   }
 
   // start_channel - computed: false, optional: true, required: false
-  private _startChannel?: boolean | cdktf.IResolvable; 
+  private _startChannel?: boolean | cdktn.IResolvable; 
   public get startChannel() {
     return this.getBooleanAttribute('start_channel');
   }
-  public set startChannel(value: boolean | cdktf.IResolvable) {
+  public set startChannel(value: boolean | cdktn.IResolvable) {
     this._startChannel = value;
   }
   public resetStartChannel() {
@@ -375,7 +375,7 @@ export class MedialiveChannel extends cdktf.TerraformResource {
   public get destinations() {
     return this._destinations;
   }
-  public putDestinations(value: MedialiveChannelDestinations[] | cdktf.IResolvable) {
+  public putDestinations(value: MedialiveChannelDestinations[] | cdktn.IResolvable) {
     this._destinations.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -401,7 +401,7 @@ export class MedialiveChannel extends cdktf.TerraformResource {
   public get inputAttachments() {
     return this._inputAttachments;
   }
-  public putInputAttachments(value: MedialiveChannelInputAttachments[] | cdktf.IResolvable) {
+  public putInputAttachments(value: MedialiveChannelInputAttachments[] | cdktn.IResolvable) {
     this._inputAttachments.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -476,19 +476,19 @@ export class MedialiveChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      channel_class: cdktf.stringToTerraform(this._channelClass),
-      id: cdktf.stringToTerraform(this._id),
-      log_level: cdktf.stringToTerraform(this._logLevel),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      start_channel: cdktf.booleanToTerraform(this._startChannel),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      channel_class: cdktn.stringToTerraform(this._channelClass),
+      id: cdktn.stringToTerraform(this._id),
+      log_level: cdktn.stringToTerraform(this._logLevel),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      start_channel: cdktn.booleanToTerraform(this._startChannel),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       cdi_input_specification: medialiveChannelCdiInputSpecificationToTerraform(this._cdiInputSpecification.internalValue),
-      destinations: cdktf.listMapper(medialiveChannelDestinationsToTerraform, true)(this._destinations.internalValue),
+      destinations: cdktn.listMapper(medialiveChannelDestinationsToTerraform, true)(this._destinations.internalValue),
       encoder_settings: medialiveChannelEncoderSettingsToTerraform(this._encoderSettings.internalValue),
-      input_attachments: cdktf.listMapper(medialiveChannelInputAttachmentsToTerraform, true)(this._inputAttachments.internalValue),
+      input_attachments: cdktn.listMapper(medialiveChannelInputAttachmentsToTerraform, true)(this._inputAttachments.internalValue),
       input_specification: medialiveChannelInputSpecificationToTerraform(this._inputSpecification.internalValue),
       maintenance: medialiveChannelMaintenanceToTerraform(this._maintenance.internalValue),
       timeouts: medialiveChannelTimeoutsToTerraform(this._timeouts.internalValue),
@@ -499,55 +499,55 @@ export class MedialiveChannel extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       channel_class: {
-        value: cdktf.stringToHclTerraform(this._channelClass),
+        value: cdktn.stringToHclTerraform(this._channelClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_level: {
-        value: cdktf.stringToHclTerraform(this._logLevel),
+        value: cdktn.stringToHclTerraform(this._logLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_channel: {
-        value: cdktf.booleanToHclTerraform(this._startChannel),
+        value: cdktn.booleanToHclTerraform(this._startChannel),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -559,7 +559,7 @@ export class MedialiveChannel extends cdktf.TerraformResource {
         storageClassType: "MedialiveChannelCdiInputSpecificationList",
       },
       destinations: {
-        value: cdktf.listMapperHcl(medialiveChannelDestinationsToHclTerraform, true)(this._destinations.internalValue),
+        value: cdktn.listMapperHcl(medialiveChannelDestinationsToHclTerraform, true)(this._destinations.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MedialiveChannelDestinationsList",
@@ -571,7 +571,7 @@ export class MedialiveChannel extends cdktf.TerraformResource {
         storageClassType: "MedialiveChannelEncoderSettingsList",
       },
       input_attachments: {
-        value: cdktf.listMapperHcl(medialiveChannelInputAttachmentsToHclTerraform, true)(this._inputAttachments.internalValue),
+        value: cdktn.listMapperHcl(medialiveChannelInputAttachmentsToHclTerraform, true)(this._inputAttachments.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MedialiveChannelInputAttachmentsList",

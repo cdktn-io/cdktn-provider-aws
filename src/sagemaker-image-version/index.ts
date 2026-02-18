@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerImageVersionConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerImageVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_image_version#aliases SagemakerImageVersion#aliases}
   */
@@ -23,7 +23,7 @@ export interface SagemakerImageVersionConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_image_version#horovod SagemakerImageVersion#horovod}
   */
-  readonly horovod?: boolean | cdktf.IResolvable;
+  readonly horovod?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}
   *
@@ -70,7 +70,7 @@ export interface SagemakerImageVersionConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_image_version aws_sagemaker_image_version}
 */
-export class SagemakerImageVersion extends cdktf.TerraformResource {
+export class SagemakerImageVersion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -81,14 +81,14 @@ export class SagemakerImageVersion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerImageVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerImageVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerImageVersion to import
   * @param importFromId The id of the existing SagemakerImageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_image_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerImageVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_image_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_image_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -139,7 +139,7 @@ export class SagemakerImageVersion extends cdktf.TerraformResource {
   // aliases - computed: false, optional: true, required: false
   private _aliases?: string[]; 
   public get aliases() {
-    return cdktf.Fn.tolist(this.getListAttribute('aliases'));
+    return cdktn.Fn.tolist(this.getListAttribute('aliases'));
   }
   public set aliases(value: string[]) {
     this._aliases = value;
@@ -176,11 +176,11 @@ export class SagemakerImageVersion extends cdktf.TerraformResource {
   }
 
   // horovod - computed: false, optional: true, required: false
-  private _horovod?: boolean | cdktf.IResolvable; 
+  private _horovod?: boolean | cdktn.IResolvable; 
   public get horovod() {
     return this.getBooleanAttribute('horovod');
   }
-  public set horovod(value: boolean | cdktf.IResolvable) {
+  public set horovod(value: boolean | cdktn.IResolvable) {
     this._horovod = value;
   }
   public resetHorovod() {
@@ -348,91 +348,91 @@ export class SagemakerImageVersion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aliases: cdktf.listMapper(cdktf.stringToTerraform, false)(this._aliases),
-      base_image: cdktf.stringToTerraform(this._baseImage),
-      horovod: cdktf.booleanToTerraform(this._horovod),
-      id: cdktf.stringToTerraform(this._id),
-      image_name: cdktf.stringToTerraform(this._imageName),
-      job_type: cdktf.stringToTerraform(this._jobType),
-      ml_framework: cdktf.stringToTerraform(this._mlFramework),
-      processor: cdktf.stringToTerraform(this._processor),
-      programming_lang: cdktf.stringToTerraform(this._programmingLang),
-      region: cdktf.stringToTerraform(this._region),
-      release_notes: cdktf.stringToTerraform(this._releaseNotes),
-      vendor_guidance: cdktf.stringToTerraform(this._vendorGuidance),
+      aliases: cdktn.listMapper(cdktn.stringToTerraform, false)(this._aliases),
+      base_image: cdktn.stringToTerraform(this._baseImage),
+      horovod: cdktn.booleanToTerraform(this._horovod),
+      id: cdktn.stringToTerraform(this._id),
+      image_name: cdktn.stringToTerraform(this._imageName),
+      job_type: cdktn.stringToTerraform(this._jobType),
+      ml_framework: cdktn.stringToTerraform(this._mlFramework),
+      processor: cdktn.stringToTerraform(this._processor),
+      programming_lang: cdktn.stringToTerraform(this._programmingLang),
+      region: cdktn.stringToTerraform(this._region),
+      release_notes: cdktn.stringToTerraform(this._releaseNotes),
+      vendor_guidance: cdktn.stringToTerraform(this._vendorGuidance),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aliases: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._aliases),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._aliases),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       base_image: {
-        value: cdktf.stringToHclTerraform(this._baseImage),
+        value: cdktn.stringToHclTerraform(this._baseImage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       horovod: {
-        value: cdktf.booleanToHclTerraform(this._horovod),
+        value: cdktn.booleanToHclTerraform(this._horovod),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_name: {
-        value: cdktf.stringToHclTerraform(this._imageName),
+        value: cdktn.stringToHclTerraform(this._imageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_type: {
-        value: cdktf.stringToHclTerraform(this._jobType),
+        value: cdktn.stringToHclTerraform(this._jobType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ml_framework: {
-        value: cdktf.stringToHclTerraform(this._mlFramework),
+        value: cdktn.stringToHclTerraform(this._mlFramework),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       processor: {
-        value: cdktf.stringToHclTerraform(this._processor),
+        value: cdktn.stringToHclTerraform(this._processor),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       programming_lang: {
-        value: cdktf.stringToHclTerraform(this._programmingLang),
+        value: cdktn.stringToHclTerraform(this._programmingLang),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       release_notes: {
-        value: cdktf.stringToHclTerraform(this._releaseNotes),
+        value: cdktn.stringToHclTerraform(this._releaseNotes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vendor_guidance: {
-        value: cdktf.stringToHclTerraform(this._vendorGuidance),
+        value: cdktn.stringToHclTerraform(this._vendorGuidance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

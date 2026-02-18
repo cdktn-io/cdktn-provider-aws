@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamVirtualMfaDeviceConfig extends cdktf.TerraformMetaArguments {
+export interface IamVirtualMfaDeviceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_virtual_mfa_device#id IamVirtualMfaDevice#id}
   *
@@ -40,7 +40,7 @@ export interface IamVirtualMfaDeviceConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_virtual_mfa_device aws_iam_virtual_mfa_device}
 */
-export class IamVirtualMfaDevice extends cdktf.TerraformResource {
+export class IamVirtualMfaDevice extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class IamVirtualMfaDevice extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamVirtualMfaDevice resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamVirtualMfaDevice resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamVirtualMfaDevice to import
   * @param importFromId The id of the existing IamVirtualMfaDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_virtual_mfa_device#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamVirtualMfaDevice to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_virtual_mfa_device", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_virtual_mfa_device", importId: importFromId, provider });
       }
 
   // ===========
@@ -212,42 +212,42 @@ export class IamVirtualMfaDevice extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      path: cdktf.stringToTerraform(this._path),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      virtual_mfa_device_name: cdktf.stringToTerraform(this._virtualMfaDeviceName),
+      id: cdktn.stringToTerraform(this._id),
+      path: cdktn.stringToTerraform(this._path),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      virtual_mfa_device_name: cdktn.stringToTerraform(this._virtualMfaDeviceName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       virtual_mfa_device_name: {
-        value: cdktf.stringToHclTerraform(this._virtualMfaDeviceName),
+        value: cdktn.stringToHclTerraform(this._virtualMfaDeviceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

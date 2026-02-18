@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchMetricAlarmConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_metric_alarm#actions_enabled CloudwatchMetricAlarm#actions_enabled}
   */
-  readonly actionsEnabled?: boolean | cdktf.IResolvable;
+  readonly actionsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_metric_alarm#alarm_actions CloudwatchMetricAlarm#alarm_actions}
   */
@@ -118,7 +118,7 @@ export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_metric_alarm#metric_query CloudwatchMetricAlarm#metric_query}
   */
-  readonly metricQuery?: CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable;
+  readonly metricQuery?: CloudwatchMetricAlarmMetricQuery[] | cdktn.IResolvable;
 }
 export interface CloudwatchMetricAlarmMetricQueryMetric {
   /**
@@ -148,59 +148,59 @@ export interface CloudwatchMetricAlarmMetricQueryMetric {
 }
 
 export function cloudwatchMetricAlarmMetricQueryMetricToTerraform(struct?: CloudwatchMetricAlarmMetricQueryMetricOutputReference | CloudwatchMetricAlarmMetricQueryMetric): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimensions: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.dimensions),
-    metric_name: cdktf.stringToTerraform(struct!.metricName),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    period: cdktf.numberToTerraform(struct!.period),
-    stat: cdktf.stringToTerraform(struct!.stat),
-    unit: cdktf.stringToTerraform(struct!.unit),
+    dimensions: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.dimensions),
+    metric_name: cdktn.stringToTerraform(struct!.metricName),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    period: cdktn.numberToTerraform(struct!.period),
+    stat: cdktn.stringToTerraform(struct!.stat),
+    unit: cdktn.stringToTerraform(struct!.unit),
   }
 }
 
 
 export function cloudwatchMetricAlarmMetricQueryMetricToHclTerraform(struct?: CloudwatchMetricAlarmMetricQueryMetricOutputReference | CloudwatchMetricAlarmMetricQueryMetric): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dimensions: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.dimensions),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.dimensions),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     metric_name: {
-      value: cdktf.stringToHclTerraform(struct!.metricName),
+      value: cdktn.stringToHclTerraform(struct!.metricName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     period: {
-      value: cdktf.numberToHclTerraform(struct!.period),
+      value: cdktn.numberToHclTerraform(struct!.period),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     stat: {
-      value: cdktf.stringToHclTerraform(struct!.stat),
+      value: cdktn.stringToHclTerraform(struct!.stat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -211,14 +211,14 @@ export function cloudwatchMetricAlarmMetricQueryMetricToHclTerraform(struct?: Cl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchMetricAlarmMetricQueryMetricOutputReference extends cdktf.ComplexObject {
+export class CloudwatchMetricAlarmMetricQueryMetricOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -387,7 +387,7 @@ export interface CloudwatchMetricAlarmMetricQuery {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_metric_alarm#return_data CloudwatchMetricAlarm#return_data}
   */
-  readonly returnData?: boolean | cdktf.IResolvable;
+  readonly returnData?: boolean | cdktn.IResolvable;
   /**
   * metric block
   *
@@ -396,61 +396,61 @@ export interface CloudwatchMetricAlarmMetricQuery {
   readonly metric?: CloudwatchMetricAlarmMetricQueryMetric;
 }
 
-export function cloudwatchMetricAlarmMetricQueryToTerraform(struct?: CloudwatchMetricAlarmMetricQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchMetricAlarmMetricQueryToTerraform(struct?: CloudwatchMetricAlarmMetricQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    id: cdktf.stringToTerraform(struct!.id),
-    label: cdktf.stringToTerraform(struct!.label),
-    period: cdktf.numberToTerraform(struct!.period),
-    return_data: cdktf.booleanToTerraform(struct!.returnData),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    id: cdktn.stringToTerraform(struct!.id),
+    label: cdktn.stringToTerraform(struct!.label),
+    period: cdktn.numberToTerraform(struct!.period),
+    return_data: cdktn.booleanToTerraform(struct!.returnData),
     metric: cloudwatchMetricAlarmMetricQueryMetricToTerraform(struct!.metric),
   }
 }
 
 
-export function cloudwatchMetricAlarmMetricQueryToHclTerraform(struct?: CloudwatchMetricAlarmMetricQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchMetricAlarmMetricQueryToHclTerraform(struct?: CloudwatchMetricAlarmMetricQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     period: {
-      value: cdktf.numberToHclTerraform(struct!.period),
+      value: cdktn.numberToHclTerraform(struct!.period),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     return_data: {
-      value: cdktf.booleanToHclTerraform(struct!.returnData),
+      value: cdktn.booleanToHclTerraform(struct!.returnData),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -467,9 +467,9 @@ export function cloudwatchMetricAlarmMetricQueryToHclTerraform(struct?: Cloudwat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.ComplexObject {
+export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -477,11 +477,11 @@ export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchMetricAlarmMetricQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchMetricAlarmMetricQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -518,7 +518,7 @@ export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchMetricAlarmMetricQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchMetricAlarmMetricQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -530,7 +530,7 @@ export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.Compl
       this._returnData = undefined;
       this._metric.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -625,11 +625,11 @@ export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.Compl
   }
 
   // return_data - computed: false, optional: true, required: false
-  private _returnData?: boolean | cdktf.IResolvable; 
+  private _returnData?: boolean | cdktn.IResolvable; 
   public get returnData() {
     return this.getBooleanAttribute('return_data');
   }
-  public set returnData(value: boolean | cdktf.IResolvable) {
+  public set returnData(value: boolean | cdktn.IResolvable) {
     this._returnData = value;
   }
   public resetReturnData() {
@@ -657,15 +657,15 @@ export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.Compl
   }
 }
 
-export class CloudwatchMetricAlarmMetricQueryList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable
+export class CloudwatchMetricAlarmMetricQueryList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchMetricAlarmMetricQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -680,7 +680,7 @@ export class CloudwatchMetricAlarmMetricQueryList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm}
 */
-export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
+export class CloudwatchMetricAlarm extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -691,14 +691,14 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchMetricAlarm resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchMetricAlarm resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchMetricAlarm to import
   * @param importFromId The id of the existing CloudwatchMetricAlarm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_metric_alarm#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchMetricAlarm to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_metric_alarm", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_metric_alarm", importId: importFromId, provider });
       }
 
   // ===========
@@ -760,11 +760,11 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // ==========
 
   // actions_enabled - computed: false, optional: true, required: false
-  private _actionsEnabled?: boolean | cdktf.IResolvable; 
+  private _actionsEnabled?: boolean | cdktn.IResolvable; 
   public get actionsEnabled() {
     return this.getBooleanAttribute('actions_enabled');
   }
-  public set actionsEnabled(value: boolean | cdktf.IResolvable) {
+  public set actionsEnabled(value: boolean | cdktn.IResolvable) {
     this._actionsEnabled = value;
   }
   public resetActionsEnabled() {
@@ -778,7 +778,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // alarm_actions - computed: false, optional: true, required: false
   private _alarmActions?: string[]; 
   public get alarmActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('alarm_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('alarm_actions'));
   }
   public set alarmActions(value: string[]) {
     this._alarmActions = value;
@@ -934,7 +934,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // insufficient_data_actions - computed: false, optional: true, required: false
   private _insufficientDataActions?: string[]; 
   public get insufficientDataActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('insufficient_data_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('insufficient_data_actions'));
   }
   public set insufficientDataActions(value: string[]) {
     this._insufficientDataActions = value;
@@ -982,7 +982,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // ok_actions - computed: false, optional: true, required: false
   private _okActions?: string[]; 
   public get okActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('ok_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('ok_actions'));
   }
   public set okActions(value: string[]) {
     this._okActions = value;
@@ -1144,7 +1144,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   public get metricQuery() {
     return this._metricQuery;
   }
-  public putMetricQuery(value: CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable) {
+  public putMetricQuery(value: CloudwatchMetricAlarmMetricQuery[] | cdktn.IResolvable) {
     this._metricQuery.internalValue = value;
   }
   public resetMetricQuery() {
@@ -1161,182 +1161,182 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      actions_enabled: cdktf.booleanToTerraform(this._actionsEnabled),
-      alarm_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._alarmActions),
-      alarm_description: cdktf.stringToTerraform(this._alarmDescription),
-      alarm_name: cdktf.stringToTerraform(this._alarmName),
-      comparison_operator: cdktf.stringToTerraform(this._comparisonOperator),
-      datapoints_to_alarm: cdktf.numberToTerraform(this._datapointsToAlarm),
-      dimensions: cdktf.hashMapper(cdktf.stringToTerraform)(this._dimensions),
-      evaluate_low_sample_count_percentiles: cdktf.stringToTerraform(this._evaluateLowSampleCountPercentiles),
-      evaluation_periods: cdktf.numberToTerraform(this._evaluationPeriods),
-      extended_statistic: cdktf.stringToTerraform(this._extendedStatistic),
-      id: cdktf.stringToTerraform(this._id),
-      insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._insufficientDataActions),
-      metric_name: cdktf.stringToTerraform(this._metricName),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      ok_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._okActions),
-      period: cdktf.numberToTerraform(this._period),
-      region: cdktf.stringToTerraform(this._region),
-      statistic: cdktf.stringToTerraform(this._statistic),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      threshold: cdktf.numberToTerraform(this._threshold),
-      threshold_metric_id: cdktf.stringToTerraform(this._thresholdMetricId),
-      treat_missing_data: cdktf.stringToTerraform(this._treatMissingData),
-      unit: cdktf.stringToTerraform(this._unit),
-      metric_query: cdktf.listMapper(cloudwatchMetricAlarmMetricQueryToTerraform, true)(this._metricQuery.internalValue),
+      actions_enabled: cdktn.booleanToTerraform(this._actionsEnabled),
+      alarm_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._alarmActions),
+      alarm_description: cdktn.stringToTerraform(this._alarmDescription),
+      alarm_name: cdktn.stringToTerraform(this._alarmName),
+      comparison_operator: cdktn.stringToTerraform(this._comparisonOperator),
+      datapoints_to_alarm: cdktn.numberToTerraform(this._datapointsToAlarm),
+      dimensions: cdktn.hashMapper(cdktn.stringToTerraform)(this._dimensions),
+      evaluate_low_sample_count_percentiles: cdktn.stringToTerraform(this._evaluateLowSampleCountPercentiles),
+      evaluation_periods: cdktn.numberToTerraform(this._evaluationPeriods),
+      extended_statistic: cdktn.stringToTerraform(this._extendedStatistic),
+      id: cdktn.stringToTerraform(this._id),
+      insufficient_data_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._insufficientDataActions),
+      metric_name: cdktn.stringToTerraform(this._metricName),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      ok_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._okActions),
+      period: cdktn.numberToTerraform(this._period),
+      region: cdktn.stringToTerraform(this._region),
+      statistic: cdktn.stringToTerraform(this._statistic),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      threshold: cdktn.numberToTerraform(this._threshold),
+      threshold_metric_id: cdktn.stringToTerraform(this._thresholdMetricId),
+      treat_missing_data: cdktn.stringToTerraform(this._treatMissingData),
+      unit: cdktn.stringToTerraform(this._unit),
+      metric_query: cdktn.listMapper(cloudwatchMetricAlarmMetricQueryToTerraform, true)(this._metricQuery.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       actions_enabled: {
-        value: cdktf.booleanToHclTerraform(this._actionsEnabled),
+        value: cdktn.booleanToHclTerraform(this._actionsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       alarm_actions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._alarmActions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._alarmActions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       alarm_description: {
-        value: cdktf.stringToHclTerraform(this._alarmDescription),
+        value: cdktn.stringToHclTerraform(this._alarmDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alarm_name: {
-        value: cdktf.stringToHclTerraform(this._alarmName),
+        value: cdktn.stringToHclTerraform(this._alarmName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comparison_operator: {
-        value: cdktf.stringToHclTerraform(this._comparisonOperator),
+        value: cdktn.stringToHclTerraform(this._comparisonOperator),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       datapoints_to_alarm: {
-        value: cdktf.numberToHclTerraform(this._datapointsToAlarm),
+        value: cdktn.numberToHclTerraform(this._datapointsToAlarm),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       dimensions: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._dimensions),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._dimensions),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       evaluate_low_sample_count_percentiles: {
-        value: cdktf.stringToHclTerraform(this._evaluateLowSampleCountPercentiles),
+        value: cdktn.stringToHclTerraform(this._evaluateLowSampleCountPercentiles),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       evaluation_periods: {
-        value: cdktf.numberToHclTerraform(this._evaluationPeriods),
+        value: cdktn.numberToHclTerraform(this._evaluationPeriods),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       extended_statistic: {
-        value: cdktf.stringToHclTerraform(this._extendedStatistic),
+        value: cdktn.stringToHclTerraform(this._extendedStatistic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insufficient_data_actions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._insufficientDataActions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._insufficientDataActions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       metric_name: {
-        value: cdktf.stringToHclTerraform(this._metricName),
+        value: cdktn.stringToHclTerraform(this._metricName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ok_actions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._okActions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._okActions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       period: {
-        value: cdktf.numberToHclTerraform(this._period),
+        value: cdktn.numberToHclTerraform(this._period),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statistic: {
-        value: cdktf.stringToHclTerraform(this._statistic),
+        value: cdktn.stringToHclTerraform(this._statistic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       threshold: {
-        value: cdktf.numberToHclTerraform(this._threshold),
+        value: cdktn.numberToHclTerraform(this._threshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       threshold_metric_id: {
-        value: cdktf.stringToHclTerraform(this._thresholdMetricId),
+        value: cdktn.stringToHclTerraform(this._thresholdMetricId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       treat_missing_data: {
-        value: cdktf.stringToHclTerraform(this._treatMissingData),
+        value: cdktn.stringToHclTerraform(this._treatMissingData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       unit: {
-        value: cdktf.stringToHclTerraform(this._unit),
+        value: cdktn.stringToHclTerraform(this._unit),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_query: {
-        value: cdktf.listMapperHcl(cloudwatchMetricAlarmMetricQueryToHclTerraform, true)(this._metricQuery.internalValue),
+        value: cdktn.listMapperHcl(cloudwatchMetricAlarmMetricQueryToHclTerraform, true)(this._metricQuery.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CloudwatchMetricAlarmMetricQueryList",

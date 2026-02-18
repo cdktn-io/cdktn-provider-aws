@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockagentAgentKnowledgeBaseAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockagentAgentKnowledgeBaseAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_knowledge_base_association#agent_id BedrockagentAgentKnowledgeBaseAssociation#agent_id}
   */
@@ -60,32 +60,32 @@ export interface BedrockagentAgentKnowledgeBaseAssociationTimeouts {
   readonly update?: string;
 }
 
-export function bedrockagentAgentKnowledgeBaseAssociationTimeoutsToTerraform(struct?: BedrockagentAgentKnowledgeBaseAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentKnowledgeBaseAssociationTimeoutsToTerraform(struct?: BedrockagentAgentKnowledgeBaseAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bedrockagentAgentKnowledgeBaseAssociationTimeoutsToHclTerraform(struct?: BedrockagentAgentKnowledgeBaseAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentKnowledgeBaseAssociationTimeoutsToHclTerraform(struct?: BedrockagentAgentKnowledgeBaseAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -96,19 +96,19 @@ export function bedrockagentAgentKnowledgeBaseAssociationTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BedrockagentAgentKnowledgeBaseAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentKnowledgeBaseAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -125,14 +125,14 @@ export class BedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentKnowledgeBaseAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentKnowledgeBaseAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,7 +180,7 @@ export class BedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association}
 */
-export class BedrockagentAgentKnowledgeBaseAssociation extends cdktf.TerraformResource {
+export class BedrockagentAgentKnowledgeBaseAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -191,14 +191,14 @@ export class BedrockagentAgentKnowledgeBaseAssociation extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockagentAgentKnowledgeBaseAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockagentAgentKnowledgeBaseAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentAgentKnowledgeBaseAssociation to import
   * @param importFromId The id of the existing BedrockagentAgentKnowledgeBaseAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_knowledge_base_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentAgentKnowledgeBaseAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_agent_knowledge_base_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_agent_knowledge_base_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -352,12 +352,12 @@ export class BedrockagentAgentKnowledgeBaseAssociation extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_id: cdktf.stringToTerraform(this._agentId),
-      agent_version: cdktf.stringToTerraform(this._agentVersion),
-      description: cdktf.stringToTerraform(this._description),
-      knowledge_base_id: cdktf.stringToTerraform(this._knowledgeBaseId),
-      knowledge_base_state: cdktf.stringToTerraform(this._knowledgeBaseState),
-      region: cdktf.stringToTerraform(this._region),
+      agent_id: cdktn.stringToTerraform(this._agentId),
+      agent_version: cdktn.stringToTerraform(this._agentVersion),
+      description: cdktn.stringToTerraform(this._description),
+      knowledge_base_id: cdktn.stringToTerraform(this._knowledgeBaseId),
+      knowledge_base_state: cdktn.stringToTerraform(this._knowledgeBaseState),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: bedrockagentAgentKnowledgeBaseAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -365,37 +365,37 @@ export class BedrockagentAgentKnowledgeBaseAssociation extends cdktf.TerraformRe
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       agent_id: {
-        value: cdktf.stringToHclTerraform(this._agentId),
+        value: cdktn.stringToHclTerraform(this._agentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       agent_version: {
-        value: cdktf.stringToHclTerraform(this._agentVersion),
+        value: cdktn.stringToHclTerraform(this._agentVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       knowledge_base_id: {
-        value: cdktf.stringToHclTerraform(this._knowledgeBaseId),
+        value: cdktn.stringToHclTerraform(this._knowledgeBaseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       knowledge_base_state: {
-        value: cdktf.stringToHclTerraform(this._knowledgeBaseState),
+        value: cdktn.stringToHclTerraform(this._knowledgeBaseState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

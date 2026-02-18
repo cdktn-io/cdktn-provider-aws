@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsChatbotSlackWorkspaceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsChatbotSlackWorkspaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,7 +27,7 @@ export interface DataAwsChatbotSlackWorkspaceConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/chatbot_slack_workspace aws_chatbot_slack_workspace}
 */
-export class DataAwsChatbotSlackWorkspace extends cdktf.TerraformDataSource {
+export class DataAwsChatbotSlackWorkspace extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -38,14 +38,14 @@ export class DataAwsChatbotSlackWorkspace extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsChatbotSlackWorkspace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsChatbotSlackWorkspace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsChatbotSlackWorkspace to import
   * @param importFromId The id of the existing DataAwsChatbotSlackWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/chatbot_slack_workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsChatbotSlackWorkspace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_chatbot_slack_workspace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_chatbot_slack_workspace", importId: importFromId, provider });
       }
 
   // ===========
@@ -123,21 +123,21 @@ export class DataAwsChatbotSlackWorkspace extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      slack_team_name: cdktf.stringToTerraform(this._slackTeamName),
+      region: cdktn.stringToTerraform(this._region),
+      slack_team_name: cdktn.stringToTerraform(this._slackTeamName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       slack_team_name: {
-        value: cdktf.stringToHclTerraform(this._slackTeamName),
+        value: cdktn.stringToHclTerraform(this._slackTeamName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

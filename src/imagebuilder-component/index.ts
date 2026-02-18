@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ImagebuilderComponentConfig extends cdktf.TerraformMetaArguments {
+export interface ImagebuilderComponentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_component#change_description ImagebuilderComponent#change_description}
   */
@@ -52,7 +52,7 @@ export interface ImagebuilderComponentConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_component#skip_destroy ImagebuilderComponent#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_component#supported_os_versions ImagebuilderComponent#supported_os_versions}
   */
@@ -78,7 +78,7 @@ export interface ImagebuilderComponentConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_component aws_imagebuilder_component}
 */
-export class ImagebuilderComponent extends cdktf.TerraformResource {
+export class ImagebuilderComponent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -89,14 +89,14 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ImagebuilderComponent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ImagebuilderComponent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImagebuilderComponent to import
   * @param importFromId The id of the existing ImagebuilderComponent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_component#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImagebuilderComponent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_component", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_component", importId: importFromId, provider });
       }
 
   // ===========
@@ -289,11 +289,11 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -307,7 +307,7 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
   // supported_os_versions - computed: false, optional: true, required: false
   private _supportedOsVersions?: string[]; 
   public get supportedOsVersions() {
-    return cdktf.Fn.tolist(this.getListAttribute('supported_os_versions'));
+    return cdktn.Fn.tolist(this.getListAttribute('supported_os_versions'));
   }
   public set supportedOsVersions(value: string[]) {
     this._supportedOsVersions = value;
@@ -392,105 +392,105 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      change_description: cdktf.stringToTerraform(this._changeDescription),
-      data: cdktf.stringToTerraform(this._data),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      platform: cdktf.stringToTerraform(this._platform),
-      region: cdktf.stringToTerraform(this._region),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      supported_os_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedOsVersions),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      uri: cdktf.stringToTerraform(this._uri),
-      version: cdktf.stringToTerraform(this._version),
+      change_description: cdktn.stringToTerraform(this._changeDescription),
+      data: cdktn.stringToTerraform(this._data),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      name: cdktn.stringToTerraform(this._name),
+      platform: cdktn.stringToTerraform(this._platform),
+      region: cdktn.stringToTerraform(this._region),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
+      supported_os_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportedOsVersions),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      uri: cdktn.stringToTerraform(this._uri),
+      version: cdktn.stringToTerraform(this._version),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       change_description: {
-        value: cdktf.stringToHclTerraform(this._changeDescription),
+        value: cdktn.stringToHclTerraform(this._changeDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data: {
-        value: cdktf.stringToHclTerraform(this._data),
+        value: cdktn.stringToHclTerraform(this._data),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform: {
-        value: cdktf.stringToHclTerraform(this._platform),
+        value: cdktn.stringToHclTerraform(this._platform),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supported_os_versions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedOsVersions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportedOsVersions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       uri: {
-        value: cdktf.stringToHclTerraform(this._uri),
+        value: cdktn.stringToHclTerraform(this._uri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

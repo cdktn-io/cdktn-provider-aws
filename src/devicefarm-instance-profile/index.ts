@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DevicefarmInstanceProfileConfig extends cdktf.TerraformMetaArguments {
+export interface DevicefarmInstanceProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_instance_profile#description DevicefarmInstanceProfile#description}
   */
@@ -34,11 +34,11 @@ export interface DevicefarmInstanceProfileConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_instance_profile#package_cleanup DevicefarmInstanceProfile#package_cleanup}
   */
-  readonly packageCleanup?: boolean | cdktf.IResolvable;
+  readonly packageCleanup?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_instance_profile#reboot_after_use DevicefarmInstanceProfile#reboot_after_use}
   */
-  readonly rebootAfterUse?: boolean | cdktf.IResolvable;
+  readonly rebootAfterUse?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -58,7 +58,7 @@ export interface DevicefarmInstanceProfileConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_instance_profile aws_devicefarm_instance_profile}
 */
-export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
+export class DevicefarmInstanceProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -69,14 +69,14 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DevicefarmInstanceProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DevicefarmInstanceProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevicefarmInstanceProfile to import
   * @param importFromId The id of the existing DevicefarmInstanceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devicefarm_instance_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevicefarmInstanceProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_devicefarm_instance_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_devicefarm_instance_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -145,7 +145,7 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
   // exclude_app_packages_from_cleanup - computed: false, optional: true, required: false
   private _excludeAppPackagesFromCleanup?: string[]; 
   public get excludeAppPackagesFromCleanup() {
-    return cdktf.Fn.tolist(this.getListAttribute('exclude_app_packages_from_cleanup'));
+    return cdktn.Fn.tolist(this.getListAttribute('exclude_app_packages_from_cleanup'));
   }
   public set excludeAppPackagesFromCleanup(value: string[]) {
     this._excludeAppPackagesFromCleanup = value;
@@ -188,11 +188,11 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
   }
 
   // package_cleanup - computed: false, optional: true, required: false
-  private _packageCleanup?: boolean | cdktf.IResolvable; 
+  private _packageCleanup?: boolean | cdktn.IResolvable; 
   public get packageCleanup() {
     return this.getBooleanAttribute('package_cleanup');
   }
-  public set packageCleanup(value: boolean | cdktf.IResolvable) {
+  public set packageCleanup(value: boolean | cdktn.IResolvable) {
     this._packageCleanup = value;
   }
   public resetPackageCleanup() {
@@ -204,11 +204,11 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
   }
 
   // reboot_after_use - computed: false, optional: true, required: false
-  private _rebootAfterUse?: boolean | cdktf.IResolvable; 
+  private _rebootAfterUse?: boolean | cdktn.IResolvable; 
   public get rebootAfterUse() {
     return this.getBooleanAttribute('reboot_after_use');
   }
-  public set rebootAfterUse(value: boolean | cdktf.IResolvable) {
+  public set rebootAfterUse(value: boolean | cdktn.IResolvable) {
     this._rebootAfterUse = value;
   }
   public resetRebootAfterUse() {
@@ -273,70 +273,70 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      exclude_app_packages_from_cleanup: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludeAppPackagesFromCleanup),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      package_cleanup: cdktf.booleanToTerraform(this._packageCleanup),
-      reboot_after_use: cdktf.booleanToTerraform(this._rebootAfterUse),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      exclude_app_packages_from_cleanup: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludeAppPackagesFromCleanup),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      package_cleanup: cdktn.booleanToTerraform(this._packageCleanup),
+      reboot_after_use: cdktn.booleanToTerraform(this._rebootAfterUse),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclude_app_packages_from_cleanup: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludeAppPackagesFromCleanup),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludeAppPackagesFromCleanup),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       package_cleanup: {
-        value: cdktf.booleanToHclTerraform(this._packageCleanup),
+        value: cdktn.booleanToHclTerraform(this._packageCleanup),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       reboot_after_use: {
-        value: cdktf.booleanToHclTerraform(this._rebootAfterUse),
+        value: cdktn.booleanToHclTerraform(this._rebootAfterUse),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkAclAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkAclAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl_association#id NetworkAclAssociation#id}
   *
@@ -38,7 +38,7 @@ export interface NetworkAclAssociationConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl_association aws_network_acl_association}
 */
-export class NetworkAclAssociation extends cdktf.TerraformResource {
+export class NetworkAclAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class NetworkAclAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkAclAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkAclAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkAclAssociation to import
   * @param importFromId The id of the existing NetworkAclAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkAclAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_acl_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_acl_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class NetworkAclAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      network_acl_id: cdktf.stringToTerraform(this._networkAclId),
-      region: cdktf.stringToTerraform(this._region),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      id: cdktn.stringToTerraform(this._id),
+      network_acl_id: cdktn.stringToTerraform(this._networkAclId),
+      region: cdktn.stringToTerraform(this._region),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_acl_id: {
-        value: cdktf.stringToHclTerraform(this._networkAclId),
+        value: cdktn.stringToHclTerraform(this._networkAclId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

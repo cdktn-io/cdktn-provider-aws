@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicecatalogPortfolioShareConfig extends cdktf.TerraformMetaArguments {
+export interface ServicecatalogPortfolioShareConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicecatalog_portfolio_share#accept_language ServicecatalogPortfolioShare#accept_language}
   */
@@ -40,11 +40,11 @@ export interface ServicecatalogPortfolioShareConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicecatalog_portfolio_share#share_principals ServicecatalogPortfolioShare#share_principals}
   */
-  readonly sharePrincipals?: boolean | cdktf.IResolvable;
+  readonly sharePrincipals?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicecatalog_portfolio_share#share_tag_options ServicecatalogPortfolioShare#share_tag_options}
   */
-  readonly shareTagOptions?: boolean | cdktf.IResolvable;
+  readonly shareTagOptions?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicecatalog_portfolio_share#type ServicecatalogPortfolioShare#type}
   */
@@ -52,7 +52,7 @@ export interface ServicecatalogPortfolioShareConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicecatalog_portfolio_share#wait_for_acceptance ServicecatalogPortfolioShare#wait_for_acceptance}
   */
-  readonly waitForAcceptance?: boolean | cdktf.IResolvable;
+  readonly waitForAcceptance?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -79,46 +79,46 @@ export interface ServicecatalogPortfolioShareTimeouts {
   readonly update?: string;
 }
 
-export function servicecatalogPortfolioShareTimeoutsToTerraform(struct?: ServicecatalogPortfolioShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicecatalogPortfolioShareTimeoutsToTerraform(struct?: ServicecatalogPortfolioShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function servicecatalogPortfolioShareTimeoutsToHclTerraform(struct?: ServicecatalogPortfolioShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicecatalogPortfolioShareTimeoutsToHclTerraform(struct?: ServicecatalogPortfolioShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -129,19 +129,19 @@ export function servicecatalogPortfolioShareTimeoutsToHclTerraform(struct?: Serv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicecatalogPortfolioShareTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicecatalogPortfolioShareTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicecatalogPortfolioShareTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicecatalogPortfolioShareTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -166,7 +166,7 @@ export class ServicecatalogPortfolioShareTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicecatalogPortfolioShareTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicecatalogPortfolioShareTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -175,7 +175,7 @@ export class ServicecatalogPortfolioShareTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -257,7 +257,7 @@ export class ServicecatalogPortfolioShareTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicecatalog_portfolio_share aws_servicecatalog_portfolio_share}
 */
-export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
+export class ServicecatalogPortfolioShare extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -268,14 +268,14 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicecatalogPortfolioShare resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicecatalogPortfolioShare resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicecatalogPortfolioShare to import
   * @param importFromId The id of the existing ServicecatalogPortfolioShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicecatalog_portfolio_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicecatalogPortfolioShare to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicecatalog_portfolio_share", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicecatalog_portfolio_share", importId: importFromId, provider });
       }
 
   // ===========
@@ -401,11 +401,11 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
   }
 
   // share_principals - computed: false, optional: true, required: false
-  private _sharePrincipals?: boolean | cdktf.IResolvable; 
+  private _sharePrincipals?: boolean | cdktn.IResolvable; 
   public get sharePrincipals() {
     return this.getBooleanAttribute('share_principals');
   }
-  public set sharePrincipals(value: boolean | cdktf.IResolvable) {
+  public set sharePrincipals(value: boolean | cdktn.IResolvable) {
     this._sharePrincipals = value;
   }
   public resetSharePrincipals() {
@@ -417,11 +417,11 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
   }
 
   // share_tag_options - computed: false, optional: true, required: false
-  private _shareTagOptions?: boolean | cdktf.IResolvable; 
+  private _shareTagOptions?: boolean | cdktn.IResolvable; 
   public get shareTagOptions() {
     return this.getBooleanAttribute('share_tag_options');
   }
-  public set shareTagOptions(value: boolean | cdktf.IResolvable) {
+  public set shareTagOptions(value: boolean | cdktn.IResolvable) {
     this._shareTagOptions = value;
   }
   public resetShareTagOptions() {
@@ -446,11 +446,11 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
   }
 
   // wait_for_acceptance - computed: false, optional: true, required: false
-  private _waitForAcceptance?: boolean | cdktf.IResolvable; 
+  private _waitForAcceptance?: boolean | cdktn.IResolvable; 
   public get waitForAcceptance() {
     return this.getBooleanAttribute('wait_for_acceptance');
   }
-  public set waitForAcceptance(value: boolean | cdktf.IResolvable) {
+  public set waitForAcceptance(value: boolean | cdktn.IResolvable) {
     this._waitForAcceptance = value;
   }
   public resetWaitForAcceptance() {
@@ -483,15 +483,15 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accept_language: cdktf.stringToTerraform(this._acceptLanguage),
-      id: cdktf.stringToTerraform(this._id),
-      portfolio_id: cdktf.stringToTerraform(this._portfolioId),
-      principal_id: cdktf.stringToTerraform(this._principalId),
-      region: cdktf.stringToTerraform(this._region),
-      share_principals: cdktf.booleanToTerraform(this._sharePrincipals),
-      share_tag_options: cdktf.booleanToTerraform(this._shareTagOptions),
-      type: cdktf.stringToTerraform(this._type),
-      wait_for_acceptance: cdktf.booleanToTerraform(this._waitForAcceptance),
+      accept_language: cdktn.stringToTerraform(this._acceptLanguage),
+      id: cdktn.stringToTerraform(this._id),
+      portfolio_id: cdktn.stringToTerraform(this._portfolioId),
+      principal_id: cdktn.stringToTerraform(this._principalId),
+      region: cdktn.stringToTerraform(this._region),
+      share_principals: cdktn.booleanToTerraform(this._sharePrincipals),
+      share_tag_options: cdktn.booleanToTerraform(this._shareTagOptions),
+      type: cdktn.stringToTerraform(this._type),
+      wait_for_acceptance: cdktn.booleanToTerraform(this._waitForAcceptance),
       timeouts: servicecatalogPortfolioShareTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -499,55 +499,55 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accept_language: {
-        value: cdktf.stringToHclTerraform(this._acceptLanguage),
+        value: cdktn.stringToHclTerraform(this._acceptLanguage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       portfolio_id: {
-        value: cdktf.stringToHclTerraform(this._portfolioId),
+        value: cdktn.stringToHclTerraform(this._portfolioId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_id: {
-        value: cdktf.stringToHclTerraform(this._principalId),
+        value: cdktn.stringToHclTerraform(this._principalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       share_principals: {
-        value: cdktf.booleanToHclTerraform(this._sharePrincipals),
+        value: cdktn.booleanToHclTerraform(this._sharePrincipals),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       share_tag_options: {
-        value: cdktf.booleanToHclTerraform(this._shareTagOptions),
+        value: cdktn.booleanToHclTerraform(this._shareTagOptions),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wait_for_acceptance: {
-        value: cdktf.booleanToHclTerraform(this._waitForAcceptance),
+        value: cdktn.booleanToHclTerraform(this._waitForAcceptance),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GuarddutyMemberConfig extends cdktf.TerraformMetaArguments {
+export interface GuarddutyMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_member#account_id GuarddutyMember#account_id}
   */
@@ -23,7 +23,7 @@ export interface GuarddutyMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_member#disable_email_notification GuarddutyMember#disable_email_notification}
   */
-  readonly disableEmailNotification?: boolean | cdktf.IResolvable;
+  readonly disableEmailNotification?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_member#email GuarddutyMember#email}
   */
@@ -42,7 +42,7 @@ export interface GuarddutyMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_member#invite GuarddutyMember#invite}
   */
-  readonly invite?: boolean | cdktf.IResolvable;
+  readonly invite?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -67,32 +67,32 @@ export interface GuarddutyMemberTimeouts {
   readonly update?: string;
 }
 
-export function guarddutyMemberTimeoutsToTerraform(struct?: GuarddutyMemberTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function guarddutyMemberTimeoutsToTerraform(struct?: GuarddutyMemberTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function guarddutyMemberTimeoutsToHclTerraform(struct?: GuarddutyMemberTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function guarddutyMemberTimeoutsToHclTerraform(struct?: GuarddutyMemberTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,19 +103,19 @@ export function guarddutyMemberTimeoutsToHclTerraform(struct?: GuarddutyMemberTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GuarddutyMemberTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GuarddutyMemberTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GuarddutyMemberTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GuarddutyMemberTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class GuarddutyMemberTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GuarddutyMemberTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GuarddutyMemberTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,7 +187,7 @@ export class GuarddutyMemberTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_member aws_guardduty_member}
 */
-export class GuarddutyMember extends cdktf.TerraformResource {
+export class GuarddutyMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -198,14 +198,14 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GuarddutyMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GuarddutyMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyMember to import
   * @param importFromId The id of the existing GuarddutyMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -277,11 +277,11 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   }
 
   // disable_email_notification - computed: false, optional: true, required: false
-  private _disableEmailNotification?: boolean | cdktf.IResolvable; 
+  private _disableEmailNotification?: boolean | cdktn.IResolvable; 
   public get disableEmailNotification() {
     return this.getBooleanAttribute('disable_email_notification');
   }
-  public set disableEmailNotification(value: boolean | cdktf.IResolvable) {
+  public set disableEmailNotification(value: boolean | cdktn.IResolvable) {
     this._disableEmailNotification = value;
   }
   public resetDisableEmailNotification() {
@@ -338,11 +338,11 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   }
 
   // invite - computed: false, optional: true, required: false
-  private _invite?: boolean | cdktf.IResolvable; 
+  private _invite?: boolean | cdktn.IResolvable; 
   public get invite() {
     return this.getBooleanAttribute('invite');
   }
-  public set invite(value: boolean | cdktf.IResolvable) {
+  public set invite(value: boolean | cdktn.IResolvable) {
     this._invite = value;
   }
   public resetInvite() {
@@ -396,14 +396,14 @@ export class GuarddutyMember extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      detector_id: cdktf.stringToTerraform(this._detectorId),
-      disable_email_notification: cdktf.booleanToTerraform(this._disableEmailNotification),
-      email: cdktf.stringToTerraform(this._email),
-      id: cdktf.stringToTerraform(this._id),
-      invitation_message: cdktf.stringToTerraform(this._invitationMessage),
-      invite: cdktf.booleanToTerraform(this._invite),
-      region: cdktf.stringToTerraform(this._region),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      detector_id: cdktn.stringToTerraform(this._detectorId),
+      disable_email_notification: cdktn.booleanToTerraform(this._disableEmailNotification),
+      email: cdktn.stringToTerraform(this._email),
+      id: cdktn.stringToTerraform(this._id),
+      invitation_message: cdktn.stringToTerraform(this._invitationMessage),
+      invite: cdktn.booleanToTerraform(this._invite),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: guarddutyMemberTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -411,49 +411,49 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       detector_id: {
-        value: cdktf.stringToHclTerraform(this._detectorId),
+        value: cdktn.stringToHclTerraform(this._detectorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_email_notification: {
-        value: cdktf.booleanToHclTerraform(this._disableEmailNotification),
+        value: cdktn.booleanToHclTerraform(this._disableEmailNotification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invitation_message: {
-        value: cdktf.stringToHclTerraform(this._invitationMessage),
+        value: cdktn.stringToHclTerraform(this._invitationMessage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invite: {
-        value: cdktf.booleanToHclTerraform(this._invite),
+        value: cdktn.booleanToHclTerraform(this._invite),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

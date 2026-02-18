@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServiceDiscoveryInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface ServiceDiscoveryInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/service_discovery_instance#attributes ServiceDiscoveryInstance#attributes}
   */
@@ -42,7 +42,7 @@ export interface ServiceDiscoveryInstanceConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/service_discovery_instance aws_service_discovery_instance}
 */
-export class ServiceDiscoveryInstance extends cdktf.TerraformResource {
+export class ServiceDiscoveryInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class ServiceDiscoveryInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServiceDiscoveryInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServiceDiscoveryInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceDiscoveryInstance to import
   * @param importFromId The id of the existing ServiceDiscoveryInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/service_discovery_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceDiscoveryInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_service_discovery_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_service_discovery_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -178,42 +178,42 @@ export class ServiceDiscoveryInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attributes: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributes),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      region: cdktf.stringToTerraform(this._region),
-      service_id: cdktf.stringToTerraform(this._serviceId),
+      attributes: cdktn.hashMapper(cdktn.stringToTerraform)(this._attributes),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      region: cdktn.stringToTerraform(this._region),
+      service_id: cdktn.stringToTerraform(this._serviceId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       attributes: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._attributes),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._attributes),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_id: {
-        value: cdktf.stringToHclTerraform(this._serviceId),
+        value: cdktn.stringToHclTerraform(this._serviceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

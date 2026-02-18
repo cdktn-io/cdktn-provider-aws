@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatasyncLocationFsxOpenzfsFileSystemConfig extends cdktf.TerraformMetaArguments {
+export interface DatasyncLocationFsxOpenzfsFileSystemConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_fsx_openzfs_file_system#fsx_filesystem_arn DatasyncLocationFsxOpenzfsFileSystem#fsx_filesystem_arn}
   */
@@ -60,24 +60,24 @@ export interface DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions {
 }
 
 export function datasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsToTerraform(struct?: DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference | DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    version: cdktf.stringToTerraform(struct!.version),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function datasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsToHclTerraform(struct?: DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference | DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,14 +88,14 @@ export function datasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference extends cdktf.ComplexObject {
+export class DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -146,8 +146,8 @@ export interface DatasyncLocationFsxOpenzfsFileSystemProtocolNfs {
 }
 
 export function datasyncLocationFsxOpenzfsFileSystemProtocolNfsToTerraform(struct?: DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference | DatasyncLocationFsxOpenzfsFileSystemProtocolNfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -157,8 +157,8 @@ export function datasyncLocationFsxOpenzfsFileSystemProtocolNfsToTerraform(struc
 
 
 export function datasyncLocationFsxOpenzfsFileSystemProtocolNfsToHclTerraform(struct?: DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference | DatasyncLocationFsxOpenzfsFileSystemProtocolNfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -174,14 +174,14 @@ export function datasyncLocationFsxOpenzfsFileSystemProtocolNfsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference extends cdktf.ComplexObject {
+export class DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -229,8 +229,8 @@ export interface DatasyncLocationFsxOpenzfsFileSystemProtocol {
 }
 
 export function datasyncLocationFsxOpenzfsFileSystemProtocolToTerraform(struct?: DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference | DatasyncLocationFsxOpenzfsFileSystemProtocol): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -240,8 +240,8 @@ export function datasyncLocationFsxOpenzfsFileSystemProtocolToTerraform(struct?:
 
 
 export function datasyncLocationFsxOpenzfsFileSystemProtocolToHclTerraform(struct?: DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference | DatasyncLocationFsxOpenzfsFileSystemProtocol): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -257,14 +257,14 @@ export function datasyncLocationFsxOpenzfsFileSystemProtocolToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference extends cdktf.ComplexObject {
+export class DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -306,7 +306,7 @@ export class DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_fsx_openzfs_file_system aws_datasync_location_fsx_openzfs_file_system}
 */
-export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResource {
+export class DatasyncLocationFsxOpenzfsFileSystem extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -317,14 +317,14 @@ export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatasyncLocationFsxOpenzfsFileSystem resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatasyncLocationFsxOpenzfsFileSystem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncLocationFsxOpenzfsFileSystem to import
   * @param importFromId The id of the existing DatasyncLocationFsxOpenzfsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_fsx_openzfs_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncLocationFsxOpenzfsFileSystem to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_fsx_openzfs_file_system", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_fsx_openzfs_file_system", importId: importFromId, provider });
       }
 
   // ===========
@@ -426,7 +426,7 @@ export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResourc
   // security_group_arns - computed: false, optional: false, required: true
   private _securityGroupArns?: string[]; 
   public get securityGroupArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_arns'));
   }
   public set securityGroupArns(value: string[]) {
     this._securityGroupArns = value;
@@ -508,13 +508,13 @@ export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      fsx_filesystem_arn: cdktf.stringToTerraform(this._fsxFilesystemArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupArns),
-      subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      fsx_filesystem_arn: cdktn.stringToTerraform(this._fsxFilesystemArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupArns),
+      subdirectory: cdktn.stringToTerraform(this._subdirectory),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       protocol: datasyncLocationFsxOpenzfsFileSystemProtocolToTerraform(this._protocol.internalValue),
     };
   }
@@ -522,43 +522,43 @@ export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       fsx_filesystem_arn: {
-        value: cdktf.stringToHclTerraform(this._fsxFilesystemArn),
+        value: cdktn.stringToHclTerraform(this._fsxFilesystemArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subdirectory: {
-        value: cdktf.stringToHclTerraform(this._subdirectory),
+        value: cdktn.stringToHclTerraform(this._subdirectory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2HostConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2HostConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_host#asset_id Ec2Host#asset_id}
   */
@@ -83,39 +83,39 @@ export interface Ec2HostTimeouts {
   readonly update?: string;
 }
 
-export function ec2HostTimeoutsToTerraform(struct?: Ec2HostTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2HostTimeoutsToTerraform(struct?: Ec2HostTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function ec2HostTimeoutsToHclTerraform(struct?: Ec2HostTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2HostTimeoutsToHclTerraform(struct?: Ec2HostTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,19 +126,19 @@ export function ec2HostTimeoutsToHclTerraform(struct?: Ec2HostTimeouts | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2HostTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Ec2HostTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Ec2HostTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Ec2HostTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,7 +159,7 @@ export class Ec2HostTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2HostTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Ec2HostTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -167,7 +167,7 @@ export class Ec2HostTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -232,7 +232,7 @@ export class Ec2HostTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_host aws_ec2_host}
 */
-export class Ec2Host extends cdktf.TerraformResource {
+export class Ec2Host extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -243,14 +243,14 @@ export class Ec2Host extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2Host resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2Host resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2Host to import
   * @param importFromId The id of the existing Ec2Host that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_host#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2Host to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_host", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_host", importId: importFromId, provider });
       }
 
   // ===========
@@ -503,17 +503,17 @@ export class Ec2Host extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      asset_id: cdktf.stringToTerraform(this._assetId),
-      auto_placement: cdktf.stringToTerraform(this._autoPlacement),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      host_recovery: cdktf.stringToTerraform(this._hostRecovery),
-      id: cdktf.stringToTerraform(this._id),
-      instance_family: cdktf.stringToTerraform(this._instanceFamily),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      asset_id: cdktn.stringToTerraform(this._assetId),
+      auto_placement: cdktn.stringToTerraform(this._autoPlacement),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      host_recovery: cdktn.stringToTerraform(this._hostRecovery),
+      id: cdktn.stringToTerraform(this._id),
+      instance_family: cdktn.stringToTerraform(this._instanceFamily),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      outpost_arn: cdktn.stringToTerraform(this._outpostArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: ec2HostTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -521,67 +521,67 @@ export class Ec2Host extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       asset_id: {
-        value: cdktf.stringToHclTerraform(this._assetId),
+        value: cdktn.stringToHclTerraform(this._assetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_placement: {
-        value: cdktf.stringToHclTerraform(this._autoPlacement),
+        value: cdktn.stringToHclTerraform(this._autoPlacement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_recovery: {
-        value: cdktf.stringToHclTerraform(this._hostRecovery),
+        value: cdktn.stringToHclTerraform(this._hostRecovery),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_family: {
-        value: cdktf.stringToHclTerraform(this._instanceFamily),
+        value: cdktn.stringToHclTerraform(this._instanceFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       outpost_arn: {
-        value: cdktf.stringToHclTerraform(this._outpostArn),
+        value: cdktn.stringToHclTerraform(this._outpostArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

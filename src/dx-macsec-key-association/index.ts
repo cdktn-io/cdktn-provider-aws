@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DxMacsecKeyAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface DxMacsecKeyAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}
   */
@@ -46,7 +46,7 @@ export interface DxMacsecKeyAssociationConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association}
 */
-export class DxMacsecKeyAssociation extends cdktf.TerraformResource {
+export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DxMacsecKeyAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DxMacsecKeyAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DxMacsecKeyAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxMacsecKeyAssociation to import
   * @param importFromId The id of the existing DxMacsecKeyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_macsec_key_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxMacsecKeyAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_macsec_key_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_macsec_key_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -215,49 +215,49 @@ export class DxMacsecKeyAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cak: cdktf.stringToTerraform(this._cak),
-      ckn: cdktf.stringToTerraform(this._ckn),
-      connection_id: cdktf.stringToTerraform(this._connectionId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      secret_arn: cdktf.stringToTerraform(this._secretArn),
+      cak: cdktn.stringToTerraform(this._cak),
+      ckn: cdktn.stringToTerraform(this._ckn),
+      connection_id: cdktn.stringToTerraform(this._connectionId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      secret_arn: cdktn.stringToTerraform(this._secretArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cak: {
-        value: cdktf.stringToHclTerraform(this._cak),
+        value: cdktn.stringToHclTerraform(this._cak),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ckn: {
-        value: cdktf.stringToHclTerraform(this._ckn),
+        value: cdktn.stringToHclTerraform(this._ckn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_id: {
-        value: cdktf.stringToHclTerraform(this._connectionId),
+        value: cdktn.stringToHclTerraform(this._connectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_arn: {
-        value: cdktf.stringToHclTerraform(this._secretArn),
+        value: cdktn.stringToHclTerraform(this._secretArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

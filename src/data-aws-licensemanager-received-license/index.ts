@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsLicensemanagerReceivedLicenseConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLicensemanagerReceivedLicenseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/licensemanager_received_license#id DataAwsLicensemanagerReceivedLicense#id}
   *
@@ -34,8 +34,8 @@ export interface DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBor
 }
 
 export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationToTerraform(struct?: DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -44,8 +44,8 @@ export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorr
 
 
 export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -53,7 +53,7 @@ export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorr
   return attrs;
 }
 
-export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,7 +62,7 @@ export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -92,14 +92,14 @@ export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowC
   }
 }
 
-export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationList extends cdktf.ComplexList {
+export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -114,8 +114,8 @@ export interface DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationPro
 }
 
 export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationToTerraform(struct?: DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -124,8 +124,8 @@ export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProv
 
 
 export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -133,7 +133,7 @@ export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProv
   return attrs;
 }
 
-export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -142,7 +142,7 @@ export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -167,14 +167,14 @@ export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisi
   }
 }
 
-export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationList extends cdktf.ComplexList {
+export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -189,8 +189,8 @@ export interface DataAwsLicensemanagerReceivedLicenseConsumptionConfiguration {
 }
 
 export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationToTerraform(struct?: DataAwsLicensemanagerReceivedLicenseConsumptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -199,8 +199,8 @@ export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationToTe
 
 
 export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseConsumptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -208,7 +208,7 @@ export function dataAwsLicensemanagerReceivedLicenseConsumptionConfigurationToHc
   return attrs;
 }
 
-export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -217,7 +217,7 @@ export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -254,14 +254,14 @@ export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationOutputR
   }
 }
 
-export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationList extends cdktf.ComplexList {
+export class DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -276,8 +276,8 @@ export interface DataAwsLicensemanagerReceivedLicenseEntitlements {
 }
 
 export function dataAwsLicensemanagerReceivedLicenseEntitlementsToTerraform(struct?: DataAwsLicensemanagerReceivedLicenseEntitlements): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -286,8 +286,8 @@ export function dataAwsLicensemanagerReceivedLicenseEntitlementsToTerraform(stru
 
 
 export function dataAwsLicensemanagerReceivedLicenseEntitlementsToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseEntitlements): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -295,7 +295,7 @@ export function dataAwsLicensemanagerReceivedLicenseEntitlementsToHclTerraform(s
   return attrs;
 }
 
-export class DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference extends cdktf.ComplexObject {
+export class DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -304,7 +304,7 @@ export class DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -354,14 +354,14 @@ export class DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference ext
   }
 }
 
-export class DataAwsLicensemanagerReceivedLicenseEntitlementsList extends cdktf.ComplexList {
+export class DataAwsLicensemanagerReceivedLicenseEntitlementsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -376,8 +376,8 @@ export interface DataAwsLicensemanagerReceivedLicenseIssuer {
 }
 
 export function dataAwsLicensemanagerReceivedLicenseIssuerToTerraform(struct?: DataAwsLicensemanagerReceivedLicenseIssuer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -386,8 +386,8 @@ export function dataAwsLicensemanagerReceivedLicenseIssuerToTerraform(struct?: D
 
 
 export function dataAwsLicensemanagerReceivedLicenseIssuerToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseIssuer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -395,7 +395,7 @@ export function dataAwsLicensemanagerReceivedLicenseIssuerToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAwsLicensemanagerReceivedLicenseIssuerOutputReference extends cdktf.ComplexObject {
+export class DataAwsLicensemanagerReceivedLicenseIssuerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -404,7 +404,7 @@ export class DataAwsLicensemanagerReceivedLicenseIssuerOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -439,14 +439,14 @@ export class DataAwsLicensemanagerReceivedLicenseIssuerOutputReference extends c
   }
 }
 
-export class DataAwsLicensemanagerReceivedLicenseIssuerList extends cdktf.ComplexList {
+export class DataAwsLicensemanagerReceivedLicenseIssuerList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -461,8 +461,8 @@ export interface DataAwsLicensemanagerReceivedLicenseLicenseMetadata {
 }
 
 export function dataAwsLicensemanagerReceivedLicenseLicenseMetadataToTerraform(struct?: DataAwsLicensemanagerReceivedLicenseLicenseMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -471,8 +471,8 @@ export function dataAwsLicensemanagerReceivedLicenseLicenseMetadataToTerraform(s
 
 
 export function dataAwsLicensemanagerReceivedLicenseLicenseMetadataToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseLicenseMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -480,7 +480,7 @@ export function dataAwsLicensemanagerReceivedLicenseLicenseMetadataToHclTerrafor
   return attrs;
 }
 
-export class DataAwsLicensemanagerReceivedLicenseLicenseMetadataOutputReference extends cdktf.ComplexObject {
+export class DataAwsLicensemanagerReceivedLicenseLicenseMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -489,7 +489,7 @@ export class DataAwsLicensemanagerReceivedLicenseLicenseMetadataOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -519,14 +519,14 @@ export class DataAwsLicensemanagerReceivedLicenseLicenseMetadataOutputReference 
   }
 }
 
-export class DataAwsLicensemanagerReceivedLicenseLicenseMetadataList extends cdktf.ComplexList {
+export class DataAwsLicensemanagerReceivedLicenseLicenseMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -541,8 +541,8 @@ export interface DataAwsLicensemanagerReceivedLicenseReceivedMetadata {
 }
 
 export function dataAwsLicensemanagerReceivedLicenseReceivedMetadataToTerraform(struct?: DataAwsLicensemanagerReceivedLicenseReceivedMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -551,8 +551,8 @@ export function dataAwsLicensemanagerReceivedLicenseReceivedMetadataToTerraform(
 
 
 export function dataAwsLicensemanagerReceivedLicenseReceivedMetadataToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseReceivedMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -560,7 +560,7 @@ export function dataAwsLicensemanagerReceivedLicenseReceivedMetadataToHclTerrafo
   return attrs;
 }
 
-export class DataAwsLicensemanagerReceivedLicenseReceivedMetadataOutputReference extends cdktf.ComplexObject {
+export class DataAwsLicensemanagerReceivedLicenseReceivedMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -569,7 +569,7 @@ export class DataAwsLicensemanagerReceivedLicenseReceivedMetadataOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -590,7 +590,7 @@ export class DataAwsLicensemanagerReceivedLicenseReceivedMetadataOutputReference
 
   // allowed_operations - computed: true, optional: false, required: false
   public get allowedOperations() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_operations'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_operations'));
   }
 
   // received_status - computed: true, optional: false, required: false
@@ -604,14 +604,14 @@ export class DataAwsLicensemanagerReceivedLicenseReceivedMetadataOutputReference
   }
 }
 
-export class DataAwsLicensemanagerReceivedLicenseReceivedMetadataList extends cdktf.ComplexList {
+export class DataAwsLicensemanagerReceivedLicenseReceivedMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -626,8 +626,8 @@ export interface DataAwsLicensemanagerReceivedLicenseValidity {
 }
 
 export function dataAwsLicensemanagerReceivedLicenseValidityToTerraform(struct?: DataAwsLicensemanagerReceivedLicenseValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -636,8 +636,8 @@ export function dataAwsLicensemanagerReceivedLicenseValidityToTerraform(struct?:
 
 
 export function dataAwsLicensemanagerReceivedLicenseValidityToHclTerraform(struct?: DataAwsLicensemanagerReceivedLicenseValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -645,7 +645,7 @@ export function dataAwsLicensemanagerReceivedLicenseValidityToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsLicensemanagerReceivedLicenseValidityOutputReference extends cdktf.ComplexObject {
+export class DataAwsLicensemanagerReceivedLicenseValidityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -654,7 +654,7 @@ export class DataAwsLicensemanagerReceivedLicenseValidityOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -684,14 +684,14 @@ export class DataAwsLicensemanagerReceivedLicenseValidityOutputReference extends
   }
 }
 
-export class DataAwsLicensemanagerReceivedLicenseValidityList extends cdktf.ComplexList {
+export class DataAwsLicensemanagerReceivedLicenseValidityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -706,7 +706,7 @@ export class DataAwsLicensemanagerReceivedLicenseValidityList extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license}
 */
-export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSource {
+export class DataAwsLicensemanagerReceivedLicense extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -717,14 +717,14 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsLicensemanagerReceivedLicense resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsLicensemanagerReceivedLicense resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLicensemanagerReceivedLicense to import
   * @param importFromId The id of the existing DataAwsLicensemanagerReceivedLicense that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/licensemanager_received_license#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLicensemanagerReceivedLicense to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_licensemanager_received_license", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_licensemanager_received_license", importId: importFromId, provider });
       }
 
   // ===========
@@ -890,28 +890,28 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      license_arn: cdktf.stringToTerraform(this._licenseArn),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      license_arn: cdktn.stringToTerraform(this._licenseArn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_arn: {
-        value: cdktf.stringToHclTerraform(this._licenseArn),
+        value: cdktn.stringToHclTerraform(this._licenseArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

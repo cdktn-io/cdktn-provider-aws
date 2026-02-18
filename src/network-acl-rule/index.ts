@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkAclRuleConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkAclRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl_rule#cidr_block NetworkAclRule#cidr_block}
   */
@@ -19,7 +19,7 @@ export interface NetworkAclRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl_rule#egress NetworkAclRule#egress}
   */
-  readonly egress?: boolean | cdktf.IResolvable;
+  readonly egress?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl_rule#from_port NetworkAclRule#from_port}
   */
@@ -74,7 +74,7 @@ export interface NetworkAclRuleConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl_rule aws_network_acl_rule}
 */
-export class NetworkAclRule extends cdktf.TerraformResource {
+export class NetworkAclRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -85,14 +85,14 @@ export class NetworkAclRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkAclRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkAclRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkAclRule to import
   * @param importFromId The id of the existing NetworkAclRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_acl_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkAclRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_acl_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_acl_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -158,11 +158,11 @@ export class NetworkAclRule extends cdktf.TerraformResource {
   }
 
   // egress - computed: false, optional: true, required: false
-  private _egress?: boolean | cdktf.IResolvable; 
+  private _egress?: boolean | cdktn.IResolvable; 
   public get egress() {
     return this.getBooleanAttribute('egress');
   }
-  public set egress(value: boolean | cdktf.IResolvable) {
+  public set egress(value: boolean | cdktn.IResolvable) {
     this._egress = value;
   }
   public resetEgress() {
@@ -343,98 +343,98 @@ export class NetworkAclRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
-      egress: cdktf.booleanToTerraform(this._egress),
-      from_port: cdktf.numberToTerraform(this._fromPort),
-      icmp_code: cdktf.numberToTerraform(this._icmpCode),
-      icmp_type: cdktf.numberToTerraform(this._icmpType),
-      id: cdktf.stringToTerraform(this._id),
-      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
-      network_acl_id: cdktf.stringToTerraform(this._networkAclId),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      region: cdktf.stringToTerraform(this._region),
-      rule_action: cdktf.stringToTerraform(this._ruleAction),
-      rule_number: cdktf.numberToTerraform(this._ruleNumber),
-      to_port: cdktf.numberToTerraform(this._toPort),
+      cidr_block: cdktn.stringToTerraform(this._cidrBlock),
+      egress: cdktn.booleanToTerraform(this._egress),
+      from_port: cdktn.numberToTerraform(this._fromPort),
+      icmp_code: cdktn.numberToTerraform(this._icmpCode),
+      icmp_type: cdktn.numberToTerraform(this._icmpType),
+      id: cdktn.stringToTerraform(this._id),
+      ipv6_cidr_block: cdktn.stringToTerraform(this._ipv6CidrBlock),
+      network_acl_id: cdktn.stringToTerraform(this._networkAclId),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      region: cdktn.stringToTerraform(this._region),
+      rule_action: cdktn.stringToTerraform(this._ruleAction),
+      rule_number: cdktn.numberToTerraform(this._ruleNumber),
+      to_port: cdktn.numberToTerraform(this._toPort),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr_block: {
-        value: cdktf.stringToHclTerraform(this._cidrBlock),
+        value: cdktn.stringToHclTerraform(this._cidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       egress: {
-        value: cdktf.booleanToHclTerraform(this._egress),
+        value: cdktn.booleanToHclTerraform(this._egress),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       from_port: {
-        value: cdktf.numberToHclTerraform(this._fromPort),
+        value: cdktn.numberToHclTerraform(this._fromPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       icmp_code: {
-        value: cdktf.numberToHclTerraform(this._icmpCode),
+        value: cdktn.numberToHclTerraform(this._icmpCode),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       icmp_type: {
-        value: cdktf.numberToHclTerraform(this._icmpType),
+        value: cdktn.numberToHclTerraform(this._icmpType),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
+        value: cdktn.stringToHclTerraform(this._ipv6CidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_acl_id: {
-        value: cdktf.stringToHclTerraform(this._networkAclId),
+        value: cdktn.stringToHclTerraform(this._networkAclId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_action: {
-        value: cdktf.stringToHclTerraform(this._ruleAction),
+        value: cdktn.stringToHclTerraform(this._ruleAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_number: {
-        value: cdktf.numberToHclTerraform(this._ruleNumber),
+        value: cdktn.numberToHclTerraform(this._ruleNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       to_port: {
-        value: cdktf.numberToHclTerraform(this._toPort),
+        value: cdktn.numberToHclTerraform(this._toPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

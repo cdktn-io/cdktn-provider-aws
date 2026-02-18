@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53RecoveryreadinessResourceSetConfig extends cdktf.TerraformMetaArguments {
+export interface Route53RecoveryreadinessResourceSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53recoveryreadiness_resource_set#id Route53RecoveryreadinessResourceSet#id}
   *
@@ -40,7 +40,7 @@ export interface Route53RecoveryreadinessResourceSetConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53recoveryreadiness_resource_set#resources Route53RecoveryreadinessResourceSet#resources}
   */
-  readonly resources: Route53RecoveryreadinessResourceSetResources[] | cdktf.IResolvable;
+  readonly resources: Route53RecoveryreadinessResourceSetResources[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -56,24 +56,24 @@ export interface Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTa
 }
 
 export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceToTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
+    arn: cdktn.stringToTerraform(struct!.arn),
   }
 }
 
 
 export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -84,14 +84,14 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference extends cdktf.ComplexObject {
+export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -144,31 +144,31 @@ export interface Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTa
 }
 
 export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceToTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_name: cdktf.stringToTerraform(struct!.domainName),
-    record_set_id: cdktf.stringToTerraform(struct!.recordSetId),
+    domain_name: cdktn.stringToTerraform(struct!.domainName),
+    record_set_id: cdktn.stringToTerraform(struct!.recordSetId),
   }
 }
 
 
 export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainName),
+      value: cdktn.stringToHclTerraform(struct!.domainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     record_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.recordSetId),
+      value: cdktn.stringToHclTerraform(struct!.recordSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -179,14 +179,14 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference extends cdktf.ComplexObject {
+export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -265,8 +265,8 @@ export interface Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTa
 }
 
 export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceToTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -277,8 +277,8 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
 
 
 export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -300,14 +300,14 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference extends cdktf.ComplexObject {
+export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -396,46 +396,46 @@ export interface Route53RecoveryreadinessResourceSetResourcesDnsTargetResource {
 }
 
 export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceToTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_name: cdktf.stringToTerraform(struct!.domainName),
-    hosted_zone_arn: cdktf.stringToTerraform(struct!.hostedZoneArn),
-    record_set_id: cdktf.stringToTerraform(struct!.recordSetId),
-    record_type: cdktf.stringToTerraform(struct!.recordType),
+    domain_name: cdktn.stringToTerraform(struct!.domainName),
+    hosted_zone_arn: cdktn.stringToTerraform(struct!.hostedZoneArn),
+    record_set_id: cdktn.stringToTerraform(struct!.recordSetId),
+    record_type: cdktn.stringToTerraform(struct!.recordType),
     target_resource: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceToTerraform(struct!.targetResource),
   }
 }
 
 
 export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainName),
+      value: cdktn.stringToHclTerraform(struct!.domainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hosted_zone_arn: {
-      value: cdktf.stringToHclTerraform(struct!.hostedZoneArn),
+      value: cdktn.stringToHclTerraform(struct!.hostedZoneArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     record_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.recordSetId),
+      value: cdktn.stringToHclTerraform(struct!.recordSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     record_type: {
-      value: cdktf.stringToHclTerraform(struct!.recordType),
+      value: cdktn.stringToHclTerraform(struct!.recordType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -452,14 +452,14 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference extends cdktf.ComplexObject {
+export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -602,33 +602,33 @@ export interface Route53RecoveryreadinessResourceSetResources {
   readonly dnsTargetResource?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResource;
 }
 
-export function route53RecoveryreadinessResourceSetResourcesToTerraform(struct?: Route53RecoveryreadinessResourceSetResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecoveryreadinessResourceSetResourcesToTerraform(struct?: Route53RecoveryreadinessResourceSetResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    readiness_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.readinessScopes),
-    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    readiness_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.readinessScopes),
+    resource_arn: cdktn.stringToTerraform(struct!.resourceArn),
     dns_target_resource: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceToTerraform(struct!.dnsTargetResource),
   }
 }
 
 
-export function route53RecoveryreadinessResourceSetResourcesToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecoveryreadinessResourceSetResourcesToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     readiness_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.readinessScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.readinessScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_arn: {
-      value: cdktf.stringToHclTerraform(struct!.resourceArn),
+      value: cdktn.stringToHclTerraform(struct!.resourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -645,9 +645,9 @@ export function route53RecoveryreadinessResourceSetResourcesToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecoveryreadinessResourceSetResourcesOutputReference extends cdktf.ComplexObject {
+export class Route53RecoveryreadinessResourceSetResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -655,11 +655,11 @@ export class Route53RecoveryreadinessResourceSetResourcesOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53RecoveryreadinessResourceSetResources | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53RecoveryreadinessResourceSetResources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -680,7 +680,7 @@ export class Route53RecoveryreadinessResourceSetResourcesOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecoveryreadinessResourceSetResources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecoveryreadinessResourceSetResources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -688,7 +688,7 @@ export class Route53RecoveryreadinessResourceSetResourcesOutputReference extends
       this._resourceArn = undefined;
       this._dnsTargetResource.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -755,15 +755,15 @@ export class Route53RecoveryreadinessResourceSetResourcesOutputReference extends
   }
 }
 
-export class Route53RecoveryreadinessResourceSetResourcesList extends cdktf.ComplexList {
-  public internalValue? : Route53RecoveryreadinessResourceSetResources[] | cdktf.IResolvable
+export class Route53RecoveryreadinessResourceSetResourcesList extends cdktn.ComplexList {
+  public internalValue? : Route53RecoveryreadinessResourceSetResources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -781,25 +781,25 @@ export interface Route53RecoveryreadinessResourceSetTimeouts {
   readonly delete?: string;
 }
 
-export function route53RecoveryreadinessResourceSetTimeoutsToTerraform(struct?: Route53RecoveryreadinessResourceSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecoveryreadinessResourceSetTimeoutsToTerraform(struct?: Route53RecoveryreadinessResourceSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function route53RecoveryreadinessResourceSetTimeoutsToHclTerraform(struct?: Route53RecoveryreadinessResourceSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53RecoveryreadinessResourceSetTimeoutsToHclTerraform(struct?: Route53RecoveryreadinessResourceSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -810,19 +810,19 @@ export function route53RecoveryreadinessResourceSetTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Route53RecoveryreadinessResourceSetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53RecoveryreadinessResourceSetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -835,13 +835,13 @@ export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecoveryreadinessResourceSetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecoveryreadinessResourceSetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -872,7 +872,7 @@ export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53recoveryreadiness_resource_set aws_route53recoveryreadiness_resource_set}
 */
-export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource {
+export class Route53RecoveryreadinessResourceSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -883,14 +883,14 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53RecoveryreadinessResourceSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53RecoveryreadinessResourceSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53RecoveryreadinessResourceSet to import
   * @param importFromId The id of the existing Route53RecoveryreadinessResourceSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53recoveryreadiness_resource_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53RecoveryreadinessResourceSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53recoveryreadiness_resource_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53recoveryreadiness_resource_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -1017,7 +1017,7 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
   public get resources() {
     return this._resources;
   }
-  public putResources(value: Route53RecoveryreadinessResourceSetResources[] | cdktf.IResolvable) {
+  public putResources(value: Route53RecoveryreadinessResourceSetResources[] | cdktn.IResolvable) {
     this._resources.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1047,12 +1047,12 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      resource_set_name: cdktf.stringToTerraform(this._resourceSetName),
-      resource_set_type: cdktf.stringToTerraform(this._resourceSetType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      resources: cdktf.listMapper(route53RecoveryreadinessResourceSetResourcesToTerraform, true)(this._resources.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      resource_set_name: cdktn.stringToTerraform(this._resourceSetName),
+      resource_set_type: cdktn.stringToTerraform(this._resourceSetType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      resources: cdktn.listMapper(route53RecoveryreadinessResourceSetResourcesToTerraform, true)(this._resources.internalValue),
       timeouts: route53RecoveryreadinessResourceSetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1060,37 +1060,37 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_set_name: {
-        value: cdktf.stringToHclTerraform(this._resourceSetName),
+        value: cdktn.stringToHclTerraform(this._resourceSetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_set_type: {
-        value: cdktf.stringToHclTerraform(this._resourceSetType),
+        value: cdktn.stringToHclTerraform(this._resourceSetType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       resources: {
-        value: cdktf.listMapperHcl(route53RecoveryreadinessResourceSetResourcesToHclTerraform, true)(this._resources.internalValue),
+        value: cdktn.listMapperHcl(route53RecoveryreadinessResourceSetResourcesToHclTerraform, true)(this._resources.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Route53RecoveryreadinessResourceSetResourcesList",

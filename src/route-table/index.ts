@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RouteTableConfig extends cdktf.TerraformMetaArguments {
+export interface RouteTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route_table#id RouteTable#id}
   *
@@ -32,7 +32,7 @@ export interface RouteTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route_table#route RouteTable#route}
   */
-  readonly route?: RouteTableRoute[] | cdktf.IResolvable;
+  readonly route?: RouteTableRoute[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route_table#tags RouteTable#tags}
   */
@@ -107,109 +107,109 @@ export interface RouteTableRoute {
   readonly vpcPeeringConnectionId?: string;
 }
 
-export function routeTableRouteToTerraform(struct?: RouteTableRoute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeTableRouteToTerraform(struct?: RouteTableRoute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    carrier_gateway_id: struct!.carrierGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.carrierGatewayId),
-    cidr_block: struct!.cidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.cidrBlock),
-    core_network_arn: struct!.coreNetworkArn === undefined ? null : cdktf.stringToTerraform(struct!.coreNetworkArn),
-    destination_prefix_list_id: struct!.destinationPrefixListId === undefined ? null : cdktf.stringToTerraform(struct!.destinationPrefixListId),
-    egress_only_gateway_id: struct!.egressOnlyGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.egressOnlyGatewayId),
-    gateway_id: struct!.gatewayId === undefined ? null : cdktf.stringToTerraform(struct!.gatewayId),
-    ipv6_cidr_block: struct!.ipv6CidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.ipv6CidrBlock),
-    local_gateway_id: struct!.localGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.localGatewayId),
-    nat_gateway_id: struct!.natGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.natGatewayId),
-    network_interface_id: struct!.networkInterfaceId === undefined ? null : cdktf.stringToTerraform(struct!.networkInterfaceId),
-    transit_gateway_id: struct!.transitGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.transitGatewayId),
-    vpc_endpoint_id: struct!.vpcEndpointId === undefined ? null : cdktf.stringToTerraform(struct!.vpcEndpointId),
-    vpc_peering_connection_id: struct!.vpcPeeringConnectionId === undefined ? null : cdktf.stringToTerraform(struct!.vpcPeeringConnectionId),
+    carrier_gateway_id: struct!.carrierGatewayId === undefined ? null : cdktn.stringToTerraform(struct!.carrierGatewayId),
+    cidr_block: struct!.cidrBlock === undefined ? null : cdktn.stringToTerraform(struct!.cidrBlock),
+    core_network_arn: struct!.coreNetworkArn === undefined ? null : cdktn.stringToTerraform(struct!.coreNetworkArn),
+    destination_prefix_list_id: struct!.destinationPrefixListId === undefined ? null : cdktn.stringToTerraform(struct!.destinationPrefixListId),
+    egress_only_gateway_id: struct!.egressOnlyGatewayId === undefined ? null : cdktn.stringToTerraform(struct!.egressOnlyGatewayId),
+    gateway_id: struct!.gatewayId === undefined ? null : cdktn.stringToTerraform(struct!.gatewayId),
+    ipv6_cidr_block: struct!.ipv6CidrBlock === undefined ? null : cdktn.stringToTerraform(struct!.ipv6CidrBlock),
+    local_gateway_id: struct!.localGatewayId === undefined ? null : cdktn.stringToTerraform(struct!.localGatewayId),
+    nat_gateway_id: struct!.natGatewayId === undefined ? null : cdktn.stringToTerraform(struct!.natGatewayId),
+    network_interface_id: struct!.networkInterfaceId === undefined ? null : cdktn.stringToTerraform(struct!.networkInterfaceId),
+    transit_gateway_id: struct!.transitGatewayId === undefined ? null : cdktn.stringToTerraform(struct!.transitGatewayId),
+    vpc_endpoint_id: struct!.vpcEndpointId === undefined ? null : cdktn.stringToTerraform(struct!.vpcEndpointId),
+    vpc_peering_connection_id: struct!.vpcPeeringConnectionId === undefined ? null : cdktn.stringToTerraform(struct!.vpcPeeringConnectionId),
   }
 }
 
 
-export function routeTableRouteToHclTerraform(struct?: RouteTableRoute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeTableRouteToHclTerraform(struct?: RouteTableRoute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     carrier_gateway_id: {
-      value: struct!.carrierGatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.carrierGatewayId),
+      value: struct!.carrierGatewayId === undefined ? null : cdktn.stringToHclTerraform(struct!.carrierGatewayId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cidr_block: {
-      value: struct!.cidrBlock === undefined ? null : cdktf.stringToHclTerraform(struct!.cidrBlock),
+      value: struct!.cidrBlock === undefined ? null : cdktn.stringToHclTerraform(struct!.cidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     core_network_arn: {
-      value: struct!.coreNetworkArn === undefined ? null : cdktf.stringToHclTerraform(struct!.coreNetworkArn),
+      value: struct!.coreNetworkArn === undefined ? null : cdktn.stringToHclTerraform(struct!.coreNetworkArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_prefix_list_id: {
-      value: struct!.destinationPrefixListId === undefined ? null : cdktf.stringToHclTerraform(struct!.destinationPrefixListId),
+      value: struct!.destinationPrefixListId === undefined ? null : cdktn.stringToHclTerraform(struct!.destinationPrefixListId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     egress_only_gateway_id: {
-      value: struct!.egressOnlyGatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.egressOnlyGatewayId),
+      value: struct!.egressOnlyGatewayId === undefined ? null : cdktn.stringToHclTerraform(struct!.egressOnlyGatewayId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gateway_id: {
-      value: struct!.gatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.gatewayId),
+      value: struct!.gatewayId === undefined ? null : cdktn.stringToHclTerraform(struct!.gatewayId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv6_cidr_block: {
-      value: struct!.ipv6CidrBlock === undefined ? null : cdktf.stringToHclTerraform(struct!.ipv6CidrBlock),
+      value: struct!.ipv6CidrBlock === undefined ? null : cdktn.stringToHclTerraform(struct!.ipv6CidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_gateway_id: {
-      value: struct!.localGatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.localGatewayId),
+      value: struct!.localGatewayId === undefined ? null : cdktn.stringToHclTerraform(struct!.localGatewayId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     nat_gateway_id: {
-      value: struct!.natGatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.natGatewayId),
+      value: struct!.natGatewayId === undefined ? null : cdktn.stringToHclTerraform(struct!.natGatewayId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_interface_id: {
-      value: struct!.networkInterfaceId === undefined ? null : cdktf.stringToHclTerraform(struct!.networkInterfaceId),
+      value: struct!.networkInterfaceId === undefined ? null : cdktn.stringToHclTerraform(struct!.networkInterfaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transit_gateway_id: {
-      value: struct!.transitGatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.transitGatewayId),
+      value: struct!.transitGatewayId === undefined ? null : cdktn.stringToHclTerraform(struct!.transitGatewayId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_endpoint_id: {
-      value: struct!.vpcEndpointId === undefined ? null : cdktf.stringToHclTerraform(struct!.vpcEndpointId),
+      value: struct!.vpcEndpointId === undefined ? null : cdktn.stringToHclTerraform(struct!.vpcEndpointId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_peering_connection_id: {
-      value: struct!.vpcPeeringConnectionId === undefined ? null : cdktf.stringToHclTerraform(struct!.vpcPeeringConnectionId),
+      value: struct!.vpcPeeringConnectionId === undefined ? null : cdktn.stringToHclTerraform(struct!.vpcPeeringConnectionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -220,9 +220,9 @@ export function routeTableRouteToHclTerraform(struct?: RouteTableRoute | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RouteTableRouteOutputReference extends cdktf.ComplexObject {
+export class RouteTableRouteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -230,11 +230,11 @@ export class RouteTableRouteOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RouteTableRoute | cdktf.IResolvable | undefined {
+  public get internalValue(): RouteTableRoute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -295,7 +295,7 @@ export class RouteTableRouteOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RouteTableRoute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RouteTableRoute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -313,7 +313,7 @@ export class RouteTableRouteOutputReference extends cdktf.ComplexObject {
       this._vpcEndpointId = undefined;
       this._vpcPeeringConnectionId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -545,15 +545,15 @@ export class RouteTableRouteOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class RouteTableRouteList extends cdktf.ComplexList {
-  public internalValue? : RouteTableRoute[] | cdktf.IResolvable
+export class RouteTableRouteList extends cdktn.ComplexList {
+  public internalValue? : RouteTableRoute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -579,39 +579,39 @@ export interface RouteTableTimeouts {
   readonly update?: string;
 }
 
-export function routeTableTimeoutsToTerraform(struct?: RouteTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeTableTimeoutsToTerraform(struct?: RouteTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function routeTableTimeoutsToHclTerraform(struct?: RouteTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeTableTimeoutsToHclTerraform(struct?: RouteTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -622,19 +622,19 @@ export function routeTableTimeoutsToHclTerraform(struct?: RouteTableTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RouteTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RouteTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RouteTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RouteTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -655,7 +655,7 @@ export class RouteTableTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RouteTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RouteTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -663,7 +663,7 @@ export class RouteTableTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -728,7 +728,7 @@ export class RouteTableTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route_table aws_route_table}
 */
-export class RouteTable extends cdktf.TerraformResource {
+export class RouteTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -739,14 +739,14 @@ export class RouteTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RouteTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RouteTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RouteTable to import
   * @param importFromId The id of the existing RouteTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RouteTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -819,7 +819,7 @@ export class RouteTable extends cdktf.TerraformResource {
   // propagating_vgws - computed: true, optional: true, required: false
   private _propagatingVgws?: string[]; 
   public get propagatingVgws() {
-    return cdktf.Fn.tolist(this.getListAttribute('propagating_vgws'));
+    return cdktn.Fn.tolist(this.getListAttribute('propagating_vgws'));
   }
   public set propagatingVgws(value: string[]) {
     this._propagatingVgws = value;
@@ -853,7 +853,7 @@ export class RouteTable extends cdktf.TerraformResource {
   public get route() {
     return this._route;
   }
-  public putRoute(value: RouteTableRoute[] | cdktf.IResolvable) {
+  public putRoute(value: RouteTableRoute[] | cdktn.IResolvable) {
     this._route.internalValue = value;
   }
   public resetRoute() {
@@ -931,13 +931,13 @@ export class RouteTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      propagating_vgws: cdktf.listMapper(cdktf.stringToTerraform, false)(this._propagatingVgws),
-      region: cdktf.stringToTerraform(this._region),
-      route: cdktf.listMapper(routeTableRouteToTerraform, false)(this._route.internalValue),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      id: cdktn.stringToTerraform(this._id),
+      propagating_vgws: cdktn.listMapper(cdktn.stringToTerraform, false)(this._propagatingVgws),
+      region: cdktn.stringToTerraform(this._region),
+      route: cdktn.listMapper(routeTableRouteToTerraform, false)(this._route.internalValue),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
       timeouts: routeTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -945,43 +945,43 @@ export class RouteTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       propagating_vgws: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._propagatingVgws),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._propagatingVgws),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       route: {
-        value: cdktf.listMapperHcl(routeTableRouteToHclTerraform, false)(this._route.internalValue),
+        value: cdktn.listMapperHcl(routeTableRouteToHclTerraform, false)(this._route.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "RouteTableRouteList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

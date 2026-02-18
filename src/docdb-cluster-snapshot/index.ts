@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DocdbClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface DocdbClusterSnapshotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_snapshot#db_cluster_identifier DocdbClusterSnapshot#db_cluster_identifier}
   */
@@ -47,25 +47,25 @@ export interface DocdbClusterSnapshotTimeouts {
   readonly create?: string;
 }
 
-export function docdbClusterSnapshotTimeoutsToTerraform(struct?: DocdbClusterSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function docdbClusterSnapshotTimeoutsToTerraform(struct?: DocdbClusterSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function docdbClusterSnapshotTimeoutsToHclTerraform(struct?: DocdbClusterSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function docdbClusterSnapshotTimeoutsToHclTerraform(struct?: DocdbClusterSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -76,19 +76,19 @@ export function docdbClusterSnapshotTimeoutsToHclTerraform(struct?: DocdbCluster
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocdbClusterSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DocdbClusterSnapshotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DocdbClusterSnapshotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DocdbClusterSnapshotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -101,13 +101,13 @@ export class DocdbClusterSnapshotTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DocdbClusterSnapshotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DocdbClusterSnapshotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -138,7 +138,7 @@ export class DocdbClusterSnapshotTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_snapshot aws_docdb_cluster_snapshot}
 */
-export class DocdbClusterSnapshot extends cdktf.TerraformResource {
+export class DocdbClusterSnapshot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -149,14 +149,14 @@ export class DocdbClusterSnapshot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DocdbClusterSnapshot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DocdbClusterSnapshot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DocdbClusterSnapshot to import
   * @param importFromId The id of the existing DocdbClusterSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DocdbClusterSnapshot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_cluster_snapshot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_cluster_snapshot", importId: importFromId, provider });
       }
 
   // ===========
@@ -332,10 +332,10 @@ export class DocdbClusterSnapshot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
-      db_cluster_snapshot_identifier: cdktf.stringToTerraform(this._dbClusterSnapshotIdentifier),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      db_cluster_identifier: cdktn.stringToTerraform(this._dbClusterIdentifier),
+      db_cluster_snapshot_identifier: cdktn.stringToTerraform(this._dbClusterSnapshotIdentifier),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: docdbClusterSnapshotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -343,25 +343,25 @@ export class DocdbClusterSnapshot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       db_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_cluster_snapshot_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbClusterSnapshotIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbClusterSnapshotIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

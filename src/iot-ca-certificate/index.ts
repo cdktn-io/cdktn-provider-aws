@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotCaCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface IotCaCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_ca_certificate#active IotCaCertificate#active}
   */
-  readonly active: boolean | cdktf.IResolvable;
+  readonly active: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_ca_certificate#allow_auto_registration IotCaCertificate#allow_auto_registration}
   */
-  readonly allowAutoRegistration: boolean | cdktf.IResolvable;
+  readonly allowAutoRegistration: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_ca_certificate#ca_certificate_pem IotCaCertificate#ca_certificate_pem}
   */
@@ -64,8 +64,8 @@ export interface IotCaCertificateValidity {
 }
 
 export function iotCaCertificateValidityToTerraform(struct?: IotCaCertificateValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -74,8 +74,8 @@ export function iotCaCertificateValidityToTerraform(struct?: IotCaCertificateVal
 
 
 export function iotCaCertificateValidityToHclTerraform(struct?: IotCaCertificateValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -83,7 +83,7 @@ export function iotCaCertificateValidityToHclTerraform(struct?: IotCaCertificate
   return attrs;
 }
 
-export class IotCaCertificateValidityOutputReference extends cdktf.ComplexObject {
+export class IotCaCertificateValidityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -92,7 +92,7 @@ export class IotCaCertificateValidityOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -122,14 +122,14 @@ export class IotCaCertificateValidityOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class IotCaCertificateValidityList extends cdktf.ComplexList {
+export class IotCaCertificateValidityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -156,38 +156,38 @@ export interface IotCaCertificateRegistrationConfig {
 }
 
 export function iotCaCertificateRegistrationConfigToTerraform(struct?: IotCaCertificateRegistrationConfigOutputReference | IotCaCertificateRegistrationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    template_body: cdktf.stringToTerraform(struct!.templateBody),
-    template_name: cdktf.stringToTerraform(struct!.templateName),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    template_body: cdktn.stringToTerraform(struct!.templateBody),
+    template_name: cdktn.stringToTerraform(struct!.templateName),
   }
 }
 
 
 export function iotCaCertificateRegistrationConfigToHclTerraform(struct?: IotCaCertificateRegistrationConfigOutputReference | IotCaCertificateRegistrationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     template_body: {
-      value: cdktf.stringToHclTerraform(struct!.templateBody),
+      value: cdktn.stringToHclTerraform(struct!.templateBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     template_name: {
-      value: cdktf.stringToHclTerraform(struct!.templateName),
+      value: cdktn.stringToHclTerraform(struct!.templateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -198,14 +198,14 @@ export function iotCaCertificateRegistrationConfigToHclTerraform(struct?: IotCaC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotCaCertificateRegistrationConfigOutputReference extends cdktf.ComplexObject {
+export class IotCaCertificateRegistrationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -294,7 +294,7 @@ export class IotCaCertificateRegistrationConfigOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_ca_certificate aws_iot_ca_certificate}
 */
-export class IotCaCertificate extends cdktf.TerraformResource {
+export class IotCaCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -305,14 +305,14 @@ export class IotCaCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotCaCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotCaCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotCaCertificate to import
   * @param importFromId The id of the existing IotCaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_ca_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotCaCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_ca_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_ca_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -359,11 +359,11 @@ export class IotCaCertificate extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: false, required: true
-  private _active?: boolean | cdktf.IResolvable; 
+  private _active?: boolean | cdktn.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | cdktf.IResolvable) {
+  public set active(value: boolean | cdktn.IResolvable) {
     this._active = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -372,11 +372,11 @@ export class IotCaCertificate extends cdktf.TerraformResource {
   }
 
   // allow_auto_registration - computed: false, optional: false, required: true
-  private _allowAutoRegistration?: boolean | cdktf.IResolvable; 
+  private _allowAutoRegistration?: boolean | cdktn.IResolvable; 
   public get allowAutoRegistration() {
     return this.getBooleanAttribute('allow_auto_registration');
   }
-  public set allowAutoRegistration(value: boolean | cdktf.IResolvable) {
+  public set allowAutoRegistration(value: boolean | cdktn.IResolvable) {
     this._allowAutoRegistration = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -536,15 +536,15 @@ export class IotCaCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active: cdktf.booleanToTerraform(this._active),
-      allow_auto_registration: cdktf.booleanToTerraform(this._allowAutoRegistration),
-      ca_certificate_pem: cdktf.stringToTerraform(this._caCertificatePem),
-      certificate_mode: cdktf.stringToTerraform(this._certificateMode),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      verification_certificate_pem: cdktf.stringToTerraform(this._verificationCertificatePem),
+      active: cdktn.booleanToTerraform(this._active),
+      allow_auto_registration: cdktn.booleanToTerraform(this._allowAutoRegistration),
+      ca_certificate_pem: cdktn.stringToTerraform(this._caCertificatePem),
+      certificate_mode: cdktn.stringToTerraform(this._certificateMode),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      verification_certificate_pem: cdktn.stringToTerraform(this._verificationCertificatePem),
       registration_config: iotCaCertificateRegistrationConfigToTerraform(this._registrationConfig.internalValue),
     };
   }
@@ -552,55 +552,55 @@ export class IotCaCertificate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       active: {
-        value: cdktf.booleanToHclTerraform(this._active),
+        value: cdktn.booleanToHclTerraform(this._active),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_auto_registration: {
-        value: cdktf.booleanToHclTerraform(this._allowAutoRegistration),
+        value: cdktn.booleanToHclTerraform(this._allowAutoRegistration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ca_certificate_pem: {
-        value: cdktf.stringToHclTerraform(this._caCertificatePem),
+        value: cdktn.stringToHclTerraform(this._caCertificatePem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_mode: {
-        value: cdktf.stringToHclTerraform(this._certificateMode),
+        value: cdktn.stringToHclTerraform(this._certificateMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       verification_certificate_pem: {
-        value: cdktf.stringToHclTerraform(this._verificationCertificatePem),
+        value: cdktn.stringToHclTerraform(this._verificationCertificatePem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

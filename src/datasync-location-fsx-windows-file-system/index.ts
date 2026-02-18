@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatasyncLocationFsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments {
+export interface DatasyncLocationFsxWindowsFileSystemConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_fsx_windows_file_system#domain DatasyncLocationFsxWindowsFileSystem#domain}
   */
@@ -62,7 +62,7 @@ export interface DatasyncLocationFsxWindowsFileSystemConfig extends cdktf.Terraf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_fsx_windows_file_system aws_datasync_location_fsx_windows_file_system}
 */
-export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResource {
+export class DatasyncLocationFsxWindowsFileSystem extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatasyncLocationFsxWindowsFileSystem resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatasyncLocationFsxWindowsFileSystem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncLocationFsxWindowsFileSystem to import
   * @param importFromId The id of the existing DatasyncLocationFsxWindowsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_fsx_windows_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncLocationFsxWindowsFileSystem to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_fsx_windows_file_system", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_fsx_windows_file_system", importId: importFromId, provider });
       }
 
   // ===========
@@ -213,7 +213,7 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
   // security_group_arns - computed: false, optional: false, required: true
   private _securityGroupArns?: string[]; 
   public get securityGroupArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_arns'));
   }
   public set securityGroupArns(value: string[]) {
     this._securityGroupArns = value;
@@ -295,77 +295,77 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: cdktf.stringToTerraform(this._domain),
-      fsx_filesystem_arn: cdktf.stringToTerraform(this._fsxFilesystemArn),
-      id: cdktf.stringToTerraform(this._id),
-      password: cdktf.stringToTerraform(this._password),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupArns),
-      subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      user: cdktf.stringToTerraform(this._user),
+      domain: cdktn.stringToTerraform(this._domain),
+      fsx_filesystem_arn: cdktn.stringToTerraform(this._fsxFilesystemArn),
+      id: cdktn.stringToTerraform(this._id),
+      password: cdktn.stringToTerraform(this._password),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupArns),
+      subdirectory: cdktn.stringToTerraform(this._subdirectory),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      user: cdktn.stringToTerraform(this._user),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fsx_filesystem_arn: {
-        value: cdktf.stringToHclTerraform(this._fsxFilesystemArn),
+        value: cdktn.stringToHclTerraform(this._fsxFilesystemArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subdirectory: {
-        value: cdktf.stringToHclTerraform(this._subdirectory),
+        value: cdktn.stringToHclTerraform(this._subdirectory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user: {
-        value: cdktf.stringToHclTerraform(this._user),
+        value: cdktn.stringToHclTerraform(this._user),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

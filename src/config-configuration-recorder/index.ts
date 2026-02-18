@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConfigConfigurationRecorderConfig extends cdktf.TerraformMetaArguments {
+export interface ConfigConfigurationRecorderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder#id ConfigConfigurationRecorder#id}
   *
@@ -53,25 +53,25 @@ export interface ConfigConfigurationRecorderRecordingGroupExclusionByResourceTyp
   readonly resourceTypes?: string[];
 }
 
-export function configConfigurationRecorderRecordingGroupExclusionByResourceTypesToTerraform(struct?: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configConfigurationRecorderRecordingGroupExclusionByResourceTypesToTerraform(struct?: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
+    resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
   }
 }
 
 
-export function configConfigurationRecorderRecordingGroupExclusionByResourceTypesToHclTerraform(struct?: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configConfigurationRecorderRecordingGroupExclusionByResourceTypesToHclTerraform(struct?: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -82,9 +82,9 @@ export function configConfigurationRecorderRecordingGroupExclusionByResourceType
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference extends cdktf.ComplexObject {
+export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -92,11 +92,11 @@ export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes | cdktf.IResolvable | undefined {
+  public get internalValue(): ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -109,13 +109,13 @@ export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resourceTypes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -129,7 +129,7 @@ export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOu
   // resource_types - computed: false, optional: true, required: false
   private _resourceTypes?: string[]; 
   public get resourceTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('resource_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('resource_types'));
   }
   public set resourceTypes(value: string[]) {
     this._resourceTypes = value;
@@ -143,15 +143,15 @@ export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOu
   }
 }
 
-export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList extends cdktf.ComplexList {
-  public internalValue? : ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes[] | cdktf.IResolvable
+export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList extends cdktn.ComplexList {
+  public internalValue? : ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -169,25 +169,25 @@ export interface ConfigConfigurationRecorderRecordingGroupRecordingStrategy {
   readonly useOnly?: string;
 }
 
-export function configConfigurationRecorderRecordingGroupRecordingStrategyToTerraform(struct?: ConfigConfigurationRecorderRecordingGroupRecordingStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configConfigurationRecorderRecordingGroupRecordingStrategyToTerraform(struct?: ConfigConfigurationRecorderRecordingGroupRecordingStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    use_only: cdktf.stringToTerraform(struct!.useOnly),
+    use_only: cdktn.stringToTerraform(struct!.useOnly),
   }
 }
 
 
-export function configConfigurationRecorderRecordingGroupRecordingStrategyToHclTerraform(struct?: ConfigConfigurationRecorderRecordingGroupRecordingStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configConfigurationRecorderRecordingGroupRecordingStrategyToHclTerraform(struct?: ConfigConfigurationRecorderRecordingGroupRecordingStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     use_only: {
-      value: cdktf.stringToHclTerraform(struct!.useOnly),
+      value: cdktn.stringToHclTerraform(struct!.useOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -198,9 +198,9 @@ export function configConfigurationRecorderRecordingGroupRecordingStrategyToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputReference extends cdktf.ComplexObject {
+export class ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -208,11 +208,11 @@ export class ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConfigConfigurationRecorderRecordingGroupRecordingStrategy | cdktf.IResolvable | undefined {
+  public get internalValue(): ConfigConfigurationRecorderRecordingGroupRecordingStrategy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -225,13 +225,13 @@ export class ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConfigConfigurationRecorderRecordingGroupRecordingStrategy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConfigConfigurationRecorderRecordingGroupRecordingStrategy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._useOnly = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,15 +259,15 @@ export class ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputRef
   }
 }
 
-export class ConfigConfigurationRecorderRecordingGroupRecordingStrategyList extends cdktf.ComplexList {
-  public internalValue? : ConfigConfigurationRecorderRecordingGroupRecordingStrategy[] | cdktf.IResolvable
+export class ConfigConfigurationRecorderRecordingGroupRecordingStrategyList extends cdktn.ComplexList {
+  public internalValue? : ConfigConfigurationRecorderRecordingGroupRecordingStrategy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -282,11 +282,11 @@ export interface ConfigConfigurationRecorderRecordingGroup {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder#all_supported ConfigConfigurationRecorder#all_supported}
   */
-  readonly allSupported?: boolean | cdktf.IResolvable;
+  readonly allSupported?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}
   */
-  readonly includeGlobalResourceTypes?: boolean | cdktf.IResolvable;
+  readonly includeGlobalResourceTypes?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}
   */
@@ -296,62 +296,62 @@ export interface ConfigConfigurationRecorderRecordingGroup {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder#exclusion_by_resource_types ConfigConfigurationRecorder#exclusion_by_resource_types}
   */
-  readonly exclusionByResourceTypes?: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes[] | cdktf.IResolvable;
+  readonly exclusionByResourceTypes?: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes[] | cdktn.IResolvable;
   /**
   * recording_strategy block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder#recording_strategy ConfigConfigurationRecorder#recording_strategy}
   */
-  readonly recordingStrategy?: ConfigConfigurationRecorderRecordingGroupRecordingStrategy[] | cdktf.IResolvable;
+  readonly recordingStrategy?: ConfigConfigurationRecorderRecordingGroupRecordingStrategy[] | cdktn.IResolvable;
 }
 
 export function configConfigurationRecorderRecordingGroupToTerraform(struct?: ConfigConfigurationRecorderRecordingGroupOutputReference | ConfigConfigurationRecorderRecordingGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    all_supported: cdktf.booleanToTerraform(struct!.allSupported),
-    include_global_resource_types: cdktf.booleanToTerraform(struct!.includeGlobalResourceTypes),
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
-    exclusion_by_resource_types: cdktf.listMapper(configConfigurationRecorderRecordingGroupExclusionByResourceTypesToTerraform, true)(struct!.exclusionByResourceTypes),
-    recording_strategy: cdktf.listMapper(configConfigurationRecorderRecordingGroupRecordingStrategyToTerraform, true)(struct!.recordingStrategy),
+    all_supported: cdktn.booleanToTerraform(struct!.allSupported),
+    include_global_resource_types: cdktn.booleanToTerraform(struct!.includeGlobalResourceTypes),
+    resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
+    exclusion_by_resource_types: cdktn.listMapper(configConfigurationRecorderRecordingGroupExclusionByResourceTypesToTerraform, true)(struct!.exclusionByResourceTypes),
+    recording_strategy: cdktn.listMapper(configConfigurationRecorderRecordingGroupRecordingStrategyToTerraform, true)(struct!.recordingStrategy),
   }
 }
 
 
 export function configConfigurationRecorderRecordingGroupToHclTerraform(struct?: ConfigConfigurationRecorderRecordingGroupOutputReference | ConfigConfigurationRecorderRecordingGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     all_supported: {
-      value: cdktf.booleanToHclTerraform(struct!.allSupported),
+      value: cdktn.booleanToHclTerraform(struct!.allSupported),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_global_resource_types: {
-      value: cdktf.booleanToHclTerraform(struct!.includeGlobalResourceTypes),
+      value: cdktn.booleanToHclTerraform(struct!.includeGlobalResourceTypes),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     exclusion_by_resource_types: {
-      value: cdktf.listMapperHcl(configConfigurationRecorderRecordingGroupExclusionByResourceTypesToHclTerraform, true)(struct!.exclusionByResourceTypes),
+      value: cdktn.listMapperHcl(configConfigurationRecorderRecordingGroupExclusionByResourceTypesToHclTerraform, true)(struct!.exclusionByResourceTypes),
       isBlock: true,
       type: "list",
       storageClassType: "ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList",
     },
     recording_strategy: {
-      value: cdktf.listMapperHcl(configConfigurationRecorderRecordingGroupRecordingStrategyToHclTerraform, true)(struct!.recordingStrategy),
+      value: cdktn.listMapperHcl(configConfigurationRecorderRecordingGroupRecordingStrategyToHclTerraform, true)(struct!.recordingStrategy),
       isBlock: true,
       type: "list",
       storageClassType: "ConfigConfigurationRecorderRecordingGroupRecordingStrategyList",
@@ -362,14 +362,14 @@ export function configConfigurationRecorderRecordingGroupToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cdktf.ComplexObject {
+export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -419,11 +419,11 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   }
 
   // all_supported - computed: false, optional: true, required: false
-  private _allSupported?: boolean | cdktf.IResolvable; 
+  private _allSupported?: boolean | cdktn.IResolvable; 
   public get allSupported() {
     return this.getBooleanAttribute('all_supported');
   }
-  public set allSupported(value: boolean | cdktf.IResolvable) {
+  public set allSupported(value: boolean | cdktn.IResolvable) {
     this._allSupported = value;
   }
   public resetAllSupported() {
@@ -435,11 +435,11 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   }
 
   // include_global_resource_types - computed: false, optional: true, required: false
-  private _includeGlobalResourceTypes?: boolean | cdktf.IResolvable; 
+  private _includeGlobalResourceTypes?: boolean | cdktn.IResolvable; 
   public get includeGlobalResourceTypes() {
     return this.getBooleanAttribute('include_global_resource_types');
   }
-  public set includeGlobalResourceTypes(value: boolean | cdktf.IResolvable) {
+  public set includeGlobalResourceTypes(value: boolean | cdktn.IResolvable) {
     this._includeGlobalResourceTypes = value;
   }
   public resetIncludeGlobalResourceTypes() {
@@ -453,7 +453,7 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   // resource_types - computed: false, optional: true, required: false
   private _resourceTypes?: string[]; 
   public get resourceTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('resource_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('resource_types'));
   }
   public set resourceTypes(value: string[]) {
     this._resourceTypes = value;
@@ -471,7 +471,7 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   public get exclusionByResourceTypes() {
     return this._exclusionByResourceTypes;
   }
-  public putExclusionByResourceTypes(value: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes[] | cdktf.IResolvable) {
+  public putExclusionByResourceTypes(value: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes[] | cdktn.IResolvable) {
     this._exclusionByResourceTypes.internalValue = value;
   }
   public resetExclusionByResourceTypes() {
@@ -487,7 +487,7 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   public get recordingStrategy() {
     return this._recordingStrategy;
   }
-  public putRecordingStrategy(value: ConfigConfigurationRecorderRecordingGroupRecordingStrategy[] | cdktf.IResolvable) {
+  public putRecordingStrategy(value: ConfigConfigurationRecorderRecordingGroupRecordingStrategy[] | cdktn.IResolvable) {
     this._recordingStrategy.internalValue = value;
   }
   public resetRecordingStrategy() {
@@ -514,38 +514,38 @@ export interface ConfigConfigurationRecorderRecordingModeRecordingModeOverride {
 }
 
 export function configConfigurationRecorderRecordingModeRecordingModeOverrideToTerraform(struct?: ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference | ConfigConfigurationRecorderRecordingModeRecordingModeOverride): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    recording_frequency: cdktf.stringToTerraform(struct!.recordingFrequency),
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
+    description: cdktn.stringToTerraform(struct!.description),
+    recording_frequency: cdktn.stringToTerraform(struct!.recordingFrequency),
+    resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
   }
 }
 
 
 export function configConfigurationRecorderRecordingModeRecordingModeOverrideToHclTerraform(struct?: ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference | ConfigConfigurationRecorderRecordingModeRecordingModeOverride): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recording_frequency: {
-      value: cdktf.stringToHclTerraform(struct!.recordingFrequency),
+      value: cdktn.stringToHclTerraform(struct!.recordingFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -556,14 +556,14 @@ export function configConfigurationRecorderRecordingModeRecordingModeOverrideToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference extends cdktf.ComplexObject {
+export class ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -632,7 +632,7 @@ export class ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutput
   // resource_types - computed: false, optional: false, required: true
   private _resourceTypes?: string[]; 
   public get resourceTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('resource_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('resource_types'));
   }
   public set resourceTypes(value: string[]) {
     this._resourceTypes = value;
@@ -656,25 +656,25 @@ export interface ConfigConfigurationRecorderRecordingMode {
 }
 
 export function configConfigurationRecorderRecordingModeToTerraform(struct?: ConfigConfigurationRecorderRecordingModeOutputReference | ConfigConfigurationRecorderRecordingMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    recording_frequency: cdktf.stringToTerraform(struct!.recordingFrequency),
+    recording_frequency: cdktn.stringToTerraform(struct!.recordingFrequency),
     recording_mode_override: configConfigurationRecorderRecordingModeRecordingModeOverrideToTerraform(struct!.recordingModeOverride),
   }
 }
 
 
 export function configConfigurationRecorderRecordingModeToHclTerraform(struct?: ConfigConfigurationRecorderRecordingModeOutputReference | ConfigConfigurationRecorderRecordingMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     recording_frequency: {
-      value: cdktf.stringToHclTerraform(struct!.recordingFrequency),
+      value: cdktn.stringToHclTerraform(struct!.recordingFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -691,14 +691,14 @@ export function configConfigurationRecorderRecordingModeToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigConfigurationRecorderRecordingModeOutputReference extends cdktf.ComplexObject {
+export class ConfigConfigurationRecorderRecordingModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -765,7 +765,7 @@ export class ConfigConfigurationRecorderRecordingModeOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder aws_config_configuration_recorder}
 */
-export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
+export class ConfigConfigurationRecorder extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -776,14 +776,14 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConfigConfigurationRecorder resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConfigConfigurationRecorder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigConfigurationRecorder to import
   * @param importFromId The id of the existing ConfigConfigurationRecorder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_configuration_recorder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigConfigurationRecorder to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_configuration_recorder", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_configuration_recorder", importId: importFromId, provider });
       }
 
   // ===========
@@ -924,10 +924,10 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
       recording_group: configConfigurationRecorderRecordingGroupToTerraform(this._recordingGroup.internalValue),
       recording_mode: configConfigurationRecorderRecordingModeToTerraform(this._recordingMode.internalValue),
     };
@@ -936,25 +936,25 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

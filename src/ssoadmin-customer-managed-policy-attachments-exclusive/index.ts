@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoadminCustomerManagedPolicyAttachmentsExclusiveConfig extends cdktf.TerraformMetaArguments {
+export interface SsoadminCustomerManagedPolicyAttachmentsExclusiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_customer_managed_policy_attachments_exclusive#instance_arn SsoadminCustomerManagedPolicyAttachmentsExclusive#instance_arn}
   */
@@ -31,7 +31,7 @@ export interface SsoadminCustomerManagedPolicyAttachmentsExclusiveConfig extends
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_customer_managed_policy_attachments_exclusive#customer_managed_policy_reference SsoadminCustomerManagedPolicyAttachmentsExclusive#customer_managed_policy_reference}
   */
-  readonly customerManagedPolicyReference?: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference[] | cdktf.IResolvable;
+  readonly customerManagedPolicyReference?: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -50,32 +50,32 @@ export interface SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManage
   readonly path?: string;
 }
 
-export function ssoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceToTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceToTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    path: cdktf.stringToTerraform(struct!.path),
+    name: cdktn.stringToTerraform(struct!.name),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function ssoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceToHclTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceToHclTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,9 +86,9 @@ export function ssoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManaged
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceOutputReference extends cdktf.ComplexObject {
+export class SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -96,11 +96,11 @@ export class SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPol
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -117,14 +117,14 @@ export class SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPol
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,15 +166,15 @@ export class SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPol
   }
 }
 
-export class SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceList extends cdktf.ComplexList {
-  public internalValue? : SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference[] | cdktf.IResolvable
+export class SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceList extends cdktn.ComplexList {
+  public internalValue? : SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -200,32 +200,32 @@ export interface SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts {
   readonly update?: string;
 }
 
-export function ssoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsToTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsToTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function ssoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsToHclTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsToHclTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -236,19 +236,19 @@ export function ssoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -265,14 +265,14 @@ export class SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -320,7 +320,7 @@ export class SsoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsOutputRefe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_customer_managed_policy_attachments_exclusive aws_ssoadmin_customer_managed_policy_attachments_exclusive}
 */
-export class SsoadminCustomerManagedPolicyAttachmentsExclusive extends cdktf.TerraformResource {
+export class SsoadminCustomerManagedPolicyAttachmentsExclusive extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -331,14 +331,14 @@ export class SsoadminCustomerManagedPolicyAttachmentsExclusive extends cdktf.Ter
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoadminCustomerManagedPolicyAttachmentsExclusive resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoadminCustomerManagedPolicyAttachmentsExclusive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminCustomerManagedPolicyAttachmentsExclusive to import
   * @param importFromId The id of the existing SsoadminCustomerManagedPolicyAttachmentsExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_customer_managed_policy_attachments_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminCustomerManagedPolicyAttachmentsExclusive to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_customer_managed_policy_attachments_exclusive", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_customer_managed_policy_attachments_exclusive", importId: importFromId, provider });
       }
 
   // ===========
@@ -426,7 +426,7 @@ export class SsoadminCustomerManagedPolicyAttachmentsExclusive extends cdktf.Ter
   public get customerManagedPolicyReference() {
     return this._customerManagedPolicyReference;
   }
-  public putCustomerManagedPolicyReference(value: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference[] | cdktf.IResolvable) {
+  public putCustomerManagedPolicyReference(value: SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReference[] | cdktn.IResolvable) {
     this._customerManagedPolicyReference.internalValue = value;
   }
   public resetCustomerManagedPolicyReference() {
@@ -459,10 +459,10 @@ export class SsoadminCustomerManagedPolicyAttachmentsExclusive extends cdktf.Ter
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_arn: cdktf.stringToTerraform(this._instanceArn),
-      permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),
-      region: cdktf.stringToTerraform(this._region),
-      customer_managed_policy_reference: cdktf.listMapper(ssoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceToTerraform, true)(this._customerManagedPolicyReference.internalValue),
+      instance_arn: cdktn.stringToTerraform(this._instanceArn),
+      permission_set_arn: cdktn.stringToTerraform(this._permissionSetArn),
+      region: cdktn.stringToTerraform(this._region),
+      customer_managed_policy_reference: cdktn.listMapper(ssoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceToTerraform, true)(this._customerManagedPolicyReference.internalValue),
       timeouts: ssoadminCustomerManagedPolicyAttachmentsExclusiveTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -470,25 +470,25 @@ export class SsoadminCustomerManagedPolicyAttachmentsExclusive extends cdktf.Ter
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       instance_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceArn),
+        value: cdktn.stringToHclTerraform(this._instanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission_set_arn: {
-        value: cdktf.stringToHclTerraform(this._permissionSetArn),
+        value: cdktn.stringToHclTerraform(this._permissionSetArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_managed_policy_reference: {
-        value: cdktf.listMapperHcl(ssoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceToHclTerraform, true)(this._customerManagedPolicyReference.internalValue),
+        value: cdktn.listMapperHcl(ssoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceToHclTerraform, true)(this._customerManagedPolicyReference.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsoadminCustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsGlueScriptConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsGlueScriptConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_script#id DataAwsGlueScript#id}
   *
@@ -34,13 +34,13 @@ export interface DataAwsGlueScriptConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_script#dag_edge DataAwsGlueScript#dag_edge}
   */
-  readonly dagEdge: DataAwsGlueScriptDagEdge[] | cdktf.IResolvable;
+  readonly dagEdge: DataAwsGlueScriptDagEdge[] | cdktn.IResolvable;
   /**
   * dag_node block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_script#dag_node DataAwsGlueScript#dag_node}
   */
-  readonly dagNode: DataAwsGlueScriptDagNode[] | cdktf.IResolvable;
+  readonly dagNode: DataAwsGlueScriptDagNode[] | cdktn.IResolvable;
 }
 export interface DataAwsGlueScriptDagEdge {
   /**
@@ -57,39 +57,39 @@ export interface DataAwsGlueScriptDagEdge {
   readonly targetParameter?: string;
 }
 
-export function dataAwsGlueScriptDagEdgeToTerraform(struct?: DataAwsGlueScriptDagEdge | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsGlueScriptDagEdgeToTerraform(struct?: DataAwsGlueScriptDagEdge | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
-    target_parameter: cdktf.stringToTerraform(struct!.targetParameter),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
+    target_parameter: cdktn.stringToTerraform(struct!.targetParameter),
   }
 }
 
 
-export function dataAwsGlueScriptDagEdgeToHclTerraform(struct?: DataAwsGlueScriptDagEdge | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsGlueScriptDagEdgeToHclTerraform(struct?: DataAwsGlueScriptDagEdge | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_parameter: {
-      value: cdktf.stringToHclTerraform(struct!.targetParameter),
+      value: cdktn.stringToHclTerraform(struct!.targetParameter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,9 +100,9 @@ export function dataAwsGlueScriptDagEdgeToHclTerraform(struct?: DataAwsGlueScrip
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsGlueScriptDagEdgeOutputReference extends cdktf.ComplexObject {
+export class DataAwsGlueScriptDagEdgeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,11 +110,11 @@ export class DataAwsGlueScriptDagEdgeOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsGlueScriptDagEdge | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsGlueScriptDagEdge | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -135,7 +135,7 @@ export class DataAwsGlueScriptDagEdgeOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsGlueScriptDagEdge | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsGlueScriptDagEdge | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -143,7 +143,7 @@ export class DataAwsGlueScriptDagEdgeOutputReference extends cdktf.ComplexObject
       this._target = undefined;
       this._targetParameter = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -199,15 +199,15 @@ export class DataAwsGlueScriptDagEdgeOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DataAwsGlueScriptDagEdgeList extends cdktf.ComplexList {
-  public internalValue? : DataAwsGlueScriptDagEdge[] | cdktf.IResolvable
+export class DataAwsGlueScriptDagEdgeList extends cdktn.ComplexList {
+  public internalValue? : DataAwsGlueScriptDagEdge[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -226,46 +226,46 @@ export interface DataAwsGlueScriptDagNodeArgs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_script#param DataAwsGlueScript#param}
   */
-  readonly param?: boolean | cdktf.IResolvable;
+  readonly param?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_script#value DataAwsGlueScript#value}
   */
   readonly value: string;
 }
 
-export function dataAwsGlueScriptDagNodeArgsToTerraform(struct?: DataAwsGlueScriptDagNodeArgs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsGlueScriptDagNodeArgsToTerraform(struct?: DataAwsGlueScriptDagNodeArgs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    param: cdktf.booleanToTerraform(struct!.param),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    param: cdktn.booleanToTerraform(struct!.param),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataAwsGlueScriptDagNodeArgsToHclTerraform(struct?: DataAwsGlueScriptDagNodeArgs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsGlueScriptDagNodeArgsToHclTerraform(struct?: DataAwsGlueScriptDagNodeArgs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     param: {
-      value: cdktf.booleanToHclTerraform(struct!.param),
+      value: cdktn.booleanToHclTerraform(struct!.param),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -276,9 +276,9 @@ export function dataAwsGlueScriptDagNodeArgsToHclTerraform(struct?: DataAwsGlueS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsGlueScriptDagNodeArgsOutputReference extends cdktf.ComplexObject {
+export class DataAwsGlueScriptDagNodeArgsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -286,11 +286,11 @@ export class DataAwsGlueScriptDagNodeArgsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsGlueScriptDagNodeArgs | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsGlueScriptDagNodeArgs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -311,7 +311,7 @@ export class DataAwsGlueScriptDagNodeArgsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsGlueScriptDagNodeArgs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsGlueScriptDagNodeArgs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -319,7 +319,7 @@ export class DataAwsGlueScriptDagNodeArgsOutputReference extends cdktf.ComplexOb
       this._param = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -346,11 +346,11 @@ export class DataAwsGlueScriptDagNodeArgsOutputReference extends cdktf.ComplexOb
   }
 
   // param - computed: false, optional: true, required: false
-  private _param?: boolean | cdktf.IResolvable; 
+  private _param?: boolean | cdktn.IResolvable; 
   public get param() {
     return this.getBooleanAttribute('param');
   }
-  public set param(value: boolean | cdktf.IResolvable) {
+  public set param(value: boolean | cdktn.IResolvable) {
     this._param = value;
   }
   public resetParam() {
@@ -375,15 +375,15 @@ export class DataAwsGlueScriptDagNodeArgsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DataAwsGlueScriptDagNodeArgsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsGlueScriptDagNodeArgs[] | cdktf.IResolvable
+export class DataAwsGlueScriptDagNodeArgsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsGlueScriptDagNodeArgs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -415,49 +415,49 @@ export interface DataAwsGlueScriptDagNode {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_script#args DataAwsGlueScript#args}
   */
-  readonly args: DataAwsGlueScriptDagNodeArgs[] | cdktf.IResolvable;
+  readonly args: DataAwsGlueScriptDagNodeArgs[] | cdktn.IResolvable;
 }
 
-export function dataAwsGlueScriptDagNodeToTerraform(struct?: DataAwsGlueScriptDagNode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsGlueScriptDagNodeToTerraform(struct?: DataAwsGlueScriptDagNode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    line_number: cdktf.numberToTerraform(struct!.lineNumber),
-    node_type: cdktf.stringToTerraform(struct!.nodeType),
-    args: cdktf.listMapper(dataAwsGlueScriptDagNodeArgsToTerraform, true)(struct!.args),
+    id: cdktn.stringToTerraform(struct!.id),
+    line_number: cdktn.numberToTerraform(struct!.lineNumber),
+    node_type: cdktn.stringToTerraform(struct!.nodeType),
+    args: cdktn.listMapper(dataAwsGlueScriptDagNodeArgsToTerraform, true)(struct!.args),
   }
 }
 
 
-export function dataAwsGlueScriptDagNodeToHclTerraform(struct?: DataAwsGlueScriptDagNode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsGlueScriptDagNodeToHclTerraform(struct?: DataAwsGlueScriptDagNode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     line_number: {
-      value: cdktf.numberToHclTerraform(struct!.lineNumber),
+      value: cdktn.numberToHclTerraform(struct!.lineNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     node_type: {
-      value: cdktf.stringToHclTerraform(struct!.nodeType),
+      value: cdktn.stringToHclTerraform(struct!.nodeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     args: {
-      value: cdktf.listMapperHcl(dataAwsGlueScriptDagNodeArgsToHclTerraform, true)(struct!.args),
+      value: cdktn.listMapperHcl(dataAwsGlueScriptDagNodeArgsToHclTerraform, true)(struct!.args),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsGlueScriptDagNodeArgsList",
@@ -468,9 +468,9 @@ export function dataAwsGlueScriptDagNodeToHclTerraform(struct?: DataAwsGlueScrip
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsGlueScriptDagNodeOutputReference extends cdktf.ComplexObject {
+export class DataAwsGlueScriptDagNodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -478,11 +478,11 @@ export class DataAwsGlueScriptDagNodeOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsGlueScriptDagNode | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsGlueScriptDagNode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -507,7 +507,7 @@ export class DataAwsGlueScriptDagNodeOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsGlueScriptDagNode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsGlueScriptDagNode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -516,7 +516,7 @@ export class DataAwsGlueScriptDagNodeOutputReference extends cdktf.ComplexObject
       this._nodeType = undefined;
       this._args.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -577,7 +577,7 @@ export class DataAwsGlueScriptDagNodeOutputReference extends cdktf.ComplexObject
   public get args() {
     return this._args;
   }
-  public putArgs(value: DataAwsGlueScriptDagNodeArgs[] | cdktf.IResolvable) {
+  public putArgs(value: DataAwsGlueScriptDagNodeArgs[] | cdktn.IResolvable) {
     this._args.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -586,15 +586,15 @@ export class DataAwsGlueScriptDagNodeOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DataAwsGlueScriptDagNodeList extends cdktf.ComplexList {
-  public internalValue? : DataAwsGlueScriptDagNode[] | cdktf.IResolvable
+export class DataAwsGlueScriptDagNodeList extends cdktn.ComplexList {
+  public internalValue? : DataAwsGlueScriptDagNode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -609,7 +609,7 @@ export class DataAwsGlueScriptDagNodeList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_script aws_glue_script}
 */
-export class DataAwsGlueScript extends cdktf.TerraformDataSource {
+export class DataAwsGlueScript extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -620,14 +620,14 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsGlueScript resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsGlueScript resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsGlueScript to import
   * @param importFromId The id of the existing DataAwsGlueScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsGlueScript to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_script", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_script", importId: importFromId, provider });
       }
 
   // ===========
@@ -731,7 +731,7 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
   public get dagEdge() {
     return this._dagEdge;
   }
-  public putDagEdge(value: DataAwsGlueScriptDagEdge[] | cdktf.IResolvable) {
+  public putDagEdge(value: DataAwsGlueScriptDagEdge[] | cdktn.IResolvable) {
     this._dagEdge.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -744,7 +744,7 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
   public get dagNode() {
     return this._dagNode;
   }
-  public putDagNode(value: DataAwsGlueScriptDagNode[] | cdktf.IResolvable) {
+  public putDagNode(value: DataAwsGlueScriptDagNode[] | cdktn.IResolvable) {
     this._dagNode.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -758,42 +758,42 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      language: cdktf.stringToTerraform(this._language),
-      region: cdktf.stringToTerraform(this._region),
-      dag_edge: cdktf.listMapper(dataAwsGlueScriptDagEdgeToTerraform, true)(this._dagEdge.internalValue),
-      dag_node: cdktf.listMapper(dataAwsGlueScriptDagNodeToTerraform, true)(this._dagNode.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      language: cdktn.stringToTerraform(this._language),
+      region: cdktn.stringToTerraform(this._region),
+      dag_edge: cdktn.listMapper(dataAwsGlueScriptDagEdgeToTerraform, true)(this._dagEdge.internalValue),
+      dag_node: cdktn.listMapper(dataAwsGlueScriptDagNodeToTerraform, true)(this._dagNode.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language: {
-        value: cdktf.stringToHclTerraform(this._language),
+        value: cdktn.stringToHclTerraform(this._language),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dag_edge: {
-        value: cdktf.listMapperHcl(dataAwsGlueScriptDagEdgeToHclTerraform, true)(this._dagEdge.internalValue),
+        value: cdktn.listMapperHcl(dataAwsGlueScriptDagEdgeToHclTerraform, true)(this._dagEdge.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsGlueScriptDagEdgeList",
       },
       dag_node: {
-        value: cdktf.listMapperHcl(dataAwsGlueScriptDagNodeToHclTerraform, true)(this._dagNode.internalValue),
+        value: cdktn.listMapperHcl(dataAwsGlueScriptDagNodeToHclTerraform, true)(this._dagNode.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsGlueScriptDagNodeList",

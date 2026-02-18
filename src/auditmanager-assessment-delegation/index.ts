@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AuditmanagerAssessmentDelegationConfig extends cdktf.TerraformMetaArguments {
+export interface AuditmanagerAssessmentDelegationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment_delegation#assessment_id AuditmanagerAssessmentDelegation#assessment_id}
   */
@@ -43,7 +43,7 @@ export interface AuditmanagerAssessmentDelegationConfig extends cdktf.TerraformM
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation}
 */
-export class AuditmanagerAssessmentDelegation extends cdktf.TerraformResource {
+export class AuditmanagerAssessmentDelegation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +54,14 @@ export class AuditmanagerAssessmentDelegation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AuditmanagerAssessmentDelegation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AuditmanagerAssessmentDelegation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuditmanagerAssessmentDelegation to import
   * @param importFromId The id of the existing AuditmanagerAssessmentDelegation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/auditmanager_assessment_delegation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuditmanagerAssessmentDelegation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_auditmanager_assessment_delegation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_auditmanager_assessment_delegation", importId: importFromId, provider });
       }
 
   // ===========
@@ -208,49 +208,49 @@ export class AuditmanagerAssessmentDelegation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assessment_id: cdktf.stringToTerraform(this._assessmentId),
-      comment: cdktf.stringToTerraform(this._comment),
-      control_set_id: cdktf.stringToTerraform(this._controlSetId),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      role_type: cdktf.stringToTerraform(this._roleType),
+      assessment_id: cdktn.stringToTerraform(this._assessmentId),
+      comment: cdktn.stringToTerraform(this._comment),
+      control_set_id: cdktn.stringToTerraform(this._controlSetId),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      role_type: cdktn.stringToTerraform(this._roleType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assessment_id: {
-        value: cdktf.stringToHclTerraform(this._assessmentId),
+        value: cdktn.stringToHclTerraform(this._assessmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       control_set_id: {
-        value: cdktf.stringToHclTerraform(this._controlSetId),
+        value: cdktn.stringToHclTerraform(this._controlSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_type: {
-        value: cdktf.stringToHclTerraform(this._roleType),
+        value: cdktn.stringToHclTerraform(this._roleType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

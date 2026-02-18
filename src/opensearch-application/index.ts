@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OpensearchApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface OpensearchApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_application#kms_key_arn OpensearchApplication#kms_key_arn}
   */
@@ -35,19 +35,19 @@ export interface OpensearchApplicationConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_application#app_config OpensearchApplication#app_config}
   */
-  readonly appConfig?: OpensearchApplicationAppConfig[] | cdktf.IResolvable;
+  readonly appConfig?: OpensearchApplicationAppConfig[] | cdktn.IResolvable;
   /**
   * data_source block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_application#data_source OpensearchApplication#data_source}
   */
-  readonly dataSource?: OpensearchApplicationDataSource[] | cdktf.IResolvable;
+  readonly dataSource?: OpensearchApplicationDataSource[] | cdktn.IResolvable;
   /**
   * iam_identity_center_options block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_application#iam_identity_center_options OpensearchApplication#iam_identity_center_options}
   */
-  readonly iamIdentityCenterOptions?: OpensearchApplicationIamIdentityCenterOptions[] | cdktf.IResolvable;
+  readonly iamIdentityCenterOptions?: OpensearchApplicationIamIdentityCenterOptions[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -66,32 +66,32 @@ export interface OpensearchApplicationAppConfig {
   readonly value?: string;
 }
 
-export function opensearchApplicationAppConfigToTerraform(struct?: OpensearchApplicationAppConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchApplicationAppConfigToTerraform(struct?: OpensearchApplicationAppConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function opensearchApplicationAppConfigToHclTerraform(struct?: OpensearchApplicationAppConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchApplicationAppConfigToHclTerraform(struct?: OpensearchApplicationAppConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,9 +102,9 @@ export function opensearchApplicationAppConfigToHclTerraform(struct?: Opensearch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchApplicationAppConfigOutputReference extends cdktf.ComplexObject {
+export class OpensearchApplicationAppConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -112,11 +112,11 @@ export class OpensearchApplicationAppConfigOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OpensearchApplicationAppConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): OpensearchApplicationAppConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,14 +133,14 @@ export class OpensearchApplicationAppConfigOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OpensearchApplicationAppConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OpensearchApplicationAppConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -185,15 +185,15 @@ export class OpensearchApplicationAppConfigOutputReference extends cdktf.Complex
   }
 }
 
-export class OpensearchApplicationAppConfigList extends cdktf.ComplexList {
-  public internalValue? : OpensearchApplicationAppConfig[] | cdktf.IResolvable
+export class OpensearchApplicationAppConfigList extends cdktn.ComplexList {
+  public internalValue? : OpensearchApplicationAppConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -215,32 +215,32 @@ export interface OpensearchApplicationDataSource {
   readonly dataSourceDescription?: string;
 }
 
-export function opensearchApplicationDataSourceToTerraform(struct?: OpensearchApplicationDataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchApplicationDataSourceToTerraform(struct?: OpensearchApplicationDataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_source_arn: cdktf.stringToTerraform(struct!.dataSourceArn),
-    data_source_description: cdktf.stringToTerraform(struct!.dataSourceDescription),
+    data_source_arn: cdktn.stringToTerraform(struct!.dataSourceArn),
+    data_source_description: cdktn.stringToTerraform(struct!.dataSourceDescription),
   }
 }
 
 
-export function opensearchApplicationDataSourceToHclTerraform(struct?: OpensearchApplicationDataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchApplicationDataSourceToHclTerraform(struct?: OpensearchApplicationDataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_source_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dataSourceArn),
+      value: cdktn.stringToHclTerraform(struct!.dataSourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_source_description: {
-      value: cdktf.stringToHclTerraform(struct!.dataSourceDescription),
+      value: cdktn.stringToHclTerraform(struct!.dataSourceDescription),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -251,9 +251,9 @@ export function opensearchApplicationDataSourceToHclTerraform(struct?: Opensearc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchApplicationDataSourceOutputReference extends cdktf.ComplexObject {
+export class OpensearchApplicationDataSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -261,11 +261,11 @@ export class OpensearchApplicationDataSourceOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OpensearchApplicationDataSource | cdktf.IResolvable | undefined {
+  public get internalValue(): OpensearchApplicationDataSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -282,14 +282,14 @@ export class OpensearchApplicationDataSourceOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OpensearchApplicationDataSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OpensearchApplicationDataSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataSourceArn = undefined;
       this._dataSourceDescription = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -334,15 +334,15 @@ export class OpensearchApplicationDataSourceOutputReference extends cdktf.Comple
   }
 }
 
-export class OpensearchApplicationDataSourceList extends cdktf.ComplexList {
-  public internalValue? : OpensearchApplicationDataSource[] | cdktf.IResolvable
+export class OpensearchApplicationDataSourceList extends cdktn.ComplexList {
+  public internalValue? : OpensearchApplicationDataSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -357,7 +357,7 @@ export interface OpensearchApplicationIamIdentityCenterOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_application#enabled OpensearchApplication#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_application#iam_identity_center_instance_arn OpensearchApplication#iam_identity_center_instance_arn}
   */
@@ -368,39 +368,39 @@ export interface OpensearchApplicationIamIdentityCenterOptions {
   readonly iamRoleForIdentityCenterApplicationArn?: string;
 }
 
-export function opensearchApplicationIamIdentityCenterOptionsToTerraform(struct?: OpensearchApplicationIamIdentityCenterOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchApplicationIamIdentityCenterOptionsToTerraform(struct?: OpensearchApplicationIamIdentityCenterOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    iam_identity_center_instance_arn: cdktf.stringToTerraform(struct!.iamIdentityCenterInstanceArn),
-    iam_role_for_identity_center_application_arn: cdktf.stringToTerraform(struct!.iamRoleForIdentityCenterApplicationArn),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    iam_identity_center_instance_arn: cdktn.stringToTerraform(struct!.iamIdentityCenterInstanceArn),
+    iam_role_for_identity_center_application_arn: cdktn.stringToTerraform(struct!.iamRoleForIdentityCenterApplicationArn),
   }
 }
 
 
-export function opensearchApplicationIamIdentityCenterOptionsToHclTerraform(struct?: OpensearchApplicationIamIdentityCenterOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchApplicationIamIdentityCenterOptionsToHclTerraform(struct?: OpensearchApplicationIamIdentityCenterOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     iam_identity_center_instance_arn: {
-      value: cdktf.stringToHclTerraform(struct!.iamIdentityCenterInstanceArn),
+      value: cdktn.stringToHclTerraform(struct!.iamIdentityCenterInstanceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iam_role_for_identity_center_application_arn: {
-      value: cdktf.stringToHclTerraform(struct!.iamRoleForIdentityCenterApplicationArn),
+      value: cdktn.stringToHclTerraform(struct!.iamRoleForIdentityCenterApplicationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -411,9 +411,9 @@ export function opensearchApplicationIamIdentityCenterOptionsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchApplicationIamIdentityCenterOptionsOutputReference extends cdktf.ComplexObject {
+export class OpensearchApplicationIamIdentityCenterOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -421,11 +421,11 @@ export class OpensearchApplicationIamIdentityCenterOptionsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OpensearchApplicationIamIdentityCenterOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): OpensearchApplicationIamIdentityCenterOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -446,7 +446,7 @@ export class OpensearchApplicationIamIdentityCenterOptionsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OpensearchApplicationIamIdentityCenterOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OpensearchApplicationIamIdentityCenterOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -454,7 +454,7 @@ export class OpensearchApplicationIamIdentityCenterOptionsOutputReference extend
       this._iamIdentityCenterInstanceArn = undefined;
       this._iamRoleForIdentityCenterApplicationArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -468,11 +468,11 @@ export class OpensearchApplicationIamIdentityCenterOptionsOutputReference extend
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -521,15 +521,15 @@ export class OpensearchApplicationIamIdentityCenterOptionsOutputReference extend
   }
 }
 
-export class OpensearchApplicationIamIdentityCenterOptionsList extends cdktf.ComplexList {
-  public internalValue? : OpensearchApplicationIamIdentityCenterOptions[] | cdktf.IResolvable
+export class OpensearchApplicationIamIdentityCenterOptionsList extends cdktn.ComplexList {
+  public internalValue? : OpensearchApplicationIamIdentityCenterOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -561,39 +561,39 @@ export interface OpensearchApplicationTimeouts {
   readonly update?: string;
 }
 
-export function opensearchApplicationTimeoutsToTerraform(struct?: OpensearchApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchApplicationTimeoutsToTerraform(struct?: OpensearchApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function opensearchApplicationTimeoutsToHclTerraform(struct?: OpensearchApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchApplicationTimeoutsToHclTerraform(struct?: OpensearchApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -604,19 +604,19 @@ export function opensearchApplicationTimeoutsToHclTerraform(struct?: OpensearchA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OpensearchApplicationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OpensearchApplicationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OpensearchApplicationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -637,7 +637,7 @@ export class OpensearchApplicationTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OpensearchApplicationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OpensearchApplicationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -645,7 +645,7 @@ export class OpensearchApplicationTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -710,7 +710,7 @@ export class OpensearchApplicationTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_application aws_opensearch_application}
 */
-export class OpensearchApplication extends cdktf.TerraformResource {
+export class OpensearchApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -721,14 +721,14 @@ export class OpensearchApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OpensearchApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OpensearchApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchApplication to import
   * @param importFromId The id of the existing OpensearchApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -849,7 +849,7 @@ export class OpensearchApplication extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -859,7 +859,7 @@ export class OpensearchApplication extends cdktf.TerraformResource {
   public get appConfig() {
     return this._appConfig;
   }
-  public putAppConfig(value: OpensearchApplicationAppConfig[] | cdktf.IResolvable) {
+  public putAppConfig(value: OpensearchApplicationAppConfig[] | cdktn.IResolvable) {
     this._appConfig.internalValue = value;
   }
   public resetAppConfig() {
@@ -875,7 +875,7 @@ export class OpensearchApplication extends cdktf.TerraformResource {
   public get dataSource() {
     return this._dataSource;
   }
-  public putDataSource(value: OpensearchApplicationDataSource[] | cdktf.IResolvable) {
+  public putDataSource(value: OpensearchApplicationDataSource[] | cdktn.IResolvable) {
     this._dataSource.internalValue = value;
   }
   public resetDataSource() {
@@ -891,7 +891,7 @@ export class OpensearchApplication extends cdktf.TerraformResource {
   public get iamIdentityCenterOptions() {
     return this._iamIdentityCenterOptions;
   }
-  public putIamIdentityCenterOptions(value: OpensearchApplicationIamIdentityCenterOptions[] | cdktf.IResolvable) {
+  public putIamIdentityCenterOptions(value: OpensearchApplicationIamIdentityCenterOptions[] | cdktn.IResolvable) {
     this._iamIdentityCenterOptions.internalValue = value;
   }
   public resetIamIdentityCenterOptions() {
@@ -924,13 +924,13 @@ export class OpensearchApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      app_config: cdktf.listMapper(opensearchApplicationAppConfigToTerraform, true)(this._appConfig.internalValue),
-      data_source: cdktf.listMapper(opensearchApplicationDataSourceToTerraform, true)(this._dataSource.internalValue),
-      iam_identity_center_options: cdktf.listMapper(opensearchApplicationIamIdentityCenterOptionsToTerraform, true)(this._iamIdentityCenterOptions.internalValue),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      app_config: cdktn.listMapper(opensearchApplicationAppConfigToTerraform, true)(this._appConfig.internalValue),
+      data_source: cdktn.listMapper(opensearchApplicationDataSourceToTerraform, true)(this._dataSource.internalValue),
+      iam_identity_center_options: cdktn.listMapper(opensearchApplicationIamIdentityCenterOptionsToTerraform, true)(this._iamIdentityCenterOptions.internalValue),
       timeouts: opensearchApplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -938,43 +938,43 @@ export class OpensearchApplication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       app_config: {
-        value: cdktf.listMapperHcl(opensearchApplicationAppConfigToHclTerraform, true)(this._appConfig.internalValue),
+        value: cdktn.listMapperHcl(opensearchApplicationAppConfigToHclTerraform, true)(this._appConfig.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "OpensearchApplicationAppConfigList",
       },
       data_source: {
-        value: cdktf.listMapperHcl(opensearchApplicationDataSourceToHclTerraform, true)(this._dataSource.internalValue),
+        value: cdktn.listMapperHcl(opensearchApplicationDataSourceToHclTerraform, true)(this._dataSource.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "OpensearchApplicationDataSourceList",
       },
       iam_identity_center_options: {
-        value: cdktf.listMapperHcl(opensearchApplicationIamIdentityCenterOptionsToHclTerraform, true)(this._iamIdentityCenterOptions.internalValue),
+        value: cdktn.listMapperHcl(opensearchApplicationIamIdentityCenterOptionsToHclTerraform, true)(this._iamIdentityCenterOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OpensearchApplicationIamIdentityCenterOptionsList",

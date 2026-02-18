@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VerifiedaccessGroupConfig extends cdktf.TerraformMetaArguments {
+export interface VerifiedaccessGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_group#description VerifiedaccessGroup#description}
   */
@@ -56,7 +56,7 @@ export interface VerifiedaccessGroupSseConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_group#customer_managed_key_enabled VerifiedaccessGroup#customer_managed_key_enabled}
   */
-  readonly customerManagedKeyEnabled?: boolean | cdktf.IResolvable;
+  readonly customerManagedKeyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_group#kms_key_arn VerifiedaccessGroup#kms_key_arn}
   */
@@ -64,31 +64,31 @@ export interface VerifiedaccessGroupSseConfiguration {
 }
 
 export function verifiedaccessGroupSseConfigurationToTerraform(struct?: VerifiedaccessGroupSseConfigurationOutputReference | VerifiedaccessGroupSseConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    customer_managed_key_enabled: cdktf.booleanToTerraform(struct!.customerManagedKeyEnabled),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    customer_managed_key_enabled: cdktn.booleanToTerraform(struct!.customerManagedKeyEnabled),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
 
 export function verifiedaccessGroupSseConfigurationToHclTerraform(struct?: VerifiedaccessGroupSseConfigurationOutputReference | VerifiedaccessGroupSseConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     customer_managed_key_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.customerManagedKeyEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.customerManagedKeyEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -99,14 +99,14 @@ export function verifiedaccessGroupSseConfigurationToHclTerraform(struct?: Verif
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessGroupSseConfigurationOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessGroupSseConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -138,11 +138,11 @@ export class VerifiedaccessGroupSseConfigurationOutputReference extends cdktf.Co
   }
 
   // customer_managed_key_enabled - computed: false, optional: true, required: false
-  private _customerManagedKeyEnabled?: boolean | cdktf.IResolvable; 
+  private _customerManagedKeyEnabled?: boolean | cdktn.IResolvable; 
   public get customerManagedKeyEnabled() {
     return this.getBooleanAttribute('customer_managed_key_enabled');
   }
-  public set customerManagedKeyEnabled(value: boolean | cdktf.IResolvable) {
+  public set customerManagedKeyEnabled(value: boolean | cdktn.IResolvable) {
     this._customerManagedKeyEnabled = value;
   }
   public resetCustomerManagedKeyEnabled() {
@@ -173,7 +173,7 @@ export class VerifiedaccessGroupSseConfigurationOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_group aws_verifiedaccess_group}
 */
-export class VerifiedaccessGroup extends cdktf.TerraformResource {
+export class VerifiedaccessGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -184,14 +184,14 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VerifiedaccessGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VerifiedaccessGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessGroup to import
   * @param importFromId The id of the existing VerifiedaccessGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -396,13 +396,13 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      policy_document: cdktf.stringToTerraform(this._policyDocument),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      verifiedaccess_instance_id: cdktf.stringToTerraform(this._verifiedaccessInstanceId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      policy_document: cdktn.stringToTerraform(this._policyDocument),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      verifiedaccess_instance_id: cdktn.stringToTerraform(this._verifiedaccessInstanceId),
       sse_configuration: verifiedaccessGroupSseConfigurationToTerraform(this._sseConfiguration.internalValue),
     };
   }
@@ -410,43 +410,43 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_document: {
-        value: cdktf.stringToHclTerraform(this._policyDocument),
+        value: cdktn.stringToHclTerraform(this._policyDocument),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       verifiedaccess_instance_id: {
-        value: cdktf.stringToHclTerraform(this._verifiedaccessInstanceId),
+        value: cdktn.stringToHclTerraform(this._verifiedaccessInstanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

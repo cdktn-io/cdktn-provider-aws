@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WafregionalIpsetConfig extends cdktf.TerraformMetaArguments {
+export interface WafregionalIpsetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_ipset#id WafregionalIpset#id}
   *
@@ -34,7 +34,7 @@ export interface WafregionalIpsetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_ipset#ip_set_descriptor WafregionalIpset#ip_set_descriptor}
   */
-  readonly ipSetDescriptor?: WafregionalIpsetIpSetDescriptor[] | cdktf.IResolvable;
+  readonly ipSetDescriptor?: WafregionalIpsetIpSetDescriptor[] | cdktn.IResolvable;
 }
 export interface WafregionalIpsetIpSetDescriptor {
   /**
@@ -47,32 +47,32 @@ export interface WafregionalIpsetIpSetDescriptor {
   readonly value: string;
 }
 
-export function wafregionalIpsetIpSetDescriptorToTerraform(struct?: WafregionalIpsetIpSetDescriptor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafregionalIpsetIpSetDescriptorToTerraform(struct?: WafregionalIpsetIpSetDescriptor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function wafregionalIpsetIpSetDescriptorToHclTerraform(struct?: WafregionalIpsetIpSetDescriptor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafregionalIpsetIpSetDescriptorToHclTerraform(struct?: WafregionalIpsetIpSetDescriptor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,9 +83,9 @@ export function wafregionalIpsetIpSetDescriptorToHclTerraform(struct?: Wafregion
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafregionalIpsetIpSetDescriptorOutputReference extends cdktf.ComplexObject {
+export class WafregionalIpsetIpSetDescriptorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class WafregionalIpsetIpSetDescriptorOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WafregionalIpsetIpSetDescriptor | cdktf.IResolvable | undefined {
+  public get internalValue(): WafregionalIpsetIpSetDescriptor | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,14 +114,14 @@ export class WafregionalIpsetIpSetDescriptorOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafregionalIpsetIpSetDescriptor | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WafregionalIpsetIpSetDescriptor | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -160,15 +160,15 @@ export class WafregionalIpsetIpSetDescriptorOutputReference extends cdktf.Comple
   }
 }
 
-export class WafregionalIpsetIpSetDescriptorList extends cdktf.ComplexList {
-  public internalValue? : WafregionalIpsetIpSetDescriptor[] | cdktf.IResolvable
+export class WafregionalIpsetIpSetDescriptorList extends cdktn.ComplexList {
+  public internalValue? : WafregionalIpsetIpSetDescriptor[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -183,7 +183,7 @@ export class WafregionalIpsetIpSetDescriptorList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_ipset aws_wafregional_ipset}
 */
-export class WafregionalIpset extends cdktf.TerraformResource {
+export class WafregionalIpset extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -194,14 +194,14 @@ export class WafregionalIpset extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WafregionalIpset resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WafregionalIpset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafregionalIpset to import
   * @param importFromId The id of the existing WafregionalIpset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_ipset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafregionalIpset to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafregional_ipset", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafregional_ipset", importId: importFromId, provider });
       }
 
   // ===========
@@ -296,7 +296,7 @@ export class WafregionalIpset extends cdktf.TerraformResource {
   public get ipSetDescriptor() {
     return this._ipSetDescriptor;
   }
-  public putIpSetDescriptor(value: WafregionalIpsetIpSetDescriptor[] | cdktf.IResolvable) {
+  public putIpSetDescriptor(value: WafregionalIpsetIpSetDescriptor[] | cdktn.IResolvable) {
     this._ipSetDescriptor.internalValue = value;
   }
   public resetIpSetDescriptor() {
@@ -313,35 +313,35 @@ export class WafregionalIpset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      ip_set_descriptor: cdktf.listMapper(wafregionalIpsetIpSetDescriptorToTerraform, true)(this._ipSetDescriptor.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      ip_set_descriptor: cdktn.listMapper(wafregionalIpsetIpSetDescriptorToTerraform, true)(this._ipSetDescriptor.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_set_descriptor: {
-        value: cdktf.listMapperHcl(wafregionalIpsetIpSetDescriptorToHclTerraform, true)(this._ipSetDescriptor.internalValue),
+        value: cdktn.listMapperHcl(wafregionalIpsetIpSetDescriptorToHclTerraform, true)(this._ipSetDescriptor.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WafregionalIpsetIpSetDescriptorList",

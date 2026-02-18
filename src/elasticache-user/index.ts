@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticacheUserConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticacheUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}
   */
@@ -30,7 +30,7 @@ export interface ElasticacheUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}
   */
-  readonly noPasswordRequired?: boolean | cdktf.IResolvable;
+  readonly noPasswordRequired?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}
   */
@@ -82,31 +82,31 @@ export interface ElasticacheUserAuthenticationMode {
 }
 
 export function elasticacheUserAuthenticationModeToTerraform(struct?: ElasticacheUserAuthenticationModeOutputReference | ElasticacheUserAuthenticationMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    passwords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passwords),
-    type: cdktf.stringToTerraform(struct!.type),
+    passwords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.passwords),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function elasticacheUserAuthenticationModeToHclTerraform(struct?: ElasticacheUserAuthenticationModeOutputReference | ElasticacheUserAuthenticationMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     passwords: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.passwords),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.passwords),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,14 +117,14 @@ export function elasticacheUserAuthenticationModeToHclTerraform(struct?: Elastic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticacheUserAuthenticationModeOutputReference extends cdktf.ComplexObject {
+export class ElasticacheUserAuthenticationModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -163,7 +163,7 @@ export class ElasticacheUserAuthenticationModeOutputReference extends cdktf.Comp
   // passwords - computed: false, optional: true, required: false
   private _passwords?: string[]; 
   public get passwords() {
-    return cdktf.Fn.tolist(this.getListAttribute('passwords'));
+    return cdktn.Fn.tolist(this.getListAttribute('passwords'));
   }
   public set passwords(value: string[]) {
     this._passwords = value;
@@ -208,46 +208,46 @@ export interface ElasticacheUserTimeouts {
   readonly update?: string;
 }
 
-export function elasticacheUserTimeoutsToTerraform(struct?: ElasticacheUserTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheUserTimeoutsToTerraform(struct?: ElasticacheUserTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function elasticacheUserTimeoutsToHclTerraform(struct?: ElasticacheUserTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticacheUserTimeoutsToHclTerraform(struct?: ElasticacheUserTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -258,19 +258,19 @@ export function elasticacheUserTimeoutsToHclTerraform(struct?: ElasticacheUserTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticacheUserTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ElasticacheUserTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ElasticacheUserTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticacheUserTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -295,7 +295,7 @@ export class ElasticacheUserTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticacheUserTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticacheUserTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -304,7 +304,7 @@ export class ElasticacheUserTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -386,7 +386,7 @@ export class ElasticacheUserTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_user aws_elasticache_user}
 */
-export class ElasticacheUser extends cdktf.TerraformResource {
+export class ElasticacheUser extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -397,14 +397,14 @@ export class ElasticacheUser extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticacheUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticacheUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticacheUser to import
   * @param importFromId The id of the existing ElasticacheUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticacheUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -500,11 +500,11 @@ export class ElasticacheUser extends cdktf.TerraformResource {
   }
 
   // no_password_required - computed: false, optional: true, required: false
-  private _noPasswordRequired?: boolean | cdktf.IResolvable; 
+  private _noPasswordRequired?: boolean | cdktn.IResolvable; 
   public get noPasswordRequired() {
     return this.getBooleanAttribute('no_password_required');
   }
-  public set noPasswordRequired(value: boolean | cdktf.IResolvable) {
+  public set noPasswordRequired(value: boolean | cdktn.IResolvable) {
     this._noPasswordRequired = value;
   }
   public resetNoPasswordRequired() {
@@ -518,7 +518,7 @@ export class ElasticacheUser extends cdktf.TerraformResource {
   // passwords - computed: false, optional: true, required: false
   private _passwords?: string[]; 
   public get passwords() {
-    return cdktf.Fn.tolist(this.getListAttribute('passwords'));
+    return cdktn.Fn.tolist(this.getListAttribute('passwords'));
   }
   public set passwords(value: string[]) {
     this._passwords = value;
@@ -643,16 +643,16 @@ export class ElasticacheUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_string: cdktf.stringToTerraform(this._accessString),
-      engine: cdktf.stringToTerraform(this._engine),
-      id: cdktf.stringToTerraform(this._id),
-      no_password_required: cdktf.booleanToTerraform(this._noPasswordRequired),
-      passwords: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passwords),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      user_id: cdktf.stringToTerraform(this._userId),
-      user_name: cdktf.stringToTerraform(this._userName),
+      access_string: cdktn.stringToTerraform(this._accessString),
+      engine: cdktn.stringToTerraform(this._engine),
+      id: cdktn.stringToTerraform(this._id),
+      no_password_required: cdktn.booleanToTerraform(this._noPasswordRequired),
+      passwords: cdktn.listMapper(cdktn.stringToTerraform, false)(this._passwords),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      user_id: cdktn.stringToTerraform(this._userId),
+      user_name: cdktn.stringToTerraform(this._userName),
       authentication_mode: elasticacheUserAuthenticationModeToTerraform(this._authenticationMode.internalValue),
       timeouts: elasticacheUserTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -661,61 +661,61 @@ export class ElasticacheUser extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_string: {
-        value: cdktf.stringToHclTerraform(this._accessString),
+        value: cdktn.stringToHclTerraform(this._accessString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       no_password_required: {
-        value: cdktf.booleanToHclTerraform(this._noPasswordRequired),
+        value: cdktn.booleanToHclTerraform(this._noPasswordRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       passwords: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passwords),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._passwords),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user_id: {
-        value: cdktf.stringToHclTerraform(this._userId),
+        value: cdktn.stringToHclTerraform(this._userId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudfrontConnectionFunctionConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontConnectionFunctionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_function#connection_function_code CloudfrontConnectionFunction#connection_function_code}
   */
@@ -23,7 +23,7 @@ export interface CloudfrontConnectionFunctionConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_function#publish CloudfrontConnectionFunction#publish}
   */
-  readonly publish?: boolean | cdktf.IResolvable;
+  readonly publish?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_function#tags CloudfrontConnectionFunction#tags}
   */
@@ -33,7 +33,7 @@ export interface CloudfrontConnectionFunctionConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_function#connection_function_config CloudfrontConnectionFunction#connection_function_config}
   */
-  readonly connectionFunctionConfig?: CloudfrontConnectionFunctionConnectionFunctionConfig[] | cdktf.IResolvable;
+  readonly connectionFunctionConfig?: CloudfrontConnectionFunctionConnectionFunctionConfig[] | cdktn.IResolvable;
 }
 export interface CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation {
   /**
@@ -42,25 +42,25 @@ export interface CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueSto
   readonly keyValueStoreArn: string;
 }
 
-export function cloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationToTerraform(struct?: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationToTerraform(struct?: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_value_store_arn: cdktf.stringToTerraform(struct!.keyValueStoreArn),
+    key_value_store_arn: cdktn.stringToTerraform(struct!.keyValueStoreArn),
   }
 }
 
 
-export function cloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationToHclTerraform(struct?: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationToHclTerraform(struct?: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_value_store_arn: {
-      value: cdktf.stringToHclTerraform(struct!.keyValueStoreArn),
+      value: cdktn.stringToHclTerraform(struct!.keyValueStoreArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -71,9 +71,9 @@ export function cloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationOutputReference extends cdktf.ComplexObject {
+export class CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -81,11 +81,11 @@ export class CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAs
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -98,13 +98,13 @@ export class CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAs
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keyValueStoreArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -129,15 +129,15 @@ export class CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAs
   }
 }
 
-export class CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationList extends cdktf.ComplexList {
-  public internalValue? : CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation[] | cdktf.IResolvable
+export class CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationList extends cdktn.ComplexList {
+  public internalValue? : CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -162,42 +162,42 @@ export interface CloudfrontConnectionFunctionConnectionFunctionConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_function#key_value_store_association CloudfrontConnectionFunction#key_value_store_association}
   */
-  readonly keyValueStoreAssociation?: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation[] | cdktf.IResolvable;
+  readonly keyValueStoreAssociation?: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation[] | cdktn.IResolvable;
 }
 
-export function cloudfrontConnectionFunctionConnectionFunctionConfigToTerraform(struct?: CloudfrontConnectionFunctionConnectionFunctionConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontConnectionFunctionConnectionFunctionConfigToTerraform(struct?: CloudfrontConnectionFunctionConnectionFunctionConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comment: cdktf.stringToTerraform(struct!.comment),
-    runtime: cdktf.stringToTerraform(struct!.runtime),
-    key_value_store_association: cdktf.listMapper(cloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationToTerraform, true)(struct!.keyValueStoreAssociation),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    runtime: cdktn.stringToTerraform(struct!.runtime),
+    key_value_store_association: cdktn.listMapper(cloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationToTerraform, true)(struct!.keyValueStoreAssociation),
   }
 }
 
 
-export function cloudfrontConnectionFunctionConnectionFunctionConfigToHclTerraform(struct?: CloudfrontConnectionFunctionConnectionFunctionConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontConnectionFunctionConnectionFunctionConfigToHclTerraform(struct?: CloudfrontConnectionFunctionConnectionFunctionConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime: {
-      value: cdktf.stringToHclTerraform(struct!.runtime),
+      value: cdktn.stringToHclTerraform(struct!.runtime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_value_store_association: {
-      value: cdktf.listMapperHcl(cloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationToHclTerraform, true)(struct!.keyValueStoreAssociation),
+      value: cdktn.listMapperHcl(cloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationToHclTerraform, true)(struct!.keyValueStoreAssociation),
       isBlock: true,
       type: "list",
       storageClassType: "CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationList",
@@ -208,9 +208,9 @@ export function cloudfrontConnectionFunctionConnectionFunctionConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontConnectionFunctionConnectionFunctionConfigOutputReference extends cdktf.ComplexObject {
+export class CloudfrontConnectionFunctionConnectionFunctionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -218,11 +218,11 @@ export class CloudfrontConnectionFunctionConnectionFunctionConfigOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudfrontConnectionFunctionConnectionFunctionConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontConnectionFunctionConnectionFunctionConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -243,7 +243,7 @@ export class CloudfrontConnectionFunctionConnectionFunctionConfigOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontConnectionFunctionConnectionFunctionConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontConnectionFunctionConnectionFunctionConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -251,7 +251,7 @@ export class CloudfrontConnectionFunctionConnectionFunctionConfigOutputReference
       this._runtime = undefined;
       this._keyValueStoreAssociation.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -295,7 +295,7 @@ export class CloudfrontConnectionFunctionConnectionFunctionConfigOutputReference
   public get keyValueStoreAssociation() {
     return this._keyValueStoreAssociation;
   }
-  public putKeyValueStoreAssociation(value: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation[] | cdktf.IResolvable) {
+  public putKeyValueStoreAssociation(value: CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation[] | cdktn.IResolvable) {
     this._keyValueStoreAssociation.internalValue = value;
   }
   public resetKeyValueStoreAssociation() {
@@ -307,15 +307,15 @@ export class CloudfrontConnectionFunctionConnectionFunctionConfigOutputReference
   }
 }
 
-export class CloudfrontConnectionFunctionConnectionFunctionConfigList extends cdktf.ComplexList {
-  public internalValue? : CloudfrontConnectionFunctionConnectionFunctionConfig[] | cdktf.IResolvable
+export class CloudfrontConnectionFunctionConnectionFunctionConfigList extends cdktn.ComplexList {
+  public internalValue? : CloudfrontConnectionFunctionConnectionFunctionConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -330,7 +330,7 @@ export class CloudfrontConnectionFunctionConnectionFunctionConfigList extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_function aws_cloudfront_connection_function}
 */
-export class CloudfrontConnectionFunction extends cdktf.TerraformResource {
+export class CloudfrontConnectionFunction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -341,14 +341,14 @@ export class CloudfrontConnectionFunction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudfrontConnectionFunction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudfrontConnectionFunction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontConnectionFunction to import
   * @param importFromId The id of the existing CloudfrontConnectionFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontConnectionFunction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_connection_function", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_connection_function", importId: importFromId, provider });
       }
 
   // ===========
@@ -436,11 +436,11 @@ export class CloudfrontConnectionFunction extends cdktf.TerraformResource {
   }
 
   // publish - computed: true, optional: true, required: false
-  private _publish?: boolean | cdktf.IResolvable; 
+  private _publish?: boolean | cdktn.IResolvable; 
   public get publish() {
     return this.getBooleanAttribute('publish');
   }
-  public set publish(value: boolean | cdktf.IResolvable) {
+  public set publish(value: boolean | cdktn.IResolvable) {
     this._publish = value;
   }
   public resetPublish() {
@@ -473,7 +473,7 @@ export class CloudfrontConnectionFunction extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -483,7 +483,7 @@ export class CloudfrontConnectionFunction extends cdktf.TerraformResource {
   public get connectionFunctionConfig() {
     return this._connectionFunctionConfig;
   }
-  public putConnectionFunctionConfig(value: CloudfrontConnectionFunctionConnectionFunctionConfig[] | cdktf.IResolvable) {
+  public putConnectionFunctionConfig(value: CloudfrontConnectionFunctionConnectionFunctionConfig[] | cdktn.IResolvable) {
     this._connectionFunctionConfig.internalValue = value;
   }
   public resetConnectionFunctionConfig() {
@@ -500,42 +500,42 @@ export class CloudfrontConnectionFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_function_code: cdktf.stringToTerraform(this._connectionFunctionCode),
-      name: cdktf.stringToTerraform(this._name),
-      publish: cdktf.booleanToTerraform(this._publish),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      connection_function_config: cdktf.listMapper(cloudfrontConnectionFunctionConnectionFunctionConfigToTerraform, true)(this._connectionFunctionConfig.internalValue),
+      connection_function_code: cdktn.stringToTerraform(this._connectionFunctionCode),
+      name: cdktn.stringToTerraform(this._name),
+      publish: cdktn.booleanToTerraform(this._publish),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      connection_function_config: cdktn.listMapper(cloudfrontConnectionFunctionConnectionFunctionConfigToTerraform, true)(this._connectionFunctionConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_function_code: {
-        value: cdktf.stringToHclTerraform(this._connectionFunctionCode),
+        value: cdktn.stringToHclTerraform(this._connectionFunctionCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publish: {
-        value: cdktf.booleanToHclTerraform(this._publish),
+        value: cdktn.booleanToHclTerraform(this._publish),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       connection_function_config: {
-        value: cdktf.listMapperHcl(cloudfrontConnectionFunctionConnectionFunctionConfigToHclTerraform, true)(this._connectionFunctionConfig.internalValue),
+        value: cdktn.listMapperHcl(cloudfrontConnectionFunctionConnectionFunctionConfigToHclTerraform, true)(this._connectionFunctionConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CloudfrontConnectionFunctionConnectionFunctionConfigList",

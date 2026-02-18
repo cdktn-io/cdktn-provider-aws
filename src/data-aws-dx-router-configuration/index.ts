@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsDxRouterConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsDxRouterConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/dx_router_configuration#id DataAwsDxRouterConfiguration#id}
   *
@@ -38,8 +38,8 @@ export interface DataAwsDxRouterConfigurationRouter {
 }
 
 export function dataAwsDxRouterConfigurationRouterToTerraform(struct?: DataAwsDxRouterConfigurationRouter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAwsDxRouterConfigurationRouterToTerraform(struct?: DataAwsDx
 
 
 export function dataAwsDxRouterConfigurationRouterToHclTerraform(struct?: DataAwsDxRouterConfigurationRouter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAwsDxRouterConfigurationRouterToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsDxRouterConfigurationRouterOutputReference extends cdktf.ComplexObject {
+export class DataAwsDxRouterConfigurationRouterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAwsDxRouterConfigurationRouterOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -116,14 +116,14 @@ export class DataAwsDxRouterConfigurationRouterOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsDxRouterConfigurationRouterList extends cdktf.ComplexList {
+export class DataAwsDxRouterConfigurationRouterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -138,7 +138,7 @@ export class DataAwsDxRouterConfigurationRouterList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/dx_router_configuration aws_dx_router_configuration}
 */
-export class DataAwsDxRouterConfiguration extends cdktf.TerraformDataSource {
+export class DataAwsDxRouterConfiguration extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -149,14 +149,14 @@ export class DataAwsDxRouterConfiguration extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsDxRouterConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsDxRouterConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDxRouterConfiguration to import
   * @param importFromId The id of the existing DataAwsDxRouterConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/dx_router_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDxRouterConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_router_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_router_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -276,35 +276,35 @@ export class DataAwsDxRouterConfiguration extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      router_type_identifier: cdktf.stringToTerraform(this._routerTypeIdentifier),
-      virtual_interface_id: cdktf.stringToTerraform(this._virtualInterfaceId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      router_type_identifier: cdktn.stringToTerraform(this._routerTypeIdentifier),
+      virtual_interface_id: cdktn.stringToTerraform(this._virtualInterfaceId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       router_type_identifier: {
-        value: cdktf.stringToHclTerraform(this._routerTypeIdentifier),
+        value: cdktn.stringToHclTerraform(this._routerTypeIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_interface_id: {
-        value: cdktf.stringToHclTerraform(this._virtualInterfaceId),
+        value: cdktn.stringToHclTerraform(this._virtualInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

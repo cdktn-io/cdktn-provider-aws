@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayRestApiConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_rest_api#api_key_source ApiGatewayRestApi#api_key_source}
   */
@@ -31,11 +31,11 @@ export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_rest_api#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}
   */
-  readonly disableExecuteApiEndpoint?: boolean | cdktf.IResolvable;
+  readonly disableExecuteApiEndpoint?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}
   */
-  readonly failOnWarnings?: boolean | cdktf.IResolvable;
+  readonly failOnWarnings?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_rest_api#id ApiGatewayRestApi#id}
   *
@@ -100,38 +100,38 @@ export interface ApiGatewayRestApiEndpointConfiguration {
 }
 
 export function apiGatewayRestApiEndpointConfigurationToTerraform(struct?: ApiGatewayRestApiEndpointConfigurationOutputReference | ApiGatewayRestApiEndpointConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address_type: cdktf.stringToTerraform(struct!.ipAddressType),
-    types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.types),
-    vpc_endpoint_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpcEndpointIds),
+    ip_address_type: cdktn.stringToTerraform(struct!.ipAddressType),
+    types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.types),
+    vpc_endpoint_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.vpcEndpointIds),
   }
 }
 
 
 export function apiGatewayRestApiEndpointConfigurationToHclTerraform(struct?: ApiGatewayRestApiEndpointConfigurationOutputReference | ApiGatewayRestApiEndpointConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address_type: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddressType),
+      value: cdktn.stringToHclTerraform(struct!.ipAddressType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.types),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.types),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     vpc_endpoint_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpcEndpointIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.vpcEndpointIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -142,14 +142,14 @@ export function apiGatewayRestApiEndpointConfigurationToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiGatewayRestApiEndpointConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApiGatewayRestApiEndpointConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -218,7 +218,7 @@ export class ApiGatewayRestApiEndpointConfigurationOutputReference extends cdktf
   // vpc_endpoint_ids - computed: true, optional: true, required: false
   private _vpcEndpointIds?: string[]; 
   public get vpcEndpointIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_endpoint_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_endpoint_ids'));
   }
   public set vpcEndpointIds(value: string[]) {
     this._vpcEndpointIds = value;
@@ -235,7 +235,7 @@ export class ApiGatewayRestApiEndpointConfigurationOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api}
 */
-export class ApiGatewayRestApi extends cdktf.TerraformResource {
+export class ApiGatewayRestApi extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -246,14 +246,14 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayRestApi resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayRestApi resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayRestApi to import
   * @param importFromId The id of the existing ApiGatewayRestApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_rest_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayRestApi to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_rest_api", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_rest_api", importId: importFromId, provider });
       }
 
   // ===========
@@ -380,11 +380,11 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   }
 
   // disable_execute_api_endpoint - computed: true, optional: true, required: false
-  private _disableExecuteApiEndpoint?: boolean | cdktf.IResolvable; 
+  private _disableExecuteApiEndpoint?: boolean | cdktn.IResolvable; 
   public get disableExecuteApiEndpoint() {
     return this.getBooleanAttribute('disable_execute_api_endpoint');
   }
-  public set disableExecuteApiEndpoint(value: boolean | cdktf.IResolvable) {
+  public set disableExecuteApiEndpoint(value: boolean | cdktn.IResolvable) {
     this._disableExecuteApiEndpoint = value;
   }
   public resetDisableExecuteApiEndpoint() {
@@ -401,11 +401,11 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   }
 
   // fail_on_warnings - computed: false, optional: true, required: false
-  private _failOnWarnings?: boolean | cdktf.IResolvable; 
+  private _failOnWarnings?: boolean | cdktn.IResolvable; 
   public get failOnWarnings() {
     return this.getBooleanAttribute('fail_on_warnings');
   }
-  public set failOnWarnings(value: boolean | cdktf.IResolvable) {
+  public set failOnWarnings(value: boolean | cdktn.IResolvable) {
     this._failOnWarnings = value;
   }
   public resetFailOnWarnings() {
@@ -584,21 +584,21 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key_source: cdktf.stringToTerraform(this._apiKeySource),
-      binary_media_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._binaryMediaTypes),
-      body: cdktf.stringToTerraform(this._body),
-      description: cdktf.stringToTerraform(this._description),
-      disable_execute_api_endpoint: cdktf.booleanToTerraform(this._disableExecuteApiEndpoint),
-      fail_on_warnings: cdktf.booleanToTerraform(this._failOnWarnings),
-      id: cdktf.stringToTerraform(this._id),
-      minimum_compression_size: cdktf.stringToTerraform(this._minimumCompressionSize),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      policy: cdktf.stringToTerraform(this._policy),
-      put_rest_api_mode: cdktf.stringToTerraform(this._putRestApiMode),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      api_key_source: cdktn.stringToTerraform(this._apiKeySource),
+      binary_media_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._binaryMediaTypes),
+      body: cdktn.stringToTerraform(this._body),
+      description: cdktn.stringToTerraform(this._description),
+      disable_execute_api_endpoint: cdktn.booleanToTerraform(this._disableExecuteApiEndpoint),
+      fail_on_warnings: cdktn.booleanToTerraform(this._failOnWarnings),
+      id: cdktn.stringToTerraform(this._id),
+      minimum_compression_size: cdktn.stringToTerraform(this._minimumCompressionSize),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      policy: cdktn.stringToTerraform(this._policy),
+      put_rest_api_mode: cdktn.stringToTerraform(this._putRestApiMode),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       endpoint_configuration: apiGatewayRestApiEndpointConfigurationToTerraform(this._endpointConfiguration.internalValue),
     };
   }
@@ -606,91 +606,91 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_key_source: {
-        value: cdktf.stringToHclTerraform(this._apiKeySource),
+        value: cdktn.stringToHclTerraform(this._apiKeySource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       binary_media_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._binaryMediaTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._binaryMediaTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       body: {
-        value: cdktf.stringToHclTerraform(this._body),
+        value: cdktn.stringToHclTerraform(this._body),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_execute_api_endpoint: {
-        value: cdktf.booleanToHclTerraform(this._disableExecuteApiEndpoint),
+        value: cdktn.booleanToHclTerraform(this._disableExecuteApiEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       fail_on_warnings: {
-        value: cdktf.booleanToHclTerraform(this._failOnWarnings),
+        value: cdktn.booleanToHclTerraform(this._failOnWarnings),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       minimum_compression_size: {
-        value: cdktf.stringToHclTerraform(this._minimumCompressionSize),
+        value: cdktn.stringToHclTerraform(this._minimumCompressionSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       put_rest_api_mode: {
-        value: cdktf.stringToHclTerraform(this._putRestApiMode),
+        value: cdktn.stringToHclTerraform(this._putRestApiMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LbListenerCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface LbListenerCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_certificate#certificate_arn LbListenerCertificate#certificate_arn}
   */
@@ -38,7 +38,7 @@ export interface LbListenerCertificateConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_certificate aws_lb_listener_certificate}
 */
-export class LbListenerCertificate extends cdktf.TerraformResource {
+export class LbListenerCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class LbListenerCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LbListenerCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LbListenerCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbListenerCertificate to import
   * @param importFromId The id of the existing LbListenerCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbListenerCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lb_listener_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lb_listener_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class LbListenerCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
-      id: cdktf.stringToTerraform(this._id),
-      listener_arn: cdktf.stringToTerraform(this._listenerArn),
-      region: cdktf.stringToTerraform(this._region),
+      certificate_arn: cdktn.stringToTerraform(this._certificateArn),
+      id: cdktn.stringToTerraform(this._id),
+      listener_arn: cdktn.stringToTerraform(this._listenerArn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_arn: {
-        value: cdktf.stringToHclTerraform(this._certificateArn),
+        value: cdktn.stringToHclTerraform(this._certificateArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       listener_arn: {
-        value: cdktf.stringToHclTerraform(this._listenerArn),
+        value: cdktn.stringToHclTerraform(this._listenerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

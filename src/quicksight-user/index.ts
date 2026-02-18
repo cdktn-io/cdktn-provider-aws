@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightUserConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}
   */
@@ -62,7 +62,7 @@ export interface QuicksightUserConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_user aws_quicksight_user}
 */
-export class QuicksightUser extends cdktf.TerraformResource {
+export class QuicksightUser extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class QuicksightUser extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightUser to import
   * @param importFromId The id of the existing QuicksightUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -293,77 +293,77 @@ export class QuicksightUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      email: cdktf.stringToTerraform(this._email),
-      iam_arn: cdktf.stringToTerraform(this._iamArn),
-      id: cdktf.stringToTerraform(this._id),
-      identity_type: cdktf.stringToTerraform(this._identityType),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      region: cdktf.stringToTerraform(this._region),
-      session_name: cdktf.stringToTerraform(this._sessionName),
-      user_name: cdktf.stringToTerraform(this._userName),
-      user_role: cdktf.stringToTerraform(this._userRole),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      email: cdktn.stringToTerraform(this._email),
+      iam_arn: cdktn.stringToTerraform(this._iamArn),
+      id: cdktn.stringToTerraform(this._id),
+      identity_type: cdktn.stringToTerraform(this._identityType),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      region: cdktn.stringToTerraform(this._region),
+      session_name: cdktn.stringToTerraform(this._sessionName),
+      user_name: cdktn.stringToTerraform(this._userName),
+      user_role: cdktn.stringToTerraform(this._userRole),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_arn: {
-        value: cdktf.stringToHclTerraform(this._iamArn),
+        value: cdktn.stringToHclTerraform(this._iamArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_type: {
-        value: cdktf.stringToHclTerraform(this._identityType),
+        value: cdktn.stringToHclTerraform(this._identityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       session_name: {
-        value: cdktf.stringToHclTerraform(this._sessionName),
+        value: cdktn.stringToHclTerraform(this._sessionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_role: {
-        value: cdktf.stringToHclTerraform(this._userRole),
+        value: cdktn.stringToHclTerraform(this._userRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

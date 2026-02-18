@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsDbClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsDbClusterSnapshotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/db_cluster_snapshot#db_cluster_identifier DataAwsDbClusterSnapshot#db_cluster_identifier}
   */
@@ -30,15 +30,15 @@ export interface DataAwsDbClusterSnapshotConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/db_cluster_snapshot#include_public DataAwsDbClusterSnapshot#include_public}
   */
-  readonly includePublic?: boolean | cdktf.IResolvable;
+  readonly includePublic?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/db_cluster_snapshot#include_shared DataAwsDbClusterSnapshot#include_shared}
   */
-  readonly includeShared?: boolean | cdktf.IResolvable;
+  readonly includeShared?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/db_cluster_snapshot#most_recent DataAwsDbClusterSnapshot#most_recent}
   */
-  readonly mostRecent?: boolean | cdktf.IResolvable;
+  readonly mostRecent?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -58,7 +58,7 @@ export interface DataAwsDbClusterSnapshotConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/db_cluster_snapshot aws_db_cluster_snapshot}
 */
-export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
+export class DataAwsDbClusterSnapshot extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -69,14 +69,14 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsDbClusterSnapshot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsDbClusterSnapshot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDbClusterSnapshot to import
   * @param importFromId The id of the existing DataAwsDbClusterSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/db_cluster_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDbClusterSnapshot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_cluster_snapshot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_cluster_snapshot", importId: importFromId, provider });
       }
 
   // ===========
@@ -195,11 +195,11 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   }
 
   // include_public - computed: false, optional: true, required: false
-  private _includePublic?: boolean | cdktf.IResolvable; 
+  private _includePublic?: boolean | cdktn.IResolvable; 
   public get includePublic() {
     return this.getBooleanAttribute('include_public');
   }
-  public set includePublic(value: boolean | cdktf.IResolvable) {
+  public set includePublic(value: boolean | cdktn.IResolvable) {
     this._includePublic = value;
   }
   public resetIncludePublic() {
@@ -211,11 +211,11 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   }
 
   // include_shared - computed: false, optional: true, required: false
-  private _includeShared?: boolean | cdktf.IResolvable; 
+  private _includeShared?: boolean | cdktn.IResolvable; 
   public get includeShared() {
     return this.getBooleanAttribute('include_shared');
   }
-  public set includeShared(value: boolean | cdktf.IResolvable) {
+  public set includeShared(value: boolean | cdktn.IResolvable) {
     this._includeShared = value;
   }
   public resetIncludeShared() {
@@ -237,11 +237,11 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean | cdktf.IResolvable; 
+  private _mostRecent?: boolean | cdktn.IResolvable; 
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | cdktf.IResolvable) {
+  public set mostRecent(value: boolean | cdktn.IResolvable) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -336,70 +336,70 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
-      db_cluster_snapshot_identifier: cdktf.stringToTerraform(this._dbClusterSnapshotIdentifier),
-      id: cdktf.stringToTerraform(this._id),
-      include_public: cdktf.booleanToTerraform(this._includePublic),
-      include_shared: cdktf.booleanToTerraform(this._includeShared),
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      region: cdktf.stringToTerraform(this._region),
-      snapshot_type: cdktf.stringToTerraform(this._snapshotType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      db_cluster_identifier: cdktn.stringToTerraform(this._dbClusterIdentifier),
+      db_cluster_snapshot_identifier: cdktn.stringToTerraform(this._dbClusterSnapshotIdentifier),
+      id: cdktn.stringToTerraform(this._id),
+      include_public: cdktn.booleanToTerraform(this._includePublic),
+      include_shared: cdktn.booleanToTerraform(this._includeShared),
+      most_recent: cdktn.booleanToTerraform(this._mostRecent),
+      region: cdktn.stringToTerraform(this._region),
+      snapshot_type: cdktn.stringToTerraform(this._snapshotType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       db_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_cluster_snapshot_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbClusterSnapshotIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbClusterSnapshotIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_public: {
-        value: cdktf.booleanToHclTerraform(this._includePublic),
+        value: cdktn.booleanToHclTerraform(this._includePublic),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       include_shared: {
-        value: cdktf.booleanToHclTerraform(this._includeShared),
+        value: cdktn.booleanToHclTerraform(this._includeShared),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       most_recent: {
-        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        value: cdktn.booleanToHclTerraform(this._mostRecent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snapshot_type: {
-        value: cdktf.stringToHclTerraform(this._snapshotType),
+        value: cdktn.stringToHclTerraform(this._snapshotType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

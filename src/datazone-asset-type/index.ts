@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatazoneAssetTypeConfig extends cdktf.TerraformMetaArguments {
+export interface DatazoneAssetTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_asset_type#description DatazoneAssetType#description}
   */
@@ -39,7 +39,7 @@ export interface DatazoneAssetTypeConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_asset_type#forms_input DatazoneAssetType#forms_input}
   */
-  readonly formsInput?: DatazoneAssetTypeFormsInput[] | cdktf.IResolvable;
+  readonly formsInput?: DatazoneAssetTypeFormsInput[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -55,7 +55,7 @@ export interface DatazoneAssetTypeFormsInput {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_asset_type#required DatazoneAssetType#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}
   */
@@ -66,46 +66,46 @@ export interface DatazoneAssetTypeFormsInput {
   readonly typeRevision: string;
 }
 
-export function datazoneAssetTypeFormsInputToTerraform(struct?: DatazoneAssetTypeFormsInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneAssetTypeFormsInputToTerraform(struct?: DatazoneAssetTypeFormsInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    map_block_key: cdktf.stringToTerraform(struct!.mapBlockKey),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type_identifier: cdktf.stringToTerraform(struct!.typeIdentifier),
-    type_revision: cdktf.stringToTerraform(struct!.typeRevision),
+    map_block_key: cdktn.stringToTerraform(struct!.mapBlockKey),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type_identifier: cdktn.stringToTerraform(struct!.typeIdentifier),
+    type_revision: cdktn.stringToTerraform(struct!.typeRevision),
   }
 }
 
 
-export function datazoneAssetTypeFormsInputToHclTerraform(struct?: DatazoneAssetTypeFormsInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneAssetTypeFormsInputToHclTerraform(struct?: DatazoneAssetTypeFormsInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     map_block_key: {
-      value: cdktf.stringToHclTerraform(struct!.mapBlockKey),
+      value: cdktn.stringToHclTerraform(struct!.mapBlockKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.typeIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.typeIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type_revision: {
-      value: cdktf.stringToHclTerraform(struct!.typeRevision),
+      value: cdktn.stringToHclTerraform(struct!.typeRevision),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,9 +116,9 @@ export function datazoneAssetTypeFormsInputToHclTerraform(struct?: DatazoneAsset
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneAssetTypeFormsInputOutputReference extends cdktf.ComplexObject {
+export class DatazoneAssetTypeFormsInputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -126,11 +126,11 @@ export class DatazoneAssetTypeFormsInputOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatazoneAssetTypeFormsInput | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneAssetTypeFormsInput | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -155,7 +155,7 @@ export class DatazoneAssetTypeFormsInputOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneAssetTypeFormsInput | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneAssetTypeFormsInput | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -164,7 +164,7 @@ export class DatazoneAssetTypeFormsInputOutputReference extends cdktf.ComplexObj
       this._typeIdentifier = undefined;
       this._typeRevision = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -192,11 +192,11 @@ export class DatazoneAssetTypeFormsInputOutputReference extends cdktf.ComplexObj
   }
 
   // required - computed: false, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -234,15 +234,15 @@ export class DatazoneAssetTypeFormsInputOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class DatazoneAssetTypeFormsInputList extends cdktf.ComplexList {
-  public internalValue? : DatazoneAssetTypeFormsInput[] | cdktf.IResolvable
+export class DatazoneAssetTypeFormsInputList extends cdktn.ComplexList {
+  public internalValue? : DatazoneAssetTypeFormsInput[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -262,25 +262,25 @@ export interface DatazoneAssetTypeTimeouts {
   readonly create?: string;
 }
 
-export function datazoneAssetTypeTimeoutsToTerraform(struct?: DatazoneAssetTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneAssetTypeTimeoutsToTerraform(struct?: DatazoneAssetTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function datazoneAssetTypeTimeoutsToHclTerraform(struct?: DatazoneAssetTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneAssetTypeTimeoutsToHclTerraform(struct?: DatazoneAssetTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -291,19 +291,19 @@ export function datazoneAssetTypeTimeoutsToHclTerraform(struct?: DatazoneAssetTy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneAssetTypeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatazoneAssetTypeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatazoneAssetTypeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneAssetTypeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -316,13 +316,13 @@ export class DatazoneAssetTypeTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneAssetTypeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneAssetTypeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -353,7 +353,7 @@ export class DatazoneAssetTypeTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_asset_type aws_datazone_asset_type}
 */
-export class DatazoneAssetType extends cdktf.TerraformResource {
+export class DatazoneAssetType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -364,14 +364,14 @@ export class DatazoneAssetType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatazoneAssetType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatazoneAssetType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneAssetType to import
   * @param importFromId The id of the existing DatazoneAssetType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_asset_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneAssetType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_asset_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_asset_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -505,7 +505,7 @@ export class DatazoneAssetType extends cdktf.TerraformResource {
   public get formsInput() {
     return this._formsInput;
   }
-  public putFormsInput(value: DatazoneAssetTypeFormsInput[] | cdktf.IResolvable) {
+  public putFormsInput(value: DatazoneAssetTypeFormsInput[] | cdktn.IResolvable) {
     this._formsInput.internalValue = value;
   }
   public resetFormsInput() {
@@ -538,12 +538,12 @@ export class DatazoneAssetType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      domain_identifier: cdktf.stringToTerraform(this._domainIdentifier),
-      name: cdktf.stringToTerraform(this._name),
-      owning_project_identifier: cdktf.stringToTerraform(this._owningProjectIdentifier),
-      region: cdktf.stringToTerraform(this._region),
-      forms_input: cdktf.listMapper(datazoneAssetTypeFormsInputToTerraform, true)(this._formsInput.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      domain_identifier: cdktn.stringToTerraform(this._domainIdentifier),
+      name: cdktn.stringToTerraform(this._name),
+      owning_project_identifier: cdktn.stringToTerraform(this._owningProjectIdentifier),
+      region: cdktn.stringToTerraform(this._region),
+      forms_input: cdktn.listMapper(datazoneAssetTypeFormsInputToTerraform, true)(this._formsInput.internalValue),
       timeouts: datazoneAssetTypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -551,37 +551,37 @@ export class DatazoneAssetType extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_identifier: {
-        value: cdktf.stringToHclTerraform(this._domainIdentifier),
+        value: cdktn.stringToHclTerraform(this._domainIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owning_project_identifier: {
-        value: cdktf.stringToHclTerraform(this._owningProjectIdentifier),
+        value: cdktn.stringToHclTerraform(this._owningProjectIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       forms_input: {
-        value: cdktf.listMapperHcl(datazoneAssetTypeFormsInputToHclTerraform, true)(this._formsInput.internalValue),
+        value: cdktn.listMapperHcl(datazoneAssetTypeFormsInputToHclTerraform, true)(this._formsInput.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DatazoneAssetTypeFormsInputList",

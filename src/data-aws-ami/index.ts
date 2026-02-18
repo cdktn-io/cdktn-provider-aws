@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAmiConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami#allow_unsafe_filter DataAwsAmi#allow_unsafe_filter}
   */
-  readonly allowUnsafeFilter?: boolean | cdktf.IResolvable;
+  readonly allowUnsafeFilter?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami#executable_users DataAwsAmi#executable_users}
   */
@@ -30,11 +30,11 @@ export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami#include_deprecated DataAwsAmi#include_deprecated}
   */
-  readonly includeDeprecated?: boolean | cdktf.IResolvable;
+  readonly includeDeprecated?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami#most_recent DataAwsAmi#most_recent}
   */
-  readonly mostRecent?: boolean | cdktf.IResolvable;
+  readonly mostRecent?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami#name_regex DataAwsAmi#name_regex}
   */
@@ -62,7 +62,7 @@ export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami#filter DataAwsAmi#filter}
   */
-  readonly filter?: DataAwsAmiFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsAmiFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -74,8 +74,8 @@ export interface DataAwsAmiBlockDeviceMappings {
 }
 
 export function dataAwsAmiBlockDeviceMappingsToTerraform(struct?: DataAwsAmiBlockDeviceMappings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -84,8 +84,8 @@ export function dataAwsAmiBlockDeviceMappingsToTerraform(struct?: DataAwsAmiBloc
 
 
 export function dataAwsAmiBlockDeviceMappingsToHclTerraform(struct?: DataAwsAmiBlockDeviceMappings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -93,7 +93,7 @@ export function dataAwsAmiBlockDeviceMappingsToHclTerraform(struct?: DataAwsAmiB
   return attrs;
 }
 
-export class DataAwsAmiBlockDeviceMappingsOutputReference extends cdktf.ComplexObject {
+export class DataAwsAmiBlockDeviceMappingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -102,7 +102,7 @@ export class DataAwsAmiBlockDeviceMappingsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -127,7 +127,7 @@ export class DataAwsAmiBlockDeviceMappingsOutputReference extends cdktf.ComplexO
   }
 
   // ebs - computed: true, optional: false, required: false
-  private _ebs = new cdktf.StringMap(this, "ebs");
+  private _ebs = new cdktn.StringMap(this, "ebs");
   public get ebs() {
     return this._ebs;
   }
@@ -143,14 +143,14 @@ export class DataAwsAmiBlockDeviceMappingsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DataAwsAmiBlockDeviceMappingsList extends cdktf.ComplexList {
+export class DataAwsAmiBlockDeviceMappingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -165,8 +165,8 @@ export interface DataAwsAmiProductCodes {
 }
 
 export function dataAwsAmiProductCodesToTerraform(struct?: DataAwsAmiProductCodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -175,8 +175,8 @@ export function dataAwsAmiProductCodesToTerraform(struct?: DataAwsAmiProductCode
 
 
 export function dataAwsAmiProductCodesToHclTerraform(struct?: DataAwsAmiProductCodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -184,7 +184,7 @@ export function dataAwsAmiProductCodesToHclTerraform(struct?: DataAwsAmiProductC
   return attrs;
 }
 
-export class DataAwsAmiProductCodesOutputReference extends cdktf.ComplexObject {
+export class DataAwsAmiProductCodesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -193,7 +193,7 @@ export class DataAwsAmiProductCodesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -223,14 +223,14 @@ export class DataAwsAmiProductCodesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAwsAmiProductCodesList extends cdktf.ComplexList {
+export class DataAwsAmiProductCodesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -252,32 +252,32 @@ export interface DataAwsAmiFilter {
   readonly values: string[];
 }
 
-export function dataAwsAmiFilterToTerraform(struct?: DataAwsAmiFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAmiFilterToTerraform(struct?: DataAwsAmiFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsAmiFilterToHclTerraform(struct?: DataAwsAmiFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAmiFilterToHclTerraform(struct?: DataAwsAmiFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -288,9 +288,9 @@ export function dataAwsAmiFilterToHclTerraform(struct?: DataAwsAmiFilter | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsAmiFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsAmiFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -298,11 +298,11 @@ export class DataAwsAmiFilterOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAmiFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsAmiFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -319,14 +319,14 @@ export class DataAwsAmiFilterOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAmiFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAmiFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -354,7 +354,7 @@ export class DataAwsAmiFilterOutputReference extends cdktf.ComplexObject {
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -365,15 +365,15 @@ export class DataAwsAmiFilterOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAwsAmiFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAmiFilter[] | cdktf.IResolvable
+export class DataAwsAmiFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsAmiFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -391,25 +391,25 @@ export interface DataAwsAmiTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsAmiTimeoutsToTerraform(struct?: DataAwsAmiTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAmiTimeoutsToTerraform(struct?: DataAwsAmiTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsAmiTimeoutsToHclTerraform(struct?: DataAwsAmiTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAmiTimeoutsToHclTerraform(struct?: DataAwsAmiTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -420,19 +420,19 @@ export function dataAwsAmiTimeoutsToHclTerraform(struct?: DataAwsAmiTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsAmiTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsAmiTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsAmiTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsAmiTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -445,13 +445,13 @@ export class DataAwsAmiTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAmiTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAmiTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -482,7 +482,7 @@ export class DataAwsAmiTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami aws_ami}
 */
-export class DataAwsAmi extends cdktf.TerraformDataSource {
+export class DataAwsAmi extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -493,14 +493,14 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsAmi resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsAmi resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAmi to import
   * @param importFromId The id of the existing DataAwsAmi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ami#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAmi to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ami", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ami", importId: importFromId, provider });
       }
 
   // ===========
@@ -549,11 +549,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // ==========
 
   // allow_unsafe_filter - computed: false, optional: true, required: false
-  private _allowUnsafeFilter?: boolean | cdktf.IResolvable; 
+  private _allowUnsafeFilter?: boolean | cdktn.IResolvable; 
   public get allowUnsafeFilter() {
     return this.getBooleanAttribute('allow_unsafe_filter');
   }
-  public set allowUnsafeFilter(value: boolean | cdktf.IResolvable) {
+  public set allowUnsafeFilter(value: boolean | cdktn.IResolvable) {
     this._allowUnsafeFilter = value;
   }
   public resetAllowUnsafeFilter() {
@@ -668,11 +668,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   }
 
   // include_deprecated - computed: false, optional: true, required: false
-  private _includeDeprecated?: boolean | cdktf.IResolvable; 
+  private _includeDeprecated?: boolean | cdktn.IResolvable; 
   public get includeDeprecated() {
     return this.getBooleanAttribute('include_deprecated');
   }
-  public set includeDeprecated(value: boolean | cdktf.IResolvable) {
+  public set includeDeprecated(value: boolean | cdktn.IResolvable) {
     this._includeDeprecated = value;
   }
   public resetIncludeDeprecated() {
@@ -694,11 +694,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean | cdktf.IResolvable; 
+  private _mostRecent?: boolean | cdktn.IResolvable; 
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | cdktf.IResolvable) {
+  public set mostRecent(value: boolean | cdktn.IResolvable) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -819,7 +819,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   }
 
   // state_reason - computed: true, optional: false, required: false
-  private _stateReason = new cdktf.StringMap(this, "state_reason");
+  private _stateReason = new cdktn.StringMap(this, "state_reason");
   public get stateReason() {
     return this._stateReason;
   }
@@ -876,7 +876,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsAmiFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsAmiFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -909,17 +909,17 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_unsafe_filter: cdktf.booleanToTerraform(this._allowUnsafeFilter),
-      executable_users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._executableUsers),
-      id: cdktf.stringToTerraform(this._id),
-      include_deprecated: cdktf.booleanToTerraform(this._includeDeprecated),
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      name_regex: cdktf.stringToTerraform(this._nameRegex),
-      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      uefi_data: cdktf.stringToTerraform(this._uefiData),
-      filter: cdktf.listMapper(dataAwsAmiFilterToTerraform, true)(this._filter.internalValue),
+      allow_unsafe_filter: cdktn.booleanToTerraform(this._allowUnsafeFilter),
+      executable_users: cdktn.listMapper(cdktn.stringToTerraform, false)(this._executableUsers),
+      id: cdktn.stringToTerraform(this._id),
+      include_deprecated: cdktn.booleanToTerraform(this._includeDeprecated),
+      most_recent: cdktn.booleanToTerraform(this._mostRecent),
+      name_regex: cdktn.stringToTerraform(this._nameRegex),
+      owners: cdktn.listMapper(cdktn.stringToTerraform, false)(this._owners),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      uefi_data: cdktn.stringToTerraform(this._uefiData),
+      filter: cdktn.listMapper(dataAwsAmiFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsAmiTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -927,67 +927,67 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_unsafe_filter: {
-        value: cdktf.booleanToHclTerraform(this._allowUnsafeFilter),
+        value: cdktn.booleanToHclTerraform(this._allowUnsafeFilter),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       executable_users: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._executableUsers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._executableUsers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_deprecated: {
-        value: cdktf.booleanToHclTerraform(this._includeDeprecated),
+        value: cdktn.booleanToHclTerraform(this._includeDeprecated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       most_recent: {
-        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        value: cdktn.booleanToHclTerraform(this._mostRecent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name_regex: {
-        value: cdktf.stringToHclTerraform(this._nameRegex),
+        value: cdktn.stringToHclTerraform(this._nameRegex),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owners: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._owners),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       uefi_data: {
-        value: cdktf.stringToHclTerraform(this._uefiData),
+        value: cdktn.stringToHclTerraform(this._uefiData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsAmiFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsAmiFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsAmiFilterList",

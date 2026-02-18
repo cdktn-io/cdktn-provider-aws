@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IvsRecordingConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface IvsRecordingConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ivs_recording_configuration#id IvsRecordingConfiguration#id}
   *
@@ -68,24 +68,24 @@ export interface IvsRecordingConfigurationDestinationConfigurationS3 {
 }
 
 export function ivsRecordingConfigurationDestinationConfigurationS3ToTerraform(struct?: IvsRecordingConfigurationDestinationConfigurationS3OutputReference | IvsRecordingConfigurationDestinationConfigurationS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
   }
 }
 
 
 export function ivsRecordingConfigurationDestinationConfigurationS3ToHclTerraform(struct?: IvsRecordingConfigurationDestinationConfigurationS3OutputReference | IvsRecordingConfigurationDestinationConfigurationS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -96,14 +96,14 @@ export function ivsRecordingConfigurationDestinationConfigurationS3ToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvsRecordingConfigurationDestinationConfigurationS3OutputReference extends cdktf.ComplexObject {
+export class IvsRecordingConfigurationDestinationConfigurationS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -151,8 +151,8 @@ export interface IvsRecordingConfigurationDestinationConfiguration {
 }
 
 export function ivsRecordingConfigurationDestinationConfigurationToTerraform(struct?: IvsRecordingConfigurationDestinationConfigurationOutputReference | IvsRecordingConfigurationDestinationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -162,8 +162,8 @@ export function ivsRecordingConfigurationDestinationConfigurationToTerraform(str
 
 
 export function ivsRecordingConfigurationDestinationConfigurationToHclTerraform(struct?: IvsRecordingConfigurationDestinationConfigurationOutputReference | IvsRecordingConfigurationDestinationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -179,14 +179,14 @@ export function ivsRecordingConfigurationDestinationConfigurationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvsRecordingConfigurationDestinationConfigurationOutputReference extends cdktf.ComplexObject {
+export class IvsRecordingConfigurationDestinationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -236,31 +236,31 @@ export interface IvsRecordingConfigurationThumbnailConfiguration {
 }
 
 export function ivsRecordingConfigurationThumbnailConfigurationToTerraform(struct?: IvsRecordingConfigurationThumbnailConfigurationOutputReference | IvsRecordingConfigurationThumbnailConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    recording_mode: cdktf.stringToTerraform(struct!.recordingMode),
-    target_interval_seconds: cdktf.numberToTerraform(struct!.targetIntervalSeconds),
+    recording_mode: cdktn.stringToTerraform(struct!.recordingMode),
+    target_interval_seconds: cdktn.numberToTerraform(struct!.targetIntervalSeconds),
   }
 }
 
 
 export function ivsRecordingConfigurationThumbnailConfigurationToHclTerraform(struct?: IvsRecordingConfigurationThumbnailConfigurationOutputReference | IvsRecordingConfigurationThumbnailConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     recording_mode: {
-      value: cdktf.stringToHclTerraform(struct!.recordingMode),
+      value: cdktn.stringToHclTerraform(struct!.recordingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_interval_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.targetIntervalSeconds),
+      value: cdktn.numberToHclTerraform(struct!.targetIntervalSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -271,14 +271,14 @@ export function ivsRecordingConfigurationThumbnailConfigurationToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvsRecordingConfigurationThumbnailConfigurationOutputReference extends cdktf.ComplexObject {
+export class IvsRecordingConfigurationThumbnailConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -352,32 +352,32 @@ export interface IvsRecordingConfigurationTimeouts {
   readonly delete?: string;
 }
 
-export function ivsRecordingConfigurationTimeoutsToTerraform(struct?: IvsRecordingConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ivsRecordingConfigurationTimeoutsToTerraform(struct?: IvsRecordingConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ivsRecordingConfigurationTimeoutsToHclTerraform(struct?: IvsRecordingConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ivsRecordingConfigurationTimeoutsToHclTerraform(struct?: IvsRecordingConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -388,19 +388,19 @@ export function ivsRecordingConfigurationTimeoutsToHclTerraform(struct?: IvsReco
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvsRecordingConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IvsRecordingConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IvsRecordingConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IvsRecordingConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -417,14 +417,14 @@ export class IvsRecordingConfigurationTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IvsRecordingConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IvsRecordingConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -472,7 +472,7 @@ export class IvsRecordingConfigurationTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ivs_recording_configuration aws_ivs_recording_configuration}
 */
-export class IvsRecordingConfiguration extends cdktf.TerraformResource {
+export class IvsRecordingConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -483,14 +483,14 @@ export class IvsRecordingConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IvsRecordingConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IvsRecordingConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IvsRecordingConfiguration to import
   * @param importFromId The id of the existing IvsRecordingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ivs_recording_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IvsRecordingConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ivs_recording_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ivs_recording_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -692,12 +692,12 @@ export class IvsRecordingConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recording_reconnect_window_seconds: cdktf.numberToTerraform(this._recordingReconnectWindowSeconds),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recording_reconnect_window_seconds: cdktn.numberToTerraform(this._recordingReconnectWindowSeconds),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       destination_configuration: ivsRecordingConfigurationDestinationConfigurationToTerraform(this._destinationConfiguration.internalValue),
       thumbnail_configuration: ivsRecordingConfigurationThumbnailConfigurationToTerraform(this._thumbnailConfiguration.internalValue),
       timeouts: ivsRecordingConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
@@ -707,37 +707,37 @@ export class IvsRecordingConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recording_reconnect_window_seconds: {
-        value: cdktf.numberToHclTerraform(this._recordingReconnectWindowSeconds),
+        value: cdktn.numberToHclTerraform(this._recordingReconnectWindowSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

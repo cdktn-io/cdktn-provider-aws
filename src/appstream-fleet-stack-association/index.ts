@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppstreamFleetStackAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface AppstreamFleetStackAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_fleet_stack_association#fleet_name AppstreamFleetStackAssociation#fleet_name}
   */
@@ -38,7 +38,7 @@ export interface AppstreamFleetStackAssociationConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_fleet_stack_association aws_appstream_fleet_stack_association}
 */
-export class AppstreamFleetStackAssociation extends cdktf.TerraformResource {
+export class AppstreamFleetStackAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class AppstreamFleetStackAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppstreamFleetStackAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppstreamFleetStackAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppstreamFleetStackAssociation to import
   * @param importFromId The id of the existing AppstreamFleetStackAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_fleet_stack_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppstreamFleetStackAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_fleet_stack_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_fleet_stack_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class AppstreamFleetStackAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      fleet_name: cdktf.stringToTerraform(this._fleetName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      stack_name: cdktf.stringToTerraform(this._stackName),
+      fleet_name: cdktn.stringToTerraform(this._fleetName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      stack_name: cdktn.stringToTerraform(this._stackName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       fleet_name: {
-        value: cdktf.stringToHclTerraform(this._fleetName),
+        value: cdktn.stringToHclTerraform(this._fleetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stack_name: {
-        value: cdktf.stringToHclTerraform(this._stackName),
+        value: cdktn.stringToHclTerraform(this._stackName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

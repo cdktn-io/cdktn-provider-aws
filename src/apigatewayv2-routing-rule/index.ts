@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Apigatewayv2RoutingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2RoutingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule#domain_name Apigatewayv2RoutingRule#domain_name}
   */
@@ -31,13 +31,13 @@ export interface Apigatewayv2RoutingRuleConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule#action Apigatewayv2RoutingRule#action}
   */
-  readonly action?: Apigatewayv2RoutingRuleAction[] | cdktf.IResolvable;
+  readonly action?: Apigatewayv2RoutingRuleAction[] | cdktn.IResolvable;
   /**
   * condition block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule#condition Apigatewayv2RoutingRule#condition}
   */
-  readonly condition?: Apigatewayv2RoutingRuleCondition[] | cdktf.IResolvable;
+  readonly condition?: Apigatewayv2RoutingRuleCondition[] | cdktn.IResolvable;
 }
 export interface Apigatewayv2RoutingRuleActionInvokeApi {
   /**
@@ -51,42 +51,42 @@ export interface Apigatewayv2RoutingRuleActionInvokeApi {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule#strip_base_path Apigatewayv2RoutingRule#strip_base_path}
   */
-  readonly stripBasePath?: boolean | cdktf.IResolvable;
+  readonly stripBasePath?: boolean | cdktn.IResolvable;
 }
 
-export function apigatewayv2RoutingRuleActionInvokeApiToTerraform(struct?: Apigatewayv2RoutingRuleActionInvokeApi | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleActionInvokeApiToTerraform(struct?: Apigatewayv2RoutingRuleActionInvokeApi | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_id: cdktf.stringToTerraform(struct!.apiId),
-    stage: cdktf.stringToTerraform(struct!.stage),
-    strip_base_path: cdktf.booleanToTerraform(struct!.stripBasePath),
+    api_id: cdktn.stringToTerraform(struct!.apiId),
+    stage: cdktn.stringToTerraform(struct!.stage),
+    strip_base_path: cdktn.booleanToTerraform(struct!.stripBasePath),
   }
 }
 
 
-export function apigatewayv2RoutingRuleActionInvokeApiToHclTerraform(struct?: Apigatewayv2RoutingRuleActionInvokeApi | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleActionInvokeApiToHclTerraform(struct?: Apigatewayv2RoutingRuleActionInvokeApi | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_id: {
-      value: cdktf.stringToHclTerraform(struct!.apiId),
+      value: cdktn.stringToHclTerraform(struct!.apiId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage: {
-      value: cdktf.stringToHclTerraform(struct!.stage),
+      value: cdktn.stringToHclTerraform(struct!.stage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     strip_base_path: {
-      value: cdktf.booleanToHclTerraform(struct!.stripBasePath),
+      value: cdktn.booleanToHclTerraform(struct!.stripBasePath),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -97,9 +97,9 @@ export function apigatewayv2RoutingRuleActionInvokeApiToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2RoutingRuleActionInvokeApiOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2RoutingRuleActionInvokeApiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -107,11 +107,11 @@ export class Apigatewayv2RoutingRuleActionInvokeApiOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Apigatewayv2RoutingRuleActionInvokeApi | cdktf.IResolvable | undefined {
+  public get internalValue(): Apigatewayv2RoutingRuleActionInvokeApi | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,7 +132,7 @@ export class Apigatewayv2RoutingRuleActionInvokeApiOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Apigatewayv2RoutingRuleActionInvokeApi | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Apigatewayv2RoutingRuleActionInvokeApi | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -140,7 +140,7 @@ export class Apigatewayv2RoutingRuleActionInvokeApiOutputReference extends cdktf
       this._stage = undefined;
       this._stripBasePath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,11 +180,11 @@ export class Apigatewayv2RoutingRuleActionInvokeApiOutputReference extends cdktf
   }
 
   // strip_base_path - computed: false, optional: true, required: false
-  private _stripBasePath?: boolean | cdktf.IResolvable; 
+  private _stripBasePath?: boolean | cdktn.IResolvable; 
   public get stripBasePath() {
     return this.getBooleanAttribute('strip_base_path');
   }
-  public set stripBasePath(value: boolean | cdktf.IResolvable) {
+  public set stripBasePath(value: boolean | cdktn.IResolvable) {
     this._stripBasePath = value;
   }
   public resetStripBasePath() {
@@ -196,15 +196,15 @@ export class Apigatewayv2RoutingRuleActionInvokeApiOutputReference extends cdktf
   }
 }
 
-export class Apigatewayv2RoutingRuleActionInvokeApiList extends cdktf.ComplexList {
-  public internalValue? : Apigatewayv2RoutingRuleActionInvokeApi[] | cdktf.IResolvable
+export class Apigatewayv2RoutingRuleActionInvokeApiList extends cdktn.ComplexList {
+  public internalValue? : Apigatewayv2RoutingRuleActionInvokeApi[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -221,28 +221,28 @@ export interface Apigatewayv2RoutingRuleAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule#invoke_api Apigatewayv2RoutingRule#invoke_api}
   */
-  readonly invokeApi?: Apigatewayv2RoutingRuleActionInvokeApi[] | cdktf.IResolvable;
+  readonly invokeApi?: Apigatewayv2RoutingRuleActionInvokeApi[] | cdktn.IResolvable;
 }
 
-export function apigatewayv2RoutingRuleActionToTerraform(struct?: Apigatewayv2RoutingRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleActionToTerraform(struct?: Apigatewayv2RoutingRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    invoke_api: cdktf.listMapper(apigatewayv2RoutingRuleActionInvokeApiToTerraform, true)(struct!.invokeApi),
+    invoke_api: cdktn.listMapper(apigatewayv2RoutingRuleActionInvokeApiToTerraform, true)(struct!.invokeApi),
   }
 }
 
 
-export function apigatewayv2RoutingRuleActionToHclTerraform(struct?: Apigatewayv2RoutingRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleActionToHclTerraform(struct?: Apigatewayv2RoutingRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     invoke_api: {
-      value: cdktf.listMapperHcl(apigatewayv2RoutingRuleActionInvokeApiToHclTerraform, true)(struct!.invokeApi),
+      value: cdktn.listMapperHcl(apigatewayv2RoutingRuleActionInvokeApiToHclTerraform, true)(struct!.invokeApi),
       isBlock: true,
       type: "list",
       storageClassType: "Apigatewayv2RoutingRuleActionInvokeApiList",
@@ -253,9 +253,9 @@ export function apigatewayv2RoutingRuleActionToHclTerraform(struct?: Apigatewayv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2RoutingRuleActionOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2RoutingRuleActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -263,11 +263,11 @@ export class Apigatewayv2RoutingRuleActionOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Apigatewayv2RoutingRuleAction | cdktf.IResolvable | undefined {
+  public get internalValue(): Apigatewayv2RoutingRuleAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -280,13 +280,13 @@ export class Apigatewayv2RoutingRuleActionOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Apigatewayv2RoutingRuleAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Apigatewayv2RoutingRuleAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._invokeApi.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -302,7 +302,7 @@ export class Apigatewayv2RoutingRuleActionOutputReference extends cdktf.ComplexO
   public get invokeApi() {
     return this._invokeApi;
   }
-  public putInvokeApi(value: Apigatewayv2RoutingRuleActionInvokeApi[] | cdktf.IResolvable) {
+  public putInvokeApi(value: Apigatewayv2RoutingRuleActionInvokeApi[] | cdktn.IResolvable) {
     this._invokeApi.internalValue = value;
   }
   public resetInvokeApi() {
@@ -314,15 +314,15 @@ export class Apigatewayv2RoutingRuleActionOutputReference extends cdktf.ComplexO
   }
 }
 
-export class Apigatewayv2RoutingRuleActionList extends cdktf.ComplexList {
-  public internalValue? : Apigatewayv2RoutingRuleAction[] | cdktf.IResolvable
+export class Apigatewayv2RoutingRuleActionList extends cdktn.ComplexList {
+  public internalValue? : Apigatewayv2RoutingRuleAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -340,25 +340,25 @@ export interface Apigatewayv2RoutingRuleConditionMatchBasePaths {
   readonly anyOf: string[];
 }
 
-export function apigatewayv2RoutingRuleConditionMatchBasePathsToTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchBasePaths | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleConditionMatchBasePathsToTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchBasePaths | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    any_of: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.anyOf),
+    any_of: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.anyOf),
   }
 }
 
 
-export function apigatewayv2RoutingRuleConditionMatchBasePathsToHclTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchBasePaths | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleConditionMatchBasePathsToHclTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchBasePaths | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     any_of: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.anyOf),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.anyOf),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -369,9 +369,9 @@ export function apigatewayv2RoutingRuleConditionMatchBasePathsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2RoutingRuleConditionMatchBasePathsOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2RoutingRuleConditionMatchBasePathsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -379,11 +379,11 @@ export class Apigatewayv2RoutingRuleConditionMatchBasePathsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Apigatewayv2RoutingRuleConditionMatchBasePaths | cdktf.IResolvable | undefined {
+  public get internalValue(): Apigatewayv2RoutingRuleConditionMatchBasePaths | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -396,13 +396,13 @@ export class Apigatewayv2RoutingRuleConditionMatchBasePathsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Apigatewayv2RoutingRuleConditionMatchBasePaths | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Apigatewayv2RoutingRuleConditionMatchBasePaths | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._anyOf = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -416,7 +416,7 @@ export class Apigatewayv2RoutingRuleConditionMatchBasePathsOutputReference exten
   // any_of - computed: false, optional: false, required: true
   private _anyOf?: string[]; 
   public get anyOf() {
-    return cdktf.Fn.tolist(this.getListAttribute('any_of'));
+    return cdktn.Fn.tolist(this.getListAttribute('any_of'));
   }
   public set anyOf(value: string[]) {
     this._anyOf = value;
@@ -427,15 +427,15 @@ export class Apigatewayv2RoutingRuleConditionMatchBasePathsOutputReference exten
   }
 }
 
-export class Apigatewayv2RoutingRuleConditionMatchBasePathsList extends cdktf.ComplexList {
-  public internalValue? : Apigatewayv2RoutingRuleConditionMatchBasePaths[] | cdktf.IResolvable
+export class Apigatewayv2RoutingRuleConditionMatchBasePathsList extends cdktn.ComplexList {
+  public internalValue? : Apigatewayv2RoutingRuleConditionMatchBasePaths[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -457,32 +457,32 @@ export interface Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf {
   readonly valueGlob: string;
 }
 
-export function apigatewayv2RoutingRuleConditionMatchHeadersAnyOfToTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleConditionMatchHeadersAnyOfToTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header: cdktf.stringToTerraform(struct!.header),
-    value_glob: cdktf.stringToTerraform(struct!.valueGlob),
+    header: cdktn.stringToTerraform(struct!.header),
+    value_glob: cdktn.stringToTerraform(struct!.valueGlob),
   }
 }
 
 
-export function apigatewayv2RoutingRuleConditionMatchHeadersAnyOfToHclTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleConditionMatchHeadersAnyOfToHclTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header: {
-      value: cdktf.stringToHclTerraform(struct!.header),
+      value: cdktn.stringToHclTerraform(struct!.header),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_glob: {
-      value: cdktf.stringToHclTerraform(struct!.valueGlob),
+      value: cdktn.stringToHclTerraform(struct!.valueGlob),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -493,9 +493,9 @@ export function apigatewayv2RoutingRuleConditionMatchHeadersAnyOfToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -503,11 +503,11 @@ export class Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf | cdktf.IResolvable | undefined {
+  public get internalValue(): Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -524,14 +524,14 @@ export class Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._header = undefined;
       this._valueGlob = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -570,15 +570,15 @@ export class Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfOutputReference ex
   }
 }
 
-export class Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfList extends cdktf.ComplexList {
-  public internalValue? : Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf[] | cdktf.IResolvable
+export class Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfList extends cdktn.ComplexList {
+  public internalValue? : Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -595,28 +595,28 @@ export interface Apigatewayv2RoutingRuleConditionMatchHeaders {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule#any_of Apigatewayv2RoutingRule#any_of}
   */
-  readonly anyOf?: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf[] | cdktf.IResolvable;
+  readonly anyOf?: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf[] | cdktn.IResolvable;
 }
 
-export function apigatewayv2RoutingRuleConditionMatchHeadersToTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleConditionMatchHeadersToTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    any_of: cdktf.listMapper(apigatewayv2RoutingRuleConditionMatchHeadersAnyOfToTerraform, true)(struct!.anyOf),
+    any_of: cdktn.listMapper(apigatewayv2RoutingRuleConditionMatchHeadersAnyOfToTerraform, true)(struct!.anyOf),
   }
 }
 
 
-export function apigatewayv2RoutingRuleConditionMatchHeadersToHclTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleConditionMatchHeadersToHclTerraform(struct?: Apigatewayv2RoutingRuleConditionMatchHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     any_of: {
-      value: cdktf.listMapperHcl(apigatewayv2RoutingRuleConditionMatchHeadersAnyOfToHclTerraform, true)(struct!.anyOf),
+      value: cdktn.listMapperHcl(apigatewayv2RoutingRuleConditionMatchHeadersAnyOfToHclTerraform, true)(struct!.anyOf),
       isBlock: true,
       type: "list",
       storageClassType: "Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfList",
@@ -627,9 +627,9 @@ export function apigatewayv2RoutingRuleConditionMatchHeadersToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2RoutingRuleConditionMatchHeadersOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2RoutingRuleConditionMatchHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -637,11 +637,11 @@ export class Apigatewayv2RoutingRuleConditionMatchHeadersOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Apigatewayv2RoutingRuleConditionMatchHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): Apigatewayv2RoutingRuleConditionMatchHeaders | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -654,13 +654,13 @@ export class Apigatewayv2RoutingRuleConditionMatchHeadersOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Apigatewayv2RoutingRuleConditionMatchHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Apigatewayv2RoutingRuleConditionMatchHeaders | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._anyOf.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -676,7 +676,7 @@ export class Apigatewayv2RoutingRuleConditionMatchHeadersOutputReference extends
   public get anyOf() {
     return this._anyOf;
   }
-  public putAnyOf(value: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf[] | cdktf.IResolvable) {
+  public putAnyOf(value: Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf[] | cdktn.IResolvable) {
     this._anyOf.internalValue = value;
   }
   public resetAnyOf() {
@@ -688,15 +688,15 @@ export class Apigatewayv2RoutingRuleConditionMatchHeadersOutputReference extends
   }
 }
 
-export class Apigatewayv2RoutingRuleConditionMatchHeadersList extends cdktf.ComplexList {
-  public internalValue? : Apigatewayv2RoutingRuleConditionMatchHeaders[] | cdktf.IResolvable
+export class Apigatewayv2RoutingRuleConditionMatchHeadersList extends cdktn.ComplexList {
+  public internalValue? : Apigatewayv2RoutingRuleConditionMatchHeaders[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -713,41 +713,41 @@ export interface Apigatewayv2RoutingRuleCondition {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule#match_base_paths Apigatewayv2RoutingRule#match_base_paths}
   */
-  readonly matchBasePaths?: Apigatewayv2RoutingRuleConditionMatchBasePaths[] | cdktf.IResolvable;
+  readonly matchBasePaths?: Apigatewayv2RoutingRuleConditionMatchBasePaths[] | cdktn.IResolvable;
   /**
   * match_headers block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule#match_headers Apigatewayv2RoutingRule#match_headers}
   */
-  readonly matchHeaders?: Apigatewayv2RoutingRuleConditionMatchHeaders[] | cdktf.IResolvable;
+  readonly matchHeaders?: Apigatewayv2RoutingRuleConditionMatchHeaders[] | cdktn.IResolvable;
 }
 
-export function apigatewayv2RoutingRuleConditionToTerraform(struct?: Apigatewayv2RoutingRuleCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleConditionToTerraform(struct?: Apigatewayv2RoutingRuleCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_base_paths: cdktf.listMapper(apigatewayv2RoutingRuleConditionMatchBasePathsToTerraform, true)(struct!.matchBasePaths),
-    match_headers: cdktf.listMapper(apigatewayv2RoutingRuleConditionMatchHeadersToTerraform, true)(struct!.matchHeaders),
+    match_base_paths: cdktn.listMapper(apigatewayv2RoutingRuleConditionMatchBasePathsToTerraform, true)(struct!.matchBasePaths),
+    match_headers: cdktn.listMapper(apigatewayv2RoutingRuleConditionMatchHeadersToTerraform, true)(struct!.matchHeaders),
   }
 }
 
 
-export function apigatewayv2RoutingRuleConditionToHclTerraform(struct?: Apigatewayv2RoutingRuleCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2RoutingRuleConditionToHclTerraform(struct?: Apigatewayv2RoutingRuleCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_base_paths: {
-      value: cdktf.listMapperHcl(apigatewayv2RoutingRuleConditionMatchBasePathsToHclTerraform, true)(struct!.matchBasePaths),
+      value: cdktn.listMapperHcl(apigatewayv2RoutingRuleConditionMatchBasePathsToHclTerraform, true)(struct!.matchBasePaths),
       isBlock: true,
       type: "list",
       storageClassType: "Apigatewayv2RoutingRuleConditionMatchBasePathsList",
     },
     match_headers: {
-      value: cdktf.listMapperHcl(apigatewayv2RoutingRuleConditionMatchHeadersToHclTerraform, true)(struct!.matchHeaders),
+      value: cdktn.listMapperHcl(apigatewayv2RoutingRuleConditionMatchHeadersToHclTerraform, true)(struct!.matchHeaders),
       isBlock: true,
       type: "list",
       storageClassType: "Apigatewayv2RoutingRuleConditionMatchHeadersList",
@@ -758,9 +758,9 @@ export function apigatewayv2RoutingRuleConditionToHclTerraform(struct?: Apigatew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2RoutingRuleConditionOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2RoutingRuleConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -768,11 +768,11 @@ export class Apigatewayv2RoutingRuleConditionOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Apigatewayv2RoutingRuleCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): Apigatewayv2RoutingRuleCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -789,14 +789,14 @@ export class Apigatewayv2RoutingRuleConditionOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Apigatewayv2RoutingRuleCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Apigatewayv2RoutingRuleCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchBasePaths.internalValue = undefined;
       this._matchHeaders.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -813,7 +813,7 @@ export class Apigatewayv2RoutingRuleConditionOutputReference extends cdktf.Compl
   public get matchBasePaths() {
     return this._matchBasePaths;
   }
-  public putMatchBasePaths(value: Apigatewayv2RoutingRuleConditionMatchBasePaths[] | cdktf.IResolvable) {
+  public putMatchBasePaths(value: Apigatewayv2RoutingRuleConditionMatchBasePaths[] | cdktn.IResolvable) {
     this._matchBasePaths.internalValue = value;
   }
   public resetMatchBasePaths() {
@@ -829,7 +829,7 @@ export class Apigatewayv2RoutingRuleConditionOutputReference extends cdktf.Compl
   public get matchHeaders() {
     return this._matchHeaders;
   }
-  public putMatchHeaders(value: Apigatewayv2RoutingRuleConditionMatchHeaders[] | cdktf.IResolvable) {
+  public putMatchHeaders(value: Apigatewayv2RoutingRuleConditionMatchHeaders[] | cdktn.IResolvable) {
     this._matchHeaders.internalValue = value;
   }
   public resetMatchHeaders() {
@@ -841,15 +841,15 @@ export class Apigatewayv2RoutingRuleConditionOutputReference extends cdktf.Compl
   }
 }
 
-export class Apigatewayv2RoutingRuleConditionList extends cdktf.ComplexList {
-  public internalValue? : Apigatewayv2RoutingRuleCondition[] | cdktf.IResolvable
+export class Apigatewayv2RoutingRuleConditionList extends cdktn.ComplexList {
+  public internalValue? : Apigatewayv2RoutingRuleCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -864,7 +864,7 @@ export class Apigatewayv2RoutingRuleConditionList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule aws_apigatewayv2_routing_rule}
 */
-export class Apigatewayv2RoutingRule extends cdktf.TerraformResource {
+export class Apigatewayv2RoutingRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -875,14 +875,14 @@ export class Apigatewayv2RoutingRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Apigatewayv2RoutingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Apigatewayv2RoutingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2RoutingRule to import
   * @param importFromId The id of the existing Apigatewayv2RoutingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_routing_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2RoutingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_routing_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_routing_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -980,7 +980,7 @@ export class Apigatewayv2RoutingRule extends cdktf.TerraformResource {
   public get action() {
     return this._action;
   }
-  public putAction(value: Apigatewayv2RoutingRuleAction[] | cdktf.IResolvable) {
+  public putAction(value: Apigatewayv2RoutingRuleAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   public resetAction() {
@@ -996,7 +996,7 @@ export class Apigatewayv2RoutingRule extends cdktf.TerraformResource {
   public get condition() {
     return this._condition;
   }
-  public putCondition(value: Apigatewayv2RoutingRuleCondition[] | cdktf.IResolvable) {
+  public putCondition(value: Apigatewayv2RoutingRuleCondition[] | cdktn.IResolvable) {
     this._condition.internalValue = value;
   }
   public resetCondition() {
@@ -1013,42 +1013,42 @@ export class Apigatewayv2RoutingRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      priority: cdktf.numberToTerraform(this._priority),
-      region: cdktf.stringToTerraform(this._region),
-      action: cdktf.listMapper(apigatewayv2RoutingRuleActionToTerraform, true)(this._action.internalValue),
-      condition: cdktf.listMapper(apigatewayv2RoutingRuleConditionToTerraform, true)(this._condition.internalValue),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      priority: cdktn.numberToTerraform(this._priority),
+      region: cdktn.stringToTerraform(this._region),
+      action: cdktn.listMapper(apigatewayv2RoutingRuleActionToTerraform, true)(this._action.internalValue),
+      condition: cdktn.listMapper(apigatewayv2RoutingRuleConditionToTerraform, true)(this._condition.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       action: {
-        value: cdktf.listMapperHcl(apigatewayv2RoutingRuleActionToHclTerraform, true)(this._action.internalValue),
+        value: cdktn.listMapperHcl(apigatewayv2RoutingRuleActionToHclTerraform, true)(this._action.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Apigatewayv2RoutingRuleActionList",
       },
       condition: {
-        value: cdktf.listMapperHcl(apigatewayv2RoutingRuleConditionToHclTerraform, true)(this._condition.internalValue),
+        value: cdktn.listMapperHcl(apigatewayv2RoutingRuleConditionToHclTerraform, true)(this._condition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Apigatewayv2RoutingRuleConditionList",

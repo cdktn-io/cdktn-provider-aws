@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockagentcoreOauth2CredentialProviderConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockagentcoreOauth2CredentialProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#credential_provider_vendor BedrockagentcoreOauth2CredentialProvider#credential_provider_vendor}
   */
@@ -31,14 +31,14 @@ export interface BedrockagentcoreOauth2CredentialProviderConfig extends cdktf.Te
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#oauth2_provider_config BedrockagentcoreOauth2CredentialProvider#oauth2_provider_config}
   */
-  readonly oauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig[] | cdktf.IResolvable;
+  readonly oauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig[] | cdktn.IResolvable;
 }
 export interface BedrockagentcoreOauth2CredentialProviderClientSecretArn {
 }
 
 export function bedrockagentcoreOauth2CredentialProviderClientSecretArnToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderClientSecretArn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -47,8 +47,8 @@ export function bedrockagentcoreOauth2CredentialProviderClientSecretArnToTerrafo
 
 
 export function bedrockagentcoreOauth2CredentialProviderClientSecretArnToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderClientSecretArn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -56,7 +56,7 @@ export function bedrockagentcoreOauth2CredentialProviderClientSecretArnToHclTerr
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderClientSecretArnOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderClientSecretArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -65,7 +65,7 @@ export class BedrockagentcoreOauth2CredentialProviderClientSecretArnOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -90,14 +90,14 @@ export class BedrockagentcoreOauth2CredentialProviderClientSecretArnOutputRefere
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderClientSecretArnList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderClientSecretArnList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -127,46 +127,46 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCus
   readonly tokenEndpoint: string;
 }
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    response_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.responseTypes),
-    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+    authorization_endpoint: cdktn.stringToTerraform(struct!.authorizationEndpoint),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    response_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.responseTypes),
+    token_endpoint: cdktn.stringToTerraform(struct!.tokenEndpoint),
   }
 }
 
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.authorizationEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     response_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.responseTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.responseTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     token_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tokenEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -177,9 +177,9 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -187,11 +187,11 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -216,7 +216,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -225,7 +225,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
       this._responseTypes = undefined;
       this._tokenEndpoint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -268,7 +268,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
   // response_types - computed: false, optional: true, required: false
   private _responseTypes?: string[]; 
   public get responseTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('response_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('response_types'));
   }
   public set responseTypes(value: string[]) {
     this._responseTypes = value;
@@ -295,15 +295,15 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata[] | cdktf.IResolvable
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -324,35 +324,35 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCus
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#authorization_server_metadata BedrockagentcoreOauth2CredentialProvider#authorization_server_metadata}
   */
-  readonly authorizationServerMetadata?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata[] | cdktf.IResolvable;
+  readonly authorizationServerMetadata?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    discovery_url: cdktf.stringToTerraform(struct!.discoveryUrl),
-    authorization_server_metadata: cdktf.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToTerraform, true)(struct!.authorizationServerMetadata),
+    discovery_url: cdktn.stringToTerraform(struct!.discoveryUrl),
+    authorization_server_metadata: cdktn.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToTerraform, true)(struct!.authorizationServerMetadata),
   }
 }
 
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     discovery_url: {
-      value: cdktf.stringToHclTerraform(struct!.discoveryUrl),
+      value: cdktn.stringToHclTerraform(struct!.discoveryUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     authorization_server_metadata: {
-      value: cdktf.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToHclTerraform, true)(struct!.authorizationServerMetadata),
+      value: cdktn.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToHclTerraform, true)(struct!.authorizationServerMetadata),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList",
@@ -363,9 +363,9 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -373,11 +373,11 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -394,14 +394,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._discoveryUrl = undefined;
       this._authorizationServerMetadata.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -434,7 +434,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
   public get authorizationServerMetadata() {
     return this._authorizationServerMetadata;
   }
-  public putAuthorizationServerMetadata(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata[] | cdktf.IResolvable) {
+  public putAuthorizationServerMetadata(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata[] | cdktn.IResolvable) {
     this._authorizationServerMetadata.internalValue = value;
   }
   public resetAuthorizationServerMetadata() {
@@ -446,15 +446,15 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery[] | cdktf.IResolvable
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -491,63 +491,63 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCus
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#oauth_discovery BedrockagentcoreOauth2CredentialProvider#oauth_discovery}
   */
-  readonly oauthDiscovery?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery[] | cdktf.IResolvable;
+  readonly oauthDiscovery?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_credentials_wo_version: cdktf.numberToTerraform(struct!.clientCredentialsWoVersion),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_id_wo: cdktf.stringToTerraform(struct!.clientIdWo),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_wo: cdktf.stringToTerraform(struct!.clientSecretWo),
-    oauth_discovery: cdktf.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryToTerraform, true)(struct!.oauthDiscovery),
+    client_credentials_wo_version: cdktn.numberToTerraform(struct!.clientCredentialsWoVersion),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_id_wo: cdktn.stringToTerraform(struct!.clientIdWo),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_wo: cdktn.stringToTerraform(struct!.clientSecretWo),
+    oauth_discovery: cdktn.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryToTerraform, true)(struct!.oauthDiscovery),
   }
 }
 
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_credentials_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.clientCredentialsWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.clientCredentialsWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientIdWo),
+      value: cdktn.stringToHclTerraform(struct!.clientIdWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretWo),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     oauth_discovery: {
-      value: cdktf.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryToHclTerraform, true)(struct!.oauthDiscovery),
+      value: cdktn.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryToHclTerraform, true)(struct!.oauthDiscovery),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryList",
@@ -558,9 +558,9 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -568,11 +568,11 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -605,7 +605,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -616,7 +616,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
       this._clientSecretWo = undefined;
       this._oauthDiscovery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -717,7 +717,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
   public get oauthDiscovery() {
     return this._oauthDiscovery;
   }
-  public putOauthDiscovery(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery[] | cdktf.IResolvable) {
+  public putOauthDiscovery(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery[] | cdktn.IResolvable) {
     this._oauthDiscovery.internalValue = value;
   }
   public resetOauthDiscovery() {
@@ -729,15 +729,15 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomO
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig[] | cdktf.IResolvable
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -752,8 +752,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGit
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -762,8 +762,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGith
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -771,7 +771,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGith
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -780,7 +780,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -811,7 +811,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
 
   // response_types - computed: true, optional: false, required: false
   public get responseTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('response_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('response_types'));
   }
 
   // token_endpoint - computed: true, optional: false, required: false
@@ -820,14 +820,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -842,8 +842,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGit
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -852,8 +852,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGith
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -861,7 +861,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGith
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -870,7 +870,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -901,14 +901,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -942,53 +942,53 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGit
   readonly clientSecretWo?: string;
 }
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_credentials_wo_version: cdktf.numberToTerraform(struct!.clientCredentialsWoVersion),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_id_wo: cdktf.stringToTerraform(struct!.clientIdWo),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_wo: cdktf.stringToTerraform(struct!.clientSecretWo),
+    client_credentials_wo_version: cdktn.numberToTerraform(struct!.clientCredentialsWoVersion),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_id_wo: cdktn.stringToTerraform(struct!.clientIdWo),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_wo: cdktn.stringToTerraform(struct!.clientSecretWo),
   }
 }
 
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_credentials_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.clientCredentialsWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.clientCredentialsWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientIdWo),
+      value: cdktn.stringToHclTerraform(struct!.clientIdWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretWo),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -999,9 +999,9 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGith
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1009,11 +1009,11 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1042,7 +1042,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1052,7 +1052,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
       this._clientSecret = undefined;
       this._clientSecretWo = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1154,15 +1154,15 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubO
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig[] | cdktf.IResolvable
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1177,8 +1177,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoo
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1187,8 +1187,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoog
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1196,7 +1196,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoog
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1205,7 +1205,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1236,7 +1236,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
 
   // response_types - computed: true, optional: false, required: false
   public get responseTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('response_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('response_types'));
   }
 
   // token_endpoint - computed: true, optional: false, required: false
@@ -1245,14 +1245,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1267,8 +1267,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoo
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1277,8 +1277,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoog
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1286,7 +1286,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoog
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1295,7 +1295,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1326,14 +1326,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1367,53 +1367,53 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoo
   readonly clientSecretWo?: string;
 }
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_credentials_wo_version: cdktf.numberToTerraform(struct!.clientCredentialsWoVersion),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_id_wo: cdktf.stringToTerraform(struct!.clientIdWo),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_wo: cdktf.stringToTerraform(struct!.clientSecretWo),
+    client_credentials_wo_version: cdktn.numberToTerraform(struct!.clientCredentialsWoVersion),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_id_wo: cdktn.stringToTerraform(struct!.clientIdWo),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_wo: cdktn.stringToTerraform(struct!.clientSecretWo),
   }
 }
 
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_credentials_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.clientCredentialsWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.clientCredentialsWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientIdWo),
+      value: cdktn.stringToHclTerraform(struct!.clientIdWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretWo),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1424,9 +1424,9 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoog
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1434,11 +1434,11 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1467,7 +1467,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1477,7 +1477,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
       this._clientSecret = undefined;
       this._clientSecretWo = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1579,15 +1579,15 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleO
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig[] | cdktf.IResolvable
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1602,8 +1602,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMic
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1612,8 +1612,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicr
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1621,7 +1621,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicr
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1630,7 +1630,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1661,7 +1661,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
 
   // response_types - computed: true, optional: false, required: false
   public get responseTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('response_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('response_types'));
   }
 
   // token_endpoint - computed: true, optional: false, required: false
@@ -1670,14 +1670,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1692,8 +1692,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMic
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1702,8 +1702,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicr
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1711,7 +1711,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicr
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1720,7 +1720,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1751,14 +1751,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1792,53 +1792,53 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMic
   readonly clientSecretWo?: string;
 }
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_credentials_wo_version: cdktf.numberToTerraform(struct!.clientCredentialsWoVersion),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_id_wo: cdktf.stringToTerraform(struct!.clientIdWo),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_wo: cdktf.stringToTerraform(struct!.clientSecretWo),
+    client_credentials_wo_version: cdktn.numberToTerraform(struct!.clientCredentialsWoVersion),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_id_wo: cdktn.stringToTerraform(struct!.clientIdWo),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_wo: cdktn.stringToTerraform(struct!.clientSecretWo),
   }
 }
 
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_credentials_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.clientCredentialsWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.clientCredentialsWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientIdWo),
+      value: cdktn.stringToHclTerraform(struct!.clientIdWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretWo),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1849,9 +1849,9 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1859,11 +1859,11 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1892,7 +1892,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1902,7 +1902,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
       this._clientSecret = undefined;
       this._clientSecretWo = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2004,15 +2004,15 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicroso
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig[] | cdktf.IResolvable
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2027,8 +2027,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSal
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2037,8 +2037,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSale
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2046,7 +2046,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSale
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2055,7 +2055,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2086,7 +2086,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
 
   // response_types - computed: true, optional: false, required: false
   public get responseTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('response_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('response_types'));
   }
 
   // token_endpoint - computed: true, optional: false, required: false
@@ -2095,14 +2095,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2117,8 +2117,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSal
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2127,8 +2127,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSale
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2136,7 +2136,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSale
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2145,7 +2145,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2176,14 +2176,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2217,53 +2217,53 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSal
   readonly clientSecretWo?: string;
 }
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_credentials_wo_version: cdktf.numberToTerraform(struct!.clientCredentialsWoVersion),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_id_wo: cdktf.stringToTerraform(struct!.clientIdWo),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_wo: cdktf.stringToTerraform(struct!.clientSecretWo),
+    client_credentials_wo_version: cdktn.numberToTerraform(struct!.clientCredentialsWoVersion),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_id_wo: cdktn.stringToTerraform(struct!.clientIdWo),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_wo: cdktn.stringToTerraform(struct!.clientSecretWo),
   }
 }
 
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_credentials_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.clientCredentialsWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.clientCredentialsWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientIdWo),
+      value: cdktn.stringToHclTerraform(struct!.clientIdWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretWo),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2274,9 +2274,9 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSale
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2284,11 +2284,11 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2317,7 +2317,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2327,7 +2327,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
       this._clientSecret = undefined;
       this._clientSecretWo = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2429,15 +2429,15 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesfo
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig[] | cdktf.IResolvable
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2452,8 +2452,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSla
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2462,8 +2462,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlac
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2471,7 +2471,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlac
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2480,7 +2480,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2511,7 +2511,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
 
   // response_types - computed: true, optional: false, required: false
   public get responseTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('response_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('response_types'));
   }
 
   // token_endpoint - computed: true, optional: false, required: false
@@ -2520,14 +2520,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2542,8 +2542,8 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSla
 }
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2552,8 +2552,8 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlac
 
 
 export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2561,7 +2561,7 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlac
   return attrs;
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2570,7 +2570,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2601,14 +2601,14 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryList extends cdktf.ComplexList {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2642,53 +2642,53 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSla
   readonly clientSecretWo?: string;
 }
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_credentials_wo_version: cdktf.numberToTerraform(struct!.clientCredentialsWoVersion),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_id_wo: cdktf.stringToTerraform(struct!.clientIdWo),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_wo: cdktf.stringToTerraform(struct!.clientSecretWo),
+    client_credentials_wo_version: cdktn.numberToTerraform(struct!.clientCredentialsWoVersion),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_id_wo: cdktn.stringToTerraform(struct!.clientIdWo),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_wo: cdktn.stringToTerraform(struct!.clientSecretWo),
   }
 }
 
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_credentials_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.clientCredentialsWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.clientCredentialsWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientIdWo),
+      value: cdktn.stringToHclTerraform(struct!.clientIdWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_wo: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretWo),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2699,9 +2699,9 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2709,11 +2709,11 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2742,7 +2742,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2752,7 +2752,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
       this._clientSecret = undefined;
       this._clientSecretWo = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2854,15 +2854,15 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOa
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig[] | cdktf.IResolvable
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2879,93 +2879,93 @@ export interface BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#custom_oauth2_provider_config BedrockagentcoreOauth2CredentialProvider#custom_oauth2_provider_config}
   */
-  readonly customOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig[] | cdktf.IResolvable;
+  readonly customOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig[] | cdktn.IResolvable;
   /**
   * github_oauth2_provider_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#github_oauth2_provider_config BedrockagentcoreOauth2CredentialProvider#github_oauth2_provider_config}
   */
-  readonly githubOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig[] | cdktf.IResolvable;
+  readonly githubOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig[] | cdktn.IResolvable;
   /**
   * google_oauth2_provider_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#google_oauth2_provider_config BedrockagentcoreOauth2CredentialProvider#google_oauth2_provider_config}
   */
-  readonly googleOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig[] | cdktf.IResolvable;
+  readonly googleOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig[] | cdktn.IResolvable;
   /**
   * microsoft_oauth2_provider_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#microsoft_oauth2_provider_config BedrockagentcoreOauth2CredentialProvider#microsoft_oauth2_provider_config}
   */
-  readonly microsoftOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig[] | cdktf.IResolvable;
+  readonly microsoftOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig[] | cdktn.IResolvable;
   /**
   * salesforce_oauth2_provider_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#salesforce_oauth2_provider_config BedrockagentcoreOauth2CredentialProvider#salesforce_oauth2_provider_config}
   */
-  readonly salesforceOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig[] | cdktf.IResolvable;
+  readonly salesforceOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig[] | cdktn.IResolvable;
   /**
   * slack_oauth2_provider_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#slack_oauth2_provider_config BedrockagentcoreOauth2CredentialProvider#slack_oauth2_provider_config}
   */
-  readonly slackOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig[] | cdktf.IResolvable;
+  readonly slackOauth2ProviderConfig?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig[] | cdktn.IResolvable;
 }
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigToTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_oauth2_provider_config: cdktf.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigToTerraform, true)(struct!.customOauth2ProviderConfig),
-    github_oauth2_provider_config: cdktf.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigToTerraform, true)(struct!.githubOauth2ProviderConfig),
-    google_oauth2_provider_config: cdktf.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigToTerraform, true)(struct!.googleOauth2ProviderConfig),
-    microsoft_oauth2_provider_config: cdktf.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigToTerraform, true)(struct!.microsoftOauth2ProviderConfig),
-    salesforce_oauth2_provider_config: cdktf.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigToTerraform, true)(struct!.salesforceOauth2ProviderConfig),
-    slack_oauth2_provider_config: cdktf.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigToTerraform, true)(struct!.slackOauth2ProviderConfig),
+    custom_oauth2_provider_config: cdktn.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigToTerraform, true)(struct!.customOauth2ProviderConfig),
+    github_oauth2_provider_config: cdktn.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigToTerraform, true)(struct!.githubOauth2ProviderConfig),
+    google_oauth2_provider_config: cdktn.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigToTerraform, true)(struct!.googleOauth2ProviderConfig),
+    microsoft_oauth2_provider_config: cdktn.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigToTerraform, true)(struct!.microsoftOauth2ProviderConfig),
+    salesforce_oauth2_provider_config: cdktn.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigToTerraform, true)(struct!.salesforceOauth2ProviderConfig),
+    slack_oauth2_provider_config: cdktn.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigToTerraform, true)(struct!.slackOauth2ProviderConfig),
   }
 }
 
 
-export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigToHclTerraform(struct?: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_oauth2_provider_config: {
-      value: cdktf.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigToHclTerraform, true)(struct!.customOauth2ProviderConfig),
+      value: cdktn.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigToHclTerraform, true)(struct!.customOauth2ProviderConfig),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigList",
     },
     github_oauth2_provider_config: {
-      value: cdktf.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigToHclTerraform, true)(struct!.githubOauth2ProviderConfig),
+      value: cdktn.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigToHclTerraform, true)(struct!.githubOauth2ProviderConfig),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigList",
     },
     google_oauth2_provider_config: {
-      value: cdktf.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigToHclTerraform, true)(struct!.googleOauth2ProviderConfig),
+      value: cdktn.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigToHclTerraform, true)(struct!.googleOauth2ProviderConfig),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigList",
     },
     microsoft_oauth2_provider_config: {
-      value: cdktf.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigToHclTerraform, true)(struct!.microsoftOauth2ProviderConfig),
+      value: cdktn.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigToHclTerraform, true)(struct!.microsoftOauth2ProviderConfig),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigList",
     },
     salesforce_oauth2_provider_config: {
-      value: cdktf.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigToHclTerraform, true)(struct!.salesforceOauth2ProviderConfig),
+      value: cdktn.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigToHclTerraform, true)(struct!.salesforceOauth2ProviderConfig),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigList",
     },
     slack_oauth2_provider_config: {
-      value: cdktf.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigToHclTerraform, true)(struct!.slackOauth2ProviderConfig),
+      value: cdktn.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigToHclTerraform, true)(struct!.slackOauth2ProviderConfig),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigList",
@@ -2976,9 +2976,9 @@ export function bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2986,11 +2986,11 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3023,7 +3023,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3034,7 +3034,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
       this._salesforceOauth2ProviderConfig.internalValue = undefined;
       this._slackOauth2ProviderConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3055,7 +3055,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
   public get customOauth2ProviderConfig() {
     return this._customOauth2ProviderConfig;
   }
-  public putCustomOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig[] | cdktf.IResolvable) {
+  public putCustomOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfig[] | cdktn.IResolvable) {
     this._customOauth2ProviderConfig.internalValue = value;
   }
   public resetCustomOauth2ProviderConfig() {
@@ -3071,7 +3071,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
   public get githubOauth2ProviderConfig() {
     return this._githubOauth2ProviderConfig;
   }
-  public putGithubOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig[] | cdktf.IResolvable) {
+  public putGithubOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfig[] | cdktn.IResolvable) {
     this._githubOauth2ProviderConfig.internalValue = value;
   }
   public resetGithubOauth2ProviderConfig() {
@@ -3087,7 +3087,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
   public get googleOauth2ProviderConfig() {
     return this._googleOauth2ProviderConfig;
   }
-  public putGoogleOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig[] | cdktf.IResolvable) {
+  public putGoogleOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfig[] | cdktn.IResolvable) {
     this._googleOauth2ProviderConfig.internalValue = value;
   }
   public resetGoogleOauth2ProviderConfig() {
@@ -3103,7 +3103,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
   public get microsoftOauth2ProviderConfig() {
     return this._microsoftOauth2ProviderConfig;
   }
-  public putMicrosoftOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig[] | cdktf.IResolvable) {
+  public putMicrosoftOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig[] | cdktn.IResolvable) {
     this._microsoftOauth2ProviderConfig.internalValue = value;
   }
   public resetMicrosoftOauth2ProviderConfig() {
@@ -3119,7 +3119,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
   public get salesforceOauth2ProviderConfig() {
     return this._salesforceOauth2ProviderConfig;
   }
-  public putSalesforceOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig[] | cdktf.IResolvable) {
+  public putSalesforceOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig[] | cdktn.IResolvable) {
     this._salesforceOauth2ProviderConfig.internalValue = value;
   }
   public resetSalesforceOauth2ProviderConfig() {
@@ -3135,7 +3135,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
   public get slackOauth2ProviderConfig() {
     return this._slackOauth2ProviderConfig;
   }
-  public putSlackOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig[] | cdktf.IResolvable) {
+  public putSlackOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfig[] | cdktn.IResolvable) {
     this._slackOauth2ProviderConfig.internalValue = value;
   }
   public resetSlackOauth2ProviderConfig() {
@@ -3147,15 +3147,15 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputR
   }
 }
 
-export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig[] | cdktf.IResolvable
+export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3170,7 +3170,7 @@ export class BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigList ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider aws_bedrockagentcore_oauth2_credential_provider}
 */
-export class BedrockagentcoreOauth2CredentialProvider extends cdktf.TerraformResource {
+export class BedrockagentcoreOauth2CredentialProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3181,14 +3181,14 @@ export class BedrockagentcoreOauth2CredentialProvider extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockagentcoreOauth2CredentialProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockagentcoreOauth2CredentialProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreOauth2CredentialProvider to import
   * @param importFromId The id of the existing BedrockagentcoreOauth2CredentialProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_oauth2_credential_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreOauth2CredentialProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_oauth2_credential_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagentcore_oauth2_credential_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -3286,7 +3286,7 @@ export class BedrockagentcoreOauth2CredentialProvider extends cdktf.TerraformRes
   public get oauth2ProviderConfig() {
     return this._oauth2ProviderConfig;
   }
-  public putOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig[] | cdktf.IResolvable) {
+  public putOauth2ProviderConfig(value: BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfig[] | cdktn.IResolvable) {
     this._oauth2ProviderConfig.internalValue = value;
   }
   public resetOauth2ProviderConfig() {
@@ -3303,35 +3303,35 @@ export class BedrockagentcoreOauth2CredentialProvider extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      credential_provider_vendor: cdktf.stringToTerraform(this._credentialProviderVendor),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      oauth2_provider_config: cdktf.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigToTerraform, true)(this._oauth2ProviderConfig.internalValue),
+      credential_provider_vendor: cdktn.stringToTerraform(this._credentialProviderVendor),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      oauth2_provider_config: cdktn.listMapper(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigToTerraform, true)(this._oauth2ProviderConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       credential_provider_vendor: {
-        value: cdktf.stringToHclTerraform(this._credentialProviderVendor),
+        value: cdktn.stringToHclTerraform(this._credentialProviderVendor),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth2_provider_config: {
-        value: cdktf.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigToHclTerraform, true)(this._oauth2ProviderConfig.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigToHclTerraform, true)(this._oauth2ProviderConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigList",

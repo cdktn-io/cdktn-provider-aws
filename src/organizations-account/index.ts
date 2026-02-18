@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrganizationsAccountConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationsAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_account#close_on_deletion OrganizationsAccount#close_on_deletion}
   */
-  readonly closeOnDeletion?: boolean | cdktf.IResolvable;
+  readonly closeOnDeletion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_account#create_govcloud OrganizationsAccount#create_govcloud}
   */
-  readonly createGovcloud?: boolean | cdktf.IResolvable;
+  readonly createGovcloud?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_account#email OrganizationsAccount#email}
   */
@@ -77,39 +77,39 @@ export interface OrganizationsAccountTimeouts {
   readonly update?: string;
 }
 
-export function organizationsAccountTimeoutsToTerraform(struct?: OrganizationsAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationsAccountTimeoutsToTerraform(struct?: OrganizationsAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function organizationsAccountTimeoutsToHclTerraform(struct?: OrganizationsAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationsAccountTimeoutsToHclTerraform(struct?: OrganizationsAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,19 +120,19 @@ export function organizationsAccountTimeoutsToHclTerraform(struct?: Organization
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationsAccountTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OrganizationsAccountTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrganizationsAccountTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OrganizationsAccountTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,7 +153,7 @@ export class OrganizationsAccountTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrganizationsAccountTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrganizationsAccountTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class OrganizationsAccountTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -226,7 +226,7 @@ export class OrganizationsAccountTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_account aws_organizations_account}
 */
-export class OrganizationsAccount extends cdktf.TerraformResource {
+export class OrganizationsAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -237,14 +237,14 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrganizationsAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrganizationsAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationsAccount to import
   * @param importFromId The id of the existing OrganizationsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/organizations_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationsAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -297,11 +297,11 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
   }
 
   // close_on_deletion - computed: false, optional: true, required: false
-  private _closeOnDeletion?: boolean | cdktf.IResolvable; 
+  private _closeOnDeletion?: boolean | cdktn.IResolvable; 
   public get closeOnDeletion() {
     return this.getBooleanAttribute('close_on_deletion');
   }
-  public set closeOnDeletion(value: boolean | cdktf.IResolvable) {
+  public set closeOnDeletion(value: boolean | cdktn.IResolvable) {
     this._closeOnDeletion = value;
   }
   public resetCloseOnDeletion() {
@@ -313,11 +313,11 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
   }
 
   // create_govcloud - computed: false, optional: true, required: false
-  private _createGovcloud?: boolean | cdktf.IResolvable; 
+  private _createGovcloud?: boolean | cdktn.IResolvable; 
   public get createGovcloud() {
     return this.getBooleanAttribute('create_govcloud');
   }
-  public set createGovcloud(value: boolean | cdktf.IResolvable) {
+  public set createGovcloud(value: boolean | cdktn.IResolvable) {
     this._createGovcloud = value;
   }
   public resetCreateGovcloud() {
@@ -497,16 +497,16 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      close_on_deletion: cdktf.booleanToTerraform(this._closeOnDeletion),
-      create_govcloud: cdktf.booleanToTerraform(this._createGovcloud),
-      email: cdktf.stringToTerraform(this._email),
-      iam_user_access_to_billing: cdktf.stringToTerraform(this._iamUserAccessToBilling),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      parent_id: cdktf.stringToTerraform(this._parentId),
-      role_name: cdktf.stringToTerraform(this._roleName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      close_on_deletion: cdktn.booleanToTerraform(this._closeOnDeletion),
+      create_govcloud: cdktn.booleanToTerraform(this._createGovcloud),
+      email: cdktn.stringToTerraform(this._email),
+      iam_user_access_to_billing: cdktn.stringToTerraform(this._iamUserAccessToBilling),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      parent_id: cdktn.stringToTerraform(this._parentId),
+      role_name: cdktn.stringToTerraform(this._roleName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: organizationsAccountTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -514,61 +514,61 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       close_on_deletion: {
-        value: cdktf.booleanToHclTerraform(this._closeOnDeletion),
+        value: cdktn.booleanToHclTerraform(this._closeOnDeletion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       create_govcloud: {
-        value: cdktf.booleanToHclTerraform(this._createGovcloud),
+        value: cdktn.booleanToHclTerraform(this._createGovcloud),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_user_access_to_billing: {
-        value: cdktf.stringToHclTerraform(this._iamUserAccessToBilling),
+        value: cdktn.stringToHclTerraform(this._iamUserAccessToBilling),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_id: {
-        value: cdktf.stringToHclTerraform(this._parentId),
+        value: cdktn.stringToHclTerraform(this._parentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

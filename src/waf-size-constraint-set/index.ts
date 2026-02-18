@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WafSizeConstraintSetConfig extends cdktf.TerraformMetaArguments {
+export interface WafSizeConstraintSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_size_constraint_set#id WafSizeConstraintSet#id}
   *
@@ -28,7 +28,7 @@ export interface WafSizeConstraintSetConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_size_constraint_set#size_constraints WafSizeConstraintSet#size_constraints}
   */
-  readonly sizeConstraints?: WafSizeConstraintSetSizeConstraints[] | cdktf.IResolvable;
+  readonly sizeConstraints?: WafSizeConstraintSetSizeConstraints[] | cdktn.IResolvable;
 }
 export interface WafSizeConstraintSetSizeConstraintsFieldToMatch {
   /**
@@ -42,31 +42,31 @@ export interface WafSizeConstraintSetSizeConstraintsFieldToMatch {
 }
 
 export function wafSizeConstraintSetSizeConstraintsFieldToMatchToTerraform(struct?: WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference | WafSizeConstraintSetSizeConstraintsFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    type: cdktf.stringToTerraform(struct!.type),
+    data: cdktn.stringToTerraform(struct!.data),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function wafSizeConstraintSetSizeConstraintsFieldToMatchToHclTerraform(struct?: WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference | WafSizeConstraintSetSizeConstraintsFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -77,14 +77,14 @@ export function wafSizeConstraintSetSizeConstraintsFieldToMatchToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -165,40 +165,40 @@ export interface WafSizeConstraintSetSizeConstraints {
   readonly fieldToMatch: WafSizeConstraintSetSizeConstraintsFieldToMatch;
 }
 
-export function wafSizeConstraintSetSizeConstraintsToTerraform(struct?: WafSizeConstraintSetSizeConstraints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafSizeConstraintSetSizeConstraintsToTerraform(struct?: WafSizeConstraintSetSizeConstraints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison_operator: cdktf.stringToTerraform(struct!.comparisonOperator),
-    size: cdktf.numberToTerraform(struct!.size),
-    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    comparison_operator: cdktn.stringToTerraform(struct!.comparisonOperator),
+    size: cdktn.numberToTerraform(struct!.size),
+    text_transformation: cdktn.stringToTerraform(struct!.textTransformation),
     field_to_match: wafSizeConstraintSetSizeConstraintsFieldToMatchToTerraform(struct!.fieldToMatch),
   }
 }
 
 
-export function wafSizeConstraintSetSizeConstraintsToHclTerraform(struct?: WafSizeConstraintSetSizeConstraints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafSizeConstraintSetSizeConstraintsToHclTerraform(struct?: WafSizeConstraintSetSizeConstraints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison_operator: {
-      value: cdktf.stringToHclTerraform(struct!.comparisonOperator),
+      value: cdktn.stringToHclTerraform(struct!.comparisonOperator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
+      value: cdktn.numberToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     text_transformation: {
-      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      value: cdktn.stringToHclTerraform(struct!.textTransformation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -215,9 +215,9 @@ export function wafSizeConstraintSetSizeConstraintsToHclTerraform(struct?: WafSi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafSizeConstraintSetSizeConstraintsOutputReference extends cdktf.ComplexObject {
+export class WafSizeConstraintSetSizeConstraintsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -225,11 +225,11 @@ export class WafSizeConstraintSetSizeConstraintsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WafSizeConstraintSetSizeConstraints | cdktf.IResolvable | undefined {
+  public get internalValue(): WafSizeConstraintSetSizeConstraints | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -254,7 +254,7 @@ export class WafSizeConstraintSetSizeConstraintsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafSizeConstraintSetSizeConstraints | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WafSizeConstraintSetSizeConstraints | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -263,7 +263,7 @@ export class WafSizeConstraintSetSizeConstraintsOutputReference extends cdktf.Co
       this._textTransformation = undefined;
       this._fieldToMatch.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -330,15 +330,15 @@ export class WafSizeConstraintSetSizeConstraintsOutputReference extends cdktf.Co
   }
 }
 
-export class WafSizeConstraintSetSizeConstraintsList extends cdktf.ComplexList {
-  public internalValue? : WafSizeConstraintSetSizeConstraints[] | cdktf.IResolvable
+export class WafSizeConstraintSetSizeConstraintsList extends cdktn.ComplexList {
+  public internalValue? : WafSizeConstraintSetSizeConstraints[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -353,7 +353,7 @@ export class WafSizeConstraintSetSizeConstraintsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_size_constraint_set aws_waf_size_constraint_set}
 */
-export class WafSizeConstraintSet extends cdktf.TerraformResource {
+export class WafSizeConstraintSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -364,14 +364,14 @@ export class WafSizeConstraintSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WafSizeConstraintSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WafSizeConstraintSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafSizeConstraintSet to import
   * @param importFromId The id of the existing WafSizeConstraintSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_size_constraint_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafSizeConstraintSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_size_constraint_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_size_constraint_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -449,7 +449,7 @@ export class WafSizeConstraintSet extends cdktf.TerraformResource {
   public get sizeConstraints() {
     return this._sizeConstraints;
   }
-  public putSizeConstraints(value: WafSizeConstraintSetSizeConstraints[] | cdktf.IResolvable) {
+  public putSizeConstraints(value: WafSizeConstraintSetSizeConstraints[] | cdktn.IResolvable) {
     this._sizeConstraints.internalValue = value;
   }
   public resetSizeConstraints() {
@@ -466,28 +466,28 @@ export class WafSizeConstraintSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      size_constraints: cdktf.listMapper(wafSizeConstraintSetSizeConstraintsToTerraform, true)(this._sizeConstraints.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      size_constraints: cdktn.listMapper(wafSizeConstraintSetSizeConstraintsToTerraform, true)(this._sizeConstraints.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       size_constraints: {
-        value: cdktf.listMapperHcl(wafSizeConstraintSetSizeConstraintsToHclTerraform, true)(this._sizeConstraints.internalValue),
+        value: cdktn.listMapperHcl(wafSizeConstraintSetSizeConstraintsToHclTerraform, true)(this._sizeConstraints.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WafSizeConstraintSetSizeConstraintsList",

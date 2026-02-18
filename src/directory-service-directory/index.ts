@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArguments {
+export interface DirectoryServiceDirectoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}
   */
@@ -31,7 +31,7 @@ export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}
   */
-  readonly enableSso?: boolean | cdktf.IResolvable;
+  readonly enableSso?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}
   *
@@ -112,45 +112,45 @@ export interface DirectoryServiceDirectoryConnectSettings {
 }
 
 export function directoryServiceDirectoryConnectSettingsToTerraform(struct?: DirectoryServiceDirectoryConnectSettingsOutputReference | DirectoryServiceDirectoryConnectSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    customer_dns_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.customerDnsIps),
-    customer_username: cdktf.stringToTerraform(struct!.customerUsername),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    customer_dns_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.customerDnsIps),
+    customer_username: cdktn.stringToTerraform(struct!.customerUsername),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
   }
 }
 
 
 export function directoryServiceDirectoryConnectSettingsToHclTerraform(struct?: DirectoryServiceDirectoryConnectSettingsOutputReference | DirectoryServiceDirectoryConnectSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     customer_dns_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.customerDnsIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.customerDnsIps),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     customer_username: {
-      value: cdktf.stringToHclTerraform(struct!.customerUsername),
+      value: cdktn.stringToHclTerraform(struct!.customerUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -161,14 +161,14 @@ export function directoryServiceDirectoryConnectSettingsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdktf.ComplexObject {
+export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -213,18 +213,18 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // connect_ips - computed: true, optional: false, required: false
   public get connectIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('connect_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('connect_ips'));
   }
 
   // customer_dns_ips - computed: false, optional: false, required: true
   private _customerDnsIps?: string[]; 
   public get customerDnsIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('customer_dns_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('customer_dns_ips'));
   }
   public set customerDnsIps(value: string[]) {
     this._customerDnsIps = value;
@@ -250,7 +250,7 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -288,39 +288,39 @@ export interface DirectoryServiceDirectoryTimeouts {
   readonly update?: string;
 }
 
-export function directoryServiceDirectoryTimeoutsToTerraform(struct?: DirectoryServiceDirectoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function directoryServiceDirectoryTimeoutsToTerraform(struct?: DirectoryServiceDirectoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function directoryServiceDirectoryTimeoutsToHclTerraform(struct?: DirectoryServiceDirectoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function directoryServiceDirectoryTimeoutsToHclTerraform(struct?: DirectoryServiceDirectoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -331,19 +331,19 @@ export function directoryServiceDirectoryTimeoutsToHclTerraform(struct?: Directo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DirectoryServiceDirectoryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DirectoryServiceDirectoryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DirectoryServiceDirectoryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DirectoryServiceDirectoryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -364,7 +364,7 @@ export class DirectoryServiceDirectoryTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DirectoryServiceDirectoryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DirectoryServiceDirectoryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -372,7 +372,7 @@ export class DirectoryServiceDirectoryTimeoutsOutputReference extends cdktf.Comp
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -445,31 +445,31 @@ export interface DirectoryServiceDirectoryVpcSettings {
 }
 
 export function directoryServiceDirectoryVpcSettingsToTerraform(struct?: DirectoryServiceDirectoryVpcSettingsOutputReference | DirectoryServiceDirectoryVpcSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
   }
 }
 
 
 export function directoryServiceDirectoryVpcSettingsToHclTerraform(struct?: DirectoryServiceDirectoryVpcSettingsOutputReference | DirectoryServiceDirectoryVpcSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -480,14 +480,14 @@ export function directoryServiceDirectoryVpcSettingsToHclTerraform(struct?: Dire
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.ComplexObject {
+export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -520,13 +520,13 @@ export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.C
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -553,7 +553,7 @@ export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_directory aws_directory_service_directory}
 */
-export class DirectoryServiceDirectory extends cdktf.TerraformResource {
+export class DirectoryServiceDirectory extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -564,14 +564,14 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DirectoryServiceDirectory resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DirectoryServiceDirectory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryServiceDirectory to import
   * @param importFromId The id of the existing DirectoryServiceDirectory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_directory#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryServiceDirectory to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_directory", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_directory", importId: importFromId, provider });
       }
 
   // ===========
@@ -679,7 +679,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
 
   // dns_ip_addresses - computed: true, optional: false, required: false
   public get dnsIpAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
   }
 
   // edition - computed: true, optional: true, required: false
@@ -699,11 +699,11 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // enable_sso - computed: false, optional: true, required: false
-  private _enableSso?: boolean | cdktf.IResolvable; 
+  private _enableSso?: boolean | cdktn.IResolvable; 
   public get enableSso() {
     return this.getBooleanAttribute('enable_sso');
   }
-  public set enableSso(value: boolean | cdktf.IResolvable) {
+  public set enableSso(value: boolean | cdktn.IResolvable) {
     this._enableSso = value;
   }
   public resetEnableSso() {
@@ -911,20 +911,20 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: cdktf.stringToTerraform(this._alias),
-      description: cdktf.stringToTerraform(this._description),
-      desired_number_of_domain_controllers: cdktf.numberToTerraform(this._desiredNumberOfDomainControllers),
-      edition: cdktf.stringToTerraform(this._edition),
-      enable_sso: cdktf.booleanToTerraform(this._enableSso),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      password: cdktf.stringToTerraform(this._password),
-      region: cdktf.stringToTerraform(this._region),
-      short_name: cdktf.stringToTerraform(this._shortName),
-      size: cdktf.stringToTerraform(this._size),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      type: cdktf.stringToTerraform(this._type),
+      alias: cdktn.stringToTerraform(this._alias),
+      description: cdktn.stringToTerraform(this._description),
+      desired_number_of_domain_controllers: cdktn.numberToTerraform(this._desiredNumberOfDomainControllers),
+      edition: cdktn.stringToTerraform(this._edition),
+      enable_sso: cdktn.booleanToTerraform(this._enableSso),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      password: cdktn.stringToTerraform(this._password),
+      region: cdktn.stringToTerraform(this._region),
+      short_name: cdktn.stringToTerraform(this._shortName),
+      size: cdktn.stringToTerraform(this._size),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      type: cdktn.stringToTerraform(this._type),
       connect_settings: directoryServiceDirectoryConnectSettingsToTerraform(this._connectSettings.internalValue),
       timeouts: directoryServiceDirectoryTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_settings: directoryServiceDirectoryVpcSettingsToTerraform(this._vpcSettings.internalValue),
@@ -934,85 +934,85 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       desired_number_of_domain_controllers: {
-        value: cdktf.numberToHclTerraform(this._desiredNumberOfDomainControllers),
+        value: cdktn.numberToHclTerraform(this._desiredNumberOfDomainControllers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       edition: {
-        value: cdktf.stringToHclTerraform(this._edition),
+        value: cdktn.stringToHclTerraform(this._edition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_sso: {
-        value: cdktf.booleanToHclTerraform(this._enableSso),
+        value: cdktn.booleanToHclTerraform(this._enableSso),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       short_name: {
-        value: cdktf.stringToHclTerraform(this._shortName),
+        value: cdktn.stringToHclTerraform(this._shortName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       size: {
-        value: cdktf.stringToHclTerraform(this._size),
+        value: cdktn.stringToHclTerraform(this._size),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

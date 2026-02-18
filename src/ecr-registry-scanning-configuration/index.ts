@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EcrRegistryScanningConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface EcrRegistryScanningConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_registry_scanning_configuration#id EcrRegistryScanningConfiguration#id}
   *
@@ -34,7 +34,7 @@ export interface EcrRegistryScanningConfigurationConfig extends cdktf.TerraformM
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_registry_scanning_configuration#rule EcrRegistryScanningConfiguration#rule}
   */
-  readonly rule?: EcrRegistryScanningConfigurationRule[] | cdktf.IResolvable;
+  readonly rule?: EcrRegistryScanningConfigurationRule[] | cdktn.IResolvable;
 }
 export interface EcrRegistryScanningConfigurationRuleRepositoryFilter {
   /**
@@ -47,32 +47,32 @@ export interface EcrRegistryScanningConfigurationRuleRepositoryFilter {
   readonly filterType: string;
 }
 
-export function ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform(struct?: EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform(struct?: EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.stringToTerraform(struct!.filter),
-    filter_type: cdktf.stringToTerraform(struct!.filterType),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    filter_type: cdktn.stringToTerraform(struct!.filterType),
   }
 }
 
 
-export function ecrRegistryScanningConfigurationRuleRepositoryFilterToHclTerraform(struct?: EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrRegistryScanningConfigurationRuleRepositoryFilterToHclTerraform(struct?: EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter: {
-      value: cdktf.stringToHclTerraform(struct!.filter),
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_type: {
-      value: cdktf.stringToHclTerraform(struct!.filterType),
+      value: cdktn.stringToHclTerraform(struct!.filterType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,9 +83,9 @@ export function ecrRegistryScanningConfigurationRuleRepositoryFilterToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference extends cdktf.ComplexObject {
+export class EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,14 +114,14 @@ export class EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filter = undefined;
       this._filterType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -160,15 +160,15 @@ export class EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference
   }
 }
 
-export class EcrRegistryScanningConfigurationRuleRepositoryFilterList extends cdktf.ComplexList {
-  public internalValue? : EcrRegistryScanningConfigurationRuleRepositoryFilter[] | cdktf.IResolvable
+export class EcrRegistryScanningConfigurationRuleRepositoryFilterList extends cdktn.ComplexList {
+  public internalValue? : EcrRegistryScanningConfigurationRuleRepositoryFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -189,35 +189,35 @@ export interface EcrRegistryScanningConfigurationRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_registry_scanning_configuration#repository_filter EcrRegistryScanningConfiguration#repository_filter}
   */
-  readonly repositoryFilter: EcrRegistryScanningConfigurationRuleRepositoryFilter[] | cdktf.IResolvable;
+  readonly repositoryFilter: EcrRegistryScanningConfigurationRuleRepositoryFilter[] | cdktn.IResolvable;
 }
 
-export function ecrRegistryScanningConfigurationRuleToTerraform(struct?: EcrRegistryScanningConfigurationRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrRegistryScanningConfigurationRuleToTerraform(struct?: EcrRegistryScanningConfigurationRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    scan_frequency: cdktf.stringToTerraform(struct!.scanFrequency),
-    repository_filter: cdktf.listMapper(ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform, true)(struct!.repositoryFilter),
+    scan_frequency: cdktn.stringToTerraform(struct!.scanFrequency),
+    repository_filter: cdktn.listMapper(ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform, true)(struct!.repositoryFilter),
   }
 }
 
 
-export function ecrRegistryScanningConfigurationRuleToHclTerraform(struct?: EcrRegistryScanningConfigurationRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ecrRegistryScanningConfigurationRuleToHclTerraform(struct?: EcrRegistryScanningConfigurationRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     scan_frequency: {
-      value: cdktf.stringToHclTerraform(struct!.scanFrequency),
+      value: cdktn.stringToHclTerraform(struct!.scanFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repository_filter: {
-      value: cdktf.listMapperHcl(ecrRegistryScanningConfigurationRuleRepositoryFilterToHclTerraform, true)(struct!.repositoryFilter),
+      value: cdktn.listMapperHcl(ecrRegistryScanningConfigurationRuleRepositoryFilterToHclTerraform, true)(struct!.repositoryFilter),
       isBlock: true,
       type: "set",
       storageClassType: "EcrRegistryScanningConfigurationRuleRepositoryFilterList",
@@ -228,9 +228,9 @@ export function ecrRegistryScanningConfigurationRuleToHclTerraform(struct?: EcrR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EcrRegistryScanningConfigurationRuleOutputReference extends cdktf.ComplexObject {
+export class EcrRegistryScanningConfigurationRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -238,11 +238,11 @@ export class EcrRegistryScanningConfigurationRuleOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EcrRegistryScanningConfigurationRule | cdktf.IResolvable | undefined {
+  public get internalValue(): EcrRegistryScanningConfigurationRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -259,14 +259,14 @@ export class EcrRegistryScanningConfigurationRuleOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcrRegistryScanningConfigurationRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EcrRegistryScanningConfigurationRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._scanFrequency = undefined;
       this._repositoryFilter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -296,7 +296,7 @@ export class EcrRegistryScanningConfigurationRuleOutputReference extends cdktf.C
   public get repositoryFilter() {
     return this._repositoryFilter;
   }
-  public putRepositoryFilter(value: EcrRegistryScanningConfigurationRuleRepositoryFilter[] | cdktf.IResolvable) {
+  public putRepositoryFilter(value: EcrRegistryScanningConfigurationRuleRepositoryFilter[] | cdktn.IResolvable) {
     this._repositoryFilter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -305,15 +305,15 @@ export class EcrRegistryScanningConfigurationRuleOutputReference extends cdktf.C
   }
 }
 
-export class EcrRegistryScanningConfigurationRuleList extends cdktf.ComplexList {
-  public internalValue? : EcrRegistryScanningConfigurationRule[] | cdktf.IResolvable
+export class EcrRegistryScanningConfigurationRuleList extends cdktn.ComplexList {
+  public internalValue? : EcrRegistryScanningConfigurationRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -328,7 +328,7 @@ export class EcrRegistryScanningConfigurationRuleList extends cdktf.ComplexList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration}
 */
-export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
+export class EcrRegistryScanningConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -339,14 +339,14 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EcrRegistryScanningConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EcrRegistryScanningConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcrRegistryScanningConfiguration to import
   * @param importFromId The id of the existing EcrRegistryScanningConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ecr_registry_scanning_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcrRegistryScanningConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_registry_scanning_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_registry_scanning_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -441,7 +441,7 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: EcrRegistryScanningConfigurationRule[] | cdktf.IResolvable) {
+  public putRule(value: EcrRegistryScanningConfigurationRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -458,35 +458,35 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      scan_type: cdktf.stringToTerraform(this._scanType),
-      rule: cdktf.listMapper(ecrRegistryScanningConfigurationRuleToTerraform, true)(this._rule.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      scan_type: cdktn.stringToTerraform(this._scanType),
+      rule: cdktn.listMapper(ecrRegistryScanningConfigurationRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scan_type: {
-        value: cdktf.stringToHclTerraform(this._scanType),
+        value: cdktn.stringToHclTerraform(this._scanType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule: {
-        value: cdktf.listMapperHcl(ecrRegistryScanningConfigurationRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(ecrRegistryScanningConfigurationRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "EcrRegistryScanningConfigurationRuleList",

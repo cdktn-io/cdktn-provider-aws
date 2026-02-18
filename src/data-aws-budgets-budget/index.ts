@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBudgetsBudgetConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBudgetsBudgetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/budgets_budget#account_id DataAwsBudgetsBudget#account_id}
   */
@@ -40,8 +40,8 @@ export interface DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptions {
 }
 
 export function dataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsToTerraform(struct?: DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -50,8 +50,8 @@ export function dataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsToTerraform(s
 
 
 export function dataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsToHclTerraform(struct?: DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -59,7 +59,7 @@ export function dataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsToHclTerrafor
   return attrs;
 }
 
-export class DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -68,7 +68,7 @@ export class DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -98,14 +98,14 @@ export class DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference 
   }
 }
 
-export class DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsList extends cdktf.ComplexList {
+export class DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -120,8 +120,8 @@ export interface DataAwsBudgetsBudgetAutoAdjustData {
 }
 
 export function dataAwsBudgetsBudgetAutoAdjustDataToTerraform(struct?: DataAwsBudgetsBudgetAutoAdjustData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -130,8 +130,8 @@ export function dataAwsBudgetsBudgetAutoAdjustDataToTerraform(struct?: DataAwsBu
 
 
 export function dataAwsBudgetsBudgetAutoAdjustDataToHclTerraform(struct?: DataAwsBudgetsBudgetAutoAdjustData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -139,7 +139,7 @@ export function dataAwsBudgetsBudgetAutoAdjustDataToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsBudgetsBudgetAutoAdjustDataOutputReference extends cdktf.ComplexObject {
+export class DataAwsBudgetsBudgetAutoAdjustDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -148,7 +148,7 @@ export class DataAwsBudgetsBudgetAutoAdjustDataOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -184,14 +184,14 @@ export class DataAwsBudgetsBudgetAutoAdjustDataOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsBudgetsBudgetAutoAdjustDataList extends cdktf.ComplexList {
+export class DataAwsBudgetsBudgetAutoAdjustDataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -206,8 +206,8 @@ export interface DataAwsBudgetsBudgetBudgetLimit {
 }
 
 export function dataAwsBudgetsBudgetBudgetLimitToTerraform(struct?: DataAwsBudgetsBudgetBudgetLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -216,8 +216,8 @@ export function dataAwsBudgetsBudgetBudgetLimitToTerraform(struct?: DataAwsBudge
 
 
 export function dataAwsBudgetsBudgetBudgetLimitToHclTerraform(struct?: DataAwsBudgetsBudgetBudgetLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -225,7 +225,7 @@ export function dataAwsBudgetsBudgetBudgetLimitToHclTerraform(struct?: DataAwsBu
   return attrs;
 }
 
-export class DataAwsBudgetsBudgetBudgetLimitOutputReference extends cdktf.ComplexObject {
+export class DataAwsBudgetsBudgetBudgetLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -234,7 +234,7 @@ export class DataAwsBudgetsBudgetBudgetLimitOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -264,14 +264,14 @@ export class DataAwsBudgetsBudgetBudgetLimitOutputReference extends cdktf.Comple
   }
 }
 
-export class DataAwsBudgetsBudgetBudgetLimitList extends cdktf.ComplexList {
+export class DataAwsBudgetsBudgetBudgetLimitList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -286,8 +286,8 @@ export interface DataAwsBudgetsBudgetCalculatedSpendActualSpend {
 }
 
 export function dataAwsBudgetsBudgetCalculatedSpendActualSpendToTerraform(struct?: DataAwsBudgetsBudgetCalculatedSpendActualSpend): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -296,8 +296,8 @@ export function dataAwsBudgetsBudgetCalculatedSpendActualSpendToTerraform(struct
 
 
 export function dataAwsBudgetsBudgetCalculatedSpendActualSpendToHclTerraform(struct?: DataAwsBudgetsBudgetCalculatedSpendActualSpend): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -305,7 +305,7 @@ export function dataAwsBudgetsBudgetCalculatedSpendActualSpendToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsBudgetsBudgetCalculatedSpendActualSpendOutputReference extends cdktf.ComplexObject {
+export class DataAwsBudgetsBudgetCalculatedSpendActualSpendOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -314,7 +314,7 @@ export class DataAwsBudgetsBudgetCalculatedSpendActualSpendOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -344,14 +344,14 @@ export class DataAwsBudgetsBudgetCalculatedSpendActualSpendOutputReference exten
   }
 }
 
-export class DataAwsBudgetsBudgetCalculatedSpendActualSpendList extends cdktf.ComplexList {
+export class DataAwsBudgetsBudgetCalculatedSpendActualSpendList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -366,8 +366,8 @@ export interface DataAwsBudgetsBudgetCalculatedSpend {
 }
 
 export function dataAwsBudgetsBudgetCalculatedSpendToTerraform(struct?: DataAwsBudgetsBudgetCalculatedSpend): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -376,8 +376,8 @@ export function dataAwsBudgetsBudgetCalculatedSpendToTerraform(struct?: DataAwsB
 
 
 export function dataAwsBudgetsBudgetCalculatedSpendToHclTerraform(struct?: DataAwsBudgetsBudgetCalculatedSpend): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -385,7 +385,7 @@ export function dataAwsBudgetsBudgetCalculatedSpendToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsBudgetsBudgetCalculatedSpendOutputReference extends cdktf.ComplexObject {
+export class DataAwsBudgetsBudgetCalculatedSpendOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -394,7 +394,7 @@ export class DataAwsBudgetsBudgetCalculatedSpendOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -420,14 +420,14 @@ export class DataAwsBudgetsBudgetCalculatedSpendOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsBudgetsBudgetCalculatedSpendList extends cdktf.ComplexList {
+export class DataAwsBudgetsBudgetCalculatedSpendList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -442,8 +442,8 @@ export interface DataAwsBudgetsBudgetCostFilter {
 }
 
 export function dataAwsBudgetsBudgetCostFilterToTerraform(struct?: DataAwsBudgetsBudgetCostFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -452,8 +452,8 @@ export function dataAwsBudgetsBudgetCostFilterToTerraform(struct?: DataAwsBudget
 
 
 export function dataAwsBudgetsBudgetCostFilterToHclTerraform(struct?: DataAwsBudgetsBudgetCostFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -461,7 +461,7 @@ export function dataAwsBudgetsBudgetCostFilterToHclTerraform(struct?: DataAwsBud
   return attrs;
 }
 
-export class DataAwsBudgetsBudgetCostFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsBudgetsBudgetCostFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -470,7 +470,7 @@ export class DataAwsBudgetsBudgetCostFilterOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -500,14 +500,14 @@ export class DataAwsBudgetsBudgetCostFilterOutputReference extends cdktf.Complex
   }
 }
 
-export class DataAwsBudgetsBudgetCostFilterList extends cdktf.ComplexList {
+export class DataAwsBudgetsBudgetCostFilterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -522,8 +522,8 @@ export interface DataAwsBudgetsBudgetCostTypes {
 }
 
 export function dataAwsBudgetsBudgetCostTypesToTerraform(struct?: DataAwsBudgetsBudgetCostTypes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -532,8 +532,8 @@ export function dataAwsBudgetsBudgetCostTypesToTerraform(struct?: DataAwsBudgets
 
 
 export function dataAwsBudgetsBudgetCostTypesToHclTerraform(struct?: DataAwsBudgetsBudgetCostTypes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -541,7 +541,7 @@ export function dataAwsBudgetsBudgetCostTypesToHclTerraform(struct?: DataAwsBudg
   return attrs;
 }
 
-export class DataAwsBudgetsBudgetCostTypesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBudgetsBudgetCostTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -550,7 +550,7 @@ export class DataAwsBudgetsBudgetCostTypesOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -625,14 +625,14 @@ export class DataAwsBudgetsBudgetCostTypesOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DataAwsBudgetsBudgetCostTypesList extends cdktf.ComplexList {
+export class DataAwsBudgetsBudgetCostTypesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -647,8 +647,8 @@ export interface DataAwsBudgetsBudgetNotification {
 }
 
 export function dataAwsBudgetsBudgetNotificationToTerraform(struct?: DataAwsBudgetsBudgetNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -657,8 +657,8 @@ export function dataAwsBudgetsBudgetNotificationToTerraform(struct?: DataAwsBudg
 
 
 export function dataAwsBudgetsBudgetNotificationToHclTerraform(struct?: DataAwsBudgetsBudgetNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -666,7 +666,7 @@ export function dataAwsBudgetsBudgetNotificationToHclTerraform(struct?: DataAwsB
   return attrs;
 }
 
-export class DataAwsBudgetsBudgetNotificationOutputReference extends cdktf.ComplexObject {
+export class DataAwsBudgetsBudgetNotificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -675,7 +675,7 @@ export class DataAwsBudgetsBudgetNotificationOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -706,12 +706,12 @@ export class DataAwsBudgetsBudgetNotificationOutputReference extends cdktf.Compl
 
   // subscriber_email_addresses - computed: true, optional: false, required: false
   public get subscriberEmailAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('subscriber_email_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('subscriber_email_addresses'));
   }
 
   // subscriber_sns_topic_arns - computed: true, optional: false, required: false
   public get subscriberSnsTopicArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('subscriber_sns_topic_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('subscriber_sns_topic_arns'));
   }
 
   // threshold - computed: true, optional: false, required: false
@@ -725,14 +725,14 @@ export class DataAwsBudgetsBudgetNotificationOutputReference extends cdktf.Compl
   }
 }
 
-export class DataAwsBudgetsBudgetNotificationList extends cdktf.ComplexList {
+export class DataAwsBudgetsBudgetNotificationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -747,8 +747,8 @@ export interface DataAwsBudgetsBudgetPlannedLimit {
 }
 
 export function dataAwsBudgetsBudgetPlannedLimitToTerraform(struct?: DataAwsBudgetsBudgetPlannedLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -757,8 +757,8 @@ export function dataAwsBudgetsBudgetPlannedLimitToTerraform(struct?: DataAwsBudg
 
 
 export function dataAwsBudgetsBudgetPlannedLimitToHclTerraform(struct?: DataAwsBudgetsBudgetPlannedLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -766,7 +766,7 @@ export function dataAwsBudgetsBudgetPlannedLimitToHclTerraform(struct?: DataAwsB
   return attrs;
 }
 
-export class DataAwsBudgetsBudgetPlannedLimitOutputReference extends cdktf.ComplexObject {
+export class DataAwsBudgetsBudgetPlannedLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -775,7 +775,7 @@ export class DataAwsBudgetsBudgetPlannedLimitOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -810,14 +810,14 @@ export class DataAwsBudgetsBudgetPlannedLimitOutputReference extends cdktf.Compl
   }
 }
 
-export class DataAwsBudgetsBudgetPlannedLimitList extends cdktf.ComplexList {
+export class DataAwsBudgetsBudgetPlannedLimitList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -832,7 +832,7 @@ export class DataAwsBudgetsBudgetPlannedLimitList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/budgets_budget aws_budgets_budget}
 */
-export class DataAwsBudgetsBudget extends cdktf.TerraformDataSource {
+export class DataAwsBudgetsBudget extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -843,14 +843,14 @@ export class DataAwsBudgetsBudget extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBudgetsBudget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBudgetsBudget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBudgetsBudget to import
   * @param importFromId The id of the existing DataAwsBudgetsBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/budgets_budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBudgetsBudget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_budgets_budget", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_budgets_budget", importId: importFromId, provider });
       }
 
   // ===========
@@ -1051,42 +1051,42 @@ export class DataAwsBudgetsBudget extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

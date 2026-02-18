@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TransitGatewayRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TransitGatewayRouteTableAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_route_table_association#id Ec2TransitGatewayRouteTableAssociation#id}
   *
@@ -28,7 +28,7 @@ export interface Ec2TransitGatewayRouteTableAssociationConfig extends cdktf.Terr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_route_table_association#replace_existing_association Ec2TransitGatewayRouteTableAssociation#replace_existing_association}
   */
-  readonly replaceExistingAssociation?: boolean | cdktf.IResolvable;
+  readonly replaceExistingAssociation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_route_table_association#transit_gateway_attachment_id Ec2TransitGatewayRouteTableAssociation#transit_gateway_attachment_id}
   */
@@ -42,7 +42,7 @@ export interface Ec2TransitGatewayRouteTableAssociationConfig extends cdktf.Terr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_route_table_association aws_ec2_transit_gateway_route_table_association}
 */
-export class Ec2TransitGatewayRouteTableAssociation extends cdktf.TerraformResource {
+export class Ec2TransitGatewayRouteTableAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class Ec2TransitGatewayRouteTableAssociation extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TransitGatewayRouteTableAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TransitGatewayRouteTableAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TransitGatewayRouteTableAssociation to import
   * @param importFromId The id of the existing Ec2TransitGatewayRouteTableAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_route_table_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TransitGatewayRouteTableAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_route_table_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_route_table_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,11 +134,11 @@ export class Ec2TransitGatewayRouteTableAssociation extends cdktf.TerraformResou
   }
 
   // replace_existing_association - computed: false, optional: true, required: false
-  private _replaceExistingAssociation?: boolean | cdktf.IResolvable; 
+  private _replaceExistingAssociation?: boolean | cdktn.IResolvable; 
   public get replaceExistingAssociation() {
     return this.getBooleanAttribute('replace_existing_association');
   }
-  public set replaceExistingAssociation(value: boolean | cdktf.IResolvable) {
+  public set replaceExistingAssociation(value: boolean | cdktn.IResolvable) {
     this._replaceExistingAssociation = value;
   }
   public resetReplaceExistingAssociation() {
@@ -191,42 +191,42 @@ export class Ec2TransitGatewayRouteTableAssociation extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      replace_existing_association: cdktf.booleanToTerraform(this._replaceExistingAssociation),
-      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
-      transit_gateway_route_table_id: cdktf.stringToTerraform(this._transitGatewayRouteTableId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      replace_existing_association: cdktn.booleanToTerraform(this._replaceExistingAssociation),
+      transit_gateway_attachment_id: cdktn.stringToTerraform(this._transitGatewayAttachmentId),
+      transit_gateway_route_table_id: cdktn.stringToTerraform(this._transitGatewayRouteTableId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replace_existing_association: {
-        value: cdktf.booleanToHclTerraform(this._replaceExistingAssociation),
+        value: cdktn.booleanToHclTerraform(this._replaceExistingAssociation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       transit_gateway_attachment_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayAttachmentId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayAttachmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_route_table_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayRouteTableId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayRouteTableId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

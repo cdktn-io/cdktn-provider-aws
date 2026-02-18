@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface XrayResourcePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface XrayResourcePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}
   */
-  readonly bypassPolicyLockoutCheck?: boolean | cdktf.IResolvable;
+  readonly bypassPolicyLockoutCheck?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}
   */
@@ -39,7 +39,7 @@ export interface XrayResourcePolicyConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_resource_policy aws_xray_resource_policy}
 */
-export class XrayResourcePolicy extends cdktf.TerraformResource {
+export class XrayResourcePolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class XrayResourcePolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a XrayResourcePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a XrayResourcePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the XrayResourcePolicy to import
   * @param importFromId The id of the existing XrayResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the XrayResourcePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_xray_resource_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_xray_resource_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -99,11 +99,11 @@ export class XrayResourcePolicy extends cdktf.TerraformResource {
   // ==========
 
   // bypass_policy_lockout_check - computed: false, optional: true, required: false
-  private _bypassPolicyLockoutCheck?: boolean | cdktf.IResolvable; 
+  private _bypassPolicyLockoutCheck?: boolean | cdktn.IResolvable; 
   public get bypassPolicyLockoutCheck() {
     return this.getBooleanAttribute('bypass_policy_lockout_check');
   }
-  public set bypassPolicyLockoutCheck(value: boolean | cdktf.IResolvable) {
+  public set bypassPolicyLockoutCheck(value: boolean | cdktn.IResolvable) {
     this._bypassPolicyLockoutCheck = value;
   }
   public resetBypassPolicyLockoutCheck() {
@@ -183,42 +183,42 @@ export class XrayResourcePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bypass_policy_lockout_check: cdktf.booleanToTerraform(this._bypassPolicyLockoutCheck),
-      policy_document: cdktf.stringToTerraform(this._policyDocument),
-      policy_name: cdktf.stringToTerraform(this._policyName),
-      policy_revision_id: cdktf.stringToTerraform(this._policyRevisionId),
-      region: cdktf.stringToTerraform(this._region),
+      bypass_policy_lockout_check: cdktn.booleanToTerraform(this._bypassPolicyLockoutCheck),
+      policy_document: cdktn.stringToTerraform(this._policyDocument),
+      policy_name: cdktn.stringToTerraform(this._policyName),
+      policy_revision_id: cdktn.stringToTerraform(this._policyRevisionId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bypass_policy_lockout_check: {
-        value: cdktf.booleanToHclTerraform(this._bypassPolicyLockoutCheck),
+        value: cdktn.booleanToHclTerraform(this._bypassPolicyLockoutCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       policy_document: {
-        value: cdktf.stringToHclTerraform(this._policyDocument),
+        value: cdktn.stringToHclTerraform(this._policyDocument),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_name: {
-        value: cdktf.stringToHclTerraform(this._policyName),
+        value: cdktn.stringToHclTerraform(this._policyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_revision_id: {
-        value: cdktf.stringToHclTerraform(this._policyRevisionId),
+        value: cdktn.stringToHclTerraform(this._policyRevisionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

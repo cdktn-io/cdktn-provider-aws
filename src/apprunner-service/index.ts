@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApprunnerServiceConfig extends cdktf.TerraformMetaArguments {
+export interface ApprunnerServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_service#auto_scaling_configuration_arn ApprunnerService#auto_scaling_configuration_arn}
   */
@@ -86,24 +86,24 @@ export interface ApprunnerServiceEncryptionConfiguration {
 }
 
 export function apprunnerServiceEncryptionConfigurationToTerraform(struct?: ApprunnerServiceEncryptionConfigurationOutputReference | ApprunnerServiceEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
   }
 }
 
 
 export function apprunnerServiceEncryptionConfigurationToHclTerraform(struct?: ApprunnerServiceEncryptionConfigurationOutputReference | ApprunnerServiceEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,14 +114,14 @@ export function apprunnerServiceEncryptionConfigurationToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -187,59 +187,59 @@ export interface ApprunnerServiceHealthCheckConfiguration {
 }
 
 export function apprunnerServiceHealthCheckConfigurationToTerraform(struct?: ApprunnerServiceHealthCheckConfigurationOutputReference | ApprunnerServiceHealthCheckConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    healthy_threshold: cdktf.numberToTerraform(struct!.healthyThreshold),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    path: cdktf.stringToTerraform(struct!.path),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    timeout: cdktf.numberToTerraform(struct!.timeout),
-    unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
+    healthy_threshold: cdktn.numberToTerraform(struct!.healthyThreshold),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    path: cdktn.stringToTerraform(struct!.path),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    timeout: cdktn.numberToTerraform(struct!.timeout),
+    unhealthy_threshold: cdktn.numberToTerraform(struct!.unhealthyThreshold),
   }
 }
 
 
 export function apprunnerServiceHealthCheckConfigurationToHclTerraform(struct?: ApprunnerServiceHealthCheckConfigurationOutputReference | ApprunnerServiceHealthCheckConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     healthy_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.healthyThreshold),
+      value: cdktn.numberToHclTerraform(struct!.healthyThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout: {
-      value: cdktf.numberToHclTerraform(struct!.timeout),
+      value: cdktn.numberToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     unhealthy_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.unhealthyThreshold),
+      value: cdktn.numberToHclTerraform(struct!.unhealthyThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -250,14 +250,14 @@ export function apprunnerServiceHealthCheckConfigurationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceHealthCheckConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceHealthCheckConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -424,38 +424,38 @@ export interface ApprunnerServiceInstanceConfiguration {
 }
 
 export function apprunnerServiceInstanceConfigurationToTerraform(struct?: ApprunnerServiceInstanceConfigurationOutputReference | ApprunnerServiceInstanceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu: cdktf.stringToTerraform(struct!.cpu),
-    instance_role_arn: cdktf.stringToTerraform(struct!.instanceRoleArn),
-    memory: cdktf.stringToTerraform(struct!.memory),
+    cpu: cdktn.stringToTerraform(struct!.cpu),
+    instance_role_arn: cdktn.stringToTerraform(struct!.instanceRoleArn),
+    memory: cdktn.stringToTerraform(struct!.memory),
   }
 }
 
 
 export function apprunnerServiceInstanceConfigurationToHclTerraform(struct?: ApprunnerServiceInstanceConfigurationOutputReference | ApprunnerServiceInstanceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu: {
-      value: cdktf.stringToHclTerraform(struct!.cpu),
+      value: cdktn.stringToHclTerraform(struct!.cpu),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.instanceRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.instanceRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     memory: {
-      value: cdktf.stringToHclTerraform(struct!.memory),
+      value: cdktn.stringToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -466,14 +466,14 @@ export function apprunnerServiceInstanceConfigurationToHclTerraform(struct?: App
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceInstanceConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceInstanceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -570,31 +570,31 @@ export interface ApprunnerServiceNetworkConfigurationEgressConfiguration {
 }
 
 export function apprunnerServiceNetworkConfigurationEgressConfigurationToTerraform(struct?: ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference | ApprunnerServiceNetworkConfigurationEgressConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    egress_type: cdktf.stringToTerraform(struct!.egressType),
-    vpc_connector_arn: cdktf.stringToTerraform(struct!.vpcConnectorArn),
+    egress_type: cdktn.stringToTerraform(struct!.egressType),
+    vpc_connector_arn: cdktn.stringToTerraform(struct!.vpcConnectorArn),
   }
 }
 
 
 export function apprunnerServiceNetworkConfigurationEgressConfigurationToHclTerraform(struct?: ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference | ApprunnerServiceNetworkConfigurationEgressConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     egress_type: {
-      value: cdktf.stringToHclTerraform(struct!.egressType),
+      value: cdktn.stringToHclTerraform(struct!.egressType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_connector_arn: {
-      value: cdktf.stringToHclTerraform(struct!.vpcConnectorArn),
+      value: cdktn.stringToHclTerraform(struct!.vpcConnectorArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -605,14 +605,14 @@ export function apprunnerServiceNetworkConfigurationEgressConfigurationToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -679,28 +679,28 @@ export interface ApprunnerServiceNetworkConfigurationIngressConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_service#is_publicly_accessible ApprunnerService#is_publicly_accessible}
   */
-  readonly isPubliclyAccessible?: boolean | cdktf.IResolvable;
+  readonly isPubliclyAccessible?: boolean | cdktn.IResolvable;
 }
 
 export function apprunnerServiceNetworkConfigurationIngressConfigurationToTerraform(struct?: ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference | ApprunnerServiceNetworkConfigurationIngressConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_publicly_accessible: cdktf.booleanToTerraform(struct!.isPubliclyAccessible),
+    is_publicly_accessible: cdktn.booleanToTerraform(struct!.isPubliclyAccessible),
   }
 }
 
 
 export function apprunnerServiceNetworkConfigurationIngressConfigurationToHclTerraform(struct?: ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference | ApprunnerServiceNetworkConfigurationIngressConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_publicly_accessible: {
-      value: cdktf.booleanToHclTerraform(struct!.isPubliclyAccessible),
+      value: cdktn.booleanToHclTerraform(struct!.isPubliclyAccessible),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -711,14 +711,14 @@ export function apprunnerServiceNetworkConfigurationIngressConfigurationToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -744,11 +744,11 @@ export class ApprunnerServiceNetworkConfigurationIngressConfigurationOutputRefer
   }
 
   // is_publicly_accessible - computed: false, optional: true, required: false
-  private _isPubliclyAccessible?: boolean | cdktf.IResolvable; 
+  private _isPubliclyAccessible?: boolean | cdktn.IResolvable; 
   public get isPubliclyAccessible() {
     return this.getBooleanAttribute('is_publicly_accessible');
   }
-  public set isPubliclyAccessible(value: boolean | cdktf.IResolvable) {
+  public set isPubliclyAccessible(value: boolean | cdktn.IResolvable) {
     this._isPubliclyAccessible = value;
   }
   public resetIsPubliclyAccessible() {
@@ -779,12 +779,12 @@ export interface ApprunnerServiceNetworkConfiguration {
 }
 
 export function apprunnerServiceNetworkConfigurationToTerraform(struct?: ApprunnerServiceNetworkConfigurationOutputReference | ApprunnerServiceNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address_type: cdktf.stringToTerraform(struct!.ipAddressType),
+    ip_address_type: cdktn.stringToTerraform(struct!.ipAddressType),
     egress_configuration: apprunnerServiceNetworkConfigurationEgressConfigurationToTerraform(struct!.egressConfiguration),
     ingress_configuration: apprunnerServiceNetworkConfigurationIngressConfigurationToTerraform(struct!.ingressConfiguration),
   }
@@ -792,13 +792,13 @@ export function apprunnerServiceNetworkConfigurationToTerraform(struct?: Apprunn
 
 
 export function apprunnerServiceNetworkConfigurationToHclTerraform(struct?: ApprunnerServiceNetworkConfigurationOutputReference | ApprunnerServiceNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address_type: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddressType),
+      value: cdktn.stringToHclTerraform(struct!.ipAddressType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -821,14 +821,14 @@ export function apprunnerServiceNetworkConfigurationToHclTerraform(struct?: Appr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -921,35 +921,35 @@ export interface ApprunnerServiceObservabilityConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_service#observability_enabled ApprunnerService#observability_enabled}
   */
-  readonly observabilityEnabled: boolean | cdktf.IResolvable;
+  readonly observabilityEnabled: boolean | cdktn.IResolvable;
 }
 
 export function apprunnerServiceObservabilityConfigurationToTerraform(struct?: ApprunnerServiceObservabilityConfigurationOutputReference | ApprunnerServiceObservabilityConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    observability_configuration_arn: cdktf.stringToTerraform(struct!.observabilityConfigurationArn),
-    observability_enabled: cdktf.booleanToTerraform(struct!.observabilityEnabled),
+    observability_configuration_arn: cdktn.stringToTerraform(struct!.observabilityConfigurationArn),
+    observability_enabled: cdktn.booleanToTerraform(struct!.observabilityEnabled),
   }
 }
 
 
 export function apprunnerServiceObservabilityConfigurationToHclTerraform(struct?: ApprunnerServiceObservabilityConfigurationOutputReference | ApprunnerServiceObservabilityConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     observability_configuration_arn: {
-      value: cdktf.stringToHclTerraform(struct!.observabilityConfigurationArn),
+      value: cdktn.stringToHclTerraform(struct!.observabilityConfigurationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     observability_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.observabilityEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.observabilityEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -960,14 +960,14 @@ export function apprunnerServiceObservabilityConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceObservabilityConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceObservabilityConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1015,11 +1015,11 @@ export class ApprunnerServiceObservabilityConfigurationOutputReference extends c
   }
 
   // observability_enabled - computed: false, optional: false, required: true
-  private _observabilityEnabled?: boolean | cdktf.IResolvable; 
+  private _observabilityEnabled?: boolean | cdktn.IResolvable; 
   public get observabilityEnabled() {
     return this.getBooleanAttribute('observability_enabled');
   }
-  public set observabilityEnabled(value: boolean | cdktf.IResolvable) {
+  public set observabilityEnabled(value: boolean | cdktn.IResolvable) {
     this._observabilityEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1039,31 +1039,31 @@ export interface ApprunnerServiceSourceConfigurationAuthenticationConfiguration 
 }
 
 export function apprunnerServiceSourceConfigurationAuthenticationConfigurationToTerraform(struct?: ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference | ApprunnerServiceSourceConfigurationAuthenticationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_role_arn: cdktf.stringToTerraform(struct!.accessRoleArn),
-    connection_arn: cdktf.stringToTerraform(struct!.connectionArn),
+    access_role_arn: cdktn.stringToTerraform(struct!.accessRoleArn),
+    connection_arn: cdktn.stringToTerraform(struct!.connectionArn),
   }
 }
 
 
 export function apprunnerServiceSourceConfigurationAuthenticationConfigurationToHclTerraform(struct?: ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference | ApprunnerServiceSourceConfigurationAuthenticationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.accessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.accessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     connection_arn: {
-      value: cdktf.stringToHclTerraform(struct!.connectionArn),
+      value: cdktn.stringToHclTerraform(struct!.connectionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1074,14 +1074,14 @@ export function apprunnerServiceSourceConfigurationAuthenticationConfigurationTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1172,59 +1172,59 @@ export interface ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurat
 }
 
 export function apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesToTerraform(struct?: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference | ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    build_command: cdktf.stringToTerraform(struct!.buildCommand),
-    port: cdktf.stringToTerraform(struct!.port),
-    runtime: cdktf.stringToTerraform(struct!.runtime),
-    runtime_environment_secrets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.runtimeEnvironmentSecrets),
-    runtime_environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.runtimeEnvironmentVariables),
-    start_command: cdktf.stringToTerraform(struct!.startCommand),
+    build_command: cdktn.stringToTerraform(struct!.buildCommand),
+    port: cdktn.stringToTerraform(struct!.port),
+    runtime: cdktn.stringToTerraform(struct!.runtime),
+    runtime_environment_secrets: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.runtimeEnvironmentSecrets),
+    runtime_environment_variables: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.runtimeEnvironmentVariables),
+    start_command: cdktn.stringToTerraform(struct!.startCommand),
   }
 }
 
 
 export function apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesToHclTerraform(struct?: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference | ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     build_command: {
-      value: cdktf.stringToHclTerraform(struct!.buildCommand),
+      value: cdktn.stringToHclTerraform(struct!.buildCommand),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime: {
-      value: cdktf.stringToHclTerraform(struct!.runtime),
+      value: cdktn.stringToHclTerraform(struct!.runtime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime_environment_secrets: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.runtimeEnvironmentSecrets),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.runtimeEnvironmentSecrets),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     runtime_environment_variables: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.runtimeEnvironmentVariables),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.runtimeEnvironmentVariables),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     start_command: {
-      value: cdktf.stringToHclTerraform(struct!.startCommand),
+      value: cdktn.stringToHclTerraform(struct!.startCommand),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1235,14 +1235,14 @@ export function apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1404,25 +1404,25 @@ export interface ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurat
 }
 
 export function apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationToTerraform(struct?: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference | ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    configuration_source: cdktf.stringToTerraform(struct!.configurationSource),
+    configuration_source: cdktn.stringToTerraform(struct!.configurationSource),
     code_configuration_values: apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesToTerraform(struct!.codeConfigurationValues),
   }
 }
 
 
 export function apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationToHclTerraform(struct?: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference | ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     configuration_source: {
-      value: cdktf.stringToHclTerraform(struct!.configurationSource),
+      value: cdktn.stringToHclTerraform(struct!.configurationSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1439,14 +1439,14 @@ export function apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1518,31 +1518,31 @@ export interface ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVers
 }
 
 export function apprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionToTerraform(struct?: ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference | ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function apprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionToHclTerraform(struct?: ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference | ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1553,14 +1553,14 @@ export function apprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1641,13 +1641,13 @@ export interface ApprunnerServiceSourceConfigurationCodeRepository {
 }
 
 export function apprunnerServiceSourceConfigurationCodeRepositoryToTerraform(struct?: ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference | ApprunnerServiceSourceConfigurationCodeRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository_url: cdktf.stringToTerraform(struct!.repositoryUrl),
-    source_directory: cdktf.stringToTerraform(struct!.sourceDirectory),
+    repository_url: cdktn.stringToTerraform(struct!.repositoryUrl),
+    source_directory: cdktn.stringToTerraform(struct!.sourceDirectory),
     code_configuration: apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationToTerraform(struct!.codeConfiguration),
     source_code_version: apprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionToTerraform(struct!.sourceCodeVersion),
   }
@@ -1655,19 +1655,19 @@ export function apprunnerServiceSourceConfigurationCodeRepositoryToTerraform(str
 
 
 export function apprunnerServiceSourceConfigurationCodeRepositoryToHclTerraform(struct?: ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference | ApprunnerServiceSourceConfigurationCodeRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repository_url: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryUrl),
+      value: cdktn.stringToHclTerraform(struct!.repositoryUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_directory: {
-      value: cdktf.stringToHclTerraform(struct!.sourceDirectory),
+      value: cdktn.stringToHclTerraform(struct!.sourceDirectory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1690,14 +1690,14 @@ export function apprunnerServiceSourceConfigurationCodeRepositoryToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1818,45 +1818,45 @@ export interface ApprunnerServiceSourceConfigurationImageRepositoryImageConfigur
 }
 
 export function apprunnerServiceSourceConfigurationImageRepositoryImageConfigurationToTerraform(struct?: ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference | ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
-    runtime_environment_secrets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.runtimeEnvironmentSecrets),
-    runtime_environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.runtimeEnvironmentVariables),
-    start_command: cdktf.stringToTerraform(struct!.startCommand),
+    port: cdktn.stringToTerraform(struct!.port),
+    runtime_environment_secrets: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.runtimeEnvironmentSecrets),
+    runtime_environment_variables: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.runtimeEnvironmentVariables),
+    start_command: cdktn.stringToTerraform(struct!.startCommand),
   }
 }
 
 
 export function apprunnerServiceSourceConfigurationImageRepositoryImageConfigurationToHclTerraform(struct?: ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference | ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime_environment_secrets: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.runtimeEnvironmentSecrets),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.runtimeEnvironmentSecrets),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     runtime_environment_variables: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.runtimeEnvironmentVariables),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.runtimeEnvironmentVariables),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     start_command: {
-      value: cdktf.stringToHclTerraform(struct!.startCommand),
+      value: cdktn.stringToHclTerraform(struct!.startCommand),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1867,14 +1867,14 @@ export function apprunnerServiceSourceConfigurationImageRepositoryImageConfigura
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1999,32 +1999,32 @@ export interface ApprunnerServiceSourceConfigurationImageRepository {
 }
 
 export function apprunnerServiceSourceConfigurationImageRepositoryToTerraform(struct?: ApprunnerServiceSourceConfigurationImageRepositoryOutputReference | ApprunnerServiceSourceConfigurationImageRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image_identifier: cdktf.stringToTerraform(struct!.imageIdentifier),
-    image_repository_type: cdktf.stringToTerraform(struct!.imageRepositoryType),
+    image_identifier: cdktn.stringToTerraform(struct!.imageIdentifier),
+    image_repository_type: cdktn.stringToTerraform(struct!.imageRepositoryType),
     image_configuration: apprunnerServiceSourceConfigurationImageRepositoryImageConfigurationToTerraform(struct!.imageConfiguration),
   }
 }
 
 
 export function apprunnerServiceSourceConfigurationImageRepositoryToHclTerraform(struct?: ApprunnerServiceSourceConfigurationImageRepositoryOutputReference | ApprunnerServiceSourceConfigurationImageRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.imageIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.imageIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_repository_type: {
-      value: cdktf.stringToHclTerraform(struct!.imageRepositoryType),
+      value: cdktn.stringToHclTerraform(struct!.imageRepositoryType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2041,14 +2041,14 @@ export function apprunnerServiceSourceConfigurationImageRepositoryToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceSourceConfigurationImageRepositoryOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceSourceConfigurationImageRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2131,7 +2131,7 @@ export interface ApprunnerServiceSourceConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_service#auto_deployments_enabled ApprunnerService#auto_deployments_enabled}
   */
-  readonly autoDeploymentsEnabled?: boolean | cdktf.IResolvable;
+  readonly autoDeploymentsEnabled?: boolean | cdktn.IResolvable;
   /**
   * authentication_configuration block
   *
@@ -2153,12 +2153,12 @@ export interface ApprunnerServiceSourceConfiguration {
 }
 
 export function apprunnerServiceSourceConfigurationToTerraform(struct?: ApprunnerServiceSourceConfigurationOutputReference | ApprunnerServiceSourceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auto_deployments_enabled: cdktf.booleanToTerraform(struct!.autoDeploymentsEnabled),
+    auto_deployments_enabled: cdktn.booleanToTerraform(struct!.autoDeploymentsEnabled),
     authentication_configuration: apprunnerServiceSourceConfigurationAuthenticationConfigurationToTerraform(struct!.authenticationConfiguration),
     code_repository: apprunnerServiceSourceConfigurationCodeRepositoryToTerraform(struct!.codeRepository),
     image_repository: apprunnerServiceSourceConfigurationImageRepositoryToTerraform(struct!.imageRepository),
@@ -2167,13 +2167,13 @@ export function apprunnerServiceSourceConfigurationToTerraform(struct?: Apprunne
 
 
 export function apprunnerServiceSourceConfigurationToHclTerraform(struct?: ApprunnerServiceSourceConfigurationOutputReference | ApprunnerServiceSourceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auto_deployments_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.autoDeploymentsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.autoDeploymentsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2202,14 +2202,14 @@ export function apprunnerServiceSourceConfigurationToHclTerraform(struct?: Appru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApprunnerServiceSourceConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApprunnerServiceSourceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2253,11 +2253,11 @@ export class ApprunnerServiceSourceConfigurationOutputReference extends cdktf.Co
   }
 
   // auto_deployments_enabled - computed: false, optional: true, required: false
-  private _autoDeploymentsEnabled?: boolean | cdktf.IResolvable; 
+  private _autoDeploymentsEnabled?: boolean | cdktn.IResolvable; 
   public get autoDeploymentsEnabled() {
     return this.getBooleanAttribute('auto_deployments_enabled');
   }
-  public set autoDeploymentsEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoDeploymentsEnabled(value: boolean | cdktn.IResolvable) {
     this._autoDeploymentsEnabled = value;
   }
   public resetAutoDeploymentsEnabled() {
@@ -2320,7 +2320,7 @@ export class ApprunnerServiceSourceConfigurationOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_service aws_apprunner_service}
 */
-export class ApprunnerService extends cdktf.TerraformResource {
+export class ApprunnerService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2331,14 +2331,14 @@ export class ApprunnerService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApprunnerService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApprunnerService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApprunnerService to import
   * @param importFromId The id of the existing ApprunnerService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApprunnerService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apprunner_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apprunner_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -2598,12 +2598,12 @@ export class ApprunnerService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_scaling_configuration_arn: cdktf.stringToTerraform(this._autoScalingConfigurationArn),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      service_name: cdktf.stringToTerraform(this._serviceName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      auto_scaling_configuration_arn: cdktn.stringToTerraform(this._autoScalingConfigurationArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      service_name: cdktn.stringToTerraform(this._serviceName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       encryption_configuration: apprunnerServiceEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
       health_check_configuration: apprunnerServiceHealthCheckConfigurationToTerraform(this._healthCheckConfiguration.internalValue),
       instance_configuration: apprunnerServiceInstanceConfigurationToTerraform(this._instanceConfiguration.internalValue),
@@ -2616,37 +2616,37 @@ export class ApprunnerService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_scaling_configuration_arn: {
-        value: cdktf.stringToHclTerraform(this._autoScalingConfigurationArn),
+        value: cdktn.stringToHclTerraform(this._autoScalingConfigurationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_name: {
-        value: cdktf.stringToHclTerraform(this._serviceName),
+        value: cdktn.stringToHclTerraform(this._serviceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

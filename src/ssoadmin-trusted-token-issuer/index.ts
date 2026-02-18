@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoadminTrustedTokenIssuerConfig extends cdktf.TerraformMetaArguments {
+export interface SsoadminTrustedTokenIssuerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_trusted_token_issuer#client_token SsoadminTrustedTokenIssuer#client_token}
   */
@@ -43,7 +43,7 @@ export interface SsoadminTrustedTokenIssuerConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_trusted_token_issuer#trusted_token_issuer_configuration SsoadminTrustedTokenIssuer#trusted_token_issuer_configuration}
   */
-  readonly trustedTokenIssuerConfiguration?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration[] | cdktf.IResolvable;
+  readonly trustedTokenIssuerConfiguration?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration[] | cdktn.IResolvable;
 }
 export interface SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration {
   /**
@@ -64,46 +64,46 @@ export interface SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJw
   readonly jwksRetrievalOption: string;
 }
 
-export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    claim_attribute_path: cdktf.stringToTerraform(struct!.claimAttributePath),
-    identity_store_attribute_path: cdktf.stringToTerraform(struct!.identityStoreAttributePath),
-    issuer_url: cdktf.stringToTerraform(struct!.issuerUrl),
-    jwks_retrieval_option: cdktf.stringToTerraform(struct!.jwksRetrievalOption),
+    claim_attribute_path: cdktn.stringToTerraform(struct!.claimAttributePath),
+    identity_store_attribute_path: cdktn.stringToTerraform(struct!.identityStoreAttributePath),
+    issuer_url: cdktn.stringToTerraform(struct!.issuerUrl),
+    jwks_retrieval_option: cdktn.stringToTerraform(struct!.jwksRetrievalOption),
   }
 }
 
 
-export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToHclTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToHclTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     claim_attribute_path: {
-      value: cdktf.stringToHclTerraform(struct!.claimAttributePath),
+      value: cdktn.stringToHclTerraform(struct!.claimAttributePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_store_attribute_path: {
-      value: cdktf.stringToHclTerraform(struct!.identityStoreAttributePath),
+      value: cdktn.stringToHclTerraform(struct!.identityStoreAttributePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer_url: {
-      value: cdktf.stringToHclTerraform(struct!.issuerUrl),
+      value: cdktn.stringToHclTerraform(struct!.issuerUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwks_retrieval_option: {
-      value: cdktf.stringToHclTerraform(struct!.jwksRetrievalOption),
+      value: cdktn.stringToHclTerraform(struct!.jwksRetrievalOption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,9 +114,9 @@ export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationOutputReference extends cdktf.ComplexObject {
+export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -124,11 +124,11 @@ export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtCon
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,7 +153,7 @@ export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtCon
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -162,7 +162,7 @@ export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtCon
       this._issuerUrl = undefined;
       this._jwksRetrievalOption = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -229,15 +229,15 @@ export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtCon
   }
 }
 
-export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration[] | cdktf.IResolvable
+export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -254,28 +254,28 @@ export interface SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_trusted_token_issuer#oidc_jwt_configuration SsoadminTrustedTokenIssuer#oidc_jwt_configuration}
   */
-  readonly oidcJwtConfiguration?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration[] | cdktf.IResolvable;
+  readonly oidcJwtConfiguration?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration[] | cdktn.IResolvable;
 }
 
-export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    oidc_jwt_configuration: cdktf.listMapper(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToTerraform, true)(struct!.oidcJwtConfiguration),
+    oidc_jwt_configuration: cdktn.listMapper(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToTerraform, true)(struct!.oidcJwtConfiguration),
   }
 }
 
 
-export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToHclTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToHclTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     oidc_jwt_configuration: {
-      value: cdktf.listMapperHcl(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToHclTerraform, true)(struct!.oidcJwtConfiguration),
+      value: cdktn.listMapperHcl(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToHclTerraform, true)(struct!.oidcJwtConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationList",
@@ -286,9 +286,9 @@ export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOutputReference extends cdktf.ComplexObject {
+export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -296,11 +296,11 @@ export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -313,13 +313,13 @@ export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._oidcJwtConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -335,7 +335,7 @@ export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOutputRefe
   public get oidcJwtConfiguration() {
     return this._oidcJwtConfiguration;
   }
-  public putOidcJwtConfiguration(value: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration[] | cdktf.IResolvable) {
+  public putOidcJwtConfiguration(value: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration[] | cdktn.IResolvable) {
     this._oidcJwtConfiguration.internalValue = value;
   }
   public resetOidcJwtConfiguration() {
@@ -347,15 +347,15 @@ export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOutputRefe
   }
 }
 
-export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration[] | cdktf.IResolvable
+export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -370,7 +370,7 @@ export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationList exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_trusted_token_issuer aws_ssoadmin_trusted_token_issuer}
 */
-export class SsoadminTrustedTokenIssuer extends cdktf.TerraformResource {
+export class SsoadminTrustedTokenIssuer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -381,14 +381,14 @@ export class SsoadminTrustedTokenIssuer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoadminTrustedTokenIssuer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoadminTrustedTokenIssuer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminTrustedTokenIssuer to import
   * @param importFromId The id of the existing SsoadminTrustedTokenIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_trusted_token_issuer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminTrustedTokenIssuer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_trusted_token_issuer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_trusted_token_issuer", importId: importFromId, provider });
       }
 
   // ===========
@@ -516,7 +516,7 @@ export class SsoadminTrustedTokenIssuer extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -539,7 +539,7 @@ export class SsoadminTrustedTokenIssuer extends cdktf.TerraformResource {
   public get trustedTokenIssuerConfiguration() {
     return this._trustedTokenIssuerConfiguration;
   }
-  public putTrustedTokenIssuerConfiguration(value: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration[] | cdktf.IResolvable) {
+  public putTrustedTokenIssuerConfiguration(value: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration[] | cdktn.IResolvable) {
     this._trustedTokenIssuerConfiguration.internalValue = value;
   }
   public resetTrustedTokenIssuerConfiguration() {
@@ -556,56 +556,56 @@ export class SsoadminTrustedTokenIssuer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_token: cdktf.stringToTerraform(this._clientToken),
-      instance_arn: cdktf.stringToTerraform(this._instanceArn),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      trusted_token_issuer_type: cdktf.stringToTerraform(this._trustedTokenIssuerType),
-      trusted_token_issuer_configuration: cdktf.listMapper(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToTerraform, true)(this._trustedTokenIssuerConfiguration.internalValue),
+      client_token: cdktn.stringToTerraform(this._clientToken),
+      instance_arn: cdktn.stringToTerraform(this._instanceArn),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      trusted_token_issuer_type: cdktn.stringToTerraform(this._trustedTokenIssuerType),
+      trusted_token_issuer_configuration: cdktn.listMapper(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToTerraform, true)(this._trustedTokenIssuerConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_token: {
-        value: cdktf.stringToHclTerraform(this._clientToken),
+        value: cdktn.stringToHclTerraform(this._clientToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceArn),
+        value: cdktn.stringToHclTerraform(this._instanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       trusted_token_issuer_type: {
-        value: cdktf.stringToHclTerraform(this._trustedTokenIssuerType),
+        value: cdktn.stringToHclTerraform(this._trustedTokenIssuerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trusted_token_issuer_configuration: {
-        value: cdktf.listMapperHcl(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToHclTerraform, true)(this._trustedTokenIssuerConfiguration.internalValue),
+        value: cdktn.listMapperHcl(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToHclTerraform, true)(this._trustedTokenIssuerConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationList",

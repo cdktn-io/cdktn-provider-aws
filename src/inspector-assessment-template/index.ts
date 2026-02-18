@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface InspectorAssessmentTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface InspectorAssessmentTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector_assessment_template#duration InspectorAssessmentTemplate#duration}
   */
@@ -54,7 +54,7 @@ export interface InspectorAssessmentTemplateConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector_assessment_template#event_subscription InspectorAssessmentTemplate#event_subscription}
   */
-  readonly eventSubscription?: InspectorAssessmentTemplateEventSubscription[] | cdktf.IResolvable;
+  readonly eventSubscription?: InspectorAssessmentTemplateEventSubscription[] | cdktn.IResolvable;
 }
 export interface InspectorAssessmentTemplateEventSubscription {
   /**
@@ -67,32 +67,32 @@ export interface InspectorAssessmentTemplateEventSubscription {
   readonly topicArn: string;
 }
 
-export function inspectorAssessmentTemplateEventSubscriptionToTerraform(struct?: InspectorAssessmentTemplateEventSubscription | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspectorAssessmentTemplateEventSubscriptionToTerraform(struct?: InspectorAssessmentTemplateEventSubscription | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event: cdktf.stringToTerraform(struct!.event),
-    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+    event: cdktn.stringToTerraform(struct!.event),
+    topic_arn: cdktn.stringToTerraform(struct!.topicArn),
   }
 }
 
 
-export function inspectorAssessmentTemplateEventSubscriptionToHclTerraform(struct?: InspectorAssessmentTemplateEventSubscription | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspectorAssessmentTemplateEventSubscriptionToHclTerraform(struct?: InspectorAssessmentTemplateEventSubscription | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event: {
-      value: cdktf.stringToHclTerraform(struct!.event),
+      value: cdktn.stringToHclTerraform(struct!.event),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic_arn: {
-      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      value: cdktn.stringToHclTerraform(struct!.topicArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,9 +103,9 @@ export function inspectorAssessmentTemplateEventSubscriptionToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InspectorAssessmentTemplateEventSubscriptionOutputReference extends cdktf.ComplexObject {
+export class InspectorAssessmentTemplateEventSubscriptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -113,11 +113,11 @@ export class InspectorAssessmentTemplateEventSubscriptionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): InspectorAssessmentTemplateEventSubscription | cdktf.IResolvable | undefined {
+  public get internalValue(): InspectorAssessmentTemplateEventSubscription | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -134,14 +134,14 @@ export class InspectorAssessmentTemplateEventSubscriptionOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: InspectorAssessmentTemplateEventSubscription | cdktf.IResolvable | undefined) {
+  public set internalValue(value: InspectorAssessmentTemplateEventSubscription | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._event = undefined;
       this._topicArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,15 +180,15 @@ export class InspectorAssessmentTemplateEventSubscriptionOutputReference extends
   }
 }
 
-export class InspectorAssessmentTemplateEventSubscriptionList extends cdktf.ComplexList {
-  public internalValue? : InspectorAssessmentTemplateEventSubscription[] | cdktf.IResolvable
+export class InspectorAssessmentTemplateEventSubscriptionList extends cdktn.ComplexList {
+  public internalValue? : InspectorAssessmentTemplateEventSubscription[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,7 +203,7 @@ export class InspectorAssessmentTemplateEventSubscriptionList extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector_assessment_template aws_inspector_assessment_template}
 */
-export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
+export class InspectorAssessmentTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -214,14 +214,14 @@ export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a InspectorAssessmentTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a InspectorAssessmentTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InspectorAssessmentTemplate to import
   * @param importFromId The id of the existing InspectorAssessmentTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector_assessment_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InspectorAssessmentTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_inspector_assessment_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_inspector_assessment_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -332,7 +332,7 @@ export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
   // rules_package_arns - computed: false, optional: false, required: true
   private _rulesPackageArns?: string[]; 
   public get rulesPackageArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('rules_package_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('rules_package_arns'));
   }
   public set rulesPackageArns(value: string[]) {
     this._rulesPackageArns = value;
@@ -392,7 +392,7 @@ export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
   public get eventSubscription() {
     return this._eventSubscription;
   }
-  public putEventSubscription(value: InspectorAssessmentTemplateEventSubscription[] | cdktf.IResolvable) {
+  public putEventSubscription(value: InspectorAssessmentTemplateEventSubscription[] | cdktn.IResolvable) {
     this._eventSubscription.internalValue = value;
   }
   public resetEventSubscription() {
@@ -409,70 +409,70 @@ export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      duration: cdktf.numberToTerraform(this._duration),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      rules_package_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rulesPackageArns),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_arn: cdktf.stringToTerraform(this._targetArn),
-      event_subscription: cdktf.listMapper(inspectorAssessmentTemplateEventSubscriptionToTerraform, true)(this._eventSubscription.internalValue),
+      duration: cdktn.numberToTerraform(this._duration),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      rules_package_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._rulesPackageArns),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_arn: cdktn.stringToTerraform(this._targetArn),
+      event_subscription: cdktn.listMapper(inspectorAssessmentTemplateEventSubscriptionToTerraform, true)(this._eventSubscription.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       duration: {
-        value: cdktf.numberToHclTerraform(this._duration),
+        value: cdktn.numberToHclTerraform(this._duration),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rules_package_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rulesPackageArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._rulesPackageArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_arn: {
-        value: cdktf.stringToHclTerraform(this._targetArn),
+        value: cdktn.stringToHclTerraform(this._targetArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_subscription: {
-        value: cdktf.listMapperHcl(inspectorAssessmentTemplateEventSubscriptionToHclTerraform, true)(this._eventSubscription.internalValue),
+        value: cdktn.listMapperHcl(inspectorAssessmentTemplateEventSubscriptionToHclTerraform, true)(this._eventSubscription.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "InspectorAssessmentTemplateEventSubscriptionList",

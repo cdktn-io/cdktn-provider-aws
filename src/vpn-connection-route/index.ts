@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpnConnectionRouteConfig extends cdktf.TerraformMetaArguments {
+export interface VpnConnectionRouteConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection_route#destination_cidr_block VpnConnectionRoute#destination_cidr_block}
   */
@@ -38,7 +38,7 @@ export interface VpnConnectionRouteConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection_route aws_vpn_connection_route}
 */
-export class VpnConnectionRoute extends cdktf.TerraformResource {
+export class VpnConnectionRoute extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class VpnConnectionRoute extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpnConnectionRoute resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpnConnectionRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpnConnectionRoute to import
   * @param importFromId The id of the existing VpnConnectionRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_connection_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpnConnectionRoute to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpn_connection_route", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpn_connection_route", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class VpnConnectionRoute extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      vpn_connection_id: cdktf.stringToTerraform(this._vpnConnectionId),
+      destination_cidr_block: cdktn.stringToTerraform(this._destinationCidrBlock),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      vpn_connection_id: cdktn.stringToTerraform(this._vpnConnectionId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._destinationCidrBlock),
+        value: cdktn.stringToHclTerraform(this._destinationCidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpn_connection_id: {
-        value: cdktf.stringToHclTerraform(this._vpnConnectionId),
+        value: cdktn.stringToHclTerraform(this._vpnConnectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

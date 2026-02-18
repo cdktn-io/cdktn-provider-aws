@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChimeVoiceConnectorConfig extends cdktf.TerraformMetaArguments {
+export interface ChimeVoiceConnectorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector#aws_region ChimeVoiceConnector#aws_region}
   */
@@ -36,7 +36,7 @@ export interface ChimeVoiceConnectorConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector#require_encryption ChimeVoiceConnector#require_encryption}
   */
-  readonly requireEncryption: boolean | cdktf.IResolvable;
+  readonly requireEncryption: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector#tags ChimeVoiceConnector#tags}
   */
@@ -50,7 +50,7 @@ export interface ChimeVoiceConnectorConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector aws_chime_voice_connector}
 */
-export class ChimeVoiceConnector extends cdktf.TerraformResource {
+export class ChimeVoiceConnector extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class ChimeVoiceConnector extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChimeVoiceConnector resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChimeVoiceConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChimeVoiceConnector to import
   * @param importFromId The id of the existing ChimeVoiceConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChimeVoiceConnector to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_chime_voice_connector", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_chime_voice_connector", importId: importFromId, provider });
       }
 
   // ===========
@@ -183,11 +183,11 @@ export class ChimeVoiceConnector extends cdktf.TerraformResource {
   }
 
   // require_encryption - computed: false, optional: false, required: true
-  private _requireEncryption?: boolean | cdktf.IResolvable; 
+  private _requireEncryption?: boolean | cdktn.IResolvable; 
   public get requireEncryption() {
     return this.getBooleanAttribute('require_encryption');
   }
-  public set requireEncryption(value: boolean | cdktf.IResolvable) {
+  public set requireEncryption(value: boolean | cdktn.IResolvable) {
     this._requireEncryption = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -233,56 +233,56 @@ export class ChimeVoiceConnector extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_region: cdktf.stringToTerraform(this._awsRegion),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      require_encryption: cdktf.booleanToTerraform(this._requireEncryption),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      aws_region: cdktn.stringToTerraform(this._awsRegion),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      require_encryption: cdktn.booleanToTerraform(this._requireEncryption),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_region: {
-        value: cdktf.stringToHclTerraform(this._awsRegion),
+        value: cdktn.stringToHclTerraform(this._awsRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       require_encryption: {
-        value: cdktf.booleanToHclTerraform(this._requireEncryption),
+        value: cdktn.booleanToHclTerraform(this._requireEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ImagebuilderLifecyclePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface ImagebuilderLifecyclePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#description ImagebuilderLifecyclePolicy#description}
   */
@@ -47,62 +47,62 @@ export interface ImagebuilderLifecyclePolicyConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#policy_detail ImagebuilderLifecyclePolicy#policy_detail}
   */
-  readonly policyDetail?: ImagebuilderLifecyclePolicyPolicyDetail[] | cdktf.IResolvable;
+  readonly policyDetail?: ImagebuilderLifecyclePolicyPolicyDetail[] | cdktn.IResolvable;
   /**
   * resource_selection block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#resource_selection ImagebuilderLifecyclePolicy#resource_selection}
   */
-  readonly resourceSelection?: ImagebuilderLifecyclePolicyResourceSelection[] | cdktf.IResolvable;
+  readonly resourceSelection?: ImagebuilderLifecyclePolicyResourceSelection[] | cdktn.IResolvable;
 }
 export interface ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#amis ImagebuilderLifecyclePolicy#amis}
   */
-  readonly amis?: boolean | cdktf.IResolvable;
+  readonly amis?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#containers ImagebuilderLifecyclePolicy#containers}
   */
-  readonly containers?: boolean | cdktf.IResolvable;
+  readonly containers?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#snapshots ImagebuilderLifecyclePolicy#snapshots}
   */
-  readonly snapshots?: boolean | cdktf.IResolvable;
+  readonly snapshots?: boolean | cdktn.IResolvable;
 }
 
-export function imagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    amis: cdktf.booleanToTerraform(struct!.amis),
-    containers: cdktf.booleanToTerraform(struct!.containers),
-    snapshots: cdktf.booleanToTerraform(struct!.snapshots),
+    amis: cdktn.booleanToTerraform(struct!.amis),
+    containers: cdktn.booleanToTerraform(struct!.containers),
+    snapshots: cdktn.booleanToTerraform(struct!.snapshots),
   }
 }
 
 
-export function imagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     amis: {
-      value: cdktf.booleanToHclTerraform(struct!.amis),
+      value: cdktn.booleanToHclTerraform(struct!.amis),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     containers: {
-      value: cdktf.booleanToHclTerraform(struct!.containers),
+      value: cdktn.booleanToHclTerraform(struct!.containers),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     snapshots: {
-      value: cdktf.booleanToHclTerraform(struct!.snapshots),
+      value: cdktn.booleanToHclTerraform(struct!.snapshots),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -113,9 +113,9 @@ export function imagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -156,7 +156,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutput
       this._containers = undefined;
       this._snapshots = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -170,11 +170,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutput
   }
 
   // amis - computed: true, optional: true, required: false
-  private _amis?: boolean | cdktf.IResolvable; 
+  private _amis?: boolean | cdktn.IResolvable; 
   public get amis() {
     return this.getBooleanAttribute('amis');
   }
-  public set amis(value: boolean | cdktf.IResolvable) {
+  public set amis(value: boolean | cdktn.IResolvable) {
     this._amis = value;
   }
   public resetAmis() {
@@ -186,11 +186,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutput
   }
 
   // containers - computed: true, optional: true, required: false
-  private _containers?: boolean | cdktf.IResolvable; 
+  private _containers?: boolean | cdktn.IResolvable; 
   public get containers() {
     return this.getBooleanAttribute('containers');
   }
-  public set containers(value: boolean | cdktf.IResolvable) {
+  public set containers(value: boolean | cdktn.IResolvable) {
     this._containers = value;
   }
   public resetContainers() {
@@ -202,11 +202,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutput
   }
 
   // snapshots - computed: true, optional: true, required: false
-  private _snapshots?: boolean | cdktf.IResolvable; 
+  private _snapshots?: boolean | cdktn.IResolvable; 
   public get snapshots() {
     return this.getBooleanAttribute('snapshots');
   }
-  public set snapshots(value: boolean | cdktf.IResolvable) {
+  public set snapshots(value: boolean | cdktn.IResolvable) {
     this._snapshots = value;
   }
   public resetSnapshots() {
@@ -218,15 +218,15 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutput
   }
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources[] | cdktf.IResolvable
+export class ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -247,35 +247,35 @@ export interface ImagebuilderLifecyclePolicyPolicyDetailAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#include_resources ImagebuilderLifecyclePolicy#include_resources}
   */
-  readonly includeResources?: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources[] | cdktf.IResolvable;
+  readonly includeResources?: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources[] | cdktn.IResolvable;
 }
 
-export function imagebuilderLifecyclePolicyPolicyDetailActionToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailActionToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    include_resources: cdktf.listMapper(imagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesToTerraform, true)(struct!.includeResources),
+    type: cdktn.stringToTerraform(struct!.type),
+    include_resources: cdktn.listMapper(imagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesToTerraform, true)(struct!.includeResources),
   }
 }
 
 
-export function imagebuilderLifecyclePolicyPolicyDetailActionToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailActionToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     include_resources: {
-      value: cdktf.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesToHclTerraform, true)(struct!.includeResources),
+      value: cdktn.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesToHclTerraform, true)(struct!.includeResources),
       isBlock: true,
       type: "list",
       storageClassType: "ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesList",
@@ -286,9 +286,9 @@ export function imagebuilderLifecyclePolicyPolicyDetailActionToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailActionOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderLifecyclePolicyPolicyDetailActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -296,11 +296,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailAction | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -317,14 +317,14 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._includeResources.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -354,7 +354,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionOutputReference extend
   public get includeResources() {
     return this._includeResources;
   }
-  public putIncludeResources(value: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources[] | cdktf.IResolvable) {
+  public putIncludeResources(value: ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources[] | cdktn.IResolvable) {
     this._includeResources.internalValue = value;
   }
   public resetIncludeResources() {
@@ -366,15 +366,15 @@ export class ImagebuilderLifecyclePolicyPolicyDetailActionOutputReference extend
   }
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailActionList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailAction[] | cdktf.IResolvable
+export class ImagebuilderLifecyclePolicyPolicyDetailActionList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -396,32 +396,32 @@ export interface ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLa
   readonly value: number;
 }
 
-export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.numberToTerraform(struct!.value),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -432,9 +432,9 @@ export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLau
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -442,11 +442,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunch
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -463,14 +463,14 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunch
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._unit = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -509,15 +509,15 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunch
   }
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched[] | cdktf.IResolvable
+export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -532,7 +532,7 @@ export interface ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#is_public ImagebuilderLifecyclePolicy#is_public}
   */
-  readonly isPublic?: boolean | cdktf.IResolvable;
+  readonly isPublic?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#regions ImagebuilderLifecyclePolicy#regions}
   */
@@ -550,56 +550,56 @@ export interface ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#last_launched ImagebuilderLifecyclePolicy#last_launched}
   */
-  readonly lastLaunched?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched[] | cdktf.IResolvable;
+  readonly lastLaunched?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched[] | cdktn.IResolvable;
 }
 
-export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_public: cdktf.booleanToTerraform(struct!.isPublic),
-    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
-    shared_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sharedAccounts),
-    tag_map: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tagMap),
-    last_launched: cdktf.listMapper(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedToTerraform, true)(struct!.lastLaunched),
+    is_public: cdktn.booleanToTerraform(struct!.isPublic),
+    regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regions),
+    shared_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sharedAccounts),
+    tag_map: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tagMap),
+    last_launched: cdktn.listMapper(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedToTerraform, true)(struct!.lastLaunched),
   }
 }
 
 
-export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_public: {
-      value: cdktf.booleanToHclTerraform(struct!.isPublic),
+      value: cdktn.booleanToHclTerraform(struct!.isPublic),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.regions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     shared_accounts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sharedAccounts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sharedAccounts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_map: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tagMap),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tagMap),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     last_launched: {
-      value: cdktf.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedToHclTerraform, true)(struct!.lastLaunched),
+      value: cdktn.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedToHclTerraform, true)(struct!.lastLaunched),
       isBlock: true,
       type: "list",
       storageClassType: "ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedList",
@@ -610,9 +610,9 @@ export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -620,11 +620,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -653,7 +653,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -663,7 +663,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputRefe
       this._tagMap = undefined;
       this._lastLaunched.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -679,11 +679,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputRefe
   }
 
   // is_public - computed: true, optional: true, required: false
-  private _isPublic?: boolean | cdktf.IResolvable; 
+  private _isPublic?: boolean | cdktn.IResolvable; 
   public get isPublic() {
     return this.getBooleanAttribute('is_public');
   }
-  public set isPublic(value: boolean | cdktf.IResolvable) {
+  public set isPublic(value: boolean | cdktn.IResolvable) {
     this._isPublic = value;
   }
   public resetIsPublic() {
@@ -747,7 +747,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputRefe
   public get lastLaunched() {
     return this._lastLaunched;
   }
-  public putLastLaunched(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched[] | cdktf.IResolvable) {
+  public putLastLaunched(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched[] | cdktn.IResolvable) {
     this._lastLaunched.internalValue = value;
   }
   public resetLastLaunched() {
@@ -759,15 +759,15 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputRefe
   }
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis[] | cdktf.IResolvable
+export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -788,35 +788,35 @@ export interface ImagebuilderLifecyclePolicyPolicyDetailExclusionRules {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#amis ImagebuilderLifecyclePolicy#amis}
   */
-  readonly amis?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis[] | cdktf.IResolvable;
+  readonly amis?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis[] | cdktn.IResolvable;
 }
 
-export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tag_map: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tagMap),
-    amis: cdktf.listMapper(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisToTerraform, true)(struct!.amis),
+    tag_map: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tagMap),
+    amis: cdktn.listMapper(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisToTerraform, true)(struct!.amis),
   }
 }
 
 
-export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tag_map: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tagMap),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tagMap),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     amis: {
-      value: cdktf.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisToHclTerraform, true)(struct!.amis),
+      value: cdktn.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisToHclTerraform, true)(struct!.amis),
       isBlock: true,
       type: "list",
       storageClassType: "ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisList",
@@ -827,9 +827,9 @@ export function imagebuilderLifecyclePolicyPolicyDetailExclusionRulesToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -837,11 +837,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailExclusionRules | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailExclusionRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -858,14 +858,14 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tagMap = undefined;
       this._amis.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -898,7 +898,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesOutputReferenc
   public get amis() {
     return this._amis;
   }
-  public putAmis(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis[] | cdktf.IResolvable) {
+  public putAmis(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis[] | cdktn.IResolvable) {
     this._amis.internalValue = value;
   }
   public resetAmis() {
@@ -910,15 +910,15 @@ export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesOutputReferenc
   }
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailExclusionRules[] | cdktf.IResolvable
+export class ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailExclusionRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -948,46 +948,46 @@ export interface ImagebuilderLifecyclePolicyPolicyDetailFilter {
   readonly value: number;
 }
 
-export function imagebuilderLifecyclePolicyPolicyDetailFilterToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailFilterToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    retain_at_least: cdktf.numberToTerraform(struct!.retainAtLeast),
-    type: cdktf.stringToTerraform(struct!.type),
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.numberToTerraform(struct!.value),
+    retain_at_least: cdktn.numberToTerraform(struct!.retainAtLeast),
+    type: cdktn.stringToTerraform(struct!.type),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function imagebuilderLifecyclePolicyPolicyDetailFilterToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailFilterToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetailFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     retain_at_least: {
-      value: cdktf.numberToHclTerraform(struct!.retainAtLeast),
+      value: cdktn.numberToHclTerraform(struct!.retainAtLeast),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -998,9 +998,9 @@ export function imagebuilderLifecyclePolicyPolicyDetailFilterToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailFilterOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderLifecyclePolicyPolicyDetailFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1008,11 +1008,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailFilterOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetailFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1037,7 +1037,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailFilterOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetailFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1046,7 +1046,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailFilterOutputReference extend
       this._unit = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1119,15 +1119,15 @@ export class ImagebuilderLifecyclePolicyPolicyDetailFilterOutputReference extend
   }
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailFilterList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailFilter[] | cdktf.IResolvable
+export class ImagebuilderLifecyclePolicyPolicyDetailFilterList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetailFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1144,54 +1144,54 @@ export interface ImagebuilderLifecyclePolicyPolicyDetail {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#action ImagebuilderLifecyclePolicy#action}
   */
-  readonly action?: ImagebuilderLifecyclePolicyPolicyDetailAction[] | cdktf.IResolvable;
+  readonly action?: ImagebuilderLifecyclePolicyPolicyDetailAction[] | cdktn.IResolvable;
   /**
   * exclusion_rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#exclusion_rules ImagebuilderLifecyclePolicy#exclusion_rules}
   */
-  readonly exclusionRules?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules[] | cdktf.IResolvable;
+  readonly exclusionRules?: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules[] | cdktn.IResolvable;
   /**
   * filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#filter ImagebuilderLifecyclePolicy#filter}
   */
-  readonly filter?: ImagebuilderLifecyclePolicyPolicyDetailFilter[] | cdktf.IResolvable;
+  readonly filter?: ImagebuilderLifecyclePolicyPolicyDetailFilter[] | cdktn.IResolvable;
 }
 
-export function imagebuilderLifecyclePolicyPolicyDetailToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailToTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.listMapper(imagebuilderLifecyclePolicyPolicyDetailActionToTerraform, true)(struct!.action),
-    exclusion_rules: cdktf.listMapper(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesToTerraform, true)(struct!.exclusionRules),
-    filter: cdktf.listMapper(imagebuilderLifecyclePolicyPolicyDetailFilterToTerraform, true)(struct!.filter),
+    action: cdktn.listMapper(imagebuilderLifecyclePolicyPolicyDetailActionToTerraform, true)(struct!.action),
+    exclusion_rules: cdktn.listMapper(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesToTerraform, true)(struct!.exclusionRules),
+    filter: cdktn.listMapper(imagebuilderLifecyclePolicyPolicyDetailFilterToTerraform, true)(struct!.filter),
   }
 }
 
 
-export function imagebuilderLifecyclePolicyPolicyDetailToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyPolicyDetailToHclTerraform(struct?: ImagebuilderLifecyclePolicyPolicyDetail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailActionToHclTerraform, true)(struct!.action),
+      value: cdktn.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailActionToHclTerraform, true)(struct!.action),
       isBlock: true,
       type: "list",
       storageClassType: "ImagebuilderLifecyclePolicyPolicyDetailActionList",
     },
     exclusion_rules: {
-      value: cdktf.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesToHclTerraform, true)(struct!.exclusionRules),
+      value: cdktn.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailExclusionRulesToHclTerraform, true)(struct!.exclusionRules),
       isBlock: true,
       type: "list",
       storageClassType: "ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesList",
     },
     filter: {
-      value: cdktf.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailFilterToHclTerraform, true)(struct!.filter),
+      value: cdktn.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailFilterToHclTerraform, true)(struct!.filter),
       isBlock: true,
       type: "list",
       storageClassType: "ImagebuilderLifecyclePolicyPolicyDetailFilterList",
@@ -1202,9 +1202,9 @@ export function imagebuilderLifecyclePolicyPolicyDetailToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderLifecyclePolicyPolicyDetailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1212,11 +1212,11 @@ export class ImagebuilderLifecyclePolicyPolicyDetailOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetail | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderLifecyclePolicyPolicyDetail | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1237,7 +1237,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetail | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderLifecyclePolicyPolicyDetail | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1245,7 +1245,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailOutputReference extends cdkt
       this._exclusionRules.internalValue = undefined;
       this._filter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1263,7 +1263,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailOutputReference extends cdkt
   public get action() {
     return this._action;
   }
-  public putAction(value: ImagebuilderLifecyclePolicyPolicyDetailAction[] | cdktf.IResolvable) {
+  public putAction(value: ImagebuilderLifecyclePolicyPolicyDetailAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   public resetAction() {
@@ -1279,7 +1279,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailOutputReference extends cdkt
   public get exclusionRules() {
     return this._exclusionRules;
   }
-  public putExclusionRules(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules[] | cdktf.IResolvable) {
+  public putExclusionRules(value: ImagebuilderLifecyclePolicyPolicyDetailExclusionRules[] | cdktn.IResolvable) {
     this._exclusionRules.internalValue = value;
   }
   public resetExclusionRules() {
@@ -1295,7 +1295,7 @@ export class ImagebuilderLifecyclePolicyPolicyDetailOutputReference extends cdkt
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: ImagebuilderLifecyclePolicyPolicyDetailFilter[] | cdktf.IResolvable) {
+  public putFilter(value: ImagebuilderLifecyclePolicyPolicyDetailFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -1307,15 +1307,15 @@ export class ImagebuilderLifecyclePolicyPolicyDetailOutputReference extends cdkt
   }
 }
 
-export class ImagebuilderLifecyclePolicyPolicyDetailList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetail[] | cdktf.IResolvable
+export class ImagebuilderLifecyclePolicyPolicyDetailList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderLifecyclePolicyPolicyDetail[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1337,32 +1337,32 @@ export interface ImagebuilderLifecyclePolicyResourceSelectionRecipe {
   readonly semanticVersion: string;
 }
 
-export function imagebuilderLifecyclePolicyResourceSelectionRecipeToTerraform(struct?: ImagebuilderLifecyclePolicyResourceSelectionRecipe | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyResourceSelectionRecipeToTerraform(struct?: ImagebuilderLifecyclePolicyResourceSelectionRecipe | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    semantic_version: cdktf.stringToTerraform(struct!.semanticVersion),
+    name: cdktn.stringToTerraform(struct!.name),
+    semantic_version: cdktn.stringToTerraform(struct!.semanticVersion),
   }
 }
 
 
-export function imagebuilderLifecyclePolicyResourceSelectionRecipeToHclTerraform(struct?: ImagebuilderLifecyclePolicyResourceSelectionRecipe | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyResourceSelectionRecipeToHclTerraform(struct?: ImagebuilderLifecyclePolicyResourceSelectionRecipe | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     semantic_version: {
-      value: cdktf.stringToHclTerraform(struct!.semanticVersion),
+      value: cdktn.stringToHclTerraform(struct!.semanticVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1373,9 +1373,9 @@ export function imagebuilderLifecyclePolicyResourceSelectionRecipeToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1383,11 +1383,11 @@ export class ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderLifecyclePolicyResourceSelectionRecipe | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderLifecyclePolicyResourceSelectionRecipe | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1404,14 +1404,14 @@ export class ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderLifecyclePolicyResourceSelectionRecipe | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderLifecyclePolicyResourceSelectionRecipe | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._semanticVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1450,15 +1450,15 @@ export class ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference e
   }
 }
 
-export class ImagebuilderLifecyclePolicyResourceSelectionRecipeList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderLifecyclePolicyResourceSelectionRecipe[] | cdktf.IResolvable
+export class ImagebuilderLifecyclePolicyResourceSelectionRecipeList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderLifecyclePolicyResourceSelectionRecipe[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1479,35 +1479,35 @@ export interface ImagebuilderLifecyclePolicyResourceSelection {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#recipe ImagebuilderLifecyclePolicy#recipe}
   */
-  readonly recipe?: ImagebuilderLifecyclePolicyResourceSelectionRecipe[] | cdktf.IResolvable;
+  readonly recipe?: ImagebuilderLifecyclePolicyResourceSelectionRecipe[] | cdktn.IResolvable;
 }
 
-export function imagebuilderLifecyclePolicyResourceSelectionToTerraform(struct?: ImagebuilderLifecyclePolicyResourceSelection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyResourceSelectionToTerraform(struct?: ImagebuilderLifecyclePolicyResourceSelection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tag_map: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tagMap),
-    recipe: cdktf.listMapper(imagebuilderLifecyclePolicyResourceSelectionRecipeToTerraform, true)(struct!.recipe),
+    tag_map: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tagMap),
+    recipe: cdktn.listMapper(imagebuilderLifecyclePolicyResourceSelectionRecipeToTerraform, true)(struct!.recipe),
   }
 }
 
 
-export function imagebuilderLifecyclePolicyResourceSelectionToHclTerraform(struct?: ImagebuilderLifecyclePolicyResourceSelection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imagebuilderLifecyclePolicyResourceSelectionToHclTerraform(struct?: ImagebuilderLifecyclePolicyResourceSelection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tag_map: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tagMap),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tagMap),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     recipe: {
-      value: cdktf.listMapperHcl(imagebuilderLifecyclePolicyResourceSelectionRecipeToHclTerraform, true)(struct!.recipe),
+      value: cdktn.listMapperHcl(imagebuilderLifecyclePolicyResourceSelectionRecipeToHclTerraform, true)(struct!.recipe),
       isBlock: true,
       type: "set",
       storageClassType: "ImagebuilderLifecyclePolicyResourceSelectionRecipeList",
@@ -1518,9 +1518,9 @@ export function imagebuilderLifecyclePolicyResourceSelectionToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImagebuilderLifecyclePolicyResourceSelectionOutputReference extends cdktf.ComplexObject {
+export class ImagebuilderLifecyclePolicyResourceSelectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1528,11 +1528,11 @@ export class ImagebuilderLifecyclePolicyResourceSelectionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImagebuilderLifecyclePolicyResourceSelection | cdktf.IResolvable | undefined {
+  public get internalValue(): ImagebuilderLifecyclePolicyResourceSelection | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1549,14 +1549,14 @@ export class ImagebuilderLifecyclePolicyResourceSelectionOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImagebuilderLifecyclePolicyResourceSelection | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImagebuilderLifecyclePolicyResourceSelection | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tagMap = undefined;
       this._recipe.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1589,7 +1589,7 @@ export class ImagebuilderLifecyclePolicyResourceSelectionOutputReference extends
   public get recipe() {
     return this._recipe;
   }
-  public putRecipe(value: ImagebuilderLifecyclePolicyResourceSelectionRecipe[] | cdktf.IResolvable) {
+  public putRecipe(value: ImagebuilderLifecyclePolicyResourceSelectionRecipe[] | cdktn.IResolvable) {
     this._recipe.internalValue = value;
   }
   public resetRecipe() {
@@ -1601,15 +1601,15 @@ export class ImagebuilderLifecyclePolicyResourceSelectionOutputReference extends
   }
 }
 
-export class ImagebuilderLifecyclePolicyResourceSelectionList extends cdktf.ComplexList {
-  public internalValue? : ImagebuilderLifecyclePolicyResourceSelection[] | cdktf.IResolvable
+export class ImagebuilderLifecyclePolicyResourceSelectionList extends cdktn.ComplexList {
+  public internalValue? : ImagebuilderLifecyclePolicyResourceSelection[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1624,7 +1624,7 @@ export class ImagebuilderLifecyclePolicyResourceSelectionList extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy aws_imagebuilder_lifecycle_policy}
 */
-export class ImagebuilderLifecyclePolicy extends cdktf.TerraformResource {
+export class ImagebuilderLifecyclePolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1635,14 +1635,14 @@ export class ImagebuilderLifecyclePolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ImagebuilderLifecyclePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ImagebuilderLifecyclePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImagebuilderLifecyclePolicy to import
   * @param importFromId The id of the existing ImagebuilderLifecyclePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/imagebuilder_lifecycle_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImagebuilderLifecyclePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_lifecycle_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_lifecycle_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -1801,7 +1801,7 @@ export class ImagebuilderLifecyclePolicy extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1811,7 +1811,7 @@ export class ImagebuilderLifecyclePolicy extends cdktf.TerraformResource {
   public get policyDetail() {
     return this._policyDetail;
   }
-  public putPolicyDetail(value: ImagebuilderLifecyclePolicyPolicyDetail[] | cdktf.IResolvable) {
+  public putPolicyDetail(value: ImagebuilderLifecyclePolicyPolicyDetail[] | cdktn.IResolvable) {
     this._policyDetail.internalValue = value;
   }
   public resetPolicyDetail() {
@@ -1827,7 +1827,7 @@ export class ImagebuilderLifecyclePolicy extends cdktf.TerraformResource {
   public get resourceSelection() {
     return this._resourceSelection;
   }
-  public putResourceSelection(value: ImagebuilderLifecyclePolicyResourceSelection[] | cdktf.IResolvable) {
+  public putResourceSelection(value: ImagebuilderLifecyclePolicyResourceSelection[] | cdktn.IResolvable) {
     this._resourceSelection.internalValue = value;
   }
   public resetResourceSelection() {
@@ -1844,70 +1844,70 @@ export class ImagebuilderLifecyclePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      execution_role: cdktf.stringToTerraform(this._executionRole),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      policy_detail: cdktf.listMapper(imagebuilderLifecyclePolicyPolicyDetailToTerraform, true)(this._policyDetail.internalValue),
-      resource_selection: cdktf.listMapper(imagebuilderLifecyclePolicyResourceSelectionToTerraform, true)(this._resourceSelection.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      execution_role: cdktn.stringToTerraform(this._executionRole),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
+      status: cdktn.stringToTerraform(this._status),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      policy_detail: cdktn.listMapper(imagebuilderLifecyclePolicyPolicyDetailToTerraform, true)(this._policyDetail.internalValue),
+      resource_selection: cdktn.listMapper(imagebuilderLifecyclePolicyResourceSelectionToTerraform, true)(this._resourceSelection.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       execution_role: {
-        value: cdktf.stringToHclTerraform(this._executionRole),
+        value: cdktn.stringToHclTerraform(this._executionRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       policy_detail: {
-        value: cdktf.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailToHclTerraform, true)(this._policyDetail.internalValue),
+        value: cdktn.listMapperHcl(imagebuilderLifecyclePolicyPolicyDetailToHclTerraform, true)(this._policyDetail.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ImagebuilderLifecyclePolicyPolicyDetailList",
       },
       resource_selection: {
-        value: cdktf.listMapperHcl(imagebuilderLifecyclePolicyResourceSelectionToHclTerraform, true)(this._resourceSelection.internalValue),
+        value: cdktn.listMapperHcl(imagebuilderLifecyclePolicyResourceSelectionToHclTerraform, true)(this._resourceSelection.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ImagebuilderLifecyclePolicyResourceSelectionList",

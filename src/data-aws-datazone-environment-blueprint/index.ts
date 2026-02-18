@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsDatazoneEnvironmentBlueprintConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsDatazoneEnvironmentBlueprintConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/datazone_environment_blueprint#domain_id DataAwsDatazoneEnvironmentBlueprint#domain_id}
   */
@@ -19,7 +19,7 @@ export interface DataAwsDatazoneEnvironmentBlueprintConfig extends cdktf.Terrafo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/datazone_environment_blueprint#managed DataAwsDatazoneEnvironmentBlueprint#managed}
   */
-  readonly managed: boolean | cdktf.IResolvable;
+  readonly managed: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/datazone_environment_blueprint#name DataAwsDatazoneEnvironmentBlueprint#name}
   */
@@ -35,7 +35,7 @@ export interface DataAwsDatazoneEnvironmentBlueprintConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/datazone_environment_blueprint aws_datazone_environment_blueprint}
 */
-export class DataAwsDatazoneEnvironmentBlueprint extends cdktf.TerraformDataSource {
+export class DataAwsDatazoneEnvironmentBlueprint extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class DataAwsDatazoneEnvironmentBlueprint extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsDatazoneEnvironmentBlueprint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsDatazoneEnvironmentBlueprint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDatazoneEnvironmentBlueprint to import
   * @param importFromId The id of the existing DataAwsDatazoneEnvironmentBlueprint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/datazone_environment_blueprint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDatazoneEnvironmentBlueprint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_environment_blueprint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_environment_blueprint", importId: importFromId, provider });
       }
 
   // ===========
@@ -122,11 +122,11 @@ export class DataAwsDatazoneEnvironmentBlueprint extends cdktf.TerraformDataSour
   }
 
   // managed - computed: false, optional: false, required: true
-  private _managed?: boolean | cdktf.IResolvable; 
+  private _managed?: boolean | cdktn.IResolvable; 
   public get managed() {
     return this.getBooleanAttribute('managed');
   }
-  public set managed(value: boolean | cdktf.IResolvable) {
+  public set managed(value: boolean | cdktn.IResolvable) {
     this._managed = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -169,35 +169,35 @@ export class DataAwsDatazoneEnvironmentBlueprint extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_id: cdktf.stringToTerraform(this._domainId),
-      managed: cdktf.booleanToTerraform(this._managed),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      domain_id: cdktn.stringToTerraform(this._domainId),
+      managed: cdktn.booleanToTerraform(this._managed),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_id: {
-        value: cdktf.stringToHclTerraform(this._domainId),
+        value: cdktn.stringToHclTerraform(this._domainId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed: {
-        value: cdktf.booleanToHclTerraform(this._managed),
+        value: cdktn.booleanToHclTerraform(this._managed),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

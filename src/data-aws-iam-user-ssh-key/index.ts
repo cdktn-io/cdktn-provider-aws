@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsIamUserSshKeyConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIamUserSshKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_user_ssh_key#encoding DataAwsIamUserSshKey#encoding}
   */
@@ -36,7 +36,7 @@ export interface DataAwsIamUserSshKeyConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_user_ssh_key aws_iam_user_ssh_key}
 */
-export class DataAwsIamUserSshKey extends cdktf.TerraformDataSource {
+export class DataAwsIamUserSshKey extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataAwsIamUserSshKey extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsIamUserSshKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsIamUserSshKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIamUserSshKey to import
   * @param importFromId The id of the existing DataAwsIamUserSshKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_user_ssh_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIamUserSshKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_user_ssh_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_user_ssh_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -170,35 +170,35 @@ export class DataAwsIamUserSshKey extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      encoding: cdktf.stringToTerraform(this._encoding),
-      id: cdktf.stringToTerraform(this._id),
-      ssh_public_key_id: cdktf.stringToTerraform(this._sshPublicKeyId),
-      username: cdktf.stringToTerraform(this._username),
+      encoding: cdktn.stringToTerraform(this._encoding),
+      id: cdktn.stringToTerraform(this._id),
+      ssh_public_key_id: cdktn.stringToTerraform(this._sshPublicKeyId),
+      username: cdktn.stringToTerraform(this._username),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       encoding: {
-        value: cdktf.stringToHclTerraform(this._encoding),
+        value: cdktn.stringToHclTerraform(this._encoding),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssh_public_key_id: {
-        value: cdktf.stringToHclTerraform(this._sshPublicKeyId),
+        value: cdktn.stringToHclTerraform(this._sshPublicKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

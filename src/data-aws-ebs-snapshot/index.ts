@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEbsSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEbsSnapshotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ebs_snapshot#id DataAwsEbsSnapshot#id}
   *
@@ -22,7 +22,7 @@ export interface DataAwsEbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ebs_snapshot#most_recent DataAwsEbsSnapshot#most_recent}
   */
-  readonly mostRecent?: boolean | cdktf.IResolvable;
+  readonly mostRecent?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ebs_snapshot#owners DataAwsEbsSnapshot#owners}
   */
@@ -50,7 +50,7 @@ export interface DataAwsEbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ebs_snapshot#filter DataAwsEbsSnapshot#filter}
   */
-  readonly filter?: DataAwsEbsSnapshotFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsEbsSnapshotFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -69,32 +69,32 @@ export interface DataAwsEbsSnapshotFilter {
   readonly values: string[];
 }
 
-export function dataAwsEbsSnapshotFilterToTerraform(struct?: DataAwsEbsSnapshotFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEbsSnapshotFilterToTerraform(struct?: DataAwsEbsSnapshotFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsEbsSnapshotFilterToHclTerraform(struct?: DataAwsEbsSnapshotFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEbsSnapshotFilterToHclTerraform(struct?: DataAwsEbsSnapshotFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -105,9 +105,9 @@ export function dataAwsEbsSnapshotFilterToHclTerraform(struct?: DataAwsEbsSnapsh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEbsSnapshotFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsEbsSnapshotFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -115,11 +115,11 @@ export class DataAwsEbsSnapshotFilterOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEbsSnapshotFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEbsSnapshotFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -136,14 +136,14 @@ export class DataAwsEbsSnapshotFilterOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEbsSnapshotFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEbsSnapshotFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -171,7 +171,7 @@ export class DataAwsEbsSnapshotFilterOutputReference extends cdktf.ComplexObject
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -182,15 +182,15 @@ export class DataAwsEbsSnapshotFilterOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DataAwsEbsSnapshotFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEbsSnapshotFilter[] | cdktf.IResolvable
+export class DataAwsEbsSnapshotFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEbsSnapshotFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -208,25 +208,25 @@ export interface DataAwsEbsSnapshotTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsEbsSnapshotTimeoutsToTerraform(struct?: DataAwsEbsSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEbsSnapshotTimeoutsToTerraform(struct?: DataAwsEbsSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsEbsSnapshotTimeoutsToHclTerraform(struct?: DataAwsEbsSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEbsSnapshotTimeoutsToHclTerraform(struct?: DataAwsEbsSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -237,19 +237,19 @@ export function dataAwsEbsSnapshotTimeoutsToHclTerraform(struct?: DataAwsEbsSnap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEbsSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsEbsSnapshotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsEbsSnapshotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEbsSnapshotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -262,13 +262,13 @@ export class DataAwsEbsSnapshotTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEbsSnapshotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEbsSnapshotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -299,7 +299,7 @@ export class DataAwsEbsSnapshotTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ebs_snapshot aws_ebs_snapshot}
 */
-export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
+export class DataAwsEbsSnapshot extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -310,14 +310,14 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEbsSnapshot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEbsSnapshot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEbsSnapshot to import
   * @param importFromId The id of the existing DataAwsEbsSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ebs_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEbsSnapshot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_snapshot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_snapshot", importId: importFromId, provider });
       }
 
   // ===========
@@ -404,11 +404,11 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean | cdktf.IResolvable; 
+  private _mostRecent?: boolean | cdktn.IResolvable; 
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | cdktf.IResolvable) {
+  public set mostRecent(value: boolean | cdktn.IResolvable) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -549,7 +549,7 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsEbsSnapshotFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsEbsSnapshotFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -582,14 +582,14 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
-      region: cdktf.stringToTerraform(this._region),
-      restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._restorableByUserIds),
-      snapshot_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._snapshotIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsEbsSnapshotFilterToTerraform, true)(this._filter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      most_recent: cdktn.booleanToTerraform(this._mostRecent),
+      owners: cdktn.listMapper(cdktn.stringToTerraform, false)(this._owners),
+      region: cdktn.stringToTerraform(this._region),
+      restorable_by_user_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._restorableByUserIds),
+      snapshot_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._snapshotIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      filter: cdktn.listMapper(dataAwsEbsSnapshotFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsEbsSnapshotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -597,49 +597,49 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       most_recent: {
-        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        value: cdktn.booleanToHclTerraform(this._mostRecent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       owners: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._owners),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restorable_by_user_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._restorableByUserIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._restorableByUserIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       snapshot_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._snapshotIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._snapshotIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsEbsSnapshotFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsEbsSnapshotFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsEbsSnapshotFilterList",

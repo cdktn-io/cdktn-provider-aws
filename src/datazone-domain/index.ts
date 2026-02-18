@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatazoneDomainConfig extends cdktf.TerraformMetaArguments {
+export interface DatazoneDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_domain#description DatazoneDomain#description}
   */
@@ -45,7 +45,7 @@ export interface DatazoneDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_domain#skip_deletion_check DatazoneDomain#skip_deletion_check}
   */
-  readonly skipDeletionCheck?: boolean | cdktf.IResolvable;
+  readonly skipDeletionCheck?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_domain#tags DatazoneDomain#tags}
   */
@@ -55,7 +55,7 @@ export interface DatazoneDomainConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_domain#single_sign_on DatazoneDomain#single_sign_on}
   */
-  readonly singleSignOn?: DatazoneDomainSingleSignOn[] | cdktf.IResolvable;
+  readonly singleSignOn?: DatazoneDomainSingleSignOn[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -74,32 +74,32 @@ export interface DatazoneDomainSingleSignOn {
   readonly userAssignment?: string;
 }
 
-export function datazoneDomainSingleSignOnToTerraform(struct?: DatazoneDomainSingleSignOn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneDomainSingleSignOnToTerraform(struct?: DatazoneDomainSingleSignOn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    user_assignment: cdktf.stringToTerraform(struct!.userAssignment),
+    type: cdktn.stringToTerraform(struct!.type),
+    user_assignment: cdktn.stringToTerraform(struct!.userAssignment),
   }
 }
 
 
-export function datazoneDomainSingleSignOnToHclTerraform(struct?: DatazoneDomainSingleSignOn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneDomainSingleSignOnToHclTerraform(struct?: DatazoneDomainSingleSignOn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assignment: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignment),
+      value: cdktn.stringToHclTerraform(struct!.userAssignment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -110,9 +110,9 @@ export function datazoneDomainSingleSignOnToHclTerraform(struct?: DatazoneDomain
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneDomainSingleSignOnOutputReference extends cdktf.ComplexObject {
+export class DatazoneDomainSingleSignOnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -120,11 +120,11 @@ export class DatazoneDomainSingleSignOnOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatazoneDomainSingleSignOn | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneDomainSingleSignOn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,14 +141,14 @@ export class DatazoneDomainSingleSignOnOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneDomainSingleSignOn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneDomainSingleSignOn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._userAssignment = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -193,15 +193,15 @@ export class DatazoneDomainSingleSignOnOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DatazoneDomainSingleSignOnList extends cdktf.ComplexList {
-  public internalValue? : DatazoneDomainSingleSignOn[] | cdktf.IResolvable
+export class DatazoneDomainSingleSignOnList extends cdktn.ComplexList {
+  public internalValue? : DatazoneDomainSingleSignOn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -227,32 +227,32 @@ export interface DatazoneDomainTimeouts {
   readonly delete?: string;
 }
 
-export function datazoneDomainTimeoutsToTerraform(struct?: DatazoneDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneDomainTimeoutsToTerraform(struct?: DatazoneDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function datazoneDomainTimeoutsToHclTerraform(struct?: DatazoneDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneDomainTimeoutsToHclTerraform(struct?: DatazoneDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -263,19 +263,19 @@ export function datazoneDomainTimeoutsToHclTerraform(struct?: DatazoneDomainTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneDomainTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatazoneDomainTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatazoneDomainTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneDomainTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -292,14 +292,14 @@ export class DatazoneDomainTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneDomainTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneDomainTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -347,7 +347,7 @@ export class DatazoneDomainTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_domain aws_datazone_domain}
 */
-export class DatazoneDomain extends cdktf.TerraformResource {
+export class DatazoneDomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -358,14 +358,14 @@ export class DatazoneDomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatazoneDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatazoneDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneDomain to import
   * @param importFromId The id of the existing DatazoneDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -539,11 +539,11 @@ export class DatazoneDomain extends cdktf.TerraformResource {
   }
 
   // skip_deletion_check - computed: false, optional: true, required: false
-  private _skipDeletionCheck?: boolean | cdktf.IResolvable; 
+  private _skipDeletionCheck?: boolean | cdktn.IResolvable; 
   public get skipDeletionCheck() {
     return this.getBooleanAttribute('skip_deletion_check');
   }
-  public set skipDeletionCheck(value: boolean | cdktf.IResolvable) {
+  public set skipDeletionCheck(value: boolean | cdktn.IResolvable) {
     this._skipDeletionCheck = value;
   }
   public resetSkipDeletionCheck() {
@@ -571,7 +571,7 @@ export class DatazoneDomain extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -581,7 +581,7 @@ export class DatazoneDomain extends cdktf.TerraformResource {
   public get singleSignOn() {
     return this._singleSignOn;
   }
-  public putSingleSignOn(value: DatazoneDomainSingleSignOn[] | cdktf.IResolvable) {
+  public putSingleSignOn(value: DatazoneDomainSingleSignOn[] | cdktn.IResolvable) {
     this._singleSignOn.internalValue = value;
   }
   public resetSingleSignOn() {
@@ -614,16 +614,16 @@ export class DatazoneDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      domain_execution_role: cdktf.stringToTerraform(this._domainExecutionRole),
-      domain_version: cdktf.stringToTerraform(this._domainVersion),
-      kms_key_identifier: cdktf.stringToTerraform(this._kmsKeyIdentifier),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      service_role: cdktf.stringToTerraform(this._serviceRole),
-      skip_deletion_check: cdktf.booleanToTerraform(this._skipDeletionCheck),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      single_sign_on: cdktf.listMapper(datazoneDomainSingleSignOnToTerraform, true)(this._singleSignOn.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      domain_execution_role: cdktn.stringToTerraform(this._domainExecutionRole),
+      domain_version: cdktn.stringToTerraform(this._domainVersion),
+      kms_key_identifier: cdktn.stringToTerraform(this._kmsKeyIdentifier),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      service_role: cdktn.stringToTerraform(this._serviceRole),
+      skip_deletion_check: cdktn.booleanToTerraform(this._skipDeletionCheck),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      single_sign_on: cdktn.listMapper(datazoneDomainSingleSignOnToTerraform, true)(this._singleSignOn.internalValue),
       timeouts: datazoneDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -631,61 +631,61 @@ export class DatazoneDomain extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_execution_role: {
-        value: cdktf.stringToHclTerraform(this._domainExecutionRole),
+        value: cdktn.stringToHclTerraform(this._domainExecutionRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_version: {
-        value: cdktf.stringToHclTerraform(this._domainVersion),
+        value: cdktn.stringToHclTerraform(this._domainVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_identifier: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyIdentifier),
+        value: cdktn.stringToHclTerraform(this._kmsKeyIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_role: {
-        value: cdktf.stringToHclTerraform(this._serviceRole),
+        value: cdktn.stringToHclTerraform(this._serviceRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_deletion_check: {
-        value: cdktf.booleanToHclTerraform(this._skipDeletionCheck),
+        value: cdktn.booleanToHclTerraform(this._skipDeletionCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       single_sign_on: {
-        value: cdktf.listMapperHcl(datazoneDomainSingleSignOnToHclTerraform, true)(this._singleSignOn.internalValue),
+        value: cdktn.listMapperHcl(datazoneDomainSingleSignOnToHclTerraform, true)(this._singleSignOn.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatazoneDomainSingleSignOnList",

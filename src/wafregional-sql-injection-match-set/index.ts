@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WafregionalSqlInjectionMatchSetConfig extends cdktf.TerraformMetaArguments {
+export interface WafregionalSqlInjectionMatchSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_sql_injection_match_set#id WafregionalSqlInjectionMatchSet#id}
   *
@@ -34,7 +34,7 @@ export interface WafregionalSqlInjectionMatchSetConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_sql_injection_match_set#sql_injection_match_tuple WafregionalSqlInjectionMatchSet#sql_injection_match_tuple}
   */
-  readonly sqlInjectionMatchTuple?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[] | cdktf.IResolvable;
+  readonly sqlInjectionMatchTuple?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[] | cdktn.IResolvable;
 }
 export interface WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch {
   /**
@@ -48,31 +48,31 @@ export interface WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMat
 }
 
 export function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchToTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference | WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    type: cdktf.stringToTerraform(struct!.type),
+    data: cdktn.stringToTerraform(struct!.data),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchToHclTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference | WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,14 +83,14 @@ export function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -163,26 +163,26 @@ export interface WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple {
   readonly fieldToMatch: WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch;
 }
 
-export function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    text_transformation: cdktn.stringToTerraform(struct!.textTransformation),
     field_to_match: wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchToTerraform(struct!.fieldToMatch),
   }
 }
 
 
-export function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToHclTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToHclTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     text_transformation: {
-      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      value: cdktn.stringToHclTerraform(struct!.textTransformation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -199,9 +199,9 @@ export function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference extends cdktf.ComplexObject {
+export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -209,11 +209,11 @@ export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple | cdktf.IResolvable | undefined {
+  public get internalValue(): WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -230,14 +230,14 @@ export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._textTransformation = undefined;
       this._fieldToMatch.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -276,15 +276,15 @@ export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReferenc
   }
 }
 
-export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList extends cdktf.ComplexList {
-  public internalValue? : WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[] | cdktf.IResolvable
+export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList extends cdktn.ComplexList {
+  public internalValue? : WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -299,7 +299,7 @@ export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_sql_injection_match_set aws_wafregional_sql_injection_match_set}
 */
-export class WafregionalSqlInjectionMatchSet extends cdktf.TerraformResource {
+export class WafregionalSqlInjectionMatchSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -310,14 +310,14 @@ export class WafregionalSqlInjectionMatchSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WafregionalSqlInjectionMatchSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WafregionalSqlInjectionMatchSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafregionalSqlInjectionMatchSet to import
   * @param importFromId The id of the existing WafregionalSqlInjectionMatchSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafregional_sql_injection_match_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafregionalSqlInjectionMatchSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafregional_sql_injection_match_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafregional_sql_injection_match_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -407,7 +407,7 @@ export class WafregionalSqlInjectionMatchSet extends cdktf.TerraformResource {
   public get sqlInjectionMatchTuple() {
     return this._sqlInjectionMatchTuple;
   }
-  public putSqlInjectionMatchTuple(value: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[] | cdktf.IResolvable) {
+  public putSqlInjectionMatchTuple(value: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[] | cdktn.IResolvable) {
     this._sqlInjectionMatchTuple.internalValue = value;
   }
   public resetSqlInjectionMatchTuple() {
@@ -424,35 +424,35 @@ export class WafregionalSqlInjectionMatchSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      sql_injection_match_tuple: cdktf.listMapper(wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToTerraform, true)(this._sqlInjectionMatchTuple.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      sql_injection_match_tuple: cdktn.listMapper(wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToTerraform, true)(this._sqlInjectionMatchTuple.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_injection_match_tuple: {
-        value: cdktf.listMapperHcl(wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToHclTerraform, true)(this._sqlInjectionMatchTuple.internalValue),
+        value: cdktn.listMapperHcl(wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToHclTerraform, true)(this._sqlInjectionMatchTuple.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList",

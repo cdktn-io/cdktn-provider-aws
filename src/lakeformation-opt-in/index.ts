@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LakeformationOptInConfig extends cdktf.TerraformMetaArguments {
+export interface LakeformationOptInConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -23,26 +23,26 @@ export interface LakeformationOptInConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#condition LakeformationOptIn#condition}
   */
-  readonly condition?: LakeformationOptInCondition[] | cdktf.IResolvable;
+  readonly condition?: LakeformationOptInCondition[] | cdktn.IResolvable;
   /**
   * principal block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#principal LakeformationOptIn#principal}
   */
-  readonly principal?: LakeformationOptInPrincipal[] | cdktf.IResolvable;
+  readonly principal?: LakeformationOptInPrincipal[] | cdktn.IResolvable;
   /**
   * resource_data block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#resource_data LakeformationOptIn#resource_data}
   */
-  readonly resourceData?: LakeformationOptInResourceData[] | cdktf.IResolvable;
+  readonly resourceData?: LakeformationOptInResourceData[] | cdktn.IResolvable;
 }
 export interface LakeformationOptInCondition {
 }
 
-export function lakeformationOptInConditionToTerraform(struct?: LakeformationOptInCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInConditionToTerraform(struct?: LakeformationOptInCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -50,9 +50,9 @@ export function lakeformationOptInConditionToTerraform(struct?: LakeformationOpt
 }
 
 
-export function lakeformationOptInConditionToHclTerraform(struct?: LakeformationOptInCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInConditionToHclTerraform(struct?: LakeformationOptInCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -60,9 +60,9 @@ export function lakeformationOptInConditionToHclTerraform(struct?: Lakeformation
   return attrs;
 }
 
-export class LakeformationOptInConditionOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -70,11 +70,11 @@ export class LakeformationOptInConditionOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -83,12 +83,12 @@ export class LakeformationOptInConditionOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -104,15 +104,15 @@ export class LakeformationOptInConditionOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class LakeformationOptInConditionList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInCondition[] | cdktf.IResolvable
+export class LakeformationOptInConditionList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -130,25 +130,25 @@ export interface LakeformationOptInPrincipal {
   readonly dataLakePrincipalIdentifier: string;
 }
 
-export function lakeformationOptInPrincipalToTerraform(struct?: LakeformationOptInPrincipal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInPrincipalToTerraform(struct?: LakeformationOptInPrincipal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_lake_principal_identifier: cdktf.stringToTerraform(struct!.dataLakePrincipalIdentifier),
+    data_lake_principal_identifier: cdktn.stringToTerraform(struct!.dataLakePrincipalIdentifier),
   }
 }
 
 
-export function lakeformationOptInPrincipalToHclTerraform(struct?: LakeformationOptInPrincipal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInPrincipalToHclTerraform(struct?: LakeformationOptInPrincipal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_lake_principal_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.dataLakePrincipalIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.dataLakePrincipalIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -159,9 +159,9 @@ export function lakeformationOptInPrincipalToHclTerraform(struct?: Lakeformation
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInPrincipalOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInPrincipalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -169,11 +169,11 @@ export class LakeformationOptInPrincipalOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInPrincipal | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInPrincipal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -186,13 +186,13 @@ export class LakeformationOptInPrincipalOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInPrincipal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInPrincipal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataLakePrincipalIdentifier = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -217,15 +217,15 @@ export class LakeformationOptInPrincipalOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class LakeformationOptInPrincipalList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInPrincipal[] | cdktf.IResolvable
+export class LakeformationOptInPrincipalList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInPrincipal[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -246,25 +246,25 @@ export interface LakeformationOptInResourceDataCatalog {
   readonly id?: string;
 }
 
-export function lakeformationOptInResourceDataCatalogToTerraform(struct?: LakeformationOptInResourceDataCatalog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataCatalogToTerraform(struct?: LakeformationOptInResourceDataCatalog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function lakeformationOptInResourceDataCatalogToHclTerraform(struct?: LakeformationOptInResourceDataCatalog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataCatalogToHclTerraform(struct?: LakeformationOptInResourceDataCatalog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -275,9 +275,9 @@ export function lakeformationOptInResourceDataCatalogToHclTerraform(struct?: Lak
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataCatalogOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataCatalogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -285,11 +285,11 @@ export class LakeformationOptInResourceDataCatalogOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataCatalog | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataCatalog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -302,13 +302,13 @@ export class LakeformationOptInResourceDataCatalogOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataCatalog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataCatalog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -336,15 +336,15 @@ export class LakeformationOptInResourceDataCatalogOutputReference extends cdktf.
   }
 }
 
-export class LakeformationOptInResourceDataCatalogList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataCatalog[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataCatalogList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataCatalog[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -374,46 +374,46 @@ export interface LakeformationOptInResourceDataDataCellsFilter {
   readonly tableName?: string;
 }
 
-export function lakeformationOptInResourceDataDataCellsFilterToTerraform(struct?: LakeformationOptInResourceDataDataCellsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataDataCellsFilterToTerraform(struct?: LakeformationOptInResourceDataDataCellsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    name: cdktf.stringToTerraform(struct!.name),
-    table_catalog_id: cdktf.stringToTerraform(struct!.tableCatalogId),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    name: cdktn.stringToTerraform(struct!.name),
+    table_catalog_id: cdktn.stringToTerraform(struct!.tableCatalogId),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
-export function lakeformationOptInResourceDataDataCellsFilterToHclTerraform(struct?: LakeformationOptInResourceDataDataCellsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataDataCellsFilterToHclTerraform(struct?: LakeformationOptInResourceDataDataCellsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.tableCatalogId),
+      value: cdktn.stringToHclTerraform(struct!.tableCatalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -424,9 +424,9 @@ export function lakeformationOptInResourceDataDataCellsFilterToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataDataCellsFilterOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataDataCellsFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -434,11 +434,11 @@ export class LakeformationOptInResourceDataDataCellsFilterOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataDataCellsFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataDataCellsFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -463,7 +463,7 @@ export class LakeformationOptInResourceDataDataCellsFilterOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataDataCellsFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataDataCellsFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -472,7 +472,7 @@ export class LakeformationOptInResourceDataDataCellsFilterOutputReference extend
       this._tableCatalogId = undefined;
       this._tableName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -551,15 +551,15 @@ export class LakeformationOptInResourceDataDataCellsFilterOutputReference extend
   }
 }
 
-export class LakeformationOptInResourceDataDataCellsFilterList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataDataCellsFilter[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataDataCellsFilterList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataDataCellsFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -581,32 +581,32 @@ export interface LakeformationOptInResourceDataDataLocation {
   readonly resourceArn: string;
 }
 
-export function lakeformationOptInResourceDataDataLocationToTerraform(struct?: LakeformationOptInResourceDataDataLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataDataLocationToTerraform(struct?: LakeformationOptInResourceDataDataLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    catalog_id: cdktn.stringToTerraform(struct!.catalogId),
+    resource_arn: cdktn.stringToTerraform(struct!.resourceArn),
   }
 }
 
 
-export function lakeformationOptInResourceDataDataLocationToHclTerraform(struct?: LakeformationOptInResourceDataDataLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataDataLocationToHclTerraform(struct?: LakeformationOptInResourceDataDataLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      value: cdktn.stringToHclTerraform(struct!.catalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_arn: {
-      value: cdktf.stringToHclTerraform(struct!.resourceArn),
+      value: cdktn.stringToHclTerraform(struct!.resourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -617,9 +617,9 @@ export function lakeformationOptInResourceDataDataLocationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataDataLocationOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataDataLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -627,11 +627,11 @@ export class LakeformationOptInResourceDataDataLocationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataDataLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataDataLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -648,14 +648,14 @@ export class LakeformationOptInResourceDataDataLocationOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataDataLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataDataLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._catalogId = undefined;
       this._resourceArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -697,15 +697,15 @@ export class LakeformationOptInResourceDataDataLocationOutputReference extends c
   }
 }
 
-export class LakeformationOptInResourceDataDataLocationList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataDataLocation[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataDataLocationList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataDataLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -727,32 +727,32 @@ export interface LakeformationOptInResourceDataDatabase {
   readonly name: string;
 }
 
-export function lakeformationOptInResourceDataDatabaseToTerraform(struct?: LakeformationOptInResourceDataDatabase | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataDatabaseToTerraform(struct?: LakeformationOptInResourceDataDatabase | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    name: cdktf.stringToTerraform(struct!.name),
+    catalog_id: cdktn.stringToTerraform(struct!.catalogId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function lakeformationOptInResourceDataDatabaseToHclTerraform(struct?: LakeformationOptInResourceDataDatabase | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataDatabaseToHclTerraform(struct?: LakeformationOptInResourceDataDatabase | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      value: cdktn.stringToHclTerraform(struct!.catalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -763,9 +763,9 @@ export function lakeformationOptInResourceDataDatabaseToHclTerraform(struct?: La
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataDatabaseOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataDatabaseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -773,11 +773,11 @@ export class LakeformationOptInResourceDataDatabaseOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataDatabase | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataDatabase | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -794,14 +794,14 @@ export class LakeformationOptInResourceDataDatabaseOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataDatabase | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataDatabase | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._catalogId = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -843,15 +843,15 @@ export class LakeformationOptInResourceDataDatabaseOutputReference extends cdktf
   }
 }
 
-export class LakeformationOptInResourceDataDatabaseList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataDatabase[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataDatabaseList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataDatabase[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -877,39 +877,39 @@ export interface LakeformationOptInResourceDataLfTag {
   readonly value: string;
 }
 
-export function lakeformationOptInResourceDataLfTagToTerraform(struct?: LakeformationOptInResourceDataLfTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataLfTagToTerraform(struct?: LakeformationOptInResourceDataLfTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    catalog_id: cdktn.stringToTerraform(struct!.catalogId),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function lakeformationOptInResourceDataLfTagToHclTerraform(struct?: LakeformationOptInResourceDataLfTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataLfTagToHclTerraform(struct?: LakeformationOptInResourceDataLfTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      value: cdktn.stringToHclTerraform(struct!.catalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -920,9 +920,9 @@ export function lakeformationOptInResourceDataLfTagToHclTerraform(struct?: Lakef
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataLfTagOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataLfTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -930,11 +930,11 @@ export class LakeformationOptInResourceDataLfTagOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataLfTag | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataLfTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -955,7 +955,7 @@ export class LakeformationOptInResourceDataLfTagOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataLfTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataLfTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -963,7 +963,7 @@ export class LakeformationOptInResourceDataLfTagOutputReference extends cdktf.Co
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1019,15 +1019,15 @@ export class LakeformationOptInResourceDataLfTagOutputReference extends cdktf.Co
   }
 }
 
-export class LakeformationOptInResourceDataLfTagList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataLfTag[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataLfTagList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataLfTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1049,32 +1049,32 @@ export interface LakeformationOptInResourceDataLfTagExpression {
   readonly name: string;
 }
 
-export function lakeformationOptInResourceDataLfTagExpressionToTerraform(struct?: LakeformationOptInResourceDataLfTagExpression | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataLfTagExpressionToTerraform(struct?: LakeformationOptInResourceDataLfTagExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    name: cdktf.stringToTerraform(struct!.name),
+    catalog_id: cdktn.stringToTerraform(struct!.catalogId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function lakeformationOptInResourceDataLfTagExpressionToHclTerraform(struct?: LakeformationOptInResourceDataLfTagExpression | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataLfTagExpressionToHclTerraform(struct?: LakeformationOptInResourceDataLfTagExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      value: cdktn.stringToHclTerraform(struct!.catalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1085,9 +1085,9 @@ export function lakeformationOptInResourceDataLfTagExpressionToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataLfTagExpressionOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataLfTagExpressionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1095,11 +1095,11 @@ export class LakeformationOptInResourceDataLfTagExpressionOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataLfTagExpression | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataLfTagExpression | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1116,14 +1116,14 @@ export class LakeformationOptInResourceDataLfTagExpressionOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataLfTagExpression | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataLfTagExpression | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._catalogId = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1165,15 +1165,15 @@ export class LakeformationOptInResourceDataLfTagExpressionOutputReference extend
   }
 }
 
-export class LakeformationOptInResourceDataLfTagExpressionList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataLfTagExpression[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataLfTagExpressionList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataLfTagExpression[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1203,46 +1203,46 @@ export interface LakeformationOptInResourceDataLfTagPolicy {
   readonly resourceType: string;
 }
 
-export function lakeformationOptInResourceDataLfTagPolicyToTerraform(struct?: LakeformationOptInResourceDataLfTagPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataLfTagPolicyToTerraform(struct?: LakeformationOptInResourceDataLfTagPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    expression: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.expression),
-    expression_name: cdktf.stringToTerraform(struct!.expressionName),
-    resource_type: cdktf.stringToTerraform(struct!.resourceType),
+    catalog_id: cdktn.stringToTerraform(struct!.catalogId),
+    expression: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.expression),
+    expression_name: cdktn.stringToTerraform(struct!.expressionName),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
   }
 }
 
 
-export function lakeformationOptInResourceDataLfTagPolicyToHclTerraform(struct?: LakeformationOptInResourceDataLfTagPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataLfTagPolicyToHclTerraform(struct?: LakeformationOptInResourceDataLfTagPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      value: cdktn.stringToHclTerraform(struct!.catalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.expression),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.expression),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     expression_name: {
-      value: cdktf.stringToHclTerraform(struct!.expressionName),
+      value: cdktn.stringToHclTerraform(struct!.expressionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1253,9 +1253,9 @@ export function lakeformationOptInResourceDataLfTagPolicyToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataLfTagPolicyOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataLfTagPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1263,11 +1263,11 @@ export class LakeformationOptInResourceDataLfTagPolicyOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataLfTagPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataLfTagPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1292,7 +1292,7 @@ export class LakeformationOptInResourceDataLfTagPolicyOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataLfTagPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataLfTagPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1301,7 +1301,7 @@ export class LakeformationOptInResourceDataLfTagPolicyOutputReference extends cd
       this._expressionName = undefined;
       this._resourceType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1377,15 +1377,15 @@ export class LakeformationOptInResourceDataLfTagPolicyOutputReference extends cd
   }
 }
 
-export class LakeformationOptInResourceDataLfTagPolicyList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataLfTagPolicy[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataLfTagPolicyList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataLfTagPolicy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1412,49 +1412,49 @@ export interface LakeformationOptInResourceDataTable {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#wildcard LakeformationOptIn#wildcard}
   */
-  readonly wildcard?: boolean | cdktf.IResolvable;
+  readonly wildcard?: boolean | cdktn.IResolvable;
 }
 
-export function lakeformationOptInResourceDataTableToTerraform(struct?: LakeformationOptInResourceDataTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataTableToTerraform(struct?: LakeformationOptInResourceDataTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    name: cdktf.stringToTerraform(struct!.name),
-    wildcard: cdktf.booleanToTerraform(struct!.wildcard),
+    catalog_id: cdktn.stringToTerraform(struct!.catalogId),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    name: cdktn.stringToTerraform(struct!.name),
+    wildcard: cdktn.booleanToTerraform(struct!.wildcard),
   }
 }
 
 
-export function lakeformationOptInResourceDataTableToHclTerraform(struct?: LakeformationOptInResourceDataTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataTableToHclTerraform(struct?: LakeformationOptInResourceDataTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      value: cdktn.stringToHclTerraform(struct!.catalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     wildcard: {
-      value: cdktf.booleanToHclTerraform(struct!.wildcard),
+      value: cdktn.booleanToHclTerraform(struct!.wildcard),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1465,9 +1465,9 @@ export function lakeformationOptInResourceDataTableToHclTerraform(struct?: Lakef
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataTableOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1475,11 +1475,11 @@ export class LakeformationOptInResourceDataTableOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataTable | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataTable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1504,7 +1504,7 @@ export class LakeformationOptInResourceDataTableOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataTable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataTable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1513,7 +1513,7 @@ export class LakeformationOptInResourceDataTableOutputReference extends cdktf.Co
       this._name = undefined;
       this._wildcard = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1573,11 +1573,11 @@ export class LakeformationOptInResourceDataTableOutputReference extends cdktf.Co
   }
 
   // wildcard - computed: false, optional: true, required: false
-  private _wildcard?: boolean | cdktf.IResolvable; 
+  private _wildcard?: boolean | cdktn.IResolvable; 
   public get wildcard() {
     return this.getBooleanAttribute('wildcard');
   }
-  public set wildcard(value: boolean | cdktf.IResolvable) {
+  public set wildcard(value: boolean | cdktn.IResolvable) {
     this._wildcard = value;
   }
   public resetWildcard() {
@@ -1589,15 +1589,15 @@ export class LakeformationOptInResourceDataTableOutputReference extends cdktf.Co
   }
 }
 
-export class LakeformationOptInResourceDataTableList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataTable[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataTableList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataTable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1615,25 +1615,25 @@ export interface LakeformationOptInResourceDataTableWithColumnsColumnWildcard {
   readonly excludedColumnNames?: string[];
 }
 
-export function lakeformationOptInResourceDataTableWithColumnsColumnWildcardToTerraform(struct?: LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataTableWithColumnsColumnWildcardToTerraform(struct?: LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedColumnNames),
+    excluded_column_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedColumnNames),
   }
 }
 
 
-export function lakeformationOptInResourceDataTableWithColumnsColumnWildcardToHclTerraform(struct?: LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataTableWithColumnsColumnWildcardToHclTerraform(struct?: LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excluded_column_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedColumnNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedColumnNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1644,9 +1644,9 @@ export function lakeformationOptInResourceDataTableWithColumnsColumnWildcardToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataTableWithColumnsColumnWildcardOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataTableWithColumnsColumnWildcardOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1654,11 +1654,11 @@ export class LakeformationOptInResourceDataTableWithColumnsColumnWildcardOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1671,13 +1671,13 @@ export class LakeformationOptInResourceDataTableWithColumnsColumnWildcardOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataTableWithColumnsColumnWildcard | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._excludedColumnNames = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1691,7 +1691,7 @@ export class LakeformationOptInResourceDataTableWithColumnsColumnWildcardOutputR
   // excluded_column_names - computed: false, optional: true, required: false
   private _excludedColumnNames?: string[]; 
   public get excludedColumnNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('excluded_column_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('excluded_column_names'));
   }
   public set excludedColumnNames(value: string[]) {
     this._excludedColumnNames = value;
@@ -1705,15 +1705,15 @@ export class LakeformationOptInResourceDataTableWithColumnsColumnWildcardOutputR
   }
 }
 
-export class LakeformationOptInResourceDataTableWithColumnsColumnWildcardList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataTableWithColumnsColumnWildcard[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataTableWithColumnsColumnWildcardList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataTableWithColumnsColumnWildcard[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1746,56 +1746,56 @@ export interface LakeformationOptInResourceDataTableWithColumns {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#column_wildcard LakeformationOptIn#column_wildcard}
   */
-  readonly columnWildcard?: LakeformationOptInResourceDataTableWithColumnsColumnWildcard[] | cdktf.IResolvable;
+  readonly columnWildcard?: LakeformationOptInResourceDataTableWithColumnsColumnWildcard[] | cdktn.IResolvable;
 }
 
-export function lakeformationOptInResourceDataTableWithColumnsToTerraform(struct?: LakeformationOptInResourceDataTableWithColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataTableWithColumnsToTerraform(struct?: LakeformationOptInResourceDataTableWithColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columnNames),
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    name: cdktf.stringToTerraform(struct!.name),
-    column_wildcard: cdktf.listMapper(lakeformationOptInResourceDataTableWithColumnsColumnWildcardToTerraform, true)(struct!.columnWildcard),
+    catalog_id: cdktn.stringToTerraform(struct!.catalogId),
+    column_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columnNames),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    name: cdktn.stringToTerraform(struct!.name),
+    column_wildcard: cdktn.listMapper(lakeformationOptInResourceDataTableWithColumnsColumnWildcardToTerraform, true)(struct!.columnWildcard),
   }
 }
 
 
-export function lakeformationOptInResourceDataTableWithColumnsToHclTerraform(struct?: LakeformationOptInResourceDataTableWithColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataTableWithColumnsToHclTerraform(struct?: LakeformationOptInResourceDataTableWithColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_id: {
-      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      value: cdktn.stringToHclTerraform(struct!.catalogId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     column_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.columnNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.columnNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     column_wildcard: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataTableWithColumnsColumnWildcardToHclTerraform, true)(struct!.columnWildcard),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataTableWithColumnsColumnWildcardToHclTerraform, true)(struct!.columnWildcard),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataTableWithColumnsColumnWildcardList",
@@ -1806,9 +1806,9 @@ export function lakeformationOptInResourceDataTableWithColumnsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataTableWithColumnsOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataTableWithColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1816,11 +1816,11 @@ export class LakeformationOptInResourceDataTableWithColumnsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceDataTableWithColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceDataTableWithColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1849,7 +1849,7 @@ export class LakeformationOptInResourceDataTableWithColumnsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceDataTableWithColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceDataTableWithColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1859,7 +1859,7 @@ export class LakeformationOptInResourceDataTableWithColumnsOutputReference exten
       this._name = undefined;
       this._columnWildcard.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1893,7 +1893,7 @@ export class LakeformationOptInResourceDataTableWithColumnsOutputReference exten
   // column_names - computed: false, optional: true, required: false
   private _columnNames?: string[]; 
   public get columnNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('column_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('column_names'));
   }
   public set columnNames(value: string[]) {
     this._columnNames = value;
@@ -1937,7 +1937,7 @@ export class LakeformationOptInResourceDataTableWithColumnsOutputReference exten
   public get columnWildcard() {
     return this._columnWildcard;
   }
-  public putColumnWildcard(value: LakeformationOptInResourceDataTableWithColumnsColumnWildcard[] | cdktf.IResolvable) {
+  public putColumnWildcard(value: LakeformationOptInResourceDataTableWithColumnsColumnWildcard[] | cdktn.IResolvable) {
     this._columnWildcard.internalValue = value;
   }
   public resetColumnWildcard() {
@@ -1949,15 +1949,15 @@ export class LakeformationOptInResourceDataTableWithColumnsOutputReference exten
   }
 }
 
-export class LakeformationOptInResourceDataTableWithColumnsList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceDataTableWithColumns[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataTableWithColumnsList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceDataTableWithColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1974,132 +1974,132 @@ export interface LakeformationOptInResourceData {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#catalog LakeformationOptIn#catalog}
   */
-  readonly catalog?: LakeformationOptInResourceDataCatalog[] | cdktf.IResolvable;
+  readonly catalog?: LakeformationOptInResourceDataCatalog[] | cdktn.IResolvable;
   /**
   * data_cells_filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#data_cells_filter LakeformationOptIn#data_cells_filter}
   */
-  readonly dataCellsFilter?: LakeformationOptInResourceDataDataCellsFilter[] | cdktf.IResolvable;
+  readonly dataCellsFilter?: LakeformationOptInResourceDataDataCellsFilter[] | cdktn.IResolvable;
   /**
   * data_location block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#data_location LakeformationOptIn#data_location}
   */
-  readonly dataLocation?: LakeformationOptInResourceDataDataLocation[] | cdktf.IResolvable;
+  readonly dataLocation?: LakeformationOptInResourceDataDataLocation[] | cdktn.IResolvable;
   /**
   * database block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#database LakeformationOptIn#database}
   */
-  readonly database?: LakeformationOptInResourceDataDatabase[] | cdktf.IResolvable;
+  readonly database?: LakeformationOptInResourceDataDatabase[] | cdktn.IResolvable;
   /**
   * lf_tag block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#lf_tag LakeformationOptIn#lf_tag}
   */
-  readonly lfTag?: LakeformationOptInResourceDataLfTag[] | cdktf.IResolvable;
+  readonly lfTag?: LakeformationOptInResourceDataLfTag[] | cdktn.IResolvable;
   /**
   * lf_tag_expression block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#lf_tag_expression LakeformationOptIn#lf_tag_expression}
   */
-  readonly lfTagExpression?: LakeformationOptInResourceDataLfTagExpression[] | cdktf.IResolvable;
+  readonly lfTagExpression?: LakeformationOptInResourceDataLfTagExpression[] | cdktn.IResolvable;
   /**
   * lf_tag_policy block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#lf_tag_policy LakeformationOptIn#lf_tag_policy}
   */
-  readonly lfTagPolicy?: LakeformationOptInResourceDataLfTagPolicy[] | cdktf.IResolvable;
+  readonly lfTagPolicy?: LakeformationOptInResourceDataLfTagPolicy[] | cdktn.IResolvable;
   /**
   * table block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#table LakeformationOptIn#table}
   */
-  readonly table?: LakeformationOptInResourceDataTable[] | cdktf.IResolvable;
+  readonly table?: LakeformationOptInResourceDataTable[] | cdktn.IResolvable;
   /**
   * table_with_columns block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#table_with_columns LakeformationOptIn#table_with_columns}
   */
-  readonly tableWithColumns?: LakeformationOptInResourceDataTableWithColumns[] | cdktf.IResolvable;
+  readonly tableWithColumns?: LakeformationOptInResourceDataTableWithColumns[] | cdktn.IResolvable;
 }
 
-export function lakeformationOptInResourceDataToTerraform(struct?: LakeformationOptInResourceData | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataToTerraform(struct?: LakeformationOptInResourceData | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog: cdktf.listMapper(lakeformationOptInResourceDataCatalogToTerraform, true)(struct!.catalog),
-    data_cells_filter: cdktf.listMapper(lakeformationOptInResourceDataDataCellsFilterToTerraform, true)(struct!.dataCellsFilter),
-    data_location: cdktf.listMapper(lakeformationOptInResourceDataDataLocationToTerraform, true)(struct!.dataLocation),
-    database: cdktf.listMapper(lakeformationOptInResourceDataDatabaseToTerraform, true)(struct!.database),
-    lf_tag: cdktf.listMapper(lakeformationOptInResourceDataLfTagToTerraform, true)(struct!.lfTag),
-    lf_tag_expression: cdktf.listMapper(lakeformationOptInResourceDataLfTagExpressionToTerraform, true)(struct!.lfTagExpression),
-    lf_tag_policy: cdktf.listMapper(lakeformationOptInResourceDataLfTagPolicyToTerraform, true)(struct!.lfTagPolicy),
-    table: cdktf.listMapper(lakeformationOptInResourceDataTableToTerraform, true)(struct!.table),
-    table_with_columns: cdktf.listMapper(lakeformationOptInResourceDataTableWithColumnsToTerraform, true)(struct!.tableWithColumns),
+    catalog: cdktn.listMapper(lakeformationOptInResourceDataCatalogToTerraform, true)(struct!.catalog),
+    data_cells_filter: cdktn.listMapper(lakeformationOptInResourceDataDataCellsFilterToTerraform, true)(struct!.dataCellsFilter),
+    data_location: cdktn.listMapper(lakeformationOptInResourceDataDataLocationToTerraform, true)(struct!.dataLocation),
+    database: cdktn.listMapper(lakeformationOptInResourceDataDatabaseToTerraform, true)(struct!.database),
+    lf_tag: cdktn.listMapper(lakeformationOptInResourceDataLfTagToTerraform, true)(struct!.lfTag),
+    lf_tag_expression: cdktn.listMapper(lakeformationOptInResourceDataLfTagExpressionToTerraform, true)(struct!.lfTagExpression),
+    lf_tag_policy: cdktn.listMapper(lakeformationOptInResourceDataLfTagPolicyToTerraform, true)(struct!.lfTagPolicy),
+    table: cdktn.listMapper(lakeformationOptInResourceDataTableToTerraform, true)(struct!.table),
+    table_with_columns: cdktn.listMapper(lakeformationOptInResourceDataTableWithColumnsToTerraform, true)(struct!.tableWithColumns),
   }
 }
 
 
-export function lakeformationOptInResourceDataToHclTerraform(struct?: LakeformationOptInResourceData | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakeformationOptInResourceDataToHclTerraform(struct?: LakeformationOptInResourceData | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataCatalogToHclTerraform, true)(struct!.catalog),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataCatalogToHclTerraform, true)(struct!.catalog),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataCatalogList",
     },
     data_cells_filter: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataDataCellsFilterToHclTerraform, true)(struct!.dataCellsFilter),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataDataCellsFilterToHclTerraform, true)(struct!.dataCellsFilter),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataDataCellsFilterList",
     },
     data_location: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataDataLocationToHclTerraform, true)(struct!.dataLocation),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataDataLocationToHclTerraform, true)(struct!.dataLocation),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataDataLocationList",
     },
     database: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataDatabaseToHclTerraform, true)(struct!.database),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataDatabaseToHclTerraform, true)(struct!.database),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataDatabaseList",
     },
     lf_tag: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataLfTagToHclTerraform, true)(struct!.lfTag),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataLfTagToHclTerraform, true)(struct!.lfTag),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataLfTagList",
     },
     lf_tag_expression: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataLfTagExpressionToHclTerraform, true)(struct!.lfTagExpression),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataLfTagExpressionToHclTerraform, true)(struct!.lfTagExpression),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataLfTagExpressionList",
     },
     lf_tag_policy: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataLfTagPolicyToHclTerraform, true)(struct!.lfTagPolicy),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataLfTagPolicyToHclTerraform, true)(struct!.lfTagPolicy),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataLfTagPolicyList",
     },
     table: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataTableToHclTerraform, true)(struct!.table),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataTableToHclTerraform, true)(struct!.table),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataTableList",
     },
     table_with_columns: {
-      value: cdktf.listMapperHcl(lakeformationOptInResourceDataTableWithColumnsToHclTerraform, true)(struct!.tableWithColumns),
+      value: cdktn.listMapperHcl(lakeformationOptInResourceDataTableWithColumnsToHclTerraform, true)(struct!.tableWithColumns),
       isBlock: true,
       type: "list",
       storageClassType: "LakeformationOptInResourceDataTableWithColumnsList",
@@ -2110,9 +2110,9 @@ export function lakeformationOptInResourceDataToHclTerraform(struct?: Lakeformat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakeformationOptInResourceDataOutputReference extends cdktf.ComplexObject {
+export class LakeformationOptInResourceDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2120,11 +2120,11 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakeformationOptInResourceData | cdktf.IResolvable | undefined {
+  public get internalValue(): LakeformationOptInResourceData | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2169,7 +2169,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakeformationOptInResourceData | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakeformationOptInResourceData | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2183,7 +2183,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
       this._table.internalValue = undefined;
       this._tableWithColumns.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2207,7 +2207,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   public get catalog() {
     return this._catalog;
   }
-  public putCatalog(value: LakeformationOptInResourceDataCatalog[] | cdktf.IResolvable) {
+  public putCatalog(value: LakeformationOptInResourceDataCatalog[] | cdktn.IResolvable) {
     this._catalog.internalValue = value;
   }
   public resetCatalog() {
@@ -2223,7 +2223,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   public get dataCellsFilter() {
     return this._dataCellsFilter;
   }
-  public putDataCellsFilter(value: LakeformationOptInResourceDataDataCellsFilter[] | cdktf.IResolvable) {
+  public putDataCellsFilter(value: LakeformationOptInResourceDataDataCellsFilter[] | cdktn.IResolvable) {
     this._dataCellsFilter.internalValue = value;
   }
   public resetDataCellsFilter() {
@@ -2239,7 +2239,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   public get dataLocation() {
     return this._dataLocation;
   }
-  public putDataLocation(value: LakeformationOptInResourceDataDataLocation[] | cdktf.IResolvable) {
+  public putDataLocation(value: LakeformationOptInResourceDataDataLocation[] | cdktn.IResolvable) {
     this._dataLocation.internalValue = value;
   }
   public resetDataLocation() {
@@ -2255,7 +2255,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   public get database() {
     return this._database;
   }
-  public putDatabase(value: LakeformationOptInResourceDataDatabase[] | cdktf.IResolvable) {
+  public putDatabase(value: LakeformationOptInResourceDataDatabase[] | cdktn.IResolvable) {
     this._database.internalValue = value;
   }
   public resetDatabase() {
@@ -2271,7 +2271,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   public get lfTag() {
     return this._lfTag;
   }
-  public putLfTag(value: LakeformationOptInResourceDataLfTag[] | cdktf.IResolvable) {
+  public putLfTag(value: LakeformationOptInResourceDataLfTag[] | cdktn.IResolvable) {
     this._lfTag.internalValue = value;
   }
   public resetLfTag() {
@@ -2287,7 +2287,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   public get lfTagExpression() {
     return this._lfTagExpression;
   }
-  public putLfTagExpression(value: LakeformationOptInResourceDataLfTagExpression[] | cdktf.IResolvable) {
+  public putLfTagExpression(value: LakeformationOptInResourceDataLfTagExpression[] | cdktn.IResolvable) {
     this._lfTagExpression.internalValue = value;
   }
   public resetLfTagExpression() {
@@ -2303,7 +2303,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   public get lfTagPolicy() {
     return this._lfTagPolicy;
   }
-  public putLfTagPolicy(value: LakeformationOptInResourceDataLfTagPolicy[] | cdktf.IResolvable) {
+  public putLfTagPolicy(value: LakeformationOptInResourceDataLfTagPolicy[] | cdktn.IResolvable) {
     this._lfTagPolicy.internalValue = value;
   }
   public resetLfTagPolicy() {
@@ -2319,7 +2319,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   public get table() {
     return this._table;
   }
-  public putTable(value: LakeformationOptInResourceDataTable[] | cdktf.IResolvable) {
+  public putTable(value: LakeformationOptInResourceDataTable[] | cdktn.IResolvable) {
     this._table.internalValue = value;
   }
   public resetTable() {
@@ -2335,7 +2335,7 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   public get tableWithColumns() {
     return this._tableWithColumns;
   }
-  public putTableWithColumns(value: LakeformationOptInResourceDataTableWithColumns[] | cdktf.IResolvable) {
+  public putTableWithColumns(value: LakeformationOptInResourceDataTableWithColumns[] | cdktn.IResolvable) {
     this._tableWithColumns.internalValue = value;
   }
   public resetTableWithColumns() {
@@ -2347,15 +2347,15 @@ export class LakeformationOptInResourceDataOutputReference extends cdktf.Complex
   }
 }
 
-export class LakeformationOptInResourceDataList extends cdktf.ComplexList {
-  public internalValue? : LakeformationOptInResourceData[] | cdktf.IResolvable
+export class LakeformationOptInResourceDataList extends cdktn.ComplexList {
+  public internalValue? : LakeformationOptInResourceData[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2370,7 +2370,7 @@ export class LakeformationOptInResourceDataList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in}
 */
-export class LakeformationOptIn extends cdktf.TerraformResource {
+export class LakeformationOptIn extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2381,14 +2381,14 @@ export class LakeformationOptIn extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LakeformationOptIn resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LakeformationOptIn resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakeformationOptIn to import
   * @param importFromId The id of the existing LakeformationOptIn that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lakeformation_opt_in#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakeformationOptIn to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_opt_in", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_opt_in", importId: importFromId, provider });
       }
 
   // ===========
@@ -2459,7 +2459,7 @@ export class LakeformationOptIn extends cdktf.TerraformResource {
   public get condition() {
     return this._condition;
   }
-  public putCondition(value: LakeformationOptInCondition[] | cdktf.IResolvable) {
+  public putCondition(value: LakeformationOptInCondition[] | cdktn.IResolvable) {
     this._condition.internalValue = value;
   }
   public resetCondition() {
@@ -2475,7 +2475,7 @@ export class LakeformationOptIn extends cdktf.TerraformResource {
   public get principal() {
     return this._principal;
   }
-  public putPrincipal(value: LakeformationOptInPrincipal[] | cdktf.IResolvable) {
+  public putPrincipal(value: LakeformationOptInPrincipal[] | cdktn.IResolvable) {
     this._principal.internalValue = value;
   }
   public resetPrincipal() {
@@ -2491,7 +2491,7 @@ export class LakeformationOptIn extends cdktf.TerraformResource {
   public get resourceData() {
     return this._resourceData;
   }
-  public putResourceData(value: LakeformationOptInResourceData[] | cdktf.IResolvable) {
+  public putResourceData(value: LakeformationOptInResourceData[] | cdktn.IResolvable) {
     this._resourceData.internalValue = value;
   }
   public resetResourceData() {
@@ -2508,35 +2508,35 @@ export class LakeformationOptIn extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      condition: cdktf.listMapper(lakeformationOptInConditionToTerraform, true)(this._condition.internalValue),
-      principal: cdktf.listMapper(lakeformationOptInPrincipalToTerraform, true)(this._principal.internalValue),
-      resource_data: cdktf.listMapper(lakeformationOptInResourceDataToTerraform, true)(this._resourceData.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      condition: cdktn.listMapper(lakeformationOptInConditionToTerraform, true)(this._condition.internalValue),
+      principal: cdktn.listMapper(lakeformationOptInPrincipalToTerraform, true)(this._principal.internalValue),
+      resource_data: cdktn.listMapper(lakeformationOptInResourceDataToTerraform, true)(this._resourceData.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       condition: {
-        value: cdktf.listMapperHcl(lakeformationOptInConditionToHclTerraform, true)(this._condition.internalValue),
+        value: cdktn.listMapperHcl(lakeformationOptInConditionToHclTerraform, true)(this._condition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LakeformationOptInConditionList",
       },
       principal: {
-        value: cdktf.listMapperHcl(lakeformationOptInPrincipalToHclTerraform, true)(this._principal.internalValue),
+        value: cdktn.listMapperHcl(lakeformationOptInPrincipalToHclTerraform, true)(this._principal.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LakeformationOptInPrincipalList",
       },
       resource_data: {
-        value: cdktf.listMapperHcl(lakeformationOptInResourceDataToHclTerraform, true)(this._resourceData.internalValue),
+        value: cdktn.listMapperHcl(lakeformationOptInResourceDataToHclTerraform, true)(this._resourceData.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LakeformationOptInResourceDataList",

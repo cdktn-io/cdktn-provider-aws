@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutoscalingGroupTagAConfig extends cdktf.TerraformMetaArguments {
+export interface AutoscalingGroupTagAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}
   */
@@ -44,7 +44,7 @@ export interface AutoscalingGroupTagTag {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_group_tag#propagate_at_launch AutoscalingGroupTagA#propagate_at_launch}
   */
-  readonly propagateAtLaunch: boolean | cdktf.IResolvable;
+  readonly propagateAtLaunch: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_group_tag#value AutoscalingGroupTagA#value}
   */
@@ -52,38 +52,38 @@ export interface AutoscalingGroupTagTag {
 }
 
 export function autoscalingGroupTagTagToTerraform(struct?: AutoscalingGroupTagTagOutputReference | AutoscalingGroupTagTag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    propagate_at_launch: cdktf.booleanToTerraform(struct!.propagateAtLaunch),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    propagate_at_launch: cdktn.booleanToTerraform(struct!.propagateAtLaunch),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function autoscalingGroupTagTagToHclTerraform(struct?: AutoscalingGroupTagTagOutputReference | AutoscalingGroupTagTag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     propagate_at_launch: {
-      value: cdktf.booleanToHclTerraform(struct!.propagateAtLaunch),
+      value: cdktn.booleanToHclTerraform(struct!.propagateAtLaunch),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -94,14 +94,14 @@ export function autoscalingGroupTagTagToHclTerraform(struct?: AutoscalingGroupTa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutoscalingGroupTagTagOutputReference extends cdktf.ComplexObject {
+export class AutoscalingGroupTagTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -152,11 +152,11 @@ export class AutoscalingGroupTagTagOutputReference extends cdktf.ComplexObject {
   }
 
   // propagate_at_launch - computed: false, optional: false, required: true
-  private _propagateAtLaunch?: boolean | cdktf.IResolvable; 
+  private _propagateAtLaunch?: boolean | cdktn.IResolvable; 
   public get propagateAtLaunch() {
     return this.getBooleanAttribute('propagate_at_launch');
   }
-  public set propagateAtLaunch(value: boolean | cdktf.IResolvable) {
+  public set propagateAtLaunch(value: boolean | cdktn.IResolvable) {
     this._propagateAtLaunch = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -181,7 +181,7 @@ export class AutoscalingGroupTagTagOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag}
 */
-export class AutoscalingGroupTagA extends cdktf.TerraformResource {
+export class AutoscalingGroupTagA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -192,14 +192,14 @@ export class AutoscalingGroupTagA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutoscalingGroupTagA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutoscalingGroupTagA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutoscalingGroupTagA to import
   * @param importFromId The id of the existing AutoscalingGroupTagA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/autoscaling_group_tag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutoscalingGroupTagA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_autoscaling_group_tag", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_autoscaling_group_tag", importId: importFromId, provider });
       }
 
   // ===========
@@ -303,9 +303,9 @@ export class AutoscalingGroupTagA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      autoscaling_group_name: cdktn.stringToTerraform(this._autoscalingGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       tag: autoscalingGroupTagTagToTerraform(this._tag.internalValue),
     };
   }
@@ -313,19 +313,19 @@ export class AutoscalingGroupTagA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       autoscaling_group_name: {
-        value: cdktf.stringToHclTerraform(this._autoscalingGroupName),
+        value: cdktn.stringToHclTerraform(this._autoscalingGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

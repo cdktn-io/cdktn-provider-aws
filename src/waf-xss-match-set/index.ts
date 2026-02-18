@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WafXssMatchSetConfig extends cdktf.TerraformMetaArguments {
+export interface WafXssMatchSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}
   *
@@ -28,7 +28,7 @@ export interface WafXssMatchSetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_xss_match_set#xss_match_tuples WafXssMatchSet#xss_match_tuples}
   */
-  readonly xssMatchTuples?: WafXssMatchSetXssMatchTuples[] | cdktf.IResolvable;
+  readonly xssMatchTuples?: WafXssMatchSetXssMatchTuples[] | cdktn.IResolvable;
 }
 export interface WafXssMatchSetXssMatchTuplesFieldToMatch {
   /**
@@ -42,31 +42,31 @@ export interface WafXssMatchSetXssMatchTuplesFieldToMatch {
 }
 
 export function wafXssMatchSetXssMatchTuplesFieldToMatchToTerraform(struct?: WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference | WafXssMatchSetXssMatchTuplesFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    type: cdktf.stringToTerraform(struct!.type),
+    data: cdktn.stringToTerraform(struct!.data),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function wafXssMatchSetXssMatchTuplesFieldToMatchToHclTerraform(struct?: WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference | WafXssMatchSetXssMatchTuplesFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -77,14 +77,14 @@ export function wafXssMatchSetXssMatchTuplesFieldToMatchToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -157,26 +157,26 @@ export interface WafXssMatchSetXssMatchTuples {
   readonly fieldToMatch: WafXssMatchSetXssMatchTuplesFieldToMatch;
 }
 
-export function wafXssMatchSetXssMatchTuplesToTerraform(struct?: WafXssMatchSetXssMatchTuples | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafXssMatchSetXssMatchTuplesToTerraform(struct?: WafXssMatchSetXssMatchTuples | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    text_transformation: cdktn.stringToTerraform(struct!.textTransformation),
     field_to_match: wafXssMatchSetXssMatchTuplesFieldToMatchToTerraform(struct!.fieldToMatch),
   }
 }
 
 
-export function wafXssMatchSetXssMatchTuplesToHclTerraform(struct?: WafXssMatchSetXssMatchTuples | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafXssMatchSetXssMatchTuplesToHclTerraform(struct?: WafXssMatchSetXssMatchTuples | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     text_transformation: {
-      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      value: cdktn.stringToHclTerraform(struct!.textTransformation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -193,9 +193,9 @@ export function wafXssMatchSetXssMatchTuplesToHclTerraform(struct?: WafXssMatchS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafXssMatchSetXssMatchTuplesOutputReference extends cdktf.ComplexObject {
+export class WafXssMatchSetXssMatchTuplesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -203,11 +203,11 @@ export class WafXssMatchSetXssMatchTuplesOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WafXssMatchSetXssMatchTuples | cdktf.IResolvable | undefined {
+  public get internalValue(): WafXssMatchSetXssMatchTuples | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -224,14 +224,14 @@ export class WafXssMatchSetXssMatchTuplesOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafXssMatchSetXssMatchTuples | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WafXssMatchSetXssMatchTuples | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._textTransformation = undefined;
       this._fieldToMatch.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -270,15 +270,15 @@ export class WafXssMatchSetXssMatchTuplesOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class WafXssMatchSetXssMatchTuplesList extends cdktf.ComplexList {
-  public internalValue? : WafXssMatchSetXssMatchTuples[] | cdktf.IResolvable
+export class WafXssMatchSetXssMatchTuplesList extends cdktn.ComplexList {
+  public internalValue? : WafXssMatchSetXssMatchTuples[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -293,7 +293,7 @@ export class WafXssMatchSetXssMatchTuplesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_xss_match_set aws_waf_xss_match_set}
 */
-export class WafXssMatchSet extends cdktf.TerraformResource {
+export class WafXssMatchSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -304,14 +304,14 @@ export class WafXssMatchSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WafXssMatchSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WafXssMatchSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafXssMatchSet to import
   * @param importFromId The id of the existing WafXssMatchSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_xss_match_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafXssMatchSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_xss_match_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_xss_match_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -389,7 +389,7 @@ export class WafXssMatchSet extends cdktf.TerraformResource {
   public get xssMatchTuples() {
     return this._xssMatchTuples;
   }
-  public putXssMatchTuples(value: WafXssMatchSetXssMatchTuples[] | cdktf.IResolvable) {
+  public putXssMatchTuples(value: WafXssMatchSetXssMatchTuples[] | cdktn.IResolvable) {
     this._xssMatchTuples.internalValue = value;
   }
   public resetXssMatchTuples() {
@@ -406,28 +406,28 @@ export class WafXssMatchSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      xss_match_tuples: cdktf.listMapper(wafXssMatchSetXssMatchTuplesToTerraform, true)(this._xssMatchTuples.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      xss_match_tuples: cdktn.listMapper(wafXssMatchSetXssMatchTuplesToTerraform, true)(this._xssMatchTuples.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       xss_match_tuples: {
-        value: cdktf.listMapperHcl(wafXssMatchSetXssMatchTuplesToHclTerraform, true)(this._xssMatchTuples.internalValue),
+        value: cdktn.listMapperHcl(wafXssMatchSetXssMatchTuplesToHclTerraform, true)(this._xssMatchTuples.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WafXssMatchSetXssMatchTuplesList",

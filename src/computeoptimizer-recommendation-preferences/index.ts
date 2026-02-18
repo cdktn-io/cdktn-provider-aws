@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeoptimizerRecommendationPreferencesConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeoptimizerRecommendationPreferencesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_recommendation_preferences#enhanced_infrastructure_metrics ComputeoptimizerRecommendationPreferences#enhanced_infrastructure_metrics}
   */
@@ -43,25 +43,25 @@ export interface ComputeoptimizerRecommendationPreferencesConfig extends cdktf.T
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_recommendation_preferences#external_metrics_preference ComputeoptimizerRecommendationPreferences#external_metrics_preference}
   */
-  readonly externalMetricsPreference?: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference[] | cdktf.IResolvable;
+  readonly externalMetricsPreference?: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference[] | cdktn.IResolvable;
   /**
   * preferred_resource block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_recommendation_preferences#preferred_resource ComputeoptimizerRecommendationPreferences#preferred_resource}
   */
-  readonly preferredResource?: ComputeoptimizerRecommendationPreferencesPreferredResource[] | cdktf.IResolvable;
+  readonly preferredResource?: ComputeoptimizerRecommendationPreferencesPreferredResource[] | cdktn.IResolvable;
   /**
   * scope block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_recommendation_preferences#scope ComputeoptimizerRecommendationPreferences#scope}
   */
-  readonly scope?: ComputeoptimizerRecommendationPreferencesScope[] | cdktf.IResolvable;
+  readonly scope?: ComputeoptimizerRecommendationPreferencesScope[] | cdktn.IResolvable;
   /**
   * utilization_preference block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_recommendation_preferences#utilization_preference ComputeoptimizerRecommendationPreferences#utilization_preference}
   */
-  readonly utilizationPreference?: ComputeoptimizerRecommendationPreferencesUtilizationPreference[] | cdktf.IResolvable;
+  readonly utilizationPreference?: ComputeoptimizerRecommendationPreferencesUtilizationPreference[] | cdktn.IResolvable;
 }
 export interface ComputeoptimizerRecommendationPreferencesExternalMetricsPreference {
   /**
@@ -70,25 +70,25 @@ export interface ComputeoptimizerRecommendationPreferencesExternalMetricsPrefere
   readonly source: string;
 }
 
-export function computeoptimizerRecommendationPreferencesExternalMetricsPreferenceToTerraform(struct?: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesExternalMetricsPreferenceToTerraform(struct?: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function computeoptimizerRecommendationPreferencesExternalMetricsPreferenceToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesExternalMetricsPreferenceToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -99,9 +99,9 @@ export function computeoptimizerRecommendationPreferencesExternalMetricsPreferen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceOutputReference extends cdktf.ComplexObject {
+export class ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -109,11 +109,11 @@ export class ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeoptimizerRecommendationPreferencesExternalMetricsPreference | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeoptimizerRecommendationPreferencesExternalMetricsPreference | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -126,13 +126,13 @@ export class ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -157,15 +157,15 @@ export class ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceO
   }
 }
 
-export class ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceList extends cdktf.ComplexList {
-  public internalValue? : ComputeoptimizerRecommendationPreferencesExternalMetricsPreference[] | cdktf.IResolvable
+export class ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceList extends cdktn.ComplexList {
+  public internalValue? : ComputeoptimizerRecommendationPreferencesExternalMetricsPreference[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -191,39 +191,39 @@ export interface ComputeoptimizerRecommendationPreferencesPreferredResource {
   readonly name: string;
 }
 
-export function computeoptimizerRecommendationPreferencesPreferredResourceToTerraform(struct?: ComputeoptimizerRecommendationPreferencesPreferredResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesPreferredResourceToTerraform(struct?: ComputeoptimizerRecommendationPreferencesPreferredResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeList),
-    include_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeList),
-    name: cdktf.stringToTerraform(struct!.name),
+    exclude_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeList),
+    include_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeList),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function computeoptimizerRecommendationPreferencesPreferredResourceToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesPreferredResource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesPreferredResourceToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesPreferredResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeList),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     include_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeList),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -234,9 +234,9 @@ export function computeoptimizerRecommendationPreferencesPreferredResourceToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeoptimizerRecommendationPreferencesPreferredResourceOutputReference extends cdktf.ComplexObject {
+export class ComputeoptimizerRecommendationPreferencesPreferredResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -244,11 +244,11 @@ export class ComputeoptimizerRecommendationPreferencesPreferredResourceOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeoptimizerRecommendationPreferencesPreferredResource | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeoptimizerRecommendationPreferencesPreferredResource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -269,7 +269,7 @@ export class ComputeoptimizerRecommendationPreferencesPreferredResourceOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeoptimizerRecommendationPreferencesPreferredResource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeoptimizerRecommendationPreferencesPreferredResource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -277,7 +277,7 @@ export class ComputeoptimizerRecommendationPreferencesPreferredResourceOutputRef
       this._includeList = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -293,7 +293,7 @@ export class ComputeoptimizerRecommendationPreferencesPreferredResourceOutputRef
   // exclude_list - computed: false, optional: true, required: false
   private _excludeList?: string[]; 
   public get excludeList() {
-    return cdktf.Fn.tolist(this.getListAttribute('exclude_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('exclude_list'));
   }
   public set excludeList(value: string[]) {
     this._excludeList = value;
@@ -309,7 +309,7 @@ export class ComputeoptimizerRecommendationPreferencesPreferredResourceOutputRef
   // include_list - computed: false, optional: true, required: false
   private _includeList?: string[]; 
   public get includeList() {
-    return cdktf.Fn.tolist(this.getListAttribute('include_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('include_list'));
   }
   public set includeList(value: string[]) {
     this._includeList = value;
@@ -336,15 +336,15 @@ export class ComputeoptimizerRecommendationPreferencesPreferredResourceOutputRef
   }
 }
 
-export class ComputeoptimizerRecommendationPreferencesPreferredResourceList extends cdktf.ComplexList {
-  public internalValue? : ComputeoptimizerRecommendationPreferencesPreferredResource[] | cdktf.IResolvable
+export class ComputeoptimizerRecommendationPreferencesPreferredResourceList extends cdktn.ComplexList {
+  public internalValue? : ComputeoptimizerRecommendationPreferencesPreferredResource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -366,32 +366,32 @@ export interface ComputeoptimizerRecommendationPreferencesScope {
   readonly value: string;
 }
 
-export function computeoptimizerRecommendationPreferencesScopeToTerraform(struct?: ComputeoptimizerRecommendationPreferencesScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesScopeToTerraform(struct?: ComputeoptimizerRecommendationPreferencesScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function computeoptimizerRecommendationPreferencesScopeToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesScopeToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -402,9 +402,9 @@ export function computeoptimizerRecommendationPreferencesScopeToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeoptimizerRecommendationPreferencesScopeOutputReference extends cdktf.ComplexObject {
+export class ComputeoptimizerRecommendationPreferencesScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -412,11 +412,11 @@ export class ComputeoptimizerRecommendationPreferencesScopeOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeoptimizerRecommendationPreferencesScope | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeoptimizerRecommendationPreferencesScope | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -433,14 +433,14 @@ export class ComputeoptimizerRecommendationPreferencesScopeOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeoptimizerRecommendationPreferencesScope | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeoptimizerRecommendationPreferencesScope | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -479,15 +479,15 @@ export class ComputeoptimizerRecommendationPreferencesScopeOutputReference exten
   }
 }
 
-export class ComputeoptimizerRecommendationPreferencesScopeList extends cdktf.ComplexList {
-  public internalValue? : ComputeoptimizerRecommendationPreferencesScope[] | cdktf.IResolvable
+export class ComputeoptimizerRecommendationPreferencesScopeList extends cdktn.ComplexList {
+  public internalValue? : ComputeoptimizerRecommendationPreferencesScope[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -509,32 +509,32 @@ export interface ComputeoptimizerRecommendationPreferencesUtilizationPreferenceM
   readonly threshold?: string;
 }
 
-export function computeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersToTerraform(struct?: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersToTerraform(struct?: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    headroom: cdktf.stringToTerraform(struct!.headroom),
-    threshold: cdktf.stringToTerraform(struct!.threshold),
+    headroom: cdktn.stringToTerraform(struct!.headroom),
+    threshold: cdktn.stringToTerraform(struct!.threshold),
   }
 }
 
 
-export function computeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     headroom: {
-      value: cdktf.stringToHclTerraform(struct!.headroom),
+      value: cdktn.stringToHclTerraform(struct!.headroom),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threshold: {
-      value: cdktf.stringToHclTerraform(struct!.threshold),
+      value: cdktn.stringToHclTerraform(struct!.threshold),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -545,9 +545,9 @@ export function computeoptimizerRecommendationPreferencesUtilizationPreferenceMe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersOutputReference extends cdktf.ComplexObject {
+export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -555,11 +555,11 @@ export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetri
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -576,14 +576,14 @@ export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetri
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._headroom = undefined;
       this._threshold = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -625,15 +625,15 @@ export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetri
   }
 }
 
-export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersList extends cdktf.ComplexList {
-  public internalValue? : ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters[] | cdktf.IResolvable
+export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersList extends cdktn.ComplexList {
+  public internalValue? : ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -654,35 +654,35 @@ export interface ComputeoptimizerRecommendationPreferencesUtilizationPreference 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_recommendation_preferences#metric_parameters ComputeoptimizerRecommendationPreferences#metric_parameters}
   */
-  readonly metricParameters?: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters[] | cdktf.IResolvable;
+  readonly metricParameters?: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters[] | cdktn.IResolvable;
 }
 
-export function computeoptimizerRecommendationPreferencesUtilizationPreferenceToTerraform(struct?: ComputeoptimizerRecommendationPreferencesUtilizationPreference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesUtilizationPreferenceToTerraform(struct?: ComputeoptimizerRecommendationPreferencesUtilizationPreference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_name: cdktf.stringToTerraform(struct!.metricName),
-    metric_parameters: cdktf.listMapper(computeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersToTerraform, true)(struct!.metricParameters),
+    metric_name: cdktn.stringToTerraform(struct!.metricName),
+    metric_parameters: cdktn.listMapper(computeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersToTerraform, true)(struct!.metricParameters),
   }
 }
 
 
-export function computeoptimizerRecommendationPreferencesUtilizationPreferenceToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesUtilizationPreference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeoptimizerRecommendationPreferencesUtilizationPreferenceToHclTerraform(struct?: ComputeoptimizerRecommendationPreferencesUtilizationPreference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metric_name: {
-      value: cdktf.stringToHclTerraform(struct!.metricName),
+      value: cdktn.stringToHclTerraform(struct!.metricName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_parameters: {
-      value: cdktf.listMapperHcl(computeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersToHclTerraform, true)(struct!.metricParameters),
+      value: cdktn.listMapperHcl(computeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersToHclTerraform, true)(struct!.metricParameters),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersList",
@@ -693,9 +693,9 @@ export function computeoptimizerRecommendationPreferencesUtilizationPreferenceTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceOutputReference extends cdktf.ComplexObject {
+export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -703,11 +703,11 @@ export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeoptimizerRecommendationPreferencesUtilizationPreference | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeoptimizerRecommendationPreferencesUtilizationPreference | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -724,14 +724,14 @@ export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeoptimizerRecommendationPreferencesUtilizationPreference | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeoptimizerRecommendationPreferencesUtilizationPreference | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._metricName = undefined;
       this._metricParameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -761,7 +761,7 @@ export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceOutpu
   public get metricParameters() {
     return this._metricParameters;
   }
-  public putMetricParameters(value: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters[] | cdktf.IResolvable) {
+  public putMetricParameters(value: ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters[] | cdktn.IResolvable) {
     this._metricParameters.internalValue = value;
   }
   public resetMetricParameters() {
@@ -773,15 +773,15 @@ export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceOutpu
   }
 }
 
-export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceList extends cdktf.ComplexList {
-  public internalValue? : ComputeoptimizerRecommendationPreferencesUtilizationPreference[] | cdktf.IResolvable
+export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceList extends cdktn.ComplexList {
+  public internalValue? : ComputeoptimizerRecommendationPreferencesUtilizationPreference[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -796,7 +796,7 @@ export class ComputeoptimizerRecommendationPreferencesUtilizationPreferenceList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences}
 */
-export class ComputeoptimizerRecommendationPreferences extends cdktf.TerraformResource {
+export class ComputeoptimizerRecommendationPreferences extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -807,14 +807,14 @@ export class ComputeoptimizerRecommendationPreferences extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeoptimizerRecommendationPreferences resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeoptimizerRecommendationPreferences resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeoptimizerRecommendationPreferences to import
   * @param importFromId The id of the existing ComputeoptimizerRecommendationPreferences that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/computeoptimizer_recommendation_preferences#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeoptimizerRecommendationPreferences to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_computeoptimizer_recommendation_preferences", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_computeoptimizer_recommendation_preferences", importId: importFromId, provider });
       }
 
   // ===========
@@ -963,7 +963,7 @@ export class ComputeoptimizerRecommendationPreferences extends cdktf.TerraformRe
   public get externalMetricsPreference() {
     return this._externalMetricsPreference;
   }
-  public putExternalMetricsPreference(value: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference[] | cdktf.IResolvable) {
+  public putExternalMetricsPreference(value: ComputeoptimizerRecommendationPreferencesExternalMetricsPreference[] | cdktn.IResolvable) {
     this._externalMetricsPreference.internalValue = value;
   }
   public resetExternalMetricsPreference() {
@@ -979,7 +979,7 @@ export class ComputeoptimizerRecommendationPreferences extends cdktf.TerraformRe
   public get preferredResource() {
     return this._preferredResource;
   }
-  public putPreferredResource(value: ComputeoptimizerRecommendationPreferencesPreferredResource[] | cdktf.IResolvable) {
+  public putPreferredResource(value: ComputeoptimizerRecommendationPreferencesPreferredResource[] | cdktn.IResolvable) {
     this._preferredResource.internalValue = value;
   }
   public resetPreferredResource() {
@@ -995,7 +995,7 @@ export class ComputeoptimizerRecommendationPreferences extends cdktf.TerraformRe
   public get scope() {
     return this._scope;
   }
-  public putScope(value: ComputeoptimizerRecommendationPreferencesScope[] | cdktf.IResolvable) {
+  public putScope(value: ComputeoptimizerRecommendationPreferencesScope[] | cdktn.IResolvable) {
     this._scope.internalValue = value;
   }
   public resetScope() {
@@ -1011,7 +1011,7 @@ export class ComputeoptimizerRecommendationPreferences extends cdktf.TerraformRe
   public get utilizationPreference() {
     return this._utilizationPreference;
   }
-  public putUtilizationPreference(value: ComputeoptimizerRecommendationPreferencesUtilizationPreference[] | cdktf.IResolvable) {
+  public putUtilizationPreference(value: ComputeoptimizerRecommendationPreferencesUtilizationPreference[] | cdktn.IResolvable) {
     this._utilizationPreference.internalValue = value;
   }
   public resetUtilizationPreference() {
@@ -1028,77 +1028,77 @@ export class ComputeoptimizerRecommendationPreferences extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enhanced_infrastructure_metrics: cdktf.stringToTerraform(this._enhancedInfrastructureMetrics),
-      inferred_workload_types: cdktf.stringToTerraform(this._inferredWorkloadTypes),
-      look_back_period: cdktf.stringToTerraform(this._lookBackPeriod),
-      region: cdktf.stringToTerraform(this._region),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
-      savings_estimation_mode: cdktf.stringToTerraform(this._savingsEstimationMode),
-      external_metrics_preference: cdktf.listMapper(computeoptimizerRecommendationPreferencesExternalMetricsPreferenceToTerraform, true)(this._externalMetricsPreference.internalValue),
-      preferred_resource: cdktf.listMapper(computeoptimizerRecommendationPreferencesPreferredResourceToTerraform, true)(this._preferredResource.internalValue),
-      scope: cdktf.listMapper(computeoptimizerRecommendationPreferencesScopeToTerraform, true)(this._scope.internalValue),
-      utilization_preference: cdktf.listMapper(computeoptimizerRecommendationPreferencesUtilizationPreferenceToTerraform, true)(this._utilizationPreference.internalValue),
+      enhanced_infrastructure_metrics: cdktn.stringToTerraform(this._enhancedInfrastructureMetrics),
+      inferred_workload_types: cdktn.stringToTerraform(this._inferredWorkloadTypes),
+      look_back_period: cdktn.stringToTerraform(this._lookBackPeriod),
+      region: cdktn.stringToTerraform(this._region),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
+      savings_estimation_mode: cdktn.stringToTerraform(this._savingsEstimationMode),
+      external_metrics_preference: cdktn.listMapper(computeoptimizerRecommendationPreferencesExternalMetricsPreferenceToTerraform, true)(this._externalMetricsPreference.internalValue),
+      preferred_resource: cdktn.listMapper(computeoptimizerRecommendationPreferencesPreferredResourceToTerraform, true)(this._preferredResource.internalValue),
+      scope: cdktn.listMapper(computeoptimizerRecommendationPreferencesScopeToTerraform, true)(this._scope.internalValue),
+      utilization_preference: cdktn.listMapper(computeoptimizerRecommendationPreferencesUtilizationPreferenceToTerraform, true)(this._utilizationPreference.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enhanced_infrastructure_metrics: {
-        value: cdktf.stringToHclTerraform(this._enhancedInfrastructureMetrics),
+        value: cdktn.stringToHclTerraform(this._enhancedInfrastructureMetrics),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inferred_workload_types: {
-        value: cdktf.stringToHclTerraform(this._inferredWorkloadTypes),
+        value: cdktn.stringToHclTerraform(this._inferredWorkloadTypes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       look_back_period: {
-        value: cdktf.stringToHclTerraform(this._lookBackPeriod),
+        value: cdktn.stringToHclTerraform(this._lookBackPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       savings_estimation_mode: {
-        value: cdktf.stringToHclTerraform(this._savingsEstimationMode),
+        value: cdktn.stringToHclTerraform(this._savingsEstimationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_metrics_preference: {
-        value: cdktf.listMapperHcl(computeoptimizerRecommendationPreferencesExternalMetricsPreferenceToHclTerraform, true)(this._externalMetricsPreference.internalValue),
+        value: cdktn.listMapperHcl(computeoptimizerRecommendationPreferencesExternalMetricsPreferenceToHclTerraform, true)(this._externalMetricsPreference.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceList",
       },
       preferred_resource: {
-        value: cdktf.listMapperHcl(computeoptimizerRecommendationPreferencesPreferredResourceToHclTerraform, true)(this._preferredResource.internalValue),
+        value: cdktn.listMapperHcl(computeoptimizerRecommendationPreferencesPreferredResourceToHclTerraform, true)(this._preferredResource.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeoptimizerRecommendationPreferencesPreferredResourceList",
       },
       scope: {
-        value: cdktf.listMapperHcl(computeoptimizerRecommendationPreferencesScopeToHclTerraform, true)(this._scope.internalValue),
+        value: cdktn.listMapperHcl(computeoptimizerRecommendationPreferencesScopeToHclTerraform, true)(this._scope.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeoptimizerRecommendationPreferencesScopeList",
       },
       utilization_preference: {
-        value: cdktf.listMapperHcl(computeoptimizerRecommendationPreferencesUtilizationPreferenceToHclTerraform, true)(this._utilizationPreference.internalValue),
+        value: cdktn.listMapperHcl(computeoptimizerRecommendationPreferencesUtilizationPreferenceToHclTerraform, true)(this._utilizationPreference.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeoptimizerRecommendationPreferencesUtilizationPreferenceList",

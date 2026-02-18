@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SubnetConfig extends cdktf.TerraformMetaArguments {
+export interface SubnetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}
   */
-  readonly assignIpv6AddressOnCreation?: boolean | cdktf.IResolvable;
+  readonly assignIpv6AddressOnCreation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#availability_zone Subnet#availability_zone}
   */
@@ -35,7 +35,7 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}
   */
-  readonly enableDns64?: boolean | cdktf.IResolvable;
+  readonly enableDns64?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}
   */
@@ -43,11 +43,11 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}
   */
-  readonly enableResourceNameDnsARecordOnLaunch?: boolean | cdktf.IResolvable;
+  readonly enableResourceNameDnsARecordOnLaunch?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}
   */
-  readonly enableResourceNameDnsAaaaRecordOnLaunch?: boolean | cdktf.IResolvable;
+  readonly enableResourceNameDnsAaaaRecordOnLaunch?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#id Subnet#id}
   *
@@ -74,7 +74,7 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#ipv6_native Subnet#ipv6_native}
   */
-  readonly ipv6Native?: boolean | cdktf.IResolvable;
+  readonly ipv6Native?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#ipv6_netmask_length Subnet#ipv6_netmask_length}
   */
@@ -82,11 +82,11 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}
   */
-  readonly mapCustomerOwnedIpOnLaunch?: boolean | cdktf.IResolvable;
+  readonly mapCustomerOwnedIpOnLaunch?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}
   */
-  readonly mapPublicIpOnLaunch?: boolean | cdktf.IResolvable;
+  readonly mapPublicIpOnLaunch?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#outpost_arn Subnet#outpost_arn}
   */
@@ -131,32 +131,32 @@ export interface SubnetTimeouts {
   readonly delete?: string;
 }
 
-export function subnetTimeoutsToTerraform(struct?: SubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetTimeoutsToTerraform(struct?: SubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function subnetTimeoutsToHclTerraform(struct?: SubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetTimeoutsToHclTerraform(struct?: SubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -167,19 +167,19 @@ export function subnetTimeoutsToHclTerraform(struct?: SubnetTimeouts | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SubnetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SubnetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SubnetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SubnetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -196,14 +196,14 @@ export class SubnetTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SubnetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SubnetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class SubnetTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet aws_subnet}
 */
-export class Subnet extends cdktf.TerraformResource {
+export class Subnet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class Subnet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Subnet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Subnet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Subnet to import
   * @param importFromId The id of the existing Subnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Subnet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_subnet", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_subnet", importId: importFromId, provider });
       }
 
   // ===========
@@ -336,11 +336,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // assign_ipv6_address_on_creation - computed: false, optional: true, required: false
-  private _assignIpv6AddressOnCreation?: boolean | cdktf.IResolvable; 
+  private _assignIpv6AddressOnCreation?: boolean | cdktn.IResolvable; 
   public get assignIpv6AddressOnCreation() {
     return this.getBooleanAttribute('assign_ipv6_address_on_creation');
   }
-  public set assignIpv6AddressOnCreation(value: boolean | cdktf.IResolvable) {
+  public set assignIpv6AddressOnCreation(value: boolean | cdktn.IResolvable) {
     this._assignIpv6AddressOnCreation = value;
   }
   public resetAssignIpv6AddressOnCreation() {
@@ -416,11 +416,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // enable_dns64 - computed: false, optional: true, required: false
-  private _enableDns64?: boolean | cdktf.IResolvable; 
+  private _enableDns64?: boolean | cdktn.IResolvable; 
   public get enableDns64() {
     return this.getBooleanAttribute('enable_dns64');
   }
-  public set enableDns64(value: boolean | cdktf.IResolvable) {
+  public set enableDns64(value: boolean | cdktn.IResolvable) {
     this._enableDns64 = value;
   }
   public resetEnableDns64() {
@@ -448,11 +448,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // enable_resource_name_dns_a_record_on_launch - computed: false, optional: true, required: false
-  private _enableResourceNameDnsARecordOnLaunch?: boolean | cdktf.IResolvable; 
+  private _enableResourceNameDnsARecordOnLaunch?: boolean | cdktn.IResolvable; 
   public get enableResourceNameDnsARecordOnLaunch() {
     return this.getBooleanAttribute('enable_resource_name_dns_a_record_on_launch');
   }
-  public set enableResourceNameDnsARecordOnLaunch(value: boolean | cdktf.IResolvable) {
+  public set enableResourceNameDnsARecordOnLaunch(value: boolean | cdktn.IResolvable) {
     this._enableResourceNameDnsARecordOnLaunch = value;
   }
   public resetEnableResourceNameDnsARecordOnLaunch() {
@@ -464,11 +464,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // enable_resource_name_dns_aaaa_record_on_launch - computed: false, optional: true, required: false
-  private _enableResourceNameDnsAaaaRecordOnLaunch?: boolean | cdktf.IResolvable; 
+  private _enableResourceNameDnsAaaaRecordOnLaunch?: boolean | cdktn.IResolvable; 
   public get enableResourceNameDnsAaaaRecordOnLaunch() {
     return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record_on_launch');
   }
-  public set enableResourceNameDnsAaaaRecordOnLaunch(value: boolean | cdktf.IResolvable) {
+  public set enableResourceNameDnsAaaaRecordOnLaunch(value: boolean | cdktn.IResolvable) {
     this._enableResourceNameDnsAaaaRecordOnLaunch = value;
   }
   public resetEnableResourceNameDnsAaaaRecordOnLaunch() {
@@ -565,11 +565,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // ipv6_native - computed: false, optional: true, required: false
-  private _ipv6Native?: boolean | cdktf.IResolvable; 
+  private _ipv6Native?: boolean | cdktn.IResolvable; 
   public get ipv6Native() {
     return this.getBooleanAttribute('ipv6_native');
   }
-  public set ipv6Native(value: boolean | cdktf.IResolvable) {
+  public set ipv6Native(value: boolean | cdktn.IResolvable) {
     this._ipv6Native = value;
   }
   public resetIpv6Native() {
@@ -597,11 +597,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // map_customer_owned_ip_on_launch - computed: false, optional: true, required: false
-  private _mapCustomerOwnedIpOnLaunch?: boolean | cdktf.IResolvable; 
+  private _mapCustomerOwnedIpOnLaunch?: boolean | cdktn.IResolvable; 
   public get mapCustomerOwnedIpOnLaunch() {
     return this.getBooleanAttribute('map_customer_owned_ip_on_launch');
   }
-  public set mapCustomerOwnedIpOnLaunch(value: boolean | cdktf.IResolvable) {
+  public set mapCustomerOwnedIpOnLaunch(value: boolean | cdktn.IResolvable) {
     this._mapCustomerOwnedIpOnLaunch = value;
   }
   public resetMapCustomerOwnedIpOnLaunch() {
@@ -613,11 +613,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // map_public_ip_on_launch - computed: false, optional: true, required: false
-  private _mapPublicIpOnLaunch?: boolean | cdktf.IResolvable; 
+  private _mapPublicIpOnLaunch?: boolean | cdktn.IResolvable; 
   public get mapPublicIpOnLaunch() {
     return this.getBooleanAttribute('map_public_ip_on_launch');
   }
-  public set mapPublicIpOnLaunch(value: boolean | cdktf.IResolvable) {
+  public set mapPublicIpOnLaunch(value: boolean | cdktn.IResolvable) {
     this._mapPublicIpOnLaunch = value;
   }
   public resetMapPublicIpOnLaunch() {
@@ -748,30 +748,30 @@ export class Subnet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assign_ipv6_address_on_creation: cdktf.booleanToTerraform(this._assignIpv6AddressOnCreation),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
-      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
-      customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
-      enable_dns64: cdktf.booleanToTerraform(this._enableDns64),
-      enable_lni_at_device_index: cdktf.numberToTerraform(this._enableLniAtDeviceIndex),
-      enable_resource_name_dns_a_record_on_launch: cdktf.booleanToTerraform(this._enableResourceNameDnsARecordOnLaunch),
-      enable_resource_name_dns_aaaa_record_on_launch: cdktf.booleanToTerraform(this._enableResourceNameDnsAaaaRecordOnLaunch),
-      id: cdktf.stringToTerraform(this._id),
-      ipv4_ipam_pool_id: cdktf.stringToTerraform(this._ipv4IpamPoolId),
-      ipv4_netmask_length: cdktf.numberToTerraform(this._ipv4NetmaskLength),
-      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
-      ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
-      ipv6_native: cdktf.booleanToTerraform(this._ipv6Native),
-      ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
-      map_customer_owned_ip_on_launch: cdktf.booleanToTerraform(this._mapCustomerOwnedIpOnLaunch),
-      map_public_ip_on_launch: cdktf.booleanToTerraform(this._mapPublicIpOnLaunch),
-      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
-      private_dns_hostname_type_on_launch: cdktf.stringToTerraform(this._privateDnsHostnameTypeOnLaunch),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      assign_ipv6_address_on_creation: cdktn.booleanToTerraform(this._assignIpv6AddressOnCreation),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      availability_zone_id: cdktn.stringToTerraform(this._availabilityZoneId),
+      cidr_block: cdktn.stringToTerraform(this._cidrBlock),
+      customer_owned_ipv4_pool: cdktn.stringToTerraform(this._customerOwnedIpv4Pool),
+      enable_dns64: cdktn.booleanToTerraform(this._enableDns64),
+      enable_lni_at_device_index: cdktn.numberToTerraform(this._enableLniAtDeviceIndex),
+      enable_resource_name_dns_a_record_on_launch: cdktn.booleanToTerraform(this._enableResourceNameDnsARecordOnLaunch),
+      enable_resource_name_dns_aaaa_record_on_launch: cdktn.booleanToTerraform(this._enableResourceNameDnsAaaaRecordOnLaunch),
+      id: cdktn.stringToTerraform(this._id),
+      ipv4_ipam_pool_id: cdktn.stringToTerraform(this._ipv4IpamPoolId),
+      ipv4_netmask_length: cdktn.numberToTerraform(this._ipv4NetmaskLength),
+      ipv6_cidr_block: cdktn.stringToTerraform(this._ipv6CidrBlock),
+      ipv6_ipam_pool_id: cdktn.stringToTerraform(this._ipv6IpamPoolId),
+      ipv6_native: cdktn.booleanToTerraform(this._ipv6Native),
+      ipv6_netmask_length: cdktn.numberToTerraform(this._ipv6NetmaskLength),
+      map_customer_owned_ip_on_launch: cdktn.booleanToTerraform(this._mapCustomerOwnedIpOnLaunch),
+      map_public_ip_on_launch: cdktn.booleanToTerraform(this._mapPublicIpOnLaunch),
+      outpost_arn: cdktn.stringToTerraform(this._outpostArn),
+      private_dns_hostname_type_on_launch: cdktn.stringToTerraform(this._privateDnsHostnameTypeOnLaunch),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
       timeouts: subnetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -779,145 +779,145 @@ export class Subnet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assign_ipv6_address_on_creation: {
-        value: cdktf.booleanToHclTerraform(this._assignIpv6AddressOnCreation),
+        value: cdktn.booleanToHclTerraform(this._assignIpv6AddressOnCreation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       availability_zone_id: {
-        value: cdktf.stringToHclTerraform(this._availabilityZoneId),
+        value: cdktn.stringToHclTerraform(this._availabilityZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cidr_block: {
-        value: cdktf.stringToHclTerraform(this._cidrBlock),
+        value: cdktn.stringToHclTerraform(this._cidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_owned_ipv4_pool: {
-        value: cdktf.stringToHclTerraform(this._customerOwnedIpv4Pool),
+        value: cdktn.stringToHclTerraform(this._customerOwnedIpv4Pool),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_dns64: {
-        value: cdktf.booleanToHclTerraform(this._enableDns64),
+        value: cdktn.booleanToHclTerraform(this._enableDns64),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_lni_at_device_index: {
-        value: cdktf.numberToHclTerraform(this._enableLniAtDeviceIndex),
+        value: cdktn.numberToHclTerraform(this._enableLniAtDeviceIndex),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enable_resource_name_dns_a_record_on_launch: {
-        value: cdktf.booleanToHclTerraform(this._enableResourceNameDnsARecordOnLaunch),
+        value: cdktn.booleanToHclTerraform(this._enableResourceNameDnsARecordOnLaunch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_resource_name_dns_aaaa_record_on_launch: {
-        value: cdktf.booleanToHclTerraform(this._enableResourceNameDnsAaaaRecordOnLaunch),
+        value: cdktn.booleanToHclTerraform(this._enableResourceNameDnsAaaaRecordOnLaunch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv4_ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._ipv4IpamPoolId),
+        value: cdktn.stringToHclTerraform(this._ipv4IpamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv4_netmask_length: {
-        value: cdktf.numberToHclTerraform(this._ipv4NetmaskLength),
+        value: cdktn.numberToHclTerraform(this._ipv4NetmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ipv6_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
+        value: cdktn.stringToHclTerraform(this._ipv6CidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._ipv6IpamPoolId),
+        value: cdktn.stringToHclTerraform(this._ipv6IpamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_native: {
-        value: cdktf.booleanToHclTerraform(this._ipv6Native),
+        value: cdktn.booleanToHclTerraform(this._ipv6Native),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ipv6_netmask_length: {
-        value: cdktf.numberToHclTerraform(this._ipv6NetmaskLength),
+        value: cdktn.numberToHclTerraform(this._ipv6NetmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       map_customer_owned_ip_on_launch: {
-        value: cdktf.booleanToHclTerraform(this._mapCustomerOwnedIpOnLaunch),
+        value: cdktn.booleanToHclTerraform(this._mapCustomerOwnedIpOnLaunch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       map_public_ip_on_launch: {
-        value: cdktf.booleanToHclTerraform(this._mapPublicIpOnLaunch),
+        value: cdktn.booleanToHclTerraform(this._mapPublicIpOnLaunch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       outpost_arn: {
-        value: cdktf.stringToHclTerraform(this._outpostArn),
+        value: cdktn.stringToHclTerraform(this._outpostArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_dns_hostname_type_on_launch: {
-        value: cdktf.stringToHclTerraform(this._privateDnsHostnameTypeOnLaunch),
+        value: cdktn.stringToHclTerraform(this._privateDnsHostnameTypeOnLaunch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

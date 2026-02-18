@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53ResolverRuleConfig extends cdktf.TerraformMetaArguments {
+export interface Route53ResolverRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}
   */
@@ -54,7 +54,7 @@ export interface Route53ResolverRuleConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_rule#target_ip Route53ResolverRule#target_ip}
   */
-  readonly targetIp?: Route53ResolverRuleTargetIp[] | cdktf.IResolvable;
+  readonly targetIp?: Route53ResolverRuleTargetIp[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -81,46 +81,46 @@ export interface Route53ResolverRuleTargetIp {
   readonly protocol?: string;
 }
 
-export function route53ResolverRuleTargetIpToTerraform(struct?: Route53ResolverRuleTargetIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ResolverRuleTargetIpToTerraform(struct?: Route53ResolverRuleTargetIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip: cdktf.stringToTerraform(struct!.ip),
-    ipv6: cdktf.stringToTerraform(struct!.ipv6),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    ip: cdktn.stringToTerraform(struct!.ip),
+    ipv6: cdktn.stringToTerraform(struct!.ipv6),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
-export function route53ResolverRuleTargetIpToHclTerraform(struct?: Route53ResolverRuleTargetIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ResolverRuleTargetIpToHclTerraform(struct?: Route53ResolverRuleTargetIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
+      value: cdktn.stringToHclTerraform(struct!.ip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv6: {
-      value: cdktf.stringToHclTerraform(struct!.ipv6),
+      value: cdktn.stringToHclTerraform(struct!.ipv6),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,9 +131,9 @@ export function route53ResolverRuleTargetIpToHclTerraform(struct?: Route53Resolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53ResolverRuleTargetIpOutputReference extends cdktf.ComplexObject {
+export class Route53ResolverRuleTargetIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -141,11 +141,11 @@ export class Route53ResolverRuleTargetIpOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53ResolverRuleTargetIp | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53ResolverRuleTargetIp | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -170,7 +170,7 @@ export class Route53ResolverRuleTargetIpOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53ResolverRuleTargetIp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53ResolverRuleTargetIp | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -179,7 +179,7 @@ export class Route53ResolverRuleTargetIpOutputReference extends cdktf.ComplexObj
       this._port = undefined;
       this._protocol = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -258,15 +258,15 @@ export class Route53ResolverRuleTargetIpOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class Route53ResolverRuleTargetIpList extends cdktf.ComplexList {
-  public internalValue? : Route53ResolverRuleTargetIp[] | cdktf.IResolvable
+export class Route53ResolverRuleTargetIpList extends cdktn.ComplexList {
+  public internalValue? : Route53ResolverRuleTargetIp[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -292,39 +292,39 @@ export interface Route53ResolverRuleTimeouts {
   readonly update?: string;
 }
 
-export function route53ResolverRuleTimeoutsToTerraform(struct?: Route53ResolverRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ResolverRuleTimeoutsToTerraform(struct?: Route53ResolverRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function route53ResolverRuleTimeoutsToHclTerraform(struct?: Route53ResolverRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53ResolverRuleTimeoutsToHclTerraform(struct?: Route53ResolverRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -335,19 +335,19 @@ export function route53ResolverRuleTimeoutsToHclTerraform(struct?: Route53Resolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53ResolverRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Route53ResolverRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Route53ResolverRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53ResolverRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -368,7 +368,7 @@ export class Route53ResolverRuleTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53ResolverRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53ResolverRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -376,7 +376,7 @@ export class Route53ResolverRuleTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -441,7 +441,7 @@ export class Route53ResolverRuleTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_rule aws_route53_resolver_rule}
 */
-export class Route53ResolverRule extends cdktf.TerraformResource {
+export class Route53ResolverRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -452,14 +452,14 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53ResolverRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53ResolverRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53ResolverRule to import
   * @param importFromId The id of the existing Route53ResolverRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53ResolverRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -647,7 +647,7 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   public get targetIp() {
     return this._targetIp;
   }
-  public putTargetIp(value: Route53ResolverRuleTargetIp[] | cdktf.IResolvable) {
+  public putTargetIp(value: Route53ResolverRuleTargetIp[] | cdktn.IResolvable) {
     this._targetIp.internalValue = value;
   }
   public resetTargetIp() {
@@ -680,15 +680,15 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
-      rule_type: cdktf.stringToTerraform(this._ruleType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_ip: cdktf.listMapper(route53ResolverRuleTargetIpToTerraform, true)(this._targetIp.internalValue),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      resolver_endpoint_id: cdktn.stringToTerraform(this._resolverEndpointId),
+      rule_type: cdktn.stringToTerraform(this._ruleType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_ip: cdktn.listMapper(route53ResolverRuleTargetIpToTerraform, true)(this._targetIp.internalValue),
       timeouts: route53ResolverRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -696,55 +696,55 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resolver_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._resolverEndpointId),
+        value: cdktn.stringToHclTerraform(this._resolverEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_type: {
-        value: cdktf.stringToHclTerraform(this._ruleType),
+        value: cdktn.stringToHclTerraform(this._ruleType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_ip: {
-        value: cdktf.listMapperHcl(route53ResolverRuleTargetIpToHclTerraform, true)(this._targetIp.internalValue),
+        value: cdktn.listMapperHcl(route53ResolverRuleTargetIpToHclTerraform, true)(this._targetIp.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "Route53ResolverRuleTargetIpList",

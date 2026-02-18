@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConnectUserConfig extends cdktf.TerraformMetaArguments {
+export interface ConnectUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_user#directory_user_id ConnectUser#directory_user_id}
   */
@@ -94,45 +94,45 @@ export interface ConnectUserIdentityInfo {
 }
 
 export function connectUserIdentityInfoToTerraform(struct?: ConnectUserIdentityInfoOutputReference | ConnectUserIdentityInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    first_name: cdktf.stringToTerraform(struct!.firstName),
-    last_name: cdktf.stringToTerraform(struct!.lastName),
-    secondary_email: cdktf.stringToTerraform(struct!.secondaryEmail),
+    email: cdktn.stringToTerraform(struct!.email),
+    first_name: cdktn.stringToTerraform(struct!.firstName),
+    last_name: cdktn.stringToTerraform(struct!.lastName),
+    secondary_email: cdktn.stringToTerraform(struct!.secondaryEmail),
   }
 }
 
 
 export function connectUserIdentityInfoToHclTerraform(struct?: ConnectUserIdentityInfoOutputReference | ConnectUserIdentityInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_name: {
-      value: cdktf.stringToHclTerraform(struct!.firstName),
+      value: cdktn.stringToHclTerraform(struct!.firstName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_name: {
-      value: cdktf.stringToHclTerraform(struct!.lastName),
+      value: cdktn.stringToHclTerraform(struct!.lastName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secondary_email: {
-      value: cdktf.stringToHclTerraform(struct!.secondaryEmail),
+      value: cdktn.stringToHclTerraform(struct!.secondaryEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -143,14 +143,14 @@ export function connectUserIdentityInfoToHclTerraform(struct?: ConnectUserIdenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectUserIdentityInfoOutputReference extends cdktf.ComplexObject {
+export class ConnectUserIdentityInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -265,7 +265,7 @@ export interface ConnectUserPhoneConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_user#auto_accept ConnectUser#auto_accept}
   */
-  readonly autoAccept?: boolean | cdktf.IResolvable;
+  readonly autoAccept?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_user#desk_phone_number ConnectUser#desk_phone_number}
   */
@@ -277,45 +277,45 @@ export interface ConnectUserPhoneConfig {
 }
 
 export function connectUserPhoneConfigToTerraform(struct?: ConnectUserPhoneConfigOutputReference | ConnectUserPhoneConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    after_contact_work_time_limit: cdktf.numberToTerraform(struct!.afterContactWorkTimeLimit),
-    auto_accept: cdktf.booleanToTerraform(struct!.autoAccept),
-    desk_phone_number: cdktf.stringToTerraform(struct!.deskPhoneNumber),
-    phone_type: cdktf.stringToTerraform(struct!.phoneType),
+    after_contact_work_time_limit: cdktn.numberToTerraform(struct!.afterContactWorkTimeLimit),
+    auto_accept: cdktn.booleanToTerraform(struct!.autoAccept),
+    desk_phone_number: cdktn.stringToTerraform(struct!.deskPhoneNumber),
+    phone_type: cdktn.stringToTerraform(struct!.phoneType),
   }
 }
 
 
 export function connectUserPhoneConfigToHclTerraform(struct?: ConnectUserPhoneConfigOutputReference | ConnectUserPhoneConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     after_contact_work_time_limit: {
-      value: cdktf.numberToHclTerraform(struct!.afterContactWorkTimeLimit),
+      value: cdktn.numberToHclTerraform(struct!.afterContactWorkTimeLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     auto_accept: {
-      value: cdktf.booleanToHclTerraform(struct!.autoAccept),
+      value: cdktn.booleanToHclTerraform(struct!.autoAccept),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     desk_phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.deskPhoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.deskPhoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_type: {
-      value: cdktf.stringToHclTerraform(struct!.phoneType),
+      value: cdktn.stringToHclTerraform(struct!.phoneType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -326,14 +326,14 @@ export function connectUserPhoneConfigToHclTerraform(struct?: ConnectUserPhoneCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectUserPhoneConfigOutputReference extends cdktf.ComplexObject {
+export class ConnectUserPhoneConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -393,11 +393,11 @@ export class ConnectUserPhoneConfigOutputReference extends cdktf.ComplexObject {
   }
 
   // auto_accept - computed: false, optional: true, required: false
-  private _autoAccept?: boolean | cdktf.IResolvable; 
+  private _autoAccept?: boolean | cdktn.IResolvable; 
   public get autoAccept() {
     return this.getBooleanAttribute('auto_accept');
   }
-  public set autoAccept(value: boolean | cdktf.IResolvable) {
+  public set autoAccept(value: boolean | cdktn.IResolvable) {
     this._autoAccept = value;
   }
   public resetAutoAccept() {
@@ -441,7 +441,7 @@ export class ConnectUserPhoneConfigOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_user aws_connect_user}
 */
-export class ConnectUser extends cdktf.TerraformResource {
+export class ConnectUser extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -452,14 +452,14 @@ export class ConnectUser extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConnectUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConnectUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectUser to import
   * @param importFromId The id of the existing ConnectUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -635,7 +635,7 @@ export class ConnectUser extends cdktf.TerraformResource {
   // security_profile_ids - computed: false, optional: false, required: true
   private _securityProfileIds?: string[]; 
   public get securityProfileIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_profile_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_profile_ids'));
   }
   public set securityProfileIds(value: string[]) {
     this._securityProfileIds = value;
@@ -717,17 +717,17 @@ export class ConnectUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_user_id: cdktf.stringToTerraform(this._directoryUserId),
-      hierarchy_group_id: cdktf.stringToTerraform(this._hierarchyGroupId),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      name: cdktf.stringToTerraform(this._name),
-      password: cdktf.stringToTerraform(this._password),
-      region: cdktf.stringToTerraform(this._region),
-      routing_profile_id: cdktf.stringToTerraform(this._routingProfileId),
-      security_profile_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityProfileIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      directory_user_id: cdktn.stringToTerraform(this._directoryUserId),
+      hierarchy_group_id: cdktn.stringToTerraform(this._hierarchyGroupId),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      name: cdktn.stringToTerraform(this._name),
+      password: cdktn.stringToTerraform(this._password),
+      region: cdktn.stringToTerraform(this._region),
+      routing_profile_id: cdktn.stringToTerraform(this._routingProfileId),
+      security_profile_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityProfileIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       identity_info: connectUserIdentityInfoToTerraform(this._identityInfo.internalValue),
       phone_config: connectUserPhoneConfigToTerraform(this._phoneConfig.internalValue),
     };
@@ -736,67 +736,67 @@ export class ConnectUser extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       directory_user_id: {
-        value: cdktf.stringToHclTerraform(this._directoryUserId),
+        value: cdktn.stringToHclTerraform(this._directoryUserId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hierarchy_group_id: {
-        value: cdktf.stringToHclTerraform(this._hierarchyGroupId),
+        value: cdktn.stringToHclTerraform(this._hierarchyGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_profile_id: {
-        value: cdktf.stringToHclTerraform(this._routingProfileId),
+        value: cdktn.stringToHclTerraform(this._routingProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_profile_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityProfileIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityProfileIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

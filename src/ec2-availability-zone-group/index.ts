@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2AvailabilityZoneGroupConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2AvailabilityZoneGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_availability_zone_group#group_name Ec2AvailabilityZoneGroup#group_name}
   */
@@ -38,7 +38,7 @@ export interface Ec2AvailabilityZoneGroupConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group}
 */
-export class Ec2AvailabilityZoneGroup extends cdktf.TerraformResource {
+export class Ec2AvailabilityZoneGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class Ec2AvailabilityZoneGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2AvailabilityZoneGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2AvailabilityZoneGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2AvailabilityZoneGroup to import
   * @param importFromId The id of the existing Ec2AvailabilityZoneGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_availability_zone_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2AvailabilityZoneGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_availability_zone_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_availability_zone_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class Ec2AvailabilityZoneGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_name: cdktf.stringToTerraform(this._groupName),
-      id: cdktf.stringToTerraform(this._id),
-      opt_in_status: cdktf.stringToTerraform(this._optInStatus),
-      region: cdktf.stringToTerraform(this._region),
+      group_name: cdktn.stringToTerraform(this._groupName),
+      id: cdktn.stringToTerraform(this._id),
+      opt_in_status: cdktn.stringToTerraform(this._optInStatus),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group_name: {
-        value: cdktf.stringToHclTerraform(this._groupName),
+        value: cdktn.stringToHclTerraform(this._groupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       opt_in_status: {
-        value: cdktf.stringToHclTerraform(this._optInStatus),
+        value: cdktn.stringToHclTerraform(this._optInStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

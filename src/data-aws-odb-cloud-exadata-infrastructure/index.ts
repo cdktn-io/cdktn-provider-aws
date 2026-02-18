@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOdbCloudExadataInfrastructureConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOdbCloudExadataInfrastructureConfig extends cdktn.TerraformMetaArguments {
   /**
   * The unique identifier of the Exadata infrastructure.
   *
@@ -32,8 +32,8 @@ export interface DataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOci
 }
 
 export function dataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciToTerraform(struct?: DataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOci): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -42,8 +42,8 @@ export function dataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciT
 
 
 export function dataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciToHclTerraform(struct?: DataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOci): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,7 +51,7 @@ export function dataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciT
   return attrs;
 }
 
-export class DataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -60,7 +60,7 @@ export class DataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -85,14 +85,14 @@ export class DataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciOutp
   }
 }
 
-export class DataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciList extends cdktf.ComplexList {
+export class DataAwsOdbCloudExadataInfrastructureCustomerContactsToSendToOciList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -107,8 +107,8 @@ export interface DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek
 }
 
 export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToTerraform(struct?: DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -117,8 +117,8 @@ export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekT
 
 
 export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekToHclTerraform(struct?: DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeek): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -126,7 +126,7 @@ export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekT
   return attrs;
 }
 
-export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -135,7 +135,7 @@ export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -160,14 +160,14 @@ export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutp
   }
 }
 
-export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekList extends cdktf.ComplexList {
+export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -182,8 +182,8 @@ export interface DataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonths {
 }
 
 export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsToTerraform(struct?: DataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -192,8 +192,8 @@ export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsToTer
 
 
 export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsToHclTerraform(struct?: DataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -201,7 +201,7 @@ export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsToHcl
   return attrs;
 }
 
-export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -210,7 +210,7 @@ export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -235,14 +235,14 @@ export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsOutputRe
   }
 }
 
-export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsList extends cdktf.ComplexList {
+export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowMonthsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -257,8 +257,8 @@ export interface DataAwsOdbCloudExadataInfrastructureMaintenanceWindow {
 }
 
 export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowToTerraform(struct?: DataAwsOdbCloudExadataInfrastructureMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -267,8 +267,8 @@ export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowToTerraform
 
 
 export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowToHclTerraform(struct?: DataAwsOdbCloudExadataInfrastructureMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -276,7 +276,7 @@ export function dataAwsOdbCloudExadataInfrastructureMaintenanceWindowToHclTerraf
   return attrs;
 }
 
-export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -285,7 +285,7 @@ export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -317,7 +317,7 @@ export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowOutputReferenc
 
   // hours_of_day - computed: true, optional: false, required: false
   public get hoursOfDay() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('hours_of_day')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('hours_of_day')));
   }
 
   // is_custom_action_timeout_enabled - computed: true, optional: false, required: false
@@ -348,18 +348,18 @@ export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowOutputReferenc
 
   // weeks_of_month - computed: true, optional: false, required: false
   public get weeksOfMonth() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('weeks_of_month')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('weeks_of_month')));
   }
 }
 
-export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowList extends cdktf.ComplexList {
+export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -374,7 +374,7 @@ export class DataAwsOdbCloudExadataInfrastructureMaintenanceWindowList extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_cloud_exadata_infrastructure aws_odb_cloud_exadata_infrastructure}
 */
-export class DataAwsOdbCloudExadataInfrastructure extends cdktf.TerraformDataSource {
+export class DataAwsOdbCloudExadataInfrastructure extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -385,14 +385,14 @@ export class DataAwsOdbCloudExadataInfrastructure extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOdbCloudExadataInfrastructure resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOdbCloudExadataInfrastructure resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbCloudExadataInfrastructure to import
   * @param importFromId The id of the existing DataAwsOdbCloudExadataInfrastructure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_cloud_exadata_infrastructure#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbCloudExadataInfrastructure to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_exadata_infrastructure", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_exadata_infrastructure", importId: importFromId, provider });
       }
 
   // ===========
@@ -642,7 +642,7 @@ export class DataAwsOdbCloudExadataInfrastructure extends cdktf.TerraformDataSou
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -658,21 +658,21 @@ export class DataAwsOdbCloudExadataInfrastructure extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

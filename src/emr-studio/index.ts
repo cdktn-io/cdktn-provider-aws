@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EmrStudioConfig extends cdktf.TerraformMetaArguments {
+export interface EmrStudioConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_studio#auth_mode EmrStudio#auth_mode}
   */
@@ -90,7 +90,7 @@ export interface EmrStudioConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_studio aws_emr_studio}
 */
-export class EmrStudio extends cdktf.TerraformResource {
+export class EmrStudio extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -101,14 +101,14 @@ export class EmrStudio extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EmrStudio resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EmrStudio resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmrStudio to import
   * @param importFromId The id of the existing EmrStudio that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_studio#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmrStudio to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_emr_studio", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_emr_studio", importId: importFromId, provider });
       }
 
   // ===========
@@ -330,7 +330,7 @@ export class EmrStudio extends cdktf.TerraformResource {
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -425,126 +425,126 @@ export class EmrStudio extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auth_mode: cdktf.stringToTerraform(this._authMode),
-      default_s3_location: cdktf.stringToTerraform(this._defaultS3Location),
-      description: cdktf.stringToTerraform(this._description),
-      encryption_key_arn: cdktf.stringToTerraform(this._encryptionKeyArn),
-      engine_security_group_id: cdktf.stringToTerraform(this._engineSecurityGroupId),
-      id: cdktf.stringToTerraform(this._id),
-      idp_auth_url: cdktf.stringToTerraform(this._idpAuthUrl),
-      idp_relay_state_parameter_name: cdktf.stringToTerraform(this._idpRelayStateParameterName),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      service_role: cdktf.stringToTerraform(this._serviceRole),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      user_role: cdktf.stringToTerraform(this._userRole),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      workspace_security_group_id: cdktf.stringToTerraform(this._workspaceSecurityGroupId),
+      auth_mode: cdktn.stringToTerraform(this._authMode),
+      default_s3_location: cdktn.stringToTerraform(this._defaultS3Location),
+      description: cdktn.stringToTerraform(this._description),
+      encryption_key_arn: cdktn.stringToTerraform(this._encryptionKeyArn),
+      engine_security_group_id: cdktn.stringToTerraform(this._engineSecurityGroupId),
+      id: cdktn.stringToTerraform(this._id),
+      idp_auth_url: cdktn.stringToTerraform(this._idpAuthUrl),
+      idp_relay_state_parameter_name: cdktn.stringToTerraform(this._idpRelayStateParameterName),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      service_role: cdktn.stringToTerraform(this._serviceRole),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      user_role: cdktn.stringToTerraform(this._userRole),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      workspace_security_group_id: cdktn.stringToTerraform(this._workspaceSecurityGroupId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auth_mode: {
-        value: cdktf.stringToHclTerraform(this._authMode),
+        value: cdktn.stringToHclTerraform(this._authMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_s3_location: {
-        value: cdktf.stringToHclTerraform(this._defaultS3Location),
+        value: cdktn.stringToHclTerraform(this._defaultS3Location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_key_arn: {
-        value: cdktf.stringToHclTerraform(this._encryptionKeyArn),
+        value: cdktn.stringToHclTerraform(this._encryptionKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_security_group_id: {
-        value: cdktf.stringToHclTerraform(this._engineSecurityGroupId),
+        value: cdktn.stringToHclTerraform(this._engineSecurityGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idp_auth_url: {
-        value: cdktf.stringToHclTerraform(this._idpAuthUrl),
+        value: cdktn.stringToHclTerraform(this._idpAuthUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idp_relay_state_parameter_name: {
-        value: cdktf.stringToHclTerraform(this._idpRelayStateParameterName),
+        value: cdktn.stringToHclTerraform(this._idpRelayStateParameterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_role: {
-        value: cdktf.stringToHclTerraform(this._serviceRole),
+        value: cdktn.stringToHclTerraform(this._serviceRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user_role: {
-        value: cdktf.stringToHclTerraform(this._userRole),
+        value: cdktn.stringToHclTerraform(this._userRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_security_group_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceSecurityGroupId),
+        value: cdktn.stringToHclTerraform(this._workspaceSecurityGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

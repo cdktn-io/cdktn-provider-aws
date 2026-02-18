@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpnGatewayAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface VpnGatewayAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_gateway_attachment#id VpnGatewayAttachment#id}
   *
@@ -38,7 +38,7 @@ export interface VpnGatewayAttachmentConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment}
 */
-export class VpnGatewayAttachment extends cdktf.TerraformResource {
+export class VpnGatewayAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class VpnGatewayAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpnGatewayAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpnGatewayAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpnGatewayAttachment to import
   * @param importFromId The id of the existing VpnGatewayAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpn_gateway_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpnGatewayAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpn_gateway_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpn_gateway_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class VpnGatewayAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      vpn_gateway_id: cdktn.stringToTerraform(this._vpnGatewayId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpn_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._vpnGatewayId),
+        value: cdktn.stringToHclTerraform(this._vpnGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3TablesNamespaceConfig extends cdktf.TerraformMetaArguments {
+export interface S3TablesNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}
   */
@@ -31,7 +31,7 @@ export interface S3TablesNamespaceConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_namespace aws_s3tables_namespace}
 */
-export class S3TablesNamespace extends cdktf.TerraformResource {
+export class S3TablesNamespace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class S3TablesNamespace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3TablesNamespace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3TablesNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesNamespace to import
   * @param importFromId The id of the existing S3TablesNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesNamespace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3tables_namespace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3tables_namespace", importId: importFromId, provider });
       }
 
   // ===========
@@ -151,28 +151,28 @@ export class S3TablesNamespace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      namespace: cdktf.stringToTerraform(this._namespace),
-      region: cdktf.stringToTerraform(this._region),
-      table_bucket_arn: cdktf.stringToTerraform(this._tableBucketArn),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      region: cdktn.stringToTerraform(this._region),
+      table_bucket_arn: cdktn.stringToTerraform(this._tableBucketArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_bucket_arn: {
-        value: cdktf.stringToHclTerraform(this._tableBucketArn),
+        value: cdktn.stringToHclTerraform(this._tableBucketArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRdsOrderableDbInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRdsOrderableDbInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#availability_zone_group DataAwsRdsOrderableDbInstance#availability_zone_group}
   */
@@ -23,7 +23,7 @@ export interface DataAwsRdsOrderableDbInstanceConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#engine_latest_version DataAwsRdsOrderableDbInstance#engine_latest_version}
   */
-  readonly engineLatestVersion?: boolean | cdktf.IResolvable;
+  readonly engineLatestVersion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#engine_version DataAwsRdsOrderableDbInstance#engine_version}
   */
@@ -54,7 +54,7 @@ export interface DataAwsRdsOrderableDbInstanceConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#read_replica_capable DataAwsRdsOrderableDbInstance#read_replica_capable}
   */
-  readonly readReplicaCapable?: boolean | cdktf.IResolvable;
+  readonly readReplicaCapable?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -76,53 +76,53 @@ export interface DataAwsRdsOrderableDbInstanceConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_clusters DataAwsRdsOrderableDbInstance#supports_clusters}
   */
-  readonly supportsClusters?: boolean | cdktf.IResolvable;
+  readonly supportsClusters?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_enhanced_monitoring DataAwsRdsOrderableDbInstance#supports_enhanced_monitoring}
   */
-  readonly supportsEnhancedMonitoring?: boolean | cdktf.IResolvable;
+  readonly supportsEnhancedMonitoring?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_global_databases DataAwsRdsOrderableDbInstance#supports_global_databases}
   */
-  readonly supportsGlobalDatabases?: boolean | cdktf.IResolvable;
+  readonly supportsGlobalDatabases?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_iam_database_authentication DataAwsRdsOrderableDbInstance#supports_iam_database_authentication}
   */
-  readonly supportsIamDatabaseAuthentication?: boolean | cdktf.IResolvable;
+  readonly supportsIamDatabaseAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_iops DataAwsRdsOrderableDbInstance#supports_iops}
   */
-  readonly supportsIops?: boolean | cdktf.IResolvable;
+  readonly supportsIops?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_kerberos_authentication DataAwsRdsOrderableDbInstance#supports_kerberos_authentication}
   */
-  readonly supportsKerberosAuthentication?: boolean | cdktf.IResolvable;
+  readonly supportsKerberosAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_multi_az DataAwsRdsOrderableDbInstance#supports_multi_az}
   */
-  readonly supportsMultiAz?: boolean | cdktf.IResolvable;
+  readonly supportsMultiAz?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_performance_insights DataAwsRdsOrderableDbInstance#supports_performance_insights}
   */
-  readonly supportsPerformanceInsights?: boolean | cdktf.IResolvable;
+  readonly supportsPerformanceInsights?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_storage_autoscaling DataAwsRdsOrderableDbInstance#supports_storage_autoscaling}
   */
-  readonly supportsStorageAutoscaling?: boolean | cdktf.IResolvable;
+  readonly supportsStorageAutoscaling?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#supports_storage_encryption DataAwsRdsOrderableDbInstance#supports_storage_encryption}
   */
-  readonly supportsStorageEncryption?: boolean | cdktf.IResolvable;
+  readonly supportsStorageEncryption?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#vpc DataAwsRdsOrderableDbInstance#vpc}
   */
-  readonly vpc?: boolean | cdktf.IResolvable;
+  readonly vpc?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance}
 */
-export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
+export class DataAwsRdsOrderableDbInstance extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -133,14 +133,14 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRdsOrderableDbInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRdsOrderableDbInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRdsOrderableDbInstance to import
   * @param importFromId The id of the existing DataAwsRdsOrderableDbInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_orderable_db_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRdsOrderableDbInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_orderable_db_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_orderable_db_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -236,11 +236,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // engine_latest_version - computed: false, optional: true, required: false
-  private _engineLatestVersion?: boolean | cdktf.IResolvable; 
+  private _engineLatestVersion?: boolean | cdktn.IResolvable; 
   public get engineLatestVersion() {
     return this.getBooleanAttribute('engine_latest_version');
   }
-  public set engineLatestVersion(value: boolean | cdktf.IResolvable) {
+  public set engineLatestVersion(value: boolean | cdktn.IResolvable) {
     this._engineLatestVersion = value;
   }
   public resetEngineLatestVersion() {
@@ -388,11 +388,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // read_replica_capable - computed: true, optional: true, required: false
-  private _readReplicaCapable?: boolean | cdktf.IResolvable; 
+  private _readReplicaCapable?: boolean | cdktn.IResolvable; 
   public get readReplicaCapable() {
     return this.getBooleanAttribute('read_replica_capable');
   }
-  public set readReplicaCapable(value: boolean | cdktf.IResolvable) {
+  public set readReplicaCapable(value: boolean | cdktn.IResolvable) {
     this._readReplicaCapable = value;
   }
   public resetReadReplicaCapable() {
@@ -468,11 +468,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_clusters - computed: true, optional: true, required: false
-  private _supportsClusters?: boolean | cdktf.IResolvable; 
+  private _supportsClusters?: boolean | cdktn.IResolvable; 
   public get supportsClusters() {
     return this.getBooleanAttribute('supports_clusters');
   }
-  public set supportsClusters(value: boolean | cdktf.IResolvable) {
+  public set supportsClusters(value: boolean | cdktn.IResolvable) {
     this._supportsClusters = value;
   }
   public resetSupportsClusters() {
@@ -484,11 +484,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_enhanced_monitoring - computed: true, optional: true, required: false
-  private _supportsEnhancedMonitoring?: boolean | cdktf.IResolvable; 
+  private _supportsEnhancedMonitoring?: boolean | cdktn.IResolvable; 
   public get supportsEnhancedMonitoring() {
     return this.getBooleanAttribute('supports_enhanced_monitoring');
   }
-  public set supportsEnhancedMonitoring(value: boolean | cdktf.IResolvable) {
+  public set supportsEnhancedMonitoring(value: boolean | cdktn.IResolvable) {
     this._supportsEnhancedMonitoring = value;
   }
   public resetSupportsEnhancedMonitoring() {
@@ -500,11 +500,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_global_databases - computed: true, optional: true, required: false
-  private _supportsGlobalDatabases?: boolean | cdktf.IResolvable; 
+  private _supportsGlobalDatabases?: boolean | cdktn.IResolvable; 
   public get supportsGlobalDatabases() {
     return this.getBooleanAttribute('supports_global_databases');
   }
-  public set supportsGlobalDatabases(value: boolean | cdktf.IResolvable) {
+  public set supportsGlobalDatabases(value: boolean | cdktn.IResolvable) {
     this._supportsGlobalDatabases = value;
   }
   public resetSupportsGlobalDatabases() {
@@ -516,11 +516,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_iam_database_authentication - computed: true, optional: true, required: false
-  private _supportsIamDatabaseAuthentication?: boolean | cdktf.IResolvable; 
+  private _supportsIamDatabaseAuthentication?: boolean | cdktn.IResolvable; 
   public get supportsIamDatabaseAuthentication() {
     return this.getBooleanAttribute('supports_iam_database_authentication');
   }
-  public set supportsIamDatabaseAuthentication(value: boolean | cdktf.IResolvable) {
+  public set supportsIamDatabaseAuthentication(value: boolean | cdktn.IResolvable) {
     this._supportsIamDatabaseAuthentication = value;
   }
   public resetSupportsIamDatabaseAuthentication() {
@@ -532,11 +532,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_iops - computed: true, optional: true, required: false
-  private _supportsIops?: boolean | cdktf.IResolvable; 
+  private _supportsIops?: boolean | cdktn.IResolvable; 
   public get supportsIops() {
     return this.getBooleanAttribute('supports_iops');
   }
-  public set supportsIops(value: boolean | cdktf.IResolvable) {
+  public set supportsIops(value: boolean | cdktn.IResolvable) {
     this._supportsIops = value;
   }
   public resetSupportsIops() {
@@ -548,11 +548,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_kerberos_authentication - computed: true, optional: true, required: false
-  private _supportsKerberosAuthentication?: boolean | cdktf.IResolvable; 
+  private _supportsKerberosAuthentication?: boolean | cdktn.IResolvable; 
   public get supportsKerberosAuthentication() {
     return this.getBooleanAttribute('supports_kerberos_authentication');
   }
-  public set supportsKerberosAuthentication(value: boolean | cdktf.IResolvable) {
+  public set supportsKerberosAuthentication(value: boolean | cdktn.IResolvable) {
     this._supportsKerberosAuthentication = value;
   }
   public resetSupportsKerberosAuthentication() {
@@ -564,11 +564,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_multi_az - computed: true, optional: true, required: false
-  private _supportsMultiAz?: boolean | cdktf.IResolvable; 
+  private _supportsMultiAz?: boolean | cdktn.IResolvable; 
   public get supportsMultiAz() {
     return this.getBooleanAttribute('supports_multi_az');
   }
-  public set supportsMultiAz(value: boolean | cdktf.IResolvable) {
+  public set supportsMultiAz(value: boolean | cdktn.IResolvable) {
     this._supportsMultiAz = value;
   }
   public resetSupportsMultiAz() {
@@ -580,11 +580,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_performance_insights - computed: true, optional: true, required: false
-  private _supportsPerformanceInsights?: boolean | cdktf.IResolvable; 
+  private _supportsPerformanceInsights?: boolean | cdktn.IResolvable; 
   public get supportsPerformanceInsights() {
     return this.getBooleanAttribute('supports_performance_insights');
   }
-  public set supportsPerformanceInsights(value: boolean | cdktf.IResolvable) {
+  public set supportsPerformanceInsights(value: boolean | cdktn.IResolvable) {
     this._supportsPerformanceInsights = value;
   }
   public resetSupportsPerformanceInsights() {
@@ -596,11 +596,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_storage_autoscaling - computed: true, optional: true, required: false
-  private _supportsStorageAutoscaling?: boolean | cdktf.IResolvable; 
+  private _supportsStorageAutoscaling?: boolean | cdktn.IResolvable; 
   public get supportsStorageAutoscaling() {
     return this.getBooleanAttribute('supports_storage_autoscaling');
   }
-  public set supportsStorageAutoscaling(value: boolean | cdktf.IResolvable) {
+  public set supportsStorageAutoscaling(value: boolean | cdktn.IResolvable) {
     this._supportsStorageAutoscaling = value;
   }
   public resetSupportsStorageAutoscaling() {
@@ -612,11 +612,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_storage_encryption - computed: true, optional: true, required: false
-  private _supportsStorageEncryption?: boolean | cdktf.IResolvable; 
+  private _supportsStorageEncryption?: boolean | cdktn.IResolvable; 
   public get supportsStorageEncryption() {
     return this.getBooleanAttribute('supports_storage_encryption');
   }
-  public set supportsStorageEncryption(value: boolean | cdktf.IResolvable) {
+  public set supportsStorageEncryption(value: boolean | cdktn.IResolvable) {
     this._supportsStorageEncryption = value;
   }
   public resetSupportsStorageEncryption() {
@@ -628,11 +628,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // vpc - computed: true, optional: true, required: false
-  private _vpc?: boolean | cdktf.IResolvable; 
+  private _vpc?: boolean | cdktn.IResolvable; 
   public get vpc() {
     return this.getBooleanAttribute('vpc');
   }
-  public set vpc(value: boolean | cdktf.IResolvable) {
+  public set vpc(value: boolean | cdktn.IResolvable) {
     this._vpc = value;
   }
   public resetVpc() {
@@ -649,182 +649,182 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone_group: cdktf.stringToTerraform(this._availabilityZoneGroup),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_latest_version: cdktf.booleanToTerraform(this._engineLatestVersion),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      id: cdktf.stringToTerraform(this._id),
-      instance_class: cdktf.stringToTerraform(this._instanceClass),
-      license_model: cdktf.stringToTerraform(this._licenseModel),
-      preferred_engine_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredEngineVersions),
-      preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredInstanceClasses),
-      read_replica_capable: cdktf.booleanToTerraform(this._readReplicaCapable),
-      region: cdktf.stringToTerraform(this._region),
-      storage_type: cdktf.stringToTerraform(this._storageType),
-      supported_engine_modes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedEngineModes),
-      supported_network_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedNetworkTypes),
-      supports_clusters: cdktf.booleanToTerraform(this._supportsClusters),
-      supports_enhanced_monitoring: cdktf.booleanToTerraform(this._supportsEnhancedMonitoring),
-      supports_global_databases: cdktf.booleanToTerraform(this._supportsGlobalDatabases),
-      supports_iam_database_authentication: cdktf.booleanToTerraform(this._supportsIamDatabaseAuthentication),
-      supports_iops: cdktf.booleanToTerraform(this._supportsIops),
-      supports_kerberos_authentication: cdktf.booleanToTerraform(this._supportsKerberosAuthentication),
-      supports_multi_az: cdktf.booleanToTerraform(this._supportsMultiAz),
-      supports_performance_insights: cdktf.booleanToTerraform(this._supportsPerformanceInsights),
-      supports_storage_autoscaling: cdktf.booleanToTerraform(this._supportsStorageAutoscaling),
-      supports_storage_encryption: cdktf.booleanToTerraform(this._supportsStorageEncryption),
-      vpc: cdktf.booleanToTerraform(this._vpc),
+      availability_zone_group: cdktn.stringToTerraform(this._availabilityZoneGroup),
+      engine: cdktn.stringToTerraform(this._engine),
+      engine_latest_version: cdktn.booleanToTerraform(this._engineLatestVersion),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      id: cdktn.stringToTerraform(this._id),
+      instance_class: cdktn.stringToTerraform(this._instanceClass),
+      license_model: cdktn.stringToTerraform(this._licenseModel),
+      preferred_engine_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preferredEngineVersions),
+      preferred_instance_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preferredInstanceClasses),
+      read_replica_capable: cdktn.booleanToTerraform(this._readReplicaCapable),
+      region: cdktn.stringToTerraform(this._region),
+      storage_type: cdktn.stringToTerraform(this._storageType),
+      supported_engine_modes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportedEngineModes),
+      supported_network_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportedNetworkTypes),
+      supports_clusters: cdktn.booleanToTerraform(this._supportsClusters),
+      supports_enhanced_monitoring: cdktn.booleanToTerraform(this._supportsEnhancedMonitoring),
+      supports_global_databases: cdktn.booleanToTerraform(this._supportsGlobalDatabases),
+      supports_iam_database_authentication: cdktn.booleanToTerraform(this._supportsIamDatabaseAuthentication),
+      supports_iops: cdktn.booleanToTerraform(this._supportsIops),
+      supports_kerberos_authentication: cdktn.booleanToTerraform(this._supportsKerberosAuthentication),
+      supports_multi_az: cdktn.booleanToTerraform(this._supportsMultiAz),
+      supports_performance_insights: cdktn.booleanToTerraform(this._supportsPerformanceInsights),
+      supports_storage_autoscaling: cdktn.booleanToTerraform(this._supportsStorageAutoscaling),
+      supports_storage_encryption: cdktn.booleanToTerraform(this._supportsStorageEncryption),
+      vpc: cdktn.booleanToTerraform(this._vpc),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_zone_group: {
-        value: cdktf.stringToHclTerraform(this._availabilityZoneGroup),
+        value: cdktn.stringToHclTerraform(this._availabilityZoneGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_latest_version: {
-        value: cdktf.booleanToHclTerraform(this._engineLatestVersion),
+        value: cdktn.booleanToHclTerraform(this._engineLatestVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_class: {
-        value: cdktf.stringToHclTerraform(this._instanceClass),
+        value: cdktn.stringToHclTerraform(this._instanceClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_model: {
-        value: cdktf.stringToHclTerraform(this._licenseModel),
+        value: cdktn.stringToHclTerraform(this._licenseModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_engine_versions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredEngineVersions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preferredEngineVersions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       preferred_instance_classes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredInstanceClasses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preferredInstanceClasses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       read_replica_capable: {
-        value: cdktf.booleanToHclTerraform(this._readReplicaCapable),
+        value: cdktn.booleanToHclTerraform(this._readReplicaCapable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_type: {
-        value: cdktf.stringToHclTerraform(this._storageType),
+        value: cdktn.stringToHclTerraform(this._storageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       supported_engine_modes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedEngineModes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportedEngineModes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       supported_network_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedNetworkTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportedNetworkTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       supports_clusters: {
-        value: cdktf.booleanToHclTerraform(this._supportsClusters),
+        value: cdktn.booleanToHclTerraform(this._supportsClusters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_enhanced_monitoring: {
-        value: cdktf.booleanToHclTerraform(this._supportsEnhancedMonitoring),
+        value: cdktn.booleanToHclTerraform(this._supportsEnhancedMonitoring),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_global_databases: {
-        value: cdktf.booleanToHclTerraform(this._supportsGlobalDatabases),
+        value: cdktn.booleanToHclTerraform(this._supportsGlobalDatabases),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_iam_database_authentication: {
-        value: cdktf.booleanToHclTerraform(this._supportsIamDatabaseAuthentication),
+        value: cdktn.booleanToHclTerraform(this._supportsIamDatabaseAuthentication),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_iops: {
-        value: cdktf.booleanToHclTerraform(this._supportsIops),
+        value: cdktn.booleanToHclTerraform(this._supportsIops),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_kerberos_authentication: {
-        value: cdktf.booleanToHclTerraform(this._supportsKerberosAuthentication),
+        value: cdktn.booleanToHclTerraform(this._supportsKerberosAuthentication),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_multi_az: {
-        value: cdktf.booleanToHclTerraform(this._supportsMultiAz),
+        value: cdktn.booleanToHclTerraform(this._supportsMultiAz),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_performance_insights: {
-        value: cdktf.booleanToHclTerraform(this._supportsPerformanceInsights),
+        value: cdktn.booleanToHclTerraform(this._supportsPerformanceInsights),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_storage_autoscaling: {
-        value: cdktf.booleanToHclTerraform(this._supportsStorageAutoscaling),
+        value: cdktn.booleanToHclTerraform(this._supportsStorageAutoscaling),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_storage_encryption: {
-        value: cdktf.booleanToHclTerraform(this._supportsStorageEncryption),
+        value: cdktn.booleanToHclTerraform(this._supportsStorageEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       vpc: {
-        value: cdktf.booleanToHclTerraform(this._vpc),
+        value: cdktn.booleanToHclTerraform(this._vpc),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

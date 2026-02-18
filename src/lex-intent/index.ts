@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LexIntentConfig extends cdktf.TerraformMetaArguments {
+export interface LexIntentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#create_version LexIntent#create_version}
   */
-  readonly createVersion?: boolean | cdktf.IResolvable;
+  readonly createVersion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#description LexIntent#description}
   */
@@ -86,7 +86,7 @@ export interface LexIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#slot LexIntent#slot}
   */
-  readonly slot?: LexIntentSlot[] | cdktf.IResolvable;
+  readonly slot?: LexIntentSlot[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -109,39 +109,39 @@ export interface LexIntentConclusionStatementMessage {
   readonly groupNumber?: number;
 }
 
-export function lexIntentConclusionStatementMessageToTerraform(struct?: LexIntentConclusionStatementMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentConclusionStatementMessageToTerraform(struct?: LexIntentConclusionStatementMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    group_number: cdktf.numberToTerraform(struct!.groupNumber),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    group_number: cdktn.numberToTerraform(struct!.groupNumber),
   }
 }
 
 
-export function lexIntentConclusionStatementMessageToHclTerraform(struct?: LexIntentConclusionStatementMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentConclusionStatementMessageToHclTerraform(struct?: LexIntentConclusionStatementMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_number: {
-      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      value: cdktn.numberToHclTerraform(struct!.groupNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -152,9 +152,9 @@ export function lexIntentConclusionStatementMessageToHclTerraform(struct?: LexIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentConclusionStatementMessageOutputReference extends cdktf.ComplexObject {
+export class LexIntentConclusionStatementMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -162,11 +162,11 @@ export class LexIntentConclusionStatementMessageOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexIntentConclusionStatementMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): LexIntentConclusionStatementMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -187,7 +187,7 @@ export class LexIntentConclusionStatementMessageOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexIntentConclusionStatementMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexIntentConclusionStatementMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -195,7 +195,7 @@ export class LexIntentConclusionStatementMessageOutputReference extends cdktf.Co
       this._contentType = undefined;
       this._groupNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,15 +251,15 @@ export class LexIntentConclusionStatementMessageOutputReference extends cdktf.Co
   }
 }
 
-export class LexIntentConclusionStatementMessageList extends cdktf.ComplexList {
-  public internalValue? : LexIntentConclusionStatementMessage[] | cdktf.IResolvable
+export class LexIntentConclusionStatementMessageList extends cdktn.ComplexList {
+  public internalValue? : LexIntentConclusionStatementMessage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -280,35 +280,35 @@ export interface LexIntentConclusionStatement {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#message LexIntent#message}
   */
-  readonly message: LexIntentConclusionStatementMessage[] | cdktf.IResolvable;
+  readonly message: LexIntentConclusionStatementMessage[] | cdktn.IResolvable;
 }
 
 export function lexIntentConclusionStatementToTerraform(struct?: LexIntentConclusionStatementOutputReference | LexIntentConclusionStatement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentConclusionStatementMessageToTerraform, true)(struct!.message),
+    response_card: cdktn.stringToTerraform(struct!.responseCard),
+    message: cdktn.listMapper(lexIntentConclusionStatementMessageToTerraform, true)(struct!.message),
   }
 }
 
 
 export function lexIntentConclusionStatementToHclTerraform(struct?: LexIntentConclusionStatementOutputReference | LexIntentConclusionStatement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     response_card: {
-      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      value: cdktn.stringToHclTerraform(struct!.responseCard),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message: {
-      value: cdktf.listMapperHcl(lexIntentConclusionStatementMessageToHclTerraform, true)(struct!.message),
+      value: cdktn.listMapperHcl(lexIntentConclusionStatementMessageToHclTerraform, true)(struct!.message),
       isBlock: true,
       type: "set",
       storageClassType: "LexIntentConclusionStatementMessageList",
@@ -319,14 +319,14 @@ export function lexIntentConclusionStatementToHclTerraform(struct?: LexIntentCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexObject {
+export class LexIntentConclusionStatementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -378,7 +378,7 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
   public get message() {
     return this._message;
   }
-  public putMessage(value: LexIntentConclusionStatementMessage[] | cdktf.IResolvable) {
+  public putMessage(value: LexIntentConclusionStatementMessage[] | cdktn.IResolvable) {
     this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -401,39 +401,39 @@ export interface LexIntentConfirmationPromptMessage {
   readonly groupNumber?: number;
 }
 
-export function lexIntentConfirmationPromptMessageToTerraform(struct?: LexIntentConfirmationPromptMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentConfirmationPromptMessageToTerraform(struct?: LexIntentConfirmationPromptMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    group_number: cdktf.numberToTerraform(struct!.groupNumber),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    group_number: cdktn.numberToTerraform(struct!.groupNumber),
   }
 }
 
 
-export function lexIntentConfirmationPromptMessageToHclTerraform(struct?: LexIntentConfirmationPromptMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentConfirmationPromptMessageToHclTerraform(struct?: LexIntentConfirmationPromptMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_number: {
-      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      value: cdktn.numberToHclTerraform(struct!.groupNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -444,9 +444,9 @@ export function lexIntentConfirmationPromptMessageToHclTerraform(struct?: LexInt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentConfirmationPromptMessageOutputReference extends cdktf.ComplexObject {
+export class LexIntentConfirmationPromptMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -454,11 +454,11 @@ export class LexIntentConfirmationPromptMessageOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexIntentConfirmationPromptMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): LexIntentConfirmationPromptMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -479,7 +479,7 @@ export class LexIntentConfirmationPromptMessageOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexIntentConfirmationPromptMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexIntentConfirmationPromptMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -487,7 +487,7 @@ export class LexIntentConfirmationPromptMessageOutputReference extends cdktf.Com
       this._contentType = undefined;
       this._groupNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -543,15 +543,15 @@ export class LexIntentConfirmationPromptMessageOutputReference extends cdktf.Com
   }
 }
 
-export class LexIntentConfirmationPromptMessageList extends cdktf.ComplexList {
-  public internalValue? : LexIntentConfirmationPromptMessage[] | cdktf.IResolvable
+export class LexIntentConfirmationPromptMessageList extends cdktn.ComplexList {
+  public internalValue? : LexIntentConfirmationPromptMessage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -576,42 +576,42 @@ export interface LexIntentConfirmationPrompt {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#message LexIntent#message}
   */
-  readonly message: LexIntentConfirmationPromptMessage[] | cdktf.IResolvable;
+  readonly message: LexIntentConfirmationPromptMessage[] | cdktn.IResolvable;
 }
 
 export function lexIntentConfirmationPromptToTerraform(struct?: LexIntentConfirmationPromptOutputReference | LexIntentConfirmationPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_attempts: cdktf.numberToTerraform(struct!.maxAttempts),
-    response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentConfirmationPromptMessageToTerraform, true)(struct!.message),
+    max_attempts: cdktn.numberToTerraform(struct!.maxAttempts),
+    response_card: cdktn.stringToTerraform(struct!.responseCard),
+    message: cdktn.listMapper(lexIntentConfirmationPromptMessageToTerraform, true)(struct!.message),
   }
 }
 
 
 export function lexIntentConfirmationPromptToHclTerraform(struct?: LexIntentConfirmationPromptOutputReference | LexIntentConfirmationPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_attempts: {
-      value: cdktf.numberToHclTerraform(struct!.maxAttempts),
+      value: cdktn.numberToHclTerraform(struct!.maxAttempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     response_card: {
-      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      value: cdktn.stringToHclTerraform(struct!.responseCard),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message: {
-      value: cdktf.listMapperHcl(lexIntentConfirmationPromptMessageToHclTerraform, true)(struct!.message),
+      value: cdktn.listMapperHcl(lexIntentConfirmationPromptMessageToHclTerraform, true)(struct!.message),
       isBlock: true,
       type: "set",
       storageClassType: "LexIntentConfirmationPromptMessageList",
@@ -622,14 +622,14 @@ export function lexIntentConfirmationPromptToHclTerraform(struct?: LexIntentConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObject {
+export class LexIntentConfirmationPromptOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -700,7 +700,7 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
   public get message() {
     return this._message;
   }
-  public putMessage(value: LexIntentConfirmationPromptMessage[] | cdktf.IResolvable) {
+  public putMessage(value: LexIntentConfirmationPromptMessage[] | cdktn.IResolvable) {
     this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -720,31 +720,31 @@ export interface LexIntentDialogCodeHook {
 }
 
 export function lexIntentDialogCodeHookToTerraform(struct?: LexIntentDialogCodeHookOutputReference | LexIntentDialogCodeHook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_version: cdktf.stringToTerraform(struct!.messageVersion),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    message_version: cdktn.stringToTerraform(struct!.messageVersion),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function lexIntentDialogCodeHookToHclTerraform(struct?: LexIntentDialogCodeHookOutputReference | LexIntentDialogCodeHook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_version: {
-      value: cdktf.stringToHclTerraform(struct!.messageVersion),
+      value: cdktn.stringToHclTerraform(struct!.messageVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -755,14 +755,14 @@ export function lexIntentDialogCodeHookToHclTerraform(struct?: LexIntentDialogCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentDialogCodeHookOutputReference extends cdktf.ComplexObject {
+export class LexIntentDialogCodeHookOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -834,39 +834,39 @@ export interface LexIntentFollowUpPromptPromptMessage {
   readonly groupNumber?: number;
 }
 
-export function lexIntentFollowUpPromptPromptMessageToTerraform(struct?: LexIntentFollowUpPromptPromptMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentFollowUpPromptPromptMessageToTerraform(struct?: LexIntentFollowUpPromptPromptMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    group_number: cdktf.numberToTerraform(struct!.groupNumber),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    group_number: cdktn.numberToTerraform(struct!.groupNumber),
   }
 }
 
 
-export function lexIntentFollowUpPromptPromptMessageToHclTerraform(struct?: LexIntentFollowUpPromptPromptMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentFollowUpPromptPromptMessageToHclTerraform(struct?: LexIntentFollowUpPromptPromptMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_number: {
-      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      value: cdktn.numberToHclTerraform(struct!.groupNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -877,9 +877,9 @@ export function lexIntentFollowUpPromptPromptMessageToHclTerraform(struct?: LexI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentFollowUpPromptPromptMessageOutputReference extends cdktf.ComplexObject {
+export class LexIntentFollowUpPromptPromptMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -887,11 +887,11 @@ export class LexIntentFollowUpPromptPromptMessageOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexIntentFollowUpPromptPromptMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): LexIntentFollowUpPromptPromptMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -912,7 +912,7 @@ export class LexIntentFollowUpPromptPromptMessageOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexIntentFollowUpPromptPromptMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexIntentFollowUpPromptPromptMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -920,7 +920,7 @@ export class LexIntentFollowUpPromptPromptMessageOutputReference extends cdktf.C
       this._contentType = undefined;
       this._groupNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -976,15 +976,15 @@ export class LexIntentFollowUpPromptPromptMessageOutputReference extends cdktf.C
   }
 }
 
-export class LexIntentFollowUpPromptPromptMessageList extends cdktf.ComplexList {
-  public internalValue? : LexIntentFollowUpPromptPromptMessage[] | cdktf.IResolvable
+export class LexIntentFollowUpPromptPromptMessageList extends cdktn.ComplexList {
+  public internalValue? : LexIntentFollowUpPromptPromptMessage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1009,42 +1009,42 @@ export interface LexIntentFollowUpPromptPrompt {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#message LexIntent#message}
   */
-  readonly message: LexIntentFollowUpPromptPromptMessage[] | cdktf.IResolvable;
+  readonly message: LexIntentFollowUpPromptPromptMessage[] | cdktn.IResolvable;
 }
 
 export function lexIntentFollowUpPromptPromptToTerraform(struct?: LexIntentFollowUpPromptPromptOutputReference | LexIntentFollowUpPromptPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_attempts: cdktf.numberToTerraform(struct!.maxAttempts),
-    response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentFollowUpPromptPromptMessageToTerraform, true)(struct!.message),
+    max_attempts: cdktn.numberToTerraform(struct!.maxAttempts),
+    response_card: cdktn.stringToTerraform(struct!.responseCard),
+    message: cdktn.listMapper(lexIntentFollowUpPromptPromptMessageToTerraform, true)(struct!.message),
   }
 }
 
 
 export function lexIntentFollowUpPromptPromptToHclTerraform(struct?: LexIntentFollowUpPromptPromptOutputReference | LexIntentFollowUpPromptPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_attempts: {
-      value: cdktf.numberToHclTerraform(struct!.maxAttempts),
+      value: cdktn.numberToHclTerraform(struct!.maxAttempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     response_card: {
-      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      value: cdktn.stringToHclTerraform(struct!.responseCard),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message: {
-      value: cdktf.listMapperHcl(lexIntentFollowUpPromptPromptMessageToHclTerraform, true)(struct!.message),
+      value: cdktn.listMapperHcl(lexIntentFollowUpPromptPromptMessageToHclTerraform, true)(struct!.message),
       isBlock: true,
       type: "set",
       storageClassType: "LexIntentFollowUpPromptPromptMessageList",
@@ -1055,14 +1055,14 @@ export function lexIntentFollowUpPromptPromptToHclTerraform(struct?: LexIntentFo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexObject {
+export class LexIntentFollowUpPromptPromptOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1133,7 +1133,7 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
   public get message() {
     return this._message;
   }
-  public putMessage(value: LexIntentFollowUpPromptPromptMessage[] | cdktf.IResolvable) {
+  public putMessage(value: LexIntentFollowUpPromptPromptMessage[] | cdktn.IResolvable) {
     this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1156,39 +1156,39 @@ export interface LexIntentFollowUpPromptRejectionStatementMessage {
   readonly groupNumber?: number;
 }
 
-export function lexIntentFollowUpPromptRejectionStatementMessageToTerraform(struct?: LexIntentFollowUpPromptRejectionStatementMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentFollowUpPromptRejectionStatementMessageToTerraform(struct?: LexIntentFollowUpPromptRejectionStatementMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    group_number: cdktf.numberToTerraform(struct!.groupNumber),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    group_number: cdktn.numberToTerraform(struct!.groupNumber),
   }
 }
 
 
-export function lexIntentFollowUpPromptRejectionStatementMessageToHclTerraform(struct?: LexIntentFollowUpPromptRejectionStatementMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentFollowUpPromptRejectionStatementMessageToHclTerraform(struct?: LexIntentFollowUpPromptRejectionStatementMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_number: {
-      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      value: cdktn.numberToHclTerraform(struct!.groupNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1199,9 +1199,9 @@ export function lexIntentFollowUpPromptRejectionStatementMessageToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentFollowUpPromptRejectionStatementMessageOutputReference extends cdktf.ComplexObject {
+export class LexIntentFollowUpPromptRejectionStatementMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1209,11 +1209,11 @@ export class LexIntentFollowUpPromptRejectionStatementMessageOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexIntentFollowUpPromptRejectionStatementMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): LexIntentFollowUpPromptRejectionStatementMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1234,7 +1234,7 @@ export class LexIntentFollowUpPromptRejectionStatementMessageOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexIntentFollowUpPromptRejectionStatementMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexIntentFollowUpPromptRejectionStatementMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1242,7 +1242,7 @@ export class LexIntentFollowUpPromptRejectionStatementMessageOutputReference ext
       this._contentType = undefined;
       this._groupNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1298,15 +1298,15 @@ export class LexIntentFollowUpPromptRejectionStatementMessageOutputReference ext
   }
 }
 
-export class LexIntentFollowUpPromptRejectionStatementMessageList extends cdktf.ComplexList {
-  public internalValue? : LexIntentFollowUpPromptRejectionStatementMessage[] | cdktf.IResolvable
+export class LexIntentFollowUpPromptRejectionStatementMessageList extends cdktn.ComplexList {
+  public internalValue? : LexIntentFollowUpPromptRejectionStatementMessage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1327,35 +1327,35 @@ export interface LexIntentFollowUpPromptRejectionStatement {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#message LexIntent#message}
   */
-  readonly message: LexIntentFollowUpPromptRejectionStatementMessage[] | cdktf.IResolvable;
+  readonly message: LexIntentFollowUpPromptRejectionStatementMessage[] | cdktn.IResolvable;
 }
 
 export function lexIntentFollowUpPromptRejectionStatementToTerraform(struct?: LexIntentFollowUpPromptRejectionStatementOutputReference | LexIntentFollowUpPromptRejectionStatement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentFollowUpPromptRejectionStatementMessageToTerraform, true)(struct!.message),
+    response_card: cdktn.stringToTerraform(struct!.responseCard),
+    message: cdktn.listMapper(lexIntentFollowUpPromptRejectionStatementMessageToTerraform, true)(struct!.message),
   }
 }
 
 
 export function lexIntentFollowUpPromptRejectionStatementToHclTerraform(struct?: LexIntentFollowUpPromptRejectionStatementOutputReference | LexIntentFollowUpPromptRejectionStatement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     response_card: {
-      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      value: cdktn.stringToHclTerraform(struct!.responseCard),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message: {
-      value: cdktf.listMapperHcl(lexIntentFollowUpPromptRejectionStatementMessageToHclTerraform, true)(struct!.message),
+      value: cdktn.listMapperHcl(lexIntentFollowUpPromptRejectionStatementMessageToHclTerraform, true)(struct!.message),
       isBlock: true,
       type: "set",
       storageClassType: "LexIntentFollowUpPromptRejectionStatementMessageList",
@@ -1366,14 +1366,14 @@ export function lexIntentFollowUpPromptRejectionStatementToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cdktf.ComplexObject {
+export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1425,7 +1425,7 @@ export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cd
   public get message() {
     return this._message;
   }
-  public putMessage(value: LexIntentFollowUpPromptRejectionStatementMessage[] | cdktf.IResolvable) {
+  public putMessage(value: LexIntentFollowUpPromptRejectionStatementMessage[] | cdktn.IResolvable) {
     this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1449,8 +1449,8 @@ export interface LexIntentFollowUpPrompt {
 }
 
 export function lexIntentFollowUpPromptToTerraform(struct?: LexIntentFollowUpPromptOutputReference | LexIntentFollowUpPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1461,8 +1461,8 @@ export function lexIntentFollowUpPromptToTerraform(struct?: LexIntentFollowUpPro
 
 
 export function lexIntentFollowUpPromptToHclTerraform(struct?: LexIntentFollowUpPromptOutputReference | LexIntentFollowUpPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1484,14 +1484,14 @@ export function lexIntentFollowUpPromptToHclTerraform(struct?: LexIntentFollowUp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject {
+export class LexIntentFollowUpPromptOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1560,31 +1560,31 @@ export interface LexIntentFulfillmentActivityCodeHook {
 }
 
 export function lexIntentFulfillmentActivityCodeHookToTerraform(struct?: LexIntentFulfillmentActivityCodeHookOutputReference | LexIntentFulfillmentActivityCodeHook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_version: cdktf.stringToTerraform(struct!.messageVersion),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    message_version: cdktn.stringToTerraform(struct!.messageVersion),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function lexIntentFulfillmentActivityCodeHookToHclTerraform(struct?: LexIntentFulfillmentActivityCodeHookOutputReference | LexIntentFulfillmentActivityCodeHook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_version: {
-      value: cdktf.stringToHclTerraform(struct!.messageVersion),
+      value: cdktn.stringToHclTerraform(struct!.messageVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1595,14 +1595,14 @@ export function lexIntentFulfillmentActivityCodeHookToHclTerraform(struct?: LexI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentFulfillmentActivityCodeHookOutputReference extends cdktf.ComplexObject {
+export class LexIntentFulfillmentActivityCodeHookOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1673,25 +1673,25 @@ export interface LexIntentFulfillmentActivity {
 }
 
 export function lexIntentFulfillmentActivityToTerraform(struct?: LexIntentFulfillmentActivityOutputReference | LexIntentFulfillmentActivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
     code_hook: lexIntentFulfillmentActivityCodeHookToTerraform(struct!.codeHook),
   }
 }
 
 
 export function lexIntentFulfillmentActivityToHclTerraform(struct?: LexIntentFulfillmentActivityOutputReference | LexIntentFulfillmentActivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1708,14 +1708,14 @@ export function lexIntentFulfillmentActivityToHclTerraform(struct?: LexIntentFul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentFulfillmentActivityOutputReference extends cdktf.ComplexObject {
+export class LexIntentFulfillmentActivityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1790,39 +1790,39 @@ export interface LexIntentRejectionStatementMessage {
   readonly groupNumber?: number;
 }
 
-export function lexIntentRejectionStatementMessageToTerraform(struct?: LexIntentRejectionStatementMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentRejectionStatementMessageToTerraform(struct?: LexIntentRejectionStatementMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    group_number: cdktf.numberToTerraform(struct!.groupNumber),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    group_number: cdktn.numberToTerraform(struct!.groupNumber),
   }
 }
 
 
-export function lexIntentRejectionStatementMessageToHclTerraform(struct?: LexIntentRejectionStatementMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentRejectionStatementMessageToHclTerraform(struct?: LexIntentRejectionStatementMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_number: {
-      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      value: cdktn.numberToHclTerraform(struct!.groupNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1833,9 +1833,9 @@ export function lexIntentRejectionStatementMessageToHclTerraform(struct?: LexInt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentRejectionStatementMessageOutputReference extends cdktf.ComplexObject {
+export class LexIntentRejectionStatementMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1843,11 +1843,11 @@ export class LexIntentRejectionStatementMessageOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexIntentRejectionStatementMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): LexIntentRejectionStatementMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1868,7 +1868,7 @@ export class LexIntentRejectionStatementMessageOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexIntentRejectionStatementMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexIntentRejectionStatementMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1876,7 +1876,7 @@ export class LexIntentRejectionStatementMessageOutputReference extends cdktf.Com
       this._contentType = undefined;
       this._groupNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1932,15 +1932,15 @@ export class LexIntentRejectionStatementMessageOutputReference extends cdktf.Com
   }
 }
 
-export class LexIntentRejectionStatementMessageList extends cdktf.ComplexList {
-  public internalValue? : LexIntentRejectionStatementMessage[] | cdktf.IResolvable
+export class LexIntentRejectionStatementMessageList extends cdktn.ComplexList {
+  public internalValue? : LexIntentRejectionStatementMessage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1961,35 +1961,35 @@ export interface LexIntentRejectionStatement {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#message LexIntent#message}
   */
-  readonly message: LexIntentRejectionStatementMessage[] | cdktf.IResolvable;
+  readonly message: LexIntentRejectionStatementMessage[] | cdktn.IResolvable;
 }
 
 export function lexIntentRejectionStatementToTerraform(struct?: LexIntentRejectionStatementOutputReference | LexIntentRejectionStatement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentRejectionStatementMessageToTerraform, true)(struct!.message),
+    response_card: cdktn.stringToTerraform(struct!.responseCard),
+    message: cdktn.listMapper(lexIntentRejectionStatementMessageToTerraform, true)(struct!.message),
   }
 }
 
 
 export function lexIntentRejectionStatementToHclTerraform(struct?: LexIntentRejectionStatementOutputReference | LexIntentRejectionStatement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     response_card: {
-      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      value: cdktn.stringToHclTerraform(struct!.responseCard),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message: {
-      value: cdktf.listMapperHcl(lexIntentRejectionStatementMessageToHclTerraform, true)(struct!.message),
+      value: cdktn.listMapperHcl(lexIntentRejectionStatementMessageToHclTerraform, true)(struct!.message),
       isBlock: true,
       type: "set",
       storageClassType: "LexIntentRejectionStatementMessageList",
@@ -2000,14 +2000,14 @@ export function lexIntentRejectionStatementToHclTerraform(struct?: LexIntentReje
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObject {
+export class LexIntentRejectionStatementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2059,7 +2059,7 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
   public get message() {
     return this._message;
   }
-  public putMessage(value: LexIntentRejectionStatementMessage[] | cdktf.IResolvable) {
+  public putMessage(value: LexIntentRejectionStatementMessage[] | cdktn.IResolvable) {
     this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2082,39 +2082,39 @@ export interface LexIntentSlotValueElicitationPromptMessage {
   readonly groupNumber?: number;
 }
 
-export function lexIntentSlotValueElicitationPromptMessageToTerraform(struct?: LexIntentSlotValueElicitationPromptMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentSlotValueElicitationPromptMessageToTerraform(struct?: LexIntentSlotValueElicitationPromptMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    group_number: cdktf.numberToTerraform(struct!.groupNumber),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    group_number: cdktn.numberToTerraform(struct!.groupNumber),
   }
 }
 
 
-export function lexIntentSlotValueElicitationPromptMessageToHclTerraform(struct?: LexIntentSlotValueElicitationPromptMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentSlotValueElicitationPromptMessageToHclTerraform(struct?: LexIntentSlotValueElicitationPromptMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_number: {
-      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      value: cdktn.numberToHclTerraform(struct!.groupNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2125,9 +2125,9 @@ export function lexIntentSlotValueElicitationPromptMessageToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentSlotValueElicitationPromptMessageOutputReference extends cdktf.ComplexObject {
+export class LexIntentSlotValueElicitationPromptMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2135,11 +2135,11 @@ export class LexIntentSlotValueElicitationPromptMessageOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexIntentSlotValueElicitationPromptMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): LexIntentSlotValueElicitationPromptMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2160,7 +2160,7 @@ export class LexIntentSlotValueElicitationPromptMessageOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexIntentSlotValueElicitationPromptMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexIntentSlotValueElicitationPromptMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2168,7 +2168,7 @@ export class LexIntentSlotValueElicitationPromptMessageOutputReference extends c
       this._contentType = undefined;
       this._groupNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2224,15 +2224,15 @@ export class LexIntentSlotValueElicitationPromptMessageOutputReference extends c
   }
 }
 
-export class LexIntentSlotValueElicitationPromptMessageList extends cdktf.ComplexList {
-  public internalValue? : LexIntentSlotValueElicitationPromptMessage[] | cdktf.IResolvable
+export class LexIntentSlotValueElicitationPromptMessageList extends cdktn.ComplexList {
+  public internalValue? : LexIntentSlotValueElicitationPromptMessage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2257,42 +2257,42 @@ export interface LexIntentSlotValueElicitationPrompt {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#message LexIntent#message}
   */
-  readonly message: LexIntentSlotValueElicitationPromptMessage[] | cdktf.IResolvable;
+  readonly message: LexIntentSlotValueElicitationPromptMessage[] | cdktn.IResolvable;
 }
 
 export function lexIntentSlotValueElicitationPromptToTerraform(struct?: LexIntentSlotValueElicitationPromptOutputReference | LexIntentSlotValueElicitationPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_attempts: cdktf.numberToTerraform(struct!.maxAttempts),
-    response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentSlotValueElicitationPromptMessageToTerraform, true)(struct!.message),
+    max_attempts: cdktn.numberToTerraform(struct!.maxAttempts),
+    response_card: cdktn.stringToTerraform(struct!.responseCard),
+    message: cdktn.listMapper(lexIntentSlotValueElicitationPromptMessageToTerraform, true)(struct!.message),
   }
 }
 
 
 export function lexIntentSlotValueElicitationPromptToHclTerraform(struct?: LexIntentSlotValueElicitationPromptOutputReference | LexIntentSlotValueElicitationPrompt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_attempts: {
-      value: cdktf.numberToHclTerraform(struct!.maxAttempts),
+      value: cdktn.numberToHclTerraform(struct!.maxAttempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     response_card: {
-      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      value: cdktn.stringToHclTerraform(struct!.responseCard),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message: {
-      value: cdktf.listMapperHcl(lexIntentSlotValueElicitationPromptMessageToHclTerraform, true)(struct!.message),
+      value: cdktn.listMapperHcl(lexIntentSlotValueElicitationPromptMessageToHclTerraform, true)(struct!.message),
       isBlock: true,
       type: "set",
       storageClassType: "LexIntentSlotValueElicitationPromptMessageList",
@@ -2303,14 +2303,14 @@ export function lexIntentSlotValueElicitationPromptToHclTerraform(struct?: LexIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.ComplexObject {
+export class LexIntentSlotValueElicitationPromptOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2381,7 +2381,7 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
   public get message() {
     return this._message;
   }
-  public putMessage(value: LexIntentSlotValueElicitationPromptMessage[] | cdktf.IResolvable) {
+  public putMessage(value: LexIntentSlotValueElicitationPromptMessage[] | cdktn.IResolvable) {
     this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2430,75 +2430,75 @@ export interface LexIntentSlot {
   readonly valueElicitationPrompt?: LexIntentSlotValueElicitationPrompt;
 }
 
-export function lexIntentSlotToTerraform(struct?: LexIntentSlot | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentSlotToTerraform(struct?: LexIntentSlot | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    response_card: cdktf.stringToTerraform(struct!.responseCard),
-    sample_utterances: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sampleUtterances),
-    slot_constraint: cdktf.stringToTerraform(struct!.slotConstraint),
-    slot_type: cdktf.stringToTerraform(struct!.slotType),
-    slot_type_version: cdktf.stringToTerraform(struct!.slotTypeVersion),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    response_card: cdktn.stringToTerraform(struct!.responseCard),
+    sample_utterances: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sampleUtterances),
+    slot_constraint: cdktn.stringToTerraform(struct!.slotConstraint),
+    slot_type: cdktn.stringToTerraform(struct!.slotType),
+    slot_type_version: cdktn.stringToTerraform(struct!.slotTypeVersion),
     value_elicitation_prompt: lexIntentSlotValueElicitationPromptToTerraform(struct!.valueElicitationPrompt),
   }
 }
 
 
-export function lexIntentSlotToHclTerraform(struct?: LexIntentSlot | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentSlotToHclTerraform(struct?: LexIntentSlot | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     response_card: {
-      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      value: cdktn.stringToHclTerraform(struct!.responseCard),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sample_utterances: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sampleUtterances),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sampleUtterances),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     slot_constraint: {
-      value: cdktf.stringToHclTerraform(struct!.slotConstraint),
+      value: cdktn.stringToHclTerraform(struct!.slotConstraint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slot_type: {
-      value: cdktf.stringToHclTerraform(struct!.slotType),
+      value: cdktn.stringToHclTerraform(struct!.slotType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slot_type_version: {
-      value: cdktf.stringToHclTerraform(struct!.slotTypeVersion),
+      value: cdktn.stringToHclTerraform(struct!.slotTypeVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2515,9 +2515,9 @@ export function lexIntentSlotToHclTerraform(struct?: LexIntentSlot | cdktf.IReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentSlotOutputReference extends cdktf.ComplexObject {
+export class LexIntentSlotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2525,11 +2525,11 @@ export class LexIntentSlotOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LexIntentSlot | cdktf.IResolvable | undefined {
+  public get internalValue(): LexIntentSlot | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2574,7 +2574,7 @@ export class LexIntentSlotOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexIntentSlot | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexIntentSlot | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2588,7 +2588,7 @@ export class LexIntentSlotOutputReference extends cdktf.ComplexObject {
       this._slotTypeVersion = undefined;
       this._valueElicitationPrompt.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2743,15 +2743,15 @@ export class LexIntentSlotOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LexIntentSlotList extends cdktf.ComplexList {
-  public internalValue? : LexIntentSlot[] | cdktf.IResolvable
+export class LexIntentSlotList extends cdktn.ComplexList {
+  public internalValue? : LexIntentSlot[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2777,39 +2777,39 @@ export interface LexIntentTimeouts {
   readonly update?: string;
 }
 
-export function lexIntentTimeoutsToTerraform(struct?: LexIntentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentTimeoutsToTerraform(struct?: LexIntentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lexIntentTimeoutsToHclTerraform(struct?: LexIntentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexIntentTimeoutsToHclTerraform(struct?: LexIntentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2820,19 +2820,19 @@ export function lexIntentTimeoutsToHclTerraform(struct?: LexIntentTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LexIntentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LexIntentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LexIntentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2853,7 +2853,7 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexIntentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LexIntentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2861,7 +2861,7 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2926,7 +2926,7 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent aws_lex_intent}
 */
-export class LexIntent extends cdktf.TerraformResource {
+export class LexIntent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2937,14 +2937,14 @@ export class LexIntent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LexIntent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LexIntent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LexIntent to import
   * @param importFromId The id of the existing LexIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lex_intent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LexIntent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lex_intent", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lex_intent", importId: importFromId, provider });
       }
 
   // ===========
@@ -3006,11 +3006,11 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // create_version - computed: false, optional: true, required: false
-  private _createVersion?: boolean | cdktf.IResolvable; 
+  private _createVersion?: boolean | cdktn.IResolvable; 
   public get createVersion() {
     return this.getBooleanAttribute('create_version');
   }
-  public set createVersion(value: boolean | cdktf.IResolvable) {
+  public set createVersion(value: boolean | cdktn.IResolvable) {
     this._createVersion = value;
   }
   public resetCreateVersion() {
@@ -3111,7 +3111,7 @@ export class LexIntent extends cdktf.TerraformResource {
   // sample_utterances - computed: false, optional: true, required: false
   private _sampleUtterances?: string[]; 
   public get sampleUtterances() {
-    return cdktf.Fn.tolist(this.getListAttribute('sample_utterances'));
+    return cdktn.Fn.tolist(this.getListAttribute('sample_utterances'));
   }
   public set sampleUtterances(value: string[]) {
     this._sampleUtterances = value;
@@ -3227,7 +3227,7 @@ export class LexIntent extends cdktf.TerraformResource {
   public get slot() {
     return this._slot;
   }
-  public putSlot(value: LexIntentSlot[] | cdktf.IResolvable) {
+  public putSlot(value: LexIntentSlot[] | cdktn.IResolvable) {
     this._slot.internalValue = value;
   }
   public resetSlot() {
@@ -3260,20 +3260,20 @@ export class LexIntent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_version: cdktf.booleanToTerraform(this._createVersion),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      parent_intent_signature: cdktf.stringToTerraform(this._parentIntentSignature),
-      region: cdktf.stringToTerraform(this._region),
-      sample_utterances: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sampleUtterances),
+      create_version: cdktn.booleanToTerraform(this._createVersion),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      parent_intent_signature: cdktn.stringToTerraform(this._parentIntentSignature),
+      region: cdktn.stringToTerraform(this._region),
+      sample_utterances: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sampleUtterances),
       conclusion_statement: lexIntentConclusionStatementToTerraform(this._conclusionStatement.internalValue),
       confirmation_prompt: lexIntentConfirmationPromptToTerraform(this._confirmationPrompt.internalValue),
       dialog_code_hook: lexIntentDialogCodeHookToTerraform(this._dialogCodeHook.internalValue),
       follow_up_prompt: lexIntentFollowUpPromptToTerraform(this._followUpPrompt.internalValue),
       fulfillment_activity: lexIntentFulfillmentActivityToTerraform(this._fulfillmentActivity.internalValue),
       rejection_statement: lexIntentRejectionStatementToTerraform(this._rejectionStatement.internalValue),
-      slot: cdktf.listMapper(lexIntentSlotToTerraform, true)(this._slot.internalValue),
+      slot: cdktn.listMapper(lexIntentSlotToTerraform, true)(this._slot.internalValue),
       timeouts: lexIntentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -3281,43 +3281,43 @@ export class LexIntent extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_version: {
-        value: cdktf.booleanToHclTerraform(this._createVersion),
+        value: cdktn.booleanToHclTerraform(this._createVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_intent_signature: {
-        value: cdktf.stringToHclTerraform(this._parentIntentSignature),
+        value: cdktn.stringToHclTerraform(this._parentIntentSignature),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sample_utterances: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sampleUtterances),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sampleUtterances),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
@@ -3359,7 +3359,7 @@ export class LexIntent extends cdktf.TerraformResource {
         storageClassType: "LexIntentRejectionStatementList",
       },
       slot: {
-        value: cdktf.listMapperHcl(lexIntentSlotToHclTerraform, true)(this._slot.internalValue),
+        value: cdktn.listMapperHcl(lexIntentSlotToHclTerraform, true)(this._slot.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LexIntentSlotList",

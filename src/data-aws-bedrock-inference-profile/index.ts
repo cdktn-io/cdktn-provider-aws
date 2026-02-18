@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBedrockInferenceProfileConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBedrockInferenceProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_inference_profile#inference_profile_id DataAwsBedrockInferenceProfile#inference_profile_id}
   */
@@ -27,8 +27,8 @@ export interface DataAwsBedrockInferenceProfileModels {
 }
 
 export function dataAwsBedrockInferenceProfileModelsToTerraform(struct?: DataAwsBedrockInferenceProfileModels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -37,8 +37,8 @@ export function dataAwsBedrockInferenceProfileModelsToTerraform(struct?: DataAws
 
 
 export function dataAwsBedrockInferenceProfileModelsToHclTerraform(struct?: DataAwsBedrockInferenceProfileModels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -46,7 +46,7 @@ export function dataAwsBedrockInferenceProfileModelsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsBedrockInferenceProfileModelsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockInferenceProfileModelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -55,7 +55,7 @@ export class DataAwsBedrockInferenceProfileModelsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -80,14 +80,14 @@ export class DataAwsBedrockInferenceProfileModelsOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsBedrockInferenceProfileModelsList extends cdktf.ComplexList {
+export class DataAwsBedrockInferenceProfileModelsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -102,7 +102,7 @@ export class DataAwsBedrockInferenceProfileModelsList extends cdktf.ComplexList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_inference_profile aws_bedrock_inference_profile}
 */
-export class DataAwsBedrockInferenceProfile extends cdktf.TerraformDataSource {
+export class DataAwsBedrockInferenceProfile extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -113,14 +113,14 @@ export class DataAwsBedrockInferenceProfile extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBedrockInferenceProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBedrockInferenceProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockInferenceProfile to import
   * @param importFromId The id of the existing DataAwsBedrockInferenceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_inference_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockInferenceProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_inference_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_inference_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -234,21 +234,21 @@ export class DataAwsBedrockInferenceProfile extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      inference_profile_id: cdktf.stringToTerraform(this._inferenceProfileId),
-      region: cdktf.stringToTerraform(this._region),
+      inference_profile_id: cdktn.stringToTerraform(this._inferenceProfileId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       inference_profile_id: {
-        value: cdktf.stringToHclTerraform(this._inferenceProfileId),
+        value: cdktn.stringToHclTerraform(this._inferenceProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

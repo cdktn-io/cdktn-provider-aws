@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsDynamodbTableConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsDynamodbTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/dynamodb_table#id DataAwsDynamodbTable#id}
   *
@@ -44,8 +44,8 @@ export interface DataAwsDynamodbTableAttribute {
 }
 
 export function dataAwsDynamodbTableAttributeToTerraform(struct?: DataAwsDynamodbTableAttribute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -54,8 +54,8 @@ export function dataAwsDynamodbTableAttributeToTerraform(struct?: DataAwsDynamod
 
 
 export function dataAwsDynamodbTableAttributeToHclTerraform(struct?: DataAwsDynamodbTableAttribute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -63,7 +63,7 @@ export function dataAwsDynamodbTableAttributeToHclTerraform(struct?: DataAwsDyna
   return attrs;
 }
 
-export class DataAwsDynamodbTableAttributeOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableAttributeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -72,7 +72,7 @@ export class DataAwsDynamodbTableAttributeOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -102,14 +102,14 @@ export class DataAwsDynamodbTableAttributeOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DataAwsDynamodbTableAttributeList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableAttributeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -124,8 +124,8 @@ export interface DataAwsDynamodbTableGlobalSecondaryIndexKeySchema {
 }
 
 export function dataAwsDynamodbTableGlobalSecondaryIndexKeySchemaToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexKeySchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -134,8 +134,8 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexKeySchemaToTerraform(str
 
 
 export function dataAwsDynamodbTableGlobalSecondaryIndexKeySchemaToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexKeySchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -143,7 +143,7 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexKeySchemaToHclTerraform(
   return attrs;
 }
 
-export class DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -152,7 +152,7 @@ export class DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -182,14 +182,14 @@ export class DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference ex
   }
 }
 
-export class DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,8 +204,8 @@ export interface DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput {
 }
 
 export function dataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -214,8 +214,8 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputToTerr
 
 
 export function dataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -223,7 +223,7 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputToHclT
   return attrs;
 }
 
-export class DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -232,7 +232,7 @@ export class DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -262,14 +262,14 @@ export class DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputRef
   }
 }
 
-export class DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -284,8 +284,8 @@ export interface DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughput {
 }
 
 export function dataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -294,8 +294,8 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputToTerrafor
 
 
 export function dataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -303,7 +303,7 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputToHclTerra
   return attrs;
 }
 
-export class DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -312,7 +312,7 @@ export class DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -342,14 +342,14 @@ export class DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputOutputReferen
   }
 }
 
-export class DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -364,8 +364,8 @@ export interface DataAwsDynamodbTableGlobalSecondaryIndex {
 }
 
 export function dataAwsDynamodbTableGlobalSecondaryIndexToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -374,8 +374,8 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexToTerraform(struct?: Dat
 
 
 export function dataAwsDynamodbTableGlobalSecondaryIndexToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -383,7 +383,7 @@ export function dataAwsDynamodbTableGlobalSecondaryIndexToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsDynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableGlobalSecondaryIndexOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -392,7 +392,7 @@ export class DataAwsDynamodbTableGlobalSecondaryIndexOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -465,14 +465,14 @@ export class DataAwsDynamodbTableGlobalSecondaryIndexOutputReference extends cdk
   }
 }
 
-export class DataAwsDynamodbTableGlobalSecondaryIndexList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableGlobalSecondaryIndexList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -487,8 +487,8 @@ export interface DataAwsDynamodbTableLocalSecondaryIndex {
 }
 
 export function dataAwsDynamodbTableLocalSecondaryIndexToTerraform(struct?: DataAwsDynamodbTableLocalSecondaryIndex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -497,8 +497,8 @@ export function dataAwsDynamodbTableLocalSecondaryIndexToTerraform(struct?: Data
 
 
 export function dataAwsDynamodbTableLocalSecondaryIndexToHclTerraform(struct?: DataAwsDynamodbTableLocalSecondaryIndex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -506,7 +506,7 @@ export function dataAwsDynamodbTableLocalSecondaryIndexToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsDynamodbTableLocalSecondaryIndexOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableLocalSecondaryIndexOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -515,7 +515,7 @@ export class DataAwsDynamodbTableLocalSecondaryIndexOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -555,14 +555,14 @@ export class DataAwsDynamodbTableLocalSecondaryIndexOutputReference extends cdkt
   }
 }
 
-export class DataAwsDynamodbTableLocalSecondaryIndexList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableLocalSecondaryIndexList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -577,8 +577,8 @@ export interface DataAwsDynamodbTableOnDemandThroughput {
 }
 
 export function dataAwsDynamodbTableOnDemandThroughputToTerraform(struct?: DataAwsDynamodbTableOnDemandThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -587,8 +587,8 @@ export function dataAwsDynamodbTableOnDemandThroughputToTerraform(struct?: DataA
 
 
 export function dataAwsDynamodbTableOnDemandThroughputToHclTerraform(struct?: DataAwsDynamodbTableOnDemandThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -596,7 +596,7 @@ export function dataAwsDynamodbTableOnDemandThroughputToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsDynamodbTableOnDemandThroughputOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableOnDemandThroughputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -605,7 +605,7 @@ export class DataAwsDynamodbTableOnDemandThroughputOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -635,14 +635,14 @@ export class DataAwsDynamodbTableOnDemandThroughputOutputReference extends cdktf
   }
 }
 
-export class DataAwsDynamodbTableOnDemandThroughputList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableOnDemandThroughputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -657,8 +657,8 @@ export interface DataAwsDynamodbTablePointInTimeRecovery {
 }
 
 export function dataAwsDynamodbTablePointInTimeRecoveryToTerraform(struct?: DataAwsDynamodbTablePointInTimeRecovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -667,8 +667,8 @@ export function dataAwsDynamodbTablePointInTimeRecoveryToTerraform(struct?: Data
 
 
 export function dataAwsDynamodbTablePointInTimeRecoveryToHclTerraform(struct?: DataAwsDynamodbTablePointInTimeRecovery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -676,7 +676,7 @@ export function dataAwsDynamodbTablePointInTimeRecoveryToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsDynamodbTablePointInTimeRecoveryOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTablePointInTimeRecoveryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -685,7 +685,7 @@ export class DataAwsDynamodbTablePointInTimeRecoveryOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -715,14 +715,14 @@ export class DataAwsDynamodbTablePointInTimeRecoveryOutputReference extends cdkt
   }
 }
 
-export class DataAwsDynamodbTablePointInTimeRecoveryList extends cdktf.ComplexList {
+export class DataAwsDynamodbTablePointInTimeRecoveryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -737,8 +737,8 @@ export interface DataAwsDynamodbTableReplica {
 }
 
 export function dataAwsDynamodbTableReplicaToTerraform(struct?: DataAwsDynamodbTableReplica): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -747,8 +747,8 @@ export function dataAwsDynamodbTableReplicaToTerraform(struct?: DataAwsDynamodbT
 
 
 export function dataAwsDynamodbTableReplicaToHclTerraform(struct?: DataAwsDynamodbTableReplica): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -756,7 +756,7 @@ export function dataAwsDynamodbTableReplicaToHclTerraform(struct?: DataAwsDynamo
   return attrs;
 }
 
-export class DataAwsDynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableReplicaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -765,7 +765,7 @@ export class DataAwsDynamodbTableReplicaOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -795,14 +795,14 @@ export class DataAwsDynamodbTableReplicaOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class DataAwsDynamodbTableReplicaList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableReplicaList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -817,8 +817,8 @@ export interface DataAwsDynamodbTableTtl {
 }
 
 export function dataAwsDynamodbTableTtlToTerraform(struct?: DataAwsDynamodbTableTtl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -827,8 +827,8 @@ export function dataAwsDynamodbTableTtlToTerraform(struct?: DataAwsDynamodbTable
 
 
 export function dataAwsDynamodbTableTtlToHclTerraform(struct?: DataAwsDynamodbTableTtl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -836,7 +836,7 @@ export function dataAwsDynamodbTableTtlToHclTerraform(struct?: DataAwsDynamodbTa
   return attrs;
 }
 
-export class DataAwsDynamodbTableTtlOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableTtlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -845,7 +845,7 @@ export class DataAwsDynamodbTableTtlOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -875,14 +875,14 @@ export class DataAwsDynamodbTableTtlOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class DataAwsDynamodbTableTtlList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableTtlList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -897,8 +897,8 @@ export interface DataAwsDynamodbTableWarmThroughput {
 }
 
 export function dataAwsDynamodbTableWarmThroughputToTerraform(struct?: DataAwsDynamodbTableWarmThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -907,8 +907,8 @@ export function dataAwsDynamodbTableWarmThroughputToTerraform(struct?: DataAwsDy
 
 
 export function dataAwsDynamodbTableWarmThroughputToHclTerraform(struct?: DataAwsDynamodbTableWarmThroughput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -916,7 +916,7 @@ export function dataAwsDynamodbTableWarmThroughputToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsDynamodbTableWarmThroughputOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableWarmThroughputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -925,7 +925,7 @@ export class DataAwsDynamodbTableWarmThroughputOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -955,14 +955,14 @@ export class DataAwsDynamodbTableWarmThroughputOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsDynamodbTableWarmThroughputList extends cdktf.ComplexList {
+export class DataAwsDynamodbTableWarmThroughputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -977,8 +977,8 @@ export interface DataAwsDynamodbTableServerSideEncryption {
 }
 
 export function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: DataAwsDynamodbTableServerSideEncryptionOutputReference | DataAwsDynamodbTableServerSideEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -987,8 +987,8 @@ export function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: Dat
 
 
 export function dataAwsDynamodbTableServerSideEncryptionToHclTerraform(struct?: DataAwsDynamodbTableServerSideEncryptionOutputReference | DataAwsDynamodbTableServerSideEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -996,14 +996,14 @@ export function dataAwsDynamodbTableServerSideEncryptionToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsDynamodbTableServerSideEncryptionOutputReference extends cdktf.ComplexObject {
+export class DataAwsDynamodbTableServerSideEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1036,7 +1036,7 @@ export class DataAwsDynamodbTableServerSideEncryptionOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/dynamodb_table aws_dynamodb_table}
 */
-export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
+export class DataAwsDynamodbTable extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1047,14 +1047,14 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsDynamodbTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsDynamodbTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDynamodbTable to import
   * @param importFromId The id of the existing DataAwsDynamodbTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/dynamodb_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDynamodbTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -1286,10 +1286,10 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       server_side_encryption: dataAwsDynamodbTableServerSideEncryptionToTerraform(this._serverSideEncryption.internalValue),
     };
   }
@@ -1297,25 +1297,25 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

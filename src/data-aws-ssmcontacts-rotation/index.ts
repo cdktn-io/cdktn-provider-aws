@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsSsmcontactsRotationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSsmcontactsRotationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssmcontacts_rotation#arn DataAwsSsmcontactsRotation#arn}
   */
@@ -27,8 +27,8 @@ export interface DataAwsSsmcontactsRotationRecurrenceDailySettings {
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceDailySettingsToTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceDailySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -37,8 +37,8 @@ export function dataAwsSsmcontactsRotationRecurrenceDailySettingsToTerraform(str
 
 
 export function dataAwsSsmcontactsRotationRecurrenceDailySettingsToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceDailySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -46,7 +46,7 @@ export function dataAwsSsmcontactsRotationRecurrenceDailySettingsToHclTerraform(
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceDailySettingsOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceDailySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -55,7 +55,7 @@ export class DataAwsSsmcontactsRotationRecurrenceDailySettingsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -85,14 +85,14 @@ export class DataAwsSsmcontactsRotationRecurrenceDailySettingsOutputReference ex
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceDailySettingsList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceDailySettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -107,8 +107,8 @@ export interface DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTime 
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -117,8 +117,8 @@ export function dataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeTo
 
 
 export function dataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -126,7 +126,7 @@ export function dataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeTo
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -135,7 +135,7 @@ export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -165,14 +165,14 @@ export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutpu
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -187,8 +187,8 @@ export interface DataAwsSsmcontactsRotationRecurrenceMonthlySettings {
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceMonthlySettingsToTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceMonthlySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -197,8 +197,8 @@ export function dataAwsSsmcontactsRotationRecurrenceMonthlySettingsToTerraform(s
 
 
 export function dataAwsSsmcontactsRotationRecurrenceMonthlySettingsToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceMonthlySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -206,7 +206,7 @@ export function dataAwsSsmcontactsRotationRecurrenceMonthlySettingsToHclTerrafor
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -215,7 +215,7 @@ export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -246,14 +246,14 @@ export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference 
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceMonthlySettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -268,8 +268,8 @@ export interface DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -278,8 +278,8 @@ export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesE
 
 
 export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -287,7 +287,7 @@ export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesE
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -296,7 +296,7 @@ export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -326,14 +326,14 @@ export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndO
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -348,8 +348,8 @@ export interface DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -358,8 +358,8 @@ export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesS
 
 
 export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -367,7 +367,7 @@ export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesS
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -376,7 +376,7 @@ export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStar
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -406,14 +406,14 @@ export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStar
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -428,8 +428,8 @@ export interface DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -438,8 +438,8 @@ export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesT
 
 
 export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -447,7 +447,7 @@ export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesT
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -456,7 +456,7 @@ export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -488,14 +488,14 @@ export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutp
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -510,8 +510,8 @@ export interface DataAwsSsmcontactsRotationRecurrenceShiftCoverages {
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesToTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceShiftCoverages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -520,8 +520,8 @@ export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesToTerraform(st
 
 
 export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceShiftCoverages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -529,7 +529,7 @@ export function dataAwsSsmcontactsRotationRecurrenceShiftCoveragesToHclTerraform
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -538,7 +538,7 @@ export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -569,14 +569,14 @@ export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference e
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceShiftCoveragesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -591,8 +591,8 @@ export interface DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTime {
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -601,8 +601,8 @@ export function dataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToT
 
 
 export function dataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -610,7 +610,7 @@ export function dataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToH
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -619,7 +619,7 @@ export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -649,14 +649,14 @@ export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutput
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -671,8 +671,8 @@ export interface DataAwsSsmcontactsRotationRecurrenceWeeklySettings {
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceWeeklySettingsToTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceWeeklySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -681,8 +681,8 @@ export function dataAwsSsmcontactsRotationRecurrenceWeeklySettingsToTerraform(st
 
 
 export function dataAwsSsmcontactsRotationRecurrenceWeeklySettingsToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrenceWeeklySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -690,7 +690,7 @@ export function dataAwsSsmcontactsRotationRecurrenceWeeklySettingsToHclTerraform
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -699,7 +699,7 @@ export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -730,14 +730,14 @@ export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsOutputReference e
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceWeeklySettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -752,8 +752,8 @@ export interface DataAwsSsmcontactsRotationRecurrence {
 }
 
 export function dataAwsSsmcontactsRotationRecurrenceToTerraform(struct?: DataAwsSsmcontactsRotationRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -762,8 +762,8 @@ export function dataAwsSsmcontactsRotationRecurrenceToTerraform(struct?: DataAws
 
 
 export function dataAwsSsmcontactsRotationRecurrenceToHclTerraform(struct?: DataAwsSsmcontactsRotationRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -771,7 +771,7 @@ export function dataAwsSsmcontactsRotationRecurrenceToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexObject {
+export class DataAwsSsmcontactsRotationRecurrenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -780,7 +780,7 @@ export class DataAwsSsmcontactsRotationRecurrenceOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -834,14 +834,14 @@ export class DataAwsSsmcontactsRotationRecurrenceOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsSsmcontactsRotationRecurrenceList extends cdktf.ComplexList {
+export class DataAwsSsmcontactsRotationRecurrenceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -856,7 +856,7 @@ export class DataAwsSsmcontactsRotationRecurrenceList extends cdktf.ComplexList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssmcontacts_rotation aws_ssmcontacts_rotation}
 */
-export class DataAwsSsmcontactsRotation extends cdktf.TerraformDataSource {
+export class DataAwsSsmcontactsRotation extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -867,14 +867,14 @@ export class DataAwsSsmcontactsRotation extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsSsmcontactsRotation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsSsmcontactsRotation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsmcontactsRotation to import
   * @param importFromId The id of the existing DataAwsSsmcontactsRotation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ssmcontacts_rotation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsmcontactsRotation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmcontacts_rotation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmcontacts_rotation", importId: importFromId, provider });
       }
 
   // ===========
@@ -968,7 +968,7 @@ export class DataAwsSsmcontactsRotation extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -984,21 +984,21 @@ export class DataAwsSsmcontactsRotation extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      region: cdktf.stringToTerraform(this._region),
+      arn: cdktn.stringToTerraform(this._arn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

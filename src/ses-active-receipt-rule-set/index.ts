@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SesActiveReceiptRuleSetConfig extends cdktf.TerraformMetaArguments {
+export interface SesActiveReceiptRuleSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_active_receipt_rule_set#id SesActiveReceiptRuleSet#id}
   *
@@ -34,7 +34,7 @@ export interface SesActiveReceiptRuleSetConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}
 */
-export class SesActiveReceiptRuleSet extends cdktf.TerraformResource {
+export class SesActiveReceiptRuleSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class SesActiveReceiptRuleSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SesActiveReceiptRuleSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SesActiveReceiptRuleSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SesActiveReceiptRuleSet to import
   * @param importFromId The id of the existing SesActiveReceiptRuleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ses_active_receipt_rule_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SesActiveReceiptRuleSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_active_receipt_rule_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ses_active_receipt_rule_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -147,28 +147,28 @@ export class SesActiveReceiptRuleSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      rule_set_name: cdktf.stringToTerraform(this._ruleSetName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      rule_set_name: cdktn.stringToTerraform(this._ruleSetName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_set_name: {
-        value: cdktf.stringToHclTerraform(this._ruleSetName),
+        value: cdktn.stringToHclTerraform(this._ruleSetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

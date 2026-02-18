@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCloudfrontOriginAccessIdentitiesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCloudfrontOriginAccessIdentitiesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudfront_origin_access_identities#comments DataAwsCloudfrontOriginAccessIdentities#comments}
   */
@@ -28,7 +28,7 @@ export interface DataAwsCloudfrontOriginAccessIdentitiesConfig extends cdktf.Ter
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudfront_origin_access_identities aws_cloudfront_origin_access_identities}
 */
-export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformDataSource {
+export class DataAwsCloudfrontOriginAccessIdentities extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformData
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCloudfrontOriginAccessIdentities resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCloudfrontOriginAccessIdentities resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCloudfrontOriginAccessIdentities to import
   * @param importFromId The id of the existing DataAwsCloudfrontOriginAccessIdentities that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cloudfront_origin_access_identities#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCloudfrontOriginAccessIdentities to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_origin_access_identities", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_origin_access_identities", importId: importFromId, provider });
       }
 
   // ===========
@@ -87,7 +87,7 @@ export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformData
   // comments - computed: false, optional: true, required: false
   private _comments?: string[]; 
   public get comments() {
-    return cdktf.Fn.tolist(this.getListAttribute('comments'));
+    return cdktn.Fn.tolist(this.getListAttribute('comments'));
   }
   public set comments(value: string[]) {
     this._comments = value;
@@ -102,7 +102,7 @@ export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformData
 
   // iam_arns - computed: true, optional: false, required: false
   public get iamArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('iam_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('iam_arns'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -123,12 +123,12 @@ export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformData
 
   // ids - computed: true, optional: false, required: false
   public get ids() {
-    return cdktf.Fn.tolist(this.getListAttribute('ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('ids'));
   }
 
   // s3_canonical_user_ids - computed: true, optional: false, required: false
   public get s3CanonicalUserIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('s3_canonical_user_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('s3_canonical_user_ids'));
   }
 
   // =========
@@ -137,21 +137,21 @@ export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comments: cdktf.listMapper(cdktf.stringToTerraform, false)(this._comments),
-      id: cdktf.stringToTerraform(this._id),
+      comments: cdktn.listMapper(cdktn.stringToTerraform, false)(this._comments),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comments: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._comments),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._comments),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

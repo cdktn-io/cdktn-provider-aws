@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsyncResolverConfig extends cdktf.TerraformMetaArguments {
+export interface AppsyncResolverConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_resolver#api_id AppsyncResolver#api_id}
   */
@@ -98,31 +98,31 @@ export interface AppsyncResolverCachingConfig {
 }
 
 export function appsyncResolverCachingConfigToTerraform(struct?: AppsyncResolverCachingConfigOutputReference | AppsyncResolverCachingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    caching_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cachingKeys),
-    ttl: cdktf.numberToTerraform(struct!.ttl),
+    caching_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cachingKeys),
+    ttl: cdktn.numberToTerraform(struct!.ttl),
   }
 }
 
 
 export function appsyncResolverCachingConfigToHclTerraform(struct?: AppsyncResolverCachingConfigOutputReference | AppsyncResolverCachingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     caching_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cachingKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cachingKeys),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     ttl: {
-      value: cdktf.numberToHclTerraform(struct!.ttl),
+      value: cdktn.numberToHclTerraform(struct!.ttl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -133,14 +133,14 @@ export function appsyncResolverCachingConfigToHclTerraform(struct?: AppsyncResol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncResolverCachingConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncResolverCachingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -174,7 +174,7 @@ export class AppsyncResolverCachingConfigOutputReference extends cdktf.ComplexOb
   // caching_keys - computed: false, optional: true, required: false
   private _cachingKeys?: string[]; 
   public get cachingKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('caching_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('caching_keys'));
   }
   public set cachingKeys(value: string[]) {
     this._cachingKeys = value;
@@ -211,24 +211,24 @@ export interface AppsyncResolverPipelineConfig {
 }
 
 export function appsyncResolverPipelineConfigToTerraform(struct?: AppsyncResolverPipelineConfigOutputReference | AppsyncResolverPipelineConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    functions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.functions),
+    functions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.functions),
   }
 }
 
 
 export function appsyncResolverPipelineConfigToHclTerraform(struct?: AppsyncResolverPipelineConfigOutputReference | AppsyncResolverPipelineConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     functions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.functions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.functions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -239,14 +239,14 @@ export function appsyncResolverPipelineConfigToHclTerraform(struct?: AppsyncReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncResolverPipelineConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncResolverPipelineConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -299,31 +299,31 @@ export interface AppsyncResolverRuntime {
 }
 
 export function appsyncResolverRuntimeToTerraform(struct?: AppsyncResolverRuntimeOutputReference | AppsyncResolverRuntime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    runtime_version: cdktf.stringToTerraform(struct!.runtimeVersion),
+    name: cdktn.stringToTerraform(struct!.name),
+    runtime_version: cdktn.stringToTerraform(struct!.runtimeVersion),
   }
 }
 
 
 export function appsyncResolverRuntimeToHclTerraform(struct?: AppsyncResolverRuntimeOutputReference | AppsyncResolverRuntime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime_version: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeVersion),
+      value: cdktn.stringToHclTerraform(struct!.runtimeVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -334,14 +334,14 @@ export function appsyncResolverRuntimeToHclTerraform(struct?: AppsyncResolverRun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncResolverRuntimeOutputReference extends cdktf.ComplexObject {
+export class AppsyncResolverRuntimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -406,24 +406,24 @@ export interface AppsyncResolverSyncConfigLambdaConflictHandlerConfig {
 }
 
 export function appsyncResolverSyncConfigLambdaConflictHandlerConfigToTerraform(struct?: AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference | AppsyncResolverSyncConfigLambdaConflictHandlerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lambda_conflict_handler_arn: cdktf.stringToTerraform(struct!.lambdaConflictHandlerArn),
+    lambda_conflict_handler_arn: cdktn.stringToTerraform(struct!.lambdaConflictHandlerArn),
   }
 }
 
 
 export function appsyncResolverSyncConfigLambdaConflictHandlerConfigToHclTerraform(struct?: AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference | AppsyncResolverSyncConfigLambdaConflictHandlerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lambda_conflict_handler_arn: {
-      value: cdktf.stringToHclTerraform(struct!.lambdaConflictHandlerArn),
+      value: cdktn.stringToHclTerraform(struct!.lambdaConflictHandlerArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -434,14 +434,14 @@ export function appsyncResolverSyncConfigLambdaConflictHandlerConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -500,32 +500,32 @@ export interface AppsyncResolverSyncConfig {
 }
 
 export function appsyncResolverSyncConfigToTerraform(struct?: AppsyncResolverSyncConfigOutputReference | AppsyncResolverSyncConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    conflict_detection: cdktf.stringToTerraform(struct!.conflictDetection),
-    conflict_handler: cdktf.stringToTerraform(struct!.conflictHandler),
+    conflict_detection: cdktn.stringToTerraform(struct!.conflictDetection),
+    conflict_handler: cdktn.stringToTerraform(struct!.conflictHandler),
     lambda_conflict_handler_config: appsyncResolverSyncConfigLambdaConflictHandlerConfigToTerraform(struct!.lambdaConflictHandlerConfig),
   }
 }
 
 
 export function appsyncResolverSyncConfigToHclTerraform(struct?: AppsyncResolverSyncConfigOutputReference | AppsyncResolverSyncConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     conflict_detection: {
-      value: cdktf.stringToHclTerraform(struct!.conflictDetection),
+      value: cdktn.stringToHclTerraform(struct!.conflictDetection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conflict_handler: {
-      value: cdktf.stringToHclTerraform(struct!.conflictHandler),
+      value: cdktn.stringToHclTerraform(struct!.conflictHandler),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -542,14 +542,14 @@ export function appsyncResolverSyncConfigToHclTerraform(struct?: AppsyncResolver
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncResolverSyncConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncResolverSyncConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -638,7 +638,7 @@ export class AppsyncResolverSyncConfigOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_resolver aws_appsync_resolver}
 */
-export class AppsyncResolver extends cdktf.TerraformResource {
+export class AppsyncResolver extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -649,14 +649,14 @@ export class AppsyncResolver extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsyncResolver resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsyncResolver resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsyncResolver to import
   * @param importFromId The id of the existing AppsyncResolver that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_resolver#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsyncResolver to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_resolver", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_resolver", importId: importFromId, provider });
       }
 
   // ===========
@@ -949,17 +949,17 @@ export class AppsyncResolver extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      code: cdktf.stringToTerraform(this._code),
-      data_source: cdktf.stringToTerraform(this._dataSource),
-      field: cdktf.stringToTerraform(this._field),
-      id: cdktf.stringToTerraform(this._id),
-      kind: cdktf.stringToTerraform(this._kind),
-      max_batch_size: cdktf.numberToTerraform(this._maxBatchSize),
-      region: cdktf.stringToTerraform(this._region),
-      request_template: cdktf.stringToTerraform(this._requestTemplate),
-      response_template: cdktf.stringToTerraform(this._responseTemplate),
-      type: cdktf.stringToTerraform(this._type),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      code: cdktn.stringToTerraform(this._code),
+      data_source: cdktn.stringToTerraform(this._dataSource),
+      field: cdktn.stringToTerraform(this._field),
+      id: cdktn.stringToTerraform(this._id),
+      kind: cdktn.stringToTerraform(this._kind),
+      max_batch_size: cdktn.numberToTerraform(this._maxBatchSize),
+      region: cdktn.stringToTerraform(this._region),
+      request_template: cdktn.stringToTerraform(this._requestTemplate),
+      response_template: cdktn.stringToTerraform(this._responseTemplate),
+      type: cdktn.stringToTerraform(this._type),
       caching_config: appsyncResolverCachingConfigToTerraform(this._cachingConfig.internalValue),
       pipeline_config: appsyncResolverPipelineConfigToTerraform(this._pipelineConfig.internalValue),
       runtime: appsyncResolverRuntimeToTerraform(this._runtime.internalValue),
@@ -970,67 +970,67 @@ export class AppsyncResolver extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       code: {
-        value: cdktf.stringToHclTerraform(this._code),
+        value: cdktn.stringToHclTerraform(this._code),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_source: {
-        value: cdktf.stringToHclTerraform(this._dataSource),
+        value: cdktn.stringToHclTerraform(this._dataSource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       field: {
-        value: cdktf.stringToHclTerraform(this._field),
+        value: cdktn.stringToHclTerraform(this._field),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_batch_size: {
-        value: cdktf.numberToHclTerraform(this._maxBatchSize),
+        value: cdktn.numberToHclTerraform(this._maxBatchSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_template: {
-        value: cdktf.stringToHclTerraform(this._requestTemplate),
+        value: cdktn.stringToHclTerraform(this._requestTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       response_template: {
-        value: cdktf.stringToHclTerraform(this._responseTemplate),
+        value: cdktn.stringToHclTerraform(this._responseTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

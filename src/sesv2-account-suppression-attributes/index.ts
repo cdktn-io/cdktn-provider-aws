@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Sesv2AccountSuppressionAttributesConfig extends cdktf.TerraformMetaArguments {
+export interface Sesv2AccountSuppressionAttributesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,7 +27,7 @@ export interface Sesv2AccountSuppressionAttributesConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_account_suppression_attributes aws_sesv2_account_suppression_attributes}
 */
-export class Sesv2AccountSuppressionAttributes extends cdktf.TerraformResource {
+export class Sesv2AccountSuppressionAttributes extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -38,14 +38,14 @@ export class Sesv2AccountSuppressionAttributes extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Sesv2AccountSuppressionAttributes resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Sesv2AccountSuppressionAttributes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2AccountSuppressionAttributes to import
   * @param importFromId The id of the existing Sesv2AccountSuppressionAttributes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_account_suppression_attributes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2AccountSuppressionAttributes to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_account_suppression_attributes", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_account_suppression_attributes", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,7 +107,7 @@ export class Sesv2AccountSuppressionAttributes extends cdktf.TerraformResource {
   // suppressed_reasons - computed: false, optional: false, required: true
   private _suppressedReasons?: string[]; 
   public get suppressedReasons() {
-    return cdktf.Fn.tolist(this.getListAttribute('suppressed_reasons'));
+    return cdktn.Fn.tolist(this.getListAttribute('suppressed_reasons'));
   }
   public set suppressedReasons(value: string[]) {
     this._suppressedReasons = value;
@@ -123,21 +123,21 @@ export class Sesv2AccountSuppressionAttributes extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      suppressed_reasons: cdktf.listMapper(cdktf.stringToTerraform, false)(this._suppressedReasons),
+      region: cdktn.stringToTerraform(this._region),
+      suppressed_reasons: cdktn.listMapper(cdktn.stringToTerraform, false)(this._suppressedReasons),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suppressed_reasons: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._suppressedReasons),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._suppressedReasons),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

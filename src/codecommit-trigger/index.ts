@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodecommitTriggerConfig extends cdktf.TerraformMetaArguments {
+export interface CodecommitTriggerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecommit_trigger#id CodecommitTrigger#id}
   *
@@ -34,7 +34,7 @@ export interface CodecommitTriggerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecommit_trigger#trigger CodecommitTrigger#trigger}
   */
-  readonly trigger: CodecommitTriggerTrigger[] | cdktf.IResolvable;
+  readonly trigger: CodecommitTriggerTrigger[] | cdktn.IResolvable;
 }
 export interface CodecommitTriggerTrigger {
   /**
@@ -59,53 +59,53 @@ export interface CodecommitTriggerTrigger {
   readonly name: string;
 }
 
-export function codecommitTriggerTriggerToTerraform(struct?: CodecommitTriggerTrigger | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codecommitTriggerTriggerToTerraform(struct?: CodecommitTriggerTrigger | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    branches: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.branches),
-    custom_data: cdktf.stringToTerraform(struct!.customData),
-    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
-    name: cdktf.stringToTerraform(struct!.name),
+    branches: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.branches),
+    custom_data: cdktn.stringToTerraform(struct!.customData),
+    destination_arn: cdktn.stringToTerraform(struct!.destinationArn),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function codecommitTriggerTriggerToHclTerraform(struct?: CodecommitTriggerTrigger | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codecommitTriggerTriggerToHclTerraform(struct?: CodecommitTriggerTrigger | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     branches: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.branches),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.branches),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     custom_data: {
-      value: cdktf.stringToHclTerraform(struct!.customData),
+      value: cdktn.stringToHclTerraform(struct!.customData),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_arn: {
-      value: cdktf.stringToHclTerraform(struct!.destinationArn),
+      value: cdktn.stringToHclTerraform(struct!.destinationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,9 +116,9 @@ export function codecommitTriggerTriggerToHclTerraform(struct?: CodecommitTrigge
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodecommitTriggerTriggerOutputReference extends cdktf.ComplexObject {
+export class CodecommitTriggerTriggerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -126,11 +126,11 @@ export class CodecommitTriggerTriggerOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodecommitTriggerTrigger | cdktf.IResolvable | undefined {
+  public get internalValue(): CodecommitTriggerTrigger | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,7 +159,7 @@ export class CodecommitTriggerTriggerOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodecommitTriggerTrigger | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodecommitTriggerTrigger | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class CodecommitTriggerTriggerOutputReference extends cdktf.ComplexObject
       this._events = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -256,15 +256,15 @@ export class CodecommitTriggerTriggerOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class CodecommitTriggerTriggerList extends cdktf.ComplexList {
-  public internalValue? : CodecommitTriggerTrigger[] | cdktf.IResolvable
+export class CodecommitTriggerTriggerList extends cdktn.ComplexList {
+  public internalValue? : CodecommitTriggerTrigger[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -279,7 +279,7 @@ export class CodecommitTriggerTriggerList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecommit_trigger aws_codecommit_trigger}
 */
-export class CodecommitTrigger extends cdktf.TerraformResource {
+export class CodecommitTrigger extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -290,14 +290,14 @@ export class CodecommitTrigger extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodecommitTrigger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodecommitTrigger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodecommitTrigger to import
   * @param importFromId The id of the existing CodecommitTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecommit_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodecommitTrigger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codecommit_trigger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codecommit_trigger", importId: importFromId, provider });
       }
 
   // ===========
@@ -392,7 +392,7 @@ export class CodecommitTrigger extends cdktf.TerraformResource {
   public get trigger() {
     return this._trigger;
   }
-  public putTrigger(value: CodecommitTriggerTrigger[] | cdktf.IResolvable) {
+  public putTrigger(value: CodecommitTriggerTrigger[] | cdktn.IResolvable) {
     this._trigger.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -406,35 +406,35 @@ export class CodecommitTrigger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      repository_name: cdktf.stringToTerraform(this._repositoryName),
-      trigger: cdktf.listMapper(codecommitTriggerTriggerToTerraform, true)(this._trigger.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      repository_name: cdktn.stringToTerraform(this._repositoryName),
+      trigger: cdktn.listMapper(codecommitTriggerTriggerToTerraform, true)(this._trigger.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_name: {
-        value: cdktf.stringToHclTerraform(this._repositoryName),
+        value: cdktn.stringToHclTerraform(this._repositoryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trigger: {
-        value: cdktf.listMapperHcl(codecommitTriggerTriggerToHclTerraform, true)(this._trigger.internalValue),
+        value: cdktn.listMapperHcl(codecommitTriggerTriggerToHclTerraform, true)(this._trigger.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CodecommitTriggerTriggerList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TranscribeVocabularyFilterConfig extends cdktf.TerraformMetaArguments {
+export interface TranscribeVocabularyFilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transcribe_vocabulary_filter#id TranscribeVocabularyFilter#id}
   *
@@ -54,7 +54,7 @@ export interface TranscribeVocabularyFilterConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transcribe_vocabulary_filter aws_transcribe_vocabulary_filter}
 */
-export class TranscribeVocabularyFilter extends cdktf.TerraformResource {
+export class TranscribeVocabularyFilter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class TranscribeVocabularyFilter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TranscribeVocabularyFilter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TranscribeVocabularyFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TranscribeVocabularyFilter to import
   * @param importFromId The id of the existing TranscribeVocabularyFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transcribe_vocabulary_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TranscribeVocabularyFilter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transcribe_vocabulary_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transcribe_vocabulary_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -254,63 +254,63 @@ export class TranscribeVocabularyFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      language_code: cdktf.stringToTerraform(this._languageCode),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vocabulary_filter_file_uri: cdktf.stringToTerraform(this._vocabularyFilterFileUri),
-      vocabulary_filter_name: cdktf.stringToTerraform(this._vocabularyFilterName),
-      words: cdktf.listMapper(cdktf.stringToTerraform, false)(this._words),
+      id: cdktn.stringToTerraform(this._id),
+      language_code: cdktn.stringToTerraform(this._languageCode),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vocabulary_filter_file_uri: cdktn.stringToTerraform(this._vocabularyFilterFileUri),
+      vocabulary_filter_name: cdktn.stringToTerraform(this._vocabularyFilterName),
+      words: cdktn.listMapper(cdktn.stringToTerraform, false)(this._words),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language_code: {
-        value: cdktf.stringToHclTerraform(this._languageCode),
+        value: cdktn.stringToHclTerraform(this._languageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vocabulary_filter_file_uri: {
-        value: cdktf.stringToHclTerraform(this._vocabularyFilterFileUri),
+        value: cdktn.stringToHclTerraform(this._vocabularyFilterFileUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vocabulary_filter_name: {
-        value: cdktf.stringToHclTerraform(this._vocabularyFilterName),
+        value: cdktn.stringToHclTerraform(this._vocabularyFilterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       words: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._words),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._words),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

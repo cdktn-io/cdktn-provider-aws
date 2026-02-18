@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Apigatewayv2AuthorizerConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2AuthorizerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_authorizer#api_id Apigatewayv2Authorizer#api_id}
   */
@@ -39,7 +39,7 @@ export interface Apigatewayv2AuthorizerConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_authorizer#enable_simple_responses Apigatewayv2Authorizer#enable_simple_responses}
   */
-  readonly enableSimpleResponses?: boolean | cdktf.IResolvable;
+  readonly enableSimpleResponses?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_authorizer#id Apigatewayv2Authorizer#id}
   *
@@ -86,31 +86,31 @@ export interface Apigatewayv2AuthorizerJwtConfiguration {
 }
 
 export function apigatewayv2AuthorizerJwtConfigurationToTerraform(struct?: Apigatewayv2AuthorizerJwtConfigurationOutputReference | Apigatewayv2AuthorizerJwtConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audience: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.audience),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
+    audience: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.audience),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
   }
 }
 
 
 export function apigatewayv2AuthorizerJwtConfigurationToHclTerraform(struct?: Apigatewayv2AuthorizerJwtConfigurationOutputReference | Apigatewayv2AuthorizerJwtConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audience: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audience),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.audience),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -121,14 +121,14 @@ export function apigatewayv2AuthorizerJwtConfigurationToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -162,7 +162,7 @@ export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktf
   // audience - computed: false, optional: true, required: false
   private _audience?: string[]; 
   public get audience() {
-    return cdktf.Fn.tolist(this.getListAttribute('audience'));
+    return cdktn.Fn.tolist(this.getListAttribute('audience'));
   }
   public set audience(value: string[]) {
     this._audience = value;
@@ -198,25 +198,25 @@ export interface Apigatewayv2AuthorizerTimeouts {
   readonly delete?: string;
 }
 
-export function apigatewayv2AuthorizerTimeoutsToTerraform(struct?: Apigatewayv2AuthorizerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2AuthorizerTimeoutsToTerraform(struct?: Apigatewayv2AuthorizerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function apigatewayv2AuthorizerTimeoutsToHclTerraform(struct?: Apigatewayv2AuthorizerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2AuthorizerTimeoutsToHclTerraform(struct?: Apigatewayv2AuthorizerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -227,19 +227,19 @@ export function apigatewayv2AuthorizerTimeoutsToHclTerraform(struct?: Apigateway
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2AuthorizerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2AuthorizerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Apigatewayv2AuthorizerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Apigatewayv2AuthorizerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -252,13 +252,13 @@ export class Apigatewayv2AuthorizerTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Apigatewayv2AuthorizerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Apigatewayv2AuthorizerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -289,7 +289,7 @@ export class Apigatewayv2AuthorizerTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer}
 */
-export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
+export class Apigatewayv2Authorizer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -300,14 +300,14 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Apigatewayv2Authorizer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Apigatewayv2Authorizer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2Authorizer to import
   * @param importFromId The id of the existing Apigatewayv2Authorizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_authorizer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2Authorizer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_authorizer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_authorizer", importId: importFromId, provider });
       }
 
   // ===========
@@ -447,11 +447,11 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   }
 
   // enable_simple_responses - computed: false, optional: true, required: false
-  private _enableSimpleResponses?: boolean | cdktf.IResolvable; 
+  private _enableSimpleResponses?: boolean | cdktn.IResolvable; 
   public get enableSimpleResponses() {
     return this.getBooleanAttribute('enable_simple_responses');
   }
-  public set enableSimpleResponses(value: boolean | cdktf.IResolvable) {
+  public set enableSimpleResponses(value: boolean | cdktn.IResolvable) {
     this._enableSimpleResponses = value;
   }
   public resetEnableSimpleResponses() {
@@ -481,7 +481,7 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   // identity_sources - computed: false, optional: true, required: false
   private _identitySources?: string[]; 
   public get identitySources() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_sources'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_sources'));
   }
   public set identitySources(value: string[]) {
     this._identitySources = value;
@@ -561,17 +561,17 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      authorizer_credentials_arn: cdktf.stringToTerraform(this._authorizerCredentialsArn),
-      authorizer_payload_format_version: cdktf.stringToTerraform(this._authorizerPayloadFormatVersion),
-      authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(this._authorizerResultTtlInSeconds),
-      authorizer_type: cdktf.stringToTerraform(this._authorizerType),
-      authorizer_uri: cdktf.stringToTerraform(this._authorizerUri),
-      enable_simple_responses: cdktf.booleanToTerraform(this._enableSimpleResponses),
-      id: cdktf.stringToTerraform(this._id),
-      identity_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._identitySources),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      authorizer_credentials_arn: cdktn.stringToTerraform(this._authorizerCredentialsArn),
+      authorizer_payload_format_version: cdktn.stringToTerraform(this._authorizerPayloadFormatVersion),
+      authorizer_result_ttl_in_seconds: cdktn.numberToTerraform(this._authorizerResultTtlInSeconds),
+      authorizer_type: cdktn.stringToTerraform(this._authorizerType),
+      authorizer_uri: cdktn.stringToTerraform(this._authorizerUri),
+      enable_simple_responses: cdktn.booleanToTerraform(this._enableSimpleResponses),
+      id: cdktn.stringToTerraform(this._id),
+      identity_sources: cdktn.listMapper(cdktn.stringToTerraform, false)(this._identitySources),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
       jwt_configuration: apigatewayv2AuthorizerJwtConfigurationToTerraform(this._jwtConfiguration.internalValue),
       timeouts: apigatewayv2AuthorizerTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -580,67 +580,67 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorizer_credentials_arn: {
-        value: cdktf.stringToHclTerraform(this._authorizerCredentialsArn),
+        value: cdktn.stringToHclTerraform(this._authorizerCredentialsArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorizer_payload_format_version: {
-        value: cdktf.stringToHclTerraform(this._authorizerPayloadFormatVersion),
+        value: cdktn.stringToHclTerraform(this._authorizerPayloadFormatVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorizer_result_ttl_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._authorizerResultTtlInSeconds),
+        value: cdktn.numberToHclTerraform(this._authorizerResultTtlInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       authorizer_type: {
-        value: cdktf.stringToHclTerraform(this._authorizerType),
+        value: cdktn.stringToHclTerraform(this._authorizerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorizer_uri: {
-        value: cdktf.stringToHclTerraform(this._authorizerUri),
+        value: cdktn.stringToHclTerraform(this._authorizerUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_simple_responses: {
-        value: cdktf.booleanToHclTerraform(this._enableSimpleResponses),
+        value: cdktn.booleanToHclTerraform(this._enableSimpleResponses),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_sources: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._identitySources),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._identitySources),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

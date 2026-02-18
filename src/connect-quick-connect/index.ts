@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConnectQuickConnectConfig extends cdktf.TerraformMetaArguments {
+export interface ConnectQuickConnectConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_quick_connect#description ConnectQuickConnect#description}
   */
@@ -59,25 +59,25 @@ export interface ConnectQuickConnectQuickConnectConfigPhoneConfig {
   readonly phoneNumber: string;
 }
 
-export function connectQuickConnectQuickConnectConfigPhoneConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectQuickConnectQuickConnectConfigPhoneConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
   }
 }
 
 
-export function connectQuickConnectQuickConnectConfigPhoneConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectQuickConnectQuickConnectConfigPhoneConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,9 +88,9 @@ export function connectQuickConnectQuickConnectConfigPhoneConfigToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference extends cdktf.ComplexObject {
+export class ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -98,11 +98,11 @@ export class ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -115,13 +115,13 @@ export class ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._phoneNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -146,15 +146,15 @@ export class ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference ext
   }
 }
 
-export class ConnectQuickConnectQuickConnectConfigPhoneConfigList extends cdktf.ComplexList {
-  public internalValue? : ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable
+export class ConnectQuickConnectQuickConnectConfigPhoneConfigList extends cdktn.ComplexList {
+  public internalValue? : ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -176,32 +176,32 @@ export interface ConnectQuickConnectQuickConnectConfigQueueConfig {
   readonly queueId: string;
 }
 
-export function connectQuickConnectQuickConnectConfigQueueConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectQuickConnectQuickConnectConfigQueueConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contact_flow_id: cdktf.stringToTerraform(struct!.contactFlowId),
-    queue_id: cdktf.stringToTerraform(struct!.queueId),
+    contact_flow_id: cdktn.stringToTerraform(struct!.contactFlowId),
+    queue_id: cdktn.stringToTerraform(struct!.queueId),
   }
 }
 
 
-export function connectQuickConnectQuickConnectConfigQueueConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectQuickConnectQuickConnectConfigQueueConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contact_flow_id: {
-      value: cdktf.stringToHclTerraform(struct!.contactFlowId),
+      value: cdktn.stringToHclTerraform(struct!.contactFlowId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     queue_id: {
-      value: cdktf.stringToHclTerraform(struct!.queueId),
+      value: cdktn.stringToHclTerraform(struct!.queueId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -212,9 +212,9 @@ export function connectQuickConnectQuickConnectConfigQueueConfigToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference extends cdktf.ComplexObject {
+export class ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -222,11 +222,11 @@ export class ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConnectQuickConnectQuickConnectConfigQueueConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ConnectQuickConnectQuickConnectConfigQueueConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -243,14 +243,14 @@ export class ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._contactFlowId = undefined;
       this._queueId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -289,15 +289,15 @@ export class ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference ext
   }
 }
 
-export class ConnectQuickConnectQuickConnectConfigQueueConfigList extends cdktf.ComplexList {
-  public internalValue? : ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable
+export class ConnectQuickConnectQuickConnectConfigQueueConfigList extends cdktn.ComplexList {
+  public internalValue? : ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -319,32 +319,32 @@ export interface ConnectQuickConnectQuickConnectConfigUserConfig {
   readonly userId: string;
 }
 
-export function connectQuickConnectQuickConnectConfigUserConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigUserConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectQuickConnectQuickConnectConfigUserConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigUserConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contact_flow_id: cdktf.stringToTerraform(struct!.contactFlowId),
-    user_id: cdktf.stringToTerraform(struct!.userId),
+    contact_flow_id: cdktn.stringToTerraform(struct!.contactFlowId),
+    user_id: cdktn.stringToTerraform(struct!.userId),
   }
 }
 
 
-export function connectQuickConnectQuickConnectConfigUserConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigUserConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectQuickConnectQuickConnectConfigUserConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigUserConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contact_flow_id: {
-      value: cdktf.stringToHclTerraform(struct!.contactFlowId),
+      value: cdktn.stringToHclTerraform(struct!.contactFlowId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_id: {
-      value: cdktf.stringToHclTerraform(struct!.userId),
+      value: cdktn.stringToHclTerraform(struct!.userId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -355,9 +355,9 @@ export function connectQuickConnectQuickConnectConfigUserConfigToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectQuickConnectQuickConnectConfigUserConfigOutputReference extends cdktf.ComplexObject {
+export class ConnectQuickConnectQuickConnectConfigUserConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -365,11 +365,11 @@ export class ConnectQuickConnectQuickConnectConfigUserConfigOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConnectQuickConnectQuickConnectConfigUserConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ConnectQuickConnectQuickConnectConfigUserConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -386,14 +386,14 @@ export class ConnectQuickConnectQuickConnectConfigUserConfigOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConnectQuickConnectQuickConnectConfigUserConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConnectQuickConnectQuickConnectConfigUserConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._contactFlowId = undefined;
       this._userId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -432,15 +432,15 @@ export class ConnectQuickConnectQuickConnectConfigUserConfigOutputReference exte
   }
 }
 
-export class ConnectQuickConnectQuickConnectConfigUserConfigList extends cdktf.ComplexList {
-  public internalValue? : ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable
+export class ConnectQuickConnectQuickConnectConfigUserConfigList extends cdktn.ComplexList {
+  public internalValue? : ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -461,61 +461,61 @@ export interface ConnectQuickConnectQuickConnectConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_quick_connect#phone_config ConnectQuickConnect#phone_config}
   */
-  readonly phoneConfig?: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable;
+  readonly phoneConfig?: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktn.IResolvable;
   /**
   * queue_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_quick_connect#queue_config ConnectQuickConnect#queue_config}
   */
-  readonly queueConfig?: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable;
+  readonly queueConfig?: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktn.IResolvable;
   /**
   * user_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_quick_connect#user_config ConnectQuickConnect#user_config}
   */
-  readonly userConfig?: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable;
+  readonly userConfig?: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktn.IResolvable;
 }
 
 export function connectQuickConnectQuickConnectConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigOutputReference | ConnectQuickConnectQuickConnectConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    quick_connect_type: cdktf.stringToTerraform(struct!.quickConnectType),
-    phone_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigPhoneConfigToTerraform, true)(struct!.phoneConfig),
-    queue_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigQueueConfigToTerraform, true)(struct!.queueConfig),
-    user_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigUserConfigToTerraform, true)(struct!.userConfig),
+    quick_connect_type: cdktn.stringToTerraform(struct!.quickConnectType),
+    phone_config: cdktn.listMapper(connectQuickConnectQuickConnectConfigPhoneConfigToTerraform, true)(struct!.phoneConfig),
+    queue_config: cdktn.listMapper(connectQuickConnectQuickConnectConfigQueueConfigToTerraform, true)(struct!.queueConfig),
+    user_config: cdktn.listMapper(connectQuickConnectQuickConnectConfigUserConfigToTerraform, true)(struct!.userConfig),
   }
 }
 
 
 export function connectQuickConnectQuickConnectConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigOutputReference | ConnectQuickConnectQuickConnectConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     quick_connect_type: {
-      value: cdktf.stringToHclTerraform(struct!.quickConnectType),
+      value: cdktn.stringToHclTerraform(struct!.quickConnectType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_config: {
-      value: cdktf.listMapperHcl(connectQuickConnectQuickConnectConfigPhoneConfigToHclTerraform, true)(struct!.phoneConfig),
+      value: cdktn.listMapperHcl(connectQuickConnectQuickConnectConfigPhoneConfigToHclTerraform, true)(struct!.phoneConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ConnectQuickConnectQuickConnectConfigPhoneConfigList",
     },
     queue_config: {
-      value: cdktf.listMapperHcl(connectQuickConnectQuickConnectConfigQueueConfigToHclTerraform, true)(struct!.queueConfig),
+      value: cdktn.listMapperHcl(connectQuickConnectQuickConnectConfigQueueConfigToHclTerraform, true)(struct!.queueConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ConnectQuickConnectQuickConnectConfigQueueConfigList",
     },
     user_config: {
-      value: cdktf.listMapperHcl(connectQuickConnectQuickConnectConfigUserConfigToHclTerraform, true)(struct!.userConfig),
+      value: cdktn.listMapperHcl(connectQuickConnectQuickConnectConfigUserConfigToHclTerraform, true)(struct!.userConfig),
       isBlock: true,
       type: "list",
       storageClassType: "ConnectQuickConnectQuickConnectConfigUserConfigList",
@@ -526,14 +526,14 @@ export function connectQuickConnectQuickConnectConfigToHclTerraform(struct?: Con
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.ComplexObject {
+export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -594,7 +594,7 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
   public get phoneConfig() {
     return this._phoneConfig;
   }
-  public putPhoneConfig(value: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable) {
+  public putPhoneConfig(value: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktn.IResolvable) {
     this._phoneConfig.internalValue = value;
   }
   public resetPhoneConfig() {
@@ -610,7 +610,7 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
   public get queueConfig() {
     return this._queueConfig;
   }
-  public putQueueConfig(value: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable) {
+  public putQueueConfig(value: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktn.IResolvable) {
     this._queueConfig.internalValue = value;
   }
   public resetQueueConfig() {
@@ -626,7 +626,7 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
   public get userConfig() {
     return this._userConfig;
   }
-  public putUserConfig(value: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable) {
+  public putUserConfig(value: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktn.IResolvable) {
     this._userConfig.internalValue = value;
   }
   public resetUserConfig() {
@@ -641,7 +641,7 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_quick_connect aws_connect_quick_connect}
 */
-export class ConnectQuickConnect extends cdktf.TerraformResource {
+export class ConnectQuickConnect extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -652,14 +652,14 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConnectQuickConnect resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConnectQuickConnect resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectQuickConnect to import
   * @param importFromId The id of the existing ConnectQuickConnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_quick_connect#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectQuickConnect to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_quick_connect", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_quick_connect", importId: importFromId, provider });
       }
 
   // ===========
@@ -838,13 +838,13 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       quick_connect_config: connectQuickConnectQuickConnectConfigToTerraform(this._quickConnectConfig.internalValue),
     };
   }
@@ -852,43 +852,43 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

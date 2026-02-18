@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchLogAnomalyDetectorConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogAnomalyDetectorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_anomaly_detector#anomaly_visibility_time CloudwatchLogAnomalyDetector#anomaly_visibility_time}
   */
@@ -23,7 +23,7 @@ export interface CloudwatchLogAnomalyDetectorConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_anomaly_detector#enabled CloudwatchLogAnomalyDetector#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_anomaly_detector#evaluation_frequency CloudwatchLogAnomalyDetector#evaluation_frequency}
   */
@@ -55,7 +55,7 @@ export interface CloudwatchLogAnomalyDetectorConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector}
 */
-export class CloudwatchLogAnomalyDetector extends cdktf.TerraformResource {
+export class CloudwatchLogAnomalyDetector extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -66,14 +66,14 @@ export class CloudwatchLogAnomalyDetector extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchLogAnomalyDetector resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchLogAnomalyDetector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogAnomalyDetector to import
   * @param importFromId The id of the existing CloudwatchLogAnomalyDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_anomaly_detector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogAnomalyDetector to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_anomaly_detector", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_anomaly_detector", importId: importFromId, provider });
       }
 
   // ===========
@@ -156,11 +156,11 @@ export class CloudwatchLogAnomalyDetector extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -262,7 +262,7 @@ export class CloudwatchLogAnomalyDetector extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -273,70 +273,70 @@ export class CloudwatchLogAnomalyDetector extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      anomaly_visibility_time: cdktf.numberToTerraform(this._anomalyVisibilityTime),
-      detector_name: cdktf.stringToTerraform(this._detectorName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      evaluation_frequency: cdktf.stringToTerraform(this._evaluationFrequency),
-      filter_pattern: cdktf.stringToTerraform(this._filterPattern),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      log_group_arn_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logGroupArnList),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      anomaly_visibility_time: cdktn.numberToTerraform(this._anomalyVisibilityTime),
+      detector_name: cdktn.stringToTerraform(this._detectorName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      evaluation_frequency: cdktn.stringToTerraform(this._evaluationFrequency),
+      filter_pattern: cdktn.stringToTerraform(this._filterPattern),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      log_group_arn_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._logGroupArnList),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       anomaly_visibility_time: {
-        value: cdktf.numberToHclTerraform(this._anomalyVisibilityTime),
+        value: cdktn.numberToHclTerraform(this._anomalyVisibilityTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       detector_name: {
-        value: cdktf.stringToHclTerraform(this._detectorName),
+        value: cdktn.stringToHclTerraform(this._detectorName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       evaluation_frequency: {
-        value: cdktf.stringToHclTerraform(this._evaluationFrequency),
+        value: cdktn.stringToHclTerraform(this._evaluationFrequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_pattern: {
-        value: cdktf.stringToHclTerraform(this._filterPattern),
+        value: cdktn.stringToHclTerraform(this._filterPattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_group_arn_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logGroupArnList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._logGroupArnList),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

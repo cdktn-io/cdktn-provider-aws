@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodepipelineCustomActionTypeConfig extends cdktf.TerraformMetaArguments {
+export interface CodepipelineCustomActionTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type#category CodepipelineCustomActionType#category}
   */
@@ -50,7 +50,7 @@ export interface CodepipelineCustomActionTypeConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type#configuration_property CodepipelineCustomActionType#configuration_property}
   */
-  readonly configurationProperty?: CodepipelineCustomActionTypeConfigurationProperty[] | cdktf.IResolvable;
+  readonly configurationProperty?: CodepipelineCustomActionTypeConfigurationProperty[] | cdktn.IResolvable;
   /**
   * input_artifact_details block
   *
@@ -78,7 +78,7 @@ export interface CodepipelineCustomActionTypeConfigurationProperty {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type#key CodepipelineCustomActionType#key}
   */
-  readonly key: boolean | cdktf.IResolvable;
+  readonly key: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type#name CodepipelineCustomActionType#name}
   */
@@ -86,82 +86,82 @@ export interface CodepipelineCustomActionTypeConfigurationProperty {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type#queryable CodepipelineCustomActionType#queryable}
   */
-  readonly queryable?: boolean | cdktf.IResolvable;
+  readonly queryable?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type#required CodepipelineCustomActionType#required}
   */
-  readonly required: boolean | cdktf.IResolvable;
+  readonly required: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type#secret CodepipelineCustomActionType#secret}
   */
-  readonly secret: boolean | cdktf.IResolvable;
+  readonly secret: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type#type CodepipelineCustomActionType#type}
   */
   readonly type?: string;
 }
 
-export function codepipelineCustomActionTypeConfigurationPropertyToTerraform(struct?: CodepipelineCustomActionTypeConfigurationProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineCustomActionTypeConfigurationPropertyToTerraform(struct?: CodepipelineCustomActionTypeConfigurationProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    key: cdktf.booleanToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
-    queryable: cdktf.booleanToTerraform(struct!.queryable),
-    required: cdktf.booleanToTerraform(struct!.required),
-    secret: cdktf.booleanToTerraform(struct!.secret),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    key: cdktn.booleanToTerraform(struct!.key),
+    name: cdktn.stringToTerraform(struct!.name),
+    queryable: cdktn.booleanToTerraform(struct!.queryable),
+    required: cdktn.booleanToTerraform(struct!.required),
+    secret: cdktn.booleanToTerraform(struct!.secret),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function codepipelineCustomActionTypeConfigurationPropertyToHclTerraform(struct?: CodepipelineCustomActionTypeConfigurationProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codepipelineCustomActionTypeConfigurationPropertyToHclTerraform(struct?: CodepipelineCustomActionTypeConfigurationProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.booleanToHclTerraform(struct!.key),
+      value: cdktn.booleanToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     queryable: {
-      value: cdktf.booleanToHclTerraform(struct!.queryable),
+      value: cdktn.booleanToHclTerraform(struct!.queryable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     secret: {
-      value: cdktf.booleanToHclTerraform(struct!.secret),
+      value: cdktn.booleanToHclTerraform(struct!.secret),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -172,9 +172,9 @@ export function codepipelineCustomActionTypeConfigurationPropertyToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference extends cdktf.ComplexObject {
+export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -182,11 +182,11 @@ export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodepipelineCustomActionTypeConfigurationProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): CodepipelineCustomActionTypeConfigurationProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -223,7 +223,7 @@ export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodepipelineCustomActionTypeConfigurationProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodepipelineCustomActionTypeConfigurationProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -235,7 +235,7 @@ export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference ex
       this._secret = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -269,11 +269,11 @@ export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference ex
   }
 
   // key - computed: false, optional: false, required: true
-  private _key?: boolean | cdktf.IResolvable; 
+  private _key?: boolean | cdktn.IResolvable; 
   public get key() {
     return this.getBooleanAttribute('key');
   }
-  public set key(value: boolean | cdktf.IResolvable) {
+  public set key(value: boolean | cdktn.IResolvable) {
     this._key = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -295,11 +295,11 @@ export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference ex
   }
 
   // queryable - computed: false, optional: true, required: false
-  private _queryable?: boolean | cdktf.IResolvable; 
+  private _queryable?: boolean | cdktn.IResolvable; 
   public get queryable() {
     return this.getBooleanAttribute('queryable');
   }
-  public set queryable(value: boolean | cdktf.IResolvable) {
+  public set queryable(value: boolean | cdktn.IResolvable) {
     this._queryable = value;
   }
   public resetQueryable() {
@@ -311,11 +311,11 @@ export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference ex
   }
 
   // required - computed: false, optional: false, required: true
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -324,11 +324,11 @@ export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference ex
   }
 
   // secret - computed: false, optional: false, required: true
-  private _secret?: boolean | cdktf.IResolvable; 
+  private _secret?: boolean | cdktn.IResolvable; 
   public get secret() {
     return this.getBooleanAttribute('secret');
   }
-  public set secret(value: boolean | cdktf.IResolvable) {
+  public set secret(value: boolean | cdktn.IResolvable) {
     this._secret = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -353,15 +353,15 @@ export class CodepipelineCustomActionTypeConfigurationPropertyOutputReference ex
   }
 }
 
-export class CodepipelineCustomActionTypeConfigurationPropertyList extends cdktf.ComplexList {
-  public internalValue? : CodepipelineCustomActionTypeConfigurationProperty[] | cdktf.IResolvable
+export class CodepipelineCustomActionTypeConfigurationPropertyList extends cdktn.ComplexList {
+  public internalValue? : CodepipelineCustomActionTypeConfigurationProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -384,31 +384,31 @@ export interface CodepipelineCustomActionTypeInputArtifactDetails {
 }
 
 export function codepipelineCustomActionTypeInputArtifactDetailsToTerraform(struct?: CodepipelineCustomActionTypeInputArtifactDetailsOutputReference | CodepipelineCustomActionTypeInputArtifactDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_count: cdktf.numberToTerraform(struct!.maximumCount),
-    minimum_count: cdktf.numberToTerraform(struct!.minimumCount),
+    maximum_count: cdktn.numberToTerraform(struct!.maximumCount),
+    minimum_count: cdktn.numberToTerraform(struct!.minimumCount),
   }
 }
 
 
 export function codepipelineCustomActionTypeInputArtifactDetailsToHclTerraform(struct?: CodepipelineCustomActionTypeInputArtifactDetailsOutputReference | CodepipelineCustomActionTypeInputArtifactDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_count: {
-      value: cdktf.numberToHclTerraform(struct!.maximumCount),
+      value: cdktn.numberToHclTerraform(struct!.maximumCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum_count: {
-      value: cdktf.numberToHclTerraform(struct!.minimumCount),
+      value: cdktn.numberToHclTerraform(struct!.minimumCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -419,14 +419,14 @@ export function codepipelineCustomActionTypeInputArtifactDetailsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineCustomActionTypeInputArtifactDetailsOutputReference extends cdktf.ComplexObject {
+export class CodepipelineCustomActionTypeInputArtifactDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -495,31 +495,31 @@ export interface CodepipelineCustomActionTypeOutputArtifactDetails {
 }
 
 export function codepipelineCustomActionTypeOutputArtifactDetailsToTerraform(struct?: CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference | CodepipelineCustomActionTypeOutputArtifactDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_count: cdktf.numberToTerraform(struct!.maximumCount),
-    minimum_count: cdktf.numberToTerraform(struct!.minimumCount),
+    maximum_count: cdktn.numberToTerraform(struct!.maximumCount),
+    minimum_count: cdktn.numberToTerraform(struct!.minimumCount),
   }
 }
 
 
 export function codepipelineCustomActionTypeOutputArtifactDetailsToHclTerraform(struct?: CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference | CodepipelineCustomActionTypeOutputArtifactDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_count: {
-      value: cdktf.numberToHclTerraform(struct!.maximumCount),
+      value: cdktn.numberToHclTerraform(struct!.maximumCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum_count: {
-      value: cdktf.numberToHclTerraform(struct!.minimumCount),
+      value: cdktn.numberToHclTerraform(struct!.minimumCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -530,14 +530,14 @@ export function codepipelineCustomActionTypeOutputArtifactDetailsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference extends cdktf.ComplexObject {
+export class CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -614,45 +614,45 @@ export interface CodepipelineCustomActionTypeSettings {
 }
 
 export function codepipelineCustomActionTypeSettingsToTerraform(struct?: CodepipelineCustomActionTypeSettingsOutputReference | CodepipelineCustomActionTypeSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_url_template: cdktf.stringToTerraform(struct!.entityUrlTemplate),
-    execution_url_template: cdktf.stringToTerraform(struct!.executionUrlTemplate),
-    revision_url_template: cdktf.stringToTerraform(struct!.revisionUrlTemplate),
-    third_party_configuration_url: cdktf.stringToTerraform(struct!.thirdPartyConfigurationUrl),
+    entity_url_template: cdktn.stringToTerraform(struct!.entityUrlTemplate),
+    execution_url_template: cdktn.stringToTerraform(struct!.executionUrlTemplate),
+    revision_url_template: cdktn.stringToTerraform(struct!.revisionUrlTemplate),
+    third_party_configuration_url: cdktn.stringToTerraform(struct!.thirdPartyConfigurationUrl),
   }
 }
 
 
 export function codepipelineCustomActionTypeSettingsToHclTerraform(struct?: CodepipelineCustomActionTypeSettingsOutputReference | CodepipelineCustomActionTypeSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_url_template: {
-      value: cdktf.stringToHclTerraform(struct!.entityUrlTemplate),
+      value: cdktn.stringToHclTerraform(struct!.entityUrlTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_url_template: {
-      value: cdktf.stringToHclTerraform(struct!.executionUrlTemplate),
+      value: cdktn.stringToHclTerraform(struct!.executionUrlTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     revision_url_template: {
-      value: cdktf.stringToHclTerraform(struct!.revisionUrlTemplate),
+      value: cdktn.stringToHclTerraform(struct!.revisionUrlTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     third_party_configuration_url: {
-      value: cdktf.stringToHclTerraform(struct!.thirdPartyConfigurationUrl),
+      value: cdktn.stringToHclTerraform(struct!.thirdPartyConfigurationUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -663,14 +663,14 @@ export function codepipelineCustomActionTypeSettingsToHclTerraform(struct?: Code
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodepipelineCustomActionTypeSettingsOutputReference extends cdktf.ComplexObject {
+export class CodepipelineCustomActionTypeSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -781,7 +781,7 @@ export class CodepipelineCustomActionTypeSettingsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type}
 */
-export class CodepipelineCustomActionType extends cdktf.TerraformResource {
+export class CodepipelineCustomActionType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -792,14 +792,14 @@ export class CodepipelineCustomActionType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodepipelineCustomActionType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodepipelineCustomActionType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodepipelineCustomActionType to import
   * @param importFromId The id of the existing CodepipelineCustomActionType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codepipeline_custom_action_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodepipelineCustomActionType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codepipeline_custom_action_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codepipeline_custom_action_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -964,7 +964,7 @@ export class CodepipelineCustomActionType extends cdktf.TerraformResource {
   public get configurationProperty() {
     return this._configurationProperty;
   }
-  public putConfigurationProperty(value: CodepipelineCustomActionTypeConfigurationProperty[] | cdktf.IResolvable) {
+  public putConfigurationProperty(value: CodepipelineCustomActionTypeConfigurationProperty[] | cdktn.IResolvable) {
     this._configurationProperty.internalValue = value;
   }
   public resetConfigurationProperty() {
@@ -1023,14 +1023,14 @@ export class CodepipelineCustomActionType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      category: cdktf.stringToTerraform(this._category),
-      id: cdktf.stringToTerraform(this._id),
-      provider_name: cdktf.stringToTerraform(this._providerName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      version: cdktf.stringToTerraform(this._version),
-      configuration_property: cdktf.listMapper(codepipelineCustomActionTypeConfigurationPropertyToTerraform, true)(this._configurationProperty.internalValue),
+      category: cdktn.stringToTerraform(this._category),
+      id: cdktn.stringToTerraform(this._id),
+      provider_name: cdktn.stringToTerraform(this._providerName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      version: cdktn.stringToTerraform(this._version),
+      configuration_property: cdktn.listMapper(codepipelineCustomActionTypeConfigurationPropertyToTerraform, true)(this._configurationProperty.internalValue),
       input_artifact_details: codepipelineCustomActionTypeInputArtifactDetailsToTerraform(this._inputArtifactDetails.internalValue),
       output_artifact_details: codepipelineCustomActionTypeOutputArtifactDetailsToTerraform(this._outputArtifactDetails.internalValue),
       settings: codepipelineCustomActionTypeSettingsToTerraform(this._settings.internalValue),
@@ -1040,49 +1040,49 @@ export class CodepipelineCustomActionType extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       category: {
-        value: cdktf.stringToHclTerraform(this._category),
+        value: cdktn.stringToHclTerraform(this._category),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provider_name: {
-        value: cdktf.stringToHclTerraform(this._providerName),
+        value: cdktn.stringToHclTerraform(this._providerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration_property: {
-        value: cdktf.listMapperHcl(codepipelineCustomActionTypeConfigurationPropertyToHclTerraform, true)(this._configurationProperty.internalValue),
+        value: cdktn.listMapperHcl(codepipelineCustomActionTypeConfigurationPropertyToHclTerraform, true)(this._configurationProperty.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CodepipelineCustomActionTypeConfigurationPropertyList",

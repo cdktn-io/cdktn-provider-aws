@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DbProxyTargetConfig extends cdktf.TerraformMetaArguments {
+export interface DbProxyTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy_target#db_cluster_identifier DbProxyTarget#db_cluster_identifier}
   */
@@ -46,7 +46,7 @@ export interface DbProxyTargetConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy_target aws_db_proxy_target}
 */
-export class DbProxyTarget extends cdktf.TerraformResource {
+export class DbProxyTarget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DbProxyTarget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DbProxyTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DbProxyTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DbProxyTarget to import
   * @param importFromId The id of the existing DbProxyTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DbProxyTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_proxy_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_proxy_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -232,49 +232,49 @@ export class DbProxyTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
-      db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
-      db_proxy_name: cdktf.stringToTerraform(this._dbProxyName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      target_group_name: cdktf.stringToTerraform(this._targetGroupName),
+      db_cluster_identifier: cdktn.stringToTerraform(this._dbClusterIdentifier),
+      db_instance_identifier: cdktn.stringToTerraform(this._dbInstanceIdentifier),
+      db_proxy_name: cdktn.stringToTerraform(this._dbProxyName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      target_group_name: cdktn.stringToTerraform(this._targetGroupName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       db_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_instance_identifier: {
-        value: cdktf.stringToHclTerraform(this._dbInstanceIdentifier),
+        value: cdktn.stringToHclTerraform(this._dbInstanceIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_proxy_name: {
-        value: cdktf.stringToHclTerraform(this._dbProxyName),
+        value: cdktn.stringToHclTerraform(this._dbProxyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_group_name: {
-        value: cdktf.stringToHclTerraform(this._targetGroupName),
+        value: cdktn.stringToHclTerraform(this._targetGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

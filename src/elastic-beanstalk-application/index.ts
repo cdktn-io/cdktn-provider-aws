@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticBeanstalkApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticBeanstalkApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application#description ElasticBeanstalkApplication#description}
   */
@@ -52,7 +52,7 @@ export interface ElasticBeanstalkApplicationAppversionLifecycle {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application#delete_source_from_s3 ElasticBeanstalkApplication#delete_source_from_s3}
   */
-  readonly deleteSourceFromS3?: boolean | cdktf.IResolvable;
+  readonly deleteSourceFromS3?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application#max_age_in_days ElasticBeanstalkApplication#max_age_in_days}
   */
@@ -68,45 +68,45 @@ export interface ElasticBeanstalkApplicationAppversionLifecycle {
 }
 
 export function elasticBeanstalkApplicationAppversionLifecycleToTerraform(struct?: ElasticBeanstalkApplicationAppversionLifecycleOutputReference | ElasticBeanstalkApplicationAppversionLifecycle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete_source_from_s3: cdktf.booleanToTerraform(struct!.deleteSourceFromS3),
-    max_age_in_days: cdktf.numberToTerraform(struct!.maxAgeInDays),
-    max_count: cdktf.numberToTerraform(struct!.maxCount),
-    service_role: cdktf.stringToTerraform(struct!.serviceRole),
+    delete_source_from_s3: cdktn.booleanToTerraform(struct!.deleteSourceFromS3),
+    max_age_in_days: cdktn.numberToTerraform(struct!.maxAgeInDays),
+    max_count: cdktn.numberToTerraform(struct!.maxCount),
+    service_role: cdktn.stringToTerraform(struct!.serviceRole),
   }
 }
 
 
 export function elasticBeanstalkApplicationAppversionLifecycleToHclTerraform(struct?: ElasticBeanstalkApplicationAppversionLifecycleOutputReference | ElasticBeanstalkApplicationAppversionLifecycle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete_source_from_s3: {
-      value: cdktf.booleanToHclTerraform(struct!.deleteSourceFromS3),
+      value: cdktn.booleanToHclTerraform(struct!.deleteSourceFromS3),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_age_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.maxAgeInDays),
+      value: cdktn.numberToHclTerraform(struct!.maxAgeInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_count: {
-      value: cdktf.numberToHclTerraform(struct!.maxCount),
+      value: cdktn.numberToHclTerraform(struct!.maxCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_role: {
-      value: cdktf.stringToHclTerraform(struct!.serviceRole),
+      value: cdktn.stringToHclTerraform(struct!.serviceRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,14 +117,14 @@ export function elasticBeanstalkApplicationAppversionLifecycleToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference extends cdktf.ComplexObject {
+export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -168,11 +168,11 @@ export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference exten
   }
 
   // delete_source_from_s3 - computed: false, optional: true, required: false
-  private _deleteSourceFromS3?: boolean | cdktf.IResolvable; 
+  private _deleteSourceFromS3?: boolean | cdktn.IResolvable; 
   public get deleteSourceFromS3() {
     return this.getBooleanAttribute('delete_source_from_s3');
   }
-  public set deleteSourceFromS3(value: boolean | cdktf.IResolvable) {
+  public set deleteSourceFromS3(value: boolean | cdktn.IResolvable) {
     this._deleteSourceFromS3 = value;
   }
   public resetDeleteSourceFromS3() {
@@ -232,7 +232,7 @@ export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application}
 */
-export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
+export class ElasticBeanstalkApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -243,14 +243,14 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticBeanstalkApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticBeanstalkApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticBeanstalkApplication to import
   * @param importFromId The id of the existing ElasticBeanstalkApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elastic_beanstalk_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticBeanstalkApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastic_beanstalk_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elastic_beanstalk_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -413,12 +413,12 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       appversion_lifecycle: elasticBeanstalkApplicationAppversionLifecycleToTerraform(this._appversionLifecycle.internalValue),
     };
   }
@@ -426,37 +426,37 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

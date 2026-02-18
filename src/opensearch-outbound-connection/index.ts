@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OpensearchOutboundConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface OpensearchOutboundConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_outbound_connection#accept_connection OpensearchOutboundConnection#accept_connection}
   */
-  readonly acceptConnection?: boolean | cdktf.IResolvable;
+  readonly acceptConnection?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_outbound_connection#connection_alias OpensearchOutboundConnection#connection_alias}
   */
@@ -70,24 +70,24 @@ export interface OpensearchOutboundConnectionConnectionPropertiesCrossClusterSea
 }
 
 export function opensearchOutboundConnectionConnectionPropertiesCrossClusterSearchToTerraform(struct?: OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference | OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    skip_unavailable: cdktf.stringToTerraform(struct!.skipUnavailable),
+    skip_unavailable: cdktn.stringToTerraform(struct!.skipUnavailable),
   }
 }
 
 
 export function opensearchOutboundConnectionConnectionPropertiesCrossClusterSearchToHclTerraform(struct?: OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference | OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     skip_unavailable: {
-      value: cdktf.stringToHclTerraform(struct!.skipUnavailable),
+      value: cdktn.stringToHclTerraform(struct!.skipUnavailable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -98,14 +98,14 @@ export function opensearchOutboundConnectionConnectionPropertiesCrossClusterSear
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference extends cdktf.ComplexObject {
+export class OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -156,8 +156,8 @@ export interface OpensearchOutboundConnectionConnectionProperties {
 }
 
 export function opensearchOutboundConnectionConnectionPropertiesToTerraform(struct?: OpensearchOutboundConnectionConnectionPropertiesOutputReference | OpensearchOutboundConnectionConnectionProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -167,8 +167,8 @@ export function opensearchOutboundConnectionConnectionPropertiesToTerraform(stru
 
 
 export function opensearchOutboundConnectionConnectionPropertiesToHclTerraform(struct?: OpensearchOutboundConnectionConnectionPropertiesOutputReference | OpensearchOutboundConnectionConnectionProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -184,14 +184,14 @@ export function opensearchOutboundConnectionConnectionPropertiesToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchOutboundConnectionConnectionPropertiesOutputReference extends cdktf.ComplexObject {
+export class OpensearchOutboundConnectionConnectionPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -253,38 +253,38 @@ export interface OpensearchOutboundConnectionLocalDomainInfo {
 }
 
 export function opensearchOutboundConnectionLocalDomainInfoToTerraform(struct?: OpensearchOutboundConnectionLocalDomainInfoOutputReference | OpensearchOutboundConnectionLocalDomainInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_name: cdktf.stringToTerraform(struct!.domainName),
-    owner_id: cdktf.stringToTerraform(struct!.ownerId),
-    region: cdktf.stringToTerraform(struct!.region),
+    domain_name: cdktn.stringToTerraform(struct!.domainName),
+    owner_id: cdktn.stringToTerraform(struct!.ownerId),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function opensearchOutboundConnectionLocalDomainInfoToHclTerraform(struct?: OpensearchOutboundConnectionLocalDomainInfoOutputReference | OpensearchOutboundConnectionLocalDomainInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainName),
+      value: cdktn.stringToHclTerraform(struct!.domainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner_id: {
-      value: cdktf.stringToHclTerraform(struct!.ownerId),
+      value: cdktn.stringToHclTerraform(struct!.ownerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -295,14 +295,14 @@ export function opensearchOutboundConnectionLocalDomainInfoToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchOutboundConnectionLocalDomainInfoOutputReference extends cdktf.ComplexObject {
+export class OpensearchOutboundConnectionLocalDomainInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -394,38 +394,38 @@ export interface OpensearchOutboundConnectionRemoteDomainInfo {
 }
 
 export function opensearchOutboundConnectionRemoteDomainInfoToTerraform(struct?: OpensearchOutboundConnectionRemoteDomainInfoOutputReference | OpensearchOutboundConnectionRemoteDomainInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_name: cdktf.stringToTerraform(struct!.domainName),
-    owner_id: cdktf.stringToTerraform(struct!.ownerId),
-    region: cdktf.stringToTerraform(struct!.region),
+    domain_name: cdktn.stringToTerraform(struct!.domainName),
+    owner_id: cdktn.stringToTerraform(struct!.ownerId),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function opensearchOutboundConnectionRemoteDomainInfoToHclTerraform(struct?: OpensearchOutboundConnectionRemoteDomainInfoOutputReference | OpensearchOutboundConnectionRemoteDomainInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainName),
+      value: cdktn.stringToHclTerraform(struct!.domainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner_id: {
-      value: cdktf.stringToHclTerraform(struct!.ownerId),
+      value: cdktn.stringToHclTerraform(struct!.ownerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -436,14 +436,14 @@ export function opensearchOutboundConnectionRemoteDomainInfoToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchOutboundConnectionRemoteDomainInfoOutputReference extends cdktf.ComplexObject {
+export class OpensearchOutboundConnectionRemoteDomainInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -530,32 +530,32 @@ export interface OpensearchOutboundConnectionTimeouts {
   readonly delete?: string;
 }
 
-export function opensearchOutboundConnectionTimeoutsToTerraform(struct?: OpensearchOutboundConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchOutboundConnectionTimeoutsToTerraform(struct?: OpensearchOutboundConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function opensearchOutboundConnectionTimeoutsToHclTerraform(struct?: OpensearchOutboundConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function opensearchOutboundConnectionTimeoutsToHclTerraform(struct?: OpensearchOutboundConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -566,19 +566,19 @@ export function opensearchOutboundConnectionTimeoutsToHclTerraform(struct?: Open
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OpensearchOutboundConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OpensearchOutboundConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OpensearchOutboundConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OpensearchOutboundConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -595,14 +595,14 @@ export class OpensearchOutboundConnectionTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OpensearchOutboundConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OpensearchOutboundConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -650,7 +650,7 @@ export class OpensearchOutboundConnectionTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection}
 */
-export class OpensearchOutboundConnection extends cdktf.TerraformResource {
+export class OpensearchOutboundConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -661,14 +661,14 @@ export class OpensearchOutboundConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OpensearchOutboundConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OpensearchOutboundConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchOutboundConnection to import
   * @param importFromId The id of the existing OpensearchOutboundConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/opensearch_outbound_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchOutboundConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_outbound_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_outbound_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -714,11 +714,11 @@ export class OpensearchOutboundConnection extends cdktf.TerraformResource {
   // ==========
 
   // accept_connection - computed: false, optional: true, required: false
-  private _acceptConnection?: boolean | cdktf.IResolvable; 
+  private _acceptConnection?: boolean | cdktn.IResolvable; 
   public get acceptConnection() {
     return this.getBooleanAttribute('accept_connection');
   }
-  public set acceptConnection(value: boolean | cdktf.IResolvable) {
+  public set acceptConnection(value: boolean | cdktn.IResolvable) {
     this._acceptConnection = value;
   }
   public resetAcceptConnection() {
@@ -859,11 +859,11 @@ export class OpensearchOutboundConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accept_connection: cdktf.booleanToTerraform(this._acceptConnection),
-      connection_alias: cdktf.stringToTerraform(this._connectionAlias),
-      connection_mode: cdktf.stringToTerraform(this._connectionMode),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      accept_connection: cdktn.booleanToTerraform(this._acceptConnection),
+      connection_alias: cdktn.stringToTerraform(this._connectionAlias),
+      connection_mode: cdktn.stringToTerraform(this._connectionMode),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       connection_properties: opensearchOutboundConnectionConnectionPropertiesToTerraform(this._connectionProperties.internalValue),
       local_domain_info: opensearchOutboundConnectionLocalDomainInfoToTerraform(this._localDomainInfo.internalValue),
       remote_domain_info: opensearchOutboundConnectionRemoteDomainInfoToTerraform(this._remoteDomainInfo.internalValue),
@@ -874,31 +874,31 @@ export class OpensearchOutboundConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accept_connection: {
-        value: cdktf.booleanToHclTerraform(this._acceptConnection),
+        value: cdktn.booleanToHclTerraform(this._acceptConnection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       connection_alias: {
-        value: cdktf.stringToHclTerraform(this._connectionAlias),
+        value: cdktn.stringToHclTerraform(this._connectionAlias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_mode: {
-        value: cdktf.stringToHclTerraform(this._connectionMode),
+        value: cdktn.stringToHclTerraform(this._connectionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

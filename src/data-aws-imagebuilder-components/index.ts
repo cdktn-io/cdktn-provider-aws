@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsImagebuilderComponentsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsImagebuilderComponentsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/imagebuilder_components#id DataAwsImagebuilderComponents#id}
   *
@@ -34,7 +34,7 @@ export interface DataAwsImagebuilderComponentsConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/imagebuilder_components#filter DataAwsImagebuilderComponents#filter}
   */
-  readonly filter?: DataAwsImagebuilderComponentsFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsImagebuilderComponentsFilter[] | cdktn.IResolvable;
 }
 export interface DataAwsImagebuilderComponentsFilter {
   /**
@@ -47,32 +47,32 @@ export interface DataAwsImagebuilderComponentsFilter {
   readonly values: string[];
 }
 
-export function dataAwsImagebuilderComponentsFilterToTerraform(struct?: DataAwsImagebuilderComponentsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsImagebuilderComponentsFilterToTerraform(struct?: DataAwsImagebuilderComponentsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsImagebuilderComponentsFilterToHclTerraform(struct?: DataAwsImagebuilderComponentsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsImagebuilderComponentsFilterToHclTerraform(struct?: DataAwsImagebuilderComponentsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -83,9 +83,9 @@ export function dataAwsImagebuilderComponentsFilterToHclTerraform(struct?: DataA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsImagebuilderComponentsFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsImagebuilderComponentsFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class DataAwsImagebuilderComponentsFilterOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsImagebuilderComponentsFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsImagebuilderComponentsFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,14 +114,14 @@ export class DataAwsImagebuilderComponentsFilterOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsImagebuilderComponentsFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsImagebuilderComponentsFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -149,7 +149,7 @@ export class DataAwsImagebuilderComponentsFilterOutputReference extends cdktf.Co
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -160,15 +160,15 @@ export class DataAwsImagebuilderComponentsFilterOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsImagebuilderComponentsFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsImagebuilderComponentsFilter[] | cdktf.IResolvable
+export class DataAwsImagebuilderComponentsFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsImagebuilderComponentsFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -183,7 +183,7 @@ export class DataAwsImagebuilderComponentsFilterList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/imagebuilder_components aws_imagebuilder_components}
 */
-export class DataAwsImagebuilderComponents extends cdktf.TerraformDataSource {
+export class DataAwsImagebuilderComponents extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -194,14 +194,14 @@ export class DataAwsImagebuilderComponents extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsImagebuilderComponents resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsImagebuilderComponents resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsImagebuilderComponents to import
   * @param importFromId The id of the existing DataAwsImagebuilderComponents that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/imagebuilder_components#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsImagebuilderComponents to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_components", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_imagebuilder_components", importId: importFromId, provider });
       }
 
   // ===========
@@ -243,7 +243,7 @@ export class DataAwsImagebuilderComponents extends cdktf.TerraformDataSource {
 
   // arns - computed: true, optional: false, required: false
   public get arns() {
-    return cdktf.Fn.tolist(this.getListAttribute('arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('arns'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -264,7 +264,7 @@ export class DataAwsImagebuilderComponents extends cdktf.TerraformDataSource {
 
   // names - computed: true, optional: false, required: false
   public get names() {
-    return cdktf.Fn.tolist(this.getListAttribute('names'));
+    return cdktn.Fn.tolist(this.getListAttribute('names'));
   }
 
   // owner - computed: false, optional: true, required: false
@@ -304,7 +304,7 @@ export class DataAwsImagebuilderComponents extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsImagebuilderComponentsFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsImagebuilderComponentsFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -321,35 +321,35 @@ export class DataAwsImagebuilderComponents extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      owner: cdktf.stringToTerraform(this._owner),
-      region: cdktf.stringToTerraform(this._region),
-      filter: cdktf.listMapper(dataAwsImagebuilderComponentsFilterToTerraform, true)(this._filter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      owner: cdktn.stringToTerraform(this._owner),
+      region: cdktn.stringToTerraform(this._region),
+      filter: cdktn.listMapper(dataAwsImagebuilderComponentsFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsImagebuilderComponentsFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsImagebuilderComponentsFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsImagebuilderComponentsFilterList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBedrockCustomModelConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBedrockCustomModelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_custom_model#model_id DataAwsBedrockCustomModel#model_id}
   */
@@ -27,8 +27,8 @@ export interface DataAwsBedrockCustomModelOutputDataConfig {
 }
 
 export function dataAwsBedrockCustomModelOutputDataConfigToTerraform(struct?: DataAwsBedrockCustomModelOutputDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -37,8 +37,8 @@ export function dataAwsBedrockCustomModelOutputDataConfigToTerraform(struct?: Da
 
 
 export function dataAwsBedrockCustomModelOutputDataConfigToHclTerraform(struct?: DataAwsBedrockCustomModelOutputDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -46,7 +46,7 @@ export function dataAwsBedrockCustomModelOutputDataConfigToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAwsBedrockCustomModelOutputDataConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockCustomModelOutputDataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -55,7 +55,7 @@ export class DataAwsBedrockCustomModelOutputDataConfigOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -80,14 +80,14 @@ export class DataAwsBedrockCustomModelOutputDataConfigOutputReference extends cd
   }
 }
 
-export class DataAwsBedrockCustomModelOutputDataConfigList extends cdktf.ComplexList {
+export class DataAwsBedrockCustomModelOutputDataConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -102,8 +102,8 @@ export interface DataAwsBedrockCustomModelTrainingDataConfig {
 }
 
 export function dataAwsBedrockCustomModelTrainingDataConfigToTerraform(struct?: DataAwsBedrockCustomModelTrainingDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -112,8 +112,8 @@ export function dataAwsBedrockCustomModelTrainingDataConfigToTerraform(struct?: 
 
 
 export function dataAwsBedrockCustomModelTrainingDataConfigToHclTerraform(struct?: DataAwsBedrockCustomModelTrainingDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -121,7 +121,7 @@ export function dataAwsBedrockCustomModelTrainingDataConfigToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsBedrockCustomModelTrainingDataConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockCustomModelTrainingDataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -130,7 +130,7 @@ export class DataAwsBedrockCustomModelTrainingDataConfigOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -155,14 +155,14 @@ export class DataAwsBedrockCustomModelTrainingDataConfigOutputReference extends 
   }
 }
 
-export class DataAwsBedrockCustomModelTrainingDataConfigList extends cdktf.ComplexList {
+export class DataAwsBedrockCustomModelTrainingDataConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -177,8 +177,8 @@ export interface DataAwsBedrockCustomModelTrainingMetrics {
 }
 
 export function dataAwsBedrockCustomModelTrainingMetricsToTerraform(struct?: DataAwsBedrockCustomModelTrainingMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -187,8 +187,8 @@ export function dataAwsBedrockCustomModelTrainingMetricsToTerraform(struct?: Dat
 
 
 export function dataAwsBedrockCustomModelTrainingMetricsToHclTerraform(struct?: DataAwsBedrockCustomModelTrainingMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -196,7 +196,7 @@ export function dataAwsBedrockCustomModelTrainingMetricsToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsBedrockCustomModelTrainingMetricsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockCustomModelTrainingMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -205,7 +205,7 @@ export class DataAwsBedrockCustomModelTrainingMetricsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -230,14 +230,14 @@ export class DataAwsBedrockCustomModelTrainingMetricsOutputReference extends cdk
   }
 }
 
-export class DataAwsBedrockCustomModelTrainingMetricsList extends cdktf.ComplexList {
+export class DataAwsBedrockCustomModelTrainingMetricsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -252,8 +252,8 @@ export interface DataAwsBedrockCustomModelValidationDataConfigValidator {
 }
 
 export function dataAwsBedrockCustomModelValidationDataConfigValidatorToTerraform(struct?: DataAwsBedrockCustomModelValidationDataConfigValidator): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -262,8 +262,8 @@ export function dataAwsBedrockCustomModelValidationDataConfigValidatorToTerrafor
 
 
 export function dataAwsBedrockCustomModelValidationDataConfigValidatorToHclTerraform(struct?: DataAwsBedrockCustomModelValidationDataConfigValidator): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -271,7 +271,7 @@ export function dataAwsBedrockCustomModelValidationDataConfigValidatorToHclTerra
   return attrs;
 }
 
-export class DataAwsBedrockCustomModelValidationDataConfigValidatorOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockCustomModelValidationDataConfigValidatorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -280,7 +280,7 @@ export class DataAwsBedrockCustomModelValidationDataConfigValidatorOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -305,14 +305,14 @@ export class DataAwsBedrockCustomModelValidationDataConfigValidatorOutputReferen
   }
 }
 
-export class DataAwsBedrockCustomModelValidationDataConfigValidatorList extends cdktf.ComplexList {
+export class DataAwsBedrockCustomModelValidationDataConfigValidatorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -327,8 +327,8 @@ export interface DataAwsBedrockCustomModelValidationDataConfig {
 }
 
 export function dataAwsBedrockCustomModelValidationDataConfigToTerraform(struct?: DataAwsBedrockCustomModelValidationDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -337,8 +337,8 @@ export function dataAwsBedrockCustomModelValidationDataConfigToTerraform(struct?
 
 
 export function dataAwsBedrockCustomModelValidationDataConfigToHclTerraform(struct?: DataAwsBedrockCustomModelValidationDataConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -346,7 +346,7 @@ export function dataAwsBedrockCustomModelValidationDataConfigToHclTerraform(stru
   return attrs;
 }
 
-export class DataAwsBedrockCustomModelValidationDataConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockCustomModelValidationDataConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -355,7 +355,7 @@ export class DataAwsBedrockCustomModelValidationDataConfigOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -381,14 +381,14 @@ export class DataAwsBedrockCustomModelValidationDataConfigOutputReference extend
   }
 }
 
-export class DataAwsBedrockCustomModelValidationDataConfigList extends cdktf.ComplexList {
+export class DataAwsBedrockCustomModelValidationDataConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -403,8 +403,8 @@ export interface DataAwsBedrockCustomModelValidationMetrics {
 }
 
 export function dataAwsBedrockCustomModelValidationMetricsToTerraform(struct?: DataAwsBedrockCustomModelValidationMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -413,8 +413,8 @@ export function dataAwsBedrockCustomModelValidationMetricsToTerraform(struct?: D
 
 
 export function dataAwsBedrockCustomModelValidationMetricsToHclTerraform(struct?: DataAwsBedrockCustomModelValidationMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -422,7 +422,7 @@ export function dataAwsBedrockCustomModelValidationMetricsToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAwsBedrockCustomModelValidationMetricsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBedrockCustomModelValidationMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -431,7 +431,7 @@ export class DataAwsBedrockCustomModelValidationMetricsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -456,14 +456,14 @@ export class DataAwsBedrockCustomModelValidationMetricsOutputReference extends c
   }
 }
 
-export class DataAwsBedrockCustomModelValidationMetricsList extends cdktf.ComplexList {
+export class DataAwsBedrockCustomModelValidationMetricsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -478,7 +478,7 @@ export class DataAwsBedrockCustomModelValidationMetricsList extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_custom_model aws_bedrock_custom_model}
 */
-export class DataAwsBedrockCustomModel extends cdktf.TerraformDataSource {
+export class DataAwsBedrockCustomModel extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -489,14 +489,14 @@ export class DataAwsBedrockCustomModel extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBedrockCustomModel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBedrockCustomModel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockCustomModel to import
   * @param importFromId The id of the existing DataAwsBedrockCustomModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockCustomModel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_custom_model", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_custom_model", importId: importFromId, provider });
       }
 
   // ===========
@@ -545,7 +545,7 @@ export class DataAwsBedrockCustomModel extends cdktf.TerraformDataSource {
   }
 
   // hyperparameters - computed: true, optional: false, required: false
-  private _hyperparameters = new cdktf.StringMap(this, "hyperparameters");
+  private _hyperparameters = new cdktn.StringMap(this, "hyperparameters");
   public get hyperparameters() {
     return this._hyperparameters;
   }
@@ -566,7 +566,7 @@ export class DataAwsBedrockCustomModel extends cdktf.TerraformDataSource {
   }
 
   // job_tags - computed: true, optional: false, required: false
-  private _jobTags = new cdktf.StringMap(this, "job_tags");
+  private _jobTags = new cdktn.StringMap(this, "job_tags");
   public get jobTags() {
     return this._jobTags;
   }
@@ -600,7 +600,7 @@ export class DataAwsBedrockCustomModel extends cdktf.TerraformDataSource {
   }
 
   // model_tags - computed: true, optional: false, required: false
-  private _modelTags = new cdktf.StringMap(this, "model_tags");
+  private _modelTags = new cdktn.StringMap(this, "model_tags");
   public get modelTags() {
     return this._modelTags;
   }
@@ -657,21 +657,21 @@ export class DataAwsBedrockCustomModel extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      model_id: cdktf.stringToTerraform(this._modelId),
-      region: cdktf.stringToTerraform(this._region),
+      model_id: cdktn.stringToTerraform(this._modelId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       model_id: {
-        value: cdktf.stringToHclTerraform(this._modelId),
+        value: cdktn.stringToHclTerraform(this._modelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TransitGatewayPrefixListReferenceConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TransitGatewayPrefixListReferenceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_prefix_list_reference#blackhole Ec2TransitGatewayPrefixListReference#blackhole}
   */
-  readonly blackhole?: boolean | cdktf.IResolvable;
+  readonly blackhole?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_prefix_list_reference#id Ec2TransitGatewayPrefixListReference#id}
   *
@@ -46,7 +46,7 @@ export interface Ec2TransitGatewayPrefixListReferenceConfig extends cdktf.Terraf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference}
 */
-export class Ec2TransitGatewayPrefixListReference extends cdktf.TerraformResource {
+export class Ec2TransitGatewayPrefixListReference extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class Ec2TransitGatewayPrefixListReference extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TransitGatewayPrefixListReference resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TransitGatewayPrefixListReference resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TransitGatewayPrefixListReference to import
   * @param importFromId The id of the existing Ec2TransitGatewayPrefixListReference that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_prefix_list_reference#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TransitGatewayPrefixListReference to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_prefix_list_reference", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_prefix_list_reference", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,11 +107,11 @@ export class Ec2TransitGatewayPrefixListReference extends cdktf.TerraformResourc
   // ==========
 
   // blackhole - computed: false, optional: true, required: false
-  private _blackhole?: boolean | cdktf.IResolvable; 
+  private _blackhole?: boolean | cdktn.IResolvable; 
   public get blackhole() {
     return this.getBooleanAttribute('blackhole');
   }
-  public set blackhole(value: boolean | cdktf.IResolvable) {
+  public set blackhole(value: boolean | cdktn.IResolvable) {
     this._blackhole = value;
   }
   public resetBlackhole() {
@@ -207,49 +207,49 @@ export class Ec2TransitGatewayPrefixListReference extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      blackhole: cdktf.booleanToTerraform(this._blackhole),
-      id: cdktf.stringToTerraform(this._id),
-      prefix_list_id: cdktf.stringToTerraform(this._prefixListId),
-      region: cdktf.stringToTerraform(this._region),
-      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
-      transit_gateway_route_table_id: cdktf.stringToTerraform(this._transitGatewayRouteTableId),
+      blackhole: cdktn.booleanToTerraform(this._blackhole),
+      id: cdktn.stringToTerraform(this._id),
+      prefix_list_id: cdktn.stringToTerraform(this._prefixListId),
+      region: cdktn.stringToTerraform(this._region),
+      transit_gateway_attachment_id: cdktn.stringToTerraform(this._transitGatewayAttachmentId),
+      transit_gateway_route_table_id: cdktn.stringToTerraform(this._transitGatewayRouteTableId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       blackhole: {
-        value: cdktf.booleanToHclTerraform(this._blackhole),
+        value: cdktn.booleanToHclTerraform(this._blackhole),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prefix_list_id: {
-        value: cdktf.stringToHclTerraform(this._prefixListId),
+        value: cdktn.stringToHclTerraform(this._prefixListId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_attachment_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayAttachmentId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayAttachmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_route_table_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayRouteTableId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayRouteTableId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

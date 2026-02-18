@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DocdbClusterInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface DocdbClusterInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}
   */
-  readonly applyImmediately?: boolean | cdktf.IResolvable;
+  readonly applyImmediately?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
+  readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}
   */
@@ -39,11 +39,11 @@ export interface DocdbClusterInstanceConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}
   */
-  readonly copyTagsToSnapshot?: boolean | cdktf.IResolvable;
+  readonly copyTagsToSnapshot?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}
   */
-  readonly enablePerformanceInsights?: boolean | cdktf.IResolvable;
+  readonly enablePerformanceInsights?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}
   */
@@ -115,39 +115,39 @@ export interface DocdbClusterInstanceTimeouts {
   readonly update?: string;
 }
 
-export function docdbClusterInstanceTimeoutsToTerraform(struct?: DocdbClusterInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function docdbClusterInstanceTimeoutsToTerraform(struct?: DocdbClusterInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function docdbClusterInstanceTimeoutsToHclTerraform(struct?: DocdbClusterInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function docdbClusterInstanceTimeoutsToHclTerraform(struct?: DocdbClusterInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -158,19 +158,19 @@ export function docdbClusterInstanceTimeoutsToHclTerraform(struct?: DocdbCluster
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocdbClusterInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DocdbClusterInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DocdbClusterInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DocdbClusterInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -191,7 +191,7 @@ export class DocdbClusterInstanceTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DocdbClusterInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DocdbClusterInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -199,7 +199,7 @@ export class DocdbClusterInstanceTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -264,7 +264,7 @@ export class DocdbClusterInstanceTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}
 */
-export class DocdbClusterInstance extends cdktf.TerraformResource {
+export class DocdbClusterInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -275,14 +275,14 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DocdbClusterInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DocdbClusterInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DocdbClusterInstance to import
   * @param importFromId The id of the existing DocdbClusterInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_cluster_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DocdbClusterInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_cluster_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_cluster_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -339,11 +339,11 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
   // ==========
 
   // apply_immediately - computed: false, optional: true, required: false
-  private _applyImmediately?: boolean | cdktf.IResolvable; 
+  private _applyImmediately?: boolean | cdktn.IResolvable; 
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | cdktf.IResolvable) {
+  public set applyImmediately(value: boolean | cdktn.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -360,11 +360,11 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable; 
+  private _autoMinorVersionUpgrade?: boolean | cdktn.IResolvable; 
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktn.IResolvable) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -437,11 +437,11 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
-  private _copyTagsToSnapshot?: boolean | cdktf.IResolvable; 
+  private _copyTagsToSnapshot?: boolean | cdktn.IResolvable; 
   public get copyTagsToSnapshot() {
     return this.getBooleanAttribute('copy_tags_to_snapshot');
   }
-  public set copyTagsToSnapshot(value: boolean | cdktf.IResolvable) {
+  public set copyTagsToSnapshot(value: boolean | cdktn.IResolvable) {
     this._copyTagsToSnapshot = value;
   }
   public resetCopyTagsToSnapshot() {
@@ -463,11 +463,11 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
   }
 
   // enable_performance_insights - computed: false, optional: true, required: false
-  private _enablePerformanceInsights?: boolean | cdktf.IResolvable; 
+  private _enablePerformanceInsights?: boolean | cdktn.IResolvable; 
   public get enablePerformanceInsights() {
     return this.getBooleanAttribute('enable_performance_insights');
   }
-  public set enablePerformanceInsights(value: boolean | cdktf.IResolvable) {
+  public set enablePerformanceInsights(value: boolean | cdktn.IResolvable) {
     this._enablePerformanceInsights = value;
   }
   public resetEnablePerformanceInsights() {
@@ -713,25 +713,25 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
-      certificate_rotation_restart: cdktf.stringToTerraform(this._certificateRotationRestart),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
-      enable_performance_insights: cdktf.booleanToTerraform(this._enablePerformanceInsights),
-      engine: cdktf.stringToTerraform(this._engine),
-      id: cdktf.stringToTerraform(this._id),
-      identifier: cdktf.stringToTerraform(this._identifier),
-      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
-      instance_class: cdktf.stringToTerraform(this._instanceClass),
-      performance_insights_kms_key_id: cdktf.stringToTerraform(this._performanceInsightsKmsKeyId),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      promotion_tier: cdktf.numberToTerraform(this._promotionTier),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      apply_immediately: cdktn.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktn.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      ca_cert_identifier: cdktn.stringToTerraform(this._caCertIdentifier),
+      certificate_rotation_restart: cdktn.stringToTerraform(this._certificateRotationRestart),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      copy_tags_to_snapshot: cdktn.booleanToTerraform(this._copyTagsToSnapshot),
+      enable_performance_insights: cdktn.booleanToTerraform(this._enablePerformanceInsights),
+      engine: cdktn.stringToTerraform(this._engine),
+      id: cdktn.stringToTerraform(this._id),
+      identifier: cdktn.stringToTerraform(this._identifier),
+      identifier_prefix: cdktn.stringToTerraform(this._identifierPrefix),
+      instance_class: cdktn.stringToTerraform(this._instanceClass),
+      performance_insights_kms_key_id: cdktn.stringToTerraform(this._performanceInsightsKmsKeyId),
+      preferred_maintenance_window: cdktn.stringToTerraform(this._preferredMaintenanceWindow),
+      promotion_tier: cdktn.numberToTerraform(this._promotionTier),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: docdbClusterInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -739,115 +739,115 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_immediately: {
-        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        value: cdktn.booleanToHclTerraform(this._applyImmediately),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_minor_version_upgrade: {
-        value: cdktf.booleanToHclTerraform(this._autoMinorVersionUpgrade),
+        value: cdktn.booleanToHclTerraform(this._autoMinorVersionUpgrade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ca_cert_identifier: {
-        value: cdktf.stringToHclTerraform(this._caCertIdentifier),
+        value: cdktn.stringToHclTerraform(this._caCertIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_rotation_restart: {
-        value: cdktf.stringToHclTerraform(this._certificateRotationRestart),
+        value: cdktn.stringToHclTerraform(this._certificateRotationRestart),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_tags_to_snapshot: {
-        value: cdktf.booleanToHclTerraform(this._copyTagsToSnapshot),
+        value: cdktn.booleanToHclTerraform(this._copyTagsToSnapshot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_performance_insights: {
-        value: cdktf.booleanToHclTerraform(this._enablePerformanceInsights),
+        value: cdktn.booleanToHclTerraform(this._enablePerformanceInsights),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identifier: {
-        value: cdktf.stringToHclTerraform(this._identifier),
+        value: cdktn.stringToHclTerraform(this._identifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identifier_prefix: {
-        value: cdktf.stringToHclTerraform(this._identifierPrefix),
+        value: cdktn.stringToHclTerraform(this._identifierPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_class: {
-        value: cdktf.stringToHclTerraform(this._instanceClass),
+        value: cdktn.stringToHclTerraform(this._instanceClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       performance_insights_kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._performanceInsightsKmsKeyId),
+        value: cdktn.stringToHclTerraform(this._performanceInsightsKmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_maintenance_window: {
-        value: cdktf.stringToHclTerraform(this._preferredMaintenanceWindow),
+        value: cdktn.stringToHclTerraform(this._preferredMaintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       promotion_tier: {
-        value: cdktf.numberToHclTerraform(this._promotionTier),
+        value: cdktn.numberToHclTerraform(this._promotionTier),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

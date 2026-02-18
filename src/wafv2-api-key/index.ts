@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Wafv2ApiKeyConfig extends cdktf.TerraformMetaArguments {
+export interface Wafv2ApiKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -35,7 +35,7 @@ export interface Wafv2ApiKeyConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_api_key aws_wafv2_api_key}
 */
-export class Wafv2ApiKey extends cdktf.TerraformResource {
+export class Wafv2ApiKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class Wafv2ApiKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Wafv2ApiKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Wafv2ApiKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Wafv2ApiKey to import
   * @param importFromId The id of the existing Wafv2ApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/wafv2_api_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Wafv2ApiKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_api_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_api_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,7 +129,7 @@ export class Wafv2ApiKey extends cdktf.TerraformResource {
   // token_domains - computed: false, optional: false, required: true
   private _tokenDomains?: string[]; 
   public get tokenDomains() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_domains'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_domains'));
   }
   public set tokenDomains(value: string[]) {
     this._tokenDomains = value;
@@ -145,28 +145,28 @@ export class Wafv2ApiKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      scope: cdktf.stringToTerraform(this._scope),
-      token_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenDomains),
+      region: cdktn.stringToTerraform(this._region),
+      scope: cdktn.stringToTerraform(this._scope),
+      token_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenDomains),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenDomains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenDomains),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

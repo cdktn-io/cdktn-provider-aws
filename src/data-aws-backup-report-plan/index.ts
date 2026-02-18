@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBackupReportPlanConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBackupReportPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/backup_report_plan#id DataAwsBackupReportPlan#id}
   *
@@ -38,8 +38,8 @@ export interface DataAwsBackupReportPlanReportDeliveryChannel {
 }
 
 export function dataAwsBackupReportPlanReportDeliveryChannelToTerraform(struct?: DataAwsBackupReportPlanReportDeliveryChannel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAwsBackupReportPlanReportDeliveryChannelToTerraform(struct?:
 
 
 export function dataAwsBackupReportPlanReportDeliveryChannelToHclTerraform(struct?: DataAwsBackupReportPlanReportDeliveryChannel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAwsBackupReportPlanReportDeliveryChannelToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsBackupReportPlanReportDeliveryChannelOutputReference extends cdktf.ComplexObject {
+export class DataAwsBackupReportPlanReportDeliveryChannelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAwsBackupReportPlanReportDeliveryChannelOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -87,7 +87,7 @@ export class DataAwsBackupReportPlanReportDeliveryChannelOutputReference extends
 
   // formats - computed: true, optional: false, required: false
   public get formats() {
-    return cdktf.Fn.tolist(this.getListAttribute('formats'));
+    return cdktn.Fn.tolist(this.getListAttribute('formats'));
   }
 
   // s3_bucket_name - computed: true, optional: false, required: false
@@ -101,14 +101,14 @@ export class DataAwsBackupReportPlanReportDeliveryChannelOutputReference extends
   }
 }
 
-export class DataAwsBackupReportPlanReportDeliveryChannelList extends cdktf.ComplexList {
+export class DataAwsBackupReportPlanReportDeliveryChannelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -123,8 +123,8 @@ export interface DataAwsBackupReportPlanReportSetting {
 }
 
 export function dataAwsBackupReportPlanReportSettingToTerraform(struct?: DataAwsBackupReportPlanReportSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -133,8 +133,8 @@ export function dataAwsBackupReportPlanReportSettingToTerraform(struct?: DataAws
 
 
 export function dataAwsBackupReportPlanReportSettingToHclTerraform(struct?: DataAwsBackupReportPlanReportSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -142,7 +142,7 @@ export function dataAwsBackupReportPlanReportSettingToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsBackupReportPlanReportSettingOutputReference extends cdktf.ComplexObject {
+export class DataAwsBackupReportPlanReportSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -151,7 +151,7 @@ export class DataAwsBackupReportPlanReportSettingOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -172,12 +172,12 @@ export class DataAwsBackupReportPlanReportSettingOutputReference extends cdktf.C
 
   // accounts - computed: true, optional: false, required: false
   public get accounts() {
-    return cdktf.Fn.tolist(this.getListAttribute('accounts'));
+    return cdktn.Fn.tolist(this.getListAttribute('accounts'));
   }
 
   // framework_arns - computed: true, optional: false, required: false
   public get frameworkArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('framework_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('framework_arns'));
   }
 
   // number_of_frameworks - computed: true, optional: false, required: false
@@ -187,12 +187,12 @@ export class DataAwsBackupReportPlanReportSettingOutputReference extends cdktf.C
 
   // organization_units - computed: true, optional: false, required: false
   public get organizationUnits() {
-    return cdktf.Fn.tolist(this.getListAttribute('organization_units'));
+    return cdktn.Fn.tolist(this.getListAttribute('organization_units'));
   }
 
   // regions - computed: true, optional: false, required: false
   public get regions() {
-    return cdktf.Fn.tolist(this.getListAttribute('regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('regions'));
   }
 
   // report_template - computed: true, optional: false, required: false
@@ -201,14 +201,14 @@ export class DataAwsBackupReportPlanReportSettingOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsBackupReportPlanReportSettingList extends cdktf.ComplexList {
+export class DataAwsBackupReportPlanReportSettingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -223,7 +223,7 @@ export class DataAwsBackupReportPlanReportSettingList extends cdktf.ComplexList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/backup_report_plan aws_backup_report_plan}
 */
-export class DataAwsBackupReportPlan extends cdktf.TerraformDataSource {
+export class DataAwsBackupReportPlan extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -234,14 +234,14 @@ export class DataAwsBackupReportPlan extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBackupReportPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBackupReportPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBackupReportPlan to import
   * @param importFromId The id of the existing DataAwsBackupReportPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/backup_report_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBackupReportPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_report_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_report_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -380,35 +380,35 @@ export class DataAwsBackupReportPlan extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

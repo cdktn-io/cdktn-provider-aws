@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsMqBrokerInstanceTypeOfferingsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsMqBrokerInstanceTypeOfferingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/mq_broker_instance_type_offerings#engine_type DataAwsMqBrokerInstanceTypeOfferings#engine_type}
   */
@@ -42,8 +42,8 @@ export interface DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvaila
 }
 
 export function dataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesToTerraform(struct?: DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZones): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailab
 
 
 export function dataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesToHclTerraform(struct?: DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZones): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailab
   return attrs;
 }
 
-export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesOutputReference extends cdktf.ComplexObject {
+export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabili
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -95,14 +95,14 @@ export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabili
   }
 }
 
-export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesList extends cdktf.ComplexList {
+export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -117,8 +117,8 @@ export interface DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptions {
 }
 
 export function dataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsToTerraform(struct?: DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -127,8 +127,8 @@ export function dataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsToTerra
 
 
 export function dataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsToHclTerraform(struct?: DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -136,7 +136,7 @@ export function dataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsToHclTe
   return attrs;
 }
 
-export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -145,7 +145,7 @@ export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -187,7 +187,7 @@ export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputRefe
 
   // supported_deployment_modes - computed: true, optional: false, required: false
   public get supportedDeploymentModes() {
-    return cdktf.Fn.tolist(this.getListAttribute('supported_deployment_modes'));
+    return cdktn.Fn.tolist(this.getListAttribute('supported_deployment_modes'));
   }
 
   // supported_engine_versions - computed: true, optional: false, required: false
@@ -196,14 +196,14 @@ export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputRefe
   }
 }
 
-export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList extends cdktf.ComplexList {
+export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -218,7 +218,7 @@ export class DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings}
 */
-export class DataAwsMqBrokerInstanceTypeOfferings extends cdktf.TerraformDataSource {
+export class DataAwsMqBrokerInstanceTypeOfferings extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -229,14 +229,14 @@ export class DataAwsMqBrokerInstanceTypeOfferings extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsMqBrokerInstanceTypeOfferings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsMqBrokerInstanceTypeOfferings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsMqBrokerInstanceTypeOfferings to import
   * @param importFromId The id of the existing DataAwsMqBrokerInstanceTypeOfferings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/mq_broker_instance_type_offerings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsMqBrokerInstanceTypeOfferings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_mq_broker_instance_type_offerings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_mq_broker_instance_type_offerings", importId: importFromId, provider });
       }
 
   // ===========
@@ -369,42 +369,42 @@ export class DataAwsMqBrokerInstanceTypeOfferings extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine_type: cdktf.stringToTerraform(this._engineType),
-      host_instance_type: cdktf.stringToTerraform(this._hostInstanceType),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      storage_type: cdktf.stringToTerraform(this._storageType),
+      engine_type: cdktn.stringToTerraform(this._engineType),
+      host_instance_type: cdktn.stringToTerraform(this._hostInstanceType),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      storage_type: cdktn.stringToTerraform(this._storageType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       engine_type: {
-        value: cdktf.stringToHclTerraform(this._engineType),
+        value: cdktn.stringToHclTerraform(this._engineType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_instance_type: {
-        value: cdktf.stringToHclTerraform(this._hostInstanceType),
+        value: cdktn.stringToHclTerraform(this._hostInstanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_type: {
-        value: cdktf.stringToHclTerraform(this._storageType),
+        value: cdktn.stringToHclTerraform(this._storageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

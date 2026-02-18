@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GuarddutyPublishingDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface GuarddutyPublishingDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_publishing_destination#destination_arn GuarddutyPublishingDestination#destination_arn}
   */
@@ -46,7 +46,7 @@ export interface GuarddutyPublishingDestinationConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination}
 */
-export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
+export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GuarddutyPublishingDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GuarddutyPublishingDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyPublishingDestination to import
   * @param importFromId The id of the existing GuarddutyPublishingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/guardduty_publishing_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyPublishingDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_publishing_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_guardduty_publishing_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -199,49 +199,49 @@ export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_arn: cdktf.stringToTerraform(this._destinationArn),
-      destination_type: cdktf.stringToTerraform(this._destinationType),
-      detector_id: cdktf.stringToTerraform(this._detectorId),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      region: cdktf.stringToTerraform(this._region),
+      destination_arn: cdktn.stringToTerraform(this._destinationArn),
+      destination_type: cdktn.stringToTerraform(this._destinationType),
+      detector_id: cdktn.stringToTerraform(this._detectorId),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination_arn: {
-        value: cdktf.stringToHclTerraform(this._destinationArn),
+        value: cdktn.stringToHclTerraform(this._destinationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_type: {
-        value: cdktf.stringToHclTerraform(this._destinationType),
+        value: cdktn.stringToHclTerraform(this._destinationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       detector_id: {
-        value: cdktf.stringToHclTerraform(this._detectorId),
+        value: cdktn.stringToHclTerraform(this._detectorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

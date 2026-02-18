@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudfrontFunctionConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontFunctionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_function#code CloudfrontFunction#code}
   */
@@ -38,7 +38,7 @@ export interface CloudfrontFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}
   */
-  readonly publish?: boolean | cdktf.IResolvable;
+  readonly publish?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}
   */
@@ -48,7 +48,7 @@ export interface CloudfrontFunctionConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_function aws_cloudfront_function}
 */
-export class CloudfrontFunction extends cdktf.TerraformResource {
+export class CloudfrontFunction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudfrontFunction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudfrontFunction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontFunction to import
   * @param importFromId The id of the existing CloudfrontFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontFunction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_function", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_function", importId: importFromId, provider });
       }
 
   // ===========
@@ -167,7 +167,7 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
   // key_value_store_associations - computed: false, optional: true, required: false
   private _keyValueStoreAssociations?: string[]; 
   public get keyValueStoreAssociations() {
-    return cdktf.Fn.tolist(this.getListAttribute('key_value_store_associations'));
+    return cdktn.Fn.tolist(this.getListAttribute('key_value_store_associations'));
   }
   public set keyValueStoreAssociations(value: string[]) {
     this._keyValueStoreAssociations = value;
@@ -199,11 +199,11 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
   }
 
   // publish - computed: false, optional: true, required: false
-  private _publish?: boolean | cdktf.IResolvable; 
+  private _publish?: boolean | cdktn.IResolvable; 
   public get publish() {
     return this.getBooleanAttribute('publish');
   }
-  public set publish(value: boolean | cdktf.IResolvable) {
+  public set publish(value: boolean | cdktn.IResolvable) {
     this._publish = value;
   }
   public resetPublish() {
@@ -238,56 +238,56 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      code: cdktf.stringToTerraform(this._code),
-      comment: cdktf.stringToTerraform(this._comment),
-      id: cdktf.stringToTerraform(this._id),
-      key_value_store_associations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keyValueStoreAssociations),
-      name: cdktf.stringToTerraform(this._name),
-      publish: cdktf.booleanToTerraform(this._publish),
-      runtime: cdktf.stringToTerraform(this._runtime),
+      code: cdktn.stringToTerraform(this._code),
+      comment: cdktn.stringToTerraform(this._comment),
+      id: cdktn.stringToTerraform(this._id),
+      key_value_store_associations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._keyValueStoreAssociations),
+      name: cdktn.stringToTerraform(this._name),
+      publish: cdktn.booleanToTerraform(this._publish),
+      runtime: cdktn.stringToTerraform(this._runtime),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       code: {
-        value: cdktf.stringToHclTerraform(this._code),
+        value: cdktn.stringToHclTerraform(this._code),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_value_store_associations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keyValueStoreAssociations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._keyValueStoreAssociations),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publish: {
-        value: cdktf.booleanToHclTerraform(this._publish),
+        value: cdktn.booleanToHclTerraform(this._publish),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       runtime: {
-        value: cdktf.stringToHclTerraform(this._runtime),
+        value: cdktn.stringToHclTerraform(this._runtime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

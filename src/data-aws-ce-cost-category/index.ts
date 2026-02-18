@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCeCostCategoryConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCeCostCategoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ce_cost_category#cost_category_arn DataAwsCeCostCategory#cost_category_arn}
   */
@@ -32,8 +32,8 @@ export interface DataAwsCeCostCategoryRuleInheritedValue {
 }
 
 export function dataAwsCeCostCategoryRuleInheritedValueToTerraform(struct?: DataAwsCeCostCategoryRuleInheritedValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -42,8 +42,8 @@ export function dataAwsCeCostCategoryRuleInheritedValueToTerraform(struct?: Data
 
 
 export function dataAwsCeCostCategoryRuleInheritedValueToHclTerraform(struct?: DataAwsCeCostCategoryRuleInheritedValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,7 +51,7 @@ export function dataAwsCeCostCategoryRuleInheritedValueToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleInheritedValueOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleInheritedValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -60,7 +60,7 @@ export class DataAwsCeCostCategoryRuleInheritedValueOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -90,14 +90,14 @@ export class DataAwsCeCostCategoryRuleInheritedValueOutputReference extends cdkt
   }
 }
 
-export class DataAwsCeCostCategoryRuleInheritedValueList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleInheritedValueList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -112,8 +112,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndAndCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndAndCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -122,8 +122,8 @@ export function dataAwsCeCostCategoryRuleRuleAndAndCostCategoryToTerraform(struc
 
 
 export function dataAwsCeCostCategoryRuleRuleAndAndCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -131,7 +131,7 @@ export function dataAwsCeCostCategoryRuleRuleAndAndCostCategoryToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -140,7 +140,7 @@ export class DataAwsCeCostCategoryRuleRuleAndAndCostCategoryOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -166,23 +166,23 @@ export class DataAwsCeCostCategoryRuleRuleAndAndCostCategoryOutputReference exte
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndAndCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndAndCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -197,8 +197,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndAndDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndAndDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -207,8 +207,8 @@ export function dataAwsCeCostCategoryRuleRuleAndAndDimensionToTerraform(struct?:
 
 
 export function dataAwsCeCostCategoryRuleRuleAndAndDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -216,7 +216,7 @@ export function dataAwsCeCostCategoryRuleRuleAndAndDimensionToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndAndDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -225,7 +225,7 @@ export class DataAwsCeCostCategoryRuleRuleAndAndDimensionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -251,23 +251,23 @@ export class DataAwsCeCostCategoryRuleRuleAndAndDimensionOutputReference extends
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndAndDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndAndDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -282,8 +282,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndAndTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndAndTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -292,8 +292,8 @@ export function dataAwsCeCostCategoryRuleRuleAndAndTagsToTerraform(struct?: Data
 
 
 export function dataAwsCeCostCategoryRuleRuleAndAndTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -301,7 +301,7 @@ export function dataAwsCeCostCategoryRuleRuleAndAndTagsToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndAndTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -310,7 +310,7 @@ export class DataAwsCeCostCategoryRuleRuleAndAndTagsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -336,23 +336,23 @@ export class DataAwsCeCostCategoryRuleRuleAndAndTagsOutputReference extends cdkt
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndAndTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndAndTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -367,8 +367,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndAnd {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndAndToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -377,8 +377,8 @@ export function dataAwsCeCostCategoryRuleRuleAndAndToTerraform(struct?: DataAwsC
 
 
 export function dataAwsCeCostCategoryRuleRuleAndAndToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndAnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -386,7 +386,7 @@ export function dataAwsCeCostCategoryRuleRuleAndAndToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndAndOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -395,7 +395,7 @@ export class DataAwsCeCostCategoryRuleRuleAndAndOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -433,14 +433,14 @@ export class DataAwsCeCostCategoryRuleRuleAndAndOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndAndList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndAndList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -455,8 +455,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -465,8 +465,8 @@ export function dataAwsCeCostCategoryRuleRuleAndCostCategoryToTerraform(struct?:
 
 
 export function dataAwsCeCostCategoryRuleRuleAndCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -474,7 +474,7 @@ export function dataAwsCeCostCategoryRuleRuleAndCostCategoryToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -483,7 +483,7 @@ export class DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -509,23 +509,23 @@ export class DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference extends
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -540,8 +540,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -550,8 +550,8 @@ export function dataAwsCeCostCategoryRuleRuleAndDimensionToTerraform(struct?: Da
 
 
 export function dataAwsCeCostCategoryRuleRuleAndDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -559,7 +559,7 @@ export function dataAwsCeCostCategoryRuleRuleAndDimensionToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -568,7 +568,7 @@ export class DataAwsCeCostCategoryRuleRuleAndDimensionOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -594,23 +594,23 @@ export class DataAwsCeCostCategoryRuleRuleAndDimensionOutputReference extends cd
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -625,8 +625,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndNotCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndNotCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -635,8 +635,8 @@ export function dataAwsCeCostCategoryRuleRuleAndNotCostCategoryToTerraform(struc
 
 
 export function dataAwsCeCostCategoryRuleRuleAndNotCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -644,7 +644,7 @@ export function dataAwsCeCostCategoryRuleRuleAndNotCostCategoryToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -653,7 +653,7 @@ export class DataAwsCeCostCategoryRuleRuleAndNotCostCategoryOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -679,23 +679,23 @@ export class DataAwsCeCostCategoryRuleRuleAndNotCostCategoryOutputReference exte
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndNotCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndNotCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -710,8 +710,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndNotDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndNotDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -720,8 +720,8 @@ export function dataAwsCeCostCategoryRuleRuleAndNotDimensionToTerraform(struct?:
 
 
 export function dataAwsCeCostCategoryRuleRuleAndNotDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -729,7 +729,7 @@ export function dataAwsCeCostCategoryRuleRuleAndNotDimensionToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndNotDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -738,7 +738,7 @@ export class DataAwsCeCostCategoryRuleRuleAndNotDimensionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -764,23 +764,23 @@ export class DataAwsCeCostCategoryRuleRuleAndNotDimensionOutputReference extends
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndNotDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndNotDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -795,8 +795,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndNotTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndNotTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -805,8 +805,8 @@ export function dataAwsCeCostCategoryRuleRuleAndNotTagsToTerraform(struct?: Data
 
 
 export function dataAwsCeCostCategoryRuleRuleAndNotTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -814,7 +814,7 @@ export function dataAwsCeCostCategoryRuleRuleAndNotTagsToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndNotTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -823,7 +823,7 @@ export class DataAwsCeCostCategoryRuleRuleAndNotTagsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -849,23 +849,23 @@ export class DataAwsCeCostCategoryRuleRuleAndNotTagsOutputReference extends cdkt
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndNotTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndNotTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -880,8 +880,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndNot {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndNotToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -890,8 +890,8 @@ export function dataAwsCeCostCategoryRuleRuleAndNotToTerraform(struct?: DataAwsC
 
 
 export function dataAwsCeCostCategoryRuleRuleAndNotToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -899,7 +899,7 @@ export function dataAwsCeCostCategoryRuleRuleAndNotToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndNotOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -908,7 +908,7 @@ export class DataAwsCeCostCategoryRuleRuleAndNotOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -946,14 +946,14 @@ export class DataAwsCeCostCategoryRuleRuleAndNotOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndNotList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndNotList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -968,8 +968,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndOrCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndOrCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -978,8 +978,8 @@ export function dataAwsCeCostCategoryRuleRuleAndOrCostCategoryToTerraform(struct
 
 
 export function dataAwsCeCostCategoryRuleRuleAndOrCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -987,7 +987,7 @@ export function dataAwsCeCostCategoryRuleRuleAndOrCostCategoryToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -996,7 +996,7 @@ export class DataAwsCeCostCategoryRuleRuleAndOrCostCategoryOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1022,23 +1022,23 @@ export class DataAwsCeCostCategoryRuleRuleAndOrCostCategoryOutputReference exten
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndOrCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndOrCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1053,8 +1053,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndOrDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndOrDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1063,8 +1063,8 @@ export function dataAwsCeCostCategoryRuleRuleAndOrDimensionToTerraform(struct?: 
 
 
 export function dataAwsCeCostCategoryRuleRuleAndOrDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1072,7 +1072,7 @@ export function dataAwsCeCostCategoryRuleRuleAndOrDimensionToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndOrDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1081,7 +1081,7 @@ export class DataAwsCeCostCategoryRuleRuleAndOrDimensionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1107,23 +1107,23 @@ export class DataAwsCeCostCategoryRuleRuleAndOrDimensionOutputReference extends 
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndOrDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndOrDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1138,8 +1138,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndOrTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndOrTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1148,8 +1148,8 @@ export function dataAwsCeCostCategoryRuleRuleAndOrTagsToTerraform(struct?: DataA
 
 
 export function dataAwsCeCostCategoryRuleRuleAndOrTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1157,7 +1157,7 @@ export function dataAwsCeCostCategoryRuleRuleAndOrTagsToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndOrTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1166,7 +1166,7 @@ export class DataAwsCeCostCategoryRuleRuleAndOrTagsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1192,23 +1192,23 @@ export class DataAwsCeCostCategoryRuleRuleAndOrTagsOutputReference extends cdktf
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndOrTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndOrTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1223,8 +1223,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndOr {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndOrToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1233,8 +1233,8 @@ export function dataAwsCeCostCategoryRuleRuleAndOrToTerraform(struct?: DataAwsCe
 
 
 export function dataAwsCeCostCategoryRuleRuleAndOrToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndOr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1242,7 +1242,7 @@ export function dataAwsCeCostCategoryRuleRuleAndOrToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndOrOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1251,7 +1251,7 @@ export class DataAwsCeCostCategoryRuleRuleAndOrOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1289,14 +1289,14 @@ export class DataAwsCeCostCategoryRuleRuleAndOrOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndOrList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndOrList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1311,8 +1311,8 @@ export interface DataAwsCeCostCategoryRuleRuleAndTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1321,8 +1321,8 @@ export function dataAwsCeCostCategoryRuleRuleAndTagsToTerraform(struct?: DataAws
 
 
 export function dataAwsCeCostCategoryRuleRuleAndTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1330,7 +1330,7 @@ export function dataAwsCeCostCategoryRuleRuleAndTagsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1339,7 +1339,7 @@ export class DataAwsCeCostCategoryRuleRuleAndTagsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1365,23 +1365,23 @@ export class DataAwsCeCostCategoryRuleRuleAndTagsOutputReference extends cdktf.C
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1396,8 +1396,8 @@ export interface DataAwsCeCostCategoryRuleRuleAnd {
 }
 
 export function dataAwsCeCostCategoryRuleRuleAndToTerraform(struct?: DataAwsCeCostCategoryRuleRuleAnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1406,8 +1406,8 @@ export function dataAwsCeCostCategoryRuleRuleAndToTerraform(struct?: DataAwsCeCo
 
 
 export function dataAwsCeCostCategoryRuleRuleAndToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1415,7 +1415,7 @@ export function dataAwsCeCostCategoryRuleRuleAndToHclTerraform(struct?: DataAwsC
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1424,7 +1424,7 @@ export class DataAwsCeCostCategoryRuleRuleAndOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1480,14 +1480,14 @@ export class DataAwsCeCostCategoryRuleRuleAndOutputReference extends cdktf.Compl
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleAndList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleAndList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1502,8 +1502,8 @@ export interface DataAwsCeCostCategoryRuleRuleCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1512,8 +1512,8 @@ export function dataAwsCeCostCategoryRuleRuleCostCategoryToTerraform(struct?: Da
 
 
 export function dataAwsCeCostCategoryRuleRuleCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1521,7 +1521,7 @@ export function dataAwsCeCostCategoryRuleRuleCostCategoryToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1530,7 +1530,7 @@ export class DataAwsCeCostCategoryRuleRuleCostCategoryOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1556,23 +1556,23 @@ export class DataAwsCeCostCategoryRuleRuleCostCategoryOutputReference extends cd
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1587,8 +1587,8 @@ export interface DataAwsCeCostCategoryRuleRuleDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1597,8 +1597,8 @@ export function dataAwsCeCostCategoryRuleRuleDimensionToTerraform(struct?: DataA
 
 
 export function dataAwsCeCostCategoryRuleRuleDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1606,7 +1606,7 @@ export function dataAwsCeCostCategoryRuleRuleDimensionToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1615,7 +1615,7 @@ export class DataAwsCeCostCategoryRuleRuleDimensionOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1641,23 +1641,23 @@ export class DataAwsCeCostCategoryRuleRuleDimensionOutputReference extends cdktf
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1672,8 +1672,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotAndCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotAndCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1682,8 +1682,8 @@ export function dataAwsCeCostCategoryRuleRuleNotAndCostCategoryToTerraform(struc
 
 
 export function dataAwsCeCostCategoryRuleRuleNotAndCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1691,7 +1691,7 @@ export function dataAwsCeCostCategoryRuleRuleNotAndCostCategoryToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1700,7 +1700,7 @@ export class DataAwsCeCostCategoryRuleRuleNotAndCostCategoryOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1726,23 +1726,23 @@ export class DataAwsCeCostCategoryRuleRuleNotAndCostCategoryOutputReference exte
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotAndCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotAndCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1757,8 +1757,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotAndDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotAndDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1767,8 +1767,8 @@ export function dataAwsCeCostCategoryRuleRuleNotAndDimensionToTerraform(struct?:
 
 
 export function dataAwsCeCostCategoryRuleRuleNotAndDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1776,7 +1776,7 @@ export function dataAwsCeCostCategoryRuleRuleNotAndDimensionToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotAndDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1785,7 +1785,7 @@ export class DataAwsCeCostCategoryRuleRuleNotAndDimensionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1811,23 +1811,23 @@ export class DataAwsCeCostCategoryRuleRuleNotAndDimensionOutputReference extends
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotAndDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotAndDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1842,8 +1842,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotAndTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotAndTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1852,8 +1852,8 @@ export function dataAwsCeCostCategoryRuleRuleNotAndTagsToTerraform(struct?: Data
 
 
 export function dataAwsCeCostCategoryRuleRuleNotAndTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1861,7 +1861,7 @@ export function dataAwsCeCostCategoryRuleRuleNotAndTagsToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotAndTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1870,7 +1870,7 @@ export class DataAwsCeCostCategoryRuleRuleNotAndTagsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1896,23 +1896,23 @@ export class DataAwsCeCostCategoryRuleRuleNotAndTagsOutputReference extends cdkt
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotAndTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotAndTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1927,8 +1927,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotAnd {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotAndToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1937,8 +1937,8 @@ export function dataAwsCeCostCategoryRuleRuleNotAndToTerraform(struct?: DataAwsC
 
 
 export function dataAwsCeCostCategoryRuleRuleNotAndToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotAnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1946,7 +1946,7 @@ export function dataAwsCeCostCategoryRuleRuleNotAndToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotAndOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1955,7 +1955,7 @@ export class DataAwsCeCostCategoryRuleRuleNotAndOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1993,14 +1993,14 @@ export class DataAwsCeCostCategoryRuleRuleNotAndOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotAndList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotAndList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2015,8 +2015,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2025,8 +2025,8 @@ export function dataAwsCeCostCategoryRuleRuleNotCostCategoryToTerraform(struct?:
 
 
 export function dataAwsCeCostCategoryRuleRuleNotCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2034,7 +2034,7 @@ export function dataAwsCeCostCategoryRuleRuleNotCostCategoryToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2043,7 +2043,7 @@ export class DataAwsCeCostCategoryRuleRuleNotCostCategoryOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2069,23 +2069,23 @@ export class DataAwsCeCostCategoryRuleRuleNotCostCategoryOutputReference extends
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2100,8 +2100,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2110,8 +2110,8 @@ export function dataAwsCeCostCategoryRuleRuleNotDimensionToTerraform(struct?: Da
 
 
 export function dataAwsCeCostCategoryRuleRuleNotDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2119,7 +2119,7 @@ export function dataAwsCeCostCategoryRuleRuleNotDimensionToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2128,7 +2128,7 @@ export class DataAwsCeCostCategoryRuleRuleNotDimensionOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2154,23 +2154,23 @@ export class DataAwsCeCostCategoryRuleRuleNotDimensionOutputReference extends cd
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2185,8 +2185,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotNotCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotNotCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2195,8 +2195,8 @@ export function dataAwsCeCostCategoryRuleRuleNotNotCostCategoryToTerraform(struc
 
 
 export function dataAwsCeCostCategoryRuleRuleNotNotCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2204,7 +2204,7 @@ export function dataAwsCeCostCategoryRuleRuleNotNotCostCategoryToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2213,7 +2213,7 @@ export class DataAwsCeCostCategoryRuleRuleNotNotCostCategoryOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2239,23 +2239,23 @@ export class DataAwsCeCostCategoryRuleRuleNotNotCostCategoryOutputReference exte
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotNotCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotNotCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2270,8 +2270,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotNotDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotNotDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2280,8 +2280,8 @@ export function dataAwsCeCostCategoryRuleRuleNotNotDimensionToTerraform(struct?:
 
 
 export function dataAwsCeCostCategoryRuleRuleNotNotDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2289,7 +2289,7 @@ export function dataAwsCeCostCategoryRuleRuleNotNotDimensionToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotNotDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2298,7 +2298,7 @@ export class DataAwsCeCostCategoryRuleRuleNotNotDimensionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2324,23 +2324,23 @@ export class DataAwsCeCostCategoryRuleRuleNotNotDimensionOutputReference extends
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotNotDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotNotDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2355,8 +2355,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotNotTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotNotTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2365,8 +2365,8 @@ export function dataAwsCeCostCategoryRuleRuleNotNotTagsToTerraform(struct?: Data
 
 
 export function dataAwsCeCostCategoryRuleRuleNotNotTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2374,7 +2374,7 @@ export function dataAwsCeCostCategoryRuleRuleNotNotTagsToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotNotTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2383,7 +2383,7 @@ export class DataAwsCeCostCategoryRuleRuleNotNotTagsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2409,23 +2409,23 @@ export class DataAwsCeCostCategoryRuleRuleNotNotTagsOutputReference extends cdkt
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotNotTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotNotTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2440,8 +2440,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotNot {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotNotToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2450,8 +2450,8 @@ export function dataAwsCeCostCategoryRuleRuleNotNotToTerraform(struct?: DataAwsC
 
 
 export function dataAwsCeCostCategoryRuleRuleNotNotToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2459,7 +2459,7 @@ export function dataAwsCeCostCategoryRuleRuleNotNotToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotNotOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2468,7 +2468,7 @@ export class DataAwsCeCostCategoryRuleRuleNotNotOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2506,14 +2506,14 @@ export class DataAwsCeCostCategoryRuleRuleNotNotOutputReference extends cdktf.Co
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotNotList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotNotList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2528,8 +2528,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotOrCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotOrCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2538,8 +2538,8 @@ export function dataAwsCeCostCategoryRuleRuleNotOrCostCategoryToTerraform(struct
 
 
 export function dataAwsCeCostCategoryRuleRuleNotOrCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2547,7 +2547,7 @@ export function dataAwsCeCostCategoryRuleRuleNotOrCostCategoryToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2556,7 +2556,7 @@ export class DataAwsCeCostCategoryRuleRuleNotOrCostCategoryOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2582,23 +2582,23 @@ export class DataAwsCeCostCategoryRuleRuleNotOrCostCategoryOutputReference exten
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotOrCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotOrCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2613,8 +2613,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotOrDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotOrDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2623,8 +2623,8 @@ export function dataAwsCeCostCategoryRuleRuleNotOrDimensionToTerraform(struct?: 
 
 
 export function dataAwsCeCostCategoryRuleRuleNotOrDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2632,7 +2632,7 @@ export function dataAwsCeCostCategoryRuleRuleNotOrDimensionToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotOrDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2641,7 +2641,7 @@ export class DataAwsCeCostCategoryRuleRuleNotOrDimensionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2667,23 +2667,23 @@ export class DataAwsCeCostCategoryRuleRuleNotOrDimensionOutputReference extends 
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotOrDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotOrDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2698,8 +2698,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotOrTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotOrTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2708,8 +2708,8 @@ export function dataAwsCeCostCategoryRuleRuleNotOrTagsToTerraform(struct?: DataA
 
 
 export function dataAwsCeCostCategoryRuleRuleNotOrTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2717,7 +2717,7 @@ export function dataAwsCeCostCategoryRuleRuleNotOrTagsToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotOrTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2726,7 +2726,7 @@ export class DataAwsCeCostCategoryRuleRuleNotOrTagsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2752,23 +2752,23 @@ export class DataAwsCeCostCategoryRuleRuleNotOrTagsOutputReference extends cdktf
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotOrTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotOrTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2783,8 +2783,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotOr {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotOrToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2793,8 +2793,8 @@ export function dataAwsCeCostCategoryRuleRuleNotOrToTerraform(struct?: DataAwsCe
 
 
 export function dataAwsCeCostCategoryRuleRuleNotOrToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotOr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2802,7 +2802,7 @@ export function dataAwsCeCostCategoryRuleRuleNotOrToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotOrOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2811,7 +2811,7 @@ export class DataAwsCeCostCategoryRuleRuleNotOrOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2849,14 +2849,14 @@ export class DataAwsCeCostCategoryRuleRuleNotOrOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotOrList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotOrList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2871,8 +2871,8 @@ export interface DataAwsCeCostCategoryRuleRuleNotTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2881,8 +2881,8 @@ export function dataAwsCeCostCategoryRuleRuleNotTagsToTerraform(struct?: DataAws
 
 
 export function dataAwsCeCostCategoryRuleRuleNotTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2890,7 +2890,7 @@ export function dataAwsCeCostCategoryRuleRuleNotTagsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2899,7 +2899,7 @@ export class DataAwsCeCostCategoryRuleRuleNotTagsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2925,23 +2925,23 @@ export class DataAwsCeCostCategoryRuleRuleNotTagsOutputReference extends cdktf.C
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2956,8 +2956,8 @@ export interface DataAwsCeCostCategoryRuleRuleNot {
 }
 
 export function dataAwsCeCostCategoryRuleRuleNotToTerraform(struct?: DataAwsCeCostCategoryRuleRuleNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2966,8 +2966,8 @@ export function dataAwsCeCostCategoryRuleRuleNotToTerraform(struct?: DataAwsCeCo
 
 
 export function dataAwsCeCostCategoryRuleRuleNotToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2975,7 +2975,7 @@ export function dataAwsCeCostCategoryRuleRuleNotToHclTerraform(struct?: DataAwsC
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2984,7 +2984,7 @@ export class DataAwsCeCostCategoryRuleRuleNotOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3040,14 +3040,14 @@ export class DataAwsCeCostCategoryRuleRuleNotOutputReference extends cdktf.Compl
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleNotList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleNotList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3062,8 +3062,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrAndCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrAndCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3072,8 +3072,8 @@ export function dataAwsCeCostCategoryRuleRuleOrAndCostCategoryToTerraform(struct
 
 
 export function dataAwsCeCostCategoryRuleRuleOrAndCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3081,7 +3081,7 @@ export function dataAwsCeCostCategoryRuleRuleOrAndCostCategoryToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrAndCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrAndCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3090,7 +3090,7 @@ export class DataAwsCeCostCategoryRuleRuleOrAndCostCategoryOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3116,23 +3116,23 @@ export class DataAwsCeCostCategoryRuleRuleOrAndCostCategoryOutputReference exten
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrAndCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrAndCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3147,8 +3147,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrAndDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrAndDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3157,8 +3157,8 @@ export function dataAwsCeCostCategoryRuleRuleOrAndDimensionToTerraform(struct?: 
 
 
 export function dataAwsCeCostCategoryRuleRuleOrAndDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3166,7 +3166,7 @@ export function dataAwsCeCostCategoryRuleRuleOrAndDimensionToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrAndDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrAndDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3175,7 +3175,7 @@ export class DataAwsCeCostCategoryRuleRuleOrAndDimensionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3201,23 +3201,23 @@ export class DataAwsCeCostCategoryRuleRuleOrAndDimensionOutputReference extends 
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrAndDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrAndDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3232,8 +3232,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrAndTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrAndTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3242,8 +3242,8 @@ export function dataAwsCeCostCategoryRuleRuleOrAndTagsToTerraform(struct?: DataA
 
 
 export function dataAwsCeCostCategoryRuleRuleOrAndTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAndTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3251,7 +3251,7 @@ export function dataAwsCeCostCategoryRuleRuleOrAndTagsToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrAndTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrAndTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3260,7 +3260,7 @@ export class DataAwsCeCostCategoryRuleRuleOrAndTagsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3286,23 +3286,23 @@ export class DataAwsCeCostCategoryRuleRuleOrAndTagsOutputReference extends cdktf
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrAndTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrAndTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3317,8 +3317,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrAnd {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrAndToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3327,8 +3327,8 @@ export function dataAwsCeCostCategoryRuleRuleOrAndToTerraform(struct?: DataAwsCe
 
 
 export function dataAwsCeCostCategoryRuleRuleOrAndToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrAnd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3336,7 +3336,7 @@ export function dataAwsCeCostCategoryRuleRuleOrAndToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrAndOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrAndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3345,7 +3345,7 @@ export class DataAwsCeCostCategoryRuleRuleOrAndOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3383,14 +3383,14 @@ export class DataAwsCeCostCategoryRuleRuleOrAndOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrAndList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrAndList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3405,8 +3405,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3415,8 +3415,8 @@ export function dataAwsCeCostCategoryRuleRuleOrCostCategoryToTerraform(struct?: 
 
 
 export function dataAwsCeCostCategoryRuleRuleOrCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3424,7 +3424,7 @@ export function dataAwsCeCostCategoryRuleRuleOrCostCategoryToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3433,7 +3433,7 @@ export class DataAwsCeCostCategoryRuleRuleOrCostCategoryOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3459,23 +3459,23 @@ export class DataAwsCeCostCategoryRuleRuleOrCostCategoryOutputReference extends 
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3490,8 +3490,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3500,8 +3500,8 @@ export function dataAwsCeCostCategoryRuleRuleOrDimensionToTerraform(struct?: Dat
 
 
 export function dataAwsCeCostCategoryRuleRuleOrDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3509,7 +3509,7 @@ export function dataAwsCeCostCategoryRuleRuleOrDimensionToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3518,7 +3518,7 @@ export class DataAwsCeCostCategoryRuleRuleOrDimensionOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3544,23 +3544,23 @@ export class DataAwsCeCostCategoryRuleRuleOrDimensionOutputReference extends cdk
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3575,8 +3575,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrNotCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrNotCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3585,8 +3585,8 @@ export function dataAwsCeCostCategoryRuleRuleOrNotCostCategoryToTerraform(struct
 
 
 export function dataAwsCeCostCategoryRuleRuleOrNotCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3594,7 +3594,7 @@ export function dataAwsCeCostCategoryRuleRuleOrNotCostCategoryToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrNotCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrNotCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3603,7 +3603,7 @@ export class DataAwsCeCostCategoryRuleRuleOrNotCostCategoryOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3629,23 +3629,23 @@ export class DataAwsCeCostCategoryRuleRuleOrNotCostCategoryOutputReference exten
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrNotCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrNotCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3660,8 +3660,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrNotDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrNotDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3670,8 +3670,8 @@ export function dataAwsCeCostCategoryRuleRuleOrNotDimensionToTerraform(struct?: 
 
 
 export function dataAwsCeCostCategoryRuleRuleOrNotDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3679,7 +3679,7 @@ export function dataAwsCeCostCategoryRuleRuleOrNotDimensionToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrNotDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrNotDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3688,7 +3688,7 @@ export class DataAwsCeCostCategoryRuleRuleOrNotDimensionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3714,23 +3714,23 @@ export class DataAwsCeCostCategoryRuleRuleOrNotDimensionOutputReference extends 
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrNotDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrNotDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3745,8 +3745,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrNotTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrNotTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3755,8 +3755,8 @@ export function dataAwsCeCostCategoryRuleRuleOrNotTagsToTerraform(struct?: DataA
 
 
 export function dataAwsCeCostCategoryRuleRuleOrNotTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNotTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3764,7 +3764,7 @@ export function dataAwsCeCostCategoryRuleRuleOrNotTagsToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrNotTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrNotTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3773,7 +3773,7 @@ export class DataAwsCeCostCategoryRuleRuleOrNotTagsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3799,23 +3799,23 @@ export class DataAwsCeCostCategoryRuleRuleOrNotTagsOutputReference extends cdktf
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrNotTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrNotTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3830,8 +3830,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrNot {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrNotToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3840,8 +3840,8 @@ export function dataAwsCeCostCategoryRuleRuleOrNotToTerraform(struct?: DataAwsCe
 
 
 export function dataAwsCeCostCategoryRuleRuleOrNotToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrNot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3849,7 +3849,7 @@ export function dataAwsCeCostCategoryRuleRuleOrNotToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrNotOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrNotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3858,7 +3858,7 @@ export class DataAwsCeCostCategoryRuleRuleOrNotOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3896,14 +3896,14 @@ export class DataAwsCeCostCategoryRuleRuleOrNotOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrNotList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrNotList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3918,8 +3918,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrOrCostCategory {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrOrCostCategoryToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3928,8 +3928,8 @@ export function dataAwsCeCostCategoryRuleRuleOrOrCostCategoryToTerraform(struct?
 
 
 export function dataAwsCeCostCategoryRuleRuleOrOrCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrCostCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3937,7 +3937,7 @@ export function dataAwsCeCostCategoryRuleRuleOrOrCostCategoryToHclTerraform(stru
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrOrCostCategoryOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrOrCostCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3946,7 +3946,7 @@ export class DataAwsCeCostCategoryRuleRuleOrOrCostCategoryOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3972,23 +3972,23 @@ export class DataAwsCeCostCategoryRuleRuleOrOrCostCategoryOutputReference extend
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrOrCostCategoryList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrOrCostCategoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4003,8 +4003,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrOrDimension {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrOrDimensionToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4013,8 +4013,8 @@ export function dataAwsCeCostCategoryRuleRuleOrOrDimensionToTerraform(struct?: D
 
 
 export function dataAwsCeCostCategoryRuleRuleOrOrDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrDimension): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4022,7 +4022,7 @@ export function dataAwsCeCostCategoryRuleRuleOrOrDimensionToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrOrDimensionOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrOrDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4031,7 +4031,7 @@ export class DataAwsCeCostCategoryRuleRuleOrOrDimensionOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4057,23 +4057,23 @@ export class DataAwsCeCostCategoryRuleRuleOrOrDimensionOutputReference extends c
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrOrDimensionList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrOrDimensionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4088,8 +4088,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrOrTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrOrTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4098,8 +4098,8 @@ export function dataAwsCeCostCategoryRuleRuleOrOrTagsToTerraform(struct?: DataAw
 
 
 export function dataAwsCeCostCategoryRuleRuleOrOrTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4107,7 +4107,7 @@ export function dataAwsCeCostCategoryRuleRuleOrOrTagsToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrOrTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4116,7 +4116,7 @@ export class DataAwsCeCostCategoryRuleRuleOrOrTagsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4142,23 +4142,23 @@ export class DataAwsCeCostCategoryRuleRuleOrOrTagsOutputReference extends cdktf.
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrOrTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrOrTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4173,8 +4173,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrOr {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrOrToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4183,8 +4183,8 @@ export function dataAwsCeCostCategoryRuleRuleOrOrToTerraform(struct?: DataAwsCeC
 
 
 export function dataAwsCeCostCategoryRuleRuleOrOrToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrOr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4192,7 +4192,7 @@ export function dataAwsCeCostCategoryRuleRuleOrOrToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrOrOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4201,7 +4201,7 @@ export class DataAwsCeCostCategoryRuleRuleOrOrOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4239,14 +4239,14 @@ export class DataAwsCeCostCategoryRuleRuleOrOrOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrOrList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrOrList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4261,8 +4261,8 @@ export interface DataAwsCeCostCategoryRuleRuleOrTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4271,8 +4271,8 @@ export function dataAwsCeCostCategoryRuleRuleOrTagsToTerraform(struct?: DataAwsC
 
 
 export function dataAwsCeCostCategoryRuleRuleOrTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4280,7 +4280,7 @@ export function dataAwsCeCostCategoryRuleRuleOrTagsToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4289,7 +4289,7 @@ export class DataAwsCeCostCategoryRuleRuleOrTagsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4315,23 +4315,23 @@ export class DataAwsCeCostCategoryRuleRuleOrTagsOutputReference extends cdktf.Co
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4346,8 +4346,8 @@ export interface DataAwsCeCostCategoryRuleRuleOr {
 }
 
 export function dataAwsCeCostCategoryRuleRuleOrToTerraform(struct?: DataAwsCeCostCategoryRuleRuleOr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4356,8 +4356,8 @@ export function dataAwsCeCostCategoryRuleRuleOrToTerraform(struct?: DataAwsCeCos
 
 
 export function dataAwsCeCostCategoryRuleRuleOrToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4365,7 +4365,7 @@ export function dataAwsCeCostCategoryRuleRuleOrToHclTerraform(struct?: DataAwsCe
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4374,7 +4374,7 @@ export class DataAwsCeCostCategoryRuleRuleOrOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4430,14 +4430,14 @@ export class DataAwsCeCostCategoryRuleRuleOrOutputReference extends cdktf.Comple
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleOrList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleOrList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4452,8 +4452,8 @@ export interface DataAwsCeCostCategoryRuleRuleTags {
 }
 
 export function dataAwsCeCostCategoryRuleRuleTagsToTerraform(struct?: DataAwsCeCostCategoryRuleRuleTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4462,8 +4462,8 @@ export function dataAwsCeCostCategoryRuleRuleTagsToTerraform(struct?: DataAwsCeC
 
 
 export function dataAwsCeCostCategoryRuleRuleTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4471,7 +4471,7 @@ export function dataAwsCeCostCategoryRuleRuleTagsToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleTagsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4480,7 +4480,7 @@ export class DataAwsCeCostCategoryRuleRuleTagsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4506,23 +4506,23 @@ export class DataAwsCeCostCategoryRuleRuleTagsOutputReference extends cdktf.Comp
 
   // match_options - computed: true, optional: false, required: false
   public get matchOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_options'));
   }
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleTagsList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4537,8 +4537,8 @@ export interface DataAwsCeCostCategoryRuleRule {
 }
 
 export function dataAwsCeCostCategoryRuleRuleToTerraform(struct?: DataAwsCeCostCategoryRuleRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4547,8 +4547,8 @@ export function dataAwsCeCostCategoryRuleRuleToTerraform(struct?: DataAwsCeCostC
 
 
 export function dataAwsCeCostCategoryRuleRuleToHclTerraform(struct?: DataAwsCeCostCategoryRuleRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4556,7 +4556,7 @@ export function dataAwsCeCostCategoryRuleRuleToHclTerraform(struct?: DataAwsCeCo
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4565,7 +4565,7 @@ export class DataAwsCeCostCategoryRuleRuleOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4621,14 +4621,14 @@ export class DataAwsCeCostCategoryRuleRuleOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DataAwsCeCostCategoryRuleRuleList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleRuleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4643,8 +4643,8 @@ export interface DataAwsCeCostCategoryRule {
 }
 
 export function dataAwsCeCostCategoryRuleToTerraform(struct?: DataAwsCeCostCategoryRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4653,8 +4653,8 @@ export function dataAwsCeCostCategoryRuleToTerraform(struct?: DataAwsCeCostCateg
 
 
 export function dataAwsCeCostCategoryRuleToHclTerraform(struct?: DataAwsCeCostCategoryRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4662,7 +4662,7 @@ export function dataAwsCeCostCategoryRuleToHclTerraform(struct?: DataAwsCeCostCa
   return attrs;
 }
 
-export class DataAwsCeCostCategoryRuleOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategoryRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4671,7 +4671,7 @@ export class DataAwsCeCostCategoryRuleOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4713,14 +4713,14 @@ export class DataAwsCeCostCategoryRuleOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class DataAwsCeCostCategoryRuleList extends cdktf.ComplexList {
+export class DataAwsCeCostCategoryRuleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4735,8 +4735,8 @@ export interface DataAwsCeCostCategorySplitChargeRuleParameter {
 }
 
 export function dataAwsCeCostCategorySplitChargeRuleParameterToTerraform(struct?: DataAwsCeCostCategorySplitChargeRuleParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4745,8 +4745,8 @@ export function dataAwsCeCostCategorySplitChargeRuleParameterToTerraform(struct?
 
 
 export function dataAwsCeCostCategorySplitChargeRuleParameterToHclTerraform(struct?: DataAwsCeCostCategorySplitChargeRuleParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4754,7 +4754,7 @@ export function dataAwsCeCostCategorySplitChargeRuleParameterToHclTerraform(stru
   return attrs;
 }
 
-export class DataAwsCeCostCategorySplitChargeRuleParameterOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategorySplitChargeRuleParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4763,7 +4763,7 @@ export class DataAwsCeCostCategorySplitChargeRuleParameterOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4789,18 +4789,18 @@ export class DataAwsCeCostCategorySplitChargeRuleParameterOutputReference extend
 
   // values - computed: true, optional: false, required: false
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
 }
 
-export class DataAwsCeCostCategorySplitChargeRuleParameterList extends cdktf.ComplexList {
+export class DataAwsCeCostCategorySplitChargeRuleParameterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4815,8 +4815,8 @@ export interface DataAwsCeCostCategorySplitChargeRule {
 }
 
 export function dataAwsCeCostCategorySplitChargeRuleToTerraform(struct?: DataAwsCeCostCategorySplitChargeRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4825,8 +4825,8 @@ export function dataAwsCeCostCategorySplitChargeRuleToTerraform(struct?: DataAws
 
 
 export function dataAwsCeCostCategorySplitChargeRuleToHclTerraform(struct?: DataAwsCeCostCategorySplitChargeRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4834,7 +4834,7 @@ export function dataAwsCeCostCategorySplitChargeRuleToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsCeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexObject {
+export class DataAwsCeCostCategorySplitChargeRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4843,7 +4843,7 @@ export class DataAwsCeCostCategorySplitChargeRuleOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4880,18 +4880,18 @@ export class DataAwsCeCostCategorySplitChargeRuleOutputReference extends cdktf.C
 
   // targets - computed: true, optional: false, required: false
   public get targets() {
-    return cdktf.Fn.tolist(this.getListAttribute('targets'));
+    return cdktn.Fn.tolist(this.getListAttribute('targets'));
   }
 }
 
-export class DataAwsCeCostCategorySplitChargeRuleList extends cdktf.ComplexList {
+export class DataAwsCeCostCategorySplitChargeRuleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4906,7 +4906,7 @@ export class DataAwsCeCostCategorySplitChargeRuleList extends cdktf.ComplexList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ce_cost_category aws_ce_cost_category}
 */
-export class DataAwsCeCostCategory extends cdktf.TerraformDataSource {
+export class DataAwsCeCostCategory extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -4917,14 +4917,14 @@ export class DataAwsCeCostCategory extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCeCostCategory resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCeCostCategory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCeCostCategory to import
   * @param importFromId The id of the existing DataAwsCeCostCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ce_cost_category#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCeCostCategory to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_cost_category", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_cost_category", importId: importFromId, provider });
       }
 
   // ===========
@@ -5051,28 +5051,28 @@ export class DataAwsCeCostCategory extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cost_category_arn: cdktf.stringToTerraform(this._costCategoryArn),
-      id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      cost_category_arn: cdktn.stringToTerraform(this._costCategoryArn),
+      id: cdktn.stringToTerraform(this._id),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cost_category_arn: {
-        value: cdktf.stringToHclTerraform(this._costCategoryArn),
+        value: cdktn.stringToHclTerraform(this._costCategoryArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
+export interface DmsS3EndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#add_column_name DmsS3Endpoint#add_column_name}
   */
-  readonly addColumnName?: boolean | cdktf.IResolvable;
+  readonly addColumnName?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#add_trailing_padding_character DmsS3Endpoint#add_trailing_padding_character}
   */
-  readonly addTrailingPaddingCharacter?: boolean | cdktf.IResolvable;
+  readonly addTrailingPaddingCharacter?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#bucket_folder DmsS3Endpoint#bucket_folder}
   */
@@ -35,11 +35,11 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#cdc_inserts_and_updates DmsS3Endpoint#cdc_inserts_and_updates}
   */
-  readonly cdcInsertsAndUpdates?: boolean | cdktf.IResolvable;
+  readonly cdcInsertsAndUpdates?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#cdc_inserts_only DmsS3Endpoint#cdc_inserts_only}
   */
-  readonly cdcInsertsOnly?: boolean | cdktf.IResolvable;
+  readonly cdcInsertsOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#cdc_max_batch_interval DmsS3Endpoint#cdc_max_batch_interval}
   */
@@ -91,7 +91,7 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#date_partition_enabled DmsS3Endpoint#date_partition_enabled}
   */
-  readonly datePartitionEnabled?: boolean | cdktf.IResolvable;
+  readonly datePartitionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#date_partition_sequence DmsS3Endpoint#date_partition_sequence}
   */
@@ -103,7 +103,7 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#detach_target_on_lob_lookup_failure_parquet DmsS3Endpoint#detach_target_on_lob_lookup_failure_parquet}
   */
-  readonly detachTargetOnLobLookupFailureParquet?: boolean | cdktf.IResolvable;
+  readonly detachTargetOnLobLookupFailureParquet?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#dict_page_size_limit DmsS3Endpoint#dict_page_size_limit}
   */
@@ -111,7 +111,7 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#enable_statistics DmsS3Endpoint#enable_statistics}
   */
-  readonly enableStatistics?: boolean | cdktf.IResolvable;
+  readonly enableStatistics?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#encoding_type DmsS3Endpoint#encoding_type}
   */
@@ -139,7 +139,7 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#glue_catalog_generation DmsS3Endpoint#glue_catalog_generation}
   */
-  readonly glueCatalogGeneration?: boolean | cdktf.IResolvable;
+  readonly glueCatalogGeneration?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#id DmsS3Endpoint#id}
   *
@@ -154,7 +154,7 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#include_op_for_full_load DmsS3Endpoint#include_op_for_full_load}
   */
-  readonly includeOpForFullLoad?: boolean | cdktf.IResolvable;
+  readonly includeOpForFullLoad?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#kms_key_arn DmsS3Endpoint#kms_key_arn}
   */
@@ -166,7 +166,7 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#parquet_timestamp_in_millisecond DmsS3Endpoint#parquet_timestamp_in_millisecond}
   */
-  readonly parquetTimestampInMillisecond?: boolean | cdktf.IResolvable;
+  readonly parquetTimestampInMillisecond?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#parquet_version DmsS3Endpoint#parquet_version}
   */
@@ -174,7 +174,7 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#preserve_transactions DmsS3Endpoint#preserve_transactions}
   */
-  readonly preserveTransactions?: boolean | cdktf.IResolvable;
+  readonly preserveTransactions?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -184,7 +184,7 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#rfc_4180 DmsS3Endpoint#rfc_4180}
   */
-  readonly rfc4180?: boolean | cdktf.IResolvable;
+  readonly rfc4180?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#row_group_length DmsS3Endpoint#row_group_length}
   */
@@ -216,11 +216,11 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#use_csv_no_sup_value DmsS3Endpoint#use_csv_no_sup_value}
   */
-  readonly useCsvNoSupValue?: boolean | cdktf.IResolvable;
+  readonly useCsvNoSupValue?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#use_task_start_time_for_full_load_timestamp DmsS3Endpoint#use_task_start_time_for_full_load_timestamp}
   */
-  readonly useTaskStartTimeForFullLoadTimestamp?: boolean | cdktf.IResolvable;
+  readonly useTaskStartTimeForFullLoadTimestamp?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -239,32 +239,32 @@ export interface DmsS3EndpointTimeouts {
   readonly delete?: string;
 }
 
-export function dmsS3EndpointTimeoutsToTerraform(struct?: DmsS3EndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dmsS3EndpointTimeoutsToTerraform(struct?: DmsS3EndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function dmsS3EndpointTimeoutsToHclTerraform(struct?: DmsS3EndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dmsS3EndpointTimeoutsToHclTerraform(struct?: DmsS3EndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -275,19 +275,19 @@ export function dmsS3EndpointTimeoutsToHclTerraform(struct?: DmsS3EndpointTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DmsS3EndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DmsS3EndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DmsS3EndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DmsS3EndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -304,14 +304,14 @@ export class DmsS3EndpointTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DmsS3EndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DmsS3EndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -359,7 +359,7 @@ export class DmsS3EndpointTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint}
 */
-export class DmsS3Endpoint extends cdktf.TerraformResource {
+export class DmsS3Endpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -370,14 +370,14 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DmsS3Endpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DmsS3Endpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DmsS3Endpoint to import
   * @param importFromId The id of the existing DmsS3Endpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_s3_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DmsS3Endpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_s3_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_s3_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -466,11 +466,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   // ==========
 
   // add_column_name - computed: false, optional: true, required: false
-  private _addColumnName?: boolean | cdktf.IResolvable; 
+  private _addColumnName?: boolean | cdktn.IResolvable; 
   public get addColumnName() {
     return this.getBooleanAttribute('add_column_name');
   }
-  public set addColumnName(value: boolean | cdktf.IResolvable) {
+  public set addColumnName(value: boolean | cdktn.IResolvable) {
     this._addColumnName = value;
   }
   public resetAddColumnName() {
@@ -482,11 +482,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // add_trailing_padding_character - computed: false, optional: true, required: false
-  private _addTrailingPaddingCharacter?: boolean | cdktf.IResolvable; 
+  private _addTrailingPaddingCharacter?: boolean | cdktn.IResolvable; 
   public get addTrailingPaddingCharacter() {
     return this.getBooleanAttribute('add_trailing_padding_character');
   }
-  public set addTrailingPaddingCharacter(value: boolean | cdktf.IResolvable) {
+  public set addTrailingPaddingCharacter(value: boolean | cdktn.IResolvable) {
     this._addTrailingPaddingCharacter = value;
   }
   public resetAddTrailingPaddingCharacter() {
@@ -543,11 +543,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // cdc_inserts_and_updates - computed: false, optional: true, required: false
-  private _cdcInsertsAndUpdates?: boolean | cdktf.IResolvable; 
+  private _cdcInsertsAndUpdates?: boolean | cdktn.IResolvable; 
   public get cdcInsertsAndUpdates() {
     return this.getBooleanAttribute('cdc_inserts_and_updates');
   }
-  public set cdcInsertsAndUpdates(value: boolean | cdktf.IResolvable) {
+  public set cdcInsertsAndUpdates(value: boolean | cdktn.IResolvable) {
     this._cdcInsertsAndUpdates = value;
   }
   public resetCdcInsertsAndUpdates() {
@@ -559,11 +559,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // cdc_inserts_only - computed: false, optional: true, required: false
-  private _cdcInsertsOnly?: boolean | cdktf.IResolvable; 
+  private _cdcInsertsOnly?: boolean | cdktn.IResolvable; 
   public get cdcInsertsOnly() {
     return this.getBooleanAttribute('cdc_inserts_only');
   }
-  public set cdcInsertsOnly(value: boolean | cdktf.IResolvable) {
+  public set cdcInsertsOnly(value: boolean | cdktn.IResolvable) {
     this._cdcInsertsOnly = value;
   }
   public resetCdcInsertsOnly() {
@@ -767,11 +767,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // date_partition_enabled - computed: false, optional: true, required: false
-  private _datePartitionEnabled?: boolean | cdktf.IResolvable; 
+  private _datePartitionEnabled?: boolean | cdktn.IResolvable; 
   public get datePartitionEnabled() {
     return this.getBooleanAttribute('date_partition_enabled');
   }
-  public set datePartitionEnabled(value: boolean | cdktf.IResolvable) {
+  public set datePartitionEnabled(value: boolean | cdktn.IResolvable) {
     this._datePartitionEnabled = value;
   }
   public resetDatePartitionEnabled() {
@@ -815,11 +815,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // detach_target_on_lob_lookup_failure_parquet - computed: false, optional: true, required: false
-  private _detachTargetOnLobLookupFailureParquet?: boolean | cdktf.IResolvable; 
+  private _detachTargetOnLobLookupFailureParquet?: boolean | cdktn.IResolvable; 
   public get detachTargetOnLobLookupFailureParquet() {
     return this.getBooleanAttribute('detach_target_on_lob_lookup_failure_parquet');
   }
-  public set detachTargetOnLobLookupFailureParquet(value: boolean | cdktf.IResolvable) {
+  public set detachTargetOnLobLookupFailureParquet(value: boolean | cdktn.IResolvable) {
     this._detachTargetOnLobLookupFailureParquet = value;
   }
   public resetDetachTargetOnLobLookupFailureParquet() {
@@ -847,11 +847,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // enable_statistics - computed: false, optional: true, required: false
-  private _enableStatistics?: boolean | cdktf.IResolvable; 
+  private _enableStatistics?: boolean | cdktn.IResolvable; 
   public get enableStatistics() {
     return this.getBooleanAttribute('enable_statistics');
   }
-  public set enableStatistics(value: boolean | cdktf.IResolvable) {
+  public set enableStatistics(value: boolean | cdktn.IResolvable) {
     this._enableStatistics = value;
   }
   public resetEnableStatistics() {
@@ -968,11 +968,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // glue_catalog_generation - computed: false, optional: true, required: false
-  private _glueCatalogGeneration?: boolean | cdktf.IResolvable; 
+  private _glueCatalogGeneration?: boolean | cdktn.IResolvable; 
   public get glueCatalogGeneration() {
     return this.getBooleanAttribute('glue_catalog_generation');
   }
-  public set glueCatalogGeneration(value: boolean | cdktf.IResolvable) {
+  public set glueCatalogGeneration(value: boolean | cdktn.IResolvable) {
     this._glueCatalogGeneration = value;
   }
   public resetGlueCatalogGeneration() {
@@ -1016,11 +1016,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // include_op_for_full_load - computed: false, optional: true, required: false
-  private _includeOpForFullLoad?: boolean | cdktf.IResolvable; 
+  private _includeOpForFullLoad?: boolean | cdktn.IResolvable; 
   public get includeOpForFullLoad() {
     return this.getBooleanAttribute('include_op_for_full_load');
   }
-  public set includeOpForFullLoad(value: boolean | cdktf.IResolvable) {
+  public set includeOpForFullLoad(value: boolean | cdktn.IResolvable) {
     this._includeOpForFullLoad = value;
   }
   public resetIncludeOpForFullLoad() {
@@ -1064,11 +1064,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // parquet_timestamp_in_millisecond - computed: false, optional: true, required: false
-  private _parquetTimestampInMillisecond?: boolean | cdktf.IResolvable; 
+  private _parquetTimestampInMillisecond?: boolean | cdktn.IResolvable; 
   public get parquetTimestampInMillisecond() {
     return this.getBooleanAttribute('parquet_timestamp_in_millisecond');
   }
-  public set parquetTimestampInMillisecond(value: boolean | cdktf.IResolvable) {
+  public set parquetTimestampInMillisecond(value: boolean | cdktn.IResolvable) {
     this._parquetTimestampInMillisecond = value;
   }
   public resetParquetTimestampInMillisecond() {
@@ -1096,11 +1096,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // preserve_transactions - computed: false, optional: true, required: false
-  private _preserveTransactions?: boolean | cdktf.IResolvable; 
+  private _preserveTransactions?: boolean | cdktn.IResolvable; 
   public get preserveTransactions() {
     return this.getBooleanAttribute('preserve_transactions');
   }
-  public set preserveTransactions(value: boolean | cdktf.IResolvable) {
+  public set preserveTransactions(value: boolean | cdktn.IResolvable) {
     this._preserveTransactions = value;
   }
   public resetPreserveTransactions() {
@@ -1128,11 +1128,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // rfc_4180 - computed: false, optional: true, required: false
-  private _rfc4180?: boolean | cdktf.IResolvable; 
+  private _rfc4180?: boolean | cdktn.IResolvable; 
   public get rfc4180() {
     return this.getBooleanAttribute('rfc_4180');
   }
-  public set rfc4180(value: boolean | cdktf.IResolvable) {
+  public set rfc4180(value: boolean | cdktn.IResolvable) {
     this._rfc4180 = value;
   }
   public resetRfc4180() {
@@ -1258,11 +1258,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // use_csv_no_sup_value - computed: false, optional: true, required: false
-  private _useCsvNoSupValue?: boolean | cdktf.IResolvable; 
+  private _useCsvNoSupValue?: boolean | cdktn.IResolvable; 
   public get useCsvNoSupValue() {
     return this.getBooleanAttribute('use_csv_no_sup_value');
   }
-  public set useCsvNoSupValue(value: boolean | cdktf.IResolvable) {
+  public set useCsvNoSupValue(value: boolean | cdktn.IResolvable) {
     this._useCsvNoSupValue = value;
   }
   public resetUseCsvNoSupValue() {
@@ -1274,11 +1274,11 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   }
 
   // use_task_start_time_for_full_load_timestamp - computed: false, optional: true, required: false
-  private _useTaskStartTimeForFullLoadTimestamp?: boolean | cdktf.IResolvable; 
+  private _useTaskStartTimeForFullLoadTimestamp?: boolean | cdktn.IResolvable; 
   public get useTaskStartTimeForFullLoadTimestamp() {
     return this.getBooleanAttribute('use_task_start_time_for_full_load_timestamp');
   }
-  public set useTaskStartTimeForFullLoadTimestamp(value: boolean | cdktf.IResolvable) {
+  public set useTaskStartTimeForFullLoadTimestamp(value: boolean | cdktn.IResolvable) {
     this._useTaskStartTimeForFullLoadTimestamp = value;
   }
   public resetUseTaskStartTimeForFullLoadTimestamp() {
@@ -1311,57 +1311,57 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      add_column_name: cdktf.booleanToTerraform(this._addColumnName),
-      add_trailing_padding_character: cdktf.booleanToTerraform(this._addTrailingPaddingCharacter),
-      bucket_folder: cdktf.stringToTerraform(this._bucketFolder),
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      canned_acl_for_objects: cdktf.stringToTerraform(this._cannedAclForObjects),
-      cdc_inserts_and_updates: cdktf.booleanToTerraform(this._cdcInsertsAndUpdates),
-      cdc_inserts_only: cdktf.booleanToTerraform(this._cdcInsertsOnly),
-      cdc_max_batch_interval: cdktf.numberToTerraform(this._cdcMaxBatchInterval),
-      cdc_min_file_size: cdktf.numberToTerraform(this._cdcMinFileSize),
-      cdc_path: cdktf.stringToTerraform(this._cdcPath),
-      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
-      compression_type: cdktf.stringToTerraform(this._compressionType),
-      csv_delimiter: cdktf.stringToTerraform(this._csvDelimiter),
-      csv_no_sup_value: cdktf.stringToTerraform(this._csvNoSupValue),
-      csv_null_value: cdktf.stringToTerraform(this._csvNullValue),
-      csv_row_delimiter: cdktf.stringToTerraform(this._csvRowDelimiter),
-      data_format: cdktf.stringToTerraform(this._dataFormat),
-      data_page_size: cdktf.numberToTerraform(this._dataPageSize),
-      date_partition_delimiter: cdktf.stringToTerraform(this._datePartitionDelimiter),
-      date_partition_enabled: cdktf.booleanToTerraform(this._datePartitionEnabled),
-      date_partition_sequence: cdktf.stringToTerraform(this._datePartitionSequence),
-      date_partition_timezone: cdktf.stringToTerraform(this._datePartitionTimezone),
-      detach_target_on_lob_lookup_failure_parquet: cdktf.booleanToTerraform(this._detachTargetOnLobLookupFailureParquet),
-      dict_page_size_limit: cdktf.numberToTerraform(this._dictPageSizeLimit),
-      enable_statistics: cdktf.booleanToTerraform(this._enableStatistics),
-      encoding_type: cdktf.stringToTerraform(this._encodingType),
-      encryption_mode: cdktf.stringToTerraform(this._encryptionMode),
-      endpoint_id: cdktf.stringToTerraform(this._endpointId),
-      endpoint_type: cdktf.stringToTerraform(this._endpointType),
-      expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      external_table_definition: cdktf.stringToTerraform(this._externalTableDefinition),
-      glue_catalog_generation: cdktf.booleanToTerraform(this._glueCatalogGeneration),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_header_rows: cdktf.numberToTerraform(this._ignoreHeaderRows),
-      include_op_for_full_load: cdktf.booleanToTerraform(this._includeOpForFullLoad),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      max_file_size: cdktf.numberToTerraform(this._maxFileSize),
-      parquet_timestamp_in_millisecond: cdktf.booleanToTerraform(this._parquetTimestampInMillisecond),
-      parquet_version: cdktf.stringToTerraform(this._parquetVersion),
-      preserve_transactions: cdktf.booleanToTerraform(this._preserveTransactions),
-      region: cdktf.stringToTerraform(this._region),
-      rfc_4180: cdktf.booleanToTerraform(this._rfc4180),
-      row_group_length: cdktf.numberToTerraform(this._rowGroupLength),
-      server_side_encryption_kms_key_id: cdktf.stringToTerraform(this._serverSideEncryptionKmsKeyId),
-      service_access_role_arn: cdktf.stringToTerraform(this._serviceAccessRoleArn),
-      ssl_mode: cdktf.stringToTerraform(this._sslMode),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      timestamp_column_name: cdktf.stringToTerraform(this._timestampColumnName),
-      use_csv_no_sup_value: cdktf.booleanToTerraform(this._useCsvNoSupValue),
-      use_task_start_time_for_full_load_timestamp: cdktf.booleanToTerraform(this._useTaskStartTimeForFullLoadTimestamp),
+      add_column_name: cdktn.booleanToTerraform(this._addColumnName),
+      add_trailing_padding_character: cdktn.booleanToTerraform(this._addTrailingPaddingCharacter),
+      bucket_folder: cdktn.stringToTerraform(this._bucketFolder),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      canned_acl_for_objects: cdktn.stringToTerraform(this._cannedAclForObjects),
+      cdc_inserts_and_updates: cdktn.booleanToTerraform(this._cdcInsertsAndUpdates),
+      cdc_inserts_only: cdktn.booleanToTerraform(this._cdcInsertsOnly),
+      cdc_max_batch_interval: cdktn.numberToTerraform(this._cdcMaxBatchInterval),
+      cdc_min_file_size: cdktn.numberToTerraform(this._cdcMinFileSize),
+      cdc_path: cdktn.stringToTerraform(this._cdcPath),
+      certificate_arn: cdktn.stringToTerraform(this._certificateArn),
+      compression_type: cdktn.stringToTerraform(this._compressionType),
+      csv_delimiter: cdktn.stringToTerraform(this._csvDelimiter),
+      csv_no_sup_value: cdktn.stringToTerraform(this._csvNoSupValue),
+      csv_null_value: cdktn.stringToTerraform(this._csvNullValue),
+      csv_row_delimiter: cdktn.stringToTerraform(this._csvRowDelimiter),
+      data_format: cdktn.stringToTerraform(this._dataFormat),
+      data_page_size: cdktn.numberToTerraform(this._dataPageSize),
+      date_partition_delimiter: cdktn.stringToTerraform(this._datePartitionDelimiter),
+      date_partition_enabled: cdktn.booleanToTerraform(this._datePartitionEnabled),
+      date_partition_sequence: cdktn.stringToTerraform(this._datePartitionSequence),
+      date_partition_timezone: cdktn.stringToTerraform(this._datePartitionTimezone),
+      detach_target_on_lob_lookup_failure_parquet: cdktn.booleanToTerraform(this._detachTargetOnLobLookupFailureParquet),
+      dict_page_size_limit: cdktn.numberToTerraform(this._dictPageSizeLimit),
+      enable_statistics: cdktn.booleanToTerraform(this._enableStatistics),
+      encoding_type: cdktn.stringToTerraform(this._encodingType),
+      encryption_mode: cdktn.stringToTerraform(this._encryptionMode),
+      endpoint_id: cdktn.stringToTerraform(this._endpointId),
+      endpoint_type: cdktn.stringToTerraform(this._endpointType),
+      expected_bucket_owner: cdktn.stringToTerraform(this._expectedBucketOwner),
+      external_table_definition: cdktn.stringToTerraform(this._externalTableDefinition),
+      glue_catalog_generation: cdktn.booleanToTerraform(this._glueCatalogGeneration),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_header_rows: cdktn.numberToTerraform(this._ignoreHeaderRows),
+      include_op_for_full_load: cdktn.booleanToTerraform(this._includeOpForFullLoad),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      max_file_size: cdktn.numberToTerraform(this._maxFileSize),
+      parquet_timestamp_in_millisecond: cdktn.booleanToTerraform(this._parquetTimestampInMillisecond),
+      parquet_version: cdktn.stringToTerraform(this._parquetVersion),
+      preserve_transactions: cdktn.booleanToTerraform(this._preserveTransactions),
+      region: cdktn.stringToTerraform(this._region),
+      rfc_4180: cdktn.booleanToTerraform(this._rfc4180),
+      row_group_length: cdktn.numberToTerraform(this._rowGroupLength),
+      server_side_encryption_kms_key_id: cdktn.stringToTerraform(this._serverSideEncryptionKmsKeyId),
+      service_access_role_arn: cdktn.stringToTerraform(this._serviceAccessRoleArn),
+      ssl_mode: cdktn.stringToTerraform(this._sslMode),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      timestamp_column_name: cdktn.stringToTerraform(this._timestampColumnName),
+      use_csv_no_sup_value: cdktn.booleanToTerraform(this._useCsvNoSupValue),
+      use_task_start_time_for_full_load_timestamp: cdktn.booleanToTerraform(this._useTaskStartTimeForFullLoadTimestamp),
       timeouts: dmsS3EndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1369,307 +1369,307 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       add_column_name: {
-        value: cdktf.booleanToHclTerraform(this._addColumnName),
+        value: cdktn.booleanToHclTerraform(this._addColumnName),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       add_trailing_padding_character: {
-        value: cdktf.booleanToHclTerraform(this._addTrailingPaddingCharacter),
+        value: cdktn.booleanToHclTerraform(this._addTrailingPaddingCharacter),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       bucket_folder: {
-        value: cdktf.stringToHclTerraform(this._bucketFolder),
+        value: cdktn.stringToHclTerraform(this._bucketFolder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       canned_acl_for_objects: {
-        value: cdktf.stringToHclTerraform(this._cannedAclForObjects),
+        value: cdktn.stringToHclTerraform(this._cannedAclForObjects),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cdc_inserts_and_updates: {
-        value: cdktf.booleanToHclTerraform(this._cdcInsertsAndUpdates),
+        value: cdktn.booleanToHclTerraform(this._cdcInsertsAndUpdates),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cdc_inserts_only: {
-        value: cdktf.booleanToHclTerraform(this._cdcInsertsOnly),
+        value: cdktn.booleanToHclTerraform(this._cdcInsertsOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cdc_max_batch_interval: {
-        value: cdktf.numberToHclTerraform(this._cdcMaxBatchInterval),
+        value: cdktn.numberToHclTerraform(this._cdcMaxBatchInterval),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cdc_min_file_size: {
-        value: cdktf.numberToHclTerraform(this._cdcMinFileSize),
+        value: cdktn.numberToHclTerraform(this._cdcMinFileSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cdc_path: {
-        value: cdktf.stringToHclTerraform(this._cdcPath),
+        value: cdktn.stringToHclTerraform(this._cdcPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_arn: {
-        value: cdktf.stringToHclTerraform(this._certificateArn),
+        value: cdktn.stringToHclTerraform(this._certificateArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compression_type: {
-        value: cdktf.stringToHclTerraform(this._compressionType),
+        value: cdktn.stringToHclTerraform(this._compressionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       csv_delimiter: {
-        value: cdktf.stringToHclTerraform(this._csvDelimiter),
+        value: cdktn.stringToHclTerraform(this._csvDelimiter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       csv_no_sup_value: {
-        value: cdktf.stringToHclTerraform(this._csvNoSupValue),
+        value: cdktn.stringToHclTerraform(this._csvNoSupValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       csv_null_value: {
-        value: cdktf.stringToHclTerraform(this._csvNullValue),
+        value: cdktn.stringToHclTerraform(this._csvNullValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       csv_row_delimiter: {
-        value: cdktf.stringToHclTerraform(this._csvRowDelimiter),
+        value: cdktn.stringToHclTerraform(this._csvRowDelimiter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_format: {
-        value: cdktf.stringToHclTerraform(this._dataFormat),
+        value: cdktn.stringToHclTerraform(this._dataFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_page_size: {
-        value: cdktf.numberToHclTerraform(this._dataPageSize),
+        value: cdktn.numberToHclTerraform(this._dataPageSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       date_partition_delimiter: {
-        value: cdktf.stringToHclTerraform(this._datePartitionDelimiter),
+        value: cdktn.stringToHclTerraform(this._datePartitionDelimiter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       date_partition_enabled: {
-        value: cdktf.booleanToHclTerraform(this._datePartitionEnabled),
+        value: cdktn.booleanToHclTerraform(this._datePartitionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       date_partition_sequence: {
-        value: cdktf.stringToHclTerraform(this._datePartitionSequence),
+        value: cdktn.stringToHclTerraform(this._datePartitionSequence),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       date_partition_timezone: {
-        value: cdktf.stringToHclTerraform(this._datePartitionTimezone),
+        value: cdktn.stringToHclTerraform(this._datePartitionTimezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       detach_target_on_lob_lookup_failure_parquet: {
-        value: cdktf.booleanToHclTerraform(this._detachTargetOnLobLookupFailureParquet),
+        value: cdktn.booleanToHclTerraform(this._detachTargetOnLobLookupFailureParquet),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dict_page_size_limit: {
-        value: cdktf.numberToHclTerraform(this._dictPageSizeLimit),
+        value: cdktn.numberToHclTerraform(this._dictPageSizeLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enable_statistics: {
-        value: cdktf.booleanToHclTerraform(this._enableStatistics),
+        value: cdktn.booleanToHclTerraform(this._enableStatistics),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       encoding_type: {
-        value: cdktf.stringToHclTerraform(this._encodingType),
+        value: cdktn.stringToHclTerraform(this._encodingType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_mode: {
-        value: cdktf.stringToHclTerraform(this._encryptionMode),
+        value: cdktn.stringToHclTerraform(this._encryptionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._endpointId),
+        value: cdktn.stringToHclTerraform(this._endpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_type: {
-        value: cdktf.stringToHclTerraform(this._endpointType),
+        value: cdktn.stringToHclTerraform(this._endpointType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_bucket_owner: {
-        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        value: cdktn.stringToHclTerraform(this._expectedBucketOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_table_definition: {
-        value: cdktf.stringToHclTerraform(this._externalTableDefinition),
+        value: cdktn.stringToHclTerraform(this._externalTableDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       glue_catalog_generation: {
-        value: cdktf.booleanToHclTerraform(this._glueCatalogGeneration),
+        value: cdktn.booleanToHclTerraform(this._glueCatalogGeneration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_header_rows: {
-        value: cdktf.numberToHclTerraform(this._ignoreHeaderRows),
+        value: cdktn.numberToHclTerraform(this._ignoreHeaderRows),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       include_op_for_full_load: {
-        value: cdktf.booleanToHclTerraform(this._includeOpForFullLoad),
+        value: cdktn.booleanToHclTerraform(this._includeOpForFullLoad),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_file_size: {
-        value: cdktf.numberToHclTerraform(this._maxFileSize),
+        value: cdktn.numberToHclTerraform(this._maxFileSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       parquet_timestamp_in_millisecond: {
-        value: cdktf.booleanToHclTerraform(this._parquetTimestampInMillisecond),
+        value: cdktn.booleanToHclTerraform(this._parquetTimestampInMillisecond),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       parquet_version: {
-        value: cdktf.stringToHclTerraform(this._parquetVersion),
+        value: cdktn.stringToHclTerraform(this._parquetVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preserve_transactions: {
-        value: cdktf.booleanToHclTerraform(this._preserveTransactions),
+        value: cdktn.booleanToHclTerraform(this._preserveTransactions),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rfc_4180: {
-        value: cdktf.booleanToHclTerraform(this._rfc4180),
+        value: cdktn.booleanToHclTerraform(this._rfc4180),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       row_group_length: {
-        value: cdktf.numberToHclTerraform(this._rowGroupLength),
+        value: cdktn.numberToHclTerraform(this._rowGroupLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       server_side_encryption_kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._serverSideEncryptionKmsKeyId),
+        value: cdktn.stringToHclTerraform(this._serverSideEncryptionKmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_access_role_arn: {
-        value: cdktf.stringToHclTerraform(this._serviceAccessRoleArn),
+        value: cdktn.stringToHclTerraform(this._serviceAccessRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssl_mode: {
-        value: cdktf.stringToHclTerraform(this._sslMode),
+        value: cdktn.stringToHclTerraform(this._sslMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       timestamp_column_name: {
-        value: cdktf.stringToHclTerraform(this._timestampColumnName),
+        value: cdktn.stringToHclTerraform(this._timestampColumnName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_csv_no_sup_value: {
-        value: cdktf.booleanToHclTerraform(this._useCsvNoSupValue),
+        value: cdktn.booleanToHclTerraform(this._useCsvNoSupValue),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_task_start_time_for_full_load_timestamp: {
-        value: cdktf.booleanToHclTerraform(this._useTaskStartTimeForFullLoadTimestamp),
+        value: cdktn.booleanToHclTerraform(this._useTaskStartTimeForFullLoadTimestamp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

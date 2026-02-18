@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LightsailDistributionConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailDistributionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The bundle ID to use for the distribution.
   *
@@ -42,7 +42,7 @@ export interface LightsailDistributionConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_distribution#is_enabled LightsailDistribution#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the distribution.
   *
@@ -68,7 +68,7 @@ export interface LightsailDistributionConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_distribution#cache_behavior LightsailDistribution#cache_behavior}
   */
-  readonly cacheBehavior?: LightsailDistributionCacheBehavior[] | cdktf.IResolvable;
+  readonly cacheBehavior?: LightsailDistributionCacheBehavior[] | cdktn.IResolvable;
   /**
   * cache_behavior_settings block
   *
@@ -98,8 +98,8 @@ export interface LightsailDistributionLocation {
 }
 
 export function lightsailDistributionLocationToTerraform(struct?: LightsailDistributionLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -108,8 +108,8 @@ export function lightsailDistributionLocationToTerraform(struct?: LightsailDistr
 
 
 export function lightsailDistributionLocationToHclTerraform(struct?: LightsailDistributionLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -117,7 +117,7 @@ export function lightsailDistributionLocationToHclTerraform(struct?: LightsailDi
   return attrs;
 }
 
-export class LightsailDistributionLocationOutputReference extends cdktf.ComplexObject {
+export class LightsailDistributionLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -126,7 +126,7 @@ export class LightsailDistributionLocationOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -156,14 +156,14 @@ export class LightsailDistributionLocationOutputReference extends cdktf.ComplexO
   }
 }
 
-export class LightsailDistributionLocationList extends cdktf.ComplexList {
+export class LightsailDistributionLocationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -189,32 +189,32 @@ export interface LightsailDistributionCacheBehavior {
   readonly path: string;
 }
 
-export function lightsailDistributionCacheBehaviorToTerraform(struct?: LightsailDistributionCacheBehavior | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lightsailDistributionCacheBehaviorToTerraform(struct?: LightsailDistributionCacheBehavior | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
-    path: cdktf.stringToTerraform(struct!.path),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function lightsailDistributionCacheBehaviorToHclTerraform(struct?: LightsailDistributionCacheBehavior | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lightsailDistributionCacheBehaviorToHclTerraform(struct?: LightsailDistributionCacheBehavior | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -225,9 +225,9 @@ export function lightsailDistributionCacheBehaviorToHclTerraform(struct?: Lights
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LightsailDistributionCacheBehaviorOutputReference extends cdktf.ComplexObject {
+export class LightsailDistributionCacheBehaviorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -235,11 +235,11 @@ export class LightsailDistributionCacheBehaviorOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LightsailDistributionCacheBehavior | cdktf.IResolvable | undefined {
+  public get internalValue(): LightsailDistributionCacheBehavior | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -256,14 +256,14 @@ export class LightsailDistributionCacheBehaviorOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LightsailDistributionCacheBehavior | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LightsailDistributionCacheBehavior | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._behavior = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -302,15 +302,15 @@ export class LightsailDistributionCacheBehaviorOutputReference extends cdktf.Com
   }
 }
 
-export class LightsailDistributionCacheBehaviorList extends cdktf.ComplexList {
-  public internalValue? : LightsailDistributionCacheBehavior[] | cdktf.IResolvable
+export class LightsailDistributionCacheBehaviorList extends cdktn.ComplexList {
+  public internalValue? : LightsailDistributionCacheBehavior[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -337,31 +337,31 @@ export interface LightsailDistributionCacheBehaviorSettingsForwardedCookies {
 }
 
 export function lightsailDistributionCacheBehaviorSettingsForwardedCookiesToTerraform(struct?: LightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputReference | LightsailDistributionCacheBehaviorSettingsForwardedCookies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cookies_allow_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cookiesAllowList),
-    option: cdktf.stringToTerraform(struct!.option),
+    cookies_allow_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cookiesAllowList),
+    option: cdktn.stringToTerraform(struct!.option),
   }
 }
 
 
 export function lightsailDistributionCacheBehaviorSettingsForwardedCookiesToHclTerraform(struct?: LightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputReference | LightsailDistributionCacheBehaviorSettingsForwardedCookies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cookies_allow_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cookiesAllowList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cookiesAllowList),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     option: {
-      value: cdktf.stringToHclTerraform(struct!.option),
+      value: cdktn.stringToHclTerraform(struct!.option),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -372,14 +372,14 @@ export function lightsailDistributionCacheBehaviorSettingsForwardedCookiesToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputReference extends cdktf.ComplexObject {
+export class LightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -413,7 +413,7 @@ export class LightsailDistributionCacheBehaviorSettingsForwardedCookiesOutputRef
   // cookies_allow_list - computed: false, optional: true, required: false
   private _cookiesAllowList?: string[]; 
   public get cookiesAllowList() {
-    return cdktf.Fn.tolist(this.getListAttribute('cookies_allow_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('cookies_allow_list'));
   }
   public set cookiesAllowList(value: string[]) {
     this._cookiesAllowList = value;
@@ -458,31 +458,31 @@ export interface LightsailDistributionCacheBehaviorSettingsForwardedHeaders {
 }
 
 export function lightsailDistributionCacheBehaviorSettingsForwardedHeadersToTerraform(struct?: LightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputReference | LightsailDistributionCacheBehaviorSettingsForwardedHeaders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    headers_allow_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.headersAllowList),
-    option: cdktf.stringToTerraform(struct!.option),
+    headers_allow_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.headersAllowList),
+    option: cdktn.stringToTerraform(struct!.option),
   }
 }
 
 
 export function lightsailDistributionCacheBehaviorSettingsForwardedHeadersToHclTerraform(struct?: LightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputReference | LightsailDistributionCacheBehaviorSettingsForwardedHeaders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     headers_allow_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.headersAllowList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.headersAllowList),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     option: {
-      value: cdktf.stringToHclTerraform(struct!.option),
+      value: cdktn.stringToHclTerraform(struct!.option),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -493,14 +493,14 @@ export function lightsailDistributionCacheBehaviorSettingsForwardedHeadersToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputReference extends cdktf.ComplexObject {
+export class LightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -534,7 +534,7 @@ export class LightsailDistributionCacheBehaviorSettingsForwardedHeadersOutputRef
   // headers_allow_list - computed: false, optional: true, required: false
   private _headersAllowList?: string[]; 
   public get headersAllowList() {
-    return cdktf.Fn.tolist(this.getListAttribute('headers_allow_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('headers_allow_list'));
   }
   public set headersAllowList(value: string[]) {
     this._headersAllowList = value;
@@ -569,7 +569,7 @@ export interface LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_distribution#option LightsailDistribution#option}
   */
-  readonly option?: boolean | cdktf.IResolvable;
+  readonly option?: boolean | cdktn.IResolvable;
   /**
   * The specific query strings that the distribution forwards to the origin.
   *
@@ -579,31 +579,31 @@ export interface LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings
 }
 
 export function lightsailDistributionCacheBehaviorSettingsForwardedQueryStringsToTerraform(struct?: LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutputReference | LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    option: cdktf.booleanToTerraform(struct!.option),
-    query_strings_allowed_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queryStringsAllowedList),
+    option: cdktn.booleanToTerraform(struct!.option),
+    query_strings_allowed_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queryStringsAllowedList),
   }
 }
 
 
 export function lightsailDistributionCacheBehaviorSettingsForwardedQueryStringsToHclTerraform(struct?: LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutputReference | LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     option: {
-      value: cdktf.booleanToHclTerraform(struct!.option),
+      value: cdktn.booleanToHclTerraform(struct!.option),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     query_strings_allowed_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryStringsAllowedList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queryStringsAllowedList),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -614,14 +614,14 @@ export function lightsailDistributionCacheBehaviorSettingsForwardedQueryStringsT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutputReference extends cdktf.ComplexObject {
+export class LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -653,11 +653,11 @@ export class LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutp
   }
 
   // option - computed: false, optional: true, required: false
-  private _option?: boolean | cdktf.IResolvable; 
+  private _option?: boolean | cdktn.IResolvable; 
   public get option() {
     return this.getBooleanAttribute('option');
   }
-  public set option(value: boolean | cdktf.IResolvable) {
+  public set option(value: boolean | cdktn.IResolvable) {
     this._option = value;
   }
   public resetOption() {
@@ -671,7 +671,7 @@ export class LightsailDistributionCacheBehaviorSettingsForwardedQueryStringsOutp
   // query_strings_allowed_list - computed: false, optional: true, required: false
   private _queryStringsAllowedList?: string[]; 
   public get queryStringsAllowedList() {
-    return cdktf.Fn.tolist(this.getListAttribute('query_strings_allowed_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('query_strings_allowed_list'));
   }
   public set queryStringsAllowedList(value: string[]) {
     this._queryStringsAllowedList = value;
@@ -736,16 +736,16 @@ export interface LightsailDistributionCacheBehaviorSettings {
 }
 
 export function lightsailDistributionCacheBehaviorSettingsToTerraform(struct?: LightsailDistributionCacheBehaviorSettingsOutputReference | LightsailDistributionCacheBehaviorSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_http_methods: cdktf.stringToTerraform(struct!.allowedHttpMethods),
-    cached_http_methods: cdktf.stringToTerraform(struct!.cachedHttpMethods),
-    default_ttl: cdktf.numberToTerraform(struct!.defaultTtl),
-    maximum_ttl: cdktf.numberToTerraform(struct!.maximumTtl),
-    minimum_ttl: cdktf.numberToTerraform(struct!.minimumTtl),
+    allowed_http_methods: cdktn.stringToTerraform(struct!.allowedHttpMethods),
+    cached_http_methods: cdktn.stringToTerraform(struct!.cachedHttpMethods),
+    default_ttl: cdktn.numberToTerraform(struct!.defaultTtl),
+    maximum_ttl: cdktn.numberToTerraform(struct!.maximumTtl),
+    minimum_ttl: cdktn.numberToTerraform(struct!.minimumTtl),
     forwarded_cookies: lightsailDistributionCacheBehaviorSettingsForwardedCookiesToTerraform(struct!.forwardedCookies),
     forwarded_headers: lightsailDistributionCacheBehaviorSettingsForwardedHeadersToTerraform(struct!.forwardedHeaders),
     forwarded_query_strings: lightsailDistributionCacheBehaviorSettingsForwardedQueryStringsToTerraform(struct!.forwardedQueryStrings),
@@ -754,37 +754,37 @@ export function lightsailDistributionCacheBehaviorSettingsToTerraform(struct?: L
 
 
 export function lightsailDistributionCacheBehaviorSettingsToHclTerraform(struct?: LightsailDistributionCacheBehaviorSettingsOutputReference | LightsailDistributionCacheBehaviorSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_http_methods: {
-      value: cdktf.stringToHclTerraform(struct!.allowedHttpMethods),
+      value: cdktn.stringToHclTerraform(struct!.allowedHttpMethods),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cached_http_methods: {
-      value: cdktf.stringToHclTerraform(struct!.cachedHttpMethods),
+      value: cdktn.stringToHclTerraform(struct!.cachedHttpMethods),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.defaultTtl),
+      value: cdktn.numberToHclTerraform(struct!.defaultTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.maximumTtl),
+      value: cdktn.numberToHclTerraform(struct!.maximumTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.minimumTtl),
+      value: cdktn.numberToHclTerraform(struct!.minimumTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -813,14 +813,14 @@ export function lightsailDistributionCacheBehaviorSettingsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LightsailDistributionCacheBehaviorSettingsOutputReference extends cdktf.ComplexObject {
+export class LightsailDistributionCacheBehaviorSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1025,24 +1025,24 @@ export interface LightsailDistributionDefaultCacheBehavior {
 }
 
 export function lightsailDistributionDefaultCacheBehaviorToTerraform(struct?: LightsailDistributionDefaultCacheBehaviorOutputReference | LightsailDistributionDefaultCacheBehavior): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
   }
 }
 
 
 export function lightsailDistributionDefaultCacheBehaviorToHclTerraform(struct?: LightsailDistributionDefaultCacheBehaviorOutputReference | LightsailDistributionDefaultCacheBehavior): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1053,14 +1053,14 @@ export function lightsailDistributionDefaultCacheBehaviorToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LightsailDistributionDefaultCacheBehaviorOutputReference extends cdktf.ComplexObject {
+export class LightsailDistributionDefaultCacheBehaviorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1120,38 +1120,38 @@ export interface LightsailDistributionOrigin {
 }
 
 export function lightsailDistributionOriginToTerraform(struct?: LightsailDistributionOriginOutputReference | LightsailDistributionOrigin): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    protocol_policy: cdktf.stringToTerraform(struct!.protocolPolicy),
-    region_name: cdktf.stringToTerraform(struct!.regionName),
+    name: cdktn.stringToTerraform(struct!.name),
+    protocol_policy: cdktn.stringToTerraform(struct!.protocolPolicy),
+    region_name: cdktn.stringToTerraform(struct!.regionName),
   }
 }
 
 
 export function lightsailDistributionOriginToHclTerraform(struct?: LightsailDistributionOriginOutputReference | LightsailDistributionOrigin): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol_policy: {
-      value: cdktf.stringToHclTerraform(struct!.protocolPolicy),
+      value: cdktn.stringToHclTerraform(struct!.protocolPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region_name: {
-      value: cdktf.stringToHclTerraform(struct!.regionName),
+      value: cdktn.stringToHclTerraform(struct!.regionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1162,14 +1162,14 @@ export function lightsailDistributionOriginToHclTerraform(struct?: LightsailDist
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LightsailDistributionOriginOutputReference extends cdktf.ComplexObject {
+export class LightsailDistributionOriginOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1268,39 +1268,39 @@ export interface LightsailDistributionTimeouts {
   readonly update?: string;
 }
 
-export function lightsailDistributionTimeoutsToTerraform(struct?: LightsailDistributionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lightsailDistributionTimeoutsToTerraform(struct?: LightsailDistributionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lightsailDistributionTimeoutsToHclTerraform(struct?: LightsailDistributionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lightsailDistributionTimeoutsToHclTerraform(struct?: LightsailDistributionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1311,19 +1311,19 @@ export function lightsailDistributionTimeoutsToHclTerraform(struct?: LightsailDi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LightsailDistributionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LightsailDistributionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LightsailDistributionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LightsailDistributionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1344,7 +1344,7 @@ export class LightsailDistributionTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LightsailDistributionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LightsailDistributionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1352,7 +1352,7 @@ export class LightsailDistributionTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1417,7 +1417,7 @@ export class LightsailDistributionTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_distribution aws_lightsail_distribution}
 */
-export class LightsailDistribution extends cdktf.TerraformResource {
+export class LightsailDistribution extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1428,14 +1428,14 @@ export class LightsailDistribution extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LightsailDistribution resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LightsailDistribution resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LightsailDistribution to import
   * @param importFromId The id of the existing LightsailDistribution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_distribution#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LightsailDistribution to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_distribution", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_distribution", importId: importFromId, provider });
       }
 
   // ===========
@@ -1567,11 +1567,11 @@ export class LightsailDistribution extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1674,7 +1674,7 @@ export class LightsailDistribution extends cdktf.TerraformResource {
   public get cacheBehavior() {
     return this._cacheBehavior;
   }
-  public putCacheBehavior(value: LightsailDistributionCacheBehavior[] | cdktf.IResolvable) {
+  public putCacheBehavior(value: LightsailDistributionCacheBehavior[] | cdktn.IResolvable) {
     this._cacheBehavior.internalValue = value;
   }
   public resetCacheBehavior() {
@@ -1749,16 +1749,16 @@ export class LightsailDistribution extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bundle_id: cdktf.stringToTerraform(this._bundleId),
-      certificate_name: cdktf.stringToTerraform(this._certificateName),
-      id: cdktf.stringToTerraform(this._id),
-      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      cache_behavior: cdktf.listMapper(lightsailDistributionCacheBehaviorToTerraform, true)(this._cacheBehavior.internalValue),
+      bundle_id: cdktn.stringToTerraform(this._bundleId),
+      certificate_name: cdktn.stringToTerraform(this._certificateName),
+      id: cdktn.stringToTerraform(this._id),
+      ip_address_type: cdktn.stringToTerraform(this._ipAddressType),
+      is_enabled: cdktn.booleanToTerraform(this._isEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      cache_behavior: cdktn.listMapper(lightsailDistributionCacheBehaviorToTerraform, true)(this._cacheBehavior.internalValue),
       cache_behavior_settings: lightsailDistributionCacheBehaviorSettingsToTerraform(this._cacheBehaviorSettings.internalValue),
       default_cache_behavior: lightsailDistributionDefaultCacheBehaviorToTerraform(this._defaultCacheBehavior.internalValue),
       origin: lightsailDistributionOriginToTerraform(this._origin.internalValue),
@@ -1769,61 +1769,61 @@ export class LightsailDistribution extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bundle_id: {
-        value: cdktf.stringToHclTerraform(this._bundleId),
+        value: cdktn.stringToHclTerraform(this._bundleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_name: {
-        value: cdktf.stringToHclTerraform(this._certificateName),
+        value: cdktn.stringToHclTerraform(this._certificateName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_address_type: {
-        value: cdktf.stringToHclTerraform(this._ipAddressType),
+        value: cdktn.stringToHclTerraform(this._ipAddressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        value: cdktn.booleanToHclTerraform(this._isEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       cache_behavior: {
-        value: cdktf.listMapperHcl(lightsailDistributionCacheBehaviorToHclTerraform, true)(this._cacheBehavior.internalValue),
+        value: cdktn.listMapperHcl(lightsailDistributionCacheBehaviorToHclTerraform, true)(this._cacheBehavior.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LightsailDistributionCacheBehaviorList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRedshiftserverlessCredentialsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRedshiftserverlessCredentialsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshiftserverless_credentials#db_name DataAwsRedshiftserverlessCredentials#db_name}
   */
@@ -42,7 +42,7 @@ export interface DataAwsRedshiftserverlessCredentialsConfig extends cdktf.Terraf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials}
 */
-export class DataAwsRedshiftserverlessCredentials extends cdktf.TerraformDataSource {
+export class DataAwsRedshiftserverlessCredentials extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataAwsRedshiftserverlessCredentials extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRedshiftserverlessCredentials resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRedshiftserverlessCredentials resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRedshiftserverlessCredentials to import
   * @param importFromId The id of the existing DataAwsRedshiftserverlessCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/redshiftserverless_credentials#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRedshiftserverlessCredentials to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_credentials", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_credentials", importId: importFromId, provider });
       }
 
   // ===========
@@ -199,42 +199,42 @@ export class DataAwsRedshiftserverlessCredentials extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_name: cdktf.stringToTerraform(this._dbName),
-      duration_seconds: cdktf.numberToTerraform(this._durationSeconds),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      workgroup_name: cdktf.stringToTerraform(this._workgroupName),
+      db_name: cdktn.stringToTerraform(this._dbName),
+      duration_seconds: cdktn.numberToTerraform(this._durationSeconds),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      workgroup_name: cdktn.stringToTerraform(this._workgroupName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       db_name: {
-        value: cdktf.stringToHclTerraform(this._dbName),
+        value: cdktn.stringToHclTerraform(this._dbName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration_seconds: {
-        value: cdktf.numberToHclTerraform(this._durationSeconds),
+        value: cdktn.numberToHclTerraform(this._durationSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workgroup_name: {
-        value: cdktf.stringToHclTerraform(this._workgroupName),
+        value: cdktn.stringToHclTerraform(this._workgroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

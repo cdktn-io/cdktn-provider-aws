@@ -7,27 +7,27 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53DomainsDomainConfig extends cdktf.TerraformMetaArguments {
+export interface Route53DomainsDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#admin_privacy Route53DomainsDomain#admin_privacy}
   */
-  readonly adminPrivacy?: boolean | cdktf.IResolvable;
+  readonly adminPrivacy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#auto_renew Route53DomainsDomain#auto_renew}
   */
-  readonly autoRenew?: boolean | cdktf.IResolvable;
+  readonly autoRenew?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#billing_contact Route53DomainsDomain#billing_contact}
   */
-  readonly billingContact?: Route53DomainsDomainBillingContact[] | cdktf.IResolvable;
+  readonly billingContact?: Route53DomainsDomainBillingContact[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#billing_privacy Route53DomainsDomain#billing_privacy}
   */
-  readonly billingPrivacy?: boolean | cdktf.IResolvable;
+  readonly billingPrivacy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#domain_name Route53DomainsDomain#domain_name}
   */
@@ -39,11 +39,11 @@ export interface Route53DomainsDomainConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#name_server Route53DomainsDomain#name_server}
   */
-  readonly nameServer?: Route53DomainsDomainNameServer[] | cdktf.IResolvable;
+  readonly nameServer?: Route53DomainsDomainNameServer[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#registrant_privacy Route53DomainsDomain#registrant_privacy}
   */
-  readonly registrantPrivacy?: boolean | cdktf.IResolvable;
+  readonly registrantPrivacy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#tags Route53DomainsDomain#tags}
   */
@@ -51,29 +51,29 @@ export interface Route53DomainsDomainConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#tech_privacy Route53DomainsDomain#tech_privacy}
   */
-  readonly techPrivacy?: boolean | cdktf.IResolvable;
+  readonly techPrivacy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#transfer_lock Route53DomainsDomain#transfer_lock}
   */
-  readonly transferLock?: boolean | cdktf.IResolvable;
+  readonly transferLock?: boolean | cdktn.IResolvable;
   /**
   * admin_contact block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#admin_contact Route53DomainsDomain#admin_contact}
   */
-  readonly adminContact?: Route53DomainsDomainAdminContact[] | cdktf.IResolvable;
+  readonly adminContact?: Route53DomainsDomainAdminContact[] | cdktn.IResolvable;
   /**
   * registrant_contact block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#registrant_contact Route53DomainsDomain#registrant_contact}
   */
-  readonly registrantContact?: Route53DomainsDomainRegistrantContact[] | cdktf.IResolvable;
+  readonly registrantContact?: Route53DomainsDomainRegistrantContact[] | cdktn.IResolvable;
   /**
   * tech_contact block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#tech_contact Route53DomainsDomain#tech_contact}
   */
-  readonly techContact?: Route53DomainsDomainTechContact[] | cdktf.IResolvable;
+  readonly techContact?: Route53DomainsDomainTechContact[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -92,32 +92,32 @@ export interface Route53DomainsDomainBillingContactExtraParam {
   readonly value?: string;
 }
 
-export function route53DomainsDomainBillingContactExtraParamToTerraform(struct?: Route53DomainsDomainBillingContactExtraParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainBillingContactExtraParamToTerraform(struct?: Route53DomainsDomainBillingContactExtraParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function route53DomainsDomainBillingContactExtraParamToHclTerraform(struct?: Route53DomainsDomainBillingContactExtraParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainBillingContactExtraParamToHclTerraform(struct?: Route53DomainsDomainBillingContactExtraParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,9 +128,9 @@ export function route53DomainsDomainBillingContactExtraParamToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainBillingContactExtraParamOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainBillingContactExtraParamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -138,11 +138,11 @@ export class Route53DomainsDomainBillingContactExtraParamOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDomainBillingContactExtraParam | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainBillingContactExtraParam | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,14 +159,14 @@ export class Route53DomainsDomainBillingContactExtraParamOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainBillingContactExtraParam | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainBillingContactExtraParam | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -211,15 +211,15 @@ export class Route53DomainsDomainBillingContactExtraParamOutputReference extends
   }
 }
 
-export class Route53DomainsDomainBillingContactExtraParamList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDomainBillingContactExtraParam[] | cdktf.IResolvable
+export class Route53DomainsDomainBillingContactExtraParamList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDomainBillingContactExtraParam[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -258,7 +258,7 @@ export interface Route53DomainsDomainBillingContact {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
   */
-  readonly extraParam?: Route53DomainsDomainBillingContactExtraParam[] | cdktf.IResolvable;
+  readonly extraParam?: Route53DomainsDomainBillingContactExtraParam[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}
   */
@@ -289,116 +289,116 @@ export interface Route53DomainsDomainBillingContact {
   readonly zipCode?: string;
 }
 
-export function route53DomainsDomainBillingContactToTerraform(struct?: Route53DomainsDomainBillingContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainBillingContactToTerraform(struct?: Route53DomainsDomainBillingContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_line_1: cdktf.stringToTerraform(struct!.addressLine1),
-    address_line_2: cdktf.stringToTerraform(struct!.addressLine2),
-    city: cdktf.stringToTerraform(struct!.city),
-    contact_type: cdktf.stringToTerraform(struct!.contactType),
-    country_code: cdktf.stringToTerraform(struct!.countryCode),
-    email: cdktf.stringToTerraform(struct!.email),
-    extra_param: cdktf.listMapper(route53DomainsDomainBillingContactExtraParamToTerraform, false)(struct!.extraParam),
-    fax: cdktf.stringToTerraform(struct!.fax),
-    first_name: cdktf.stringToTerraform(struct!.firstName),
-    last_name: cdktf.stringToTerraform(struct!.lastName),
-    organization_name: cdktf.stringToTerraform(struct!.organizationName),
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
-    state: cdktf.stringToTerraform(struct!.state),
-    zip_code: cdktf.stringToTerraform(struct!.zipCode),
+    address_line_1: cdktn.stringToTerraform(struct!.addressLine1),
+    address_line_2: cdktn.stringToTerraform(struct!.addressLine2),
+    city: cdktn.stringToTerraform(struct!.city),
+    contact_type: cdktn.stringToTerraform(struct!.contactType),
+    country_code: cdktn.stringToTerraform(struct!.countryCode),
+    email: cdktn.stringToTerraform(struct!.email),
+    extra_param: cdktn.listMapper(route53DomainsDomainBillingContactExtraParamToTerraform, false)(struct!.extraParam),
+    fax: cdktn.stringToTerraform(struct!.fax),
+    first_name: cdktn.stringToTerraform(struct!.firstName),
+    last_name: cdktn.stringToTerraform(struct!.lastName),
+    organization_name: cdktn.stringToTerraform(struct!.organizationName),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
+    state: cdktn.stringToTerraform(struct!.state),
+    zip_code: cdktn.stringToTerraform(struct!.zipCode),
   }
 }
 
 
-export function route53DomainsDomainBillingContactToHclTerraform(struct?: Route53DomainsDomainBillingContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainBillingContactToHclTerraform(struct?: Route53DomainsDomainBillingContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_line_1: {
-      value: cdktf.stringToHclTerraform(struct!.addressLine1),
+      value: cdktn.stringToHclTerraform(struct!.addressLine1),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_line_2: {
-      value: cdktf.stringToHclTerraform(struct!.addressLine2),
+      value: cdktn.stringToHclTerraform(struct!.addressLine2),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     city: {
-      value: cdktf.stringToHclTerraform(struct!.city),
+      value: cdktn.stringToHclTerraform(struct!.city),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     contact_type: {
-      value: cdktf.stringToHclTerraform(struct!.contactType),
+      value: cdktn.stringToHclTerraform(struct!.contactType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country_code: {
-      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      value: cdktn.stringToHclTerraform(struct!.countryCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     extra_param: {
-      value: cdktf.listMapperHcl(route53DomainsDomainBillingContactExtraParamToHclTerraform, false)(struct!.extraParam),
+      value: cdktn.listMapperHcl(route53DomainsDomainBillingContactExtraParamToHclTerraform, false)(struct!.extraParam),
       isBlock: true,
       type: "list",
       storageClassType: "Route53DomainsDomainBillingContactExtraParamList",
     },
     fax: {
-      value: cdktf.stringToHclTerraform(struct!.fax),
+      value: cdktn.stringToHclTerraform(struct!.fax),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_name: {
-      value: cdktf.stringToHclTerraform(struct!.firstName),
+      value: cdktn.stringToHclTerraform(struct!.firstName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_name: {
-      value: cdktf.stringToHclTerraform(struct!.lastName),
+      value: cdktn.stringToHclTerraform(struct!.lastName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization_name: {
-      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      value: cdktn.stringToHclTerraform(struct!.organizationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zip_code: {
-      value: cdktf.stringToHclTerraform(struct!.zipCode),
+      value: cdktn.stringToHclTerraform(struct!.zipCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -409,9 +409,9 @@ export function route53DomainsDomainBillingContactToHclTerraform(struct?: Route5
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainBillingContactOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainBillingContactOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -419,11 +419,11 @@ export class Route53DomainsDomainBillingContactOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDomainBillingContact | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainBillingContact | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -488,7 +488,7 @@ export class Route53DomainsDomainBillingContactOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainBillingContact | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainBillingContact | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -507,7 +507,7 @@ export class Route53DomainsDomainBillingContactOutputReference extends cdktf.Com
       this._state = undefined;
       this._zipCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -632,7 +632,7 @@ export class Route53DomainsDomainBillingContactOutputReference extends cdktf.Com
   public get extraParam() {
     return this._extraParam;
   }
-  public putExtraParam(value: Route53DomainsDomainBillingContactExtraParam[] | cdktf.IResolvable) {
+  public putExtraParam(value: Route53DomainsDomainBillingContactExtraParam[] | cdktn.IResolvable) {
     this._extraParam.internalValue = value;
   }
   public resetExtraParam() {
@@ -756,15 +756,15 @@ export class Route53DomainsDomainBillingContactOutputReference extends cdktf.Com
   }
 }
 
-export class Route53DomainsDomainBillingContactList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDomainBillingContact[] | cdktf.IResolvable
+export class Route53DomainsDomainBillingContactList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDomainBillingContact[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -786,32 +786,32 @@ export interface Route53DomainsDomainNameServer {
   readonly name?: string;
 }
 
-export function route53DomainsDomainNameServerToTerraform(struct?: Route53DomainsDomainNameServer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainNameServerToTerraform(struct?: Route53DomainsDomainNameServer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    glue_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.glueIps),
-    name: cdktf.stringToTerraform(struct!.name),
+    glue_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.glueIps),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function route53DomainsDomainNameServerToHclTerraform(struct?: Route53DomainsDomainNameServer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainNameServerToHclTerraform(struct?: Route53DomainsDomainNameServer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     glue_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.glueIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.glueIps),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -822,9 +822,9 @@ export function route53DomainsDomainNameServerToHclTerraform(struct?: Route53Dom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainNameServerOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainNameServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -832,11 +832,11 @@ export class Route53DomainsDomainNameServerOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDomainNameServer | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainNameServer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -853,14 +853,14 @@ export class Route53DomainsDomainNameServerOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainNameServer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainNameServer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._glueIps = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -875,7 +875,7 @@ export class Route53DomainsDomainNameServerOutputReference extends cdktf.Complex
   // glue_ips - computed: true, optional: true, required: false
   private _glueIps?: string[]; 
   public get glueIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('glue_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('glue_ips'));
   }
   public set glueIps(value: string[]) {
     this._glueIps = value;
@@ -905,15 +905,15 @@ export class Route53DomainsDomainNameServerOutputReference extends cdktf.Complex
   }
 }
 
-export class Route53DomainsDomainNameServerList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDomainNameServer[] | cdktf.IResolvable
+export class Route53DomainsDomainNameServerList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDomainNameServer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -935,32 +935,32 @@ export interface Route53DomainsDomainAdminContactExtraParam {
   readonly value: string;
 }
 
-export function route53DomainsDomainAdminContactExtraParamToTerraform(struct?: Route53DomainsDomainAdminContactExtraParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainAdminContactExtraParamToTerraform(struct?: Route53DomainsDomainAdminContactExtraParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function route53DomainsDomainAdminContactExtraParamToHclTerraform(struct?: Route53DomainsDomainAdminContactExtraParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainAdminContactExtraParamToHclTerraform(struct?: Route53DomainsDomainAdminContactExtraParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -971,9 +971,9 @@ export function route53DomainsDomainAdminContactExtraParamToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainAdminContactExtraParamOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainAdminContactExtraParamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -981,11 +981,11 @@ export class Route53DomainsDomainAdminContactExtraParamOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDomainAdminContactExtraParam | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainAdminContactExtraParam | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1002,14 +1002,14 @@ export class Route53DomainsDomainAdminContactExtraParamOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainAdminContactExtraParam | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainAdminContactExtraParam | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1048,15 +1048,15 @@ export class Route53DomainsDomainAdminContactExtraParamOutputReference extends c
   }
 }
 
-export class Route53DomainsDomainAdminContactExtraParamList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDomainAdminContactExtraParam[] | cdktf.IResolvable
+export class Route53DomainsDomainAdminContactExtraParamList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDomainAdminContactExtraParam[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1125,119 +1125,119 @@ export interface Route53DomainsDomainAdminContact {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
   */
-  readonly extraParam?: Route53DomainsDomainAdminContactExtraParam[] | cdktf.IResolvable;
+  readonly extraParam?: Route53DomainsDomainAdminContactExtraParam[] | cdktn.IResolvable;
 }
 
-export function route53DomainsDomainAdminContactToTerraform(struct?: Route53DomainsDomainAdminContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainAdminContactToTerraform(struct?: Route53DomainsDomainAdminContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_line_1: cdktf.stringToTerraform(struct!.addressLine1),
-    address_line_2: cdktf.stringToTerraform(struct!.addressLine2),
-    city: cdktf.stringToTerraform(struct!.city),
-    contact_type: cdktf.stringToTerraform(struct!.contactType),
-    country_code: cdktf.stringToTerraform(struct!.countryCode),
-    email: cdktf.stringToTerraform(struct!.email),
-    fax: cdktf.stringToTerraform(struct!.fax),
-    first_name: cdktf.stringToTerraform(struct!.firstName),
-    last_name: cdktf.stringToTerraform(struct!.lastName),
-    organization_name: cdktf.stringToTerraform(struct!.organizationName),
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
-    state: cdktf.stringToTerraform(struct!.state),
-    zip_code: cdktf.stringToTerraform(struct!.zipCode),
-    extra_param: cdktf.listMapper(route53DomainsDomainAdminContactExtraParamToTerraform, true)(struct!.extraParam),
+    address_line_1: cdktn.stringToTerraform(struct!.addressLine1),
+    address_line_2: cdktn.stringToTerraform(struct!.addressLine2),
+    city: cdktn.stringToTerraform(struct!.city),
+    contact_type: cdktn.stringToTerraform(struct!.contactType),
+    country_code: cdktn.stringToTerraform(struct!.countryCode),
+    email: cdktn.stringToTerraform(struct!.email),
+    fax: cdktn.stringToTerraform(struct!.fax),
+    first_name: cdktn.stringToTerraform(struct!.firstName),
+    last_name: cdktn.stringToTerraform(struct!.lastName),
+    organization_name: cdktn.stringToTerraform(struct!.organizationName),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
+    state: cdktn.stringToTerraform(struct!.state),
+    zip_code: cdktn.stringToTerraform(struct!.zipCode),
+    extra_param: cdktn.listMapper(route53DomainsDomainAdminContactExtraParamToTerraform, true)(struct!.extraParam),
   }
 }
 
 
-export function route53DomainsDomainAdminContactToHclTerraform(struct?: Route53DomainsDomainAdminContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainAdminContactToHclTerraform(struct?: Route53DomainsDomainAdminContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_line_1: {
-      value: cdktf.stringToHclTerraform(struct!.addressLine1),
+      value: cdktn.stringToHclTerraform(struct!.addressLine1),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_line_2: {
-      value: cdktf.stringToHclTerraform(struct!.addressLine2),
+      value: cdktn.stringToHclTerraform(struct!.addressLine2),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     city: {
-      value: cdktf.stringToHclTerraform(struct!.city),
+      value: cdktn.stringToHclTerraform(struct!.city),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     contact_type: {
-      value: cdktf.stringToHclTerraform(struct!.contactType),
+      value: cdktn.stringToHclTerraform(struct!.contactType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country_code: {
-      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      value: cdktn.stringToHclTerraform(struct!.countryCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fax: {
-      value: cdktf.stringToHclTerraform(struct!.fax),
+      value: cdktn.stringToHclTerraform(struct!.fax),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_name: {
-      value: cdktf.stringToHclTerraform(struct!.firstName),
+      value: cdktn.stringToHclTerraform(struct!.firstName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_name: {
-      value: cdktf.stringToHclTerraform(struct!.lastName),
+      value: cdktn.stringToHclTerraform(struct!.lastName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization_name: {
-      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      value: cdktn.stringToHclTerraform(struct!.organizationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zip_code: {
-      value: cdktf.stringToHclTerraform(struct!.zipCode),
+      value: cdktn.stringToHclTerraform(struct!.zipCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     extra_param: {
-      value: cdktf.listMapperHcl(route53DomainsDomainAdminContactExtraParamToHclTerraform, true)(struct!.extraParam),
+      value: cdktn.listMapperHcl(route53DomainsDomainAdminContactExtraParamToHclTerraform, true)(struct!.extraParam),
       isBlock: true,
       type: "list",
       storageClassType: "Route53DomainsDomainAdminContactExtraParamList",
@@ -1248,9 +1248,9 @@ export function route53DomainsDomainAdminContactToHclTerraform(struct?: Route53D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainAdminContactOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainAdminContactOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1258,11 +1258,11 @@ export class Route53DomainsDomainAdminContactOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDomainAdminContact | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainAdminContact | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1327,7 +1327,7 @@ export class Route53DomainsDomainAdminContactOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainAdminContact | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainAdminContact | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1346,7 +1346,7 @@ export class Route53DomainsDomainAdminContactOutputReference extends cdktf.Compl
       this._zipCode = undefined;
       this._extraParam.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1583,7 +1583,7 @@ export class Route53DomainsDomainAdminContactOutputReference extends cdktf.Compl
   public get extraParam() {
     return this._extraParam;
   }
-  public putExtraParam(value: Route53DomainsDomainAdminContactExtraParam[] | cdktf.IResolvable) {
+  public putExtraParam(value: Route53DomainsDomainAdminContactExtraParam[] | cdktn.IResolvable) {
     this._extraParam.internalValue = value;
   }
   public resetExtraParam() {
@@ -1595,15 +1595,15 @@ export class Route53DomainsDomainAdminContactOutputReference extends cdktf.Compl
   }
 }
 
-export class Route53DomainsDomainAdminContactList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDomainAdminContact[] | cdktf.IResolvable
+export class Route53DomainsDomainAdminContactList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDomainAdminContact[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1625,32 +1625,32 @@ export interface Route53DomainsDomainRegistrantContactExtraParam {
   readonly value: string;
 }
 
-export function route53DomainsDomainRegistrantContactExtraParamToTerraform(struct?: Route53DomainsDomainRegistrantContactExtraParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainRegistrantContactExtraParamToTerraform(struct?: Route53DomainsDomainRegistrantContactExtraParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function route53DomainsDomainRegistrantContactExtraParamToHclTerraform(struct?: Route53DomainsDomainRegistrantContactExtraParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainRegistrantContactExtraParamToHclTerraform(struct?: Route53DomainsDomainRegistrantContactExtraParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1661,9 +1661,9 @@ export function route53DomainsDomainRegistrantContactExtraParamToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainRegistrantContactExtraParamOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainRegistrantContactExtraParamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1671,11 +1671,11 @@ export class Route53DomainsDomainRegistrantContactExtraParamOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDomainRegistrantContactExtraParam | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainRegistrantContactExtraParam | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1692,14 +1692,14 @@ export class Route53DomainsDomainRegistrantContactExtraParamOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainRegistrantContactExtraParam | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainRegistrantContactExtraParam | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1738,15 +1738,15 @@ export class Route53DomainsDomainRegistrantContactExtraParamOutputReference exte
   }
 }
 
-export class Route53DomainsDomainRegistrantContactExtraParamList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDomainRegistrantContactExtraParam[] | cdktf.IResolvable
+export class Route53DomainsDomainRegistrantContactExtraParamList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDomainRegistrantContactExtraParam[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1815,119 +1815,119 @@ export interface Route53DomainsDomainRegistrantContact {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
   */
-  readonly extraParam?: Route53DomainsDomainRegistrantContactExtraParam[] | cdktf.IResolvable;
+  readonly extraParam?: Route53DomainsDomainRegistrantContactExtraParam[] | cdktn.IResolvable;
 }
 
-export function route53DomainsDomainRegistrantContactToTerraform(struct?: Route53DomainsDomainRegistrantContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainRegistrantContactToTerraform(struct?: Route53DomainsDomainRegistrantContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_line_1: cdktf.stringToTerraform(struct!.addressLine1),
-    address_line_2: cdktf.stringToTerraform(struct!.addressLine2),
-    city: cdktf.stringToTerraform(struct!.city),
-    contact_type: cdktf.stringToTerraform(struct!.contactType),
-    country_code: cdktf.stringToTerraform(struct!.countryCode),
-    email: cdktf.stringToTerraform(struct!.email),
-    fax: cdktf.stringToTerraform(struct!.fax),
-    first_name: cdktf.stringToTerraform(struct!.firstName),
-    last_name: cdktf.stringToTerraform(struct!.lastName),
-    organization_name: cdktf.stringToTerraform(struct!.organizationName),
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
-    state: cdktf.stringToTerraform(struct!.state),
-    zip_code: cdktf.stringToTerraform(struct!.zipCode),
-    extra_param: cdktf.listMapper(route53DomainsDomainRegistrantContactExtraParamToTerraform, true)(struct!.extraParam),
+    address_line_1: cdktn.stringToTerraform(struct!.addressLine1),
+    address_line_2: cdktn.stringToTerraform(struct!.addressLine2),
+    city: cdktn.stringToTerraform(struct!.city),
+    contact_type: cdktn.stringToTerraform(struct!.contactType),
+    country_code: cdktn.stringToTerraform(struct!.countryCode),
+    email: cdktn.stringToTerraform(struct!.email),
+    fax: cdktn.stringToTerraform(struct!.fax),
+    first_name: cdktn.stringToTerraform(struct!.firstName),
+    last_name: cdktn.stringToTerraform(struct!.lastName),
+    organization_name: cdktn.stringToTerraform(struct!.organizationName),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
+    state: cdktn.stringToTerraform(struct!.state),
+    zip_code: cdktn.stringToTerraform(struct!.zipCode),
+    extra_param: cdktn.listMapper(route53DomainsDomainRegistrantContactExtraParamToTerraform, true)(struct!.extraParam),
   }
 }
 
 
-export function route53DomainsDomainRegistrantContactToHclTerraform(struct?: Route53DomainsDomainRegistrantContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainRegistrantContactToHclTerraform(struct?: Route53DomainsDomainRegistrantContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_line_1: {
-      value: cdktf.stringToHclTerraform(struct!.addressLine1),
+      value: cdktn.stringToHclTerraform(struct!.addressLine1),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_line_2: {
-      value: cdktf.stringToHclTerraform(struct!.addressLine2),
+      value: cdktn.stringToHclTerraform(struct!.addressLine2),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     city: {
-      value: cdktf.stringToHclTerraform(struct!.city),
+      value: cdktn.stringToHclTerraform(struct!.city),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     contact_type: {
-      value: cdktf.stringToHclTerraform(struct!.contactType),
+      value: cdktn.stringToHclTerraform(struct!.contactType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country_code: {
-      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      value: cdktn.stringToHclTerraform(struct!.countryCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fax: {
-      value: cdktf.stringToHclTerraform(struct!.fax),
+      value: cdktn.stringToHclTerraform(struct!.fax),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_name: {
-      value: cdktf.stringToHclTerraform(struct!.firstName),
+      value: cdktn.stringToHclTerraform(struct!.firstName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_name: {
-      value: cdktf.stringToHclTerraform(struct!.lastName),
+      value: cdktn.stringToHclTerraform(struct!.lastName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization_name: {
-      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      value: cdktn.stringToHclTerraform(struct!.organizationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zip_code: {
-      value: cdktf.stringToHclTerraform(struct!.zipCode),
+      value: cdktn.stringToHclTerraform(struct!.zipCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     extra_param: {
-      value: cdktf.listMapperHcl(route53DomainsDomainRegistrantContactExtraParamToHclTerraform, true)(struct!.extraParam),
+      value: cdktn.listMapperHcl(route53DomainsDomainRegistrantContactExtraParamToHclTerraform, true)(struct!.extraParam),
       isBlock: true,
       type: "list",
       storageClassType: "Route53DomainsDomainRegistrantContactExtraParamList",
@@ -1938,9 +1938,9 @@ export function route53DomainsDomainRegistrantContactToHclTerraform(struct?: Rou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainRegistrantContactOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainRegistrantContactOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1948,11 +1948,11 @@ export class Route53DomainsDomainRegistrantContactOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDomainRegistrantContact | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainRegistrantContact | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2017,7 +2017,7 @@ export class Route53DomainsDomainRegistrantContactOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainRegistrantContact | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainRegistrantContact | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2036,7 +2036,7 @@ export class Route53DomainsDomainRegistrantContactOutputReference extends cdktf.
       this._zipCode = undefined;
       this._extraParam.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2273,7 +2273,7 @@ export class Route53DomainsDomainRegistrantContactOutputReference extends cdktf.
   public get extraParam() {
     return this._extraParam;
   }
-  public putExtraParam(value: Route53DomainsDomainRegistrantContactExtraParam[] | cdktf.IResolvable) {
+  public putExtraParam(value: Route53DomainsDomainRegistrantContactExtraParam[] | cdktn.IResolvable) {
     this._extraParam.internalValue = value;
   }
   public resetExtraParam() {
@@ -2285,15 +2285,15 @@ export class Route53DomainsDomainRegistrantContactOutputReference extends cdktf.
   }
 }
 
-export class Route53DomainsDomainRegistrantContactList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDomainRegistrantContact[] | cdktf.IResolvable
+export class Route53DomainsDomainRegistrantContactList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDomainRegistrantContact[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2315,32 +2315,32 @@ export interface Route53DomainsDomainTechContactExtraParam {
   readonly value: string;
 }
 
-export function route53DomainsDomainTechContactExtraParamToTerraform(struct?: Route53DomainsDomainTechContactExtraParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainTechContactExtraParamToTerraform(struct?: Route53DomainsDomainTechContactExtraParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function route53DomainsDomainTechContactExtraParamToHclTerraform(struct?: Route53DomainsDomainTechContactExtraParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainTechContactExtraParamToHclTerraform(struct?: Route53DomainsDomainTechContactExtraParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2351,9 +2351,9 @@ export function route53DomainsDomainTechContactExtraParamToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainTechContactExtraParamOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainTechContactExtraParamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2361,11 +2361,11 @@ export class Route53DomainsDomainTechContactExtraParamOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDomainTechContactExtraParam | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainTechContactExtraParam | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2382,14 +2382,14 @@ export class Route53DomainsDomainTechContactExtraParamOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainTechContactExtraParam | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainTechContactExtraParam | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2428,15 +2428,15 @@ export class Route53DomainsDomainTechContactExtraParamOutputReference extends cd
   }
 }
 
-export class Route53DomainsDomainTechContactExtraParamList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDomainTechContactExtraParam[] | cdktf.IResolvable
+export class Route53DomainsDomainTechContactExtraParamList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDomainTechContactExtraParam[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2505,119 +2505,119 @@ export interface Route53DomainsDomainTechContact {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
   */
-  readonly extraParam?: Route53DomainsDomainTechContactExtraParam[] | cdktf.IResolvable;
+  readonly extraParam?: Route53DomainsDomainTechContactExtraParam[] | cdktn.IResolvable;
 }
 
-export function route53DomainsDomainTechContactToTerraform(struct?: Route53DomainsDomainTechContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainTechContactToTerraform(struct?: Route53DomainsDomainTechContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_line_1: cdktf.stringToTerraform(struct!.addressLine1),
-    address_line_2: cdktf.stringToTerraform(struct!.addressLine2),
-    city: cdktf.stringToTerraform(struct!.city),
-    contact_type: cdktf.stringToTerraform(struct!.contactType),
-    country_code: cdktf.stringToTerraform(struct!.countryCode),
-    email: cdktf.stringToTerraform(struct!.email),
-    fax: cdktf.stringToTerraform(struct!.fax),
-    first_name: cdktf.stringToTerraform(struct!.firstName),
-    last_name: cdktf.stringToTerraform(struct!.lastName),
-    organization_name: cdktf.stringToTerraform(struct!.organizationName),
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
-    state: cdktf.stringToTerraform(struct!.state),
-    zip_code: cdktf.stringToTerraform(struct!.zipCode),
-    extra_param: cdktf.listMapper(route53DomainsDomainTechContactExtraParamToTerraform, true)(struct!.extraParam),
+    address_line_1: cdktn.stringToTerraform(struct!.addressLine1),
+    address_line_2: cdktn.stringToTerraform(struct!.addressLine2),
+    city: cdktn.stringToTerraform(struct!.city),
+    contact_type: cdktn.stringToTerraform(struct!.contactType),
+    country_code: cdktn.stringToTerraform(struct!.countryCode),
+    email: cdktn.stringToTerraform(struct!.email),
+    fax: cdktn.stringToTerraform(struct!.fax),
+    first_name: cdktn.stringToTerraform(struct!.firstName),
+    last_name: cdktn.stringToTerraform(struct!.lastName),
+    organization_name: cdktn.stringToTerraform(struct!.organizationName),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
+    state: cdktn.stringToTerraform(struct!.state),
+    zip_code: cdktn.stringToTerraform(struct!.zipCode),
+    extra_param: cdktn.listMapper(route53DomainsDomainTechContactExtraParamToTerraform, true)(struct!.extraParam),
   }
 }
 
 
-export function route53DomainsDomainTechContactToHclTerraform(struct?: Route53DomainsDomainTechContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainTechContactToHclTerraform(struct?: Route53DomainsDomainTechContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_line_1: {
-      value: cdktf.stringToHclTerraform(struct!.addressLine1),
+      value: cdktn.stringToHclTerraform(struct!.addressLine1),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_line_2: {
-      value: cdktf.stringToHclTerraform(struct!.addressLine2),
+      value: cdktn.stringToHclTerraform(struct!.addressLine2),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     city: {
-      value: cdktf.stringToHclTerraform(struct!.city),
+      value: cdktn.stringToHclTerraform(struct!.city),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     contact_type: {
-      value: cdktf.stringToHclTerraform(struct!.contactType),
+      value: cdktn.stringToHclTerraform(struct!.contactType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country_code: {
-      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      value: cdktn.stringToHclTerraform(struct!.countryCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fax: {
-      value: cdktf.stringToHclTerraform(struct!.fax),
+      value: cdktn.stringToHclTerraform(struct!.fax),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_name: {
-      value: cdktf.stringToHclTerraform(struct!.firstName),
+      value: cdktn.stringToHclTerraform(struct!.firstName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_name: {
-      value: cdktf.stringToHclTerraform(struct!.lastName),
+      value: cdktn.stringToHclTerraform(struct!.lastName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization_name: {
-      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      value: cdktn.stringToHclTerraform(struct!.organizationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zip_code: {
-      value: cdktf.stringToHclTerraform(struct!.zipCode),
+      value: cdktn.stringToHclTerraform(struct!.zipCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     extra_param: {
-      value: cdktf.listMapperHcl(route53DomainsDomainTechContactExtraParamToHclTerraform, true)(struct!.extraParam),
+      value: cdktn.listMapperHcl(route53DomainsDomainTechContactExtraParamToHclTerraform, true)(struct!.extraParam),
       isBlock: true,
       type: "list",
       storageClassType: "Route53DomainsDomainTechContactExtraParamList",
@@ -2628,9 +2628,9 @@ export function route53DomainsDomainTechContactToHclTerraform(struct?: Route53Do
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainTechContactOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainTechContactOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2638,11 +2638,11 @@ export class Route53DomainsDomainTechContactOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDomainTechContact | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainTechContact | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2707,7 +2707,7 @@ export class Route53DomainsDomainTechContactOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainTechContact | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainTechContact | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2726,7 +2726,7 @@ export class Route53DomainsDomainTechContactOutputReference extends cdktf.Comple
       this._zipCode = undefined;
       this._extraParam.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2963,7 +2963,7 @@ export class Route53DomainsDomainTechContactOutputReference extends cdktf.Comple
   public get extraParam() {
     return this._extraParam;
   }
-  public putExtraParam(value: Route53DomainsDomainTechContactExtraParam[] | cdktf.IResolvable) {
+  public putExtraParam(value: Route53DomainsDomainTechContactExtraParam[] | cdktn.IResolvable) {
     this._extraParam.internalValue = value;
   }
   public resetExtraParam() {
@@ -2975,15 +2975,15 @@ export class Route53DomainsDomainTechContactOutputReference extends cdktf.Comple
   }
 }
 
-export class Route53DomainsDomainTechContactList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDomainTechContact[] | cdktf.IResolvable
+export class Route53DomainsDomainTechContactList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDomainTechContact[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3015,39 +3015,39 @@ export interface Route53DomainsDomainTimeouts {
   readonly update?: string;
 }
 
-export function route53DomainsDomainTimeoutsToTerraform(struct?: Route53DomainsDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainTimeoutsToTerraform(struct?: Route53DomainsDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function route53DomainsDomainTimeoutsToHclTerraform(struct?: Route53DomainsDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDomainTimeoutsToHclTerraform(struct?: Route53DomainsDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3058,19 +3058,19 @@ export function route53DomainsDomainTimeoutsToHclTerraform(struct?: Route53Domai
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDomainTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDomainTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Route53DomainsDomainTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDomainTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3091,7 +3091,7 @@ export class Route53DomainsDomainTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDomainTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDomainTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3099,7 +3099,7 @@ export class Route53DomainsDomainTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3164,7 +3164,7 @@ export class Route53DomainsDomainTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain aws_route53domains_domain}
 */
-export class Route53DomainsDomain extends cdktf.TerraformResource {
+export class Route53DomainsDomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3175,14 +3175,14 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53DomainsDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53DomainsDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53DomainsDomain to import
   * @param importFromId The id of the existing Route53DomainsDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53DomainsDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53domains_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53domains_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -3244,11 +3244,11 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   }
 
   // admin_privacy - computed: true, optional: true, required: false
-  private _adminPrivacy?: boolean | cdktf.IResolvable; 
+  private _adminPrivacy?: boolean | cdktn.IResolvable; 
   public get adminPrivacy() {
     return this.getBooleanAttribute('admin_privacy');
   }
-  public set adminPrivacy(value: boolean | cdktf.IResolvable) {
+  public set adminPrivacy(value: boolean | cdktn.IResolvable) {
     this._adminPrivacy = value;
   }
   public resetAdminPrivacy() {
@@ -3260,11 +3260,11 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   }
 
   // auto_renew - computed: true, optional: true, required: false
-  private _autoRenew?: boolean | cdktf.IResolvable; 
+  private _autoRenew?: boolean | cdktn.IResolvable; 
   public get autoRenew() {
     return this.getBooleanAttribute('auto_renew');
   }
-  public set autoRenew(value: boolean | cdktf.IResolvable) {
+  public set autoRenew(value: boolean | cdktn.IResolvable) {
     this._autoRenew = value;
   }
   public resetAutoRenew() {
@@ -3280,7 +3280,7 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   public get billingContact() {
     return this._billingContact;
   }
-  public putBillingContact(value: Route53DomainsDomainBillingContact[] | cdktf.IResolvable) {
+  public putBillingContact(value: Route53DomainsDomainBillingContact[] | cdktn.IResolvable) {
     this._billingContact.internalValue = value;
   }
   public resetBillingContact() {
@@ -3292,11 +3292,11 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   }
 
   // billing_privacy - computed: true, optional: true, required: false
-  private _billingPrivacy?: boolean | cdktf.IResolvable; 
+  private _billingPrivacy?: boolean | cdktn.IResolvable; 
   public get billingPrivacy() {
     return this.getBooleanAttribute('billing_privacy');
   }
-  public set billingPrivacy(value: boolean | cdktf.IResolvable) {
+  public set billingPrivacy(value: boolean | cdktn.IResolvable) {
     this._billingPrivacy = value;
   }
   public resetBillingPrivacy() {
@@ -3356,7 +3356,7 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   public get nameServer() {
     return this._nameServer;
   }
-  public putNameServer(value: Route53DomainsDomainNameServer[] | cdktf.IResolvable) {
+  public putNameServer(value: Route53DomainsDomainNameServer[] | cdktn.IResolvable) {
     this._nameServer.internalValue = value;
   }
   public resetNameServer() {
@@ -3368,11 +3368,11 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   }
 
   // registrant_privacy - computed: true, optional: true, required: false
-  private _registrantPrivacy?: boolean | cdktf.IResolvable; 
+  private _registrantPrivacy?: boolean | cdktn.IResolvable; 
   public get registrantPrivacy() {
     return this.getBooleanAttribute('registrant_privacy');
   }
-  public set registrantPrivacy(value: boolean | cdktf.IResolvable) {
+  public set registrantPrivacy(value: boolean | cdktn.IResolvable) {
     this._registrantPrivacy = value;
   }
   public resetRegistrantPrivacy() {
@@ -3415,17 +3415,17 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
 
   // tech_privacy - computed: true, optional: true, required: false
-  private _techPrivacy?: boolean | cdktf.IResolvable; 
+  private _techPrivacy?: boolean | cdktn.IResolvable; 
   public get techPrivacy() {
     return this.getBooleanAttribute('tech_privacy');
   }
-  public set techPrivacy(value: boolean | cdktf.IResolvable) {
+  public set techPrivacy(value: boolean | cdktn.IResolvable) {
     this._techPrivacy = value;
   }
   public resetTechPrivacy() {
@@ -3437,11 +3437,11 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   }
 
   // transfer_lock - computed: true, optional: true, required: false
-  private _transferLock?: boolean | cdktf.IResolvable; 
+  private _transferLock?: boolean | cdktn.IResolvable; 
   public get transferLock() {
     return this.getBooleanAttribute('transfer_lock');
   }
-  public set transferLock(value: boolean | cdktf.IResolvable) {
+  public set transferLock(value: boolean | cdktn.IResolvable) {
     this._transferLock = value;
   }
   public resetTransferLock() {
@@ -3467,7 +3467,7 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   public get adminContact() {
     return this._adminContact;
   }
-  public putAdminContact(value: Route53DomainsDomainAdminContact[] | cdktf.IResolvable) {
+  public putAdminContact(value: Route53DomainsDomainAdminContact[] | cdktn.IResolvable) {
     this._adminContact.internalValue = value;
   }
   public resetAdminContact() {
@@ -3483,7 +3483,7 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   public get registrantContact() {
     return this._registrantContact;
   }
-  public putRegistrantContact(value: Route53DomainsDomainRegistrantContact[] | cdktf.IResolvable) {
+  public putRegistrantContact(value: Route53DomainsDomainRegistrantContact[] | cdktn.IResolvable) {
     this._registrantContact.internalValue = value;
   }
   public resetRegistrantContact() {
@@ -3499,7 +3499,7 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   public get techContact() {
     return this._techContact;
   }
-  public putTechContact(value: Route53DomainsDomainTechContact[] | cdktf.IResolvable) {
+  public putTechContact(value: Route53DomainsDomainTechContact[] | cdktn.IResolvable) {
     this._techContact.internalValue = value;
   }
   public resetTechContact() {
@@ -3532,20 +3532,20 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_privacy: cdktf.booleanToTerraform(this._adminPrivacy),
-      auto_renew: cdktf.booleanToTerraform(this._autoRenew),
-      billing_contact: cdktf.listMapper(route53DomainsDomainBillingContactToTerraform, false)(this._billingContact.internalValue),
-      billing_privacy: cdktf.booleanToTerraform(this._billingPrivacy),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      duration_in_years: cdktf.numberToTerraform(this._durationInYears),
-      name_server: cdktf.listMapper(route53DomainsDomainNameServerToTerraform, false)(this._nameServer.internalValue),
-      registrant_privacy: cdktf.booleanToTerraform(this._registrantPrivacy),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tech_privacy: cdktf.booleanToTerraform(this._techPrivacy),
-      transfer_lock: cdktf.booleanToTerraform(this._transferLock),
-      admin_contact: cdktf.listMapper(route53DomainsDomainAdminContactToTerraform, true)(this._adminContact.internalValue),
-      registrant_contact: cdktf.listMapper(route53DomainsDomainRegistrantContactToTerraform, true)(this._registrantContact.internalValue),
-      tech_contact: cdktf.listMapper(route53DomainsDomainTechContactToTerraform, true)(this._techContact.internalValue),
+      admin_privacy: cdktn.booleanToTerraform(this._adminPrivacy),
+      auto_renew: cdktn.booleanToTerraform(this._autoRenew),
+      billing_contact: cdktn.listMapper(route53DomainsDomainBillingContactToTerraform, false)(this._billingContact.internalValue),
+      billing_privacy: cdktn.booleanToTerraform(this._billingPrivacy),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      duration_in_years: cdktn.numberToTerraform(this._durationInYears),
+      name_server: cdktn.listMapper(route53DomainsDomainNameServerToTerraform, false)(this._nameServer.internalValue),
+      registrant_privacy: cdktn.booleanToTerraform(this._registrantPrivacy),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tech_privacy: cdktn.booleanToTerraform(this._techPrivacy),
+      transfer_lock: cdktn.booleanToTerraform(this._transferLock),
+      admin_contact: cdktn.listMapper(route53DomainsDomainAdminContactToTerraform, true)(this._adminContact.internalValue),
+      registrant_contact: cdktn.listMapper(route53DomainsDomainRegistrantContactToTerraform, true)(this._registrantContact.internalValue),
+      tech_contact: cdktn.listMapper(route53DomainsDomainTechContactToTerraform, true)(this._techContact.internalValue),
       timeouts: route53DomainsDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -3553,85 +3553,85 @@ export class Route53DomainsDomain extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       admin_privacy: {
-        value: cdktf.booleanToHclTerraform(this._adminPrivacy),
+        value: cdktn.booleanToHclTerraform(this._adminPrivacy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_renew: {
-        value: cdktf.booleanToHclTerraform(this._autoRenew),
+        value: cdktn.booleanToHclTerraform(this._autoRenew),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       billing_contact: {
-        value: cdktf.listMapperHcl(route53DomainsDomainBillingContactToHclTerraform, false)(this._billingContact.internalValue),
+        value: cdktn.listMapperHcl(route53DomainsDomainBillingContactToHclTerraform, false)(this._billingContact.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Route53DomainsDomainBillingContactList",
       },
       billing_privacy: {
-        value: cdktf.booleanToHclTerraform(this._billingPrivacy),
+        value: cdktn.booleanToHclTerraform(this._billingPrivacy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration_in_years: {
-        value: cdktf.numberToHclTerraform(this._durationInYears),
+        value: cdktn.numberToHclTerraform(this._durationInYears),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name_server: {
-        value: cdktf.listMapperHcl(route53DomainsDomainNameServerToHclTerraform, false)(this._nameServer.internalValue),
+        value: cdktn.listMapperHcl(route53DomainsDomainNameServerToHclTerraform, false)(this._nameServer.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Route53DomainsDomainNameServerList",
       },
       registrant_privacy: {
-        value: cdktf.booleanToHclTerraform(this._registrantPrivacy),
+        value: cdktn.booleanToHclTerraform(this._registrantPrivacy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tech_privacy: {
-        value: cdktf.booleanToHclTerraform(this._techPrivacy),
+        value: cdktn.booleanToHclTerraform(this._techPrivacy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       transfer_lock: {
-        value: cdktf.booleanToHclTerraform(this._transferLock),
+        value: cdktn.booleanToHclTerraform(this._transferLock),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       admin_contact: {
-        value: cdktf.listMapperHcl(route53DomainsDomainAdminContactToHclTerraform, true)(this._adminContact.internalValue),
+        value: cdktn.listMapperHcl(route53DomainsDomainAdminContactToHclTerraform, true)(this._adminContact.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Route53DomainsDomainAdminContactList",
       },
       registrant_contact: {
-        value: cdktf.listMapperHcl(route53DomainsDomainRegistrantContactToHclTerraform, true)(this._registrantContact.internalValue),
+        value: cdktn.listMapperHcl(route53DomainsDomainRegistrantContactToHclTerraform, true)(this._registrantContact.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Route53DomainsDomainRegistrantContactList",
       },
       tech_contact: {
-        value: cdktf.listMapperHcl(route53DomainsDomainTechContactToHclTerraform, true)(this._techContact.internalValue),
+        value: cdktn.listMapperHcl(route53DomainsDomainTechContactToHclTerraform, true)(this._techContact.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Route53DomainsDomainTechContactList",

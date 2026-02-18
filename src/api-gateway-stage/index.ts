@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayStageConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayStageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_stage#cache_cluster_enabled ApiGatewayStage#cache_cluster_enabled}
   */
-  readonly cacheClusterEnabled?: boolean | cdktf.IResolvable;
+  readonly cacheClusterEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_stage#cache_cluster_size ApiGatewayStage#cache_cluster_size}
   */
@@ -72,7 +72,7 @@ export interface ApiGatewayStageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_stage#xray_tracing_enabled ApiGatewayStage#xray_tracing_enabled}
   */
-  readonly xrayTracingEnabled?: boolean | cdktf.IResolvable;
+  readonly xrayTracingEnabled?: boolean | cdktn.IResolvable;
   /**
   * access_log_settings block
   *
@@ -98,31 +98,31 @@ export interface ApiGatewayStageAccessLogSettings {
 }
 
 export function apiGatewayStageAccessLogSettingsToTerraform(struct?: ApiGatewayStageAccessLogSettingsOutputReference | ApiGatewayStageAccessLogSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
-    format: cdktf.stringToTerraform(struct!.format),
+    destination_arn: cdktn.stringToTerraform(struct!.destinationArn),
+    format: cdktn.stringToTerraform(struct!.format),
   }
 }
 
 
 export function apiGatewayStageAccessLogSettingsToHclTerraform(struct?: ApiGatewayStageAccessLogSettingsOutputReference | ApiGatewayStageAccessLogSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_arn: {
-      value: cdktf.stringToHclTerraform(struct!.destinationArn),
+      value: cdktn.stringToHclTerraform(struct!.destinationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -133,14 +133,14 @@ export function apiGatewayStageAccessLogSettingsToHclTerraform(struct?: ApiGatew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiGatewayStageAccessLogSettingsOutputReference extends cdktf.ComplexObject {
+export class ApiGatewayStageAccessLogSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -213,49 +213,49 @@ export interface ApiGatewayStageCanarySettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_stage#use_stage_cache ApiGatewayStage#use_stage_cache}
   */
-  readonly useStageCache?: boolean | cdktf.IResolvable;
+  readonly useStageCache?: boolean | cdktn.IResolvable;
 }
 
 export function apiGatewayStageCanarySettingsToTerraform(struct?: ApiGatewayStageCanarySettingsOutputReference | ApiGatewayStageCanarySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deployment_id: cdktf.stringToTerraform(struct!.deploymentId),
-    percent_traffic: cdktf.numberToTerraform(struct!.percentTraffic),
-    stage_variable_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.stageVariableOverrides),
-    use_stage_cache: cdktf.booleanToTerraform(struct!.useStageCache),
+    deployment_id: cdktn.stringToTerraform(struct!.deploymentId),
+    percent_traffic: cdktn.numberToTerraform(struct!.percentTraffic),
+    stage_variable_overrides: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.stageVariableOverrides),
+    use_stage_cache: cdktn.booleanToTerraform(struct!.useStageCache),
   }
 }
 
 
 export function apiGatewayStageCanarySettingsToHclTerraform(struct?: ApiGatewayStageCanarySettingsOutputReference | ApiGatewayStageCanarySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deployment_id: {
-      value: cdktf.stringToHclTerraform(struct!.deploymentId),
+      value: cdktn.stringToHclTerraform(struct!.deploymentId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     percent_traffic: {
-      value: cdktf.numberToHclTerraform(struct!.percentTraffic),
+      value: cdktn.numberToHclTerraform(struct!.percentTraffic),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     stage_variable_overrides: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.stageVariableOverrides),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.stageVariableOverrides),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     use_stage_cache: {
-      value: cdktf.booleanToHclTerraform(struct!.useStageCache),
+      value: cdktn.booleanToHclTerraform(struct!.useStageCache),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -266,14 +266,14 @@ export function apiGatewayStageCanarySettingsToHclTerraform(struct?: ApiGatewayS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiGatewayStageCanarySettingsOutputReference extends cdktf.ComplexObject {
+export class ApiGatewayStageCanarySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -362,11 +362,11 @@ export class ApiGatewayStageCanarySettingsOutputReference extends cdktf.ComplexO
   }
 
   // use_stage_cache - computed: false, optional: true, required: false
-  private _useStageCache?: boolean | cdktf.IResolvable; 
+  private _useStageCache?: boolean | cdktn.IResolvable; 
   public get useStageCache() {
     return this.getBooleanAttribute('use_stage_cache');
   }
-  public set useStageCache(value: boolean | cdktf.IResolvable) {
+  public set useStageCache(value: boolean | cdktn.IResolvable) {
     this._useStageCache = value;
   }
   public resetUseStageCache() {
@@ -381,7 +381,7 @@ export class ApiGatewayStageCanarySettingsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_stage aws_api_gateway_stage}
 */
-export class ApiGatewayStage extends cdktf.TerraformResource {
+export class ApiGatewayStage extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -392,14 +392,14 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayStage resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayStage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayStage to import
   * @param importFromId The id of the existing ApiGatewayStage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_stage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayStage to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_stage", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_stage", importId: importFromId, provider });
       }
 
   // ===========
@@ -457,11 +457,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // cache_cluster_enabled - computed: false, optional: true, required: false
-  private _cacheClusterEnabled?: boolean | cdktf.IResolvable; 
+  private _cacheClusterEnabled?: boolean | cdktn.IResolvable; 
   public get cacheClusterEnabled() {
     return this.getBooleanAttribute('cache_cluster_enabled');
   }
-  public set cacheClusterEnabled(value: boolean | cdktf.IResolvable) {
+  public set cacheClusterEnabled(value: boolean | cdktn.IResolvable) {
     this._cacheClusterEnabled = value;
   }
   public resetCacheClusterEnabled() {
@@ -671,11 +671,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // xray_tracing_enabled - computed: false, optional: true, required: false
-  private _xrayTracingEnabled?: boolean | cdktf.IResolvable; 
+  private _xrayTracingEnabled?: boolean | cdktn.IResolvable; 
   public get xrayTracingEnabled() {
     return this.getBooleanAttribute('xray_tracing_enabled');
   }
-  public set xrayTracingEnabled(value: boolean | cdktf.IResolvable) {
+  public set xrayTracingEnabled(value: boolean | cdktn.IResolvable) {
     this._xrayTracingEnabled = value;
   }
   public resetXrayTracingEnabled() {
@@ -724,20 +724,20 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cache_cluster_enabled: cdktf.booleanToTerraform(this._cacheClusterEnabled),
-      cache_cluster_size: cdktf.stringToTerraform(this._cacheClusterSize),
-      client_certificate_id: cdktf.stringToTerraform(this._clientCertificateId),
-      deployment_id: cdktf.stringToTerraform(this._deploymentId),
-      description: cdktf.stringToTerraform(this._description),
-      documentation_version: cdktf.stringToTerraform(this._documentationVersion),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      stage_name: cdktf.stringToTerraform(this._stageName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._variables),
-      xray_tracing_enabled: cdktf.booleanToTerraform(this._xrayTracingEnabled),
+      cache_cluster_enabled: cdktn.booleanToTerraform(this._cacheClusterEnabled),
+      cache_cluster_size: cdktn.stringToTerraform(this._cacheClusterSize),
+      client_certificate_id: cdktn.stringToTerraform(this._clientCertificateId),
+      deployment_id: cdktn.stringToTerraform(this._deploymentId),
+      description: cdktn.stringToTerraform(this._description),
+      documentation_version: cdktn.stringToTerraform(this._documentationVersion),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      rest_api_id: cdktn.stringToTerraform(this._restApiId),
+      stage_name: cdktn.stringToTerraform(this._stageName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      variables: cdktn.hashMapper(cdktn.stringToTerraform)(this._variables),
+      xray_tracing_enabled: cdktn.booleanToTerraform(this._xrayTracingEnabled),
       access_log_settings: apiGatewayStageAccessLogSettingsToTerraform(this._accessLogSettings.internalValue),
       canary_settings: apiGatewayStageCanarySettingsToTerraform(this._canarySettings.internalValue),
     };
@@ -746,85 +746,85 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cache_cluster_enabled: {
-        value: cdktf.booleanToHclTerraform(this._cacheClusterEnabled),
+        value: cdktn.booleanToHclTerraform(this._cacheClusterEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cache_cluster_size: {
-        value: cdktf.stringToHclTerraform(this._cacheClusterSize),
+        value: cdktn.stringToHclTerraform(this._cacheClusterSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_certificate_id: {
-        value: cdktf.stringToHclTerraform(this._clientCertificateId),
+        value: cdktn.stringToHclTerraform(this._clientCertificateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deployment_id: {
-        value: cdktf.stringToHclTerraform(this._deploymentId),
+        value: cdktn.stringToHclTerraform(this._deploymentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       documentation_version: {
-        value: cdktf.stringToHclTerraform(this._documentationVersion),
+        value: cdktn.stringToHclTerraform(this._documentationVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rest_api_id: {
-        value: cdktf.stringToHclTerraform(this._restApiId),
+        value: cdktn.stringToHclTerraform(this._restApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stage_name: {
-        value: cdktf.stringToHclTerraform(this._stageName),
+        value: cdktn.stringToHclTerraform(this._stageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       variables: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._variables),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._variables),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       xray_tracing_enabled: {
-        value: cdktf.booleanToHclTerraform(this._xrayTracingEnabled),
+        value: cdktn.booleanToHclTerraform(this._xrayTracingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

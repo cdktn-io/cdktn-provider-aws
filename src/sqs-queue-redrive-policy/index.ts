@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SqsQueueRedrivePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface SqsQueueRedrivePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue_redrive_policy#id SqsQueueRedrivePolicy#id}
   *
@@ -38,7 +38,7 @@ export interface SqsQueueRedrivePolicyConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy}
 */
-export class SqsQueueRedrivePolicy extends cdktf.TerraformResource {
+export class SqsQueueRedrivePolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class SqsQueueRedrivePolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SqsQueueRedrivePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SqsQueueRedrivePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqsQueueRedrivePolicy to import
   * @param importFromId The id of the existing SqsQueueRedrivePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sqs_queue_redrive_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqsQueueRedrivePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sqs_queue_redrive_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sqs_queue_redrive_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class SqsQueueRedrivePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      queue_url: cdktf.stringToTerraform(this._queueUrl),
-      redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      queue_url: cdktn.stringToTerraform(this._queueUrl),
+      redrive_policy: cdktn.stringToTerraform(this._redrivePolicy),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       queue_url: {
-        value: cdktf.stringToHclTerraform(this._queueUrl),
+        value: cdktn.stringToHclTerraform(this._queueUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redrive_policy: {
-        value: cdktf.stringToHclTerraform(this._redrivePolicy),
+        value: cdktn.stringToHclTerraform(this._redrivePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

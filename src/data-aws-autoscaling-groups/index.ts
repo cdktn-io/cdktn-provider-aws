@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsAutoscalingGroupsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAutoscalingGroupsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/autoscaling_groups#id DataAwsAutoscalingGroups#id}
   *
@@ -34,7 +34,7 @@ export interface DataAwsAutoscalingGroupsConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/autoscaling_groups#filter DataAwsAutoscalingGroups#filter}
   */
-  readonly filter?: DataAwsAutoscalingGroupsFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsAutoscalingGroupsFilter[] | cdktn.IResolvable;
 }
 export interface DataAwsAutoscalingGroupsFilter {
   /**
@@ -47,32 +47,32 @@ export interface DataAwsAutoscalingGroupsFilter {
   readonly values: string[];
 }
 
-export function dataAwsAutoscalingGroupsFilterToTerraform(struct?: DataAwsAutoscalingGroupsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAutoscalingGroupsFilterToTerraform(struct?: DataAwsAutoscalingGroupsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsAutoscalingGroupsFilterToHclTerraform(struct?: DataAwsAutoscalingGroupsFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAutoscalingGroupsFilterToHclTerraform(struct?: DataAwsAutoscalingGroupsFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -83,9 +83,9 @@ export function dataAwsAutoscalingGroupsFilterToHclTerraform(struct?: DataAwsAut
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsAutoscalingGroupsFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsAutoscalingGroupsFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class DataAwsAutoscalingGroupsFilterOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAutoscalingGroupsFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsAutoscalingGroupsFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,14 +114,14 @@ export class DataAwsAutoscalingGroupsFilterOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAutoscalingGroupsFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAutoscalingGroupsFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -160,15 +160,15 @@ export class DataAwsAutoscalingGroupsFilterOutputReference extends cdktf.Complex
   }
 }
 
-export class DataAwsAutoscalingGroupsFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAutoscalingGroupsFilter[] | cdktf.IResolvable
+export class DataAwsAutoscalingGroupsFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsAutoscalingGroupsFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -183,7 +183,7 @@ export class DataAwsAutoscalingGroupsFilterList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/autoscaling_groups aws_autoscaling_groups}
 */
-export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
+export class DataAwsAutoscalingGroups extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -194,14 +194,14 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsAutoscalingGroups resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsAutoscalingGroups resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAutoscalingGroups to import
   * @param importFromId The id of the existing DataAwsAutoscalingGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/autoscaling_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAutoscalingGroups to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_autoscaling_groups", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_autoscaling_groups", importId: importFromId, provider });
       }
 
   // ===========
@@ -299,7 +299,7 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsAutoscalingGroupsFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsAutoscalingGroupsFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -316,35 +316,35 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._names),
-      region: cdktf.stringToTerraform(this._region),
-      filter: cdktf.listMapper(dataAwsAutoscalingGroupsFilterToTerraform, true)(this._filter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._names),
+      region: cdktn.stringToTerraform(this._region),
+      filter: cdktn.listMapper(dataAwsAutoscalingGroupsFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._names),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._names),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsAutoscalingGroupsFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsAutoscalingGroupsFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsAutoscalingGroupsFilterList",

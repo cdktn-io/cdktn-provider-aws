@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsPrometheusWorkspacesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsPrometheusWorkspacesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/prometheus_workspaces#alias_prefix DataAwsPrometheusWorkspaces#alias_prefix}
   */
@@ -34,7 +34,7 @@ export interface DataAwsPrometheusWorkspacesConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/prometheus_workspaces aws_prometheus_workspaces}
 */
-export class DataAwsPrometheusWorkspaces extends cdktf.TerraformDataSource {
+export class DataAwsPrometheusWorkspaces extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -45,14 +45,14 @@ export class DataAwsPrometheusWorkspaces extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsPrometheusWorkspaces resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsPrometheusWorkspaces resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsPrometheusWorkspaces to import
   * @param importFromId The id of the existing DataAwsPrometheusWorkspaces that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/prometheus_workspaces#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsPrometheusWorkspaces to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_prometheus_workspaces", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_prometheus_workspaces", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,28 +160,28 @@ export class DataAwsPrometheusWorkspaces extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_prefix: cdktf.stringToTerraform(this._aliasPrefix),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      alias_prefix: cdktn.stringToTerraform(this._aliasPrefix),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_prefix: {
-        value: cdktf.stringToHclTerraform(this._aliasPrefix),
+        value: cdktn.stringToHclTerraform(this._aliasPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

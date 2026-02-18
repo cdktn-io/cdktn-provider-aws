@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcNetworkPerformanceMetricSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface VpcNetworkPerformanceMetricSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_network_performance_metric_subscription#destination VpcNetworkPerformanceMetricSubscription#destination}
   */
@@ -46,7 +46,7 @@ export interface VpcNetworkPerformanceMetricSubscriptionConfig extends cdktf.Ter
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription}
 */
-export class VpcNetworkPerformanceMetricSubscription extends cdktf.TerraformResource {
+export class VpcNetworkPerformanceMetricSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class VpcNetworkPerformanceMetricSubscription extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcNetworkPerformanceMetricSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcNetworkPerformanceMetricSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcNetworkPerformanceMetricSubscription to import
   * @param importFromId The id of the existing VpcNetworkPerformanceMetricSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_network_performance_metric_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcNetworkPerformanceMetricSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_network_performance_metric_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_network_performance_metric_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -207,49 +207,49 @@ export class VpcNetworkPerformanceMetricSubscription extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination: cdktf.stringToTerraform(this._destination),
-      id: cdktf.stringToTerraform(this._id),
-      metric: cdktf.stringToTerraform(this._metric),
-      region: cdktf.stringToTerraform(this._region),
-      source: cdktf.stringToTerraform(this._source),
-      statistic: cdktf.stringToTerraform(this._statistic),
+      destination: cdktn.stringToTerraform(this._destination),
+      id: cdktn.stringToTerraform(this._id),
+      metric: cdktn.stringToTerraform(this._metric),
+      region: cdktn.stringToTerraform(this._region),
+      source: cdktn.stringToTerraform(this._source),
+      statistic: cdktn.stringToTerraform(this._statistic),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination: {
-        value: cdktf.stringToHclTerraform(this._destination),
+        value: cdktn.stringToHclTerraform(this._destination),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric: {
-        value: cdktf.stringToHclTerraform(this._metric),
+        value: cdktn.stringToHclTerraform(this._metric),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statistic: {
-        value: cdktf.stringToHclTerraform(this._statistic),
+        value: cdktn.stringToHclTerraform(this._statistic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

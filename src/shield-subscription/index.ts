@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ShieldSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface ShieldSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether to automatically renew the subscription when it expires.
   *
@@ -21,13 +21,13 @@ export interface ShieldSubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/shield_subscription aws_shield_subscription}
 */
-export class ShieldSubscription extends cdktf.TerraformResource {
+export class ShieldSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -38,14 +38,14 @@ export class ShieldSubscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ShieldSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ShieldSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ShieldSubscription to import
   * @param importFromId The id of the existing ShieldSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/shield_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ShieldSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_shield_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_shield_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -105,11 +105,11 @@ export class ShieldSubscription extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -126,21 +126,21 @@ export class ShieldSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_renew: cdktf.stringToTerraform(this._autoRenew),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
+      auto_renew: cdktn.stringToTerraform(this._autoRenew),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_renew: {
-        value: cdktf.stringToHclTerraform(this._autoRenew),
+        value: cdktn.stringToHclTerraform(this._autoRenew),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

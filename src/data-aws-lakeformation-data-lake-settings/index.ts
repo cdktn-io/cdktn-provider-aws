@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsLakeformationDataLakeSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLakeformationDataLakeSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lakeformation_data_lake_settings#catalog_id DataAwsLakeformationDataLakeSettings#catalog_id}
   */
@@ -34,8 +34,8 @@ export interface DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermis
 }
 
 export function dataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform(struct?: DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -44,8 +44,8 @@ export function dataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermiss
 
 
 export function dataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToHclTerraform(struct?: DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -53,7 +53,7 @@ export function dataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermiss
   return attrs;
 }
 
-export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,7 +62,7 @@ export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermission
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -83,7 +83,7 @@ export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermission
 
   // permissions - computed: true, optional: false, required: false
   public get permissions() {
-    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+    return cdktn.Fn.tolist(this.getListAttribute('permissions'));
   }
 
   // principal - computed: true, optional: false, required: false
@@ -92,14 +92,14 @@ export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermission
   }
 }
 
-export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList extends cdktf.ComplexList {
+export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -114,8 +114,8 @@ export interface DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissio
 }
 
 export function dataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform(struct?: DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -124,8 +124,8 @@ export function dataAwsLakeformationDataLakeSettingsCreateTableDefaultPermission
 
 
 export function dataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsToHclTerraform(struct?: DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -133,7 +133,7 @@ export function dataAwsLakeformationDataLakeSettingsCreateTableDefaultPermission
   return attrs;
 }
 
-export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -142,7 +142,7 @@ export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -163,7 +163,7 @@ export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOu
 
   // permissions - computed: true, optional: false, required: false
   public get permissions() {
-    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+    return cdktn.Fn.tolist(this.getListAttribute('permissions'));
   }
 
   // principal - computed: true, optional: false, required: false
@@ -172,14 +172,14 @@ export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOu
   }
 }
 
-export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList extends cdktf.ComplexList {
+export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,7 +194,7 @@ export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsLi
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}
 */
-export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSource {
+export class DataAwsLakeformationDataLakeSettings extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -205,14 +205,14 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsLakeformationDataLakeSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsLakeformationDataLakeSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLakeformationDataLakeSettings to import
   * @param importFromId The id of the existing DataAwsLakeformationDataLakeSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/lakeformation_data_lake_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLakeformationDataLakeSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_data_lake_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lakeformation_data_lake_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -253,7 +253,7 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
 
   // admins - computed: true, optional: false, required: false
   public get admins() {
-    return cdktf.Fn.tolist(this.getListAttribute('admins'));
+    return cdktn.Fn.tolist(this.getListAttribute('admins'));
   }
 
   // allow_external_data_filtering - computed: true, optional: false, required: false
@@ -301,7 +301,7 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
 
   // external_data_filtering_allow_list - computed: true, optional: false, required: false
   public get externalDataFilteringAllowList() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_data_filtering_allow_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_data_filtering_allow_list'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -321,14 +321,14 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
   }
 
   // parameters - computed: true, optional: false, required: false
-  private _parameters = new cdktf.StringMap(this, "parameters");
+  private _parameters = new cdktn.StringMap(this, "parameters");
   public get parameters() {
     return this._parameters;
   }
 
   // read_only_admins - computed: true, optional: false, required: false
   public get readOnlyAdmins() {
-    return cdktf.Fn.tolist(this.getListAttribute('read_only_admins'));
+    return cdktn.Fn.tolist(this.getListAttribute('read_only_admins'));
   }
 
   // region - computed: true, optional: true, required: false
@@ -358,28 +358,28 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      catalog_id: cdktn.stringToTerraform(this._catalogId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog_id: {
-        value: cdktf.stringToHclTerraform(this._catalogId),
+        value: cdktn.stringToHclTerraform(this._catalogId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

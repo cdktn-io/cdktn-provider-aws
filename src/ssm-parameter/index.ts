@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
+export interface SsmParameterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_parameter#allowed_pattern SsmParameter#allowed_pattern}
   */
@@ -50,7 +50,7 @@ export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_parameter#overwrite SsmParameter#overwrite}
   */
-  readonly overwrite?: boolean | cdktf.IResolvable;
+  readonly overwrite?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -90,7 +90,7 @@ export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_parameter aws_ssm_parameter}
 */
-export class SsmParameter extends cdktf.TerraformResource {
+export class SsmParameter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -101,14 +101,14 @@ export class SsmParameter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmParameter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmParameter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmParameter to import
   * @param importFromId The id of the existing SsmParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmParameter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_parameter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_parameter", importId: importFromId, provider });
       }
 
   // ===========
@@ -292,11 +292,11 @@ export class SsmParameter extends cdktf.TerraformResource {
   }
 
   // overwrite - computed: false, optional: true, required: false
-  private _overwrite?: boolean | cdktf.IResolvable; 
+  private _overwrite?: boolean | cdktn.IResolvable; 
   public get overwrite() {
     return this.getBooleanAttribute('overwrite');
   }
-  public set overwrite(value: boolean | cdktf.IResolvable) {
+  public set overwrite(value: boolean | cdktn.IResolvable) {
     this._overwrite = value;
   }
   public resetOverwrite() {
@@ -443,126 +443,126 @@ export class SsmParameter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_pattern: cdktf.stringToTerraform(this._allowedPattern),
-      arn: cdktf.stringToTerraform(this._arn),
-      data_type: cdktf.stringToTerraform(this._dataType),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      insecure_value: cdktf.stringToTerraform(this._insecureValue),
-      key_id: cdktf.stringToTerraform(this._keyId),
-      name: cdktf.stringToTerraform(this._name),
-      overwrite: cdktf.booleanToTerraform(this._overwrite),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      tier: cdktf.stringToTerraform(this._tier),
-      type: cdktf.stringToTerraform(this._type),
-      value: cdktf.stringToTerraform(this._value),
-      value_wo: cdktf.stringToTerraform(this._valueWo),
-      value_wo_version: cdktf.numberToTerraform(this._valueWoVersion),
+      allowed_pattern: cdktn.stringToTerraform(this._allowedPattern),
+      arn: cdktn.stringToTerraform(this._arn),
+      data_type: cdktn.stringToTerraform(this._dataType),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      insecure_value: cdktn.stringToTerraform(this._insecureValue),
+      key_id: cdktn.stringToTerraform(this._keyId),
+      name: cdktn.stringToTerraform(this._name),
+      overwrite: cdktn.booleanToTerraform(this._overwrite),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      tier: cdktn.stringToTerraform(this._tier),
+      type: cdktn.stringToTerraform(this._type),
+      value: cdktn.stringToTerraform(this._value),
+      value_wo: cdktn.stringToTerraform(this._valueWo),
+      value_wo_version: cdktn.numberToTerraform(this._valueWoVersion),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_pattern: {
-        value: cdktf.stringToHclTerraform(this._allowedPattern),
+        value: cdktn.stringToHclTerraform(this._allowedPattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_type: {
-        value: cdktf.stringToHclTerraform(this._dataType),
+        value: cdktn.stringToHclTerraform(this._dataType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insecure_value: {
-        value: cdktf.stringToHclTerraform(this._insecureValue),
+        value: cdktn.stringToHclTerraform(this._insecureValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_id: {
-        value: cdktf.stringToHclTerraform(this._keyId),
+        value: cdktn.stringToHclTerraform(this._keyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       overwrite: {
-        value: cdktf.booleanToHclTerraform(this._overwrite),
+        value: cdktn.booleanToHclTerraform(this._overwrite),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.stringToHclTerraform(this._value),
+        value: cdktn.stringToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value_wo: {
-        value: cdktf.stringToHclTerraform(this._valueWo),
+        value: cdktn.stringToHclTerraform(this._valueWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value_wo_version: {
-        value: cdktf.numberToHclTerraform(this._valueWoVersion),
+        value: cdktn.numberToHclTerraform(this._valueWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IvschatLoggingConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface IvschatLoggingConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ivschat_logging_configuration#id IvschatLoggingConfiguration#id}
   *
@@ -58,24 +58,24 @@ export interface IvschatLoggingConfigurationDestinationConfigurationCloudwatchLo
 }
 
 export function ivschatLoggingConfigurationDestinationConfigurationCloudwatchLogsToTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference | IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
   }
 }
 
 
 export function ivschatLoggingConfigurationDestinationConfigurationCloudwatchLogsToHclTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference | IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,14 +86,14 @@ export function ivschatLoggingConfigurationDestinationConfigurationCloudwatchLog
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+export class IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -139,24 +139,24 @@ export interface IvschatLoggingConfigurationDestinationConfigurationFirehose {
 }
 
 export function ivschatLoggingConfigurationDestinationConfigurationFirehoseToTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference | IvschatLoggingConfigurationDestinationConfigurationFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delivery_stream_name: cdktf.stringToTerraform(struct!.deliveryStreamName),
+    delivery_stream_name: cdktn.stringToTerraform(struct!.deliveryStreamName),
   }
 }
 
 
 export function ivschatLoggingConfigurationDestinationConfigurationFirehoseToHclTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference | IvschatLoggingConfigurationDestinationConfigurationFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delivery_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.deliveryStreamName),
+      value: cdktn.stringToHclTerraform(struct!.deliveryStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -167,14 +167,14 @@ export function ivschatLoggingConfigurationDestinationConfigurationFirehoseToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference extends cdktf.ComplexObject {
+export class IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -220,24 +220,24 @@ export interface IvschatLoggingConfigurationDestinationConfigurationS3 {
 }
 
 export function ivschatLoggingConfigurationDestinationConfigurationS3ToTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationS3OutputReference | IvschatLoggingConfigurationDestinationConfigurationS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
   }
 }
 
 
 export function ivschatLoggingConfigurationDestinationConfigurationS3ToHclTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationS3OutputReference | IvschatLoggingConfigurationDestinationConfigurationS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -248,14 +248,14 @@ export function ivschatLoggingConfigurationDestinationConfigurationS3ToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvschatLoggingConfigurationDestinationConfigurationS3OutputReference extends cdktf.ComplexObject {
+export class IvschatLoggingConfigurationDestinationConfigurationS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -315,8 +315,8 @@ export interface IvschatLoggingConfigurationDestinationConfiguration {
 }
 
 export function ivschatLoggingConfigurationDestinationConfigurationToTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationOutputReference | IvschatLoggingConfigurationDestinationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -328,8 +328,8 @@ export function ivschatLoggingConfigurationDestinationConfigurationToTerraform(s
 
 
 export function ivschatLoggingConfigurationDestinationConfigurationToHclTerraform(struct?: IvschatLoggingConfigurationDestinationConfigurationOutputReference | IvschatLoggingConfigurationDestinationConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -357,14 +357,14 @@ export function ivschatLoggingConfigurationDestinationConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvschatLoggingConfigurationDestinationConfigurationOutputReference extends cdktf.ComplexObject {
+export class IvschatLoggingConfigurationDestinationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -464,39 +464,39 @@ export interface IvschatLoggingConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function ivschatLoggingConfigurationTimeoutsToTerraform(struct?: IvschatLoggingConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ivschatLoggingConfigurationTimeoutsToTerraform(struct?: IvschatLoggingConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function ivschatLoggingConfigurationTimeoutsToHclTerraform(struct?: IvschatLoggingConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ivschatLoggingConfigurationTimeoutsToHclTerraform(struct?: IvschatLoggingConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -507,19 +507,19 @@ export function ivschatLoggingConfigurationTimeoutsToHclTerraform(struct?: Ivsch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IvschatLoggingConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IvschatLoggingConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IvschatLoggingConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IvschatLoggingConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -540,7 +540,7 @@ export class IvschatLoggingConfigurationTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IvschatLoggingConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IvschatLoggingConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -548,7 +548,7 @@ export class IvschatLoggingConfigurationTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -613,7 +613,7 @@ export class IvschatLoggingConfigurationTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ivschat_logging_configuration aws_ivschat_logging_configuration}
 */
-export class IvschatLoggingConfiguration extends cdktf.TerraformResource {
+export class IvschatLoggingConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -624,14 +624,14 @@ export class IvschatLoggingConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IvschatLoggingConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IvschatLoggingConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IvschatLoggingConfiguration to import
   * @param importFromId The id of the existing IvschatLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ivschat_logging_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IvschatLoggingConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ivschat_logging_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ivschat_logging_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -802,11 +802,11 @@ export class IvschatLoggingConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       destination_configuration: ivschatLoggingConfigurationDestinationConfigurationToTerraform(this._destinationConfiguration.internalValue),
       timeouts: ivschatLoggingConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -815,31 +815,31 @@ export class IvschatLoggingConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

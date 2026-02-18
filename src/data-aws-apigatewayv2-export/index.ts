@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsApigatewayv2ExportConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsApigatewayv2ExportConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/apigatewayv2_export#api_id DataAwsApigatewayv2Export#api_id}
   */
@@ -30,7 +30,7 @@ export interface DataAwsApigatewayv2ExportConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/apigatewayv2_export#include_extensions DataAwsApigatewayv2Export#include_extensions}
   */
-  readonly includeExtensions?: boolean | cdktf.IResolvable;
+  readonly includeExtensions?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/apigatewayv2_export#output_type DataAwsApigatewayv2Export#output_type}
   */
@@ -54,7 +54,7 @@ export interface DataAwsApigatewayv2ExportConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export}
 */
-export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
+export class DataAwsApigatewayv2Export extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsApigatewayv2Export resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsApigatewayv2Export resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsApigatewayv2Export to import
   * @param importFromId The id of the existing DataAwsApigatewayv2Export that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/apigatewayv2_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsApigatewayv2Export to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_export", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_export", importId: importFromId, provider });
       }
 
   // ===========
@@ -167,11 +167,11 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
   }
 
   // include_extensions - computed: false, optional: true, required: false
-  private _includeExtensions?: boolean | cdktf.IResolvable; 
+  private _includeExtensions?: boolean | cdktn.IResolvable; 
   public get includeExtensions() {
     return this.getBooleanAttribute('include_extensions');
   }
-  public set includeExtensions(value: boolean | cdktf.IResolvable) {
+  public set includeExtensions(value: boolean | cdktn.IResolvable) {
     this._includeExtensions = value;
   }
   public resetIncludeExtensions() {
@@ -246,63 +246,63 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      export_version: cdktf.stringToTerraform(this._exportVersion),
-      id: cdktf.stringToTerraform(this._id),
-      include_extensions: cdktf.booleanToTerraform(this._includeExtensions),
-      output_type: cdktf.stringToTerraform(this._outputType),
-      region: cdktf.stringToTerraform(this._region),
-      specification: cdktf.stringToTerraform(this._specification),
-      stage_name: cdktf.stringToTerraform(this._stageName),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      export_version: cdktn.stringToTerraform(this._exportVersion),
+      id: cdktn.stringToTerraform(this._id),
+      include_extensions: cdktn.booleanToTerraform(this._includeExtensions),
+      output_type: cdktn.stringToTerraform(this._outputType),
+      region: cdktn.stringToTerraform(this._region),
+      specification: cdktn.stringToTerraform(this._specification),
+      stage_name: cdktn.stringToTerraform(this._stageName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export_version: {
-        value: cdktf.stringToHclTerraform(this._exportVersion),
+        value: cdktn.stringToHclTerraform(this._exportVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_extensions: {
-        value: cdktf.booleanToHclTerraform(this._includeExtensions),
+        value: cdktn.booleanToHclTerraform(this._includeExtensions),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       output_type: {
-        value: cdktf.stringToHclTerraform(this._outputType),
+        value: cdktn.stringToHclTerraform(this._outputType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       specification: {
-        value: cdktf.stringToHclTerraform(this._specification),
+        value: cdktn.stringToHclTerraform(this._specification),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stage_name: {
-        value: cdktf.stringToHclTerraform(this._stageName),
+        value: cdktn.stringToHclTerraform(this._stageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

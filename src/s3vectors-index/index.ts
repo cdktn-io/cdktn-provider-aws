@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3VectorsIndexConfig extends cdktf.TerraformMetaArguments {
+export interface S3VectorsIndexConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3vectors_index#data_type S3VectorsIndex#data_type}
   */
@@ -27,7 +27,7 @@ export interface S3VectorsIndexConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3vectors_index#encryption_configuration S3VectorsIndex#encryption_configuration}
   */
-  readonly encryptionConfiguration?: S3VectorsIndexEncryptionConfiguration[] | cdktf.IResolvable;
+  readonly encryptionConfiguration?: S3VectorsIndexEncryptionConfiguration[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3vectors_index#index_name S3VectorsIndex#index_name}
   */
@@ -51,7 +51,7 @@ export interface S3VectorsIndexConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3vectors_index#metadata_configuration S3VectorsIndex#metadata_configuration}
   */
-  readonly metadataConfiguration?: S3VectorsIndexMetadataConfiguration[] | cdktf.IResolvable;
+  readonly metadataConfiguration?: S3VectorsIndexMetadataConfiguration[] | cdktn.IResolvable;
 }
 export interface S3VectorsIndexEncryptionConfiguration {
   /**
@@ -64,32 +64,32 @@ export interface S3VectorsIndexEncryptionConfiguration {
   readonly sseType?: string;
 }
 
-export function s3VectorsIndexEncryptionConfigurationToTerraform(struct?: S3VectorsIndexEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3VectorsIndexEncryptionConfigurationToTerraform(struct?: S3VectorsIndexEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
-    sse_type: cdktf.stringToTerraform(struct!.sseType),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    sse_type: cdktn.stringToTerraform(struct!.sseType),
   }
 }
 
 
-export function s3VectorsIndexEncryptionConfigurationToHclTerraform(struct?: S3VectorsIndexEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3VectorsIndexEncryptionConfigurationToHclTerraform(struct?: S3VectorsIndexEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sse_type: {
-      value: cdktf.stringToHclTerraform(struct!.sseType),
+      value: cdktn.stringToHclTerraform(struct!.sseType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,9 +100,9 @@ export function s3VectorsIndexEncryptionConfigurationToHclTerraform(struct?: S3V
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3VectorsIndexEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3VectorsIndexEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,11 +110,11 @@ export class S3VectorsIndexEncryptionConfigurationOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3VectorsIndexEncryptionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): S3VectorsIndexEncryptionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -131,14 +131,14 @@ export class S3VectorsIndexEncryptionConfigurationOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3VectorsIndexEncryptionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3VectorsIndexEncryptionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyArn = undefined;
       this._sseType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -183,15 +183,15 @@ export class S3VectorsIndexEncryptionConfigurationOutputReference extends cdktf.
   }
 }
 
-export class S3VectorsIndexEncryptionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : S3VectorsIndexEncryptionConfiguration[] | cdktf.IResolvable
+export class S3VectorsIndexEncryptionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : S3VectorsIndexEncryptionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -209,25 +209,25 @@ export interface S3VectorsIndexMetadataConfiguration {
   readonly nonFilterableMetadataKeys: string[];
 }
 
-export function s3VectorsIndexMetadataConfigurationToTerraform(struct?: S3VectorsIndexMetadataConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3VectorsIndexMetadataConfigurationToTerraform(struct?: S3VectorsIndexMetadataConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    non_filterable_metadata_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nonFilterableMetadataKeys),
+    non_filterable_metadata_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.nonFilterableMetadataKeys),
   }
 }
 
 
-export function s3VectorsIndexMetadataConfigurationToHclTerraform(struct?: S3VectorsIndexMetadataConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3VectorsIndexMetadataConfigurationToHclTerraform(struct?: S3VectorsIndexMetadataConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     non_filterable_metadata_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.nonFilterableMetadataKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.nonFilterableMetadataKeys),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -238,9 +238,9 @@ export function s3VectorsIndexMetadataConfigurationToHclTerraform(struct?: S3Vec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3VectorsIndexMetadataConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3VectorsIndexMetadataConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -248,11 +248,11 @@ export class S3VectorsIndexMetadataConfigurationOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3VectorsIndexMetadataConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): S3VectorsIndexMetadataConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -265,13 +265,13 @@ export class S3VectorsIndexMetadataConfigurationOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3VectorsIndexMetadataConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3VectorsIndexMetadataConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nonFilterableMetadataKeys = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -285,7 +285,7 @@ export class S3VectorsIndexMetadataConfigurationOutputReference extends cdktf.Co
   // non_filterable_metadata_keys - computed: false, optional: false, required: true
   private _nonFilterableMetadataKeys?: string[]; 
   public get nonFilterableMetadataKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('non_filterable_metadata_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('non_filterable_metadata_keys'));
   }
   public set nonFilterableMetadataKeys(value: string[]) {
     this._nonFilterableMetadataKeys = value;
@@ -296,15 +296,15 @@ export class S3VectorsIndexMetadataConfigurationOutputReference extends cdktf.Co
   }
 }
 
-export class S3VectorsIndexMetadataConfigurationList extends cdktf.ComplexList {
-  public internalValue? : S3VectorsIndexMetadataConfiguration[] | cdktf.IResolvable
+export class S3VectorsIndexMetadataConfigurationList extends cdktn.ComplexList {
+  public internalValue? : S3VectorsIndexMetadataConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -319,7 +319,7 @@ export class S3VectorsIndexMetadataConfigurationList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3vectors_index aws_s3vectors_index}
 */
-export class S3VectorsIndex extends cdktf.TerraformResource {
+export class S3VectorsIndex extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -330,14 +330,14 @@ export class S3VectorsIndex extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3VectorsIndex resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3VectorsIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3VectorsIndex to import
   * @param importFromId The id of the existing S3VectorsIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3vectors_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3VectorsIndex to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3vectors_index", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3vectors_index", importId: importFromId, provider });
       }
 
   // ===========
@@ -431,7 +431,7 @@ export class S3VectorsIndex extends cdktf.TerraformResource {
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
-  public putEncryptionConfiguration(value: S3VectorsIndexEncryptionConfiguration[] | cdktf.IResolvable) {
+  public putEncryptionConfiguration(value: S3VectorsIndexEncryptionConfiguration[] | cdktn.IResolvable) {
     this._encryptionConfiguration.internalValue = value;
   }
   public resetEncryptionConfiguration() {
@@ -493,7 +493,7 @@ export class S3VectorsIndex extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -516,7 +516,7 @@ export class S3VectorsIndex extends cdktf.TerraformResource {
   public get metadataConfiguration() {
     return this._metadataConfiguration;
   }
-  public putMetadataConfiguration(value: S3VectorsIndexMetadataConfiguration[] | cdktf.IResolvable) {
+  public putMetadataConfiguration(value: S3VectorsIndexMetadataConfiguration[] | cdktn.IResolvable) {
     this._metadataConfiguration.internalValue = value;
   }
   public resetMetadataConfiguration() {
@@ -533,70 +533,70 @@ export class S3VectorsIndex extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_type: cdktf.stringToTerraform(this._dataType),
-      dimension: cdktf.numberToTerraform(this._dimension),
-      distance_metric: cdktf.stringToTerraform(this._distanceMetric),
-      encryption_configuration: cdktf.listMapper(s3VectorsIndexEncryptionConfigurationToTerraform, false)(this._encryptionConfiguration.internalValue),
-      index_name: cdktf.stringToTerraform(this._indexName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      vector_bucket_name: cdktf.stringToTerraform(this._vectorBucketName),
-      metadata_configuration: cdktf.listMapper(s3VectorsIndexMetadataConfigurationToTerraform, true)(this._metadataConfiguration.internalValue),
+      data_type: cdktn.stringToTerraform(this._dataType),
+      dimension: cdktn.numberToTerraform(this._dimension),
+      distance_metric: cdktn.stringToTerraform(this._distanceMetric),
+      encryption_configuration: cdktn.listMapper(s3VectorsIndexEncryptionConfigurationToTerraform, false)(this._encryptionConfiguration.internalValue),
+      index_name: cdktn.stringToTerraform(this._indexName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      vector_bucket_name: cdktn.stringToTerraform(this._vectorBucketName),
+      metadata_configuration: cdktn.listMapper(s3VectorsIndexMetadataConfigurationToTerraform, true)(this._metadataConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_type: {
-        value: cdktf.stringToHclTerraform(this._dataType),
+        value: cdktn.stringToHclTerraform(this._dataType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dimension: {
-        value: cdktf.numberToHclTerraform(this._dimension),
+        value: cdktn.numberToHclTerraform(this._dimension),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       distance_metric: {
-        value: cdktf.stringToHclTerraform(this._distanceMetric),
+        value: cdktn.stringToHclTerraform(this._distanceMetric),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_configuration: {
-        value: cdktf.listMapperHcl(s3VectorsIndexEncryptionConfigurationToHclTerraform, false)(this._encryptionConfiguration.internalValue),
+        value: cdktn.listMapperHcl(s3VectorsIndexEncryptionConfigurationToHclTerraform, false)(this._encryptionConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3VectorsIndexEncryptionConfigurationList",
       },
       index_name: {
-        value: cdktf.stringToHclTerraform(this._indexName),
+        value: cdktn.stringToHclTerraform(this._indexName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vector_bucket_name: {
-        value: cdktf.stringToHclTerraform(this._vectorBucketName),
+        value: cdktn.stringToHclTerraform(this._vectorBucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata_configuration: {
-        value: cdktf.listMapperHcl(s3VectorsIndexMetadataConfigurationToHclTerraform, true)(this._metadataConfiguration.internalValue),
+        value: cdktn.listMapperHcl(s3VectorsIndexMetadataConfigurationToHclTerraform, true)(this._metadataConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3VectorsIndexMetadataConfigurationList",

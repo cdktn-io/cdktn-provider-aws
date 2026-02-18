@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEcrLifecyclePolicyDocumentConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcrLifecyclePolicyDocumentConfig extends cdktn.TerraformMetaArguments {
   /**
   * rule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_lifecycle_policy_document#rule DataAwsEcrLifecyclePolicyDocument#rule}
   */
-  readonly rule?: DataAwsEcrLifecyclePolicyDocumentRule[] | cdktf.IResolvable;
+  readonly rule?: DataAwsEcrLifecyclePolicyDocumentRule[] | cdktn.IResolvable;
 }
 export interface DataAwsEcrLifecyclePolicyDocumentRuleAction {
   /**
@@ -30,32 +30,32 @@ export interface DataAwsEcrLifecyclePolicyDocumentRuleAction {
   readonly type: string;
 }
 
-export function dataAwsEcrLifecyclePolicyDocumentRuleActionToTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcrLifecyclePolicyDocumentRuleActionToTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_storage_class: cdktf.stringToTerraform(struct!.targetStorageClass),
-    type: cdktf.stringToTerraform(struct!.type),
+    target_storage_class: cdktn.stringToTerraform(struct!.targetStorageClass),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataAwsEcrLifecyclePolicyDocumentRuleActionToHclTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcrLifecyclePolicyDocumentRuleActionToHclTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_storage_class: {
-      value: cdktf.stringToHclTerraform(struct!.targetStorageClass),
+      value: cdktn.stringToHclTerraform(struct!.targetStorageClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -66,9 +66,9 @@ export function dataAwsEcrLifecyclePolicyDocumentRuleActionToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcrLifecyclePolicyDocumentRuleActionOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcrLifecyclePolicyDocumentRuleActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -76,11 +76,11 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleActionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcrLifecyclePolicyDocumentRuleAction | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcrLifecyclePolicyDocumentRuleAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -97,14 +97,14 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleActionOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcrLifecyclePolicyDocumentRuleAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcrLifecyclePolicyDocumentRuleAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._targetStorageClass = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -146,15 +146,15 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleActionOutputReference extends 
   }
 }
 
-export class DataAwsEcrLifecyclePolicyDocumentRuleActionList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcrLifecyclePolicyDocumentRuleAction[] | cdktf.IResolvable
+export class DataAwsEcrLifecyclePolicyDocumentRuleActionList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcrLifecyclePolicyDocumentRuleAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -196,67 +196,67 @@ export interface DataAwsEcrLifecyclePolicyDocumentRuleSelection {
   readonly tagStatus: string;
 }
 
-export function dataAwsEcrLifecyclePolicyDocumentRuleSelectionToTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRuleSelection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcrLifecyclePolicyDocumentRuleSelectionToTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRuleSelection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count_number: cdktf.numberToTerraform(struct!.countNumber),
-    count_type: cdktf.stringToTerraform(struct!.countType),
-    count_unit: cdktf.stringToTerraform(struct!.countUnit),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
-    tag_pattern_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagPatternList),
-    tag_prefix_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagPrefixList),
-    tag_status: cdktf.stringToTerraform(struct!.tagStatus),
+    count_number: cdktn.numberToTerraform(struct!.countNumber),
+    count_type: cdktn.stringToTerraform(struct!.countType),
+    count_unit: cdktn.stringToTerraform(struct!.countUnit),
+    storage_class: cdktn.stringToTerraform(struct!.storageClass),
+    tag_pattern_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tagPatternList),
+    tag_prefix_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tagPrefixList),
+    tag_status: cdktn.stringToTerraform(struct!.tagStatus),
   }
 }
 
 
-export function dataAwsEcrLifecyclePolicyDocumentRuleSelectionToHclTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRuleSelection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcrLifecyclePolicyDocumentRuleSelectionToHclTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRuleSelection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count_number: {
-      value: cdktf.numberToHclTerraform(struct!.countNumber),
+      value: cdktn.numberToHclTerraform(struct!.countNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     count_type: {
-      value: cdktf.stringToHclTerraform(struct!.countType),
+      value: cdktn.stringToHclTerraform(struct!.countType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     count_unit: {
-      value: cdktf.stringToHclTerraform(struct!.countUnit),
+      value: cdktn.stringToHclTerraform(struct!.countUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_class: {
-      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      value: cdktn.stringToHclTerraform(struct!.storageClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_pattern_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagPatternList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tagPatternList),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_prefix_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagPrefixList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tagPrefixList),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_status: {
-      value: cdktf.stringToHclTerraform(struct!.tagStatus),
+      value: cdktn.stringToHclTerraform(struct!.tagStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -267,9 +267,9 @@ export function dataAwsEcrLifecyclePolicyDocumentRuleSelectionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcrLifecyclePolicyDocumentRuleSelectionOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcrLifecyclePolicyDocumentRuleSelectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -277,11 +277,11 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleSelectionOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcrLifecyclePolicyDocumentRuleSelection | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcrLifecyclePolicyDocumentRuleSelection | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -318,7 +318,7 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleSelectionOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcrLifecyclePolicyDocumentRuleSelection | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcrLifecyclePolicyDocumentRuleSelection | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -330,7 +330,7 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleSelectionOutputReference exten
       this._tagPrefixList = undefined;
       this._tagStatus = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -451,15 +451,15 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleSelectionOutputReference exten
   }
 }
 
-export class DataAwsEcrLifecyclePolicyDocumentRuleSelectionList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcrLifecyclePolicyDocumentRuleSelection[] | cdktf.IResolvable
+export class DataAwsEcrLifecyclePolicyDocumentRuleSelectionList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcrLifecyclePolicyDocumentRuleSelection[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -484,55 +484,55 @@ export interface DataAwsEcrLifecyclePolicyDocumentRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_lifecycle_policy_document#action DataAwsEcrLifecyclePolicyDocument#action}
   */
-  readonly action?: DataAwsEcrLifecyclePolicyDocumentRuleAction[] | cdktf.IResolvable;
+  readonly action?: DataAwsEcrLifecyclePolicyDocumentRuleAction[] | cdktn.IResolvable;
   /**
   * selection block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_lifecycle_policy_document#selection DataAwsEcrLifecyclePolicyDocument#selection}
   */
-  readonly selection?: DataAwsEcrLifecyclePolicyDocumentRuleSelection[] | cdktf.IResolvable;
+  readonly selection?: DataAwsEcrLifecyclePolicyDocumentRuleSelection[] | cdktn.IResolvable;
 }
 
-export function dataAwsEcrLifecyclePolicyDocumentRuleToTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcrLifecyclePolicyDocumentRuleToTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    action: cdktf.listMapper(dataAwsEcrLifecyclePolicyDocumentRuleActionToTerraform, true)(struct!.action),
-    selection: cdktf.listMapper(dataAwsEcrLifecyclePolicyDocumentRuleSelectionToTerraform, true)(struct!.selection),
+    description: cdktn.stringToTerraform(struct!.description),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    action: cdktn.listMapper(dataAwsEcrLifecyclePolicyDocumentRuleActionToTerraform, true)(struct!.action),
+    selection: cdktn.listMapper(dataAwsEcrLifecyclePolicyDocumentRuleSelectionToTerraform, true)(struct!.selection),
   }
 }
 
 
-export function dataAwsEcrLifecyclePolicyDocumentRuleToHclTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcrLifecyclePolicyDocumentRuleToHclTerraform(struct?: DataAwsEcrLifecyclePolicyDocumentRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     action: {
-      value: cdktf.listMapperHcl(dataAwsEcrLifecyclePolicyDocumentRuleActionToHclTerraform, true)(struct!.action),
+      value: cdktn.listMapperHcl(dataAwsEcrLifecyclePolicyDocumentRuleActionToHclTerraform, true)(struct!.action),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsEcrLifecyclePolicyDocumentRuleActionList",
     },
     selection: {
-      value: cdktf.listMapperHcl(dataAwsEcrLifecyclePolicyDocumentRuleSelectionToHclTerraform, true)(struct!.selection),
+      value: cdktn.listMapperHcl(dataAwsEcrLifecyclePolicyDocumentRuleSelectionToHclTerraform, true)(struct!.selection),
       isBlock: true,
       type: "list",
       storageClassType: "DataAwsEcrLifecyclePolicyDocumentRuleSelectionList",
@@ -543,9 +543,9 @@ export function dataAwsEcrLifecyclePolicyDocumentRuleToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcrLifecyclePolicyDocumentRuleOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcrLifecyclePolicyDocumentRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -553,11 +553,11 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcrLifecyclePolicyDocumentRule | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcrLifecyclePolicyDocumentRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -582,7 +582,7 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcrLifecyclePolicyDocumentRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcrLifecyclePolicyDocumentRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -591,7 +591,7 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleOutputReference extends cdktf.
       this._action.internalValue = undefined;
       this._selection.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -639,7 +639,7 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleOutputReference extends cdktf.
   public get action() {
     return this._action;
   }
-  public putAction(value: DataAwsEcrLifecyclePolicyDocumentRuleAction[] | cdktf.IResolvable) {
+  public putAction(value: DataAwsEcrLifecyclePolicyDocumentRuleAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   public resetAction() {
@@ -655,7 +655,7 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleOutputReference extends cdktf.
   public get selection() {
     return this._selection;
   }
-  public putSelection(value: DataAwsEcrLifecyclePolicyDocumentRuleSelection[] | cdktf.IResolvable) {
+  public putSelection(value: DataAwsEcrLifecyclePolicyDocumentRuleSelection[] | cdktn.IResolvable) {
     this._selection.internalValue = value;
   }
   public resetSelection() {
@@ -667,15 +667,15 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleOutputReference extends cdktf.
   }
 }
 
-export class DataAwsEcrLifecyclePolicyDocumentRuleList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcrLifecyclePolicyDocumentRule[] | cdktf.IResolvable
+export class DataAwsEcrLifecyclePolicyDocumentRuleList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcrLifecyclePolicyDocumentRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -690,7 +690,7 @@ export class DataAwsEcrLifecyclePolicyDocumentRuleList extends cdktf.ComplexList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_lifecycle_policy_document aws_ecr_lifecycle_policy_document}
 */
-export class DataAwsEcrLifecyclePolicyDocument extends cdktf.TerraformDataSource {
+export class DataAwsEcrLifecyclePolicyDocument extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -701,14 +701,14 @@ export class DataAwsEcrLifecyclePolicyDocument extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEcrLifecyclePolicyDocument resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEcrLifecyclePolicyDocument resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEcrLifecyclePolicyDocument to import
   * @param importFromId The id of the existing DataAwsEcrLifecyclePolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecr_lifecycle_policy_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEcrLifecyclePolicyDocument to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_lifecycle_policy_document", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecr_lifecycle_policy_document", importId: importFromId, provider });
       }
 
   // ===========
@@ -755,7 +755,7 @@ export class DataAwsEcrLifecyclePolicyDocument extends cdktf.TerraformDataSource
   public get rule() {
     return this._rule;
   }
-  public putRule(value: DataAwsEcrLifecyclePolicyDocumentRule[] | cdktf.IResolvable) {
+  public putRule(value: DataAwsEcrLifecyclePolicyDocumentRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -772,14 +772,14 @@ export class DataAwsEcrLifecyclePolicyDocument extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      rule: cdktf.listMapper(dataAwsEcrLifecyclePolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
+      rule: cdktn.listMapper(dataAwsEcrLifecyclePolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       rule: {
-        value: cdktf.listMapperHcl(dataAwsEcrLifecyclePolicyDocumentRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(dataAwsEcrLifecyclePolicyDocumentRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsEcrLifecyclePolicyDocumentRuleList",

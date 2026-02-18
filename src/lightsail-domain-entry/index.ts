@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LightsailDomainEntryConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailDomainEntryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_domain_entry#domain_name LightsailDomainEntry#domain_name}
   */
@@ -26,7 +26,7 @@ export interface LightsailDomainEntryConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_domain_entry#is_alias LightsailDomainEntry#is_alias}
   */
-  readonly isAlias?: boolean | cdktf.IResolvable;
+  readonly isAlias?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_domain_entry#name LightsailDomainEntry#name}
   */
@@ -50,7 +50,7 @@ export interface LightsailDomainEntryConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry}
 */
-export class LightsailDomainEntry extends cdktf.TerraformResource {
+export class LightsailDomainEntry extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class LightsailDomainEntry extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LightsailDomainEntry resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LightsailDomainEntry resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LightsailDomainEntry to import
   * @param importFromId The id of the existing LightsailDomainEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_domain_entry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LightsailDomainEntry to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_domain_entry", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_domain_entry", importId: importFromId, provider });
       }
 
   // ===========
@@ -141,11 +141,11 @@ export class LightsailDomainEntry extends cdktf.TerraformResource {
   }
 
   // is_alias - computed: false, optional: true, required: false
-  private _isAlias?: boolean | cdktf.IResolvable; 
+  private _isAlias?: boolean | cdktn.IResolvable; 
   public get isAlias() {
     return this.getBooleanAttribute('is_alias');
   }
-  public set isAlias(value: boolean | cdktf.IResolvable) {
+  public set isAlias(value: boolean | cdktn.IResolvable) {
     this._isAlias = value;
   }
   public resetIsAlias() {
@@ -217,56 +217,56 @@ export class LightsailDomainEntry extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      id: cdktf.stringToTerraform(this._id),
-      is_alias: cdktf.booleanToTerraform(this._isAlias),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      target: cdktf.stringToTerraform(this._target),
-      type: cdktf.stringToTerraform(this._type),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      id: cdktn.stringToTerraform(this._id),
+      is_alias: cdktn.booleanToTerraform(this._isAlias),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      target: cdktn.stringToTerraform(this._target),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_alias: {
-        value: cdktf.booleanToHclTerraform(this._isAlias),
+        value: cdktn.booleanToHclTerraform(this._isAlias),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target: {
-        value: cdktf.stringToHclTerraform(this._target),
+        value: cdktn.stringToHclTerraform(this._target),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

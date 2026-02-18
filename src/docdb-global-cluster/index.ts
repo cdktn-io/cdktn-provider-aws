@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DocdbGlobalClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DocdbGlobalClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_global_cluster#database_name DocdbGlobalCluster#database_name}
   */
@@ -19,7 +19,7 @@ export interface DocdbGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_global_cluster#deletion_protection DocdbGlobalCluster#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_global_cluster#engine DocdbGlobalCluster#engine}
   */
@@ -52,7 +52,7 @@ export interface DocdbGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_global_cluster#storage_encrypted DocdbGlobalCluster#storage_encrypted}
   */
-  readonly storageEncrypted?: boolean | cdktf.IResolvable;
+  readonly storageEncrypted?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -64,8 +64,8 @@ export interface DocdbGlobalClusterGlobalClusterMembers {
 }
 
 export function docdbGlobalClusterGlobalClusterMembersToTerraform(struct?: DocdbGlobalClusterGlobalClusterMembers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -74,8 +74,8 @@ export function docdbGlobalClusterGlobalClusterMembersToTerraform(struct?: Docdb
 
 
 export function docdbGlobalClusterGlobalClusterMembersToHclTerraform(struct?: DocdbGlobalClusterGlobalClusterMembers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -83,7 +83,7 @@ export function docdbGlobalClusterGlobalClusterMembersToHclTerraform(struct?: Do
   return attrs;
 }
 
-export class DocdbGlobalClusterGlobalClusterMembersOutputReference extends cdktf.ComplexObject {
+export class DocdbGlobalClusterGlobalClusterMembersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -92,7 +92,7 @@ export class DocdbGlobalClusterGlobalClusterMembersOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -122,14 +122,14 @@ export class DocdbGlobalClusterGlobalClusterMembersOutputReference extends cdktf
   }
 }
 
-export class DocdbGlobalClusterGlobalClusterMembersList extends cdktf.ComplexList {
+export class DocdbGlobalClusterGlobalClusterMembersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -155,39 +155,39 @@ export interface DocdbGlobalClusterTimeouts {
   readonly update?: string;
 }
 
-export function docdbGlobalClusterTimeoutsToTerraform(struct?: DocdbGlobalClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function docdbGlobalClusterTimeoutsToTerraform(struct?: DocdbGlobalClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function docdbGlobalClusterTimeoutsToHclTerraform(struct?: DocdbGlobalClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function docdbGlobalClusterTimeoutsToHclTerraform(struct?: DocdbGlobalClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -198,19 +198,19 @@ export function docdbGlobalClusterTimeoutsToHclTerraform(struct?: DocdbGlobalClu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocdbGlobalClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DocdbGlobalClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DocdbGlobalClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DocdbGlobalClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -231,7 +231,7 @@ export class DocdbGlobalClusterTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DocdbGlobalClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DocdbGlobalClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -239,7 +239,7 @@ export class DocdbGlobalClusterTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -304,7 +304,7 @@ export class DocdbGlobalClusterTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_global_cluster aws_docdb_global_cluster}
 */
-export class DocdbGlobalCluster extends cdktf.TerraformResource {
+export class DocdbGlobalCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -315,14 +315,14 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DocdbGlobalCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DocdbGlobalCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DocdbGlobalCluster to import
   * @param importFromId The id of the existing DocdbGlobalCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/docdb_global_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DocdbGlobalCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_global_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_docdb_global_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -390,11 +390,11 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -515,11 +515,11 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   }
 
   // storage_encrypted - computed: true, optional: true, required: false
-  private _storageEncrypted?: boolean | cdktf.IResolvable; 
+  private _storageEncrypted?: boolean | cdktn.IResolvable; 
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean | cdktf.IResolvable) {
+  public set storageEncrypted(value: boolean | cdktn.IResolvable) {
     this._storageEncrypted = value;
   }
   public resetStorageEncrypted() {
@@ -552,15 +552,15 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      source_db_cluster_identifier: cdktf.stringToTerraform(this._sourceDbClusterIdentifier),
-      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      engine: cdktn.stringToTerraform(this._engine),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      global_cluster_identifier: cdktn.stringToTerraform(this._globalClusterIdentifier),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      source_db_cluster_identifier: cdktn.stringToTerraform(this._sourceDbClusterIdentifier),
+      storage_encrypted: cdktn.booleanToTerraform(this._storageEncrypted),
       timeouts: docdbGlobalClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -568,55 +568,55 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       global_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._globalClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._globalClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_db_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._sourceDbClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._sourceDbClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_encrypted: {
-        value: cdktf.booleanToHclTerraform(this._storageEncrypted),
+        value: cdktn.booleanToHclTerraform(this._storageEncrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

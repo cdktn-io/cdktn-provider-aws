@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EipConfig extends cdktf.TerraformMetaArguments {
+export interface EipConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eip#address Eip#address}
   */
@@ -91,39 +91,39 @@ export interface EipTimeouts {
   readonly update?: string;
 }
 
-export function eipTimeoutsToTerraform(struct?: EipTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eipTimeoutsToTerraform(struct?: EipTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eipTimeoutsToHclTerraform(struct?: EipTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eipTimeoutsToHclTerraform(struct?: EipTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -134,19 +134,19 @@ export function eipTimeoutsToHclTerraform(struct?: EipTimeouts | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EipTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EipTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EipTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EipTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -167,7 +167,7 @@ export class EipTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EipTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EipTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -175,7 +175,7 @@ export class EipTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -240,7 +240,7 @@ export class EipTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eip aws_eip}
 */
-export class Eip extends cdktf.TerraformResource {
+export class Eip extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -251,14 +251,14 @@ export class Eip extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Eip resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Eip resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Eip to import
   * @param importFromId The id of the existing Eip that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eip#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Eip to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eip", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eip", importId: importFromId, provider });
       }
 
   // ===========
@@ -588,19 +588,19 @@ export class Eip extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address: cdktf.stringToTerraform(this._address),
-      associate_with_private_ip: cdktf.stringToTerraform(this._associateWithPrivateIp),
-      customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
-      domain: cdktf.stringToTerraform(this._domain),
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
-      network_border_group: cdktf.stringToTerraform(this._networkBorderGroup),
-      network_interface: cdktf.stringToTerraform(this._networkInterface),
-      public_ipv4_pool: cdktf.stringToTerraform(this._publicIpv4Pool),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      address: cdktn.stringToTerraform(this._address),
+      associate_with_private_ip: cdktn.stringToTerraform(this._associateWithPrivateIp),
+      customer_owned_ipv4_pool: cdktn.stringToTerraform(this._customerOwnedIpv4Pool),
+      domain: cdktn.stringToTerraform(this._domain),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      ipam_pool_id: cdktn.stringToTerraform(this._ipamPoolId),
+      network_border_group: cdktn.stringToTerraform(this._networkBorderGroup),
+      network_interface: cdktn.stringToTerraform(this._networkInterface),
+      public_ipv4_pool: cdktn.stringToTerraform(this._publicIpv4Pool),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: eipTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -608,79 +608,79 @@ export class Eip extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address: {
-        value: cdktf.stringToHclTerraform(this._address),
+        value: cdktn.stringToHclTerraform(this._address),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       associate_with_private_ip: {
-        value: cdktf.stringToHclTerraform(this._associateWithPrivateIp),
+        value: cdktn.stringToHclTerraform(this._associateWithPrivateIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_owned_ipv4_pool: {
-        value: cdktf.stringToHclTerraform(this._customerOwnedIpv4Pool),
+        value: cdktn.stringToHclTerraform(this._customerOwnedIpv4Pool),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._ipamPoolId),
+        value: cdktn.stringToHclTerraform(this._ipamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_border_group: {
-        value: cdktf.stringToHclTerraform(this._networkBorderGroup),
+        value: cdktn.stringToHclTerraform(this._networkBorderGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface: {
-        value: cdktf.stringToHclTerraform(this._networkInterface),
+        value: cdktn.stringToHclTerraform(this._networkInterface),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_ipv4_pool: {
-        value: cdktf.stringToHclTerraform(this._publicIpv4Pool),
+        value: cdktn.stringToHclTerraform(this._publicIpv4Pool),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Inspector2FilterConfig extends cdktf.TerraformMetaArguments {
+export interface Inspector2FilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#action Inspector2Filter#action}
   */
@@ -43,7 +43,7 @@ export interface Inspector2FilterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#filter_criteria Inspector2Filter#filter_criteria}
   */
-  readonly filterCriteria?: Inspector2FilterFilterCriteria[] | cdktf.IResolvable;
+  readonly filterCriteria?: Inspector2FilterFilterCriteria[] | cdktn.IResolvable;
 }
 export interface Inspector2FilterFilterCriteriaAwsAccountId {
   /**
@@ -56,32 +56,32 @@ export interface Inspector2FilterFilterCriteriaAwsAccountId {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaAwsAccountIdToTerraform(struct?: Inspector2FilterFilterCriteriaAwsAccountId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaAwsAccountIdToTerraform(struct?: Inspector2FilterFilterCriteriaAwsAccountId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaAwsAccountIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaAwsAccountId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaAwsAccountIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaAwsAccountId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,9 +92,9 @@ export function inspector2FilterFilterCriteriaAwsAccountIdToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaAwsAccountIdOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaAwsAccountIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -102,11 +102,11 @@ export class Inspector2FilterFilterCriteriaAwsAccountIdOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaAwsAccountId | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaAwsAccountId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -123,14 +123,14 @@ export class Inspector2FilterFilterCriteriaAwsAccountIdOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaAwsAccountId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaAwsAccountId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -169,15 +169,15 @@ export class Inspector2FilterFilterCriteriaAwsAccountIdOutputReference extends c
   }
 }
 
-export class Inspector2FilterFilterCriteriaAwsAccountIdList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaAwsAccountId[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaAwsAccountIdList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaAwsAccountId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -199,32 +199,32 @@ export interface Inspector2FilterFilterCriteriaCodeRepositoryProjectName {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaCodeRepositoryProjectNameToTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeRepositoryProjectNameToTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaCodeRepositoryProjectNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeRepositoryProjectNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -235,9 +235,9 @@ export function inspector2FilterFilterCriteriaCodeRepositoryProjectNameToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -245,11 +245,11 @@ export class Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -266,14 +266,14 @@ export class Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -312,15 +312,15 @@ export class Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputRefere
   }
 }
 
-export class Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -342,32 +342,32 @@ export interface Inspector2FilterFilterCriteriaCodeRepositoryProviderType {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -378,9 +378,9 @@ export function inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -388,11 +388,11 @@ export class Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -409,14 +409,14 @@ export class Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -455,15 +455,15 @@ export class Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputRefer
   }
 }
 
-export class Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -485,32 +485,32 @@ export interface Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -521,9 +521,9 @@ export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -531,11 +531,11 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -552,14 +552,14 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -598,15 +598,15 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputRe
   }
 }
 
-export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -628,32 +628,32 @@ export interface Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -664,9 +664,9 @@ export function inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -674,11 +674,11 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -695,14 +695,14 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -741,15 +741,15 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputRe
   }
 }
 
-export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -771,32 +771,32 @@ export interface Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -807,9 +807,9 @@ export function inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -817,11 +817,11 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -838,14 +838,14 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -884,15 +884,15 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputRefere
   }
 }
 
-export class Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -914,32 +914,32 @@ export interface Inspector2FilterFilterCriteriaComponentId {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaComponentIdToTerraform(struct?: Inspector2FilterFilterCriteriaComponentId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaComponentIdToTerraform(struct?: Inspector2FilterFilterCriteriaComponentId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaComponentIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaComponentId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaComponentIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaComponentId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -950,9 +950,9 @@ export function inspector2FilterFilterCriteriaComponentIdToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaComponentIdOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaComponentIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -960,11 +960,11 @@ export class Inspector2FilterFilterCriteriaComponentIdOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaComponentId | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaComponentId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -981,14 +981,14 @@ export class Inspector2FilterFilterCriteriaComponentIdOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaComponentId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaComponentId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1027,15 +1027,15 @@ export class Inspector2FilterFilterCriteriaComponentIdOutputReference extends cd
   }
 }
 
-export class Inspector2FilterFilterCriteriaComponentIdList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaComponentId[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaComponentIdList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaComponentId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1057,32 +1057,32 @@ export interface Inspector2FilterFilterCriteriaComponentType {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaComponentTypeToTerraform(struct?: Inspector2FilterFilterCriteriaComponentType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaComponentTypeToTerraform(struct?: Inspector2FilterFilterCriteriaComponentType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaComponentTypeToHclTerraform(struct?: Inspector2FilterFilterCriteriaComponentType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaComponentTypeToHclTerraform(struct?: Inspector2FilterFilterCriteriaComponentType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1093,9 +1093,9 @@ export function inspector2FilterFilterCriteriaComponentTypeToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaComponentTypeOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaComponentTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1103,11 +1103,11 @@ export class Inspector2FilterFilterCriteriaComponentTypeOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaComponentType | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaComponentType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1124,14 +1124,14 @@ export class Inspector2FilterFilterCriteriaComponentTypeOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaComponentType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaComponentType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1170,15 +1170,15 @@ export class Inspector2FilterFilterCriteriaComponentTypeOutputReference extends 
   }
 }
 
-export class Inspector2FilterFilterCriteriaComponentTypeList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaComponentType[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaComponentTypeList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaComponentType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1200,32 +1200,32 @@ export interface Inspector2FilterFilterCriteriaEc2InstanceImageId {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaEc2InstanceImageIdToTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceImageId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEc2InstanceImageIdToTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceImageId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEc2InstanceImageIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceImageId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEc2InstanceImageIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceImageId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1236,9 +1236,9 @@ export function inspector2FilterFilterCriteriaEc2InstanceImageIdToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1246,11 +1246,11 @@ export class Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEc2InstanceImageId | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEc2InstanceImageId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1267,14 +1267,14 @@ export class Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEc2InstanceImageId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEc2InstanceImageId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1313,15 +1313,15 @@ export class Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference ext
   }
 }
 
-export class Inspector2FilterFilterCriteriaEc2InstanceImageIdList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEc2InstanceImageId[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEc2InstanceImageIdList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEc2InstanceImageId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1343,32 +1343,32 @@ export interface Inspector2FilterFilterCriteriaEc2InstanceSubnetId {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaEc2InstanceSubnetIdToTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceSubnetId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEc2InstanceSubnetIdToTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceSubnetId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEc2InstanceSubnetIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceSubnetId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEc2InstanceSubnetIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceSubnetId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1379,9 +1379,9 @@ export function inspector2FilterFilterCriteriaEc2InstanceSubnetIdToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1389,11 +1389,11 @@ export class Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEc2InstanceSubnetId | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEc2InstanceSubnetId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1410,14 +1410,14 @@ export class Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEc2InstanceSubnetId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEc2InstanceSubnetId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1456,15 +1456,15 @@ export class Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference ex
   }
 }
 
-export class Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1486,32 +1486,32 @@ export interface Inspector2FilterFilterCriteriaEc2InstanceVpcId {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaEc2InstanceVpcIdToTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceVpcId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEc2InstanceVpcIdToTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceVpcId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEc2InstanceVpcIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceVpcId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEc2InstanceVpcIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaEc2InstanceVpcId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1522,9 +1522,9 @@ export function inspector2FilterFilterCriteriaEc2InstanceVpcIdToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1532,11 +1532,11 @@ export class Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEc2InstanceVpcId | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEc2InstanceVpcId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1553,14 +1553,14 @@ export class Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEc2InstanceVpcId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEc2InstanceVpcId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1599,15 +1599,15 @@ export class Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference exten
   }
 }
 
-export class Inspector2FilterFilterCriteriaEc2InstanceVpcIdList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEc2InstanceVpcId[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEc2InstanceVpcIdList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEc2InstanceVpcId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1629,32 +1629,32 @@ export interface Inspector2FilterFilterCriteriaEcrImageArchitecture {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaEcrImageArchitectureToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageArchitecture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageArchitectureToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageArchitecture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEcrImageArchitectureToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageArchitecture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageArchitectureToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageArchitecture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1665,9 +1665,9 @@ export function inspector2FilterFilterCriteriaEcrImageArchitectureToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1675,11 +1675,11 @@ export class Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageArchitecture | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageArchitecture | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1696,14 +1696,14 @@ export class Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageArchitecture | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageArchitecture | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1742,15 +1742,15 @@ export class Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference e
   }
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageArchitectureList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEcrImageArchitecture[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEcrImageArchitectureList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImageArchitecture[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1772,32 +1772,32 @@ export interface Inspector2FilterFilterCriteriaEcrImageHash {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaEcrImageHashToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageHash | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageHashToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageHash | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEcrImageHashToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageHash | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageHashToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageHash | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1808,9 +1808,9 @@ export function inspector2FilterFilterCriteriaEcrImageHashToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageHashOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEcrImageHashOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1818,11 +1818,11 @@ export class Inspector2FilterFilterCriteriaEcrImageHashOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageHash | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageHash | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1839,14 +1839,14 @@ export class Inspector2FilterFilterCriteriaEcrImageHashOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageHash | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageHash | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1885,15 +1885,15 @@ export class Inspector2FilterFilterCriteriaEcrImageHashOutputReference extends c
   }
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageHashList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEcrImageHash[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEcrImageHashList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImageHash[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1915,32 +1915,32 @@ export interface Inspector2FilterFilterCriteriaEcrImageInUseCount {
   readonly upperInclusive: number;
 }
 
-export function inspector2FilterFilterCriteriaEcrImageInUseCountToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageInUseCountToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lower_inclusive: cdktf.numberToTerraform(struct!.lowerInclusive),
-    upper_inclusive: cdktf.numberToTerraform(struct!.upperInclusive),
+    lower_inclusive: cdktn.numberToTerraform(struct!.lowerInclusive),
+    upper_inclusive: cdktn.numberToTerraform(struct!.upperInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEcrImageInUseCountToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageInUseCountToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lower_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.lowerInclusive),
+      value: cdktn.numberToHclTerraform(struct!.lowerInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     upper_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.upperInclusive),
+      value: cdktn.numberToHclTerraform(struct!.upperInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1951,9 +1951,9 @@ export function inspector2FilterFilterCriteriaEcrImageInUseCountToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1961,11 +1961,11 @@ export class Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1982,14 +1982,14 @@ export class Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._lowerInclusive = undefined;
       this._upperInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2028,15 +2028,15 @@ export class Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference ext
   }
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageInUseCountList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEcrImageInUseCount[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEcrImageInUseCountList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImageInUseCount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2058,32 +2058,32 @@ export interface Inspector2FilterFilterCriteriaEcrImageLastInUseAt {
   readonly startInclusive?: string;
 }
 
-export function inspector2FilterFilterCriteriaEcrImageLastInUseAtToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageLastInUseAtToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_inclusive: cdktf.stringToTerraform(struct!.endInclusive),
-    start_inclusive: cdktf.stringToTerraform(struct!.startInclusive),
+    end_inclusive: cdktn.stringToTerraform(struct!.endInclusive),
+    start_inclusive: cdktn.stringToTerraform(struct!.startInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEcrImageLastInUseAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageLastInUseAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.endInclusive),
+      value: cdktn.stringToHclTerraform(struct!.endInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.startInclusive),
+      value: cdktn.stringToHclTerraform(struct!.startInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2094,9 +2094,9 @@ export function inspector2FilterFilterCriteriaEcrImageLastInUseAtToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2104,11 +2104,11 @@ export class Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2125,14 +2125,14 @@ export class Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endInclusive = undefined;
       this._startInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2177,15 +2177,15 @@ export class Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference ex
   }
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageLastInUseAtList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEcrImageLastInUseAtList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2207,32 +2207,32 @@ export interface Inspector2FilterFilterCriteriaEcrImagePushedAt {
   readonly startInclusive?: string;
 }
 
-export function inspector2FilterFilterCriteriaEcrImagePushedAtToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImagePushedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImagePushedAtToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImagePushedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_inclusive: cdktf.stringToTerraform(struct!.endInclusive),
-    start_inclusive: cdktf.stringToTerraform(struct!.startInclusive),
+    end_inclusive: cdktn.stringToTerraform(struct!.endInclusive),
+    start_inclusive: cdktn.stringToTerraform(struct!.startInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEcrImagePushedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImagePushedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImagePushedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImagePushedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.endInclusive),
+      value: cdktn.stringToHclTerraform(struct!.endInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.startInclusive),
+      value: cdktn.stringToHclTerraform(struct!.startInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2243,9 +2243,9 @@ export function inspector2FilterFilterCriteriaEcrImagePushedAtToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2253,11 +2253,11 @@ export class Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEcrImagePushedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImagePushedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2274,14 +2274,14 @@ export class Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImagePushedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImagePushedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endInclusive = undefined;
       this._startInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2326,15 +2326,15 @@ export class Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference exten
   }
 }
 
-export class Inspector2FilterFilterCriteriaEcrImagePushedAtList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEcrImagePushedAt[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEcrImagePushedAtList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImagePushedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2356,32 +2356,32 @@ export interface Inspector2FilterFilterCriteriaEcrImageRegistry {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaEcrImageRegistryToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageRegistry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageRegistryToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageRegistry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEcrImageRegistryToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageRegistry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageRegistryToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageRegistry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2392,9 +2392,9 @@ export function inspector2FilterFilterCriteriaEcrImageRegistryToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2402,11 +2402,11 @@ export class Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageRegistry | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageRegistry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2423,14 +2423,14 @@ export class Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageRegistry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageRegistry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2469,15 +2469,15 @@ export class Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference exten
   }
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageRegistryList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEcrImageRegistry[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEcrImageRegistryList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImageRegistry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2499,32 +2499,32 @@ export interface Inspector2FilterFilterCriteriaEcrImageRepositoryName {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaEcrImageRepositoryNameToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageRepositoryName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageRepositoryNameToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageRepositoryName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEcrImageRepositoryNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageRepositoryName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageRepositoryNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageRepositoryName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2535,9 +2535,9 @@ export function inspector2FilterFilterCriteriaEcrImageRepositoryNameToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2545,11 +2545,11 @@ export class Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageRepositoryName | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageRepositoryName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2566,14 +2566,14 @@ export class Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageRepositoryName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageRepositoryName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2612,15 +2612,15 @@ export class Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference
   }
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageRepositoryNameList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEcrImageRepositoryName[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEcrImageRepositoryNameList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImageRepositoryName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2642,32 +2642,32 @@ export interface Inspector2FilterFilterCriteriaEcrImageTags {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaEcrImageTagsToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageTagsToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEcrImageTagsToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEcrImageTagsToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2678,9 +2678,9 @@ export function inspector2FilterFilterCriteriaEcrImageTagsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageTagsOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEcrImageTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2688,11 +2688,11 @@ export class Inspector2FilterFilterCriteriaEcrImageTagsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageTags | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2709,14 +2709,14 @@ export class Inspector2FilterFilterCriteriaEcrImageTagsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2755,15 +2755,15 @@ export class Inspector2FilterFilterCriteriaEcrImageTagsOutputReference extends c
   }
 }
 
-export class Inspector2FilterFilterCriteriaEcrImageTagsList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEcrImageTags[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEcrImageTagsList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImageTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2785,32 +2785,32 @@ export interface Inspector2FilterFilterCriteriaEpssScore {
   readonly upperInclusive: number;
 }
 
-export function inspector2FilterFilterCriteriaEpssScoreToTerraform(struct?: Inspector2FilterFilterCriteriaEpssScore | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEpssScoreToTerraform(struct?: Inspector2FilterFilterCriteriaEpssScore | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lower_inclusive: cdktf.numberToTerraform(struct!.lowerInclusive),
-    upper_inclusive: cdktf.numberToTerraform(struct!.upperInclusive),
+    lower_inclusive: cdktn.numberToTerraform(struct!.lowerInclusive),
+    upper_inclusive: cdktn.numberToTerraform(struct!.upperInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaEpssScoreToHclTerraform(struct?: Inspector2FilterFilterCriteriaEpssScore | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaEpssScoreToHclTerraform(struct?: Inspector2FilterFilterCriteriaEpssScore | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lower_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.lowerInclusive),
+      value: cdktn.numberToHclTerraform(struct!.lowerInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     upper_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.upperInclusive),
+      value: cdktn.numberToHclTerraform(struct!.upperInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2821,9 +2821,9 @@ export function inspector2FilterFilterCriteriaEpssScoreToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaEpssScoreOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaEpssScoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2831,11 +2831,11 @@ export class Inspector2FilterFilterCriteriaEpssScoreOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaEpssScore | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaEpssScore | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2852,14 +2852,14 @@ export class Inspector2FilterFilterCriteriaEpssScoreOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaEpssScore | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaEpssScore | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._lowerInclusive = undefined;
       this._upperInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2898,15 +2898,15 @@ export class Inspector2FilterFilterCriteriaEpssScoreOutputReference extends cdkt
   }
 }
 
-export class Inspector2FilterFilterCriteriaEpssScoreList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaEpssScore[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaEpssScoreList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEpssScore[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2928,32 +2928,32 @@ export interface Inspector2FilterFilterCriteriaExploitAvailable {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaExploitAvailableToTerraform(struct?: Inspector2FilterFilterCriteriaExploitAvailable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaExploitAvailableToTerraform(struct?: Inspector2FilterFilterCriteriaExploitAvailable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaExploitAvailableToHclTerraform(struct?: Inspector2FilterFilterCriteriaExploitAvailable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaExploitAvailableToHclTerraform(struct?: Inspector2FilterFilterCriteriaExploitAvailable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2964,9 +2964,9 @@ export function inspector2FilterFilterCriteriaExploitAvailableToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaExploitAvailableOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaExploitAvailableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2974,11 +2974,11 @@ export class Inspector2FilterFilterCriteriaExploitAvailableOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaExploitAvailable | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaExploitAvailable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2995,14 +2995,14 @@ export class Inspector2FilterFilterCriteriaExploitAvailableOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaExploitAvailable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaExploitAvailable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3041,15 +3041,15 @@ export class Inspector2FilterFilterCriteriaExploitAvailableOutputReference exten
   }
 }
 
-export class Inspector2FilterFilterCriteriaExploitAvailableList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaExploitAvailable[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaExploitAvailableList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaExploitAvailable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3071,32 +3071,32 @@ export interface Inspector2FilterFilterCriteriaFindingArn {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaFindingArnToTerraform(struct?: Inspector2FilterFilterCriteriaFindingArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFindingArnToTerraform(struct?: Inspector2FilterFilterCriteriaFindingArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaFindingArnToHclTerraform(struct?: Inspector2FilterFilterCriteriaFindingArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFindingArnToHclTerraform(struct?: Inspector2FilterFilterCriteriaFindingArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3107,9 +3107,9 @@ export function inspector2FilterFilterCriteriaFindingArnToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaFindingArnOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaFindingArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3117,11 +3117,11 @@ export class Inspector2FilterFilterCriteriaFindingArnOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaFindingArn | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaFindingArn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3138,14 +3138,14 @@ export class Inspector2FilterFilterCriteriaFindingArnOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaFindingArn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaFindingArn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3184,15 +3184,15 @@ export class Inspector2FilterFilterCriteriaFindingArnOutputReference extends cdk
   }
 }
 
-export class Inspector2FilterFilterCriteriaFindingArnList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaFindingArn[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaFindingArnList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaFindingArn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3214,32 +3214,32 @@ export interface Inspector2FilterFilterCriteriaFindingStatus {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaFindingStatusToTerraform(struct?: Inspector2FilterFilterCriteriaFindingStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFindingStatusToTerraform(struct?: Inspector2FilterFilterCriteriaFindingStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaFindingStatusToHclTerraform(struct?: Inspector2FilterFilterCriteriaFindingStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFindingStatusToHclTerraform(struct?: Inspector2FilterFilterCriteriaFindingStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3250,9 +3250,9 @@ export function inspector2FilterFilterCriteriaFindingStatusToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaFindingStatusOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaFindingStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3260,11 +3260,11 @@ export class Inspector2FilterFilterCriteriaFindingStatusOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaFindingStatus | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaFindingStatus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3281,14 +3281,14 @@ export class Inspector2FilterFilterCriteriaFindingStatusOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaFindingStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaFindingStatus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3327,15 +3327,15 @@ export class Inspector2FilterFilterCriteriaFindingStatusOutputReference extends 
   }
 }
 
-export class Inspector2FilterFilterCriteriaFindingStatusList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaFindingStatus[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaFindingStatusList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaFindingStatus[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3357,32 +3357,32 @@ export interface Inspector2FilterFilterCriteriaFindingType {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaFindingTypeToTerraform(struct?: Inspector2FilterFilterCriteriaFindingType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFindingTypeToTerraform(struct?: Inspector2FilterFilterCriteriaFindingType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaFindingTypeToHclTerraform(struct?: Inspector2FilterFilterCriteriaFindingType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFindingTypeToHclTerraform(struct?: Inspector2FilterFilterCriteriaFindingType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3393,9 +3393,9 @@ export function inspector2FilterFilterCriteriaFindingTypeToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaFindingTypeOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaFindingTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3403,11 +3403,11 @@ export class Inspector2FilterFilterCriteriaFindingTypeOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaFindingType | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaFindingType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3424,14 +3424,14 @@ export class Inspector2FilterFilterCriteriaFindingTypeOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaFindingType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaFindingType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3470,15 +3470,15 @@ export class Inspector2FilterFilterCriteriaFindingTypeOutputReference extends cd
   }
 }
 
-export class Inspector2FilterFilterCriteriaFindingTypeList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaFindingType[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaFindingTypeList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaFindingType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3500,32 +3500,32 @@ export interface Inspector2FilterFilterCriteriaFirstObservedAt {
   readonly startInclusive?: string;
 }
 
-export function inspector2FilterFilterCriteriaFirstObservedAtToTerraform(struct?: Inspector2FilterFilterCriteriaFirstObservedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFirstObservedAtToTerraform(struct?: Inspector2FilterFilterCriteriaFirstObservedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_inclusive: cdktf.stringToTerraform(struct!.endInclusive),
-    start_inclusive: cdktf.stringToTerraform(struct!.startInclusive),
+    end_inclusive: cdktn.stringToTerraform(struct!.endInclusive),
+    start_inclusive: cdktn.stringToTerraform(struct!.startInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaFirstObservedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaFirstObservedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFirstObservedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaFirstObservedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.endInclusive),
+      value: cdktn.stringToHclTerraform(struct!.endInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.startInclusive),
+      value: cdktn.stringToHclTerraform(struct!.startInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3536,9 +3536,9 @@ export function inspector2FilterFilterCriteriaFirstObservedAtToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaFirstObservedAtOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaFirstObservedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3546,11 +3546,11 @@ export class Inspector2FilterFilterCriteriaFirstObservedAtOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaFirstObservedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaFirstObservedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3567,14 +3567,14 @@ export class Inspector2FilterFilterCriteriaFirstObservedAtOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaFirstObservedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaFirstObservedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endInclusive = undefined;
       this._startInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3619,15 +3619,15 @@ export class Inspector2FilterFilterCriteriaFirstObservedAtOutputReference extend
   }
 }
 
-export class Inspector2FilterFilterCriteriaFirstObservedAtList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaFirstObservedAt[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaFirstObservedAtList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaFirstObservedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3649,32 +3649,32 @@ export interface Inspector2FilterFilterCriteriaFixAvailable {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaFixAvailableToTerraform(struct?: Inspector2FilterFilterCriteriaFixAvailable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFixAvailableToTerraform(struct?: Inspector2FilterFilterCriteriaFixAvailable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaFixAvailableToHclTerraform(struct?: Inspector2FilterFilterCriteriaFixAvailable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaFixAvailableToHclTerraform(struct?: Inspector2FilterFilterCriteriaFixAvailable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3685,9 +3685,9 @@ export function inspector2FilterFilterCriteriaFixAvailableToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaFixAvailableOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaFixAvailableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3695,11 +3695,11 @@ export class Inspector2FilterFilterCriteriaFixAvailableOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaFixAvailable | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaFixAvailable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3716,14 +3716,14 @@ export class Inspector2FilterFilterCriteriaFixAvailableOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaFixAvailable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaFixAvailable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3762,15 +3762,15 @@ export class Inspector2FilterFilterCriteriaFixAvailableOutputReference extends c
   }
 }
 
-export class Inspector2FilterFilterCriteriaFixAvailableList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaFixAvailable[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaFixAvailableList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaFixAvailable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3792,32 +3792,32 @@ export interface Inspector2FilterFilterCriteriaInspectorScore {
   readonly upperInclusive: number;
 }
 
-export function inspector2FilterFilterCriteriaInspectorScoreToTerraform(struct?: Inspector2FilterFilterCriteriaInspectorScore | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaInspectorScoreToTerraform(struct?: Inspector2FilterFilterCriteriaInspectorScore | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lower_inclusive: cdktf.numberToTerraform(struct!.lowerInclusive),
-    upper_inclusive: cdktf.numberToTerraform(struct!.upperInclusive),
+    lower_inclusive: cdktn.numberToTerraform(struct!.lowerInclusive),
+    upper_inclusive: cdktn.numberToTerraform(struct!.upperInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaInspectorScoreToHclTerraform(struct?: Inspector2FilterFilterCriteriaInspectorScore | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaInspectorScoreToHclTerraform(struct?: Inspector2FilterFilterCriteriaInspectorScore | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lower_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.lowerInclusive),
+      value: cdktn.numberToHclTerraform(struct!.lowerInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     upper_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.upperInclusive),
+      value: cdktn.numberToHclTerraform(struct!.upperInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3828,9 +3828,9 @@ export function inspector2FilterFilterCriteriaInspectorScoreToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaInspectorScoreOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaInspectorScoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3838,11 +3838,11 @@ export class Inspector2FilterFilterCriteriaInspectorScoreOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaInspectorScore | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaInspectorScore | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3859,14 +3859,14 @@ export class Inspector2FilterFilterCriteriaInspectorScoreOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaInspectorScore | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaInspectorScore | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._lowerInclusive = undefined;
       this._upperInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3905,15 +3905,15 @@ export class Inspector2FilterFilterCriteriaInspectorScoreOutputReference extends
   }
 }
 
-export class Inspector2FilterFilterCriteriaInspectorScoreList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaInspectorScore[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaInspectorScoreList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaInspectorScore[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3935,32 +3935,32 @@ export interface Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3971,9 +3971,9 @@ export function inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3981,11 +3981,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4002,14 +4002,14 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4048,15 +4048,15 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputR
   }
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4078,32 +4078,32 @@ export interface Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt {
   readonly startInclusive?: string;
 }
 
-export function inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_inclusive: cdktf.stringToTerraform(struct!.endInclusive),
-    start_inclusive: cdktf.stringToTerraform(struct!.startInclusive),
+    end_inclusive: cdktn.stringToTerraform(struct!.endInclusive),
+    start_inclusive: cdktn.stringToTerraform(struct!.startInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.endInclusive),
+      value: cdktn.stringToHclTerraform(struct!.endInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.startInclusive),
+      value: cdktn.stringToHclTerraform(struct!.startInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4114,9 +4114,9 @@ export function inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4124,11 +4124,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4145,14 +4145,14 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endInclusive = undefined;
       this._startInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4197,15 +4197,15 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputRef
   }
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4227,32 +4227,32 @@ export interface Inspector2FilterFilterCriteriaLambdaFunctionLayers {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaLambdaFunctionLayersToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionLayers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionLayersToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionLayers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaLambdaFunctionLayersToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionLayers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionLayersToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionLayers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4263,9 +4263,9 @@ export function inspector2FilterFilterCriteriaLambdaFunctionLayersToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4273,11 +4273,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionLayers | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionLayers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4294,14 +4294,14 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionLayers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionLayers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4340,15 +4340,15 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference e
   }
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionLayersList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionLayers[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaLambdaFunctionLayersList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionLayers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4370,32 +4370,32 @@ export interface Inspector2FilterFilterCriteriaLambdaFunctionName {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaLambdaFunctionNameToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionNameToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaLambdaFunctionNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4406,9 +4406,9 @@ export function inspector2FilterFilterCriteriaLambdaFunctionNameToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4416,11 +4416,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionName | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4437,14 +4437,14 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4483,15 +4483,15 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference ext
   }
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionNameList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionName[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaLambdaFunctionNameList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4513,32 +4513,32 @@ export interface Inspector2FilterFilterCriteriaLambdaFunctionRuntime {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaLambdaFunctionRuntimeToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionRuntime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionRuntimeToTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionRuntime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaLambdaFunctionRuntimeToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionRuntime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLambdaFunctionRuntimeToHclTerraform(struct?: Inspector2FilterFilterCriteriaLambdaFunctionRuntime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4549,9 +4549,9 @@ export function inspector2FilterFilterCriteriaLambdaFunctionRuntimeToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4559,11 +4559,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionRuntime | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaLambdaFunctionRuntime | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4580,14 +4580,14 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionRuntime | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaLambdaFunctionRuntime | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4626,15 +4626,15 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference 
   }
 }
 
-export class Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4656,32 +4656,32 @@ export interface Inspector2FilterFilterCriteriaLastObservedAt {
   readonly startInclusive?: string;
 }
 
-export function inspector2FilterFilterCriteriaLastObservedAtToTerraform(struct?: Inspector2FilterFilterCriteriaLastObservedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLastObservedAtToTerraform(struct?: Inspector2FilterFilterCriteriaLastObservedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_inclusive: cdktf.stringToTerraform(struct!.endInclusive),
-    start_inclusive: cdktf.stringToTerraform(struct!.startInclusive),
+    end_inclusive: cdktn.stringToTerraform(struct!.endInclusive),
+    start_inclusive: cdktn.stringToTerraform(struct!.startInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaLastObservedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaLastObservedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaLastObservedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaLastObservedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.endInclusive),
+      value: cdktn.stringToHclTerraform(struct!.endInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.startInclusive),
+      value: cdktn.stringToHclTerraform(struct!.startInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4692,9 +4692,9 @@ export function inspector2FilterFilterCriteriaLastObservedAtToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaLastObservedAtOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaLastObservedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4702,11 +4702,11 @@ export class Inspector2FilterFilterCriteriaLastObservedAtOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaLastObservedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaLastObservedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4723,14 +4723,14 @@ export class Inspector2FilterFilterCriteriaLastObservedAtOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaLastObservedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaLastObservedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endInclusive = undefined;
       this._startInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4775,15 +4775,15 @@ export class Inspector2FilterFilterCriteriaLastObservedAtOutputReference extends
   }
 }
 
-export class Inspector2FilterFilterCriteriaLastObservedAtList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaLastObservedAt[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaLastObservedAtList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaLastObservedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4805,32 +4805,32 @@ export interface Inspector2FilterFilterCriteriaNetworkProtocol {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaNetworkProtocolToTerraform(struct?: Inspector2FilterFilterCriteriaNetworkProtocol | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaNetworkProtocolToTerraform(struct?: Inspector2FilterFilterCriteriaNetworkProtocol | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaNetworkProtocolToHclTerraform(struct?: Inspector2FilterFilterCriteriaNetworkProtocol | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaNetworkProtocolToHclTerraform(struct?: Inspector2FilterFilterCriteriaNetworkProtocol | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4841,9 +4841,9 @@ export function inspector2FilterFilterCriteriaNetworkProtocolToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaNetworkProtocolOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaNetworkProtocolOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4851,11 +4851,11 @@ export class Inspector2FilterFilterCriteriaNetworkProtocolOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaNetworkProtocol | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaNetworkProtocol | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4872,14 +4872,14 @@ export class Inspector2FilterFilterCriteriaNetworkProtocolOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaNetworkProtocol | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaNetworkProtocol | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4918,15 +4918,15 @@ export class Inspector2FilterFilterCriteriaNetworkProtocolOutputReference extend
   }
 }
 
-export class Inspector2FilterFilterCriteriaNetworkProtocolList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaNetworkProtocol[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaNetworkProtocolList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaNetworkProtocol[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4948,32 +4948,32 @@ export interface Inspector2FilterFilterCriteriaPortRange {
   readonly endInclusive: number;
 }
 
-export function inspector2FilterFilterCriteriaPortRangeToTerraform(struct?: Inspector2FilterFilterCriteriaPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaPortRangeToTerraform(struct?: Inspector2FilterFilterCriteriaPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    begin_inclusive: cdktf.numberToTerraform(struct!.beginInclusive),
-    end_inclusive: cdktf.numberToTerraform(struct!.endInclusive),
+    begin_inclusive: cdktn.numberToTerraform(struct!.beginInclusive),
+    end_inclusive: cdktn.numberToTerraform(struct!.endInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaPortRangeToHclTerraform(struct?: Inspector2FilterFilterCriteriaPortRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaPortRangeToHclTerraform(struct?: Inspector2FilterFilterCriteriaPortRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     begin_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.beginInclusive),
+      value: cdktn.numberToHclTerraform(struct!.beginInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     end_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.endInclusive),
+      value: cdktn.numberToHclTerraform(struct!.endInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4984,9 +4984,9 @@ export function inspector2FilterFilterCriteriaPortRangeToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaPortRangeOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4994,11 +4994,11 @@ export class Inspector2FilterFilterCriteriaPortRangeOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaPortRange | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaPortRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5015,14 +5015,14 @@ export class Inspector2FilterFilterCriteriaPortRangeOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaPortRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaPortRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._beginInclusive = undefined;
       this._endInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5061,15 +5061,15 @@ export class Inspector2FilterFilterCriteriaPortRangeOutputReference extends cdkt
   }
 }
 
-export class Inspector2FilterFilterCriteriaPortRangeList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaPortRange[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaPortRangeList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaPortRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5091,32 +5091,32 @@ export interface Inspector2FilterFilterCriteriaRelatedVulnerabilities {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaRelatedVulnerabilitiesToTerraform(struct?: Inspector2FilterFilterCriteriaRelatedVulnerabilities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaRelatedVulnerabilitiesToTerraform(struct?: Inspector2FilterFilterCriteriaRelatedVulnerabilities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaRelatedVulnerabilitiesToHclTerraform(struct?: Inspector2FilterFilterCriteriaRelatedVulnerabilities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaRelatedVulnerabilitiesToHclTerraform(struct?: Inspector2FilterFilterCriteriaRelatedVulnerabilities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5127,9 +5127,9 @@ export function inspector2FilterFilterCriteriaRelatedVulnerabilitiesToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5137,11 +5137,11 @@ export class Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaRelatedVulnerabilities | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaRelatedVulnerabilities | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5158,14 +5158,14 @@ export class Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaRelatedVulnerabilities | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaRelatedVulnerabilities | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5204,15 +5204,15 @@ export class Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference
   }
 }
 
-export class Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaRelatedVulnerabilities[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaRelatedVulnerabilities[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5234,32 +5234,32 @@ export interface Inspector2FilterFilterCriteriaResourceId {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaResourceIdToTerraform(struct?: Inspector2FilterFilterCriteriaResourceId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaResourceIdToTerraform(struct?: Inspector2FilterFilterCriteriaResourceId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaResourceIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaResourceId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaResourceIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaResourceId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5270,9 +5270,9 @@ export function inspector2FilterFilterCriteriaResourceIdToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaResourceIdOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaResourceIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5280,11 +5280,11 @@ export class Inspector2FilterFilterCriteriaResourceIdOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaResourceId | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaResourceId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5301,14 +5301,14 @@ export class Inspector2FilterFilterCriteriaResourceIdOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaResourceId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaResourceId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5347,15 +5347,15 @@ export class Inspector2FilterFilterCriteriaResourceIdOutputReference extends cdk
   }
 }
 
-export class Inspector2FilterFilterCriteriaResourceIdList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaResourceId[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaResourceIdList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaResourceId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5381,39 +5381,39 @@ export interface Inspector2FilterFilterCriteriaResourceTags {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaResourceTagsToTerraform(struct?: Inspector2FilterFilterCriteriaResourceTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaResourceTagsToTerraform(struct?: Inspector2FilterFilterCriteriaResourceTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaResourceTagsToHclTerraform(struct?: Inspector2FilterFilterCriteriaResourceTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaResourceTagsToHclTerraform(struct?: Inspector2FilterFilterCriteriaResourceTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5424,9 +5424,9 @@ export function inspector2FilterFilterCriteriaResourceTagsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaResourceTagsOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaResourceTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5434,11 +5434,11 @@ export class Inspector2FilterFilterCriteriaResourceTagsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaResourceTags | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaResourceTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5459,7 +5459,7 @@ export class Inspector2FilterFilterCriteriaResourceTagsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaResourceTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaResourceTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5467,7 +5467,7 @@ export class Inspector2FilterFilterCriteriaResourceTagsOutputReference extends c
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5520,15 +5520,15 @@ export class Inspector2FilterFilterCriteriaResourceTagsOutputReference extends c
   }
 }
 
-export class Inspector2FilterFilterCriteriaResourceTagsList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaResourceTags[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaResourceTagsList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaResourceTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5550,32 +5550,32 @@ export interface Inspector2FilterFilterCriteriaResourceType {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaResourceTypeToTerraform(struct?: Inspector2FilterFilterCriteriaResourceType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaResourceTypeToTerraform(struct?: Inspector2FilterFilterCriteriaResourceType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaResourceTypeToHclTerraform(struct?: Inspector2FilterFilterCriteriaResourceType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaResourceTypeToHclTerraform(struct?: Inspector2FilterFilterCriteriaResourceType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5586,9 +5586,9 @@ export function inspector2FilterFilterCriteriaResourceTypeToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaResourceTypeOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaResourceTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5596,11 +5596,11 @@ export class Inspector2FilterFilterCriteriaResourceTypeOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaResourceType | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaResourceType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5617,14 +5617,14 @@ export class Inspector2FilterFilterCriteriaResourceTypeOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaResourceType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaResourceType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5663,15 +5663,15 @@ export class Inspector2FilterFilterCriteriaResourceTypeOutputReference extends c
   }
 }
 
-export class Inspector2FilterFilterCriteriaResourceTypeList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaResourceType[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaResourceTypeList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaResourceType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5693,32 +5693,32 @@ export interface Inspector2FilterFilterCriteriaSeverity {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaSeverityToTerraform(struct?: Inspector2FilterFilterCriteriaSeverity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaSeverityToTerraform(struct?: Inspector2FilterFilterCriteriaSeverity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaSeverityToHclTerraform(struct?: Inspector2FilterFilterCriteriaSeverity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaSeverityToHclTerraform(struct?: Inspector2FilterFilterCriteriaSeverity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5729,9 +5729,9 @@ export function inspector2FilterFilterCriteriaSeverityToHclTerraform(struct?: In
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaSeverityOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaSeverityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5739,11 +5739,11 @@ export class Inspector2FilterFilterCriteriaSeverityOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaSeverity | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaSeverity | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5760,14 +5760,14 @@ export class Inspector2FilterFilterCriteriaSeverityOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaSeverity | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaSeverity | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5806,15 +5806,15 @@ export class Inspector2FilterFilterCriteriaSeverityOutputReference extends cdktf
   }
 }
 
-export class Inspector2FilterFilterCriteriaSeverityList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaSeverity[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaSeverityList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaSeverity[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5836,32 +5836,32 @@ export interface Inspector2FilterFilterCriteriaTitle {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaTitleToTerraform(struct?: Inspector2FilterFilterCriteriaTitle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaTitleToTerraform(struct?: Inspector2FilterFilterCriteriaTitle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaTitleToHclTerraform(struct?: Inspector2FilterFilterCriteriaTitle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaTitleToHclTerraform(struct?: Inspector2FilterFilterCriteriaTitle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5872,9 +5872,9 @@ export function inspector2FilterFilterCriteriaTitleToHclTerraform(struct?: Inspe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaTitleOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaTitleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5882,11 +5882,11 @@ export class Inspector2FilterFilterCriteriaTitleOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaTitle | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaTitle | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5903,14 +5903,14 @@ export class Inspector2FilterFilterCriteriaTitleOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaTitle | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaTitle | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5949,15 +5949,15 @@ export class Inspector2FilterFilterCriteriaTitleOutputReference extends cdktf.Co
   }
 }
 
-export class Inspector2FilterFilterCriteriaTitleList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaTitle[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaTitleList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaTitle[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5979,32 +5979,32 @@ export interface Inspector2FilterFilterCriteriaUpdatedAt {
   readonly startInclusive?: string;
 }
 
-export function inspector2FilterFilterCriteriaUpdatedAtToTerraform(struct?: Inspector2FilterFilterCriteriaUpdatedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaUpdatedAtToTerraform(struct?: Inspector2FilterFilterCriteriaUpdatedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_inclusive: cdktf.stringToTerraform(struct!.endInclusive),
-    start_inclusive: cdktf.stringToTerraform(struct!.startInclusive),
+    end_inclusive: cdktn.stringToTerraform(struct!.endInclusive),
+    start_inclusive: cdktn.stringToTerraform(struct!.startInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaUpdatedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaUpdatedAt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaUpdatedAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaUpdatedAt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.endInclusive),
+      value: cdktn.stringToHclTerraform(struct!.endInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.startInclusive),
+      value: cdktn.stringToHclTerraform(struct!.startInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6015,9 +6015,9 @@ export function inspector2FilterFilterCriteriaUpdatedAtToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaUpdatedAtOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaUpdatedAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6025,11 +6025,11 @@ export class Inspector2FilterFilterCriteriaUpdatedAtOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaUpdatedAt | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaUpdatedAt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6046,14 +6046,14 @@ export class Inspector2FilterFilterCriteriaUpdatedAtOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaUpdatedAt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaUpdatedAt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endInclusive = undefined;
       this._startInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6098,15 +6098,15 @@ export class Inspector2FilterFilterCriteriaUpdatedAtOutputReference extends cdkt
   }
 }
 
-export class Inspector2FilterFilterCriteriaUpdatedAtList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaUpdatedAt[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaUpdatedAtList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaUpdatedAt[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6128,32 +6128,32 @@ export interface Inspector2FilterFilterCriteriaVendorSeverity {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVendorSeverityToTerraform(struct?: Inspector2FilterFilterCriteriaVendorSeverity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVendorSeverityToTerraform(struct?: Inspector2FilterFilterCriteriaVendorSeverity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVendorSeverityToHclTerraform(struct?: Inspector2FilterFilterCriteriaVendorSeverity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVendorSeverityToHclTerraform(struct?: Inspector2FilterFilterCriteriaVendorSeverity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6164,9 +6164,9 @@ export function inspector2FilterFilterCriteriaVendorSeverityToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVendorSeverityOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVendorSeverityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6174,11 +6174,11 @@ export class Inspector2FilterFilterCriteriaVendorSeverityOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVendorSeverity | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVendorSeverity | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6195,14 +6195,14 @@ export class Inspector2FilterFilterCriteriaVendorSeverityOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVendorSeverity | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVendorSeverity | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6241,15 +6241,15 @@ export class Inspector2FilterFilterCriteriaVendorSeverityOutputReference extends
   }
 }
 
-export class Inspector2FilterFilterCriteriaVendorSeverityList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVendorSeverity[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVendorSeverityList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVendorSeverity[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6271,32 +6271,32 @@ export interface Inspector2FilterFilterCriteriaVulnerabilityId {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVulnerabilityIdToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerabilityId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerabilityIdToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerabilityId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerabilityIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerabilityId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerabilityIdToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerabilityId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6307,9 +6307,9 @@ export function inspector2FilterFilterCriteriaVulnerabilityIdToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6317,11 +6317,11 @@ export class Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerabilityId | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerabilityId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6338,14 +6338,14 @@ export class Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerabilityId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerabilityId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6384,15 +6384,15 @@ export class Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference extend
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerabilityIdList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerabilityId[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerabilityIdList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerabilityId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6414,32 +6414,32 @@ export interface Inspector2FilterFilterCriteriaVulnerabilitySource {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVulnerabilitySourceToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerabilitySource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerabilitySourceToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerabilitySource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerabilitySourceToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerabilitySource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerabilitySourceToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerabilitySource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6450,9 +6450,9 @@ export function inspector2FilterFilterCriteriaVulnerabilitySourceToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6460,11 +6460,11 @@ export class Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerabilitySource | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerabilitySource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6481,14 +6481,14 @@ export class Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerabilitySource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerabilitySource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6527,15 +6527,15 @@ export class Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference ex
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerabilitySourceList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerabilitySource[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerabilitySourceList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerabilitySource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6557,32 +6557,32 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesArchitectureToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesArchitectureToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesArchitectureToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesArchitectureToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6593,9 +6593,9 @@ export function inspector2FilterFilterCriteriaVulnerablePackagesArchitectureToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6603,11 +6603,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6624,14 +6624,14 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6670,15 +6670,15 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputR
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6700,32 +6700,32 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackagesEpoch {
   readonly upperInclusive: number;
 }
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesEpochToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesEpochToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lower_inclusive: cdktf.numberToTerraform(struct!.lowerInclusive),
-    upper_inclusive: cdktf.numberToTerraform(struct!.upperInclusive),
+    lower_inclusive: cdktn.numberToTerraform(struct!.lowerInclusive),
+    upper_inclusive: cdktn.numberToTerraform(struct!.upperInclusive),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesEpochToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesEpochToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lower_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.lowerInclusive),
+      value: cdktn.numberToHclTerraform(struct!.lowerInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     upper_inclusive: {
-      value: cdktf.numberToHclTerraform(struct!.upperInclusive),
+      value: cdktn.numberToHclTerraform(struct!.upperInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6736,9 +6736,9 @@ export function inspector2FilterFilterCriteriaVulnerablePackagesEpochToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6746,11 +6746,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesEpoch | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesEpoch | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6767,14 +6767,14 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._lowerInclusive = undefined;
       this._upperInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6813,15 +6813,15 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReferenc
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesEpochList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerablePackagesEpochList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6843,32 +6843,32 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackagesFilePath {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesFilePathToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesFilePathToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesFilePathToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesFilePathToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6879,9 +6879,9 @@ export function inspector2FilterFilterCriteriaVulnerablePackagesFilePathToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6889,11 +6889,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesFilePath | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesFilePath | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6910,14 +6910,14 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6956,15 +6956,15 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputRefer
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6986,32 +6986,32 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackagesName {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesNameToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesNameToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7022,9 +7022,9 @@ export function inspector2FilterFilterCriteriaVulnerablePackagesNameToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7032,11 +7032,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesName | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7053,14 +7053,14 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7099,15 +7099,15 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesNameList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesName[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerablePackagesNameList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7129,32 +7129,32 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackagesRelease {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesReleaseToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesRelease | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesReleaseToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesRelease | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesReleaseToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesRelease | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesReleaseToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesRelease | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7165,9 +7165,9 @@ export function inspector2FilterFilterCriteriaVulnerablePackagesReleaseToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7175,11 +7175,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesRelease | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesRelease | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7196,14 +7196,14 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesRelease | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesRelease | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7242,15 +7242,15 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputRefere
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7272,32 +7272,32 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLay
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7308,9 +7308,9 @@ export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLaye
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7318,11 +7318,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerAr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7339,14 +7339,14 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerAr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7385,15 +7385,15 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerAr
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7415,32 +7415,32 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7451,9 +7451,9 @@ export function inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7461,11 +7461,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7482,14 +7482,14 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7528,15 +7528,15 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutp
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7558,32 +7558,32 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackagesVersion {
   readonly value: string;
 }
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesVersionToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesVersion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesVersionToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesVersion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison: cdktf.stringToTerraform(struct!.comparison),
-    value: cdktf.stringToTerraform(struct!.value),
+    comparison: cdktn.stringToTerraform(struct!.comparison),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesVersionToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesVersion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesVersionToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackagesVersion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison: {
-      value: cdktf.stringToHclTerraform(struct!.comparison),
+      value: cdktn.stringToHclTerraform(struct!.comparison),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7594,9 +7594,9 @@ export function inspector2FilterFilterCriteriaVulnerablePackagesVersionToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7604,11 +7604,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesVersion | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackagesVersion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7625,14 +7625,14 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesVersion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackagesVersion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7671,15 +7671,15 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputRefere
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesVersionList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerablePackagesVersionList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7696,119 +7696,119 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackages {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#architecture Inspector2Filter#architecture}
   */
-  readonly architecture?: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] | cdktf.IResolvable;
+  readonly architecture?: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] | cdktn.IResolvable;
   /**
   * epoch block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#epoch Inspector2Filter#epoch}
   */
-  readonly epoch?: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] | cdktf.IResolvable;
+  readonly epoch?: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] | cdktn.IResolvable;
   /**
   * file_path block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#file_path Inspector2Filter#file_path}
   */
-  readonly filePath?: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] | cdktf.IResolvable;
+  readonly filePath?: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] | cdktn.IResolvable;
   /**
   * name block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#name Inspector2Filter#name}
   */
-  readonly name?: Inspector2FilterFilterCriteriaVulnerablePackagesName[] | cdktf.IResolvable;
+  readonly name?: Inspector2FilterFilterCriteriaVulnerablePackagesName[] | cdktn.IResolvable;
   /**
   * release block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#release Inspector2Filter#release}
   */
-  readonly release?: Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] | cdktf.IResolvable;
+  readonly release?: Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] | cdktn.IResolvable;
   /**
   * source_lambda_layer_arn block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#source_lambda_layer_arn Inspector2Filter#source_lambda_layer_arn}
   */
-  readonly sourceLambdaLayerArn?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] | cdktf.IResolvable;
+  readonly sourceLambdaLayerArn?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] | cdktn.IResolvable;
   /**
   * source_layer_hash block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#source_layer_hash Inspector2Filter#source_layer_hash}
   */
-  readonly sourceLayerHash?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] | cdktf.IResolvable;
+  readonly sourceLayerHash?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] | cdktn.IResolvable;
   /**
   * version block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#version Inspector2Filter#version}
   */
-  readonly version?: Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] | cdktf.IResolvable;
+  readonly version?: Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] | cdktn.IResolvable;
 }
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesToTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    architecture: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesArchitectureToTerraform, true)(struct!.architecture),
-    epoch: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesEpochToTerraform, true)(struct!.epoch),
-    file_path: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesFilePathToTerraform, true)(struct!.filePath),
-    name: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesNameToTerraform, true)(struct!.name),
-    release: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesReleaseToTerraform, true)(struct!.release),
-    source_lambda_layer_arn: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnToTerraform, true)(struct!.sourceLambdaLayerArn),
-    source_layer_hash: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashToTerraform, true)(struct!.sourceLayerHash),
-    version: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesVersionToTerraform, true)(struct!.version),
+    architecture: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesArchitectureToTerraform, true)(struct!.architecture),
+    epoch: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesEpochToTerraform, true)(struct!.epoch),
+    file_path: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesFilePathToTerraform, true)(struct!.filePath),
+    name: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesNameToTerraform, true)(struct!.name),
+    release: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesReleaseToTerraform, true)(struct!.release),
+    source_lambda_layer_arn: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnToTerraform, true)(struct!.sourceLambdaLayerArn),
+    source_layer_hash: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashToTerraform, true)(struct!.sourceLayerHash),
+    version: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesVersionToTerraform, true)(struct!.version),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaVulnerablePackagesToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaVulnerablePackagesToHclTerraform(struct?: Inspector2FilterFilterCriteriaVulnerablePackages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     architecture: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesArchitectureToHclTerraform, true)(struct!.architecture),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesArchitectureToHclTerraform, true)(struct!.architecture),
       isBlock: true,
       type: "list",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList",
     },
     epoch: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesEpochToHclTerraform, true)(struct!.epoch),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesEpochToHclTerraform, true)(struct!.epoch),
       isBlock: true,
       type: "list",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerablePackagesEpochList",
     },
     file_path: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesFilePathToHclTerraform, true)(struct!.filePath),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesFilePathToHclTerraform, true)(struct!.filePath),
       isBlock: true,
       type: "list",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList",
     },
     name: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesNameToHclTerraform, true)(struct!.name),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesNameToHclTerraform, true)(struct!.name),
       isBlock: true,
       type: "list",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerablePackagesNameList",
     },
     release: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesReleaseToHclTerraform, true)(struct!.release),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesReleaseToHclTerraform, true)(struct!.release),
       isBlock: true,
       type: "list",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList",
     },
     source_lambda_layer_arn: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnToHclTerraform, true)(struct!.sourceLambdaLayerArn),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnToHclTerraform, true)(struct!.sourceLambdaLayerArn),
       isBlock: true,
       type: "list",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList",
     },
     source_layer_hash: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashToHclTerraform, true)(struct!.sourceLayerHash),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashToHclTerraform, true)(struct!.sourceLayerHash),
       isBlock: true,
       type: "list",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList",
     },
     version: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesVersionToHclTerraform, true)(struct!.version),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesVersionToHclTerraform, true)(struct!.version),
       isBlock: true,
       type: "list",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerablePackagesVersionList",
@@ -7819,9 +7819,9 @@ export function inspector2FilterFilterCriteriaVulnerablePackagesToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7829,11 +7829,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackages | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteriaVulnerablePackages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7874,7 +7874,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteriaVulnerablePackages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7887,7 +7887,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
       this._sourceLayerHash.internalValue = undefined;
       this._version.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7910,7 +7910,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   public get architecture() {
     return this._architecture;
   }
-  public putArchitecture(value: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] | cdktf.IResolvable) {
+  public putArchitecture(value: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] | cdktn.IResolvable) {
     this._architecture.internalValue = value;
   }
   public resetArchitecture() {
@@ -7926,7 +7926,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   public get epoch() {
     return this._epoch;
   }
-  public putEpoch(value: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] | cdktf.IResolvable) {
+  public putEpoch(value: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] | cdktn.IResolvable) {
     this._epoch.internalValue = value;
   }
   public resetEpoch() {
@@ -7942,7 +7942,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   public get filePath() {
     return this._filePath;
   }
-  public putFilePath(value: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] | cdktf.IResolvable) {
+  public putFilePath(value: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] | cdktn.IResolvable) {
     this._filePath.internalValue = value;
   }
   public resetFilePath() {
@@ -7958,7 +7958,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   public get name() {
     return this._name;
   }
-  public putName(value: Inspector2FilterFilterCriteriaVulnerablePackagesName[] | cdktf.IResolvable) {
+  public putName(value: Inspector2FilterFilterCriteriaVulnerablePackagesName[] | cdktn.IResolvable) {
     this._name.internalValue = value;
   }
   public resetName() {
@@ -7974,7 +7974,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   public get release() {
     return this._release;
   }
-  public putRelease(value: Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] | cdktf.IResolvable) {
+  public putRelease(value: Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] | cdktn.IResolvable) {
     this._release.internalValue = value;
   }
   public resetRelease() {
@@ -7990,7 +7990,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   public get sourceLambdaLayerArn() {
     return this._sourceLambdaLayerArn;
   }
-  public putSourceLambdaLayerArn(value: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] | cdktf.IResolvable) {
+  public putSourceLambdaLayerArn(value: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] | cdktn.IResolvable) {
     this._sourceLambdaLayerArn.internalValue = value;
   }
   public resetSourceLambdaLayerArn() {
@@ -8006,7 +8006,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   public get sourceLayerHash() {
     return this._sourceLayerHash;
   }
-  public putSourceLayerHash(value: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] | cdktf.IResolvable) {
+  public putSourceLayerHash(value: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] | cdktn.IResolvable) {
     this._sourceLayerHash.internalValue = value;
   }
   public resetSourceLayerHash() {
@@ -8022,7 +8022,7 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   public get version() {
     return this._version;
   }
-  public putVersion(value: Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] | cdktf.IResolvable) {
+  public putVersion(value: Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] | cdktn.IResolvable) {
     this._version.internalValue = value;
   }
   public resetVersion() {
@@ -8034,15 +8034,15 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference ext
   }
 }
 
-export class Inspector2FilterFilterCriteriaVulnerablePackagesList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackages[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaVulnerablePackagesList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaVulnerablePackages[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8059,613 +8059,613 @@ export interface Inspector2FilterFilterCriteria {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#aws_account_id Inspector2Filter#aws_account_id}
   */
-  readonly awsAccountId?: Inspector2FilterFilterCriteriaAwsAccountId[] | cdktf.IResolvable;
+  readonly awsAccountId?: Inspector2FilterFilterCriteriaAwsAccountId[] | cdktn.IResolvable;
   /**
   * code_repository_project_name block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#code_repository_project_name Inspector2Filter#code_repository_project_name}
   */
-  readonly codeRepositoryProjectName?: Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] | cdktf.IResolvable;
+  readonly codeRepositoryProjectName?: Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] | cdktn.IResolvable;
   /**
   * code_repository_provider_type block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#code_repository_provider_type Inspector2Filter#code_repository_provider_type}
   */
-  readonly codeRepositoryProviderType?: Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] | cdktf.IResolvable;
+  readonly codeRepositoryProviderType?: Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] | cdktn.IResolvable;
   /**
   * code_vulnerability_detector_name block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#code_vulnerability_detector_name Inspector2Filter#code_vulnerability_detector_name}
   */
-  readonly codeVulnerabilityDetectorName?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] | cdktf.IResolvable;
+  readonly codeVulnerabilityDetectorName?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] | cdktn.IResolvable;
   /**
   * code_vulnerability_detector_tags block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#code_vulnerability_detector_tags Inspector2Filter#code_vulnerability_detector_tags}
   */
-  readonly codeVulnerabilityDetectorTags?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] | cdktf.IResolvable;
+  readonly codeVulnerabilityDetectorTags?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] | cdktn.IResolvable;
   /**
   * code_vulnerability_file_path block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#code_vulnerability_file_path Inspector2Filter#code_vulnerability_file_path}
   */
-  readonly codeVulnerabilityFilePath?: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] | cdktf.IResolvable;
+  readonly codeVulnerabilityFilePath?: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] | cdktn.IResolvable;
   /**
   * component_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#component_id Inspector2Filter#component_id}
   */
-  readonly componentId?: Inspector2FilterFilterCriteriaComponentId[] | cdktf.IResolvable;
+  readonly componentId?: Inspector2FilterFilterCriteriaComponentId[] | cdktn.IResolvable;
   /**
   * component_type block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#component_type Inspector2Filter#component_type}
   */
-  readonly componentType?: Inspector2FilterFilterCriteriaComponentType[] | cdktf.IResolvable;
+  readonly componentType?: Inspector2FilterFilterCriteriaComponentType[] | cdktn.IResolvable;
   /**
   * ec2_instance_image_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ec2_instance_image_id Inspector2Filter#ec2_instance_image_id}
   */
-  readonly ec2InstanceImageId?: Inspector2FilterFilterCriteriaEc2InstanceImageId[] | cdktf.IResolvable;
+  readonly ec2InstanceImageId?: Inspector2FilterFilterCriteriaEc2InstanceImageId[] | cdktn.IResolvable;
   /**
   * ec2_instance_subnet_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ec2_instance_subnet_id Inspector2Filter#ec2_instance_subnet_id}
   */
-  readonly ec2InstanceSubnetId?: Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] | cdktf.IResolvable;
+  readonly ec2InstanceSubnetId?: Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] | cdktn.IResolvable;
   /**
   * ec2_instance_vpc_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ec2_instance_vpc_id Inspector2Filter#ec2_instance_vpc_id}
   */
-  readonly ec2InstanceVpcId?: Inspector2FilterFilterCriteriaEc2InstanceVpcId[] | cdktf.IResolvable;
+  readonly ec2InstanceVpcId?: Inspector2FilterFilterCriteriaEc2InstanceVpcId[] | cdktn.IResolvable;
   /**
   * ecr_image_architecture block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ecr_image_architecture Inspector2Filter#ecr_image_architecture}
   */
-  readonly ecrImageArchitecture?: Inspector2FilterFilterCriteriaEcrImageArchitecture[] | cdktf.IResolvable;
+  readonly ecrImageArchitecture?: Inspector2FilterFilterCriteriaEcrImageArchitecture[] | cdktn.IResolvable;
   /**
   * ecr_image_hash block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ecr_image_hash Inspector2Filter#ecr_image_hash}
   */
-  readonly ecrImageHash?: Inspector2FilterFilterCriteriaEcrImageHash[] | cdktf.IResolvable;
+  readonly ecrImageHash?: Inspector2FilterFilterCriteriaEcrImageHash[] | cdktn.IResolvable;
   /**
   * ecr_image_in_use_count block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ecr_image_in_use_count Inspector2Filter#ecr_image_in_use_count}
   */
-  readonly ecrImageInUseCount?: Inspector2FilterFilterCriteriaEcrImageInUseCount[] | cdktf.IResolvable;
+  readonly ecrImageInUseCount?: Inspector2FilterFilterCriteriaEcrImageInUseCount[] | cdktn.IResolvable;
   /**
   * ecr_image_last_in_use_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ecr_image_last_in_use_at Inspector2Filter#ecr_image_last_in_use_at}
   */
-  readonly ecrImageLastInUseAt?: Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] | cdktf.IResolvable;
+  readonly ecrImageLastInUseAt?: Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] | cdktn.IResolvable;
   /**
   * ecr_image_pushed_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ecr_image_pushed_at Inspector2Filter#ecr_image_pushed_at}
   */
-  readonly ecrImagePushedAt?: Inspector2FilterFilterCriteriaEcrImagePushedAt[] | cdktf.IResolvable;
+  readonly ecrImagePushedAt?: Inspector2FilterFilterCriteriaEcrImagePushedAt[] | cdktn.IResolvable;
   /**
   * ecr_image_registry block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ecr_image_registry Inspector2Filter#ecr_image_registry}
   */
-  readonly ecrImageRegistry?: Inspector2FilterFilterCriteriaEcrImageRegistry[] | cdktf.IResolvable;
+  readonly ecrImageRegistry?: Inspector2FilterFilterCriteriaEcrImageRegistry[] | cdktn.IResolvable;
   /**
   * ecr_image_repository_name block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ecr_image_repository_name Inspector2Filter#ecr_image_repository_name}
   */
-  readonly ecrImageRepositoryName?: Inspector2FilterFilterCriteriaEcrImageRepositoryName[] | cdktf.IResolvable;
+  readonly ecrImageRepositoryName?: Inspector2FilterFilterCriteriaEcrImageRepositoryName[] | cdktn.IResolvable;
   /**
   * ecr_image_tags block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#ecr_image_tags Inspector2Filter#ecr_image_tags}
   */
-  readonly ecrImageTags?: Inspector2FilterFilterCriteriaEcrImageTags[] | cdktf.IResolvable;
+  readonly ecrImageTags?: Inspector2FilterFilterCriteriaEcrImageTags[] | cdktn.IResolvable;
   /**
   * epss_score block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#epss_score Inspector2Filter#epss_score}
   */
-  readonly epssScore?: Inspector2FilterFilterCriteriaEpssScore[] | cdktf.IResolvable;
+  readonly epssScore?: Inspector2FilterFilterCriteriaEpssScore[] | cdktn.IResolvable;
   /**
   * exploit_available block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#exploit_available Inspector2Filter#exploit_available}
   */
-  readonly exploitAvailable?: Inspector2FilterFilterCriteriaExploitAvailable[] | cdktf.IResolvable;
+  readonly exploitAvailable?: Inspector2FilterFilterCriteriaExploitAvailable[] | cdktn.IResolvable;
   /**
   * finding_arn block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#finding_arn Inspector2Filter#finding_arn}
   */
-  readonly findingArn?: Inspector2FilterFilterCriteriaFindingArn[] | cdktf.IResolvable;
+  readonly findingArn?: Inspector2FilterFilterCriteriaFindingArn[] | cdktn.IResolvable;
   /**
   * finding_status block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#finding_status Inspector2Filter#finding_status}
   */
-  readonly findingStatus?: Inspector2FilterFilterCriteriaFindingStatus[] | cdktf.IResolvable;
+  readonly findingStatus?: Inspector2FilterFilterCriteriaFindingStatus[] | cdktn.IResolvable;
   /**
   * finding_type block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#finding_type Inspector2Filter#finding_type}
   */
-  readonly findingType?: Inspector2FilterFilterCriteriaFindingType[] | cdktf.IResolvable;
+  readonly findingType?: Inspector2FilterFilterCriteriaFindingType[] | cdktn.IResolvable;
   /**
   * first_observed_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#first_observed_at Inspector2Filter#first_observed_at}
   */
-  readonly firstObservedAt?: Inspector2FilterFilterCriteriaFirstObservedAt[] | cdktf.IResolvable;
+  readonly firstObservedAt?: Inspector2FilterFilterCriteriaFirstObservedAt[] | cdktn.IResolvable;
   /**
   * fix_available block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#fix_available Inspector2Filter#fix_available}
   */
-  readonly fixAvailable?: Inspector2FilterFilterCriteriaFixAvailable[] | cdktf.IResolvable;
+  readonly fixAvailable?: Inspector2FilterFilterCriteriaFixAvailable[] | cdktn.IResolvable;
   /**
   * inspector_score block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#inspector_score Inspector2Filter#inspector_score}
   */
-  readonly inspectorScore?: Inspector2FilterFilterCriteriaInspectorScore[] | cdktf.IResolvable;
+  readonly inspectorScore?: Inspector2FilterFilterCriteriaInspectorScore[] | cdktn.IResolvable;
   /**
   * lambda_function_execution_role_arn block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#lambda_function_execution_role_arn Inspector2Filter#lambda_function_execution_role_arn}
   */
-  readonly lambdaFunctionExecutionRoleArn?: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] | cdktf.IResolvable;
+  readonly lambdaFunctionExecutionRoleArn?: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] | cdktn.IResolvable;
   /**
   * lambda_function_last_modified_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#lambda_function_last_modified_at Inspector2Filter#lambda_function_last_modified_at}
   */
-  readonly lambdaFunctionLastModifiedAt?: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] | cdktf.IResolvable;
+  readonly lambdaFunctionLastModifiedAt?: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] | cdktn.IResolvable;
   /**
   * lambda_function_layers block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#lambda_function_layers Inspector2Filter#lambda_function_layers}
   */
-  readonly lambdaFunctionLayers?: Inspector2FilterFilterCriteriaLambdaFunctionLayers[] | cdktf.IResolvable;
+  readonly lambdaFunctionLayers?: Inspector2FilterFilterCriteriaLambdaFunctionLayers[] | cdktn.IResolvable;
   /**
   * lambda_function_name block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#lambda_function_name Inspector2Filter#lambda_function_name}
   */
-  readonly lambdaFunctionName?: Inspector2FilterFilterCriteriaLambdaFunctionName[] | cdktf.IResolvable;
+  readonly lambdaFunctionName?: Inspector2FilterFilterCriteriaLambdaFunctionName[] | cdktn.IResolvable;
   /**
   * lambda_function_runtime block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#lambda_function_runtime Inspector2Filter#lambda_function_runtime}
   */
-  readonly lambdaFunctionRuntime?: Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] | cdktf.IResolvable;
+  readonly lambdaFunctionRuntime?: Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] | cdktn.IResolvable;
   /**
   * last_observed_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#last_observed_at Inspector2Filter#last_observed_at}
   */
-  readonly lastObservedAt?: Inspector2FilterFilterCriteriaLastObservedAt[] | cdktf.IResolvable;
+  readonly lastObservedAt?: Inspector2FilterFilterCriteriaLastObservedAt[] | cdktn.IResolvable;
   /**
   * network_protocol block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#network_protocol Inspector2Filter#network_protocol}
   */
-  readonly networkProtocol?: Inspector2FilterFilterCriteriaNetworkProtocol[] | cdktf.IResolvable;
+  readonly networkProtocol?: Inspector2FilterFilterCriteriaNetworkProtocol[] | cdktn.IResolvable;
   /**
   * port_range block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#port_range Inspector2Filter#port_range}
   */
-  readonly portRange?: Inspector2FilterFilterCriteriaPortRange[] | cdktf.IResolvable;
+  readonly portRange?: Inspector2FilterFilterCriteriaPortRange[] | cdktn.IResolvable;
   /**
   * related_vulnerabilities block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#related_vulnerabilities Inspector2Filter#related_vulnerabilities}
   */
-  readonly relatedVulnerabilities?: Inspector2FilterFilterCriteriaRelatedVulnerabilities[] | cdktf.IResolvable;
+  readonly relatedVulnerabilities?: Inspector2FilterFilterCriteriaRelatedVulnerabilities[] | cdktn.IResolvable;
   /**
   * resource_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#resource_id Inspector2Filter#resource_id}
   */
-  readonly resourceId?: Inspector2FilterFilterCriteriaResourceId[] | cdktf.IResolvable;
+  readonly resourceId?: Inspector2FilterFilterCriteriaResourceId[] | cdktn.IResolvable;
   /**
   * resource_tags block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#resource_tags Inspector2Filter#resource_tags}
   */
-  readonly resourceTags?: Inspector2FilterFilterCriteriaResourceTags[] | cdktf.IResolvable;
+  readonly resourceTags?: Inspector2FilterFilterCriteriaResourceTags[] | cdktn.IResolvable;
   /**
   * resource_type block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#resource_type Inspector2Filter#resource_type}
   */
-  readonly resourceType?: Inspector2FilterFilterCriteriaResourceType[] | cdktf.IResolvable;
+  readonly resourceType?: Inspector2FilterFilterCriteriaResourceType[] | cdktn.IResolvable;
   /**
   * severity block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#severity Inspector2Filter#severity}
   */
-  readonly severity?: Inspector2FilterFilterCriteriaSeverity[] | cdktf.IResolvable;
+  readonly severity?: Inspector2FilterFilterCriteriaSeverity[] | cdktn.IResolvable;
   /**
   * title block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#title Inspector2Filter#title}
   */
-  readonly title?: Inspector2FilterFilterCriteriaTitle[] | cdktf.IResolvable;
+  readonly title?: Inspector2FilterFilterCriteriaTitle[] | cdktn.IResolvable;
   /**
   * updated_at block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#updated_at Inspector2Filter#updated_at}
   */
-  readonly updatedAt?: Inspector2FilterFilterCriteriaUpdatedAt[] | cdktf.IResolvable;
+  readonly updatedAt?: Inspector2FilterFilterCriteriaUpdatedAt[] | cdktn.IResolvable;
   /**
   * vendor_severity block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#vendor_severity Inspector2Filter#vendor_severity}
   */
-  readonly vendorSeverity?: Inspector2FilterFilterCriteriaVendorSeverity[] | cdktf.IResolvable;
+  readonly vendorSeverity?: Inspector2FilterFilterCriteriaVendorSeverity[] | cdktn.IResolvable;
   /**
   * vulnerability_id block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#vulnerability_id Inspector2Filter#vulnerability_id}
   */
-  readonly vulnerabilityId?: Inspector2FilterFilterCriteriaVulnerabilityId[] | cdktf.IResolvable;
+  readonly vulnerabilityId?: Inspector2FilterFilterCriteriaVulnerabilityId[] | cdktn.IResolvable;
   /**
   * vulnerability_source block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#vulnerability_source Inspector2Filter#vulnerability_source}
   */
-  readonly vulnerabilitySource?: Inspector2FilterFilterCriteriaVulnerabilitySource[] | cdktf.IResolvable;
+  readonly vulnerabilitySource?: Inspector2FilterFilterCriteriaVulnerabilitySource[] | cdktn.IResolvable;
   /**
   * vulnerable_packages block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#vulnerable_packages Inspector2Filter#vulnerable_packages}
   */
-  readonly vulnerablePackages?: Inspector2FilterFilterCriteriaVulnerablePackages[] | cdktf.IResolvable;
+  readonly vulnerablePackages?: Inspector2FilterFilterCriteriaVulnerablePackages[] | cdktn.IResolvable;
 }
 
-export function inspector2FilterFilterCriteriaToTerraform(struct?: Inspector2FilterFilterCriteria | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaToTerraform(struct?: Inspector2FilterFilterCriteria | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_account_id: cdktf.listMapper(inspector2FilterFilterCriteriaAwsAccountIdToTerraform, true)(struct!.awsAccountId),
-    code_repository_project_name: cdktf.listMapper(inspector2FilterFilterCriteriaCodeRepositoryProjectNameToTerraform, true)(struct!.codeRepositoryProjectName),
-    code_repository_provider_type: cdktf.listMapper(inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToTerraform, true)(struct!.codeRepositoryProviderType),
-    code_vulnerability_detector_name: cdktf.listMapper(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToTerraform, true)(struct!.codeVulnerabilityDetectorName),
-    code_vulnerability_detector_tags: cdktf.listMapper(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToTerraform, true)(struct!.codeVulnerabilityDetectorTags),
-    code_vulnerability_file_path: cdktf.listMapper(inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToTerraform, true)(struct!.codeVulnerabilityFilePath),
-    component_id: cdktf.listMapper(inspector2FilterFilterCriteriaComponentIdToTerraform, true)(struct!.componentId),
-    component_type: cdktf.listMapper(inspector2FilterFilterCriteriaComponentTypeToTerraform, true)(struct!.componentType),
-    ec2_instance_image_id: cdktf.listMapper(inspector2FilterFilterCriteriaEc2InstanceImageIdToTerraform, true)(struct!.ec2InstanceImageId),
-    ec2_instance_subnet_id: cdktf.listMapper(inspector2FilterFilterCriteriaEc2InstanceSubnetIdToTerraform, true)(struct!.ec2InstanceSubnetId),
-    ec2_instance_vpc_id: cdktf.listMapper(inspector2FilterFilterCriteriaEc2InstanceVpcIdToTerraform, true)(struct!.ec2InstanceVpcId),
-    ecr_image_architecture: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageArchitectureToTerraform, true)(struct!.ecrImageArchitecture),
-    ecr_image_hash: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageHashToTerraform, true)(struct!.ecrImageHash),
-    ecr_image_in_use_count: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageInUseCountToTerraform, true)(struct!.ecrImageInUseCount),
-    ecr_image_last_in_use_at: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageLastInUseAtToTerraform, true)(struct!.ecrImageLastInUseAt),
-    ecr_image_pushed_at: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImagePushedAtToTerraform, true)(struct!.ecrImagePushedAt),
-    ecr_image_registry: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageRegistryToTerraform, true)(struct!.ecrImageRegistry),
-    ecr_image_repository_name: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageRepositoryNameToTerraform, true)(struct!.ecrImageRepositoryName),
-    ecr_image_tags: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageTagsToTerraform, true)(struct!.ecrImageTags),
-    epss_score: cdktf.listMapper(inspector2FilterFilterCriteriaEpssScoreToTerraform, true)(struct!.epssScore),
-    exploit_available: cdktf.listMapper(inspector2FilterFilterCriteriaExploitAvailableToTerraform, true)(struct!.exploitAvailable),
-    finding_arn: cdktf.listMapper(inspector2FilterFilterCriteriaFindingArnToTerraform, true)(struct!.findingArn),
-    finding_status: cdktf.listMapper(inspector2FilterFilterCriteriaFindingStatusToTerraform, true)(struct!.findingStatus),
-    finding_type: cdktf.listMapper(inspector2FilterFilterCriteriaFindingTypeToTerraform, true)(struct!.findingType),
-    first_observed_at: cdktf.listMapper(inspector2FilterFilterCriteriaFirstObservedAtToTerraform, true)(struct!.firstObservedAt),
-    fix_available: cdktf.listMapper(inspector2FilterFilterCriteriaFixAvailableToTerraform, true)(struct!.fixAvailable),
-    inspector_score: cdktf.listMapper(inspector2FilterFilterCriteriaInspectorScoreToTerraform, true)(struct!.inspectorScore),
-    lambda_function_execution_role_arn: cdktf.listMapper(inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnToTerraform, true)(struct!.lambdaFunctionExecutionRoleArn),
-    lambda_function_last_modified_at: cdktf.listMapper(inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtToTerraform, true)(struct!.lambdaFunctionLastModifiedAt),
-    lambda_function_layers: cdktf.listMapper(inspector2FilterFilterCriteriaLambdaFunctionLayersToTerraform, true)(struct!.lambdaFunctionLayers),
-    lambda_function_name: cdktf.listMapper(inspector2FilterFilterCriteriaLambdaFunctionNameToTerraform, true)(struct!.lambdaFunctionName),
-    lambda_function_runtime: cdktf.listMapper(inspector2FilterFilterCriteriaLambdaFunctionRuntimeToTerraform, true)(struct!.lambdaFunctionRuntime),
-    last_observed_at: cdktf.listMapper(inspector2FilterFilterCriteriaLastObservedAtToTerraform, true)(struct!.lastObservedAt),
-    network_protocol: cdktf.listMapper(inspector2FilterFilterCriteriaNetworkProtocolToTerraform, true)(struct!.networkProtocol),
-    port_range: cdktf.listMapper(inspector2FilterFilterCriteriaPortRangeToTerraform, true)(struct!.portRange),
-    related_vulnerabilities: cdktf.listMapper(inspector2FilterFilterCriteriaRelatedVulnerabilitiesToTerraform, true)(struct!.relatedVulnerabilities),
-    resource_id: cdktf.listMapper(inspector2FilterFilterCriteriaResourceIdToTerraform, true)(struct!.resourceId),
-    resource_tags: cdktf.listMapper(inspector2FilterFilterCriteriaResourceTagsToTerraform, true)(struct!.resourceTags),
-    resource_type: cdktf.listMapper(inspector2FilterFilterCriteriaResourceTypeToTerraform, true)(struct!.resourceType),
-    severity: cdktf.listMapper(inspector2FilterFilterCriteriaSeverityToTerraform, true)(struct!.severity),
-    title: cdktf.listMapper(inspector2FilterFilterCriteriaTitleToTerraform, true)(struct!.title),
-    updated_at: cdktf.listMapper(inspector2FilterFilterCriteriaUpdatedAtToTerraform, true)(struct!.updatedAt),
-    vendor_severity: cdktf.listMapper(inspector2FilterFilterCriteriaVendorSeverityToTerraform, true)(struct!.vendorSeverity),
-    vulnerability_id: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerabilityIdToTerraform, true)(struct!.vulnerabilityId),
-    vulnerability_source: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerabilitySourceToTerraform, true)(struct!.vulnerabilitySource),
-    vulnerable_packages: cdktf.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesToTerraform, true)(struct!.vulnerablePackages),
+    aws_account_id: cdktn.listMapper(inspector2FilterFilterCriteriaAwsAccountIdToTerraform, true)(struct!.awsAccountId),
+    code_repository_project_name: cdktn.listMapper(inspector2FilterFilterCriteriaCodeRepositoryProjectNameToTerraform, true)(struct!.codeRepositoryProjectName),
+    code_repository_provider_type: cdktn.listMapper(inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToTerraform, true)(struct!.codeRepositoryProviderType),
+    code_vulnerability_detector_name: cdktn.listMapper(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToTerraform, true)(struct!.codeVulnerabilityDetectorName),
+    code_vulnerability_detector_tags: cdktn.listMapper(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToTerraform, true)(struct!.codeVulnerabilityDetectorTags),
+    code_vulnerability_file_path: cdktn.listMapper(inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToTerraform, true)(struct!.codeVulnerabilityFilePath),
+    component_id: cdktn.listMapper(inspector2FilterFilterCriteriaComponentIdToTerraform, true)(struct!.componentId),
+    component_type: cdktn.listMapper(inspector2FilterFilterCriteriaComponentTypeToTerraform, true)(struct!.componentType),
+    ec2_instance_image_id: cdktn.listMapper(inspector2FilterFilterCriteriaEc2InstanceImageIdToTerraform, true)(struct!.ec2InstanceImageId),
+    ec2_instance_subnet_id: cdktn.listMapper(inspector2FilterFilterCriteriaEc2InstanceSubnetIdToTerraform, true)(struct!.ec2InstanceSubnetId),
+    ec2_instance_vpc_id: cdktn.listMapper(inspector2FilterFilterCriteriaEc2InstanceVpcIdToTerraform, true)(struct!.ec2InstanceVpcId),
+    ecr_image_architecture: cdktn.listMapper(inspector2FilterFilterCriteriaEcrImageArchitectureToTerraform, true)(struct!.ecrImageArchitecture),
+    ecr_image_hash: cdktn.listMapper(inspector2FilterFilterCriteriaEcrImageHashToTerraform, true)(struct!.ecrImageHash),
+    ecr_image_in_use_count: cdktn.listMapper(inspector2FilterFilterCriteriaEcrImageInUseCountToTerraform, true)(struct!.ecrImageInUseCount),
+    ecr_image_last_in_use_at: cdktn.listMapper(inspector2FilterFilterCriteriaEcrImageLastInUseAtToTerraform, true)(struct!.ecrImageLastInUseAt),
+    ecr_image_pushed_at: cdktn.listMapper(inspector2FilterFilterCriteriaEcrImagePushedAtToTerraform, true)(struct!.ecrImagePushedAt),
+    ecr_image_registry: cdktn.listMapper(inspector2FilterFilterCriteriaEcrImageRegistryToTerraform, true)(struct!.ecrImageRegistry),
+    ecr_image_repository_name: cdktn.listMapper(inspector2FilterFilterCriteriaEcrImageRepositoryNameToTerraform, true)(struct!.ecrImageRepositoryName),
+    ecr_image_tags: cdktn.listMapper(inspector2FilterFilterCriteriaEcrImageTagsToTerraform, true)(struct!.ecrImageTags),
+    epss_score: cdktn.listMapper(inspector2FilterFilterCriteriaEpssScoreToTerraform, true)(struct!.epssScore),
+    exploit_available: cdktn.listMapper(inspector2FilterFilterCriteriaExploitAvailableToTerraform, true)(struct!.exploitAvailable),
+    finding_arn: cdktn.listMapper(inspector2FilterFilterCriteriaFindingArnToTerraform, true)(struct!.findingArn),
+    finding_status: cdktn.listMapper(inspector2FilterFilterCriteriaFindingStatusToTerraform, true)(struct!.findingStatus),
+    finding_type: cdktn.listMapper(inspector2FilterFilterCriteriaFindingTypeToTerraform, true)(struct!.findingType),
+    first_observed_at: cdktn.listMapper(inspector2FilterFilterCriteriaFirstObservedAtToTerraform, true)(struct!.firstObservedAt),
+    fix_available: cdktn.listMapper(inspector2FilterFilterCriteriaFixAvailableToTerraform, true)(struct!.fixAvailable),
+    inspector_score: cdktn.listMapper(inspector2FilterFilterCriteriaInspectorScoreToTerraform, true)(struct!.inspectorScore),
+    lambda_function_execution_role_arn: cdktn.listMapper(inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnToTerraform, true)(struct!.lambdaFunctionExecutionRoleArn),
+    lambda_function_last_modified_at: cdktn.listMapper(inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtToTerraform, true)(struct!.lambdaFunctionLastModifiedAt),
+    lambda_function_layers: cdktn.listMapper(inspector2FilterFilterCriteriaLambdaFunctionLayersToTerraform, true)(struct!.lambdaFunctionLayers),
+    lambda_function_name: cdktn.listMapper(inspector2FilterFilterCriteriaLambdaFunctionNameToTerraform, true)(struct!.lambdaFunctionName),
+    lambda_function_runtime: cdktn.listMapper(inspector2FilterFilterCriteriaLambdaFunctionRuntimeToTerraform, true)(struct!.lambdaFunctionRuntime),
+    last_observed_at: cdktn.listMapper(inspector2FilterFilterCriteriaLastObservedAtToTerraform, true)(struct!.lastObservedAt),
+    network_protocol: cdktn.listMapper(inspector2FilterFilterCriteriaNetworkProtocolToTerraform, true)(struct!.networkProtocol),
+    port_range: cdktn.listMapper(inspector2FilterFilterCriteriaPortRangeToTerraform, true)(struct!.portRange),
+    related_vulnerabilities: cdktn.listMapper(inspector2FilterFilterCriteriaRelatedVulnerabilitiesToTerraform, true)(struct!.relatedVulnerabilities),
+    resource_id: cdktn.listMapper(inspector2FilterFilterCriteriaResourceIdToTerraform, true)(struct!.resourceId),
+    resource_tags: cdktn.listMapper(inspector2FilterFilterCriteriaResourceTagsToTerraform, true)(struct!.resourceTags),
+    resource_type: cdktn.listMapper(inspector2FilterFilterCriteriaResourceTypeToTerraform, true)(struct!.resourceType),
+    severity: cdktn.listMapper(inspector2FilterFilterCriteriaSeverityToTerraform, true)(struct!.severity),
+    title: cdktn.listMapper(inspector2FilterFilterCriteriaTitleToTerraform, true)(struct!.title),
+    updated_at: cdktn.listMapper(inspector2FilterFilterCriteriaUpdatedAtToTerraform, true)(struct!.updatedAt),
+    vendor_severity: cdktn.listMapper(inspector2FilterFilterCriteriaVendorSeverityToTerraform, true)(struct!.vendorSeverity),
+    vulnerability_id: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerabilityIdToTerraform, true)(struct!.vulnerabilityId),
+    vulnerability_source: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerabilitySourceToTerraform, true)(struct!.vulnerabilitySource),
+    vulnerable_packages: cdktn.listMapper(inspector2FilterFilterCriteriaVulnerablePackagesToTerraform, true)(struct!.vulnerablePackages),
   }
 }
 
 
-export function inspector2FilterFilterCriteriaToHclTerraform(struct?: Inspector2FilterFilterCriteria | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function inspector2FilterFilterCriteriaToHclTerraform(struct?: Inspector2FilterFilterCriteria | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_account_id: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaAwsAccountIdToHclTerraform, true)(struct!.awsAccountId),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaAwsAccountIdToHclTerraform, true)(struct!.awsAccountId),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaAwsAccountIdList",
     },
     code_repository_project_name: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaCodeRepositoryProjectNameToHclTerraform, true)(struct!.codeRepositoryProjectName),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaCodeRepositoryProjectNameToHclTerraform, true)(struct!.codeRepositoryProjectName),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList",
     },
     code_repository_provider_type: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToHclTerraform, true)(struct!.codeRepositoryProviderType),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToHclTerraform, true)(struct!.codeRepositoryProviderType),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList",
     },
     code_vulnerability_detector_name: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToHclTerraform, true)(struct!.codeVulnerabilityDetectorName),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToHclTerraform, true)(struct!.codeVulnerabilityDetectorName),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList",
     },
     code_vulnerability_detector_tags: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToHclTerraform, true)(struct!.codeVulnerabilityDetectorTags),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToHclTerraform, true)(struct!.codeVulnerabilityDetectorTags),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList",
     },
     code_vulnerability_file_path: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToHclTerraform, true)(struct!.codeVulnerabilityFilePath),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToHclTerraform, true)(struct!.codeVulnerabilityFilePath),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList",
     },
     component_id: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaComponentIdToHclTerraform, true)(struct!.componentId),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaComponentIdToHclTerraform, true)(struct!.componentId),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaComponentIdList",
     },
     component_type: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaComponentTypeToHclTerraform, true)(struct!.componentType),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaComponentTypeToHclTerraform, true)(struct!.componentType),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaComponentTypeList",
     },
     ec2_instance_image_id: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEc2InstanceImageIdToHclTerraform, true)(struct!.ec2InstanceImageId),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEc2InstanceImageIdToHclTerraform, true)(struct!.ec2InstanceImageId),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEc2InstanceImageIdList",
     },
     ec2_instance_subnet_id: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEc2InstanceSubnetIdToHclTerraform, true)(struct!.ec2InstanceSubnetId),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEc2InstanceSubnetIdToHclTerraform, true)(struct!.ec2InstanceSubnetId),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList",
     },
     ec2_instance_vpc_id: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEc2InstanceVpcIdToHclTerraform, true)(struct!.ec2InstanceVpcId),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEc2InstanceVpcIdToHclTerraform, true)(struct!.ec2InstanceVpcId),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEc2InstanceVpcIdList",
     },
     ecr_image_architecture: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImageArchitectureToHclTerraform, true)(struct!.ecrImageArchitecture),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEcrImageArchitectureToHclTerraform, true)(struct!.ecrImageArchitecture),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEcrImageArchitectureList",
     },
     ecr_image_hash: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImageHashToHclTerraform, true)(struct!.ecrImageHash),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEcrImageHashToHclTerraform, true)(struct!.ecrImageHash),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEcrImageHashList",
     },
     ecr_image_in_use_count: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImageInUseCountToHclTerraform, true)(struct!.ecrImageInUseCount),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEcrImageInUseCountToHclTerraform, true)(struct!.ecrImageInUseCount),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEcrImageInUseCountList",
     },
     ecr_image_last_in_use_at: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImageLastInUseAtToHclTerraform, true)(struct!.ecrImageLastInUseAt),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEcrImageLastInUseAtToHclTerraform, true)(struct!.ecrImageLastInUseAt),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEcrImageLastInUseAtList",
     },
     ecr_image_pushed_at: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImagePushedAtToHclTerraform, true)(struct!.ecrImagePushedAt),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEcrImagePushedAtToHclTerraform, true)(struct!.ecrImagePushedAt),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEcrImagePushedAtList",
     },
     ecr_image_registry: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImageRegistryToHclTerraform, true)(struct!.ecrImageRegistry),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEcrImageRegistryToHclTerraform, true)(struct!.ecrImageRegistry),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEcrImageRegistryList",
     },
     ecr_image_repository_name: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImageRepositoryNameToHclTerraform, true)(struct!.ecrImageRepositoryName),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEcrImageRepositoryNameToHclTerraform, true)(struct!.ecrImageRepositoryName),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEcrImageRepositoryNameList",
     },
     ecr_image_tags: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImageTagsToHclTerraform, true)(struct!.ecrImageTags),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEcrImageTagsToHclTerraform, true)(struct!.ecrImageTags),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEcrImageTagsList",
     },
     epss_score: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEpssScoreToHclTerraform, true)(struct!.epssScore),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaEpssScoreToHclTerraform, true)(struct!.epssScore),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEpssScoreList",
     },
     exploit_available: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaExploitAvailableToHclTerraform, true)(struct!.exploitAvailable),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaExploitAvailableToHclTerraform, true)(struct!.exploitAvailable),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaExploitAvailableList",
     },
     finding_arn: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaFindingArnToHclTerraform, true)(struct!.findingArn),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaFindingArnToHclTerraform, true)(struct!.findingArn),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaFindingArnList",
     },
     finding_status: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaFindingStatusToHclTerraform, true)(struct!.findingStatus),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaFindingStatusToHclTerraform, true)(struct!.findingStatus),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaFindingStatusList",
     },
     finding_type: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaFindingTypeToHclTerraform, true)(struct!.findingType),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaFindingTypeToHclTerraform, true)(struct!.findingType),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaFindingTypeList",
     },
     first_observed_at: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaFirstObservedAtToHclTerraform, true)(struct!.firstObservedAt),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaFirstObservedAtToHclTerraform, true)(struct!.firstObservedAt),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaFirstObservedAtList",
     },
     fix_available: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaFixAvailableToHclTerraform, true)(struct!.fixAvailable),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaFixAvailableToHclTerraform, true)(struct!.fixAvailable),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaFixAvailableList",
     },
     inspector_score: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaInspectorScoreToHclTerraform, true)(struct!.inspectorScore),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaInspectorScoreToHclTerraform, true)(struct!.inspectorScore),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaInspectorScoreList",
     },
     lambda_function_execution_role_arn: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnToHclTerraform, true)(struct!.lambdaFunctionExecutionRoleArn),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnToHclTerraform, true)(struct!.lambdaFunctionExecutionRoleArn),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList",
     },
     lambda_function_last_modified_at: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtToHclTerraform, true)(struct!.lambdaFunctionLastModifiedAt),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtToHclTerraform, true)(struct!.lambdaFunctionLastModifiedAt),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList",
     },
     lambda_function_layers: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionLayersToHclTerraform, true)(struct!.lambdaFunctionLayers),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionLayersToHclTerraform, true)(struct!.lambdaFunctionLayers),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaLambdaFunctionLayersList",
     },
     lambda_function_name: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionNameToHclTerraform, true)(struct!.lambdaFunctionName),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionNameToHclTerraform, true)(struct!.lambdaFunctionName),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaLambdaFunctionNameList",
     },
     lambda_function_runtime: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionRuntimeToHclTerraform, true)(struct!.lambdaFunctionRuntime),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaLambdaFunctionRuntimeToHclTerraform, true)(struct!.lambdaFunctionRuntime),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList",
     },
     last_observed_at: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaLastObservedAtToHclTerraform, true)(struct!.lastObservedAt),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaLastObservedAtToHclTerraform, true)(struct!.lastObservedAt),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaLastObservedAtList",
     },
     network_protocol: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaNetworkProtocolToHclTerraform, true)(struct!.networkProtocol),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaNetworkProtocolToHclTerraform, true)(struct!.networkProtocol),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaNetworkProtocolList",
     },
     port_range: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaPortRangeToHclTerraform, true)(struct!.portRange),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaPortRangeToHclTerraform, true)(struct!.portRange),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaPortRangeList",
     },
     related_vulnerabilities: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaRelatedVulnerabilitiesToHclTerraform, true)(struct!.relatedVulnerabilities),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaRelatedVulnerabilitiesToHclTerraform, true)(struct!.relatedVulnerabilities),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList",
     },
     resource_id: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaResourceIdToHclTerraform, true)(struct!.resourceId),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaResourceIdToHclTerraform, true)(struct!.resourceId),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaResourceIdList",
     },
     resource_tags: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaResourceTagsToHclTerraform, true)(struct!.resourceTags),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaResourceTagsToHclTerraform, true)(struct!.resourceTags),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaResourceTagsList",
     },
     resource_type: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaResourceTypeToHclTerraform, true)(struct!.resourceType),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaResourceTypeToHclTerraform, true)(struct!.resourceType),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaResourceTypeList",
     },
     severity: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaSeverityToHclTerraform, true)(struct!.severity),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaSeverityToHclTerraform, true)(struct!.severity),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaSeverityList",
     },
     title: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaTitleToHclTerraform, true)(struct!.title),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaTitleToHclTerraform, true)(struct!.title),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaTitleList",
     },
     updated_at: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaUpdatedAtToHclTerraform, true)(struct!.updatedAt),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaUpdatedAtToHclTerraform, true)(struct!.updatedAt),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaUpdatedAtList",
     },
     vendor_severity: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVendorSeverityToHclTerraform, true)(struct!.vendorSeverity),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVendorSeverityToHclTerraform, true)(struct!.vendorSeverity),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaVendorSeverityList",
     },
     vulnerability_id: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerabilityIdToHclTerraform, true)(struct!.vulnerabilityId),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerabilityIdToHclTerraform, true)(struct!.vulnerabilityId),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerabilityIdList",
     },
     vulnerability_source: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerabilitySourceToHclTerraform, true)(struct!.vulnerabilitySource),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerabilitySourceToHclTerraform, true)(struct!.vulnerabilitySource),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerabilitySourceList",
     },
     vulnerable_packages: {
-      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesToHclTerraform, true)(struct!.vulnerablePackages),
+      value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaVulnerablePackagesToHclTerraform, true)(struct!.vulnerablePackages),
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaVulnerablePackagesList",
@@ -8676,9 +8676,9 @@ export function inspector2FilterFilterCriteriaToHclTerraform(struct?: Inspector2
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.ComplexObject {
+export class Inspector2FilterFilterCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8686,11 +8686,11 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Inspector2FilterFilterCriteria | cdktf.IResolvable | undefined {
+  public get internalValue(): Inspector2FilterFilterCriteria | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8883,7 +8883,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Inspector2FilterFilterCriteria | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Inspector2FilterFilterCriteria | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8934,7 +8934,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
       this._vulnerabilitySource.internalValue = undefined;
       this._vulnerablePackages.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8995,7 +8995,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get awsAccountId() {
     return this._awsAccountId;
   }
-  public putAwsAccountId(value: Inspector2FilterFilterCriteriaAwsAccountId[] | cdktf.IResolvable) {
+  public putAwsAccountId(value: Inspector2FilterFilterCriteriaAwsAccountId[] | cdktn.IResolvable) {
     this._awsAccountId.internalValue = value;
   }
   public resetAwsAccountId() {
@@ -9011,7 +9011,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get codeRepositoryProjectName() {
     return this._codeRepositoryProjectName;
   }
-  public putCodeRepositoryProjectName(value: Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] | cdktf.IResolvable) {
+  public putCodeRepositoryProjectName(value: Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] | cdktn.IResolvable) {
     this._codeRepositoryProjectName.internalValue = value;
   }
   public resetCodeRepositoryProjectName() {
@@ -9027,7 +9027,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get codeRepositoryProviderType() {
     return this._codeRepositoryProviderType;
   }
-  public putCodeRepositoryProviderType(value: Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] | cdktf.IResolvable) {
+  public putCodeRepositoryProviderType(value: Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] | cdktn.IResolvable) {
     this._codeRepositoryProviderType.internalValue = value;
   }
   public resetCodeRepositoryProviderType() {
@@ -9043,7 +9043,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get codeVulnerabilityDetectorName() {
     return this._codeVulnerabilityDetectorName;
   }
-  public putCodeVulnerabilityDetectorName(value: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] | cdktf.IResolvable) {
+  public putCodeVulnerabilityDetectorName(value: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] | cdktn.IResolvable) {
     this._codeVulnerabilityDetectorName.internalValue = value;
   }
   public resetCodeVulnerabilityDetectorName() {
@@ -9059,7 +9059,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get codeVulnerabilityDetectorTags() {
     return this._codeVulnerabilityDetectorTags;
   }
-  public putCodeVulnerabilityDetectorTags(value: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] | cdktf.IResolvable) {
+  public putCodeVulnerabilityDetectorTags(value: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] | cdktn.IResolvable) {
     this._codeVulnerabilityDetectorTags.internalValue = value;
   }
   public resetCodeVulnerabilityDetectorTags() {
@@ -9075,7 +9075,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get codeVulnerabilityFilePath() {
     return this._codeVulnerabilityFilePath;
   }
-  public putCodeVulnerabilityFilePath(value: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] | cdktf.IResolvable) {
+  public putCodeVulnerabilityFilePath(value: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] | cdktn.IResolvable) {
     this._codeVulnerabilityFilePath.internalValue = value;
   }
   public resetCodeVulnerabilityFilePath() {
@@ -9091,7 +9091,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get componentId() {
     return this._componentId;
   }
-  public putComponentId(value: Inspector2FilterFilterCriteriaComponentId[] | cdktf.IResolvable) {
+  public putComponentId(value: Inspector2FilterFilterCriteriaComponentId[] | cdktn.IResolvable) {
     this._componentId.internalValue = value;
   }
   public resetComponentId() {
@@ -9107,7 +9107,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get componentType() {
     return this._componentType;
   }
-  public putComponentType(value: Inspector2FilterFilterCriteriaComponentType[] | cdktf.IResolvable) {
+  public putComponentType(value: Inspector2FilterFilterCriteriaComponentType[] | cdktn.IResolvable) {
     this._componentType.internalValue = value;
   }
   public resetComponentType() {
@@ -9123,7 +9123,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ec2InstanceImageId() {
     return this._ec2InstanceImageId;
   }
-  public putEc2InstanceImageId(value: Inspector2FilterFilterCriteriaEc2InstanceImageId[] | cdktf.IResolvable) {
+  public putEc2InstanceImageId(value: Inspector2FilterFilterCriteriaEc2InstanceImageId[] | cdktn.IResolvable) {
     this._ec2InstanceImageId.internalValue = value;
   }
   public resetEc2InstanceImageId() {
@@ -9139,7 +9139,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ec2InstanceSubnetId() {
     return this._ec2InstanceSubnetId;
   }
-  public putEc2InstanceSubnetId(value: Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] | cdktf.IResolvable) {
+  public putEc2InstanceSubnetId(value: Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] | cdktn.IResolvable) {
     this._ec2InstanceSubnetId.internalValue = value;
   }
   public resetEc2InstanceSubnetId() {
@@ -9155,7 +9155,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ec2InstanceVpcId() {
     return this._ec2InstanceVpcId;
   }
-  public putEc2InstanceVpcId(value: Inspector2FilterFilterCriteriaEc2InstanceVpcId[] | cdktf.IResolvable) {
+  public putEc2InstanceVpcId(value: Inspector2FilterFilterCriteriaEc2InstanceVpcId[] | cdktn.IResolvable) {
     this._ec2InstanceVpcId.internalValue = value;
   }
   public resetEc2InstanceVpcId() {
@@ -9171,7 +9171,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ecrImageArchitecture() {
     return this._ecrImageArchitecture;
   }
-  public putEcrImageArchitecture(value: Inspector2FilterFilterCriteriaEcrImageArchitecture[] | cdktf.IResolvable) {
+  public putEcrImageArchitecture(value: Inspector2FilterFilterCriteriaEcrImageArchitecture[] | cdktn.IResolvable) {
     this._ecrImageArchitecture.internalValue = value;
   }
   public resetEcrImageArchitecture() {
@@ -9187,7 +9187,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ecrImageHash() {
     return this._ecrImageHash;
   }
-  public putEcrImageHash(value: Inspector2FilterFilterCriteriaEcrImageHash[] | cdktf.IResolvable) {
+  public putEcrImageHash(value: Inspector2FilterFilterCriteriaEcrImageHash[] | cdktn.IResolvable) {
     this._ecrImageHash.internalValue = value;
   }
   public resetEcrImageHash() {
@@ -9203,7 +9203,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ecrImageInUseCount() {
     return this._ecrImageInUseCount;
   }
-  public putEcrImageInUseCount(value: Inspector2FilterFilterCriteriaEcrImageInUseCount[] | cdktf.IResolvable) {
+  public putEcrImageInUseCount(value: Inspector2FilterFilterCriteriaEcrImageInUseCount[] | cdktn.IResolvable) {
     this._ecrImageInUseCount.internalValue = value;
   }
   public resetEcrImageInUseCount() {
@@ -9219,7 +9219,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ecrImageLastInUseAt() {
     return this._ecrImageLastInUseAt;
   }
-  public putEcrImageLastInUseAt(value: Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] | cdktf.IResolvable) {
+  public putEcrImageLastInUseAt(value: Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] | cdktn.IResolvable) {
     this._ecrImageLastInUseAt.internalValue = value;
   }
   public resetEcrImageLastInUseAt() {
@@ -9235,7 +9235,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ecrImagePushedAt() {
     return this._ecrImagePushedAt;
   }
-  public putEcrImagePushedAt(value: Inspector2FilterFilterCriteriaEcrImagePushedAt[] | cdktf.IResolvable) {
+  public putEcrImagePushedAt(value: Inspector2FilterFilterCriteriaEcrImagePushedAt[] | cdktn.IResolvable) {
     this._ecrImagePushedAt.internalValue = value;
   }
   public resetEcrImagePushedAt() {
@@ -9251,7 +9251,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ecrImageRegistry() {
     return this._ecrImageRegistry;
   }
-  public putEcrImageRegistry(value: Inspector2FilterFilterCriteriaEcrImageRegistry[] | cdktf.IResolvable) {
+  public putEcrImageRegistry(value: Inspector2FilterFilterCriteriaEcrImageRegistry[] | cdktn.IResolvable) {
     this._ecrImageRegistry.internalValue = value;
   }
   public resetEcrImageRegistry() {
@@ -9267,7 +9267,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ecrImageRepositoryName() {
     return this._ecrImageRepositoryName;
   }
-  public putEcrImageRepositoryName(value: Inspector2FilterFilterCriteriaEcrImageRepositoryName[] | cdktf.IResolvable) {
+  public putEcrImageRepositoryName(value: Inspector2FilterFilterCriteriaEcrImageRepositoryName[] | cdktn.IResolvable) {
     this._ecrImageRepositoryName.internalValue = value;
   }
   public resetEcrImageRepositoryName() {
@@ -9283,7 +9283,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get ecrImageTags() {
     return this._ecrImageTags;
   }
-  public putEcrImageTags(value: Inspector2FilterFilterCriteriaEcrImageTags[] | cdktf.IResolvable) {
+  public putEcrImageTags(value: Inspector2FilterFilterCriteriaEcrImageTags[] | cdktn.IResolvable) {
     this._ecrImageTags.internalValue = value;
   }
   public resetEcrImageTags() {
@@ -9299,7 +9299,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get epssScore() {
     return this._epssScore;
   }
-  public putEpssScore(value: Inspector2FilterFilterCriteriaEpssScore[] | cdktf.IResolvable) {
+  public putEpssScore(value: Inspector2FilterFilterCriteriaEpssScore[] | cdktn.IResolvable) {
     this._epssScore.internalValue = value;
   }
   public resetEpssScore() {
@@ -9315,7 +9315,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get exploitAvailable() {
     return this._exploitAvailable;
   }
-  public putExploitAvailable(value: Inspector2FilterFilterCriteriaExploitAvailable[] | cdktf.IResolvable) {
+  public putExploitAvailable(value: Inspector2FilterFilterCriteriaExploitAvailable[] | cdktn.IResolvable) {
     this._exploitAvailable.internalValue = value;
   }
   public resetExploitAvailable() {
@@ -9331,7 +9331,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get findingArn() {
     return this._findingArn;
   }
-  public putFindingArn(value: Inspector2FilterFilterCriteriaFindingArn[] | cdktf.IResolvable) {
+  public putFindingArn(value: Inspector2FilterFilterCriteriaFindingArn[] | cdktn.IResolvable) {
     this._findingArn.internalValue = value;
   }
   public resetFindingArn() {
@@ -9347,7 +9347,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get findingStatus() {
     return this._findingStatus;
   }
-  public putFindingStatus(value: Inspector2FilterFilterCriteriaFindingStatus[] | cdktf.IResolvable) {
+  public putFindingStatus(value: Inspector2FilterFilterCriteriaFindingStatus[] | cdktn.IResolvable) {
     this._findingStatus.internalValue = value;
   }
   public resetFindingStatus() {
@@ -9363,7 +9363,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get findingType() {
     return this._findingType;
   }
-  public putFindingType(value: Inspector2FilterFilterCriteriaFindingType[] | cdktf.IResolvable) {
+  public putFindingType(value: Inspector2FilterFilterCriteriaFindingType[] | cdktn.IResolvable) {
     this._findingType.internalValue = value;
   }
   public resetFindingType() {
@@ -9379,7 +9379,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get firstObservedAt() {
     return this._firstObservedAt;
   }
-  public putFirstObservedAt(value: Inspector2FilterFilterCriteriaFirstObservedAt[] | cdktf.IResolvable) {
+  public putFirstObservedAt(value: Inspector2FilterFilterCriteriaFirstObservedAt[] | cdktn.IResolvable) {
     this._firstObservedAt.internalValue = value;
   }
   public resetFirstObservedAt() {
@@ -9395,7 +9395,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get fixAvailable() {
     return this._fixAvailable;
   }
-  public putFixAvailable(value: Inspector2FilterFilterCriteriaFixAvailable[] | cdktf.IResolvable) {
+  public putFixAvailable(value: Inspector2FilterFilterCriteriaFixAvailable[] | cdktn.IResolvable) {
     this._fixAvailable.internalValue = value;
   }
   public resetFixAvailable() {
@@ -9411,7 +9411,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get inspectorScore() {
     return this._inspectorScore;
   }
-  public putInspectorScore(value: Inspector2FilterFilterCriteriaInspectorScore[] | cdktf.IResolvable) {
+  public putInspectorScore(value: Inspector2FilterFilterCriteriaInspectorScore[] | cdktn.IResolvable) {
     this._inspectorScore.internalValue = value;
   }
   public resetInspectorScore() {
@@ -9427,7 +9427,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get lambdaFunctionExecutionRoleArn() {
     return this._lambdaFunctionExecutionRoleArn;
   }
-  public putLambdaFunctionExecutionRoleArn(value: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] | cdktf.IResolvable) {
+  public putLambdaFunctionExecutionRoleArn(value: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] | cdktn.IResolvable) {
     this._lambdaFunctionExecutionRoleArn.internalValue = value;
   }
   public resetLambdaFunctionExecutionRoleArn() {
@@ -9443,7 +9443,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get lambdaFunctionLastModifiedAt() {
     return this._lambdaFunctionLastModifiedAt;
   }
-  public putLambdaFunctionLastModifiedAt(value: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] | cdktf.IResolvable) {
+  public putLambdaFunctionLastModifiedAt(value: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] | cdktn.IResolvable) {
     this._lambdaFunctionLastModifiedAt.internalValue = value;
   }
   public resetLambdaFunctionLastModifiedAt() {
@@ -9459,7 +9459,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get lambdaFunctionLayers() {
     return this._lambdaFunctionLayers;
   }
-  public putLambdaFunctionLayers(value: Inspector2FilterFilterCriteriaLambdaFunctionLayers[] | cdktf.IResolvable) {
+  public putLambdaFunctionLayers(value: Inspector2FilterFilterCriteriaLambdaFunctionLayers[] | cdktn.IResolvable) {
     this._lambdaFunctionLayers.internalValue = value;
   }
   public resetLambdaFunctionLayers() {
@@ -9475,7 +9475,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get lambdaFunctionName() {
     return this._lambdaFunctionName;
   }
-  public putLambdaFunctionName(value: Inspector2FilterFilterCriteriaLambdaFunctionName[] | cdktf.IResolvable) {
+  public putLambdaFunctionName(value: Inspector2FilterFilterCriteriaLambdaFunctionName[] | cdktn.IResolvable) {
     this._lambdaFunctionName.internalValue = value;
   }
   public resetLambdaFunctionName() {
@@ -9491,7 +9491,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get lambdaFunctionRuntime() {
     return this._lambdaFunctionRuntime;
   }
-  public putLambdaFunctionRuntime(value: Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] | cdktf.IResolvable) {
+  public putLambdaFunctionRuntime(value: Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] | cdktn.IResolvable) {
     this._lambdaFunctionRuntime.internalValue = value;
   }
   public resetLambdaFunctionRuntime() {
@@ -9507,7 +9507,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get lastObservedAt() {
     return this._lastObservedAt;
   }
-  public putLastObservedAt(value: Inspector2FilterFilterCriteriaLastObservedAt[] | cdktf.IResolvable) {
+  public putLastObservedAt(value: Inspector2FilterFilterCriteriaLastObservedAt[] | cdktn.IResolvable) {
     this._lastObservedAt.internalValue = value;
   }
   public resetLastObservedAt() {
@@ -9523,7 +9523,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get networkProtocol() {
     return this._networkProtocol;
   }
-  public putNetworkProtocol(value: Inspector2FilterFilterCriteriaNetworkProtocol[] | cdktf.IResolvable) {
+  public putNetworkProtocol(value: Inspector2FilterFilterCriteriaNetworkProtocol[] | cdktn.IResolvable) {
     this._networkProtocol.internalValue = value;
   }
   public resetNetworkProtocol() {
@@ -9539,7 +9539,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get portRange() {
     return this._portRange;
   }
-  public putPortRange(value: Inspector2FilterFilterCriteriaPortRange[] | cdktf.IResolvable) {
+  public putPortRange(value: Inspector2FilterFilterCriteriaPortRange[] | cdktn.IResolvable) {
     this._portRange.internalValue = value;
   }
   public resetPortRange() {
@@ -9555,7 +9555,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get relatedVulnerabilities() {
     return this._relatedVulnerabilities;
   }
-  public putRelatedVulnerabilities(value: Inspector2FilterFilterCriteriaRelatedVulnerabilities[] | cdktf.IResolvable) {
+  public putRelatedVulnerabilities(value: Inspector2FilterFilterCriteriaRelatedVulnerabilities[] | cdktn.IResolvable) {
     this._relatedVulnerabilities.internalValue = value;
   }
   public resetRelatedVulnerabilities() {
@@ -9571,7 +9571,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get resourceId() {
     return this._resourceId;
   }
-  public putResourceId(value: Inspector2FilterFilterCriteriaResourceId[] | cdktf.IResolvable) {
+  public putResourceId(value: Inspector2FilterFilterCriteriaResourceId[] | cdktn.IResolvable) {
     this._resourceId.internalValue = value;
   }
   public resetResourceId() {
@@ -9587,7 +9587,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get resourceTags() {
     return this._resourceTags;
   }
-  public putResourceTags(value: Inspector2FilterFilterCriteriaResourceTags[] | cdktf.IResolvable) {
+  public putResourceTags(value: Inspector2FilterFilterCriteriaResourceTags[] | cdktn.IResolvable) {
     this._resourceTags.internalValue = value;
   }
   public resetResourceTags() {
@@ -9603,7 +9603,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get resourceType() {
     return this._resourceType;
   }
-  public putResourceType(value: Inspector2FilterFilterCriteriaResourceType[] | cdktf.IResolvable) {
+  public putResourceType(value: Inspector2FilterFilterCriteriaResourceType[] | cdktn.IResolvable) {
     this._resourceType.internalValue = value;
   }
   public resetResourceType() {
@@ -9619,7 +9619,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get severity() {
     return this._severity;
   }
-  public putSeverity(value: Inspector2FilterFilterCriteriaSeverity[] | cdktf.IResolvable) {
+  public putSeverity(value: Inspector2FilterFilterCriteriaSeverity[] | cdktn.IResolvable) {
     this._severity.internalValue = value;
   }
   public resetSeverity() {
@@ -9635,7 +9635,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get title() {
     return this._title;
   }
-  public putTitle(value: Inspector2FilterFilterCriteriaTitle[] | cdktf.IResolvable) {
+  public putTitle(value: Inspector2FilterFilterCriteriaTitle[] | cdktn.IResolvable) {
     this._title.internalValue = value;
   }
   public resetTitle() {
@@ -9651,7 +9651,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get updatedAt() {
     return this._updatedAt;
   }
-  public putUpdatedAt(value: Inspector2FilterFilterCriteriaUpdatedAt[] | cdktf.IResolvable) {
+  public putUpdatedAt(value: Inspector2FilterFilterCriteriaUpdatedAt[] | cdktn.IResolvable) {
     this._updatedAt.internalValue = value;
   }
   public resetUpdatedAt() {
@@ -9667,7 +9667,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get vendorSeverity() {
     return this._vendorSeverity;
   }
-  public putVendorSeverity(value: Inspector2FilterFilterCriteriaVendorSeverity[] | cdktf.IResolvable) {
+  public putVendorSeverity(value: Inspector2FilterFilterCriteriaVendorSeverity[] | cdktn.IResolvable) {
     this._vendorSeverity.internalValue = value;
   }
   public resetVendorSeverity() {
@@ -9683,7 +9683,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get vulnerabilityId() {
     return this._vulnerabilityId;
   }
-  public putVulnerabilityId(value: Inspector2FilterFilterCriteriaVulnerabilityId[] | cdktf.IResolvable) {
+  public putVulnerabilityId(value: Inspector2FilterFilterCriteriaVulnerabilityId[] | cdktn.IResolvable) {
     this._vulnerabilityId.internalValue = value;
   }
   public resetVulnerabilityId() {
@@ -9699,7 +9699,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get vulnerabilitySource() {
     return this._vulnerabilitySource;
   }
-  public putVulnerabilitySource(value: Inspector2FilterFilterCriteriaVulnerabilitySource[] | cdktf.IResolvable) {
+  public putVulnerabilitySource(value: Inspector2FilterFilterCriteriaVulnerabilitySource[] | cdktn.IResolvable) {
     this._vulnerabilitySource.internalValue = value;
   }
   public resetVulnerabilitySource() {
@@ -9715,7 +9715,7 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   public get vulnerablePackages() {
     return this._vulnerablePackages;
   }
-  public putVulnerablePackages(value: Inspector2FilterFilterCriteriaVulnerablePackages[] | cdktf.IResolvable) {
+  public putVulnerablePackages(value: Inspector2FilterFilterCriteriaVulnerablePackages[] | cdktn.IResolvable) {
     this._vulnerablePackages.internalValue = value;
   }
   public resetVulnerablePackages() {
@@ -9727,15 +9727,15 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   }
 }
 
-export class Inspector2FilterFilterCriteriaList extends cdktf.ComplexList {
-  public internalValue? : Inspector2FilterFilterCriteria[] | cdktf.IResolvable
+export class Inspector2FilterFilterCriteriaList extends cdktn.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteria[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9750,7 +9750,7 @@ export class Inspector2FilterFilterCriteriaList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter aws_inspector2_filter}
 */
-export class Inspector2Filter extends cdktf.TerraformResource {
+export class Inspector2Filter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -9761,14 +9761,14 @@ export class Inspector2Filter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Inspector2Filter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Inspector2Filter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Inspector2Filter to import
   * @param importFromId The id of the existing Inspector2Filter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/inspector2_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Inspector2Filter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_inspector2_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_inspector2_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -9907,7 +9907,7 @@ export class Inspector2Filter extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -9917,7 +9917,7 @@ export class Inspector2Filter extends cdktf.TerraformResource {
   public get filterCriteria() {
     return this._filterCriteria;
   }
-  public putFilterCriteria(value: Inspector2FilterFilterCriteria[] | cdktf.IResolvable) {
+  public putFilterCriteria(value: Inspector2FilterFilterCriteria[] | cdktn.IResolvable) {
     this._filterCriteria.internalValue = value;
   }
   public resetFilterCriteria() {
@@ -9934,56 +9934,56 @@ export class Inspector2Filter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      reason: cdktf.stringToTerraform(this._reason),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter_criteria: cdktf.listMapper(inspector2FilterFilterCriteriaToTerraform, true)(this._filterCriteria.internalValue),
+      action: cdktn.stringToTerraform(this._action),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      reason: cdktn.stringToTerraform(this._reason),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      filter_criteria: cdktn.listMapper(inspector2FilterFilterCriteriaToTerraform, true)(this._filterCriteria.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reason: {
-        value: cdktf.stringToHclTerraform(this._reason),
+        value: cdktn.stringToHclTerraform(this._reason),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       filter_criteria: {
-        value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaToHclTerraform, true)(this._filterCriteria.internalValue),
+        value: cdktn.listMapperHcl(inspector2FilterFilterCriteriaToHclTerraform, true)(this._filterCriteria.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Inspector2FilterFilterCriteriaList",

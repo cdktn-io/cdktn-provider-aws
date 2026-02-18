@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LicensemanagerGrantConfig extends cdktf.TerraformMetaArguments {
+export interface LicensemanagerGrantConfig extends cdktn.TerraformMetaArguments {
   /**
   * Allowed operations for the grant. This is a subset of the allowed operations on the license.
   *
@@ -54,7 +54,7 @@ export interface LicensemanagerGrantConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/licensemanager_grant aws_licensemanager_grant}
 */
-export class LicensemanagerGrant extends cdktf.TerraformResource {
+export class LicensemanagerGrant extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class LicensemanagerGrant extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LicensemanagerGrant resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LicensemanagerGrant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LicensemanagerGrant to import
   * @param importFromId The id of the existing LicensemanagerGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/licensemanager_grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LicensemanagerGrant to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_licensemanager_grant", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_licensemanager_grant", importId: importFromId, provider });
       }
 
   // ===========
@@ -117,7 +117,7 @@ export class LicensemanagerGrant extends cdktf.TerraformResource {
   // allowed_operations - computed: false, optional: false, required: true
   private _allowedOperations?: string[]; 
   public get allowedOperations() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_operations'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_operations'));
   }
   public set allowedOperations(value: string[]) {
     this._allowedOperations = value;
@@ -229,49 +229,49 @@ export class LicensemanagerGrant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_operations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOperations),
-      id: cdktf.stringToTerraform(this._id),
-      license_arn: cdktf.stringToTerraform(this._licenseArn),
-      name: cdktf.stringToTerraform(this._name),
-      principal: cdktf.stringToTerraform(this._principal),
-      region: cdktf.stringToTerraform(this._region),
+      allowed_operations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedOperations),
+      id: cdktn.stringToTerraform(this._id),
+      license_arn: cdktn.stringToTerraform(this._licenseArn),
+      name: cdktn.stringToTerraform(this._name),
+      principal: cdktn.stringToTerraform(this._principal),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_operations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedOperations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedOperations),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_arn: {
-        value: cdktf.stringToHclTerraform(this._licenseArn),
+        value: cdktn.stringToHclTerraform(this._licenseArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal: {
-        value: cdktf.stringToHclTerraform(this._principal),
+        value: cdktn.stringToHclTerraform(this._principal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LambdaRuntimeManagementConfigConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaRuntimeManagementConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_runtime_management_config#function_name LambdaRuntimeManagementConfig#function_name}
   */
@@ -39,7 +39,7 @@ export interface LambdaRuntimeManagementConfigConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config}
 */
-export class LambdaRuntimeManagementConfig extends cdktf.TerraformResource {
+export class LambdaRuntimeManagementConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class LambdaRuntimeManagementConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LambdaRuntimeManagementConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LambdaRuntimeManagementConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaRuntimeManagementConfig to import
   * @param importFromId The id of the existing LambdaRuntimeManagementConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_runtime_management_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaRuntimeManagementConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_runtime_management_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_runtime_management_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -186,42 +186,42 @@ export class LambdaRuntimeManagementConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: cdktf.stringToTerraform(this._functionName),
-      qualifier: cdktf.stringToTerraform(this._qualifier),
-      region: cdktf.stringToTerraform(this._region),
-      runtime_version_arn: cdktf.stringToTerraform(this._runtimeVersionArn),
-      update_runtime_on: cdktf.stringToTerraform(this._updateRuntimeOn),
+      function_name: cdktn.stringToTerraform(this._functionName),
+      qualifier: cdktn.stringToTerraform(this._qualifier),
+      region: cdktn.stringToTerraform(this._region),
+      runtime_version_arn: cdktn.stringToTerraform(this._runtimeVersionArn),
+      update_runtime_on: cdktn.stringToTerraform(this._updateRuntimeOn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       function_name: {
-        value: cdktf.stringToHclTerraform(this._functionName),
+        value: cdktn.stringToHclTerraform(this._functionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       qualifier: {
-        value: cdktf.stringToHclTerraform(this._qualifier),
+        value: cdktn.stringToHclTerraform(this._qualifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime_version_arn: {
-        value: cdktf.stringToHclTerraform(this._runtimeVersionArn),
+        value: cdktn.stringToHclTerraform(this._runtimeVersionArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       update_runtime_on: {
-        value: cdktf.stringToHclTerraform(this._updateRuntimeOn),
+        value: cdktn.stringToHclTerraform(this._updateRuntimeOn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

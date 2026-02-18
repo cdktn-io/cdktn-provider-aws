@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LocationPlaceIndexConfig extends cdktf.TerraformMetaArguments {
+export interface LocationPlaceIndexConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}
   */
@@ -60,24 +60,24 @@ export interface LocationPlaceIndexDataSourceConfiguration {
 }
 
 export function locationPlaceIndexDataSourceConfigurationToTerraform(struct?: LocationPlaceIndexDataSourceConfigurationOutputReference | LocationPlaceIndexDataSourceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    intended_use: cdktf.stringToTerraform(struct!.intendedUse),
+    intended_use: cdktn.stringToTerraform(struct!.intendedUse),
   }
 }
 
 
 export function locationPlaceIndexDataSourceConfigurationToHclTerraform(struct?: LocationPlaceIndexDataSourceConfigurationOutputReference | LocationPlaceIndexDataSourceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     intended_use: {
-      value: cdktf.stringToHclTerraform(struct!.intendedUse),
+      value: cdktn.stringToHclTerraform(struct!.intendedUse),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,14 +88,14 @@ export function locationPlaceIndexDataSourceConfigurationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LocationPlaceIndexDataSourceConfigurationOutputReference extends cdktf.ComplexObject {
+export class LocationPlaceIndexDataSourceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -140,7 +140,7 @@ export class LocationPlaceIndexDataSourceConfigurationOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/location_place_index aws_location_place_index}
 */
-export class LocationPlaceIndex extends cdktf.TerraformResource {
+export class LocationPlaceIndex extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -151,14 +151,14 @@ export class LocationPlaceIndex extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LocationPlaceIndex resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LocationPlaceIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LocationPlaceIndex to import
   * @param importFromId The id of the existing LocationPlaceIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/location_place_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LocationPlaceIndex to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_location_place_index", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_location_place_index", importId: importFromId, provider });
       }
 
   // ===========
@@ -345,13 +345,13 @@ export class LocationPlaceIndex extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_source: cdktf.stringToTerraform(this._dataSource),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      index_name: cdktf.stringToTerraform(this._indexName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      data_source: cdktn.stringToTerraform(this._dataSource),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      index_name: cdktn.stringToTerraform(this._indexName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       data_source_configuration: locationPlaceIndexDataSourceConfigurationToTerraform(this._dataSourceConfiguration.internalValue),
     };
   }
@@ -359,43 +359,43 @@ export class LocationPlaceIndex extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_source: {
-        value: cdktf.stringToHclTerraform(this._dataSource),
+        value: cdktn.stringToHclTerraform(this._dataSource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       index_name: {
-        value: cdktf.stringToHclTerraform(this._indexName),
+        value: cdktn.stringToHclTerraform(this._indexName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

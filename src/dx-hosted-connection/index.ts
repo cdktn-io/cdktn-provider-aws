@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DxHostedConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DxHostedConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}
   */
@@ -44,7 +44,7 @@ export interface DxHostedConnectionConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_hosted_connection aws_dx_hosted_connection}
 */
-export class DxHostedConnection extends cdktf.TerraformResource {
+export class DxHostedConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class DxHostedConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DxHostedConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DxHostedConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxHostedConnection to import
   * @param importFromId The id of the existing DxHostedConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_hosted_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxHostedConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_hosted_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_hosted_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -246,49 +246,49 @@ export class DxHostedConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bandwidth: cdktf.stringToTerraform(this._bandwidth),
-      connection_id: cdktf.stringToTerraform(this._connectionId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      owner_account_id: cdktf.stringToTerraform(this._ownerAccountId),
-      vlan: cdktf.numberToTerraform(this._vlan),
+      bandwidth: cdktn.stringToTerraform(this._bandwidth),
+      connection_id: cdktn.stringToTerraform(this._connectionId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      owner_account_id: cdktn.stringToTerraform(this._ownerAccountId),
+      vlan: cdktn.numberToTerraform(this._vlan),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bandwidth: {
-        value: cdktf.stringToHclTerraform(this._bandwidth),
+        value: cdktn.stringToHclTerraform(this._bandwidth),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_id: {
-        value: cdktf.stringToHclTerraform(this._connectionId),
+        value: cdktn.stringToHclTerraform(this._connectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_account_id: {
-        value: cdktf.stringToHclTerraform(this._ownerAccountId),
+        value: cdktn.stringToHclTerraform(this._ownerAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vlan: {
-        value: cdktf.numberToHclTerraform(this._vlan),
+        value: cdktn.numberToHclTerraform(this._vlan),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

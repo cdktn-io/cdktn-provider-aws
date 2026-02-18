@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChimeVoiceConnectorLoggingConfig extends cdktf.TerraformMetaArguments {
+export interface ChimeVoiceConnectorLoggingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_logging#enable_media_metric_logs ChimeVoiceConnectorLogging#enable_media_metric_logs}
   */
-  readonly enableMediaMetricLogs?: boolean | cdktf.IResolvable;
+  readonly enableMediaMetricLogs?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_logging#enable_sip_logs ChimeVoiceConnectorLogging#enable_sip_logs}
   */
-  readonly enableSipLogs?: boolean | cdktf.IResolvable;
+  readonly enableSipLogs?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_logging#id ChimeVoiceConnectorLogging#id}
   *
@@ -42,7 +42,7 @@ export interface ChimeVoiceConnectorLoggingConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging}
 */
-export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
+export class ChimeVoiceConnectorLogging extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChimeVoiceConnectorLogging resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChimeVoiceConnectorLogging resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChimeVoiceConnectorLogging to import
   * @param importFromId The id of the existing ChimeVoiceConnectorLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/chime_voice_connector_logging#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChimeVoiceConnectorLogging to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_chime_voice_connector_logging", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_chime_voice_connector_logging", importId: importFromId, provider });
       }
 
   // ===========
@@ -102,11 +102,11 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
   // ==========
 
   // enable_media_metric_logs - computed: false, optional: true, required: false
-  private _enableMediaMetricLogs?: boolean | cdktf.IResolvable; 
+  private _enableMediaMetricLogs?: boolean | cdktn.IResolvable; 
   public get enableMediaMetricLogs() {
     return this.getBooleanAttribute('enable_media_metric_logs');
   }
-  public set enableMediaMetricLogs(value: boolean | cdktf.IResolvable) {
+  public set enableMediaMetricLogs(value: boolean | cdktn.IResolvable) {
     this._enableMediaMetricLogs = value;
   }
   public resetEnableMediaMetricLogs() {
@@ -118,11 +118,11 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
   }
 
   // enable_sip_logs - computed: false, optional: true, required: false
-  private _enableSipLogs?: boolean | cdktf.IResolvable; 
+  private _enableSipLogs?: boolean | cdktn.IResolvable; 
   public get enableSipLogs() {
     return this.getBooleanAttribute('enable_sip_logs');
   }
-  public set enableSipLogs(value: boolean | cdktf.IResolvable) {
+  public set enableSipLogs(value: boolean | cdktn.IResolvable) {
     this._enableSipLogs = value;
   }
   public resetEnableSipLogs() {
@@ -184,42 +184,42 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable_media_metric_logs: cdktf.booleanToTerraform(this._enableMediaMetricLogs),
-      enable_sip_logs: cdktf.booleanToTerraform(this._enableSipLogs),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),
+      enable_media_metric_logs: cdktn.booleanToTerraform(this._enableMediaMetricLogs),
+      enable_sip_logs: cdktn.booleanToTerraform(this._enableSipLogs),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      voice_connector_id: cdktn.stringToTerraform(this._voiceConnectorId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enable_media_metric_logs: {
-        value: cdktf.booleanToHclTerraform(this._enableMediaMetricLogs),
+        value: cdktn.booleanToHclTerraform(this._enableMediaMetricLogs),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_sip_logs: {
-        value: cdktf.booleanToHclTerraform(this._enableSipLogs),
+        value: cdktn.booleanToHclTerraform(this._enableSipLogs),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       voice_connector_id: {
-        value: cdktf.stringToHclTerraform(this._voiceConnectorId),
+        value: cdktn.stringToHclTerraform(this._voiceConnectorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

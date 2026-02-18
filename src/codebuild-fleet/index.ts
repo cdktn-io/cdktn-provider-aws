@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodebuildFleetConfig extends cdktf.TerraformMetaArguments {
+export interface CodebuildFleetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_fleet#base_capacity CodebuildFleet#base_capacity}
   */
@@ -71,14 +71,14 @@ export interface CodebuildFleetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_fleet#vpc_config CodebuildFleet#vpc_config}
   */
-  readonly vpcConfig?: CodebuildFleetVpcConfig[] | cdktf.IResolvable;
+  readonly vpcConfig?: CodebuildFleetVpcConfig[] | cdktn.IResolvable;
 }
 export interface CodebuildFleetStatus {
 }
 
 export function codebuildFleetStatusToTerraform(struct?: CodebuildFleetStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -87,8 +87,8 @@ export function codebuildFleetStatusToTerraform(struct?: CodebuildFleetStatus): 
 
 
 export function codebuildFleetStatusToHclTerraform(struct?: CodebuildFleetStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -96,7 +96,7 @@ export function codebuildFleetStatusToHclTerraform(struct?: CodebuildFleetStatus
   return attrs;
 }
 
-export class CodebuildFleetStatusOutputReference extends cdktf.ComplexObject {
+export class CodebuildFleetStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -105,7 +105,7 @@ export class CodebuildFleetStatusOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -140,14 +140,14 @@ export class CodebuildFleetStatusOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class CodebuildFleetStatusList extends cdktf.ComplexList {
+export class CodebuildFleetStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -182,52 +182,52 @@ export interface CodebuildFleetComputeConfiguration {
 }
 
 export function codebuildFleetComputeConfigurationToTerraform(struct?: CodebuildFleetComputeConfigurationOutputReference | CodebuildFleetComputeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk: cdktf.numberToTerraform(struct!.disk),
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    machine_type: cdktf.stringToTerraform(struct!.machineType),
-    memory: cdktf.numberToTerraform(struct!.memory),
-    vcpu: cdktf.numberToTerraform(struct!.vcpu),
+    disk: cdktn.numberToTerraform(struct!.disk),
+    instance_type: cdktn.stringToTerraform(struct!.instanceType),
+    machine_type: cdktn.stringToTerraform(struct!.machineType),
+    memory: cdktn.numberToTerraform(struct!.memory),
+    vcpu: cdktn.numberToTerraform(struct!.vcpu),
   }
 }
 
 
 export function codebuildFleetComputeConfigurationToHclTerraform(struct?: CodebuildFleetComputeConfigurationOutputReference | CodebuildFleetComputeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk: {
-      value: cdktf.numberToHclTerraform(struct!.disk),
+      value: cdktn.numberToHclTerraform(struct!.disk),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      value: cdktn.stringToHclTerraform(struct!.instanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     machine_type: {
-      value: cdktf.stringToHclTerraform(struct!.machineType),
+      value: cdktn.stringToHclTerraform(struct!.machineType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     memory: {
-      value: cdktf.numberToHclTerraform(struct!.memory),
+      value: cdktn.numberToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     vcpu: {
-      value: cdktf.numberToHclTerraform(struct!.vcpu),
+      value: cdktn.numberToHclTerraform(struct!.vcpu),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -238,14 +238,14 @@ export function codebuildFleetComputeConfigurationToHclTerraform(struct?: Codebu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildFleetComputeConfigurationOutputReference extends cdktf.ComplexObject {
+export class CodebuildFleetComputeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -385,32 +385,32 @@ export interface CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs 
   readonly targetValue?: number;
 }
 
-export function codebuildFleetScalingConfigurationTargetTrackingScalingConfigsToTerraform(struct?: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildFleetScalingConfigurationTargetTrackingScalingConfigsToTerraform(struct?: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_type: cdktf.stringToTerraform(struct!.metricType),
-    target_value: cdktf.numberToTerraform(struct!.targetValue),
+    metric_type: cdktn.stringToTerraform(struct!.metricType),
+    target_value: cdktn.numberToTerraform(struct!.targetValue),
   }
 }
 
 
-export function codebuildFleetScalingConfigurationTargetTrackingScalingConfigsToHclTerraform(struct?: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildFleetScalingConfigurationTargetTrackingScalingConfigsToHclTerraform(struct?: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metric_type: {
-      value: cdktf.stringToHclTerraform(struct!.metricType),
+      value: cdktn.stringToHclTerraform(struct!.metricType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_value: {
-      value: cdktf.numberToHclTerraform(struct!.targetValue),
+      value: cdktn.numberToHclTerraform(struct!.targetValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -421,9 +421,9 @@ export function codebuildFleetScalingConfigurationTargetTrackingScalingConfigsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference extends cdktf.ComplexObject {
+export class CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -431,11 +431,11 @@ export class CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -452,14 +452,14 @@ export class CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._metricType = undefined;
       this._targetValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -504,15 +504,15 @@ export class CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutpu
   }
 }
 
-export class CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList extends cdktf.ComplexList {
-  public internalValue? : CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs[] | cdktf.IResolvable
+export class CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList extends cdktn.ComplexList {
+  public internalValue? : CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -537,42 +537,42 @@ export interface CodebuildFleetScalingConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_fleet#target_tracking_scaling_configs CodebuildFleet#target_tracking_scaling_configs}
   */
-  readonly targetTrackingScalingConfigs?: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs[] | cdktf.IResolvable;
+  readonly targetTrackingScalingConfigs?: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs[] | cdktn.IResolvable;
 }
 
 export function codebuildFleetScalingConfigurationToTerraform(struct?: CodebuildFleetScalingConfigurationOutputReference | CodebuildFleetScalingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_capacity: cdktf.numberToTerraform(struct!.maxCapacity),
-    scaling_type: cdktf.stringToTerraform(struct!.scalingType),
-    target_tracking_scaling_configs: cdktf.listMapper(codebuildFleetScalingConfigurationTargetTrackingScalingConfigsToTerraform, true)(struct!.targetTrackingScalingConfigs),
+    max_capacity: cdktn.numberToTerraform(struct!.maxCapacity),
+    scaling_type: cdktn.stringToTerraform(struct!.scalingType),
+    target_tracking_scaling_configs: cdktn.listMapper(codebuildFleetScalingConfigurationTargetTrackingScalingConfigsToTerraform, true)(struct!.targetTrackingScalingConfigs),
   }
 }
 
 
 export function codebuildFleetScalingConfigurationToHclTerraform(struct?: CodebuildFleetScalingConfigurationOutputReference | CodebuildFleetScalingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.maxCapacity),
+      value: cdktn.numberToHclTerraform(struct!.maxCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     scaling_type: {
-      value: cdktf.stringToHclTerraform(struct!.scalingType),
+      value: cdktn.stringToHclTerraform(struct!.scalingType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_tracking_scaling_configs: {
-      value: cdktf.listMapperHcl(codebuildFleetScalingConfigurationTargetTrackingScalingConfigsToHclTerraform, true)(struct!.targetTrackingScalingConfigs),
+      value: cdktn.listMapperHcl(codebuildFleetScalingConfigurationTargetTrackingScalingConfigsToHclTerraform, true)(struct!.targetTrackingScalingConfigs),
       isBlock: true,
       type: "list",
       storageClassType: "CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList",
@@ -583,14 +583,14 @@ export function codebuildFleetScalingConfigurationToHclTerraform(struct?: Codebu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildFleetScalingConfigurationOutputReference extends cdktf.ComplexObject {
+export class CodebuildFleetScalingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -669,7 +669,7 @@ export class CodebuildFleetScalingConfigurationOutputReference extends cdktf.Com
   public get targetTrackingScalingConfigs() {
     return this._targetTrackingScalingConfigs;
   }
-  public putTargetTrackingScalingConfigs(value: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs[] | cdktf.IResolvable) {
+  public putTargetTrackingScalingConfigs(value: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs[] | cdktn.IResolvable) {
     this._targetTrackingScalingConfigs.internalValue = value;
   }
   public resetTargetTrackingScalingConfigs() {
@@ -695,39 +695,39 @@ export interface CodebuildFleetVpcConfig {
   readonly vpcId: string;
 }
 
-export function codebuildFleetVpcConfigToTerraform(struct?: CodebuildFleetVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildFleetVpcConfigToTerraform(struct?: CodebuildFleetVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
   }
 }
 
 
-export function codebuildFleetVpcConfigToHclTerraform(struct?: CodebuildFleetVpcConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function codebuildFleetVpcConfigToHclTerraform(struct?: CodebuildFleetVpcConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -738,9 +738,9 @@ export function codebuildFleetVpcConfigToHclTerraform(struct?: CodebuildFleetVpc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CodebuildFleetVpcConfigOutputReference extends cdktf.ComplexObject {
+export class CodebuildFleetVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -748,11 +748,11 @@ export class CodebuildFleetVpcConfigOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CodebuildFleetVpcConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): CodebuildFleetVpcConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -773,7 +773,7 @@ export class CodebuildFleetVpcConfigOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CodebuildFleetVpcConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CodebuildFleetVpcConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -781,7 +781,7 @@ export class CodebuildFleetVpcConfigOutputReference extends cdktf.ComplexObject 
       this._subnets = undefined;
       this._vpcId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -797,7 +797,7 @@ export class CodebuildFleetVpcConfigOutputReference extends cdktf.ComplexObject 
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -810,7 +810,7 @@ export class CodebuildFleetVpcConfigOutputReference extends cdktf.ComplexObject 
   // subnets - computed: false, optional: false, required: true
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -834,15 +834,15 @@ export class CodebuildFleetVpcConfigOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class CodebuildFleetVpcConfigList extends cdktf.ComplexList {
-  public internalValue? : CodebuildFleetVpcConfig[] | cdktf.IResolvable
+export class CodebuildFleetVpcConfigList extends cdktn.ComplexList {
+  public internalValue? : CodebuildFleetVpcConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -857,7 +857,7 @@ export class CodebuildFleetVpcConfigList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_fleet aws_codebuild_fleet}
 */
-export class CodebuildFleet extends cdktf.TerraformResource {
+export class CodebuildFleet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -868,14 +868,14 @@ export class CodebuildFleet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodebuildFleet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodebuildFleet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodebuildFleet to import
   * @param importFromId The id of the existing CodebuildFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodebuildFleet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codebuild_fleet", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codebuild_fleet", importId: importFromId, provider });
       }
 
   // ===========
@@ -1135,7 +1135,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
   public get vpcConfig() {
     return this._vpcConfig;
   }
-  public putVpcConfig(value: CodebuildFleetVpcConfig[] | cdktf.IResolvable) {
+  public putVpcConfig(value: CodebuildFleetVpcConfig[] | cdktn.IResolvable) {
     this._vpcConfig.internalValue = value;
   }
   public resetVpcConfig() {
@@ -1152,80 +1152,80 @@ export class CodebuildFleet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      base_capacity: cdktf.numberToTerraform(this._baseCapacity),
-      compute_type: cdktf.stringToTerraform(this._computeType),
-      environment_type: cdktf.stringToTerraform(this._environmentType),
-      fleet_service_role: cdktf.stringToTerraform(this._fleetServiceRole),
-      image_id: cdktf.stringToTerraform(this._imageId),
-      name: cdktf.stringToTerraform(this._name),
-      overflow_behavior: cdktf.stringToTerraform(this._overflowBehavior),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      base_capacity: cdktn.numberToTerraform(this._baseCapacity),
+      compute_type: cdktn.stringToTerraform(this._computeType),
+      environment_type: cdktn.stringToTerraform(this._environmentType),
+      fleet_service_role: cdktn.stringToTerraform(this._fleetServiceRole),
+      image_id: cdktn.stringToTerraform(this._imageId),
+      name: cdktn.stringToTerraform(this._name),
+      overflow_behavior: cdktn.stringToTerraform(this._overflowBehavior),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       compute_configuration: codebuildFleetComputeConfigurationToTerraform(this._computeConfiguration.internalValue),
       scaling_configuration: codebuildFleetScalingConfigurationToTerraform(this._scalingConfiguration.internalValue),
-      vpc_config: cdktf.listMapper(codebuildFleetVpcConfigToTerraform, true)(this._vpcConfig.internalValue),
+      vpc_config: cdktn.listMapper(codebuildFleetVpcConfigToTerraform, true)(this._vpcConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       base_capacity: {
-        value: cdktf.numberToHclTerraform(this._baseCapacity),
+        value: cdktn.numberToHclTerraform(this._baseCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       compute_type: {
-        value: cdktf.stringToHclTerraform(this._computeType),
+        value: cdktn.stringToHclTerraform(this._computeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       environment_type: {
-        value: cdktf.stringToHclTerraform(this._environmentType),
+        value: cdktn.stringToHclTerraform(this._environmentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fleet_service_role: {
-        value: cdktf.stringToHclTerraform(this._fleetServiceRole),
+        value: cdktn.stringToHclTerraform(this._fleetServiceRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_id: {
-        value: cdktf.stringToHclTerraform(this._imageId),
+        value: cdktn.stringToHclTerraform(this._imageId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       overflow_behavior: {
-        value: cdktf.stringToHclTerraform(this._overflowBehavior),
+        value: cdktn.stringToHclTerraform(this._overflowBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -1243,7 +1243,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
         storageClassType: "CodebuildFleetScalingConfigurationList",
       },
       vpc_config: {
-        value: cdktf.listMapperHcl(codebuildFleetVpcConfigToHclTerraform, true)(this._vpcConfig.internalValue),
+        value: cdktn.listMapperHcl(codebuildFleetVpcConfigToHclTerraform, true)(this._vpcConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CodebuildFleetVpcConfigList",

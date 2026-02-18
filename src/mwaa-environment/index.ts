@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MwaaEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface MwaaEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#airflow_configuration_options MwaaEnvironment#airflow_configuration_options}
   */
@@ -148,8 +148,8 @@ export interface MwaaEnvironmentLastUpdatedError {
 }
 
 export function mwaaEnvironmentLastUpdatedErrorToTerraform(struct?: MwaaEnvironmentLastUpdatedError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -158,8 +158,8 @@ export function mwaaEnvironmentLastUpdatedErrorToTerraform(struct?: MwaaEnvironm
 
 
 export function mwaaEnvironmentLastUpdatedErrorToHclTerraform(struct?: MwaaEnvironmentLastUpdatedError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -167,7 +167,7 @@ export function mwaaEnvironmentLastUpdatedErrorToHclTerraform(struct?: MwaaEnvir
   return attrs;
 }
 
-export class MwaaEnvironmentLastUpdatedErrorOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentLastUpdatedErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -176,7 +176,7 @@ export class MwaaEnvironmentLastUpdatedErrorOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -206,14 +206,14 @@ export class MwaaEnvironmentLastUpdatedErrorOutputReference extends cdktf.Comple
   }
 }
 
-export class MwaaEnvironmentLastUpdatedErrorList extends cdktf.ComplexList {
+export class MwaaEnvironmentLastUpdatedErrorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,8 +228,8 @@ export interface MwaaEnvironmentLastUpdated {
 }
 
 export function mwaaEnvironmentLastUpdatedToTerraform(struct?: MwaaEnvironmentLastUpdated): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -238,8 +238,8 @@ export function mwaaEnvironmentLastUpdatedToTerraform(struct?: MwaaEnvironmentLa
 
 
 export function mwaaEnvironmentLastUpdatedToHclTerraform(struct?: MwaaEnvironmentLastUpdated): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -247,7 +247,7 @@ export function mwaaEnvironmentLastUpdatedToHclTerraform(struct?: MwaaEnvironmen
   return attrs;
 }
 
-export class MwaaEnvironmentLastUpdatedOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentLastUpdatedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -256,7 +256,7 @@ export class MwaaEnvironmentLastUpdatedOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -292,14 +292,14 @@ export class MwaaEnvironmentLastUpdatedOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class MwaaEnvironmentLastUpdatedList extends cdktf.ComplexList {
+export class MwaaEnvironmentLastUpdatedList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -314,7 +314,7 @@ export interface MwaaEnvironmentLoggingConfigurationDagProcessingLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#log_level MwaaEnvironment#log_level}
   */
@@ -322,31 +322,31 @@ export interface MwaaEnvironmentLoggingConfigurationDagProcessingLogs {
 }
 
 export function mwaaEnvironmentLoggingConfigurationDagProcessingLogsToTerraform(struct?: MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference | MwaaEnvironmentLoggingConfigurationDagProcessingLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_level: cdktf.stringToTerraform(struct!.logLevel),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_level: cdktn.stringToTerraform(struct!.logLevel),
   }
 }
 
 
 export function mwaaEnvironmentLoggingConfigurationDagProcessingLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference | MwaaEnvironmentLoggingConfigurationDagProcessingLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_level: {
-      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      value: cdktn.stringToHclTerraform(struct!.logLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -357,14 +357,14 @@ export function mwaaEnvironmentLoggingConfigurationDagProcessingLogsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -401,11 +401,11 @@ export class MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -436,7 +436,7 @@ export interface MwaaEnvironmentLoggingConfigurationSchedulerLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#log_level MwaaEnvironment#log_level}
   */
@@ -444,31 +444,31 @@ export interface MwaaEnvironmentLoggingConfigurationSchedulerLogs {
 }
 
 export function mwaaEnvironmentLoggingConfigurationSchedulerLogsToTerraform(struct?: MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference | MwaaEnvironmentLoggingConfigurationSchedulerLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_level: cdktf.stringToTerraform(struct!.logLevel),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_level: cdktn.stringToTerraform(struct!.logLevel),
   }
 }
 
 
 export function mwaaEnvironmentLoggingConfigurationSchedulerLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference | MwaaEnvironmentLoggingConfigurationSchedulerLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_level: {
-      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      value: cdktn.stringToHclTerraform(struct!.logLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -479,14 +479,14 @@ export function mwaaEnvironmentLoggingConfigurationSchedulerLogsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -523,11 +523,11 @@ export class MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference ext
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -558,7 +558,7 @@ export interface MwaaEnvironmentLoggingConfigurationTaskLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#log_level MwaaEnvironment#log_level}
   */
@@ -566,31 +566,31 @@ export interface MwaaEnvironmentLoggingConfigurationTaskLogs {
 }
 
 export function mwaaEnvironmentLoggingConfigurationTaskLogsToTerraform(struct?: MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference | MwaaEnvironmentLoggingConfigurationTaskLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_level: cdktf.stringToTerraform(struct!.logLevel),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_level: cdktn.stringToTerraform(struct!.logLevel),
   }
 }
 
 
 export function mwaaEnvironmentLoggingConfigurationTaskLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference | MwaaEnvironmentLoggingConfigurationTaskLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_level: {
-      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      value: cdktn.stringToHclTerraform(struct!.logLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -601,14 +601,14 @@ export function mwaaEnvironmentLoggingConfigurationTaskLogsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -645,11 +645,11 @@ export class MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference extends 
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -680,7 +680,7 @@ export interface MwaaEnvironmentLoggingConfigurationWebserverLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#log_level MwaaEnvironment#log_level}
   */
@@ -688,31 +688,31 @@ export interface MwaaEnvironmentLoggingConfigurationWebserverLogs {
 }
 
 export function mwaaEnvironmentLoggingConfigurationWebserverLogsToTerraform(struct?: MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference | MwaaEnvironmentLoggingConfigurationWebserverLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_level: cdktf.stringToTerraform(struct!.logLevel),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_level: cdktn.stringToTerraform(struct!.logLevel),
   }
 }
 
 
 export function mwaaEnvironmentLoggingConfigurationWebserverLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference | MwaaEnvironmentLoggingConfigurationWebserverLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_level: {
-      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      value: cdktn.stringToHclTerraform(struct!.logLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -723,14 +723,14 @@ export function mwaaEnvironmentLoggingConfigurationWebserverLogsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -767,11 +767,11 @@ export class MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference ext
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -802,7 +802,7 @@ export interface MwaaEnvironmentLoggingConfigurationWorkerLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#log_level MwaaEnvironment#log_level}
   */
@@ -810,31 +810,31 @@ export interface MwaaEnvironmentLoggingConfigurationWorkerLogs {
 }
 
 export function mwaaEnvironmentLoggingConfigurationWorkerLogsToTerraform(struct?: MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference | MwaaEnvironmentLoggingConfigurationWorkerLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_level: cdktf.stringToTerraform(struct!.logLevel),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_level: cdktn.stringToTerraform(struct!.logLevel),
   }
 }
 
 
 export function mwaaEnvironmentLoggingConfigurationWorkerLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference | MwaaEnvironmentLoggingConfigurationWorkerLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_level: {
-      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      value: cdktn.stringToHclTerraform(struct!.logLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -845,14 +845,14 @@ export function mwaaEnvironmentLoggingConfigurationWorkerLogsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -889,11 +889,11 @@ export class MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference extend
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -954,8 +954,8 @@ export interface MwaaEnvironmentLoggingConfiguration {
 }
 
 export function mwaaEnvironmentLoggingConfigurationToTerraform(struct?: MwaaEnvironmentLoggingConfigurationOutputReference | MwaaEnvironmentLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -969,8 +969,8 @@ export function mwaaEnvironmentLoggingConfigurationToTerraform(struct?: MwaaEnvi
 
 
 export function mwaaEnvironmentLoggingConfigurationToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationOutputReference | MwaaEnvironmentLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1010,14 +1010,14 @@ export function mwaaEnvironmentLoggingConfigurationToHclTerraform(struct?: MwaaE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1158,31 +1158,31 @@ export interface MwaaEnvironmentNetworkConfiguration {
 }
 
 export function mwaaEnvironmentNetworkConfigurationToTerraform(struct?: MwaaEnvironmentNetworkConfigurationOutputReference | MwaaEnvironmentNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function mwaaEnvironmentNetworkConfigurationToHclTerraform(struct?: MwaaEnvironmentNetworkConfigurationOutputReference | MwaaEnvironmentNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1193,14 +1193,14 @@ export function mwaaEnvironmentNetworkConfigurationToHclTerraform(struct?: MwaaE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwaaEnvironmentNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1234,7 +1234,7 @@ export class MwaaEnvironmentNetworkConfigurationOutputReference extends cdktf.Co
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1247,7 +1247,7 @@ export class MwaaEnvironmentNetworkConfigurationOutputReference extends cdktf.Co
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -1272,39 +1272,39 @@ export interface MwaaEnvironmentTimeouts {
   readonly update?: string;
 }
 
-export function mwaaEnvironmentTimeoutsToTerraform(struct?: MwaaEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mwaaEnvironmentTimeoutsToTerraform(struct?: MwaaEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mwaaEnvironmentTimeoutsToHclTerraform(struct?: MwaaEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mwaaEnvironmentTimeoutsToHclTerraform(struct?: MwaaEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1315,19 +1315,19 @@ export function mwaaEnvironmentTimeoutsToHclTerraform(struct?: MwaaEnvironmentTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwaaEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MwaaEnvironmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MwaaEnvironmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MwaaEnvironmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1348,7 +1348,7 @@ export class MwaaEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MwaaEnvironmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MwaaEnvironmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1356,7 +1356,7 @@ export class MwaaEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1421,7 +1421,7 @@ export class MwaaEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment aws_mwaa_environment}
 */
-export class MwaaEnvironment extends cdktf.TerraformResource {
+export class MwaaEnvironment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1432,14 +1432,14 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MwaaEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MwaaEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwaaEnvironment to import
   * @param importFromId The id of the existing MwaaEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/mwaa_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwaaEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_mwaa_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_mwaa_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -2017,33 +2017,33 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      airflow_configuration_options: cdktf.hashMapper(cdktf.stringToTerraform)(this._airflowConfigurationOptions),
-      airflow_version: cdktf.stringToTerraform(this._airflowVersion),
-      dag_s3_path: cdktf.stringToTerraform(this._dagS3Path),
-      endpoint_management: cdktf.stringToTerraform(this._endpointManagement),
-      environment_class: cdktf.stringToTerraform(this._environmentClass),
-      execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key: cdktf.stringToTerraform(this._kmsKey),
-      max_webservers: cdktf.numberToTerraform(this._maxWebservers),
-      max_workers: cdktf.numberToTerraform(this._maxWorkers),
-      min_webservers: cdktf.numberToTerraform(this._minWebservers),
-      min_workers: cdktf.numberToTerraform(this._minWorkers),
-      name: cdktf.stringToTerraform(this._name),
-      plugins_s3_object_version: cdktf.stringToTerraform(this._pluginsS3ObjectVersion),
-      plugins_s3_path: cdktf.stringToTerraform(this._pluginsS3Path),
-      region: cdktf.stringToTerraform(this._region),
-      requirements_s3_object_version: cdktf.stringToTerraform(this._requirementsS3ObjectVersion),
-      requirements_s3_path: cdktf.stringToTerraform(this._requirementsS3Path),
-      schedulers: cdktf.numberToTerraform(this._schedulers),
-      source_bucket_arn: cdktf.stringToTerraform(this._sourceBucketArn),
-      startup_script_s3_object_version: cdktf.stringToTerraform(this._startupScriptS3ObjectVersion),
-      startup_script_s3_path: cdktf.stringToTerraform(this._startupScriptS3Path),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      webserver_access_mode: cdktf.stringToTerraform(this._webserverAccessMode),
-      weekly_maintenance_window_start: cdktf.stringToTerraform(this._weeklyMaintenanceWindowStart),
-      worker_replacement_strategy: cdktf.stringToTerraform(this._workerReplacementStrategy),
+      airflow_configuration_options: cdktn.hashMapper(cdktn.stringToTerraform)(this._airflowConfigurationOptions),
+      airflow_version: cdktn.stringToTerraform(this._airflowVersion),
+      dag_s3_path: cdktn.stringToTerraform(this._dagS3Path),
+      endpoint_management: cdktn.stringToTerraform(this._endpointManagement),
+      environment_class: cdktn.stringToTerraform(this._environmentClass),
+      execution_role_arn: cdktn.stringToTerraform(this._executionRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key: cdktn.stringToTerraform(this._kmsKey),
+      max_webservers: cdktn.numberToTerraform(this._maxWebservers),
+      max_workers: cdktn.numberToTerraform(this._maxWorkers),
+      min_webservers: cdktn.numberToTerraform(this._minWebservers),
+      min_workers: cdktn.numberToTerraform(this._minWorkers),
+      name: cdktn.stringToTerraform(this._name),
+      plugins_s3_object_version: cdktn.stringToTerraform(this._pluginsS3ObjectVersion),
+      plugins_s3_path: cdktn.stringToTerraform(this._pluginsS3Path),
+      region: cdktn.stringToTerraform(this._region),
+      requirements_s3_object_version: cdktn.stringToTerraform(this._requirementsS3ObjectVersion),
+      requirements_s3_path: cdktn.stringToTerraform(this._requirementsS3Path),
+      schedulers: cdktn.numberToTerraform(this._schedulers),
+      source_bucket_arn: cdktn.stringToTerraform(this._sourceBucketArn),
+      startup_script_s3_object_version: cdktn.stringToTerraform(this._startupScriptS3ObjectVersion),
+      startup_script_s3_path: cdktn.stringToTerraform(this._startupScriptS3Path),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      webserver_access_mode: cdktn.stringToTerraform(this._webserverAccessMode),
+      weekly_maintenance_window_start: cdktn.stringToTerraform(this._weeklyMaintenanceWindowStart),
+      worker_replacement_strategy: cdktn.stringToTerraform(this._workerReplacementStrategy),
       logging_configuration: mwaaEnvironmentLoggingConfigurationToTerraform(this._loggingConfiguration.internalValue),
       network_configuration: mwaaEnvironmentNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
       timeouts: mwaaEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
@@ -2053,163 +2053,163 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       airflow_configuration_options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._airflowConfigurationOptions),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._airflowConfigurationOptions),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       airflow_version: {
-        value: cdktf.stringToHclTerraform(this._airflowVersion),
+        value: cdktn.stringToHclTerraform(this._airflowVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dag_s3_path: {
-        value: cdktf.stringToHclTerraform(this._dagS3Path),
+        value: cdktn.stringToHclTerraform(this._dagS3Path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_management: {
-        value: cdktf.stringToHclTerraform(this._endpointManagement),
+        value: cdktn.stringToHclTerraform(this._endpointManagement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       environment_class: {
-        value: cdktf.stringToHclTerraform(this._environmentClass),
+        value: cdktn.stringToHclTerraform(this._environmentClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       execution_role_arn: {
-        value: cdktf.stringToHclTerraform(this._executionRoleArn),
+        value: cdktn.stringToHclTerraform(this._executionRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key: {
-        value: cdktf.stringToHclTerraform(this._kmsKey),
+        value: cdktn.stringToHclTerraform(this._kmsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_webservers: {
-        value: cdktf.numberToHclTerraform(this._maxWebservers),
+        value: cdktn.numberToHclTerraform(this._maxWebservers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_workers: {
-        value: cdktf.numberToHclTerraform(this._maxWorkers),
+        value: cdktn.numberToHclTerraform(this._maxWorkers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_webservers: {
-        value: cdktf.numberToHclTerraform(this._minWebservers),
+        value: cdktn.numberToHclTerraform(this._minWebservers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_workers: {
-        value: cdktf.numberToHclTerraform(this._minWorkers),
+        value: cdktn.numberToHclTerraform(this._minWorkers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plugins_s3_object_version: {
-        value: cdktf.stringToHclTerraform(this._pluginsS3ObjectVersion),
+        value: cdktn.stringToHclTerraform(this._pluginsS3ObjectVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plugins_s3_path: {
-        value: cdktf.stringToHclTerraform(this._pluginsS3Path),
+        value: cdktn.stringToHclTerraform(this._pluginsS3Path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requirements_s3_object_version: {
-        value: cdktf.stringToHclTerraform(this._requirementsS3ObjectVersion),
+        value: cdktn.stringToHclTerraform(this._requirementsS3ObjectVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requirements_s3_path: {
-        value: cdktf.stringToHclTerraform(this._requirementsS3Path),
+        value: cdktn.stringToHclTerraform(this._requirementsS3Path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedulers: {
-        value: cdktf.numberToHclTerraform(this._schedulers),
+        value: cdktn.numberToHclTerraform(this._schedulers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       source_bucket_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceBucketArn),
+        value: cdktn.stringToHclTerraform(this._sourceBucketArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       startup_script_s3_object_version: {
-        value: cdktf.stringToHclTerraform(this._startupScriptS3ObjectVersion),
+        value: cdktn.stringToHclTerraform(this._startupScriptS3ObjectVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       startup_script_s3_path: {
-        value: cdktf.stringToHclTerraform(this._startupScriptS3Path),
+        value: cdktn.stringToHclTerraform(this._startupScriptS3Path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       webserver_access_mode: {
-        value: cdktf.stringToHclTerraform(this._webserverAccessMode),
+        value: cdktn.stringToHclTerraform(this._webserverAccessMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       weekly_maintenance_window_start: {
-        value: cdktf.stringToHclTerraform(this._weeklyMaintenanceWindowStart),
+        value: cdktn.stringToHclTerraform(this._weeklyMaintenanceWindowStart),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       worker_replacement_strategy: {
-        value: cdktf.stringToHclTerraform(this._workerReplacementStrategy),
+        value: cdktn.stringToHclTerraform(this._workerReplacementStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

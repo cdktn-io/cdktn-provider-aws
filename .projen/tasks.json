@@ -137,7 +137,7 @@
       },
       "steps": [
         {
-          "exec": "mkdir -p src && rm -rf ./src/* && cdktf get && cp -R .gen/providers/aws/* ./src/ && cp .gen/versions.json ./src/version.json"
+          "exec": "mkdir -p src && rm -rf ./src/* && cdktn get && cp -R .gen/providers/aws/* ./src/ && cp .gen/versions.json ./src/version.json"
         },
         {
           "spawn": "default"
@@ -350,7 +350,7 @@
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @action-validator/cli @action-validator/core @actions/core @cdktn/provider-project @types/node cdktf-cli cdktf commit-and-tag-version constructs dot-prop jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii projen semver typescript"
+          "exec": "yarn upgrade @action-validator/cli @action-validator/core @actions/core @cdktn/provider-project @types/node cdktn-cli cdktn commit-and-tag-version constructs dot-prop jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii projen semver typescript"
         },
         {
           "exec": "npx projen"

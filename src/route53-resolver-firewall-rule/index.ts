@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53ResolverFirewallRuleConfig extends cdktf.TerraformMetaArguments {
+export interface Route53ResolverFirewallRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_firewall_rule#action Route53ResolverFirewallRule#action}
   */
@@ -82,7 +82,7 @@ export interface Route53ResolverFirewallRuleConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule}
 */
-export class Route53ResolverFirewallRule extends cdktf.TerraformResource {
+export class Route53ResolverFirewallRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -93,14 +93,14 @@ export class Route53ResolverFirewallRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53ResolverFirewallRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53ResolverFirewallRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53ResolverFirewallRule to import
   * @param importFromId The id of the existing Route53ResolverFirewallRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_resolver_firewall_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53ResolverFirewallRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_firewall_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_firewall_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -390,112 +390,112 @@ export class Route53ResolverFirewallRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      block_override_dns_type: cdktf.stringToTerraform(this._blockOverrideDnsType),
-      block_override_domain: cdktf.stringToTerraform(this._blockOverrideDomain),
-      block_override_ttl: cdktf.numberToTerraform(this._blockOverrideTtl),
-      block_response: cdktf.stringToTerraform(this._blockResponse),
-      confidence_threshold: cdktf.stringToTerraform(this._confidenceThreshold),
-      dns_threat_protection: cdktf.stringToTerraform(this._dnsThreatProtection),
-      firewall_domain_list_id: cdktf.stringToTerraform(this._firewallDomainListId),
-      firewall_domain_redirection_action: cdktf.stringToTerraform(this._firewallDomainRedirectionAction),
-      firewall_rule_group_id: cdktf.stringToTerraform(this._firewallRuleGroupId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      priority: cdktf.numberToTerraform(this._priority),
-      q_type: cdktf.stringToTerraform(this._qType),
-      region: cdktf.stringToTerraform(this._region),
+      action: cdktn.stringToTerraform(this._action),
+      block_override_dns_type: cdktn.stringToTerraform(this._blockOverrideDnsType),
+      block_override_domain: cdktn.stringToTerraform(this._blockOverrideDomain),
+      block_override_ttl: cdktn.numberToTerraform(this._blockOverrideTtl),
+      block_response: cdktn.stringToTerraform(this._blockResponse),
+      confidence_threshold: cdktn.stringToTerraform(this._confidenceThreshold),
+      dns_threat_protection: cdktn.stringToTerraform(this._dnsThreatProtection),
+      firewall_domain_list_id: cdktn.stringToTerraform(this._firewallDomainListId),
+      firewall_domain_redirection_action: cdktn.stringToTerraform(this._firewallDomainRedirectionAction),
+      firewall_rule_group_id: cdktn.stringToTerraform(this._firewallRuleGroupId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      priority: cdktn.numberToTerraform(this._priority),
+      q_type: cdktn.stringToTerraform(this._qType),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       block_override_dns_type: {
-        value: cdktf.stringToHclTerraform(this._blockOverrideDnsType),
+        value: cdktn.stringToHclTerraform(this._blockOverrideDnsType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       block_override_domain: {
-        value: cdktf.stringToHclTerraform(this._blockOverrideDomain),
+        value: cdktn.stringToHclTerraform(this._blockOverrideDomain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       block_override_ttl: {
-        value: cdktf.numberToHclTerraform(this._blockOverrideTtl),
+        value: cdktn.numberToHclTerraform(this._blockOverrideTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       block_response: {
-        value: cdktf.stringToHclTerraform(this._blockResponse),
+        value: cdktn.stringToHclTerraform(this._blockResponse),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       confidence_threshold: {
-        value: cdktf.stringToHclTerraform(this._confidenceThreshold),
+        value: cdktn.stringToHclTerraform(this._confidenceThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_threat_protection: {
-        value: cdktf.stringToHclTerraform(this._dnsThreatProtection),
+        value: cdktn.stringToHclTerraform(this._dnsThreatProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firewall_domain_list_id: {
-        value: cdktf.stringToHclTerraform(this._firewallDomainListId),
+        value: cdktn.stringToHclTerraform(this._firewallDomainListId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firewall_domain_redirection_action: {
-        value: cdktf.stringToHclTerraform(this._firewallDomainRedirectionAction),
+        value: cdktn.stringToHclTerraform(this._firewallDomainRedirectionAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firewall_rule_group_id: {
-        value: cdktf.stringToHclTerraform(this._firewallRuleGroupId),
+        value: cdktn.stringToHclTerraform(this._firewallRuleGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       q_type: {
-        value: cdktf.stringToHclTerraform(this._qType),
+        value: cdktn.stringToHclTerraform(this._qType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

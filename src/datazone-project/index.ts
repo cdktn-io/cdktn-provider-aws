@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatazoneProjectConfig extends cdktf.TerraformMetaArguments {
+export interface DatazoneProjectConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_project#description DatazoneProject#description}
   */
@@ -37,7 +37,7 @@ export interface DatazoneProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_project#skip_deletion_check DatazoneProject#skip_deletion_check}
   */
-  readonly skipDeletionCheck?: boolean | cdktf.IResolvable;
+  readonly skipDeletionCheck?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -49,8 +49,8 @@ export interface DatazoneProjectFailureReasons {
 }
 
 export function datazoneProjectFailureReasonsToTerraform(struct?: DatazoneProjectFailureReasons): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -59,8 +59,8 @@ export function datazoneProjectFailureReasonsToTerraform(struct?: DatazoneProjec
 
 
 export function datazoneProjectFailureReasonsToHclTerraform(struct?: DatazoneProjectFailureReasons): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -68,7 +68,7 @@ export function datazoneProjectFailureReasonsToHclTerraform(struct?: DatazonePro
   return attrs;
 }
 
-export class DatazoneProjectFailureReasonsOutputReference extends cdktf.ComplexObject {
+export class DatazoneProjectFailureReasonsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -77,7 +77,7 @@ export class DatazoneProjectFailureReasonsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -107,14 +107,14 @@ export class DatazoneProjectFailureReasonsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DatazoneProjectFailureReasonsList extends cdktf.ComplexList {
+export class DatazoneProjectFailureReasonsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -140,32 +140,32 @@ export interface DatazoneProjectTimeouts {
   readonly delete?: string;
 }
 
-export function datazoneProjectTimeoutsToTerraform(struct?: DatazoneProjectTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneProjectTimeoutsToTerraform(struct?: DatazoneProjectTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function datazoneProjectTimeoutsToHclTerraform(struct?: DatazoneProjectTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneProjectTimeoutsToHclTerraform(struct?: DatazoneProjectTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -176,19 +176,19 @@ export function datazoneProjectTimeoutsToHclTerraform(struct?: DatazoneProjectTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneProjectTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatazoneProjectTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatazoneProjectTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneProjectTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -205,14 +205,14 @@ export class DatazoneProjectTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneProjectTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneProjectTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -260,7 +260,7 @@ export class DatazoneProjectTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_project aws_datazone_project}
 */
-export class DatazoneProject extends cdktf.TerraformResource {
+export class DatazoneProject extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -271,14 +271,14 @@ export class DatazoneProject extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatazoneProject resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatazoneProject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneProject to import
   * @param importFromId The id of the existing DatazoneProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneProject to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_project", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_project", importId: importFromId, provider });
       }
 
   // ===========
@@ -427,11 +427,11 @@ export class DatazoneProject extends cdktf.TerraformResource {
   }
 
   // skip_deletion_check - computed: false, optional: true, required: false
-  private _skipDeletionCheck?: boolean | cdktf.IResolvable; 
+  private _skipDeletionCheck?: boolean | cdktn.IResolvable; 
   public get skipDeletionCheck() {
     return this.getBooleanAttribute('skip_deletion_check');
   }
-  public set skipDeletionCheck(value: boolean | cdktf.IResolvable) {
+  public set skipDeletionCheck(value: boolean | cdktn.IResolvable) {
     this._skipDeletionCheck = value;
   }
   public resetSkipDeletionCheck() {
@@ -464,12 +464,12 @@ export class DatazoneProject extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      domain_identifier: cdktf.stringToTerraform(this._domainIdentifier),
-      glossary_terms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._glossaryTerms),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      skip_deletion_check: cdktf.booleanToTerraform(this._skipDeletionCheck),
+      description: cdktn.stringToTerraform(this._description),
+      domain_identifier: cdktn.stringToTerraform(this._domainIdentifier),
+      glossary_terms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._glossaryTerms),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      skip_deletion_check: cdktn.booleanToTerraform(this._skipDeletionCheck),
       timeouts: datazoneProjectTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -477,37 +477,37 @@ export class DatazoneProject extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_identifier: {
-        value: cdktf.stringToHclTerraform(this._domainIdentifier),
+        value: cdktn.stringToHclTerraform(this._domainIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       glossary_terms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._glossaryTerms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._glossaryTerms),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_deletion_check: {
-        value: cdktf.booleanToHclTerraform(this._skipDeletionCheck),
+        value: cdktn.booleanToHclTerraform(this._skipDeletionCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

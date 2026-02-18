@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BillingViewConfig extends cdktf.TerraformMetaArguments {
+export interface BillingViewConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#description BillingView#description}
   */
@@ -33,7 +33,7 @@ export interface BillingViewConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#data_filter_expression BillingView#data_filter_expression}
   */
-  readonly dataFilterExpression?: BillingViewDataFilterExpression[] | cdktf.IResolvable;
+  readonly dataFilterExpression?: BillingViewDataFilterExpression[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -52,32 +52,32 @@ export interface BillingViewDataFilterExpressionDimensions {
   readonly values: string[];
 }
 
-export function billingViewDataFilterExpressionDimensionsToTerraform(struct?: BillingViewDataFilterExpressionDimensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewDataFilterExpressionDimensionsToTerraform(struct?: BillingViewDataFilterExpressionDimensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function billingViewDataFilterExpressionDimensionsToHclTerraform(struct?: BillingViewDataFilterExpressionDimensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewDataFilterExpressionDimensionsToHclTerraform(struct?: BillingViewDataFilterExpressionDimensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -88,9 +88,9 @@ export function billingViewDataFilterExpressionDimensionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingViewDataFilterExpressionDimensionsOutputReference extends cdktf.ComplexObject {
+export class BillingViewDataFilterExpressionDimensionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -98,11 +98,11 @@ export class BillingViewDataFilterExpressionDimensionsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BillingViewDataFilterExpressionDimensions | cdktf.IResolvable | undefined {
+  public get internalValue(): BillingViewDataFilterExpressionDimensions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -119,14 +119,14 @@ export class BillingViewDataFilterExpressionDimensionsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BillingViewDataFilterExpressionDimensions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BillingViewDataFilterExpressionDimensions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -165,15 +165,15 @@ export class BillingViewDataFilterExpressionDimensionsOutputReference extends cd
   }
 }
 
-export class BillingViewDataFilterExpressionDimensionsList extends cdktf.ComplexList {
-  public internalValue? : BillingViewDataFilterExpressionDimensions[] | cdktf.IResolvable
+export class BillingViewDataFilterExpressionDimensionsList extends cdktn.ComplexList {
+  public internalValue? : BillingViewDataFilterExpressionDimensions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -195,32 +195,32 @@ export interface BillingViewDataFilterExpressionTags {
   readonly values: string[];
 }
 
-export function billingViewDataFilterExpressionTagsToTerraform(struct?: BillingViewDataFilterExpressionTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewDataFilterExpressionTagsToTerraform(struct?: BillingViewDataFilterExpressionTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function billingViewDataFilterExpressionTagsToHclTerraform(struct?: BillingViewDataFilterExpressionTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewDataFilterExpressionTagsToHclTerraform(struct?: BillingViewDataFilterExpressionTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -231,9 +231,9 @@ export function billingViewDataFilterExpressionTagsToHclTerraform(struct?: Billi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingViewDataFilterExpressionTagsOutputReference extends cdktf.ComplexObject {
+export class BillingViewDataFilterExpressionTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -241,11 +241,11 @@ export class BillingViewDataFilterExpressionTagsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BillingViewDataFilterExpressionTags | cdktf.IResolvable | undefined {
+  public get internalValue(): BillingViewDataFilterExpressionTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -262,14 +262,14 @@ export class BillingViewDataFilterExpressionTagsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BillingViewDataFilterExpressionTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BillingViewDataFilterExpressionTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -308,15 +308,15 @@ export class BillingViewDataFilterExpressionTagsOutputReference extends cdktf.Co
   }
 }
 
-export class BillingViewDataFilterExpressionTagsList extends cdktf.ComplexList {
-  public internalValue? : BillingViewDataFilterExpressionTags[] | cdktf.IResolvable
+export class BillingViewDataFilterExpressionTagsList extends cdktn.ComplexList {
+  public internalValue? : BillingViewDataFilterExpressionTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -338,32 +338,32 @@ export interface BillingViewDataFilterExpressionTimeRange {
   readonly endDateInclusive: string;
 }
 
-export function billingViewDataFilterExpressionTimeRangeToTerraform(struct?: BillingViewDataFilterExpressionTimeRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewDataFilterExpressionTimeRangeToTerraform(struct?: BillingViewDataFilterExpressionTimeRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    begin_date_inclusive: cdktf.stringToTerraform(struct!.beginDateInclusive),
-    end_date_inclusive: cdktf.stringToTerraform(struct!.endDateInclusive),
+    begin_date_inclusive: cdktn.stringToTerraform(struct!.beginDateInclusive),
+    end_date_inclusive: cdktn.stringToTerraform(struct!.endDateInclusive),
   }
 }
 
 
-export function billingViewDataFilterExpressionTimeRangeToHclTerraform(struct?: BillingViewDataFilterExpressionTimeRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewDataFilterExpressionTimeRangeToHclTerraform(struct?: BillingViewDataFilterExpressionTimeRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     begin_date_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.beginDateInclusive),
+      value: cdktn.stringToHclTerraform(struct!.beginDateInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     end_date_inclusive: {
-      value: cdktf.stringToHclTerraform(struct!.endDateInclusive),
+      value: cdktn.stringToHclTerraform(struct!.endDateInclusive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -374,9 +374,9 @@ export function billingViewDataFilterExpressionTimeRangeToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingViewDataFilterExpressionTimeRangeOutputReference extends cdktf.ComplexObject {
+export class BillingViewDataFilterExpressionTimeRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -384,11 +384,11 @@ export class BillingViewDataFilterExpressionTimeRangeOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BillingViewDataFilterExpressionTimeRange | cdktf.IResolvable | undefined {
+  public get internalValue(): BillingViewDataFilterExpressionTimeRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -405,14 +405,14 @@ export class BillingViewDataFilterExpressionTimeRangeOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BillingViewDataFilterExpressionTimeRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BillingViewDataFilterExpressionTimeRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._beginDateInclusive = undefined;
       this._endDateInclusive = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -451,15 +451,15 @@ export class BillingViewDataFilterExpressionTimeRangeOutputReference extends cdk
   }
 }
 
-export class BillingViewDataFilterExpressionTimeRangeList extends cdktf.ComplexList {
-  public internalValue? : BillingViewDataFilterExpressionTimeRange[] | cdktf.IResolvable
+export class BillingViewDataFilterExpressionTimeRangeList extends cdktn.ComplexList {
+  public internalValue? : BillingViewDataFilterExpressionTimeRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -476,54 +476,54 @@ export interface BillingViewDataFilterExpression {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#dimensions BillingView#dimensions}
   */
-  readonly dimensions?: BillingViewDataFilterExpressionDimensions[] | cdktf.IResolvable;
+  readonly dimensions?: BillingViewDataFilterExpressionDimensions[] | cdktn.IResolvable;
   /**
   * tags block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#tags BillingView#tags}
   */
-  readonly tags?: BillingViewDataFilterExpressionTags[] | cdktf.IResolvable;
+  readonly tags?: BillingViewDataFilterExpressionTags[] | cdktn.IResolvable;
   /**
   * time_range block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#time_range BillingView#time_range}
   */
-  readonly timeRange?: BillingViewDataFilterExpressionTimeRange[] | cdktf.IResolvable;
+  readonly timeRange?: BillingViewDataFilterExpressionTimeRange[] | cdktn.IResolvable;
 }
 
-export function billingViewDataFilterExpressionToTerraform(struct?: BillingViewDataFilterExpression | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewDataFilterExpressionToTerraform(struct?: BillingViewDataFilterExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimensions: cdktf.listMapper(billingViewDataFilterExpressionDimensionsToTerraform, true)(struct!.dimensions),
-    tags: cdktf.listMapper(billingViewDataFilterExpressionTagsToTerraform, true)(struct!.tags),
-    time_range: cdktf.listMapper(billingViewDataFilterExpressionTimeRangeToTerraform, true)(struct!.timeRange),
+    dimensions: cdktn.listMapper(billingViewDataFilterExpressionDimensionsToTerraform, true)(struct!.dimensions),
+    tags: cdktn.listMapper(billingViewDataFilterExpressionTagsToTerraform, true)(struct!.tags),
+    time_range: cdktn.listMapper(billingViewDataFilterExpressionTimeRangeToTerraform, true)(struct!.timeRange),
   }
 }
 
 
-export function billingViewDataFilterExpressionToHclTerraform(struct?: BillingViewDataFilterExpression | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewDataFilterExpressionToHclTerraform(struct?: BillingViewDataFilterExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dimensions: {
-      value: cdktf.listMapperHcl(billingViewDataFilterExpressionDimensionsToHclTerraform, true)(struct!.dimensions),
+      value: cdktn.listMapperHcl(billingViewDataFilterExpressionDimensionsToHclTerraform, true)(struct!.dimensions),
       isBlock: true,
       type: "list",
       storageClassType: "BillingViewDataFilterExpressionDimensionsList",
     },
     tags: {
-      value: cdktf.listMapperHcl(billingViewDataFilterExpressionTagsToHclTerraform, true)(struct!.tags),
+      value: cdktn.listMapperHcl(billingViewDataFilterExpressionTagsToHclTerraform, true)(struct!.tags),
       isBlock: true,
       type: "list",
       storageClassType: "BillingViewDataFilterExpressionTagsList",
     },
     time_range: {
-      value: cdktf.listMapperHcl(billingViewDataFilterExpressionTimeRangeToHclTerraform, true)(struct!.timeRange),
+      value: cdktn.listMapperHcl(billingViewDataFilterExpressionTimeRangeToHclTerraform, true)(struct!.timeRange),
       isBlock: true,
       type: "list",
       storageClassType: "BillingViewDataFilterExpressionTimeRangeList",
@@ -534,9 +534,9 @@ export function billingViewDataFilterExpressionToHclTerraform(struct?: BillingVi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingViewDataFilterExpressionOutputReference extends cdktf.ComplexObject {
+export class BillingViewDataFilterExpressionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -544,11 +544,11 @@ export class BillingViewDataFilterExpressionOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BillingViewDataFilterExpression | cdktf.IResolvable | undefined {
+  public get internalValue(): BillingViewDataFilterExpression | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -569,7 +569,7 @@ export class BillingViewDataFilterExpressionOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BillingViewDataFilterExpression | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BillingViewDataFilterExpression | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -577,7 +577,7 @@ export class BillingViewDataFilterExpressionOutputReference extends cdktf.Comple
       this._tags.internalValue = undefined;
       this._timeRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -595,7 +595,7 @@ export class BillingViewDataFilterExpressionOutputReference extends cdktf.Comple
   public get dimensions() {
     return this._dimensions;
   }
-  public putDimensions(value: BillingViewDataFilterExpressionDimensions[] | cdktf.IResolvable) {
+  public putDimensions(value: BillingViewDataFilterExpressionDimensions[] | cdktn.IResolvable) {
     this._dimensions.internalValue = value;
   }
   public resetDimensions() {
@@ -611,7 +611,7 @@ export class BillingViewDataFilterExpressionOutputReference extends cdktf.Comple
   public get tags() {
     return this._tags;
   }
-  public putTags(value: BillingViewDataFilterExpressionTags[] | cdktf.IResolvable) {
+  public putTags(value: BillingViewDataFilterExpressionTags[] | cdktn.IResolvable) {
     this._tags.internalValue = value;
   }
   public resetTags() {
@@ -627,7 +627,7 @@ export class BillingViewDataFilterExpressionOutputReference extends cdktf.Comple
   public get timeRange() {
     return this._timeRange;
   }
-  public putTimeRange(value: BillingViewDataFilterExpressionTimeRange[] | cdktf.IResolvable) {
+  public putTimeRange(value: BillingViewDataFilterExpressionTimeRange[] | cdktn.IResolvable) {
     this._timeRange.internalValue = value;
   }
   public resetTimeRange() {
@@ -639,15 +639,15 @@ export class BillingViewDataFilterExpressionOutputReference extends cdktf.Comple
   }
 }
 
-export class BillingViewDataFilterExpressionList extends cdktf.ComplexList {
-  public internalValue? : BillingViewDataFilterExpression[] | cdktf.IResolvable
+export class BillingViewDataFilterExpressionList extends cdktn.ComplexList {
+  public internalValue? : BillingViewDataFilterExpression[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -679,39 +679,39 @@ export interface BillingViewTimeouts {
   readonly update?: string;
 }
 
-export function billingViewTimeoutsToTerraform(struct?: BillingViewTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewTimeoutsToTerraform(struct?: BillingViewTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function billingViewTimeoutsToHclTerraform(struct?: BillingViewTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingViewTimeoutsToHclTerraform(struct?: BillingViewTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -722,19 +722,19 @@ export function billingViewTimeoutsToHclTerraform(struct?: BillingViewTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingViewTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BillingViewTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BillingViewTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BillingViewTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -755,7 +755,7 @@ export class BillingViewTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BillingViewTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BillingViewTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -763,7 +763,7 @@ export class BillingViewTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -828,7 +828,7 @@ export class BillingViewTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view aws_billing_view}
 */
-export class BillingView extends cdktf.TerraformResource {
+export class BillingView extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -839,14 +839,14 @@ export class BillingView extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BillingView resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BillingView resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BillingView to import
   * @param importFromId The id of the existing BillingView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/billing_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BillingView to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_billing_view", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_billing_view", importId: importFromId, provider });
       }
 
   // ===========
@@ -985,7 +985,7 @@ export class BillingView extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1005,7 +1005,7 @@ export class BillingView extends cdktf.TerraformResource {
   public get dataFilterExpression() {
     return this._dataFilterExpression;
   }
-  public putDataFilterExpression(value: BillingViewDataFilterExpression[] | cdktf.IResolvable) {
+  public putDataFilterExpression(value: BillingViewDataFilterExpression[] | cdktn.IResolvable) {
     this._dataFilterExpression.internalValue = value;
   }
   public resetDataFilterExpression() {
@@ -1038,11 +1038,11 @@ export class BillingView extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      source_views: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourceViews),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      data_filter_expression: cdktf.listMapper(billingViewDataFilterExpressionToTerraform, true)(this._dataFilterExpression.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      source_views: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sourceViews),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      data_filter_expression: cdktn.listMapper(billingViewDataFilterExpressionToTerraform, true)(this._dataFilterExpression.internalValue),
       timeouts: billingViewTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1050,31 +1050,31 @@ export class BillingView extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_views: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sourceViews),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sourceViews),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       data_filter_expression: {
-        value: cdktf.listMapperHcl(billingViewDataFilterExpressionToHclTerraform, true)(this._dataFilterExpression.internalValue),
+        value: cdktn.listMapperHcl(billingViewDataFilterExpressionToHclTerraform, true)(this._dataFilterExpression.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BillingViewDataFilterExpressionList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkfirewallTlsInspectionConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkfirewallTlsInspectionConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#description NetworkfirewallTlsInspectionConfiguration#description}
   */
@@ -19,7 +19,7 @@ export interface NetworkfirewallTlsInspectionConfigurationConfig extends cdktf.T
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#encryption_configuration NetworkfirewallTlsInspectionConfiguration#encryption_configuration}
   */
-  readonly encryptionConfiguration?: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration[] | cdktf.IResolvable;
+  readonly encryptionConfiguration?: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#name NetworkfirewallTlsInspectionConfiguration#name}
   */
@@ -45,14 +45,14 @@ export interface NetworkfirewallTlsInspectionConfigurationConfig extends cdktf.T
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#tls_inspection_configuration NetworkfirewallTlsInspectionConfiguration#tls_inspection_configuration}
   */
-  readonly tlsInspectionConfiguration?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration[] | cdktf.IResolvable;
+  readonly tlsInspectionConfiguration?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration[] | cdktn.IResolvable;
 }
 export interface NetworkfirewallTlsInspectionConfigurationCertificateAuthority {
 }
 
 export function networkfirewallTlsInspectionConfigurationCertificateAuthorityToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationCertificateAuthority): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -61,8 +61,8 @@ export function networkfirewallTlsInspectionConfigurationCertificateAuthorityToT
 
 
 export function networkfirewallTlsInspectionConfigurationCertificateAuthorityToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationCertificateAuthority): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -70,7 +70,7 @@ export function networkfirewallTlsInspectionConfigurationCertificateAuthorityToH
   return attrs;
 }
 
-export class NetworkfirewallTlsInspectionConfigurationCertificateAuthorityOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationCertificateAuthorityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -79,7 +79,7 @@ export class NetworkfirewallTlsInspectionConfigurationCertificateAuthorityOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -119,14 +119,14 @@ export class NetworkfirewallTlsInspectionConfigurationCertificateAuthorityOutput
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationCertificateAuthorityList extends cdktf.ComplexList {
+export class NetworkfirewallTlsInspectionConfigurationCertificateAuthorityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -141,8 +141,8 @@ export interface NetworkfirewallTlsInspectionConfigurationCertificates {
 }
 
 export function networkfirewallTlsInspectionConfigurationCertificatesToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -151,8 +151,8 @@ export function networkfirewallTlsInspectionConfigurationCertificatesToTerraform
 
 
 export function networkfirewallTlsInspectionConfigurationCertificatesToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -160,7 +160,7 @@ export function networkfirewallTlsInspectionConfigurationCertificatesToHclTerraf
   return attrs;
 }
 
-export class NetworkfirewallTlsInspectionConfigurationCertificatesOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -169,7 +169,7 @@ export class NetworkfirewallTlsInspectionConfigurationCertificatesOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -209,14 +209,14 @@ export class NetworkfirewallTlsInspectionConfigurationCertificatesOutputReferenc
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationCertificatesList extends cdktf.ComplexList {
+export class NetworkfirewallTlsInspectionConfigurationCertificatesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -238,32 +238,32 @@ export interface NetworkfirewallTlsInspectionConfigurationEncryptionConfiguratio
   readonly type?: string;
 }
 
-export function networkfirewallTlsInspectionConfigurationEncryptionConfigurationToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationEncryptionConfigurationToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_id: cdktf.stringToTerraform(struct!.keyId),
-    type: cdktf.stringToTerraform(struct!.type),
+    key_id: cdktn.stringToTerraform(struct!.keyId),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationEncryptionConfigurationToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationEncryptionConfigurationToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyId),
+      value: cdktn.stringToHclTerraform(struct!.keyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -274,9 +274,9 @@ export function networkfirewallTlsInspectionConfigurationEncryptionConfiguration
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -284,11 +284,11 @@ export class NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -305,14 +305,14 @@ export class NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keyId = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -357,15 +357,15 @@ export class NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOut
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -397,39 +397,39 @@ export interface NetworkfirewallTlsInspectionConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function networkfirewallTlsInspectionConfigurationTimeoutsToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTimeoutsToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTimeoutsToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTimeoutsToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -440,19 +440,19 @@ export function networkfirewallTlsInspectionConfigurationTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -473,7 +473,7 @@ export class NetworkfirewallTlsInspectionConfigurationTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -481,7 +481,7 @@ export class NetworkfirewallTlsInspectionConfigurationTimeoutsOutputReference ex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -553,32 +553,32 @@ export interface NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigura
   readonly unknownStatusAction?: string;
 }
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    revoked_status_action: cdktf.stringToTerraform(struct!.revokedStatusAction),
-    unknown_status_action: cdktf.stringToTerraform(struct!.unknownStatusAction),
+    revoked_status_action: cdktn.stringToTerraform(struct!.revokedStatusAction),
+    unknown_status_action: cdktn.stringToTerraform(struct!.unknownStatusAction),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     revoked_status_action: {
-      value: cdktf.stringToHclTerraform(struct!.revokedStatusAction),
+      value: cdktn.stringToHclTerraform(struct!.revokedStatusAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unknown_status_action: {
-      value: cdktf.stringToHclTerraform(struct!.unknownStatusAction),
+      value: cdktn.stringToHclTerraform(struct!.unknownStatusAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -589,9 +589,9 @@ export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -599,11 +599,11 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -620,14 +620,14 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._revokedStatusAction = undefined;
       this._unknownStatusAction = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -672,15 +672,15 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -698,25 +698,25 @@ export interface NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigura
   readonly addressDefinition: string;
 }
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_definition: cdktf.stringToTerraform(struct!.addressDefinition),
+    address_definition: cdktn.stringToTerraform(struct!.addressDefinition),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_definition: {
-      value: cdktf.stringToHclTerraform(struct!.addressDefinition),
+      value: cdktn.stringToHclTerraform(struct!.addressDefinition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -727,9 +727,9 @@ export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -737,11 +737,11 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -754,13 +754,13 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._addressDefinition = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -785,15 +785,15 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -815,32 +815,32 @@ export interface NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigura
   readonly toPort: number;
 }
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -851,9 +851,9 @@ export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -861,11 +861,11 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -882,14 +882,14 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fromPort = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -928,15 +928,15 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -954,25 +954,25 @@ export interface NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigura
   readonly addressDefinition: string;
 }
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_definition: cdktf.stringToTerraform(struct!.addressDefinition),
+    address_definition: cdktn.stringToTerraform(struct!.addressDefinition),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_definition: {
-      value: cdktf.stringToHclTerraform(struct!.addressDefinition),
+      value: cdktn.stringToHclTerraform(struct!.addressDefinition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -983,9 +983,9 @@ export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -993,11 +993,11 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1010,13 +1010,13 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._addressDefinition = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1041,15 +1041,15 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1071,32 +1071,32 @@ export interface NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigura
   readonly toPort: number;
 }
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1107,9 +1107,9 @@ export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1117,11 +1117,11 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1138,14 +1138,14 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fromPort = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1184,15 +1184,15 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1213,74 +1213,74 @@ export interface NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigura
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#destination NetworkfirewallTlsInspectionConfiguration#destination}
   */
-  readonly destination?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination[] | cdktf.IResolvable;
+  readonly destination?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination[] | cdktn.IResolvable;
   /**
   * destination_ports block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#destination_ports NetworkfirewallTlsInspectionConfiguration#destination_ports}
   */
-  readonly destinationPorts?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts[] | cdktf.IResolvable;
+  readonly destinationPorts?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts[] | cdktn.IResolvable;
   /**
   * source block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#source NetworkfirewallTlsInspectionConfiguration#source}
   */
-  readonly source?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource[] | cdktf.IResolvable;
+  readonly source?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource[] | cdktn.IResolvable;
   /**
   * source_ports block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#source_ports NetworkfirewallTlsInspectionConfiguration#source_ports}
   */
-  readonly sourcePorts?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts[] | cdktf.IResolvable;
+  readonly sourcePorts?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts[] | cdktn.IResolvable;
 }
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    protocols: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.protocols),
-    destination: cdktf.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationToTerraform, true)(struct!.destination),
-    destination_ports: cdktf.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsToTerraform, true)(struct!.destinationPorts),
-    source: cdktf.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceToTerraform, true)(struct!.source),
-    source_ports: cdktf.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsToTerraform, true)(struct!.sourcePorts),
+    protocols: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.protocols),
+    destination: cdktn.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationToTerraform, true)(struct!.destination),
+    destination_ports: cdktn.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsToTerraform, true)(struct!.destinationPorts),
+    source: cdktn.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceToTerraform, true)(struct!.source),
+    source_ports: cdktn.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsToTerraform, true)(struct!.sourcePorts),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     protocols: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.protocols),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.protocols),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
     },
     destination: {
-      value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationToHclTerraform, true)(struct!.destination),
+      value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationToHclTerraform, true)(struct!.destination),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationList",
     },
     destination_ports: {
-      value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsToHclTerraform, true)(struct!.destinationPorts),
+      value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsToHclTerraform, true)(struct!.destinationPorts),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsList",
     },
     source: {
-      value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceToHclTerraform, true)(struct!.source),
+      value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceToHclTerraform, true)(struct!.source),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceList",
     },
     source_ports: {
-      value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsToHclTerraform, true)(struct!.sourcePorts),
+      value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsToHclTerraform, true)(struct!.sourcePorts),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsList",
@@ -1291,9 +1291,9 @@ export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1301,11 +1301,11 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1334,7 +1334,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1344,7 +1344,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
       this._source.internalValue = undefined;
       this._sourcePorts.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1362,7 +1362,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   // protocols - computed: false, optional: false, required: true
   private _protocols?: number[]; 
   public get protocols() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('protocols')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('protocols')));
   }
   public set protocols(value: number[]) {
     this._protocols = value;
@@ -1377,7 +1377,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination[] | cdktf.IResolvable) {
+  public putDestination(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   public resetDestination() {
@@ -1393,7 +1393,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   public get destinationPorts() {
     return this._destinationPorts;
   }
-  public putDestinationPorts(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts[] | cdktf.IResolvable) {
+  public putDestinationPorts(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts[] | cdktn.IResolvable) {
     this._destinationPorts.internalValue = value;
   }
   public resetDestinationPorts() {
@@ -1409,7 +1409,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   public get source() {
     return this._source;
   }
-  public putSource(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource[] | cdktf.IResolvable) {
+  public putSource(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource[] | cdktn.IResolvable) {
     this._source.internalValue = value;
   }
   public resetSource() {
@@ -1425,7 +1425,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   public get sourcePorts() {
     return this._sourcePorts;
   }
-  public putSourcePorts(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts[] | cdktf.IResolvable) {
+  public putSourcePorts(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts[] | cdktn.IResolvable) {
     this._sourcePorts.internalValue = value;
   }
   public resetSourcePorts() {
@@ -1437,15 +1437,15 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1463,25 +1463,25 @@ export interface NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigura
   readonly resourceArn?: string;
 }
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    resource_arn: cdktn.stringToTerraform(struct!.resourceArn),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_arn: {
-      value: cdktf.stringToHclTerraform(struct!.resourceArn),
+      value: cdktn.stringToHclTerraform(struct!.resourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1492,9 +1492,9 @@ export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1502,11 +1502,11 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1519,13 +1519,13 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resourceArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1553,15 +1553,15 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1582,61 +1582,61 @@ export interface NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigura
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#check_certificate_revocation_status NetworkfirewallTlsInspectionConfiguration#check_certificate_revocation_status}
   */
-  readonly checkCertificateRevocationStatus?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus[] | cdktf.IResolvable;
+  readonly checkCertificateRevocationStatus?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus[] | cdktn.IResolvable;
   /**
   * scope block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#scope NetworkfirewallTlsInspectionConfiguration#scope}
   */
-  readonly scope?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope[] | cdktf.IResolvable;
+  readonly scope?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope[] | cdktn.IResolvable;
   /**
   * server_certificate block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#server_certificate NetworkfirewallTlsInspectionConfiguration#server_certificate}
   */
-  readonly serverCertificate?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate[] | cdktf.IResolvable;
+  readonly serverCertificate?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate[] | cdktn.IResolvable;
 }
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_authority_arn: cdktf.stringToTerraform(struct!.certificateAuthorityArn),
-    check_certificate_revocation_status: cdktf.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusToTerraform, true)(struct!.checkCertificateRevocationStatus),
-    scope: cdktf.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeToTerraform, true)(struct!.scope),
-    server_certificate: cdktf.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateToTerraform, true)(struct!.serverCertificate),
+    certificate_authority_arn: cdktn.stringToTerraform(struct!.certificateAuthorityArn),
+    check_certificate_revocation_status: cdktn.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusToTerraform, true)(struct!.checkCertificateRevocationStatus),
+    scope: cdktn.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeToTerraform, true)(struct!.scope),
+    server_certificate: cdktn.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateToTerraform, true)(struct!.serverCertificate),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_authority_arn: {
-      value: cdktf.stringToHclTerraform(struct!.certificateAuthorityArn),
+      value: cdktn.stringToHclTerraform(struct!.certificateAuthorityArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     check_certificate_revocation_status: {
-      value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusToHclTerraform, true)(struct!.checkCertificateRevocationStatus),
+      value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusToHclTerraform, true)(struct!.checkCertificateRevocationStatus),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusList",
     },
     scope: {
-      value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeToHclTerraform, true)(struct!.scope),
+      value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeToHclTerraform, true)(struct!.scope),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeList",
     },
     server_certificate: {
-      value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateToHclTerraform, true)(struct!.serverCertificate),
+      value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateToHclTerraform, true)(struct!.serverCertificate),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateList",
@@ -1647,9 +1647,9 @@ export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1657,11 +1657,11 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1686,7 +1686,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1695,7 +1695,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
       this._scope.internalValue = undefined;
       this._serverCertificate.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1730,7 +1730,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   public get checkCertificateRevocationStatus() {
     return this._checkCertificateRevocationStatus;
   }
-  public putCheckCertificateRevocationStatus(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus[] | cdktf.IResolvable) {
+  public putCheckCertificateRevocationStatus(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus[] | cdktn.IResolvable) {
     this._checkCertificateRevocationStatus.internalValue = value;
   }
   public resetCheckCertificateRevocationStatus() {
@@ -1746,7 +1746,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   public get scope() {
     return this._scope;
   }
-  public putScope(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope[] | cdktf.IResolvable) {
+  public putScope(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope[] | cdktn.IResolvable) {
     this._scope.internalValue = value;
   }
   public resetScope() {
@@ -1762,7 +1762,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   public get serverCertificate() {
     return this._serverCertificate;
   }
-  public putServerCertificate(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate[] | cdktf.IResolvable) {
+  public putServerCertificate(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate[] | cdktn.IResolvable) {
     this._serverCertificate.internalValue = value;
   }
   public resetServerCertificate() {
@@ -1774,15 +1774,15 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1799,28 +1799,28 @@ export interface NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigura
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#server_certificate_configuration NetworkfirewallTlsInspectionConfiguration#server_certificate_configuration}
   */
-  readonly serverCertificateConfiguration?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration[] | cdktf.IResolvable;
+  readonly serverCertificateConfiguration?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration[] | cdktn.IResolvable;
 }
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationToTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    server_certificate_configuration: cdktf.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationToTerraform, true)(struct!.serverCertificateConfiguration),
+    server_certificate_configuration: cdktn.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationToTerraform, true)(struct!.serverCertificateConfiguration),
   }
 }
 
 
-export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationToHclTerraform(struct?: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     server_certificate_configuration: {
-      value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationToHclTerraform, true)(struct!.serverCertificateConfiguration),
+      value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationToHclTerraform, true)(struct!.serverCertificateConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationList",
@@ -1831,9 +1831,9 @@ export function networkfirewallTlsInspectionConfigurationTlsInspectionConfigurat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1841,11 +1841,11 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1858,13 +1858,13 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serverCertificateConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1880,7 +1880,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   public get serverCertificateConfiguration() {
     return this._serverCertificateConfiguration;
   }
-  public putServerCertificateConfiguration(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration[] | cdktf.IResolvable) {
+  public putServerCertificateConfiguration(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration[] | cdktn.IResolvable) {
     this._serverCertificateConfiguration.internalValue = value;
   }
   public resetServerCertificateConfiguration() {
@@ -1892,15 +1892,15 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
   }
 }
 
-export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration[] | cdktf.IResolvable
+export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1915,7 +1915,7 @@ export class NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration aws_networkfirewall_tls_inspection_configuration}
 */
-export class NetworkfirewallTlsInspectionConfiguration extends cdktf.TerraformResource {
+export class NetworkfirewallTlsInspectionConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1926,14 +1926,14 @@ export class NetworkfirewallTlsInspectionConfiguration extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkfirewallTlsInspectionConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkfirewallTlsInspectionConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkfirewallTlsInspectionConfiguration to import
   * @param importFromId The id of the existing NetworkfirewallTlsInspectionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_tls_inspection_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkfirewallTlsInspectionConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkfirewall_tls_inspection_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkfirewall_tls_inspection_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -2014,7 +2014,7 @@ export class NetworkfirewallTlsInspectionConfiguration extends cdktf.TerraformRe
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
-  public putEncryptionConfiguration(value: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration[] | cdktf.IResolvable) {
+  public putEncryptionConfiguration(value: NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration[] | cdktn.IResolvable) {
     this._encryptionConfiguration.internalValue = value;
   }
   public resetEncryptionConfiguration() {
@@ -2081,7 +2081,7 @@ export class NetworkfirewallTlsInspectionConfiguration extends cdktf.TerraformRe
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -2117,7 +2117,7 @@ export class NetworkfirewallTlsInspectionConfiguration extends cdktf.TerraformRe
   public get tlsInspectionConfiguration() {
     return this._tlsInspectionConfiguration;
   }
-  public putTlsInspectionConfiguration(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration[] | cdktf.IResolvable) {
+  public putTlsInspectionConfiguration(value: NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration[] | cdktn.IResolvable) {
     this._tlsInspectionConfiguration.internalValue = value;
   }
   public resetTlsInspectionConfiguration() {
@@ -2134,44 +2134,44 @@ export class NetworkfirewallTlsInspectionConfiguration extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      encryption_configuration: cdktf.listMapper(networkfirewallTlsInspectionConfigurationEncryptionConfigurationToTerraform, false)(this._encryptionConfiguration.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      description: cdktn.stringToTerraform(this._description),
+      encryption_configuration: cdktn.listMapper(networkfirewallTlsInspectionConfigurationEncryptionConfigurationToTerraform, false)(this._encryptionConfiguration.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: networkfirewallTlsInspectionConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
-      tls_inspection_configuration: cdktf.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationToTerraform, true)(this._tlsInspectionConfiguration.internalValue),
+      tls_inspection_configuration: cdktn.listMapper(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationToTerraform, true)(this._tlsInspectionConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_configuration: {
-        value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationEncryptionConfigurationToHclTerraform, false)(this._encryptionConfiguration.internalValue),
+        value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationEncryptionConfigurationToHclTerraform, false)(this._encryptionConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -2183,7 +2183,7 @@ export class NetworkfirewallTlsInspectionConfiguration extends cdktf.TerraformRe
         storageClassType: "NetworkfirewallTlsInspectionConfigurationTimeouts",
       },
       tls_inspection_configuration: {
-        value: cdktf.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationToHclTerraform, true)(this._tlsInspectionConfiguration.internalValue),
+        value: cdktn.listMapperHcl(networkfirewallTlsInspectionConfigurationTlsInspectionConfigurationToHclTerraform, true)(this._tlsInspectionConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationList",

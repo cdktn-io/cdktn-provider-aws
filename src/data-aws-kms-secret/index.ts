@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsKmsSecretConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsKmsSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_secret#id DataAwsKmsSecret#id}
   *
@@ -30,7 +30,7 @@ export interface DataAwsKmsSecretConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_secret#secret DataAwsKmsSecret#secret}
   */
-  readonly secret: DataAwsKmsSecretSecret[] | cdktf.IResolvable;
+  readonly secret: DataAwsKmsSecretSecret[] | cdktn.IResolvable;
 }
 export interface DataAwsKmsSecretSecret {
   /**
@@ -51,46 +51,46 @@ export interface DataAwsKmsSecretSecret {
   readonly payload: string;
 }
 
-export function dataAwsKmsSecretSecretToTerraform(struct?: DataAwsKmsSecretSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsKmsSecretSecretToTerraform(struct?: DataAwsKmsSecretSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    context: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.context),
-    grant_tokens: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.grantTokens),
-    name: cdktf.stringToTerraform(struct!.name),
-    payload: cdktf.stringToTerraform(struct!.payload),
+    context: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.context),
+    grant_tokens: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.grantTokens),
+    name: cdktn.stringToTerraform(struct!.name),
+    payload: cdktn.stringToTerraform(struct!.payload),
   }
 }
 
 
-export function dataAwsKmsSecretSecretToHclTerraform(struct?: DataAwsKmsSecretSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsKmsSecretSecretToHclTerraform(struct?: DataAwsKmsSecretSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     context: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.context),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.context),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     grant_tokens: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.grantTokens),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.grantTokens),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     payload: {
-      value: cdktf.stringToHclTerraform(struct!.payload),
+      value: cdktn.stringToHclTerraform(struct!.payload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,9 +101,9 @@ export function dataAwsKmsSecretSecretToHclTerraform(struct?: DataAwsKmsSecretSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsKmsSecretSecretOutputReference extends cdktf.ComplexObject {
+export class DataAwsKmsSecretSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -111,11 +111,11 @@ export class DataAwsKmsSecretSecretOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsKmsSecretSecret | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsKmsSecretSecret | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,7 +140,7 @@ export class DataAwsKmsSecretSecretOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsKmsSecretSecret | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsKmsSecretSecret | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class DataAwsKmsSecretSecretOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._payload = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,15 +222,15 @@ export class DataAwsKmsSecretSecretOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAwsKmsSecretSecretList extends cdktf.ComplexList {
-  public internalValue? : DataAwsKmsSecretSecret[] | cdktf.IResolvable
+export class DataAwsKmsSecretSecretList extends cdktn.ComplexList {
+  public internalValue? : DataAwsKmsSecretSecret[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -245,7 +245,7 @@ export class DataAwsKmsSecretSecretList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_secret aws_kms_secret}
 */
-export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
+export class DataAwsKmsSecret extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -256,14 +256,14 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsKmsSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsKmsSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsKmsSecret to import
   * @param importFromId The id of the existing DataAwsKmsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsKmsSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -339,7 +339,7 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
   public get secret() {
     return this._secret;
   }
-  public putSecret(value: DataAwsKmsSecretSecret[] | cdktf.IResolvable) {
+  public putSecret(value: DataAwsKmsSecretSecret[] | cdktn.IResolvable) {
     this._secret.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -353,28 +353,28 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      secret: cdktf.listMapper(dataAwsKmsSecretSecretToTerraform, true)(this._secret.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      secret: cdktn.listMapper(dataAwsKmsSecretSecretToTerraform, true)(this._secret.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret: {
-        value: cdktf.listMapperHcl(dataAwsKmsSecretSecretToHclTerraform, true)(this._secret.internalValue),
+        value: cdktn.listMapperHcl(dataAwsKmsSecretSecretToHclTerraform, true)(this._secret.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsKmsSecretSecretList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatasyncLocationEfsConfig extends cdktf.TerraformMetaArguments {
+export interface DatasyncLocationEfsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_efs#access_point_arn DatasyncLocationEfs#access_point_arn}
   */
@@ -72,31 +72,31 @@ export interface DatasyncLocationEfsEc2Config {
 }
 
 export function datasyncLocationEfsEc2ConfigToTerraform(struct?: DatasyncLocationEfsEc2ConfigOutputReference | DatasyncLocationEfsEc2Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupArns),
-    subnet_arn: cdktf.stringToTerraform(struct!.subnetArn),
+    security_group_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupArns),
+    subnet_arn: cdktn.stringToTerraform(struct!.subnetArn),
   }
 }
 
 
 export function datasyncLocationEfsEc2ConfigToHclTerraform(struct?: DatasyncLocationEfsEc2ConfigOutputReference | DatasyncLocationEfsEc2Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_group_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupArns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_arn: {
-      value: cdktf.stringToHclTerraform(struct!.subnetArn),
+      value: cdktn.stringToHclTerraform(struct!.subnetArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,14 +107,14 @@ export function datasyncLocationEfsEc2ConfigToHclTerraform(struct?: DatasyncLoca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncLocationEfsEc2ConfigOutputReference extends cdktf.ComplexObject {
+export class DatasyncLocationEfsEc2ConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -148,7 +148,7 @@ export class DatasyncLocationEfsEc2ConfigOutputReference extends cdktf.ComplexOb
   // security_group_arns - computed: false, optional: false, required: true
   private _securityGroupArns?: string[]; 
   public get securityGroupArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_arns'));
   }
   public set securityGroupArns(value: string[]) {
     this._securityGroupArns = value;
@@ -175,7 +175,7 @@ export class DatasyncLocationEfsEc2ConfigOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_efs aws_datasync_location_efs}
 */
-export class DatasyncLocationEfs extends cdktf.TerraformResource {
+export class DatasyncLocationEfs extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -186,14 +186,14 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatasyncLocationEfs resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatasyncLocationEfs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncLocationEfs to import
   * @param importFromId The id of the existing DatasyncLocationEfs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_efs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncLocationEfs to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_efs", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_efs", importId: importFromId, provider });
       }
 
   // ===========
@@ -409,15 +409,15 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_point_arn: cdktf.stringToTerraform(this._accessPointArn),
-      efs_file_system_arn: cdktf.stringToTerraform(this._efsFileSystemArn),
-      file_system_access_role_arn: cdktf.stringToTerraform(this._fileSystemAccessRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      in_transit_encryption: cdktf.stringToTerraform(this._inTransitEncryption),
-      region: cdktf.stringToTerraform(this._region),
-      subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      access_point_arn: cdktn.stringToTerraform(this._accessPointArn),
+      efs_file_system_arn: cdktn.stringToTerraform(this._efsFileSystemArn),
+      file_system_access_role_arn: cdktn.stringToTerraform(this._fileSystemAccessRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      in_transit_encryption: cdktn.stringToTerraform(this._inTransitEncryption),
+      region: cdktn.stringToTerraform(this._region),
+      subdirectory: cdktn.stringToTerraform(this._subdirectory),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       ec2_config: datasyncLocationEfsEc2ConfigToTerraform(this._ec2Config.internalValue),
     };
   }
@@ -425,55 +425,55 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_point_arn: {
-        value: cdktf.stringToHclTerraform(this._accessPointArn),
+        value: cdktn.stringToHclTerraform(this._accessPointArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       efs_file_system_arn: {
-        value: cdktf.stringToHclTerraform(this._efsFileSystemArn),
+        value: cdktn.stringToHclTerraform(this._efsFileSystemArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_system_access_role_arn: {
-        value: cdktf.stringToHclTerraform(this._fileSystemAccessRoleArn),
+        value: cdktn.stringToHclTerraform(this._fileSystemAccessRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       in_transit_encryption: {
-        value: cdktf.stringToHclTerraform(this._inTransitEncryption),
+        value: cdktn.stringToHclTerraform(this._inTransitEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subdirectory: {
-        value: cdktf.stringToHclTerraform(this._subdirectory),
+        value: cdktn.stringToHclTerraform(this._subdirectory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsIamUsersConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIamUsersConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_users#id DataAwsIamUsers#id}
   *
@@ -32,7 +32,7 @@ export interface DataAwsIamUsersConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_users aws_iam_users}
 */
-export class DataAwsIamUsers extends cdktf.TerraformDataSource {
+export class DataAwsIamUsers extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataAwsIamUsers extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsIamUsers resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsIamUsers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIamUsers to import
   * @param importFromId The id of the existing DataAwsIamUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/iam_users#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIamUsers to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_users", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_users", importId: importFromId, provider });
       }
 
   // ===========
@@ -91,7 +91,7 @@ export class DataAwsIamUsers extends cdktf.TerraformDataSource {
 
   // arns - computed: true, optional: false, required: false
   public get arns() {
-    return cdktf.Fn.tolist(this.getListAttribute('arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('arns'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -128,7 +128,7 @@ export class DataAwsIamUsers extends cdktf.TerraformDataSource {
 
   // names - computed: true, optional: false, required: false
   public get names() {
-    return cdktf.Fn.tolist(this.getListAttribute('names'));
+    return cdktn.Fn.tolist(this.getListAttribute('names'));
   }
 
   // path_prefix - computed: false, optional: true, required: false
@@ -153,28 +153,28 @@ export class DataAwsIamUsers extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name_regex: cdktf.stringToTerraform(this._nameRegex),
-      path_prefix: cdktf.stringToTerraform(this._pathPrefix),
+      id: cdktn.stringToTerraform(this._id),
+      name_regex: cdktn.stringToTerraform(this._nameRegex),
+      path_prefix: cdktn.stringToTerraform(this._pathPrefix),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_regex: {
-        value: cdktf.stringToHclTerraform(this._nameRegex),
+        value: cdktn.stringToHclTerraform(this._nameRegex),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path_prefix: {
-        value: cdktf.stringToHclTerraform(this._pathPrefix),
+        value: cdktn.stringToHclTerraform(this._pathPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

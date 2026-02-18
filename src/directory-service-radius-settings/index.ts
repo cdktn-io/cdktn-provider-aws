@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DirectoryServiceRadiusSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface DirectoryServiceRadiusSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_radius_settings#authentication_protocol DirectoryServiceRadiusSettings#authentication_protocol}
   */
@@ -60,7 +60,7 @@ export interface DirectoryServiceRadiusSettingsConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_radius_settings#use_same_username DirectoryServiceRadiusSettings#use_same_username}
   */
-  readonly useSameUsername?: boolean | cdktf.IResolvable;
+  readonly useSameUsername?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -79,32 +79,32 @@ export interface DirectoryServiceRadiusSettingsTimeouts {
   readonly update?: string;
 }
 
-export function directoryServiceRadiusSettingsTimeoutsToTerraform(struct?: DirectoryServiceRadiusSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function directoryServiceRadiusSettingsTimeoutsToTerraform(struct?: DirectoryServiceRadiusSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function directoryServiceRadiusSettingsTimeoutsToHclTerraform(struct?: DirectoryServiceRadiusSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function directoryServiceRadiusSettingsTimeoutsToHclTerraform(struct?: DirectoryServiceRadiusSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function directoryServiceRadiusSettingsTimeoutsToHclTerraform(struct?: Di
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DirectoryServiceRadiusSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DirectoryServiceRadiusSettingsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DirectoryServiceRadiusSettingsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DirectoryServiceRadiusSettingsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,14 +144,14 @@ export class DirectoryServiceRadiusSettingsTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DirectoryServiceRadiusSettingsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DirectoryServiceRadiusSettingsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -199,7 +199,7 @@ export class DirectoryServiceRadiusSettingsTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings}
 */
-export class DirectoryServiceRadiusSettings extends cdktf.TerraformResource {
+export class DirectoryServiceRadiusSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -210,14 +210,14 @@ export class DirectoryServiceRadiusSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DirectoryServiceRadiusSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DirectoryServiceRadiusSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryServiceRadiusSettings to import
   * @param importFromId The id of the existing DirectoryServiceRadiusSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/directory_service_radius_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryServiceRadiusSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_radius_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_directory_service_radius_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -349,7 +349,7 @@ export class DirectoryServiceRadiusSettings extends cdktf.TerraformResource {
   // radius_servers - computed: false, optional: false, required: true
   private _radiusServers?: string[]; 
   public get radiusServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('radius_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('radius_servers'));
   }
   public set radiusServers(value: string[]) {
     this._radiusServers = value;
@@ -402,11 +402,11 @@ export class DirectoryServiceRadiusSettings extends cdktf.TerraformResource {
   }
 
   // use_same_username - computed: false, optional: true, required: false
-  private _useSameUsername?: boolean | cdktf.IResolvable; 
+  private _useSameUsername?: boolean | cdktn.IResolvable; 
   public get useSameUsername() {
     return this.getBooleanAttribute('use_same_username');
   }
-  public set useSameUsername(value: boolean | cdktf.IResolvable) {
+  public set useSameUsername(value: boolean | cdktn.IResolvable) {
     this._useSameUsername = value;
   }
   public resetUseSameUsername() {
@@ -439,17 +439,17 @@ export class DirectoryServiceRadiusSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication_protocol: cdktf.stringToTerraform(this._authenticationProtocol),
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      display_label: cdktf.stringToTerraform(this._displayLabel),
-      id: cdktf.stringToTerraform(this._id),
-      radius_port: cdktf.numberToTerraform(this._radiusPort),
-      radius_retries: cdktf.numberToTerraform(this._radiusRetries),
-      radius_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._radiusServers),
-      radius_timeout: cdktf.numberToTerraform(this._radiusTimeout),
-      region: cdktf.stringToTerraform(this._region),
-      shared_secret: cdktf.stringToTerraform(this._sharedSecret),
-      use_same_username: cdktf.booleanToTerraform(this._useSameUsername),
+      authentication_protocol: cdktn.stringToTerraform(this._authenticationProtocol),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      display_label: cdktn.stringToTerraform(this._displayLabel),
+      id: cdktn.stringToTerraform(this._id),
+      radius_port: cdktn.numberToTerraform(this._radiusPort),
+      radius_retries: cdktn.numberToTerraform(this._radiusRetries),
+      radius_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._radiusServers),
+      radius_timeout: cdktn.numberToTerraform(this._radiusTimeout),
+      region: cdktn.stringToTerraform(this._region),
+      shared_secret: cdktn.stringToTerraform(this._sharedSecret),
+      use_same_username: cdktn.booleanToTerraform(this._useSameUsername),
       timeouts: directoryServiceRadiusSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -457,67 +457,67 @@ export class DirectoryServiceRadiusSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authentication_protocol: {
-        value: cdktf.stringToHclTerraform(this._authenticationProtocol),
+        value: cdktn.stringToHclTerraform(this._authenticationProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_label: {
-        value: cdktf.stringToHclTerraform(this._displayLabel),
+        value: cdktn.stringToHclTerraform(this._displayLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       radius_port: {
-        value: cdktf.numberToHclTerraform(this._radiusPort),
+        value: cdktn.numberToHclTerraform(this._radiusPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       radius_retries: {
-        value: cdktf.numberToHclTerraform(this._radiusRetries),
+        value: cdktn.numberToHclTerraform(this._radiusRetries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       radius_servers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._radiusServers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._radiusServers),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       radius_timeout: {
-        value: cdktf.numberToHclTerraform(this._radiusTimeout),
+        value: cdktn.numberToHclTerraform(this._radiusTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shared_secret: {
-        value: cdktf.stringToHclTerraform(this._sharedSecret),
+        value: cdktn.stringToHclTerraform(this._sharedSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_same_username: {
-        value: cdktf.booleanToHclTerraform(this._useSameUsername),
+        value: cdktn.booleanToHclTerraform(this._useSameUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

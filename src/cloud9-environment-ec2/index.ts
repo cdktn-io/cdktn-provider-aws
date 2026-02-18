@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Cloud9EnvironmentEc2Config extends cdktf.TerraformMetaArguments {
+export interface Cloud9EnvironmentEc2Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloud9_environment_ec2#automatic_stop_time_minutes Cloud9EnvironmentEc2#automatic_stop_time_minutes}
   */
@@ -70,7 +70,7 @@ export interface Cloud9EnvironmentEc2Config extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2}
 */
-export class Cloud9EnvironmentEc2 extends cdktf.TerraformResource {
+export class Cloud9EnvironmentEc2 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -81,14 +81,14 @@ export class Cloud9EnvironmentEc2 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Cloud9EnvironmentEc2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Cloud9EnvironmentEc2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Cloud9EnvironmentEc2 to import
   * @param importFromId The id of the existing Cloud9EnvironmentEc2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloud9_environment_ec2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Cloud9EnvironmentEc2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloud9_environment_ec2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloud9_environment_ec2", importId: importFromId, provider });
       }
 
   // ===========
@@ -335,91 +335,91 @@ export class Cloud9EnvironmentEc2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automatic_stop_time_minutes: cdktf.numberToTerraform(this._automaticStopTimeMinutes),
-      connection_type: cdktf.stringToTerraform(this._connectionType),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      image_id: cdktf.stringToTerraform(this._imageId),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      name: cdktf.stringToTerraform(this._name),
-      owner_arn: cdktf.stringToTerraform(this._ownerArn),
-      region: cdktf.stringToTerraform(this._region),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      automatic_stop_time_minutes: cdktn.numberToTerraform(this._automaticStopTimeMinutes),
+      connection_type: cdktn.stringToTerraform(this._connectionType),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      image_id: cdktn.stringToTerraform(this._imageId),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      name: cdktn.stringToTerraform(this._name),
+      owner_arn: cdktn.stringToTerraform(this._ownerArn),
+      region: cdktn.stringToTerraform(this._region),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automatic_stop_time_minutes: {
-        value: cdktf.numberToHclTerraform(this._automaticStopTimeMinutes),
+        value: cdktn.numberToHclTerraform(this._automaticStopTimeMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       connection_type: {
-        value: cdktf.stringToHclTerraform(this._connectionType),
+        value: cdktn.stringToHclTerraform(this._connectionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_id: {
-        value: cdktf.stringToHclTerraform(this._imageId),
+        value: cdktn.stringToHclTerraform(this._imageId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_arn: {
-        value: cdktf.stringToHclTerraform(this._ownerArn),
+        value: cdktn.stringToHclTerraform(this._ownerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

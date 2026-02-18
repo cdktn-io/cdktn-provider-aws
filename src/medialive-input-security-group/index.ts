@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MedialiveInputSecurityGroupConfig extends cdktf.TerraformMetaArguments {
+export interface MedialiveInputSecurityGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input_security_group#id MedialiveInputSecurityGroup#id}
   *
@@ -44,7 +44,7 @@ export interface MedialiveInputSecurityGroupConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input_security_group#whitelist_rules MedialiveInputSecurityGroup#whitelist_rules}
   */
-  readonly whitelistRules: MedialiveInputSecurityGroupWhitelistRules[] | cdktf.IResolvable;
+  readonly whitelistRules: MedialiveInputSecurityGroupWhitelistRules[] | cdktn.IResolvable;
 }
 export interface MedialiveInputSecurityGroupTimeouts {
   /**
@@ -61,39 +61,39 @@ export interface MedialiveInputSecurityGroupTimeouts {
   readonly update?: string;
 }
 
-export function medialiveInputSecurityGroupTimeoutsToTerraform(struct?: MedialiveInputSecurityGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputSecurityGroupTimeoutsToTerraform(struct?: MedialiveInputSecurityGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function medialiveInputSecurityGroupTimeoutsToHclTerraform(struct?: MedialiveInputSecurityGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputSecurityGroupTimeoutsToHclTerraform(struct?: MedialiveInputSecurityGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,19 +104,19 @@ export function medialiveInputSecurityGroupTimeoutsToHclTerraform(struct?: Media
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveInputSecurityGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MedialiveInputSecurityGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MedialiveInputSecurityGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveInputSecurityGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,7 +137,7 @@ export class MedialiveInputSecurityGroupTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveInputSecurityGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveInputSecurityGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -145,7 +145,7 @@ export class MedialiveInputSecurityGroupTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -213,25 +213,25 @@ export interface MedialiveInputSecurityGroupWhitelistRules {
   readonly cidr: string;
 }
 
-export function medialiveInputSecurityGroupWhitelistRulesToTerraform(struct?: MedialiveInputSecurityGroupWhitelistRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputSecurityGroupWhitelistRulesToTerraform(struct?: MedialiveInputSecurityGroupWhitelistRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr: cdktf.stringToTerraform(struct!.cidr),
+    cidr: cdktn.stringToTerraform(struct!.cidr),
   }
 }
 
 
-export function medialiveInputSecurityGroupWhitelistRulesToHclTerraform(struct?: MedialiveInputSecurityGroupWhitelistRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function medialiveInputSecurityGroupWhitelistRulesToHclTerraform(struct?: MedialiveInputSecurityGroupWhitelistRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr: {
-      value: cdktf.stringToHclTerraform(struct!.cidr),
+      value: cdktn.stringToHclTerraform(struct!.cidr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -242,9 +242,9 @@ export function medialiveInputSecurityGroupWhitelistRulesToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MedialiveInputSecurityGroupWhitelistRulesOutputReference extends cdktf.ComplexObject {
+export class MedialiveInputSecurityGroupWhitelistRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -252,11 +252,11 @@ export class MedialiveInputSecurityGroupWhitelistRulesOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MedialiveInputSecurityGroupWhitelistRules | cdktf.IResolvable | undefined {
+  public get internalValue(): MedialiveInputSecurityGroupWhitelistRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -269,13 +269,13 @@ export class MedialiveInputSecurityGroupWhitelistRulesOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveInputSecurityGroupWhitelistRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveInputSecurityGroupWhitelistRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cidr = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -300,15 +300,15 @@ export class MedialiveInputSecurityGroupWhitelistRulesOutputReference extends cd
   }
 }
 
-export class MedialiveInputSecurityGroupWhitelistRulesList extends cdktf.ComplexList {
-  public internalValue? : MedialiveInputSecurityGroupWhitelistRules[] | cdktf.IResolvable
+export class MedialiveInputSecurityGroupWhitelistRulesList extends cdktn.ComplexList {
+  public internalValue? : MedialiveInputSecurityGroupWhitelistRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -323,7 +323,7 @@ export class MedialiveInputSecurityGroupWhitelistRulesList extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input_security_group aws_medialive_input_security_group}
 */
-export class MedialiveInputSecurityGroup extends cdktf.TerraformResource {
+export class MedialiveInputSecurityGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -334,14 +334,14 @@ export class MedialiveInputSecurityGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MedialiveInputSecurityGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MedialiveInputSecurityGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MedialiveInputSecurityGroup to import
   * @param importFromId The id of the existing MedialiveInputSecurityGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/medialive_input_security_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MedialiveInputSecurityGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_input_security_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_input_security_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -478,7 +478,7 @@ export class MedialiveInputSecurityGroup extends cdktf.TerraformResource {
   public get whitelistRules() {
     return this._whitelistRules;
   }
-  public putWhitelistRules(value: MedialiveInputSecurityGroupWhitelistRules[] | cdktf.IResolvable) {
+  public putWhitelistRules(value: MedialiveInputSecurityGroupWhitelistRules[] | cdktn.IResolvable) {
     this._whitelistRules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -492,37 +492,37 @@ export class MedialiveInputSecurityGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: medialiveInputSecurityGroupTimeoutsToTerraform(this._timeouts.internalValue),
-      whitelist_rules: cdktf.listMapper(medialiveInputSecurityGroupWhitelistRulesToTerraform, true)(this._whitelistRules.internalValue),
+      whitelist_rules: cdktn.listMapper(medialiveInputSecurityGroupWhitelistRulesToTerraform, true)(this._whitelistRules.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -534,7 +534,7 @@ export class MedialiveInputSecurityGroup extends cdktf.TerraformResource {
         storageClassType: "MedialiveInputSecurityGroupTimeouts",
       },
       whitelist_rules: {
-        value: cdktf.listMapperHcl(medialiveInputSecurityGroupWhitelistRulesToHclTerraform, true)(this._whitelistRules.internalValue),
+        value: cdktn.listMapperHcl(medialiveInputSecurityGroupWhitelistRulesToHclTerraform, true)(this._whitelistRules.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MedialiveInputSecurityGroupWhitelistRulesList",

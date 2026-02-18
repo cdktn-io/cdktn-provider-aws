@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudfrontConnectionGroupConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontConnectionGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_group#anycast_ip_list_id CloudfrontConnectionGroup#anycast_ip_list_id}
   */
@@ -19,11 +19,11 @@ export interface CloudfrontConnectionGroupConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_group#enabled CloudfrontConnectionGroup#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_group#ipv6_enabled CloudfrontConnectionGroup#ipv6_enabled}
   */
-  readonly ipv6Enabled?: boolean | cdktf.IResolvable;
+  readonly ipv6Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_group#name CloudfrontConnectionGroup#name}
   */
@@ -35,7 +35,7 @@ export interface CloudfrontConnectionGroupConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_group#wait_for_deployment CloudfrontConnectionGroup#wait_for_deployment}
   */
-  readonly waitForDeployment?: boolean | cdktf.IResolvable;
+  readonly waitForDeployment?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -64,39 +64,39 @@ export interface CloudfrontConnectionGroupTimeouts {
   readonly update?: string;
 }
 
-export function cloudfrontConnectionGroupTimeoutsToTerraform(struct?: CloudfrontConnectionGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontConnectionGroupTimeoutsToTerraform(struct?: CloudfrontConnectionGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudfrontConnectionGroupTimeoutsToHclTerraform(struct?: CloudfrontConnectionGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudfrontConnectionGroupTimeoutsToHclTerraform(struct?: CloudfrontConnectionGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,19 +107,19 @@ export function cloudfrontConnectionGroupTimeoutsToHclTerraform(struct?: Cloudfr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudfrontConnectionGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudfrontConnectionGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudfrontConnectionGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudfrontConnectionGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,7 +140,7 @@ export class CloudfrontConnectionGroupTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudfrontConnectionGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudfrontConnectionGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -148,7 +148,7 @@ export class CloudfrontConnectionGroupTimeoutsOutputReference extends cdktf.Comp
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -213,7 +213,7 @@ export class CloudfrontConnectionGroupTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_group aws_cloudfront_connection_group}
 */
-export class CloudfrontConnectionGroup extends cdktf.TerraformResource {
+export class CloudfrontConnectionGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -224,14 +224,14 @@ export class CloudfrontConnectionGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudfrontConnectionGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudfrontConnectionGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontConnectionGroup to import
   * @param importFromId The id of the existing CloudfrontConnectionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_connection_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontConnectionGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_connection_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_connection_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -296,11 +296,11 @@ export class CloudfrontConnectionGroup extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -322,11 +322,11 @@ export class CloudfrontConnectionGroup extends cdktf.TerraformResource {
   }
 
   // ipv6_enabled - computed: true, optional: true, required: false
-  private _ipv6Enabled?: boolean | cdktf.IResolvable; 
+  private _ipv6Enabled?: boolean | cdktn.IResolvable; 
   public get ipv6Enabled() {
     return this.getBooleanAttribute('ipv6_enabled');
   }
-  public set ipv6Enabled(value: boolean | cdktf.IResolvable) {
+  public set ipv6Enabled(value: boolean | cdktn.IResolvable) {
     this._ipv6Enabled = value;
   }
   public resetIpv6Enabled() {
@@ -387,17 +387,17 @@ export class CloudfrontConnectionGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
 
   // wait_for_deployment - computed: true, optional: true, required: false
-  private _waitForDeployment?: boolean | cdktf.IResolvable; 
+  private _waitForDeployment?: boolean | cdktn.IResolvable; 
   public get waitForDeployment() {
     return this.getBooleanAttribute('wait_for_deployment');
   }
-  public set waitForDeployment(value: boolean | cdktf.IResolvable) {
+  public set waitForDeployment(value: boolean | cdktn.IResolvable) {
     this._waitForDeployment = value;
   }
   public resetWaitForDeployment() {
@@ -430,12 +430,12 @@ export class CloudfrontConnectionGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      anycast_ip_list_id: cdktf.stringToTerraform(this._anycastIpListId),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      ipv6_enabled: cdktf.booleanToTerraform(this._ipv6Enabled),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      wait_for_deployment: cdktf.booleanToTerraform(this._waitForDeployment),
+      anycast_ip_list_id: cdktn.stringToTerraform(this._anycastIpListId),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      ipv6_enabled: cdktn.booleanToTerraform(this._ipv6Enabled),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      wait_for_deployment: cdktn.booleanToTerraform(this._waitForDeployment),
       timeouts: cloudfrontConnectionGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -443,37 +443,37 @@ export class CloudfrontConnectionGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       anycast_ip_list_id: {
-        value: cdktf.stringToHclTerraform(this._anycastIpListId),
+        value: cdktn.stringToHclTerraform(this._anycastIpListId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ipv6_enabled: {
-        value: cdktf.booleanToHclTerraform(this._ipv6Enabled),
+        value: cdktn.booleanToHclTerraform(this._ipv6Enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       wait_for_deployment: {
-        value: cdktf.booleanToHclTerraform(this._waitForDeployment),
+        value: cdktn.booleanToHclTerraform(this._waitForDeployment),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

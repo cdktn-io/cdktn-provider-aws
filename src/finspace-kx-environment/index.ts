@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FinspaceKxEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface FinspaceKxEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/finspace_kx_environment#description FinspaceKxEnvironment#description}
   */
@@ -43,7 +43,7 @@ export interface FinspaceKxEnvironmentConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/finspace_kx_environment#custom_dns_configuration FinspaceKxEnvironment#custom_dns_configuration}
   */
-  readonly customDnsConfiguration?: FinspaceKxEnvironmentCustomDnsConfiguration[] | cdktf.IResolvable;
+  readonly customDnsConfiguration?: FinspaceKxEnvironmentCustomDnsConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -68,32 +68,32 @@ export interface FinspaceKxEnvironmentCustomDnsConfiguration {
   readonly customDnsServerName: string;
 }
 
-export function finspaceKxEnvironmentCustomDnsConfigurationToTerraform(struct?: FinspaceKxEnvironmentCustomDnsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function finspaceKxEnvironmentCustomDnsConfigurationToTerraform(struct?: FinspaceKxEnvironmentCustomDnsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_dns_server_ip: cdktf.stringToTerraform(struct!.customDnsServerIp),
-    custom_dns_server_name: cdktf.stringToTerraform(struct!.customDnsServerName),
+    custom_dns_server_ip: cdktn.stringToTerraform(struct!.customDnsServerIp),
+    custom_dns_server_name: cdktn.stringToTerraform(struct!.customDnsServerName),
   }
 }
 
 
-export function finspaceKxEnvironmentCustomDnsConfigurationToHclTerraform(struct?: FinspaceKxEnvironmentCustomDnsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function finspaceKxEnvironmentCustomDnsConfigurationToHclTerraform(struct?: FinspaceKxEnvironmentCustomDnsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_dns_server_ip: {
-      value: cdktf.stringToHclTerraform(struct!.customDnsServerIp),
+      value: cdktn.stringToHclTerraform(struct!.customDnsServerIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_dns_server_name: {
-      value: cdktf.stringToHclTerraform(struct!.customDnsServerName),
+      value: cdktn.stringToHclTerraform(struct!.customDnsServerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,9 +104,9 @@ export function finspaceKxEnvironmentCustomDnsConfigurationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FinspaceKxEnvironmentCustomDnsConfigurationOutputReference extends cdktf.ComplexObject {
+export class FinspaceKxEnvironmentCustomDnsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -114,11 +114,11 @@ export class FinspaceKxEnvironmentCustomDnsConfigurationOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FinspaceKxEnvironmentCustomDnsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): FinspaceKxEnvironmentCustomDnsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -135,14 +135,14 @@ export class FinspaceKxEnvironmentCustomDnsConfigurationOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FinspaceKxEnvironmentCustomDnsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FinspaceKxEnvironmentCustomDnsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._customDnsServerIp = undefined;
       this._customDnsServerName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -181,15 +181,15 @@ export class FinspaceKxEnvironmentCustomDnsConfigurationOutputReference extends 
   }
 }
 
-export class FinspaceKxEnvironmentCustomDnsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : FinspaceKxEnvironmentCustomDnsConfiguration[] | cdktf.IResolvable
+export class FinspaceKxEnvironmentCustomDnsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : FinspaceKxEnvironmentCustomDnsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -215,39 +215,39 @@ export interface FinspaceKxEnvironmentTimeouts {
   readonly update?: string;
 }
 
-export function finspaceKxEnvironmentTimeoutsToTerraform(struct?: FinspaceKxEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function finspaceKxEnvironmentTimeoutsToTerraform(struct?: FinspaceKxEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function finspaceKxEnvironmentTimeoutsToHclTerraform(struct?: FinspaceKxEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function finspaceKxEnvironmentTimeoutsToHclTerraform(struct?: FinspaceKxEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -258,19 +258,19 @@ export function finspaceKxEnvironmentTimeoutsToHclTerraform(struct?: FinspaceKxE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FinspaceKxEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FinspaceKxEnvironmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FinspaceKxEnvironmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FinspaceKxEnvironmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -291,7 +291,7 @@ export class FinspaceKxEnvironmentTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FinspaceKxEnvironmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FinspaceKxEnvironmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -299,7 +299,7 @@ export class FinspaceKxEnvironmentTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -372,31 +372,31 @@ export interface FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetwo
 }
 
 export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeToTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeOutputReference | FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    code: cdktf.numberToTerraform(struct!.code),
-    type: cdktf.numberToTerraform(struct!.type),
+    code: cdktn.numberToTerraform(struct!.code),
+    type: cdktn.numberToTerraform(struct!.type),
   }
 }
 
 
 export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeToHclTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeOutputReference | FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     code: {
-      value: cdktf.numberToHclTerraform(struct!.code),
+      value: cdktn.numberToHclTerraform(struct!.code),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.numberToHclTerraform(struct!.type),
+      value: cdktn.numberToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -407,14 +407,14 @@ export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetwor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeOutputReference extends cdktf.ComplexObject {
+export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -483,31 +483,31 @@ export interface FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetwo
 }
 
 export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeToTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeOutputReference | FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.numberToTerraform(struct!.from),
-    to: cdktf.numberToTerraform(struct!.to),
+    from: cdktn.numberToTerraform(struct!.from),
+    to: cdktn.numberToTerraform(struct!.to),
   }
 }
 
 
 export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeToHclTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeOutputReference | FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.numberToHclTerraform(struct!.from),
+      value: cdktn.numberToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to: {
-      value: cdktf.numberToHclTerraform(struct!.to),
+      value: cdktn.numberToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -518,14 +518,14 @@ export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetwor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeOutputReference extends cdktf.ComplexObject {
+export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -613,48 +613,48 @@ export interface FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetwo
   readonly portRange?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange;
 }
 
-export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationToTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationToTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    rule_action: cdktf.stringToTerraform(struct!.ruleAction),
-    rule_number: cdktf.numberToTerraform(struct!.ruleNumber),
+    cidr_block: cdktn.stringToTerraform(struct!.cidrBlock),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    rule_action: cdktn.stringToTerraform(struct!.ruleAction),
+    rule_number: cdktn.numberToTerraform(struct!.ruleNumber),
     icmp_type_code: finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeToTerraform(struct!.icmpTypeCode),
     port_range: finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeToTerraform(struct!.portRange),
   }
 }
 
 
-export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationToHclTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationToHclTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr_block: {
-      value: cdktf.stringToHclTerraform(struct!.cidrBlock),
+      value: cdktn.stringToHclTerraform(struct!.cidrBlock),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_action: {
-      value: cdktf.stringToHclTerraform(struct!.ruleAction),
+      value: cdktn.stringToHclTerraform(struct!.ruleAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_number: {
-      value: cdktf.numberToHclTerraform(struct!.ruleNumber),
+      value: cdktn.numberToHclTerraform(struct!.ruleNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -677,9 +677,9 @@ export function finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetwor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationOutputReference extends cdktf.ComplexObject {
+export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -687,11 +687,11 @@ export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -724,7 +724,7 @@ export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -735,7 +735,7 @@ export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAc
       this._icmpTypeCode.internalValue = undefined;
       this._portRange.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -836,15 +836,15 @@ export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAc
   }
 }
 
-export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList extends cdktf.ComplexList {
-  public internalValue? : FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration[] | cdktf.IResolvable
+export class FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList extends cdktn.ComplexList {
+  public internalValue? : FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -869,42 +869,42 @@ export interface FinspaceKxEnvironmentTransitGatewayConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/finspace_kx_environment#attachment_network_acl_configuration FinspaceKxEnvironment#attachment_network_acl_configuration}
   */
-  readonly attachmentNetworkAclConfiguration?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration[] | cdktf.IResolvable;
+  readonly attachmentNetworkAclConfiguration?: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration[] | cdktn.IResolvable;
 }
 
 export function finspaceKxEnvironmentTransitGatewayConfigurationToTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference | FinspaceKxEnvironmentTransitGatewayConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    routable_cidr_space: cdktf.stringToTerraform(struct!.routableCidrSpace),
-    transit_gateway_id: cdktf.stringToTerraform(struct!.transitGatewayId),
-    attachment_network_acl_configuration: cdktf.listMapper(finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationToTerraform, true)(struct!.attachmentNetworkAclConfiguration),
+    routable_cidr_space: cdktn.stringToTerraform(struct!.routableCidrSpace),
+    transit_gateway_id: cdktn.stringToTerraform(struct!.transitGatewayId),
+    attachment_network_acl_configuration: cdktn.listMapper(finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationToTerraform, true)(struct!.attachmentNetworkAclConfiguration),
   }
 }
 
 
 export function finspaceKxEnvironmentTransitGatewayConfigurationToHclTerraform(struct?: FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference | FinspaceKxEnvironmentTransitGatewayConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     routable_cidr_space: {
-      value: cdktf.stringToHclTerraform(struct!.routableCidrSpace),
+      value: cdktn.stringToHclTerraform(struct!.routableCidrSpace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transit_gateway_id: {
-      value: cdktf.stringToHclTerraform(struct!.transitGatewayId),
+      value: cdktn.stringToHclTerraform(struct!.transitGatewayId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     attachment_network_acl_configuration: {
-      value: cdktf.listMapperHcl(finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationToHclTerraform, true)(struct!.attachmentNetworkAclConfiguration),
+      value: cdktn.listMapperHcl(finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationToHclTerraform, true)(struct!.attachmentNetworkAclConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList",
@@ -915,14 +915,14 @@ export function finspaceKxEnvironmentTransitGatewayConfigurationToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference extends cdktf.ComplexObject {
+export class FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -990,7 +990,7 @@ export class FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference ext
   public get attachmentNetworkAclConfiguration() {
     return this._attachmentNetworkAclConfiguration;
   }
-  public putAttachmentNetworkAclConfiguration(value: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration[] | cdktf.IResolvable) {
+  public putAttachmentNetworkAclConfiguration(value: FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration[] | cdktn.IResolvable) {
     this._attachmentNetworkAclConfiguration.internalValue = value;
   }
   public resetAttachmentNetworkAclConfiguration() {
@@ -1005,7 +1005,7 @@ export class FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/finspace_kx_environment aws_finspace_kx_environment}
 */
-export class FinspaceKxEnvironment extends cdktf.TerraformResource {
+export class FinspaceKxEnvironment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1016,14 +1016,14 @@ export class FinspaceKxEnvironment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FinspaceKxEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FinspaceKxEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FinspaceKxEnvironment to import
   * @param importFromId The id of the existing FinspaceKxEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/finspace_kx_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FinspaceKxEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_finspace_kx_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_finspace_kx_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -1198,7 +1198,7 @@ export class FinspaceKxEnvironment extends cdktf.TerraformResource {
   public get customDnsConfiguration() {
     return this._customDnsConfiguration;
   }
-  public putCustomDnsConfiguration(value: FinspaceKxEnvironmentCustomDnsConfiguration[] | cdktf.IResolvable) {
+  public putCustomDnsConfiguration(value: FinspaceKxEnvironmentCustomDnsConfiguration[] | cdktn.IResolvable) {
     this._customDnsConfiguration.internalValue = value;
   }
   public resetCustomDnsConfiguration() {
@@ -1247,13 +1247,13 @@ export class FinspaceKxEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      custom_dns_configuration: cdktf.listMapper(finspaceKxEnvironmentCustomDnsConfigurationToTerraform, true)(this._customDnsConfiguration.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      custom_dns_configuration: cdktn.listMapper(finspaceKxEnvironmentCustomDnsConfigurationToTerraform, true)(this._customDnsConfiguration.internalValue),
       timeouts: finspaceKxEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
       transit_gateway_configuration: finspaceKxEnvironmentTransitGatewayConfigurationToTerraform(this._transitGatewayConfiguration.internalValue),
     };
@@ -1262,43 +1262,43 @@ export class FinspaceKxEnvironment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       custom_dns_configuration: {
-        value: cdktf.listMapperHcl(finspaceKxEnvironmentCustomDnsConfigurationToHclTerraform, true)(this._customDnsConfiguration.internalValue),
+        value: cdktn.listMapperHcl(finspaceKxEnvironmentCustomDnsConfigurationToHclTerraform, true)(this._customDnsConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "FinspaceKxEnvironmentCustomDnsConfigurationList",

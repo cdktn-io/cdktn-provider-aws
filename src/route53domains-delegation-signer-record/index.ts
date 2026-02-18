@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53DomainsDelegationSignerRecordConfig extends cdktf.TerraformMetaArguments {
+export interface Route53DomainsDelegationSignerRecordConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_delegation_signer_record#domain_name Route53DomainsDelegationSignerRecord#domain_name}
   */
@@ -21,7 +21,7 @@ export interface Route53DomainsDelegationSignerRecordConfig extends cdktf.Terraf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_delegation_signer_record#signing_attributes Route53DomainsDelegationSignerRecord#signing_attributes}
   */
-  readonly signingAttributes?: Route53DomainsDelegationSignerRecordSigningAttributes[] | cdktf.IResolvable;
+  readonly signingAttributes?: Route53DomainsDelegationSignerRecordSigningAttributes[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -44,39 +44,39 @@ export interface Route53DomainsDelegationSignerRecordSigningAttributes {
   readonly publicKey: string;
 }
 
-export function route53DomainsDelegationSignerRecordSigningAttributesToTerraform(struct?: Route53DomainsDelegationSignerRecordSigningAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDelegationSignerRecordSigningAttributesToTerraform(struct?: Route53DomainsDelegationSignerRecordSigningAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    algorithm: cdktf.numberToTerraform(struct!.algorithm),
-    flags: cdktf.numberToTerraform(struct!.flags),
-    public_key: cdktf.stringToTerraform(struct!.publicKey),
+    algorithm: cdktn.numberToTerraform(struct!.algorithm),
+    flags: cdktn.numberToTerraform(struct!.flags),
+    public_key: cdktn.stringToTerraform(struct!.publicKey),
   }
 }
 
 
-export function route53DomainsDelegationSignerRecordSigningAttributesToHclTerraform(struct?: Route53DomainsDelegationSignerRecordSigningAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDelegationSignerRecordSigningAttributesToHclTerraform(struct?: Route53DomainsDelegationSignerRecordSigningAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     algorithm: {
-      value: cdktf.numberToHclTerraform(struct!.algorithm),
+      value: cdktn.numberToHclTerraform(struct!.algorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     flags: {
-      value: cdktf.numberToHclTerraform(struct!.flags),
+      value: cdktn.numberToHclTerraform(struct!.flags),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     public_key: {
-      value: cdktf.stringToHclTerraform(struct!.publicKey),
+      value: cdktn.stringToHclTerraform(struct!.publicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -87,9 +87,9 @@ export function route53DomainsDelegationSignerRecordSigningAttributesToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDelegationSignerRecordSigningAttributesOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDelegationSignerRecordSigningAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -97,11 +97,11 @@ export class Route53DomainsDelegationSignerRecordSigningAttributesOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Route53DomainsDelegationSignerRecordSigningAttributes | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDelegationSignerRecordSigningAttributes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,7 +122,7 @@ export class Route53DomainsDelegationSignerRecordSigningAttributesOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDelegationSignerRecordSigningAttributes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDelegationSignerRecordSigningAttributes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -130,7 +130,7 @@ export class Route53DomainsDelegationSignerRecordSigningAttributesOutputReferenc
       this._flags = undefined;
       this._publicKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -183,15 +183,15 @@ export class Route53DomainsDelegationSignerRecordSigningAttributesOutputReferenc
   }
 }
 
-export class Route53DomainsDelegationSignerRecordSigningAttributesList extends cdktf.ComplexList {
-  public internalValue? : Route53DomainsDelegationSignerRecordSigningAttributes[] | cdktf.IResolvable
+export class Route53DomainsDelegationSignerRecordSigningAttributesList extends cdktn.ComplexList {
+  public internalValue? : Route53DomainsDelegationSignerRecordSigningAttributes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -217,32 +217,32 @@ export interface Route53DomainsDelegationSignerRecordTimeouts {
   readonly delete?: string;
 }
 
-export function route53DomainsDelegationSignerRecordTimeoutsToTerraform(struct?: Route53DomainsDelegationSignerRecordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDelegationSignerRecordTimeoutsToTerraform(struct?: Route53DomainsDelegationSignerRecordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function route53DomainsDelegationSignerRecordTimeoutsToHclTerraform(struct?: Route53DomainsDelegationSignerRecordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function route53DomainsDelegationSignerRecordTimeoutsToHclTerraform(struct?: Route53DomainsDelegationSignerRecordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -253,19 +253,19 @@ export function route53DomainsDelegationSignerRecordTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Route53DomainsDelegationSignerRecordTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Route53DomainsDelegationSignerRecordTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Route53DomainsDelegationSignerRecordTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Route53DomainsDelegationSignerRecordTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -282,14 +282,14 @@ export class Route53DomainsDelegationSignerRecordTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsDelegationSignerRecordTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53DomainsDelegationSignerRecordTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -337,7 +337,7 @@ export class Route53DomainsDelegationSignerRecordTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_delegation_signer_record aws_route53domains_delegation_signer_record}
 */
-export class Route53DomainsDelegationSignerRecord extends cdktf.TerraformResource {
+export class Route53DomainsDelegationSignerRecord extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -348,14 +348,14 @@ export class Route53DomainsDelegationSignerRecord extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53DomainsDelegationSignerRecord resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53DomainsDelegationSignerRecord resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53DomainsDelegationSignerRecord to import
   * @param importFromId The id of the existing Route53DomainsDelegationSignerRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53domains_delegation_signer_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53DomainsDelegationSignerRecord to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53domains_delegation_signer_record", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53domains_delegation_signer_record", importId: importFromId, provider });
       }
 
   // ===========
@@ -422,7 +422,7 @@ export class Route53DomainsDelegationSignerRecord extends cdktf.TerraformResourc
   public get signingAttributes() {
     return this._signingAttributes;
   }
-  public putSigningAttributes(value: Route53DomainsDelegationSignerRecordSigningAttributes[] | cdktf.IResolvable) {
+  public putSigningAttributes(value: Route53DomainsDelegationSignerRecordSigningAttributes[] | cdktn.IResolvable) {
     this._signingAttributes.internalValue = value;
   }
   public resetSigningAttributes() {
@@ -455,8 +455,8 @@ export class Route53DomainsDelegationSignerRecord extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      signing_attributes: cdktf.listMapper(route53DomainsDelegationSignerRecordSigningAttributesToTerraform, true)(this._signingAttributes.internalValue),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      signing_attributes: cdktn.listMapper(route53DomainsDelegationSignerRecordSigningAttributesToTerraform, true)(this._signingAttributes.internalValue),
       timeouts: route53DomainsDelegationSignerRecordTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -464,13 +464,13 @@ export class Route53DomainsDelegationSignerRecord extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signing_attributes: {
-        value: cdktf.listMapperHcl(route53DomainsDelegationSignerRecordSigningAttributesToHclTerraform, true)(this._signingAttributes.internalValue),
+        value: cdktn.listMapperHcl(route53DomainsDelegationSignerRecordSigningAttributesToHclTerraform, true)(this._signingAttributes.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Route53DomainsDelegationSignerRecordSigningAttributesList",

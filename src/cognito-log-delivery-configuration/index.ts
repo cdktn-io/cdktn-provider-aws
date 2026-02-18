@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitoLogDeliveryConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoLogDeliveryConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,7 +27,7 @@ export interface CognitoLogDeliveryConfigurationConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_log_delivery_configuration#log_configurations CognitoLogDeliveryConfiguration#log_configurations}
   */
-  readonly logConfigurations?: CognitoLogDeliveryConfigurationLogConfigurations[] | cdktf.IResolvable;
+  readonly logConfigurations?: CognitoLogDeliveryConfigurationLogConfigurations[] | cdktn.IResolvable;
 }
 export interface CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration {
   /**
@@ -36,25 +36,25 @@ export interface CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsC
   readonly logGroupArn?: string;
 }
 
-export function cognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationToTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationToTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_group_arn: cdktf.stringToTerraform(struct!.logGroupArn),
+    log_group_arn: cdktn.stringToTerraform(struct!.logGroupArn),
   }
 }
 
 
-export function cognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationToHclTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationToHclTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.logGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -65,9 +65,9 @@ export function cognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationOutputReference extends cdktf.ComplexObject {
+export class CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -75,11 +75,11 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -92,13 +92,13 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._logGroupArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -126,15 +126,15 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfi
   }
 }
 
-export class CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationList extends cdktf.ComplexList {
-  public internalValue? : CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration[] | cdktf.IResolvable
+export class CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationList extends cdktn.ComplexList {
+  public internalValue? : CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -152,25 +152,25 @@ export interface CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigu
   readonly streamArn?: string;
 }
 
-export function cognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationToTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationToTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stream_arn: cdktf.stringToTerraform(struct!.streamArn),
+    stream_arn: cdktn.stringToTerraform(struct!.streamArn),
   }
 }
 
 
-export function cognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationToHclTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationToHclTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     stream_arn: {
-      value: cdktf.stringToHclTerraform(struct!.streamArn),
+      value: cdktn.stringToHclTerraform(struct!.streamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -181,9 +181,9 @@ export function cognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationOutputReference extends cdktf.ComplexObject {
+export class CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -191,11 +191,11 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurati
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -208,13 +208,13 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurati
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._streamArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -242,15 +242,15 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurati
   }
 }
 
-export class CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationList extends cdktf.ComplexList {
-  public internalValue? : CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration[] | cdktf.IResolvable
+export class CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationList extends cdktn.ComplexList {
+  public internalValue? : CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -268,25 +268,25 @@ export interface CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration
   readonly bucketArn?: string;
 }
 
-export function cognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationToTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationToTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
+    bucket_arn: cdktn.stringToTerraform(struct!.bucketArn),
   }
 }
 
 
-export function cognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationToHclTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationToHclTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -297,9 +297,9 @@ export function cognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -307,11 +307,11 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -324,13 +324,13 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucketArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -358,15 +358,15 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutp
   }
 }
 
-export class CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationList extends cdktf.ComplexList {
-  public internalValue? : CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration[] | cdktf.IResolvable
+export class CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationList extends cdktn.ComplexList {
+  public internalValue? : CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -391,68 +391,68 @@ export interface CognitoLogDeliveryConfigurationLogConfigurations {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_log_delivery_configuration#cloud_watch_logs_configuration CognitoLogDeliveryConfiguration#cloud_watch_logs_configuration}
   */
-  readonly cloudWatchLogsConfiguration?: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration[] | cdktf.IResolvable;
+  readonly cloudWatchLogsConfiguration?: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration[] | cdktn.IResolvable;
   /**
   * firehose_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_log_delivery_configuration#firehose_configuration CognitoLogDeliveryConfiguration#firehose_configuration}
   */
-  readonly firehoseConfiguration?: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration[] | cdktf.IResolvable;
+  readonly firehoseConfiguration?: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration[] | cdktn.IResolvable;
   /**
   * s3_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_log_delivery_configuration#s3_configuration CognitoLogDeliveryConfiguration#s3_configuration}
   */
-  readonly s3Configuration?: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration[] | cdktf.IResolvable;
+  readonly s3Configuration?: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration[] | cdktn.IResolvable;
 }
 
-export function cognitoLogDeliveryConfigurationLogConfigurationsToTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoLogDeliveryConfigurationLogConfigurationsToTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_source: cdktf.stringToTerraform(struct!.eventSource),
-    log_level: cdktf.stringToTerraform(struct!.logLevel),
-    cloud_watch_logs_configuration: cdktf.listMapper(cognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationToTerraform, true)(struct!.cloudWatchLogsConfiguration),
-    firehose_configuration: cdktf.listMapper(cognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationToTerraform, true)(struct!.firehoseConfiguration),
-    s3_configuration: cdktf.listMapper(cognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationToTerraform, true)(struct!.s3Configuration),
+    event_source: cdktn.stringToTerraform(struct!.eventSource),
+    log_level: cdktn.stringToTerraform(struct!.logLevel),
+    cloud_watch_logs_configuration: cdktn.listMapper(cognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationToTerraform, true)(struct!.cloudWatchLogsConfiguration),
+    firehose_configuration: cdktn.listMapper(cognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationToTerraform, true)(struct!.firehoseConfiguration),
+    s3_configuration: cdktn.listMapper(cognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationToTerraform, true)(struct!.s3Configuration),
   }
 }
 
 
-export function cognitoLogDeliveryConfigurationLogConfigurationsToHclTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoLogDeliveryConfigurationLogConfigurationsToHclTerraform(struct?: CognitoLogDeliveryConfigurationLogConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_source: {
-      value: cdktf.stringToHclTerraform(struct!.eventSource),
+      value: cdktn.stringToHclTerraform(struct!.eventSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_level: {
-      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      value: cdktn.stringToHclTerraform(struct!.logLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloud_watch_logs_configuration: {
-      value: cdktf.listMapperHcl(cognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationToHclTerraform, true)(struct!.cloudWatchLogsConfiguration),
+      value: cdktn.listMapperHcl(cognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationToHclTerraform, true)(struct!.cloudWatchLogsConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationList",
     },
     firehose_configuration: {
-      value: cdktf.listMapperHcl(cognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationToHclTerraform, true)(struct!.firehoseConfiguration),
+      value: cdktn.listMapperHcl(cognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationToHclTerraform, true)(struct!.firehoseConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationList",
     },
     s3_configuration: {
-      value: cdktf.listMapperHcl(cognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationToHclTerraform, true)(struct!.s3Configuration),
+      value: cdktn.listMapperHcl(cognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationToHclTerraform, true)(struct!.s3Configuration),
       isBlock: true,
       type: "list",
       storageClassType: "CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationList",
@@ -463,9 +463,9 @@ export function cognitoLogDeliveryConfigurationLogConfigurationsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoLogDeliveryConfigurationLogConfigurationsOutputReference extends cdktf.ComplexObject {
+export class CognitoLogDeliveryConfigurationLogConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -473,11 +473,11 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoLogDeliveryConfigurationLogConfigurations | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoLogDeliveryConfigurationLogConfigurations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -506,7 +506,7 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoLogDeliveryConfigurationLogConfigurations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoLogDeliveryConfigurationLogConfigurations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -516,7 +516,7 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsOutputReference ext
       this._firehoseConfiguration.internalValue = undefined;
       this._s3Configuration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -562,7 +562,7 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsOutputReference ext
   public get cloudWatchLogsConfiguration() {
     return this._cloudWatchLogsConfiguration;
   }
-  public putCloudWatchLogsConfiguration(value: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration[] | cdktf.IResolvable) {
+  public putCloudWatchLogsConfiguration(value: CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration[] | cdktn.IResolvable) {
     this._cloudWatchLogsConfiguration.internalValue = value;
   }
   public resetCloudWatchLogsConfiguration() {
@@ -578,7 +578,7 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsOutputReference ext
   public get firehoseConfiguration() {
     return this._firehoseConfiguration;
   }
-  public putFirehoseConfiguration(value: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration[] | cdktf.IResolvable) {
+  public putFirehoseConfiguration(value: CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration[] | cdktn.IResolvable) {
     this._firehoseConfiguration.internalValue = value;
   }
   public resetFirehoseConfiguration() {
@@ -594,7 +594,7 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsOutputReference ext
   public get s3Configuration() {
     return this._s3Configuration;
   }
-  public putS3Configuration(value: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration[] | cdktf.IResolvable) {
+  public putS3Configuration(value: CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration[] | cdktn.IResolvable) {
     this._s3Configuration.internalValue = value;
   }
   public resetS3Configuration() {
@@ -606,15 +606,15 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsOutputReference ext
   }
 }
 
-export class CognitoLogDeliveryConfigurationLogConfigurationsList extends cdktf.ComplexList {
-  public internalValue? : CognitoLogDeliveryConfigurationLogConfigurations[] | cdktf.IResolvable
+export class CognitoLogDeliveryConfigurationLogConfigurationsList extends cdktn.ComplexList {
+  public internalValue? : CognitoLogDeliveryConfigurationLogConfigurations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -629,7 +629,7 @@ export class CognitoLogDeliveryConfigurationLogConfigurationsList extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_log_delivery_configuration aws_cognito_log_delivery_configuration}
 */
-export class CognitoLogDeliveryConfiguration extends cdktf.TerraformResource {
+export class CognitoLogDeliveryConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -640,14 +640,14 @@ export class CognitoLogDeliveryConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitoLogDeliveryConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitoLogDeliveryConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoLogDeliveryConfiguration to import
   * @param importFromId The id of the existing CognitoLogDeliveryConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_log_delivery_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoLogDeliveryConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_log_delivery_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_log_delivery_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -720,7 +720,7 @@ export class CognitoLogDeliveryConfiguration extends cdktf.TerraformResource {
   public get logConfigurations() {
     return this._logConfigurations;
   }
-  public putLogConfigurations(value: CognitoLogDeliveryConfigurationLogConfigurations[] | cdktf.IResolvable) {
+  public putLogConfigurations(value: CognitoLogDeliveryConfigurationLogConfigurations[] | cdktn.IResolvable) {
     this._logConfigurations.internalValue = value;
   }
   public resetLogConfigurations() {
@@ -737,28 +737,28 @@ export class CognitoLogDeliveryConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
-      log_configurations: cdktf.listMapper(cognitoLogDeliveryConfigurationLogConfigurationsToTerraform, true)(this._logConfigurations.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      user_pool_id: cdktn.stringToTerraform(this._userPoolId),
+      log_configurations: cdktn.listMapper(cognitoLogDeliveryConfigurationLogConfigurationsToTerraform, true)(this._logConfigurations.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_pool_id: {
-        value: cdktf.stringToHclTerraform(this._userPoolId),
+        value: cdktn.stringToHclTerraform(this._userPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_configurations: {
-        value: cdktf.listMapperHcl(cognitoLogDeliveryConfigurationLogConfigurationsToHclTerraform, true)(this._logConfigurations.internalValue),
+        value: cdktn.listMapperHcl(cognitoLogDeliveryConfigurationLogConfigurationsToHclTerraform, true)(this._logConfigurations.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CognitoLogDeliveryConfigurationLogConfigurationsList",

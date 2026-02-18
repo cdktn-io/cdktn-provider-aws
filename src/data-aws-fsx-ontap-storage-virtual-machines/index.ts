@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsFsxOntapStorageVirtualMachinesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsFsxOntapStorageVirtualMachinesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/fsx_ontap_storage_virtual_machines#id DataAwsFsxOntapStorageVirtualMachines#id}
   *
@@ -30,7 +30,7 @@ export interface DataAwsFsxOntapStorageVirtualMachinesConfig extends cdktf.Terra
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/fsx_ontap_storage_virtual_machines#filter DataAwsFsxOntapStorageVirtualMachines#filter}
   */
-  readonly filter?: DataAwsFsxOntapStorageVirtualMachinesFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsFsxOntapStorageVirtualMachinesFilter[] | cdktn.IResolvable;
 }
 export interface DataAwsFsxOntapStorageVirtualMachinesFilter {
   /**
@@ -43,32 +43,32 @@ export interface DataAwsFsxOntapStorageVirtualMachinesFilter {
   readonly values: string[];
 }
 
-export function dataAwsFsxOntapStorageVirtualMachinesFilterToTerraform(struct?: DataAwsFsxOntapStorageVirtualMachinesFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsFsxOntapStorageVirtualMachinesFilterToTerraform(struct?: DataAwsFsxOntapStorageVirtualMachinesFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsFsxOntapStorageVirtualMachinesFilterToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachinesFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsFsxOntapStorageVirtualMachinesFilterToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachinesFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -79,9 +79,9 @@ export function dataAwsFsxOntapStorageVirtualMachinesFilterToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsFsxOntapStorageVirtualMachinesFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsFsxOntapStorageVirtualMachinesFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -89,11 +89,11 @@ export class DataAwsFsxOntapStorageVirtualMachinesFilterOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsFsxOntapStorageVirtualMachinesFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsFsxOntapStorageVirtualMachinesFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -110,14 +110,14 @@ export class DataAwsFsxOntapStorageVirtualMachinesFilterOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsFsxOntapStorageVirtualMachinesFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsFsxOntapStorageVirtualMachinesFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -156,15 +156,15 @@ export class DataAwsFsxOntapStorageVirtualMachinesFilterOutputReference extends 
   }
 }
 
-export class DataAwsFsxOntapStorageVirtualMachinesFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsFsxOntapStorageVirtualMachinesFilter[] | cdktf.IResolvable
+export class DataAwsFsxOntapStorageVirtualMachinesFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsFsxOntapStorageVirtualMachinesFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -179,7 +179,7 @@ export class DataAwsFsxOntapStorageVirtualMachinesFilterList extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/fsx_ontap_storage_virtual_machines aws_fsx_ontap_storage_virtual_machines}
 */
-export class DataAwsFsxOntapStorageVirtualMachines extends cdktf.TerraformDataSource {
+export class DataAwsFsxOntapStorageVirtualMachines extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -190,14 +190,14 @@ export class DataAwsFsxOntapStorageVirtualMachines extends cdktf.TerraformDataSo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsFsxOntapStorageVirtualMachines resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsFsxOntapStorageVirtualMachines resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsFsxOntapStorageVirtualMachines to import
   * @param importFromId The id of the existing DataAwsFsxOntapStorageVirtualMachines that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/fsx_ontap_storage_virtual_machines#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsFsxOntapStorageVirtualMachines to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_fsx_ontap_storage_virtual_machines", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_fsx_ontap_storage_virtual_machines", importId: importFromId, provider });
       }
 
   // ===========
@@ -278,7 +278,7 @@ export class DataAwsFsxOntapStorageVirtualMachines extends cdktf.TerraformDataSo
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsFsxOntapStorageVirtualMachinesFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsFsxOntapStorageVirtualMachinesFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -295,28 +295,28 @@ export class DataAwsFsxOntapStorageVirtualMachines extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      filter: cdktf.listMapper(dataAwsFsxOntapStorageVirtualMachinesFilterToTerraform, true)(this._filter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      filter: cdktn.listMapper(dataAwsFsxOntapStorageVirtualMachinesFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsFsxOntapStorageVirtualMachinesFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsFsxOntapStorageVirtualMachinesFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsFsxOntapStorageVirtualMachinesFilterList",

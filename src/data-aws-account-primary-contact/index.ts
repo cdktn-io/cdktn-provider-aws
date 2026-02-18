@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsAccountPrimaryContactConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAccountPrimaryContactConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/account_primary_contact#account_id DataAwsAccountPrimaryContact#account_id}
   */
@@ -21,7 +21,7 @@ export interface DataAwsAccountPrimaryContactConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/account_primary_contact aws_account_primary_contact}
 */
-export class DataAwsAccountPrimaryContact extends cdktf.TerraformDataSource {
+export class DataAwsAccountPrimaryContact extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -32,14 +32,14 @@ export class DataAwsAccountPrimaryContact extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsAccountPrimaryContact resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsAccountPrimaryContact resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAccountPrimaryContact to import
   * @param importFromId The id of the existing DataAwsAccountPrimaryContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/account_primary_contact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAccountPrimaryContact to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_account_primary_contact", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_account_primary_contact", importId: importFromId, provider });
       }
 
   // ===========
@@ -158,14 +158,14 @@ export class DataAwsAccountPrimaryContact extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

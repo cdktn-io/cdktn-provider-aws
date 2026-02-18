@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkmanagerTransitGatewayRouteTableAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkmanagerTransitGatewayRouteTableAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_transit_gateway_route_table_attachment#id NetworkmanagerTransitGatewayRouteTableAttachment#id}
   *
@@ -57,32 +57,32 @@ export interface NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts {
   readonly delete?: string;
 }
 
-export function networkmanagerTransitGatewayRouteTableAttachmentTimeoutsToTerraform(struct?: NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerTransitGatewayRouteTableAttachmentTimeoutsToTerraform(struct?: NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function networkmanagerTransitGatewayRouteTableAttachmentTimeoutsToHclTerraform(struct?: NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerTransitGatewayRouteTableAttachmentTimeoutsToHclTerraform(struct?: NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -93,19 +93,19 @@ export function networkmanagerTransitGatewayRouteTableAttachmentTimeoutsToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,14 +122,14 @@ export class NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -177,7 +177,7 @@ export class NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputRefer
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_transit_gateway_route_table_attachment aws_networkmanager_transit_gateway_route_table_attachment}
 */
-export class NetworkmanagerTransitGatewayRouteTableAttachment extends cdktf.TerraformResource {
+export class NetworkmanagerTransitGatewayRouteTableAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -188,14 +188,14 @@ export class NetworkmanagerTransitGatewayRouteTableAttachment extends cdktf.Terr
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkmanagerTransitGatewayRouteTableAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkmanagerTransitGatewayRouteTableAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmanagerTransitGatewayRouteTableAttachment to import
   * @param importFromId The id of the existing NetworkmanagerTransitGatewayRouteTableAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_transit_gateway_route_table_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmanagerTransitGatewayRouteTableAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_transit_gateway_route_table_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_transit_gateway_route_table_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -400,12 +400,12 @@ export class NetworkmanagerTransitGatewayRouteTableAttachment extends cdktf.Terr
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      peering_id: cdktf.stringToTerraform(this._peeringId),
-      routing_policy_label: cdktf.stringToTerraform(this._routingPolicyLabel),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      transit_gateway_route_table_arn: cdktf.stringToTerraform(this._transitGatewayRouteTableArn),
+      id: cdktn.stringToTerraform(this._id),
+      peering_id: cdktn.stringToTerraform(this._peeringId),
+      routing_policy_label: cdktn.stringToTerraform(this._routingPolicyLabel),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      transit_gateway_route_table_arn: cdktn.stringToTerraform(this._transitGatewayRouteTableArn),
       timeouts: networkmanagerTransitGatewayRouteTableAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -413,37 +413,37 @@ export class NetworkmanagerTransitGatewayRouteTableAttachment extends cdktf.Terr
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peering_id: {
-        value: cdktf.stringToHclTerraform(this._peeringId),
+        value: cdktn.stringToHclTerraform(this._peeringId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_policy_label: {
-        value: cdktf.stringToHclTerraform(this._routingPolicyLabel),
+        value: cdktn.stringToHclTerraform(this._routingPolicyLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       transit_gateway_route_table_arn: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayRouteTableArn),
+        value: cdktn.stringToHclTerraform(this._transitGatewayRouteTableArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

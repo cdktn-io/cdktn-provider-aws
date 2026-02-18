@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayBasePathMappingConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayBasePathMappingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_base_path_mapping#api_id ApiGatewayBasePathMapping#api_id}
   */
@@ -50,7 +50,7 @@ export interface ApiGatewayBasePathMappingConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_base_path_mapping aws_api_gateway_base_path_mapping}
 */
-export class ApiGatewayBasePathMapping extends cdktf.TerraformResource {
+export class ApiGatewayBasePathMapping extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class ApiGatewayBasePathMapping extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayBasePathMapping resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayBasePathMapping resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayBasePathMapping to import
   * @param importFromId The id of the existing ApiGatewayBasePathMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_base_path_mapping#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayBasePathMapping to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_base_path_mapping", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_base_path_mapping", importId: importFromId, provider });
       }
 
   // ===========
@@ -223,56 +223,56 @@ export class ApiGatewayBasePathMapping extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      base_path: cdktf.stringToTerraform(this._basePath),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      domain_name_id: cdktf.stringToTerraform(this._domainNameId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      stage_name: cdktf.stringToTerraform(this._stageName),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      base_path: cdktn.stringToTerraform(this._basePath),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      domain_name_id: cdktn.stringToTerraform(this._domainNameId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      stage_name: cdktn.stringToTerraform(this._stageName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       base_path: {
-        value: cdktf.stringToHclTerraform(this._basePath),
+        value: cdktn.stringToHclTerraform(this._basePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name_id: {
-        value: cdktf.stringToHclTerraform(this._domainNameId),
+        value: cdktn.stringToHclTerraform(this._domainNameId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stage_name: {
-        value: cdktf.stringToHclTerraform(this._stageName),
+        value: cdktn.stringToHclTerraform(this._stageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

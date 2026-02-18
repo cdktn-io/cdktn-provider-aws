@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerAppConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_app#app_name SagemakerApp#app_name}
   */
@@ -84,52 +84,52 @@ export interface SagemakerAppResourceSpec {
 }
 
 export function sagemakerAppResourceSpecToTerraform(struct?: SagemakerAppResourceSpecOutputReference | SagemakerAppResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    lifecycle_config_arn: cdktf.stringToTerraform(struct!.lifecycleConfigArn),
-    sagemaker_image_arn: cdktf.stringToTerraform(struct!.sagemakerImageArn),
-    sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
-    sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
+    instance_type: cdktn.stringToTerraform(struct!.instanceType),
+    lifecycle_config_arn: cdktn.stringToTerraform(struct!.lifecycleConfigArn),
+    sagemaker_image_arn: cdktn.stringToTerraform(struct!.sagemakerImageArn),
+    sagemaker_image_version_alias: cdktn.stringToTerraform(struct!.sagemakerImageVersionAlias),
+    sagemaker_image_version_arn: cdktn.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
 }
 
 
 export function sagemakerAppResourceSpecToHclTerraform(struct?: SagemakerAppResourceSpecOutputReference | SagemakerAppResourceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      value: cdktn.stringToHclTerraform(struct!.instanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lifecycle_config_arn: {
-      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      value: cdktn.stringToHclTerraform(struct!.lifecycleConfigArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_alias: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sagemaker_image_version_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      value: cdktn.stringToHclTerraform(struct!.sagemakerImageVersionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -140,14 +140,14 @@ export function sagemakerAppResourceSpecToHclTerraform(struct?: SagemakerAppReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerAppResourceSpecOutputReference extends cdktf.ComplexObject {
+export class SagemakerAppResourceSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -280,7 +280,7 @@ export class SagemakerAppResourceSpecOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_app aws_sagemaker_app}
 */
-export class SagemakerApp extends cdktf.TerraformResource {
+export class SagemakerApp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -291,14 +291,14 @@ export class SagemakerApp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerApp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerApp to import
   * @param importFromId The id of the existing SagemakerApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerApp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_app", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_app", importId: importFromId, provider });
       }
 
   // ===========
@@ -506,15 +506,15 @@ export class SagemakerApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_name: cdktf.stringToTerraform(this._appName),
-      app_type: cdktf.stringToTerraform(this._appType),
-      domain_id: cdktf.stringToTerraform(this._domainId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      space_name: cdktf.stringToTerraform(this._spaceName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      user_profile_name: cdktf.stringToTerraform(this._userProfileName),
+      app_name: cdktn.stringToTerraform(this._appName),
+      app_type: cdktn.stringToTerraform(this._appType),
+      domain_id: cdktn.stringToTerraform(this._domainId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      space_name: cdktn.stringToTerraform(this._spaceName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      user_profile_name: cdktn.stringToTerraform(this._userProfileName),
       resource_spec: sagemakerAppResourceSpecToTerraform(this._resourceSpec.internalValue),
     };
   }
@@ -522,55 +522,55 @@ export class SagemakerApp extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_name: {
-        value: cdktf.stringToHclTerraform(this._appName),
+        value: cdktn.stringToHclTerraform(this._appName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       app_type: {
-        value: cdktf.stringToHclTerraform(this._appType),
+        value: cdktn.stringToHclTerraform(this._appType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_id: {
-        value: cdktf.stringToHclTerraform(this._domainId),
+        value: cdktn.stringToHclTerraform(this._domainId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       space_name: {
-        value: cdktf.stringToHclTerraform(this._spaceName),
+        value: cdktn.stringToHclTerraform(this._spaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user_profile_name: {
-        value: cdktf.stringToHclTerraform(this._userProfileName),
+        value: cdktn.stringToHclTerraform(this._userProfileName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

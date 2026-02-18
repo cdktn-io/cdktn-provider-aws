@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlueDataCatalogEncryptionSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface GlueDataCatalogEncryptionSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_data_catalog_encryption_settings#catalog_id GlueDataCatalogEncryptionSettings#catalog_id}
   */
@@ -44,35 +44,35 @@ export interface GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_data_catalog_encryption_settings#return_connection_password_encrypted GlueDataCatalogEncryptionSettings#return_connection_password_encrypted}
   */
-  readonly returnConnectionPasswordEncrypted: boolean | cdktf.IResolvable;
+  readonly returnConnectionPasswordEncrypted: boolean | cdktn.IResolvable;
 }
 
 export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionToTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference | GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_kms_key_id: cdktf.stringToTerraform(struct!.awsKmsKeyId),
-    return_connection_password_encrypted: cdktf.booleanToTerraform(struct!.returnConnectionPasswordEncrypted),
+    aws_kms_key_id: cdktn.stringToTerraform(struct!.awsKmsKeyId),
+    return_connection_password_encrypted: cdktn.booleanToTerraform(struct!.returnConnectionPasswordEncrypted),
   }
 }
 
 
 export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionToHclTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference | GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.awsKmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.awsKmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     return_connection_password_encrypted: {
-      value: cdktf.booleanToHclTerraform(struct!.returnConnectionPasswordEncrypted),
+      value: cdktn.booleanToHclTerraform(struct!.returnConnectionPasswordEncrypted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -83,14 +83,14 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference extends cdktf.ComplexObject {
+export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -138,11 +138,11 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConne
   }
 
   // return_connection_password_encrypted - computed: false, optional: false, required: true
-  private _returnConnectionPasswordEncrypted?: boolean | cdktf.IResolvable; 
+  private _returnConnectionPasswordEncrypted?: boolean | cdktn.IResolvable; 
   public get returnConnectionPasswordEncrypted() {
     return this.getBooleanAttribute('return_connection_password_encrypted');
   }
-  public set returnConnectionPasswordEncrypted(value: boolean | cdktf.IResolvable) {
+  public set returnConnectionPasswordEncrypted(value: boolean | cdktn.IResolvable) {
     this._returnConnectionPasswordEncrypted = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -166,38 +166,38 @@ export interface GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsE
 }
 
 export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestToTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference | GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_encryption_mode: cdktf.stringToTerraform(struct!.catalogEncryptionMode),
-    catalog_encryption_service_role: cdktf.stringToTerraform(struct!.catalogEncryptionServiceRole),
-    sse_aws_kms_key_id: cdktf.stringToTerraform(struct!.sseAwsKmsKeyId),
+    catalog_encryption_mode: cdktn.stringToTerraform(struct!.catalogEncryptionMode),
+    catalog_encryption_service_role: cdktn.stringToTerraform(struct!.catalogEncryptionServiceRole),
+    sse_aws_kms_key_id: cdktn.stringToTerraform(struct!.sseAwsKmsKeyId),
   }
 }
 
 
 export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestToHclTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference | GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_encryption_mode: {
-      value: cdktf.stringToHclTerraform(struct!.catalogEncryptionMode),
+      value: cdktn.stringToHclTerraform(struct!.catalogEncryptionMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     catalog_encryption_service_role: {
-      value: cdktf.stringToHclTerraform(struct!.catalogEncryptionServiceRole),
+      value: cdktn.stringToHclTerraform(struct!.catalogEncryptionServiceRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sse_aws_kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.sseAwsKmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.sseAwsKmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -208,14 +208,14 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference extends cdktf.ComplexObject {
+export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -313,8 +313,8 @@ export interface GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings 
 }
 
 export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsToTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference | GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -325,8 +325,8 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsTo
 
 
 export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsToHclTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference | GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -348,14 +348,14 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference extends cdktf.ComplexObject {
+export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -416,7 +416,7 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutpu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings}
 */
-export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
+export class GlueDataCatalogEncryptionSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -427,14 +427,14 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlueDataCatalogEncryptionSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlueDataCatalogEncryptionSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueDataCatalogEncryptionSettings to import
   * @param importFromId The id of the existing GlueDataCatalogEncryptionSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/glue_data_catalog_encryption_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueDataCatalogEncryptionSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_data_catalog_encryption_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_data_catalog_encryption_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -541,9 +541,9 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      catalog_id: cdktn.stringToTerraform(this._catalogId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
       data_catalog_encryption_settings: glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsToTerraform(this._dataCatalogEncryptionSettings.internalValue),
     };
   }
@@ -551,19 +551,19 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog_id: {
-        value: cdktf.stringToHclTerraform(this._catalogId),
+        value: cdktn.stringToHclTerraform(this._catalogId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

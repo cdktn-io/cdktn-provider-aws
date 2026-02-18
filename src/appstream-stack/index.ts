@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppstreamStackConfig extends cdktf.TerraformMetaArguments {
+export interface AppstreamStackConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_stack#description AppstreamStack#description}
   */
@@ -62,7 +62,7 @@ export interface AppstreamStackConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_stack#access_endpoints AppstreamStack#access_endpoints}
   */
-  readonly accessEndpoints?: AppstreamStackAccessEndpoints[] | cdktf.IResolvable;
+  readonly accessEndpoints?: AppstreamStackAccessEndpoints[] | cdktn.IResolvable;
   /**
   * application_settings block
   *
@@ -74,7 +74,7 @@ export interface AppstreamStackConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_stack#storage_connectors AppstreamStack#storage_connectors}
   */
-  readonly storageConnectors?: AppstreamStackStorageConnectors[] | cdktf.IResolvable;
+  readonly storageConnectors?: AppstreamStackStorageConnectors[] | cdktn.IResolvable;
   /**
   * streaming_experience_settings block
   *
@@ -86,7 +86,7 @@ export interface AppstreamStackConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_stack#user_settings AppstreamStack#user_settings}
   */
-  readonly userSettings?: AppstreamStackUserSettings[] | cdktf.IResolvable;
+  readonly userSettings?: AppstreamStackUserSettings[] | cdktn.IResolvable;
 }
 export interface AppstreamStackAccessEndpoints {
   /**
@@ -99,32 +99,32 @@ export interface AppstreamStackAccessEndpoints {
   readonly vpceId?: string;
 }
 
-export function appstreamStackAccessEndpointsToTerraform(struct?: AppstreamStackAccessEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appstreamStackAccessEndpointsToTerraform(struct?: AppstreamStackAccessEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_type: cdktf.stringToTerraform(struct!.endpointType),
-    vpce_id: cdktf.stringToTerraform(struct!.vpceId),
+    endpoint_type: cdktn.stringToTerraform(struct!.endpointType),
+    vpce_id: cdktn.stringToTerraform(struct!.vpceId),
   }
 }
 
 
-export function appstreamStackAccessEndpointsToHclTerraform(struct?: AppstreamStackAccessEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appstreamStackAccessEndpointsToHclTerraform(struct?: AppstreamStackAccessEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_type: {
-      value: cdktf.stringToHclTerraform(struct!.endpointType),
+      value: cdktn.stringToHclTerraform(struct!.endpointType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpce_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpceId),
+      value: cdktn.stringToHclTerraform(struct!.vpceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,9 +135,9 @@ export function appstreamStackAccessEndpointsToHclTerraform(struct?: AppstreamSt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamStackAccessEndpointsOutputReference extends cdktf.ComplexObject {
+export class AppstreamStackAccessEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -145,11 +145,11 @@ export class AppstreamStackAccessEndpointsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppstreamStackAccessEndpoints | cdktf.IResolvable | undefined {
+  public get internalValue(): AppstreamStackAccessEndpoints | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -166,14 +166,14 @@ export class AppstreamStackAccessEndpointsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppstreamStackAccessEndpoints | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppstreamStackAccessEndpoints | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endpointType = undefined;
       this._vpceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,15 +215,15 @@ export class AppstreamStackAccessEndpointsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class AppstreamStackAccessEndpointsList extends cdktf.ComplexList {
-  public internalValue? : AppstreamStackAccessEndpoints[] | cdktf.IResolvable
+export class AppstreamStackAccessEndpointsList extends cdktn.ComplexList {
+  public internalValue? : AppstreamStackAccessEndpoints[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -238,7 +238,7 @@ export interface AppstreamStackApplicationSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_stack#enabled AppstreamStack#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_stack#settings_group AppstreamStack#settings_group}
   */
@@ -246,31 +246,31 @@ export interface AppstreamStackApplicationSettings {
 }
 
 export function appstreamStackApplicationSettingsToTerraform(struct?: AppstreamStackApplicationSettingsOutputReference | AppstreamStackApplicationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    settings_group: cdktf.stringToTerraform(struct!.settingsGroup),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    settings_group: cdktn.stringToTerraform(struct!.settingsGroup),
   }
 }
 
 
 export function appstreamStackApplicationSettingsToHclTerraform(struct?: AppstreamStackApplicationSettingsOutputReference | AppstreamStackApplicationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     settings_group: {
-      value: cdktf.stringToHclTerraform(struct!.settingsGroup),
+      value: cdktn.stringToHclTerraform(struct!.settingsGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -281,14 +281,14 @@ export function appstreamStackApplicationSettingsToHclTerraform(struct?: Appstre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamStackApplicationSettingsOutputReference extends cdktf.ComplexObject {
+export class AppstreamStackApplicationSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -320,11 +320,11 @@ export class AppstreamStackApplicationSettingsOutputReference extends cdktf.Comp
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -363,39 +363,39 @@ export interface AppstreamStackStorageConnectors {
   readonly resourceIdentifier?: string;
 }
 
-export function appstreamStackStorageConnectorsToTerraform(struct?: AppstreamStackStorageConnectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appstreamStackStorageConnectorsToTerraform(struct?: AppstreamStackStorageConnectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connector_type: cdktf.stringToTerraform(struct!.connectorType),
-    domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domains),
-    resource_identifier: cdktf.stringToTerraform(struct!.resourceIdentifier),
+    connector_type: cdktn.stringToTerraform(struct!.connectorType),
+    domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.domains),
+    resource_identifier: cdktn.stringToTerraform(struct!.resourceIdentifier),
   }
 }
 
 
-export function appstreamStackStorageConnectorsToHclTerraform(struct?: AppstreamStackStorageConnectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appstreamStackStorageConnectorsToHclTerraform(struct?: AppstreamStackStorageConnectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connector_type: {
-      value: cdktf.stringToHclTerraform(struct!.connectorType),
+      value: cdktn.stringToHclTerraform(struct!.connectorType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     domains: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domains),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.domains),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.resourceIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.resourceIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -406,9 +406,9 @@ export function appstreamStackStorageConnectorsToHclTerraform(struct?: Appstream
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamStackStorageConnectorsOutputReference extends cdktf.ComplexObject {
+export class AppstreamStackStorageConnectorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -416,11 +416,11 @@ export class AppstreamStackStorageConnectorsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppstreamStackStorageConnectors | cdktf.IResolvable | undefined {
+  public get internalValue(): AppstreamStackStorageConnectors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -441,7 +441,7 @@ export class AppstreamStackStorageConnectorsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppstreamStackStorageConnectors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppstreamStackStorageConnectors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -449,7 +449,7 @@ export class AppstreamStackStorageConnectorsOutputReference extends cdktf.Comple
       this._domains = undefined;
       this._resourceIdentifier = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -508,15 +508,15 @@ export class AppstreamStackStorageConnectorsOutputReference extends cdktf.Comple
   }
 }
 
-export class AppstreamStackStorageConnectorsList extends cdktf.ComplexList {
-  public internalValue? : AppstreamStackStorageConnectors[] | cdktf.IResolvable
+export class AppstreamStackStorageConnectorsList extends cdktn.ComplexList {
+  public internalValue? : AppstreamStackStorageConnectors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -535,24 +535,24 @@ export interface AppstreamStackStreamingExperienceSettings {
 }
 
 export function appstreamStackStreamingExperienceSettingsToTerraform(struct?: AppstreamStackStreamingExperienceSettingsOutputReference | AppstreamStackStreamingExperienceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preferred_protocol: cdktf.stringToTerraform(struct!.preferredProtocol),
+    preferred_protocol: cdktn.stringToTerraform(struct!.preferredProtocol),
   }
 }
 
 
 export function appstreamStackStreamingExperienceSettingsToHclTerraform(struct?: AppstreamStackStreamingExperienceSettingsOutputReference | AppstreamStackStreamingExperienceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preferred_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.preferredProtocol),
+      value: cdktn.stringToHclTerraform(struct!.preferredProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -563,14 +563,14 @@ export function appstreamStackStreamingExperienceSettingsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamStackStreamingExperienceSettingsOutputReference extends cdktf.ComplexObject {
+export class AppstreamStackStreamingExperienceSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -622,32 +622,32 @@ export interface AppstreamStackUserSettings {
   readonly permission: string;
 }
 
-export function appstreamStackUserSettingsToTerraform(struct?: AppstreamStackUserSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appstreamStackUserSettingsToTerraform(struct?: AppstreamStackUserSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    permission: cdktf.stringToTerraform(struct!.permission),
+    action: cdktn.stringToTerraform(struct!.action),
+    permission: cdktn.stringToTerraform(struct!.permission),
   }
 }
 
 
-export function appstreamStackUserSettingsToHclTerraform(struct?: AppstreamStackUserSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appstreamStackUserSettingsToHclTerraform(struct?: AppstreamStackUserSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -658,9 +658,9 @@ export function appstreamStackUserSettingsToHclTerraform(struct?: AppstreamStack
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppstreamStackUserSettingsOutputReference extends cdktf.ComplexObject {
+export class AppstreamStackUserSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -668,11 +668,11 @@ export class AppstreamStackUserSettingsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppstreamStackUserSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): AppstreamStackUserSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -689,14 +689,14 @@ export class AppstreamStackUserSettingsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppstreamStackUserSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppstreamStackUserSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._permission = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -735,15 +735,15 @@ export class AppstreamStackUserSettingsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class AppstreamStackUserSettingsList extends cdktf.ComplexList {
-  public internalValue? : AppstreamStackUserSettings[] | cdktf.IResolvable
+export class AppstreamStackUserSettingsList extends cdktn.ComplexList {
+  public internalValue? : AppstreamStackUserSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -758,7 +758,7 @@ export class AppstreamStackUserSettingsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_stack aws_appstream_stack}
 */
-export class AppstreamStack extends cdktf.TerraformResource {
+export class AppstreamStack extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -769,14 +769,14 @@ export class AppstreamStack extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppstreamStack resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppstreamStack resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppstreamStack to import
   * @param importFromId The id of the existing AppstreamStack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appstream_stack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppstreamStack to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_stack", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appstream_stack", importId: importFromId, provider });
       }
 
   // ===========
@@ -872,7 +872,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
   // embed_host_domains - computed: true, optional: true, required: false
   private _embedHostDomains?: string[]; 
   public get embedHostDomains() {
-    return cdktf.Fn.tolist(this.getListAttribute('embed_host_domains'));
+    return cdktn.Fn.tolist(this.getListAttribute('embed_host_domains'));
   }
   public set embedHostDomains(value: string[]) {
     this._embedHostDomains = value;
@@ -999,7 +999,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
   public get accessEndpoints() {
     return this._accessEndpoints;
   }
-  public putAccessEndpoints(value: AppstreamStackAccessEndpoints[] | cdktf.IResolvable) {
+  public putAccessEndpoints(value: AppstreamStackAccessEndpoints[] | cdktn.IResolvable) {
     this._accessEndpoints.internalValue = value;
   }
   public resetAccessEndpoints() {
@@ -1031,7 +1031,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
   public get storageConnectors() {
     return this._storageConnectors;
   }
-  public putStorageConnectors(value: AppstreamStackStorageConnectors[] | cdktf.IResolvable) {
+  public putStorageConnectors(value: AppstreamStackStorageConnectors[] | cdktn.IResolvable) {
     this._storageConnectors.internalValue = value;
   }
   public resetStorageConnectors() {
@@ -1063,7 +1063,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
   public get userSettings() {
     return this._userSettings;
   }
-  public putUserSettings(value: AppstreamStackUserSettings[] | cdktf.IResolvable) {
+  public putUserSettings(value: AppstreamStackUserSettings[] | cdktn.IResolvable) {
     this._userSettings.internalValue = value;
   }
   public resetUserSettings() {
@@ -1080,88 +1080,88 @@ export class AppstreamStack extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      embed_host_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._embedHostDomains),
-      feedback_url: cdktf.stringToTerraform(this._feedbackUrl),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      redirect_url: cdktf.stringToTerraform(this._redirectUrl),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      access_endpoints: cdktf.listMapper(appstreamStackAccessEndpointsToTerraform, true)(this._accessEndpoints.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      embed_host_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._embedHostDomains),
+      feedback_url: cdktn.stringToTerraform(this._feedbackUrl),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      redirect_url: cdktn.stringToTerraform(this._redirectUrl),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      access_endpoints: cdktn.listMapper(appstreamStackAccessEndpointsToTerraform, true)(this._accessEndpoints.internalValue),
       application_settings: appstreamStackApplicationSettingsToTerraform(this._applicationSettings.internalValue),
-      storage_connectors: cdktf.listMapper(appstreamStackStorageConnectorsToTerraform, true)(this._storageConnectors.internalValue),
+      storage_connectors: cdktn.listMapper(appstreamStackStorageConnectorsToTerraform, true)(this._storageConnectors.internalValue),
       streaming_experience_settings: appstreamStackStreamingExperienceSettingsToTerraform(this._streamingExperienceSettings.internalValue),
-      user_settings: cdktf.listMapper(appstreamStackUserSettingsToTerraform, true)(this._userSettings.internalValue),
+      user_settings: cdktn.listMapper(appstreamStackUserSettingsToTerraform, true)(this._userSettings.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       embed_host_domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._embedHostDomains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._embedHostDomains),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       feedback_url: {
-        value: cdktf.stringToHclTerraform(this._feedbackUrl),
+        value: cdktn.stringToHclTerraform(this._feedbackUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redirect_url: {
-        value: cdktf.stringToHclTerraform(this._redirectUrl),
+        value: cdktn.stringToHclTerraform(this._redirectUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       access_endpoints: {
-        value: cdktf.listMapperHcl(appstreamStackAccessEndpointsToHclTerraform, true)(this._accessEndpoints.internalValue),
+        value: cdktn.listMapperHcl(appstreamStackAccessEndpointsToHclTerraform, true)(this._accessEndpoints.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AppstreamStackAccessEndpointsList",
@@ -1173,7 +1173,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
         storageClassType: "AppstreamStackApplicationSettingsList",
       },
       storage_connectors: {
-        value: cdktf.listMapperHcl(appstreamStackStorageConnectorsToHclTerraform, true)(this._storageConnectors.internalValue),
+        value: cdktn.listMapperHcl(appstreamStackStorageConnectorsToHclTerraform, true)(this._storageConnectors.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AppstreamStackStorageConnectorsList",
@@ -1185,7 +1185,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
         storageClassType: "AppstreamStackStreamingExperienceSettingsList",
       },
       user_settings: {
-        value: cdktf.listMapperHcl(appstreamStackUserSettingsToHclTerraform, true)(this._userSettings.internalValue),
+        value: cdktn.listMapperHcl(appstreamStackUserSettingsToHclTerraform, true)(this._userSettings.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AppstreamStackUserSettingsList",

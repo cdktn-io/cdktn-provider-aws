@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsyncGraphqlApiConfig extends cdktf.TerraformMetaArguments {
+export interface AppsyncGraphqlApiConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_graphql_api#api_type AppsyncGraphqlApi#api_type}
   */
@@ -72,13 +72,13 @@ export interface AppsyncGraphqlApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_graphql_api#xray_enabled AppsyncGraphqlApi#xray_enabled}
   */
-  readonly xrayEnabled?: boolean | cdktf.IResolvable;
+  readonly xrayEnabled?: boolean | cdktn.IResolvable;
   /**
   * additional_authentication_provider block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_graphql_api#additional_authentication_provider AppsyncGraphqlApi#additional_authentication_provider}
   */
-  readonly additionalAuthenticationProvider?: AppsyncGraphqlApiAdditionalAuthenticationProvider[] | cdktf.IResolvable;
+  readonly additionalAuthenticationProvider?: AppsyncGraphqlApiAdditionalAuthenticationProvider[] | cdktn.IResolvable;
   /**
   * enhanced_metrics_config block
   *
@@ -126,38 +126,38 @@ export interface AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthoriz
 }
 
 export function appsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigToTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(struct!.authorizerResultTtlInSeconds),
-    authorizer_uri: cdktf.stringToTerraform(struct!.authorizerUri),
-    identity_validation_expression: cdktf.stringToTerraform(struct!.identityValidationExpression),
+    authorizer_result_ttl_in_seconds: cdktn.numberToTerraform(struct!.authorizerResultTtlInSeconds),
+    authorizer_uri: cdktn.stringToTerraform(struct!.authorizerUri),
+    identity_validation_expression: cdktn.stringToTerraform(struct!.identityValidationExpression),
   }
 }
 
 
 export function appsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigToHclTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorizer_result_ttl_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.authorizerResultTtlInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.authorizerResultTtlInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     authorizer_uri: {
-      value: cdktf.stringToHclTerraform(struct!.authorizerUri),
+      value: cdktn.stringToHclTerraform(struct!.authorizerUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_validation_expression: {
-      value: cdktf.stringToHclTerraform(struct!.identityValidationExpression),
+      value: cdktn.stringToHclTerraform(struct!.identityValidationExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -168,14 +168,14 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorize
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -277,45 +277,45 @@ export interface AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectC
 }
 
 export function appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigToTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_ttl: cdktf.numberToTerraform(struct!.authTtl),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    iat_ttl: cdktf.numberToTerraform(struct!.iatTtl),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
+    auth_ttl: cdktn.numberToTerraform(struct!.authTtl),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    iat_ttl: cdktn.numberToTerraform(struct!.iatTtl),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
   }
 }
 
 
 export function appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigToHclTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.authTtl),
+      value: cdktn.numberToHclTerraform(struct!.authTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iat_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.iatTtl),
+      value: cdktn.numberToHclTerraform(struct!.iatTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -326,14 +326,14 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -453,38 +453,38 @@ export interface AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig
 }
 
 export function appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigToTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_id_client_regex: cdktf.stringToTerraform(struct!.appIdClientRegex),
-    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
-    user_pool_id: cdktf.stringToTerraform(struct!.userPoolId),
+    app_id_client_regex: cdktn.stringToTerraform(struct!.appIdClientRegex),
+    aws_region: cdktn.stringToTerraform(struct!.awsRegion),
+    user_pool_id: cdktn.stringToTerraform(struct!.userPoolId),
   }
 }
 
 
 export function appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigToHclTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_id_client_regex: {
-      value: cdktf.stringToHclTerraform(struct!.appIdClientRegex),
+      value: cdktn.stringToHclTerraform(struct!.appIdClientRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_region: {
-      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      value: cdktn.stringToHclTerraform(struct!.awsRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.userPoolId),
+      value: cdktn.stringToHclTerraform(struct!.userPoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -495,14 +495,14 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -609,13 +609,13 @@ export interface AppsyncGraphqlApiAdditionalAuthenticationProvider {
   readonly userPoolConfig?: AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig;
 }
 
-export function appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProvider | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProvider | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_type: cdktf.stringToTerraform(struct!.authenticationType),
+    authentication_type: cdktn.stringToTerraform(struct!.authenticationType),
     lambda_authorizer_config: appsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigToTerraform(struct!.lambdaAuthorizerConfig),
     openid_connect_config: appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigToTerraform(struct!.openidConnectConfig),
     user_pool_config: appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigToTerraform(struct!.userPoolConfig),
@@ -623,14 +623,14 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform(str
 }
 
 
-export function appsyncGraphqlApiAdditionalAuthenticationProviderToHclTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProvider | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncGraphqlApiAdditionalAuthenticationProviderToHclTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProvider | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_type: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationType),
+      value: cdktn.stringToHclTerraform(struct!.authenticationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -659,9 +659,9 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference extends cdktf.ComplexObject {
+export class AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -669,11 +669,11 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncGraphqlApiAdditionalAuthenticationProvider | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncGraphqlApiAdditionalAuthenticationProvider | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -698,7 +698,7 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncGraphqlApiAdditionalAuthenticationProvider | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncGraphqlApiAdditionalAuthenticationProvider | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -707,7 +707,7 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference ex
       this._openidConnectConfig.internalValue = undefined;
       this._userPoolConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -783,15 +783,15 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference ex
   }
 }
 
-export class AppsyncGraphqlApiAdditionalAuthenticationProviderList extends cdktf.ComplexList {
-  public internalValue? : AppsyncGraphqlApiAdditionalAuthenticationProvider[] | cdktf.IResolvable
+export class AppsyncGraphqlApiAdditionalAuthenticationProviderList extends cdktn.ComplexList {
+  public internalValue? : AppsyncGraphqlApiAdditionalAuthenticationProvider[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -818,38 +818,38 @@ export interface AppsyncGraphqlApiEnhancedMetricsConfig {
 }
 
 export function appsyncGraphqlApiEnhancedMetricsConfigToTerraform(struct?: AppsyncGraphqlApiEnhancedMetricsConfigOutputReference | AppsyncGraphqlApiEnhancedMetricsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_source_level_metrics_behavior: cdktf.stringToTerraform(struct!.dataSourceLevelMetricsBehavior),
-    operation_level_metrics_config: cdktf.stringToTerraform(struct!.operationLevelMetricsConfig),
-    resolver_level_metrics_behavior: cdktf.stringToTerraform(struct!.resolverLevelMetricsBehavior),
+    data_source_level_metrics_behavior: cdktn.stringToTerraform(struct!.dataSourceLevelMetricsBehavior),
+    operation_level_metrics_config: cdktn.stringToTerraform(struct!.operationLevelMetricsConfig),
+    resolver_level_metrics_behavior: cdktn.stringToTerraform(struct!.resolverLevelMetricsBehavior),
   }
 }
 
 
 export function appsyncGraphqlApiEnhancedMetricsConfigToHclTerraform(struct?: AppsyncGraphqlApiEnhancedMetricsConfigOutputReference | AppsyncGraphqlApiEnhancedMetricsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_source_level_metrics_behavior: {
-      value: cdktf.stringToHclTerraform(struct!.dataSourceLevelMetricsBehavior),
+      value: cdktn.stringToHclTerraform(struct!.dataSourceLevelMetricsBehavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation_level_metrics_config: {
-      value: cdktf.stringToHclTerraform(struct!.operationLevelMetricsConfig),
+      value: cdktn.stringToHclTerraform(struct!.operationLevelMetricsConfig),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resolver_level_metrics_behavior: {
-      value: cdktf.stringToHclTerraform(struct!.resolverLevelMetricsBehavior),
+      value: cdktn.stringToHclTerraform(struct!.resolverLevelMetricsBehavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -860,14 +860,14 @@ export function appsyncGraphqlApiEnhancedMetricsConfigToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncGraphqlApiEnhancedMetricsConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncGraphqlApiEnhancedMetricsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -959,38 +959,38 @@ export interface AppsyncGraphqlApiLambdaAuthorizerConfig {
 }
 
 export function appsyncGraphqlApiLambdaAuthorizerConfigToTerraform(struct?: AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference | AppsyncGraphqlApiLambdaAuthorizerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(struct!.authorizerResultTtlInSeconds),
-    authorizer_uri: cdktf.stringToTerraform(struct!.authorizerUri),
-    identity_validation_expression: cdktf.stringToTerraform(struct!.identityValidationExpression),
+    authorizer_result_ttl_in_seconds: cdktn.numberToTerraform(struct!.authorizerResultTtlInSeconds),
+    authorizer_uri: cdktn.stringToTerraform(struct!.authorizerUri),
+    identity_validation_expression: cdktn.stringToTerraform(struct!.identityValidationExpression),
   }
 }
 
 
 export function appsyncGraphqlApiLambdaAuthorizerConfigToHclTerraform(struct?: AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference | AppsyncGraphqlApiLambdaAuthorizerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorizer_result_ttl_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.authorizerResultTtlInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.authorizerResultTtlInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     authorizer_uri: {
-      value: cdktf.stringToHclTerraform(struct!.authorizerUri),
+      value: cdktn.stringToHclTerraform(struct!.authorizerUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_validation_expression: {
-      value: cdktf.stringToHclTerraform(struct!.identityValidationExpression),
+      value: cdktn.stringToHclTerraform(struct!.identityValidationExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1001,14 +1001,14 @@ export function appsyncGraphqlApiLambdaAuthorizerConfigToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1098,7 +1098,7 @@ export interface AppsyncGraphqlApiLogConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_graphql_api#exclude_verbose_content AppsyncGraphqlApi#exclude_verbose_content}
   */
-  readonly excludeVerboseContent?: boolean | cdktf.IResolvable;
+  readonly excludeVerboseContent?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_graphql_api#field_log_level AppsyncGraphqlApi#field_log_level}
   */
@@ -1106,38 +1106,38 @@ export interface AppsyncGraphqlApiLogConfig {
 }
 
 export function appsyncGraphqlApiLogConfigToTerraform(struct?: AppsyncGraphqlApiLogConfigOutputReference | AppsyncGraphqlApiLogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_logs_role_arn: cdktf.stringToTerraform(struct!.cloudwatchLogsRoleArn),
-    exclude_verbose_content: cdktf.booleanToTerraform(struct!.excludeVerboseContent),
-    field_log_level: cdktf.stringToTerraform(struct!.fieldLogLevel),
+    cloudwatch_logs_role_arn: cdktn.stringToTerraform(struct!.cloudwatchLogsRoleArn),
+    exclude_verbose_content: cdktn.booleanToTerraform(struct!.excludeVerboseContent),
+    field_log_level: cdktn.stringToTerraform(struct!.fieldLogLevel),
   }
 }
 
 
 export function appsyncGraphqlApiLogConfigToHclTerraform(struct?: AppsyncGraphqlApiLogConfigOutputReference | AppsyncGraphqlApiLogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_logs_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogsRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchLogsRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclude_verbose_content: {
-      value: cdktf.booleanToHclTerraform(struct!.excludeVerboseContent),
+      value: cdktn.booleanToHclTerraform(struct!.excludeVerboseContent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     field_log_level: {
-      value: cdktf.stringToHclTerraform(struct!.fieldLogLevel),
+      value: cdktn.stringToHclTerraform(struct!.fieldLogLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1148,14 +1148,14 @@ export function appsyncGraphqlApiLogConfigToHclTerraform(struct?: AppsyncGraphql
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncGraphqlApiLogConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncGraphqlApiLogConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1206,11 +1206,11 @@ export class AppsyncGraphqlApiLogConfigOutputReference extends cdktf.ComplexObje
   }
 
   // exclude_verbose_content - computed: false, optional: true, required: false
-  private _excludeVerboseContent?: boolean | cdktf.IResolvable; 
+  private _excludeVerboseContent?: boolean | cdktn.IResolvable; 
   public get excludeVerboseContent() {
     return this.getBooleanAttribute('exclude_verbose_content');
   }
-  public set excludeVerboseContent(value: boolean | cdktf.IResolvable) {
+  public set excludeVerboseContent(value: boolean | cdktn.IResolvable) {
     this._excludeVerboseContent = value;
   }
   public resetExcludeVerboseContent() {
@@ -1254,45 +1254,45 @@ export interface AppsyncGraphqlApiOpenidConnectConfig {
 }
 
 export function appsyncGraphqlApiOpenidConnectConfigToTerraform(struct?: AppsyncGraphqlApiOpenidConnectConfigOutputReference | AppsyncGraphqlApiOpenidConnectConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_ttl: cdktf.numberToTerraform(struct!.authTtl),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    iat_ttl: cdktf.numberToTerraform(struct!.iatTtl),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
+    auth_ttl: cdktn.numberToTerraform(struct!.authTtl),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    iat_ttl: cdktn.numberToTerraform(struct!.iatTtl),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
   }
 }
 
 
 export function appsyncGraphqlApiOpenidConnectConfigToHclTerraform(struct?: AppsyncGraphqlApiOpenidConnectConfigOutputReference | AppsyncGraphqlApiOpenidConnectConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.authTtl),
+      value: cdktn.numberToHclTerraform(struct!.authTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iat_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.iatTtl),
+      value: cdktn.numberToHclTerraform(struct!.iatTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1303,14 +1303,14 @@ export function appsyncGraphqlApiOpenidConnectConfigToHclTerraform(struct?: Apps
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncGraphqlApiOpenidConnectConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncGraphqlApiOpenidConnectConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1434,45 +1434,45 @@ export interface AppsyncGraphqlApiUserPoolConfig {
 }
 
 export function appsyncGraphqlApiUserPoolConfigToTerraform(struct?: AppsyncGraphqlApiUserPoolConfigOutputReference | AppsyncGraphqlApiUserPoolConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_id_client_regex: cdktf.stringToTerraform(struct!.appIdClientRegex),
-    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
-    default_action: cdktf.stringToTerraform(struct!.defaultAction),
-    user_pool_id: cdktf.stringToTerraform(struct!.userPoolId),
+    app_id_client_regex: cdktn.stringToTerraform(struct!.appIdClientRegex),
+    aws_region: cdktn.stringToTerraform(struct!.awsRegion),
+    default_action: cdktn.stringToTerraform(struct!.defaultAction),
+    user_pool_id: cdktn.stringToTerraform(struct!.userPoolId),
   }
 }
 
 
 export function appsyncGraphqlApiUserPoolConfigToHclTerraform(struct?: AppsyncGraphqlApiUserPoolConfigOutputReference | AppsyncGraphqlApiUserPoolConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_id_client_regex: {
-      value: cdktf.stringToHclTerraform(struct!.appIdClientRegex),
+      value: cdktn.stringToHclTerraform(struct!.appIdClientRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_region: {
-      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      value: cdktn.stringToHclTerraform(struct!.awsRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_action: {
-      value: cdktf.stringToHclTerraform(struct!.defaultAction),
+      value: cdktn.stringToHclTerraform(struct!.defaultAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.userPoolId),
+      value: cdktn.stringToHclTerraform(struct!.userPoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1483,14 +1483,14 @@ export function appsyncGraphqlApiUserPoolConfigToHclTerraform(struct?: AppsyncGr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncGraphqlApiUserPoolConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncGraphqlApiUserPoolConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1595,7 +1595,7 @@ export class AppsyncGraphqlApiUserPoolConfigOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_graphql_api aws_appsync_graphql_api}
 */
-export class AppsyncGraphqlApi extends cdktf.TerraformResource {
+export class AppsyncGraphqlApi extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1606,14 +1606,14 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsyncGraphqlApi resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsyncGraphqlApi resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsyncGraphqlApi to import
   * @param importFromId The id of the existing AppsyncGraphqlApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_graphql_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsyncGraphqlApi to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_graphql_api", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_graphql_api", importId: importFromId, provider });
       }
 
   // ===========
@@ -1861,7 +1861,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   }
 
   // uris - computed: true, optional: false, required: false
-  private _uris = new cdktf.StringMap(this, "uris");
+  private _uris = new cdktn.StringMap(this, "uris");
   public get uris() {
     return this._uris;
   }
@@ -1883,11 +1883,11 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   }
 
   // xray_enabled - computed: false, optional: true, required: false
-  private _xrayEnabled?: boolean | cdktf.IResolvable; 
+  private _xrayEnabled?: boolean | cdktn.IResolvable; 
   public get xrayEnabled() {
     return this.getBooleanAttribute('xray_enabled');
   }
-  public set xrayEnabled(value: boolean | cdktf.IResolvable) {
+  public set xrayEnabled(value: boolean | cdktn.IResolvable) {
     this._xrayEnabled = value;
   }
   public resetXrayEnabled() {
@@ -1903,7 +1903,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   public get additionalAuthenticationProvider() {
     return this._additionalAuthenticationProvider;
   }
-  public putAdditionalAuthenticationProvider(value: AppsyncGraphqlApiAdditionalAuthenticationProvider[] | cdktf.IResolvable) {
+  public putAdditionalAuthenticationProvider(value: AppsyncGraphqlApiAdditionalAuthenticationProvider[] | cdktn.IResolvable) {
     this._additionalAuthenticationProvider.internalValue = value;
   }
   public resetAdditionalAuthenticationProvider() {
@@ -2000,21 +2000,21 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_type: cdktf.stringToTerraform(this._apiType),
-      authentication_type: cdktf.stringToTerraform(this._authenticationType),
-      id: cdktf.stringToTerraform(this._id),
-      introspection_config: cdktf.stringToTerraform(this._introspectionConfig),
-      merged_api_execution_role_arn: cdktf.stringToTerraform(this._mergedApiExecutionRoleArn),
-      name: cdktf.stringToTerraform(this._name),
-      query_depth_limit: cdktf.numberToTerraform(this._queryDepthLimit),
-      region: cdktf.stringToTerraform(this._region),
-      resolver_count_limit: cdktf.numberToTerraform(this._resolverCountLimit),
-      schema: cdktf.stringToTerraform(this._schema),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      visibility: cdktf.stringToTerraform(this._visibility),
-      xray_enabled: cdktf.booleanToTerraform(this._xrayEnabled),
-      additional_authentication_provider: cdktf.listMapper(appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform, true)(this._additionalAuthenticationProvider.internalValue),
+      api_type: cdktn.stringToTerraform(this._apiType),
+      authentication_type: cdktn.stringToTerraform(this._authenticationType),
+      id: cdktn.stringToTerraform(this._id),
+      introspection_config: cdktn.stringToTerraform(this._introspectionConfig),
+      merged_api_execution_role_arn: cdktn.stringToTerraform(this._mergedApiExecutionRoleArn),
+      name: cdktn.stringToTerraform(this._name),
+      query_depth_limit: cdktn.numberToTerraform(this._queryDepthLimit),
+      region: cdktn.stringToTerraform(this._region),
+      resolver_count_limit: cdktn.numberToTerraform(this._resolverCountLimit),
+      schema: cdktn.stringToTerraform(this._schema),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      visibility: cdktn.stringToTerraform(this._visibility),
+      xray_enabled: cdktn.booleanToTerraform(this._xrayEnabled),
+      additional_authentication_provider: cdktn.listMapper(appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform, true)(this._additionalAuthenticationProvider.internalValue),
       enhanced_metrics_config: appsyncGraphqlApiEnhancedMetricsConfigToTerraform(this._enhancedMetricsConfig.internalValue),
       lambda_authorizer_config: appsyncGraphqlApiLambdaAuthorizerConfigToTerraform(this._lambdaAuthorizerConfig.internalValue),
       log_config: appsyncGraphqlApiLogConfigToTerraform(this._logConfig.internalValue),
@@ -2026,91 +2026,91 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_type: {
-        value: cdktf.stringToHclTerraform(this._apiType),
+        value: cdktn.stringToHclTerraform(this._apiType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authentication_type: {
-        value: cdktf.stringToHclTerraform(this._authenticationType),
+        value: cdktn.stringToHclTerraform(this._authenticationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       introspection_config: {
-        value: cdktf.stringToHclTerraform(this._introspectionConfig),
+        value: cdktn.stringToHclTerraform(this._introspectionConfig),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       merged_api_execution_role_arn: {
-        value: cdktf.stringToHclTerraform(this._mergedApiExecutionRoleArn),
+        value: cdktn.stringToHclTerraform(this._mergedApiExecutionRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_depth_limit: {
-        value: cdktf.numberToHclTerraform(this._queryDepthLimit),
+        value: cdktn.numberToHclTerraform(this._queryDepthLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resolver_count_limit: {
-        value: cdktf.numberToHclTerraform(this._resolverCountLimit),
+        value: cdktn.numberToHclTerraform(this._resolverCountLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       visibility: {
-        value: cdktf.stringToHclTerraform(this._visibility),
+        value: cdktn.stringToHclTerraform(this._visibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       xray_enabled: {
-        value: cdktf.booleanToHclTerraform(this._xrayEnabled),
+        value: cdktn.booleanToHclTerraform(this._xrayEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       additional_authentication_provider: {
-        value: cdktf.listMapperHcl(appsyncGraphqlApiAdditionalAuthenticationProviderToHclTerraform, true)(this._additionalAuthenticationProvider.internalValue),
+        value: cdktn.listMapperHcl(appsyncGraphqlApiAdditionalAuthenticationProviderToHclTerraform, true)(this._additionalAuthenticationProvider.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsyncGraphqlApiAdditionalAuthenticationProviderList",

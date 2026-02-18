@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DynamodbKinesisStreamingDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface DynamodbKinesisStreamingDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_kinesis_streaming_destination#approximate_creation_date_time_precision DynamodbKinesisStreamingDestination#approximate_creation_date_time_precision}
   */
@@ -42,7 +42,7 @@ export interface DynamodbKinesisStreamingDestinationConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_kinesis_streaming_destination aws_dynamodb_kinesis_streaming_destination}
 */
-export class DynamodbKinesisStreamingDestination extends cdktf.TerraformResource {
+export class DynamodbKinesisStreamingDestination extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DynamodbKinesisStreamingDestination extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DynamodbKinesisStreamingDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DynamodbKinesisStreamingDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamodbKinesisStreamingDestination to import
   * @param importFromId The id of the existing DynamodbKinesisStreamingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dynamodb_kinesis_streaming_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamodbKinesisStreamingDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_kinesis_streaming_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_kinesis_streaming_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -181,42 +181,42 @@ export class DynamodbKinesisStreamingDestination extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      approximate_creation_date_time_precision: cdktf.stringToTerraform(this._approximateCreationDateTimePrecision),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      stream_arn: cdktf.stringToTerraform(this._streamArn),
-      table_name: cdktf.stringToTerraform(this._tableName),
+      approximate_creation_date_time_precision: cdktn.stringToTerraform(this._approximateCreationDateTimePrecision),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      stream_arn: cdktn.stringToTerraform(this._streamArn),
+      table_name: cdktn.stringToTerraform(this._tableName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       approximate_creation_date_time_precision: {
-        value: cdktf.stringToHclTerraform(this._approximateCreationDateTimePrecision),
+        value: cdktn.stringToHclTerraform(this._approximateCreationDateTimePrecision),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stream_arn: {
-        value: cdktf.stringToHclTerraform(this._streamArn),
+        value: cdktn.stringToHclTerraform(this._streamArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_name: {
-        value: cdktf.stringToHclTerraform(this._tableName),
+        value: cdktn.stringToHclTerraform(this._tableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

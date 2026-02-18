@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferAccessConfig extends cdktf.TerraformMetaArguments {
+export interface TransferAccessConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_access#external_id TransferAccess#external_id}
   */
@@ -54,7 +54,7 @@ export interface TransferAccessConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_access#home_directory_mappings TransferAccess#home_directory_mappings}
   */
-  readonly homeDirectoryMappings?: TransferAccessHomeDirectoryMappings[] | cdktf.IResolvable;
+  readonly homeDirectoryMappings?: TransferAccessHomeDirectoryMappings[] | cdktn.IResolvable;
   /**
   * posix_profile block
   *
@@ -73,32 +73,32 @@ export interface TransferAccessHomeDirectoryMappings {
   readonly target: string;
 }
 
-export function transferAccessHomeDirectoryMappingsToTerraform(struct?: TransferAccessHomeDirectoryMappings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferAccessHomeDirectoryMappingsToTerraform(struct?: TransferAccessHomeDirectoryMappings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry: cdktf.stringToTerraform(struct!.entry),
-    target: cdktf.stringToTerraform(struct!.target),
+    entry: cdktn.stringToTerraform(struct!.entry),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
-export function transferAccessHomeDirectoryMappingsToHclTerraform(struct?: TransferAccessHomeDirectoryMappings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferAccessHomeDirectoryMappingsToHclTerraform(struct?: TransferAccessHomeDirectoryMappings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry: {
-      value: cdktf.stringToHclTerraform(struct!.entry),
+      value: cdktn.stringToHclTerraform(struct!.entry),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,9 +109,9 @@ export function transferAccessHomeDirectoryMappingsToHclTerraform(struct?: Trans
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferAccessHomeDirectoryMappingsOutputReference extends cdktf.ComplexObject {
+export class TransferAccessHomeDirectoryMappingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -119,11 +119,11 @@ export class TransferAccessHomeDirectoryMappingsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TransferAccessHomeDirectoryMappings | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferAccessHomeDirectoryMappings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,14 +140,14 @@ export class TransferAccessHomeDirectoryMappingsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferAccessHomeDirectoryMappings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferAccessHomeDirectoryMappings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entry = undefined;
       this._target = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -186,15 +186,15 @@ export class TransferAccessHomeDirectoryMappingsOutputReference extends cdktf.Co
   }
 }
 
-export class TransferAccessHomeDirectoryMappingsList extends cdktf.ComplexList {
-  public internalValue? : TransferAccessHomeDirectoryMappings[] | cdktf.IResolvable
+export class TransferAccessHomeDirectoryMappingsList extends cdktn.ComplexList {
+  public internalValue? : TransferAccessHomeDirectoryMappings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -221,38 +221,38 @@ export interface TransferAccessPosixProfile {
 }
 
 export function transferAccessPosixProfileToTerraform(struct?: TransferAccessPosixProfileOutputReference | TransferAccessPosixProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gid: cdktf.numberToTerraform(struct!.gid),
-    secondary_gids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.secondaryGids),
-    uid: cdktf.numberToTerraform(struct!.uid),
+    gid: cdktn.numberToTerraform(struct!.gid),
+    secondary_gids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.secondaryGids),
+    uid: cdktn.numberToTerraform(struct!.uid),
   }
 }
 
 
 export function transferAccessPosixProfileToHclTerraform(struct?: TransferAccessPosixProfileOutputReference | TransferAccessPosixProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gid: {
-      value: cdktf.numberToHclTerraform(struct!.gid),
+      value: cdktn.numberToHclTerraform(struct!.gid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     secondary_gids: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.secondaryGids),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.secondaryGids),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
     },
     uid: {
-      value: cdktf.numberToHclTerraform(struct!.uid),
+      value: cdktn.numberToHclTerraform(struct!.uid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -263,14 +263,14 @@ export function transferAccessPosixProfileToHclTerraform(struct?: TransferAccess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferAccessPosixProfileOutputReference extends cdktf.ComplexObject {
+export class TransferAccessPosixProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -323,7 +323,7 @@ export class TransferAccessPosixProfileOutputReference extends cdktf.ComplexObje
   // secondary_gids - computed: false, optional: true, required: false
   private _secondaryGids?: number[]; 
   public get secondaryGids() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('secondary_gids')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('secondary_gids')));
   }
   public set secondaryGids(value: number[]) {
     this._secondaryGids = value;
@@ -353,7 +353,7 @@ export class TransferAccessPosixProfileOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_access aws_transfer_access}
 */
-export class TransferAccess extends cdktf.TerraformResource {
+export class TransferAccess extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -364,14 +364,14 @@ export class TransferAccess extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferAccess resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferAccess resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferAccess to import
   * @param importFromId The id of the existing TransferAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_access#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferAccess to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_access", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_access", importId: importFromId, provider });
       }
 
   // ===========
@@ -544,7 +544,7 @@ export class TransferAccess extends cdktf.TerraformResource {
   public get homeDirectoryMappings() {
     return this._homeDirectoryMappings;
   }
-  public putHomeDirectoryMappings(value: TransferAccessHomeDirectoryMappings[] | cdktf.IResolvable) {
+  public putHomeDirectoryMappings(value: TransferAccessHomeDirectoryMappings[] | cdktn.IResolvable) {
     this._homeDirectoryMappings.internalValue = value;
   }
   public resetHomeDirectoryMappings() {
@@ -577,15 +577,15 @@ export class TransferAccess extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      external_id: cdktf.stringToTerraform(this._externalId),
-      home_directory: cdktf.stringToTerraform(this._homeDirectory),
-      home_directory_type: cdktf.stringToTerraform(this._homeDirectoryType),
-      id: cdktf.stringToTerraform(this._id),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
-      role: cdktf.stringToTerraform(this._role),
-      server_id: cdktf.stringToTerraform(this._serverId),
-      home_directory_mappings: cdktf.listMapper(transferAccessHomeDirectoryMappingsToTerraform, true)(this._homeDirectoryMappings.internalValue),
+      external_id: cdktn.stringToTerraform(this._externalId),
+      home_directory: cdktn.stringToTerraform(this._homeDirectory),
+      home_directory_type: cdktn.stringToTerraform(this._homeDirectoryType),
+      id: cdktn.stringToTerraform(this._id),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
+      role: cdktn.stringToTerraform(this._role),
+      server_id: cdktn.stringToTerraform(this._serverId),
+      home_directory_mappings: cdktn.listMapper(transferAccessHomeDirectoryMappingsToTerraform, true)(this._homeDirectoryMappings.internalValue),
       posix_profile: transferAccessPosixProfileToTerraform(this._posixProfile.internalValue),
     };
   }
@@ -593,55 +593,55 @@ export class TransferAccess extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       external_id: {
-        value: cdktf.stringToHclTerraform(this._externalId),
+        value: cdktn.stringToHclTerraform(this._externalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       home_directory: {
-        value: cdktf.stringToHclTerraform(this._homeDirectory),
+        value: cdktn.stringToHclTerraform(this._homeDirectory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       home_directory_type: {
-        value: cdktf.stringToHclTerraform(this._homeDirectoryType),
+        value: cdktn.stringToHclTerraform(this._homeDirectoryType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_id: {
-        value: cdktf.stringToHclTerraform(this._serverId),
+        value: cdktn.stringToHclTerraform(this._serverId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       home_directory_mappings: {
-        value: cdktf.listMapperHcl(transferAccessHomeDirectoryMappingsToHclTerraform, true)(this._homeDirectoryMappings.internalValue),
+        value: cdktn.listMapperHcl(transferAccessHomeDirectoryMappingsToHclTerraform, true)(this._homeDirectoryMappings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TransferAccessHomeDirectoryMappingsList",

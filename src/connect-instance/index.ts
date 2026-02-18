@@ -7,23 +7,23 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConnectInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface ConnectInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#auto_resolve_best_voices_enabled ConnectInstance#auto_resolve_best_voices_enabled}
   */
-  readonly autoResolveBestVoicesEnabled?: boolean | cdktf.IResolvable;
+  readonly autoResolveBestVoicesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#contact_flow_logs_enabled ConnectInstance#contact_flow_logs_enabled}
   */
-  readonly contactFlowLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly contactFlowLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#contact_lens_enabled ConnectInstance#contact_lens_enabled}
   */
-  readonly contactLensEnabled?: boolean | cdktf.IResolvable;
+  readonly contactLensEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#directory_id ConnectInstance#directory_id}
   */
@@ -31,7 +31,7 @@ export interface ConnectInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#early_media_enabled ConnectInstance#early_media_enabled}
   */
-  readonly earlyMediaEnabled?: boolean | cdktf.IResolvable;
+  readonly earlyMediaEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#id ConnectInstance#id}
   *
@@ -46,7 +46,7 @@ export interface ConnectInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#inbound_calls_enabled ConnectInstance#inbound_calls_enabled}
   */
-  readonly inboundCallsEnabled: boolean | cdktf.IResolvable;
+  readonly inboundCallsEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#instance_alias ConnectInstance#instance_alias}
   */
@@ -54,11 +54,11 @@ export interface ConnectInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#multi_party_conference_enabled ConnectInstance#multi_party_conference_enabled}
   */
-  readonly multiPartyConferenceEnabled?: boolean | cdktf.IResolvable;
+  readonly multiPartyConferenceEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#outbound_calls_enabled ConnectInstance#outbound_calls_enabled}
   */
-  readonly outboundCallsEnabled: boolean | cdktf.IResolvable;
+  readonly outboundCallsEnabled: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -91,32 +91,32 @@ export interface ConnectInstanceTimeouts {
   readonly delete?: string;
 }
 
-export function connectInstanceTimeoutsToTerraform(struct?: ConnectInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectInstanceTimeoutsToTerraform(struct?: ConnectInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function connectInstanceTimeoutsToHclTerraform(struct?: ConnectInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function connectInstanceTimeoutsToHclTerraform(struct?: ConnectInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function connectInstanceTimeoutsToHclTerraform(struct?: ConnectInstanceTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ConnectInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ConnectInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ConnectInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,14 +156,14 @@ export class ConnectInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConnectInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConnectInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -211,7 +211,7 @@ export class ConnectInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance aws_connect_instance}
 */
-export class ConnectInstance extends cdktf.TerraformResource {
+export class ConnectInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -222,14 +222,14 @@ export class ConnectInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConnectInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConnectInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectInstance to import
   * @param importFromId The id of the existing ConnectInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -286,11 +286,11 @@ export class ConnectInstance extends cdktf.TerraformResource {
   }
 
   // auto_resolve_best_voices_enabled - computed: false, optional: true, required: false
-  private _autoResolveBestVoicesEnabled?: boolean | cdktf.IResolvable; 
+  private _autoResolveBestVoicesEnabled?: boolean | cdktn.IResolvable; 
   public get autoResolveBestVoicesEnabled() {
     return this.getBooleanAttribute('auto_resolve_best_voices_enabled');
   }
-  public set autoResolveBestVoicesEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoResolveBestVoicesEnabled(value: boolean | cdktn.IResolvable) {
     this._autoResolveBestVoicesEnabled = value;
   }
   public resetAutoResolveBestVoicesEnabled() {
@@ -302,11 +302,11 @@ export class ConnectInstance extends cdktf.TerraformResource {
   }
 
   // contact_flow_logs_enabled - computed: false, optional: true, required: false
-  private _contactFlowLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _contactFlowLogsEnabled?: boolean | cdktn.IResolvable; 
   public get contactFlowLogsEnabled() {
     return this.getBooleanAttribute('contact_flow_logs_enabled');
   }
-  public set contactFlowLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set contactFlowLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._contactFlowLogsEnabled = value;
   }
   public resetContactFlowLogsEnabled() {
@@ -318,11 +318,11 @@ export class ConnectInstance extends cdktf.TerraformResource {
   }
 
   // contact_lens_enabled - computed: false, optional: true, required: false
-  private _contactLensEnabled?: boolean | cdktf.IResolvable; 
+  private _contactLensEnabled?: boolean | cdktn.IResolvable; 
   public get contactLensEnabled() {
     return this.getBooleanAttribute('contact_lens_enabled');
   }
-  public set contactLensEnabled(value: boolean | cdktf.IResolvable) {
+  public set contactLensEnabled(value: boolean | cdktn.IResolvable) {
     this._contactLensEnabled = value;
   }
   public resetContactLensEnabled() {
@@ -355,11 +355,11 @@ export class ConnectInstance extends cdktf.TerraformResource {
   }
 
   // early_media_enabled - computed: false, optional: true, required: false
-  private _earlyMediaEnabled?: boolean | cdktf.IResolvable; 
+  private _earlyMediaEnabled?: boolean | cdktn.IResolvable; 
   public get earlyMediaEnabled() {
     return this.getBooleanAttribute('early_media_enabled');
   }
-  public set earlyMediaEnabled(value: boolean | cdktf.IResolvable) {
+  public set earlyMediaEnabled(value: boolean | cdktn.IResolvable) {
     this._earlyMediaEnabled = value;
   }
   public resetEarlyMediaEnabled() {
@@ -400,11 +400,11 @@ export class ConnectInstance extends cdktf.TerraformResource {
   }
 
   // inbound_calls_enabled - computed: false, optional: false, required: true
-  private _inboundCallsEnabled?: boolean | cdktf.IResolvable; 
+  private _inboundCallsEnabled?: boolean | cdktn.IResolvable; 
   public get inboundCallsEnabled() {
     return this.getBooleanAttribute('inbound_calls_enabled');
   }
-  public set inboundCallsEnabled(value: boolean | cdktf.IResolvable) {
+  public set inboundCallsEnabled(value: boolean | cdktn.IResolvable) {
     this._inboundCallsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -429,11 +429,11 @@ export class ConnectInstance extends cdktf.TerraformResource {
   }
 
   // multi_party_conference_enabled - computed: false, optional: true, required: false
-  private _multiPartyConferenceEnabled?: boolean | cdktf.IResolvable; 
+  private _multiPartyConferenceEnabled?: boolean | cdktn.IResolvable; 
   public get multiPartyConferenceEnabled() {
     return this.getBooleanAttribute('multi_party_conference_enabled');
   }
-  public set multiPartyConferenceEnabled(value: boolean | cdktf.IResolvable) {
+  public set multiPartyConferenceEnabled(value: boolean | cdktn.IResolvable) {
     this._multiPartyConferenceEnabled = value;
   }
   public resetMultiPartyConferenceEnabled() {
@@ -445,11 +445,11 @@ export class ConnectInstance extends cdktf.TerraformResource {
   }
 
   // outbound_calls_enabled - computed: false, optional: false, required: true
-  private _outboundCallsEnabled?: boolean | cdktf.IResolvable; 
+  private _outboundCallsEnabled?: boolean | cdktn.IResolvable; 
   public get outboundCallsEnabled() {
     return this.getBooleanAttribute('outbound_calls_enabled');
   }
-  public set outboundCallsEnabled(value: boolean | cdktf.IResolvable) {
+  public set outboundCallsEnabled(value: boolean | cdktn.IResolvable) {
     this._outboundCallsEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -537,20 +537,20 @@ export class ConnectInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_resolve_best_voices_enabled: cdktf.booleanToTerraform(this._autoResolveBestVoicesEnabled),
-      contact_flow_logs_enabled: cdktf.booleanToTerraform(this._contactFlowLogsEnabled),
-      contact_lens_enabled: cdktf.booleanToTerraform(this._contactLensEnabled),
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      early_media_enabled: cdktf.booleanToTerraform(this._earlyMediaEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      identity_management_type: cdktf.stringToTerraform(this._identityManagementType),
-      inbound_calls_enabled: cdktf.booleanToTerraform(this._inboundCallsEnabled),
-      instance_alias: cdktf.stringToTerraform(this._instanceAlias),
-      multi_party_conference_enabled: cdktf.booleanToTerraform(this._multiPartyConferenceEnabled),
-      outbound_calls_enabled: cdktf.booleanToTerraform(this._outboundCallsEnabled),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      auto_resolve_best_voices_enabled: cdktn.booleanToTerraform(this._autoResolveBestVoicesEnabled),
+      contact_flow_logs_enabled: cdktn.booleanToTerraform(this._contactFlowLogsEnabled),
+      contact_lens_enabled: cdktn.booleanToTerraform(this._contactLensEnabled),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      early_media_enabled: cdktn.booleanToTerraform(this._earlyMediaEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      identity_management_type: cdktn.stringToTerraform(this._identityManagementType),
+      inbound_calls_enabled: cdktn.booleanToTerraform(this._inboundCallsEnabled),
+      instance_alias: cdktn.stringToTerraform(this._instanceAlias),
+      multi_party_conference_enabled: cdktn.booleanToTerraform(this._multiPartyConferenceEnabled),
+      outbound_calls_enabled: cdktn.booleanToTerraform(this._outboundCallsEnabled),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: connectInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -558,85 +558,85 @@ export class ConnectInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_resolve_best_voices_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoResolveBestVoicesEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoResolveBestVoicesEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       contact_flow_logs_enabled: {
-        value: cdktf.booleanToHclTerraform(this._contactFlowLogsEnabled),
+        value: cdktn.booleanToHclTerraform(this._contactFlowLogsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       contact_lens_enabled: {
-        value: cdktf.booleanToHclTerraform(this._contactLensEnabled),
+        value: cdktn.booleanToHclTerraform(this._contactLensEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       early_media_enabled: {
-        value: cdktf.booleanToHclTerraform(this._earlyMediaEnabled),
+        value: cdktn.booleanToHclTerraform(this._earlyMediaEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_management_type: {
-        value: cdktf.stringToHclTerraform(this._identityManagementType),
+        value: cdktn.stringToHclTerraform(this._identityManagementType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inbound_calls_enabled: {
-        value: cdktf.booleanToHclTerraform(this._inboundCallsEnabled),
+        value: cdktn.booleanToHclTerraform(this._inboundCallsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       instance_alias: {
-        value: cdktf.stringToHclTerraform(this._instanceAlias),
+        value: cdktn.stringToHclTerraform(this._instanceAlias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_party_conference_enabled: {
-        value: cdktf.booleanToHclTerraform(this._multiPartyConferenceEnabled),
+        value: cdktn.booleanToHclTerraform(this._multiPartyConferenceEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       outbound_calls_enabled: {
-        value: cdktf.booleanToHclTerraform(this._outboundCallsEnabled),
+        value: cdktn.booleanToHclTerraform(this._outboundCallsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

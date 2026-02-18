@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchCompositeAlarmConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchCompositeAlarmConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_composite_alarm#actions_enabled CloudwatchCompositeAlarm#actions_enabled}
   */
-  readonly actionsEnabled?: boolean | cdktf.IResolvable;
+  readonly actionsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_composite_alarm#alarm_actions CloudwatchCompositeAlarm#alarm_actions}
   */
@@ -84,38 +84,38 @@ export interface CloudwatchCompositeAlarmActionsSuppressor {
 }
 
 export function cloudwatchCompositeAlarmActionsSuppressorToTerraform(struct?: CloudwatchCompositeAlarmActionsSuppressorOutputReference | CloudwatchCompositeAlarmActionsSuppressor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alarm: cdktf.stringToTerraform(struct!.alarm),
-    extension_period: cdktf.numberToTerraform(struct!.extensionPeriod),
-    wait_period: cdktf.numberToTerraform(struct!.waitPeriod),
+    alarm: cdktn.stringToTerraform(struct!.alarm),
+    extension_period: cdktn.numberToTerraform(struct!.extensionPeriod),
+    wait_period: cdktn.numberToTerraform(struct!.waitPeriod),
   }
 }
 
 
 export function cloudwatchCompositeAlarmActionsSuppressorToHclTerraform(struct?: CloudwatchCompositeAlarmActionsSuppressorOutputReference | CloudwatchCompositeAlarmActionsSuppressor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alarm: {
-      value: cdktf.stringToHclTerraform(struct!.alarm),
+      value: cdktn.stringToHclTerraform(struct!.alarm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     extension_period: {
-      value: cdktf.numberToHclTerraform(struct!.extensionPeriod),
+      value: cdktn.numberToHclTerraform(struct!.extensionPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     wait_period: {
-      value: cdktf.numberToHclTerraform(struct!.waitPeriod),
+      value: cdktn.numberToHclTerraform(struct!.waitPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -126,14 +126,14 @@ export function cloudwatchCompositeAlarmActionsSuppressorToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchCompositeAlarmActionsSuppressorOutputReference extends cdktf.ComplexObject {
+export class CloudwatchCompositeAlarmActionsSuppressorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -213,7 +213,7 @@ export class CloudwatchCompositeAlarmActionsSuppressorOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm}
 */
-export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
+export class CloudwatchCompositeAlarm extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -224,14 +224,14 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchCompositeAlarm resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchCompositeAlarm resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchCompositeAlarm to import
   * @param importFromId The id of the existing CloudwatchCompositeAlarm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_composite_alarm#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchCompositeAlarm to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_composite_alarm", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_composite_alarm", importId: importFromId, provider });
       }
 
   // ===========
@@ -280,11 +280,11 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // ==========
 
   // actions_enabled - computed: false, optional: true, required: false
-  private _actionsEnabled?: boolean | cdktf.IResolvable; 
+  private _actionsEnabled?: boolean | cdktn.IResolvable; 
   public get actionsEnabled() {
     return this.getBooleanAttribute('actions_enabled');
   }
-  public set actionsEnabled(value: boolean | cdktf.IResolvable) {
+  public set actionsEnabled(value: boolean | cdktn.IResolvable) {
     this._actionsEnabled = value;
   }
   public resetActionsEnabled() {
@@ -298,7 +298,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // alarm_actions - computed: false, optional: true, required: false
   private _alarmActions?: string[]; 
   public get alarmActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('alarm_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('alarm_actions'));
   }
   public set alarmActions(value: string[]) {
     this._alarmActions = value;
@@ -377,7 +377,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // insufficient_data_actions - computed: false, optional: true, required: false
   private _insufficientDataActions?: string[]; 
   public get insufficientDataActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('insufficient_data_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('insufficient_data_actions'));
   }
   public set insufficientDataActions(value: string[]) {
     this._insufficientDataActions = value;
@@ -393,7 +393,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // ok_actions - computed: false, optional: true, required: false
   private _okActions?: string[]; 
   public get okActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('ok_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('ok_actions'));
   }
   public set okActions(value: string[]) {
     this._okActions = value;
@@ -476,17 +476,17 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      actions_enabled: cdktf.booleanToTerraform(this._actionsEnabled),
-      alarm_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._alarmActions),
-      alarm_description: cdktf.stringToTerraform(this._alarmDescription),
-      alarm_name: cdktf.stringToTerraform(this._alarmName),
-      alarm_rule: cdktf.stringToTerraform(this._alarmRule),
-      id: cdktf.stringToTerraform(this._id),
-      insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._insufficientDataActions),
-      ok_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._okActions),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      actions_enabled: cdktn.booleanToTerraform(this._actionsEnabled),
+      alarm_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._alarmActions),
+      alarm_description: cdktn.stringToTerraform(this._alarmDescription),
+      alarm_name: cdktn.stringToTerraform(this._alarmName),
+      alarm_rule: cdktn.stringToTerraform(this._alarmRule),
+      id: cdktn.stringToTerraform(this._id),
+      insufficient_data_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._insufficientDataActions),
+      ok_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._okActions),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       actions_suppressor: cloudwatchCompositeAlarmActionsSuppressorToTerraform(this._actionsSuppressor.internalValue),
     };
   }
@@ -494,67 +494,67 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       actions_enabled: {
-        value: cdktf.booleanToHclTerraform(this._actionsEnabled),
+        value: cdktn.booleanToHclTerraform(this._actionsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       alarm_actions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._alarmActions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._alarmActions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       alarm_description: {
-        value: cdktf.stringToHclTerraform(this._alarmDescription),
+        value: cdktn.stringToHclTerraform(this._alarmDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alarm_name: {
-        value: cdktf.stringToHclTerraform(this._alarmName),
+        value: cdktn.stringToHclTerraform(this._alarmName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alarm_rule: {
-        value: cdktf.stringToHclTerraform(this._alarmRule),
+        value: cdktn.stringToHclTerraform(this._alarmRule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insufficient_data_actions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._insufficientDataActions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._insufficientDataActions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       ok_actions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._okActions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._okActions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

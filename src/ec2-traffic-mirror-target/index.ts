@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TrafficMirrorTargetConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TrafficMirrorTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_traffic_mirror_target#description Ec2TrafficMirrorTarget#description}
   */
@@ -54,7 +54,7 @@ export interface Ec2TrafficMirrorTargetConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_traffic_mirror_target aws_ec2_traffic_mirror_target}
 */
-export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
+export class Ec2TrafficMirrorTarget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TrafficMirrorTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TrafficMirrorTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TrafficMirrorTarget to import
   * @param importFromId The id of the existing Ec2TrafficMirrorTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_traffic_mirror_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TrafficMirrorTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_traffic_mirror_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_traffic_mirror_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -260,63 +260,63 @@ export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      gateway_load_balancer_endpoint_id: cdktf.stringToTerraform(this._gatewayLoadBalancerEndpointId),
-      id: cdktf.stringToTerraform(this._id),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      network_load_balancer_arn: cdktf.stringToTerraform(this._networkLoadBalancerArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      gateway_load_balancer_endpoint_id: cdktn.stringToTerraform(this._gatewayLoadBalancerEndpointId),
+      id: cdktn.stringToTerraform(this._id),
+      network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
+      network_load_balancer_arn: cdktn.stringToTerraform(this._networkLoadBalancerArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_load_balancer_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._gatewayLoadBalancerEndpointId),
+        value: cdktn.stringToHclTerraform(this._gatewayLoadBalancerEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface_id: {
-        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        value: cdktn.stringToHclTerraform(this._networkInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_load_balancer_arn: {
-        value: cdktf.stringToHclTerraform(this._networkLoadBalancerArn),
+        value: cdktn.stringToHclTerraform(this._networkLoadBalancerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

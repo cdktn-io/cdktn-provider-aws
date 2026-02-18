@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface M2DeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface M2DeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_deployment#application_id M2Deployment#application_id}
   */
@@ -27,7 +27,7 @@ export interface M2DeploymentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_deployment#force_stop M2Deployment#force_stop}
   */
-  readonly forceStop?: boolean | cdktf.IResolvable;
+  readonly forceStop?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -37,7 +37,7 @@ export interface M2DeploymentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_deployment#start M2Deployment#start}
   */
-  readonly start: boolean | cdktf.IResolvable;
+  readonly start: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -66,39 +66,39 @@ export interface M2DeploymentTimeouts {
   readonly update?: string;
 }
 
-export function m2DeploymentTimeoutsToTerraform(struct?: M2DeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2DeploymentTimeoutsToTerraform(struct?: M2DeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function m2DeploymentTimeoutsToHclTerraform(struct?: M2DeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function m2DeploymentTimeoutsToHclTerraform(struct?: M2DeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,19 +109,19 @@ export function m2DeploymentTimeoutsToHclTerraform(struct?: M2DeploymentTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class M2DeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class M2DeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): M2DeploymentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): M2DeploymentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -142,7 +142,7 @@ export class M2DeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: M2DeploymentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: M2DeploymentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -150,7 +150,7 @@ export class M2DeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,7 +215,7 @@ export class M2DeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_deployment aws_m2_deployment}
 */
-export class M2Deployment extends cdktf.TerraformResource {
+export class M2Deployment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -226,14 +226,14 @@ export class M2Deployment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a M2Deployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a M2Deployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the M2Deployment to import
   * @param importFromId The id of the existing M2Deployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/m2_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the M2Deployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_m2_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_m2_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -321,11 +321,11 @@ export class M2Deployment extends cdktf.TerraformResource {
   }
 
   // force_stop - computed: false, optional: true, required: false
-  private _forceStop?: boolean | cdktf.IResolvable; 
+  private _forceStop?: boolean | cdktn.IResolvable; 
   public get forceStop() {
     return this.getBooleanAttribute('force_stop');
   }
-  public set forceStop(value: boolean | cdktf.IResolvable) {
+  public set forceStop(value: boolean | cdktn.IResolvable) {
     this._forceStop = value;
   }
   public resetForceStop() {
@@ -358,11 +358,11 @@ export class M2Deployment extends cdktf.TerraformResource {
   }
 
   // start - computed: false, optional: false, required: true
-  private _start?: boolean | cdktf.IResolvable; 
+  private _start?: boolean | cdktn.IResolvable; 
   public get start() {
     return this.getBooleanAttribute('start');
   }
-  public set start(value: boolean | cdktf.IResolvable) {
+  public set start(value: boolean | cdktn.IResolvable) {
     this._start = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -392,12 +392,12 @@ export class M2Deployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      application_version: cdktf.numberToTerraform(this._applicationVersion),
-      environment_id: cdktf.stringToTerraform(this._environmentId),
-      force_stop: cdktf.booleanToTerraform(this._forceStop),
-      region: cdktf.stringToTerraform(this._region),
-      start: cdktf.booleanToTerraform(this._start),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      application_version: cdktn.numberToTerraform(this._applicationVersion),
+      environment_id: cdktn.stringToTerraform(this._environmentId),
+      force_stop: cdktn.booleanToTerraform(this._forceStop),
+      region: cdktn.stringToTerraform(this._region),
+      start: cdktn.booleanToTerraform(this._start),
       timeouts: m2DeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -405,37 +405,37 @@ export class M2Deployment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       application_version: {
-        value: cdktf.numberToHclTerraform(this._applicationVersion),
+        value: cdktn.numberToHclTerraform(this._applicationVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       environment_id: {
-        value: cdktf.stringToHclTerraform(this._environmentId),
+        value: cdktn.stringToHclTerraform(this._environmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_stop: {
-        value: cdktf.booleanToHclTerraform(this._forceStop),
+        value: cdktn.booleanToHclTerraform(this._forceStop),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start: {
-        value: cdktf.booleanToHclTerraform(this._start),
+        value: cdktn.booleanToHclTerraform(this._start),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

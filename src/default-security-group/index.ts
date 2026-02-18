@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DefaultSecurityGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DefaultSecurityGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#egress DefaultSecurityGroup#egress}
   */
-  readonly egress?: DefaultSecurityGroupEgress[] | cdktf.IResolvable;
+  readonly egress?: DefaultSecurityGroupEgress[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#id DefaultSecurityGroup#id}
   *
@@ -26,7 +26,7 @@ export interface DefaultSecurityGroupConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#ingress DefaultSecurityGroup#ingress}
   */
-  readonly ingress?: DefaultSecurityGroupIngress[] | cdktf.IResolvable;
+  readonly ingress?: DefaultSecurityGroupIngress[] | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -36,7 +36,7 @@ export interface DefaultSecurityGroupConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#revoke_rules_on_delete DefaultSecurityGroup#revoke_rules_on_delete}
   */
-  readonly revokeRulesOnDelete?: boolean | cdktf.IResolvable;
+  readonly revokeRulesOnDelete?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#tags DefaultSecurityGroup#tags}
   */
@@ -82,88 +82,88 @@ export interface DefaultSecurityGroupEgress {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#self DefaultSecurityGroup#self}
   */
-  readonly selfAttribute?: boolean | cdktf.IResolvable;
+  readonly selfAttribute?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#to_port DefaultSecurityGroup#to_port}
   */
   readonly toPort?: number;
 }
 
-export function defaultSecurityGroupEgressToTerraform(struct?: DefaultSecurityGroupEgress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultSecurityGroupEgressToTerraform(struct?: DefaultSecurityGroupEgress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_blocks: struct!.cidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrBlocks),
-    description: struct!.description === undefined ? null : cdktf.stringToTerraform(struct!.description),
-    from_port: struct!.fromPort === undefined ? null : cdktf.numberToTerraform(struct!.fromPort),
-    ipv6_cidr_blocks: struct!.ipv6CidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv6CidrBlocks),
-    prefix_list_ids: struct!.prefixListIds === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.prefixListIds),
-    protocol: struct!.protocol === undefined ? null : cdktf.stringToTerraform(struct!.protocol),
-    security_groups: struct!.securityGroups === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
-    self: struct!.selfAttribute === undefined ? null : cdktf.booleanToTerraform(struct!.selfAttribute),
-    to_port: struct!.toPort === undefined ? null : cdktf.numberToTerraform(struct!.toPort),
+    cidr_blocks: struct!.cidrBlocks === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cidrBlocks),
+    description: struct!.description === undefined ? null : cdktn.stringToTerraform(struct!.description),
+    from_port: struct!.fromPort === undefined ? null : cdktn.numberToTerraform(struct!.fromPort),
+    ipv6_cidr_blocks: struct!.ipv6CidrBlocks === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: struct!.prefixListIds === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.prefixListIds),
+    protocol: struct!.protocol === undefined ? null : cdktn.stringToTerraform(struct!.protocol),
+    security_groups: struct!.securityGroups === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroups),
+    self: struct!.selfAttribute === undefined ? null : cdktn.booleanToTerraform(struct!.selfAttribute),
+    to_port: struct!.toPort === undefined ? null : cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function defaultSecurityGroupEgressToHclTerraform(struct?: DefaultSecurityGroupEgress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultSecurityGroupEgressToHclTerraform(struct?: DefaultSecurityGroupEgress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr_blocks: {
-      value: struct!.cidrBlocks === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrBlocks),
+      value: struct!.cidrBlocks === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cidrBlocks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     description: {
-      value: struct!.description === undefined ? null : cdktf.stringToHclTerraform(struct!.description),
+      value: struct!.description === undefined ? null : cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from_port: {
-      value: struct!.fromPort === undefined ? null : cdktf.numberToHclTerraform(struct!.fromPort),
+      value: struct!.fromPort === undefined ? null : cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ipv6_cidr_blocks: {
-      value: struct!.ipv6CidrBlocks === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipv6CidrBlocks),
+      value: struct!.ipv6CidrBlocks === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipv6CidrBlocks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     prefix_list_ids: {
-      value: struct!.prefixListIds === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.prefixListIds),
+      value: struct!.prefixListIds === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.prefixListIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     protocol: {
-      value: struct!.protocol === undefined ? null : cdktf.stringToHclTerraform(struct!.protocol),
+      value: struct!.protocol === undefined ? null : cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_groups: {
-      value: struct!.securityGroups === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      value: struct!.securityGroups === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     self: {
-      value: struct!.selfAttribute === undefined ? null : cdktf.booleanToHclTerraform(struct!.selfAttribute),
+      value: struct!.selfAttribute === undefined ? null : cdktn.booleanToHclTerraform(struct!.selfAttribute),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     to_port: {
-      value: struct!.toPort === undefined ? null : cdktf.numberToHclTerraform(struct!.toPort),
+      value: struct!.toPort === undefined ? null : cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -174,9 +174,9 @@ export function defaultSecurityGroupEgressToHclTerraform(struct?: DefaultSecurit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DefaultSecurityGroupEgressOutputReference extends cdktf.ComplexObject {
+export class DefaultSecurityGroupEgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -184,11 +184,11 @@ export class DefaultSecurityGroupEgressOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DefaultSecurityGroupEgress | cdktf.IResolvable | undefined {
+  public get internalValue(): DefaultSecurityGroupEgress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -233,7 +233,7 @@ export class DefaultSecurityGroupEgressOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DefaultSecurityGroupEgress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DefaultSecurityGroupEgress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -247,7 +247,7 @@ export class DefaultSecurityGroupEgressOutputReference extends cdktf.ComplexObje
       this._self = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -365,7 +365,7 @@ export class DefaultSecurityGroupEgressOutputReference extends cdktf.ComplexObje
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -379,11 +379,11 @@ export class DefaultSecurityGroupEgressOutputReference extends cdktf.ComplexObje
   }
 
   // self - computed: true, optional: true, required: false
-  private _self?: boolean | cdktf.IResolvable; 
+  private _self?: boolean | cdktn.IResolvable; 
   public get selfAttribute() {
     return this.getBooleanAttribute('self');
   }
-  public set selfAttribute(value: boolean | cdktf.IResolvable) {
+  public set selfAttribute(value: boolean | cdktn.IResolvable) {
     this._self = value;
   }
   public resetSelfAttribute() {
@@ -411,15 +411,15 @@ export class DefaultSecurityGroupEgressOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DefaultSecurityGroupEgressList extends cdktf.ComplexList {
-  public internalValue? : DefaultSecurityGroupEgress[] | cdktf.IResolvable
+export class DefaultSecurityGroupEgressList extends cdktn.ComplexList {
+  public internalValue? : DefaultSecurityGroupEgress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -462,88 +462,88 @@ export interface DefaultSecurityGroupIngress {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#self DefaultSecurityGroup#self}
   */
-  readonly selfAttribute?: boolean | cdktf.IResolvable;
+  readonly selfAttribute?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#to_port DefaultSecurityGroup#to_port}
   */
   readonly toPort?: number;
 }
 
-export function defaultSecurityGroupIngressToTerraform(struct?: DefaultSecurityGroupIngress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultSecurityGroupIngressToTerraform(struct?: DefaultSecurityGroupIngress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_blocks: struct!.cidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrBlocks),
-    description: struct!.description === undefined ? null : cdktf.stringToTerraform(struct!.description),
-    from_port: struct!.fromPort === undefined ? null : cdktf.numberToTerraform(struct!.fromPort),
-    ipv6_cidr_blocks: struct!.ipv6CidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv6CidrBlocks),
-    prefix_list_ids: struct!.prefixListIds === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.prefixListIds),
-    protocol: struct!.protocol === undefined ? null : cdktf.stringToTerraform(struct!.protocol),
-    security_groups: struct!.securityGroups === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
-    self: struct!.selfAttribute === undefined ? null : cdktf.booleanToTerraform(struct!.selfAttribute),
-    to_port: struct!.toPort === undefined ? null : cdktf.numberToTerraform(struct!.toPort),
+    cidr_blocks: struct!.cidrBlocks === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cidrBlocks),
+    description: struct!.description === undefined ? null : cdktn.stringToTerraform(struct!.description),
+    from_port: struct!.fromPort === undefined ? null : cdktn.numberToTerraform(struct!.fromPort),
+    ipv6_cidr_blocks: struct!.ipv6CidrBlocks === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: struct!.prefixListIds === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.prefixListIds),
+    protocol: struct!.protocol === undefined ? null : cdktn.stringToTerraform(struct!.protocol),
+    security_groups: struct!.securityGroups === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroups),
+    self: struct!.selfAttribute === undefined ? null : cdktn.booleanToTerraform(struct!.selfAttribute),
+    to_port: struct!.toPort === undefined ? null : cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
-export function defaultSecurityGroupIngressToHclTerraform(struct?: DefaultSecurityGroupIngress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultSecurityGroupIngressToHclTerraform(struct?: DefaultSecurityGroupIngress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr_blocks: {
-      value: struct!.cidrBlocks === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrBlocks),
+      value: struct!.cidrBlocks === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cidrBlocks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     description: {
-      value: struct!.description === undefined ? null : cdktf.stringToHclTerraform(struct!.description),
+      value: struct!.description === undefined ? null : cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from_port: {
-      value: struct!.fromPort === undefined ? null : cdktf.numberToHclTerraform(struct!.fromPort),
+      value: struct!.fromPort === undefined ? null : cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ipv6_cidr_blocks: {
-      value: struct!.ipv6CidrBlocks === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipv6CidrBlocks),
+      value: struct!.ipv6CidrBlocks === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipv6CidrBlocks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     prefix_list_ids: {
-      value: struct!.prefixListIds === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.prefixListIds),
+      value: struct!.prefixListIds === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.prefixListIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     protocol: {
-      value: struct!.protocol === undefined ? null : cdktf.stringToHclTerraform(struct!.protocol),
+      value: struct!.protocol === undefined ? null : cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_groups: {
-      value: struct!.securityGroups === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      value: struct!.securityGroups === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     self: {
-      value: struct!.selfAttribute === undefined ? null : cdktf.booleanToHclTerraform(struct!.selfAttribute),
+      value: struct!.selfAttribute === undefined ? null : cdktn.booleanToHclTerraform(struct!.selfAttribute),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     to_port: {
-      value: struct!.toPort === undefined ? null : cdktf.numberToHclTerraform(struct!.toPort),
+      value: struct!.toPort === undefined ? null : cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -554,9 +554,9 @@ export function defaultSecurityGroupIngressToHclTerraform(struct?: DefaultSecuri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DefaultSecurityGroupIngressOutputReference extends cdktf.ComplexObject {
+export class DefaultSecurityGroupIngressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -564,11 +564,11 @@ export class DefaultSecurityGroupIngressOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DefaultSecurityGroupIngress | cdktf.IResolvable | undefined {
+  public get internalValue(): DefaultSecurityGroupIngress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -613,7 +613,7 @@ export class DefaultSecurityGroupIngressOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DefaultSecurityGroupIngress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DefaultSecurityGroupIngress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -627,7 +627,7 @@ export class DefaultSecurityGroupIngressOutputReference extends cdktf.ComplexObj
       this._self = undefined;
       this._toPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -745,7 +745,7 @@ export class DefaultSecurityGroupIngressOutputReference extends cdktf.ComplexObj
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -759,11 +759,11 @@ export class DefaultSecurityGroupIngressOutputReference extends cdktf.ComplexObj
   }
 
   // self - computed: true, optional: true, required: false
-  private _self?: boolean | cdktf.IResolvable; 
+  private _self?: boolean | cdktn.IResolvable; 
   public get selfAttribute() {
     return this.getBooleanAttribute('self');
   }
-  public set selfAttribute(value: boolean | cdktf.IResolvable) {
+  public set selfAttribute(value: boolean | cdktn.IResolvable) {
     this._self = value;
   }
   public resetSelfAttribute() {
@@ -791,15 +791,15 @@ export class DefaultSecurityGroupIngressOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class DefaultSecurityGroupIngressList extends cdktf.ComplexList {
-  public internalValue? : DefaultSecurityGroupIngress[] | cdktf.IResolvable
+export class DefaultSecurityGroupIngressList extends cdktn.ComplexList {
+  public internalValue? : DefaultSecurityGroupIngress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -814,7 +814,7 @@ export class DefaultSecurityGroupIngressList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group aws_default_security_group}
 */
-export class DefaultSecurityGroup extends cdktf.TerraformResource {
+export class DefaultSecurityGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -825,14 +825,14 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DefaultSecurityGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DefaultSecurityGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DefaultSecurityGroup to import
   * @param importFromId The id of the existing DefaultSecurityGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/default_security_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DefaultSecurityGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_default_security_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_default_security_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -891,7 +891,7 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
   public get egress() {
     return this._egress;
   }
-  public putEgress(value: DefaultSecurityGroupEgress[] | cdktf.IResolvable) {
+  public putEgress(value: DefaultSecurityGroupEgress[] | cdktn.IResolvable) {
     this._egress.internalValue = value;
   }
   public resetEgress() {
@@ -923,7 +923,7 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
   public get ingress() {
     return this._ingress;
   }
-  public putIngress(value: DefaultSecurityGroupIngress[] | cdktf.IResolvable) {
+  public putIngress(value: DefaultSecurityGroupIngress[] | cdktn.IResolvable) {
     this._ingress.internalValue = value;
   }
   public resetIngress() {
@@ -966,11 +966,11 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
   }
 
   // revoke_rules_on_delete - computed: false, optional: true, required: false
-  private _revokeRulesOnDelete?: boolean | cdktf.IResolvable; 
+  private _revokeRulesOnDelete?: boolean | cdktn.IResolvable; 
   public get revokeRulesOnDelete() {
     return this.getBooleanAttribute('revoke_rules_on_delete');
   }
-  public set revokeRulesOnDelete(value: boolean | cdktf.IResolvable) {
+  public set revokeRulesOnDelete(value: boolean | cdktn.IResolvable) {
     this._revokeRulesOnDelete = value;
   }
   public resetRevokeRulesOnDelete() {
@@ -1035,63 +1035,63 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      egress: cdktf.listMapper(defaultSecurityGroupEgressToTerraform, false)(this._egress.internalValue),
-      id: cdktf.stringToTerraform(this._id),
-      ingress: cdktf.listMapper(defaultSecurityGroupIngressToTerraform, false)(this._ingress.internalValue),
-      region: cdktf.stringToTerraform(this._region),
-      revoke_rules_on_delete: cdktf.booleanToTerraform(this._revokeRulesOnDelete),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      egress: cdktn.listMapper(defaultSecurityGroupEgressToTerraform, false)(this._egress.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      ingress: cdktn.listMapper(defaultSecurityGroupIngressToTerraform, false)(this._ingress.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      revoke_rules_on_delete: cdktn.booleanToTerraform(this._revokeRulesOnDelete),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       egress: {
-        value: cdktf.listMapperHcl(defaultSecurityGroupEgressToHclTerraform, false)(this._egress.internalValue),
+        value: cdktn.listMapperHcl(defaultSecurityGroupEgressToHclTerraform, false)(this._egress.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DefaultSecurityGroupEgressList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ingress: {
-        value: cdktf.listMapperHcl(defaultSecurityGroupIngressToHclTerraform, false)(this._ingress.internalValue),
+        value: cdktn.listMapperHcl(defaultSecurityGroupIngressToHclTerraform, false)(this._ingress.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DefaultSecurityGroupIngressList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       revoke_rules_on_delete: {
-        value: cdktf.booleanToHclTerraform(this._revokeRulesOnDelete),
+        value: cdktn.booleanToHclTerraform(this._revokeRulesOnDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

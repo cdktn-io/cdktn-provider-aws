@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRdsClustersConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRdsClustersConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_clusters#id DataAwsRdsClusters#id}
   *
@@ -30,7 +30,7 @@ export interface DataAwsRdsClustersConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_clusters#filter DataAwsRdsClusters#filter}
   */
-  readonly filter?: DataAwsRdsClustersFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsRdsClustersFilter[] | cdktn.IResolvable;
 }
 export interface DataAwsRdsClustersFilter {
   /**
@@ -43,32 +43,32 @@ export interface DataAwsRdsClustersFilter {
   readonly values: string[];
 }
 
-export function dataAwsRdsClustersFilterToTerraform(struct?: DataAwsRdsClustersFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRdsClustersFilterToTerraform(struct?: DataAwsRdsClustersFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsRdsClustersFilterToHclTerraform(struct?: DataAwsRdsClustersFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsRdsClustersFilterToHclTerraform(struct?: DataAwsRdsClustersFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -79,9 +79,9 @@ export function dataAwsRdsClustersFilterToHclTerraform(struct?: DataAwsRdsCluste
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsRdsClustersFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsRdsClustersFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -89,11 +89,11 @@ export class DataAwsRdsClustersFilterOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRdsClustersFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsRdsClustersFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -110,14 +110,14 @@ export class DataAwsRdsClustersFilterOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRdsClustersFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRdsClustersFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -145,7 +145,7 @@ export class DataAwsRdsClustersFilterOutputReference extends cdktf.ComplexObject
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -156,15 +156,15 @@ export class DataAwsRdsClustersFilterOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DataAwsRdsClustersFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRdsClustersFilter[] | cdktf.IResolvable
+export class DataAwsRdsClustersFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsRdsClustersFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -179,7 +179,7 @@ export class DataAwsRdsClustersFilterList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_clusters aws_rds_clusters}
 */
-export class DataAwsRdsClusters extends cdktf.TerraformDataSource {
+export class DataAwsRdsClusters extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -190,14 +190,14 @@ export class DataAwsRdsClusters extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRdsClusters resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRdsClusters resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRdsClusters to import
   * @param importFromId The id of the existing DataAwsRdsClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_clusters#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRdsClusters to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_clusters", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_clusters", importId: importFromId, provider });
       }
 
   // ===========
@@ -238,12 +238,12 @@ export class DataAwsRdsClusters extends cdktf.TerraformDataSource {
 
   // cluster_arns - computed: true, optional: false, required: false
   public get clusterArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('cluster_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('cluster_arns'));
   }
 
   // cluster_identifiers - computed: true, optional: false, required: false
   public get clusterIdentifiers() {
-    return cdktf.Fn.tolist(this.getListAttribute('cluster_identifiers'));
+    return cdktn.Fn.tolist(this.getListAttribute('cluster_identifiers'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -283,7 +283,7 @@ export class DataAwsRdsClusters extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsRdsClustersFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsRdsClustersFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -300,28 +300,28 @@ export class DataAwsRdsClusters extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      filter: cdktf.listMapper(dataAwsRdsClustersFilterToTerraform, true)(this._filter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      filter: cdktn.listMapper(dataAwsRdsClustersFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsRdsClustersFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsRdsClustersFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsRdsClustersFilterList",

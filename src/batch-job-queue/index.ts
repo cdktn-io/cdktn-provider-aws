@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BatchJobQueueConfig extends cdktf.TerraformMetaArguments {
+export interface BatchJobQueueConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_job_queue#name BatchJobQueue#name}
   */
@@ -43,13 +43,13 @@ export interface BatchJobQueueConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_job_queue#compute_environment_order BatchJobQueue#compute_environment_order}
   */
-  readonly computeEnvironmentOrder?: BatchJobQueueComputeEnvironmentOrder[] | cdktf.IResolvable;
+  readonly computeEnvironmentOrder?: BatchJobQueueComputeEnvironmentOrder[] | cdktn.IResolvable;
   /**
   * job_state_time_limit_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_job_queue#job_state_time_limit_action BatchJobQueue#job_state_time_limit_action}
   */
-  readonly jobStateTimeLimitAction?: BatchJobQueueJobStateTimeLimitAction[] | cdktf.IResolvable;
+  readonly jobStateTimeLimitAction?: BatchJobQueueJobStateTimeLimitAction[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -68,32 +68,32 @@ export interface BatchJobQueueComputeEnvironmentOrder {
   readonly order: number;
 }
 
-export function batchJobQueueComputeEnvironmentOrderToTerraform(struct?: BatchJobQueueComputeEnvironmentOrder | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchJobQueueComputeEnvironmentOrderToTerraform(struct?: BatchJobQueueComputeEnvironmentOrder | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compute_environment: cdktf.stringToTerraform(struct!.computeEnvironment),
-    order: cdktf.numberToTerraform(struct!.order),
+    compute_environment: cdktn.stringToTerraform(struct!.computeEnvironment),
+    order: cdktn.numberToTerraform(struct!.order),
   }
 }
 
 
-export function batchJobQueueComputeEnvironmentOrderToHclTerraform(struct?: BatchJobQueueComputeEnvironmentOrder | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchJobQueueComputeEnvironmentOrderToHclTerraform(struct?: BatchJobQueueComputeEnvironmentOrder | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     compute_environment: {
-      value: cdktf.stringToHclTerraform(struct!.computeEnvironment),
+      value: cdktn.stringToHclTerraform(struct!.computeEnvironment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.numberToHclTerraform(struct!.order),
+      value: cdktn.numberToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -104,9 +104,9 @@ export function batchJobQueueComputeEnvironmentOrderToHclTerraform(struct?: Batc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchJobQueueComputeEnvironmentOrderOutputReference extends cdktf.ComplexObject {
+export class BatchJobQueueComputeEnvironmentOrderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -114,11 +114,11 @@ export class BatchJobQueueComputeEnvironmentOrderOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchJobQueueComputeEnvironmentOrder | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchJobQueueComputeEnvironmentOrder | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -135,14 +135,14 @@ export class BatchJobQueueComputeEnvironmentOrderOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchJobQueueComputeEnvironmentOrder | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchJobQueueComputeEnvironmentOrder | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._computeEnvironment = undefined;
       this._order = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -181,15 +181,15 @@ export class BatchJobQueueComputeEnvironmentOrderOutputReference extends cdktf.C
   }
 }
 
-export class BatchJobQueueComputeEnvironmentOrderList extends cdktf.ComplexList {
-  public internalValue? : BatchJobQueueComputeEnvironmentOrder[] | cdktf.IResolvable
+export class BatchJobQueueComputeEnvironmentOrderList extends cdktn.ComplexList {
+  public internalValue? : BatchJobQueueComputeEnvironmentOrder[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -219,46 +219,46 @@ export interface BatchJobQueueJobStateTimeLimitAction {
   readonly state: string;
 }
 
-export function batchJobQueueJobStateTimeLimitActionToTerraform(struct?: BatchJobQueueJobStateTimeLimitAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchJobQueueJobStateTimeLimitActionToTerraform(struct?: BatchJobQueueJobStateTimeLimitAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    max_time_seconds: cdktf.numberToTerraform(struct!.maxTimeSeconds),
-    reason: cdktf.stringToTerraform(struct!.reason),
-    state: cdktf.stringToTerraform(struct!.state),
+    action: cdktn.stringToTerraform(struct!.action),
+    max_time_seconds: cdktn.numberToTerraform(struct!.maxTimeSeconds),
+    reason: cdktn.stringToTerraform(struct!.reason),
+    state: cdktn.stringToTerraform(struct!.state),
   }
 }
 
 
-export function batchJobQueueJobStateTimeLimitActionToHclTerraform(struct?: BatchJobQueueJobStateTimeLimitAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchJobQueueJobStateTimeLimitActionToHclTerraform(struct?: BatchJobQueueJobStateTimeLimitAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_time_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maxTimeSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maxTimeSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     reason: {
-      value: cdktf.stringToHclTerraform(struct!.reason),
+      value: cdktn.stringToHclTerraform(struct!.reason),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -269,9 +269,9 @@ export function batchJobQueueJobStateTimeLimitActionToHclTerraform(struct?: Batc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchJobQueueJobStateTimeLimitActionOutputReference extends cdktf.ComplexObject {
+export class BatchJobQueueJobStateTimeLimitActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -279,11 +279,11 @@ export class BatchJobQueueJobStateTimeLimitActionOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchJobQueueJobStateTimeLimitAction | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchJobQueueJobStateTimeLimitAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -308,7 +308,7 @@ export class BatchJobQueueJobStateTimeLimitActionOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchJobQueueJobStateTimeLimitAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchJobQueueJobStateTimeLimitAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -317,7 +317,7 @@ export class BatchJobQueueJobStateTimeLimitActionOutputReference extends cdktf.C
       this._reason = undefined;
       this._state = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -384,15 +384,15 @@ export class BatchJobQueueJobStateTimeLimitActionOutputReference extends cdktf.C
   }
 }
 
-export class BatchJobQueueJobStateTimeLimitActionList extends cdktf.ComplexList {
-  public internalValue? : BatchJobQueueJobStateTimeLimitAction[] | cdktf.IResolvable
+export class BatchJobQueueJobStateTimeLimitActionList extends cdktn.ComplexList {
+  public internalValue? : BatchJobQueueJobStateTimeLimitAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -424,39 +424,39 @@ export interface BatchJobQueueTimeouts {
   readonly update?: string;
 }
 
-export function batchJobQueueTimeoutsToTerraform(struct?: BatchJobQueueTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchJobQueueTimeoutsToTerraform(struct?: BatchJobQueueTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function batchJobQueueTimeoutsToHclTerraform(struct?: BatchJobQueueTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchJobQueueTimeoutsToHclTerraform(struct?: BatchJobQueueTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -467,19 +467,19 @@ export function batchJobQueueTimeoutsToHclTerraform(struct?: BatchJobQueueTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchJobQueueTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BatchJobQueueTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BatchJobQueueTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchJobQueueTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -500,7 +500,7 @@ export class BatchJobQueueTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchJobQueueTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchJobQueueTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -508,7 +508,7 @@ export class BatchJobQueueTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -573,7 +573,7 @@ export class BatchJobQueueTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_job_queue aws_batch_job_queue}
 */
-export class BatchJobQueue extends cdktf.TerraformResource {
+export class BatchJobQueue extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -584,14 +584,14 @@ export class BatchJobQueue extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BatchJobQueue resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BatchJobQueue resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BatchJobQueue to import
   * @param importFromId The id of the existing BatchJobQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/batch_job_queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BatchJobQueue to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_batch_job_queue", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_batch_job_queue", importId: importFromId, provider });
       }
 
   // ===========
@@ -734,7 +734,7 @@ export class BatchJobQueue extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -744,7 +744,7 @@ export class BatchJobQueue extends cdktf.TerraformResource {
   public get computeEnvironmentOrder() {
     return this._computeEnvironmentOrder;
   }
-  public putComputeEnvironmentOrder(value: BatchJobQueueComputeEnvironmentOrder[] | cdktf.IResolvable) {
+  public putComputeEnvironmentOrder(value: BatchJobQueueComputeEnvironmentOrder[] | cdktn.IResolvable) {
     this._computeEnvironmentOrder.internalValue = value;
   }
   public resetComputeEnvironmentOrder() {
@@ -760,7 +760,7 @@ export class BatchJobQueue extends cdktf.TerraformResource {
   public get jobStateTimeLimitAction() {
     return this._jobStateTimeLimitAction;
   }
-  public putJobStateTimeLimitAction(value: BatchJobQueueJobStateTimeLimitAction[] | cdktf.IResolvable) {
+  public putJobStateTimeLimitAction(value: BatchJobQueueJobStateTimeLimitAction[] | cdktn.IResolvable) {
     this._jobStateTimeLimitAction.internalValue = value;
   }
   public resetJobStateTimeLimitAction() {
@@ -793,14 +793,14 @@ export class BatchJobQueue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      priority: cdktf.numberToTerraform(this._priority),
-      region: cdktf.stringToTerraform(this._region),
-      scheduling_policy_arn: cdktf.stringToTerraform(this._schedulingPolicyArn),
-      state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      compute_environment_order: cdktf.listMapper(batchJobQueueComputeEnvironmentOrderToTerraform, true)(this._computeEnvironmentOrder.internalValue),
-      job_state_time_limit_action: cdktf.listMapper(batchJobQueueJobStateTimeLimitActionToTerraform, true)(this._jobStateTimeLimitAction.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      priority: cdktn.numberToTerraform(this._priority),
+      region: cdktn.stringToTerraform(this._region),
+      scheduling_policy_arn: cdktn.stringToTerraform(this._schedulingPolicyArn),
+      state: cdktn.stringToTerraform(this._state),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      compute_environment_order: cdktn.listMapper(batchJobQueueComputeEnvironmentOrderToTerraform, true)(this._computeEnvironmentOrder.internalValue),
+      job_state_time_limit_action: cdktn.listMapper(batchJobQueueJobStateTimeLimitActionToTerraform, true)(this._jobStateTimeLimitAction.internalValue),
       timeouts: batchJobQueueTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -808,49 +808,49 @@ export class BatchJobQueue extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scheduling_policy_arn: {
-        value: cdktf.stringToHclTerraform(this._schedulingPolicyArn),
+        value: cdktn.stringToHclTerraform(this._schedulingPolicyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       compute_environment_order: {
-        value: cdktf.listMapperHcl(batchJobQueueComputeEnvironmentOrderToHclTerraform, true)(this._computeEnvironmentOrder.internalValue),
+        value: cdktn.listMapperHcl(batchJobQueueComputeEnvironmentOrderToHclTerraform, true)(this._computeEnvironmentOrder.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchJobQueueComputeEnvironmentOrderList",
       },
       job_state_time_limit_action: {
-        value: cdktf.listMapperHcl(batchJobQueueJobStateTimeLimitActionToHclTerraform, true)(this._jobStateTimeLimitAction.internalValue),
+        value: cdktn.listMapperHcl(batchJobQueueJobStateTimeLimitActionToHclTerraform, true)(this._jobStateTimeLimitAction.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchJobQueueJobStateTimeLimitActionList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Sesv2TenantResourceAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface Sesv2TenantResourceAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -31,7 +31,7 @@ export interface Sesv2TenantResourceAssociationConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_tenant_resource_association aws_sesv2_tenant_resource_association}
 */
-export class Sesv2TenantResourceAssociation extends cdktf.TerraformResource {
+export class Sesv2TenantResourceAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class Sesv2TenantResourceAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Sesv2TenantResourceAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Sesv2TenantResourceAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2TenantResourceAssociation to import
   * @param importFromId The id of the existing Sesv2TenantResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_tenant_resource_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2TenantResourceAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_tenant_resource_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_tenant_resource_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,28 +136,28 @@ export class Sesv2TenantResourceAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      resource_arn: cdktf.stringToTerraform(this._resourceArn),
-      tenant_name: cdktf.stringToTerraform(this._tenantName),
+      region: cdktn.stringToTerraform(this._region),
+      resource_arn: cdktn.stringToTerraform(this._resourceArn),
+      tenant_name: cdktn.stringToTerraform(this._tenantName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceArn),
+        value: cdktn.stringToHclTerraform(this._resourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant_name: {
-        value: cdktf.stringToHclTerraform(this._tenantName),
+        value: cdktn.stringToHclTerraform(this._tenantName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

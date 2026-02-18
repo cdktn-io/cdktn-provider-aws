@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#allow_version_upgrade RedshiftCluster#allow_version_upgrade}
   */
-  readonly allowVersionUpgrade?: boolean | cdktf.IResolvable;
+  readonly allowVersionUpgrade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#apply_immediately RedshiftCluster#apply_immediately}
   */
-  readonly applyImmediately?: boolean | cdktf.IResolvable;
+  readonly applyImmediately?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#aqua_configuration_status RedshiftCluster#aqua_configuration_status}
   */
@@ -35,7 +35,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#availability_zone_relocation_enabled RedshiftCluster#availability_zone_relocation_enabled}
   */
-  readonly availabilityZoneRelocationEnabled?: boolean | cdktf.IResolvable;
+  readonly availabilityZoneRelocationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#cluster_identifier RedshiftCluster#cluster_identifier}
   */
@@ -75,7 +75,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#enhanced_vpc_routing RedshiftCluster#enhanced_vpc_routing}
   */
-  readonly enhancedVpcRouting?: boolean | cdktf.IResolvable;
+  readonly enhancedVpcRouting?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#final_snapshot_identifier RedshiftCluster#final_snapshot_identifier}
   */
@@ -102,7 +102,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#manage_master_password RedshiftCluster#manage_master_password}
   */
-  readonly manageMasterPassword?: boolean | cdktf.IResolvable;
+  readonly manageMasterPassword?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#manual_snapshot_retention_period RedshiftCluster#manual_snapshot_retention_period}
   */
@@ -130,7 +130,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#multi_az RedshiftCluster#multi_az}
   */
-  readonly multiAz?: boolean | cdktf.IResolvable;
+  readonly multiAz?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#node_type RedshiftCluster#node_type}
   */
@@ -154,7 +154,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#publicly_accessible RedshiftCluster#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
+  readonly publiclyAccessible?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -164,7 +164,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#skip_final_snapshot RedshiftCluster#skip_final_snapshot}
   */
-  readonly skipFinalSnapshot?: boolean | cdktf.IResolvable;
+  readonly skipFinalSnapshot?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#snapshot_arn RedshiftCluster#snapshot_arn}
   */
@@ -200,8 +200,8 @@ export interface RedshiftClusterClusterNodes {
 }
 
 export function redshiftClusterClusterNodesToTerraform(struct?: RedshiftClusterClusterNodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -210,8 +210,8 @@ export function redshiftClusterClusterNodesToTerraform(struct?: RedshiftClusterC
 
 
 export function redshiftClusterClusterNodesToHclTerraform(struct?: RedshiftClusterClusterNodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -219,7 +219,7 @@ export function redshiftClusterClusterNodesToHclTerraform(struct?: RedshiftClust
   return attrs;
 }
 
-export class RedshiftClusterClusterNodesOutputReference extends cdktf.ComplexObject {
+export class RedshiftClusterClusterNodesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -228,7 +228,7 @@ export class RedshiftClusterClusterNodesOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -263,14 +263,14 @@ export class RedshiftClusterClusterNodesOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class RedshiftClusterClusterNodesList extends cdktf.ComplexList {
+export class RedshiftClusterClusterNodesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -296,39 +296,39 @@ export interface RedshiftClusterTimeouts {
   readonly update?: string;
 }
 
-export function redshiftClusterTimeoutsToTerraform(struct?: RedshiftClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftClusterTimeoutsToTerraform(struct?: RedshiftClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function redshiftClusterTimeoutsToHclTerraform(struct?: RedshiftClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redshiftClusterTimeoutsToHclTerraform(struct?: RedshiftClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -339,19 +339,19 @@ export function redshiftClusterTimeoutsToHclTerraform(struct?: RedshiftClusterTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RedshiftClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RedshiftClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RedshiftClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -372,7 +372,7 @@ export class RedshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedshiftClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedshiftClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -380,7 +380,7 @@ export class RedshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -445,7 +445,7 @@ export class RedshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster aws_redshift_cluster}
 */
-export class RedshiftCluster extends cdktf.TerraformResource {
+export class RedshiftCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -456,14 +456,14 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftCluster to import
   * @param importFromId The id of the existing RedshiftCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -544,11 +544,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // ==========
 
   // allow_version_upgrade - computed: false, optional: true, required: false
-  private _allowVersionUpgrade?: boolean | cdktf.IResolvable; 
+  private _allowVersionUpgrade?: boolean | cdktn.IResolvable; 
   public get allowVersionUpgrade() {
     return this.getBooleanAttribute('allow_version_upgrade');
   }
-  public set allowVersionUpgrade(value: boolean | cdktf.IResolvable) {
+  public set allowVersionUpgrade(value: boolean | cdktn.IResolvable) {
     this._allowVersionUpgrade = value;
   }
   public resetAllowVersionUpgrade() {
@@ -560,11 +560,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // apply_immediately - computed: false, optional: true, required: false
-  private _applyImmediately?: boolean | cdktf.IResolvable; 
+  private _applyImmediately?: boolean | cdktn.IResolvable; 
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | cdktf.IResolvable) {
+  public set applyImmediately(value: boolean | cdktn.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -629,11 +629,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // availability_zone_relocation_enabled - computed: false, optional: true, required: false
-  private _availabilityZoneRelocationEnabled?: boolean | cdktf.IResolvable; 
+  private _availabilityZoneRelocationEnabled?: boolean | cdktn.IResolvable; 
   public get availabilityZoneRelocationEnabled() {
     return this.getBooleanAttribute('availability_zone_relocation_enabled');
   }
-  public set availabilityZoneRelocationEnabled(value: boolean | cdktf.IResolvable) {
+  public set availabilityZoneRelocationEnabled(value: boolean | cdktn.IResolvable) {
     this._availabilityZoneRelocationEnabled = value;
   }
   public resetAvailabilityZoneRelocationEnabled() {
@@ -817,11 +817,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // enhanced_vpc_routing - computed: true, optional: true, required: false
-  private _enhancedVpcRouting?: boolean | cdktf.IResolvable; 
+  private _enhancedVpcRouting?: boolean | cdktn.IResolvable; 
   public get enhancedVpcRouting() {
     return this.getBooleanAttribute('enhanced_vpc_routing');
   }
-  public set enhancedVpcRouting(value: boolean | cdktf.IResolvable) {
+  public set enhancedVpcRouting(value: boolean | cdktn.IResolvable) {
     this._enhancedVpcRouting = value;
   }
   public resetEnhancedVpcRouting() {
@@ -851,7 +851,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // iam_roles - computed: true, optional: true, required: false
   private _iamRoles?: string[]; 
   public get iamRoles() {
-    return cdktf.Fn.tolist(this.getListAttribute('iam_roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('iam_roles'));
   }
   public set iamRoles(value: string[]) {
     this._iamRoles = value;
@@ -913,11 +913,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // manage_master_password - computed: false, optional: true, required: false
-  private _manageMasterPassword?: boolean | cdktf.IResolvable; 
+  private _manageMasterPassword?: boolean | cdktn.IResolvable; 
   public get manageMasterPassword() {
     return this.getBooleanAttribute('manage_master_password');
   }
-  public set manageMasterPassword(value: boolean | cdktf.IResolvable) {
+  public set manageMasterPassword(value: boolean | cdktn.IResolvable) {
     this._manageMasterPassword = value;
   }
   public resetManageMasterPassword() {
@@ -1030,11 +1030,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // multi_az - computed: false, optional: true, required: false
-  private _multiAz?: boolean | cdktf.IResolvable; 
+  private _multiAz?: boolean | cdktn.IResolvable; 
   public get multiAz() {
     return this.getBooleanAttribute('multi_az');
   }
-  public set multiAz(value: boolean | cdktf.IResolvable) {
+  public set multiAz(value: boolean | cdktn.IResolvable) {
     this._multiAz = value;
   }
   public resetMultiAz() {
@@ -1123,11 +1123,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
-  private _publiclyAccessible?: boolean | cdktf.IResolvable; 
+  private _publiclyAccessible?: boolean | cdktn.IResolvable; 
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
+  public set publiclyAccessible(value: boolean | cdktn.IResolvable) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -1155,11 +1155,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
-  private _skipFinalSnapshot?: boolean | cdktf.IResolvable; 
+  private _skipFinalSnapshot?: boolean | cdktn.IResolvable; 
   public get skipFinalSnapshot() {
     return this.getBooleanAttribute('skip_final_snapshot');
   }
-  public set skipFinalSnapshot(value: boolean | cdktf.IResolvable) {
+  public set skipFinalSnapshot(value: boolean | cdktn.IResolvable) {
     this._skipFinalSnapshot = value;
   }
   public resetSkipFinalSnapshot() {
@@ -1253,7 +1253,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -1288,49 +1288,49 @@ export class RedshiftCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_version_upgrade: cdktf.booleanToTerraform(this._allowVersionUpgrade),
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      aqua_configuration_status: cdktf.stringToTerraform(this._aquaConfigurationStatus),
-      automated_snapshot_retention_period: cdktf.numberToTerraform(this._automatedSnapshotRetentionPeriod),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      availability_zone_relocation_enabled: cdktf.booleanToTerraform(this._availabilityZoneRelocationEnabled),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      cluster_parameter_group_name: cdktf.stringToTerraform(this._clusterParameterGroupName),
-      cluster_subnet_group_name: cdktf.stringToTerraform(this._clusterSubnetGroupName),
-      cluster_type: cdktf.stringToTerraform(this._clusterType),
-      cluster_version: cdktf.stringToTerraform(this._clusterVersion),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      default_iam_role_arn: cdktf.stringToTerraform(this._defaultIamRoleArn),
-      elastic_ip: cdktf.stringToTerraform(this._elasticIp),
-      encrypted: cdktf.stringToTerraform(this._encrypted),
-      enhanced_vpc_routing: cdktf.booleanToTerraform(this._enhancedVpcRouting),
-      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
-      iam_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamRoles),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      maintenance_track_name: cdktf.stringToTerraform(this._maintenanceTrackName),
-      manage_master_password: cdktf.booleanToTerraform(this._manageMasterPassword),
-      manual_snapshot_retention_period: cdktf.numberToTerraform(this._manualSnapshotRetentionPeriod),
-      master_password: cdktf.stringToTerraform(this._masterPassword),
-      master_password_secret_kms_key_id: cdktf.stringToTerraform(this._masterPasswordSecretKmsKeyId),
-      master_password_wo: cdktf.stringToTerraform(this._masterPasswordWo),
-      master_password_wo_version: cdktf.numberToTerraform(this._masterPasswordWoVersion),
-      master_username: cdktf.stringToTerraform(this._masterUsername),
-      multi_az: cdktf.booleanToTerraform(this._multiAz),
-      node_type: cdktf.stringToTerraform(this._nodeType),
-      number_of_nodes: cdktf.numberToTerraform(this._numberOfNodes),
-      owner_account: cdktf.stringToTerraform(this._ownerAccount),
-      port: cdktf.numberToTerraform(this._port),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      region: cdktf.stringToTerraform(this._region),
-      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
-      snapshot_arn: cdktf.stringToTerraform(this._snapshotArn),
-      snapshot_cluster_identifier: cdktf.stringToTerraform(this._snapshotClusterIdentifier),
-      snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
+      allow_version_upgrade: cdktn.booleanToTerraform(this._allowVersionUpgrade),
+      apply_immediately: cdktn.booleanToTerraform(this._applyImmediately),
+      aqua_configuration_status: cdktn.stringToTerraform(this._aquaConfigurationStatus),
+      automated_snapshot_retention_period: cdktn.numberToTerraform(this._automatedSnapshotRetentionPeriod),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      availability_zone_relocation_enabled: cdktn.booleanToTerraform(this._availabilityZoneRelocationEnabled),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      cluster_parameter_group_name: cdktn.stringToTerraform(this._clusterParameterGroupName),
+      cluster_subnet_group_name: cdktn.stringToTerraform(this._clusterSubnetGroupName),
+      cluster_type: cdktn.stringToTerraform(this._clusterType),
+      cluster_version: cdktn.stringToTerraform(this._clusterVersion),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      default_iam_role_arn: cdktn.stringToTerraform(this._defaultIamRoleArn),
+      elastic_ip: cdktn.stringToTerraform(this._elasticIp),
+      encrypted: cdktn.stringToTerraform(this._encrypted),
+      enhanced_vpc_routing: cdktn.booleanToTerraform(this._enhancedVpcRouting),
+      final_snapshot_identifier: cdktn.stringToTerraform(this._finalSnapshotIdentifier),
+      iam_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._iamRoles),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      maintenance_track_name: cdktn.stringToTerraform(this._maintenanceTrackName),
+      manage_master_password: cdktn.booleanToTerraform(this._manageMasterPassword),
+      manual_snapshot_retention_period: cdktn.numberToTerraform(this._manualSnapshotRetentionPeriod),
+      master_password: cdktn.stringToTerraform(this._masterPassword),
+      master_password_secret_kms_key_id: cdktn.stringToTerraform(this._masterPasswordSecretKmsKeyId),
+      master_password_wo: cdktn.stringToTerraform(this._masterPasswordWo),
+      master_password_wo_version: cdktn.numberToTerraform(this._masterPasswordWoVersion),
+      master_username: cdktn.stringToTerraform(this._masterUsername),
+      multi_az: cdktn.booleanToTerraform(this._multiAz),
+      node_type: cdktn.stringToTerraform(this._nodeType),
+      number_of_nodes: cdktn.numberToTerraform(this._numberOfNodes),
+      owner_account: cdktn.stringToTerraform(this._ownerAccount),
+      port: cdktn.numberToTerraform(this._port),
+      preferred_maintenance_window: cdktn.stringToTerraform(this._preferredMaintenanceWindow),
+      publicly_accessible: cdktn.booleanToTerraform(this._publiclyAccessible),
+      region: cdktn.stringToTerraform(this._region),
+      skip_final_snapshot: cdktn.booleanToTerraform(this._skipFinalSnapshot),
+      snapshot_arn: cdktn.stringToTerraform(this._snapshotArn),
+      snapshot_cluster_identifier: cdktn.stringToTerraform(this._snapshotClusterIdentifier),
+      snapshot_identifier: cdktn.stringToTerraform(this._snapshotIdentifier),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcSecurityGroupIds),
       timeouts: redshiftClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1338,259 +1338,259 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_version_upgrade: {
-        value: cdktf.booleanToHclTerraform(this._allowVersionUpgrade),
+        value: cdktn.booleanToHclTerraform(this._allowVersionUpgrade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       apply_immediately: {
-        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        value: cdktn.booleanToHclTerraform(this._applyImmediately),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       aqua_configuration_status: {
-        value: cdktf.stringToHclTerraform(this._aquaConfigurationStatus),
+        value: cdktn.stringToHclTerraform(this._aquaConfigurationStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       automated_snapshot_retention_period: {
-        value: cdktf.numberToHclTerraform(this._automatedSnapshotRetentionPeriod),
+        value: cdktn.numberToHclTerraform(this._automatedSnapshotRetentionPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       availability_zone_relocation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._availabilityZoneRelocationEnabled),
+        value: cdktn.booleanToHclTerraform(this._availabilityZoneRelocationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_parameter_group_name: {
-        value: cdktf.stringToHclTerraform(this._clusterParameterGroupName),
+        value: cdktn.stringToHclTerraform(this._clusterParameterGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_subnet_group_name: {
-        value: cdktf.stringToHclTerraform(this._clusterSubnetGroupName),
+        value: cdktn.stringToHclTerraform(this._clusterSubnetGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_type: {
-        value: cdktf.stringToHclTerraform(this._clusterType),
+        value: cdktn.stringToHclTerraform(this._clusterType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_version: {
-        value: cdktf.stringToHclTerraform(this._clusterVersion),
+        value: cdktn.stringToHclTerraform(this._clusterVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._defaultIamRoleArn),
+        value: cdktn.stringToHclTerraform(this._defaultIamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       elastic_ip: {
-        value: cdktf.stringToHclTerraform(this._elasticIp),
+        value: cdktn.stringToHclTerraform(this._elasticIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encrypted: {
-        value: cdktf.stringToHclTerraform(this._encrypted),
+        value: cdktn.stringToHclTerraform(this._encrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enhanced_vpc_routing: {
-        value: cdktf.booleanToHclTerraform(this._enhancedVpcRouting),
+        value: cdktn.booleanToHclTerraform(this._enhancedVpcRouting),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       final_snapshot_identifier: {
-        value: cdktf.stringToHclTerraform(this._finalSnapshotIdentifier),
+        value: cdktn.stringToHclTerraform(this._finalSnapshotIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iamRoles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._iamRoles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maintenance_track_name: {
-        value: cdktf.stringToHclTerraform(this._maintenanceTrackName),
+        value: cdktn.stringToHclTerraform(this._maintenanceTrackName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       manage_master_password: {
-        value: cdktf.booleanToHclTerraform(this._manageMasterPassword),
+        value: cdktn.booleanToHclTerraform(this._manageMasterPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       manual_snapshot_retention_period: {
-        value: cdktf.numberToHclTerraform(this._manualSnapshotRetentionPeriod),
+        value: cdktn.numberToHclTerraform(this._manualSnapshotRetentionPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       master_password: {
-        value: cdktf.stringToHclTerraform(this._masterPassword),
+        value: cdktn.stringToHclTerraform(this._masterPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       master_password_secret_kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._masterPasswordSecretKmsKeyId),
+        value: cdktn.stringToHclTerraform(this._masterPasswordSecretKmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       master_password_wo: {
-        value: cdktf.stringToHclTerraform(this._masterPasswordWo),
+        value: cdktn.stringToHclTerraform(this._masterPasswordWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       master_password_wo_version: {
-        value: cdktf.numberToHclTerraform(this._masterPasswordWoVersion),
+        value: cdktn.numberToHclTerraform(this._masterPasswordWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       master_username: {
-        value: cdktf.stringToHclTerraform(this._masterUsername),
+        value: cdktn.stringToHclTerraform(this._masterUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_az: {
-        value: cdktf.booleanToHclTerraform(this._multiAz),
+        value: cdktn.booleanToHclTerraform(this._multiAz),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       node_type: {
-        value: cdktf.stringToHclTerraform(this._nodeType),
+        value: cdktn.stringToHclTerraform(this._nodeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       number_of_nodes: {
-        value: cdktf.numberToHclTerraform(this._numberOfNodes),
+        value: cdktn.numberToHclTerraform(this._numberOfNodes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       owner_account: {
-        value: cdktf.stringToHclTerraform(this._ownerAccount),
+        value: cdktn.stringToHclTerraform(this._ownerAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       preferred_maintenance_window: {
-        value: cdktf.stringToHclTerraform(this._preferredMaintenanceWindow),
+        value: cdktn.stringToHclTerraform(this._preferredMaintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publicly_accessible: {
-        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        value: cdktn.booleanToHclTerraform(this._publiclyAccessible),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_final_snapshot: {
-        value: cdktf.booleanToHclTerraform(this._skipFinalSnapshot),
+        value: cdktn.booleanToHclTerraform(this._skipFinalSnapshot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       snapshot_arn: {
-        value: cdktf.stringToHclTerraform(this._snapshotArn),
+        value: cdktn.stringToHclTerraform(this._snapshotArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snapshot_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._snapshotClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._snapshotClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snapshot_identifier: {
-        value: cdktf.stringToHclTerraform(this._snapshotIdentifier),
+        value: cdktn.stringToHclTerraform(this._snapshotIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

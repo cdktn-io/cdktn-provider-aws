@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayDomainNameAccessAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayDomainNameAccessAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_domain_name_access_association#access_association_source ApiGatewayDomainNameAccessAssociation#access_association_source}
   */
@@ -39,7 +39,7 @@ export interface ApiGatewayDomainNameAccessAssociationConfig extends cdktf.Terra
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association}
 */
-export class ApiGatewayDomainNameAccessAssociation extends cdktf.TerraformResource {
+export class ApiGatewayDomainNameAccessAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class ApiGatewayDomainNameAccessAssociation extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayDomainNameAccessAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayDomainNameAccessAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayDomainNameAccessAssociation to import
   * @param importFromId The id of the existing ApiGatewayDomainNameAccessAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_domain_name_access_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayDomainNameAccessAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_domain_name_access_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_domain_name_access_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -180,7 +180,7 @@ export class ApiGatewayDomainNameAccessAssociation extends cdktf.TerraformResour
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -191,42 +191,42 @@ export class ApiGatewayDomainNameAccessAssociation extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_association_source: cdktf.stringToTerraform(this._accessAssociationSource),
-      access_association_source_type: cdktf.stringToTerraform(this._accessAssociationSourceType),
-      domain_name_arn: cdktf.stringToTerraform(this._domainNameArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      access_association_source: cdktn.stringToTerraform(this._accessAssociationSource),
+      access_association_source_type: cdktn.stringToTerraform(this._accessAssociationSourceType),
+      domain_name_arn: cdktn.stringToTerraform(this._domainNameArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_association_source: {
-        value: cdktf.stringToHclTerraform(this._accessAssociationSource),
+        value: cdktn.stringToHclTerraform(this._accessAssociationSource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       access_association_source_type: {
-        value: cdktf.stringToHclTerraform(this._accessAssociationSourceType),
+        value: cdktn.stringToHclTerraform(this._accessAssociationSourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name_arn: {
-        value: cdktf.stringToHclTerraform(this._domainNameArn),
+        value: cdktn.stringToHclTerraform(this._domainNameArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BedrockagentAgentActionGroupConfig extends cdktf.TerraformMetaArguments {
+export interface BedrockagentAgentActionGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#action_group_name BedrockagentAgentActionGroup#action_group_name}
   */
@@ -39,7 +39,7 @@ export interface BedrockagentAgentActionGroupConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#prepare_agent BedrockagentAgentActionGroup#prepare_agent}
   */
-  readonly prepareAgent?: boolean | cdktf.IResolvable;
+  readonly prepareAgent?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -49,25 +49,25 @@ export interface BedrockagentAgentActionGroupConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#skip_resource_in_use_check BedrockagentAgentActionGroup#skip_resource_in_use_check}
   */
-  readonly skipResourceInUseCheck?: boolean | cdktf.IResolvable;
+  readonly skipResourceInUseCheck?: boolean | cdktn.IResolvable;
   /**
   * action_group_executor block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#action_group_executor BedrockagentAgentActionGroup#action_group_executor}
   */
-  readonly actionGroupExecutor?: BedrockagentAgentActionGroupActionGroupExecutor[] | cdktf.IResolvable;
+  readonly actionGroupExecutor?: BedrockagentAgentActionGroupActionGroupExecutor[] | cdktn.IResolvable;
   /**
   * api_schema block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#api_schema BedrockagentAgentActionGroup#api_schema}
   */
-  readonly apiSchema?: BedrockagentAgentActionGroupApiSchema[] | cdktf.IResolvable;
+  readonly apiSchema?: BedrockagentAgentActionGroupApiSchema[] | cdktn.IResolvable;
   /**
   * function_schema block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#function_schema BedrockagentAgentActionGroup#function_schema}
   */
-  readonly functionSchema?: BedrockagentAgentActionGroupFunctionSchema[] | cdktf.IResolvable;
+  readonly functionSchema?: BedrockagentAgentActionGroupFunctionSchema[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -86,32 +86,32 @@ export interface BedrockagentAgentActionGroupActionGroupExecutor {
   readonly lambda?: string;
 }
 
-export function bedrockagentAgentActionGroupActionGroupExecutorToTerraform(struct?: BedrockagentAgentActionGroupActionGroupExecutor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupActionGroupExecutorToTerraform(struct?: BedrockagentAgentActionGroupActionGroupExecutor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_control: cdktf.stringToTerraform(struct!.customControl),
-    lambda: cdktf.stringToTerraform(struct!.lambda),
+    custom_control: cdktn.stringToTerraform(struct!.customControl),
+    lambda: cdktn.stringToTerraform(struct!.lambda),
   }
 }
 
 
-export function bedrockagentAgentActionGroupActionGroupExecutorToHclTerraform(struct?: BedrockagentAgentActionGroupActionGroupExecutor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupActionGroupExecutorToHclTerraform(struct?: BedrockagentAgentActionGroupActionGroupExecutor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_control: {
-      value: cdktf.stringToHclTerraform(struct!.customControl),
+      value: cdktn.stringToHclTerraform(struct!.customControl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lambda: {
-      value: cdktf.stringToHclTerraform(struct!.lambda),
+      value: cdktn.stringToHclTerraform(struct!.lambda),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,9 +122,9 @@ export function bedrockagentAgentActionGroupActionGroupExecutorToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentActionGroupActionGroupExecutorOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentActionGroupActionGroupExecutorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -132,11 +132,11 @@ export class BedrockagentAgentActionGroupActionGroupExecutorOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentActionGroupActionGroupExecutor | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentActionGroupActionGroupExecutor | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,14 +153,14 @@ export class BedrockagentAgentActionGroupActionGroupExecutorOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentActionGroupActionGroupExecutor | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentActionGroupActionGroupExecutor | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._customControl = undefined;
       this._lambda = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -205,15 +205,15 @@ export class BedrockagentAgentActionGroupActionGroupExecutorOutputReference exte
   }
 }
 
-export class BedrockagentAgentActionGroupActionGroupExecutorList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentActionGroupActionGroupExecutor[] | cdktf.IResolvable
+export class BedrockagentAgentActionGroupActionGroupExecutorList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentActionGroupActionGroupExecutor[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -235,32 +235,32 @@ export interface BedrockagentAgentActionGroupApiSchemaS3 {
   readonly s3ObjectKey?: string;
 }
 
-export function bedrockagentAgentActionGroupApiSchemaS3ToTerraform(struct?: BedrockagentAgentActionGroupApiSchemaS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupApiSchemaS3ToTerraform(struct?: BedrockagentAgentActionGroupApiSchemaS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_object_key: cdktf.stringToTerraform(struct!.s3ObjectKey),
+    s3_bucket_name: cdktn.stringToTerraform(struct!.s3BucketName),
+    s3_object_key: cdktn.stringToTerraform(struct!.s3ObjectKey),
   }
 }
 
 
-export function bedrockagentAgentActionGroupApiSchemaS3ToHclTerraform(struct?: BedrockagentAgentActionGroupApiSchemaS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupApiSchemaS3ToHclTerraform(struct?: BedrockagentAgentActionGroupApiSchemaS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_object_key: {
-      value: cdktf.stringToHclTerraform(struct!.s3ObjectKey),
+      value: cdktn.stringToHclTerraform(struct!.s3ObjectKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -271,9 +271,9 @@ export function bedrockagentAgentActionGroupApiSchemaS3ToHclTerraform(struct?: B
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentActionGroupApiSchemaS3OutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentActionGroupApiSchemaS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -281,11 +281,11 @@ export class BedrockagentAgentActionGroupApiSchemaS3OutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentActionGroupApiSchemaS3 | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentActionGroupApiSchemaS3 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -302,14 +302,14 @@ export class BedrockagentAgentActionGroupApiSchemaS3OutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentActionGroupApiSchemaS3 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentActionGroupApiSchemaS3 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3BucketName = undefined;
       this._s3ObjectKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -354,15 +354,15 @@ export class BedrockagentAgentActionGroupApiSchemaS3OutputReference extends cdkt
   }
 }
 
-export class BedrockagentAgentActionGroupApiSchemaS3List extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentActionGroupApiSchemaS3[] | cdktf.IResolvable
+export class BedrockagentAgentActionGroupApiSchemaS3List extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentActionGroupApiSchemaS3[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -383,35 +383,35 @@ export interface BedrockagentAgentActionGroupApiSchema {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#s3 BedrockagentAgentActionGroup#s3}
   */
-  readonly s3?: BedrockagentAgentActionGroupApiSchemaS3[] | cdktf.IResolvable;
+  readonly s3?: BedrockagentAgentActionGroupApiSchemaS3[] | cdktn.IResolvable;
 }
 
-export function bedrockagentAgentActionGroupApiSchemaToTerraform(struct?: BedrockagentAgentActionGroupApiSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupApiSchemaToTerraform(struct?: BedrockagentAgentActionGroupApiSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    payload: cdktf.stringToTerraform(struct!.payload),
-    s3: cdktf.listMapper(bedrockagentAgentActionGroupApiSchemaS3ToTerraform, true)(struct!.s3),
+    payload: cdktn.stringToTerraform(struct!.payload),
+    s3: cdktn.listMapper(bedrockagentAgentActionGroupApiSchemaS3ToTerraform, true)(struct!.s3),
   }
 }
 
 
-export function bedrockagentAgentActionGroupApiSchemaToHclTerraform(struct?: BedrockagentAgentActionGroupApiSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupApiSchemaToHclTerraform(struct?: BedrockagentAgentActionGroupApiSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     payload: {
-      value: cdktf.stringToHclTerraform(struct!.payload),
+      value: cdktn.stringToHclTerraform(struct!.payload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3: {
-      value: cdktf.listMapperHcl(bedrockagentAgentActionGroupApiSchemaS3ToHclTerraform, true)(struct!.s3),
+      value: cdktn.listMapperHcl(bedrockagentAgentActionGroupApiSchemaS3ToHclTerraform, true)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentAgentActionGroupApiSchemaS3List",
@@ -422,9 +422,9 @@ export function bedrockagentAgentActionGroupApiSchemaToHclTerraform(struct?: Bed
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentActionGroupApiSchemaOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentActionGroupApiSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -432,11 +432,11 @@ export class BedrockagentAgentActionGroupApiSchemaOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentActionGroupApiSchema | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentActionGroupApiSchema | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -453,14 +453,14 @@ export class BedrockagentAgentActionGroupApiSchemaOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentActionGroupApiSchema | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentActionGroupApiSchema | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._payload = undefined;
       this._s3.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -493,7 +493,7 @@ export class BedrockagentAgentActionGroupApiSchemaOutputReference extends cdktf.
   public get s3() {
     return this._s3;
   }
-  public putS3(value: BedrockagentAgentActionGroupApiSchemaS3[] | cdktf.IResolvable) {
+  public putS3(value: BedrockagentAgentActionGroupApiSchemaS3[] | cdktn.IResolvable) {
     this._s3.internalValue = value;
   }
   public resetS3() {
@@ -505,15 +505,15 @@ export class BedrockagentAgentActionGroupApiSchemaOutputReference extends cdktf.
   }
 }
 
-export class BedrockagentAgentActionGroupApiSchemaList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentActionGroupApiSchema[] | cdktf.IResolvable
+export class BedrockagentAgentActionGroupApiSchemaList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentActionGroupApiSchema[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -536,53 +536,53 @@ export interface BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFuncti
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#required BedrockagentAgentActionGroup#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#type BedrockagentAgentActionGroup#type}
   */
   readonly type: string;
 }
 
-export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersToTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersToTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    map_block_key: cdktf.stringToTerraform(struct!.mapBlockKey),
-    required: cdktf.booleanToTerraform(struct!.required),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    map_block_key: cdktn.stringToTerraform(struct!.mapBlockKey),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersToHclTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersToHclTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     map_block_key: {
-      value: cdktf.stringToHclTerraform(struct!.mapBlockKey),
+      value: cdktn.stringToHclTerraform(struct!.mapBlockKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -593,9 +593,9 @@ export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -603,11 +603,11 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsP
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -632,7 +632,7 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsP
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -641,7 +641,7 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsP
       this._required = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -685,11 +685,11 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsP
   }
 
   // required - computed: false, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -714,15 +714,15 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsP
   }
 }
 
-export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters[] | cdktf.IResolvable
+export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -747,42 +747,42 @@ export interface BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFuncti
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#parameters BedrockagentAgentActionGroup#parameters}
   */
-  readonly parameters?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters[] | cdktf.IResolvable;
+  readonly parameters?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters[] | cdktn.IResolvable;
 }
 
-export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsToTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsToTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    parameters: cdktf.listMapper(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersToTerraform, true)(struct!.parameters),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    parameters: cdktn.listMapper(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
-export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsToHclTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsToHclTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "set",
       storageClassType: "BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersList",
@@ -793,9 +793,9 @@ export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -803,11 +803,11 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -828,7 +828,7 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -836,7 +836,7 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsO
       this._name = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -883,7 +883,7 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsO
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters[] | cdktf.IResolvable) {
+  public putParameters(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -895,15 +895,15 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsO
   }
 }
 
-export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions[] | cdktf.IResolvable
+export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -920,28 +920,28 @@ export interface BedrockagentAgentActionGroupFunctionSchemaMemberFunctions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#functions BedrockagentAgentActionGroup#functions}
   */
-  readonly functions?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions[] | cdktf.IResolvable;
+  readonly functions?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions[] | cdktn.IResolvable;
 }
 
-export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsToTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsToTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    functions: cdktf.listMapper(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsToTerraform, true)(struct!.functions),
+    functions: cdktn.listMapper(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsToTerraform, true)(struct!.functions),
   }
 }
 
 
-export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsToHclTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsToHclTerraform(struct?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     functions: {
-      value: cdktf.listMapperHcl(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsToHclTerraform, true)(struct!.functions),
+      value: cdktn.listMapperHcl(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsToHclTerraform, true)(struct!.functions),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsList",
@@ -952,9 +952,9 @@ export function bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -962,11 +962,11 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentActionGroupFunctionSchemaMemberFunctions | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentActionGroupFunctionSchemaMemberFunctions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -979,13 +979,13 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._functions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1001,7 +1001,7 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsOutputRefe
   public get functions() {
     return this._functions;
   }
-  public putFunctions(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions[] | cdktf.IResolvable) {
+  public putFunctions(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions[] | cdktn.IResolvable) {
     this._functions.internalValue = value;
   }
   public resetFunctions() {
@@ -1013,15 +1013,15 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsOutputRefe
   }
 }
 
-export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentActionGroupFunctionSchemaMemberFunctions[] | cdktf.IResolvable
+export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentActionGroupFunctionSchemaMemberFunctions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1038,28 +1038,28 @@ export interface BedrockagentAgentActionGroupFunctionSchema {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#member_functions BedrockagentAgentActionGroup#member_functions}
   */
-  readonly memberFunctions?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions[] | cdktf.IResolvable;
+  readonly memberFunctions?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions[] | cdktn.IResolvable;
 }
 
-export function bedrockagentAgentActionGroupFunctionSchemaToTerraform(struct?: BedrockagentAgentActionGroupFunctionSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupFunctionSchemaToTerraform(struct?: BedrockagentAgentActionGroupFunctionSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    member_functions: cdktf.listMapper(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsToTerraform, true)(struct!.memberFunctions),
+    member_functions: cdktn.listMapper(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsToTerraform, true)(struct!.memberFunctions),
   }
 }
 
 
-export function bedrockagentAgentActionGroupFunctionSchemaToHclTerraform(struct?: BedrockagentAgentActionGroupFunctionSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupFunctionSchemaToHclTerraform(struct?: BedrockagentAgentActionGroupFunctionSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     member_functions: {
-      value: cdktf.listMapperHcl(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsToHclTerraform, true)(struct!.memberFunctions),
+      value: cdktn.listMapperHcl(bedrockagentAgentActionGroupFunctionSchemaMemberFunctionsToHclTerraform, true)(struct!.memberFunctions),
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsList",
@@ -1070,9 +1070,9 @@ export function bedrockagentAgentActionGroupFunctionSchemaToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentActionGroupFunctionSchemaOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentActionGroupFunctionSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1080,11 +1080,11 @@ export class BedrockagentAgentActionGroupFunctionSchemaOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentAgentActionGroupFunctionSchema | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentActionGroupFunctionSchema | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1097,13 +1097,13 @@ export class BedrockagentAgentActionGroupFunctionSchemaOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentActionGroupFunctionSchema | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentActionGroupFunctionSchema | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._memberFunctions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1119,7 +1119,7 @@ export class BedrockagentAgentActionGroupFunctionSchemaOutputReference extends c
   public get memberFunctions() {
     return this._memberFunctions;
   }
-  public putMemberFunctions(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions[] | cdktf.IResolvable) {
+  public putMemberFunctions(value: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions[] | cdktn.IResolvable) {
     this._memberFunctions.internalValue = value;
   }
   public resetMemberFunctions() {
@@ -1131,15 +1131,15 @@ export class BedrockagentAgentActionGroupFunctionSchemaOutputReference extends c
   }
 }
 
-export class BedrockagentAgentActionGroupFunctionSchemaList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentAgentActionGroupFunctionSchema[] | cdktf.IResolvable
+export class BedrockagentAgentActionGroupFunctionSchemaList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentAgentActionGroupFunctionSchema[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1165,32 +1165,32 @@ export interface BedrockagentAgentActionGroupTimeouts {
   readonly update?: string;
 }
 
-export function bedrockagentAgentActionGroupTimeoutsToTerraform(struct?: BedrockagentAgentActionGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupTimeoutsToTerraform(struct?: BedrockagentAgentActionGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bedrockagentAgentActionGroupTimeoutsToHclTerraform(struct?: BedrockagentAgentActionGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bedrockagentAgentActionGroupTimeoutsToHclTerraform(struct?: BedrockagentAgentActionGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1201,19 +1201,19 @@ export function bedrockagentAgentActionGroupTimeoutsToHclTerraform(struct?: Bedr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentAgentActionGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BedrockagentAgentActionGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BedrockagentAgentActionGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentAgentActionGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1230,14 +1230,14 @@ export class BedrockagentAgentActionGroupTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentAgentActionGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentAgentActionGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1285,7 +1285,7 @@ export class BedrockagentAgentActionGroupTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group}
 */
-export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
+export class BedrockagentAgentActionGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1296,14 +1296,14 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BedrockagentAgentActionGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BedrockagentAgentActionGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentAgentActionGroup to import
   * @param importFromId The id of the existing BedrockagentAgentActionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagent_agent_action_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentAgentActionGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_agent_action_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrockagent_agent_action_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -1450,11 +1450,11 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
   }
 
   // prepare_agent - computed: true, optional: true, required: false
-  private _prepareAgent?: boolean | cdktf.IResolvable; 
+  private _prepareAgent?: boolean | cdktn.IResolvable; 
   public get prepareAgent() {
     return this.getBooleanAttribute('prepare_agent');
   }
-  public set prepareAgent(value: boolean | cdktf.IResolvable) {
+  public set prepareAgent(value: boolean | cdktn.IResolvable) {
     this._prepareAgent = value;
   }
   public resetPrepareAgent() {
@@ -1482,11 +1482,11 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
   }
 
   // skip_resource_in_use_check - computed: true, optional: true, required: false
-  private _skipResourceInUseCheck?: boolean | cdktf.IResolvable; 
+  private _skipResourceInUseCheck?: boolean | cdktn.IResolvable; 
   public get skipResourceInUseCheck() {
     return this.getBooleanAttribute('skip_resource_in_use_check');
   }
-  public set skipResourceInUseCheck(value: boolean | cdktf.IResolvable) {
+  public set skipResourceInUseCheck(value: boolean | cdktn.IResolvable) {
     this._skipResourceInUseCheck = value;
   }
   public resetSkipResourceInUseCheck() {
@@ -1502,7 +1502,7 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
   public get actionGroupExecutor() {
     return this._actionGroupExecutor;
   }
-  public putActionGroupExecutor(value: BedrockagentAgentActionGroupActionGroupExecutor[] | cdktf.IResolvable) {
+  public putActionGroupExecutor(value: BedrockagentAgentActionGroupActionGroupExecutor[] | cdktn.IResolvable) {
     this._actionGroupExecutor.internalValue = value;
   }
   public resetActionGroupExecutor() {
@@ -1518,7 +1518,7 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
   public get apiSchema() {
     return this._apiSchema;
   }
-  public putApiSchema(value: BedrockagentAgentActionGroupApiSchema[] | cdktf.IResolvable) {
+  public putApiSchema(value: BedrockagentAgentActionGroupApiSchema[] | cdktn.IResolvable) {
     this._apiSchema.internalValue = value;
   }
   public resetApiSchema() {
@@ -1534,7 +1534,7 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
   public get functionSchema() {
     return this._functionSchema;
   }
-  public putFunctionSchema(value: BedrockagentAgentActionGroupFunctionSchema[] | cdktf.IResolvable) {
+  public putFunctionSchema(value: BedrockagentAgentActionGroupFunctionSchema[] | cdktn.IResolvable) {
     this._functionSchema.internalValue = value;
   }
   public resetFunctionSchema() {
@@ -1567,18 +1567,18 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action_group_name: cdktf.stringToTerraform(this._actionGroupName),
-      action_group_state: cdktf.stringToTerraform(this._actionGroupState),
-      agent_id: cdktf.stringToTerraform(this._agentId),
-      agent_version: cdktf.stringToTerraform(this._agentVersion),
-      description: cdktf.stringToTerraform(this._description),
-      parent_action_group_signature: cdktf.stringToTerraform(this._parentActionGroupSignature),
-      prepare_agent: cdktf.booleanToTerraform(this._prepareAgent),
-      region: cdktf.stringToTerraform(this._region),
-      skip_resource_in_use_check: cdktf.booleanToTerraform(this._skipResourceInUseCheck),
-      action_group_executor: cdktf.listMapper(bedrockagentAgentActionGroupActionGroupExecutorToTerraform, true)(this._actionGroupExecutor.internalValue),
-      api_schema: cdktf.listMapper(bedrockagentAgentActionGroupApiSchemaToTerraform, true)(this._apiSchema.internalValue),
-      function_schema: cdktf.listMapper(bedrockagentAgentActionGroupFunctionSchemaToTerraform, true)(this._functionSchema.internalValue),
+      action_group_name: cdktn.stringToTerraform(this._actionGroupName),
+      action_group_state: cdktn.stringToTerraform(this._actionGroupState),
+      agent_id: cdktn.stringToTerraform(this._agentId),
+      agent_version: cdktn.stringToTerraform(this._agentVersion),
+      description: cdktn.stringToTerraform(this._description),
+      parent_action_group_signature: cdktn.stringToTerraform(this._parentActionGroupSignature),
+      prepare_agent: cdktn.booleanToTerraform(this._prepareAgent),
+      region: cdktn.stringToTerraform(this._region),
+      skip_resource_in_use_check: cdktn.booleanToTerraform(this._skipResourceInUseCheck),
+      action_group_executor: cdktn.listMapper(bedrockagentAgentActionGroupActionGroupExecutorToTerraform, true)(this._actionGroupExecutor.internalValue),
+      api_schema: cdktn.listMapper(bedrockagentAgentActionGroupApiSchemaToTerraform, true)(this._apiSchema.internalValue),
+      function_schema: cdktn.listMapper(bedrockagentAgentActionGroupFunctionSchemaToTerraform, true)(this._functionSchema.internalValue),
       timeouts: bedrockagentAgentActionGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1586,73 +1586,73 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action_group_name: {
-        value: cdktf.stringToHclTerraform(this._actionGroupName),
+        value: cdktn.stringToHclTerraform(this._actionGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       action_group_state: {
-        value: cdktf.stringToHclTerraform(this._actionGroupState),
+        value: cdktn.stringToHclTerraform(this._actionGroupState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       agent_id: {
-        value: cdktf.stringToHclTerraform(this._agentId),
+        value: cdktn.stringToHclTerraform(this._agentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       agent_version: {
-        value: cdktf.stringToHclTerraform(this._agentVersion),
+        value: cdktn.stringToHclTerraform(this._agentVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_action_group_signature: {
-        value: cdktf.stringToHclTerraform(this._parentActionGroupSignature),
+        value: cdktn.stringToHclTerraform(this._parentActionGroupSignature),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prepare_agent: {
-        value: cdktf.booleanToHclTerraform(this._prepareAgent),
+        value: cdktn.booleanToHclTerraform(this._prepareAgent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_resource_in_use_check: {
-        value: cdktf.booleanToHclTerraform(this._skipResourceInUseCheck),
+        value: cdktn.booleanToHclTerraform(this._skipResourceInUseCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       action_group_executor: {
-        value: cdktf.listMapperHcl(bedrockagentAgentActionGroupActionGroupExecutorToHclTerraform, true)(this._actionGroupExecutor.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentAgentActionGroupActionGroupExecutorToHclTerraform, true)(this._actionGroupExecutor.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentAgentActionGroupActionGroupExecutorList",
       },
       api_schema: {
-        value: cdktf.listMapperHcl(bedrockagentAgentActionGroupApiSchemaToHclTerraform, true)(this._apiSchema.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentAgentActionGroupApiSchemaToHclTerraform, true)(this._apiSchema.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentAgentActionGroupApiSchemaList",
       },
       function_schema: {
-        value: cdktf.listMapperHcl(bedrockagentAgentActionGroupFunctionSchemaToHclTerraform, true)(this._functionSchema.internalValue),
+        value: cdktn.listMapperHcl(bedrockagentAgentActionGroupFunctionSchemaToHclTerraform, true)(this._functionSchema.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentAgentActionGroupFunctionSchemaList",

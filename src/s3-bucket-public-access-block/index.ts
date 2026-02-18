@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3BucketPublicAccessBlockConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketPublicAccessBlockConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_public_access_block#block_public_acls S3BucketPublicAccessBlock#block_public_acls}
   */
-  readonly blockPublicAcls?: boolean | cdktf.IResolvable;
+  readonly blockPublicAcls?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_public_access_block#block_public_policy S3BucketPublicAccessBlock#block_public_policy}
   */
-  readonly blockPublicPolicy?: boolean | cdktf.IResolvable;
+  readonly blockPublicPolicy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_public_access_block#bucket S3BucketPublicAccessBlock#bucket}
   */
@@ -34,7 +34,7 @@ export interface S3BucketPublicAccessBlockConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_public_access_block#ignore_public_acls S3BucketPublicAccessBlock#ignore_public_acls}
   */
-  readonly ignorePublicAcls?: boolean | cdktf.IResolvable;
+  readonly ignorePublicAcls?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -44,17 +44,17 @@ export interface S3BucketPublicAccessBlockConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_public_access_block#restrict_public_buckets S3BucketPublicAccessBlock#restrict_public_buckets}
   */
-  readonly restrictPublicBuckets?: boolean | cdktf.IResolvable;
+  readonly restrictPublicBuckets?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_public_access_block#skip_destroy S3BucketPublicAccessBlock#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_public_access_block aws_s3_bucket_public_access_block}
 */
-export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
+export class S3BucketPublicAccessBlock extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3BucketPublicAccessBlock resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3BucketPublicAccessBlock resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketPublicAccessBlock to import
   * @param importFromId The id of the existing S3BucketPublicAccessBlock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_bucket_public_access_block#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketPublicAccessBlock to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_public_access_block", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_public_access_block", importId: importFromId, provider });
       }
 
   // ===========
@@ -117,11 +117,11 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   // ==========
 
   // block_public_acls - computed: false, optional: true, required: false
-  private _blockPublicAcls?: boolean | cdktf.IResolvable; 
+  private _blockPublicAcls?: boolean | cdktn.IResolvable; 
   public get blockPublicAcls() {
     return this.getBooleanAttribute('block_public_acls');
   }
-  public set blockPublicAcls(value: boolean | cdktf.IResolvable) {
+  public set blockPublicAcls(value: boolean | cdktn.IResolvable) {
     this._blockPublicAcls = value;
   }
   public resetBlockPublicAcls() {
@@ -133,11 +133,11 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   }
 
   // block_public_policy - computed: false, optional: true, required: false
-  private _blockPublicPolicy?: boolean | cdktf.IResolvable; 
+  private _blockPublicPolicy?: boolean | cdktn.IResolvable; 
   public get blockPublicPolicy() {
     return this.getBooleanAttribute('block_public_policy');
   }
-  public set blockPublicPolicy(value: boolean | cdktf.IResolvable) {
+  public set blockPublicPolicy(value: boolean | cdktn.IResolvable) {
     this._blockPublicPolicy = value;
   }
   public resetBlockPublicPolicy() {
@@ -178,11 +178,11 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   }
 
   // ignore_public_acls - computed: false, optional: true, required: false
-  private _ignorePublicAcls?: boolean | cdktf.IResolvable; 
+  private _ignorePublicAcls?: boolean | cdktn.IResolvable; 
   public get ignorePublicAcls() {
     return this.getBooleanAttribute('ignore_public_acls');
   }
-  public set ignorePublicAcls(value: boolean | cdktf.IResolvable) {
+  public set ignorePublicAcls(value: boolean | cdktn.IResolvable) {
     this._ignorePublicAcls = value;
   }
   public resetIgnorePublicAcls() {
@@ -210,11 +210,11 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   }
 
   // restrict_public_buckets - computed: false, optional: true, required: false
-  private _restrictPublicBuckets?: boolean | cdktf.IResolvable; 
+  private _restrictPublicBuckets?: boolean | cdktn.IResolvable; 
   public get restrictPublicBuckets() {
     return this.getBooleanAttribute('restrict_public_buckets');
   }
-  public set restrictPublicBuckets(value: boolean | cdktf.IResolvable) {
+  public set restrictPublicBuckets(value: boolean | cdktn.IResolvable) {
     this._restrictPublicBuckets = value;
   }
   public resetRestrictPublicBuckets() {
@@ -226,11 +226,11 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -247,63 +247,63 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      block_public_acls: cdktf.booleanToTerraform(this._blockPublicAcls),
-      block_public_policy: cdktf.booleanToTerraform(this._blockPublicPolicy),
-      bucket: cdktf.stringToTerraform(this._bucket),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_public_acls: cdktf.booleanToTerraform(this._ignorePublicAcls),
-      region: cdktf.stringToTerraform(this._region),
-      restrict_public_buckets: cdktf.booleanToTerraform(this._restrictPublicBuckets),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
+      block_public_acls: cdktn.booleanToTerraform(this._blockPublicAcls),
+      block_public_policy: cdktn.booleanToTerraform(this._blockPublicPolicy),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_public_acls: cdktn.booleanToTerraform(this._ignorePublicAcls),
+      region: cdktn.stringToTerraform(this._region),
+      restrict_public_buckets: cdktn.booleanToTerraform(this._restrictPublicBuckets),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       block_public_acls: {
-        value: cdktf.booleanToHclTerraform(this._blockPublicAcls),
+        value: cdktn.booleanToHclTerraform(this._blockPublicAcls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       block_public_policy: {
-        value: cdktf.booleanToHclTerraform(this._blockPublicPolicy),
+        value: cdktn.booleanToHclTerraform(this._blockPublicPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_public_acls: {
-        value: cdktf.booleanToHclTerraform(this._ignorePublicAcls),
+        value: cdktn.booleanToHclTerraform(this._ignorePublicAcls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restrict_public_buckets: {
-        value: cdktf.booleanToHclTerraform(this._restrictPublicBuckets),
+        value: cdktn.booleanToHclTerraform(this._restrictPublicBuckets),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudtrailEventDataStoreConfig extends cdktf.TerraformMetaArguments {
+export interface CloudtrailEventDataStoreConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudtrail_event_data_store#billing_mode CloudtrailEventDataStore#billing_mode}
   */
@@ -30,7 +30,7 @@ export interface CloudtrailEventDataStoreConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudtrail_event_data_store#multi_region_enabled CloudtrailEventDataStore#multi_region_enabled}
   */
-  readonly multiRegionEnabled?: boolean | cdktf.IResolvable;
+  readonly multiRegionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudtrail_event_data_store#name CloudtrailEventDataStore#name}
   */
@@ -38,7 +38,7 @@ export interface CloudtrailEventDataStoreConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudtrail_event_data_store#organization_enabled CloudtrailEventDataStore#organization_enabled}
   */
-  readonly organizationEnabled?: boolean | cdktf.IResolvable;
+  readonly organizationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -64,13 +64,13 @@ export interface CloudtrailEventDataStoreConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudtrail_event_data_store#termination_protection_enabled CloudtrailEventDataStore#termination_protection_enabled}
   */
-  readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly terminationProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * advanced_event_selector block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudtrail_event_data_store#advanced_event_selector CloudtrailEventDataStore#advanced_event_selector}
   */
-  readonly advancedEventSelector?: CloudtrailEventDataStoreAdvancedEventSelector[] | cdktf.IResolvable;
+  readonly advancedEventSelector?: CloudtrailEventDataStoreAdvancedEventSelector[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -109,67 +109,67 @@ export interface CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector {
   readonly startsWith?: string[];
 }
 
-export function cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ends_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.endsWith),
-    equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.equalTo),
-    field: cdktf.stringToTerraform(struct!.field),
-    not_ends_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notEndsWith),
-    not_equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notEquals),
-    not_starts_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notStartsWith),
-    starts_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.startsWith),
+    ends_with: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.endsWith),
+    equals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.equalTo),
+    field: cdktn.stringToTerraform(struct!.field),
+    not_ends_with: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notEndsWith),
+    not_equals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notEquals),
+    not_starts_with: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notStartsWith),
+    starts_with: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.startsWith),
   }
 }
 
 
-export function cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToHclTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToHclTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ends_with: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.endsWith),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.endsWith),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     equals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.equalTo),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.equalTo),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     field: {
-      value: cdktf.stringToHclTerraform(struct!.field),
+      value: cdktn.stringToHclTerraform(struct!.field),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     not_ends_with: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notEndsWith),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notEndsWith),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     not_equals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notEquals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notEquals),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     not_starts_with: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notStartsWith),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notStartsWith),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     starts_with: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.startsWith),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.startsWith),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -180,9 +180,9 @@ export function cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference extends cdktf.ComplexObject {
+export class CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -190,11 +190,11 @@ export class CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -231,7 +231,7 @@ export class CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -243,7 +243,7 @@ export class CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputRef
       this._notStartsWith = undefined;
       this._startsWith = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -373,15 +373,15 @@ export class CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputRef
   }
 }
 
-export class CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList extends cdktf.ComplexList {
-  public internalValue? : CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector[] | cdktf.IResolvable
+export class CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList extends cdktn.ComplexList {
+  public internalValue? : CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -402,35 +402,35 @@ export interface CloudtrailEventDataStoreAdvancedEventSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudtrail_event_data_store#field_selector CloudtrailEventDataStore#field_selector}
   */
-  readonly fieldSelector?: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector[] | cdktf.IResolvable;
+  readonly fieldSelector?: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector[] | cdktn.IResolvable;
 }
 
-export function cloudtrailEventDataStoreAdvancedEventSelectorToTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudtrailEventDataStoreAdvancedEventSelectorToTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    field_selector: cdktf.listMapper(cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToTerraform, true)(struct!.fieldSelector),
+    name: cdktn.stringToTerraform(struct!.name),
+    field_selector: cdktn.listMapper(cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToTerraform, true)(struct!.fieldSelector),
   }
 }
 
 
-export function cloudtrailEventDataStoreAdvancedEventSelectorToHclTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudtrailEventDataStoreAdvancedEventSelectorToHclTerraform(struct?: CloudtrailEventDataStoreAdvancedEventSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_selector: {
-      value: cdktf.listMapperHcl(cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToHclTerraform, true)(struct!.fieldSelector),
+      value: cdktn.listMapperHcl(cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToHclTerraform, true)(struct!.fieldSelector),
       isBlock: true,
       type: "set",
       storageClassType: "CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList",
@@ -441,9 +441,9 @@ export function cloudtrailEventDataStoreAdvancedEventSelectorToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudtrailEventDataStoreAdvancedEventSelectorOutputReference extends cdktf.ComplexObject {
+export class CloudtrailEventDataStoreAdvancedEventSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -451,11 +451,11 @@ export class CloudtrailEventDataStoreAdvancedEventSelectorOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudtrailEventDataStoreAdvancedEventSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudtrailEventDataStoreAdvancedEventSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -472,14 +472,14 @@ export class CloudtrailEventDataStoreAdvancedEventSelectorOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudtrailEventDataStoreAdvancedEventSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudtrailEventDataStoreAdvancedEventSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._fieldSelector.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -512,7 +512,7 @@ export class CloudtrailEventDataStoreAdvancedEventSelectorOutputReference extend
   public get fieldSelector() {
     return this._fieldSelector;
   }
-  public putFieldSelector(value: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector[] | cdktf.IResolvable) {
+  public putFieldSelector(value: CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector[] | cdktn.IResolvable) {
     this._fieldSelector.internalValue = value;
   }
   public resetFieldSelector() {
@@ -524,15 +524,15 @@ export class CloudtrailEventDataStoreAdvancedEventSelectorOutputReference extend
   }
 }
 
-export class CloudtrailEventDataStoreAdvancedEventSelectorList extends cdktf.ComplexList {
-  public internalValue? : CloudtrailEventDataStoreAdvancedEventSelector[] | cdktf.IResolvable
+export class CloudtrailEventDataStoreAdvancedEventSelectorList extends cdktn.ComplexList {
+  public internalValue? : CloudtrailEventDataStoreAdvancedEventSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -558,39 +558,39 @@ export interface CloudtrailEventDataStoreTimeouts {
   readonly update?: string;
 }
 
-export function cloudtrailEventDataStoreTimeoutsToTerraform(struct?: CloudtrailEventDataStoreTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudtrailEventDataStoreTimeoutsToTerraform(struct?: CloudtrailEventDataStoreTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudtrailEventDataStoreTimeoutsToHclTerraform(struct?: CloudtrailEventDataStoreTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudtrailEventDataStoreTimeoutsToHclTerraform(struct?: CloudtrailEventDataStoreTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -601,19 +601,19 @@ export function cloudtrailEventDataStoreTimeoutsToHclTerraform(struct?: Cloudtra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudtrailEventDataStoreTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudtrailEventDataStoreTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudtrailEventDataStoreTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudtrailEventDataStoreTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -634,7 +634,7 @@ export class CloudtrailEventDataStoreTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudtrailEventDataStoreTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudtrailEventDataStoreTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -642,7 +642,7 @@ export class CloudtrailEventDataStoreTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -707,7 +707,7 @@ export class CloudtrailEventDataStoreTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store}
 */
-export class CloudtrailEventDataStore extends cdktf.TerraformResource {
+export class CloudtrailEventDataStore extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -718,14 +718,14 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudtrailEventDataStore resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudtrailEventDataStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudtrailEventDataStore to import
   * @param importFromId The id of the existing CloudtrailEventDataStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudtrail_event_data_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudtrailEventDataStore to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudtrail_event_data_store", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudtrail_event_data_store", importId: importFromId, provider });
       }
 
   // ===========
@@ -829,11 +829,11 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
   }
 
   // multi_region_enabled - computed: false, optional: true, required: false
-  private _multiRegionEnabled?: boolean | cdktf.IResolvable; 
+  private _multiRegionEnabled?: boolean | cdktn.IResolvable; 
   public get multiRegionEnabled() {
     return this.getBooleanAttribute('multi_region_enabled');
   }
-  public set multiRegionEnabled(value: boolean | cdktf.IResolvable) {
+  public set multiRegionEnabled(value: boolean | cdktn.IResolvable) {
     this._multiRegionEnabled = value;
   }
   public resetMultiRegionEnabled() {
@@ -858,11 +858,11 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
   }
 
   // organization_enabled - computed: false, optional: true, required: false
-  private _organizationEnabled?: boolean | cdktf.IResolvable; 
+  private _organizationEnabled?: boolean | cdktn.IResolvable; 
   public get organizationEnabled() {
     return this.getBooleanAttribute('organization_enabled');
   }
-  public set organizationEnabled(value: boolean | cdktf.IResolvable) {
+  public set organizationEnabled(value: boolean | cdktn.IResolvable) {
     this._organizationEnabled = value;
   }
   public resetOrganizationEnabled() {
@@ -954,11 +954,11 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
   }
 
   // termination_protection_enabled - computed: false, optional: true, required: false
-  private _terminationProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _terminationProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get terminationProtectionEnabled() {
     return this.getBooleanAttribute('termination_protection_enabled');
   }
-  public set terminationProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set terminationProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._terminationProtectionEnabled = value;
   }
   public resetTerminationProtectionEnabled() {
@@ -974,7 +974,7 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
   public get advancedEventSelector() {
     return this._advancedEventSelector;
   }
-  public putAdvancedEventSelector(value: CloudtrailEventDataStoreAdvancedEventSelector[] | cdktf.IResolvable) {
+  public putAdvancedEventSelector(value: CloudtrailEventDataStoreAdvancedEventSelector[] | cdktn.IResolvable) {
     this._advancedEventSelector.internalValue = value;
   }
   public resetAdvancedEventSelector() {
@@ -1007,19 +1007,19 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_mode: cdktf.stringToTerraform(this._billingMode),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      multi_region_enabled: cdktf.booleanToTerraform(this._multiRegionEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      organization_enabled: cdktf.booleanToTerraform(this._organizationEnabled),
-      region: cdktf.stringToTerraform(this._region),
-      retention_period: cdktf.numberToTerraform(this._retentionPeriod),
-      suspend: cdktf.stringToTerraform(this._suspend),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      termination_protection_enabled: cdktf.booleanToTerraform(this._terminationProtectionEnabled),
-      advanced_event_selector: cdktf.listMapper(cloudtrailEventDataStoreAdvancedEventSelectorToTerraform, true)(this._advancedEventSelector.internalValue),
+      billing_mode: cdktn.stringToTerraform(this._billingMode),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      multi_region_enabled: cdktn.booleanToTerraform(this._multiRegionEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      organization_enabled: cdktn.booleanToTerraform(this._organizationEnabled),
+      region: cdktn.stringToTerraform(this._region),
+      retention_period: cdktn.numberToTerraform(this._retentionPeriod),
+      suspend: cdktn.stringToTerraform(this._suspend),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      termination_protection_enabled: cdktn.booleanToTerraform(this._terminationProtectionEnabled),
+      advanced_event_selector: cdktn.listMapper(cloudtrailEventDataStoreAdvancedEventSelectorToTerraform, true)(this._advancedEventSelector.internalValue),
       timeouts: cloudtrailEventDataStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1027,79 +1027,79 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_mode: {
-        value: cdktf.stringToHclTerraform(this._billingMode),
+        value: cdktn.stringToHclTerraform(this._billingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_region_enabled: {
-        value: cdktf.booleanToHclTerraform(this._multiRegionEnabled),
+        value: cdktn.booleanToHclTerraform(this._multiRegionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization_enabled: {
-        value: cdktf.booleanToHclTerraform(this._organizationEnabled),
+        value: cdktn.booleanToHclTerraform(this._organizationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_period: {
-        value: cdktf.numberToHclTerraform(this._retentionPeriod),
+        value: cdktn.numberToHclTerraform(this._retentionPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       suspend: {
-        value: cdktf.stringToHclTerraform(this._suspend),
+        value: cdktn.stringToHclTerraform(this._suspend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       termination_protection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._terminationProtectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._terminationProtectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       advanced_event_selector: {
-        value: cdktf.listMapperHcl(cloudtrailEventDataStoreAdvancedEventSelectorToHclTerraform, true)(this._advancedEventSelector.internalValue),
+        value: cdktn.listMapperHcl(cloudtrailEventDataStoreAdvancedEventSelectorToHclTerraform, true)(this._advancedEventSelector.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CloudtrailEventDataStoreAdvancedEventSelectorList",

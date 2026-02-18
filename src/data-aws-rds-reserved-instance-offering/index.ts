@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsRdsReservedInstanceOfferingConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRdsReservedInstanceOfferingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_reserved_instance_offering#db_instance_class DataAwsRdsReservedInstanceOffering#db_instance_class}
   */
@@ -30,7 +30,7 @@ export interface DataAwsRdsReservedInstanceOfferingConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_reserved_instance_offering#multi_az DataAwsRdsReservedInstanceOffering#multi_az}
   */
-  readonly multiAz: boolean | cdktf.IResolvable;
+  readonly multiAz: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_reserved_instance_offering#offering_type DataAwsRdsReservedInstanceOffering#offering_type}
   */
@@ -50,7 +50,7 @@ export interface DataAwsRdsReservedInstanceOfferingConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering}
 */
-export class DataAwsRdsReservedInstanceOffering extends cdktf.TerraformDataSource {
+export class DataAwsRdsReservedInstanceOffering extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class DataAwsRdsReservedInstanceOffering extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsRdsReservedInstanceOffering resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsRdsReservedInstanceOffering resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRdsReservedInstanceOffering to import
   * @param importFromId The id of the existing DataAwsRdsReservedInstanceOffering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/rds_reserved_instance_offering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRdsReservedInstanceOffering to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_reserved_instance_offering", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_reserved_instance_offering", importId: importFromId, provider });
       }
 
   // ===========
@@ -164,11 +164,11 @@ export class DataAwsRdsReservedInstanceOffering extends cdktf.TerraformDataSourc
   }
 
   // multi_az - computed: false, optional: false, required: true
-  private _multiAz?: boolean | cdktf.IResolvable; 
+  private _multiAz?: boolean | cdktn.IResolvable; 
   public get multiAz() {
     return this.getBooleanAttribute('multi_az');
   }
-  public set multiAz(value: boolean | cdktf.IResolvable) {
+  public set multiAz(value: boolean | cdktn.IResolvable) {
     this._multiAz = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -229,56 +229,56 @@ export class DataAwsRdsReservedInstanceOffering extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_instance_class: cdktf.stringToTerraform(this._dbInstanceClass),
-      duration: cdktf.numberToTerraform(this._duration),
-      id: cdktf.stringToTerraform(this._id),
-      multi_az: cdktf.booleanToTerraform(this._multiAz),
-      offering_type: cdktf.stringToTerraform(this._offeringType),
-      product_description: cdktf.stringToTerraform(this._productDescription),
-      region: cdktf.stringToTerraform(this._region),
+      db_instance_class: cdktn.stringToTerraform(this._dbInstanceClass),
+      duration: cdktn.numberToTerraform(this._duration),
+      id: cdktn.stringToTerraform(this._id),
+      multi_az: cdktn.booleanToTerraform(this._multiAz),
+      offering_type: cdktn.stringToTerraform(this._offeringType),
+      product_description: cdktn.stringToTerraform(this._productDescription),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       db_instance_class: {
-        value: cdktf.stringToHclTerraform(this._dbInstanceClass),
+        value: cdktn.stringToHclTerraform(this._dbInstanceClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration: {
-        value: cdktf.numberToHclTerraform(this._duration),
+        value: cdktn.numberToHclTerraform(this._duration),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_az: {
-        value: cdktf.booleanToHclTerraform(this._multiAz),
+        value: cdktn.booleanToHclTerraform(this._multiAz),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       offering_type: {
-        value: cdktf.stringToHclTerraform(this._offeringType),
+        value: cdktn.stringToHclTerraform(this._offeringType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       product_description: {
-        value: cdktf.stringToHclTerraform(this._productDescription),
+        value: cdktn.stringToHclTerraform(this._productDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

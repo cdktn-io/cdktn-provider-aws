@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchLogDeliveryDestinationPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogDeliveryDestinationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery_destination_policy#delivery_destination_name CloudwatchLogDeliveryDestinationPolicy#delivery_destination_name}
   */
@@ -31,7 +31,7 @@ export interface CloudwatchLogDeliveryDestinationPolicyConfig extends cdktf.Terr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery_destination_policy aws_cloudwatch_log_delivery_destination_policy}
 */
-export class CloudwatchLogDeliveryDestinationPolicy extends cdktf.TerraformResource {
+export class CloudwatchLogDeliveryDestinationPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class CloudwatchLogDeliveryDestinationPolicy extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchLogDeliveryDestinationPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchLogDeliveryDestinationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogDeliveryDestinationPolicy to import
   * @param importFromId The id of the existing CloudwatchLogDeliveryDestinationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery_destination_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogDeliveryDestinationPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_delivery_destination_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_delivery_destination_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,28 +136,28 @@ export class CloudwatchLogDeliveryDestinationPolicy extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delivery_destination_name: cdktf.stringToTerraform(this._deliveryDestinationName),
-      delivery_destination_policy: cdktf.stringToTerraform(this._deliveryDestinationPolicy),
-      region: cdktf.stringToTerraform(this._region),
+      delivery_destination_name: cdktn.stringToTerraform(this._deliveryDestinationName),
+      delivery_destination_policy: cdktn.stringToTerraform(this._deliveryDestinationPolicy),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delivery_destination_name: {
-        value: cdktf.stringToHclTerraform(this._deliveryDestinationName),
+        value: cdktn.stringToHclTerraform(this._deliveryDestinationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delivery_destination_policy: {
-        value: cdktf.stringToHclTerraform(this._deliveryDestinationPolicy),
+        value: cdktn.stringToHclTerraform(this._deliveryDestinationPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

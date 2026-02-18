@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatasyncLocationS3Config extends cdktf.TerraformMetaArguments {
+export interface DatasyncLocationS3Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_s3#agent_arns DatasyncLocationS3#agent_arns}
   */
@@ -64,24 +64,24 @@ export interface DatasyncLocationS3S3Config {
 }
 
 export function datasyncLocationS3S3ConfigToTerraform(struct?: DatasyncLocationS3S3ConfigOutputReference | DatasyncLocationS3S3Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_access_role_arn: cdktf.stringToTerraform(struct!.bucketAccessRoleArn),
+    bucket_access_role_arn: cdktn.stringToTerraform(struct!.bucketAccessRoleArn),
   }
 }
 
 
 export function datasyncLocationS3S3ConfigToHclTerraform(struct?: DatasyncLocationS3S3ConfigOutputReference | DatasyncLocationS3S3Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_access_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.bucketAccessRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.bucketAccessRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,14 +92,14 @@ export function datasyncLocationS3S3ConfigToHclTerraform(struct?: DatasyncLocati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncLocationS3S3ConfigOutputReference extends cdktf.ComplexObject {
+export class DatasyncLocationS3S3ConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -141,7 +141,7 @@ export class DatasyncLocationS3S3ConfigOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_s3 aws_datasync_location_s3}
 */
-export class DatasyncLocationS3 extends cdktf.TerraformResource {
+export class DatasyncLocationS3 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -152,14 +152,14 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatasyncLocationS3 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatasyncLocationS3 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncLocationS3 to import
   * @param importFromId The id of the existing DatasyncLocationS3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_s3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncLocationS3 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_s3", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_s3", importId: importFromId, provider });
       }
 
   // ===========
@@ -207,7 +207,7 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
   // agent_arns - computed: false, optional: true, required: false
   private _agentArns?: string[]; 
   public get agentArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('agent_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('agent_arns'));
   }
   public set agentArns(value: string[]) {
     this._agentArns = value;
@@ -355,14 +355,14 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._agentArns),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      s3_bucket_arn: cdktf.stringToTerraform(this._s3BucketArn),
-      s3_storage_class: cdktf.stringToTerraform(this._s3StorageClass),
-      subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      agent_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._agentArns),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      s3_bucket_arn: cdktn.stringToTerraform(this._s3BucketArn),
+      s3_storage_class: cdktn.stringToTerraform(this._s3StorageClass),
+      subdirectory: cdktn.stringToTerraform(this._subdirectory),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       s3_config: datasyncLocationS3S3ConfigToTerraform(this._s3Config.internalValue),
     };
   }
@@ -370,49 +370,49 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       agent_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._agentArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._agentArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_bucket_arn: {
-        value: cdktf.stringToHclTerraform(this._s3BucketArn),
+        value: cdktn.stringToHclTerraform(this._s3BucketArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_storage_class: {
-        value: cdktf.stringToHclTerraform(this._s3StorageClass),
+        value: cdktn.stringToHclTerraform(this._s3StorageClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subdirectory: {
-        value: cdktf.stringToHclTerraform(this._subdirectory),
+        value: cdktn.stringToHclTerraform(this._subdirectory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

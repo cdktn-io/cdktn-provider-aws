@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsAuditmanagerFrameworkConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAuditmanagerFrameworkConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/auditmanager_framework#framework_type DataAwsAuditmanagerFramework#framework_type}
   */
@@ -31,8 +31,8 @@ export interface DataAwsAuditmanagerFrameworkControlSetsControls {
 }
 
 export function dataAwsAuditmanagerFrameworkControlSetsControlsToTerraform(struct?: DataAwsAuditmanagerFrameworkControlSetsControls): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -41,8 +41,8 @@ export function dataAwsAuditmanagerFrameworkControlSetsControlsToTerraform(struc
 
 
 export function dataAwsAuditmanagerFrameworkControlSetsControlsToHclTerraform(struct?: DataAwsAuditmanagerFrameworkControlSetsControls): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -50,7 +50,7 @@ export function dataAwsAuditmanagerFrameworkControlSetsControlsToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference extends cdktf.ComplexObject {
+export class DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -59,7 +59,7 @@ export class DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -84,14 +84,14 @@ export class DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference exte
   }
 }
 
-export class DataAwsAuditmanagerFrameworkControlSetsControlsList extends cdktf.ComplexList {
+export class DataAwsAuditmanagerFrameworkControlSetsControlsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -106,8 +106,8 @@ export interface DataAwsAuditmanagerFrameworkControlSets {
 }
 
 export function dataAwsAuditmanagerFrameworkControlSetsToTerraform(struct?: DataAwsAuditmanagerFrameworkControlSets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -116,8 +116,8 @@ export function dataAwsAuditmanagerFrameworkControlSetsToTerraform(struct?: Data
 
 
 export function dataAwsAuditmanagerFrameworkControlSetsToHclTerraform(struct?: DataAwsAuditmanagerFrameworkControlSets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -125,7 +125,7 @@ export function dataAwsAuditmanagerFrameworkControlSetsToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsAuditmanagerFrameworkControlSetsOutputReference extends cdktf.ComplexObject {
+export class DataAwsAuditmanagerFrameworkControlSetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -134,7 +134,7 @@ export class DataAwsAuditmanagerFrameworkControlSetsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -170,14 +170,14 @@ export class DataAwsAuditmanagerFrameworkControlSetsOutputReference extends cdkt
   }
 }
 
-export class DataAwsAuditmanagerFrameworkControlSetsList extends cdktf.ComplexList {
+export class DataAwsAuditmanagerFrameworkControlSetsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -192,7 +192,7 @@ export class DataAwsAuditmanagerFrameworkControlSetsList extends cdktf.ComplexLi
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/auditmanager_framework aws_auditmanager_framework}
 */
-export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
+export class DataAwsAuditmanagerFramework extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -203,14 +203,14 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsAuditmanagerFramework resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsAuditmanagerFramework resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAuditmanagerFramework to import
   * @param importFromId The id of the existing DataAwsAuditmanagerFramework that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/auditmanager_framework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAuditmanagerFramework to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_auditmanager_framework", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_auditmanager_framework", importId: importFromId, provider });
       }
 
   // ===========
@@ -318,7 +318,7 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -329,28 +329,28 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      framework_type: cdktf.stringToTerraform(this._frameworkType),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      framework_type: cdktn.stringToTerraform(this._frameworkType),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       framework_type: {
-        value: cdktf.stringToHclTerraform(this._frameworkType),
+        value: cdktn.stringToHclTerraform(this._frameworkType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

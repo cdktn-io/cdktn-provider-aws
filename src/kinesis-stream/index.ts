@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KinesisStreamConfig extends cdktf.TerraformMetaArguments {
+export interface KinesisStreamConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_stream#arn KinesisStream#arn}
   */
@@ -23,7 +23,7 @@ export interface KinesisStreamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}
   */
-  readonly enforceConsumerDeletion?: boolean | cdktf.IResolvable;
+  readonly enforceConsumerDeletion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_stream#id KinesisStream#id}
   *
@@ -90,24 +90,24 @@ export interface KinesisStreamStreamModeDetails {
 }
 
 export function kinesisStreamStreamModeDetailsToTerraform(struct?: KinesisStreamStreamModeDetailsOutputReference | KinesisStreamStreamModeDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stream_mode: cdktf.stringToTerraform(struct!.streamMode),
+    stream_mode: cdktn.stringToTerraform(struct!.streamMode),
   }
 }
 
 
 export function kinesisStreamStreamModeDetailsToHclTerraform(struct?: KinesisStreamStreamModeDetailsOutputReference | KinesisStreamStreamModeDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     stream_mode: {
-      value: cdktf.stringToHclTerraform(struct!.streamMode),
+      value: cdktn.stringToHclTerraform(struct!.streamMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,14 +118,14 @@ export function kinesisStreamStreamModeDetailsToHclTerraform(struct?: KinesisStr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisStreamStreamModeDetailsOutputReference extends cdktf.ComplexObject {
+export class KinesisStreamStreamModeDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -178,39 +178,39 @@ export interface KinesisStreamTimeouts {
   readonly update?: string;
 }
 
-export function kinesisStreamTimeoutsToTerraform(struct?: KinesisStreamTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisStreamTimeoutsToTerraform(struct?: KinesisStreamTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kinesisStreamTimeoutsToHclTerraform(struct?: KinesisStreamTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kinesisStreamTimeoutsToHclTerraform(struct?: KinesisStreamTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -221,19 +221,19 @@ export function kinesisStreamTimeoutsToHclTerraform(struct?: KinesisStreamTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KinesisStreamTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KinesisStreamTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KinesisStreamTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KinesisStreamTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -254,7 +254,7 @@ export class KinesisStreamTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KinesisStreamTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KinesisStreamTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -262,7 +262,7 @@ export class KinesisStreamTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -327,7 +327,7 @@ export class KinesisStreamTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_stream aws_kinesis_stream}
 */
-export class KinesisStream extends cdktf.TerraformResource {
+export class KinesisStream extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -338,14 +338,14 @@ export class KinesisStream extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KinesisStream resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KinesisStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KinesisStream to import
   * @param importFromId The id of the existing KinesisStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kinesis_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KinesisStream to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kinesis_stream", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_kinesis_stream", importId: importFromId, provider });
       }
 
   // ===========
@@ -429,11 +429,11 @@ export class KinesisStream extends cdktf.TerraformResource {
   }
 
   // enforce_consumer_deletion - computed: false, optional: true, required: false
-  private _enforceConsumerDeletion?: boolean | cdktf.IResolvable; 
+  private _enforceConsumerDeletion?: boolean | cdktn.IResolvable; 
   public get enforceConsumerDeletion() {
     return this.getBooleanAttribute('enforce_consumer_deletion');
   }
-  public set enforceConsumerDeletion(value: boolean | cdktf.IResolvable) {
+  public set enforceConsumerDeletion(value: boolean | cdktn.IResolvable) {
     this._enforceConsumerDeletion = value;
   }
   public resetEnforceConsumerDeletion() {
@@ -556,7 +556,7 @@ export class KinesisStream extends cdktf.TerraformResource {
   // shard_level_metrics - computed: false, optional: true, required: false
   private _shardLevelMetrics?: string[]; 
   public get shardLevelMetrics() {
-    return cdktf.Fn.tolist(this.getListAttribute('shard_level_metrics'));
+    return cdktn.Fn.tolist(this.getListAttribute('shard_level_metrics'));
   }
   public set shardLevelMetrics(value: string[]) {
     this._shardLevelMetrics = value;
@@ -639,19 +639,19 @@ export class KinesisStream extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      encryption_type: cdktf.stringToTerraform(this._encryptionType),
-      enforce_consumer_deletion: cdktf.booleanToTerraform(this._enforceConsumerDeletion),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      max_record_size_in_kib: cdktf.numberToTerraform(this._maxRecordSizeInKib),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      retention_period: cdktf.numberToTerraform(this._retentionPeriod),
-      shard_count: cdktf.numberToTerraform(this._shardCount),
-      shard_level_metrics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._shardLevelMetrics),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      arn: cdktn.stringToTerraform(this._arn),
+      encryption_type: cdktn.stringToTerraform(this._encryptionType),
+      enforce_consumer_deletion: cdktn.booleanToTerraform(this._enforceConsumerDeletion),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      max_record_size_in_kib: cdktn.numberToTerraform(this._maxRecordSizeInKib),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      retention_period: cdktn.numberToTerraform(this._retentionPeriod),
+      shard_count: cdktn.numberToTerraform(this._shardCount),
+      shard_level_metrics: cdktn.listMapper(cdktn.stringToTerraform, false)(this._shardLevelMetrics),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       stream_mode_details: kinesisStreamStreamModeDetailsToTerraform(this._streamModeDetails.internalValue),
       timeouts: kinesisStreamTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -660,79 +660,79 @@ export class KinesisStream extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_type: {
-        value: cdktf.stringToHclTerraform(this._encryptionType),
+        value: cdktn.stringToHclTerraform(this._encryptionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enforce_consumer_deletion: {
-        value: cdktf.booleanToHclTerraform(this._enforceConsumerDeletion),
+        value: cdktn.booleanToHclTerraform(this._enforceConsumerDeletion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_record_size_in_kib: {
-        value: cdktf.numberToHclTerraform(this._maxRecordSizeInKib),
+        value: cdktn.numberToHclTerraform(this._maxRecordSizeInKib),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_period: {
-        value: cdktf.numberToHclTerraform(this._retentionPeriod),
+        value: cdktn.numberToHclTerraform(this._retentionPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       shard_count: {
-        value: cdktf.numberToHclTerraform(this._shardCount),
+        value: cdktn.numberToHclTerraform(this._shardCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       shard_level_metrics: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._shardLevelMetrics),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._shardLevelMetrics),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

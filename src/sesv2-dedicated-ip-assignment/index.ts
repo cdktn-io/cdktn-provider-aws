@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Sesv2DedicatedIpAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface Sesv2DedicatedIpAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_dedicated_ip_assignment#destination_pool_name Sesv2DedicatedIpAssignment#destination_pool_name}
   */
@@ -51,32 +51,32 @@ export interface Sesv2DedicatedIpAssignmentTimeouts {
   readonly delete?: string;
 }
 
-export function sesv2DedicatedIpAssignmentTimeoutsToTerraform(struct?: Sesv2DedicatedIpAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesv2DedicatedIpAssignmentTimeoutsToTerraform(struct?: Sesv2DedicatedIpAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function sesv2DedicatedIpAssignmentTimeoutsToHclTerraform(struct?: Sesv2DedicatedIpAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesv2DedicatedIpAssignmentTimeoutsToHclTerraform(struct?: Sesv2DedicatedIpAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -87,19 +87,19 @@ export function sesv2DedicatedIpAssignmentTimeoutsToHclTerraform(struct?: Sesv2D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Sesv2DedicatedIpAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Sesv2DedicatedIpAssignmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Sesv2DedicatedIpAssignmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Sesv2DedicatedIpAssignmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -116,14 +116,14 @@ export class Sesv2DedicatedIpAssignmentTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Sesv2DedicatedIpAssignmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Sesv2DedicatedIpAssignmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -171,7 +171,7 @@ export class Sesv2DedicatedIpAssignmentTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_dedicated_ip_assignment aws_sesv2_dedicated_ip_assignment}
 */
-export class Sesv2DedicatedIpAssignment extends cdktf.TerraformResource {
+export class Sesv2DedicatedIpAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -182,14 +182,14 @@ export class Sesv2DedicatedIpAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Sesv2DedicatedIpAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Sesv2DedicatedIpAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2DedicatedIpAssignment to import
   * @param importFromId The id of the existing Sesv2DedicatedIpAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_dedicated_ip_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2DedicatedIpAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_dedicated_ip_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_dedicated_ip_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -310,10 +310,10 @@ export class Sesv2DedicatedIpAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_pool_name: cdktf.stringToTerraform(this._destinationPoolName),
-      id: cdktf.stringToTerraform(this._id),
-      ip: cdktf.stringToTerraform(this._ip),
-      region: cdktf.stringToTerraform(this._region),
+      destination_pool_name: cdktn.stringToTerraform(this._destinationPoolName),
+      id: cdktn.stringToTerraform(this._id),
+      ip: cdktn.stringToTerraform(this._ip),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: sesv2DedicatedIpAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -321,25 +321,25 @@ export class Sesv2DedicatedIpAssignment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination_pool_name: {
-        value: cdktf.stringToHclTerraform(this._destinationPoolName),
+        value: cdktn.stringToHclTerraform(this._destinationPoolName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip: {
-        value: cdktf.stringToHclTerraform(this._ip),
+        value: cdktn.stringToHclTerraform(this._ip),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

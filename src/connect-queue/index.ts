@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConnectQueueConfig extends cdktf.TerraformMetaArguments {
+export interface ConnectQueueConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_queue#description ConnectQueue#description}
   */
@@ -84,38 +84,38 @@ export interface ConnectQueueOutboundCallerConfig {
 }
 
 export function connectQueueOutboundCallerConfigToTerraform(struct?: ConnectQueueOutboundCallerConfigOutputReference | ConnectQueueOutboundCallerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    outbound_caller_id_name: cdktf.stringToTerraform(struct!.outboundCallerIdName),
-    outbound_caller_id_number_id: cdktf.stringToTerraform(struct!.outboundCallerIdNumberId),
-    outbound_flow_id: cdktf.stringToTerraform(struct!.outboundFlowId),
+    outbound_caller_id_name: cdktn.stringToTerraform(struct!.outboundCallerIdName),
+    outbound_caller_id_number_id: cdktn.stringToTerraform(struct!.outboundCallerIdNumberId),
+    outbound_flow_id: cdktn.stringToTerraform(struct!.outboundFlowId),
   }
 }
 
 
 export function connectQueueOutboundCallerConfigToHclTerraform(struct?: ConnectQueueOutboundCallerConfigOutputReference | ConnectQueueOutboundCallerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     outbound_caller_id_name: {
-      value: cdktf.stringToHclTerraform(struct!.outboundCallerIdName),
+      value: cdktn.stringToHclTerraform(struct!.outboundCallerIdName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     outbound_caller_id_number_id: {
-      value: cdktf.stringToHclTerraform(struct!.outboundCallerIdNumberId),
+      value: cdktn.stringToHclTerraform(struct!.outboundCallerIdNumberId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     outbound_flow_id: {
-      value: cdktf.stringToHclTerraform(struct!.outboundFlowId),
+      value: cdktn.stringToHclTerraform(struct!.outboundFlowId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,14 +126,14 @@ export function connectQueueOutboundCallerConfigToHclTerraform(struct?: ConnectQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConnectQueueOutboundCallerConfigOutputReference extends cdktf.ComplexObject {
+export class ConnectQueueOutboundCallerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -222,7 +222,7 @@ export class ConnectQueueOutboundCallerConfigOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_queue aws_connect_queue}
 */
-export class ConnectQueue extends cdktf.TerraformResource {
+export class ConnectQueue extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -233,14 +233,14 @@ export class ConnectQueue extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConnectQueue resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConnectQueue resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectQueue to import
   * @param importFromId The id of the existing ConnectQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/connect_queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectQueue to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_queue", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_queue", importId: importFromId, provider });
       }
 
   // ===========
@@ -388,7 +388,7 @@ export class ConnectQueue extends cdktf.TerraformResource {
   // quick_connect_ids - computed: false, optional: true, required: false
   private _quickConnectIds?: string[]; 
   public get quickConnectIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('quick_connect_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('quick_connect_ids'));
   }
   public set quickConnectIds(value: string[]) {
     this._quickConnectIds = value;
@@ -487,17 +487,17 @@ export class ConnectQueue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      hours_of_operation_id: cdktf.stringToTerraform(this._hoursOfOperationId),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      max_contacts: cdktf.numberToTerraform(this._maxContacts),
-      name: cdktf.stringToTerraform(this._name),
-      quick_connect_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._quickConnectIds),
-      region: cdktf.stringToTerraform(this._region),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      hours_of_operation_id: cdktn.stringToTerraform(this._hoursOfOperationId),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      max_contacts: cdktn.numberToTerraform(this._maxContacts),
+      name: cdktn.stringToTerraform(this._name),
+      quick_connect_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._quickConnectIds),
+      region: cdktn.stringToTerraform(this._region),
+      status: cdktn.stringToTerraform(this._status),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       outbound_caller_config: connectQueueOutboundCallerConfigToTerraform(this._outboundCallerConfig.internalValue),
     };
   }
@@ -505,67 +505,67 @@ export class ConnectQueue extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hours_of_operation_id: {
-        value: cdktf.stringToHclTerraform(this._hoursOfOperationId),
+        value: cdktn.stringToHclTerraform(this._hoursOfOperationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_contacts: {
-        value: cdktf.numberToHclTerraform(this._maxContacts),
+        value: cdktn.numberToHclTerraform(this._maxContacts),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       quick_connect_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._quickConnectIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._quickConnectIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

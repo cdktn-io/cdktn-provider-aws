@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DsqlClusterPeeringConfig extends cdktf.TerraformMetaArguments {
+export interface DsqlClusterPeeringConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dsql_cluster_peering#clusters DsqlClusterPeering#clusters}
   */
@@ -46,25 +46,25 @@ export interface DsqlClusterPeeringTimeouts {
   readonly create?: string;
 }
 
-export function dsqlClusterPeeringTimeoutsToTerraform(struct?: DsqlClusterPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dsqlClusterPeeringTimeoutsToTerraform(struct?: DsqlClusterPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function dsqlClusterPeeringTimeoutsToHclTerraform(struct?: DsqlClusterPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dsqlClusterPeeringTimeoutsToHclTerraform(struct?: DsqlClusterPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -75,19 +75,19 @@ export function dsqlClusterPeeringTimeoutsToHclTerraform(struct?: DsqlClusterPee
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DsqlClusterPeeringTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DsqlClusterPeeringTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DsqlClusterPeeringTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DsqlClusterPeeringTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -100,13 +100,13 @@ export class DsqlClusterPeeringTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DsqlClusterPeeringTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DsqlClusterPeeringTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -137,7 +137,7 @@ export class DsqlClusterPeeringTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dsql_cluster_peering aws_dsql_cluster_peering}
 */
-export class DsqlClusterPeering extends cdktf.TerraformResource {
+export class DsqlClusterPeering extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -148,14 +148,14 @@ export class DsqlClusterPeering extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DsqlClusterPeering resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DsqlClusterPeering resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DsqlClusterPeering to import
   * @param importFromId The id of the existing DsqlClusterPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dsql_cluster_peering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DsqlClusterPeering to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dsql_cluster_peering", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dsql_cluster_peering", importId: importFromId, provider });
       }
 
   // ===========
@@ -199,7 +199,7 @@ export class DsqlClusterPeering extends cdktf.TerraformResource {
   // clusters - computed: false, optional: false, required: true
   private _clusters?: string[]; 
   public get clusters() {
-    return cdktf.Fn.tolist(this.getListAttribute('clusters'));
+    return cdktn.Fn.tolist(this.getListAttribute('clusters'));
   }
   public set clusters(value: string[]) {
     this._clusters = value;
@@ -273,10 +273,10 @@ export class DsqlClusterPeering extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      clusters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clusters),
-      identifier: cdktf.stringToTerraform(this._identifier),
-      region: cdktf.stringToTerraform(this._region),
-      witness_region: cdktf.stringToTerraform(this._witnessRegion),
+      clusters: cdktn.listMapper(cdktn.stringToTerraform, false)(this._clusters),
+      identifier: cdktn.stringToTerraform(this._identifier),
+      region: cdktn.stringToTerraform(this._region),
+      witness_region: cdktn.stringToTerraform(this._witnessRegion),
       timeouts: dsqlClusterPeeringTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -284,25 +284,25 @@ export class DsqlClusterPeering extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       clusters: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._clusters),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._clusters),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       identifier: {
-        value: cdktf.stringToHclTerraform(this._identifier),
+        value: cdktn.stringToHclTerraform(this._identifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       witness_region: {
-        value: cdktf.stringToHclTerraform(this._witnessRegion),
+        value: cdktn.stringToHclTerraform(this._witnessRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

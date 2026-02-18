@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DbProxyConfig extends cdktf.TerraformMetaArguments {
+export interface DbProxyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}
   */
-  readonly debugLogging?: boolean | cdktf.IResolvable;
+  readonly debugLogging?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}
   */
@@ -52,7 +52,7 @@ export interface DbProxyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy#require_tls DbProxy#require_tls}
   */
-  readonly requireTls?: boolean | cdktf.IResolvable;
+  readonly requireTls?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy#role_arn DbProxy#role_arn}
   */
@@ -82,7 +82,7 @@ export interface DbProxyConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy#auth DbProxy#auth}
   */
-  readonly auth?: DbProxyAuth[] | cdktf.IResolvable;
+  readonly auth?: DbProxyAuth[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -117,60 +117,60 @@ export interface DbProxyAuth {
   readonly username?: string;
 }
 
-export function dbProxyAuthToTerraform(struct?: DbProxyAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbProxyAuthToTerraform(struct?: DbProxyAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_scheme: cdktf.stringToTerraform(struct!.authScheme),
-    client_password_auth_type: cdktf.stringToTerraform(struct!.clientPasswordAuthType),
-    description: cdktf.stringToTerraform(struct!.description),
-    iam_auth: cdktf.stringToTerraform(struct!.iamAuth),
-    secret_arn: cdktf.stringToTerraform(struct!.secretArn),
-    username: cdktf.stringToTerraform(struct!.username),
+    auth_scheme: cdktn.stringToTerraform(struct!.authScheme),
+    client_password_auth_type: cdktn.stringToTerraform(struct!.clientPasswordAuthType),
+    description: cdktn.stringToTerraform(struct!.description),
+    iam_auth: cdktn.stringToTerraform(struct!.iamAuth),
+    secret_arn: cdktn.stringToTerraform(struct!.secretArn),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function dbProxyAuthToHclTerraform(struct?: DbProxyAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbProxyAuthToHclTerraform(struct?: DbProxyAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_scheme: {
-      value: cdktf.stringToHclTerraform(struct!.authScheme),
+      value: cdktn.stringToHclTerraform(struct!.authScheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_password_auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.clientPasswordAuthType),
+      value: cdktn.stringToHclTerraform(struct!.clientPasswordAuthType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iam_auth: {
-      value: cdktf.stringToHclTerraform(struct!.iamAuth),
+      value: cdktn.stringToHclTerraform(struct!.iamAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_arn: {
-      value: cdktf.stringToHclTerraform(struct!.secretArn),
+      value: cdktn.stringToHclTerraform(struct!.secretArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -181,9 +181,9 @@ export function dbProxyAuthToHclTerraform(struct?: DbProxyAuth | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
+export class DbProxyAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -191,11 +191,11 @@ export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DbProxyAuth | cdktf.IResolvable | undefined {
+  public get internalValue(): DbProxyAuth | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -228,7 +228,7 @@ export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DbProxyAuth | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DbProxyAuth | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -239,7 +239,7 @@ export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
       this._secretArn = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -352,15 +352,15 @@ export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DbProxyAuthList extends cdktf.ComplexList {
-  public internalValue? : DbProxyAuth[] | cdktf.IResolvable
+export class DbProxyAuthList extends cdktn.ComplexList {
+  public internalValue? : DbProxyAuth[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -386,39 +386,39 @@ export interface DbProxyTimeouts {
   readonly update?: string;
 }
 
-export function dbProxyTimeoutsToTerraform(struct?: DbProxyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbProxyTimeoutsToTerraform(struct?: DbProxyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dbProxyTimeoutsToHclTerraform(struct?: DbProxyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dbProxyTimeoutsToHclTerraform(struct?: DbProxyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -429,19 +429,19 @@ export function dbProxyTimeoutsToHclTerraform(struct?: DbProxyTimeouts | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DbProxyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DbProxyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DbProxyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DbProxyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -462,7 +462,7 @@ export class DbProxyTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DbProxyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DbProxyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -470,7 +470,7 @@ export class DbProxyTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -535,7 +535,7 @@ export class DbProxyTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy aws_db_proxy}
 */
-export class DbProxy extends cdktf.TerraformResource {
+export class DbProxy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -546,14 +546,14 @@ export class DbProxy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DbProxy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DbProxy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DbProxy to import
   * @param importFromId The id of the existing DbProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/db_proxy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DbProxy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_proxy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_proxy", importId: importFromId, provider });
       }
 
   // ===========
@@ -612,11 +612,11 @@ export class DbProxy extends cdktf.TerraformResource {
   }
 
   // debug_logging - computed: false, optional: true, required: false
-  private _debugLogging?: boolean | cdktf.IResolvable; 
+  private _debugLogging?: boolean | cdktn.IResolvable; 
   public get debugLogging() {
     return this.getBooleanAttribute('debug_logging');
   }
-  public set debugLogging(value: boolean | cdktf.IResolvable) {
+  public set debugLogging(value: boolean | cdktn.IResolvable) {
     this._debugLogging = value;
   }
   public resetDebugLogging() {
@@ -739,11 +739,11 @@ export class DbProxy extends cdktf.TerraformResource {
   }
 
   // require_tls - computed: false, optional: true, required: false
-  private _requireTls?: boolean | cdktf.IResolvable; 
+  private _requireTls?: boolean | cdktn.IResolvable; 
   public get requireTls() {
     return this.getBooleanAttribute('require_tls');
   }
-  public set requireTls(value: boolean | cdktf.IResolvable) {
+  public set requireTls(value: boolean | cdktn.IResolvable) {
     this._requireTls = value;
   }
   public resetRequireTls() {
@@ -818,7 +818,7 @@ export class DbProxy extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -834,7 +834,7 @@ export class DbProxy extends cdktf.TerraformResource {
   // vpc_subnet_ids - computed: false, optional: false, required: true
   private _vpcSubnetIds?: string[]; 
   public get vpcSubnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_subnet_ids'));
   }
   public set vpcSubnetIds(value: string[]) {
     this._vpcSubnetIds = value;
@@ -849,7 +849,7 @@ export class DbProxy extends cdktf.TerraformResource {
   public get auth() {
     return this._auth;
   }
-  public putAuth(value: DbProxyAuth[] | cdktf.IResolvable) {
+  public putAuth(value: DbProxyAuth[] | cdktn.IResolvable) {
     this._auth.internalValue = value;
   }
   public resetAuth() {
@@ -882,22 +882,22 @@ export class DbProxy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      debug_logging: cdktf.booleanToTerraform(this._debugLogging),
-      default_auth_scheme: cdktf.stringToTerraform(this._defaultAuthScheme),
-      endpoint_network_type: cdktf.stringToTerraform(this._endpointNetworkType),
-      engine_family: cdktf.stringToTerraform(this._engineFamily),
-      id: cdktf.stringToTerraform(this._id),
-      idle_client_timeout: cdktf.numberToTerraform(this._idleClientTimeout),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      require_tls: cdktf.booleanToTerraform(this._requireTls),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_connection_network_type: cdktf.stringToTerraform(this._targetConnectionNetworkType),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
-      vpc_subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSubnetIds),
-      auth: cdktf.listMapper(dbProxyAuthToTerraform, true)(this._auth.internalValue),
+      debug_logging: cdktn.booleanToTerraform(this._debugLogging),
+      default_auth_scheme: cdktn.stringToTerraform(this._defaultAuthScheme),
+      endpoint_network_type: cdktn.stringToTerraform(this._endpointNetworkType),
+      engine_family: cdktn.stringToTerraform(this._engineFamily),
+      id: cdktn.stringToTerraform(this._id),
+      idle_client_timeout: cdktn.numberToTerraform(this._idleClientTimeout),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      require_tls: cdktn.booleanToTerraform(this._requireTls),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target_connection_network_type: cdktn.stringToTerraform(this._targetConnectionNetworkType),
+      vpc_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcSecurityGroupIds),
+      vpc_subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcSubnetIds),
+      auth: cdktn.listMapper(dbProxyAuthToTerraform, true)(this._auth.internalValue),
       timeouts: dbProxyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -905,97 +905,97 @@ export class DbProxy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       debug_logging: {
-        value: cdktf.booleanToHclTerraform(this._debugLogging),
+        value: cdktn.booleanToHclTerraform(this._debugLogging),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       default_auth_scheme: {
-        value: cdktf.stringToHclTerraform(this._defaultAuthScheme),
+        value: cdktn.stringToHclTerraform(this._defaultAuthScheme),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_network_type: {
-        value: cdktf.stringToHclTerraform(this._endpointNetworkType),
+        value: cdktn.stringToHclTerraform(this._endpointNetworkType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_family: {
-        value: cdktf.stringToHclTerraform(this._engineFamily),
+        value: cdktn.stringToHclTerraform(this._engineFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_client_timeout: {
-        value: cdktf.numberToHclTerraform(this._idleClientTimeout),
+        value: cdktn.numberToHclTerraform(this._idleClientTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       require_tls: {
-        value: cdktf.booleanToHclTerraform(this._requireTls),
+        value: cdktn.booleanToHclTerraform(this._requireTls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_connection_network_type: {
-        value: cdktf.stringToHclTerraform(this._targetConnectionNetworkType),
+        value: cdktn.stringToHclTerraform(this._targetConnectionNetworkType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       vpc_subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSubnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcSubnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       auth: {
-        value: cdktf.listMapperHcl(dbProxyAuthToHclTerraform, true)(this._auth.internalValue),
+        value: cdktn.listMapperHcl(dbProxyAuthToHclTerraform, true)(this._auth.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DbProxyAuthList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Macie2FindingsFilterConfig extends cdktf.TerraformMetaArguments {
+export interface Macie2FindingsFilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_findings_filter#action Macie2FindingsFilter#action}
   */
@@ -101,74 +101,74 @@ export interface Macie2FindingsFilterFindingCriteriaCriterion {
   readonly neq?: string[];
 }
 
-export function macie2FindingsFilterFindingCriteriaCriterionToTerraform(struct?: Macie2FindingsFilterFindingCriteriaCriterion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function macie2FindingsFilterFindingCriteriaCriterionToTerraform(struct?: Macie2FindingsFilterFindingCriteriaCriterion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    eq: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eq),
-    eq_exact_match: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eqExactMatch),
-    field: cdktf.stringToTerraform(struct!.field),
-    gt: cdktf.stringToTerraform(struct!.gt),
-    gte: cdktf.stringToTerraform(struct!.gte),
-    lt: cdktf.stringToTerraform(struct!.lt),
-    lte: cdktf.stringToTerraform(struct!.lte),
-    neq: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.neq),
+    eq: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.eq),
+    eq_exact_match: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.eqExactMatch),
+    field: cdktn.stringToTerraform(struct!.field),
+    gt: cdktn.stringToTerraform(struct!.gt),
+    gte: cdktn.stringToTerraform(struct!.gte),
+    lt: cdktn.stringToTerraform(struct!.lt),
+    lte: cdktn.stringToTerraform(struct!.lte),
+    neq: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.neq),
   }
 }
 
 
-export function macie2FindingsFilterFindingCriteriaCriterionToHclTerraform(struct?: Macie2FindingsFilterFindingCriteriaCriterion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function macie2FindingsFilterFindingCriteriaCriterionToHclTerraform(struct?: Macie2FindingsFilterFindingCriteriaCriterion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     eq: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eq),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.eq),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     eq_exact_match: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eqExactMatch),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.eqExactMatch),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     field: {
-      value: cdktf.stringToHclTerraform(struct!.field),
+      value: cdktn.stringToHclTerraform(struct!.field),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gt: {
-      value: cdktf.stringToHclTerraform(struct!.gt),
+      value: cdktn.stringToHclTerraform(struct!.gt),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gte: {
-      value: cdktf.stringToHclTerraform(struct!.gte),
+      value: cdktn.stringToHclTerraform(struct!.gte),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lt: {
-      value: cdktf.stringToHclTerraform(struct!.lt),
+      value: cdktn.stringToHclTerraform(struct!.lt),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lte: {
-      value: cdktf.stringToHclTerraform(struct!.lte),
+      value: cdktn.stringToHclTerraform(struct!.lte),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     neq: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.neq),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.neq),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -179,9 +179,9 @@ export function macie2FindingsFilterFindingCriteriaCriterionToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends cdktf.ComplexObject {
+export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -189,11 +189,11 @@ export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Macie2FindingsFilterFindingCriteriaCriterion | cdktf.IResolvable | undefined {
+  public get internalValue(): Macie2FindingsFilterFindingCriteriaCriterion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -234,7 +234,7 @@ export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Macie2FindingsFilterFindingCriteriaCriterion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Macie2FindingsFilterFindingCriteriaCriterion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -247,7 +247,7 @@ export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends
       this._lte = undefined;
       this._neq = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -268,7 +268,7 @@ export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends
   // eq - computed: false, optional: true, required: false
   private _eq?: string[]; 
   public get eq() {
-    return cdktf.Fn.tolist(this.getListAttribute('eq'));
+    return cdktn.Fn.tolist(this.getListAttribute('eq'));
   }
   public set eq(value: string[]) {
     this._eq = value;
@@ -284,7 +284,7 @@ export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends
   // eq_exact_match - computed: false, optional: true, required: false
   private _eqExactMatch?: string[]; 
   public get eqExactMatch() {
-    return cdktf.Fn.tolist(this.getListAttribute('eq_exact_match'));
+    return cdktn.Fn.tolist(this.getListAttribute('eq_exact_match'));
   }
   public set eqExactMatch(value: string[]) {
     this._eqExactMatch = value;
@@ -377,7 +377,7 @@ export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends
   // neq - computed: false, optional: true, required: false
   private _neq?: string[]; 
   public get neq() {
-    return cdktf.Fn.tolist(this.getListAttribute('neq'));
+    return cdktn.Fn.tolist(this.getListAttribute('neq'));
   }
   public set neq(value: string[]) {
     this._neq = value;
@@ -391,15 +391,15 @@ export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends
   }
 }
 
-export class Macie2FindingsFilterFindingCriteriaCriterionList extends cdktf.ComplexList {
-  public internalValue? : Macie2FindingsFilterFindingCriteriaCriterion[] | cdktf.IResolvable
+export class Macie2FindingsFilterFindingCriteriaCriterionList extends cdktn.ComplexList {
+  public internalValue? : Macie2FindingsFilterFindingCriteriaCriterion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -416,28 +416,28 @@ export interface Macie2FindingsFilterFindingCriteria {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_findings_filter#criterion Macie2FindingsFilter#criterion}
   */
-  readonly criterion?: Macie2FindingsFilterFindingCriteriaCriterion[] | cdktf.IResolvable;
+  readonly criterion?: Macie2FindingsFilterFindingCriteriaCriterion[] | cdktn.IResolvable;
 }
 
 export function macie2FindingsFilterFindingCriteriaToTerraform(struct?: Macie2FindingsFilterFindingCriteriaOutputReference | Macie2FindingsFilterFindingCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    criterion: cdktf.listMapper(macie2FindingsFilterFindingCriteriaCriterionToTerraform, true)(struct!.criterion),
+    criterion: cdktn.listMapper(macie2FindingsFilterFindingCriteriaCriterionToTerraform, true)(struct!.criterion),
   }
 }
 
 
 export function macie2FindingsFilterFindingCriteriaToHclTerraform(struct?: Macie2FindingsFilterFindingCriteriaOutputReference | Macie2FindingsFilterFindingCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     criterion: {
-      value: cdktf.listMapperHcl(macie2FindingsFilterFindingCriteriaCriterionToHclTerraform, true)(struct!.criterion),
+      value: cdktn.listMapperHcl(macie2FindingsFilterFindingCriteriaCriterionToHclTerraform, true)(struct!.criterion),
       isBlock: true,
       type: "set",
       storageClassType: "Macie2FindingsFilterFindingCriteriaCriterionList",
@@ -448,14 +448,14 @@ export function macie2FindingsFilterFindingCriteriaToHclTerraform(struct?: Macie
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Macie2FindingsFilterFindingCriteriaOutputReference extends cdktf.ComplexObject {
+export class Macie2FindingsFilterFindingCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -485,7 +485,7 @@ export class Macie2FindingsFilterFindingCriteriaOutputReference extends cdktf.Co
   public get criterion() {
     return this._criterion;
   }
-  public putCriterion(value: Macie2FindingsFilterFindingCriteriaCriterion[] | cdktf.IResolvable) {
+  public putCriterion(value: Macie2FindingsFilterFindingCriteriaCriterion[] | cdktn.IResolvable) {
     this._criterion.internalValue = value;
   }
   public resetCriterion() {
@@ -503,25 +503,25 @@ export interface Macie2FindingsFilterTimeouts {
   readonly create?: string;
 }
 
-export function macie2FindingsFilterTimeoutsToTerraform(struct?: Macie2FindingsFilterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function macie2FindingsFilterTimeoutsToTerraform(struct?: Macie2FindingsFilterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function macie2FindingsFilterTimeoutsToHclTerraform(struct?: Macie2FindingsFilterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function macie2FindingsFilterTimeoutsToHclTerraform(struct?: Macie2FindingsFilterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -532,19 +532,19 @@ export function macie2FindingsFilterTimeoutsToHclTerraform(struct?: Macie2Findin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Macie2FindingsFilterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Macie2FindingsFilterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Macie2FindingsFilterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Macie2FindingsFilterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -557,13 +557,13 @@ export class Macie2FindingsFilterTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Macie2FindingsFilterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Macie2FindingsFilterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -594,7 +594,7 @@ export class Macie2FindingsFilterTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_findings_filter aws_macie2_findings_filter}
 */
-export class Macie2FindingsFilter extends cdktf.TerraformResource {
+export class Macie2FindingsFilter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -605,14 +605,14 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Macie2FindingsFilter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Macie2FindingsFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Macie2FindingsFilter to import
   * @param importFromId The id of the existing Macie2FindingsFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/macie2_findings_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Macie2FindingsFilter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_macie2_findings_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_macie2_findings_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -840,15 +840,15 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      position: cdktf.numberToTerraform(this._position),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      action: cdktn.stringToTerraform(this._action),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      position: cdktn.numberToTerraform(this._position),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       finding_criteria: macie2FindingsFilterFindingCriteriaToTerraform(this._findingCriteria.internalValue),
       timeouts: macie2FindingsFilterTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -857,55 +857,55 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       position: {
-        value: cdktf.numberToHclTerraform(this._position),
+        value: cdktn.numberToHclTerraform(this._position),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

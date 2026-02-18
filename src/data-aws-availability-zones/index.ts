@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsAvailabilityZonesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAvailabilityZonesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/availability_zones#all_availability_zones DataAwsAvailabilityZones#all_availability_zones}
   */
-  readonly allAvailabilityZones?: boolean | cdktf.IResolvable;
+  readonly allAvailabilityZones?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/availability_zones#exclude_names DataAwsAvailabilityZones#exclude_names}
   */
@@ -46,7 +46,7 @@ export interface DataAwsAvailabilityZonesConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/availability_zones#filter DataAwsAvailabilityZones#filter}
   */
-  readonly filter?: DataAwsAvailabilityZonesFilter[] | cdktf.IResolvable;
+  readonly filter?: DataAwsAvailabilityZonesFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -65,32 +65,32 @@ export interface DataAwsAvailabilityZonesFilter {
   readonly values: string[];
 }
 
-export function dataAwsAvailabilityZonesFilterToTerraform(struct?: DataAwsAvailabilityZonesFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAvailabilityZonesFilterToTerraform(struct?: DataAwsAvailabilityZonesFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataAwsAvailabilityZonesFilterToHclTerraform(struct?: DataAwsAvailabilityZonesFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAvailabilityZonesFilterToHclTerraform(struct?: DataAwsAvailabilityZonesFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -101,9 +101,9 @@ export function dataAwsAvailabilityZonesFilterToHclTerraform(struct?: DataAwsAva
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsAvailabilityZonesFilterOutputReference extends cdktf.ComplexObject {
+export class DataAwsAvailabilityZonesFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -111,11 +111,11 @@ export class DataAwsAvailabilityZonesFilterOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAvailabilityZonesFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsAvailabilityZonesFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class DataAwsAvailabilityZonesFilterOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAvailabilityZonesFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAvailabilityZonesFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -167,7 +167,7 @@ export class DataAwsAvailabilityZonesFilterOutputReference extends cdktf.Complex
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -178,15 +178,15 @@ export class DataAwsAvailabilityZonesFilterOutputReference extends cdktf.Complex
   }
 }
 
-export class DataAwsAvailabilityZonesFilterList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAvailabilityZonesFilter[] | cdktf.IResolvable
+export class DataAwsAvailabilityZonesFilterList extends cdktn.ComplexList {
+  public internalValue? : DataAwsAvailabilityZonesFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,25 +204,25 @@ export interface DataAwsAvailabilityZonesTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsAvailabilityZonesTimeoutsToTerraform(struct?: DataAwsAvailabilityZonesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAvailabilityZonesTimeoutsToTerraform(struct?: DataAwsAvailabilityZonesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsAvailabilityZonesTimeoutsToHclTerraform(struct?: DataAwsAvailabilityZonesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsAvailabilityZonesTimeoutsToHclTerraform(struct?: DataAwsAvailabilityZonesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -233,19 +233,19 @@ export function dataAwsAvailabilityZonesTimeoutsToHclTerraform(struct?: DataAwsA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsAvailabilityZonesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsAvailabilityZonesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsAvailabilityZonesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsAvailabilityZonesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -258,13 +258,13 @@ export class DataAwsAvailabilityZonesTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAvailabilityZonesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAvailabilityZonesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -295,7 +295,7 @@ export class DataAwsAvailabilityZonesTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/availability_zones aws_availability_zones}
 */
-export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
+export class DataAwsAvailabilityZones extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -306,14 +306,14 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsAvailabilityZones resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsAvailabilityZones resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAvailabilityZones to import
   * @param importFromId The id of the existing DataAwsAvailabilityZones that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/availability_zones#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAvailabilityZones to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_availability_zones", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_availability_zones", importId: importFromId, provider });
       }
 
   // ===========
@@ -358,11 +358,11 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // ==========
 
   // all_availability_zones - computed: false, optional: true, required: false
-  private _allAvailabilityZones?: boolean | cdktf.IResolvable; 
+  private _allAvailabilityZones?: boolean | cdktn.IResolvable; 
   public get allAvailabilityZones() {
     return this.getBooleanAttribute('all_availability_zones');
   }
-  public set allAvailabilityZones(value: boolean | cdktf.IResolvable) {
+  public set allAvailabilityZones(value: boolean | cdktn.IResolvable) {
     this._allAvailabilityZones = value;
   }
   public resetAllAvailabilityZones() {
@@ -376,7 +376,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // exclude_names - computed: false, optional: true, required: false
   private _excludeNames?: string[]; 
   public get excludeNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('exclude_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('exclude_names'));
   }
   public set excludeNames(value: string[]) {
     this._excludeNames = value;
@@ -392,7 +392,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // exclude_zone_ids - computed: false, optional: true, required: false
   private _excludeZoneIds?: string[]; 
   public get excludeZoneIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('exclude_zone_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('exclude_zone_ids'));
   }
   public set excludeZoneIds(value: string[]) {
     this._excludeZoneIds = value;
@@ -407,7 +407,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
 
   // group_names - computed: true, optional: false, required: false
   public get groupNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('group_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('group_names'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -473,7 +473,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DataAwsAvailabilityZonesFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DataAwsAvailabilityZonesFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -506,13 +506,13 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      all_availability_zones: cdktf.booleanToTerraform(this._allAvailabilityZones),
-      exclude_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludeNames),
-      exclude_zone_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludeZoneIds),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      state: cdktf.stringToTerraform(this._state),
-      filter: cdktf.listMapper(dataAwsAvailabilityZonesFilterToTerraform, true)(this._filter.internalValue),
+      all_availability_zones: cdktn.booleanToTerraform(this._allAvailabilityZones),
+      exclude_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludeNames),
+      exclude_zone_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludeZoneIds),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      state: cdktn.stringToTerraform(this._state),
+      filter: cdktn.listMapper(dataAwsAvailabilityZonesFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsAvailabilityZonesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -520,43 +520,43 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       all_availability_zones: {
-        value: cdktf.booleanToHclTerraform(this._allAvailabilityZones),
+        value: cdktn.booleanToHclTerraform(this._allAvailabilityZones),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       exclude_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludeNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludeNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       exclude_zone_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludeZoneIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludeZoneIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(dataAwsAvailabilityZonesFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(dataAwsAvailabilityZonesFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsAvailabilityZonesFilterList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DmsCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface DmsCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_certificate#certificate_id DmsCertificate#certificate_id}
   */
@@ -50,7 +50,7 @@ export interface DmsCertificateConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_certificate aws_dms_certificate}
 */
-export class DmsCertificate extends cdktf.TerraformResource {
+export class DmsCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class DmsCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DmsCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DmsCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DmsCertificate to import
   * @param importFromId The id of the existing DmsCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DmsCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dms_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -231,56 +231,56 @@ export class DmsCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_id: cdktf.stringToTerraform(this._certificateId),
-      certificate_pem: cdktf.stringToTerraform(this._certificatePem),
-      certificate_wallet: cdktf.stringToTerraform(this._certificateWallet),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      certificate_id: cdktn.stringToTerraform(this._certificateId),
+      certificate_pem: cdktn.stringToTerraform(this._certificatePem),
+      certificate_wallet: cdktn.stringToTerraform(this._certificateWallet),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_id: {
-        value: cdktf.stringToHclTerraform(this._certificateId),
+        value: cdktn.stringToHclTerraform(this._certificateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_pem: {
-        value: cdktf.stringToHclTerraform(this._certificatePem),
+        value: cdktn.stringToHclTerraform(this._certificatePem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_wallet: {
-        value: cdktf.stringToHclTerraform(this._certificateWallet),
+        value: cdktn.stringToHclTerraform(this._certificateWallet),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

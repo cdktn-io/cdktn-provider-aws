@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupRegionSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface BackupRegionSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_region_settings#id BackupRegionSettings#id}
   *
@@ -28,17 +28,17 @@ export interface BackupRegionSettingsConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_region_settings#resource_type_management_preference BackupRegionSettings#resource_type_management_preference}
   */
-  readonly resourceTypeManagementPreference?: { [key: string]: (boolean | cdktf.IResolvable) };
+  readonly resourceTypeManagementPreference?: { [key: string]: (boolean | cdktn.IResolvable) };
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_region_settings#resource_type_opt_in_preference BackupRegionSettings#resource_type_opt_in_preference}
   */
-  readonly resourceTypeOptInPreference: { [key: string]: (boolean | cdktf.IResolvable) };
+  readonly resourceTypeOptInPreference: { [key: string]: (boolean | cdktn.IResolvable) };
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_region_settings aws_backup_region_settings}
 */
-export class BackupRegionSettings extends cdktf.TerraformResource {
+export class BackupRegionSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupRegionSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupRegionSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupRegionSettings to import
   * @param importFromId The id of the existing BackupRegionSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_region_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupRegionSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_region_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_region_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,11 +129,11 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
   }
 
   // resource_type_management_preference - computed: true, optional: true, required: false
-  private _resourceTypeManagementPreference?: { [key: string]: (boolean | cdktf.IResolvable) }; 
+  private _resourceTypeManagementPreference?: { [key: string]: (boolean | cdktn.IResolvable) }; 
   public get resourceTypeManagementPreference() {
     return this.getBooleanMapAttribute('resource_type_management_preference');
   }
-  public set resourceTypeManagementPreference(value: { [key: string]: (boolean | cdktf.IResolvable) }) {
+  public set resourceTypeManagementPreference(value: { [key: string]: (boolean | cdktn.IResolvable) }) {
     this._resourceTypeManagementPreference = value;
   }
   public resetResourceTypeManagementPreference() {
@@ -145,11 +145,11 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
   }
 
   // resource_type_opt_in_preference - computed: false, optional: false, required: true
-  private _resourceTypeOptInPreference?: { [key: string]: (boolean | cdktf.IResolvable) }; 
+  private _resourceTypeOptInPreference?: { [key: string]: (boolean | cdktn.IResolvable) }; 
   public get resourceTypeOptInPreference() {
     return this.getBooleanMapAttribute('resource_type_opt_in_preference');
   }
-  public set resourceTypeOptInPreference(value: { [key: string]: (boolean | cdktf.IResolvable) }) {
+  public set resourceTypeOptInPreference(value: { [key: string]: (boolean | cdktn.IResolvable) }) {
     this._resourceTypeOptInPreference = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -163,35 +163,35 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      resource_type_management_preference: cdktf.hashMapper(cdktf.booleanToTerraform)(this._resourceTypeManagementPreference),
-      resource_type_opt_in_preference: cdktf.hashMapper(cdktf.booleanToTerraform)(this._resourceTypeOptInPreference),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      resource_type_management_preference: cdktn.hashMapper(cdktn.booleanToTerraform)(this._resourceTypeManagementPreference),
+      resource_type_opt_in_preference: cdktn.hashMapper(cdktn.booleanToTerraform)(this._resourceTypeOptInPreference),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type_management_preference: {
-        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._resourceTypeManagementPreference),
+        value: cdktn.hashMapperHcl(cdktn.booleanToHclTerraform)(this._resourceTypeManagementPreference),
         isBlock: false,
         type: "map",
         storageClassType: "booleanMap",
       },
       resource_type_opt_in_preference: {
-        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._resourceTypeOptInPreference),
+        value: cdktn.hashMapperHcl(cdktn.booleanToHclTerraform)(this._resourceTypeOptInPreference),
         isBlock: false,
         type: "map",
         storageClassType: "booleanMap",

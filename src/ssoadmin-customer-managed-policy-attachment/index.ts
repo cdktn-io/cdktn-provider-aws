@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoadminCustomerManagedPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface SsoadminCustomerManagedPolicyAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_customer_managed_policy_attachment#id SsoadminCustomerManagedPolicyAttachment#id}
   *
@@ -58,31 +58,31 @@ export interface SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyRef
 }
 
 export function ssoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceToTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference | SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    path: cdktf.stringToTerraform(struct!.path),
+    name: cdktn.stringToTerraform(struct!.name),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function ssoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceToHclTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference | SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -93,14 +93,14 @@ export function ssoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference extends cdktf.ComplexObject {
+export class SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -171,32 +171,32 @@ export interface SsoadminCustomerManagedPolicyAttachmentTimeouts {
   readonly delete?: string;
 }
 
-export function ssoadminCustomerManagedPolicyAttachmentTimeoutsToTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminCustomerManagedPolicyAttachmentTimeoutsToTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ssoadminCustomerManagedPolicyAttachmentTimeoutsToHclTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminCustomerManagedPolicyAttachmentTimeoutsToHclTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -207,19 +207,19 @@ export function ssoadminCustomerManagedPolicyAttachmentTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminCustomerManagedPolicyAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SsoadminCustomerManagedPolicyAttachmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SsoadminCustomerManagedPolicyAttachmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminCustomerManagedPolicyAttachmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -236,14 +236,14 @@ export class SsoadminCustomerManagedPolicyAttachmentTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminCustomerManagedPolicyAttachmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminCustomerManagedPolicyAttachmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -291,7 +291,7 @@ export class SsoadminCustomerManagedPolicyAttachmentTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_customer_managed_policy_attachment aws_ssoadmin_customer_managed_policy_attachment}
 */
-export class SsoadminCustomerManagedPolicyAttachment extends cdktf.TerraformResource {
+export class SsoadminCustomerManagedPolicyAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -302,14 +302,14 @@ export class SsoadminCustomerManagedPolicyAttachment extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoadminCustomerManagedPolicyAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoadminCustomerManagedPolicyAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminCustomerManagedPolicyAttachment to import
   * @param importFromId The id of the existing SsoadminCustomerManagedPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_customer_managed_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminCustomerManagedPolicyAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_customer_managed_policy_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_customer_managed_policy_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -444,10 +444,10 @@ export class SsoadminCustomerManagedPolicyAttachment extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_arn: cdktf.stringToTerraform(this._instanceArn),
-      permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      instance_arn: cdktn.stringToTerraform(this._instanceArn),
+      permission_set_arn: cdktn.stringToTerraform(this._permissionSetArn),
+      region: cdktn.stringToTerraform(this._region),
       customer_managed_policy_reference: ssoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceToTerraform(this._customerManagedPolicyReference.internalValue),
       timeouts: ssoadminCustomerManagedPolicyAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -456,25 +456,25 @@ export class SsoadminCustomerManagedPolicyAttachment extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceArn),
+        value: cdktn.stringToHclTerraform(this._instanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission_set_arn: {
-        value: cdktf.stringToHclTerraform(this._permissionSetArn),
+        value: cdktn.stringToHclTerraform(this._permissionSetArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

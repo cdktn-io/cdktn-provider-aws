@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOdbCloudAutonomousVmClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOdbCloudAutonomousVmClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Unique ID of the Autonomous VM cluster.
   *
@@ -32,8 +32,8 @@ export interface DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek {
 }
 
 export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToTerraform(struct?: DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -42,8 +42,8 @@ export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToT
 
 
 export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToHclTerraform(struct?: DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,7 +51,7 @@ export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekToH
   return attrs;
 }
 
-export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -60,7 +60,7 @@ export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -85,14 +85,14 @@ export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutput
   }
 }
 
-export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList extends cdktf.ComplexList {
+export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -107,8 +107,8 @@ export interface DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonths {
 }
 
 export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsToTerraform(struct?: DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -117,8 +117,8 @@ export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsToTerra
 
 
 export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsToHclTerraform(struct?: DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonths): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -126,7 +126,7 @@ export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsToHclTe
   return attrs;
 }
 
-export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -135,7 +135,7 @@ export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -160,14 +160,14 @@ export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputRefe
   }
 }
 
-export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsList extends cdktf.ComplexList {
+export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -182,8 +182,8 @@ export interface DataAwsOdbCloudAutonomousVmClusterMaintenanceWindow {
 }
 
 export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowToTerraform(struct?: DataAwsOdbCloudAutonomousVmClusterMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -192,8 +192,8 @@ export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowToTerraform(s
 
 
 export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowToHclTerraform(struct?: DataAwsOdbCloudAutonomousVmClusterMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -201,7 +201,7 @@ export function dataAwsOdbCloudAutonomousVmClusterMaintenanceWindowToHclTerrafor
   return attrs;
 }
 
-export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -210,7 +210,7 @@ export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -237,7 +237,7 @@ export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowOutputReference 
 
   // hours_of_day - computed: true, optional: false, required: false
   public get hoursOfDay() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('hours_of_day')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('hours_of_day')));
   }
 
   // lead_time_in_weeks - computed: true, optional: false, required: false
@@ -258,18 +258,18 @@ export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowOutputReference 
 
   // weeks_of_month - computed: true, optional: false, required: false
   public get weeksOfMonth() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('weeks_of_month')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('weeks_of_month')));
   }
 }
 
-export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowList extends cdktf.ComplexList {
+export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -284,7 +284,7 @@ export class DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowList extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster}
 */
-export class DataAwsOdbCloudAutonomousVmCluster extends cdktf.TerraformDataSource {
+export class DataAwsOdbCloudAutonomousVmCluster extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -295,14 +295,14 @@ export class DataAwsOdbCloudAutonomousVmCluster extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOdbCloudAutonomousVmCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOdbCloudAutonomousVmCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbCloudAutonomousVmCluster to import
   * @param importFromId The id of the existing DataAwsOdbCloudAutonomousVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/odb_cloud_autonomous_vm_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbCloudAutonomousVmCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_autonomous_vm_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_cloud_autonomous_vm_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -417,7 +417,7 @@ export class DataAwsOdbCloudAutonomousVmCluster extends cdktf.TerraformDataSourc
 
   // db_servers - computed: true, optional: false, required: false
   public get dbServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('db_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('db_servers'));
   }
 
   // description - computed: true, optional: false, required: false
@@ -601,7 +601,7 @@ export class DataAwsOdbCloudAutonomousVmCluster extends cdktf.TerraformDataSourc
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -632,21 +632,21 @@ export class DataAwsOdbCloudAutonomousVmCluster extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

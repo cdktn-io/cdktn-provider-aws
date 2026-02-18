@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CostoptimizationhubPreferencesConfig extends cdktf.TerraformMetaArguments {
+export interface CostoptimizationhubPreferencesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/costoptimizationhub_preferences#member_account_discount_visibility CostoptimizationhubPreferences#member_account_discount_visibility}
   */
@@ -25,7 +25,7 @@ export interface CostoptimizationhubPreferencesConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/costoptimizationhub_preferences aws_costoptimizationhub_preferences}
 */
-export class CostoptimizationhubPreferences extends cdktf.TerraformResource {
+export class CostoptimizationhubPreferences extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -36,14 +36,14 @@ export class CostoptimizationhubPreferences extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CostoptimizationhubPreferences resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CostoptimizationhubPreferences resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CostoptimizationhubPreferences to import
   * @param importFromId The id of the existing CostoptimizationhubPreferences that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/costoptimizationhub_preferences#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CostoptimizationhubPreferences to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_costoptimizationhub_preferences", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_costoptimizationhub_preferences", importId: importFromId, provider });
       }
 
   // ===========
@@ -124,21 +124,21 @@ export class CostoptimizationhubPreferences extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      member_account_discount_visibility: cdktf.stringToTerraform(this._memberAccountDiscountVisibility),
-      savings_estimation_mode: cdktf.stringToTerraform(this._savingsEstimationMode),
+      member_account_discount_visibility: cdktn.stringToTerraform(this._memberAccountDiscountVisibility),
+      savings_estimation_mode: cdktn.stringToTerraform(this._savingsEstimationMode),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       member_account_discount_visibility: {
-        value: cdktf.stringToHclTerraform(this._memberAccountDiscountVisibility),
+        value: cdktn.stringToHclTerraform(this._memberAccountDiscountVisibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       savings_estimation_mode: {
-        value: cdktf.stringToHclTerraform(this._savingsEstimationMode),
+        value: cdktn.stringToHclTerraform(this._savingsEstimationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

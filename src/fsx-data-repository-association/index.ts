@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FsxDataRepositoryAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface FsxDataRepositoryAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_data_repository_association#batch_import_meta_data_on_create FsxDataRepositoryAssociation#batch_import_meta_data_on_create}
   */
-  readonly batchImportMetaDataOnCreate?: boolean | cdktf.IResolvable;
+  readonly batchImportMetaDataOnCreate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_data_repository_association#data_repository_path FsxDataRepositoryAssociation#data_repository_path}
   */
@@ -23,7 +23,7 @@ export interface FsxDataRepositoryAssociationConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_data_repository_association#delete_data_in_filesystem FsxDataRepositoryAssociation#delete_data_in_filesystem}
   */
-  readonly deleteDataInFilesystem?: boolean | cdktf.IResolvable;
+  readonly deleteDataInFilesystem?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_data_repository_association#file_system_id FsxDataRepositoryAssociation#file_system_id}
   */
@@ -78,24 +78,24 @@ export interface FsxDataRepositoryAssociationS3AutoExportPolicy {
 }
 
 export function fsxDataRepositoryAssociationS3AutoExportPolicyToTerraform(struct?: FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference | FsxDataRepositoryAssociationS3AutoExportPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
   }
 }
 
 
 export function fsxDataRepositoryAssociationS3AutoExportPolicyToHclTerraform(struct?: FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference | FsxDataRepositoryAssociationS3AutoExportPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -106,14 +106,14 @@ export function fsxDataRepositoryAssociationS3AutoExportPolicyToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference extends cdktf.ComplexObject {
+export class FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -162,24 +162,24 @@ export interface FsxDataRepositoryAssociationS3AutoImportPolicy {
 }
 
 export function fsxDataRepositoryAssociationS3AutoImportPolicyToTerraform(struct?: FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference | FsxDataRepositoryAssociationS3AutoImportPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
   }
 }
 
 
 export function fsxDataRepositoryAssociationS3AutoImportPolicyToHclTerraform(struct?: FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference | FsxDataRepositoryAssociationS3AutoImportPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -190,14 +190,14 @@ export function fsxDataRepositoryAssociationS3AutoImportPolicyToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference extends cdktf.ComplexObject {
+export class FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -254,8 +254,8 @@ export interface FsxDataRepositoryAssociationS3 {
 }
 
 export function fsxDataRepositoryAssociationS3ToTerraform(struct?: FsxDataRepositoryAssociationS3OutputReference | FsxDataRepositoryAssociationS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -266,8 +266,8 @@ export function fsxDataRepositoryAssociationS3ToTerraform(struct?: FsxDataReposi
 
 
 export function fsxDataRepositoryAssociationS3ToHclTerraform(struct?: FsxDataRepositoryAssociationS3OutputReference | FsxDataRepositoryAssociationS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -289,14 +289,14 @@ export function fsxDataRepositoryAssociationS3ToHclTerraform(struct?: FsxDataRep
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxDataRepositoryAssociationS3OutputReference extends cdktf.ComplexObject {
+export class FsxDataRepositoryAssociationS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -374,39 +374,39 @@ export interface FsxDataRepositoryAssociationTimeouts {
   readonly update?: string;
 }
 
-export function fsxDataRepositoryAssociationTimeoutsToTerraform(struct?: FsxDataRepositoryAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxDataRepositoryAssociationTimeoutsToTerraform(struct?: FsxDataRepositoryAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function fsxDataRepositoryAssociationTimeoutsToHclTerraform(struct?: FsxDataRepositoryAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fsxDataRepositoryAssociationTimeoutsToHclTerraform(struct?: FsxDataRepositoryAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -417,19 +417,19 @@ export function fsxDataRepositoryAssociationTimeoutsToHclTerraform(struct?: FsxD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FsxDataRepositoryAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FsxDataRepositoryAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FsxDataRepositoryAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FsxDataRepositoryAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -450,7 +450,7 @@ export class FsxDataRepositoryAssociationTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FsxDataRepositoryAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FsxDataRepositoryAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -458,7 +458,7 @@ export class FsxDataRepositoryAssociationTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -523,7 +523,7 @@ export class FsxDataRepositoryAssociationTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association}
 */
-export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
+export class FsxDataRepositoryAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -534,14 +534,14 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FsxDataRepositoryAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FsxDataRepositoryAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FsxDataRepositoryAssociation to import
   * @param importFromId The id of the existing FsxDataRepositoryAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fsx_data_repository_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FsxDataRepositoryAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_fsx_data_repository_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_fsx_data_repository_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -600,11 +600,11 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
   }
 
   // batch_import_meta_data_on_create - computed: false, optional: true, required: false
-  private _batchImportMetaDataOnCreate?: boolean | cdktf.IResolvable; 
+  private _batchImportMetaDataOnCreate?: boolean | cdktn.IResolvable; 
   public get batchImportMetaDataOnCreate() {
     return this.getBooleanAttribute('batch_import_meta_data_on_create');
   }
-  public set batchImportMetaDataOnCreate(value: boolean | cdktf.IResolvable) {
+  public set batchImportMetaDataOnCreate(value: boolean | cdktn.IResolvable) {
     this._batchImportMetaDataOnCreate = value;
   }
   public resetBatchImportMetaDataOnCreate() {
@@ -629,11 +629,11 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
   }
 
   // delete_data_in_filesystem - computed: false, optional: true, required: false
-  private _deleteDataInFilesystem?: boolean | cdktf.IResolvable; 
+  private _deleteDataInFilesystem?: boolean | cdktn.IResolvable; 
   public get deleteDataInFilesystem() {
     return this.getBooleanAttribute('delete_data_in_filesystem');
   }
-  public set deleteDataInFilesystem(value: boolean | cdktf.IResolvable) {
+  public set deleteDataInFilesystem(value: boolean | cdktn.IResolvable) {
     this._deleteDataInFilesystem = value;
   }
   public resetDeleteDataInFilesystem() {
@@ -788,16 +788,16 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      batch_import_meta_data_on_create: cdktf.booleanToTerraform(this._batchImportMetaDataOnCreate),
-      data_repository_path: cdktf.stringToTerraform(this._dataRepositoryPath),
-      delete_data_in_filesystem: cdktf.booleanToTerraform(this._deleteDataInFilesystem),
-      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
-      file_system_path: cdktf.stringToTerraform(this._fileSystemPath),
-      id: cdktf.stringToTerraform(this._id),
-      imported_file_chunk_size: cdktf.numberToTerraform(this._importedFileChunkSize),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      batch_import_meta_data_on_create: cdktn.booleanToTerraform(this._batchImportMetaDataOnCreate),
+      data_repository_path: cdktn.stringToTerraform(this._dataRepositoryPath),
+      delete_data_in_filesystem: cdktn.booleanToTerraform(this._deleteDataInFilesystem),
+      file_system_id: cdktn.stringToTerraform(this._fileSystemId),
+      file_system_path: cdktn.stringToTerraform(this._fileSystemPath),
+      id: cdktn.stringToTerraform(this._id),
+      imported_file_chunk_size: cdktn.numberToTerraform(this._importedFileChunkSize),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       s3: fsxDataRepositoryAssociationS3ToTerraform(this._s3.internalValue),
       timeouts: fsxDataRepositoryAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -806,61 +806,61 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       batch_import_meta_data_on_create: {
-        value: cdktf.booleanToHclTerraform(this._batchImportMetaDataOnCreate),
+        value: cdktn.booleanToHclTerraform(this._batchImportMetaDataOnCreate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       data_repository_path: {
-        value: cdktf.stringToHclTerraform(this._dataRepositoryPath),
+        value: cdktn.stringToHclTerraform(this._dataRepositoryPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delete_data_in_filesystem: {
-        value: cdktf.booleanToHclTerraform(this._deleteDataInFilesystem),
+        value: cdktn.booleanToHclTerraform(this._deleteDataInFilesystem),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       file_system_id: {
-        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        value: cdktn.stringToHclTerraform(this._fileSystemId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_system_path: {
-        value: cdktf.stringToHclTerraform(this._fileSystemPath),
+        value: cdktn.stringToHclTerraform(this._fileSystemPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       imported_file_chunk_size: {
-        value: cdktf.numberToHclTerraform(this._importedFileChunkSize),
+        value: cdktn.numberToHclTerraform(this._importedFileChunkSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

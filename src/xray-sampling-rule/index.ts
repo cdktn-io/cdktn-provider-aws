@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface XraySamplingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface XraySamplingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_sampling_rule#attributes XraySamplingRule#attributes}
   */
@@ -86,7 +86,7 @@ export interface XraySamplingRuleConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_sampling_rule aws_xray_sampling_rule}
 */
-export class XraySamplingRule extends cdktf.TerraformResource {
+export class XraySamplingRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -97,14 +97,14 @@ export class XraySamplingRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a XraySamplingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a XraySamplingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the XraySamplingRule to import
   * @param importFromId The id of the existing XraySamplingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/xray_sampling_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the XraySamplingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_xray_sampling_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_xray_sampling_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -393,119 +393,119 @@ export class XraySamplingRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attributes: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributes),
-      fixed_rate: cdktf.numberToTerraform(this._fixedRate),
-      host: cdktf.stringToTerraform(this._host),
-      http_method: cdktf.stringToTerraform(this._httpMethod),
-      id: cdktf.stringToTerraform(this._id),
-      priority: cdktf.numberToTerraform(this._priority),
-      region: cdktf.stringToTerraform(this._region),
-      reservoir_size: cdktf.numberToTerraform(this._reservoirSize),
-      resource_arn: cdktf.stringToTerraform(this._resourceArn),
-      rule_name: cdktf.stringToTerraform(this._ruleName),
-      service_name: cdktf.stringToTerraform(this._serviceName),
-      service_type: cdktf.stringToTerraform(this._serviceType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      url_path: cdktf.stringToTerraform(this._urlPath),
-      version: cdktf.numberToTerraform(this._version),
+      attributes: cdktn.hashMapper(cdktn.stringToTerraform)(this._attributes),
+      fixed_rate: cdktn.numberToTerraform(this._fixedRate),
+      host: cdktn.stringToTerraform(this._host),
+      http_method: cdktn.stringToTerraform(this._httpMethod),
+      id: cdktn.stringToTerraform(this._id),
+      priority: cdktn.numberToTerraform(this._priority),
+      region: cdktn.stringToTerraform(this._region),
+      reservoir_size: cdktn.numberToTerraform(this._reservoirSize),
+      resource_arn: cdktn.stringToTerraform(this._resourceArn),
+      rule_name: cdktn.stringToTerraform(this._ruleName),
+      service_name: cdktn.stringToTerraform(this._serviceName),
+      service_type: cdktn.stringToTerraform(this._serviceType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      url_path: cdktn.stringToTerraform(this._urlPath),
+      version: cdktn.numberToTerraform(this._version),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       attributes: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._attributes),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._attributes),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       fixed_rate: {
-        value: cdktf.numberToHclTerraform(this._fixedRate),
+        value: cdktn.numberToHclTerraform(this._fixedRate),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_method: {
-        value: cdktf.stringToHclTerraform(this._httpMethod),
+        value: cdktn.stringToHclTerraform(this._httpMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reservoir_size: {
-        value: cdktf.numberToHclTerraform(this._reservoirSize),
+        value: cdktn.numberToHclTerraform(this._reservoirSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceArn),
+        value: cdktn.stringToHclTerraform(this._resourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_name: {
-        value: cdktf.stringToHclTerraform(this._ruleName),
+        value: cdktn.stringToHclTerraform(this._ruleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_name: {
-        value: cdktf.stringToHclTerraform(this._serviceName),
+        value: cdktn.stringToHclTerraform(this._serviceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_type: {
-        value: cdktf.stringToHclTerraform(this._serviceType),
+        value: cdktn.stringToHclTerraform(this._serviceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       url_path: {
-        value: cdktf.stringToHclTerraform(this._urlPath),
+        value: cdktn.stringToHclTerraform(this._urlPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.numberToHclTerraform(this._version),
+        value: cdktn.numberToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

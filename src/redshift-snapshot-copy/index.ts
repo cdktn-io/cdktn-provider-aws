@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftSnapshotCopyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_snapshot_copy#cluster_identifier RedshiftSnapshotCopy#cluster_identifier}
   */
@@ -43,7 +43,7 @@ export interface RedshiftSnapshotCopyConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_snapshot_copy aws_redshift_snapshot_copy}
 */
-export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
+export class RedshiftSnapshotCopy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +54,14 @@ export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftSnapshotCopy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftSnapshotCopy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftSnapshotCopy to import
   * @param importFromId The id of the existing RedshiftSnapshotCopy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_snapshot_copy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftSnapshotCopy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_snapshot_copy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_snapshot_copy", importId: importFromId, provider });
       }
 
   // ===========
@@ -204,49 +204,49 @@ export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      destination_region: cdktf.stringToTerraform(this._destinationRegion),
-      manual_snapshot_retention_period: cdktf.numberToTerraform(this._manualSnapshotRetentionPeriod),
-      region: cdktf.stringToTerraform(this._region),
-      retention_period: cdktf.numberToTerraform(this._retentionPeriod),
-      snapshot_copy_grant_name: cdktf.stringToTerraform(this._snapshotCopyGrantName),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      destination_region: cdktn.stringToTerraform(this._destinationRegion),
+      manual_snapshot_retention_period: cdktn.numberToTerraform(this._manualSnapshotRetentionPeriod),
+      region: cdktn.stringToTerraform(this._region),
+      retention_period: cdktn.numberToTerraform(this._retentionPeriod),
+      snapshot_copy_grant_name: cdktn.stringToTerraform(this._snapshotCopyGrantName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_region: {
-        value: cdktf.stringToHclTerraform(this._destinationRegion),
+        value: cdktn.stringToHclTerraform(this._destinationRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       manual_snapshot_retention_period: {
-        value: cdktf.numberToHclTerraform(this._manualSnapshotRetentionPeriod),
+        value: cdktn.numberToHclTerraform(this._manualSnapshotRetentionPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_period: {
-        value: cdktf.numberToHclTerraform(this._retentionPeriod),
+        value: cdktn.numberToHclTerraform(this._retentionPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       snapshot_copy_grant_name: {
-        value: cdktf.stringToHclTerraform(this._snapshotCopyGrantName),
+        value: cdktn.stringToHclTerraform(this._snapshotCopyGrantName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

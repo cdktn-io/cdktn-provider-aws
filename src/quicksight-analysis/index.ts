@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QuicksightAnalysisConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightAnalysisConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}
   */
@@ -70,7 +70,7 @@ export interface QuicksightAnalysisConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
   */
-  readonly permissions?: QuicksightAnalysisPermissions[] | cdktf.IResolvable;
+  readonly permissions?: QuicksightAnalysisPermissions[] | cdktn.IResolvable;
   /**
   * source_entity block
   *
@@ -95,32 +95,32 @@ export interface QuicksightAnalysisParametersDateTimeParameters {
   readonly values: string[];
 }
 
-export function quicksightAnalysisParametersDateTimeParametersToTerraform(struct?: QuicksightAnalysisParametersDateTimeParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisParametersDateTimeParametersToTerraform(struct?: QuicksightAnalysisParametersDateTimeParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function quicksightAnalysisParametersDateTimeParametersToHclTerraform(struct?: QuicksightAnalysisParametersDateTimeParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisParametersDateTimeParametersToHclTerraform(struct?: QuicksightAnalysisParametersDateTimeParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -131,9 +131,9 @@ export function quicksightAnalysisParametersDateTimeParametersToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisParametersDateTimeParametersOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisParametersDateTimeParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -141,11 +141,11 @@ export class QuicksightAnalysisParametersDateTimeParametersOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightAnalysisParametersDateTimeParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightAnalysisParametersDateTimeParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,14 +162,14 @@ export class QuicksightAnalysisParametersDateTimeParametersOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightAnalysisParametersDateTimeParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightAnalysisParametersDateTimeParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -208,15 +208,15 @@ export class QuicksightAnalysisParametersDateTimeParametersOutputReference exten
   }
 }
 
-export class QuicksightAnalysisParametersDateTimeParametersList extends cdktf.ComplexList {
-  public internalValue? : QuicksightAnalysisParametersDateTimeParameters[] | cdktf.IResolvable
+export class QuicksightAnalysisParametersDateTimeParametersList extends cdktn.ComplexList {
+  public internalValue? : QuicksightAnalysisParametersDateTimeParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -238,32 +238,32 @@ export interface QuicksightAnalysisParametersDecimalParameters {
   readonly values: number[];
 }
 
-export function quicksightAnalysisParametersDecimalParametersToTerraform(struct?: QuicksightAnalysisParametersDecimalParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisParametersDecimalParametersToTerraform(struct?: QuicksightAnalysisParametersDecimalParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.values),
   }
 }
 
 
-export function quicksightAnalysisParametersDecimalParametersToHclTerraform(struct?: QuicksightAnalysisParametersDecimalParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisParametersDecimalParametersToHclTerraform(struct?: QuicksightAnalysisParametersDecimalParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -274,9 +274,9 @@ export function quicksightAnalysisParametersDecimalParametersToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisParametersDecimalParametersOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisParametersDecimalParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -284,11 +284,11 @@ export class QuicksightAnalysisParametersDecimalParametersOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightAnalysisParametersDecimalParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightAnalysisParametersDecimalParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -305,14 +305,14 @@ export class QuicksightAnalysisParametersDecimalParametersOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightAnalysisParametersDecimalParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightAnalysisParametersDecimalParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -351,15 +351,15 @@ export class QuicksightAnalysisParametersDecimalParametersOutputReference extend
   }
 }
 
-export class QuicksightAnalysisParametersDecimalParametersList extends cdktf.ComplexList {
-  public internalValue? : QuicksightAnalysisParametersDecimalParameters[] | cdktf.IResolvable
+export class QuicksightAnalysisParametersDecimalParametersList extends cdktn.ComplexList {
+  public internalValue? : QuicksightAnalysisParametersDecimalParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -381,32 +381,32 @@ export interface QuicksightAnalysisParametersIntegerParameters {
   readonly values: number[];
 }
 
-export function quicksightAnalysisParametersIntegerParametersToTerraform(struct?: QuicksightAnalysisParametersIntegerParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisParametersIntegerParametersToTerraform(struct?: QuicksightAnalysisParametersIntegerParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.values),
   }
 }
 
 
-export function quicksightAnalysisParametersIntegerParametersToHclTerraform(struct?: QuicksightAnalysisParametersIntegerParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisParametersIntegerParametersToHclTerraform(struct?: QuicksightAnalysisParametersIntegerParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -417,9 +417,9 @@ export function quicksightAnalysisParametersIntegerParametersToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisParametersIntegerParametersOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisParametersIntegerParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -427,11 +427,11 @@ export class QuicksightAnalysisParametersIntegerParametersOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightAnalysisParametersIntegerParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightAnalysisParametersIntegerParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -448,14 +448,14 @@ export class QuicksightAnalysisParametersIntegerParametersOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightAnalysisParametersIntegerParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightAnalysisParametersIntegerParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -494,15 +494,15 @@ export class QuicksightAnalysisParametersIntegerParametersOutputReference extend
   }
 }
 
-export class QuicksightAnalysisParametersIntegerParametersList extends cdktf.ComplexList {
-  public internalValue? : QuicksightAnalysisParametersIntegerParameters[] | cdktf.IResolvable
+export class QuicksightAnalysisParametersIntegerParametersList extends cdktn.ComplexList {
+  public internalValue? : QuicksightAnalysisParametersIntegerParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -524,32 +524,32 @@ export interface QuicksightAnalysisParametersStringParameters {
   readonly values: string[];
 }
 
-export function quicksightAnalysisParametersStringParametersToTerraform(struct?: QuicksightAnalysisParametersStringParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisParametersStringParametersToTerraform(struct?: QuicksightAnalysisParametersStringParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function quicksightAnalysisParametersStringParametersToHclTerraform(struct?: QuicksightAnalysisParametersStringParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisParametersStringParametersToHclTerraform(struct?: QuicksightAnalysisParametersStringParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -560,9 +560,9 @@ export function quicksightAnalysisParametersStringParametersToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisParametersStringParametersOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisParametersStringParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -570,11 +570,11 @@ export class QuicksightAnalysisParametersStringParametersOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightAnalysisParametersStringParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightAnalysisParametersStringParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -591,14 +591,14 @@ export class QuicksightAnalysisParametersStringParametersOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightAnalysisParametersStringParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightAnalysisParametersStringParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -637,15 +637,15 @@ export class QuicksightAnalysisParametersStringParametersOutputReference extends
   }
 }
 
-export class QuicksightAnalysisParametersStringParametersList extends cdktf.ComplexList {
-  public internalValue? : QuicksightAnalysisParametersStringParameters[] | cdktf.IResolvable
+export class QuicksightAnalysisParametersStringParametersList extends cdktn.ComplexList {
+  public internalValue? : QuicksightAnalysisParametersStringParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -662,67 +662,67 @@ export interface QuicksightAnalysisParameters {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
   */
-  readonly dateTimeParameters?: QuicksightAnalysisParametersDateTimeParameters[] | cdktf.IResolvable;
+  readonly dateTimeParameters?: QuicksightAnalysisParametersDateTimeParameters[] | cdktn.IResolvable;
   /**
   * decimal_parameters block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
   */
-  readonly decimalParameters?: QuicksightAnalysisParametersDecimalParameters[] | cdktf.IResolvable;
+  readonly decimalParameters?: QuicksightAnalysisParametersDecimalParameters[] | cdktn.IResolvable;
   /**
   * integer_parameters block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
   */
-  readonly integerParameters?: QuicksightAnalysisParametersIntegerParameters[] | cdktf.IResolvable;
+  readonly integerParameters?: QuicksightAnalysisParametersIntegerParameters[] | cdktn.IResolvable;
   /**
   * string_parameters block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
   */
-  readonly stringParameters?: QuicksightAnalysisParametersStringParameters[] | cdktf.IResolvable;
+  readonly stringParameters?: QuicksightAnalysisParametersStringParameters[] | cdktn.IResolvable;
 }
 
 export function quicksightAnalysisParametersToTerraform(struct?: QuicksightAnalysisParametersOutputReference | QuicksightAnalysisParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    date_time_parameters: cdktf.listMapper(quicksightAnalysisParametersDateTimeParametersToTerraform, true)(struct!.dateTimeParameters),
-    decimal_parameters: cdktf.listMapper(quicksightAnalysisParametersDecimalParametersToTerraform, true)(struct!.decimalParameters),
-    integer_parameters: cdktf.listMapper(quicksightAnalysisParametersIntegerParametersToTerraform, true)(struct!.integerParameters),
-    string_parameters: cdktf.listMapper(quicksightAnalysisParametersStringParametersToTerraform, true)(struct!.stringParameters),
+    date_time_parameters: cdktn.listMapper(quicksightAnalysisParametersDateTimeParametersToTerraform, true)(struct!.dateTimeParameters),
+    decimal_parameters: cdktn.listMapper(quicksightAnalysisParametersDecimalParametersToTerraform, true)(struct!.decimalParameters),
+    integer_parameters: cdktn.listMapper(quicksightAnalysisParametersIntegerParametersToTerraform, true)(struct!.integerParameters),
+    string_parameters: cdktn.listMapper(quicksightAnalysisParametersStringParametersToTerraform, true)(struct!.stringParameters),
   }
 }
 
 
 export function quicksightAnalysisParametersToHclTerraform(struct?: QuicksightAnalysisParametersOutputReference | QuicksightAnalysisParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     date_time_parameters: {
-      value: cdktf.listMapperHcl(quicksightAnalysisParametersDateTimeParametersToHclTerraform, true)(struct!.dateTimeParameters),
+      value: cdktn.listMapperHcl(quicksightAnalysisParametersDateTimeParametersToHclTerraform, true)(struct!.dateTimeParameters),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightAnalysisParametersDateTimeParametersList",
     },
     decimal_parameters: {
-      value: cdktf.listMapperHcl(quicksightAnalysisParametersDecimalParametersToHclTerraform, true)(struct!.decimalParameters),
+      value: cdktn.listMapperHcl(quicksightAnalysisParametersDecimalParametersToHclTerraform, true)(struct!.decimalParameters),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightAnalysisParametersDecimalParametersList",
     },
     integer_parameters: {
-      value: cdktf.listMapperHcl(quicksightAnalysisParametersIntegerParametersToHclTerraform, true)(struct!.integerParameters),
+      value: cdktn.listMapperHcl(quicksightAnalysisParametersIntegerParametersToHclTerraform, true)(struct!.integerParameters),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightAnalysisParametersIntegerParametersList",
     },
     string_parameters: {
-      value: cdktf.listMapperHcl(quicksightAnalysisParametersStringParametersToHclTerraform, true)(struct!.stringParameters),
+      value: cdktn.listMapperHcl(quicksightAnalysisParametersStringParametersToHclTerraform, true)(struct!.stringParameters),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightAnalysisParametersStringParametersList",
@@ -733,14 +733,14 @@ export function quicksightAnalysisParametersToHclTerraform(struct?: QuicksightAn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisParametersOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -788,7 +788,7 @@ export class QuicksightAnalysisParametersOutputReference extends cdktf.ComplexOb
   public get dateTimeParameters() {
     return this._dateTimeParameters;
   }
-  public putDateTimeParameters(value: QuicksightAnalysisParametersDateTimeParameters[] | cdktf.IResolvable) {
+  public putDateTimeParameters(value: QuicksightAnalysisParametersDateTimeParameters[] | cdktn.IResolvable) {
     this._dateTimeParameters.internalValue = value;
   }
   public resetDateTimeParameters() {
@@ -804,7 +804,7 @@ export class QuicksightAnalysisParametersOutputReference extends cdktf.ComplexOb
   public get decimalParameters() {
     return this._decimalParameters;
   }
-  public putDecimalParameters(value: QuicksightAnalysisParametersDecimalParameters[] | cdktf.IResolvable) {
+  public putDecimalParameters(value: QuicksightAnalysisParametersDecimalParameters[] | cdktn.IResolvable) {
     this._decimalParameters.internalValue = value;
   }
   public resetDecimalParameters() {
@@ -820,7 +820,7 @@ export class QuicksightAnalysisParametersOutputReference extends cdktf.ComplexOb
   public get integerParameters() {
     return this._integerParameters;
   }
-  public putIntegerParameters(value: QuicksightAnalysisParametersIntegerParameters[] | cdktf.IResolvable) {
+  public putIntegerParameters(value: QuicksightAnalysisParametersIntegerParameters[] | cdktn.IResolvable) {
     this._integerParameters.internalValue = value;
   }
   public resetIntegerParameters() {
@@ -836,7 +836,7 @@ export class QuicksightAnalysisParametersOutputReference extends cdktf.ComplexOb
   public get stringParameters() {
     return this._stringParameters;
   }
-  public putStringParameters(value: QuicksightAnalysisParametersStringParameters[] | cdktf.IResolvable) {
+  public putStringParameters(value: QuicksightAnalysisParametersStringParameters[] | cdktn.IResolvable) {
     this._stringParameters.internalValue = value;
   }
   public resetStringParameters() {
@@ -858,32 +858,32 @@ export interface QuicksightAnalysisPermissions {
   readonly principal: string;
 }
 
-export function quicksightAnalysisPermissionsToTerraform(struct?: QuicksightAnalysisPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisPermissionsToTerraform(struct?: QuicksightAnalysisPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    principal: cdktn.stringToTerraform(struct!.principal),
   }
 }
 
 
-export function quicksightAnalysisPermissionsToHclTerraform(struct?: QuicksightAnalysisPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisPermissionsToHclTerraform(struct?: QuicksightAnalysisPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -894,9 +894,9 @@ export function quicksightAnalysisPermissionsToHclTerraform(struct?: QuicksightA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisPermissionsOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -904,11 +904,11 @@ export class QuicksightAnalysisPermissionsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightAnalysisPermissions | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightAnalysisPermissions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -925,14 +925,14 @@ export class QuicksightAnalysisPermissionsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightAnalysisPermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightAnalysisPermissions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._actions = undefined;
       this._principal = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -947,7 +947,7 @@ export class QuicksightAnalysisPermissionsOutputReference extends cdktf.ComplexO
   // actions - computed: false, optional: false, required: true
   private _actions?: string[]; 
   public get actions() {
-    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('actions'));
   }
   public set actions(value: string[]) {
     this._actions = value;
@@ -971,15 +971,15 @@ export class QuicksightAnalysisPermissionsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class QuicksightAnalysisPermissionsList extends cdktf.ComplexList {
-  public internalValue? : QuicksightAnalysisPermissions[] | cdktf.IResolvable
+export class QuicksightAnalysisPermissionsList extends cdktn.ComplexList {
+  public internalValue? : QuicksightAnalysisPermissions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1001,32 +1001,32 @@ export interface QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences {
   readonly dataSetPlaceholder: string;
 }
 
-export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_set_arn: cdktf.stringToTerraform(struct!.dataSetArn),
-    data_set_placeholder: cdktf.stringToTerraform(struct!.dataSetPlaceholder),
+    data_set_arn: cdktn.stringToTerraform(struct!.dataSetArn),
+    data_set_placeholder: cdktn.stringToTerraform(struct!.dataSetPlaceholder),
   }
 }
 
 
-export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToHclTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToHclTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_set_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dataSetArn),
+      value: cdktn.stringToHclTerraform(struct!.dataSetArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_set_placeholder: {
-      value: cdktf.stringToHclTerraform(struct!.dataSetPlaceholder),
+      value: cdktn.stringToHclTerraform(struct!.dataSetPlaceholder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1037,9 +1037,9 @@ export function quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1047,11 +1047,11 @@ export class QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1068,14 +1068,14 @@ export class QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataSetArn = undefined;
       this._dataSetPlaceholder = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1114,15 +1114,15 @@ export class QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesOutput
   }
 }
 
-export class QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList extends cdktf.ComplexList {
-  public internalValue? : QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences[] | cdktf.IResolvable
+export class QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList extends cdktn.ComplexList {
+  public internalValue? : QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1143,35 +1143,35 @@ export interface QuicksightAnalysisSourceEntitySourceTemplate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
   */
-  readonly dataSetReferences: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences[] | cdktf.IResolvable;
+  readonly dataSetReferences: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences[] | cdktn.IResolvable;
 }
 
 export function quicksightAnalysisSourceEntitySourceTemplateToTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateOutputReference | QuicksightAnalysisSourceEntitySourceTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    data_set_references: cdktf.listMapper(quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToTerraform, true)(struct!.dataSetReferences),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    data_set_references: cdktn.listMapper(quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToTerraform, true)(struct!.dataSetReferences),
   }
 }
 
 
 export function quicksightAnalysisSourceEntitySourceTemplateToHclTerraform(struct?: QuicksightAnalysisSourceEntitySourceTemplateOutputReference | QuicksightAnalysisSourceEntitySourceTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_set_references: {
-      value: cdktf.listMapperHcl(quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToHclTerraform, true)(struct!.dataSetReferences),
+      value: cdktn.listMapperHcl(quicksightAnalysisSourceEntitySourceTemplateDataSetReferencesToHclTerraform, true)(struct!.dataSetReferences),
       isBlock: true,
       type: "list",
       storageClassType: "QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList",
@@ -1182,14 +1182,14 @@ export function quicksightAnalysisSourceEntitySourceTemplateToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisSourceEntitySourceTemplateOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisSourceEntitySourceTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1238,7 +1238,7 @@ export class QuicksightAnalysisSourceEntitySourceTemplateOutputReference extends
   public get dataSetReferences() {
     return this._dataSetReferences;
   }
-  public putDataSetReferences(value: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences[] | cdktf.IResolvable) {
+  public putDataSetReferences(value: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences[] | cdktn.IResolvable) {
     this._dataSetReferences.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1256,8 +1256,8 @@ export interface QuicksightAnalysisSourceEntity {
 }
 
 export function quicksightAnalysisSourceEntityToTerraform(struct?: QuicksightAnalysisSourceEntityOutputReference | QuicksightAnalysisSourceEntity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1267,8 +1267,8 @@ export function quicksightAnalysisSourceEntityToTerraform(struct?: QuicksightAna
 
 
 export function quicksightAnalysisSourceEntityToHclTerraform(struct?: QuicksightAnalysisSourceEntityOutputReference | QuicksightAnalysisSourceEntity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1284,14 +1284,14 @@ export function quicksightAnalysisSourceEntityToHclTerraform(struct?: Quicksight
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisSourceEntityOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisSourceEntityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1347,39 +1347,39 @@ export interface QuicksightAnalysisTimeouts {
   readonly update?: string;
 }
 
-export function quicksightAnalysisTimeoutsToTerraform(struct?: QuicksightAnalysisTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisTimeoutsToTerraform(struct?: QuicksightAnalysisTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function quicksightAnalysisTimeoutsToHclTerraform(struct?: QuicksightAnalysisTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function quicksightAnalysisTimeoutsToHclTerraform(struct?: QuicksightAnalysisTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1390,19 +1390,19 @@ export function quicksightAnalysisTimeoutsToHclTerraform(struct?: QuicksightAnal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QuicksightAnalysisTimeoutsOutputReference extends cdktf.ComplexObject {
+export class QuicksightAnalysisTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): QuicksightAnalysisTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): QuicksightAnalysisTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1423,7 +1423,7 @@ export class QuicksightAnalysisTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QuicksightAnalysisTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QuicksightAnalysisTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1431,7 +1431,7 @@ export class QuicksightAnalysisTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1496,7 +1496,7 @@ export class QuicksightAnalysisTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_analysis aws_quicksight_analysis}
 */
-export class QuicksightAnalysis extends cdktf.TerraformResource {
+export class QuicksightAnalysis extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1507,14 +1507,14 @@ export class QuicksightAnalysis extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QuicksightAnalysis resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QuicksightAnalysis resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightAnalysis to import
   * @param importFromId The id of the existing QuicksightAnalysis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/quicksight_analysis#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightAnalysis to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_analysis", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_analysis", importId: importFromId, provider });
       }
 
   // ===========
@@ -1764,7 +1764,7 @@ export class QuicksightAnalysis extends cdktf.TerraformResource {
   public get permissions() {
     return this._permissions;
   }
-  public putPermissions(value: QuicksightAnalysisPermissions[] | cdktf.IResolvable) {
+  public putPermissions(value: QuicksightAnalysisPermissions[] | cdktn.IResolvable) {
     this._permissions.internalValue = value;
   }
   public resetPermissions() {
@@ -1813,18 +1813,18 @@ export class QuicksightAnalysis extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      analysis_id: cdktf.stringToTerraform(this._analysisId),
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recovery_window_in_days: cdktf.numberToTerraform(this._recoveryWindowInDays),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      theme_arn: cdktf.stringToTerraform(this._themeArn),
-      definition: cdktf.anyToTerraform(this._definition),
+      analysis_id: cdktn.stringToTerraform(this._analysisId),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recovery_window_in_days: cdktn.numberToTerraform(this._recoveryWindowInDays),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      theme_arn: cdktn.stringToTerraform(this._themeArn),
+      definition: cdktn.anyToTerraform(this._definition),
       parameters: quicksightAnalysisParametersToTerraform(this._parameters.internalValue),
-      permissions: cdktf.listMapper(quicksightAnalysisPermissionsToTerraform, true)(this._permissions.internalValue),
+      permissions: cdktn.listMapper(quicksightAnalysisPermissionsToTerraform, true)(this._permissions.internalValue),
       source_entity: quicksightAnalysisSourceEntityToTerraform(this._sourceEntity.internalValue),
       timeouts: quicksightAnalysisTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1833,61 +1833,61 @@ export class QuicksightAnalysis extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       analysis_id: {
-        value: cdktf.stringToHclTerraform(this._analysisId),
+        value: cdktn.stringToHclTerraform(this._analysisId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_window_in_days: {
-        value: cdktf.numberToHclTerraform(this._recoveryWindowInDays),
+        value: cdktn.numberToHclTerraform(this._recoveryWindowInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       theme_arn: {
-        value: cdktf.stringToHclTerraform(this._themeArn),
+        value: cdktn.stringToHclTerraform(this._themeArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       definition: {
-        value: cdktf.anyToHclTerraform(this._definition),
+        value: cdktn.anyToHclTerraform(this._definition),
         isBlock: false,
         type: "simple",
         storageClassType: "any",
@@ -1899,7 +1899,7 @@ export class QuicksightAnalysis extends cdktf.TerraformResource {
         storageClassType: "QuicksightAnalysisParametersList",
       },
       permissions: {
-        value: cdktf.listMapperHcl(quicksightAnalysisPermissionsToHclTerraform, true)(this._permissions.internalValue),
+        value: cdktn.listMapperHcl(quicksightAnalysisPermissionsToHclTerraform, true)(this._permissions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "QuicksightAnalysisPermissionsList",

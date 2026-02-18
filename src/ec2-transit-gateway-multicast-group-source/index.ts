@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TransitGatewayMulticastGroupSourceConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TransitGatewayMulticastGroupSourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_multicast_group_source#group_ip_address Ec2TransitGatewayMulticastGroupSource#group_ip_address}
   */
@@ -42,7 +42,7 @@ export interface Ec2TransitGatewayMulticastGroupSourceConfig extends cdktf.Terra
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_multicast_group_source aws_ec2_transit_gateway_multicast_group_source}
 */
-export class Ec2TransitGatewayMulticastGroupSource extends cdktf.TerraformResource {
+export class Ec2TransitGatewayMulticastGroupSource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class Ec2TransitGatewayMulticastGroupSource extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TransitGatewayMulticastGroupSource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TransitGatewayMulticastGroupSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TransitGatewayMulticastGroupSource to import
   * @param importFromId The id of the existing Ec2TransitGatewayMulticastGroupSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_multicast_group_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TransitGatewayMulticastGroupSource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_multicast_group_source", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_multicast_group_source", importId: importFromId, provider });
       }
 
   // ===========
@@ -178,42 +178,42 @@ export class Ec2TransitGatewayMulticastGroupSource extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_ip_address: cdktf.stringToTerraform(this._groupIpAddress),
-      id: cdktf.stringToTerraform(this._id),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      region: cdktf.stringToTerraform(this._region),
-      transit_gateway_multicast_domain_id: cdktf.stringToTerraform(this._transitGatewayMulticastDomainId),
+      group_ip_address: cdktn.stringToTerraform(this._groupIpAddress),
+      id: cdktn.stringToTerraform(this._id),
+      network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
+      region: cdktn.stringToTerraform(this._region),
+      transit_gateway_multicast_domain_id: cdktn.stringToTerraform(this._transitGatewayMulticastDomainId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group_ip_address: {
-        value: cdktf.stringToHclTerraform(this._groupIpAddress),
+        value: cdktn.stringToHclTerraform(this._groupIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface_id: {
-        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        value: cdktn.stringToHclTerraform(this._networkInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_multicast_domain_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayMulticastDomainId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayMulticastDomainId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

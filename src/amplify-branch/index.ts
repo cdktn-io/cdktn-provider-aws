@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AmplifyBranchConfig extends cdktf.TerraformMetaArguments {
+export interface AmplifyBranchConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch#app_id AmplifyBranch#app_id}
   */
@@ -39,27 +39,27 @@ export interface AmplifyBranchConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch#enable_auto_build AmplifyBranch#enable_auto_build}
   */
-  readonly enableAutoBuild?: boolean | cdktf.IResolvable;
+  readonly enableAutoBuild?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch#enable_basic_auth AmplifyBranch#enable_basic_auth}
   */
-  readonly enableBasicAuth?: boolean | cdktf.IResolvable;
+  readonly enableBasicAuth?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch#enable_notification AmplifyBranch#enable_notification}
   */
-  readonly enableNotification?: boolean | cdktf.IResolvable;
+  readonly enableNotification?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch#enable_performance_mode AmplifyBranch#enable_performance_mode}
   */
-  readonly enablePerformanceMode?: boolean | cdktf.IResolvable;
+  readonly enablePerformanceMode?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch#enable_pull_request_preview AmplifyBranch#enable_pull_request_preview}
   */
-  readonly enablePullRequestPreview?: boolean | cdktf.IResolvable;
+  readonly enablePullRequestPreview?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch#enable_skew_protection AmplifyBranch#enable_skew_protection}
   */
-  readonly enableSkewProtection?: boolean | cdktf.IResolvable;
+  readonly enableSkewProtection?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch#environment_variables AmplifyBranch#environment_variables}
   */
@@ -106,7 +106,7 @@ export interface AmplifyBranchConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch aws_amplify_branch}
 */
-export class AmplifyBranch extends cdktf.TerraformResource {
+export class AmplifyBranch extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -117,14 +117,14 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AmplifyBranch resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AmplifyBranch resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AmplifyBranch to import
   * @param importFromId The id of the existing AmplifyBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/amplify_branch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AmplifyBranch to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_amplify_branch", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_amplify_branch", importId: importFromId, provider });
       }
 
   // ===========
@@ -292,11 +292,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_auto_build - computed: false, optional: true, required: false
-  private _enableAutoBuild?: boolean | cdktf.IResolvable; 
+  private _enableAutoBuild?: boolean | cdktn.IResolvable; 
   public get enableAutoBuild() {
     return this.getBooleanAttribute('enable_auto_build');
   }
-  public set enableAutoBuild(value: boolean | cdktf.IResolvable) {
+  public set enableAutoBuild(value: boolean | cdktn.IResolvable) {
     this._enableAutoBuild = value;
   }
   public resetEnableAutoBuild() {
@@ -308,11 +308,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_basic_auth - computed: false, optional: true, required: false
-  private _enableBasicAuth?: boolean | cdktf.IResolvable; 
+  private _enableBasicAuth?: boolean | cdktn.IResolvable; 
   public get enableBasicAuth() {
     return this.getBooleanAttribute('enable_basic_auth');
   }
-  public set enableBasicAuth(value: boolean | cdktf.IResolvable) {
+  public set enableBasicAuth(value: boolean | cdktn.IResolvable) {
     this._enableBasicAuth = value;
   }
   public resetEnableBasicAuth() {
@@ -324,11 +324,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_notification - computed: false, optional: true, required: false
-  private _enableNotification?: boolean | cdktf.IResolvable; 
+  private _enableNotification?: boolean | cdktn.IResolvable; 
   public get enableNotification() {
     return this.getBooleanAttribute('enable_notification');
   }
-  public set enableNotification(value: boolean | cdktf.IResolvable) {
+  public set enableNotification(value: boolean | cdktn.IResolvable) {
     this._enableNotification = value;
   }
   public resetEnableNotification() {
@@ -340,11 +340,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_performance_mode - computed: false, optional: true, required: false
-  private _enablePerformanceMode?: boolean | cdktf.IResolvable; 
+  private _enablePerformanceMode?: boolean | cdktn.IResolvable; 
   public get enablePerformanceMode() {
     return this.getBooleanAttribute('enable_performance_mode');
   }
-  public set enablePerformanceMode(value: boolean | cdktf.IResolvable) {
+  public set enablePerformanceMode(value: boolean | cdktn.IResolvable) {
     this._enablePerformanceMode = value;
   }
   public resetEnablePerformanceMode() {
@@ -356,11 +356,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_pull_request_preview - computed: false, optional: true, required: false
-  private _enablePullRequestPreview?: boolean | cdktf.IResolvable; 
+  private _enablePullRequestPreview?: boolean | cdktn.IResolvable; 
   public get enablePullRequestPreview() {
     return this.getBooleanAttribute('enable_pull_request_preview');
   }
-  public set enablePullRequestPreview(value: boolean | cdktf.IResolvable) {
+  public set enablePullRequestPreview(value: boolean | cdktn.IResolvable) {
     this._enablePullRequestPreview = value;
   }
   public resetEnablePullRequestPreview() {
@@ -372,11 +372,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_skew_protection - computed: false, optional: true, required: false
-  private _enableSkewProtection?: boolean | cdktf.IResolvable; 
+  private _enableSkewProtection?: boolean | cdktn.IResolvable; 
   public get enableSkewProtection() {
     return this.getBooleanAttribute('enable_skew_protection');
   }
-  public set enableSkewProtection(value: boolean | cdktf.IResolvable) {
+  public set enableSkewProtection(value: boolean | cdktn.IResolvable) {
     this._enableSkewProtection = value;
   }
   public resetEnableSkewProtection() {
@@ -542,154 +542,154 @@ export class AmplifyBranch extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_id: cdktf.stringToTerraform(this._appId),
-      backend_environment_arn: cdktf.stringToTerraform(this._backendEnvironmentArn),
-      basic_auth_credentials: cdktf.stringToTerraform(this._basicAuthCredentials),
-      branch_name: cdktf.stringToTerraform(this._branchName),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enable_auto_build: cdktf.booleanToTerraform(this._enableAutoBuild),
-      enable_basic_auth: cdktf.booleanToTerraform(this._enableBasicAuth),
-      enable_notification: cdktf.booleanToTerraform(this._enableNotification),
-      enable_performance_mode: cdktf.booleanToTerraform(this._enablePerformanceMode),
-      enable_pull_request_preview: cdktf.booleanToTerraform(this._enablePullRequestPreview),
-      enable_skew_protection: cdktf.booleanToTerraform(this._enableSkewProtection),
-      environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._environmentVariables),
-      framework: cdktf.stringToTerraform(this._framework),
-      id: cdktf.stringToTerraform(this._id),
-      pull_request_environment_name: cdktf.stringToTerraform(this._pullRequestEnvironmentName),
-      region: cdktf.stringToTerraform(this._region),
-      stage: cdktf.stringToTerraform(this._stage),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      ttl: cdktf.stringToTerraform(this._ttl),
+      app_id: cdktn.stringToTerraform(this._appId),
+      backend_environment_arn: cdktn.stringToTerraform(this._backendEnvironmentArn),
+      basic_auth_credentials: cdktn.stringToTerraform(this._basicAuthCredentials),
+      branch_name: cdktn.stringToTerraform(this._branchName),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enable_auto_build: cdktn.booleanToTerraform(this._enableAutoBuild),
+      enable_basic_auth: cdktn.booleanToTerraform(this._enableBasicAuth),
+      enable_notification: cdktn.booleanToTerraform(this._enableNotification),
+      enable_performance_mode: cdktn.booleanToTerraform(this._enablePerformanceMode),
+      enable_pull_request_preview: cdktn.booleanToTerraform(this._enablePullRequestPreview),
+      enable_skew_protection: cdktn.booleanToTerraform(this._enableSkewProtection),
+      environment_variables: cdktn.hashMapper(cdktn.stringToTerraform)(this._environmentVariables),
+      framework: cdktn.stringToTerraform(this._framework),
+      id: cdktn.stringToTerraform(this._id),
+      pull_request_environment_name: cdktn.stringToTerraform(this._pullRequestEnvironmentName),
+      region: cdktn.stringToTerraform(this._region),
+      stage: cdktn.stringToTerraform(this._stage),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      ttl: cdktn.stringToTerraform(this._ttl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_id: {
-        value: cdktf.stringToHclTerraform(this._appId),
+        value: cdktn.stringToHclTerraform(this._appId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backend_environment_arn: {
-        value: cdktf.stringToHclTerraform(this._backendEnvironmentArn),
+        value: cdktn.stringToHclTerraform(this._backendEnvironmentArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       basic_auth_credentials: {
-        value: cdktf.stringToHclTerraform(this._basicAuthCredentials),
+        value: cdktn.stringToHclTerraform(this._basicAuthCredentials),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       branch_name: {
-        value: cdktf.stringToHclTerraform(this._branchName),
+        value: cdktn.stringToHclTerraform(this._branchName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_auto_build: {
-        value: cdktf.booleanToHclTerraform(this._enableAutoBuild),
+        value: cdktn.booleanToHclTerraform(this._enableAutoBuild),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_basic_auth: {
-        value: cdktf.booleanToHclTerraform(this._enableBasicAuth),
+        value: cdktn.booleanToHclTerraform(this._enableBasicAuth),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_notification: {
-        value: cdktf.booleanToHclTerraform(this._enableNotification),
+        value: cdktn.booleanToHclTerraform(this._enableNotification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_performance_mode: {
-        value: cdktf.booleanToHclTerraform(this._enablePerformanceMode),
+        value: cdktn.booleanToHclTerraform(this._enablePerformanceMode),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_pull_request_preview: {
-        value: cdktf.booleanToHclTerraform(this._enablePullRequestPreview),
+        value: cdktn.booleanToHclTerraform(this._enablePullRequestPreview),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_skew_protection: {
-        value: cdktf.booleanToHclTerraform(this._enableSkewProtection),
+        value: cdktn.booleanToHclTerraform(this._enableSkewProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       environment_variables: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._environmentVariables),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._environmentVariables),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       framework: {
-        value: cdktf.stringToHclTerraform(this._framework),
+        value: cdktn.stringToHclTerraform(this._framework),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pull_request_environment_name: {
-        value: cdktf.stringToHclTerraform(this._pullRequestEnvironmentName),
+        value: cdktn.stringToHclTerraform(this._pullRequestEnvironmentName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stage: {
-        value: cdktf.stringToHclTerraform(this._stage),
+        value: cdktn.stringToHclTerraform(this._stage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ttl: {
-        value: cdktf.stringToHclTerraform(this._ttl),
+        value: cdktn.stringToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

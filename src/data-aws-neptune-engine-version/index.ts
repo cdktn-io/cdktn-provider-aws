@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsNeptuneEngineVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsNeptuneEngineVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/neptune_engine_version#default_only DataAwsNeptuneEngineVersion#default_only}
   */
-  readonly defaultOnly?: boolean | cdktf.IResolvable;
+  readonly defaultOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/neptune_engine_version#engine DataAwsNeptuneEngineVersion#engine}
   */
@@ -23,11 +23,11 @@ export interface DataAwsNeptuneEngineVersionConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/neptune_engine_version#has_major_target DataAwsNeptuneEngineVersion#has_major_target}
   */
-  readonly hasMajorTarget?: boolean | cdktf.IResolvable;
+  readonly hasMajorTarget?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/neptune_engine_version#has_minor_target DataAwsNeptuneEngineVersion#has_minor_target}
   */
-  readonly hasMinorTarget?: boolean | cdktf.IResolvable;
+  readonly hasMinorTarget?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/neptune_engine_version#id DataAwsNeptuneEngineVersion#id}
   *
@@ -38,7 +38,7 @@ export interface DataAwsNeptuneEngineVersionConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/neptune_engine_version#latest DataAwsNeptuneEngineVersion#latest}
   */
-  readonly latest?: boolean | cdktf.IResolvable;
+  readonly latest?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/neptune_engine_version#parameter_group_family DataAwsNeptuneEngineVersion#parameter_group_family}
   */
@@ -70,7 +70,7 @@ export interface DataAwsNeptuneEngineVersionConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/neptune_engine_version aws_neptune_engine_version}
 */
-export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
+export class DataAwsNeptuneEngineVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -81,14 +81,14 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsNeptuneEngineVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsNeptuneEngineVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNeptuneEngineVersion to import
   * @param importFromId The id of the existing DataAwsNeptuneEngineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/neptune_engine_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNeptuneEngineVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_neptune_engine_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_neptune_engine_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -142,11 +142,11 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
   }
 
   // default_only - computed: false, optional: true, required: false
-  private _defaultOnly?: boolean | cdktf.IResolvable; 
+  private _defaultOnly?: boolean | cdktn.IResolvable; 
   public get defaultOnly() {
     return this.getBooleanAttribute('default_only');
   }
-  public set defaultOnly(value: boolean | cdktf.IResolvable) {
+  public set defaultOnly(value: boolean | cdktn.IResolvable) {
     this._defaultOnly = value;
   }
   public resetDefaultOnly() {
@@ -180,15 +180,15 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
 
   // exportable_log_types - computed: true, optional: false, required: false
   public get exportableLogTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('exportable_log_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('exportable_log_types'));
   }
 
   // has_major_target - computed: false, optional: true, required: false
-  private _hasMajorTarget?: boolean | cdktf.IResolvable; 
+  private _hasMajorTarget?: boolean | cdktn.IResolvable; 
   public get hasMajorTarget() {
     return this.getBooleanAttribute('has_major_target');
   }
-  public set hasMajorTarget(value: boolean | cdktf.IResolvable) {
+  public set hasMajorTarget(value: boolean | cdktn.IResolvable) {
     this._hasMajorTarget = value;
   }
   public resetHasMajorTarget() {
@@ -200,11 +200,11 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
   }
 
   // has_minor_target - computed: false, optional: true, required: false
-  private _hasMinorTarget?: boolean | cdktf.IResolvable; 
+  private _hasMinorTarget?: boolean | cdktn.IResolvable; 
   public get hasMinorTarget() {
     return this.getBooleanAttribute('has_minor_target');
   }
-  public set hasMinorTarget(value: boolean | cdktf.IResolvable) {
+  public set hasMinorTarget(value: boolean | cdktn.IResolvable) {
     this._hasMinorTarget = value;
   }
   public resetHasMinorTarget() {
@@ -232,11 +232,11 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
   }
 
   // latest - computed: false, optional: true, required: false
-  private _latest?: boolean | cdktf.IResolvable; 
+  private _latest?: boolean | cdktn.IResolvable; 
   public get latest() {
     return this.getBooleanAttribute('latest');
   }
-  public set latest(value: boolean | cdktf.IResolvable) {
+  public set latest(value: boolean | cdktn.IResolvable) {
     this._latest = value;
   }
   public resetLatest() {
@@ -329,12 +329,12 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
 
   // supported_character_sets - computed: true, optional: false, required: false
   public get supportedCharacterSets() {
-    return cdktf.Fn.tolist(this.getListAttribute('supported_character_sets'));
+    return cdktn.Fn.tolist(this.getListAttribute('supported_character_sets'));
   }
 
   // supported_timezones - computed: true, optional: false, required: false
   public get supportedTimezones() {
-    return cdktf.Fn.tolist(this.getListAttribute('supported_timezones'));
+    return cdktn.Fn.tolist(this.getListAttribute('supported_timezones'));
   }
 
   // supports_global_databases - computed: true, optional: false, required: false
@@ -354,17 +354,17 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
 
   // valid_major_targets - computed: true, optional: false, required: false
   public get validMajorTargets() {
-    return cdktf.Fn.tolist(this.getListAttribute('valid_major_targets'));
+    return cdktn.Fn.tolist(this.getListAttribute('valid_major_targets'));
   }
 
   // valid_minor_targets - computed: true, optional: false, required: false
   public get validMinorTargets() {
-    return cdktf.Fn.tolist(this.getListAttribute('valid_minor_targets'));
+    return cdktn.Fn.tolist(this.getListAttribute('valid_minor_targets'));
   }
 
   // valid_upgrade_targets - computed: true, optional: false, required: false
   public get validUpgradeTargets() {
-    return cdktf.Fn.tolist(this.getListAttribute('valid_upgrade_targets'));
+    return cdktn.Fn.tolist(this.getListAttribute('valid_upgrade_targets'));
   }
 
   // version - computed: true, optional: true, required: false
@@ -399,91 +399,91 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_only: cdktf.booleanToTerraform(this._defaultOnly),
-      engine: cdktf.stringToTerraform(this._engine),
-      has_major_target: cdktf.booleanToTerraform(this._hasMajorTarget),
-      has_minor_target: cdktf.booleanToTerraform(this._hasMinorTarget),
-      id: cdktf.stringToTerraform(this._id),
-      latest: cdktf.booleanToTerraform(this._latest),
-      parameter_group_family: cdktf.stringToTerraform(this._parameterGroupFamily),
-      preferred_major_targets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredMajorTargets),
-      preferred_upgrade_targets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredUpgradeTargets),
-      preferred_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredVersions),
-      region: cdktf.stringToTerraform(this._region),
-      version: cdktf.stringToTerraform(this._version),
+      default_only: cdktn.booleanToTerraform(this._defaultOnly),
+      engine: cdktn.stringToTerraform(this._engine),
+      has_major_target: cdktn.booleanToTerraform(this._hasMajorTarget),
+      has_minor_target: cdktn.booleanToTerraform(this._hasMinorTarget),
+      id: cdktn.stringToTerraform(this._id),
+      latest: cdktn.booleanToTerraform(this._latest),
+      parameter_group_family: cdktn.stringToTerraform(this._parameterGroupFamily),
+      preferred_major_targets: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preferredMajorTargets),
+      preferred_upgrade_targets: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preferredUpgradeTargets),
+      preferred_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preferredVersions),
+      region: cdktn.stringToTerraform(this._region),
+      version: cdktn.stringToTerraform(this._version),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_only: {
-        value: cdktf.booleanToHclTerraform(this._defaultOnly),
+        value: cdktn.booleanToHclTerraform(this._defaultOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       has_major_target: {
-        value: cdktf.booleanToHclTerraform(this._hasMajorTarget),
+        value: cdktn.booleanToHclTerraform(this._hasMajorTarget),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       has_minor_target: {
-        value: cdktf.booleanToHclTerraform(this._hasMinorTarget),
+        value: cdktn.booleanToHclTerraform(this._hasMinorTarget),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       latest: {
-        value: cdktf.booleanToHclTerraform(this._latest),
+        value: cdktn.booleanToHclTerraform(this._latest),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       parameter_group_family: {
-        value: cdktf.stringToHclTerraform(this._parameterGroupFamily),
+        value: cdktn.stringToHclTerraform(this._parameterGroupFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_major_targets: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredMajorTargets),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preferredMajorTargets),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       preferred_upgrade_targets: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredUpgradeTargets),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preferredUpgradeTargets),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       preferred_versions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredVersions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preferredVersions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

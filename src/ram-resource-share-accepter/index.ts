@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RamResourceShareAccepterConfig extends cdktf.TerraformMetaArguments {
+export interface RamResourceShareAccepterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}
   *
@@ -47,32 +47,32 @@ export interface RamResourceShareAccepterTimeouts {
   readonly delete?: string;
 }
 
-export function ramResourceShareAccepterTimeoutsToTerraform(struct?: RamResourceShareAccepterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ramResourceShareAccepterTimeoutsToTerraform(struct?: RamResourceShareAccepterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ramResourceShareAccepterTimeoutsToHclTerraform(struct?: RamResourceShareAccepterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ramResourceShareAccepterTimeoutsToHclTerraform(struct?: RamResourceShareAccepterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,19 +83,19 @@ export function ramResourceShareAccepterTimeoutsToHclTerraform(struct?: RamResou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RamResourceShareAccepterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RamResourceShareAccepterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RamResourceShareAccepterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RamResourceShareAccepterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -112,14 +112,14 @@ export class RamResourceShareAccepterTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RamResourceShareAccepterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RamResourceShareAccepterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -167,7 +167,7 @@ export class RamResourceShareAccepterTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_resource_share_accepter aws_ram_resource_share_accepter}
 */
-export class RamResourceShareAccepter extends cdktf.TerraformResource {
+export class RamResourceShareAccepter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -178,14 +178,14 @@ export class RamResourceShareAccepter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RamResourceShareAccepter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RamResourceShareAccepter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RamResourceShareAccepter to import
   * @param importFromId The id of the existing RamResourceShareAccepter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ram_resource_share_accepter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RamResourceShareAccepter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ram_resource_share_accepter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ram_resource_share_accepter", importId: importFromId, provider });
       }
 
   // ===========
@@ -327,9 +327,9 @@ export class RamResourceShareAccepter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      share_arn: cdktf.stringToTerraform(this._shareArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      share_arn: cdktn.stringToTerraform(this._shareArn),
       timeouts: ramResourceShareAccepterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -337,19 +337,19 @@ export class RamResourceShareAccepter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       share_arn: {
-        value: cdktf.stringToHclTerraform(this._shareArn),
+        value: cdktn.stringToHclTerraform(this._shareArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

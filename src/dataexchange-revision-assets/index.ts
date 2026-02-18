@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataexchangeRevisionAssetsConfig extends cdktf.TerraformMetaArguments {
+export interface DataexchangeRevisionAssetsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#comment DataexchangeRevisionAssets#comment}
   */
@@ -23,11 +23,11 @@ export interface DataexchangeRevisionAssetsConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#finalized DataexchangeRevisionAssets#finalized}
   */
-  readonly finalized?: boolean | cdktf.IResolvable;
+  readonly finalized?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#force_destroy DataexchangeRevisionAssets#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -43,7 +43,7 @@ export interface DataexchangeRevisionAssetsConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#asset DataexchangeRevisionAssets#asset}
   */
-  readonly asset?: DataexchangeRevisionAssetsAsset[] | cdktf.IResolvable;
+  readonly asset?: DataexchangeRevisionAssetsAsset[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -58,25 +58,25 @@ export interface DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAs
   readonly kmsKeyArn: string;
 }
 
-export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantToTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantToTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
 
-export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantToHclTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantToHclTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -87,9 +87,9 @@ export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAss
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantOutputReference extends cdktf.ComplexObject {
+export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -97,11 +97,11 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,13 +114,13 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -145,15 +145,15 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
   }
 }
 
-export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant[] | cdktf.IResolvable
+export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -182,49 +182,49 @@ export interface DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAs
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#kms_keys_to_grant DataexchangeRevisionAssets#kms_keys_to_grant}
   */
-  readonly kmsKeysToGrant?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant[] | cdktf.IResolvable;
+  readonly kmsKeysToGrant?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant[] | cdktn.IResolvable;
 }
 
-export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceToTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceToTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keyPrefixes),
-    keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keys),
-    kms_keys_to_grant: cdktf.listMapper(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantToTerraform, true)(struct!.kmsKeysToGrant),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.keyPrefixes),
+    keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.keys),
+    kms_keys_to_grant: cdktn.listMapper(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantToTerraform, true)(struct!.kmsKeysToGrant),
   }
 }
 
 
-export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceToHclTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceToHclTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keyPrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.keyPrefixes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.keys),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     kms_keys_to_grant: {
-      value: cdktf.listMapperHcl(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantToHclTerraform, true)(struct!.kmsKeysToGrant),
+      value: cdktn.listMapperHcl(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantToHclTerraform, true)(struct!.kmsKeysToGrant),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantList",
@@ -235,9 +235,9 @@ export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAss
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceOutputReference extends cdktf.ComplexObject {
+export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -245,11 +245,11 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -274,7 +274,7 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -283,7 +283,7 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
       this._keys = undefined;
       this._kmsKeysToGrant.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -313,7 +313,7 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
   // key_prefixes - computed: false, optional: true, required: false
   private _keyPrefixes?: string[]; 
   public get keyPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('key_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('key_prefixes'));
   }
   public set keyPrefixes(value: string[]) {
     this._keyPrefixes = value;
@@ -329,7 +329,7 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
   // keys - computed: false, optional: true, required: false
   private _keys?: string[]; 
   public get keys() {
-    return cdktf.Fn.tolist(this.getListAttribute('keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('keys'));
   }
   public set keys(value: string[]) {
     this._keys = value;
@@ -347,7 +347,7 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
   public get kmsKeysToGrant() {
     return this._kmsKeysToGrant;
   }
-  public putKmsKeysToGrant(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant[] | cdktf.IResolvable) {
+  public putKmsKeysToGrant(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant[] | cdktn.IResolvable) {
     this._kmsKeysToGrant.internalValue = value;
   }
   public resetKmsKeysToGrant() {
@@ -359,15 +359,15 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
   }
 }
 
-export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource[] | cdktf.IResolvable
+export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -384,28 +384,28 @@ export interface DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#asset_source DataexchangeRevisionAssets#asset_source}
   */
-  readonly assetSource?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource[] | cdktf.IResolvable;
+  readonly assetSource?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource[] | cdktn.IResolvable;
 }
 
-export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketToTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketToTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    asset_source: cdktf.listMapper(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceToTerraform, true)(struct!.assetSource),
+    asset_source: cdktn.listMapper(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceToTerraform, true)(struct!.assetSource),
   }
 }
 
 
-export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketToHclTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketToHclTerraform(struct?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     asset_source: {
-      value: cdktf.listMapperHcl(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceToHclTerraform, true)(struct!.assetSource),
+      value: cdktn.listMapperHcl(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceToHclTerraform, true)(struct!.assetSource),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceList",
@@ -416,9 +416,9 @@ export function dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutputReference extends cdktf.ComplexObject {
+export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -426,11 +426,11 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -443,13 +443,13 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._assetSource.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -475,7 +475,7 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutput
   public get assetSource() {
     return this._assetSource;
   }
-  public putAssetSource(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource[] | cdktf.IResolvable) {
+  public putAssetSource(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource[] | cdktn.IResolvable) {
     this._assetSource.internalValue = value;
   }
   public resetAssetSource() {
@@ -487,15 +487,15 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutput
   }
 }
 
-export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket[] | cdktf.IResolvable
+export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -517,32 +517,32 @@ export interface DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource {
   readonly key: string;
 }
 
-export function dataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceToTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceToTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    key: cdktf.stringToTerraform(struct!.key),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
-export function dataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceToHclTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceToHclTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -553,9 +553,9 @@ export function dataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceOutputReference extends cdktf.ComplexObject {
+export class DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -563,11 +563,11 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -584,14 +584,14 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucket = undefined;
       this._key = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -630,15 +630,15 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceOutputR
   }
 }
 
-export class DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource[] | cdktf.IResolvable
+export class DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -655,28 +655,28 @@ export interface DataexchangeRevisionAssetsAssetImportAssetsFromS3 {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#asset_source DataexchangeRevisionAssets#asset_source}
   */
-  readonly assetSource?: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource[] | cdktf.IResolvable;
+  readonly assetSource?: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource[] | cdktn.IResolvable;
 }
 
-export function dataexchangeRevisionAssetsAssetImportAssetsFromS3ToTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetImportAssetsFromS3ToTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    asset_source: cdktf.listMapper(dataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceToTerraform, true)(struct!.assetSource),
+    asset_source: cdktn.listMapper(dataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceToTerraform, true)(struct!.assetSource),
   }
 }
 
 
-export function dataexchangeRevisionAssetsAssetImportAssetsFromS3ToHclTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromS3 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetImportAssetsFromS3ToHclTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     asset_source: {
-      value: cdktf.listMapperHcl(dataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceToHclTerraform, true)(struct!.assetSource),
+      value: cdktn.listMapperHcl(dataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceToHclTerraform, true)(struct!.assetSource),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceList",
@@ -687,9 +687,9 @@ export function dataexchangeRevisionAssetsAssetImportAssetsFromS3ToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeRevisionAssetsAssetImportAssetsFromS3OutputReference extends cdktf.ComplexObject {
+export class DataexchangeRevisionAssetsAssetImportAssetsFromS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -697,11 +697,11 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromS3OutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeRevisionAssetsAssetImportAssetsFromS3 | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeRevisionAssetsAssetImportAssetsFromS3 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -714,13 +714,13 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromS3OutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeRevisionAssetsAssetImportAssetsFromS3 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeRevisionAssetsAssetImportAssetsFromS3 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._assetSource.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -736,7 +736,7 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromS3OutputReference ex
   public get assetSource() {
     return this._assetSource;
   }
-  public putAssetSource(value: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource[] | cdktf.IResolvable) {
+  public putAssetSource(value: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource[] | cdktn.IResolvable) {
     this._assetSource.internalValue = value;
   }
   public resetAssetSource() {
@@ -748,15 +748,15 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromS3OutputReference ex
   }
 }
 
-export class DataexchangeRevisionAssetsAssetImportAssetsFromS3List extends cdktf.ComplexList {
-  public internalValue? : DataexchangeRevisionAssetsAssetImportAssetsFromS3[] | cdktf.IResolvable
+export class DataexchangeRevisionAssetsAssetImportAssetsFromS3List extends cdktn.ComplexList {
+  public internalValue? : DataexchangeRevisionAssetsAssetImportAssetsFromS3[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -774,25 +774,25 @@ export interface DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl {
   readonly filename: string;
 }
 
-export function dataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlToTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlToTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filename: cdktf.stringToTerraform(struct!.filename),
+    filename: cdktn.stringToTerraform(struct!.filename),
   }
 }
 
 
-export function dataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlToHclTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlToHclTerraform(struct?: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filename: {
-      value: cdktf.stringToHclTerraform(struct!.filename),
+      value: cdktn.stringToHclTerraform(struct!.filename),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -803,9 +803,9 @@ export function dataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputReference extends cdktf.ComplexObject {
+export class DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -813,11 +813,11 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -830,13 +830,13 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filename = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -861,15 +861,15 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputRefer
   }
 }
 
-export class DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl[] | cdktf.IResolvable
+export class DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -886,54 +886,54 @@ export interface DataexchangeRevisionAssetsAsset {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#create_s3_data_access_from_s3_bucket DataexchangeRevisionAssets#create_s3_data_access_from_s3_bucket}
   */
-  readonly createS3DataAccessFromS3Bucket?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket[] | cdktf.IResolvable;
+  readonly createS3DataAccessFromS3Bucket?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket[] | cdktn.IResolvable;
   /**
   * import_assets_from_s3 block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#import_assets_from_s3 DataexchangeRevisionAssets#import_assets_from_s3}
   */
-  readonly importAssetsFromS3?: DataexchangeRevisionAssetsAssetImportAssetsFromS3[] | cdktf.IResolvable;
+  readonly importAssetsFromS3?: DataexchangeRevisionAssetsAssetImportAssetsFromS3[] | cdktn.IResolvable;
   /**
   * import_assets_from_signed_url block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#import_assets_from_signed_url DataexchangeRevisionAssets#import_assets_from_signed_url}
   */
-  readonly importAssetsFromSignedUrl?: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl[] | cdktf.IResolvable;
+  readonly importAssetsFromSignedUrl?: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl[] | cdktn.IResolvable;
 }
 
-export function dataexchangeRevisionAssetsAssetToTerraform(struct?: DataexchangeRevisionAssetsAsset | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetToTerraform(struct?: DataexchangeRevisionAssetsAsset | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create_s3_data_access_from_s3_bucket: cdktf.listMapper(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketToTerraform, true)(struct!.createS3DataAccessFromS3Bucket),
-    import_assets_from_s3: cdktf.listMapper(dataexchangeRevisionAssetsAssetImportAssetsFromS3ToTerraform, true)(struct!.importAssetsFromS3),
-    import_assets_from_signed_url: cdktf.listMapper(dataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlToTerraform, true)(struct!.importAssetsFromSignedUrl),
+    create_s3_data_access_from_s3_bucket: cdktn.listMapper(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketToTerraform, true)(struct!.createS3DataAccessFromS3Bucket),
+    import_assets_from_s3: cdktn.listMapper(dataexchangeRevisionAssetsAssetImportAssetsFromS3ToTerraform, true)(struct!.importAssetsFromS3),
+    import_assets_from_signed_url: cdktn.listMapper(dataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlToTerraform, true)(struct!.importAssetsFromSignedUrl),
   }
 }
 
 
-export function dataexchangeRevisionAssetsAssetToHclTerraform(struct?: DataexchangeRevisionAssetsAsset | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsAssetToHclTerraform(struct?: DataexchangeRevisionAssetsAsset | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create_s3_data_access_from_s3_bucket: {
-      value: cdktf.listMapperHcl(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketToHclTerraform, true)(struct!.createS3DataAccessFromS3Bucket),
+      value: cdktn.listMapperHcl(dataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketToHclTerraform, true)(struct!.createS3DataAccessFromS3Bucket),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketList",
     },
     import_assets_from_s3: {
-      value: cdktf.listMapperHcl(dataexchangeRevisionAssetsAssetImportAssetsFromS3ToHclTerraform, true)(struct!.importAssetsFromS3),
+      value: cdktn.listMapperHcl(dataexchangeRevisionAssetsAssetImportAssetsFromS3ToHclTerraform, true)(struct!.importAssetsFromS3),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeRevisionAssetsAssetImportAssetsFromS3List",
     },
     import_assets_from_signed_url: {
-      value: cdktf.listMapperHcl(dataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlToHclTerraform, true)(struct!.importAssetsFromSignedUrl),
+      value: cdktn.listMapperHcl(dataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlToHclTerraform, true)(struct!.importAssetsFromSignedUrl),
       isBlock: true,
       type: "list",
       storageClassType: "DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlList",
@@ -944,9 +944,9 @@ export function dataexchangeRevisionAssetsAssetToHclTerraform(struct?: Dataexcha
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeRevisionAssetsAssetOutputReference extends cdktf.ComplexObject {
+export class DataexchangeRevisionAssetsAssetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -954,11 +954,11 @@ export class DataexchangeRevisionAssetsAssetOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataexchangeRevisionAssetsAsset | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeRevisionAssetsAsset | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -979,7 +979,7 @@ export class DataexchangeRevisionAssetsAssetOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeRevisionAssetsAsset | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeRevisionAssetsAsset | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -987,7 +987,7 @@ export class DataexchangeRevisionAssetsAssetOutputReference extends cdktf.Comple
       this._importAssetsFromS3.internalValue = undefined;
       this._importAssetsFromSignedUrl.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1030,7 +1030,7 @@ export class DataexchangeRevisionAssetsAssetOutputReference extends cdktf.Comple
   public get createS3DataAccessFromS3Bucket() {
     return this._createS3DataAccessFromS3Bucket;
   }
-  public putCreateS3DataAccessFromS3Bucket(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket[] | cdktf.IResolvable) {
+  public putCreateS3DataAccessFromS3Bucket(value: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket[] | cdktn.IResolvable) {
     this._createS3DataAccessFromS3Bucket.internalValue = value;
   }
   public resetCreateS3DataAccessFromS3Bucket() {
@@ -1046,7 +1046,7 @@ export class DataexchangeRevisionAssetsAssetOutputReference extends cdktf.Comple
   public get importAssetsFromS3() {
     return this._importAssetsFromS3;
   }
-  public putImportAssetsFromS3(value: DataexchangeRevisionAssetsAssetImportAssetsFromS3[] | cdktf.IResolvable) {
+  public putImportAssetsFromS3(value: DataexchangeRevisionAssetsAssetImportAssetsFromS3[] | cdktn.IResolvable) {
     this._importAssetsFromS3.internalValue = value;
   }
   public resetImportAssetsFromS3() {
@@ -1062,7 +1062,7 @@ export class DataexchangeRevisionAssetsAssetOutputReference extends cdktf.Comple
   public get importAssetsFromSignedUrl() {
     return this._importAssetsFromSignedUrl;
   }
-  public putImportAssetsFromSignedUrl(value: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl[] | cdktf.IResolvable) {
+  public putImportAssetsFromSignedUrl(value: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl[] | cdktn.IResolvable) {
     this._importAssetsFromSignedUrl.internalValue = value;
   }
   public resetImportAssetsFromSignedUrl() {
@@ -1074,15 +1074,15 @@ export class DataexchangeRevisionAssetsAssetOutputReference extends cdktf.Comple
   }
 }
 
-export class DataexchangeRevisionAssetsAssetList extends cdktf.ComplexList {
-  public internalValue? : DataexchangeRevisionAssetsAsset[] | cdktf.IResolvable
+export class DataexchangeRevisionAssetsAssetList extends cdktn.ComplexList {
+  public internalValue? : DataexchangeRevisionAssetsAsset[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1102,25 +1102,25 @@ export interface DataexchangeRevisionAssetsTimeouts {
   readonly create?: string;
 }
 
-export function dataexchangeRevisionAssetsTimeoutsToTerraform(struct?: DataexchangeRevisionAssetsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsTimeoutsToTerraform(struct?: DataexchangeRevisionAssetsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function dataexchangeRevisionAssetsTimeoutsToHclTerraform(struct?: DataexchangeRevisionAssetsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataexchangeRevisionAssetsTimeoutsToHclTerraform(struct?: DataexchangeRevisionAssetsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1131,19 +1131,19 @@ export function dataexchangeRevisionAssetsTimeoutsToHclTerraform(struct?: Dataex
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataexchangeRevisionAssetsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataexchangeRevisionAssetsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataexchangeRevisionAssetsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataexchangeRevisionAssetsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1156,13 +1156,13 @@ export class DataexchangeRevisionAssetsTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataexchangeRevisionAssetsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataexchangeRevisionAssetsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1193,7 +1193,7 @@ export class DataexchangeRevisionAssetsTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets}
 */
-export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
+export class DataexchangeRevisionAssets extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1204,14 +1204,14 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataexchangeRevisionAssets resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataexchangeRevisionAssets resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataexchangeRevisionAssets to import
   * @param importFromId The id of the existing DataexchangeRevisionAssets that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dataexchange_revision_assets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataexchangeRevisionAssets to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dataexchange_revision_assets", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dataexchange_revision_assets", importId: importFromId, provider });
       }
 
   // ===========
@@ -1295,11 +1295,11 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
   }
 
   // finalized - computed: true, optional: true, required: false
-  private _finalized?: boolean | cdktf.IResolvable; 
+  private _finalized?: boolean | cdktn.IResolvable; 
   public get finalized() {
     return this.getBooleanAttribute('finalized');
   }
-  public set finalized(value: boolean | cdktf.IResolvable) {
+  public set finalized(value: boolean | cdktn.IResolvable) {
     this._finalized = value;
   }
   public resetFinalized() {
@@ -1311,11 +1311,11 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -1364,7 +1364,7 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1379,7 +1379,7 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
   public get asset() {
     return this._asset;
   }
-  public putAsset(value: DataexchangeRevisionAssetsAsset[] | cdktf.IResolvable) {
+  public putAsset(value: DataexchangeRevisionAssetsAsset[] | cdktn.IResolvable) {
     this._asset.internalValue = value;
   }
   public resetAsset() {
@@ -1412,13 +1412,13 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      data_set_id: cdktf.stringToTerraform(this._dataSetId),
-      finalized: cdktf.booleanToTerraform(this._finalized),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      asset: cdktf.listMapper(dataexchangeRevisionAssetsAssetToTerraform, true)(this._asset.internalValue),
+      comment: cdktn.stringToTerraform(this._comment),
+      data_set_id: cdktn.stringToTerraform(this._dataSetId),
+      finalized: cdktn.booleanToTerraform(this._finalized),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      asset: cdktn.listMapper(dataexchangeRevisionAssetsAssetToTerraform, true)(this._asset.internalValue),
       timeouts: dataexchangeRevisionAssetsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1426,43 +1426,43 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_set_id: {
-        value: cdktf.stringToHclTerraform(this._dataSetId),
+        value: cdktn.stringToHclTerraform(this._dataSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       finalized: {
-        value: cdktf.booleanToHclTerraform(this._finalized),
+        value: cdktn.booleanToHclTerraform(this._finalized),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       asset: {
-        value: cdktf.listMapperHcl(dataexchangeRevisionAssetsAssetToHclTerraform, true)(this._asset.internalValue),
+        value: cdktn.listMapperHcl(dataexchangeRevisionAssetsAssetToHclTerraform, true)(this._asset.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataexchangeRevisionAssetsAssetList",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface SsmAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_association#apply_only_at_cron_interval SsmAssociation#apply_only_at_cron_interval}
   */
-  readonly applyOnlyAtCronInterval?: boolean | cdktf.IResolvable;
+  readonly applyOnlyAtCronInterval?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_association#association_name SsmAssociation#association_name}
   */
@@ -96,7 +96,7 @@ export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_association#targets SsmAssociation#targets}
   */
-  readonly targets?: SsmAssociationTargets[] | cdktf.IResolvable;
+  readonly targets?: SsmAssociationTargets[] | cdktn.IResolvable;
 }
 export interface SsmAssociationOutputLocation {
   /**
@@ -114,38 +114,38 @@ export interface SsmAssociationOutputLocation {
 }
 
 export function ssmAssociationOutputLocationToTerraform(struct?: SsmAssociationOutputLocationOutputReference | SsmAssociationOutputLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_key_prefix: cdktf.stringToTerraform(struct!.s3KeyPrefix),
-    s3_region: cdktf.stringToTerraform(struct!.s3Region),
+    s3_bucket_name: cdktn.stringToTerraform(struct!.s3BucketName),
+    s3_key_prefix: cdktn.stringToTerraform(struct!.s3KeyPrefix),
+    s3_region: cdktn.stringToTerraform(struct!.s3Region),
   }
 }
 
 
 export function ssmAssociationOutputLocationToHclTerraform(struct?: SsmAssociationOutputLocationOutputReference | SsmAssociationOutputLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.s3KeyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.s3KeyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_region: {
-      value: cdktf.stringToHclTerraform(struct!.s3Region),
+      value: cdktn.stringToHclTerraform(struct!.s3Region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -156,14 +156,14 @@ export function ssmAssociationOutputLocationToHclTerraform(struct?: SsmAssociati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmAssociationOutputLocationOutputReference extends cdktf.ComplexObject {
+export class SsmAssociationOutputLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -256,32 +256,32 @@ export interface SsmAssociationTargets {
   readonly values: string[];
 }
 
-export function ssmAssociationTargetsToTerraform(struct?: SsmAssociationTargets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmAssociationTargetsToTerraform(struct?: SsmAssociationTargets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function ssmAssociationTargetsToHclTerraform(struct?: SsmAssociationTargets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmAssociationTargetsToHclTerraform(struct?: SsmAssociationTargets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -292,9 +292,9 @@ export function ssmAssociationTargetsToHclTerraform(struct?: SsmAssociationTarge
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmAssociationTargetsOutputReference extends cdktf.ComplexObject {
+export class SsmAssociationTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -302,11 +302,11 @@ export class SsmAssociationTargetsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmAssociationTargets | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmAssociationTargets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -323,14 +323,14 @@ export class SsmAssociationTargetsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmAssociationTargets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmAssociationTargets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -369,15 +369,15 @@ export class SsmAssociationTargetsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SsmAssociationTargetsList extends cdktf.ComplexList {
-  public internalValue? : SsmAssociationTargets[] | cdktf.IResolvable
+export class SsmAssociationTargetsList extends cdktn.ComplexList {
+  public internalValue? : SsmAssociationTargets[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -392,7 +392,7 @@ export class SsmAssociationTargetsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_association aws_ssm_association}
 */
-export class SsmAssociation extends cdktf.TerraformResource {
+export class SsmAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -403,14 +403,14 @@ export class SsmAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmAssociation to import
   * @param importFromId The id of the existing SsmAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssm_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssm_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -466,11 +466,11 @@ export class SsmAssociation extends cdktf.TerraformResource {
   // ==========
 
   // apply_only_at_cron_interval - computed: false, optional: true, required: false
-  private _applyOnlyAtCronInterval?: boolean | cdktf.IResolvable; 
+  private _applyOnlyAtCronInterval?: boolean | cdktn.IResolvable; 
   public get applyOnlyAtCronInterval() {
     return this.getBooleanAttribute('apply_only_at_cron_interval');
   }
-  public set applyOnlyAtCronInterval(value: boolean | cdktf.IResolvable) {
+  public set applyOnlyAtCronInterval(value: boolean | cdktn.IResolvable) {
     this._applyOnlyAtCronInterval = value;
   }
   public resetApplyOnlyAtCronInterval() {
@@ -526,7 +526,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
   // calendar_names - computed: false, optional: true, required: false
   private _calendarNames?: string[]; 
   public get calendarNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('calendar_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('calendar_names'));
   }
   public set calendarNames(value: string[]) {
     this._calendarNames = value;
@@ -765,7 +765,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
   public get targets() {
     return this._targets;
   }
-  public putTargets(value: SsmAssociationTargets[] | cdktf.IResolvable) {
+  public putTargets(value: SsmAssociationTargets[] | cdktn.IResolvable) {
     this._targets.internalValue = value;
   }
   public resetTargets() {
@@ -782,128 +782,128 @@ export class SsmAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_only_at_cron_interval: cdktf.booleanToTerraform(this._applyOnlyAtCronInterval),
-      association_name: cdktf.stringToTerraform(this._associationName),
-      automation_target_parameter_name: cdktf.stringToTerraform(this._automationTargetParameterName),
-      calendar_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._calendarNames),
-      compliance_severity: cdktf.stringToTerraform(this._complianceSeverity),
-      document_version: cdktf.stringToTerraform(this._documentVersion),
-      id: cdktf.stringToTerraform(this._id),
-      max_concurrency: cdktf.stringToTerraform(this._maxConcurrency),
-      max_errors: cdktf.stringToTerraform(this._maxErrors),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      region: cdktf.stringToTerraform(this._region),
-      schedule_expression: cdktf.stringToTerraform(this._scheduleExpression),
-      sync_compliance: cdktf.stringToTerraform(this._syncCompliance),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      wait_for_success_timeout_seconds: cdktf.numberToTerraform(this._waitForSuccessTimeoutSeconds),
+      apply_only_at_cron_interval: cdktn.booleanToTerraform(this._applyOnlyAtCronInterval),
+      association_name: cdktn.stringToTerraform(this._associationName),
+      automation_target_parameter_name: cdktn.stringToTerraform(this._automationTargetParameterName),
+      calendar_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._calendarNames),
+      compliance_severity: cdktn.stringToTerraform(this._complianceSeverity),
+      document_version: cdktn.stringToTerraform(this._documentVersion),
+      id: cdktn.stringToTerraform(this._id),
+      max_concurrency: cdktn.stringToTerraform(this._maxConcurrency),
+      max_errors: cdktn.stringToTerraform(this._maxErrors),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      region: cdktn.stringToTerraform(this._region),
+      schedule_expression: cdktn.stringToTerraform(this._scheduleExpression),
+      sync_compliance: cdktn.stringToTerraform(this._syncCompliance),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      wait_for_success_timeout_seconds: cdktn.numberToTerraform(this._waitForSuccessTimeoutSeconds),
       output_location: ssmAssociationOutputLocationToTerraform(this._outputLocation.internalValue),
-      targets: cdktf.listMapper(ssmAssociationTargetsToTerraform, true)(this._targets.internalValue),
+      targets: cdktn.listMapper(ssmAssociationTargetsToTerraform, true)(this._targets.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_only_at_cron_interval: {
-        value: cdktf.booleanToHclTerraform(this._applyOnlyAtCronInterval),
+        value: cdktn.booleanToHclTerraform(this._applyOnlyAtCronInterval),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       association_name: {
-        value: cdktf.stringToHclTerraform(this._associationName),
+        value: cdktn.stringToHclTerraform(this._associationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       automation_target_parameter_name: {
-        value: cdktf.stringToHclTerraform(this._automationTargetParameterName),
+        value: cdktn.stringToHclTerraform(this._automationTargetParameterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       calendar_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._calendarNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._calendarNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       compliance_severity: {
-        value: cdktf.stringToHclTerraform(this._complianceSeverity),
+        value: cdktn.stringToHclTerraform(this._complianceSeverity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       document_version: {
-        value: cdktf.stringToHclTerraform(this._documentVersion),
+        value: cdktn.stringToHclTerraform(this._documentVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_concurrency: {
-        value: cdktf.stringToHclTerraform(this._maxConcurrency),
+        value: cdktn.stringToHclTerraform(this._maxConcurrency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_errors: {
-        value: cdktf.stringToHclTerraform(this._maxErrors),
+        value: cdktn.stringToHclTerraform(this._maxErrors),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule_expression: {
-        value: cdktf.stringToHclTerraform(this._scheduleExpression),
+        value: cdktn.stringToHclTerraform(this._scheduleExpression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sync_compliance: {
-        value: cdktf.stringToHclTerraform(this._syncCompliance),
+        value: cdktn.stringToHclTerraform(this._syncCompliance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       wait_for_success_timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._waitForSuccessTimeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._waitForSuccessTimeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -915,7 +915,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
         storageClassType: "SsmAssociationOutputLocationList",
       },
       targets: {
-        value: cdktf.listMapperHcl(ssmAssociationTargetsToHclTerraform, true)(this._targets.internalValue),
+        value: cdktn.listMapperHcl(ssmAssociationTargetsToHclTerraform, true)(this._targets.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmAssociationTargetsList",

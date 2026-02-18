@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBedrockFoundationModelConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBedrockFoundationModelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}
   */
@@ -27,7 +27,7 @@ export interface DataAwsBedrockFoundationModelConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}
 */
-export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
+export class DataAwsBedrockFoundationModel extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -38,14 +38,14 @@ export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBedrockFoundationModel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBedrockFoundationModel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockFoundationModel to import
   * @param importFromId The id of the existing DataAwsBedrockFoundationModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/bedrock_foundation_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockFoundationModel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_foundation_model", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_bedrock_foundation_model", importId: importFromId, provider });
       }
 
   // ===========
@@ -85,7 +85,7 @@ export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
 
   // customizations_supported - computed: true, optional: false, required: false
   public get customizationsSupported() {
-    return cdktf.Fn.tolist(this.getListAttribute('customizations_supported'));
+    return cdktn.Fn.tolist(this.getListAttribute('customizations_supported'));
   }
 
   // id - computed: true, optional: false, required: false
@@ -95,12 +95,12 @@ export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
 
   // inference_types_supported - computed: true, optional: false, required: false
   public get inferenceTypesSupported() {
-    return cdktf.Fn.tolist(this.getListAttribute('inference_types_supported'));
+    return cdktn.Fn.tolist(this.getListAttribute('inference_types_supported'));
   }
 
   // input_modalities - computed: true, optional: false, required: false
   public get inputModalities() {
-    return cdktf.Fn.tolist(this.getListAttribute('input_modalities'));
+    return cdktn.Fn.tolist(this.getListAttribute('input_modalities'));
   }
 
   // model_arn - computed: true, optional: false, required: false
@@ -128,7 +128,7 @@ export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
 
   // output_modalities - computed: true, optional: false, required: false
   public get outputModalities() {
-    return cdktf.Fn.tolist(this.getListAttribute('output_modalities'));
+    return cdktn.Fn.tolist(this.getListAttribute('output_modalities'));
   }
 
   // provider_name - computed: true, optional: false, required: false
@@ -163,21 +163,21 @@ export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      model_id: cdktf.stringToTerraform(this._modelId),
-      region: cdktf.stringToTerraform(this._region),
+      model_id: cdktn.stringToTerraform(this._modelId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       model_id: {
-        value: cdktf.stringToHclTerraform(this._modelId),
+        value: cdktn.stringToHclTerraform(this._modelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

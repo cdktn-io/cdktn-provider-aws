@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEndpointServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_service#acceptance_required VpcEndpointService#acceptance_required}
   */
-  readonly acceptanceRequired: boolean | cdktf.IResolvable;
+  readonly acceptanceRequired: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_service#allowed_principals VpcEndpointService#allowed_principals}
   */
@@ -72,8 +72,8 @@ export interface VpcEndpointServicePrivateDnsNameConfiguration {
 }
 
 export function vpcEndpointServicePrivateDnsNameConfigurationToTerraform(struct?: VpcEndpointServicePrivateDnsNameConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -82,8 +82,8 @@ export function vpcEndpointServicePrivateDnsNameConfigurationToTerraform(struct?
 
 
 export function vpcEndpointServicePrivateDnsNameConfigurationToHclTerraform(struct?: VpcEndpointServicePrivateDnsNameConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -91,7 +91,7 @@ export function vpcEndpointServicePrivateDnsNameConfigurationToHclTerraform(stru
   return attrs;
 }
 
-export class VpcEndpointServicePrivateDnsNameConfigurationOutputReference extends cdktf.ComplexObject {
+export class VpcEndpointServicePrivateDnsNameConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -100,7 +100,7 @@ export class VpcEndpointServicePrivateDnsNameConfigurationOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -140,14 +140,14 @@ export class VpcEndpointServicePrivateDnsNameConfigurationOutputReference extend
   }
 }
 
-export class VpcEndpointServicePrivateDnsNameConfigurationList extends cdktf.ComplexList {
+export class VpcEndpointServicePrivateDnsNameConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -173,39 +173,39 @@ export interface VpcEndpointServiceTimeouts {
   readonly update?: string;
 }
 
-export function vpcEndpointServiceTimeoutsToTerraform(struct?: VpcEndpointServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcEndpointServiceTimeoutsToTerraform(struct?: VpcEndpointServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vpcEndpointServiceTimeoutsToHclTerraform(struct?: VpcEndpointServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcEndpointServiceTimeoutsToHclTerraform(struct?: VpcEndpointServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -216,19 +216,19 @@ export function vpcEndpointServiceTimeoutsToHclTerraform(struct?: VpcEndpointSer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcEndpointServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpcEndpointServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpcEndpointServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcEndpointServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -249,7 +249,7 @@ export class VpcEndpointServiceTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcEndpointServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcEndpointServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -257,7 +257,7 @@ export class VpcEndpointServiceTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -322,7 +322,7 @@ export class VpcEndpointServiceTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_service aws_vpc_endpoint_service}
 */
-export class VpcEndpointService extends cdktf.TerraformResource {
+export class VpcEndpointService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -333,14 +333,14 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcEndpointService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcEndpointService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcEndpointService to import
   * @param importFromId The id of the existing VpcEndpointService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_endpoint_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcEndpointService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_endpoint_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -389,11 +389,11 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   // ==========
 
   // acceptance_required - computed: false, optional: false, required: true
-  private _acceptanceRequired?: boolean | cdktf.IResolvable; 
+  private _acceptanceRequired?: boolean | cdktn.IResolvable; 
   public get acceptanceRequired() {
     return this.getBooleanAttribute('acceptance_required');
   }
-  public set acceptanceRequired(value: boolean | cdktf.IResolvable) {
+  public set acceptanceRequired(value: boolean | cdktn.IResolvable) {
     this._acceptanceRequired = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -404,7 +404,7 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   // allowed_principals - computed: true, optional: true, required: false
   private _allowedPrincipals?: string[]; 
   public get allowedPrincipals() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_principals'));
   }
   public set allowedPrincipals(value: string[]) {
     this._allowedPrincipals = value;
@@ -424,18 +424,18 @@ export class VpcEndpointService extends cdktf.TerraformResource {
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // base_endpoint_dns_names - computed: true, optional: false, required: false
   public get baseEndpointDnsNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('base_endpoint_dns_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('base_endpoint_dns_names'));
   }
 
   // gateway_load_balancer_arns - computed: false, optional: true, required: false
   private _gatewayLoadBalancerArns?: string[]; 
   public get gatewayLoadBalancerArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('gateway_load_balancer_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('gateway_load_balancer_arns'));
   }
   public set gatewayLoadBalancerArns(value: string[]) {
     this._gatewayLoadBalancerArns = value;
@@ -472,7 +472,7 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   // network_load_balancer_arns - computed: false, optional: true, required: false
   private _networkLoadBalancerArns?: string[]; 
   public get networkLoadBalancerArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('network_load_balancer_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('network_load_balancer_arns'));
   }
   public set networkLoadBalancerArns(value: string[]) {
     this._networkLoadBalancerArns = value;
@@ -541,7 +541,7 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   // supported_ip_address_types - computed: true, optional: true, required: false
   private _supportedIpAddressTypes?: string[]; 
   public get supportedIpAddressTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('supported_ip_address_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('supported_ip_address_types'));
   }
   public set supportedIpAddressTypes(value: string[]) {
     this._supportedIpAddressTypes = value;
@@ -557,7 +557,7 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   // supported_regions - computed: true, optional: true, required: false
   private _supportedRegions?: string[]; 
   public get supportedRegions() {
-    return cdktf.Fn.tolist(this.getListAttribute('supported_regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('supported_regions'));
   }
   public set supportedRegions(value: string[]) {
     this._supportedRegions = value;
@@ -624,17 +624,17 @@ export class VpcEndpointService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acceptance_required: cdktf.booleanToTerraform(this._acceptanceRequired),
-      allowed_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedPrincipals),
-      gateway_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._gatewayLoadBalancerArns),
-      id: cdktf.stringToTerraform(this._id),
-      network_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkLoadBalancerArns),
-      private_dns_name: cdktf.stringToTerraform(this._privateDnsName),
-      region: cdktf.stringToTerraform(this._region),
-      supported_ip_address_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedIpAddressTypes),
-      supported_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedRegions),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      acceptance_required: cdktn.booleanToTerraform(this._acceptanceRequired),
+      allowed_principals: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedPrincipals),
+      gateway_load_balancer_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._gatewayLoadBalancerArns),
+      id: cdktn.stringToTerraform(this._id),
+      network_load_balancer_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._networkLoadBalancerArns),
+      private_dns_name: cdktn.stringToTerraform(this._privateDnsName),
+      region: cdktn.stringToTerraform(this._region),
+      supported_ip_address_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportedIpAddressTypes),
+      supported_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportedRegions),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       timeouts: vpcEndpointServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -642,67 +642,67 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       acceptance_required: {
-        value: cdktf.booleanToHclTerraform(this._acceptanceRequired),
+        value: cdktn.booleanToHclTerraform(this._acceptanceRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allowed_principals: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedPrincipals),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedPrincipals),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       gateway_load_balancer_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._gatewayLoadBalancerArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._gatewayLoadBalancerArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_load_balancer_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkLoadBalancerArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._networkLoadBalancerArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       private_dns_name: {
-        value: cdktf.stringToHclTerraform(this._privateDnsName),
+        value: cdktn.stringToHclTerraform(this._privateDnsName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       supported_ip_address_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedIpAddressTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportedIpAddressTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       supported_regions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedRegions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportedRegions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

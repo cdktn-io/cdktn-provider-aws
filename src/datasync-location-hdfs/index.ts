@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatasyncLocationHdfsConfig extends cdktf.TerraformMetaArguments {
+export interface DatasyncLocationHdfsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_hdfs#agent_arns DatasyncLocationHdfs#agent_arns}
   */
@@ -86,7 +86,7 @@ export interface DatasyncLocationHdfsConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_hdfs#name_node DatasyncLocationHdfs#name_node}
   */
-  readonly nameNode: DatasyncLocationHdfsNameNode[] | cdktf.IResolvable;
+  readonly nameNode: DatasyncLocationHdfsNameNode[] | cdktn.IResolvable;
   /**
   * qop_configuration block
   *
@@ -105,32 +105,32 @@ export interface DatasyncLocationHdfsNameNode {
   readonly port: number;
 }
 
-export function datasyncLocationHdfsNameNodeToTerraform(struct?: DatasyncLocationHdfsNameNode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datasyncLocationHdfsNameNodeToTerraform(struct?: DatasyncLocationHdfsNameNode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    port: cdktf.numberToTerraform(struct!.port),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
-export function datasyncLocationHdfsNameNodeToHclTerraform(struct?: DatasyncLocationHdfsNameNode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datasyncLocationHdfsNameNodeToHclTerraform(struct?: DatasyncLocationHdfsNameNode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -141,9 +141,9 @@ export function datasyncLocationHdfsNameNodeToHclTerraform(struct?: DatasyncLoca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncLocationHdfsNameNodeOutputReference extends cdktf.ComplexObject {
+export class DatasyncLocationHdfsNameNodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -151,11 +151,11 @@ export class DatasyncLocationHdfsNameNodeOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatasyncLocationHdfsNameNode | cdktf.IResolvable | undefined {
+  public get internalValue(): DatasyncLocationHdfsNameNode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,14 +172,14 @@ export class DatasyncLocationHdfsNameNodeOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatasyncLocationHdfsNameNode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatasyncLocationHdfsNameNode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hostname = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -218,15 +218,15 @@ export class DatasyncLocationHdfsNameNodeOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DatasyncLocationHdfsNameNodeList extends cdktf.ComplexList {
-  public internalValue? : DatasyncLocationHdfsNameNode[] | cdktf.IResolvable
+export class DatasyncLocationHdfsNameNodeList extends cdktn.ComplexList {
+  public internalValue? : DatasyncLocationHdfsNameNode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -249,31 +249,31 @@ export interface DatasyncLocationHdfsQopConfiguration {
 }
 
 export function datasyncLocationHdfsQopConfigurationToTerraform(struct?: DatasyncLocationHdfsQopConfigurationOutputReference | DatasyncLocationHdfsQopConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_transfer_protection: cdktf.stringToTerraform(struct!.dataTransferProtection),
-    rpc_protection: cdktf.stringToTerraform(struct!.rpcProtection),
+    data_transfer_protection: cdktn.stringToTerraform(struct!.dataTransferProtection),
+    rpc_protection: cdktn.stringToTerraform(struct!.rpcProtection),
   }
 }
 
 
 export function datasyncLocationHdfsQopConfigurationToHclTerraform(struct?: DatasyncLocationHdfsQopConfigurationOutputReference | DatasyncLocationHdfsQopConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_transfer_protection: {
-      value: cdktf.stringToHclTerraform(struct!.dataTransferProtection),
+      value: cdktn.stringToHclTerraform(struct!.dataTransferProtection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rpc_protection: {
-      value: cdktf.stringToHclTerraform(struct!.rpcProtection),
+      value: cdktn.stringToHclTerraform(struct!.rpcProtection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -284,14 +284,14 @@ export function datasyncLocationHdfsQopConfigurationToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktf.ComplexObject {
+export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -358,7 +358,7 @@ export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs}
 */
-export class DatasyncLocationHdfs extends cdktf.TerraformResource {
+export class DatasyncLocationHdfs extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -369,14 +369,14 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatasyncLocationHdfs resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatasyncLocationHdfs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncLocationHdfs to import
   * @param importFromId The id of the existing DatasyncLocationHdfs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datasync_location_hdfs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncLocationHdfs to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_hdfs", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datasync_location_hdfs", importId: importFromId, provider });
       }
 
   // ===========
@@ -433,7 +433,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   // agent_arns - computed: false, optional: false, required: true
   private _agentArns?: string[]; 
   public get agentArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('agent_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('agent_arns'));
   }
   public set agentArns(value: string[]) {
     this._agentArns = value;
@@ -698,7 +698,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   public get nameNode() {
     return this._nameNode;
   }
-  public putNameNode(value: DatasyncLocationHdfsNameNode[] | cdktf.IResolvable) {
+  public putNameNode(value: DatasyncLocationHdfsNameNode[] | cdktn.IResolvable) {
     this._nameNode.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -728,23 +728,23 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._agentArns),
-      authentication_type: cdktf.stringToTerraform(this._authenticationType),
-      block_size: cdktf.numberToTerraform(this._blockSize),
-      id: cdktf.stringToTerraform(this._id),
-      kerberos_keytab: cdktf.stringToTerraform(this._kerberosKeytab),
-      kerberos_keytab_base64: cdktf.stringToTerraform(this._kerberosKeytabBase64),
-      kerberos_krb5_conf: cdktf.stringToTerraform(this._kerberosKrb5Conf),
-      kerberos_krb5_conf_base64: cdktf.stringToTerraform(this._kerberosKrb5ConfBase64),
-      kerberos_principal: cdktf.stringToTerraform(this._kerberosPrincipal),
-      kms_key_provider_uri: cdktf.stringToTerraform(this._kmsKeyProviderUri),
-      region: cdktf.stringToTerraform(this._region),
-      replication_factor: cdktf.numberToTerraform(this._replicationFactor),
-      simple_user: cdktf.stringToTerraform(this._simpleUser),
-      subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      name_node: cdktf.listMapper(datasyncLocationHdfsNameNodeToTerraform, true)(this._nameNode.internalValue),
+      agent_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._agentArns),
+      authentication_type: cdktn.stringToTerraform(this._authenticationType),
+      block_size: cdktn.numberToTerraform(this._blockSize),
+      id: cdktn.stringToTerraform(this._id),
+      kerberos_keytab: cdktn.stringToTerraform(this._kerberosKeytab),
+      kerberos_keytab_base64: cdktn.stringToTerraform(this._kerberosKeytabBase64),
+      kerberos_krb5_conf: cdktn.stringToTerraform(this._kerberosKrb5Conf),
+      kerberos_krb5_conf_base64: cdktn.stringToTerraform(this._kerberosKrb5ConfBase64),
+      kerberos_principal: cdktn.stringToTerraform(this._kerberosPrincipal),
+      kms_key_provider_uri: cdktn.stringToTerraform(this._kmsKeyProviderUri),
+      region: cdktn.stringToTerraform(this._region),
+      replication_factor: cdktn.numberToTerraform(this._replicationFactor),
+      simple_user: cdktn.stringToTerraform(this._simpleUser),
+      subdirectory: cdktn.stringToTerraform(this._subdirectory),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      name_node: cdktn.listMapper(datasyncLocationHdfsNameNodeToTerraform, true)(this._nameNode.internalValue),
       qop_configuration: datasyncLocationHdfsQopConfigurationToTerraform(this._qopConfiguration.internalValue),
     };
   }
@@ -752,103 +752,103 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       agent_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._agentArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._agentArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       authentication_type: {
-        value: cdktf.stringToHclTerraform(this._authenticationType),
+        value: cdktn.stringToHclTerraform(this._authenticationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       block_size: {
-        value: cdktf.numberToHclTerraform(this._blockSize),
+        value: cdktn.numberToHclTerraform(this._blockSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kerberos_keytab: {
-        value: cdktf.stringToHclTerraform(this._kerberosKeytab),
+        value: cdktn.stringToHclTerraform(this._kerberosKeytab),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kerberos_keytab_base64: {
-        value: cdktf.stringToHclTerraform(this._kerberosKeytabBase64),
+        value: cdktn.stringToHclTerraform(this._kerberosKeytabBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kerberos_krb5_conf: {
-        value: cdktf.stringToHclTerraform(this._kerberosKrb5Conf),
+        value: cdktn.stringToHclTerraform(this._kerberosKrb5Conf),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kerberos_krb5_conf_base64: {
-        value: cdktf.stringToHclTerraform(this._kerberosKrb5ConfBase64),
+        value: cdktn.stringToHclTerraform(this._kerberosKrb5ConfBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kerberos_principal: {
-        value: cdktf.stringToHclTerraform(this._kerberosPrincipal),
+        value: cdktn.stringToHclTerraform(this._kerberosPrincipal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_provider_uri: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyProviderUri),
+        value: cdktn.stringToHclTerraform(this._kmsKeyProviderUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_factor: {
-        value: cdktf.numberToHclTerraform(this._replicationFactor),
+        value: cdktn.numberToHclTerraform(this._replicationFactor),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       simple_user: {
-        value: cdktf.stringToHclTerraform(this._simpleUser),
+        value: cdktn.stringToHclTerraform(this._simpleUser),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subdirectory: {
-        value: cdktf.stringToHclTerraform(this._subdirectory),
+        value: cdktn.stringToHclTerraform(this._subdirectory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name_node: {
-        value: cdktf.listMapperHcl(datasyncLocationHdfsNameNodeToHclTerraform, true)(this._nameNode.internalValue),
+        value: cdktn.listMapperHcl(datasyncLocationHdfsNameNodeToHclTerraform, true)(this._nameNode.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DatasyncLocationHdfsNameNodeList",

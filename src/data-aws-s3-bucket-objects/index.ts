@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsS3BucketObjectsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsS3BucketObjectsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/s3_bucket_objects#bucket DataAwsS3BucketObjects#bucket}
   */
@@ -27,7 +27,7 @@ export interface DataAwsS3BucketObjectsConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/s3_bucket_objects#fetch_owner DataAwsS3BucketObjects#fetch_owner}
   */
-  readonly fetchOwner?: boolean | cdktf.IResolvable;
+  readonly fetchOwner?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/s3_bucket_objects#id DataAwsS3BucketObjects#id}
   *
@@ -58,7 +58,7 @@ export interface DataAwsS3BucketObjectsConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/s3_bucket_objects aws_s3_bucket_objects}
 */
-export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
+export class DataAwsS3BucketObjects extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -69,14 +69,14 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsS3BucketObjects resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsS3BucketObjects resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsS3BucketObjects to import
   * @param importFromId The id of the existing DataAwsS3BucketObjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/s3_bucket_objects#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsS3BucketObjects to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_objects", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_bucket_objects", importId: importFromId, provider });
       }
 
   // ===========
@@ -172,11 +172,11 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
   }
 
   // fetch_owner - computed: false, optional: true, required: false
-  private _fetchOwner?: boolean | cdktf.IResolvable; 
+  private _fetchOwner?: boolean | cdktn.IResolvable; 
   public get fetchOwner() {
     return this.getBooleanAttribute('fetch_owner');
   }
-  public set fetchOwner(value: boolean | cdktf.IResolvable) {
+  public set fetchOwner(value: boolean | cdktn.IResolvable) {
     this._fetchOwner = value;
   }
   public resetFetchOwner() {
@@ -283,70 +283,70 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      delimiter: cdktf.stringToTerraform(this._delimiter),
-      encoding_type: cdktf.stringToTerraform(this._encodingType),
-      fetch_owner: cdktf.booleanToTerraform(this._fetchOwner),
-      id: cdktf.stringToTerraform(this._id),
-      max_keys: cdktf.numberToTerraform(this._maxKeys),
-      prefix: cdktf.stringToTerraform(this._prefix),
-      region: cdktf.stringToTerraform(this._region),
-      start_after: cdktf.stringToTerraform(this._startAfter),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      delimiter: cdktn.stringToTerraform(this._delimiter),
+      encoding_type: cdktn.stringToTerraform(this._encodingType),
+      fetch_owner: cdktn.booleanToTerraform(this._fetchOwner),
+      id: cdktn.stringToTerraform(this._id),
+      max_keys: cdktn.numberToTerraform(this._maxKeys),
+      prefix: cdktn.stringToTerraform(this._prefix),
+      region: cdktn.stringToTerraform(this._region),
+      start_after: cdktn.stringToTerraform(this._startAfter),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delimiter: {
-        value: cdktf.stringToHclTerraform(this._delimiter),
+        value: cdktn.stringToHclTerraform(this._delimiter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encoding_type: {
-        value: cdktf.stringToHclTerraform(this._encodingType),
+        value: cdktn.stringToHclTerraform(this._encodingType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fetch_owner: {
-        value: cdktf.booleanToHclTerraform(this._fetchOwner),
+        value: cdktn.booleanToHclTerraform(this._fetchOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_keys: {
-        value: cdktf.numberToHclTerraform(this._maxKeys),
+        value: cdktn.numberToHclTerraform(this._maxKeys),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       prefix: {
-        value: cdktf.stringToHclTerraform(this._prefix),
+        value: cdktn.stringToHclTerraform(this._prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_after: {
-        value: cdktf.stringToHclTerraform(this._startAfter),
+        value: cdktn.stringToHclTerraform(this._startAfter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

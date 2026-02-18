@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferConnectorConfig extends cdktf.TerraformMetaArguments {
+export interface TransferConnectorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_connector#access_role TransferConnector#access_role}
   */
@@ -110,73 +110,73 @@ export interface TransferConnectorAs2Config {
 }
 
 export function transferConnectorAs2ConfigToTerraform(struct?: TransferConnectorAs2ConfigOutputReference | TransferConnectorAs2Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compression: cdktf.stringToTerraform(struct!.compression),
-    encryption_algorithm: cdktf.stringToTerraform(struct!.encryptionAlgorithm),
-    local_profile_id: cdktf.stringToTerraform(struct!.localProfileId),
-    mdn_response: cdktf.stringToTerraform(struct!.mdnResponse),
-    mdn_signing_algorithm: cdktf.stringToTerraform(struct!.mdnSigningAlgorithm),
-    message_subject: cdktf.stringToTerraform(struct!.messageSubject),
-    partner_profile_id: cdktf.stringToTerraform(struct!.partnerProfileId),
-    signing_algorithm: cdktf.stringToTerraform(struct!.signingAlgorithm),
+    compression: cdktn.stringToTerraform(struct!.compression),
+    encryption_algorithm: cdktn.stringToTerraform(struct!.encryptionAlgorithm),
+    local_profile_id: cdktn.stringToTerraform(struct!.localProfileId),
+    mdn_response: cdktn.stringToTerraform(struct!.mdnResponse),
+    mdn_signing_algorithm: cdktn.stringToTerraform(struct!.mdnSigningAlgorithm),
+    message_subject: cdktn.stringToTerraform(struct!.messageSubject),
+    partner_profile_id: cdktn.stringToTerraform(struct!.partnerProfileId),
+    signing_algorithm: cdktn.stringToTerraform(struct!.signingAlgorithm),
   }
 }
 
 
 export function transferConnectorAs2ConfigToHclTerraform(struct?: TransferConnectorAs2ConfigOutputReference | TransferConnectorAs2Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     compression: {
-      value: cdktf.stringToHclTerraform(struct!.compression),
+      value: cdktn.stringToHclTerraform(struct!.compression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.encryptionAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_profile_id: {
-      value: cdktf.stringToHclTerraform(struct!.localProfileId),
+      value: cdktn.stringToHclTerraform(struct!.localProfileId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mdn_response: {
-      value: cdktf.stringToHclTerraform(struct!.mdnResponse),
+      value: cdktn.stringToHclTerraform(struct!.mdnResponse),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mdn_signing_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.mdnSigningAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.mdnSigningAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message_subject: {
-      value: cdktf.stringToHclTerraform(struct!.messageSubject),
+      value: cdktn.stringToHclTerraform(struct!.messageSubject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partner_profile_id: {
-      value: cdktf.stringToHclTerraform(struct!.partnerProfileId),
+      value: cdktn.stringToHclTerraform(struct!.partnerProfileId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     signing_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.signingAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.signingAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -187,14 +187,14 @@ export function transferConnectorAs2ConfigToHclTerraform(struct?: TransferConnec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferConnectorAs2ConfigOutputReference extends cdktf.ComplexObject {
+export class TransferConnectorAs2ConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -383,31 +383,31 @@ export interface TransferConnectorEgressConfigVpcLattice {
 }
 
 export function transferConnectorEgressConfigVpcLatticeToTerraform(struct?: TransferConnectorEgressConfigVpcLatticeOutputReference | TransferConnectorEgressConfigVpcLattice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port_number: cdktf.numberToTerraform(struct!.portNumber),
-    resource_configuration_arn: cdktf.stringToTerraform(struct!.resourceConfigurationArn),
+    port_number: cdktn.numberToTerraform(struct!.portNumber),
+    resource_configuration_arn: cdktn.stringToTerraform(struct!.resourceConfigurationArn),
   }
 }
 
 
 export function transferConnectorEgressConfigVpcLatticeToHclTerraform(struct?: TransferConnectorEgressConfigVpcLatticeOutputReference | TransferConnectorEgressConfigVpcLattice): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port_number: {
-      value: cdktf.numberToHclTerraform(struct!.portNumber),
+      value: cdktn.numberToHclTerraform(struct!.portNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     resource_configuration_arn: {
-      value: cdktf.stringToHclTerraform(struct!.resourceConfigurationArn),
+      value: cdktn.stringToHclTerraform(struct!.resourceConfigurationArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -418,14 +418,14 @@ export function transferConnectorEgressConfigVpcLatticeToHclTerraform(struct?: T
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferConnectorEgressConfigVpcLatticeOutputReference extends cdktf.ComplexObject {
+export class TransferConnectorEgressConfigVpcLatticeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -495,8 +495,8 @@ export interface TransferConnectorEgressConfig {
 }
 
 export function transferConnectorEgressConfigToTerraform(struct?: TransferConnectorEgressConfigOutputReference | TransferConnectorEgressConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -506,8 +506,8 @@ export function transferConnectorEgressConfigToTerraform(struct?: TransferConnec
 
 
 export function transferConnectorEgressConfigToHclTerraform(struct?: TransferConnectorEgressConfigOutputReference | TransferConnectorEgressConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -523,14 +523,14 @@ export function transferConnectorEgressConfigToHclTerraform(struct?: TransferCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferConnectorEgressConfigOutputReference extends cdktf.ComplexObject {
+export class TransferConnectorEgressConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -583,31 +583,31 @@ export interface TransferConnectorSftpConfig {
 }
 
 export function transferConnectorSftpConfigToTerraform(struct?: TransferConnectorSftpConfigOutputReference | TransferConnectorSftpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    trusted_host_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trustedHostKeys),
-    user_secret_id: cdktf.stringToTerraform(struct!.userSecretId),
+    trusted_host_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.trustedHostKeys),
+    user_secret_id: cdktn.stringToTerraform(struct!.userSecretId),
   }
 }
 
 
 export function transferConnectorSftpConfigToHclTerraform(struct?: TransferConnectorSftpConfigOutputReference | TransferConnectorSftpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     trusted_host_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trustedHostKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.trustedHostKeys),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     user_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.userSecretId),
+      value: cdktn.stringToHclTerraform(struct!.userSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -618,14 +618,14 @@ export function transferConnectorSftpConfigToHclTerraform(struct?: TransferConne
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferConnectorSftpConfigOutputReference extends cdktf.ComplexObject {
+export class TransferConnectorSftpConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -659,7 +659,7 @@ export class TransferConnectorSftpConfigOutputReference extends cdktf.ComplexObj
   // trusted_host_keys - computed: false, optional: true, required: false
   private _trustedHostKeys?: string[]; 
   public get trustedHostKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('trusted_host_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('trusted_host_keys'));
   }
   public set trustedHostKeys(value: string[]) {
     this._trustedHostKeys = value;
@@ -703,39 +703,39 @@ export interface TransferConnectorTimeouts {
   readonly update?: string;
 }
 
-export function transferConnectorTimeoutsToTerraform(struct?: TransferConnectorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferConnectorTimeoutsToTerraform(struct?: TransferConnectorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function transferConnectorTimeoutsToHclTerraform(struct?: TransferConnectorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function transferConnectorTimeoutsToHclTerraform(struct?: TransferConnectorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -746,19 +746,19 @@ export function transferConnectorTimeoutsToHclTerraform(struct?: TransferConnect
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferConnectorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TransferConnectorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TransferConnectorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TransferConnectorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -779,7 +779,7 @@ export class TransferConnectorTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TransferConnectorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TransferConnectorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -787,7 +787,7 @@ export class TransferConnectorTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -852,7 +852,7 @@ export class TransferConnectorTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_connector aws_transfer_connector}
 */
-export class TransferConnector extends cdktf.TerraformResource {
+export class TransferConnector extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -863,14 +863,14 @@ export class TransferConnector extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferConnector resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferConnector to import
   * @param importFromId The id of the existing TransferConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferConnector to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_connector", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_connector", importId: importFromId, provider });
       }
 
   // ===========
@@ -1123,14 +1123,14 @@ export class TransferConnector extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_role: cdktf.stringToTerraform(this._accessRole),
-      id: cdktf.stringToTerraform(this._id),
-      logging_role: cdktf.stringToTerraform(this._loggingRole),
-      region: cdktf.stringToTerraform(this._region),
-      security_policy_name: cdktf.stringToTerraform(this._securityPolicyName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      url: cdktf.stringToTerraform(this._url),
+      access_role: cdktn.stringToTerraform(this._accessRole),
+      id: cdktn.stringToTerraform(this._id),
+      logging_role: cdktn.stringToTerraform(this._loggingRole),
+      region: cdktn.stringToTerraform(this._region),
+      security_policy_name: cdktn.stringToTerraform(this._securityPolicyName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      url: cdktn.stringToTerraform(this._url),
       as2_config: transferConnectorAs2ConfigToTerraform(this._as2Config.internalValue),
       egress_config: transferConnectorEgressConfigToTerraform(this._egressConfig.internalValue),
       sftp_config: transferConnectorSftpConfigToTerraform(this._sftpConfig.internalValue),
@@ -1141,49 +1141,49 @@ export class TransferConnector extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_role: {
-        value: cdktf.stringToHclTerraform(this._accessRole),
+        value: cdktn.stringToHclTerraform(this._accessRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logging_role: {
-        value: cdktf.stringToHclTerraform(this._loggingRole),
+        value: cdktn.stringToHclTerraform(this._loggingRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_policy_name: {
-        value: cdktf.stringToHclTerraform(this._securityPolicyName),
+        value: cdktn.stringToHclTerraform(this._securityPolicyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

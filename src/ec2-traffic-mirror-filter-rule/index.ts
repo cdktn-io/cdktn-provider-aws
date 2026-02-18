@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TrafficMirrorFilterRuleConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TrafficMirrorFilterRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_traffic_mirror_filter_rule#description Ec2TrafficMirrorFilterRule#description}
   */
@@ -82,31 +82,31 @@ export interface Ec2TrafficMirrorFilterRuleDestinationPortRange {
 }
 
 export function ec2TrafficMirrorFilterRuleDestinationPortRangeToTerraform(struct?: Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference | Ec2TrafficMirrorFilterRuleDestinationPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
 export function ec2TrafficMirrorFilterRuleDestinationPortRangeToHclTerraform(struct?: Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference | Ec2TrafficMirrorFilterRuleDestinationPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -117,14 +117,14 @@ export function ec2TrafficMirrorFilterRuleDestinationPortRangeToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference extends cdktf.ComplexObject {
+export class Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -199,31 +199,31 @@ export interface Ec2TrafficMirrorFilterRuleSourcePortRange {
 }
 
 export function ec2TrafficMirrorFilterRuleSourcePortRangeToTerraform(struct?: Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference | Ec2TrafficMirrorFilterRuleSourcePortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    from_port: cdktn.numberToTerraform(struct!.fromPort),
+    to_port: cdktn.numberToTerraform(struct!.toPort),
   }
 }
 
 
 export function ec2TrafficMirrorFilterRuleSourcePortRangeToHclTerraform(struct?: Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference | Ec2TrafficMirrorFilterRuleSourcePortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_port: {
-      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      value: cdktn.numberToHclTerraform(struct!.fromPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     to_port: {
-      value: cdktf.numberToHclTerraform(struct!.toPort),
+      value: cdktn.numberToHclTerraform(struct!.toPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -234,14 +234,14 @@ export function ec2TrafficMirrorFilterRuleSourcePortRangeToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference extends cdktf.ComplexObject {
+export class Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -308,7 +308,7 @@ export class Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_traffic_mirror_filter_rule aws_ec2_traffic_mirror_filter_rule}
 */
-export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
+export class Ec2TrafficMirrorFilterRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -319,14 +319,14 @@ export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TrafficMirrorFilterRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TrafficMirrorFilterRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TrafficMirrorFilterRule to import
   * @param importFromId The id of the existing Ec2TrafficMirrorFilterRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_traffic_mirror_filter_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TrafficMirrorFilterRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_traffic_mirror_filter_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_traffic_mirror_filter_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -559,16 +559,16 @@ export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
-      id: cdktf.stringToTerraform(this._id),
-      protocol: cdktf.numberToTerraform(this._protocol),
-      region: cdktf.stringToTerraform(this._region),
-      rule_action: cdktf.stringToTerraform(this._ruleAction),
-      rule_number: cdktf.numberToTerraform(this._ruleNumber),
-      source_cidr_block: cdktf.stringToTerraform(this._sourceCidrBlock),
-      traffic_direction: cdktf.stringToTerraform(this._trafficDirection),
-      traffic_mirror_filter_id: cdktf.stringToTerraform(this._trafficMirrorFilterId),
+      description: cdktn.stringToTerraform(this._description),
+      destination_cidr_block: cdktn.stringToTerraform(this._destinationCidrBlock),
+      id: cdktn.stringToTerraform(this._id),
+      protocol: cdktn.numberToTerraform(this._protocol),
+      region: cdktn.stringToTerraform(this._region),
+      rule_action: cdktn.stringToTerraform(this._ruleAction),
+      rule_number: cdktn.numberToTerraform(this._ruleNumber),
+      source_cidr_block: cdktn.stringToTerraform(this._sourceCidrBlock),
+      traffic_direction: cdktn.stringToTerraform(this._trafficDirection),
+      traffic_mirror_filter_id: cdktn.stringToTerraform(this._trafficMirrorFilterId),
       destination_port_range: ec2TrafficMirrorFilterRuleDestinationPortRangeToTerraform(this._destinationPortRange.internalValue),
       source_port_range: ec2TrafficMirrorFilterRuleSourcePortRangeToTerraform(this._sourcePortRange.internalValue),
     };
@@ -577,61 +577,61 @@ export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._destinationCidrBlock),
+        value: cdktn.stringToHclTerraform(this._destinationCidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol: {
-        value: cdktf.numberToHclTerraform(this._protocol),
+        value: cdktn.numberToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_action: {
-        value: cdktf.stringToHclTerraform(this._ruleAction),
+        value: cdktn.stringToHclTerraform(this._ruleAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule_number: {
-        value: cdktf.numberToHclTerraform(this._ruleNumber),
+        value: cdktn.numberToHclTerraform(this._ruleNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       source_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._sourceCidrBlock),
+        value: cdktn.stringToHclTerraform(this._sourceCidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       traffic_direction: {
-        value: cdktf.stringToHclTerraform(this._trafficDirection),
+        value: cdktn.stringToHclTerraform(this._trafficDirection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       traffic_mirror_filter_id: {
-        value: cdktf.stringToHclTerraform(this._trafficMirrorFilterId),
+        value: cdktn.stringToHclTerraform(this._trafficMirrorFilterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

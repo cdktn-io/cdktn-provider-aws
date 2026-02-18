@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
+export interface TransferServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_server#certificate TransferServer#certificate}
   */
@@ -31,7 +31,7 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_server#force_destroy TransferServer#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_server#function TransferServer#function}
   */
@@ -152,52 +152,52 @@ export interface TransferServerEndpointDetails {
 }
 
 export function transferServerEndpointDetailsToTerraform(struct?: TransferServerEndpointDetailsOutputReference | TransferServerEndpointDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_allocation_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.addressAllocationIds),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
-    vpc_endpoint_id: cdktf.stringToTerraform(struct!.vpcEndpointId),
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    address_allocation_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.addressAllocationIds),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+    vpc_endpoint_id: cdktn.stringToTerraform(struct!.vpcEndpointId),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
   }
 }
 
 
 export function transferServerEndpointDetailsToHclTerraform(struct?: TransferServerEndpointDetailsOutputReference | TransferServerEndpointDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_allocation_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.addressAllocationIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.addressAllocationIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     vpc_endpoint_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcEndpointId),
+      value: cdktn.stringToHclTerraform(struct!.vpcEndpointId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -208,14 +208,14 @@ export function transferServerEndpointDetailsToHclTerraform(struct?: TransferSer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferServerEndpointDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -267,7 +267,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
   // address_allocation_ids - computed: false, optional: true, required: false
   private _addressAllocationIds?: string[]; 
   public get addressAllocationIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('address_allocation_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('address_allocation_ids'));
   }
   public set addressAllocationIds(value: string[]) {
     this._addressAllocationIds = value;
@@ -283,7 +283,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -299,7 +299,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -364,45 +364,45 @@ export interface TransferServerProtocolDetails {
 }
 
 export function transferServerProtocolDetailsToTerraform(struct?: TransferServerProtocolDetailsOutputReference | TransferServerProtocolDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    as2_transports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.as2Transports),
-    passive_ip: cdktf.stringToTerraform(struct!.passiveIp),
-    set_stat_option: cdktf.stringToTerraform(struct!.setStatOption),
-    tls_session_resumption_mode: cdktf.stringToTerraform(struct!.tlsSessionResumptionMode),
+    as2_transports: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.as2Transports),
+    passive_ip: cdktn.stringToTerraform(struct!.passiveIp),
+    set_stat_option: cdktn.stringToTerraform(struct!.setStatOption),
+    tls_session_resumption_mode: cdktn.stringToTerraform(struct!.tlsSessionResumptionMode),
   }
 }
 
 
 export function transferServerProtocolDetailsToHclTerraform(struct?: TransferServerProtocolDetailsOutputReference | TransferServerProtocolDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     as2_transports: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.as2Transports),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.as2Transports),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     passive_ip: {
-      value: cdktf.stringToHclTerraform(struct!.passiveIp),
+      value: cdktn.stringToHclTerraform(struct!.passiveIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     set_stat_option: {
-      value: cdktf.stringToHclTerraform(struct!.setStatOption),
+      value: cdktn.stringToHclTerraform(struct!.setStatOption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_session_resumption_mode: {
-      value: cdktf.stringToHclTerraform(struct!.tlsSessionResumptionMode),
+      value: cdktn.stringToHclTerraform(struct!.tlsSessionResumptionMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -413,14 +413,14 @@ export function transferServerProtocolDetailsToHclTerraform(struct?: TransferSer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferServerProtocolDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferServerProtocolDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -466,7 +466,7 @@ export class TransferServerProtocolDetailsOutputReference extends cdktf.ComplexO
   // as2_transports - computed: true, optional: true, required: false
   private _as2Transports?: string[]; 
   public get as2Transports() {
-    return cdktf.Fn.tolist(this.getListAttribute('as2_transports'));
+    return cdktn.Fn.tolist(this.getListAttribute('as2_transports'));
   }
   public set as2Transports(value: string[]) {
     this._as2Transports = value;
@@ -535,24 +535,24 @@ export interface TransferServerS3StorageOptions {
 }
 
 export function transferServerS3StorageOptionsToTerraform(struct?: TransferServerS3StorageOptionsOutputReference | TransferServerS3StorageOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    directory_listing_optimization: cdktf.stringToTerraform(struct!.directoryListingOptimization),
+    directory_listing_optimization: cdktn.stringToTerraform(struct!.directoryListingOptimization),
   }
 }
 
 
 export function transferServerS3StorageOptionsToHclTerraform(struct?: TransferServerS3StorageOptionsOutputReference | TransferServerS3StorageOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     directory_listing_optimization: {
-      value: cdktf.stringToHclTerraform(struct!.directoryListingOptimization),
+      value: cdktn.stringToHclTerraform(struct!.directoryListingOptimization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -563,14 +563,14 @@ export function transferServerS3StorageOptionsToHclTerraform(struct?: TransferSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferServerS3StorageOptionsOutputReference extends cdktf.ComplexObject {
+export class TransferServerS3StorageOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -623,31 +623,31 @@ export interface TransferServerWorkflowDetailsOnPartialUpload {
 }
 
 export function transferServerWorkflowDetailsOnPartialUploadToTerraform(struct?: TransferServerWorkflowDetailsOnPartialUploadOutputReference | TransferServerWorkflowDetailsOnPartialUpload): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    execution_role: cdktf.stringToTerraform(struct!.executionRole),
-    workflow_id: cdktf.stringToTerraform(struct!.workflowId),
+    execution_role: cdktn.stringToTerraform(struct!.executionRole),
+    workflow_id: cdktn.stringToTerraform(struct!.workflowId),
   }
 }
 
 
 export function transferServerWorkflowDetailsOnPartialUploadToHclTerraform(struct?: TransferServerWorkflowDetailsOnPartialUploadOutputReference | TransferServerWorkflowDetailsOnPartialUpload): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     execution_role: {
-      value: cdktf.stringToHclTerraform(struct!.executionRole),
+      value: cdktn.stringToHclTerraform(struct!.executionRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workflow_id: {
-      value: cdktf.stringToHclTerraform(struct!.workflowId),
+      value: cdktn.stringToHclTerraform(struct!.workflowId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -658,14 +658,14 @@ export function transferServerWorkflowDetailsOnPartialUploadToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferServerWorkflowDetailsOnPartialUploadOutputReference extends cdktf.ComplexObject {
+export class TransferServerWorkflowDetailsOnPartialUploadOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -734,31 +734,31 @@ export interface TransferServerWorkflowDetailsOnUpload {
 }
 
 export function transferServerWorkflowDetailsOnUploadToTerraform(struct?: TransferServerWorkflowDetailsOnUploadOutputReference | TransferServerWorkflowDetailsOnUpload): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    execution_role: cdktf.stringToTerraform(struct!.executionRole),
-    workflow_id: cdktf.stringToTerraform(struct!.workflowId),
+    execution_role: cdktn.stringToTerraform(struct!.executionRole),
+    workflow_id: cdktn.stringToTerraform(struct!.workflowId),
   }
 }
 
 
 export function transferServerWorkflowDetailsOnUploadToHclTerraform(struct?: TransferServerWorkflowDetailsOnUploadOutputReference | TransferServerWorkflowDetailsOnUpload): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     execution_role: {
-      value: cdktf.stringToHclTerraform(struct!.executionRole),
+      value: cdktn.stringToHclTerraform(struct!.executionRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workflow_id: {
-      value: cdktf.stringToHclTerraform(struct!.workflowId),
+      value: cdktn.stringToHclTerraform(struct!.workflowId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -769,14 +769,14 @@ export function transferServerWorkflowDetailsOnUploadToHclTerraform(struct?: Tra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferServerWorkflowDetailsOnUploadOutputReference extends cdktf.ComplexObject {
+export class TransferServerWorkflowDetailsOnUploadOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -849,8 +849,8 @@ export interface TransferServerWorkflowDetails {
 }
 
 export function transferServerWorkflowDetailsToTerraform(struct?: TransferServerWorkflowDetailsOutputReference | TransferServerWorkflowDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -861,8 +861,8 @@ export function transferServerWorkflowDetailsToTerraform(struct?: TransferServer
 
 
 export function transferServerWorkflowDetailsToHclTerraform(struct?: TransferServerWorkflowDetailsOutputReference | TransferServerWorkflowDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -884,14 +884,14 @@ export function transferServerWorkflowDetailsToHclTerraform(struct?: TransferSer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TransferServerWorkflowDetailsOutputReference extends cdktf.ComplexObject {
+export class TransferServerWorkflowDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -958,7 +958,7 @@ export class TransferServerWorkflowDetailsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_server aws_transfer_server}
 */
-export class TransferServer extends cdktf.TerraformResource {
+export class TransferServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -969,14 +969,14 @@ export class TransferServer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferServer to import
   * @param importFromId The id of the existing TransferServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -1112,11 +1112,11 @@ export class TransferServer extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -1263,7 +1263,7 @@ export class TransferServer extends cdktf.TerraformResource {
   // protocols - computed: true, optional: true, required: false
   private _protocols?: string[]; 
   public get protocols() {
-    return cdktf.Fn.tolist(this.getListAttribute('protocols'));
+    return cdktn.Fn.tolist(this.getListAttribute('protocols'));
   }
   public set protocols(value: string[]) {
     this._protocols = value;
@@ -1327,7 +1327,7 @@ export class TransferServer extends cdktf.TerraformResource {
   // structured_log_destinations - computed: false, optional: true, required: false
   private _structuredLogDestinations?: string[]; 
   public get structuredLogDestinations() {
-    return cdktf.Fn.tolist(this.getListAttribute('structured_log_destinations'));
+    return cdktn.Fn.tolist(this.getListAttribute('structured_log_destinations'));
   }
   public set structuredLogDestinations(value: string[]) {
     this._structuredLogDestinations = value;
@@ -1458,27 +1458,27 @@ export class TransferServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate: cdktf.stringToTerraform(this._certificate),
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      domain: cdktf.stringToTerraform(this._domain),
-      endpoint_type: cdktf.stringToTerraform(this._endpointType),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      function: cdktf.stringToTerraform(this._function),
-      host_key: cdktf.stringToTerraform(this._hostKey),
-      id: cdktf.stringToTerraform(this._id),
-      identity_provider_type: cdktf.stringToTerraform(this._identityProviderType),
-      invocation_role: cdktf.stringToTerraform(this._invocationRole),
-      logging_role: cdktf.stringToTerraform(this._loggingRole),
-      post_authentication_login_banner: cdktf.stringToTerraform(this._postAuthenticationLoginBanner),
-      pre_authentication_login_banner: cdktf.stringToTerraform(this._preAuthenticationLoginBanner),
-      protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protocols),
-      region: cdktf.stringToTerraform(this._region),
-      security_policy_name: cdktf.stringToTerraform(this._securityPolicyName),
-      sftp_authentication_methods: cdktf.stringToTerraform(this._sftpAuthenticationMethods),
-      structured_log_destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._structuredLogDestinations),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      url: cdktf.stringToTerraform(this._url),
+      certificate: cdktn.stringToTerraform(this._certificate),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      domain: cdktn.stringToTerraform(this._domain),
+      endpoint_type: cdktn.stringToTerraform(this._endpointType),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      function: cdktn.stringToTerraform(this._function),
+      host_key: cdktn.stringToTerraform(this._hostKey),
+      id: cdktn.stringToTerraform(this._id),
+      identity_provider_type: cdktn.stringToTerraform(this._identityProviderType),
+      invocation_role: cdktn.stringToTerraform(this._invocationRole),
+      logging_role: cdktn.stringToTerraform(this._loggingRole),
+      post_authentication_login_banner: cdktn.stringToTerraform(this._postAuthenticationLoginBanner),
+      pre_authentication_login_banner: cdktn.stringToTerraform(this._preAuthenticationLoginBanner),
+      protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(this._protocols),
+      region: cdktn.stringToTerraform(this._region),
+      security_policy_name: cdktn.stringToTerraform(this._securityPolicyName),
+      sftp_authentication_methods: cdktn.stringToTerraform(this._sftpAuthenticationMethods),
+      structured_log_destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._structuredLogDestinations),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      url: cdktn.stringToTerraform(this._url),
       endpoint_details: transferServerEndpointDetailsToTerraform(this._endpointDetails.internalValue),
       protocol_details: transferServerProtocolDetailsToTerraform(this._protocolDetails.internalValue),
       s3_storage_options: transferServerS3StorageOptionsToTerraform(this._s3StorageOptions.internalValue),
@@ -1489,127 +1489,127 @@ export class TransferServer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate: {
-        value: cdktf.stringToHclTerraform(this._certificate),
+        value: cdktn.stringToHclTerraform(this._certificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_type: {
-        value: cdktf.stringToHclTerraform(this._endpointType),
+        value: cdktn.stringToHclTerraform(this._endpointType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       function: {
-        value: cdktf.stringToHclTerraform(this._function),
+        value: cdktn.stringToHclTerraform(this._function),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_key: {
-        value: cdktf.stringToHclTerraform(this._hostKey),
+        value: cdktn.stringToHclTerraform(this._hostKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_provider_type: {
-        value: cdktf.stringToHclTerraform(this._identityProviderType),
+        value: cdktn.stringToHclTerraform(this._identityProviderType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invocation_role: {
-        value: cdktf.stringToHclTerraform(this._invocationRole),
+        value: cdktn.stringToHclTerraform(this._invocationRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logging_role: {
-        value: cdktf.stringToHclTerraform(this._loggingRole),
+        value: cdktn.stringToHclTerraform(this._loggingRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       post_authentication_login_banner: {
-        value: cdktf.stringToHclTerraform(this._postAuthenticationLoginBanner),
+        value: cdktn.stringToHclTerraform(this._postAuthenticationLoginBanner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pre_authentication_login_banner: {
-        value: cdktf.stringToHclTerraform(this._preAuthenticationLoginBanner),
+        value: cdktn.stringToHclTerraform(this._preAuthenticationLoginBanner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocols: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._protocols),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._protocols),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_policy_name: {
-        value: cdktf.stringToHclTerraform(this._securityPolicyName),
+        value: cdktn.stringToHclTerraform(this._securityPolicyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sftp_authentication_methods: {
-        value: cdktf.stringToHclTerraform(this._sftpAuthenticationMethods),
+        value: cdktn.stringToHclTerraform(this._sftpAuthenticationMethods),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       structured_log_destinations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._structuredLogDestinations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._structuredLogDestinations),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

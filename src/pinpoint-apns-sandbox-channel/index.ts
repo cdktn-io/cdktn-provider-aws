@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PinpointApnsSandboxChannelConfig extends cdktf.TerraformMetaArguments {
+export interface PinpointApnsSandboxChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_apns_sandbox_channel#application_id PinpointApnsSandboxChannel#application_id}
   */
@@ -31,7 +31,7 @@ export interface PinpointApnsSandboxChannelConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_apns_sandbox_channel#enabled PinpointApnsSandboxChannel#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_apns_sandbox_channel#id PinpointApnsSandboxChannel#id}
   *
@@ -66,7 +66,7 @@ export interface PinpointApnsSandboxChannelConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_apns_sandbox_channel aws_pinpoint_apns_sandbox_channel}
 */
-export class PinpointApnsSandboxChannel extends cdktf.TerraformResource {
+export class PinpointApnsSandboxChannel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class PinpointApnsSandboxChannel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PinpointApnsSandboxChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PinpointApnsSandboxChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PinpointApnsSandboxChannel to import
   * @param importFromId The id of the existing PinpointApnsSandboxChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_apns_sandbox_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PinpointApnsSandboxChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_apns_sandbox_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_apns_sandbox_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -193,11 +193,11 @@ export class PinpointApnsSandboxChannel extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -310,84 +310,84 @@ export class PinpointApnsSandboxChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      bundle_id: cdktf.stringToTerraform(this._bundleId),
-      certificate: cdktf.stringToTerraform(this._certificate),
-      default_authentication_method: cdktf.stringToTerraform(this._defaultAuthenticationMethod),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      private_key: cdktf.stringToTerraform(this._privateKey),
-      region: cdktf.stringToTerraform(this._region),
-      team_id: cdktf.stringToTerraform(this._teamId),
-      token_key: cdktf.stringToTerraform(this._tokenKey),
-      token_key_id: cdktf.stringToTerraform(this._tokenKeyId),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      bundle_id: cdktn.stringToTerraform(this._bundleId),
+      certificate: cdktn.stringToTerraform(this._certificate),
+      default_authentication_method: cdktn.stringToTerraform(this._defaultAuthenticationMethod),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      private_key: cdktn.stringToTerraform(this._privateKey),
+      region: cdktn.stringToTerraform(this._region),
+      team_id: cdktn.stringToTerraform(this._teamId),
+      token_key: cdktn.stringToTerraform(this._tokenKey),
+      token_key_id: cdktn.stringToTerraform(this._tokenKeyId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bundle_id: {
-        value: cdktf.stringToHclTerraform(this._bundleId),
+        value: cdktn.stringToHclTerraform(this._bundleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate: {
-        value: cdktf.stringToHclTerraform(this._certificate),
+        value: cdktn.stringToHclTerraform(this._certificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_authentication_method: {
-        value: cdktf.stringToHclTerraform(this._defaultAuthenticationMethod),
+        value: cdktn.stringToHclTerraform(this._defaultAuthenticationMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key: {
-        value: cdktf.stringToHclTerraform(this._privateKey),
+        value: cdktn.stringToHclTerraform(this._privateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       team_id: {
-        value: cdktf.stringToHclTerraform(this._teamId),
+        value: cdktn.stringToHclTerraform(this._teamId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_key: {
-        value: cdktf.stringToHclTerraform(this._tokenKey),
+        value: cdktn.stringToHclTerraform(this._tokenKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_key_id: {
-        value: cdktf.stringToHclTerraform(this._tokenKeyId),
+        value: cdktn.stringToHclTerraform(this._tokenKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
+export interface EmrInstanceGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_instance_group#autoscaling_policy EmrInstanceGroup#autoscaling_policy}
   */
@@ -31,7 +31,7 @@ export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_instance_group#ebs_optimized EmrInstanceGroup#ebs_optimized}
   */
-  readonly ebsOptimized?: boolean | cdktf.IResolvable;
+  readonly ebsOptimized?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_instance_group#id EmrInstanceGroup#id}
   *
@@ -62,7 +62,7 @@ export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_instance_group#ebs_config EmrInstanceGroup#ebs_config}
   */
-  readonly ebsConfig?: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable;
+  readonly ebsConfig?: EmrInstanceGroupEbsConfig[] | cdktn.IResolvable;
 }
 export interface EmrInstanceGroupEbsConfig {
   /**
@@ -83,46 +83,46 @@ export interface EmrInstanceGroupEbsConfig {
   readonly volumesPerInstance?: number;
 }
 
-export function emrInstanceGroupEbsConfigToTerraform(struct?: EmrInstanceGroupEbsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrInstanceGroupEbsConfigToTerraform(struct?: EmrInstanceGroupEbsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    iops: cdktf.numberToTerraform(struct!.iops),
-    size: cdktf.numberToTerraform(struct!.size),
-    type: cdktf.stringToTerraform(struct!.type),
-    volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
+    iops: cdktn.numberToTerraform(struct!.iops),
+    size: cdktn.numberToTerraform(struct!.size),
+    type: cdktn.stringToTerraform(struct!.type),
+    volumes_per_instance: cdktn.numberToTerraform(struct!.volumesPerInstance),
   }
 }
 
 
-export function emrInstanceGroupEbsConfigToHclTerraform(struct?: EmrInstanceGroupEbsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrInstanceGroupEbsConfigToHclTerraform(struct?: EmrInstanceGroupEbsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     iops: {
-      value: cdktf.numberToHclTerraform(struct!.iops),
+      value: cdktn.numberToHclTerraform(struct!.iops),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
+      value: cdktn.numberToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volumes_per_instance: {
-      value: cdktf.numberToHclTerraform(struct!.volumesPerInstance),
+      value: cdktn.numberToHclTerraform(struct!.volumesPerInstance),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -133,9 +133,9 @@ export function emrInstanceGroupEbsConfigToHclTerraform(struct?: EmrInstanceGrou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrInstanceGroupEbsConfigOutputReference extends cdktf.ComplexObject {
+export class EmrInstanceGroupEbsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -143,11 +143,11 @@ export class EmrInstanceGroupEbsConfigOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmrInstanceGroupEbsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): EmrInstanceGroupEbsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class EmrInstanceGroupEbsConfigOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmrInstanceGroupEbsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmrInstanceGroupEbsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class EmrInstanceGroupEbsConfigOutputReference extends cdktf.ComplexObjec
       this._type = undefined;
       this._volumesPerInstance = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -254,15 +254,15 @@ export class EmrInstanceGroupEbsConfigOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class EmrInstanceGroupEbsConfigList extends cdktf.ComplexList {
-  public internalValue? : EmrInstanceGroupEbsConfig[] | cdktf.IResolvable
+export class EmrInstanceGroupEbsConfigList extends cdktn.ComplexList {
+  public internalValue? : EmrInstanceGroupEbsConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -277,7 +277,7 @@ export class EmrInstanceGroupEbsConfigList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_instance_group aws_emr_instance_group}
 */
-export class EmrInstanceGroup extends cdktf.TerraformResource {
+export class EmrInstanceGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -288,14 +288,14 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EmrInstanceGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EmrInstanceGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmrInstanceGroup to import
   * @param importFromId The id of the existing EmrInstanceGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_instance_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmrInstanceGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_emr_instance_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_emr_instance_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -404,11 +404,11 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   }
 
   // ebs_optimized - computed: false, optional: true, required: false
-  private _ebsOptimized?: boolean | cdktf.IResolvable; 
+  private _ebsOptimized?: boolean | cdktn.IResolvable; 
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean | cdktf.IResolvable) {
+  public set ebsOptimized(value: boolean | cdktn.IResolvable) {
     this._ebsOptimized = value;
   }
   public resetEbsOptimized() {
@@ -511,7 +511,7 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   public get ebsConfig() {
     return this._ebsConfig;
   }
-  public putEbsConfig(value: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable) {
+  public putEbsConfig(value: EmrInstanceGroupEbsConfig[] | cdktn.IResolvable) {
     this._ebsConfig.internalValue = value;
   }
   public resetEbsConfig() {
@@ -528,84 +528,84 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autoscaling_policy: cdktf.stringToTerraform(this._autoscalingPolicy),
-      bid_price: cdktf.stringToTerraform(this._bidPrice),
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      configurations_json: cdktf.stringToTerraform(this._configurationsJson),
-      ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
-      id: cdktf.stringToTerraform(this._id),
-      instance_count: cdktf.numberToTerraform(this._instanceCount),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      ebs_config: cdktf.listMapper(emrInstanceGroupEbsConfigToTerraform, true)(this._ebsConfig.internalValue),
+      autoscaling_policy: cdktn.stringToTerraform(this._autoscalingPolicy),
+      bid_price: cdktn.stringToTerraform(this._bidPrice),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      configurations_json: cdktn.stringToTerraform(this._configurationsJson),
+      ebs_optimized: cdktn.booleanToTerraform(this._ebsOptimized),
+      id: cdktn.stringToTerraform(this._id),
+      instance_count: cdktn.numberToTerraform(this._instanceCount),
+      instance_type: cdktn.stringToTerraform(this._instanceType),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      ebs_config: cdktn.listMapper(emrInstanceGroupEbsConfigToTerraform, true)(this._ebsConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       autoscaling_policy: {
-        value: cdktf.stringToHclTerraform(this._autoscalingPolicy),
+        value: cdktn.stringToHclTerraform(this._autoscalingPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bid_price: {
-        value: cdktf.stringToHclTerraform(this._bidPrice),
+        value: cdktn.stringToHclTerraform(this._bidPrice),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configurations_json: {
-        value: cdktf.stringToHclTerraform(this._configurationsJson),
+        value: cdktn.stringToHclTerraform(this._configurationsJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ebs_optimized: {
-        value: cdktf.booleanToHclTerraform(this._ebsOptimized),
+        value: cdktn.booleanToHclTerraform(this._ebsOptimized),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_count: {
-        value: cdktf.numberToHclTerraform(this._instanceCount),
+        value: cdktn.numberToHclTerraform(this._instanceCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       instance_type: {
-        value: cdktf.stringToHclTerraform(this._instanceType),
+        value: cdktn.stringToHclTerraform(this._instanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ebs_config: {
-        value: cdktf.listMapperHcl(emrInstanceGroupEbsConfigToHclTerraform, true)(this._ebsConfig.internalValue),
+        value: cdktn.listMapperHcl(emrInstanceGroupEbsConfigToHclTerraform, true)(this._ebsConfig.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "EmrInstanceGroupEbsConfigList",

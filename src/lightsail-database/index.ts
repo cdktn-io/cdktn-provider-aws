@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LightsailDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_database#apply_immediately LightsailDatabase#apply_immediately}
   */
-  readonly applyImmediately?: boolean | cdktf.IResolvable;
+  readonly applyImmediately?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_database#availability_zone LightsailDatabase#availability_zone}
   */
@@ -23,7 +23,7 @@ export interface LightsailDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_database#backup_retention_enabled LightsailDatabase#backup_retention_enabled}
   */
-  readonly backupRetentionEnabled?: boolean | cdktf.IResolvable;
+  readonly backupRetentionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_database#blueprint_id LightsailDatabase#blueprint_id}
   */
@@ -66,7 +66,7 @@ export interface LightsailDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_database#publicly_accessible LightsailDatabase#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
+  readonly publiclyAccessible?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -80,7 +80,7 @@ export interface LightsailDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_database#skip_final_snapshot LightsailDatabase#skip_final_snapshot}
   */
-  readonly skipFinalSnapshot?: boolean | cdktf.IResolvable;
+  readonly skipFinalSnapshot?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_database#tags LightsailDatabase#tags}
   */
@@ -94,7 +94,7 @@ export interface LightsailDatabaseConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_database aws_lightsail_database}
 */
-export class LightsailDatabase extends cdktf.TerraformResource {
+export class LightsailDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -105,14 +105,14 @@ export class LightsailDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LightsailDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LightsailDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LightsailDatabase to import
   * @param importFromId The id of the existing LightsailDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lightsail_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LightsailDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -167,11 +167,11 @@ export class LightsailDatabase extends cdktf.TerraformResource {
   // ==========
 
   // apply_immediately - computed: true, optional: true, required: false
-  private _applyImmediately?: boolean | cdktf.IResolvable; 
+  private _applyImmediately?: boolean | cdktn.IResolvable; 
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | cdktf.IResolvable) {
+  public set applyImmediately(value: boolean | cdktn.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -204,11 +204,11 @@ export class LightsailDatabase extends cdktf.TerraformResource {
   }
 
   // backup_retention_enabled - computed: false, optional: true, required: false
-  private _backupRetentionEnabled?: boolean | cdktf.IResolvable; 
+  private _backupRetentionEnabled?: boolean | cdktn.IResolvable; 
   public get backupRetentionEnabled() {
     return this.getBooleanAttribute('backup_retention_enabled');
   }
-  public set backupRetentionEnabled(value: boolean | cdktf.IResolvable) {
+  public set backupRetentionEnabled(value: boolean | cdktn.IResolvable) {
     this._backupRetentionEnabled = value;
   }
   public resetBackupRetentionEnabled() {
@@ -389,11 +389,11 @@ export class LightsailDatabase extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
-  private _publiclyAccessible?: boolean | cdktf.IResolvable; 
+  private _publiclyAccessible?: boolean | cdktn.IResolvable; 
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
+  public set publiclyAccessible(value: boolean | cdktn.IResolvable) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -444,11 +444,11 @@ export class LightsailDatabase extends cdktf.TerraformResource {
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
-  private _skipFinalSnapshot?: boolean | cdktf.IResolvable; 
+  private _skipFinalSnapshot?: boolean | cdktn.IResolvable; 
   public get skipFinalSnapshot() {
     return this.getBooleanAttribute('skip_final_snapshot');
   }
-  public set skipFinalSnapshot(value: boolean | cdktf.IResolvable) {
+  public set skipFinalSnapshot(value: boolean | cdktn.IResolvable) {
     this._skipFinalSnapshot = value;
   }
   public resetSkipFinalSnapshot() {
@@ -502,133 +502,133 @@ export class LightsailDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      backup_retention_enabled: cdktf.booleanToTerraform(this._backupRetentionEnabled),
-      blueprint_id: cdktf.stringToTerraform(this._blueprintId),
-      bundle_id: cdktf.stringToTerraform(this._bundleId),
-      final_snapshot_name: cdktf.stringToTerraform(this._finalSnapshotName),
-      id: cdktf.stringToTerraform(this._id),
-      master_database_name: cdktf.stringToTerraform(this._masterDatabaseName),
-      master_password: cdktf.stringToTerraform(this._masterPassword),
-      master_username: cdktf.stringToTerraform(this._masterUsername),
-      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      region: cdktf.stringToTerraform(this._region),
-      relational_database_name: cdktf.stringToTerraform(this._relationalDatabaseName),
-      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      apply_immediately: cdktn.booleanToTerraform(this._applyImmediately),
+      availability_zone: cdktn.stringToTerraform(this._availabilityZone),
+      backup_retention_enabled: cdktn.booleanToTerraform(this._backupRetentionEnabled),
+      blueprint_id: cdktn.stringToTerraform(this._blueprintId),
+      bundle_id: cdktn.stringToTerraform(this._bundleId),
+      final_snapshot_name: cdktn.stringToTerraform(this._finalSnapshotName),
+      id: cdktn.stringToTerraform(this._id),
+      master_database_name: cdktn.stringToTerraform(this._masterDatabaseName),
+      master_password: cdktn.stringToTerraform(this._masterPassword),
+      master_username: cdktn.stringToTerraform(this._masterUsername),
+      preferred_backup_window: cdktn.stringToTerraform(this._preferredBackupWindow),
+      preferred_maintenance_window: cdktn.stringToTerraform(this._preferredMaintenanceWindow),
+      publicly_accessible: cdktn.booleanToTerraform(this._publiclyAccessible),
+      region: cdktn.stringToTerraform(this._region),
+      relational_database_name: cdktn.stringToTerraform(this._relationalDatabaseName),
+      skip_final_snapshot: cdktn.booleanToTerraform(this._skipFinalSnapshot),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_immediately: {
-        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        value: cdktn.booleanToHclTerraform(this._applyImmediately),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       availability_zone: {
-        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        value: cdktn.stringToHclTerraform(this._availabilityZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backup_retention_enabled: {
-        value: cdktf.booleanToHclTerraform(this._backupRetentionEnabled),
+        value: cdktn.booleanToHclTerraform(this._backupRetentionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       blueprint_id: {
-        value: cdktf.stringToHclTerraform(this._blueprintId),
+        value: cdktn.stringToHclTerraform(this._blueprintId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bundle_id: {
-        value: cdktf.stringToHclTerraform(this._bundleId),
+        value: cdktn.stringToHclTerraform(this._bundleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       final_snapshot_name: {
-        value: cdktf.stringToHclTerraform(this._finalSnapshotName),
+        value: cdktn.stringToHclTerraform(this._finalSnapshotName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       master_database_name: {
-        value: cdktf.stringToHclTerraform(this._masterDatabaseName),
+        value: cdktn.stringToHclTerraform(this._masterDatabaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       master_password: {
-        value: cdktf.stringToHclTerraform(this._masterPassword),
+        value: cdktn.stringToHclTerraform(this._masterPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       master_username: {
-        value: cdktf.stringToHclTerraform(this._masterUsername),
+        value: cdktn.stringToHclTerraform(this._masterUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_backup_window: {
-        value: cdktf.stringToHclTerraform(this._preferredBackupWindow),
+        value: cdktn.stringToHclTerraform(this._preferredBackupWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_maintenance_window: {
-        value: cdktf.stringToHclTerraform(this._preferredMaintenanceWindow),
+        value: cdktn.stringToHclTerraform(this._preferredMaintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publicly_accessible: {
-        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        value: cdktn.booleanToHclTerraform(this._publiclyAccessible),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       relational_database_name: {
-        value: cdktf.stringToHclTerraform(this._relationalDatabaseName),
+        value: cdktn.stringToHclTerraform(this._relationalDatabaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_final_snapshot: {
-        value: cdktf.booleanToHclTerraform(this._skipFinalSnapshot),
+        value: cdktn.booleanToHclTerraform(this._skipFinalSnapshot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

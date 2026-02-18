@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitoIdentityPoolProviderPrincipalTagConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoIdentityPoolProviderPrincipalTagConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_pool_provider_principal_tag#id CognitoIdentityPoolProviderPrincipalTag#id}
   *
@@ -40,13 +40,13 @@ export interface CognitoIdentityPoolProviderPrincipalTagConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_pool_provider_principal_tag#use_defaults CognitoIdentityPoolProviderPrincipalTag#use_defaults}
   */
-  readonly useDefaults?: boolean | cdktf.IResolvable;
+  readonly useDefaults?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_pool_provider_principal_tag aws_cognito_identity_pool_provider_principal_tag}
 */
-export class CognitoIdentityPoolProviderPrincipalTag extends cdktf.TerraformResource {
+export class CognitoIdentityPoolProviderPrincipalTag extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class CognitoIdentityPoolProviderPrincipalTag extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitoIdentityPoolProviderPrincipalTag resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitoIdentityPoolProviderPrincipalTag resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoIdentityPoolProviderPrincipalTag to import
   * @param importFromId The id of the existing CognitoIdentityPoolProviderPrincipalTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_pool_provider_principal_tag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoIdentityPoolProviderPrincipalTag to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_identity_pool_provider_principal_tag", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_identity_pool_provider_principal_tag", importId: importFromId, provider });
       }
 
   // ===========
@@ -181,11 +181,11 @@ export class CognitoIdentityPoolProviderPrincipalTag extends cdktf.TerraformReso
   }
 
   // use_defaults - computed: false, optional: true, required: false
-  private _useDefaults?: boolean | cdktf.IResolvable; 
+  private _useDefaults?: boolean | cdktn.IResolvable; 
   public get useDefaults() {
     return this.getBooleanAttribute('use_defaults');
   }
-  public set useDefaults(value: boolean | cdktf.IResolvable) {
+  public set useDefaults(value: boolean | cdktn.IResolvable) {
     this._useDefaults = value;
   }
   public resetUseDefaults() {
@@ -202,49 +202,49 @@ export class CognitoIdentityPoolProviderPrincipalTag extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      identity_pool_id: cdktf.stringToTerraform(this._identityPoolId),
-      identity_provider_name: cdktf.stringToTerraform(this._identityProviderName),
-      principal_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._principalTags),
-      region: cdktf.stringToTerraform(this._region),
-      use_defaults: cdktf.booleanToTerraform(this._useDefaults),
+      id: cdktn.stringToTerraform(this._id),
+      identity_pool_id: cdktn.stringToTerraform(this._identityPoolId),
+      identity_provider_name: cdktn.stringToTerraform(this._identityProviderName),
+      principal_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._principalTags),
+      region: cdktn.stringToTerraform(this._region),
+      use_defaults: cdktn.booleanToTerraform(this._useDefaults),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_pool_id: {
-        value: cdktf.stringToHclTerraform(this._identityPoolId),
+        value: cdktn.stringToHclTerraform(this._identityPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_provider_name: {
-        value: cdktf.stringToHclTerraform(this._identityProviderName),
+        value: cdktn.stringToHclTerraform(this._identityProviderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._principalTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._principalTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_defaults: {
-        value: cdktf.booleanToHclTerraform(this._useDefaults),
+        value: cdktn.booleanToHclTerraform(this._useDefaults),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

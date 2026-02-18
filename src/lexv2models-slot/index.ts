@@ -27,8 +27,8 @@ lexv2ModelsSlotValueElicitationSettingToHclTerraform,
 Lexv2ModelsSlotValueElicitationSettingList} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface Lexv2ModelsSlotConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface Lexv2ModelsSlotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#bot_id Lexv2ModelsSlot#bot_id}
   */
@@ -68,19 +68,19 @@ export interface Lexv2ModelsSlotConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#multiple_values_setting Lexv2ModelsSlot#multiple_values_setting}
   */
-  readonly multipleValuesSetting?: Lexv2ModelsSlotMultipleValuesSetting[] | cdktf.IResolvable;
+  readonly multipleValuesSetting?: Lexv2ModelsSlotMultipleValuesSetting[] | cdktn.IResolvable;
   /**
   * obfuscation_setting block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#obfuscation_setting Lexv2ModelsSlot#obfuscation_setting}
   */
-  readonly obfuscationSetting?: Lexv2ModelsSlotObfuscationSetting[] | cdktf.IResolvable;
+  readonly obfuscationSetting?: Lexv2ModelsSlotObfuscationSetting[] | cdktn.IResolvable;
   /**
   * sub_slot_setting block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#sub_slot_setting Lexv2ModelsSlot#sub_slot_setting}
   */
-  readonly subSlotSetting?: Lexv2ModelsSlotSubSlotSetting[] | cdktf.IResolvable;
+  readonly subSlotSetting?: Lexv2ModelsSlotSubSlotSetting[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -92,13 +92,13 @@ export interface Lexv2ModelsSlotConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value_elicitation_setting Lexv2ModelsSlot#value_elicitation_setting}
   */
-  readonly valueElicitationSetting?: Lexv2ModelsSlotValueElicitationSetting[] | cdktf.IResolvable;
+  readonly valueElicitationSetting?: Lexv2ModelsSlotValueElicitationSetting[] | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot aws_lexv2models_slot}
 */
-export class Lexv2ModelsSlot extends cdktf.TerraformResource {
+export class Lexv2ModelsSlot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -109,14 +109,14 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Lexv2ModelsSlot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Lexv2ModelsSlot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lexv2ModelsSlot to import
   * @param importFromId The id of the existing Lexv2ModelsSlot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lexv2ModelsSlot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_slot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_slot", importId: importFromId, provider });
       }
 
   // ===========
@@ -293,7 +293,7 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
   public get multipleValuesSetting() {
     return this._multipleValuesSetting;
   }
-  public putMultipleValuesSetting(value: Lexv2ModelsSlotMultipleValuesSetting[] | cdktf.IResolvable) {
+  public putMultipleValuesSetting(value: Lexv2ModelsSlotMultipleValuesSetting[] | cdktn.IResolvable) {
     this._multipleValuesSetting.internalValue = value;
   }
   public resetMultipleValuesSetting() {
@@ -309,7 +309,7 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
   public get obfuscationSetting() {
     return this._obfuscationSetting;
   }
-  public putObfuscationSetting(value: Lexv2ModelsSlotObfuscationSetting[] | cdktf.IResolvable) {
+  public putObfuscationSetting(value: Lexv2ModelsSlotObfuscationSetting[] | cdktn.IResolvable) {
     this._obfuscationSetting.internalValue = value;
   }
   public resetObfuscationSetting() {
@@ -325,7 +325,7 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
   public get subSlotSetting() {
     return this._subSlotSetting;
   }
-  public putSubSlotSetting(value: Lexv2ModelsSlotSubSlotSetting[] | cdktf.IResolvable) {
+  public putSubSlotSetting(value: Lexv2ModelsSlotSubSlotSetting[] | cdktn.IResolvable) {
     this._subSlotSetting.internalValue = value;
   }
   public resetSubSlotSetting() {
@@ -357,7 +357,7 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
   public get valueElicitationSetting() {
     return this._valueElicitationSetting;
   }
-  public putValueElicitationSetting(value: Lexv2ModelsSlotValueElicitationSetting[] | cdktf.IResolvable) {
+  public putValueElicitationSetting(value: Lexv2ModelsSlotValueElicitationSetting[] | cdktn.IResolvable) {
     this._valueElicitationSetting.internalValue = value;
   }
   public resetValueElicitationSetting() {
@@ -374,86 +374,86 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bot_id: cdktf.stringToTerraform(this._botId),
-      bot_version: cdktf.stringToTerraform(this._botVersion),
-      description: cdktf.stringToTerraform(this._description),
-      intent_id: cdktf.stringToTerraform(this._intentId),
-      locale_id: cdktf.stringToTerraform(this._localeId),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      slot_type_id: cdktf.stringToTerraform(this._slotTypeId),
-      multiple_values_setting: cdktf.listMapper(lexv2ModelsSlotMultipleValuesSettingToTerraform, true)(this._multipleValuesSetting.internalValue),
-      obfuscation_setting: cdktf.listMapper(lexv2ModelsSlotObfuscationSettingToTerraform, true)(this._obfuscationSetting.internalValue),
-      sub_slot_setting: cdktf.listMapper(lexv2ModelsSlotSubSlotSettingToTerraform, true)(this._subSlotSetting.internalValue),
+      bot_id: cdktn.stringToTerraform(this._botId),
+      bot_version: cdktn.stringToTerraform(this._botVersion),
+      description: cdktn.stringToTerraform(this._description),
+      intent_id: cdktn.stringToTerraform(this._intentId),
+      locale_id: cdktn.stringToTerraform(this._localeId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      slot_type_id: cdktn.stringToTerraform(this._slotTypeId),
+      multiple_values_setting: cdktn.listMapper(lexv2ModelsSlotMultipleValuesSettingToTerraform, true)(this._multipleValuesSetting.internalValue),
+      obfuscation_setting: cdktn.listMapper(lexv2ModelsSlotObfuscationSettingToTerraform, true)(this._obfuscationSetting.internalValue),
+      sub_slot_setting: cdktn.listMapper(lexv2ModelsSlotSubSlotSettingToTerraform, true)(this._subSlotSetting.internalValue),
       timeouts: lexv2ModelsSlotTimeoutsToTerraform(this._timeouts.internalValue),
-      value_elicitation_setting: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingToTerraform, true)(this._valueElicitationSetting.internalValue),
+      value_elicitation_setting: cdktn.listMapper(lexv2ModelsSlotValueElicitationSettingToTerraform, true)(this._valueElicitationSetting.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bot_id: {
-        value: cdktf.stringToHclTerraform(this._botId),
+        value: cdktn.stringToHclTerraform(this._botId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bot_version: {
-        value: cdktf.stringToHclTerraform(this._botVersion),
+        value: cdktn.stringToHclTerraform(this._botVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       intent_id: {
-        value: cdktf.stringToHclTerraform(this._intentId),
+        value: cdktn.stringToHclTerraform(this._intentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       locale_id: {
-        value: cdktf.stringToHclTerraform(this._localeId),
+        value: cdktn.stringToHclTerraform(this._localeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       slot_type_id: {
-        value: cdktf.stringToHclTerraform(this._slotTypeId),
+        value: cdktn.stringToHclTerraform(this._slotTypeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multiple_values_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsSlotMultipleValuesSettingToHclTerraform, true)(this._multipleValuesSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsSlotMultipleValuesSettingToHclTerraform, true)(this._multipleValuesSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsSlotMultipleValuesSettingList",
       },
       obfuscation_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsSlotObfuscationSettingToHclTerraform, true)(this._obfuscationSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsSlotObfuscationSettingToHclTerraform, true)(this._obfuscationSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsSlotObfuscationSettingList",
       },
       sub_slot_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsSlotSubSlotSettingToHclTerraform, true)(this._subSlotSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsSlotSubSlotSettingToHclTerraform, true)(this._subSlotSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsSlotSubSlotSettingList",
@@ -465,7 +465,7 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
         storageClassType: "Lexv2ModelsSlotTimeouts",
       },
       value_elicitation_setting: {
-        value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingToHclTerraform, true)(this._valueElicitationSetting.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsSlotValueElicitationSettingToHclTerraform, true)(this._valueElicitationSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsSlotValueElicitationSettingList",

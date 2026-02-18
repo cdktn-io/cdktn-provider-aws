@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OdbNetworkPeeringConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface OdbNetworkPeeringConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Display name of the odb network peering connection. Changing this will force terraform to create new resource
   *
@@ -74,39 +74,39 @@ export interface OdbNetworkPeeringConnectionTimeouts {
   readonly update?: string;
 }
 
-export function odbNetworkPeeringConnectionTimeoutsToTerraform(struct?: OdbNetworkPeeringConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbNetworkPeeringConnectionTimeoutsToTerraform(struct?: OdbNetworkPeeringConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function odbNetworkPeeringConnectionTimeoutsToHclTerraform(struct?: OdbNetworkPeeringConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function odbNetworkPeeringConnectionTimeoutsToHclTerraform(struct?: OdbNetworkPeeringConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,19 +117,19 @@ export function odbNetworkPeeringConnectionTimeoutsToHclTerraform(struct?: OdbNe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OdbNetworkPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OdbNetworkPeeringConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OdbNetworkPeeringConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OdbNetworkPeeringConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,7 +150,7 @@ export class OdbNetworkPeeringConnectionTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OdbNetworkPeeringConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OdbNetworkPeeringConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -158,7 +158,7 @@ export class OdbNetworkPeeringConnectionTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -223,7 +223,7 @@ export class OdbNetworkPeeringConnectionTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_network_peering_connection aws_odb_network_peering_connection}
 */
-export class OdbNetworkPeeringConnection extends cdktf.TerraformResource {
+export class OdbNetworkPeeringConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -234,14 +234,14 @@ export class OdbNetworkPeeringConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OdbNetworkPeeringConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OdbNetworkPeeringConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OdbNetworkPeeringConnection to import
   * @param importFromId The id of the existing OdbNetworkPeeringConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/odb_network_peering_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OdbNetworkPeeringConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_network_peering_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_odb_network_peering_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -415,7 +415,7 @@ export class OdbNetworkPeeringConnection extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -442,12 +442,12 @@ export class OdbNetworkPeeringConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      odb_network_arn: cdktf.stringToTerraform(this._odbNetworkArn),
-      odb_network_id: cdktf.stringToTerraform(this._odbNetworkId),
-      peer_network_id: cdktf.stringToTerraform(this._peerNetworkId),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      odb_network_arn: cdktn.stringToTerraform(this._odbNetworkArn),
+      odb_network_id: cdktn.stringToTerraform(this._odbNetworkId),
+      peer_network_id: cdktn.stringToTerraform(this._peerNetworkId),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: odbNetworkPeeringConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -455,37 +455,37 @@ export class OdbNetworkPeeringConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       odb_network_arn: {
-        value: cdktf.stringToHclTerraform(this._odbNetworkArn),
+        value: cdktn.stringToHclTerraform(this._odbNetworkArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       odb_network_id: {
-        value: cdktf.stringToHclTerraform(this._odbNetworkId),
+        value: cdktn.stringToHclTerraform(this._odbNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_network_id: {
-        value: cdktf.stringToHclTerraform(this._peerNetworkId),
+        value: cdktn.stringToHclTerraform(this._peerNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

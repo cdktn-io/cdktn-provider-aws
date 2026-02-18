@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EbsSnapshotImportConfig extends cdktf.TerraformMetaArguments {
+export interface EbsSnapshotImportConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot_import#description EbsSnapshotImport#description}
   */
@@ -19,7 +19,7 @@ export interface EbsSnapshotImportConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot_import#encrypted EbsSnapshotImport#encrypted}
   */
-  readonly encrypted?: boolean | cdktf.IResolvable;
+  readonly encrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot_import#id EbsSnapshotImport#id}
   *
@@ -34,7 +34,7 @@ export interface EbsSnapshotImportConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot_import#permanent_restore EbsSnapshotImport#permanent_restore}
   */
-  readonly permanentRestore?: boolean | cdktf.IResolvable;
+  readonly permanentRestore?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -100,45 +100,45 @@ export interface EbsSnapshotImportClientData {
 }
 
 export function ebsSnapshotImportClientDataToTerraform(struct?: EbsSnapshotImportClientDataOutputReference | EbsSnapshotImportClientData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comment: cdktf.stringToTerraform(struct!.comment),
-    upload_end: cdktf.stringToTerraform(struct!.uploadEnd),
-    upload_size: cdktf.numberToTerraform(struct!.uploadSize),
-    upload_start: cdktf.stringToTerraform(struct!.uploadStart),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    upload_end: cdktn.stringToTerraform(struct!.uploadEnd),
+    upload_size: cdktn.numberToTerraform(struct!.uploadSize),
+    upload_start: cdktn.stringToTerraform(struct!.uploadStart),
   }
 }
 
 
 export function ebsSnapshotImportClientDataToHclTerraform(struct?: EbsSnapshotImportClientDataOutputReference | EbsSnapshotImportClientData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     upload_end: {
-      value: cdktf.stringToHclTerraform(struct!.uploadEnd),
+      value: cdktn.stringToHclTerraform(struct!.uploadEnd),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     upload_size: {
-      value: cdktf.numberToHclTerraform(struct!.uploadSize),
+      value: cdktn.numberToHclTerraform(struct!.uploadSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     upload_start: {
-      value: cdktf.stringToHclTerraform(struct!.uploadStart),
+      value: cdktn.stringToHclTerraform(struct!.uploadStart),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -149,14 +149,14 @@ export function ebsSnapshotImportClientDataToHclTerraform(struct?: EbsSnapshotIm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EbsSnapshotImportClientDataOutputReference extends cdktf.ComplexObject {
+export class EbsSnapshotImportClientDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -275,31 +275,31 @@ export interface EbsSnapshotImportDiskContainerUserBucket {
 }
 
 export function ebsSnapshotImportDiskContainerUserBucketToTerraform(struct?: EbsSnapshotImportDiskContainerUserBucketOutputReference | EbsSnapshotImportDiskContainerUserBucket): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_bucket: cdktf.stringToTerraform(struct!.s3Bucket),
-    s3_key: cdktf.stringToTerraform(struct!.s3Key),
+    s3_bucket: cdktn.stringToTerraform(struct!.s3Bucket),
+    s3_key: cdktn.stringToTerraform(struct!.s3Key),
   }
 }
 
 
 export function ebsSnapshotImportDiskContainerUserBucketToHclTerraform(struct?: EbsSnapshotImportDiskContainerUserBucketOutputReference | EbsSnapshotImportDiskContainerUserBucket): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_bucket: {
-      value: cdktf.stringToHclTerraform(struct!.s3Bucket),
+      value: cdktn.stringToHclTerraform(struct!.s3Bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_key: {
-      value: cdktf.stringToHclTerraform(struct!.s3Key),
+      value: cdktn.stringToHclTerraform(struct!.s3Key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -310,14 +310,14 @@ export function ebsSnapshotImportDiskContainerUserBucketToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EbsSnapshotImportDiskContainerUserBucketOutputReference extends cdktf.ComplexObject {
+export class EbsSnapshotImportDiskContainerUserBucketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -396,39 +396,39 @@ export interface EbsSnapshotImportDiskContainer {
 }
 
 export function ebsSnapshotImportDiskContainerToTerraform(struct?: EbsSnapshotImportDiskContainerOutputReference | EbsSnapshotImportDiskContainer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    format: cdktf.stringToTerraform(struct!.format),
-    url: cdktf.stringToTerraform(struct!.url),
+    description: cdktn.stringToTerraform(struct!.description),
+    format: cdktn.stringToTerraform(struct!.format),
+    url: cdktn.stringToTerraform(struct!.url),
     user_bucket: ebsSnapshotImportDiskContainerUserBucketToTerraform(struct!.userBucket),
   }
 }
 
 
 export function ebsSnapshotImportDiskContainerToHclTerraform(struct?: EbsSnapshotImportDiskContainerOutputReference | EbsSnapshotImportDiskContainer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -445,14 +445,14 @@ export function ebsSnapshotImportDiskContainerToHclTerraform(struct?: EbsSnapsho
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EbsSnapshotImportDiskContainerOutputReference extends cdktf.ComplexObject {
+export class EbsSnapshotImportDiskContainerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -567,32 +567,32 @@ export interface EbsSnapshotImportTimeouts {
   readonly delete?: string;
 }
 
-export function ebsSnapshotImportTimeoutsToTerraform(struct?: EbsSnapshotImportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ebsSnapshotImportTimeoutsToTerraform(struct?: EbsSnapshotImportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ebsSnapshotImportTimeoutsToHclTerraform(struct?: EbsSnapshotImportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ebsSnapshotImportTimeoutsToHclTerraform(struct?: EbsSnapshotImportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -603,19 +603,19 @@ export function ebsSnapshotImportTimeoutsToHclTerraform(struct?: EbsSnapshotImpo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EbsSnapshotImportTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EbsSnapshotImportTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EbsSnapshotImportTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EbsSnapshotImportTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -632,14 +632,14 @@ export class EbsSnapshotImportTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EbsSnapshotImportTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EbsSnapshotImportTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -687,7 +687,7 @@ export class EbsSnapshotImportTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import}
 */
-export class EbsSnapshotImport extends cdktf.TerraformResource {
+export class EbsSnapshotImport extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -698,14 +698,14 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EbsSnapshotImport resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EbsSnapshotImport resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EbsSnapshotImport to import
   * @param importFromId The id of the existing EbsSnapshotImport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ebs_snapshot_import#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EbsSnapshotImport to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_snapshot_import", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_snapshot_import", importId: importFromId, provider });
       }
 
   // ===========
@@ -782,11 +782,11 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   }
 
   // encrypted - computed: false, optional: true, required: false
-  private _encrypted?: boolean | cdktf.IResolvable; 
+  private _encrypted?: boolean | cdktn.IResolvable; 
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | cdktf.IResolvable) {
+  public set encrypted(value: boolean | cdktn.IResolvable) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -845,11 +845,11 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   }
 
   // permanent_restore - computed: false, optional: true, required: false
-  private _permanentRestore?: boolean | cdktf.IResolvable; 
+  private _permanentRestore?: boolean | cdktn.IResolvable; 
   public get permanentRestore() {
     return this.getBooleanAttribute('permanent_restore');
   }
-  public set permanentRestore(value: boolean | cdktf.IResolvable) {
+  public set permanentRestore(value: boolean | cdktn.IResolvable) {
     this._permanentRestore = value;
   }
   public resetPermanentRestore() {
@@ -1017,17 +1017,17 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      encrypted: cdktf.booleanToTerraform(this._encrypted),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      permanent_restore: cdktf.booleanToTerraform(this._permanentRestore),
-      region: cdktf.stringToTerraform(this._region),
-      role_name: cdktf.stringToTerraform(this._roleName),
-      storage_tier: cdktf.stringToTerraform(this._storageTier),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      temporary_restore_days: cdktf.numberToTerraform(this._temporaryRestoreDays),
+      description: cdktn.stringToTerraform(this._description),
+      encrypted: cdktn.booleanToTerraform(this._encrypted),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      permanent_restore: cdktn.booleanToTerraform(this._permanentRestore),
+      region: cdktn.stringToTerraform(this._region),
+      role_name: cdktn.stringToTerraform(this._roleName),
+      storage_tier: cdktn.stringToTerraform(this._storageTier),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      temporary_restore_days: cdktn.numberToTerraform(this._temporaryRestoreDays),
       client_data: ebsSnapshotImportClientDataToTerraform(this._clientData.internalValue),
       disk_container: ebsSnapshotImportDiskContainerToTerraform(this._diskContainer.internalValue),
       timeouts: ebsSnapshotImportTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1037,67 +1037,67 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encrypted: {
-        value: cdktf.booleanToHclTerraform(this._encrypted),
+        value: cdktn.booleanToHclTerraform(this._encrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permanent_restore: {
-        value: cdktf.booleanToHclTerraform(this._permanentRestore),
+        value: cdktn.booleanToHclTerraform(this._permanentRestore),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_tier: {
-        value: cdktf.stringToHclTerraform(this._storageTier),
+        value: cdktn.stringToHclTerraform(this._storageTier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       temporary_restore_days: {
-        value: cdktf.numberToHclTerraform(this._temporaryRestoreDays),
+        value: cdktn.numberToHclTerraform(this._temporaryRestoreDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

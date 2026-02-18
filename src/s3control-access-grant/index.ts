@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3ControlAccessGrantConfig extends cdktf.TerraformMetaArguments {
+export interface S3ControlAccessGrantConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_access_grant#access_grants_location_id S3ControlAccessGrant#access_grants_location_id}
   */
@@ -43,13 +43,13 @@ export interface S3ControlAccessGrantConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_access_grant#access_grants_location_configuration S3ControlAccessGrant#access_grants_location_configuration}
   */
-  readonly accessGrantsLocationConfiguration?: S3ControlAccessGrantAccessGrantsLocationConfiguration[] | cdktf.IResolvable;
+  readonly accessGrantsLocationConfiguration?: S3ControlAccessGrantAccessGrantsLocationConfiguration[] | cdktn.IResolvable;
   /**
   * grantee block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_access_grant#grantee S3ControlAccessGrant#grantee}
   */
-  readonly grantee?: S3ControlAccessGrantGrantee[] | cdktf.IResolvable;
+  readonly grantee?: S3ControlAccessGrantGrantee[] | cdktn.IResolvable;
 }
 export interface S3ControlAccessGrantAccessGrantsLocationConfiguration {
   /**
@@ -58,25 +58,25 @@ export interface S3ControlAccessGrantAccessGrantsLocationConfiguration {
   readonly s3SubPrefix?: string;
 }
 
-export function s3ControlAccessGrantAccessGrantsLocationConfigurationToTerraform(struct?: S3ControlAccessGrantAccessGrantsLocationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ControlAccessGrantAccessGrantsLocationConfigurationToTerraform(struct?: S3ControlAccessGrantAccessGrantsLocationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_sub_prefix: cdktf.stringToTerraform(struct!.s3SubPrefix),
+    s3_sub_prefix: cdktn.stringToTerraform(struct!.s3SubPrefix),
   }
 }
 
 
-export function s3ControlAccessGrantAccessGrantsLocationConfigurationToHclTerraform(struct?: S3ControlAccessGrantAccessGrantsLocationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ControlAccessGrantAccessGrantsLocationConfigurationToHclTerraform(struct?: S3ControlAccessGrantAccessGrantsLocationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_sub_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.s3SubPrefix),
+      value: cdktn.stringToHclTerraform(struct!.s3SubPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -87,9 +87,9 @@ export function s3ControlAccessGrantAccessGrantsLocationConfigurationToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3ControlAccessGrantAccessGrantsLocationConfigurationOutputReference extends cdktf.ComplexObject {
+export class S3ControlAccessGrantAccessGrantsLocationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -97,11 +97,11 @@ export class S3ControlAccessGrantAccessGrantsLocationConfigurationOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3ControlAccessGrantAccessGrantsLocationConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): S3ControlAccessGrantAccessGrantsLocationConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,13 +114,13 @@ export class S3ControlAccessGrantAccessGrantsLocationConfigurationOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3ControlAccessGrantAccessGrantsLocationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3ControlAccessGrantAccessGrantsLocationConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3SubPrefix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -148,15 +148,15 @@ export class S3ControlAccessGrantAccessGrantsLocationConfigurationOutputReferenc
   }
 }
 
-export class S3ControlAccessGrantAccessGrantsLocationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : S3ControlAccessGrantAccessGrantsLocationConfiguration[] | cdktf.IResolvable
+export class S3ControlAccessGrantAccessGrantsLocationConfigurationList extends cdktn.ComplexList {
+  public internalValue? : S3ControlAccessGrantAccessGrantsLocationConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -178,32 +178,32 @@ export interface S3ControlAccessGrantGrantee {
   readonly granteeType: string;
 }
 
-export function s3ControlAccessGrantGranteeToTerraform(struct?: S3ControlAccessGrantGrantee | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ControlAccessGrantGranteeToTerraform(struct?: S3ControlAccessGrantGrantee | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    grantee_identifier: cdktf.stringToTerraform(struct!.granteeIdentifier),
-    grantee_type: cdktf.stringToTerraform(struct!.granteeType),
+    grantee_identifier: cdktn.stringToTerraform(struct!.granteeIdentifier),
+    grantee_type: cdktn.stringToTerraform(struct!.granteeType),
   }
 }
 
 
-export function s3ControlAccessGrantGranteeToHclTerraform(struct?: S3ControlAccessGrantGrantee | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3ControlAccessGrantGranteeToHclTerraform(struct?: S3ControlAccessGrantGrantee | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     grantee_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.granteeIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.granteeIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grantee_type: {
-      value: cdktf.stringToHclTerraform(struct!.granteeType),
+      value: cdktn.stringToHclTerraform(struct!.granteeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -214,9 +214,9 @@ export function s3ControlAccessGrantGranteeToHclTerraform(struct?: S3ControlAcce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3ControlAccessGrantGranteeOutputReference extends cdktf.ComplexObject {
+export class S3ControlAccessGrantGranteeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -224,11 +224,11 @@ export class S3ControlAccessGrantGranteeOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3ControlAccessGrantGrantee | cdktf.IResolvable | undefined {
+  public get internalValue(): S3ControlAccessGrantGrantee | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -245,14 +245,14 @@ export class S3ControlAccessGrantGranteeOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3ControlAccessGrantGrantee | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3ControlAccessGrantGrantee | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._granteeIdentifier = undefined;
       this._granteeType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -291,15 +291,15 @@ export class S3ControlAccessGrantGranteeOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class S3ControlAccessGrantGranteeList extends cdktf.ComplexList {
-  public internalValue? : S3ControlAccessGrantGrantee[] | cdktf.IResolvable
+export class S3ControlAccessGrantGranteeList extends cdktn.ComplexList {
+  public internalValue? : S3ControlAccessGrantGrantee[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -314,7 +314,7 @@ export class S3ControlAccessGrantGranteeList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_access_grant aws_s3control_access_grant}
 */
-export class S3ControlAccessGrant extends cdktf.TerraformResource {
+export class S3ControlAccessGrant extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -325,14 +325,14 @@ export class S3ControlAccessGrant extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3ControlAccessGrant resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3ControlAccessGrant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3ControlAccessGrant to import
   * @param importFromId The id of the existing S3ControlAccessGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3control_access_grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3ControlAccessGrant to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_access_grant", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3control_access_grant", importId: importFromId, provider });
       }
 
   // ===========
@@ -487,7 +487,7 @@ export class S3ControlAccessGrant extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -497,7 +497,7 @@ export class S3ControlAccessGrant extends cdktf.TerraformResource {
   public get accessGrantsLocationConfiguration() {
     return this._accessGrantsLocationConfiguration;
   }
-  public putAccessGrantsLocationConfiguration(value: S3ControlAccessGrantAccessGrantsLocationConfiguration[] | cdktf.IResolvable) {
+  public putAccessGrantsLocationConfiguration(value: S3ControlAccessGrantAccessGrantsLocationConfiguration[] | cdktn.IResolvable) {
     this._accessGrantsLocationConfiguration.internalValue = value;
   }
   public resetAccessGrantsLocationConfiguration() {
@@ -513,7 +513,7 @@ export class S3ControlAccessGrant extends cdktf.TerraformResource {
   public get grantee() {
     return this._grantee;
   }
-  public putGrantee(value: S3ControlAccessGrantGrantee[] | cdktf.IResolvable) {
+  public putGrantee(value: S3ControlAccessGrantGrantee[] | cdktn.IResolvable) {
     this._grantee.internalValue = value;
   }
   public resetGrantee() {
@@ -530,63 +530,63 @@ export class S3ControlAccessGrant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_grants_location_id: cdktf.stringToTerraform(this._accessGrantsLocationId),
-      account_id: cdktf.stringToTerraform(this._accountId),
-      permission: cdktf.stringToTerraform(this._permission),
-      region: cdktf.stringToTerraform(this._region),
-      s3_prefix_type: cdktf.stringToTerraform(this._s3PrefixType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      access_grants_location_configuration: cdktf.listMapper(s3ControlAccessGrantAccessGrantsLocationConfigurationToTerraform, true)(this._accessGrantsLocationConfiguration.internalValue),
-      grantee: cdktf.listMapper(s3ControlAccessGrantGranteeToTerraform, true)(this._grantee.internalValue),
+      access_grants_location_id: cdktn.stringToTerraform(this._accessGrantsLocationId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      permission: cdktn.stringToTerraform(this._permission),
+      region: cdktn.stringToTerraform(this._region),
+      s3_prefix_type: cdktn.stringToTerraform(this._s3PrefixType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      access_grants_location_configuration: cdktn.listMapper(s3ControlAccessGrantAccessGrantsLocationConfigurationToTerraform, true)(this._accessGrantsLocationConfiguration.internalValue),
+      grantee: cdktn.listMapper(s3ControlAccessGrantGranteeToTerraform, true)(this._grantee.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_grants_location_id: {
-        value: cdktf.stringToHclTerraform(this._accessGrantsLocationId),
+        value: cdktn.stringToHclTerraform(this._accessGrantsLocationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission: {
-        value: cdktf.stringToHclTerraform(this._permission),
+        value: cdktn.stringToHclTerraform(this._permission),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_prefix_type: {
-        value: cdktf.stringToHclTerraform(this._s3PrefixType),
+        value: cdktn.stringToHclTerraform(this._s3PrefixType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       access_grants_location_configuration: {
-        value: cdktf.listMapperHcl(s3ControlAccessGrantAccessGrantsLocationConfigurationToHclTerraform, true)(this._accessGrantsLocationConfiguration.internalValue),
+        value: cdktn.listMapperHcl(s3ControlAccessGrantAccessGrantsLocationConfigurationToHclTerraform, true)(this._accessGrantsLocationConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3ControlAccessGrantAccessGrantsLocationConfigurationList",
       },
       grantee: {
-        value: cdktf.listMapperHcl(s3ControlAccessGrantGranteeToHclTerraform, true)(this._grantee.internalValue),
+        value: cdktn.listMapperHcl(s3ControlAccessGrantGranteeToHclTerraform, true)(this._grantee.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3ControlAccessGrantGranteeList",

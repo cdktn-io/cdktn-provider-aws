@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EmrBlockPublicAccessConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface EmrBlockPublicAccessConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_block_public_access_configuration#block_public_security_group_rules EmrBlockPublicAccessConfiguration#block_public_security_group_rules}
   */
-  readonly blockPublicSecurityGroupRules: boolean | cdktf.IResolvable;
+  readonly blockPublicSecurityGroupRules: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_block_public_access_configuration#id EmrBlockPublicAccessConfiguration#id}
   *
@@ -34,7 +34,7 @@ export interface EmrBlockPublicAccessConfigurationConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_block_public_access_configuration#permitted_public_security_group_rule_range EmrBlockPublicAccessConfiguration#permitted_public_security_group_rule_range}
   */
-  readonly permittedPublicSecurityGroupRuleRange?: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange[] | cdktf.IResolvable;
+  readonly permittedPublicSecurityGroupRuleRange?: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange[] | cdktn.IResolvable;
 }
 export interface EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange {
   /**
@@ -47,32 +47,32 @@ export interface EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRu
   readonly minRange: number;
 }
 
-export function emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToTerraform(struct?: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToTerraform(struct?: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_range: cdktf.numberToTerraform(struct!.maxRange),
-    min_range: cdktf.numberToTerraform(struct!.minRange),
+    max_range: cdktn.numberToTerraform(struct!.maxRange),
+    min_range: cdktn.numberToTerraform(struct!.minRange),
   }
 }
 
 
-export function emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToHclTerraform(struct?: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToHclTerraform(struct?: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_range: {
-      value: cdktf.numberToHclTerraform(struct!.maxRange),
+      value: cdktn.numberToHclTerraform(struct!.maxRange),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_range: {
-      value: cdktf.numberToHclTerraform(struct!.minRange),
+      value: cdktn.numberToHclTerraform(struct!.minRange),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -83,9 +83,9 @@ export function emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference extends cdktf.ComplexObject {
+export class EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRa
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange | cdktf.IResolvable | undefined {
+  public get internalValue(): EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,14 +114,14 @@ export class EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRa
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maxRange = undefined;
       this._minRange = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -160,15 +160,15 @@ export class EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRa
   }
 }
 
-export class EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeList extends cdktf.ComplexList {
-  public internalValue? : EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange[] | cdktf.IResolvable
+export class EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeList extends cdktn.ComplexList {
+  public internalValue? : EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -183,7 +183,7 @@ export class EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRa
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_block_public_access_configuration aws_emr_block_public_access_configuration}
 */
-export class EmrBlockPublicAccessConfiguration extends cdktf.TerraformResource {
+export class EmrBlockPublicAccessConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -194,14 +194,14 @@ export class EmrBlockPublicAccessConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EmrBlockPublicAccessConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EmrBlockPublicAccessConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmrBlockPublicAccessConfiguration to import
   * @param importFromId The id of the existing EmrBlockPublicAccessConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/emr_block_public_access_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmrBlockPublicAccessConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_emr_block_public_access_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_emr_block_public_access_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -242,11 +242,11 @@ export class EmrBlockPublicAccessConfiguration extends cdktf.TerraformResource {
   // ==========
 
   // block_public_security_group_rules - computed: false, optional: false, required: true
-  private _blockPublicSecurityGroupRules?: boolean | cdktf.IResolvable; 
+  private _blockPublicSecurityGroupRules?: boolean | cdktn.IResolvable; 
   public get blockPublicSecurityGroupRules() {
     return this.getBooleanAttribute('block_public_security_group_rules');
   }
-  public set blockPublicSecurityGroupRules(value: boolean | cdktf.IResolvable) {
+  public set blockPublicSecurityGroupRules(value: boolean | cdktn.IResolvable) {
     this._blockPublicSecurityGroupRules = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -291,7 +291,7 @@ export class EmrBlockPublicAccessConfiguration extends cdktf.TerraformResource {
   public get permittedPublicSecurityGroupRuleRange() {
     return this._permittedPublicSecurityGroupRuleRange;
   }
-  public putPermittedPublicSecurityGroupRuleRange(value: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange[] | cdktf.IResolvable) {
+  public putPermittedPublicSecurityGroupRuleRange(value: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange[] | cdktn.IResolvable) {
     this._permittedPublicSecurityGroupRuleRange.internalValue = value;
   }
   public resetPermittedPublicSecurityGroupRuleRange() {
@@ -308,35 +308,35 @@ export class EmrBlockPublicAccessConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      block_public_security_group_rules: cdktf.booleanToTerraform(this._blockPublicSecurityGroupRules),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      permitted_public_security_group_rule_range: cdktf.listMapper(emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToTerraform, true)(this._permittedPublicSecurityGroupRuleRange.internalValue),
+      block_public_security_group_rules: cdktn.booleanToTerraform(this._blockPublicSecurityGroupRules),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      permitted_public_security_group_rule_range: cdktn.listMapper(emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToTerraform, true)(this._permittedPublicSecurityGroupRuleRange.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       block_public_security_group_rules: {
-        value: cdktf.booleanToHclTerraform(this._blockPublicSecurityGroupRules),
+        value: cdktn.booleanToHclTerraform(this._blockPublicSecurityGroupRules),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permitted_public_security_group_rule_range: {
-        value: cdktf.listMapperHcl(emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToHclTerraform, true)(this._permittedPublicSecurityGroupRuleRange.internalValue),
+        value: cdktn.listMapperHcl(emrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeToHclTerraform, true)(this._permittedPublicSecurityGroupRuleRange.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeList",

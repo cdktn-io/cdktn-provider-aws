@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcIpamPoolCidrConfig extends cdktf.TerraformMetaArguments {
+export interface VpcIpamPoolCidrConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool_cidr#cidr VpcIpamPoolCidr#cidr}
   */
@@ -62,31 +62,31 @@ export interface VpcIpamPoolCidrCidrAuthorizationContext {
 }
 
 export function vpcIpamPoolCidrCidrAuthorizationContextToTerraform(struct?: VpcIpamPoolCidrCidrAuthorizationContextOutputReference | VpcIpamPoolCidrCidrAuthorizationContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message: cdktf.stringToTerraform(struct!.message),
-    signature: cdktf.stringToTerraform(struct!.signature),
+    message: cdktn.stringToTerraform(struct!.message),
+    signature: cdktn.stringToTerraform(struct!.signature),
   }
 }
 
 
 export function vpcIpamPoolCidrCidrAuthorizationContextToHclTerraform(struct?: VpcIpamPoolCidrCidrAuthorizationContextOutputReference | VpcIpamPoolCidrCidrAuthorizationContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message: {
-      value: cdktf.stringToHclTerraform(struct!.message),
+      value: cdktn.stringToHclTerraform(struct!.message),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     signature: {
-      value: cdktf.stringToHclTerraform(struct!.signature),
+      value: cdktn.stringToHclTerraform(struct!.signature),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -97,14 +97,14 @@ export function vpcIpamPoolCidrCidrAuthorizationContextToHclTerraform(struct?: V
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcIpamPoolCidrCidrAuthorizationContextOutputReference extends cdktf.ComplexObject {
+export class VpcIpamPoolCidrCidrAuthorizationContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -178,32 +178,32 @@ export interface VpcIpamPoolCidrTimeouts {
   readonly delete?: string;
 }
 
-export function vpcIpamPoolCidrTimeoutsToTerraform(struct?: VpcIpamPoolCidrTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamPoolCidrTimeoutsToTerraform(struct?: VpcIpamPoolCidrTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function vpcIpamPoolCidrTimeoutsToHclTerraform(struct?: VpcIpamPoolCidrTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpcIpamPoolCidrTimeoutsToHclTerraform(struct?: VpcIpamPoolCidrTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -214,19 +214,19 @@ export function vpcIpamPoolCidrTimeoutsToHclTerraform(struct?: VpcIpamPoolCidrTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpcIpamPoolCidrTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpcIpamPoolCidrTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpcIpamPoolCidrTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpcIpamPoolCidrTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -243,14 +243,14 @@ export class VpcIpamPoolCidrTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcIpamPoolCidrTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpcIpamPoolCidrTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -298,7 +298,7 @@ export class VpcIpamPoolCidrTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr}
 */
-export class VpcIpamPoolCidr extends cdktf.TerraformResource {
+export class VpcIpamPoolCidr extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -309,14 +309,14 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcIpamPoolCidr resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcIpamPoolCidr resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpamPoolCidr to import
   * @param importFromId The id of the existing VpcIpamPoolCidr that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool_cidr#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpamPoolCidr to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_pool_cidr", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_pool_cidr", importId: importFromId, provider });
       }
 
   // ===========
@@ -479,11 +479,11 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr: cdktf.stringToTerraform(this._cidr),
-      id: cdktf.stringToTerraform(this._id),
-      ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
-      netmask_length: cdktf.numberToTerraform(this._netmaskLength),
-      region: cdktf.stringToTerraform(this._region),
+      cidr: cdktn.stringToTerraform(this._cidr),
+      id: cdktn.stringToTerraform(this._id),
+      ipam_pool_id: cdktn.stringToTerraform(this._ipamPoolId),
+      netmask_length: cdktn.numberToTerraform(this._netmaskLength),
+      region: cdktn.stringToTerraform(this._region),
       cidr_authorization_context: vpcIpamPoolCidrCidrAuthorizationContextToTerraform(this._cidrAuthorizationContext.internalValue),
       timeouts: vpcIpamPoolCidrTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -492,31 +492,31 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr: {
-        value: cdktf.stringToHclTerraform(this._cidr),
+        value: cdktn.stringToHclTerraform(this._cidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._ipamPoolId),
+        value: cdktn.stringToHclTerraform(this._ipamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       netmask_length: {
-        value: cdktf.numberToHclTerraform(this._netmaskLength),
+        value: cdktn.numberToHclTerraform(this._netmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

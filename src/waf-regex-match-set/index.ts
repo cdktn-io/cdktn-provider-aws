@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WafRegexMatchSetConfig extends cdktf.TerraformMetaArguments {
+export interface WafRegexMatchSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_regex_match_set#id WafRegexMatchSet#id}
   *
@@ -28,7 +28,7 @@ export interface WafRegexMatchSetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_regex_match_set#regex_match_tuple WafRegexMatchSet#regex_match_tuple}
   */
-  readonly regexMatchTuple?: WafRegexMatchSetRegexMatchTuple[] | cdktf.IResolvable;
+  readonly regexMatchTuple?: WafRegexMatchSetRegexMatchTuple[] | cdktn.IResolvable;
 }
 export interface WafRegexMatchSetRegexMatchTupleFieldToMatch {
   /**
@@ -42,31 +42,31 @@ export interface WafRegexMatchSetRegexMatchTupleFieldToMatch {
 }
 
 export function wafRegexMatchSetRegexMatchTupleFieldToMatchToTerraform(struct?: WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference | WafRegexMatchSetRegexMatchTupleFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    type: cdktf.stringToTerraform(struct!.type),
+    data: cdktn.stringToTerraform(struct!.data),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function wafRegexMatchSetRegexMatchTupleFieldToMatchToHclTerraform(struct?: WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference | WafRegexMatchSetRegexMatchTupleFieldToMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -77,14 +77,14 @@ export function wafRegexMatchSetRegexMatchTupleFieldToMatchToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -161,33 +161,33 @@ export interface WafRegexMatchSetRegexMatchTuple {
   readonly fieldToMatch: WafRegexMatchSetRegexMatchTupleFieldToMatch;
 }
 
-export function wafRegexMatchSetRegexMatchTupleToTerraform(struct?: WafRegexMatchSetRegexMatchTuple | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafRegexMatchSetRegexMatchTupleToTerraform(struct?: WafRegexMatchSetRegexMatchTuple | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    regex_pattern_set_id: cdktf.stringToTerraform(struct!.regexPatternSetId),
-    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    regex_pattern_set_id: cdktn.stringToTerraform(struct!.regexPatternSetId),
+    text_transformation: cdktn.stringToTerraform(struct!.textTransformation),
     field_to_match: wafRegexMatchSetRegexMatchTupleFieldToMatchToTerraform(struct!.fieldToMatch),
   }
 }
 
 
-export function wafRegexMatchSetRegexMatchTupleToHclTerraform(struct?: WafRegexMatchSetRegexMatchTuple | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function wafRegexMatchSetRegexMatchTupleToHclTerraform(struct?: WafRegexMatchSetRegexMatchTuple | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     regex_pattern_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.regexPatternSetId),
+      value: cdktn.stringToHclTerraform(struct!.regexPatternSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_transformation: {
-      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      value: cdktn.stringToHclTerraform(struct!.textTransformation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -204,9 +204,9 @@ export function wafRegexMatchSetRegexMatchTupleToHclTerraform(struct?: WafRegexM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WafRegexMatchSetRegexMatchTupleOutputReference extends cdktf.ComplexObject {
+export class WafRegexMatchSetRegexMatchTupleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -214,11 +214,11 @@ export class WafRegexMatchSetRegexMatchTupleOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WafRegexMatchSetRegexMatchTuple | cdktf.IResolvable | undefined {
+  public get internalValue(): WafRegexMatchSetRegexMatchTuple | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -239,7 +239,7 @@ export class WafRegexMatchSetRegexMatchTupleOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafRegexMatchSetRegexMatchTuple | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WafRegexMatchSetRegexMatchTuple | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -247,7 +247,7 @@ export class WafRegexMatchSetRegexMatchTupleOutputReference extends cdktf.Comple
       this._textTransformation = undefined;
       this._fieldToMatch.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -300,15 +300,15 @@ export class WafRegexMatchSetRegexMatchTupleOutputReference extends cdktf.Comple
   }
 }
 
-export class WafRegexMatchSetRegexMatchTupleList extends cdktf.ComplexList {
-  public internalValue? : WafRegexMatchSetRegexMatchTuple[] | cdktf.IResolvable
+export class WafRegexMatchSetRegexMatchTupleList extends cdktn.ComplexList {
+  public internalValue? : WafRegexMatchSetRegexMatchTuple[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -323,7 +323,7 @@ export class WafRegexMatchSetRegexMatchTupleList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_regex_match_set aws_waf_regex_match_set}
 */
-export class WafRegexMatchSet extends cdktf.TerraformResource {
+export class WafRegexMatchSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -334,14 +334,14 @@ export class WafRegexMatchSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WafRegexMatchSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WafRegexMatchSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafRegexMatchSet to import
   * @param importFromId The id of the existing WafRegexMatchSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_regex_match_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafRegexMatchSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_regex_match_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_regex_match_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -419,7 +419,7 @@ export class WafRegexMatchSet extends cdktf.TerraformResource {
   public get regexMatchTuple() {
     return this._regexMatchTuple;
   }
-  public putRegexMatchTuple(value: WafRegexMatchSetRegexMatchTuple[] | cdktf.IResolvable) {
+  public putRegexMatchTuple(value: WafRegexMatchSetRegexMatchTuple[] | cdktn.IResolvable) {
     this._regexMatchTuple.internalValue = value;
   }
   public resetRegexMatchTuple() {
@@ -436,28 +436,28 @@ export class WafRegexMatchSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      regex_match_tuple: cdktf.listMapper(wafRegexMatchSetRegexMatchTupleToTerraform, true)(this._regexMatchTuple.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      regex_match_tuple: cdktn.listMapper(wafRegexMatchSetRegexMatchTupleToTerraform, true)(this._regexMatchTuple.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       regex_match_tuple: {
-        value: cdktf.listMapperHcl(wafRegexMatchSetRegexMatchTupleToHclTerraform, true)(this._regexMatchTuple.internalValue),
+        value: cdktn.listMapperHcl(wafRegexMatchSetRegexMatchTupleToHclTerraform, true)(this._regexMatchTuple.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WafRegexMatchSetRegexMatchTupleList",

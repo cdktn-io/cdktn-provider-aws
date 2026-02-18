@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TransitGatewayPeeringAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TransitGatewayPeeringAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_peering_attachment#id Ec2TransitGatewayPeeringAttachment#id}
   *
@@ -64,24 +64,24 @@ export interface Ec2TransitGatewayPeeringAttachmentOptions {
 }
 
 export function ec2TransitGatewayPeeringAttachmentOptionsToTerraform(struct?: Ec2TransitGatewayPeeringAttachmentOptionsOutputReference | Ec2TransitGatewayPeeringAttachmentOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dynamic_routing: cdktf.stringToTerraform(struct!.dynamicRouting),
+    dynamic_routing: cdktn.stringToTerraform(struct!.dynamicRouting),
   }
 }
 
 
 export function ec2TransitGatewayPeeringAttachmentOptionsToHclTerraform(struct?: Ec2TransitGatewayPeeringAttachmentOptionsOutputReference | Ec2TransitGatewayPeeringAttachmentOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dynamic_routing: {
-      value: cdktf.stringToHclTerraform(struct!.dynamicRouting),
+      value: cdktn.stringToHclTerraform(struct!.dynamicRouting),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,14 +92,14 @@ export function ec2TransitGatewayPeeringAttachmentOptionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2TransitGatewayPeeringAttachmentOptionsOutputReference extends cdktf.ComplexObject {
+export class Ec2TransitGatewayPeeringAttachmentOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -144,7 +144,7 @@ export class Ec2TransitGatewayPeeringAttachmentOptionsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment}
 */
-export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource {
+export class Ec2TransitGatewayPeeringAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -155,14 +155,14 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TransitGatewayPeeringAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TransitGatewayPeeringAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TransitGatewayPeeringAttachment to import
   * @param importFromId The id of the existing Ec2TransitGatewayPeeringAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_peering_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TransitGatewayPeeringAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_peering_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_peering_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -358,14 +358,14 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      peer_account_id: cdktf.stringToTerraform(this._peerAccountId),
-      peer_region: cdktf.stringToTerraform(this._peerRegion),
-      peer_transit_gateway_id: cdktf.stringToTerraform(this._peerTransitGatewayId),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      id: cdktn.stringToTerraform(this._id),
+      peer_account_id: cdktn.stringToTerraform(this._peerAccountId),
+      peer_region: cdktn.stringToTerraform(this._peerRegion),
+      peer_transit_gateway_id: cdktn.stringToTerraform(this._peerTransitGatewayId),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      transit_gateway_id: cdktn.stringToTerraform(this._transitGatewayId),
       options: ec2TransitGatewayPeeringAttachmentOptionsToTerraform(this._options.internalValue),
     };
   }
@@ -373,49 +373,49 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_account_id: {
-        value: cdktf.stringToHclTerraform(this._peerAccountId),
+        value: cdktn.stringToHclTerraform(this._peerAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_region: {
-        value: cdktf.stringToHclTerraform(this._peerRegion),
+        value: cdktn.stringToHclTerraform(this._peerRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_transit_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._peerTransitGatewayId),
+        value: cdktn.stringToHclTerraform(this._peerTransitGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       transit_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaLayerVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version#compatible_architectures LambdaLayerVersion#compatible_architectures}
   */
@@ -64,7 +64,7 @@ export interface LambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version#skip_destroy LambdaLayerVersion#skip_destroy}
   */
-  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version#source_code_hash LambdaLayerVersion#source_code_hash}
   */
@@ -74,7 +74,7 @@ export interface LambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version aws_lambda_layer_version}
 */
-export class LambdaLayerVersion extends cdktf.TerraformResource {
+export class LambdaLayerVersion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -85,14 +85,14 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LambdaLayerVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LambdaLayerVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaLayerVersion to import
   * @param importFromId The id of the existing LambdaLayerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lambda_layer_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaLayerVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_layer_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_layer_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -154,7 +154,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   // compatible_architectures - computed: false, optional: true, required: false
   private _compatibleArchitectures?: string[]; 
   public get compatibleArchitectures() {
-    return cdktf.Fn.tolist(this.getListAttribute('compatible_architectures'));
+    return cdktn.Fn.tolist(this.getListAttribute('compatible_architectures'));
   }
   public set compatibleArchitectures(value: string[]) {
     this._compatibleArchitectures = value;
@@ -170,7 +170,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   // compatible_runtimes - computed: false, optional: true, required: false
   private _compatibleRuntimes?: string[]; 
   public get compatibleRuntimes() {
-    return cdktf.Fn.tolist(this.getListAttribute('compatible_runtimes'));
+    return cdktn.Fn.tolist(this.getListAttribute('compatible_runtimes'));
   }
   public set compatibleRuntimes(value: string[]) {
     this._compatibleRuntimes = value;
@@ -345,11 +345,11 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {
@@ -392,98 +392,98 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compatible_architectures: cdktf.listMapper(cdktf.stringToTerraform, false)(this._compatibleArchitectures),
-      compatible_runtimes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._compatibleRuntimes),
-      description: cdktf.stringToTerraform(this._description),
-      filename: cdktf.stringToTerraform(this._filename),
-      id: cdktf.stringToTerraform(this._id),
-      layer_name: cdktf.stringToTerraform(this._layerName),
-      license_info: cdktf.stringToTerraform(this._licenseInfo),
-      region: cdktf.stringToTerraform(this._region),
-      s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
-      s3_key: cdktf.stringToTerraform(this._s3Key),
-      s3_object_version: cdktf.stringToTerraform(this._s3ObjectVersion),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      source_code_hash: cdktf.stringToTerraform(this._sourceCodeHash),
+      compatible_architectures: cdktn.listMapper(cdktn.stringToTerraform, false)(this._compatibleArchitectures),
+      compatible_runtimes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._compatibleRuntimes),
+      description: cdktn.stringToTerraform(this._description),
+      filename: cdktn.stringToTerraform(this._filename),
+      id: cdktn.stringToTerraform(this._id),
+      layer_name: cdktn.stringToTerraform(this._layerName),
+      license_info: cdktn.stringToTerraform(this._licenseInfo),
+      region: cdktn.stringToTerraform(this._region),
+      s3_bucket: cdktn.stringToTerraform(this._s3Bucket),
+      s3_key: cdktn.stringToTerraform(this._s3Key),
+      s3_object_version: cdktn.stringToTerraform(this._s3ObjectVersion),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
+      source_code_hash: cdktn.stringToTerraform(this._sourceCodeHash),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       compatible_architectures: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._compatibleArchitectures),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._compatibleArchitectures),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       compatible_runtimes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._compatibleRuntimes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._compatibleRuntimes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filename: {
-        value: cdktf.stringToHclTerraform(this._filename),
+        value: cdktn.stringToHclTerraform(this._filename),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       layer_name: {
-        value: cdktf.stringToHclTerraform(this._layerName),
+        value: cdktn.stringToHclTerraform(this._layerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_info: {
-        value: cdktf.stringToHclTerraform(this._licenseInfo),
+        value: cdktn.stringToHclTerraform(this._licenseInfo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_bucket: {
-        value: cdktf.stringToHclTerraform(this._s3Bucket),
+        value: cdktn.stringToHclTerraform(this._s3Bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_key: {
-        value: cdktf.stringToHclTerraform(this._s3Key),
+        value: cdktn.stringToHclTerraform(this._s3Key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_object_version: {
-        value: cdktf.stringToHclTerraform(this._s3ObjectVersion),
+        value: cdktn.stringToHclTerraform(this._s3ObjectVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_destroy: {
-        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       source_code_hash: {
-        value: cdktf.stringToHclTerraform(this._sourceCodeHash),
+        value: cdktn.stringToHclTerraform(this._sourceCodeHash),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityhubConfigurationPolicyAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityhubConfigurationPolicyAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_configuration_policy_association#id SecurityhubConfigurationPolicyAssociation#id}
   *
@@ -55,32 +55,32 @@ export interface SecurityhubConfigurationPolicyAssociationTimeouts {
   readonly update?: string;
 }
 
-export function securityhubConfigurationPolicyAssociationTimeoutsToTerraform(struct?: SecurityhubConfigurationPolicyAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubConfigurationPolicyAssociationTimeoutsToTerraform(struct?: SecurityhubConfigurationPolicyAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function securityhubConfigurationPolicyAssociationTimeoutsToHclTerraform(struct?: SecurityhubConfigurationPolicyAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityhubConfigurationPolicyAssociationTimeoutsToHclTerraform(struct?: SecurityhubConfigurationPolicyAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,19 +91,19 @@ export function securityhubConfigurationPolicyAssociationTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityhubConfigurationPolicyAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecurityhubConfigurationPolicyAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecurityhubConfigurationPolicyAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityhubConfigurationPolicyAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,14 +120,14 @@ export class SecurityhubConfigurationPolicyAssociationTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityhubConfigurationPolicyAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityhubConfigurationPolicyAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -175,7 +175,7 @@ export class SecurityhubConfigurationPolicyAssociationTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_configuration_policy_association aws_securityhub_configuration_policy_association}
 */
-export class SecurityhubConfigurationPolicyAssociation extends cdktf.TerraformResource {
+export class SecurityhubConfigurationPolicyAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -186,14 +186,14 @@ export class SecurityhubConfigurationPolicyAssociation extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityhubConfigurationPolicyAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityhubConfigurationPolicyAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityhubConfigurationPolicyAssociation to import
   * @param importFromId The id of the existing SecurityhubConfigurationPolicyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_configuration_policy_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityhubConfigurationPolicyAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_configuration_policy_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_configuration_policy_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -314,10 +314,10 @@ export class SecurityhubConfigurationPolicyAssociation extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      policy_id: cdktf.stringToTerraform(this._policyId),
-      region: cdktf.stringToTerraform(this._region),
-      target_id: cdktf.stringToTerraform(this._targetId),
+      id: cdktn.stringToTerraform(this._id),
+      policy_id: cdktn.stringToTerraform(this._policyId),
+      region: cdktn.stringToTerraform(this._region),
+      target_id: cdktn.stringToTerraform(this._targetId),
       timeouts: securityhubConfigurationPolicyAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -325,25 +325,25 @@ export class SecurityhubConfigurationPolicyAssociation extends cdktf.TerraformRe
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_id: {
-        value: cdktf.stringToHclTerraform(this._policyId),
+        value: cdktn.stringToHclTerraform(this._policyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_id: {
-        value: cdktf.stringToHclTerraform(this._targetId),
+        value: cdktn.stringToHclTerraform(this._targetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

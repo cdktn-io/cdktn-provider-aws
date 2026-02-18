@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TransitGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TransitGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway#amazon_side_asn Ec2TransitGateway#amazon_side_asn}
   */
@@ -99,39 +99,39 @@ export interface Ec2TransitGatewayTimeouts {
   readonly update?: string;
 }
 
-export function ec2TransitGatewayTimeoutsToTerraform(struct?: Ec2TransitGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2TransitGatewayTimeoutsToTerraform(struct?: Ec2TransitGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function ec2TransitGatewayTimeoutsToHclTerraform(struct?: Ec2TransitGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ec2TransitGatewayTimeoutsToHclTerraform(struct?: Ec2TransitGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -142,19 +142,19 @@ export function ec2TransitGatewayTimeoutsToHclTerraform(struct?: Ec2TransitGatew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Ec2TransitGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Ec2TransitGatewayTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Ec2TransitGatewayTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Ec2TransitGatewayTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -175,7 +175,7 @@ export class Ec2TransitGatewayTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2TransitGatewayTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Ec2TransitGatewayTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -183,7 +183,7 @@ export class Ec2TransitGatewayTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -248,7 +248,7 @@ export class Ec2TransitGatewayTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}
 */
-export class Ec2TransitGateway extends cdktf.TerraformResource {
+export class Ec2TransitGateway extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -259,14 +259,14 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TransitGateway resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TransitGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TransitGateway to import
   * @param importFromId The id of the existing Ec2TransitGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TransitGateway to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway", importId: importFromId, provider });
       }
 
   // ===========
@@ -549,7 +549,7 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
   // transit_gateway_cidr_blocks - computed: false, optional: true, required: false
   private _transitGatewayCidrBlocks?: string[]; 
   public get transitGatewayCidrBlocks() {
-    return cdktf.Fn.tolist(this.getListAttribute('transit_gateway_cidr_blocks'));
+    return cdktn.Fn.tolist(this.getListAttribute('transit_gateway_cidr_blocks'));
   }
   public set transitGatewayCidrBlocks(value: string[]) {
     this._transitGatewayCidrBlocks = value;
@@ -600,21 +600,21 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amazon_side_asn: cdktf.numberToTerraform(this._amazonSideAsn),
-      auto_accept_shared_attachments: cdktf.stringToTerraform(this._autoAcceptSharedAttachments),
-      default_route_table_association: cdktf.stringToTerraform(this._defaultRouteTableAssociation),
-      default_route_table_propagation: cdktf.stringToTerraform(this._defaultRouteTablePropagation),
-      description: cdktf.stringToTerraform(this._description),
-      dns_support: cdktf.stringToTerraform(this._dnsSupport),
-      encryption_support: cdktf.stringToTerraform(this._encryptionSupport),
-      id: cdktf.stringToTerraform(this._id),
-      multicast_support: cdktf.stringToTerraform(this._multicastSupport),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_referencing_support: cdktf.stringToTerraform(this._securityGroupReferencingSupport),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      transit_gateway_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._transitGatewayCidrBlocks),
-      vpn_ecmp_support: cdktf.stringToTerraform(this._vpnEcmpSupport),
+      amazon_side_asn: cdktn.numberToTerraform(this._amazonSideAsn),
+      auto_accept_shared_attachments: cdktn.stringToTerraform(this._autoAcceptSharedAttachments),
+      default_route_table_association: cdktn.stringToTerraform(this._defaultRouteTableAssociation),
+      default_route_table_propagation: cdktn.stringToTerraform(this._defaultRouteTablePropagation),
+      description: cdktn.stringToTerraform(this._description),
+      dns_support: cdktn.stringToTerraform(this._dnsSupport),
+      encryption_support: cdktn.stringToTerraform(this._encryptionSupport),
+      id: cdktn.stringToTerraform(this._id),
+      multicast_support: cdktn.stringToTerraform(this._multicastSupport),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_referencing_support: cdktn.stringToTerraform(this._securityGroupReferencingSupport),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      transit_gateway_cidr_blocks: cdktn.listMapper(cdktn.stringToTerraform, false)(this._transitGatewayCidrBlocks),
+      vpn_ecmp_support: cdktn.stringToTerraform(this._vpnEcmpSupport),
       timeouts: ec2TransitGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -622,91 +622,91 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       amazon_side_asn: {
-        value: cdktf.numberToHclTerraform(this._amazonSideAsn),
+        value: cdktn.numberToHclTerraform(this._amazonSideAsn),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       auto_accept_shared_attachments: {
-        value: cdktf.stringToHclTerraform(this._autoAcceptSharedAttachments),
+        value: cdktn.stringToHclTerraform(this._autoAcceptSharedAttachments),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_route_table_association: {
-        value: cdktf.stringToHclTerraform(this._defaultRouteTableAssociation),
+        value: cdktn.stringToHclTerraform(this._defaultRouteTableAssociation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_route_table_propagation: {
-        value: cdktf.stringToHclTerraform(this._defaultRouteTablePropagation),
+        value: cdktn.stringToHclTerraform(this._defaultRouteTablePropagation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_support: {
-        value: cdktf.stringToHclTerraform(this._dnsSupport),
+        value: cdktn.stringToHclTerraform(this._dnsSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_support: {
-        value: cdktf.stringToHclTerraform(this._encryptionSupport),
+        value: cdktn.stringToHclTerraform(this._encryptionSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multicast_support: {
-        value: cdktf.stringToHclTerraform(this._multicastSupport),
+        value: cdktn.stringToHclTerraform(this._multicastSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_referencing_support: {
-        value: cdktf.stringToHclTerraform(this._securityGroupReferencingSupport),
+        value: cdktn.stringToHclTerraform(this._securityGroupReferencingSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       transit_gateway_cidr_blocks: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._transitGatewayCidrBlocks),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._transitGatewayCidrBlocks),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       vpn_ecmp_support: {
-        value: cdktf.stringToHclTerraform(this._vpnEcmpSupport),
+        value: cdktn.stringToHclTerraform(this._vpnEcmpSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

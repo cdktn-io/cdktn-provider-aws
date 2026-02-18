@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicequotasServiceQuotaConfig extends cdktf.TerraformMetaArguments {
+export interface ServicequotasServiceQuotaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicequotas_service_quota#id ServicequotasServiceQuota#id}
   *
@@ -42,8 +42,8 @@ export interface ServicequotasServiceQuotaUsageMetricMetricDimensions {
 }
 
 export function servicequotasServiceQuotaUsageMetricMetricDimensionsToTerraform(struct?: ServicequotasServiceQuotaUsageMetricMetricDimensions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function servicequotasServiceQuotaUsageMetricMetricDimensionsToTerraform(
 
 
 export function servicequotasServiceQuotaUsageMetricMetricDimensionsToHclTerraform(struct?: ServicequotasServiceQuotaUsageMetricMetricDimensions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function servicequotasServiceQuotaUsageMetricMetricDimensionsToHclTerrafo
   return attrs;
 }
 
-export class ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference extends cdktf.ComplexObject {
+export class ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -110,14 +110,14 @@ export class ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference
   }
 }
 
-export class ServicequotasServiceQuotaUsageMetricMetricDimensionsList extends cdktf.ComplexList {
+export class ServicequotasServiceQuotaUsageMetricMetricDimensionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -132,8 +132,8 @@ export interface ServicequotasServiceQuotaUsageMetric {
 }
 
 export function servicequotasServiceQuotaUsageMetricToTerraform(struct?: ServicequotasServiceQuotaUsageMetric): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -142,8 +142,8 @@ export function servicequotasServiceQuotaUsageMetricToTerraform(struct?: Service
 
 
 export function servicequotasServiceQuotaUsageMetricToHclTerraform(struct?: ServicequotasServiceQuotaUsageMetric): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -151,7 +151,7 @@ export function servicequotasServiceQuotaUsageMetricToHclTerraform(struct?: Serv
   return attrs;
 }
 
-export class ServicequotasServiceQuotaUsageMetricOutputReference extends cdktf.ComplexObject {
+export class ServicequotasServiceQuotaUsageMetricOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -160,7 +160,7 @@ export class ServicequotasServiceQuotaUsageMetricOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -201,14 +201,14 @@ export class ServicequotasServiceQuotaUsageMetricOutputReference extends cdktf.C
   }
 }
 
-export class ServicequotasServiceQuotaUsageMetricList extends cdktf.ComplexList {
+export class ServicequotasServiceQuotaUsageMetricList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -223,7 +223,7 @@ export class ServicequotasServiceQuotaUsageMetricList extends cdktf.ComplexList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicequotas_service_quota aws_servicequotas_service_quota}
 */
-export class ServicequotasServiceQuota extends cdktf.TerraformResource {
+export class ServicequotasServiceQuota extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -234,14 +234,14 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicequotasServiceQuota resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicequotasServiceQuota resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicequotasServiceQuota to import
   * @param importFromId The id of the existing ServicequotasServiceQuota that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/servicequotas_service_quota#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicequotasServiceQuota to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicequotas_service_quota", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicequotas_service_quota", importId: importFromId, provider });
       }
 
   // ===========
@@ -400,42 +400,42 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      quota_code: cdktf.stringToTerraform(this._quotaCode),
-      region: cdktf.stringToTerraform(this._region),
-      service_code: cdktf.stringToTerraform(this._serviceCode),
-      value: cdktf.numberToTerraform(this._value),
+      id: cdktn.stringToTerraform(this._id),
+      quota_code: cdktn.stringToTerraform(this._quotaCode),
+      region: cdktn.stringToTerraform(this._region),
+      service_code: cdktn.stringToTerraform(this._serviceCode),
+      value: cdktn.numberToTerraform(this._value),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       quota_code: {
-        value: cdktf.stringToHclTerraform(this._quotaCode),
+        value: cdktn.stringToHclTerraform(this._quotaCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_code: {
-        value: cdktf.stringToHclTerraform(this._serviceCode),
+        value: cdktn.stringToHclTerraform(this._serviceCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.numberToHclTerraform(this._value),
+        value: cdktn.numberToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

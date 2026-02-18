@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupReportPlanConfig extends cdktf.TerraformMetaArguments {
+export interface BackupReportPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_report_plan#description BackupReportPlan#description}
   */
@@ -70,38 +70,38 @@ export interface BackupReportPlanReportDeliveryChannel {
 }
 
 export function backupReportPlanReportDeliveryChannelToTerraform(struct?: BackupReportPlanReportDeliveryChannelOutputReference | BackupReportPlanReportDeliveryChannel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    formats: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.formats),
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_key_prefix: cdktf.stringToTerraform(struct!.s3KeyPrefix),
+    formats: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.formats),
+    s3_bucket_name: cdktn.stringToTerraform(struct!.s3BucketName),
+    s3_key_prefix: cdktn.stringToTerraform(struct!.s3KeyPrefix),
   }
 }
 
 
 export function backupReportPlanReportDeliveryChannelToHclTerraform(struct?: BackupReportPlanReportDeliveryChannelOutputReference | BackupReportPlanReportDeliveryChannel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     formats: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.formats),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.formats),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     s3_bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      value: cdktn.stringToHclTerraform(struct!.s3BucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_key_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.s3KeyPrefix),
+      value: cdktn.stringToHclTerraform(struct!.s3KeyPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -112,14 +112,14 @@ export function backupReportPlanReportDeliveryChannelToHclTerraform(struct?: Bac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupReportPlanReportDeliveryChannelOutputReference extends cdktf.ComplexObject {
+export class BackupReportPlanReportDeliveryChannelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -159,7 +159,7 @@ export class BackupReportPlanReportDeliveryChannelOutputReference extends cdktf.
   // formats - computed: false, optional: true, required: false
   private _formats?: string[]; 
   public get formats() {
-    return cdktf.Fn.tolist(this.getListAttribute('formats'));
+    return cdktn.Fn.tolist(this.getListAttribute('formats'));
   }
   public set formats(value: string[]) {
     this._formats = value;
@@ -229,59 +229,59 @@ export interface BackupReportPlanReportSetting {
 }
 
 export function backupReportPlanReportSettingToTerraform(struct?: BackupReportPlanReportSettingOutputReference | BackupReportPlanReportSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accounts),
-    framework_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.frameworkArns),
-    number_of_frameworks: cdktf.numberToTerraform(struct!.numberOfFrameworks),
-    organization_units: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.organizationUnits),
-    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
-    report_template: cdktf.stringToTerraform(struct!.reportTemplate),
+    accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accounts),
+    framework_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.frameworkArns),
+    number_of_frameworks: cdktn.numberToTerraform(struct!.numberOfFrameworks),
+    organization_units: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.organizationUnits),
+    regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regions),
+    report_template: cdktn.stringToTerraform(struct!.reportTemplate),
   }
 }
 
 
 export function backupReportPlanReportSettingToHclTerraform(struct?: BackupReportPlanReportSettingOutputReference | BackupReportPlanReportSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     accounts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accounts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.accounts),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     framework_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.frameworkArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.frameworkArns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     number_of_frameworks: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfFrameworks),
+      value: cdktn.numberToHclTerraform(struct!.numberOfFrameworks),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     organization_units: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.organizationUnits),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.organizationUnits),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.regions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     report_template: {
-      value: cdktf.stringToHclTerraform(struct!.reportTemplate),
+      value: cdktn.stringToHclTerraform(struct!.reportTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -292,14 +292,14 @@ export function backupReportPlanReportSettingToHclTerraform(struct?: BackupRepor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexObject {
+export class BackupReportPlanReportSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -357,7 +357,7 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
   // accounts - computed: false, optional: true, required: false
   private _accounts?: string[]; 
   public get accounts() {
-    return cdktf.Fn.tolist(this.getListAttribute('accounts'));
+    return cdktn.Fn.tolist(this.getListAttribute('accounts'));
   }
   public set accounts(value: string[]) {
     this._accounts = value;
@@ -373,7 +373,7 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
   // framework_arns - computed: false, optional: true, required: false
   private _frameworkArns?: string[]; 
   public get frameworkArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('framework_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('framework_arns'));
   }
   public set frameworkArns(value: string[]) {
     this._frameworkArns = value;
@@ -405,7 +405,7 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
   // organization_units - computed: false, optional: true, required: false
   private _organizationUnits?: string[]; 
   public get organizationUnits() {
-    return cdktf.Fn.tolist(this.getListAttribute('organization_units'));
+    return cdktn.Fn.tolist(this.getListAttribute('organization_units'));
   }
   public set organizationUnits(value: string[]) {
     this._organizationUnits = value;
@@ -421,7 +421,7 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
   // regions - computed: false, optional: true, required: false
   private _regions?: string[]; 
   public get regions() {
-    return cdktf.Fn.tolist(this.getListAttribute('regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('regions'));
   }
   public set regions(value: string[]) {
     this._regions = value;
@@ -451,7 +451,7 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_report_plan aws_backup_report_plan}
 */
-export class BackupReportPlan extends cdktf.TerraformResource {
+export class BackupReportPlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -462,14 +462,14 @@ export class BackupReportPlan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupReportPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupReportPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupReportPlan to import
   * @param importFromId The id of the existing BackupReportPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_report_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupReportPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_report_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_report_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -653,12 +653,12 @@ export class BackupReportPlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       report_delivery_channel: backupReportPlanReportDeliveryChannelToTerraform(this._reportDeliveryChannel.internalValue),
       report_setting: backupReportPlanReportSettingToTerraform(this._reportSetting.internalValue),
     };
@@ -667,37 +667,37 @@ export class BackupReportPlan extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

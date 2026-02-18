@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotificationscontactsEmailContactConfig extends cdktf.TerraformMetaArguments {
+export interface NotificationscontactsEmailContactConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notificationscontacts_email_contact#email_address NotificationscontactsEmailContact#email_address}
   */
@@ -29,7 +29,7 @@ export interface NotificationscontactsEmailContactConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notificationscontacts_email_contact aws_notificationscontacts_email_contact}
 */
-export class NotificationscontactsEmailContact extends cdktf.TerraformResource {
+export class NotificationscontactsEmailContact extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class NotificationscontactsEmailContact extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotificationscontactsEmailContact resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotificationscontactsEmailContact resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationscontactsEmailContact to import
   * @param importFromId The id of the existing NotificationscontactsEmailContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/notificationscontacts_email_contact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationscontactsEmailContact to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_notificationscontacts_email_contact", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_notificationscontacts_email_contact", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,7 +134,7 @@ export class NotificationscontactsEmailContact extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -145,28 +145,28 @@ export class NotificationscontactsEmailContact extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      email_address: cdktf.stringToTerraform(this._emailAddress),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      email_address: cdktn.stringToTerraform(this._emailAddress),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       email_address: {
-        value: cdktf.stringToHclTerraform(this._emailAddress),
+        value: cdktn.stringToHclTerraform(this._emailAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

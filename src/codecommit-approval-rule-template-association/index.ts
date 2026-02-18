@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CodecommitApprovalRuleTemplateAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface CodecommitApprovalRuleTemplateAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecommit_approval_rule_template_association#approval_rule_template_name CodecommitApprovalRuleTemplateAssociation#approval_rule_template_name}
   */
@@ -38,7 +38,7 @@ export interface CodecommitApprovalRuleTemplateAssociationConfig extends cdktf.T
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association}
 */
-export class CodecommitApprovalRuleTemplateAssociation extends cdktf.TerraformResource {
+export class CodecommitApprovalRuleTemplateAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class CodecommitApprovalRuleTemplateAssociation extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CodecommitApprovalRuleTemplateAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CodecommitApprovalRuleTemplateAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodecommitApprovalRuleTemplateAssociation to import
   * @param importFromId The id of the existing CodecommitApprovalRuleTemplateAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/codecommit_approval_rule_template_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodecommitApprovalRuleTemplateAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_codecommit_approval_rule_template_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_codecommit_approval_rule_template_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class CodecommitApprovalRuleTemplateAssociation extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      approval_rule_template_name: cdktf.stringToTerraform(this._approvalRuleTemplateName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      repository_name: cdktf.stringToTerraform(this._repositoryName),
+      approval_rule_template_name: cdktn.stringToTerraform(this._approvalRuleTemplateName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      repository_name: cdktn.stringToTerraform(this._repositoryName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       approval_rule_template_name: {
-        value: cdktf.stringToHclTerraform(this._approvalRuleTemplateName),
+        value: cdktn.stringToHclTerraform(this._approvalRuleTemplateName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_name: {
-        value: cdktf.stringToHclTerraform(this._repositoryName),
+        value: cdktn.stringToHclTerraform(this._repositoryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

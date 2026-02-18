@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
+export interface EfsFileSystemConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system#availability_zone_name EfsFileSystem#availability_zone_name}
   */
@@ -23,7 +23,7 @@ export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system#encrypted EfsFileSystem#encrypted}
   */
-  readonly encrypted?: boolean | cdktf.IResolvable;
+  readonly encrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system#id EfsFileSystem#id}
   *
@@ -66,7 +66,7 @@ export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system#lifecycle_policy EfsFileSystem#lifecycle_policy}
   */
-  readonly lifecyclePolicy?: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable;
+  readonly lifecyclePolicy?: EfsFileSystemLifecyclePolicy[] | cdktn.IResolvable;
   /**
   * protection block
   *
@@ -78,8 +78,8 @@ export interface EfsFileSystemSizeInBytes {
 }
 
 export function efsFileSystemSizeInBytesToTerraform(struct?: EfsFileSystemSizeInBytes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -88,8 +88,8 @@ export function efsFileSystemSizeInBytesToTerraform(struct?: EfsFileSystemSizeIn
 
 
 export function efsFileSystemSizeInBytesToHclTerraform(struct?: EfsFileSystemSizeInBytes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -97,7 +97,7 @@ export function efsFileSystemSizeInBytesToHclTerraform(struct?: EfsFileSystemSiz
   return attrs;
 }
 
-export class EfsFileSystemSizeInBytesOutputReference extends cdktf.ComplexObject {
+export class EfsFileSystemSizeInBytesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -106,7 +106,7 @@ export class EfsFileSystemSizeInBytesOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -141,14 +141,14 @@ export class EfsFileSystemSizeInBytesOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class EfsFileSystemSizeInBytesList extends cdktf.ComplexList {
+export class EfsFileSystemSizeInBytesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -174,39 +174,39 @@ export interface EfsFileSystemLifecyclePolicy {
   readonly transitionToPrimaryStorageClass?: string;
 }
 
-export function efsFileSystemLifecyclePolicyToTerraform(struct?: EfsFileSystemLifecyclePolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function efsFileSystemLifecyclePolicyToTerraform(struct?: EfsFileSystemLifecyclePolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    transition_to_archive: cdktf.stringToTerraform(struct!.transitionToArchive),
-    transition_to_ia: cdktf.stringToTerraform(struct!.transitionToIa),
-    transition_to_primary_storage_class: cdktf.stringToTerraform(struct!.transitionToPrimaryStorageClass),
+    transition_to_archive: cdktn.stringToTerraform(struct!.transitionToArchive),
+    transition_to_ia: cdktn.stringToTerraform(struct!.transitionToIa),
+    transition_to_primary_storage_class: cdktn.stringToTerraform(struct!.transitionToPrimaryStorageClass),
   }
 }
 
 
-export function efsFileSystemLifecyclePolicyToHclTerraform(struct?: EfsFileSystemLifecyclePolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function efsFileSystemLifecyclePolicyToHclTerraform(struct?: EfsFileSystemLifecyclePolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     transition_to_archive: {
-      value: cdktf.stringToHclTerraform(struct!.transitionToArchive),
+      value: cdktn.stringToHclTerraform(struct!.transitionToArchive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transition_to_ia: {
-      value: cdktf.stringToHclTerraform(struct!.transitionToIa),
+      value: cdktn.stringToHclTerraform(struct!.transitionToIa),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transition_to_primary_storage_class: {
-      value: cdktf.stringToHclTerraform(struct!.transitionToPrimaryStorageClass),
+      value: cdktn.stringToHclTerraform(struct!.transitionToPrimaryStorageClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -217,9 +217,9 @@ export function efsFileSystemLifecyclePolicyToHclTerraform(struct?: EfsFileSyste
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexObject {
+export class EfsFileSystemLifecyclePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -227,11 +227,11 @@ export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EfsFileSystemLifecyclePolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): EfsFileSystemLifecyclePolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -252,7 +252,7 @@ export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EfsFileSystemLifecyclePolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EfsFileSystemLifecyclePolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -260,7 +260,7 @@ export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexOb
       this._transitionToIa = undefined;
       this._transitionToPrimaryStorageClass = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -322,15 +322,15 @@ export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class EfsFileSystemLifecyclePolicyList extends cdktf.ComplexList {
-  public internalValue? : EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable
+export class EfsFileSystemLifecyclePolicyList extends cdktn.ComplexList {
+  public internalValue? : EfsFileSystemLifecyclePolicy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -349,24 +349,24 @@ export interface EfsFileSystemProtection {
 }
 
 export function efsFileSystemProtectionToTerraform(struct?: EfsFileSystemProtectionOutputReference | EfsFileSystemProtection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    replication_overwrite: cdktf.stringToTerraform(struct!.replicationOverwrite),
+    replication_overwrite: cdktn.stringToTerraform(struct!.replicationOverwrite),
   }
 }
 
 
 export function efsFileSystemProtectionToHclTerraform(struct?: EfsFileSystemProtectionOutputReference | EfsFileSystemProtection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     replication_overwrite: {
-      value: cdktf.stringToHclTerraform(struct!.replicationOverwrite),
+      value: cdktn.stringToHclTerraform(struct!.replicationOverwrite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -377,14 +377,14 @@ export function efsFileSystemProtectionToHclTerraform(struct?: EfsFileSystemProt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EfsFileSystemProtectionOutputReference extends cdktf.ComplexObject {
+export class EfsFileSystemProtectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -429,7 +429,7 @@ export class EfsFileSystemProtectionOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system aws_efs_file_system}
 */
-export class EfsFileSystem extends cdktf.TerraformResource {
+export class EfsFileSystem extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -440,14 +440,14 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EfsFileSystem resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EfsFileSystem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EfsFileSystem to import
   * @param importFromId The id of the existing EfsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/efs_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EfsFileSystem to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_file_system", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_file_system", importId: importFromId, provider });
       }
 
   // ===========
@@ -544,11 +544,11 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   }
 
   // encrypted - computed: true, optional: true, required: false
-  private _encrypted?: boolean | cdktf.IResolvable; 
+  private _encrypted?: boolean | cdktn.IResolvable; 
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | cdktf.IResolvable) {
+  public set encrypted(value: boolean | cdktn.IResolvable) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -713,7 +713,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   public get lifecyclePolicy() {
     return this._lifecyclePolicy;
   }
-  public putLifecyclePolicy(value: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable) {
+  public putLifecyclePolicy(value: EfsFileSystemLifecyclePolicy[] | cdktn.IResolvable) {
     this._lifecyclePolicy.internalValue = value;
   }
   public resetLifecyclePolicy() {
@@ -746,18 +746,18 @@ export class EfsFileSystem extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone_name: cdktf.stringToTerraform(this._availabilityZoneName),
-      creation_token: cdktf.stringToTerraform(this._creationToken),
-      encrypted: cdktf.booleanToTerraform(this._encrypted),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      performance_mode: cdktf.stringToTerraform(this._performanceMode),
-      provisioned_throughput_in_mibps: cdktf.numberToTerraform(this._provisionedThroughputInMibps),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      throughput_mode: cdktf.stringToTerraform(this._throughputMode),
-      lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform, true)(this._lifecyclePolicy.internalValue),
+      availability_zone_name: cdktn.stringToTerraform(this._availabilityZoneName),
+      creation_token: cdktn.stringToTerraform(this._creationToken),
+      encrypted: cdktn.booleanToTerraform(this._encrypted),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      performance_mode: cdktn.stringToTerraform(this._performanceMode),
+      provisioned_throughput_in_mibps: cdktn.numberToTerraform(this._provisionedThroughputInMibps),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      throughput_mode: cdktn.stringToTerraform(this._throughputMode),
+      lifecycle_policy: cdktn.listMapper(efsFileSystemLifecyclePolicyToTerraform, true)(this._lifecyclePolicy.internalValue),
       protection: efsFileSystemProtectionToTerraform(this._protection.internalValue),
     };
   }
@@ -765,73 +765,73 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_zone_name: {
-        value: cdktf.stringToHclTerraform(this._availabilityZoneName),
+        value: cdktn.stringToHclTerraform(this._availabilityZoneName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creation_token: {
-        value: cdktf.stringToHclTerraform(this._creationToken),
+        value: cdktn.stringToHclTerraform(this._creationToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encrypted: {
-        value: cdktf.booleanToHclTerraform(this._encrypted),
+        value: cdktn.booleanToHclTerraform(this._encrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       performance_mode: {
-        value: cdktf.stringToHclTerraform(this._performanceMode),
+        value: cdktn.stringToHclTerraform(this._performanceMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provisioned_throughput_in_mibps: {
-        value: cdktf.numberToHclTerraform(this._provisionedThroughputInMibps),
+        value: cdktn.numberToHclTerraform(this._provisionedThroughputInMibps),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       throughput_mode: {
-        value: cdktf.stringToHclTerraform(this._throughputMode),
+        value: cdktn.stringToHclTerraform(this._throughputMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lifecycle_policy: {
-        value: cdktf.listMapperHcl(efsFileSystemLifecyclePolicyToHclTerraform, true)(this._lifecyclePolicy.internalValue),
+        value: cdktn.listMapperHcl(efsFileSystemLifecyclePolicyToHclTerraform, true)(this._lifecyclePolicy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EfsFileSystemLifecyclePolicyList",

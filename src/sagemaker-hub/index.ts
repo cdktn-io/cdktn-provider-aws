@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerHubConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerHubConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_hub#hub_description SagemakerHub#hub_description}
   */
@@ -64,24 +64,24 @@ export interface SagemakerHubS3StorageConfig {
 }
 
 export function sagemakerHubS3StorageConfigToTerraform(struct?: SagemakerHubS3StorageConfigOutputReference | SagemakerHubS3StorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_output_path: cdktf.stringToTerraform(struct!.s3OutputPath),
+    s3_output_path: cdktn.stringToTerraform(struct!.s3OutputPath),
   }
 }
 
 
 export function sagemakerHubS3StorageConfigToHclTerraform(struct?: SagemakerHubS3StorageConfigOutputReference | SagemakerHubS3StorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_output_path: {
-      value: cdktf.stringToHclTerraform(struct!.s3OutputPath),
+      value: cdktn.stringToHclTerraform(struct!.s3OutputPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,14 +92,14 @@ export function sagemakerHubS3StorageConfigToHclTerraform(struct?: SagemakerHubS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerHubS3StorageConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerHubS3StorageConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -144,7 +144,7 @@ export class SagemakerHubS3StorageConfigOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_hub aws_sagemaker_hub}
 */
-export class SagemakerHub extends cdktf.TerraformResource {
+export class SagemakerHub extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -155,14 +155,14 @@ export class SagemakerHub extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerHub resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerHub resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerHub to import
   * @param importFromId The id of the existing SagemakerHub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_hub#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerHub to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_hub", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_hub", importId: importFromId, provider });
       }
 
   // ===========
@@ -257,7 +257,7 @@ export class SagemakerHub extends cdktf.TerraformResource {
   // hub_search_keywords - computed: false, optional: true, required: false
   private _hubSearchKeywords?: string[]; 
   public get hubSearchKeywords() {
-    return cdktf.Fn.tolist(this.getListAttribute('hub_search_keywords'));
+    return cdktn.Fn.tolist(this.getListAttribute('hub_search_keywords'));
   }
   public set hubSearchKeywords(value: string[]) {
     this._hubSearchKeywords = value;
@@ -356,14 +356,14 @@ export class SagemakerHub extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hub_description: cdktf.stringToTerraform(this._hubDescription),
-      hub_display_name: cdktf.stringToTerraform(this._hubDisplayName),
-      hub_name: cdktf.stringToTerraform(this._hubName),
-      hub_search_keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hubSearchKeywords),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      hub_description: cdktn.stringToTerraform(this._hubDescription),
+      hub_display_name: cdktn.stringToTerraform(this._hubDisplayName),
+      hub_name: cdktn.stringToTerraform(this._hubName),
+      hub_search_keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(this._hubSearchKeywords),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       s3_storage_config: sagemakerHubS3StorageConfigToTerraform(this._s3StorageConfig.internalValue),
     };
   }
@@ -371,49 +371,49 @@ export class SagemakerHub extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hub_description: {
-        value: cdktf.stringToHclTerraform(this._hubDescription),
+        value: cdktn.stringToHclTerraform(this._hubDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hub_display_name: {
-        value: cdktf.stringToHclTerraform(this._hubDisplayName),
+        value: cdktn.stringToHclTerraform(this._hubDisplayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hub_name: {
-        value: cdktf.stringToHclTerraform(this._hubName),
+        value: cdktn.stringToHclTerraform(this._hubName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hub_search_keywords: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hubSearchKeywords),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._hubSearchKeywords),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

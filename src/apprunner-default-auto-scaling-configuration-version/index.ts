@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApprunnerDefaultAutoScalingConfigurationVersionConfig extends cdktf.TerraformMetaArguments {
+export interface ApprunnerDefaultAutoScalingConfigurationVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_default_auto_scaling_configuration_version#auto_scaling_configuration_arn ApprunnerDefaultAutoScalingConfigurationVersion#auto_scaling_configuration_arn}
   */
@@ -27,7 +27,7 @@ export interface ApprunnerDefaultAutoScalingConfigurationVersionConfig extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version}
 */
-export class ApprunnerDefaultAutoScalingConfigurationVersion extends cdktf.TerraformResource {
+export class ApprunnerDefaultAutoScalingConfigurationVersion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -38,14 +38,14 @@ export class ApprunnerDefaultAutoScalingConfigurationVersion extends cdktf.Terra
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApprunnerDefaultAutoScalingConfigurationVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApprunnerDefaultAutoScalingConfigurationVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApprunnerDefaultAutoScalingConfigurationVersion to import
   * @param importFromId The id of the existing ApprunnerDefaultAutoScalingConfigurationVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apprunner_default_auto_scaling_configuration_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApprunnerDefaultAutoScalingConfigurationVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apprunner_default_auto_scaling_configuration_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apprunner_default_auto_scaling_configuration_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -123,21 +123,21 @@ export class ApprunnerDefaultAutoScalingConfigurationVersion extends cdktf.Terra
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_scaling_configuration_arn: cdktf.stringToTerraform(this._autoScalingConfigurationArn),
-      region: cdktf.stringToTerraform(this._region),
+      auto_scaling_configuration_arn: cdktn.stringToTerraform(this._autoScalingConfigurationArn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_scaling_configuration_arn: {
-        value: cdktf.stringToHclTerraform(this._autoScalingConfigurationArn),
+        value: cdktn.stringToHclTerraform(this._autoScalingConfigurationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

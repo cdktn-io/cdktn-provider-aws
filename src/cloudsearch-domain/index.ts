@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudsearchDomainConfig extends cdktf.TerraformMetaArguments {
+export interface CloudsearchDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#id CloudsearchDomain#id}
   *
@@ -22,7 +22,7 @@ export interface CloudsearchDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#multi_az CloudsearchDomain#multi_az}
   */
-  readonly multiAz?: boolean | cdktf.IResolvable;
+  readonly multiAz?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}
   */
@@ -44,7 +44,7 @@ export interface CloudsearchDomainConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#index_field CloudsearchDomain#index_field}
   */
-  readonly indexField?: CloudsearchDomainIndexField[] | cdktf.IResolvable;
+  readonly indexField?: CloudsearchDomainIndexField[] | cdktn.IResolvable;
   /**
   * scaling_parameters block
   *
@@ -62,7 +62,7 @@ export interface CloudsearchDomainEndpointOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#enforce_https CloudsearchDomain#enforce_https}
   */
-  readonly enforceHttps?: boolean | cdktf.IResolvable;
+  readonly enforceHttps?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#tls_security_policy CloudsearchDomain#tls_security_policy}
   */
@@ -70,31 +70,31 @@ export interface CloudsearchDomainEndpointOptions {
 }
 
 export function cloudsearchDomainEndpointOptionsToTerraform(struct?: CloudsearchDomainEndpointOptionsOutputReference | CloudsearchDomainEndpointOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enforce_https: cdktf.booleanToTerraform(struct!.enforceHttps),
-    tls_security_policy: cdktf.stringToTerraform(struct!.tlsSecurityPolicy),
+    enforce_https: cdktn.booleanToTerraform(struct!.enforceHttps),
+    tls_security_policy: cdktn.stringToTerraform(struct!.tlsSecurityPolicy),
   }
 }
 
 
 export function cloudsearchDomainEndpointOptionsToHclTerraform(struct?: CloudsearchDomainEndpointOptionsOutputReference | CloudsearchDomainEndpointOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enforce_https: {
-      value: cdktf.booleanToHclTerraform(struct!.enforceHttps),
+      value: cdktn.booleanToHclTerraform(struct!.enforceHttps),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_security_policy: {
-      value: cdktf.stringToHclTerraform(struct!.tlsSecurityPolicy),
+      value: cdktn.stringToHclTerraform(struct!.tlsSecurityPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -105,14 +105,14 @@ export function cloudsearchDomainEndpointOptionsToHclTerraform(struct?: Cloudsea
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudsearchDomainEndpointOptionsOutputReference extends cdktf.ComplexObject {
+export class CloudsearchDomainEndpointOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -144,11 +144,11 @@ export class CloudsearchDomainEndpointOptionsOutputReference extends cdktf.Compl
   }
 
   // enforce_https - computed: true, optional: true, required: false
-  private _enforceHttps?: boolean | cdktf.IResolvable; 
+  private _enforceHttps?: boolean | cdktn.IResolvable; 
   public get enforceHttps() {
     return this.getBooleanAttribute('enforce_https');
   }
-  public set enforceHttps(value: boolean | cdktf.IResolvable) {
+  public set enforceHttps(value: boolean | cdktn.IResolvable) {
     this._enforceHttps = value;
   }
   public resetEnforceHttps() {
@@ -187,11 +187,11 @@ export interface CloudsearchDomainIndexField {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#facet CloudsearchDomain#facet}
   */
-  readonly facet?: boolean | cdktf.IResolvable;
+  readonly facet?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#highlight CloudsearchDomain#highlight}
   */
-  readonly highlight?: boolean | cdktf.IResolvable;
+  readonly highlight?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}
   */
@@ -199,15 +199,15 @@ export interface CloudsearchDomainIndexField {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#return CloudsearchDomain#return}
   */
-  readonly return?: boolean | cdktf.IResolvable;
+  readonly return?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#search CloudsearchDomain#search}
   */
-  readonly search?: boolean | cdktf.IResolvable;
+  readonly search?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#sort CloudsearchDomain#sort}
   */
-  readonly sort?: boolean | cdktf.IResolvable;
+  readonly sort?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#source_fields CloudsearchDomain#source_fields}
   */
@@ -218,88 +218,88 @@ export interface CloudsearchDomainIndexField {
   readonly type: string;
 }
 
-export function cloudsearchDomainIndexFieldToTerraform(struct?: CloudsearchDomainIndexField | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudsearchDomainIndexFieldToTerraform(struct?: CloudsearchDomainIndexField | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    analysis_scheme: cdktf.stringToTerraform(struct!.analysisScheme),
-    default_value: cdktf.stringToTerraform(struct!.defaultValue),
-    facet: cdktf.booleanToTerraform(struct!.facet),
-    highlight: cdktf.booleanToTerraform(struct!.highlight),
-    name: cdktf.stringToTerraform(struct!.name),
-    return: cdktf.booleanToTerraform(struct!.return),
-    search: cdktf.booleanToTerraform(struct!.search),
-    sort: cdktf.booleanToTerraform(struct!.sort),
-    source_fields: cdktf.stringToTerraform(struct!.sourceFields),
-    type: cdktf.stringToTerraform(struct!.type),
+    analysis_scheme: cdktn.stringToTerraform(struct!.analysisScheme),
+    default_value: cdktn.stringToTerraform(struct!.defaultValue),
+    facet: cdktn.booleanToTerraform(struct!.facet),
+    highlight: cdktn.booleanToTerraform(struct!.highlight),
+    name: cdktn.stringToTerraform(struct!.name),
+    return: cdktn.booleanToTerraform(struct!.return),
+    search: cdktn.booleanToTerraform(struct!.search),
+    sort: cdktn.booleanToTerraform(struct!.sort),
+    source_fields: cdktn.stringToTerraform(struct!.sourceFields),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function cloudsearchDomainIndexFieldToHclTerraform(struct?: CloudsearchDomainIndexField | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudsearchDomainIndexFieldToHclTerraform(struct?: CloudsearchDomainIndexField | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     analysis_scheme: {
-      value: cdktf.stringToHclTerraform(struct!.analysisScheme),
+      value: cdktn.stringToHclTerraform(struct!.analysisScheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_value: {
-      value: cdktf.stringToHclTerraform(struct!.defaultValue),
+      value: cdktn.stringToHclTerraform(struct!.defaultValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.booleanToHclTerraform(struct!.facet),
+      value: cdktn.booleanToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     highlight: {
-      value: cdktf.booleanToHclTerraform(struct!.highlight),
+      value: cdktn.booleanToHclTerraform(struct!.highlight),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     return: {
-      value: cdktf.booleanToHclTerraform(struct!.return),
+      value: cdktn.booleanToHclTerraform(struct!.return),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     search: {
-      value: cdktf.booleanToHclTerraform(struct!.search),
+      value: cdktn.booleanToHclTerraform(struct!.search),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sort: {
-      value: cdktf.booleanToHclTerraform(struct!.sort),
+      value: cdktn.booleanToHclTerraform(struct!.sort),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source_fields: {
-      value: cdktf.stringToHclTerraform(struct!.sourceFields),
+      value: cdktn.stringToHclTerraform(struct!.sourceFields),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -310,9 +310,9 @@ export function cloudsearchDomainIndexFieldToHclTerraform(struct?: CloudsearchDo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObject {
+export class CloudsearchDomainIndexFieldOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -320,11 +320,11 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudsearchDomainIndexField | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudsearchDomainIndexField | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -373,7 +373,7 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudsearchDomainIndexField | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudsearchDomainIndexField | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -388,7 +388,7 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
       this._sourceFields = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -441,11 +441,11 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
   }
 
   // facet - computed: false, optional: true, required: false
-  private _facet?: boolean | cdktf.IResolvable; 
+  private _facet?: boolean | cdktn.IResolvable; 
   public get facet() {
     return this.getBooleanAttribute('facet');
   }
-  public set facet(value: boolean | cdktf.IResolvable) {
+  public set facet(value: boolean | cdktn.IResolvable) {
     this._facet = value;
   }
   public resetFacet() {
@@ -457,11 +457,11 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
   }
 
   // highlight - computed: false, optional: true, required: false
-  private _highlight?: boolean | cdktf.IResolvable; 
+  private _highlight?: boolean | cdktn.IResolvable; 
   public get highlight() {
     return this.getBooleanAttribute('highlight');
   }
-  public set highlight(value: boolean | cdktf.IResolvable) {
+  public set highlight(value: boolean | cdktn.IResolvable) {
     this._highlight = value;
   }
   public resetHighlight() {
@@ -486,11 +486,11 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
   }
 
   // return - computed: false, optional: true, required: false
-  private _return?: boolean | cdktf.IResolvable; 
+  private _return?: boolean | cdktn.IResolvable; 
   public get return() {
     return this.getBooleanAttribute('return');
   }
-  public set return(value: boolean | cdktf.IResolvable) {
+  public set return(value: boolean | cdktn.IResolvable) {
     this._return = value;
   }
   public resetReturn() {
@@ -502,11 +502,11 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
   }
 
   // search - computed: false, optional: true, required: false
-  private _search?: boolean | cdktf.IResolvable; 
+  private _search?: boolean | cdktn.IResolvable; 
   public get search() {
     return this.getBooleanAttribute('search');
   }
-  public set search(value: boolean | cdktf.IResolvable) {
+  public set search(value: boolean | cdktn.IResolvable) {
     this._search = value;
   }
   public resetSearch() {
@@ -518,11 +518,11 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
   }
 
   // sort - computed: false, optional: true, required: false
-  private _sort?: boolean | cdktf.IResolvable; 
+  private _sort?: boolean | cdktn.IResolvable; 
   public get sort() {
     return this.getBooleanAttribute('sort');
   }
-  public set sort(value: boolean | cdktf.IResolvable) {
+  public set sort(value: boolean | cdktn.IResolvable) {
     this._sort = value;
   }
   public resetSort() {
@@ -563,15 +563,15 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class CloudsearchDomainIndexFieldList extends cdktf.ComplexList {
-  public internalValue? : CloudsearchDomainIndexField[] | cdktf.IResolvable
+export class CloudsearchDomainIndexFieldList extends cdktn.ComplexList {
+  public internalValue? : CloudsearchDomainIndexField[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -598,38 +598,38 @@ export interface CloudsearchDomainScalingParameters {
 }
 
 export function cloudsearchDomainScalingParametersToTerraform(struct?: CloudsearchDomainScalingParametersOutputReference | CloudsearchDomainScalingParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    desired_instance_type: cdktf.stringToTerraform(struct!.desiredInstanceType),
-    desired_partition_count: cdktf.numberToTerraform(struct!.desiredPartitionCount),
-    desired_replication_count: cdktf.numberToTerraform(struct!.desiredReplicationCount),
+    desired_instance_type: cdktn.stringToTerraform(struct!.desiredInstanceType),
+    desired_partition_count: cdktn.numberToTerraform(struct!.desiredPartitionCount),
+    desired_replication_count: cdktn.numberToTerraform(struct!.desiredReplicationCount),
   }
 }
 
 
 export function cloudsearchDomainScalingParametersToHclTerraform(struct?: CloudsearchDomainScalingParametersOutputReference | CloudsearchDomainScalingParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     desired_instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.desiredInstanceType),
+      value: cdktn.stringToHclTerraform(struct!.desiredInstanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     desired_partition_count: {
-      value: cdktf.numberToHclTerraform(struct!.desiredPartitionCount),
+      value: cdktn.numberToHclTerraform(struct!.desiredPartitionCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     desired_replication_count: {
-      value: cdktf.numberToHclTerraform(struct!.desiredReplicationCount),
+      value: cdktn.numberToHclTerraform(struct!.desiredReplicationCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -640,14 +640,14 @@ export function cloudsearchDomainScalingParametersToHclTerraform(struct?: Clouds
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudsearchDomainScalingParametersOutputReference extends cdktf.ComplexObject {
+export class CloudsearchDomainScalingParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -747,39 +747,39 @@ export interface CloudsearchDomainTimeouts {
   readonly update?: string;
 }
 
-export function cloudsearchDomainTimeoutsToTerraform(struct?: CloudsearchDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudsearchDomainTimeoutsToTerraform(struct?: CloudsearchDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudsearchDomainTimeoutsToHclTerraform(struct?: CloudsearchDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudsearchDomainTimeoutsToHclTerraform(struct?: CloudsearchDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -790,19 +790,19 @@ export function cloudsearchDomainTimeoutsToHclTerraform(struct?: CloudsearchDoma
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudsearchDomainTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudsearchDomainTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudsearchDomainTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -823,7 +823,7 @@ export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudsearchDomainTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudsearchDomainTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -831,7 +831,7 @@ export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -896,7 +896,7 @@ export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain aws_cloudsearch_domain}
 */
-export class CloudsearchDomain extends cdktf.TerraformResource {
+export class CloudsearchDomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -907,14 +907,14 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudsearchDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudsearchDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudsearchDomain to import
   * @param importFromId The id of the existing CloudsearchDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudsearch_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudsearchDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudsearch_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudsearch_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -990,11 +990,11 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   }
 
   // multi_az - computed: true, optional: true, required: false
-  private _multiAz?: boolean | cdktf.IResolvable; 
+  private _multiAz?: boolean | cdktn.IResolvable; 
   public get multiAz() {
     return this.getBooleanAttribute('multi_az');
   }
-  public set multiAz(value: boolean | cdktf.IResolvable) {
+  public set multiAz(value: boolean | cdktn.IResolvable) {
     this._multiAz = value;
   }
   public resetMultiAz() {
@@ -1060,7 +1060,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   public get indexField() {
     return this._indexField;
   }
-  public putIndexField(value: CloudsearchDomainIndexField[] | cdktf.IResolvable) {
+  public putIndexField(value: CloudsearchDomainIndexField[] | cdktn.IResolvable) {
     this._indexField.internalValue = value;
   }
   public resetIndexField() {
@@ -1109,12 +1109,12 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      multi_az: cdktf.booleanToTerraform(this._multiAz),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      multi_az: cdktn.booleanToTerraform(this._multiAz),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
       endpoint_options: cloudsearchDomainEndpointOptionsToTerraform(this._endpointOptions.internalValue),
-      index_field: cdktf.listMapper(cloudsearchDomainIndexFieldToTerraform, true)(this._indexField.internalValue),
+      index_field: cdktn.listMapper(cloudsearchDomainIndexFieldToTerraform, true)(this._indexField.internalValue),
       scaling_parameters: cloudsearchDomainScalingParametersToTerraform(this._scalingParameters.internalValue),
       timeouts: cloudsearchDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1123,25 +1123,25 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_az: {
-        value: cdktf.booleanToHclTerraform(this._multiAz),
+        value: cdktn.booleanToHclTerraform(this._multiAz),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1153,7 +1153,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
         storageClassType: "CloudsearchDomainEndpointOptionsList",
       },
       index_field: {
-        value: cdktf.listMapperHcl(cloudsearchDomainIndexFieldToHclTerraform, true)(this._indexField.internalValue),
+        value: cdktn.listMapperHcl(cloudsearchDomainIndexFieldToHclTerraform, true)(this._indexField.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CloudsearchDomainIndexFieldList",

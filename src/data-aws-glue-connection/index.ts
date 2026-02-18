@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsGlueConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsGlueConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_connection#id DataAwsGlueConnection#id}
   *
@@ -34,8 +34,8 @@ export interface DataAwsGlueConnectionPhysicalConnectionRequirements {
 }
 
 export function dataAwsGlueConnectionPhysicalConnectionRequirementsToTerraform(struct?: DataAwsGlueConnectionPhysicalConnectionRequirements): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -44,8 +44,8 @@ export function dataAwsGlueConnectionPhysicalConnectionRequirementsToTerraform(s
 
 
 export function dataAwsGlueConnectionPhysicalConnectionRequirementsToHclTerraform(struct?: DataAwsGlueConnectionPhysicalConnectionRequirements): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -53,7 +53,7 @@ export function dataAwsGlueConnectionPhysicalConnectionRequirementsToHclTerrafor
   return attrs;
 }
 
-export class DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference extends cdktf.ComplexObject {
+export class DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,7 +62,7 @@ export class DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -88,7 +88,7 @@ export class DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference 
 
   // security_group_id_list - computed: true, optional: false, required: false
   public get securityGroupIdList() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_id_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_id_list'));
   }
 
   // subnet_id - computed: true, optional: false, required: false
@@ -97,14 +97,14 @@ export class DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference 
   }
 }
 
-export class DataAwsGlueConnectionPhysicalConnectionRequirementsList extends cdktf.ComplexList {
+export class DataAwsGlueConnectionPhysicalConnectionRequirementsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -119,7 +119,7 @@ export class DataAwsGlueConnectionPhysicalConnectionRequirementsList extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_connection aws_glue_connection}
 */
-export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
+export class DataAwsGlueConnection extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -130,14 +130,14 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsGlueConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsGlueConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsGlueConnection to import
   * @param importFromId The id of the existing DataAwsGlueConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/glue_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsGlueConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_glue_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -182,7 +182,7 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
   }
 
   // athena_properties - computed: true, optional: false, required: false
-  private _athenaProperties = new cdktf.StringMap(this, "athena_properties");
+  private _athenaProperties = new cdktn.StringMap(this, "athena_properties");
   public get athenaProperties() {
     return this._athenaProperties;
   }
@@ -193,7 +193,7 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
   }
 
   // connection_properties - computed: true, optional: false, required: false
-  private _connectionProperties = new cdktf.StringMap(this, "connection_properties");
+  private _connectionProperties = new cdktn.StringMap(this, "connection_properties");
   public get connectionProperties() {
     return this._connectionProperties;
   }
@@ -275,28 +275,28 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

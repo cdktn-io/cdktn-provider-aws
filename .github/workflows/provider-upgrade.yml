@@ -36,7 +36,7 @@ jobs:
       - name: get provider current version
         id: current_version
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
-        run: echo "value=$(jq -r '.cdktf.provider.version' package.json)" >> $GITHUB_OUTPUT
+        run: echo "value=$(jq -r '(.cdktn // .cdktf).provider.version' package.json)" >> $GITHUB_OUTPUT
       - if: ${{ steps.check_version.outputs.new_version == 'available' }}
         env:
           CHECKPOINT_DISABLE: "1"

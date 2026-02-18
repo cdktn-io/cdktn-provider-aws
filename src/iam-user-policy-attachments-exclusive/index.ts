@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamUserPolicyAttachmentsExclusiveConfig extends cdktf.TerraformMetaArguments {
+export interface IamUserPolicyAttachmentsExclusiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_user_policy_attachments_exclusive#policy_arns IamUserPolicyAttachmentsExclusive#policy_arns}
   */
@@ -25,7 +25,7 @@ export interface IamUserPolicyAttachmentsExclusiveConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_user_policy_attachments_exclusive aws_iam_user_policy_attachments_exclusive}
 */
-export class IamUserPolicyAttachmentsExclusive extends cdktf.TerraformResource {
+export class IamUserPolicyAttachmentsExclusive extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -36,14 +36,14 @@ export class IamUserPolicyAttachmentsExclusive extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamUserPolicyAttachmentsExclusive resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamUserPolicyAttachmentsExclusive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamUserPolicyAttachmentsExclusive to import
   * @param importFromId The id of the existing IamUserPolicyAttachmentsExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_user_policy_attachments_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamUserPolicyAttachmentsExclusive to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_user_policy_attachments_exclusive", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_user_policy_attachments_exclusive", importId: importFromId, provider });
       }
 
   // ===========
@@ -84,7 +84,7 @@ export class IamUserPolicyAttachmentsExclusive extends cdktf.TerraformResource {
   // policy_arns - computed: false, optional: false, required: true
   private _policyArns?: string[]; 
   public get policyArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('policy_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('policy_arns'));
   }
   public set policyArns(value: string[]) {
     this._policyArns = value;
@@ -113,21 +113,21 @@ export class IamUserPolicyAttachmentsExclusive extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyArns),
-      user_name: cdktf.stringToTerraform(this._userName),
+      policy_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policyArns),
+      user_name: cdktn.stringToTerraform(this._userName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       policy_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policyArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

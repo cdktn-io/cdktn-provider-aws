@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KendraIndexConfig extends cdktf.TerraformMetaArguments {
+export interface KendraIndexConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index#description KendraIndex#description}
   */
@@ -64,7 +64,7 @@ export interface KendraIndexConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index#document_metadata_configuration_updates KendraIndex#document_metadata_configuration_updates}
   */
-  readonly documentMetadataConfigurationUpdates?: KendraIndexDocumentMetadataConfigurationUpdates[] | cdktf.IResolvable;
+  readonly documentMetadataConfigurationUpdates?: KendraIndexDocumentMetadataConfigurationUpdates[] | cdktn.IResolvable;
   /**
   * server_side_encryption_configuration block
   *
@@ -94,8 +94,8 @@ export interface KendraIndexIndexStatisticsFaqStatistics {
 }
 
 export function kendraIndexIndexStatisticsFaqStatisticsToTerraform(struct?: KendraIndexIndexStatisticsFaqStatistics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -104,8 +104,8 @@ export function kendraIndexIndexStatisticsFaqStatisticsToTerraform(struct?: Kend
 
 
 export function kendraIndexIndexStatisticsFaqStatisticsToHclTerraform(struct?: KendraIndexIndexStatisticsFaqStatistics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -113,7 +113,7 @@ export function kendraIndexIndexStatisticsFaqStatisticsToHclTerraform(struct?: K
   return attrs;
 }
 
-export class KendraIndexIndexStatisticsFaqStatisticsOutputReference extends cdktf.ComplexObject {
+export class KendraIndexIndexStatisticsFaqStatisticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -122,7 +122,7 @@ export class KendraIndexIndexStatisticsFaqStatisticsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -147,14 +147,14 @@ export class KendraIndexIndexStatisticsFaqStatisticsOutputReference extends cdkt
   }
 }
 
-export class KendraIndexIndexStatisticsFaqStatisticsList extends cdktf.ComplexList {
+export class KendraIndexIndexStatisticsFaqStatisticsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -169,8 +169,8 @@ export interface KendraIndexIndexStatisticsTextDocumentStatistics {
 }
 
 export function kendraIndexIndexStatisticsTextDocumentStatisticsToTerraform(struct?: KendraIndexIndexStatisticsTextDocumentStatistics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -179,8 +179,8 @@ export function kendraIndexIndexStatisticsTextDocumentStatisticsToTerraform(stru
 
 
 export function kendraIndexIndexStatisticsTextDocumentStatisticsToHclTerraform(struct?: KendraIndexIndexStatisticsTextDocumentStatistics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -188,7 +188,7 @@ export function kendraIndexIndexStatisticsTextDocumentStatisticsToHclTerraform(s
   return attrs;
 }
 
-export class KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference extends cdktf.ComplexObject {
+export class KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -197,7 +197,7 @@ export class KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -227,14 +227,14 @@ export class KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference ext
   }
 }
 
-export class KendraIndexIndexStatisticsTextDocumentStatisticsList extends cdktf.ComplexList {
+export class KendraIndexIndexStatisticsTextDocumentStatisticsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -249,8 +249,8 @@ export interface KendraIndexIndexStatistics {
 }
 
 export function kendraIndexIndexStatisticsToTerraform(struct?: KendraIndexIndexStatistics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -259,8 +259,8 @@ export function kendraIndexIndexStatisticsToTerraform(struct?: KendraIndexIndexS
 
 
 export function kendraIndexIndexStatisticsToHclTerraform(struct?: KendraIndexIndexStatistics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -268,7 +268,7 @@ export function kendraIndexIndexStatisticsToHclTerraform(struct?: KendraIndexInd
   return attrs;
 }
 
-export class KendraIndexIndexStatisticsOutputReference extends cdktf.ComplexObject {
+export class KendraIndexIndexStatisticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -277,7 +277,7 @@ export class KendraIndexIndexStatisticsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -309,14 +309,14 @@ export class KendraIndexIndexStatisticsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class KendraIndexIndexStatisticsList extends cdktf.ComplexList {
+export class KendraIndexIndexStatisticsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -339,31 +339,31 @@ export interface KendraIndexCapacityUnits {
 }
 
 export function kendraIndexCapacityUnitsToTerraform(struct?: KendraIndexCapacityUnitsOutputReference | KendraIndexCapacityUnits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_capacity_units: cdktf.numberToTerraform(struct!.queryCapacityUnits),
-    storage_capacity_units: cdktf.numberToTerraform(struct!.storageCapacityUnits),
+    query_capacity_units: cdktn.numberToTerraform(struct!.queryCapacityUnits),
+    storage_capacity_units: cdktn.numberToTerraform(struct!.storageCapacityUnits),
   }
 }
 
 
 export function kendraIndexCapacityUnitsToHclTerraform(struct?: KendraIndexCapacityUnitsOutputReference | KendraIndexCapacityUnits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_capacity_units: {
-      value: cdktf.numberToHclTerraform(struct!.queryCapacityUnits),
+      value: cdktn.numberToHclTerraform(struct!.queryCapacityUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_capacity_units: {
-      value: cdktf.numberToHclTerraform(struct!.storageCapacityUnits),
+      value: cdktn.numberToHclTerraform(struct!.storageCapacityUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -374,14 +374,14 @@ export function kendraIndexCapacityUnitsToHclTerraform(struct?: KendraIndexCapac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexCapacityUnitsOutputReference extends cdktf.ComplexObject {
+export class KendraIndexCapacityUnitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -452,7 +452,7 @@ export interface KendraIndexDocumentMetadataConfigurationUpdatesRelevance {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index#freshness KendraIndex#freshness}
   */
-  readonly freshness?: boolean | cdktf.IResolvable;
+  readonly freshness?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index#importance KendraIndex#importance}
   */
@@ -468,52 +468,52 @@ export interface KendraIndexDocumentMetadataConfigurationUpdatesRelevance {
 }
 
 export function kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesRelevance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    duration: cdktf.stringToTerraform(struct!.duration),
-    freshness: cdktf.booleanToTerraform(struct!.freshness),
-    importance: cdktf.numberToTerraform(struct!.importance),
-    rank_order: cdktf.stringToTerraform(struct!.rankOrder),
-    values_importance_map: cdktf.hashMapper(cdktf.numberToTerraform)(struct!.valuesImportanceMap),
+    duration: cdktn.stringToTerraform(struct!.duration),
+    freshness: cdktn.booleanToTerraform(struct!.freshness),
+    importance: cdktn.numberToTerraform(struct!.importance),
+    rank_order: cdktn.stringToTerraform(struct!.rankOrder),
+    values_importance_map: cdktn.hashMapper(cdktn.numberToTerraform)(struct!.valuesImportanceMap),
   }
 }
 
 
 export function kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToHclTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesRelevance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     freshness: {
-      value: cdktf.booleanToHclTerraform(struct!.freshness),
+      value: cdktn.booleanToHclTerraform(struct!.freshness),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     importance: {
-      value: cdktf.numberToHclTerraform(struct!.importance),
+      value: cdktn.numberToHclTerraform(struct!.importance),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rank_order: {
-      value: cdktf.stringToHclTerraform(struct!.rankOrder),
+      value: cdktn.stringToHclTerraform(struct!.rankOrder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values_importance_map: {
-      value: cdktf.hashMapperHcl(cdktf.numberToHclTerraform)(struct!.valuesImportanceMap),
+      value: cdktn.hashMapperHcl(cdktn.numberToHclTerraform)(struct!.valuesImportanceMap),
       isBlock: false,
       type: "map",
       storageClassType: "numberMap",
@@ -524,14 +524,14 @@ export function kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference extends cdktf.ComplexObject {
+export class KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -597,11 +597,11 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputRefer
   }
 
   // freshness - computed: true, optional: true, required: false
-  private _freshness?: boolean | cdktf.IResolvable; 
+  private _freshness?: boolean | cdktn.IResolvable; 
   public get freshness() {
     return this.getBooleanAttribute('freshness');
   }
-  public set freshness(value: boolean | cdktf.IResolvable) {
+  public set freshness(value: boolean | cdktn.IResolvable) {
     this._freshness = value;
   }
   public resetFreshness() {
@@ -664,61 +664,61 @@ export interface KendraIndexDocumentMetadataConfigurationUpdatesSearch {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index#displayable KendraIndex#displayable}
   */
-  readonly displayable?: boolean | cdktf.IResolvable;
+  readonly displayable?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index#facetable KendraIndex#facetable}
   */
-  readonly facetable?: boolean | cdktf.IResolvable;
+  readonly facetable?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index#searchable KendraIndex#searchable}
   */
-  readonly searchable?: boolean | cdktf.IResolvable;
+  readonly searchable?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index#sortable KendraIndex#sortable}
   */
-  readonly sortable?: boolean | cdktf.IResolvable;
+  readonly sortable?: boolean | cdktn.IResolvable;
 }
 
 export function kendraIndexDocumentMetadataConfigurationUpdatesSearchToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesSearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    displayable: cdktf.booleanToTerraform(struct!.displayable),
-    facetable: cdktf.booleanToTerraform(struct!.facetable),
-    searchable: cdktf.booleanToTerraform(struct!.searchable),
-    sortable: cdktf.booleanToTerraform(struct!.sortable),
+    displayable: cdktn.booleanToTerraform(struct!.displayable),
+    facetable: cdktn.booleanToTerraform(struct!.facetable),
+    searchable: cdktn.booleanToTerraform(struct!.searchable),
+    sortable: cdktn.booleanToTerraform(struct!.sortable),
   }
 }
 
 
 export function kendraIndexDocumentMetadataConfigurationUpdatesSearchToHclTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesSearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     displayable: {
-      value: cdktf.booleanToHclTerraform(struct!.displayable),
+      value: cdktn.booleanToHclTerraform(struct!.displayable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     facetable: {
-      value: cdktf.booleanToHclTerraform(struct!.facetable),
+      value: cdktn.booleanToHclTerraform(struct!.facetable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     searchable: {
-      value: cdktf.booleanToHclTerraform(struct!.searchable),
+      value: cdktn.booleanToHclTerraform(struct!.searchable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sortable: {
-      value: cdktf.booleanToHclTerraform(struct!.sortable),
+      value: cdktn.booleanToHclTerraform(struct!.sortable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -729,14 +729,14 @@ export function kendraIndexDocumentMetadataConfigurationUpdatesSearchToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference extends cdktf.ComplexObject {
+export class KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -780,11 +780,11 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReferenc
   }
 
   // displayable - computed: true, optional: true, required: false
-  private _displayable?: boolean | cdktf.IResolvable; 
+  private _displayable?: boolean | cdktn.IResolvable; 
   public get displayable() {
     return this.getBooleanAttribute('displayable');
   }
-  public set displayable(value: boolean | cdktf.IResolvable) {
+  public set displayable(value: boolean | cdktn.IResolvable) {
     this._displayable = value;
   }
   public resetDisplayable() {
@@ -796,11 +796,11 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReferenc
   }
 
   // facetable - computed: true, optional: true, required: false
-  private _facetable?: boolean | cdktf.IResolvable; 
+  private _facetable?: boolean | cdktn.IResolvable; 
   public get facetable() {
     return this.getBooleanAttribute('facetable');
   }
-  public set facetable(value: boolean | cdktf.IResolvable) {
+  public set facetable(value: boolean | cdktn.IResolvable) {
     this._facetable = value;
   }
   public resetFacetable() {
@@ -812,11 +812,11 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReferenc
   }
 
   // searchable - computed: true, optional: true, required: false
-  private _searchable?: boolean | cdktf.IResolvable; 
+  private _searchable?: boolean | cdktn.IResolvable; 
   public get searchable() {
     return this.getBooleanAttribute('searchable');
   }
-  public set searchable(value: boolean | cdktf.IResolvable) {
+  public set searchable(value: boolean | cdktn.IResolvable) {
     this._searchable = value;
   }
   public resetSearchable() {
@@ -828,11 +828,11 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReferenc
   }
 
   // sortable - computed: true, optional: true, required: false
-  private _sortable?: boolean | cdktf.IResolvable; 
+  private _sortable?: boolean | cdktn.IResolvable; 
   public get sortable() {
     return this.getBooleanAttribute('sortable');
   }
-  public set sortable(value: boolean | cdktf.IResolvable) {
+  public set sortable(value: boolean | cdktn.IResolvable) {
     this._sortable = value;
   }
   public resetSortable() {
@@ -866,34 +866,34 @@ export interface KendraIndexDocumentMetadataConfigurationUpdates {
   readonly search?: KendraIndexDocumentMetadataConfigurationUpdatesSearch;
 }
 
-export function kendraIndexDocumentMetadataConfigurationUpdatesToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kendraIndexDocumentMetadataConfigurationUpdatesToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
     relevance: kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToTerraform(struct!.relevance),
     search: kendraIndexDocumentMetadataConfigurationUpdatesSearchToTerraform(struct!.search),
   }
 }
 
 
-export function kendraIndexDocumentMetadataConfigurationUpdatesToHclTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kendraIndexDocumentMetadataConfigurationUpdatesToHclTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -916,9 +916,9 @@ export function kendraIndexDocumentMetadataConfigurationUpdatesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexDocumentMetadataConfigurationUpdatesOutputReference extends cdktf.ComplexObject {
+export class KendraIndexDocumentMetadataConfigurationUpdatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -926,11 +926,11 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KendraIndexDocumentMetadataConfigurationUpdates | cdktf.IResolvable | undefined {
+  public get internalValue(): KendraIndexDocumentMetadataConfigurationUpdates | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -955,7 +955,7 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KendraIndexDocumentMetadataConfigurationUpdates | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KendraIndexDocumentMetadataConfigurationUpdates | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -964,7 +964,7 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesOutputReference exte
       this._relevance.internalValue = undefined;
       this._search.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1037,15 +1037,15 @@ export class KendraIndexDocumentMetadataConfigurationUpdatesOutputReference exte
   }
 }
 
-export class KendraIndexDocumentMetadataConfigurationUpdatesList extends cdktf.ComplexList {
-  public internalValue? : KendraIndexDocumentMetadataConfigurationUpdates[] | cdktf.IResolvable
+export class KendraIndexDocumentMetadataConfigurationUpdatesList extends cdktn.ComplexList {
+  public internalValue? : KendraIndexDocumentMetadataConfigurationUpdates[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1064,24 +1064,24 @@ export interface KendraIndexServerSideEncryptionConfiguration {
 }
 
 export function kendraIndexServerSideEncryptionConfigurationToTerraform(struct?: KendraIndexServerSideEncryptionConfigurationOutputReference | KendraIndexServerSideEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
   }
 }
 
 
 export function kendraIndexServerSideEncryptionConfigurationToHclTerraform(struct?: KendraIndexServerSideEncryptionConfigurationOutputReference | KendraIndexServerSideEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1092,14 +1092,14 @@ export function kendraIndexServerSideEncryptionConfigurationToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexServerSideEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class KendraIndexServerSideEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1155,39 +1155,39 @@ export interface KendraIndexTimeouts {
   readonly update?: string;
 }
 
-export function kendraIndexTimeoutsToTerraform(struct?: KendraIndexTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kendraIndexTimeoutsToTerraform(struct?: KendraIndexTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kendraIndexTimeoutsToHclTerraform(struct?: KendraIndexTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kendraIndexTimeoutsToHclTerraform(struct?: KendraIndexTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1198,19 +1198,19 @@ export function kendraIndexTimeoutsToHclTerraform(struct?: KendraIndexTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KendraIndexTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KendraIndexTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KendraIndexTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1231,7 +1231,7 @@ export class KendraIndexTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KendraIndexTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KendraIndexTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1239,7 +1239,7 @@ export class KendraIndexTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1308,24 +1308,24 @@ export interface KendraIndexUserGroupResolutionConfiguration {
 }
 
 export function kendraIndexUserGroupResolutionConfigurationToTerraform(struct?: KendraIndexUserGroupResolutionConfigurationOutputReference | KendraIndexUserGroupResolutionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    user_group_resolution_mode: cdktf.stringToTerraform(struct!.userGroupResolutionMode),
+    user_group_resolution_mode: cdktn.stringToTerraform(struct!.userGroupResolutionMode),
   }
 }
 
 
 export function kendraIndexUserGroupResolutionConfigurationToHclTerraform(struct?: KendraIndexUserGroupResolutionConfigurationOutputReference | KendraIndexUserGroupResolutionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     user_group_resolution_mode: {
-      value: cdktf.stringToHclTerraform(struct!.userGroupResolutionMode),
+      value: cdktn.stringToHclTerraform(struct!.userGroupResolutionMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1336,14 +1336,14 @@ export function kendraIndexUserGroupResolutionConfigurationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexUserGroupResolutionConfigurationOutputReference extends cdktf.ComplexObject {
+export class KendraIndexUserGroupResolutionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1393,31 +1393,31 @@ export interface KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration {
 }
 
 export function kendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationToTerraform(struct?: KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference | KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_attribute_field: cdktf.stringToTerraform(struct!.groupAttributeField),
-    user_name_attribute_field: cdktf.stringToTerraform(struct!.userNameAttributeField),
+    group_attribute_field: cdktn.stringToTerraform(struct!.groupAttributeField),
+    user_name_attribute_field: cdktn.stringToTerraform(struct!.userNameAttributeField),
   }
 }
 
 
 export function kendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationToHclTerraform(struct?: KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference | KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_attribute_field: {
-      value: cdktf.stringToHclTerraform(struct!.groupAttributeField),
+      value: cdktn.stringToHclTerraform(struct!.groupAttributeField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name_attribute_field: {
-      value: cdktf.stringToHclTerraform(struct!.userNameAttributeField),
+      value: cdktn.stringToHclTerraform(struct!.userNameAttributeField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1428,14 +1428,14 @@ export function kendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference extends cdktf.ComplexObject {
+export class KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1524,66 +1524,66 @@ export interface KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration {
 }
 
 export function kendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationToTerraform(struct?: KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference | KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    claim_regex: cdktf.stringToTerraform(struct!.claimRegex),
-    group_attribute_field: cdktf.stringToTerraform(struct!.groupAttributeField),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    key_location: cdktf.stringToTerraform(struct!.keyLocation),
-    secrets_manager_arn: cdktf.stringToTerraform(struct!.secretsManagerArn),
-    url: cdktf.stringToTerraform(struct!.url),
-    user_name_attribute_field: cdktf.stringToTerraform(struct!.userNameAttributeField),
+    claim_regex: cdktn.stringToTerraform(struct!.claimRegex),
+    group_attribute_field: cdktn.stringToTerraform(struct!.groupAttributeField),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    key_location: cdktn.stringToTerraform(struct!.keyLocation),
+    secrets_manager_arn: cdktn.stringToTerraform(struct!.secretsManagerArn),
+    url: cdktn.stringToTerraform(struct!.url),
+    user_name_attribute_field: cdktn.stringToTerraform(struct!.userNameAttributeField),
   }
 }
 
 
 export function kendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationToHclTerraform(struct?: KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference | KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     claim_regex: {
-      value: cdktf.stringToHclTerraform(struct!.claimRegex),
+      value: cdktn.stringToHclTerraform(struct!.claimRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_attribute_field: {
-      value: cdktf.stringToHclTerraform(struct!.groupAttributeField),
+      value: cdktn.stringToHclTerraform(struct!.groupAttributeField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_location: {
-      value: cdktf.stringToHclTerraform(struct!.keyLocation),
+      value: cdktn.stringToHclTerraform(struct!.keyLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secrets_manager_arn: {
-      value: cdktf.stringToHclTerraform(struct!.secretsManagerArn),
+      value: cdktn.stringToHclTerraform(struct!.secretsManagerArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name_attribute_field: {
-      value: cdktf.stringToHclTerraform(struct!.userNameAttributeField),
+      value: cdktn.stringToHclTerraform(struct!.userNameAttributeField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1594,14 +1594,14 @@ export function kendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference extends cdktf.ComplexObject {
+export class KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1787,8 +1787,8 @@ export interface KendraIndexUserTokenConfigurations {
 }
 
 export function kendraIndexUserTokenConfigurationsToTerraform(struct?: KendraIndexUserTokenConfigurationsOutputReference | KendraIndexUserTokenConfigurations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1799,8 +1799,8 @@ export function kendraIndexUserTokenConfigurationsToTerraform(struct?: KendraInd
 
 
 export function kendraIndexUserTokenConfigurationsToHclTerraform(struct?: KendraIndexUserTokenConfigurationsOutputReference | KendraIndexUserTokenConfigurations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1822,14 +1822,14 @@ export function kendraIndexUserTokenConfigurationsToHclTerraform(struct?: Kendra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KendraIndexUserTokenConfigurationsOutputReference extends cdktf.ComplexObject {
+export class KendraIndexUserTokenConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1896,7 +1896,7 @@ export class KendraIndexUserTokenConfigurationsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index aws_kendra_index}
 */
-export class KendraIndex extends cdktf.TerraformResource {
+export class KendraIndex extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1907,14 +1907,14 @@ export class KendraIndex extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KendraIndex resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KendraIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KendraIndex to import
   * @param importFromId The id of the existing KendraIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kendra_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KendraIndex to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kendra_index", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_kendra_index", importId: importFromId, provider });
       }
 
   // ===========
@@ -2155,7 +2155,7 @@ export class KendraIndex extends cdktf.TerraformResource {
   public get documentMetadataConfigurationUpdates() {
     return this._documentMetadataConfigurationUpdates;
   }
-  public putDocumentMetadataConfigurationUpdates(value: KendraIndexDocumentMetadataConfigurationUpdates[] | cdktf.IResolvable) {
+  public putDocumentMetadataConfigurationUpdates(value: KendraIndexDocumentMetadataConfigurationUpdates[] | cdktn.IResolvable) {
     this._documentMetadataConfigurationUpdates.internalValue = value;
   }
   public resetDocumentMetadataConfigurationUpdates() {
@@ -2236,17 +2236,17 @@ export class KendraIndex extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      edition: cdktf.stringToTerraform(this._edition),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      user_context_policy: cdktf.stringToTerraform(this._userContextPolicy),
+      description: cdktn.stringToTerraform(this._description),
+      edition: cdktn.stringToTerraform(this._edition),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      user_context_policy: cdktn.stringToTerraform(this._userContextPolicy),
       capacity_units: kendraIndexCapacityUnitsToTerraform(this._capacityUnits.internalValue),
-      document_metadata_configuration_updates: cdktf.listMapper(kendraIndexDocumentMetadataConfigurationUpdatesToTerraform, true)(this._documentMetadataConfigurationUpdates.internalValue),
+      document_metadata_configuration_updates: cdktn.listMapper(kendraIndexDocumentMetadataConfigurationUpdatesToTerraform, true)(this._documentMetadataConfigurationUpdates.internalValue),
       server_side_encryption_configuration: kendraIndexServerSideEncryptionConfigurationToTerraform(this._serverSideEncryptionConfiguration.internalValue),
       timeouts: kendraIndexTimeoutsToTerraform(this._timeouts.internalValue),
       user_group_resolution_configuration: kendraIndexUserGroupResolutionConfigurationToTerraform(this._userGroupResolutionConfiguration.internalValue),
@@ -2257,55 +2257,55 @@ export class KendraIndex extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       edition: {
-        value: cdktf.stringToHclTerraform(this._edition),
+        value: cdktn.stringToHclTerraform(this._edition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user_context_policy: {
-        value: cdktf.stringToHclTerraform(this._userContextPolicy),
+        value: cdktn.stringToHclTerraform(this._userContextPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2317,7 +2317,7 @@ export class KendraIndex extends cdktf.TerraformResource {
         storageClassType: "KendraIndexCapacityUnitsList",
       },
       document_metadata_configuration_updates: {
-        value: cdktf.listMapperHcl(kendraIndexDocumentMetadataConfigurationUpdatesToHclTerraform, true)(this._documentMetadataConfigurationUpdates.internalValue),
+        value: cdktn.listMapperHcl(kendraIndexDocumentMetadataConfigurationUpdatesToHclTerraform, true)(this._documentMetadataConfigurationUpdates.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "KendraIndexDocumentMetadataConfigurationUpdatesList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2IntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_integration#api_id Apigatewayv2Integration#api_id}
   */
@@ -94,7 +94,7 @@ export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_integration#response_parameters Apigatewayv2Integration#response_parameters}
   */
-  readonly responseParameters?: Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable;
+  readonly responseParameters?: Apigatewayv2IntegrationResponseParameters[] | cdktn.IResolvable;
   /**
   * tls_config block
   *
@@ -113,32 +113,32 @@ export interface Apigatewayv2IntegrationResponseParameters {
   readonly statusCode: string;
 }
 
-export function apigatewayv2IntegrationResponseParametersToTerraform(struct?: Apigatewayv2IntegrationResponseParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2IntegrationResponseParametersToTerraform(struct?: Apigatewayv2IntegrationResponseParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mappings: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.mappings),
-    status_code: cdktf.stringToTerraform(struct!.statusCode),
+    mappings: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.mappings),
+    status_code: cdktn.stringToTerraform(struct!.statusCode),
   }
 }
 
 
-export function apigatewayv2IntegrationResponseParametersToHclTerraform(struct?: Apigatewayv2IntegrationResponseParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigatewayv2IntegrationResponseParametersToHclTerraform(struct?: Apigatewayv2IntegrationResponseParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mappings: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.mappings),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.mappings),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     status_code: {
-      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      value: cdktn.stringToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -149,9 +149,9 @@ export function apigatewayv2IntegrationResponseParametersToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2IntegrationResponseParametersOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2IntegrationResponseParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -159,11 +159,11 @@ export class Apigatewayv2IntegrationResponseParametersOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Apigatewayv2IntegrationResponseParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): Apigatewayv2IntegrationResponseParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -180,14 +180,14 @@ export class Apigatewayv2IntegrationResponseParametersOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Apigatewayv2IntegrationResponseParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Apigatewayv2IntegrationResponseParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mappings = undefined;
       this._statusCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -226,15 +226,15 @@ export class Apigatewayv2IntegrationResponseParametersOutputReference extends cd
   }
 }
 
-export class Apigatewayv2IntegrationResponseParametersList extends cdktf.ComplexList {
-  public internalValue? : Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable
+export class Apigatewayv2IntegrationResponseParametersList extends cdktn.ComplexList {
+  public internalValue? : Apigatewayv2IntegrationResponseParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -253,24 +253,24 @@ export interface Apigatewayv2IntegrationTlsConfig {
 }
 
 export function apigatewayv2IntegrationTlsConfigToTerraform(struct?: Apigatewayv2IntegrationTlsConfigOutputReference | Apigatewayv2IntegrationTlsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    server_name_to_verify: cdktf.stringToTerraform(struct!.serverNameToVerify),
+    server_name_to_verify: cdktn.stringToTerraform(struct!.serverNameToVerify),
   }
 }
 
 
 export function apigatewayv2IntegrationTlsConfigToHclTerraform(struct?: Apigatewayv2IntegrationTlsConfigOutputReference | Apigatewayv2IntegrationTlsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     server_name_to_verify: {
-      value: cdktf.stringToHclTerraform(struct!.serverNameToVerify),
+      value: cdktn.stringToHclTerraform(struct!.serverNameToVerify),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -281,14 +281,14 @@ export function apigatewayv2IntegrationTlsConfigToHclTerraform(struct?: Apigatew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Apigatewayv2IntegrationTlsConfigOutputReference extends cdktf.ComplexObject {
+export class Apigatewayv2IntegrationTlsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -333,7 +333,7 @@ export class Apigatewayv2IntegrationTlsConfigOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration}
 */
-export class Apigatewayv2Integration extends cdktf.TerraformResource {
+export class Apigatewayv2Integration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -344,14 +344,14 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Apigatewayv2Integration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Apigatewayv2Integration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2Integration to import
   * @param importFromId The id of the existing Apigatewayv2Integration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/apigatewayv2_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2Integration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -699,7 +699,7 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   public get responseParameters() {
     return this._responseParameters;
   }
-  public putResponseParameters(value: Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable) {
+  public putResponseParameters(value: Apigatewayv2IntegrationResponseParameters[] | cdktn.IResolvable) {
     this._responseParameters.internalValue = value;
   }
   public resetResponseParameters() {
@@ -732,25 +732,25 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      connection_id: cdktf.stringToTerraform(this._connectionId),
-      connection_type: cdktf.stringToTerraform(this._connectionType),
-      content_handling_strategy: cdktf.stringToTerraform(this._contentHandlingStrategy),
-      credentials_arn: cdktf.stringToTerraform(this._credentialsArn),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      integration_method: cdktf.stringToTerraform(this._integrationMethod),
-      integration_subtype: cdktf.stringToTerraform(this._integrationSubtype),
-      integration_type: cdktf.stringToTerraform(this._integrationType),
-      integration_uri: cdktf.stringToTerraform(this._integrationUri),
-      passthrough_behavior: cdktf.stringToTerraform(this._passthroughBehavior),
-      payload_format_version: cdktf.stringToTerraform(this._payloadFormatVersion),
-      region: cdktf.stringToTerraform(this._region),
-      request_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestParameters),
-      request_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestTemplates),
-      template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
-      timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
-      response_parameters: cdktf.listMapper(apigatewayv2IntegrationResponseParametersToTerraform, true)(this._responseParameters.internalValue),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      connection_id: cdktn.stringToTerraform(this._connectionId),
+      connection_type: cdktn.stringToTerraform(this._connectionType),
+      content_handling_strategy: cdktn.stringToTerraform(this._contentHandlingStrategy),
+      credentials_arn: cdktn.stringToTerraform(this._credentialsArn),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      integration_method: cdktn.stringToTerraform(this._integrationMethod),
+      integration_subtype: cdktn.stringToTerraform(this._integrationSubtype),
+      integration_type: cdktn.stringToTerraform(this._integrationType),
+      integration_uri: cdktn.stringToTerraform(this._integrationUri),
+      passthrough_behavior: cdktn.stringToTerraform(this._passthroughBehavior),
+      payload_format_version: cdktn.stringToTerraform(this._payloadFormatVersion),
+      region: cdktn.stringToTerraform(this._region),
+      request_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._requestParameters),
+      request_templates: cdktn.hashMapper(cdktn.stringToTerraform)(this._requestTemplates),
+      template_selection_expression: cdktn.stringToTerraform(this._templateSelectionExpression),
+      timeout_milliseconds: cdktn.numberToTerraform(this._timeoutMilliseconds),
+      response_parameters: cdktn.listMapper(apigatewayv2IntegrationResponseParametersToTerraform, true)(this._responseParameters.internalValue),
       tls_config: apigatewayv2IntegrationTlsConfigToTerraform(this._tlsConfig.internalValue),
     };
   }
@@ -758,115 +758,115 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_id: {
-        value: cdktf.stringToHclTerraform(this._connectionId),
+        value: cdktn.stringToHclTerraform(this._connectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_type: {
-        value: cdktf.stringToHclTerraform(this._connectionType),
+        value: cdktn.stringToHclTerraform(this._connectionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_handling_strategy: {
-        value: cdktf.stringToHclTerraform(this._contentHandlingStrategy),
+        value: cdktn.stringToHclTerraform(this._contentHandlingStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credentials_arn: {
-        value: cdktf.stringToHclTerraform(this._credentialsArn),
+        value: cdktn.stringToHclTerraform(this._credentialsArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_method: {
-        value: cdktf.stringToHclTerraform(this._integrationMethod),
+        value: cdktn.stringToHclTerraform(this._integrationMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_subtype: {
-        value: cdktf.stringToHclTerraform(this._integrationSubtype),
+        value: cdktn.stringToHclTerraform(this._integrationSubtype),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_type: {
-        value: cdktf.stringToHclTerraform(this._integrationType),
+        value: cdktn.stringToHclTerraform(this._integrationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_uri: {
-        value: cdktf.stringToHclTerraform(this._integrationUri),
+        value: cdktn.stringToHclTerraform(this._integrationUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       passthrough_behavior: {
-        value: cdktf.stringToHclTerraform(this._passthroughBehavior),
+        value: cdktn.stringToHclTerraform(this._passthroughBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       payload_format_version: {
-        value: cdktf.stringToHclTerraform(this._payloadFormatVersion),
+        value: cdktn.stringToHclTerraform(this._payloadFormatVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestParameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._requestParameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       request_templates: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestTemplates),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._requestTemplates),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       template_selection_expression: {
-        value: cdktf.stringToHclTerraform(this._templateSelectionExpression),
+        value: cdktn.stringToHclTerraform(this._templateSelectionExpression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timeout_milliseconds: {
-        value: cdktf.numberToHclTerraform(this._timeoutMilliseconds),
+        value: cdktn.numberToHclTerraform(this._timeoutMilliseconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       response_parameters: {
-        value: cdktf.listMapperHcl(apigatewayv2IntegrationResponseParametersToHclTerraform, true)(this._responseParameters.internalValue),
+        value: cdktn.listMapperHcl(apigatewayv2IntegrationResponseParametersToHclTerraform, true)(this._responseParameters.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "Apigatewayv2IntegrationResponseParametersList",

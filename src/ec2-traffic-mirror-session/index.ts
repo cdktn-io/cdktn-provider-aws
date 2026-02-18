@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TrafficMirrorSessionConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TrafficMirrorSessionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_traffic_mirror_session#description Ec2TrafficMirrorSession#description}
   */
@@ -66,7 +66,7 @@ export interface Ec2TrafficMirrorSessionConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session}
 */
-export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
+export class Ec2TrafficMirrorSession extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TrafficMirrorSession resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TrafficMirrorSession resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TrafficMirrorSession to import
   * @param importFromId The id of the existing Ec2TrafficMirrorSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_traffic_mirror_session#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TrafficMirrorSession to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_traffic_mirror_session", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_traffic_mirror_session", importId: importFromId, provider });
       }
 
   // ===========
@@ -311,84 +311,84 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      packet_length: cdktf.numberToTerraform(this._packetLength),
-      region: cdktf.stringToTerraform(this._region),
-      session_number: cdktf.numberToTerraform(this._sessionNumber),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      traffic_mirror_filter_id: cdktf.stringToTerraform(this._trafficMirrorFilterId),
-      traffic_mirror_target_id: cdktf.stringToTerraform(this._trafficMirrorTargetId),
-      virtual_network_id: cdktf.numberToTerraform(this._virtualNetworkId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
+      packet_length: cdktn.numberToTerraform(this._packetLength),
+      region: cdktn.stringToTerraform(this._region),
+      session_number: cdktn.numberToTerraform(this._sessionNumber),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      traffic_mirror_filter_id: cdktn.stringToTerraform(this._trafficMirrorFilterId),
+      traffic_mirror_target_id: cdktn.stringToTerraform(this._trafficMirrorTargetId),
+      virtual_network_id: cdktn.numberToTerraform(this._virtualNetworkId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface_id: {
-        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        value: cdktn.stringToHclTerraform(this._networkInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       packet_length: {
-        value: cdktf.numberToHclTerraform(this._packetLength),
+        value: cdktn.numberToHclTerraform(this._packetLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       session_number: {
-        value: cdktf.numberToHclTerraform(this._sessionNumber),
+        value: cdktn.numberToHclTerraform(this._sessionNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       traffic_mirror_filter_id: {
-        value: cdktf.stringToHclTerraform(this._trafficMirrorFilterId),
+        value: cdktn.stringToHclTerraform(this._trafficMirrorFilterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       traffic_mirror_target_id: {
-        value: cdktf.stringToHclTerraform(this._trafficMirrorTargetId),
+        value: cdktn.stringToHclTerraform(this._trafficMirrorTargetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_network_id: {
-        value: cdktf.numberToHclTerraform(this._virtualNetworkId),
+        value: cdktn.numberToHclTerraform(this._virtualNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

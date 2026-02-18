@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticacheUserGroupConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticacheUserGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_user_group#engine ElasticacheUserGroup#engine}
   */
@@ -50,7 +50,7 @@ export interface ElasticacheUserGroupConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_user_group aws_elasticache_user_group}
 */
-export class ElasticacheUserGroup extends cdktf.TerraformResource {
+export class ElasticacheUserGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticacheUserGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticacheUserGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticacheUserGroup to import
   * @param importFromId The id of the existing ElasticacheUserGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/elasticache_user_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticacheUserGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_user_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_user_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -209,7 +209,7 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
   // user_ids - computed: false, optional: true, required: false
   private _userIds?: string[]; 
   public get userIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('user_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('user_ids'));
   }
   public set userIds(value: string[]) {
     this._userIds = value;
@@ -228,56 +228,56 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine: cdktf.stringToTerraform(this._engine),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      user_group_id: cdktf.stringToTerraform(this._userGroupId),
-      user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userIds),
+      engine: cdktn.stringToTerraform(this._engine),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      user_group_id: cdktn.stringToTerraform(this._userGroupId),
+      user_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._userIds),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user_group_id: {
-        value: cdktf.stringToHclTerraform(this._userGroupId),
+        value: cdktn.stringToHclTerraform(this._userGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._userIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._userIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

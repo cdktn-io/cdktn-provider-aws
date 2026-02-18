@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerStudioLifecycleConfigConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerStudioLifecycleConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_studio_lifecycle_config#id SagemakerStudioLifecycleConfig#id}
   *
@@ -50,7 +50,7 @@ export interface SagemakerStudioLifecycleConfigConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_studio_lifecycle_config aws_sagemaker_studio_lifecycle_config}
 */
-export class SagemakerStudioLifecycleConfig extends cdktf.TerraformResource {
+export class SagemakerStudioLifecycleConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class SagemakerStudioLifecycleConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerStudioLifecycleConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerStudioLifecycleConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerStudioLifecycleConfig to import
   * @param importFromId The id of the existing SagemakerStudioLifecycleConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_studio_lifecycle_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerStudioLifecycleConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_studio_lifecycle_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_studio_lifecycle_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -225,56 +225,56 @@ export class SagemakerStudioLifecycleConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      studio_lifecycle_config_app_type: cdktf.stringToTerraform(this._studioLifecycleConfigAppType),
-      studio_lifecycle_config_content: cdktf.stringToTerraform(this._studioLifecycleConfigContent),
-      studio_lifecycle_config_name: cdktf.stringToTerraform(this._studioLifecycleConfigName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      studio_lifecycle_config_app_type: cdktn.stringToTerraform(this._studioLifecycleConfigAppType),
+      studio_lifecycle_config_content: cdktn.stringToTerraform(this._studioLifecycleConfigContent),
+      studio_lifecycle_config_name: cdktn.stringToTerraform(this._studioLifecycleConfigName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       studio_lifecycle_config_app_type: {
-        value: cdktf.stringToHclTerraform(this._studioLifecycleConfigAppType),
+        value: cdktn.stringToHclTerraform(this._studioLifecycleConfigAppType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       studio_lifecycle_config_content: {
-        value: cdktf.stringToHclTerraform(this._studioLifecycleConfigContent),
+        value: cdktn.stringToHclTerraform(this._studioLifecycleConfigContent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       studio_lifecycle_config_name: {
-        value: cdktf.stringToHclTerraform(this._studioLifecycleConfigName),
+        value: cdktn.stringToHclTerraform(this._studioLifecycleConfigName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

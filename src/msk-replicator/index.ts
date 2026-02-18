@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MskReplicatorConfig extends cdktf.TerraformMetaArguments {
+export interface MskReplicatorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#description MskReplicator#description}
   */
@@ -50,7 +50,7 @@ export interface MskReplicatorConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#kafka_cluster MskReplicator#kafka_cluster}
   */
-  readonly kafkaCluster: MskReplicatorKafkaCluster[] | cdktf.IResolvable;
+  readonly kafkaCluster: MskReplicatorKafkaCluster[] | cdktn.IResolvable;
   /**
   * replication_info_list block
   *
@@ -72,24 +72,24 @@ export interface MskReplicatorKafkaClusterAmazonMskCluster {
 }
 
 export function mskReplicatorKafkaClusterAmazonMskClusterToTerraform(struct?: MskReplicatorKafkaClusterAmazonMskClusterOutputReference | MskReplicatorKafkaClusterAmazonMskCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    msk_cluster_arn: cdktf.stringToTerraform(struct!.mskClusterArn),
+    msk_cluster_arn: cdktn.stringToTerraform(struct!.mskClusterArn),
   }
 }
 
 
 export function mskReplicatorKafkaClusterAmazonMskClusterToHclTerraform(struct?: MskReplicatorKafkaClusterAmazonMskClusterOutputReference | MskReplicatorKafkaClusterAmazonMskCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     msk_cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.mskClusterArn),
+      value: cdktn.stringToHclTerraform(struct!.mskClusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,14 +100,14 @@ export function mskReplicatorKafkaClusterAmazonMskClusterToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MskReplicatorKafkaClusterAmazonMskClusterOutputReference extends cdktf.ComplexObject {
+export class MskReplicatorKafkaClusterAmazonMskClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -157,31 +157,31 @@ export interface MskReplicatorKafkaClusterVpcConfig {
 }
 
 export function mskReplicatorKafkaClusterVpcConfigToTerraform(struct?: MskReplicatorKafkaClusterVpcConfigOutputReference | MskReplicatorKafkaClusterVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_groups_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupsIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    security_groups_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupsIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
 
 export function mskReplicatorKafkaClusterVpcConfigToHclTerraform(struct?: MskReplicatorKafkaClusterVpcConfigOutputReference | MskReplicatorKafkaClusterVpcConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_groups_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupsIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupsIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -192,14 +192,14 @@ export function mskReplicatorKafkaClusterVpcConfigToHclTerraform(struct?: MskRep
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MskReplicatorKafkaClusterVpcConfigOutputReference extends cdktf.ComplexObject {
+export class MskReplicatorKafkaClusterVpcConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -233,7 +233,7 @@ export class MskReplicatorKafkaClusterVpcConfigOutputReference extends cdktf.Com
   // security_groups_ids - computed: false, optional: true, required: false
   private _securityGroupsIds?: string[]; 
   public get securityGroupsIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups_ids'));
   }
   public set securityGroupsIds(value: string[]) {
     this._securityGroupsIds = value;
@@ -249,7 +249,7 @@ export class MskReplicatorKafkaClusterVpcConfigOutputReference extends cdktf.Com
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -274,9 +274,9 @@ export interface MskReplicatorKafkaCluster {
   readonly vpcConfig: MskReplicatorKafkaClusterVpcConfig;
 }
 
-export function mskReplicatorKafkaClusterToTerraform(struct?: MskReplicatorKafkaCluster | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mskReplicatorKafkaClusterToTerraform(struct?: MskReplicatorKafkaCluster | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -286,9 +286,9 @@ export function mskReplicatorKafkaClusterToTerraform(struct?: MskReplicatorKafka
 }
 
 
-export function mskReplicatorKafkaClusterToHclTerraform(struct?: MskReplicatorKafkaCluster | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mskReplicatorKafkaClusterToHclTerraform(struct?: MskReplicatorKafkaCluster | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -310,9 +310,9 @@ export function mskReplicatorKafkaClusterToHclTerraform(struct?: MskReplicatorKa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MskReplicatorKafkaClusterOutputReference extends cdktf.ComplexObject {
+export class MskReplicatorKafkaClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -320,11 +320,11 @@ export class MskReplicatorKafkaClusterOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MskReplicatorKafkaCluster | cdktf.IResolvable | undefined {
+  public get internalValue(): MskReplicatorKafkaCluster | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -341,14 +341,14 @@ export class MskReplicatorKafkaClusterOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MskReplicatorKafkaCluster | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MskReplicatorKafkaCluster | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._amazonMskCluster.internalValue = undefined;
       this._vpcConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -387,15 +387,15 @@ export class MskReplicatorKafkaClusterOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class MskReplicatorKafkaClusterList extends cdktf.ComplexList {
-  public internalValue? : MskReplicatorKafkaCluster[] | cdktf.IResolvable
+export class MskReplicatorKafkaClusterList extends cdktn.ComplexList {
+  public internalValue? : MskReplicatorKafkaCluster[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -418,53 +418,53 @@ export interface MskReplicatorReplicationInfoListConsumerGroupReplication {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups MskReplicator#detect_and_copy_new_consumer_groups}
   */
-  readonly detectAndCopyNewConsumerGroups?: boolean | cdktf.IResolvable;
+  readonly detectAndCopyNewConsumerGroups?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#synchronise_consumer_group_offsets MskReplicator#synchronise_consumer_group_offsets}
   */
-  readonly synchroniseConsumerGroupOffsets?: boolean | cdktf.IResolvable;
+  readonly synchroniseConsumerGroupOffsets?: boolean | cdktn.IResolvable;
 }
 
-export function mskReplicatorReplicationInfoListConsumerGroupReplicationToTerraform(struct?: MskReplicatorReplicationInfoListConsumerGroupReplication | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mskReplicatorReplicationInfoListConsumerGroupReplicationToTerraform(struct?: MskReplicatorReplicationInfoListConsumerGroupReplication | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    consumer_groups_to_exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.consumerGroupsToExclude),
-    consumer_groups_to_replicate: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.consumerGroupsToReplicate),
-    detect_and_copy_new_consumer_groups: cdktf.booleanToTerraform(struct!.detectAndCopyNewConsumerGroups),
-    synchronise_consumer_group_offsets: cdktf.booleanToTerraform(struct!.synchroniseConsumerGroupOffsets),
+    consumer_groups_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.consumerGroupsToExclude),
+    consumer_groups_to_replicate: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.consumerGroupsToReplicate),
+    detect_and_copy_new_consumer_groups: cdktn.booleanToTerraform(struct!.detectAndCopyNewConsumerGroups),
+    synchronise_consumer_group_offsets: cdktn.booleanToTerraform(struct!.synchroniseConsumerGroupOffsets),
   }
 }
 
 
-export function mskReplicatorReplicationInfoListConsumerGroupReplicationToHclTerraform(struct?: MskReplicatorReplicationInfoListConsumerGroupReplication | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mskReplicatorReplicationInfoListConsumerGroupReplicationToHclTerraform(struct?: MskReplicatorReplicationInfoListConsumerGroupReplication | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     consumer_groups_to_exclude: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.consumerGroupsToExclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.consumerGroupsToExclude),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     consumer_groups_to_replicate: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.consumerGroupsToReplicate),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.consumerGroupsToReplicate),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     detect_and_copy_new_consumer_groups: {
-      value: cdktf.booleanToHclTerraform(struct!.detectAndCopyNewConsumerGroups),
+      value: cdktn.booleanToHclTerraform(struct!.detectAndCopyNewConsumerGroups),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     synchronise_consumer_group_offsets: {
-      value: cdktf.booleanToHclTerraform(struct!.synchroniseConsumerGroupOffsets),
+      value: cdktn.booleanToHclTerraform(struct!.synchroniseConsumerGroupOffsets),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -475,9 +475,9 @@ export function mskReplicatorReplicationInfoListConsumerGroupReplicationToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputReference extends cdktf.ComplexObject {
+export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -485,11 +485,11 @@ export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MskReplicatorReplicationInfoListConsumerGroupReplication | cdktf.IResolvable | undefined {
+  public get internalValue(): MskReplicatorReplicationInfoListConsumerGroupReplication | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -514,7 +514,7 @@ export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MskReplicatorReplicationInfoListConsumerGroupReplication | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MskReplicatorReplicationInfoListConsumerGroupReplication | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -523,7 +523,7 @@ export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputRefer
       this._detectAndCopyNewConsumerGroups = undefined;
       this._synchroniseConsumerGroupOffsets = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -540,7 +540,7 @@ export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputRefer
   // consumer_groups_to_exclude - computed: false, optional: true, required: false
   private _consumerGroupsToExclude?: string[]; 
   public get consumerGroupsToExclude() {
-    return cdktf.Fn.tolist(this.getListAttribute('consumer_groups_to_exclude'));
+    return cdktn.Fn.tolist(this.getListAttribute('consumer_groups_to_exclude'));
   }
   public set consumerGroupsToExclude(value: string[]) {
     this._consumerGroupsToExclude = value;
@@ -556,7 +556,7 @@ export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputRefer
   // consumer_groups_to_replicate - computed: false, optional: false, required: true
   private _consumerGroupsToReplicate?: string[]; 
   public get consumerGroupsToReplicate() {
-    return cdktf.Fn.tolist(this.getListAttribute('consumer_groups_to_replicate'));
+    return cdktn.Fn.tolist(this.getListAttribute('consumer_groups_to_replicate'));
   }
   public set consumerGroupsToReplicate(value: string[]) {
     this._consumerGroupsToReplicate = value;
@@ -567,11 +567,11 @@ export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputRefer
   }
 
   // detect_and_copy_new_consumer_groups - computed: false, optional: true, required: false
-  private _detectAndCopyNewConsumerGroups?: boolean | cdktf.IResolvable; 
+  private _detectAndCopyNewConsumerGroups?: boolean | cdktn.IResolvable; 
   public get detectAndCopyNewConsumerGroups() {
     return this.getBooleanAttribute('detect_and_copy_new_consumer_groups');
   }
-  public set detectAndCopyNewConsumerGroups(value: boolean | cdktf.IResolvable) {
+  public set detectAndCopyNewConsumerGroups(value: boolean | cdktn.IResolvable) {
     this._detectAndCopyNewConsumerGroups = value;
   }
   public resetDetectAndCopyNewConsumerGroups() {
@@ -583,11 +583,11 @@ export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputRefer
   }
 
   // synchronise_consumer_group_offsets - computed: false, optional: true, required: false
-  private _synchroniseConsumerGroupOffsets?: boolean | cdktf.IResolvable; 
+  private _synchroniseConsumerGroupOffsets?: boolean | cdktn.IResolvable; 
   public get synchroniseConsumerGroupOffsets() {
     return this.getBooleanAttribute('synchronise_consumer_group_offsets');
   }
-  public set synchroniseConsumerGroupOffsets(value: boolean | cdktf.IResolvable) {
+  public set synchroniseConsumerGroupOffsets(value: boolean | cdktn.IResolvable) {
     this._synchroniseConsumerGroupOffsets = value;
   }
   public resetSynchroniseConsumerGroupOffsets() {
@@ -599,15 +599,15 @@ export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputRefer
   }
 }
 
-export class MskReplicatorReplicationInfoListConsumerGroupReplicationList extends cdktf.ComplexList {
-  public internalValue? : MskReplicatorReplicationInfoListConsumerGroupReplication[] | cdktf.IResolvable
+export class MskReplicatorReplicationInfoListConsumerGroupReplicationList extends cdktn.ComplexList {
+  public internalValue? : MskReplicatorReplicationInfoListConsumerGroupReplication[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -626,24 +626,24 @@ export interface MskReplicatorReplicationInfoListTopicReplicationStartingPositio
 }
 
 export function mskReplicatorReplicationInfoListTopicReplicationStartingPositionToTerraform(struct?: MskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference | MskReplicatorReplicationInfoListTopicReplicationStartingPosition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function mskReplicatorReplicationInfoListTopicReplicationStartingPositionToHclTerraform(struct?: MskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference | MskReplicatorReplicationInfoListTopicReplicationStartingPosition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -654,14 +654,14 @@ export function mskReplicatorReplicationInfoListTopicReplicationStartingPosition
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference extends cdktf.ComplexObject {
+export class MskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -710,24 +710,24 @@ export interface MskReplicatorReplicationInfoListTopicReplicationTopicNameConfig
 }
 
 export function mskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationToTerraform(struct?: MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference | MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function mskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationToHclTerraform(struct?: MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference | MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -738,14 +738,14 @@ export function mskReplicatorReplicationInfoListTopicReplicationTopicNameConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference extends cdktf.ComplexObject {
+export class MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -790,15 +790,15 @@ export interface MskReplicatorReplicationInfoListTopicReplication {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#copy_access_control_lists_for_topics MskReplicator#copy_access_control_lists_for_topics}
   */
-  readonly copyAccessControlListsForTopics?: boolean | cdktf.IResolvable;
+  readonly copyAccessControlListsForTopics?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#copy_topic_configurations MskReplicator#copy_topic_configurations}
   */
-  readonly copyTopicConfigurations?: boolean | cdktf.IResolvable;
+  readonly copyTopicConfigurations?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#detect_and_copy_new_topics MskReplicator#detect_and_copy_new_topics}
   */
-  readonly detectAndCopyNewTopics?: boolean | cdktf.IResolvable;
+  readonly detectAndCopyNewTopics?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#topics_to_exclude MskReplicator#topics_to_exclude}
   */
@@ -821,55 +821,55 @@ export interface MskReplicatorReplicationInfoListTopicReplication {
   readonly topicNameConfiguration?: MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration;
 }
 
-export function mskReplicatorReplicationInfoListTopicReplicationToTerraform(struct?: MskReplicatorReplicationInfoListTopicReplication | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mskReplicatorReplicationInfoListTopicReplicationToTerraform(struct?: MskReplicatorReplicationInfoListTopicReplication | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    copy_access_control_lists_for_topics: cdktf.booleanToTerraform(struct!.copyAccessControlListsForTopics),
-    copy_topic_configurations: cdktf.booleanToTerraform(struct!.copyTopicConfigurations),
-    detect_and_copy_new_topics: cdktf.booleanToTerraform(struct!.detectAndCopyNewTopics),
-    topics_to_exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.topicsToExclude),
-    topics_to_replicate: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.topicsToReplicate),
+    copy_access_control_lists_for_topics: cdktn.booleanToTerraform(struct!.copyAccessControlListsForTopics),
+    copy_topic_configurations: cdktn.booleanToTerraform(struct!.copyTopicConfigurations),
+    detect_and_copy_new_topics: cdktn.booleanToTerraform(struct!.detectAndCopyNewTopics),
+    topics_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.topicsToExclude),
+    topics_to_replicate: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.topicsToReplicate),
     starting_position: mskReplicatorReplicationInfoListTopicReplicationStartingPositionToTerraform(struct!.startingPosition),
     topic_name_configuration: mskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationToTerraform(struct!.topicNameConfiguration),
   }
 }
 
 
-export function mskReplicatorReplicationInfoListTopicReplicationToHclTerraform(struct?: MskReplicatorReplicationInfoListTopicReplication | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mskReplicatorReplicationInfoListTopicReplicationToHclTerraform(struct?: MskReplicatorReplicationInfoListTopicReplication | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     copy_access_control_lists_for_topics: {
-      value: cdktf.booleanToHclTerraform(struct!.copyAccessControlListsForTopics),
+      value: cdktn.booleanToHclTerraform(struct!.copyAccessControlListsForTopics),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     copy_topic_configurations: {
-      value: cdktf.booleanToHclTerraform(struct!.copyTopicConfigurations),
+      value: cdktn.booleanToHclTerraform(struct!.copyTopicConfigurations),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     detect_and_copy_new_topics: {
-      value: cdktf.booleanToHclTerraform(struct!.detectAndCopyNewTopics),
+      value: cdktn.booleanToHclTerraform(struct!.detectAndCopyNewTopics),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     topics_to_exclude: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.topicsToExclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.topicsToExclude),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     topics_to_replicate: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.topicsToReplicate),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.topicsToReplicate),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -892,9 +892,9 @@ export function mskReplicatorReplicationInfoListTopicReplicationToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MskReplicatorReplicationInfoListTopicReplicationOutputReference extends cdktf.ComplexObject {
+export class MskReplicatorReplicationInfoListTopicReplicationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -902,11 +902,11 @@ export class MskReplicatorReplicationInfoListTopicReplicationOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MskReplicatorReplicationInfoListTopicReplication | cdktf.IResolvable | undefined {
+  public get internalValue(): MskReplicatorReplicationInfoListTopicReplication | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -943,7 +943,7 @@ export class MskReplicatorReplicationInfoListTopicReplicationOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MskReplicatorReplicationInfoListTopicReplication | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MskReplicatorReplicationInfoListTopicReplication | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -955,7 +955,7 @@ export class MskReplicatorReplicationInfoListTopicReplicationOutputReference ext
       this._startingPosition.internalValue = undefined;
       this._topicNameConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -973,11 +973,11 @@ export class MskReplicatorReplicationInfoListTopicReplicationOutputReference ext
   }
 
   // copy_access_control_lists_for_topics - computed: false, optional: true, required: false
-  private _copyAccessControlListsForTopics?: boolean | cdktf.IResolvable; 
+  private _copyAccessControlListsForTopics?: boolean | cdktn.IResolvable; 
   public get copyAccessControlListsForTopics() {
     return this.getBooleanAttribute('copy_access_control_lists_for_topics');
   }
-  public set copyAccessControlListsForTopics(value: boolean | cdktf.IResolvable) {
+  public set copyAccessControlListsForTopics(value: boolean | cdktn.IResolvable) {
     this._copyAccessControlListsForTopics = value;
   }
   public resetCopyAccessControlListsForTopics() {
@@ -989,11 +989,11 @@ export class MskReplicatorReplicationInfoListTopicReplicationOutputReference ext
   }
 
   // copy_topic_configurations - computed: false, optional: true, required: false
-  private _copyTopicConfigurations?: boolean | cdktf.IResolvable; 
+  private _copyTopicConfigurations?: boolean | cdktn.IResolvable; 
   public get copyTopicConfigurations() {
     return this.getBooleanAttribute('copy_topic_configurations');
   }
-  public set copyTopicConfigurations(value: boolean | cdktf.IResolvable) {
+  public set copyTopicConfigurations(value: boolean | cdktn.IResolvable) {
     this._copyTopicConfigurations = value;
   }
   public resetCopyTopicConfigurations() {
@@ -1005,11 +1005,11 @@ export class MskReplicatorReplicationInfoListTopicReplicationOutputReference ext
   }
 
   // detect_and_copy_new_topics - computed: false, optional: true, required: false
-  private _detectAndCopyNewTopics?: boolean | cdktf.IResolvable; 
+  private _detectAndCopyNewTopics?: boolean | cdktn.IResolvable; 
   public get detectAndCopyNewTopics() {
     return this.getBooleanAttribute('detect_and_copy_new_topics');
   }
-  public set detectAndCopyNewTopics(value: boolean | cdktf.IResolvable) {
+  public set detectAndCopyNewTopics(value: boolean | cdktn.IResolvable) {
     this._detectAndCopyNewTopics = value;
   }
   public resetDetectAndCopyNewTopics() {
@@ -1023,7 +1023,7 @@ export class MskReplicatorReplicationInfoListTopicReplicationOutputReference ext
   // topics_to_exclude - computed: false, optional: true, required: false
   private _topicsToExclude?: string[]; 
   public get topicsToExclude() {
-    return cdktf.Fn.tolist(this.getListAttribute('topics_to_exclude'));
+    return cdktn.Fn.tolist(this.getListAttribute('topics_to_exclude'));
   }
   public set topicsToExclude(value: string[]) {
     this._topicsToExclude = value;
@@ -1039,7 +1039,7 @@ export class MskReplicatorReplicationInfoListTopicReplicationOutputReference ext
   // topics_to_replicate - computed: false, optional: false, required: true
   private _topicsToReplicate?: string[]; 
   public get topicsToReplicate() {
-    return cdktf.Fn.tolist(this.getListAttribute('topics_to_replicate'));
+    return cdktn.Fn.tolist(this.getListAttribute('topics_to_replicate'));
   }
   public set topicsToReplicate(value: string[]) {
     this._topicsToReplicate = value;
@@ -1082,15 +1082,15 @@ export class MskReplicatorReplicationInfoListTopicReplicationOutputReference ext
   }
 }
 
-export class MskReplicatorReplicationInfoListTopicReplicationList extends cdktf.ComplexList {
-  public internalValue? : MskReplicatorReplicationInfoListTopicReplication[] | cdktf.IResolvable
+export class MskReplicatorReplicationInfoListTopicReplicationList extends cdktn.ComplexList {
+  public internalValue? : MskReplicatorReplicationInfoListTopicReplication[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1119,62 +1119,62 @@ export interface MskReplicatorReplicationInfoListStruct {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#consumer_group_replication MskReplicator#consumer_group_replication}
   */
-  readonly consumerGroupReplication: MskReplicatorReplicationInfoListConsumerGroupReplication[] | cdktf.IResolvable;
+  readonly consumerGroupReplication: MskReplicatorReplicationInfoListConsumerGroupReplication[] | cdktn.IResolvable;
   /**
   * topic_replication block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#topic_replication MskReplicator#topic_replication}
   */
-  readonly topicReplication: MskReplicatorReplicationInfoListTopicReplication[] | cdktf.IResolvable;
+  readonly topicReplication: MskReplicatorReplicationInfoListTopicReplication[] | cdktn.IResolvable;
 }
 
 export function mskReplicatorReplicationInfoListStructToTerraform(struct?: MskReplicatorReplicationInfoListStructOutputReference | MskReplicatorReplicationInfoListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_kafka_cluster_arn: cdktf.stringToTerraform(struct!.sourceKafkaClusterArn),
-    target_compression_type: cdktf.stringToTerraform(struct!.targetCompressionType),
-    target_kafka_cluster_arn: cdktf.stringToTerraform(struct!.targetKafkaClusterArn),
-    consumer_group_replication: cdktf.listMapper(mskReplicatorReplicationInfoListConsumerGroupReplicationToTerraform, true)(struct!.consumerGroupReplication),
-    topic_replication: cdktf.listMapper(mskReplicatorReplicationInfoListTopicReplicationToTerraform, true)(struct!.topicReplication),
+    source_kafka_cluster_arn: cdktn.stringToTerraform(struct!.sourceKafkaClusterArn),
+    target_compression_type: cdktn.stringToTerraform(struct!.targetCompressionType),
+    target_kafka_cluster_arn: cdktn.stringToTerraform(struct!.targetKafkaClusterArn),
+    consumer_group_replication: cdktn.listMapper(mskReplicatorReplicationInfoListConsumerGroupReplicationToTerraform, true)(struct!.consumerGroupReplication),
+    topic_replication: cdktn.listMapper(mskReplicatorReplicationInfoListTopicReplicationToTerraform, true)(struct!.topicReplication),
   }
 }
 
 
 export function mskReplicatorReplicationInfoListStructToHclTerraform(struct?: MskReplicatorReplicationInfoListStructOutputReference | MskReplicatorReplicationInfoListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source_kafka_cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sourceKafkaClusterArn),
+      value: cdktn.stringToHclTerraform(struct!.sourceKafkaClusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_compression_type: {
-      value: cdktf.stringToHclTerraform(struct!.targetCompressionType),
+      value: cdktn.stringToHclTerraform(struct!.targetCompressionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_kafka_cluster_arn: {
-      value: cdktf.stringToHclTerraform(struct!.targetKafkaClusterArn),
+      value: cdktn.stringToHclTerraform(struct!.targetKafkaClusterArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     consumer_group_replication: {
-      value: cdktf.listMapperHcl(mskReplicatorReplicationInfoListConsumerGroupReplicationToHclTerraform, true)(struct!.consumerGroupReplication),
+      value: cdktn.listMapperHcl(mskReplicatorReplicationInfoListConsumerGroupReplicationToHclTerraform, true)(struct!.consumerGroupReplication),
       isBlock: true,
       type: "list",
       storageClassType: "MskReplicatorReplicationInfoListConsumerGroupReplicationList",
     },
     topic_replication: {
-      value: cdktf.listMapperHcl(mskReplicatorReplicationInfoListTopicReplicationToHclTerraform, true)(struct!.topicReplication),
+      value: cdktn.listMapperHcl(mskReplicatorReplicationInfoListTopicReplicationToHclTerraform, true)(struct!.topicReplication),
       isBlock: true,
       type: "list",
       storageClassType: "MskReplicatorReplicationInfoListTopicReplicationList",
@@ -1185,14 +1185,14 @@ export function mskReplicatorReplicationInfoListStructToHclTerraform(struct?: Ms
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MskReplicatorReplicationInfoListStructOutputReference extends cdktf.ComplexObject {
+export class MskReplicatorReplicationInfoListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1295,7 +1295,7 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktf
   public get consumerGroupReplication() {
     return this._consumerGroupReplication;
   }
-  public putConsumerGroupReplication(value: MskReplicatorReplicationInfoListConsumerGroupReplication[] | cdktf.IResolvable) {
+  public putConsumerGroupReplication(value: MskReplicatorReplicationInfoListConsumerGroupReplication[] | cdktn.IResolvable) {
     this._consumerGroupReplication.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1308,7 +1308,7 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktf
   public get topicReplication() {
     return this._topicReplication;
   }
-  public putTopicReplication(value: MskReplicatorReplicationInfoListTopicReplication[] | cdktf.IResolvable) {
+  public putTopicReplication(value: MskReplicatorReplicationInfoListTopicReplication[] | cdktn.IResolvable) {
     this._topicReplication.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1331,39 +1331,39 @@ export interface MskReplicatorTimeouts {
   readonly update?: string;
 }
 
-export function mskReplicatorTimeoutsToTerraform(struct?: MskReplicatorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mskReplicatorTimeoutsToTerraform(struct?: MskReplicatorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mskReplicatorTimeoutsToHclTerraform(struct?: MskReplicatorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mskReplicatorTimeoutsToHclTerraform(struct?: MskReplicatorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1374,19 +1374,19 @@ export function mskReplicatorTimeoutsToHclTerraform(struct?: MskReplicatorTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MskReplicatorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MskReplicatorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MskReplicatorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MskReplicatorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1407,7 +1407,7 @@ export class MskReplicatorTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MskReplicatorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MskReplicatorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1415,7 +1415,7 @@ export class MskReplicatorTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1480,7 +1480,7 @@ export class MskReplicatorTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator aws_msk_replicator}
 */
-export class MskReplicator extends cdktf.TerraformResource {
+export class MskReplicator extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1491,14 +1491,14 @@ export class MskReplicator extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MskReplicator resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MskReplicator resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MskReplicator to import
   * @param importFromId The id of the existing MskReplicator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_replicator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MskReplicator to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_replicator", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_replicator", importId: importFromId, provider });
       }
 
   // ===========
@@ -1665,7 +1665,7 @@ export class MskReplicator extends cdktf.TerraformResource {
   public get kafkaCluster() {
     return this._kafkaCluster;
   }
-  public putKafkaCluster(value: MskReplicatorKafkaCluster[] | cdktf.IResolvable) {
+  public putKafkaCluster(value: MskReplicatorKafkaCluster[] | cdktn.IResolvable) {
     this._kafkaCluster.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1708,14 +1708,14 @@ export class MskReplicator extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      replicator_name: cdktf.stringToTerraform(this._replicatorName),
-      service_execution_role_arn: cdktf.stringToTerraform(this._serviceExecutionRoleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      kafka_cluster: cdktf.listMapper(mskReplicatorKafkaClusterToTerraform, true)(this._kafkaCluster.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      replicator_name: cdktn.stringToTerraform(this._replicatorName),
+      service_execution_role_arn: cdktn.stringToTerraform(this._serviceExecutionRoleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      kafka_cluster: cdktn.listMapper(mskReplicatorKafkaClusterToTerraform, true)(this._kafkaCluster.internalValue),
       replication_info_list: mskReplicatorReplicationInfoListStructToTerraform(this._replicationInfoList.internalValue),
       timeouts: mskReplicatorTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1724,49 +1724,49 @@ export class MskReplicator extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replicator_name: {
-        value: cdktf.stringToHclTerraform(this._replicatorName),
+        value: cdktn.stringToHclTerraform(this._replicatorName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_execution_role_arn: {
-        value: cdktf.stringToHclTerraform(this._serviceExecutionRoleArn),
+        value: cdktn.stringToHclTerraform(this._serviceExecutionRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       kafka_cluster: {
-        value: cdktf.listMapperHcl(mskReplicatorKafkaClusterToHclTerraform, true)(this._kafkaCluster.internalValue),
+        value: cdktn.listMapperHcl(mskReplicatorKafkaClusterToHclTerraform, true)(this._kafkaCluster.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MskReplicatorKafkaClusterList",

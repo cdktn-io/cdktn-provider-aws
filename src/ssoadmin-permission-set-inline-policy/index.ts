@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoadminPermissionSetInlinePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface SsoadminPermissionSetInlinePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_permission_set_inline_policy#id SsoadminPermissionSetInlinePolicy#id}
   *
@@ -55,32 +55,32 @@ export interface SsoadminPermissionSetInlinePolicyTimeouts {
   readonly delete?: string;
 }
 
-export function ssoadminPermissionSetInlinePolicyTimeoutsToTerraform(struct?: SsoadminPermissionSetInlinePolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminPermissionSetInlinePolicyTimeoutsToTerraform(struct?: SsoadminPermissionSetInlinePolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ssoadminPermissionSetInlinePolicyTimeoutsToHclTerraform(struct?: SsoadminPermissionSetInlinePolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminPermissionSetInlinePolicyTimeoutsToHclTerraform(struct?: SsoadminPermissionSetInlinePolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,19 +91,19 @@ export function ssoadminPermissionSetInlinePolicyTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminPermissionSetInlinePolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SsoadminPermissionSetInlinePolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SsoadminPermissionSetInlinePolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminPermissionSetInlinePolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,14 +120,14 @@ export class SsoadminPermissionSetInlinePolicyTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminPermissionSetInlinePolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminPermissionSetInlinePolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -175,7 +175,7 @@ export class SsoadminPermissionSetInlinePolicyTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_permission_set_inline_policy aws_ssoadmin_permission_set_inline_policy}
 */
-export class SsoadminPermissionSetInlinePolicy extends cdktf.TerraformResource {
+export class SsoadminPermissionSetInlinePolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -186,14 +186,14 @@ export class SsoadminPermissionSetInlinePolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoadminPermissionSetInlinePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoadminPermissionSetInlinePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminPermissionSetInlinePolicy to import
   * @param importFromId The id of the existing SsoadminPermissionSetInlinePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_permission_set_inline_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminPermissionSetInlinePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_permission_set_inline_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_permission_set_inline_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -328,11 +328,11 @@ export class SsoadminPermissionSetInlinePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      inline_policy: cdktf.stringToTerraform(this._inlinePolicy),
-      instance_arn: cdktf.stringToTerraform(this._instanceArn),
-      permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      inline_policy: cdktn.stringToTerraform(this._inlinePolicy),
+      instance_arn: cdktn.stringToTerraform(this._instanceArn),
+      permission_set_arn: cdktn.stringToTerraform(this._permissionSetArn),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: ssoadminPermissionSetInlinePolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -340,31 +340,31 @@ export class SsoadminPermissionSetInlinePolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inline_policy: {
-        value: cdktf.stringToHclTerraform(this._inlinePolicy),
+        value: cdktn.stringToHclTerraform(this._inlinePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceArn),
+        value: cdktn.stringToHclTerraform(this._instanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission_set_arn: {
-        value: cdktf.stringToHclTerraform(this._permissionSetArn),
+        value: cdktn.stringToHclTerraform(this._permissionSetArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsApiGatewayExportConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsApiGatewayExportConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/api_gateway_export#accepts DataAwsApiGatewayExport#accepts}
   */
@@ -50,7 +50,7 @@ export interface DataAwsApiGatewayExportConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/api_gateway_export aws_api_gateway_export}
 */
-export class DataAwsApiGatewayExport extends cdktf.TerraformDataSource {
+export class DataAwsApiGatewayExport extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class DataAwsApiGatewayExport extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsApiGatewayExport resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsApiGatewayExport resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsApiGatewayExport to import
   * @param importFromId The id of the existing DataAwsApiGatewayExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/api_gateway_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsApiGatewayExport to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_export", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_export", importId: importFromId, provider });
       }
 
   // ===========
@@ -235,56 +235,56 @@ export class DataAwsApiGatewayExport extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accepts: cdktf.stringToTerraform(this._accepts),
-      export_type: cdktf.stringToTerraform(this._exportType),
-      id: cdktf.stringToTerraform(this._id),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      region: cdktf.stringToTerraform(this._region),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      stage_name: cdktf.stringToTerraform(this._stageName),
+      accepts: cdktn.stringToTerraform(this._accepts),
+      export_type: cdktn.stringToTerraform(this._exportType),
+      id: cdktn.stringToTerraform(this._id),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      region: cdktn.stringToTerraform(this._region),
+      rest_api_id: cdktn.stringToTerraform(this._restApiId),
+      stage_name: cdktn.stringToTerraform(this._stageName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accepts: {
-        value: cdktf.stringToHclTerraform(this._accepts),
+        value: cdktn.stringToHclTerraform(this._accepts),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export_type: {
-        value: cdktf.stringToHclTerraform(this._exportType),
+        value: cdktn.stringToHclTerraform(this._exportType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rest_api_id: {
-        value: cdktf.stringToHclTerraform(this._restApiId),
+        value: cdktn.stringToHclTerraform(this._restApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stage_name: {
-        value: cdktf.stringToHclTerraform(this._stageName),
+        value: cdktn.stringToHclTerraform(this._stageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

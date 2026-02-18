@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DevopsguruServiceIntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface DevopsguruServiceIntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -23,19 +23,19 @@ export interface DevopsguruServiceIntegrationConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_service_integration#kms_server_side_encryption DevopsguruServiceIntegration#kms_server_side_encryption}
   */
-  readonly kmsServerSideEncryption?: DevopsguruServiceIntegrationKmsServerSideEncryption[] | cdktf.IResolvable;
+  readonly kmsServerSideEncryption?: DevopsguruServiceIntegrationKmsServerSideEncryption[] | cdktn.IResolvable;
   /**
   * logs_anomaly_detection block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_service_integration#logs_anomaly_detection DevopsguruServiceIntegration#logs_anomaly_detection}
   */
-  readonly logsAnomalyDetection?: DevopsguruServiceIntegrationLogsAnomalyDetection[] | cdktf.IResolvable;
+  readonly logsAnomalyDetection?: DevopsguruServiceIntegrationLogsAnomalyDetection[] | cdktn.IResolvable;
   /**
   * ops_center block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_service_integration#ops_center DevopsguruServiceIntegration#ops_center}
   */
-  readonly opsCenter?: DevopsguruServiceIntegrationOpsCenter[] | cdktf.IResolvable;
+  readonly opsCenter?: DevopsguruServiceIntegrationOpsCenter[] | cdktn.IResolvable;
 }
 export interface DevopsguruServiceIntegrationKmsServerSideEncryption {
   /**
@@ -52,39 +52,39 @@ export interface DevopsguruServiceIntegrationKmsServerSideEncryption {
   readonly type?: string;
 }
 
-export function devopsguruServiceIntegrationKmsServerSideEncryptionToTerraform(struct?: DevopsguruServiceIntegrationKmsServerSideEncryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruServiceIntegrationKmsServerSideEncryptionToTerraform(struct?: DevopsguruServiceIntegrationKmsServerSideEncryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    opt_in_status: cdktf.stringToTerraform(struct!.optInStatus),
-    type: cdktf.stringToTerraform(struct!.type),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    opt_in_status: cdktn.stringToTerraform(struct!.optInStatus),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function devopsguruServiceIntegrationKmsServerSideEncryptionToHclTerraform(struct?: DevopsguruServiceIntegrationKmsServerSideEncryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruServiceIntegrationKmsServerSideEncryptionToHclTerraform(struct?: DevopsguruServiceIntegrationKmsServerSideEncryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     opt_in_status: {
-      value: cdktf.stringToHclTerraform(struct!.optInStatus),
+      value: cdktn.stringToHclTerraform(struct!.optInStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,9 +95,9 @@ export function devopsguruServiceIntegrationKmsServerSideEncryptionToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference extends cdktf.ComplexObject {
+export class DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -105,11 +105,11 @@ export class DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevopsguruServiceIntegrationKmsServerSideEncryption | cdktf.IResolvable | undefined {
+  public get internalValue(): DevopsguruServiceIntegrationKmsServerSideEncryption | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,7 +130,7 @@ export class DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevopsguruServiceIntegrationKmsServerSideEncryption | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevopsguruServiceIntegrationKmsServerSideEncryption | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -138,7 +138,7 @@ export class DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference 
       this._optInStatus = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -200,15 +200,15 @@ export class DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference 
   }
 }
 
-export class DevopsguruServiceIntegrationKmsServerSideEncryptionList extends cdktf.ComplexList {
-  public internalValue? : DevopsguruServiceIntegrationKmsServerSideEncryption[] | cdktf.IResolvable
+export class DevopsguruServiceIntegrationKmsServerSideEncryptionList extends cdktn.ComplexList {
+  public internalValue? : DevopsguruServiceIntegrationKmsServerSideEncryption[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -226,25 +226,25 @@ export interface DevopsguruServiceIntegrationLogsAnomalyDetection {
   readonly optInStatus?: string;
 }
 
-export function devopsguruServiceIntegrationLogsAnomalyDetectionToTerraform(struct?: DevopsguruServiceIntegrationLogsAnomalyDetection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruServiceIntegrationLogsAnomalyDetectionToTerraform(struct?: DevopsguruServiceIntegrationLogsAnomalyDetection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    opt_in_status: cdktf.stringToTerraform(struct!.optInStatus),
+    opt_in_status: cdktn.stringToTerraform(struct!.optInStatus),
   }
 }
 
 
-export function devopsguruServiceIntegrationLogsAnomalyDetectionToHclTerraform(struct?: DevopsguruServiceIntegrationLogsAnomalyDetection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruServiceIntegrationLogsAnomalyDetectionToHclTerraform(struct?: DevopsguruServiceIntegrationLogsAnomalyDetection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     opt_in_status: {
-      value: cdktf.stringToHclTerraform(struct!.optInStatus),
+      value: cdktn.stringToHclTerraform(struct!.optInStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -255,9 +255,9 @@ export function devopsguruServiceIntegrationLogsAnomalyDetectionToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevopsguruServiceIntegrationLogsAnomalyDetectionOutputReference extends cdktf.ComplexObject {
+export class DevopsguruServiceIntegrationLogsAnomalyDetectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -265,11 +265,11 @@ export class DevopsguruServiceIntegrationLogsAnomalyDetectionOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevopsguruServiceIntegrationLogsAnomalyDetection | cdktf.IResolvable | undefined {
+  public get internalValue(): DevopsguruServiceIntegrationLogsAnomalyDetection | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -282,13 +282,13 @@ export class DevopsguruServiceIntegrationLogsAnomalyDetectionOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevopsguruServiceIntegrationLogsAnomalyDetection | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevopsguruServiceIntegrationLogsAnomalyDetection | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._optInStatus = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -316,15 +316,15 @@ export class DevopsguruServiceIntegrationLogsAnomalyDetectionOutputReference ext
   }
 }
 
-export class DevopsguruServiceIntegrationLogsAnomalyDetectionList extends cdktf.ComplexList {
-  public internalValue? : DevopsguruServiceIntegrationLogsAnomalyDetection[] | cdktf.IResolvable
+export class DevopsguruServiceIntegrationLogsAnomalyDetectionList extends cdktn.ComplexList {
+  public internalValue? : DevopsguruServiceIntegrationLogsAnomalyDetection[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -342,25 +342,25 @@ export interface DevopsguruServiceIntegrationOpsCenter {
   readonly optInStatus?: string;
 }
 
-export function devopsguruServiceIntegrationOpsCenterToTerraform(struct?: DevopsguruServiceIntegrationOpsCenter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruServiceIntegrationOpsCenterToTerraform(struct?: DevopsguruServiceIntegrationOpsCenter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    opt_in_status: cdktf.stringToTerraform(struct!.optInStatus),
+    opt_in_status: cdktn.stringToTerraform(struct!.optInStatus),
   }
 }
 
 
-export function devopsguruServiceIntegrationOpsCenterToHclTerraform(struct?: DevopsguruServiceIntegrationOpsCenter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devopsguruServiceIntegrationOpsCenterToHclTerraform(struct?: DevopsguruServiceIntegrationOpsCenter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     opt_in_status: {
-      value: cdktf.stringToHclTerraform(struct!.optInStatus),
+      value: cdktn.stringToHclTerraform(struct!.optInStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -371,9 +371,9 @@ export function devopsguruServiceIntegrationOpsCenterToHclTerraform(struct?: Dev
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevopsguruServiceIntegrationOpsCenterOutputReference extends cdktf.ComplexObject {
+export class DevopsguruServiceIntegrationOpsCenterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -381,11 +381,11 @@ export class DevopsguruServiceIntegrationOpsCenterOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevopsguruServiceIntegrationOpsCenter | cdktf.IResolvable | undefined {
+  public get internalValue(): DevopsguruServiceIntegrationOpsCenter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -398,13 +398,13 @@ export class DevopsguruServiceIntegrationOpsCenterOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevopsguruServiceIntegrationOpsCenter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevopsguruServiceIntegrationOpsCenter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._optInStatus = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -432,15 +432,15 @@ export class DevopsguruServiceIntegrationOpsCenterOutputReference extends cdktf.
   }
 }
 
-export class DevopsguruServiceIntegrationOpsCenterList extends cdktf.ComplexList {
-  public internalValue? : DevopsguruServiceIntegrationOpsCenter[] | cdktf.IResolvable
+export class DevopsguruServiceIntegrationOpsCenterList extends cdktn.ComplexList {
+  public internalValue? : DevopsguruServiceIntegrationOpsCenter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -455,7 +455,7 @@ export class DevopsguruServiceIntegrationOpsCenterList extends cdktf.ComplexList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration}
 */
-export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
+export class DevopsguruServiceIntegration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -466,14 +466,14 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DevopsguruServiceIntegration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DevopsguruServiceIntegration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruServiceIntegration to import
   * @param importFromId The id of the existing DevopsguruServiceIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/devopsguru_service_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruServiceIntegration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_devopsguru_service_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_devopsguru_service_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -539,7 +539,7 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
   public get kmsServerSideEncryption() {
     return this._kmsServerSideEncryption;
   }
-  public putKmsServerSideEncryption(value: DevopsguruServiceIntegrationKmsServerSideEncryption[] | cdktf.IResolvable) {
+  public putKmsServerSideEncryption(value: DevopsguruServiceIntegrationKmsServerSideEncryption[] | cdktn.IResolvable) {
     this._kmsServerSideEncryption.internalValue = value;
   }
   public resetKmsServerSideEncryption() {
@@ -555,7 +555,7 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
   public get logsAnomalyDetection() {
     return this._logsAnomalyDetection;
   }
-  public putLogsAnomalyDetection(value: DevopsguruServiceIntegrationLogsAnomalyDetection[] | cdktf.IResolvable) {
+  public putLogsAnomalyDetection(value: DevopsguruServiceIntegrationLogsAnomalyDetection[] | cdktn.IResolvable) {
     this._logsAnomalyDetection.internalValue = value;
   }
   public resetLogsAnomalyDetection() {
@@ -571,7 +571,7 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
   public get opsCenter() {
     return this._opsCenter;
   }
-  public putOpsCenter(value: DevopsguruServiceIntegrationOpsCenter[] | cdktf.IResolvable) {
+  public putOpsCenter(value: DevopsguruServiceIntegrationOpsCenter[] | cdktn.IResolvable) {
     this._opsCenter.internalValue = value;
   }
   public resetOpsCenter() {
@@ -588,35 +588,35 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      kms_server_side_encryption: cdktf.listMapper(devopsguruServiceIntegrationKmsServerSideEncryptionToTerraform, true)(this._kmsServerSideEncryption.internalValue),
-      logs_anomaly_detection: cdktf.listMapper(devopsguruServiceIntegrationLogsAnomalyDetectionToTerraform, true)(this._logsAnomalyDetection.internalValue),
-      ops_center: cdktf.listMapper(devopsguruServiceIntegrationOpsCenterToTerraform, true)(this._opsCenter.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      kms_server_side_encryption: cdktn.listMapper(devopsguruServiceIntegrationKmsServerSideEncryptionToTerraform, true)(this._kmsServerSideEncryption.internalValue),
+      logs_anomaly_detection: cdktn.listMapper(devopsguruServiceIntegrationLogsAnomalyDetectionToTerraform, true)(this._logsAnomalyDetection.internalValue),
+      ops_center: cdktn.listMapper(devopsguruServiceIntegrationOpsCenterToTerraform, true)(this._opsCenter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_server_side_encryption: {
-        value: cdktf.listMapperHcl(devopsguruServiceIntegrationKmsServerSideEncryptionToHclTerraform, true)(this._kmsServerSideEncryption.internalValue),
+        value: cdktn.listMapperHcl(devopsguruServiceIntegrationKmsServerSideEncryptionToHclTerraform, true)(this._kmsServerSideEncryption.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DevopsguruServiceIntegrationKmsServerSideEncryptionList",
       },
       logs_anomaly_detection: {
-        value: cdktf.listMapperHcl(devopsguruServiceIntegrationLogsAnomalyDetectionToHclTerraform, true)(this._logsAnomalyDetection.internalValue),
+        value: cdktn.listMapperHcl(devopsguruServiceIntegrationLogsAnomalyDetectionToHclTerraform, true)(this._logsAnomalyDetection.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DevopsguruServiceIntegrationLogsAnomalyDetectionList",
       },
       ops_center: {
-        value: cdktf.listMapperHcl(devopsguruServiceIntegrationOpsCenterToHclTerraform, true)(this._opsCenter.internalValue),
+        value: cdktn.listMapperHcl(devopsguruServiceIntegrationOpsCenterToHclTerraform, true)(this._opsCenter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DevopsguruServiceIntegrationOpsCenterList",

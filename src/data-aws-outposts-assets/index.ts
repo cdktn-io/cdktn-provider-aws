@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOutpostsAssetsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOutpostsAssetsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/outposts_assets#arn DataAwsOutpostsAssets#arn}
   */
@@ -42,7 +42,7 @@ export interface DataAwsOutpostsAssetsConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/outposts_assets aws_outposts_assets}
 */
-export class DataAwsOutpostsAssets extends cdktf.TerraformDataSource {
+export class DataAwsOutpostsAssets extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataAwsOutpostsAssets extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOutpostsAssets resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOutpostsAssets resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOutpostsAssets to import
   * @param importFromId The id of the existing DataAwsOutpostsAssets that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/outposts_assets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOutpostsAssets to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_outposts_assets", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_outposts_assets", importId: importFromId, provider });
       }
 
   // ===========
@@ -122,7 +122,7 @@ export class DataAwsOutpostsAssets extends cdktf.TerraformDataSource {
   // host_id_filter - computed: false, optional: true, required: false
   private _hostIdFilter?: string[]; 
   public get hostIdFilter() {
-    return cdktf.Fn.tolist(this.getListAttribute('host_id_filter'));
+    return cdktn.Fn.tolist(this.getListAttribute('host_id_filter'));
   }
   public set hostIdFilter(value: string[]) {
     this._hostIdFilter = value;
@@ -170,7 +170,7 @@ export class DataAwsOutpostsAssets extends cdktf.TerraformDataSource {
   // status_id_filter - computed: false, optional: true, required: false
   private _statusIdFilter?: string[]; 
   public get statusIdFilter() {
-    return cdktf.Fn.tolist(this.getListAttribute('status_id_filter'));
+    return cdktn.Fn.tolist(this.getListAttribute('status_id_filter'));
   }
   public set statusIdFilter(value: string[]) {
     this._statusIdFilter = value;
@@ -189,42 +189,42 @@ export class DataAwsOutpostsAssets extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      host_id_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostIdFilter),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      status_id_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._statusIdFilter),
+      arn: cdktn.stringToTerraform(this._arn),
+      host_id_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._hostIdFilter),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      status_id_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._statusIdFilter),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_id_filter: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostIdFilter),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._hostIdFilter),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status_id_filter: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._statusIdFilter),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._statusIdFilter),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

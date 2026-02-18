@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatazoneGlossaryTermConfig extends cdktf.TerraformMetaArguments {
+export interface DatazoneGlossaryTermConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}
   */
@@ -47,7 +47,7 @@ export interface DatazoneGlossaryTermConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_glossary_term#term_relations DatazoneGlossaryTerm#term_relations}
   */
-  readonly termRelations?: DatazoneGlossaryTermTermRelations[] | cdktf.IResolvable;
+  readonly termRelations?: DatazoneGlossaryTermTermRelations[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -66,32 +66,32 @@ export interface DatazoneGlossaryTermTermRelations {
   readonly isA?: string[];
 }
 
-export function datazoneGlossaryTermTermRelationsToTerraform(struct?: DatazoneGlossaryTermTermRelations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneGlossaryTermTermRelationsToTerraform(struct?: DatazoneGlossaryTermTermRelations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classifies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.classifies),
-    is_a: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.isA),
+    classifies: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.classifies),
+    is_a: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.isA),
   }
 }
 
 
-export function datazoneGlossaryTermTermRelationsToHclTerraform(struct?: DatazoneGlossaryTermTermRelations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneGlossaryTermTermRelationsToHclTerraform(struct?: DatazoneGlossaryTermTermRelations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classifies: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.classifies),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.classifies),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     is_a: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.isA),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.isA),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -102,9 +102,9 @@ export function datazoneGlossaryTermTermRelationsToHclTerraform(struct?: Datazon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneGlossaryTermTermRelationsOutputReference extends cdktf.ComplexObject {
+export class DatazoneGlossaryTermTermRelationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -112,11 +112,11 @@ export class DatazoneGlossaryTermTermRelationsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatazoneGlossaryTermTermRelations | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneGlossaryTermTermRelations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,14 +133,14 @@ export class DatazoneGlossaryTermTermRelationsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneGlossaryTermTermRelations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneGlossaryTermTermRelations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._classifies = undefined;
       this._isA = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -155,7 +155,7 @@ export class DatazoneGlossaryTermTermRelationsOutputReference extends cdktf.Comp
   // classifies - computed: false, optional: true, required: false
   private _classifies?: string[]; 
   public get classifies() {
-    return cdktf.Fn.tolist(this.getListAttribute('classifies'));
+    return cdktn.Fn.tolist(this.getListAttribute('classifies'));
   }
   public set classifies(value: string[]) {
     this._classifies = value;
@@ -171,7 +171,7 @@ export class DatazoneGlossaryTermTermRelationsOutputReference extends cdktf.Comp
   // is_a - computed: false, optional: true, required: false
   private _isA?: string[]; 
   public get isA() {
-    return cdktf.Fn.tolist(this.getListAttribute('is_a'));
+    return cdktn.Fn.tolist(this.getListAttribute('is_a'));
   }
   public set isA(value: string[]) {
     this._isA = value;
@@ -185,15 +185,15 @@ export class DatazoneGlossaryTermTermRelationsOutputReference extends cdktf.Comp
   }
 }
 
-export class DatazoneGlossaryTermTermRelationsList extends cdktf.ComplexList {
-  public internalValue? : DatazoneGlossaryTermTermRelations[] | cdktf.IResolvable
+export class DatazoneGlossaryTermTermRelationsList extends cdktn.ComplexList {
+  public internalValue? : DatazoneGlossaryTermTermRelations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -213,25 +213,25 @@ export interface DatazoneGlossaryTermTimeouts {
   readonly create?: string;
 }
 
-export function datazoneGlossaryTermTimeoutsToTerraform(struct?: DatazoneGlossaryTermTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneGlossaryTermTimeoutsToTerraform(struct?: DatazoneGlossaryTermTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function datazoneGlossaryTermTimeoutsToHclTerraform(struct?: DatazoneGlossaryTermTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datazoneGlossaryTermTimeoutsToHclTerraform(struct?: DatazoneGlossaryTermTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -242,19 +242,19 @@ export function datazoneGlossaryTermTimeoutsToHclTerraform(struct?: DatazoneGlos
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatazoneGlossaryTermTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatazoneGlossaryTermTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatazoneGlossaryTermTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatazoneGlossaryTermTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -267,13 +267,13 @@ export class DatazoneGlossaryTermTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatazoneGlossaryTermTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatazoneGlossaryTermTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -304,7 +304,7 @@ export class DatazoneGlossaryTermTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_glossary_term aws_datazone_glossary_term}
 */
-export class DatazoneGlossaryTerm extends cdktf.TerraformResource {
+export class DatazoneGlossaryTerm extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -315,14 +315,14 @@ export class DatazoneGlossaryTerm extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatazoneGlossaryTerm resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatazoneGlossaryTerm resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneGlossaryTerm to import
   * @param importFromId The id of the existing DatazoneGlossaryTerm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/datazone_glossary_term#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneGlossaryTerm to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_glossary_term", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_datazone_glossary_term", importId: importFromId, provider });
       }
 
   // ===========
@@ -493,7 +493,7 @@ export class DatazoneGlossaryTerm extends cdktf.TerraformResource {
   public get termRelations() {
     return this._termRelations;
   }
-  public putTermRelations(value: DatazoneGlossaryTermTermRelations[] | cdktf.IResolvable) {
+  public putTermRelations(value: DatazoneGlossaryTermTermRelations[] | cdktn.IResolvable) {
     this._termRelations.internalValue = value;
   }
   public resetTermRelations() {
@@ -526,14 +526,14 @@ export class DatazoneGlossaryTerm extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_identifier: cdktf.stringToTerraform(this._domainIdentifier),
-      glossary_identifier: cdktf.stringToTerraform(this._glossaryIdentifier),
-      long_description: cdktf.stringToTerraform(this._longDescription),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      short_description: cdktf.stringToTerraform(this._shortDescription),
-      status: cdktf.stringToTerraform(this._status),
-      term_relations: cdktf.listMapper(datazoneGlossaryTermTermRelationsToTerraform, true)(this._termRelations.internalValue),
+      domain_identifier: cdktn.stringToTerraform(this._domainIdentifier),
+      glossary_identifier: cdktn.stringToTerraform(this._glossaryIdentifier),
+      long_description: cdktn.stringToTerraform(this._longDescription),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      short_description: cdktn.stringToTerraform(this._shortDescription),
+      status: cdktn.stringToTerraform(this._status),
+      term_relations: cdktn.listMapper(datazoneGlossaryTermTermRelationsToTerraform, true)(this._termRelations.internalValue),
       timeouts: datazoneGlossaryTermTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -541,49 +541,49 @@ export class DatazoneGlossaryTerm extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_identifier: {
-        value: cdktf.stringToHclTerraform(this._domainIdentifier),
+        value: cdktn.stringToHclTerraform(this._domainIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       glossary_identifier: {
-        value: cdktf.stringToHclTerraform(this._glossaryIdentifier),
+        value: cdktn.stringToHclTerraform(this._glossaryIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       long_description: {
-        value: cdktf.stringToHclTerraform(this._longDescription),
+        value: cdktn.stringToHclTerraform(this._longDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       short_description: {
-        value: cdktf.stringToHclTerraform(this._shortDescription),
+        value: cdktn.stringToHclTerraform(this._shortDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       term_relations: {
-        value: cdktf.listMapperHcl(datazoneGlossaryTermTermRelationsToHclTerraform, true)(this._termRelations.internalValue),
+        value: cdktn.listMapperHcl(datazoneGlossaryTermTermRelationsToHclTerraform, true)(this._termRelations.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatazoneGlossaryTermTermRelationsList",

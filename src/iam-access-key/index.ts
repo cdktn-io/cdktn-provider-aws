@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamAccessKeyConfig extends cdktf.TerraformMetaArguments {
+export interface IamAccessKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_access_key#id IamAccessKey#id}
   *
@@ -36,7 +36,7 @@ export interface IamAccessKeyConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_access_key aws_iam_access_key}
 */
-export class IamAccessKey extends cdktf.TerraformResource {
+export class IamAccessKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class IamAccessKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamAccessKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamAccessKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamAccessKey to import
   * @param importFromId The id of the existing IamAccessKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_access_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamAccessKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_access_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_access_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -191,35 +191,35 @@ export class IamAccessKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      pgp_key: cdktf.stringToTerraform(this._pgpKey),
-      status: cdktf.stringToTerraform(this._status),
-      user: cdktf.stringToTerraform(this._user),
+      id: cdktn.stringToTerraform(this._id),
+      pgp_key: cdktn.stringToTerraform(this._pgpKey),
+      status: cdktn.stringToTerraform(this._status),
+      user: cdktn.stringToTerraform(this._user),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pgp_key: {
-        value: cdktf.stringToHclTerraform(this._pgpKey),
+        value: cdktn.stringToHclTerraform(this._pgpKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user: {
-        value: cdktf.stringToHclTerraform(this._user),
+        value: cdktn.stringToHclTerraform(this._user),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

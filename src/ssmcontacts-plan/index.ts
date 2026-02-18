@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmcontactsPlanConfig extends cdktf.TerraformMetaArguments {
+export interface SsmcontactsPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}
   */
@@ -34,7 +34,7 @@ export interface SsmcontactsPlanConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_plan#stage SsmcontactsPlan#stage}
   */
-  readonly stage: SsmcontactsPlanStage[] | cdktf.IResolvable;
+  readonly stage: SsmcontactsPlanStage[] | cdktn.IResolvable;
 }
 export interface SsmcontactsPlanStageTargetChannelTargetInfo {
   /**
@@ -48,31 +48,31 @@ export interface SsmcontactsPlanStageTargetChannelTargetInfo {
 }
 
 export function ssmcontactsPlanStageTargetChannelTargetInfoToTerraform(struct?: SsmcontactsPlanStageTargetChannelTargetInfoOutputReference | SsmcontactsPlanStageTargetChannelTargetInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contact_channel_id: cdktf.stringToTerraform(struct!.contactChannelId),
-    retry_interval_in_minutes: cdktf.numberToTerraform(struct!.retryIntervalInMinutes),
+    contact_channel_id: cdktn.stringToTerraform(struct!.contactChannelId),
+    retry_interval_in_minutes: cdktn.numberToTerraform(struct!.retryIntervalInMinutes),
   }
 }
 
 
 export function ssmcontactsPlanStageTargetChannelTargetInfoToHclTerraform(struct?: SsmcontactsPlanStageTargetChannelTargetInfoOutputReference | SsmcontactsPlanStageTargetChannelTargetInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contact_channel_id: {
-      value: cdktf.stringToHclTerraform(struct!.contactChannelId),
+      value: cdktn.stringToHclTerraform(struct!.contactChannelId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retry_interval_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.retryIntervalInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.retryIntervalInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -83,14 +83,14 @@ export function ssmcontactsPlanStageTargetChannelTargetInfoToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsPlanStageTargetChannelTargetInfoOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsPlanStageTargetChannelTargetInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -158,35 +158,35 @@ export interface SsmcontactsPlanStageTargetContactTargetInfo {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_plan#is_essential SsmcontactsPlan#is_essential}
   */
-  readonly isEssential: boolean | cdktf.IResolvable;
+  readonly isEssential: boolean | cdktn.IResolvable;
 }
 
 export function ssmcontactsPlanStageTargetContactTargetInfoToTerraform(struct?: SsmcontactsPlanStageTargetContactTargetInfoOutputReference | SsmcontactsPlanStageTargetContactTargetInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contact_id: cdktf.stringToTerraform(struct!.contactId),
-    is_essential: cdktf.booleanToTerraform(struct!.isEssential),
+    contact_id: cdktn.stringToTerraform(struct!.contactId),
+    is_essential: cdktn.booleanToTerraform(struct!.isEssential),
   }
 }
 
 
 export function ssmcontactsPlanStageTargetContactTargetInfoToHclTerraform(struct?: SsmcontactsPlanStageTargetContactTargetInfoOutputReference | SsmcontactsPlanStageTargetContactTargetInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contact_id: {
-      value: cdktf.stringToHclTerraform(struct!.contactId),
+      value: cdktn.stringToHclTerraform(struct!.contactId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_essential: {
-      value: cdktf.booleanToHclTerraform(struct!.isEssential),
+      value: cdktn.booleanToHclTerraform(struct!.isEssential),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -197,14 +197,14 @@ export function ssmcontactsPlanStageTargetContactTargetInfoToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsPlanStageTargetContactTargetInfoOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsPlanStageTargetContactTargetInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -252,11 +252,11 @@ export class SsmcontactsPlanStageTargetContactTargetInfoOutputReference extends 
   }
 
   // is_essential - computed: false, optional: false, required: true
-  private _isEssential?: boolean | cdktf.IResolvable; 
+  private _isEssential?: boolean | cdktn.IResolvable; 
   public get isEssential() {
     return this.getBooleanAttribute('is_essential');
   }
-  public set isEssential(value: boolean | cdktf.IResolvable) {
+  public set isEssential(value: boolean | cdktn.IResolvable) {
     this._isEssential = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -279,9 +279,9 @@ export interface SsmcontactsPlanStageTarget {
   readonly contactTargetInfo?: SsmcontactsPlanStageTargetContactTargetInfo;
 }
 
-export function ssmcontactsPlanStageTargetToTerraform(struct?: SsmcontactsPlanStageTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsPlanStageTargetToTerraform(struct?: SsmcontactsPlanStageTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -291,9 +291,9 @@ export function ssmcontactsPlanStageTargetToTerraform(struct?: SsmcontactsPlanSt
 }
 
 
-export function ssmcontactsPlanStageTargetToHclTerraform(struct?: SsmcontactsPlanStageTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsPlanStageTargetToHclTerraform(struct?: SsmcontactsPlanStageTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -315,9 +315,9 @@ export function ssmcontactsPlanStageTargetToHclTerraform(struct?: SsmcontactsPla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsPlanStageTargetOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsPlanStageTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -325,11 +325,11 @@ export class SsmcontactsPlanStageTargetOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsPlanStageTarget | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsPlanStageTarget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -346,14 +346,14 @@ export class SsmcontactsPlanStageTargetOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsPlanStageTarget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsPlanStageTarget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._channelTargetInfo.internalValue = undefined;
       this._contactTargetInfo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -398,15 +398,15 @@ export class SsmcontactsPlanStageTargetOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class SsmcontactsPlanStageTargetList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsPlanStageTarget[] | cdktf.IResolvable
+export class SsmcontactsPlanStageTargetList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsPlanStageTarget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -427,35 +427,35 @@ export interface SsmcontactsPlanStage {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_plan#target SsmcontactsPlan#target}
   */
-  readonly target?: SsmcontactsPlanStageTarget[] | cdktf.IResolvable;
+  readonly target?: SsmcontactsPlanStageTarget[] | cdktn.IResolvable;
 }
 
-export function ssmcontactsPlanStageToTerraform(struct?: SsmcontactsPlanStage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsPlanStageToTerraform(struct?: SsmcontactsPlanStage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    duration_in_minutes: cdktf.numberToTerraform(struct!.durationInMinutes),
-    target: cdktf.listMapper(ssmcontactsPlanStageTargetToTerraform, true)(struct!.target),
+    duration_in_minutes: cdktn.numberToTerraform(struct!.durationInMinutes),
+    target: cdktn.listMapper(ssmcontactsPlanStageTargetToTerraform, true)(struct!.target),
   }
 }
 
 
-export function ssmcontactsPlanStageToHclTerraform(struct?: SsmcontactsPlanStage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsPlanStageToHclTerraform(struct?: SsmcontactsPlanStage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     duration_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.durationInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.durationInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target: {
-      value: cdktf.listMapperHcl(ssmcontactsPlanStageTargetToHclTerraform, true)(struct!.target),
+      value: cdktn.listMapperHcl(ssmcontactsPlanStageTargetToHclTerraform, true)(struct!.target),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsPlanStageTargetList",
@@ -466,9 +466,9 @@ export function ssmcontactsPlanStageToHclTerraform(struct?: SsmcontactsPlanStage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsPlanStageOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsPlanStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -476,11 +476,11 @@ export class SsmcontactsPlanStageOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsPlanStage | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsPlanStage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -497,14 +497,14 @@ export class SsmcontactsPlanStageOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsPlanStage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsPlanStage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._durationInMinutes = undefined;
       this._target.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -534,7 +534,7 @@ export class SsmcontactsPlanStageOutputReference extends cdktf.ComplexObject {
   public get target() {
     return this._target;
   }
-  public putTarget(value: SsmcontactsPlanStageTarget[] | cdktf.IResolvable) {
+  public putTarget(value: SsmcontactsPlanStageTarget[] | cdktn.IResolvable) {
     this._target.internalValue = value;
   }
   public resetTarget() {
@@ -546,15 +546,15 @@ export class SsmcontactsPlanStageOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SsmcontactsPlanStageList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsPlanStage[] | cdktf.IResolvable
+export class SsmcontactsPlanStageList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsPlanStage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -569,7 +569,7 @@ export class SsmcontactsPlanStageList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_plan aws_ssmcontacts_plan}
 */
-export class SsmcontactsPlan extends cdktf.TerraformResource {
+export class SsmcontactsPlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -580,14 +580,14 @@ export class SsmcontactsPlan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmcontactsPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmcontactsPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmcontactsPlan to import
   * @param importFromId The id of the existing SsmcontactsPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmcontactsPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmcontacts_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmcontacts_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -677,7 +677,7 @@ export class SsmcontactsPlan extends cdktf.TerraformResource {
   public get stage() {
     return this._stage;
   }
-  public putStage(value: SsmcontactsPlanStage[] | cdktf.IResolvable) {
+  public putStage(value: SsmcontactsPlanStage[] | cdktn.IResolvable) {
     this._stage.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -691,35 +691,35 @@ export class SsmcontactsPlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      contact_id: cdktf.stringToTerraform(this._contactId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      stage: cdktf.listMapper(ssmcontactsPlanStageToTerraform, true)(this._stage.internalValue),
+      contact_id: cdktn.stringToTerraform(this._contactId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      stage: cdktn.listMapper(ssmcontactsPlanStageToTerraform, true)(this._stage.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       contact_id: {
-        value: cdktf.stringToHclTerraform(this._contactId),
+        value: cdktn.stringToHclTerraform(this._contactId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stage: {
-        value: cdktf.listMapperHcl(ssmcontactsPlanStageToHclTerraform, true)(this._stage.internalValue),
+        value: cdktn.listMapperHcl(ssmcontactsPlanStageToHclTerraform, true)(this._stage.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmcontactsPlanStageList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkInterfaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#description NetworkInterface#description}
   */
@@ -19,7 +19,7 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}
   */
-  readonly enablePrimaryIpv6?: boolean | cdktf.IResolvable;
+  readonly enablePrimaryIpv6?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#id NetworkInterface#id}
   *
@@ -50,7 +50,7 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}
   */
-  readonly ipv6AddressListEnabled?: boolean | cdktf.IResolvable;
+  readonly ipv6AddressListEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}
   */
@@ -74,7 +74,7 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}
   */
-  readonly privateIpListEnabled?: boolean | cdktf.IResolvable;
+  readonly privateIpListEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#private_ips NetworkInterface#private_ips}
   */
@@ -96,7 +96,7 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}
   */
-  readonly sourceDestCheck?: boolean | cdktf.IResolvable;
+  readonly sourceDestCheck?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}
   */
@@ -114,7 +114,7 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#attachment NetworkInterface#attachment}
   */
-  readonly attachment?: NetworkInterfaceAttachment[] | cdktf.IResolvable;
+  readonly attachment?: NetworkInterfaceAttachment[] | cdktn.IResolvable;
 }
 export interface NetworkInterfaceAttachment {
   /**
@@ -131,39 +131,39 @@ export interface NetworkInterfaceAttachment {
   readonly networkCardIndex?: number;
 }
 
-export function networkInterfaceAttachmentToTerraform(struct?: NetworkInterfaceAttachment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfaceAttachmentToTerraform(struct?: NetworkInterfaceAttachment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    device_index: cdktf.numberToTerraform(struct!.deviceIndex),
-    instance: cdktf.stringToTerraform(struct!.instance),
-    network_card_index: cdktf.numberToTerraform(struct!.networkCardIndex),
+    device_index: cdktn.numberToTerraform(struct!.deviceIndex),
+    instance: cdktn.stringToTerraform(struct!.instance),
+    network_card_index: cdktn.numberToTerraform(struct!.networkCardIndex),
   }
 }
 
 
-export function networkInterfaceAttachmentToHclTerraform(struct?: NetworkInterfaceAttachment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfaceAttachmentToHclTerraform(struct?: NetworkInterfaceAttachment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     device_index: {
-      value: cdktf.numberToHclTerraform(struct!.deviceIndex),
+      value: cdktn.numberToHclTerraform(struct!.deviceIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     instance: {
-      value: cdktf.stringToHclTerraform(struct!.instance),
+      value: cdktn.stringToHclTerraform(struct!.instance),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_card_index: {
-      value: cdktf.numberToHclTerraform(struct!.networkCardIndex),
+      value: cdktn.numberToHclTerraform(struct!.networkCardIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -174,9 +174,9 @@ export function networkInterfaceAttachmentToHclTerraform(struct?: NetworkInterfa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkInterfaceAttachmentOutputReference extends cdktf.ComplexObject {
+export class NetworkInterfaceAttachmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -184,11 +184,11 @@ export class NetworkInterfaceAttachmentOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkInterfaceAttachment | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkInterfaceAttachment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -209,7 +209,7 @@ export class NetworkInterfaceAttachmentOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkInterfaceAttachment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkInterfaceAttachment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -217,7 +217,7 @@ export class NetworkInterfaceAttachmentOutputReference extends cdktf.ComplexObje
       this._instance = undefined;
       this._networkCardIndex = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -278,15 +278,15 @@ export class NetworkInterfaceAttachmentOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class NetworkInterfaceAttachmentList extends cdktf.ComplexList {
-  public internalValue? : NetworkInterfaceAttachment[] | cdktf.IResolvable
+export class NetworkInterfaceAttachmentList extends cdktn.ComplexList {
+  public internalValue? : NetworkInterfaceAttachment[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -301,7 +301,7 @@ export class NetworkInterfaceAttachmentList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface aws_network_interface}
 */
-export class NetworkInterface extends cdktf.TerraformResource {
+export class NetworkInterface extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -312,14 +312,14 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkInterface resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkInterface resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkInterface to import
   * @param importFromId The id of the existing NetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkInterface to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_interface", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_interface", importId: importFromId, provider });
       }
 
   // ===========
@@ -401,11 +401,11 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // enable_primary_ipv6 - computed: true, optional: true, required: false
-  private _enablePrimaryIpv6?: boolean | cdktf.IResolvable; 
+  private _enablePrimaryIpv6?: boolean | cdktn.IResolvable; 
   public get enablePrimaryIpv6() {
     return this.getBooleanAttribute('enable_primary_ipv6');
   }
-  public set enablePrimaryIpv6(value: boolean | cdktf.IResolvable) {
+  public set enablePrimaryIpv6(value: boolean | cdktn.IResolvable) {
     this._enablePrimaryIpv6 = value;
   }
   public resetEnablePrimaryIpv6() {
@@ -467,7 +467,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // ipv4_prefixes - computed: true, optional: true, required: false
   private _ipv4Prefixes?: string[]; 
   public get ipv4Prefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('ipv4_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('ipv4_prefixes'));
   }
   public set ipv4Prefixes(value: string[]) {
     this._ipv4Prefixes = value;
@@ -513,11 +513,11 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // ipv6_address_list_enabled - computed: false, optional: true, required: false
-  private _ipv6AddressListEnabled?: boolean | cdktf.IResolvable; 
+  private _ipv6AddressListEnabled?: boolean | cdktn.IResolvable; 
   public get ipv6AddressListEnabled() {
     return this.getBooleanAttribute('ipv6_address_list_enabled');
   }
-  public set ipv6AddressListEnabled(value: boolean | cdktf.IResolvable) {
+  public set ipv6AddressListEnabled(value: boolean | cdktn.IResolvable) {
     this._ipv6AddressListEnabled = value;
   }
   public resetIpv6AddressListEnabled() {
@@ -531,7 +531,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // ipv6_addresses - computed: true, optional: true, required: false
   private _ipv6Addresses?: string[]; 
   public get ipv6Addresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('ipv6_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('ipv6_addresses'));
   }
   public set ipv6Addresses(value: string[]) {
     this._ipv6Addresses = value;
@@ -563,7 +563,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // ipv6_prefixes - computed: true, optional: true, required: false
   private _ipv6Prefixes?: string[]; 
   public get ipv6Prefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('ipv6_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('ipv6_prefixes'));
   }
   public set ipv6Prefixes(value: string[]) {
     this._ipv6Prefixes = value;
@@ -629,11 +629,11 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // private_ip_list_enabled - computed: false, optional: true, required: false
-  private _privateIpListEnabled?: boolean | cdktf.IResolvable; 
+  private _privateIpListEnabled?: boolean | cdktn.IResolvable; 
   public get privateIpListEnabled() {
     return this.getBooleanAttribute('private_ip_list_enabled');
   }
-  public set privateIpListEnabled(value: boolean | cdktf.IResolvable) {
+  public set privateIpListEnabled(value: boolean | cdktn.IResolvable) {
     this._privateIpListEnabled = value;
   }
   public resetPrivateIpListEnabled() {
@@ -647,7 +647,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // private_ips - computed: true, optional: true, required: false
   private _privateIps?: string[]; 
   public get privateIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('private_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('private_ips'));
   }
   public set privateIps(value: string[]) {
     this._privateIps = value;
@@ -695,7 +695,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -709,11 +709,11 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // source_dest_check - computed: false, optional: true, required: false
-  private _sourceDestCheck?: boolean | cdktf.IResolvable; 
+  private _sourceDestCheck?: boolean | cdktn.IResolvable; 
   public get sourceDestCheck() {
     return this.getBooleanAttribute('source_dest_check');
   }
-  public set sourceDestCheck(value: boolean | cdktf.IResolvable) {
+  public set sourceDestCheck(value: boolean | cdktn.IResolvable) {
     this._sourceDestCheck = value;
   }
   public resetSourceDestCheck() {
@@ -774,7 +774,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   public get attachment() {
     return this._attachment;
   }
-  public putAttachment(value: NetworkInterfaceAttachment[] | cdktf.IResolvable) {
+  public putAttachment(value: NetworkInterfaceAttachment[] | cdktn.IResolvable) {
     this._attachment.internalValue = value;
   }
   public resetAttachment() {
@@ -791,175 +791,175 @@ export class NetworkInterface extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enable_primary_ipv6: cdktf.booleanToTerraform(this._enablePrimaryIpv6),
-      id: cdktf.stringToTerraform(this._id),
-      interface_type: cdktf.stringToTerraform(this._interfaceType),
-      ipv4_prefix_count: cdktf.numberToTerraform(this._ipv4PrefixCount),
-      ipv4_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv4Prefixes),
-      ipv6_address_count: cdktf.numberToTerraform(this._ipv6AddressCount),
-      ipv6_address_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv6AddressList),
-      ipv6_address_list_enabled: cdktf.booleanToTerraform(this._ipv6AddressListEnabled),
-      ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv6Addresses),
-      ipv6_prefix_count: cdktf.numberToTerraform(this._ipv6PrefixCount),
-      ipv6_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv6Prefixes),
-      private_ip: cdktf.stringToTerraform(this._privateIp),
-      private_ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._privateIpList),
-      private_ip_list_enabled: cdktf.booleanToTerraform(this._privateIpListEnabled),
-      private_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._privateIps),
-      private_ips_count: cdktf.numberToTerraform(this._privateIpsCount),
-      region: cdktf.stringToTerraform(this._region),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
-      source_dest_check: cdktf.booleanToTerraform(this._sourceDestCheck),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform, true)(this._attachment.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      enable_primary_ipv6: cdktn.booleanToTerraform(this._enablePrimaryIpv6),
+      id: cdktn.stringToTerraform(this._id),
+      interface_type: cdktn.stringToTerraform(this._interfaceType),
+      ipv4_prefix_count: cdktn.numberToTerraform(this._ipv4PrefixCount),
+      ipv4_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipv4Prefixes),
+      ipv6_address_count: cdktn.numberToTerraform(this._ipv6AddressCount),
+      ipv6_address_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipv6AddressList),
+      ipv6_address_list_enabled: cdktn.booleanToTerraform(this._ipv6AddressListEnabled),
+      ipv6_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipv6Addresses),
+      ipv6_prefix_count: cdktn.numberToTerraform(this._ipv6PrefixCount),
+      ipv6_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipv6Prefixes),
+      private_ip: cdktn.stringToTerraform(this._privateIp),
+      private_ip_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._privateIpList),
+      private_ip_list_enabled: cdktn.booleanToTerraform(this._privateIpListEnabled),
+      private_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(this._privateIps),
+      private_ips_count: cdktn.numberToTerraform(this._privateIpsCount),
+      region: cdktn.stringToTerraform(this._region),
+      security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroups),
+      source_dest_check: cdktn.booleanToTerraform(this._sourceDestCheck),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      attachment: cdktn.listMapper(networkInterfaceAttachmentToTerraform, true)(this._attachment.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_primary_ipv6: {
-        value: cdktf.booleanToHclTerraform(this._enablePrimaryIpv6),
+        value: cdktn.booleanToHclTerraform(this._enablePrimaryIpv6),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       interface_type: {
-        value: cdktf.stringToHclTerraform(this._interfaceType),
+        value: cdktn.stringToHclTerraform(this._interfaceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv4_prefix_count: {
-        value: cdktf.numberToHclTerraform(this._ipv4PrefixCount),
+        value: cdktn.numberToHclTerraform(this._ipv4PrefixCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ipv4_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv4Prefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipv4Prefixes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       ipv6_address_count: {
-        value: cdktf.numberToHclTerraform(this._ipv6AddressCount),
+        value: cdktn.numberToHclTerraform(this._ipv6AddressCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ipv6_address_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv6AddressList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipv6AddressList),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       ipv6_address_list_enabled: {
-        value: cdktf.booleanToHclTerraform(this._ipv6AddressListEnabled),
+        value: cdktn.booleanToHclTerraform(this._ipv6AddressListEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ipv6_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv6Addresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipv6Addresses),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       ipv6_prefix_count: {
-        value: cdktf.numberToHclTerraform(this._ipv6PrefixCount),
+        value: cdktn.numberToHclTerraform(this._ipv6PrefixCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ipv6_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv6Prefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipv6Prefixes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       private_ip: {
-        value: cdktf.stringToHclTerraform(this._privateIp),
+        value: cdktn.stringToHclTerraform(this._privateIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_ip_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privateIpList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._privateIpList),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       private_ip_list_enabled: {
-        value: cdktf.booleanToHclTerraform(this._privateIpListEnabled),
+        value: cdktn.booleanToHclTerraform(this._privateIpListEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       private_ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privateIps),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._privateIps),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       private_ips_count: {
-        value: cdktf.numberToHclTerraform(this._privateIpsCount),
+        value: cdktn.numberToHclTerraform(this._privateIpsCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       source_dest_check: {
-        value: cdktf.booleanToHclTerraform(this._sourceDestCheck),
+        value: cdktn.booleanToHclTerraform(this._sourceDestCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       attachment: {
-        value: cdktf.listMapperHcl(networkInterfaceAttachmentToHclTerraform, true)(this._attachment.internalValue),
+        value: cdktn.listMapperHcl(networkInterfaceAttachmentToHclTerraform, true)(this._attachment.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NetworkInterfaceAttachmentList",

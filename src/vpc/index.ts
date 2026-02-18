@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcConfig extends cdktf.TerraformMetaArguments {
+export interface VpcConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}
   */
-  readonly assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable;
+  readonly assignGeneratedIpv6CidrBlock?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc#cidr_block Vpc#cidr_block}
   */
@@ -23,15 +23,15 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc#enable_dns_hostnames Vpc#enable_dns_hostnames}
   */
-  readonly enableDnsHostnames?: boolean | cdktf.IResolvable;
+  readonly enableDnsHostnames?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc#enable_dns_support Vpc#enable_dns_support}
   */
-  readonly enableDnsSupport?: boolean | cdktf.IResolvable;
+  readonly enableDnsSupport?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc#enable_network_address_usage_metrics Vpc#enable_network_address_usage_metrics}
   */
-  readonly enableNetworkAddressUsageMetrics?: boolean | cdktf.IResolvable;
+  readonly enableNetworkAddressUsageMetrics?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc#id Vpc#id}
   *
@@ -86,7 +86,7 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc aws_vpc}
 */
-export class Vpc extends cdktf.TerraformResource {
+export class Vpc extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -97,14 +97,14 @@ export class Vpc extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Vpc resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Vpc resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Vpc to import
   * @param importFromId The id of the existing Vpc that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Vpc to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc", importId: importFromId, provider });
       }
 
   // ===========
@@ -162,11 +162,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // assign_generated_ipv6_cidr_block - computed: false, optional: true, required: false
-  private _assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable; 
+  private _assignGeneratedIpv6CidrBlock?: boolean | cdktn.IResolvable; 
   public get assignGeneratedIpv6CidrBlock() {
     return this.getBooleanAttribute('assign_generated_ipv6_cidr_block');
   }
-  public set assignGeneratedIpv6CidrBlock(value: boolean | cdktf.IResolvable) {
+  public set assignGeneratedIpv6CidrBlock(value: boolean | cdktn.IResolvable) {
     this._assignGeneratedIpv6CidrBlock = value;
   }
   public resetAssignGeneratedIpv6CidrBlock() {
@@ -214,11 +214,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // enable_dns_hostnames - computed: true, optional: true, required: false
-  private _enableDnsHostnames?: boolean | cdktf.IResolvable; 
+  private _enableDnsHostnames?: boolean | cdktn.IResolvable; 
   public get enableDnsHostnames() {
     return this.getBooleanAttribute('enable_dns_hostnames');
   }
-  public set enableDnsHostnames(value: boolean | cdktf.IResolvable) {
+  public set enableDnsHostnames(value: boolean | cdktn.IResolvable) {
     this._enableDnsHostnames = value;
   }
   public resetEnableDnsHostnames() {
@@ -230,11 +230,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // enable_dns_support - computed: false, optional: true, required: false
-  private _enableDnsSupport?: boolean | cdktf.IResolvable; 
+  private _enableDnsSupport?: boolean | cdktn.IResolvable; 
   public get enableDnsSupport() {
     return this.getBooleanAttribute('enable_dns_support');
   }
-  public set enableDnsSupport(value: boolean | cdktf.IResolvable) {
+  public set enableDnsSupport(value: boolean | cdktn.IResolvable) {
     this._enableDnsSupport = value;
   }
   public resetEnableDnsSupport() {
@@ -246,11 +246,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // enable_network_address_usage_metrics - computed: true, optional: true, required: false
-  private _enableNetworkAddressUsageMetrics?: boolean | cdktf.IResolvable; 
+  private _enableNetworkAddressUsageMetrics?: boolean | cdktn.IResolvable; 
   public get enableNetworkAddressUsageMetrics() {
     return this.getBooleanAttribute('enable_network_address_usage_metrics');
   }
-  public set enableNetworkAddressUsageMetrics(value: boolean | cdktf.IResolvable) {
+  public set enableNetworkAddressUsageMetrics(value: boolean | cdktn.IResolvable) {
     this._enableNetworkAddressUsageMetrics = value;
   }
   public resetEnableNetworkAddressUsageMetrics() {
@@ -458,119 +458,119 @@ export class Vpc extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assign_generated_ipv6_cidr_block: cdktf.booleanToTerraform(this._assignGeneratedIpv6CidrBlock),
-      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
-      enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
-      enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
-      enable_network_address_usage_metrics: cdktf.booleanToTerraform(this._enableNetworkAddressUsageMetrics),
-      id: cdktf.stringToTerraform(this._id),
-      instance_tenancy: cdktf.stringToTerraform(this._instanceTenancy),
-      ipv4_ipam_pool_id: cdktf.stringToTerraform(this._ipv4IpamPoolId),
-      ipv4_netmask_length: cdktf.numberToTerraform(this._ipv4NetmaskLength),
-      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
-      ipv6_cidr_block_network_border_group: cdktf.stringToTerraform(this._ipv6CidrBlockNetworkBorderGroup),
-      ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
-      ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      assign_generated_ipv6_cidr_block: cdktn.booleanToTerraform(this._assignGeneratedIpv6CidrBlock),
+      cidr_block: cdktn.stringToTerraform(this._cidrBlock),
+      enable_dns_hostnames: cdktn.booleanToTerraform(this._enableDnsHostnames),
+      enable_dns_support: cdktn.booleanToTerraform(this._enableDnsSupport),
+      enable_network_address_usage_metrics: cdktn.booleanToTerraform(this._enableNetworkAddressUsageMetrics),
+      id: cdktn.stringToTerraform(this._id),
+      instance_tenancy: cdktn.stringToTerraform(this._instanceTenancy),
+      ipv4_ipam_pool_id: cdktn.stringToTerraform(this._ipv4IpamPoolId),
+      ipv4_netmask_length: cdktn.numberToTerraform(this._ipv4NetmaskLength),
+      ipv6_cidr_block: cdktn.stringToTerraform(this._ipv6CidrBlock),
+      ipv6_cidr_block_network_border_group: cdktn.stringToTerraform(this._ipv6CidrBlockNetworkBorderGroup),
+      ipv6_ipam_pool_id: cdktn.stringToTerraform(this._ipv6IpamPoolId),
+      ipv6_netmask_length: cdktn.numberToTerraform(this._ipv6NetmaskLength),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assign_generated_ipv6_cidr_block: {
-        value: cdktf.booleanToHclTerraform(this._assignGeneratedIpv6CidrBlock),
+        value: cdktn.booleanToHclTerraform(this._assignGeneratedIpv6CidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cidr_block: {
-        value: cdktf.stringToHclTerraform(this._cidrBlock),
+        value: cdktn.stringToHclTerraform(this._cidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_dns_hostnames: {
-        value: cdktf.booleanToHclTerraform(this._enableDnsHostnames),
+        value: cdktn.booleanToHclTerraform(this._enableDnsHostnames),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_dns_support: {
-        value: cdktf.booleanToHclTerraform(this._enableDnsSupport),
+        value: cdktn.booleanToHclTerraform(this._enableDnsSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_network_address_usage_metrics: {
-        value: cdktf.booleanToHclTerraform(this._enableNetworkAddressUsageMetrics),
+        value: cdktn.booleanToHclTerraform(this._enableNetworkAddressUsageMetrics),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_tenancy: {
-        value: cdktf.stringToHclTerraform(this._instanceTenancy),
+        value: cdktn.stringToHclTerraform(this._instanceTenancy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv4_ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._ipv4IpamPoolId),
+        value: cdktn.stringToHclTerraform(this._ipv4IpamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv4_netmask_length: {
-        value: cdktf.numberToHclTerraform(this._ipv4NetmaskLength),
+        value: cdktn.numberToHclTerraform(this._ipv4NetmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ipv6_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
+        value: cdktn.stringToHclTerraform(this._ipv6CidrBlock),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_cidr_block_network_border_group: {
-        value: cdktf.stringToHclTerraform(this._ipv6CidrBlockNetworkBorderGroup),
+        value: cdktn.stringToHclTerraform(this._ipv6CidrBlockNetworkBorderGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._ipv6IpamPoolId),
+        value: cdktn.stringToHclTerraform(this._ipv6IpamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_netmask_length: {
-        value: cdktf.numberToHclTerraform(this._ipv6NetmaskLength),
+        value: cdktn.numberToHclTerraform(this._ipv6NetmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DxGatewayAssociationProposalConfig extends cdktf.TerraformMetaArguments {
+export interface DxGatewayAssociationProposalConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_gateway_association_proposal#allowed_prefixes DxGatewayAssociationProposal#allowed_prefixes}
   */
@@ -46,7 +46,7 @@ export interface DxGatewayAssociationProposalConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_gateway_association_proposal aws_dx_gateway_association_proposal}
 */
-export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
+export class DxGatewayAssociationProposal extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DxGatewayAssociationProposal resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DxGatewayAssociationProposal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxGatewayAssociationProposal to import
   * @param importFromId The id of the existing DxGatewayAssociationProposal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_gateway_association_proposal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxGatewayAssociationProposal to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_gateway_association_proposal", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_gateway_association_proposal", importId: importFromId, provider });
       }
 
   // ===========
@@ -109,7 +109,7 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
   // allowed_prefixes - computed: true, optional: true, required: false
   private _allowedPrefixes?: string[]; 
   public get allowedPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_prefixes'));
   }
   public set allowedPrefixes(value: string[]) {
     this._allowedPrefixes = value;
@@ -209,49 +209,49 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedPrefixes),
-      associated_gateway_id: cdktf.stringToTerraform(this._associatedGatewayId),
-      dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
-      dx_gateway_owner_account_id: cdktf.stringToTerraform(this._dxGatewayOwnerAccountId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      allowed_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedPrefixes),
+      associated_gateway_id: cdktn.stringToTerraform(this._associatedGatewayId),
+      dx_gateway_id: cdktn.stringToTerraform(this._dxGatewayId),
+      dx_gateway_owner_account_id: cdktn.stringToTerraform(this._dxGatewayOwnerAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedPrefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedPrefixes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       associated_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._associatedGatewayId),
+        value: cdktn.stringToHclTerraform(this._associatedGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dx_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._dxGatewayId),
+        value: cdktn.stringToHclTerraform(this._dxGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dx_gateway_owner_account_id: {
-        value: cdktf.stringToHclTerraform(this._dxGatewayOwnerAccountId),
+        value: cdktn.stringToHclTerraform(this._dxGatewayOwnerAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamSecurityTokenServicePreferencesConfig extends cdktf.TerraformMetaArguments {
+export interface IamSecurityTokenServicePreferencesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_security_token_service_preferences#global_endpoint_token_version IamSecurityTokenServicePreferences#global_endpoint_token_version}
   */
@@ -28,7 +28,7 @@ export interface IamSecurityTokenServicePreferencesConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_security_token_service_preferences aws_iam_security_token_service_preferences}
 */
-export class IamSecurityTokenServicePreferences extends cdktf.TerraformResource {
+export class IamSecurityTokenServicePreferences extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class IamSecurityTokenServicePreferences extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamSecurityTokenServicePreferences resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamSecurityTokenServicePreferences resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamSecurityTokenServicePreferences to import
   * @param importFromId The id of the existing IamSecurityTokenServicePreferences that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_security_token_service_preferences#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamSecurityTokenServicePreferences to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_security_token_service_preferences", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_security_token_service_preferences", importId: importFromId, provider });
       }
 
   // ===========
@@ -119,21 +119,21 @@ export class IamSecurityTokenServicePreferences extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      global_endpoint_token_version: cdktf.stringToTerraform(this._globalEndpointTokenVersion),
-      id: cdktf.stringToTerraform(this._id),
+      global_endpoint_token_version: cdktn.stringToTerraform(this._globalEndpointTokenVersion),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       global_endpoint_token_version: {
-        value: cdktf.stringToHclTerraform(this._globalEndpointTokenVersion),
+        value: cdktn.stringToHclTerraform(this._globalEndpointTokenVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

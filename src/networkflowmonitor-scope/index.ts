@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkflowmonitorScopeConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkflowmonitorScopeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,7 +27,7 @@ export interface NetworkflowmonitorScopeConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkflowmonitor_scope#target NetworkflowmonitorScope#target}
   */
-  readonly target?: NetworkflowmonitorScopeTarget[] | cdktf.IResolvable;
+  readonly target?: NetworkflowmonitorScopeTarget[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -42,25 +42,25 @@ export interface NetworkflowmonitorScopeTargetTargetIdentifierTargetId {
   readonly accountId: string;
 }
 
-export function networkflowmonitorScopeTargetTargetIdentifierTargetIdToTerraform(struct?: NetworkflowmonitorScopeTargetTargetIdentifierTargetId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkflowmonitorScopeTargetTargetIdentifierTargetIdToTerraform(struct?: NetworkflowmonitorScopeTargetTargetIdentifierTargetId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
   }
 }
 
 
-export function networkflowmonitorScopeTargetTargetIdentifierTargetIdToHclTerraform(struct?: NetworkflowmonitorScopeTargetTargetIdentifierTargetId | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkflowmonitorScopeTargetTargetIdentifierTargetIdToHclTerraform(struct?: NetworkflowmonitorScopeTargetTargetIdentifierTargetId | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -71,9 +71,9 @@ export function networkflowmonitorScopeTargetTargetIdentifierTargetIdToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkflowmonitorScopeTargetTargetIdentifierTargetIdOutputReference extends cdktf.ComplexObject {
+export class NetworkflowmonitorScopeTargetTargetIdentifierTargetIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -81,11 +81,11 @@ export class NetworkflowmonitorScopeTargetTargetIdentifierTargetIdOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkflowmonitorScopeTargetTargetIdentifierTargetId | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkflowmonitorScopeTargetTargetIdentifierTargetId | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -98,13 +98,13 @@ export class NetworkflowmonitorScopeTargetTargetIdentifierTargetIdOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkflowmonitorScopeTargetTargetIdentifierTargetId | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkflowmonitorScopeTargetTargetIdentifierTargetId | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accountId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -129,15 +129,15 @@ export class NetworkflowmonitorScopeTargetTargetIdentifierTargetIdOutputReferenc
   }
 }
 
-export class NetworkflowmonitorScopeTargetTargetIdentifierTargetIdList extends cdktf.ComplexList {
-  public internalValue? : NetworkflowmonitorScopeTargetTargetIdentifierTargetId[] | cdktf.IResolvable
+export class NetworkflowmonitorScopeTargetTargetIdentifierTargetIdList extends cdktn.ComplexList {
+  public internalValue? : NetworkflowmonitorScopeTargetTargetIdentifierTargetId[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -158,35 +158,35 @@ export interface NetworkflowmonitorScopeTargetTargetIdentifier {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkflowmonitor_scope#target_id NetworkflowmonitorScope#target_id}
   */
-  readonly targetId?: NetworkflowmonitorScopeTargetTargetIdentifierTargetId[] | cdktf.IResolvable;
+  readonly targetId?: NetworkflowmonitorScopeTargetTargetIdentifierTargetId[] | cdktn.IResolvable;
 }
 
-export function networkflowmonitorScopeTargetTargetIdentifierToTerraform(struct?: NetworkflowmonitorScopeTargetTargetIdentifier | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkflowmonitorScopeTargetTargetIdentifierToTerraform(struct?: NetworkflowmonitorScopeTargetTargetIdentifier | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_type: cdktf.stringToTerraform(struct!.targetType),
-    target_id: cdktf.listMapper(networkflowmonitorScopeTargetTargetIdentifierTargetIdToTerraform, true)(struct!.targetId),
+    target_type: cdktn.stringToTerraform(struct!.targetType),
+    target_id: cdktn.listMapper(networkflowmonitorScopeTargetTargetIdentifierTargetIdToTerraform, true)(struct!.targetId),
   }
 }
 
 
-export function networkflowmonitorScopeTargetTargetIdentifierToHclTerraform(struct?: NetworkflowmonitorScopeTargetTargetIdentifier | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkflowmonitorScopeTargetTargetIdentifierToHclTerraform(struct?: NetworkflowmonitorScopeTargetTargetIdentifier | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_type: {
-      value: cdktf.stringToHclTerraform(struct!.targetType),
+      value: cdktn.stringToHclTerraform(struct!.targetType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_id: {
-      value: cdktf.listMapperHcl(networkflowmonitorScopeTargetTargetIdentifierTargetIdToHclTerraform, true)(struct!.targetId),
+      value: cdktn.listMapperHcl(networkflowmonitorScopeTargetTargetIdentifierTargetIdToHclTerraform, true)(struct!.targetId),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkflowmonitorScopeTargetTargetIdentifierTargetIdList",
@@ -197,9 +197,9 @@ export function networkflowmonitorScopeTargetTargetIdentifierToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkflowmonitorScopeTargetTargetIdentifierOutputReference extends cdktf.ComplexObject {
+export class NetworkflowmonitorScopeTargetTargetIdentifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -207,11 +207,11 @@ export class NetworkflowmonitorScopeTargetTargetIdentifierOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkflowmonitorScopeTargetTargetIdentifier | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkflowmonitorScopeTargetTargetIdentifier | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -228,14 +228,14 @@ export class NetworkflowmonitorScopeTargetTargetIdentifierOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkflowmonitorScopeTargetTargetIdentifier | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkflowmonitorScopeTargetTargetIdentifier | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._targetType = undefined;
       this._targetId.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -265,7 +265,7 @@ export class NetworkflowmonitorScopeTargetTargetIdentifierOutputReference extend
   public get targetId() {
     return this._targetId;
   }
-  public putTargetId(value: NetworkflowmonitorScopeTargetTargetIdentifierTargetId[] | cdktf.IResolvable) {
+  public putTargetId(value: NetworkflowmonitorScopeTargetTargetIdentifierTargetId[] | cdktn.IResolvable) {
     this._targetId.internalValue = value;
   }
   public resetTargetId() {
@@ -277,15 +277,15 @@ export class NetworkflowmonitorScopeTargetTargetIdentifierOutputReference extend
   }
 }
 
-export class NetworkflowmonitorScopeTargetTargetIdentifierList extends cdktf.ComplexList {
-  public internalValue? : NetworkflowmonitorScopeTargetTargetIdentifier[] | cdktf.IResolvable
+export class NetworkflowmonitorScopeTargetTargetIdentifierList extends cdktn.ComplexList {
+  public internalValue? : NetworkflowmonitorScopeTargetTargetIdentifier[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -306,35 +306,35 @@ export interface NetworkflowmonitorScopeTarget {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkflowmonitor_scope#target_identifier NetworkflowmonitorScope#target_identifier}
   */
-  readonly targetIdentifier?: NetworkflowmonitorScopeTargetTargetIdentifier[] | cdktf.IResolvable;
+  readonly targetIdentifier?: NetworkflowmonitorScopeTargetTargetIdentifier[] | cdktn.IResolvable;
 }
 
-export function networkflowmonitorScopeTargetToTerraform(struct?: NetworkflowmonitorScopeTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkflowmonitorScopeTargetToTerraform(struct?: NetworkflowmonitorScopeTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    region: cdktf.stringToTerraform(struct!.region),
-    target_identifier: cdktf.listMapper(networkflowmonitorScopeTargetTargetIdentifierToTerraform, true)(struct!.targetIdentifier),
+    region: cdktn.stringToTerraform(struct!.region),
+    target_identifier: cdktn.listMapper(networkflowmonitorScopeTargetTargetIdentifierToTerraform, true)(struct!.targetIdentifier),
   }
 }
 
 
-export function networkflowmonitorScopeTargetToHclTerraform(struct?: NetworkflowmonitorScopeTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkflowmonitorScopeTargetToHclTerraform(struct?: NetworkflowmonitorScopeTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_identifier: {
-      value: cdktf.listMapperHcl(networkflowmonitorScopeTargetTargetIdentifierToHclTerraform, true)(struct!.targetIdentifier),
+      value: cdktn.listMapperHcl(networkflowmonitorScopeTargetTargetIdentifierToHclTerraform, true)(struct!.targetIdentifier),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkflowmonitorScopeTargetTargetIdentifierList",
@@ -345,9 +345,9 @@ export function networkflowmonitorScopeTargetToHclTerraform(struct?: Networkflow
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkflowmonitorScopeTargetOutputReference extends cdktf.ComplexObject {
+export class NetworkflowmonitorScopeTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -355,11 +355,11 @@ export class NetworkflowmonitorScopeTargetOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkflowmonitorScopeTarget | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkflowmonitorScopeTarget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -376,14 +376,14 @@ export class NetworkflowmonitorScopeTargetOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkflowmonitorScopeTarget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkflowmonitorScopeTarget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._region = undefined;
       this._targetIdentifier.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -413,7 +413,7 @@ export class NetworkflowmonitorScopeTargetOutputReference extends cdktf.ComplexO
   public get targetIdentifier() {
     return this._targetIdentifier;
   }
-  public putTargetIdentifier(value: NetworkflowmonitorScopeTargetTargetIdentifier[] | cdktf.IResolvable) {
+  public putTargetIdentifier(value: NetworkflowmonitorScopeTargetTargetIdentifier[] | cdktn.IResolvable) {
     this._targetIdentifier.internalValue = value;
   }
   public resetTargetIdentifier() {
@@ -425,15 +425,15 @@ export class NetworkflowmonitorScopeTargetOutputReference extends cdktf.ComplexO
   }
 }
 
-export class NetworkflowmonitorScopeTargetList extends cdktf.ComplexList {
-  public internalValue? : NetworkflowmonitorScopeTarget[] | cdktf.IResolvable
+export class NetworkflowmonitorScopeTargetList extends cdktn.ComplexList {
+  public internalValue? : NetworkflowmonitorScopeTarget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -465,39 +465,39 @@ export interface NetworkflowmonitorScopeTimeouts {
   readonly update?: string;
 }
 
-export function networkflowmonitorScopeTimeoutsToTerraform(struct?: NetworkflowmonitorScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkflowmonitorScopeTimeoutsToTerraform(struct?: NetworkflowmonitorScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkflowmonitorScopeTimeoutsToHclTerraform(struct?: NetworkflowmonitorScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkflowmonitorScopeTimeoutsToHclTerraform(struct?: NetworkflowmonitorScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -508,19 +508,19 @@ export function networkflowmonitorScopeTimeoutsToHclTerraform(struct?: Networkfl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkflowmonitorScopeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkflowmonitorScopeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkflowmonitorScopeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkflowmonitorScopeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -541,7 +541,7 @@ export class NetworkflowmonitorScopeTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkflowmonitorScopeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkflowmonitorScopeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -549,7 +549,7 @@ export class NetworkflowmonitorScopeTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -614,7 +614,7 @@ export class NetworkflowmonitorScopeTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkflowmonitor_scope aws_networkflowmonitor_scope}
 */
-export class NetworkflowmonitorScope extends cdktf.TerraformResource {
+export class NetworkflowmonitorScope extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -625,14 +625,14 @@ export class NetworkflowmonitorScope extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkflowmonitorScope resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkflowmonitorScope resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkflowmonitorScope to import
   * @param importFromId The id of the existing NetworkflowmonitorScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkflowmonitor_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkflowmonitorScope to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkflowmonitor_scope", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkflowmonitor_scope", importId: importFromId, provider });
       }
 
   // ===========
@@ -715,7 +715,7 @@ export class NetworkflowmonitorScope extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -725,7 +725,7 @@ export class NetworkflowmonitorScope extends cdktf.TerraformResource {
   public get target() {
     return this._target;
   }
-  public putTarget(value: NetworkflowmonitorScopeTarget[] | cdktf.IResolvable) {
+  public putTarget(value: NetworkflowmonitorScopeTarget[] | cdktn.IResolvable) {
     this._target.internalValue = value;
   }
   public resetTarget() {
@@ -758,9 +758,9 @@ export class NetworkflowmonitorScope extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      target: cdktf.listMapper(networkflowmonitorScopeTargetToTerraform, true)(this._target.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      target: cdktn.listMapper(networkflowmonitorScopeTargetToTerraform, true)(this._target.internalValue),
       timeouts: networkflowmonitorScopeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -768,19 +768,19 @@ export class NetworkflowmonitorScope extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target: {
-        value: cdktf.listMapperHcl(networkflowmonitorScopeTargetToHclTerraform, true)(this._target.internalValue),
+        value: cdktn.listMapperHcl(networkflowmonitorScopeTargetToHclTerraform, true)(this._target.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NetworkflowmonitorScopeTargetList",

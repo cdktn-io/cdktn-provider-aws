@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AcmCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface AcmCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acm_certificate#certificate_authority_arn AcmCertificate#certificate_authority_arn}
   */
@@ -80,14 +80,14 @@ export interface AcmCertificateConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acm_certificate#validation_option AcmCertificate#validation_option}
   */
-  readonly validationOption?: AcmCertificateValidationOption[] | cdktf.IResolvable;
+  readonly validationOption?: AcmCertificateValidationOption[] | cdktn.IResolvable;
 }
 export interface AcmCertificateDomainValidationOptions {
 }
 
 export function acmCertificateDomainValidationOptionsToTerraform(struct?: AcmCertificateDomainValidationOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -96,8 +96,8 @@ export function acmCertificateDomainValidationOptionsToTerraform(struct?: AcmCer
 
 
 export function acmCertificateDomainValidationOptionsToHclTerraform(struct?: AcmCertificateDomainValidationOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -105,7 +105,7 @@ export function acmCertificateDomainValidationOptionsToHclTerraform(struct?: Acm
   return attrs;
 }
 
-export class AcmCertificateDomainValidationOptionsOutputReference extends cdktf.ComplexObject {
+export class AcmCertificateDomainValidationOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -114,7 +114,7 @@ export class AcmCertificateDomainValidationOptionsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -154,14 +154,14 @@ export class AcmCertificateDomainValidationOptionsOutputReference extends cdktf.
   }
 }
 
-export class AcmCertificateDomainValidationOptionsList extends cdktf.ComplexList {
+export class AcmCertificateDomainValidationOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -176,8 +176,8 @@ export interface AcmCertificateRenewalSummary {
 }
 
 export function acmCertificateRenewalSummaryToTerraform(struct?: AcmCertificateRenewalSummary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -186,8 +186,8 @@ export function acmCertificateRenewalSummaryToTerraform(struct?: AcmCertificateR
 
 
 export function acmCertificateRenewalSummaryToHclTerraform(struct?: AcmCertificateRenewalSummary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -195,7 +195,7 @@ export function acmCertificateRenewalSummaryToHclTerraform(struct?: AcmCertifica
   return attrs;
 }
 
-export class AcmCertificateRenewalSummaryOutputReference extends cdktf.ComplexObject {
+export class AcmCertificateRenewalSummaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -204,7 +204,7 @@ export class AcmCertificateRenewalSummaryOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -239,14 +239,14 @@ export class AcmCertificateRenewalSummaryOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class AcmCertificateRenewalSummaryList extends cdktf.ComplexList {
+export class AcmCertificateRenewalSummaryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -269,31 +269,31 @@ export interface AcmCertificateOptions {
 }
 
 export function acmCertificateOptionsToTerraform(struct?: AcmCertificateOptionsOutputReference | AcmCertificateOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_transparency_logging_preference: cdktf.stringToTerraform(struct!.certificateTransparencyLoggingPreference),
-    export: cdktf.stringToTerraform(struct!.export),
+    certificate_transparency_logging_preference: cdktn.stringToTerraform(struct!.certificateTransparencyLoggingPreference),
+    export: cdktn.stringToTerraform(struct!.export),
   }
 }
 
 
 export function acmCertificateOptionsToHclTerraform(struct?: AcmCertificateOptionsOutputReference | AcmCertificateOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_transparency_logging_preference: {
-      value: cdktf.stringToHclTerraform(struct!.certificateTransparencyLoggingPreference),
+      value: cdktn.stringToHclTerraform(struct!.certificateTransparencyLoggingPreference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export: {
-      value: cdktf.stringToHclTerraform(struct!.export),
+      value: cdktn.stringToHclTerraform(struct!.export),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -304,14 +304,14 @@ export function acmCertificateOptionsToHclTerraform(struct?: AcmCertificateOptio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AcmCertificateOptionsOutputReference extends cdktf.ComplexObject {
+export class AcmCertificateOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -385,32 +385,32 @@ export interface AcmCertificateValidationOption {
   readonly validationDomain: string;
 }
 
-export function acmCertificateValidationOptionToTerraform(struct?: AcmCertificateValidationOption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function acmCertificateValidationOptionToTerraform(struct?: AcmCertificateValidationOption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_name: cdktf.stringToTerraform(struct!.domainName),
-    validation_domain: cdktf.stringToTerraform(struct!.validationDomain),
+    domain_name: cdktn.stringToTerraform(struct!.domainName),
+    validation_domain: cdktn.stringToTerraform(struct!.validationDomain),
   }
 }
 
 
-export function acmCertificateValidationOptionToHclTerraform(struct?: AcmCertificateValidationOption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function acmCertificateValidationOptionToHclTerraform(struct?: AcmCertificateValidationOption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainName),
+      value: cdktn.stringToHclTerraform(struct!.domainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     validation_domain: {
-      value: cdktf.stringToHclTerraform(struct!.validationDomain),
+      value: cdktn.stringToHclTerraform(struct!.validationDomain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -421,9 +421,9 @@ export function acmCertificateValidationOptionToHclTerraform(struct?: AcmCertifi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AcmCertificateValidationOptionOutputReference extends cdktf.ComplexObject {
+export class AcmCertificateValidationOptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -431,11 +431,11 @@ export class AcmCertificateValidationOptionOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AcmCertificateValidationOption | cdktf.IResolvable | undefined {
+  public get internalValue(): AcmCertificateValidationOption | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -452,14 +452,14 @@ export class AcmCertificateValidationOptionOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AcmCertificateValidationOption | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AcmCertificateValidationOption | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._domainName = undefined;
       this._validationDomain = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -498,15 +498,15 @@ export class AcmCertificateValidationOptionOutputReference extends cdktf.Complex
   }
 }
 
-export class AcmCertificateValidationOptionList extends cdktf.ComplexList {
-  public internalValue? : AcmCertificateValidationOption[] | cdktf.IResolvable
+export class AcmCertificateValidationOptionList extends cdktn.ComplexList {
+  public internalValue? : AcmCertificateValidationOption[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -521,7 +521,7 @@ export class AcmCertificateValidationOptionList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acm_certificate aws_acm_certificate}
 */
-export class AcmCertificate extends cdktf.TerraformResource {
+export class AcmCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -532,14 +532,14 @@ export class AcmCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AcmCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AcmCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AcmCertificate to import
   * @param importFromId The id of the existing AcmCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/acm_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AcmCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_acm_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_acm_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -779,7 +779,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
   // subject_alternative_names - computed: true, optional: true, required: false
   private _subjectAlternativeNames?: string[]; 
   public get subjectAlternativeNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('subject_alternative_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('subject_alternative_names'));
   }
   public set subjectAlternativeNames(value: string[]) {
     this._subjectAlternativeNames = value;
@@ -871,7 +871,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
   public get validationOption() {
     return this._validationOption;
   }
-  public putValidationOption(value: AcmCertificateValidationOption[] | cdktf.IResolvable) {
+  public putValidationOption(value: AcmCertificateValidationOption[] | cdktn.IResolvable) {
     this._validationOption.internalValue = value;
   }
   public resetValidationOption() {
@@ -888,100 +888,100 @@ export class AcmCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_authority_arn: cdktf.stringToTerraform(this._certificateAuthorityArn),
-      certificate_body: cdktf.stringToTerraform(this._certificateBody),
-      certificate_chain: cdktf.stringToTerraform(this._certificateChain),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      early_renewal_duration: cdktf.stringToTerraform(this._earlyRenewalDuration),
-      id: cdktf.stringToTerraform(this._id),
-      key_algorithm: cdktf.stringToTerraform(this._keyAlgorithm),
-      private_key: cdktf.stringToTerraform(this._privateKey),
-      region: cdktf.stringToTerraform(this._region),
-      subject_alternative_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subjectAlternativeNames),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      validation_method: cdktf.stringToTerraform(this._validationMethod),
+      certificate_authority_arn: cdktn.stringToTerraform(this._certificateAuthorityArn),
+      certificate_body: cdktn.stringToTerraform(this._certificateBody),
+      certificate_chain: cdktn.stringToTerraform(this._certificateChain),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      early_renewal_duration: cdktn.stringToTerraform(this._earlyRenewalDuration),
+      id: cdktn.stringToTerraform(this._id),
+      key_algorithm: cdktn.stringToTerraform(this._keyAlgorithm),
+      private_key: cdktn.stringToTerraform(this._privateKey),
+      region: cdktn.stringToTerraform(this._region),
+      subject_alternative_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subjectAlternativeNames),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      validation_method: cdktn.stringToTerraform(this._validationMethod),
       options: acmCertificateOptionsToTerraform(this._options.internalValue),
-      validation_option: cdktf.listMapper(acmCertificateValidationOptionToTerraform, true)(this._validationOption.internalValue),
+      validation_option: cdktn.listMapper(acmCertificateValidationOptionToTerraform, true)(this._validationOption.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_authority_arn: {
-        value: cdktf.stringToHclTerraform(this._certificateAuthorityArn),
+        value: cdktn.stringToHclTerraform(this._certificateAuthorityArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_body: {
-        value: cdktf.stringToHclTerraform(this._certificateBody),
+        value: cdktn.stringToHclTerraform(this._certificateBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_chain: {
-        value: cdktf.stringToHclTerraform(this._certificateChain),
+        value: cdktn.stringToHclTerraform(this._certificateChain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       early_renewal_duration: {
-        value: cdktf.stringToHclTerraform(this._earlyRenewalDuration),
+        value: cdktn.stringToHclTerraform(this._earlyRenewalDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_algorithm: {
-        value: cdktf.stringToHclTerraform(this._keyAlgorithm),
+        value: cdktn.stringToHclTerraform(this._keyAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key: {
-        value: cdktf.stringToHclTerraform(this._privateKey),
+        value: cdktn.stringToHclTerraform(this._privateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subject_alternative_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subjectAlternativeNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subjectAlternativeNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       validation_method: {
-        value: cdktf.stringToHclTerraform(this._validationMethod),
+        value: cdktn.stringToHclTerraform(this._validationMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -993,7 +993,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
         storageClassType: "AcmCertificateOptionsList",
       },
       validation_option: {
-        value: cdktf.listMapperHcl(acmCertificateValidationOptionToHclTerraform, true)(this._validationOption.internalValue),
+        value: cdktn.listMapperHcl(acmCertificateValidationOptionToHclTerraform, true)(this._validationOption.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AcmCertificateValidationOptionList",

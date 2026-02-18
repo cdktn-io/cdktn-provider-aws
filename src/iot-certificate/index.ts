@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface IotCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_certificate#active IotCertificate#active}
   */
-  readonly active: boolean | cdktf.IResolvable;
+  readonly active: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}
   */
@@ -46,7 +46,7 @@ export interface IotCertificateConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_certificate aws_iot_certificate}
 */
-export class IotCertificate extends cdktf.TerraformResource {
+export class IotCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class IotCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotCertificate to import
   * @param importFromId The id of the existing IotCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iot_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iot_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,11 +107,11 @@ export class IotCertificate extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: false, required: true
-  private _active?: boolean | cdktf.IResolvable; 
+  private _active?: boolean | cdktn.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | cdktf.IResolvable) {
+  public set active(value: boolean | cdktn.IResolvable) {
     this._active = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -225,49 +225,49 @@ export class IotCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active: cdktf.booleanToTerraform(this._active),
-      ca_pem: cdktf.stringToTerraform(this._caPem),
-      certificate_pem: cdktf.stringToTerraform(this._certificatePem),
-      csr: cdktf.stringToTerraform(this._csr),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
+      active: cdktn.booleanToTerraform(this._active),
+      ca_pem: cdktn.stringToTerraform(this._caPem),
+      certificate_pem: cdktn.stringToTerraform(this._certificatePem),
+      csr: cdktn.stringToTerraform(this._csr),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       active: {
-        value: cdktf.booleanToHclTerraform(this._active),
+        value: cdktn.booleanToHclTerraform(this._active),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ca_pem: {
-        value: cdktf.stringToHclTerraform(this._caPem),
+        value: cdktn.stringToHclTerraform(this._caPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_pem: {
-        value: cdktf.stringToHclTerraform(this._certificatePem),
+        value: cdktn.stringToHclTerraform(this._certificatePem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       csr: {
-        value: cdktf.stringToHclTerraform(this._csr),
+        value: cdktn.stringToHclTerraform(this._csr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

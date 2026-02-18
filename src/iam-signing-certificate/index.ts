@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamSigningCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface IamSigningCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_signing_certificate#certificate_body IamSigningCertificate#certificate_body}
   */
@@ -36,7 +36,7 @@ export interface IamSigningCertificateConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_signing_certificate aws_iam_signing_certificate}
 */
-export class IamSigningCertificate extends cdktf.TerraformResource {
+export class IamSigningCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class IamSigningCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamSigningCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamSigningCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamSigningCertificate to import
   * @param importFromId The id of the existing IamSigningCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_signing_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamSigningCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_signing_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_signing_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -163,35 +163,35 @@ export class IamSigningCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_body: cdktf.stringToTerraform(this._certificateBody),
-      id: cdktf.stringToTerraform(this._id),
-      status: cdktf.stringToTerraform(this._status),
-      user_name: cdktf.stringToTerraform(this._userName),
+      certificate_body: cdktn.stringToTerraform(this._certificateBody),
+      id: cdktn.stringToTerraform(this._id),
+      status: cdktn.stringToTerraform(this._status),
+      user_name: cdktn.stringToTerraform(this._userName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_body: {
-        value: cdktf.stringToHclTerraform(this._certificateBody),
+        value: cdktn.stringToHclTerraform(this._certificateBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

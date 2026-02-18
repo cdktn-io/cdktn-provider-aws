@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3TablesTablePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface S3TablesTablePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_table_policy#name S3TablesTablePolicy#name}
   */
@@ -39,7 +39,7 @@ export interface S3TablesTablePolicyConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_table_policy aws_s3tables_table_policy}
 */
-export class S3TablesTablePolicy extends cdktf.TerraformResource {
+export class S3TablesTablePolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class S3TablesTablePolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3TablesTablePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3TablesTablePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesTablePolicy to import
   * @param importFromId The id of the existing S3TablesTablePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3tables_table_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesTablePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3tables_table_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3tables_table_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -172,42 +172,42 @@ export class S3TablesTablePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      region: cdktf.stringToTerraform(this._region),
-      resource_policy: cdktf.stringToTerraform(this._resourcePolicy),
-      table_bucket_arn: cdktf.stringToTerraform(this._tableBucketArn),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      region: cdktn.stringToTerraform(this._region),
+      resource_policy: cdktn.stringToTerraform(this._resourcePolicy),
+      table_bucket_arn: cdktn.stringToTerraform(this._tableBucketArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_policy: {
-        value: cdktf.stringToHclTerraform(this._resourcePolicy),
+        value: cdktn.stringToHclTerraform(this._resourcePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_bucket_arn: {
-        value: cdktf.stringToHclTerraform(this._tableBucketArn),
+        value: cdktn.stringToHclTerraform(this._tableBucketArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

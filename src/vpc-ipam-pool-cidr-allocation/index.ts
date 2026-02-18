@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcIpamPoolCidrAllocationConfig extends cdktf.TerraformMetaArguments {
+export interface VpcIpamPoolCidrAllocationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool_cidr_allocation#cidr VpcIpamPoolCidrAllocation#cidr}
   */
@@ -50,7 +50,7 @@ export interface VpcIpamPoolCidrAllocationConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool_cidr_allocation aws_vpc_ipam_pool_cidr_allocation}
 */
-export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
+export class VpcIpamPoolCidrAllocation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcIpamPoolCidrAllocation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcIpamPoolCidrAllocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpamPoolCidrAllocation to import
   * @param importFromId The id of the existing VpcIpamPoolCidrAllocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_ipam_pool_cidr_allocation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpamPoolCidrAllocation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_pool_cidr_allocation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_pool_cidr_allocation", importId: importFromId, provider });
       }
 
   // ===========
@@ -146,7 +146,7 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
   // disallowed_cidrs - computed: false, optional: true, required: false
   private _disallowedCidrs?: string[]; 
   public get disallowedCidrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('disallowed_cidrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('disallowed_cidrs'));
   }
   public set disallowedCidrs(value: string[]) {
     this._disallowedCidrs = value;
@@ -246,56 +246,56 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr: cdktf.stringToTerraform(this._cidr),
-      description: cdktf.stringToTerraform(this._description),
-      disallowed_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._disallowedCidrs),
-      id: cdktf.stringToTerraform(this._id),
-      ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
-      netmask_length: cdktf.numberToTerraform(this._netmaskLength),
-      region: cdktf.stringToTerraform(this._region),
+      cidr: cdktn.stringToTerraform(this._cidr),
+      description: cdktn.stringToTerraform(this._description),
+      disallowed_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._disallowedCidrs),
+      id: cdktn.stringToTerraform(this._id),
+      ipam_pool_id: cdktn.stringToTerraform(this._ipamPoolId),
+      netmask_length: cdktn.numberToTerraform(this._netmaskLength),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr: {
-        value: cdktf.stringToHclTerraform(this._cidr),
+        value: cdktn.stringToHclTerraform(this._cidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disallowed_cidrs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._disallowedCidrs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._disallowedCidrs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._ipamPoolId),
+        value: cdktn.stringToHclTerraform(this._ipamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       netmask_length: {
-        value: cdktf.numberToHclTerraform(this._netmaskLength),
+        value: cdktn.numberToHclTerraform(this._netmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

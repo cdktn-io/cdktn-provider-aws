@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KmsKeyConfig extends cdktf.TerraformMetaArguments {
+export interface KmsKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key#bypass_policy_lockout_safety_check KmsKey#bypass_policy_lockout_safety_check}
   */
-  readonly bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable;
+  readonly bypassPolicyLockoutSafetyCheck?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key#custom_key_store_id KmsKey#custom_key_store_id}
   */
@@ -35,7 +35,7 @@ export interface KmsKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key#enable_key_rotation KmsKey#enable_key_rotation}
   */
-  readonly enableKeyRotation?: boolean | cdktf.IResolvable;
+  readonly enableKeyRotation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key#id KmsKey#id}
   *
@@ -46,7 +46,7 @@ export interface KmsKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key#is_enabled KmsKey#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key#key_usage KmsKey#key_usage}
   */
@@ -54,7 +54,7 @@ export interface KmsKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key#multi_region KmsKey#multi_region}
   */
-  readonly multiRegion?: boolean | cdktf.IResolvable;
+  readonly multiRegion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key#policy KmsKey#policy}
   */
@@ -95,25 +95,25 @@ export interface KmsKeyTimeouts {
   readonly create?: string;
 }
 
-export function kmsKeyTimeoutsToTerraform(struct?: KmsKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsKeyTimeoutsToTerraform(struct?: KmsKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function kmsKeyTimeoutsToHclTerraform(struct?: KmsKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kmsKeyTimeoutsToHclTerraform(struct?: KmsKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -124,19 +124,19 @@ export function kmsKeyTimeoutsToHclTerraform(struct?: KmsKeyTimeouts | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KmsKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KmsKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KmsKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KmsKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -149,13 +149,13 @@ export class KmsKeyTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KmsKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KmsKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -186,7 +186,7 @@ export class KmsKeyTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key aws_kms_key}
 */
-export class KmsKey extends cdktf.TerraformResource {
+export class KmsKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -197,14 +197,14 @@ export class KmsKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KmsKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KmsKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsKey to import
   * @param importFromId The id of the existing KmsKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/kms_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -263,11 +263,11 @@ export class KmsKey extends cdktf.TerraformResource {
   }
 
   // bypass_policy_lockout_safety_check - computed: false, optional: true, required: false
-  private _bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable; 
+  private _bypassPolicyLockoutSafetyCheck?: boolean | cdktn.IResolvable; 
   public get bypassPolicyLockoutSafetyCheck() {
     return this.getBooleanAttribute('bypass_policy_lockout_safety_check');
   }
-  public set bypassPolicyLockoutSafetyCheck(value: boolean | cdktf.IResolvable) {
+  public set bypassPolicyLockoutSafetyCheck(value: boolean | cdktn.IResolvable) {
     this._bypassPolicyLockoutSafetyCheck = value;
   }
   public resetBypassPolicyLockoutSafetyCheck() {
@@ -343,11 +343,11 @@ export class KmsKey extends cdktf.TerraformResource {
   }
 
   // enable_key_rotation - computed: false, optional: true, required: false
-  private _enableKeyRotation?: boolean | cdktf.IResolvable; 
+  private _enableKeyRotation?: boolean | cdktn.IResolvable; 
   public get enableKeyRotation() {
     return this.getBooleanAttribute('enable_key_rotation');
   }
-  public set enableKeyRotation(value: boolean | cdktf.IResolvable) {
+  public set enableKeyRotation(value: boolean | cdktn.IResolvable) {
     this._enableKeyRotation = value;
   }
   public resetEnableKeyRotation() {
@@ -375,11 +375,11 @@ export class KmsKey extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -412,11 +412,11 @@ export class KmsKey extends cdktf.TerraformResource {
   }
 
   // multi_region - computed: true, optional: true, required: false
-  private _multiRegion?: boolean | cdktf.IResolvable; 
+  private _multiRegion?: boolean | cdktn.IResolvable; 
   public get multiRegion() {
     return this.getBooleanAttribute('multi_region');
   }
-  public set multiRegion(value: boolean | cdktf.IResolvable) {
+  public set multiRegion(value: boolean | cdktn.IResolvable) {
     this._multiRegion = value;
   }
   public resetMultiRegion() {
@@ -545,22 +545,22 @@ export class KmsKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bypass_policy_lockout_safety_check: cdktf.booleanToTerraform(this._bypassPolicyLockoutSafetyCheck),
-      custom_key_store_id: cdktf.stringToTerraform(this._customKeyStoreId),
-      customer_master_key_spec: cdktf.stringToTerraform(this._customerMasterKeySpec),
-      deletion_window_in_days: cdktf.numberToTerraform(this._deletionWindowInDays),
-      description: cdktf.stringToTerraform(this._description),
-      enable_key_rotation: cdktf.booleanToTerraform(this._enableKeyRotation),
-      id: cdktf.stringToTerraform(this._id),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
-      key_usage: cdktf.stringToTerraform(this._keyUsage),
-      multi_region: cdktf.booleanToTerraform(this._multiRegion),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
-      rotation_period_in_days: cdktf.numberToTerraform(this._rotationPeriodInDays),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      xks_key_id: cdktf.stringToTerraform(this._xksKeyId),
+      bypass_policy_lockout_safety_check: cdktn.booleanToTerraform(this._bypassPolicyLockoutSafetyCheck),
+      custom_key_store_id: cdktn.stringToTerraform(this._customKeyStoreId),
+      customer_master_key_spec: cdktn.stringToTerraform(this._customerMasterKeySpec),
+      deletion_window_in_days: cdktn.numberToTerraform(this._deletionWindowInDays),
+      description: cdktn.stringToTerraform(this._description),
+      enable_key_rotation: cdktn.booleanToTerraform(this._enableKeyRotation),
+      id: cdktn.stringToTerraform(this._id),
+      is_enabled: cdktn.booleanToTerraform(this._isEnabled),
+      key_usage: cdktn.stringToTerraform(this._keyUsage),
+      multi_region: cdktn.booleanToTerraform(this._multiRegion),
+      policy: cdktn.stringToTerraform(this._policy),
+      region: cdktn.stringToTerraform(this._region),
+      rotation_period_in_days: cdktn.numberToTerraform(this._rotationPeriodInDays),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      xks_key_id: cdktn.stringToTerraform(this._xksKeyId),
       timeouts: kmsKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -568,97 +568,97 @@ export class KmsKey extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bypass_policy_lockout_safety_check: {
-        value: cdktf.booleanToHclTerraform(this._bypassPolicyLockoutSafetyCheck),
+        value: cdktn.booleanToHclTerraform(this._bypassPolicyLockoutSafetyCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       custom_key_store_id: {
-        value: cdktf.stringToHclTerraform(this._customKeyStoreId),
+        value: cdktn.stringToHclTerraform(this._customKeyStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_master_key_spec: {
-        value: cdktf.stringToHclTerraform(this._customerMasterKeySpec),
+        value: cdktn.stringToHclTerraform(this._customerMasterKeySpec),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_window_in_days: {
-        value: cdktf.numberToHclTerraform(this._deletionWindowInDays),
+        value: cdktn.numberToHclTerraform(this._deletionWindowInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_key_rotation: {
-        value: cdktf.booleanToHclTerraform(this._enableKeyRotation),
+        value: cdktn.booleanToHclTerraform(this._enableKeyRotation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        value: cdktn.booleanToHclTerraform(this._isEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       key_usage: {
-        value: cdktf.stringToHclTerraform(this._keyUsage),
+        value: cdktn.stringToHclTerraform(this._keyUsage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_region: {
-        value: cdktf.booleanToHclTerraform(this._multiRegion),
+        value: cdktn.booleanToHclTerraform(this._multiRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotation_period_in_days: {
-        value: cdktf.numberToHclTerraform(this._rotationPeriodInDays),
+        value: cdktn.numberToHclTerraform(this._rotationPeriodInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       xks_key_id: {
-        value: cdktf.stringToHclTerraform(this._xksKeyId),
+        value: cdktn.stringToHclTerraform(this._xksKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

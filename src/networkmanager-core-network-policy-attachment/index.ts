@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkmanagerCoreNetworkPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkmanagerCoreNetworkPolicyAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_core_network_policy_attachment#core_network_id NetworkmanagerCoreNetworkPolicyAttachment#core_network_id}
   */
@@ -41,25 +41,25 @@ export interface NetworkmanagerCoreNetworkPolicyAttachmentTimeouts {
   readonly update?: string;
 }
 
-export function networkmanagerCoreNetworkPolicyAttachmentTimeoutsToTerraform(struct?: NetworkmanagerCoreNetworkPolicyAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerCoreNetworkPolicyAttachmentTimeoutsToTerraform(struct?: NetworkmanagerCoreNetworkPolicyAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    update: cdktf.stringToTerraform(struct!.update),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkmanagerCoreNetworkPolicyAttachmentTimeoutsToHclTerraform(struct?: NetworkmanagerCoreNetworkPolicyAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerCoreNetworkPolicyAttachmentTimeoutsToHclTerraform(struct?: NetworkmanagerCoreNetworkPolicyAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -70,19 +70,19 @@ export function networkmanagerCoreNetworkPolicyAttachmentTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkmanagerCoreNetworkPolicyAttachmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkmanagerCoreNetworkPolicyAttachmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -95,13 +95,13 @@ export class NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkmanagerCoreNetworkPolicyAttachmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkmanagerCoreNetworkPolicyAttachmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -132,7 +132,7 @@ export class NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_core_network_policy_attachment aws_networkmanager_core_network_policy_attachment}
 */
-export class NetworkmanagerCoreNetworkPolicyAttachment extends cdktf.TerraformResource {
+export class NetworkmanagerCoreNetworkPolicyAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -143,14 +143,14 @@ export class NetworkmanagerCoreNetworkPolicyAttachment extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkmanagerCoreNetworkPolicyAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkmanagerCoreNetworkPolicyAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmanagerCoreNetworkPolicyAttachment to import
   * @param importFromId The id of the existing NetworkmanagerCoreNetworkPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_core_network_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmanagerCoreNetworkPolicyAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_core_network_policy_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_core_network_policy_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -259,9 +259,9 @@ export class NetworkmanagerCoreNetworkPolicyAttachment extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      core_network_id: cdktf.stringToTerraform(this._coreNetworkId),
-      id: cdktf.stringToTerraform(this._id),
-      policy_document: cdktf.stringToTerraform(this._policyDocument),
+      core_network_id: cdktn.stringToTerraform(this._coreNetworkId),
+      id: cdktn.stringToTerraform(this._id),
+      policy_document: cdktn.stringToTerraform(this._policyDocument),
       timeouts: networkmanagerCoreNetworkPolicyAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -269,19 +269,19 @@ export class NetworkmanagerCoreNetworkPolicyAttachment extends cdktf.TerraformRe
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       core_network_id: {
-        value: cdktf.stringToHclTerraform(this._coreNetworkId),
+        value: cdktn.stringToHclTerraform(this._coreNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_document: {
-        value: cdktf.stringToHclTerraform(this._policyDocument),
+        value: cdktn.stringToHclTerraform(this._policyDocument),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

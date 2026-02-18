@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebDataProtectionSettingsAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebDataProtectionSettingsAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings_association#data_protection_settings_arn WorkspaceswebDataProtectionSettingsAssociation#data_protection_settings_arn}
   */
@@ -31,7 +31,7 @@ export interface WorkspaceswebDataProtectionSettingsAssociationConfig extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings_association aws_workspacesweb_data_protection_settings_association}
 */
-export class WorkspaceswebDataProtectionSettingsAssociation extends cdktf.TerraformResource {
+export class WorkspaceswebDataProtectionSettingsAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class WorkspaceswebDataProtectionSettingsAssociation extends cdktf.Terraf
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebDataProtectionSettingsAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebDataProtectionSettingsAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebDataProtectionSettingsAssociation to import
   * @param importFromId The id of the existing WorkspaceswebDataProtectionSettingsAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebDataProtectionSettingsAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_data_protection_settings_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_data_protection_settings_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,28 +136,28 @@ export class WorkspaceswebDataProtectionSettingsAssociation extends cdktf.Terraf
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_protection_settings_arn: cdktf.stringToTerraform(this._dataProtectionSettingsArn),
-      portal_arn: cdktf.stringToTerraform(this._portalArn),
-      region: cdktf.stringToTerraform(this._region),
+      data_protection_settings_arn: cdktn.stringToTerraform(this._dataProtectionSettingsArn),
+      portal_arn: cdktn.stringToTerraform(this._portalArn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_protection_settings_arn: {
-        value: cdktf.stringToHclTerraform(this._dataProtectionSettingsArn),
+        value: cdktn.stringToHclTerraform(this._dataProtectionSettingsArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       portal_arn: {
-        value: cdktf.stringToHclTerraform(this._portalArn),
+        value: cdktn.stringToHclTerraform(this._portalArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

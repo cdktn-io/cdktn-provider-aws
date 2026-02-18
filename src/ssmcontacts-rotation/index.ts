@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsmcontactsRotationConfig extends cdktf.TerraformMetaArguments {
+export interface SsmcontactsRotationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#contact_ids SsmcontactsRotation#contact_ids}
   */
@@ -43,7 +43,7 @@ export interface SsmcontactsRotationConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#recurrence SsmcontactsRotation#recurrence}
   */
-  readonly recurrence?: SsmcontactsRotationRecurrence[] | cdktf.IResolvable;
+  readonly recurrence?: SsmcontactsRotationRecurrence[] | cdktn.IResolvable;
 }
 export interface SsmcontactsRotationRecurrenceDailySettings {
   /**
@@ -56,32 +56,32 @@ export interface SsmcontactsRotationRecurrenceDailySettings {
   readonly minuteOfHour: number;
 }
 
-export function ssmcontactsRotationRecurrenceDailySettingsToTerraform(struct?: SsmcontactsRotationRecurrenceDailySettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceDailySettingsToTerraform(struct?: SsmcontactsRotationRecurrenceDailySettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
-    minute_of_hour: cdktf.numberToTerraform(struct!.minuteOfHour),
+    hour_of_day: cdktn.numberToTerraform(struct!.hourOfDay),
+    minute_of_hour: cdktn.numberToTerraform(struct!.minuteOfHour),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceDailySettingsToHclTerraform(struct?: SsmcontactsRotationRecurrenceDailySettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceDailySettingsToHclTerraform(struct?: SsmcontactsRotationRecurrenceDailySettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hour_of_day: {
-      value: cdktf.numberToHclTerraform(struct!.hourOfDay),
+      value: cdktn.numberToHclTerraform(struct!.hourOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minute_of_hour: {
-      value: cdktf.numberToHclTerraform(struct!.minuteOfHour),
+      value: cdktn.numberToHclTerraform(struct!.minuteOfHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -92,9 +92,9 @@ export function ssmcontactsRotationRecurrenceDailySettingsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceDailySettingsOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceDailySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -102,11 +102,11 @@ export class SsmcontactsRotationRecurrenceDailySettingsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrenceDailySettings | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrenceDailySettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -123,14 +123,14 @@ export class SsmcontactsRotationRecurrenceDailySettingsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrenceDailySettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrenceDailySettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hourOfDay = undefined;
       this._minuteOfHour = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -169,15 +169,15 @@ export class SsmcontactsRotationRecurrenceDailySettingsOutputReference extends c
   }
 }
 
-export class SsmcontactsRotationRecurrenceDailySettingsList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrenceDailySettings[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceDailySettingsList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrenceDailySettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -199,32 +199,32 @@ export interface SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime {
   readonly minuteOfHour: number;
 }
 
-export function ssmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToTerraform(struct?: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToTerraform(struct?: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
-    minute_of_hour: cdktf.numberToTerraform(struct!.minuteOfHour),
+    hour_of_day: cdktn.numberToTerraform(struct!.hourOfDay),
+    minute_of_hour: cdktn.numberToTerraform(struct!.minuteOfHour),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToHclTerraform(struct?: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToHclTerraform(struct?: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hour_of_day: {
-      value: cdktf.numberToHclTerraform(struct!.hourOfDay),
+      value: cdktn.numberToHclTerraform(struct!.hourOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minute_of_hour: {
-      value: cdktf.numberToHclTerraform(struct!.minuteOfHour),
+      value: cdktn.numberToHclTerraform(struct!.minuteOfHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -235,9 +235,9 @@ export function ssmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -245,11 +245,11 @@ export class SsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -266,14 +266,14 @@ export class SsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hourOfDay = undefined;
       this._minuteOfHour = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -312,15 +312,15 @@ export class SsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputRefere
   }
 }
 
-export class SsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -341,35 +341,35 @@ export interface SsmcontactsRotationRecurrenceMonthlySettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#hand_off_time SsmcontactsRotation#hand_off_time}
   */
-  readonly handOffTime?: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime[] | cdktf.IResolvable;
+  readonly handOffTime?: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime[] | cdktn.IResolvable;
 }
 
-export function ssmcontactsRotationRecurrenceMonthlySettingsToTerraform(struct?: SsmcontactsRotationRecurrenceMonthlySettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceMonthlySettingsToTerraform(struct?: SsmcontactsRotationRecurrenceMonthlySettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_month: cdktf.numberToTerraform(struct!.dayOfMonth),
-    hand_off_time: cdktf.listMapper(ssmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToTerraform, true)(struct!.handOffTime),
+    day_of_month: cdktn.numberToTerraform(struct!.dayOfMonth),
+    hand_off_time: cdktn.listMapper(ssmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToTerraform, true)(struct!.handOffTime),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceMonthlySettingsToHclTerraform(struct?: SsmcontactsRotationRecurrenceMonthlySettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceMonthlySettingsToHclTerraform(struct?: SsmcontactsRotationRecurrenceMonthlySettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_month: {
-      value: cdktf.numberToHclTerraform(struct!.dayOfMonth),
+      value: cdktn.numberToHclTerraform(struct!.dayOfMonth),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     hand_off_time: {
-      value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToHclTerraform, true)(struct!.handOffTime),
+      value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceMonthlySettingsHandOffTimeToHclTerraform, true)(struct!.handOffTime),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeList",
@@ -380,9 +380,9 @@ export function ssmcontactsRotationRecurrenceMonthlySettingsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceMonthlySettingsOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceMonthlySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -390,11 +390,11 @@ export class SsmcontactsRotationRecurrenceMonthlySettingsOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrenceMonthlySettings | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrenceMonthlySettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -411,14 +411,14 @@ export class SsmcontactsRotationRecurrenceMonthlySettingsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrenceMonthlySettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrenceMonthlySettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dayOfMonth = undefined;
       this._handOffTime.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -448,7 +448,7 @@ export class SsmcontactsRotationRecurrenceMonthlySettingsOutputReference extends
   public get handOffTime() {
     return this._handOffTime;
   }
-  public putHandOffTime(value: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime[] | cdktf.IResolvable) {
+  public putHandOffTime(value: SsmcontactsRotationRecurrenceMonthlySettingsHandOffTime[] | cdktn.IResolvable) {
     this._handOffTime.internalValue = value;
   }
   public resetHandOffTime() {
@@ -460,15 +460,15 @@ export class SsmcontactsRotationRecurrenceMonthlySettingsOutputReference extends
   }
 }
 
-export class SsmcontactsRotationRecurrenceMonthlySettingsList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrenceMonthlySettings[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceMonthlySettingsList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrenceMonthlySettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -490,32 +490,32 @@ export interface SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd {
   readonly minuteOfHour: number;
 }
 
-export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
-    minute_of_hour: cdktf.numberToTerraform(struct!.minuteOfHour),
+    hour_of_day: cdktn.numberToTerraform(struct!.hourOfDay),
+    minute_of_hour: cdktn.numberToTerraform(struct!.minuteOfHour),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToHclTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToHclTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hour_of_day: {
-      value: cdktf.numberToHclTerraform(struct!.hourOfDay),
+      value: cdktn.numberToHclTerraform(struct!.hourOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minute_of_hour: {
-      value: cdktf.numberToHclTerraform(struct!.minuteOfHour),
+      value: cdktn.numberToHclTerraform(struct!.minuteOfHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -526,9 +526,9 @@ export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -536,11 +536,11 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -557,14 +557,14 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hourOfDay = undefined;
       this._minuteOfHour = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -603,15 +603,15 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputRe
   }
 }
 
-export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -633,32 +633,32 @@ export interface SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart {
   readonly minuteOfHour: number;
 }
 
-export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
-    minute_of_hour: cdktf.numberToTerraform(struct!.minuteOfHour),
+    hour_of_day: cdktn.numberToTerraform(struct!.hourOfDay),
+    minute_of_hour: cdktn.numberToTerraform(struct!.minuteOfHour),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToHclTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToHclTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hour_of_day: {
-      value: cdktf.numberToHclTerraform(struct!.hourOfDay),
+      value: cdktn.numberToHclTerraform(struct!.hourOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minute_of_hour: {
-      value: cdktf.numberToHclTerraform(struct!.minuteOfHour),
+      value: cdktn.numberToHclTerraform(struct!.minuteOfHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -669,9 +669,9 @@ export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -679,11 +679,11 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -700,14 +700,14 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hourOfDay = undefined;
       this._minuteOfHour = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -746,15 +746,15 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutput
   }
 }
 
-export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -771,41 +771,41 @@ export interface SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#end SsmcontactsRotation#end}
   */
-  readonly end?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd[] | cdktf.IResolvable;
+  readonly end?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd[] | cdktn.IResolvable;
   /**
   * start block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#start SsmcontactsRotation#start}
   */
-  readonly start?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart[] | cdktf.IResolvable;
+  readonly start?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart[] | cdktn.IResolvable;
 }
 
-export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.listMapper(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToTerraform, true)(struct!.end),
-    start: cdktf.listMapper(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToTerraform, true)(struct!.start),
+    end: cdktn.listMapper(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToTerraform, true)(struct!.end),
+    start: cdktn.listMapper(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToTerraform, true)(struct!.start),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToHclTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToHclTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToHclTerraform, true)(struct!.end),
+      value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndToHclTerraform, true)(struct!.end),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndList",
     },
     start: {
-      value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToHclTerraform, true)(struct!.start),
+      value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartToHclTerraform, true)(struct!.start),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList",
@@ -816,9 +816,9 @@ export function ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -826,11 +826,11 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -847,14 +847,14 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._end.internalValue = undefined;
       this._start.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -871,7 +871,7 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputRefer
   public get end() {
     return this._end;
   }
-  public putEnd(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd[] | cdktf.IResolvable) {
+  public putEnd(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd[] | cdktn.IResolvable) {
     this._end.internalValue = value;
   }
   public resetEnd() {
@@ -887,7 +887,7 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputRefer
   public get start() {
     return this._start;
   }
-  public putStart(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart[] | cdktf.IResolvable) {
+  public putStart(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart[] | cdktn.IResolvable) {
     this._start.internalValue = value;
   }
   public resetStart() {
@@ -899,15 +899,15 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputRefer
   }
 }
 
-export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -928,35 +928,35 @@ export interface SsmcontactsRotationRecurrenceShiftCoverages {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#coverage_times SsmcontactsRotation#coverage_times}
   */
-  readonly coverageTimes?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes[] | cdktf.IResolvable;
+  readonly coverageTimes?: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes[] | cdktn.IResolvable;
 }
 
-export function ssmcontactsRotationRecurrenceShiftCoveragesToTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoverages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceShiftCoveragesToTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoverages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    map_block_key: cdktf.stringToTerraform(struct!.mapBlockKey),
-    coverage_times: cdktf.listMapper(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToTerraform, true)(struct!.coverageTimes),
+    map_block_key: cdktn.stringToTerraform(struct!.mapBlockKey),
+    coverage_times: cdktn.listMapper(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToTerraform, true)(struct!.coverageTimes),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceShiftCoveragesToHclTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoverages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceShiftCoveragesToHclTerraform(struct?: SsmcontactsRotationRecurrenceShiftCoverages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     map_block_key: {
-      value: cdktf.stringToHclTerraform(struct!.mapBlockKey),
+      value: cdktn.stringToHclTerraform(struct!.mapBlockKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     coverage_times: {
-      value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToHclTerraform, true)(struct!.coverageTimes),
+      value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceShiftCoveragesCoverageTimesToHclTerraform, true)(struct!.coverageTimes),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesList",
@@ -967,9 +967,9 @@ export function ssmcontactsRotationRecurrenceShiftCoveragesToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceShiftCoveragesOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceShiftCoveragesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -977,11 +977,11 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrenceShiftCoverages | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrenceShiftCoverages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -998,14 +998,14 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrenceShiftCoverages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrenceShiftCoverages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mapBlockKey = undefined;
       this._coverageTimes.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1035,7 +1035,7 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesOutputReference extends 
   public get coverageTimes() {
     return this._coverageTimes;
   }
-  public putCoverageTimes(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes[] | cdktf.IResolvable) {
+  public putCoverageTimes(value: SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes[] | cdktn.IResolvable) {
     this._coverageTimes.internalValue = value;
   }
   public resetCoverageTimes() {
@@ -1047,15 +1047,15 @@ export class SsmcontactsRotationRecurrenceShiftCoveragesOutputReference extends 
   }
 }
 
-export class SsmcontactsRotationRecurrenceShiftCoveragesList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrenceShiftCoverages[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceShiftCoveragesList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrenceShiftCoverages[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1077,32 +1077,32 @@ export interface SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime {
   readonly minuteOfHour: number;
 }
 
-export function ssmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToTerraform(struct?: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToTerraform(struct?: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
-    minute_of_hour: cdktf.numberToTerraform(struct!.minuteOfHour),
+    hour_of_day: cdktn.numberToTerraform(struct!.hourOfDay),
+    minute_of_hour: cdktn.numberToTerraform(struct!.minuteOfHour),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToHclTerraform(struct?: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToHclTerraform(struct?: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hour_of_day: {
-      value: cdktf.numberToHclTerraform(struct!.hourOfDay),
+      value: cdktn.numberToHclTerraform(struct!.hourOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minute_of_hour: {
-      value: cdktf.numberToHclTerraform(struct!.minuteOfHour),
+      value: cdktn.numberToHclTerraform(struct!.minuteOfHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1113,9 +1113,9 @@ export function ssmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1123,11 +1123,11 @@ export class SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1144,14 +1144,14 @@ export class SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hourOfDay = undefined;
       this._minuteOfHour = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1190,15 +1190,15 @@ export class SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReferen
   }
 }
 
-export class SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1219,35 +1219,35 @@ export interface SsmcontactsRotationRecurrenceWeeklySettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#hand_off_time SsmcontactsRotation#hand_off_time}
   */
-  readonly handOffTime?: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime[] | cdktf.IResolvable;
+  readonly handOffTime?: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime[] | cdktn.IResolvable;
 }
 
-export function ssmcontactsRotationRecurrenceWeeklySettingsToTerraform(struct?: SsmcontactsRotationRecurrenceWeeklySettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceWeeklySettingsToTerraform(struct?: SsmcontactsRotationRecurrenceWeeklySettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
-    hand_off_time: cdktf.listMapper(ssmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToTerraform, true)(struct!.handOffTime),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    hand_off_time: cdktn.listMapper(ssmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToTerraform, true)(struct!.handOffTime),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceWeeklySettingsToHclTerraform(struct?: SsmcontactsRotationRecurrenceWeeklySettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceWeeklySettingsToHclTerraform(struct?: SsmcontactsRotationRecurrenceWeeklySettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hand_off_time: {
-      value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToHclTerraform, true)(struct!.handOffTime),
+      value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceWeeklySettingsHandOffTimeToHclTerraform, true)(struct!.handOffTime),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList",
@@ -1258,9 +1258,9 @@ export function ssmcontactsRotationRecurrenceWeeklySettingsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceWeeklySettingsOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceWeeklySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1268,11 +1268,11 @@ export class SsmcontactsRotationRecurrenceWeeklySettingsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrenceWeeklySettings | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrenceWeeklySettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1289,14 +1289,14 @@ export class SsmcontactsRotationRecurrenceWeeklySettingsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrenceWeeklySettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrenceWeeklySettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dayOfWeek = undefined;
       this._handOffTime.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1326,7 +1326,7 @@ export class SsmcontactsRotationRecurrenceWeeklySettingsOutputReference extends 
   public get handOffTime() {
     return this._handOffTime;
   }
-  public putHandOffTime(value: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime[] | cdktf.IResolvable) {
+  public putHandOffTime(value: SsmcontactsRotationRecurrenceWeeklySettingsHandOffTime[] | cdktn.IResolvable) {
     this._handOffTime.internalValue = value;
   }
   public resetHandOffTime() {
@@ -1338,15 +1338,15 @@ export class SsmcontactsRotationRecurrenceWeeklySettingsOutputReference extends 
   }
 }
 
-export class SsmcontactsRotationRecurrenceWeeklySettingsList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrenceWeeklySettings[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceWeeklySettingsList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrenceWeeklySettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1371,81 +1371,81 @@ export interface SsmcontactsRotationRecurrence {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#daily_settings SsmcontactsRotation#daily_settings}
   */
-  readonly dailySettings?: SsmcontactsRotationRecurrenceDailySettings[] | cdktf.IResolvable;
+  readonly dailySettings?: SsmcontactsRotationRecurrenceDailySettings[] | cdktn.IResolvable;
   /**
   * monthly_settings block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#monthly_settings SsmcontactsRotation#monthly_settings}
   */
-  readonly monthlySettings?: SsmcontactsRotationRecurrenceMonthlySettings[] | cdktf.IResolvable;
+  readonly monthlySettings?: SsmcontactsRotationRecurrenceMonthlySettings[] | cdktn.IResolvable;
   /**
   * shift_coverages block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#shift_coverages SsmcontactsRotation#shift_coverages}
   */
-  readonly shiftCoverages?: SsmcontactsRotationRecurrenceShiftCoverages[] | cdktf.IResolvable;
+  readonly shiftCoverages?: SsmcontactsRotationRecurrenceShiftCoverages[] | cdktn.IResolvable;
   /**
   * weekly_settings block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#weekly_settings SsmcontactsRotation#weekly_settings}
   */
-  readonly weeklySettings?: SsmcontactsRotationRecurrenceWeeklySettings[] | cdktf.IResolvable;
+  readonly weeklySettings?: SsmcontactsRotationRecurrenceWeeklySettings[] | cdktn.IResolvable;
 }
 
-export function ssmcontactsRotationRecurrenceToTerraform(struct?: SsmcontactsRotationRecurrence | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceToTerraform(struct?: SsmcontactsRotationRecurrence | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    number_of_on_calls: cdktf.numberToTerraform(struct!.numberOfOnCalls),
-    recurrence_multiplier: cdktf.numberToTerraform(struct!.recurrenceMultiplier),
-    daily_settings: cdktf.listMapper(ssmcontactsRotationRecurrenceDailySettingsToTerraform, true)(struct!.dailySettings),
-    monthly_settings: cdktf.listMapper(ssmcontactsRotationRecurrenceMonthlySettingsToTerraform, true)(struct!.monthlySettings),
-    shift_coverages: cdktf.listMapper(ssmcontactsRotationRecurrenceShiftCoveragesToTerraform, true)(struct!.shiftCoverages),
-    weekly_settings: cdktf.listMapper(ssmcontactsRotationRecurrenceWeeklySettingsToTerraform, true)(struct!.weeklySettings),
+    number_of_on_calls: cdktn.numberToTerraform(struct!.numberOfOnCalls),
+    recurrence_multiplier: cdktn.numberToTerraform(struct!.recurrenceMultiplier),
+    daily_settings: cdktn.listMapper(ssmcontactsRotationRecurrenceDailySettingsToTerraform, true)(struct!.dailySettings),
+    monthly_settings: cdktn.listMapper(ssmcontactsRotationRecurrenceMonthlySettingsToTerraform, true)(struct!.monthlySettings),
+    shift_coverages: cdktn.listMapper(ssmcontactsRotationRecurrenceShiftCoveragesToTerraform, true)(struct!.shiftCoverages),
+    weekly_settings: cdktn.listMapper(ssmcontactsRotationRecurrenceWeeklySettingsToTerraform, true)(struct!.weeklySettings),
   }
 }
 
 
-export function ssmcontactsRotationRecurrenceToHclTerraform(struct?: SsmcontactsRotationRecurrence | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssmcontactsRotationRecurrenceToHclTerraform(struct?: SsmcontactsRotationRecurrence | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     number_of_on_calls: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfOnCalls),
+      value: cdktn.numberToHclTerraform(struct!.numberOfOnCalls),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     recurrence_multiplier: {
-      value: cdktf.numberToHclTerraform(struct!.recurrenceMultiplier),
+      value: cdktn.numberToHclTerraform(struct!.recurrenceMultiplier),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     daily_settings: {
-      value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceDailySettingsToHclTerraform, true)(struct!.dailySettings),
+      value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceDailySettingsToHclTerraform, true)(struct!.dailySettings),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsRotationRecurrenceDailySettingsList",
     },
     monthly_settings: {
-      value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceMonthlySettingsToHclTerraform, true)(struct!.monthlySettings),
+      value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceMonthlySettingsToHclTerraform, true)(struct!.monthlySettings),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsRotationRecurrenceMonthlySettingsList",
     },
     shift_coverages: {
-      value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceShiftCoveragesToHclTerraform, true)(struct!.shiftCoverages),
+      value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceShiftCoveragesToHclTerraform, true)(struct!.shiftCoverages),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsRotationRecurrenceShiftCoveragesList",
     },
     weekly_settings: {
-      value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceWeeklySettingsToHclTerraform, true)(struct!.weeklySettings),
+      value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceWeeklySettingsToHclTerraform, true)(struct!.weeklySettings),
       isBlock: true,
       type: "list",
       storageClassType: "SsmcontactsRotationRecurrenceWeeklySettingsList",
@@ -1456,9 +1456,9 @@ export function ssmcontactsRotationRecurrenceToHclTerraform(struct?: Ssmcontacts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexObject {
+export class SsmcontactsRotationRecurrenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1466,11 +1466,11 @@ export class SsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsmcontactsRotationRecurrence | cdktf.IResolvable | undefined {
+  public get internalValue(): SsmcontactsRotationRecurrence | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1503,7 +1503,7 @@ export class SsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsmcontactsRotationRecurrence | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsmcontactsRotationRecurrence | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1514,7 +1514,7 @@ export class SsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexO
       this._shiftCoverages.internalValue = undefined;
       this._weeklySettings.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1561,7 +1561,7 @@ export class SsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexO
   public get dailySettings() {
     return this._dailySettings;
   }
-  public putDailySettings(value: SsmcontactsRotationRecurrenceDailySettings[] | cdktf.IResolvable) {
+  public putDailySettings(value: SsmcontactsRotationRecurrenceDailySettings[] | cdktn.IResolvable) {
     this._dailySettings.internalValue = value;
   }
   public resetDailySettings() {
@@ -1577,7 +1577,7 @@ export class SsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexO
   public get monthlySettings() {
     return this._monthlySettings;
   }
-  public putMonthlySettings(value: SsmcontactsRotationRecurrenceMonthlySettings[] | cdktf.IResolvable) {
+  public putMonthlySettings(value: SsmcontactsRotationRecurrenceMonthlySettings[] | cdktn.IResolvable) {
     this._monthlySettings.internalValue = value;
   }
   public resetMonthlySettings() {
@@ -1593,7 +1593,7 @@ export class SsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexO
   public get shiftCoverages() {
     return this._shiftCoverages;
   }
-  public putShiftCoverages(value: SsmcontactsRotationRecurrenceShiftCoverages[] | cdktf.IResolvable) {
+  public putShiftCoverages(value: SsmcontactsRotationRecurrenceShiftCoverages[] | cdktn.IResolvable) {
     this._shiftCoverages.internalValue = value;
   }
   public resetShiftCoverages() {
@@ -1609,7 +1609,7 @@ export class SsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexO
   public get weeklySettings() {
     return this._weeklySettings;
   }
-  public putWeeklySettings(value: SsmcontactsRotationRecurrenceWeeklySettings[] | cdktf.IResolvable) {
+  public putWeeklySettings(value: SsmcontactsRotationRecurrenceWeeklySettings[] | cdktn.IResolvable) {
     this._weeklySettings.internalValue = value;
   }
   public resetWeeklySettings() {
@@ -1621,15 +1621,15 @@ export class SsmcontactsRotationRecurrenceOutputReference extends cdktf.ComplexO
   }
 }
 
-export class SsmcontactsRotationRecurrenceList extends cdktf.ComplexList {
-  public internalValue? : SsmcontactsRotationRecurrence[] | cdktf.IResolvable
+export class SsmcontactsRotationRecurrenceList extends cdktn.ComplexList {
+  public internalValue? : SsmcontactsRotationRecurrence[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1644,7 +1644,7 @@ export class SsmcontactsRotationRecurrenceList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation aws_ssmcontacts_rotation}
 */
-export class SsmcontactsRotation extends cdktf.TerraformResource {
+export class SsmcontactsRotation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1655,14 +1655,14 @@ export class SsmcontactsRotation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsmcontactsRotation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsmcontactsRotation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmcontactsRotation to import
   * @param importFromId The id of the existing SsmcontactsRotation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssmcontacts_rotation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmcontactsRotation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmcontacts_rotation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssmcontacts_rotation", importId: importFromId, provider });
       }
 
   // ===========
@@ -1790,7 +1790,7 @@ export class SsmcontactsRotation extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1813,7 +1813,7 @@ export class SsmcontactsRotation extends cdktf.TerraformResource {
   public get recurrence() {
     return this._recurrence;
   }
-  public putRecurrence(value: SsmcontactsRotationRecurrence[] | cdktf.IResolvable) {
+  public putRecurrence(value: SsmcontactsRotationRecurrence[] | cdktn.IResolvable) {
     this._recurrence.internalValue = value;
   }
   public resetRecurrence() {
@@ -1830,56 +1830,56 @@ export class SsmcontactsRotation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      contact_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._contactIds),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      start_time: cdktf.stringToTerraform(this._startTime),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      time_zone_id: cdktf.stringToTerraform(this._timeZoneId),
-      recurrence: cdktf.listMapper(ssmcontactsRotationRecurrenceToTerraform, true)(this._recurrence.internalValue),
+      contact_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._contactIds),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      start_time: cdktn.stringToTerraform(this._startTime),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      time_zone_id: cdktn.stringToTerraform(this._timeZoneId),
+      recurrence: cdktn.listMapper(ssmcontactsRotationRecurrenceToTerraform, true)(this._recurrence.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       contact_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._contactIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._contactIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_time: {
-        value: cdktf.stringToHclTerraform(this._startTime),
+        value: cdktn.stringToHclTerraform(this._startTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       time_zone_id: {
-        value: cdktf.stringToHclTerraform(this._timeZoneId),
+        value: cdktn.stringToHclTerraform(this._timeZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recurrence: {
-        value: cdktf.listMapperHcl(ssmcontactsRotationRecurrenceToHclTerraform, true)(this._recurrence.internalValue),
+        value: cdktn.listMapperHcl(ssmcontactsRotationRecurrenceToHclTerraform, true)(this._recurrence.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SsmcontactsRotationRecurrenceList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VerifiedaccessInstanceLoggingConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface VerifiedaccessInstanceLoggingConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration#id VerifiedaccessInstanceLoggingConfiguration#id}
   *
@@ -40,7 +40,7 @@ export interface VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchL
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration#enabled VerifiedaccessInstanceLoggingConfiguration#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration#log_group VerifiedaccessInstanceLoggingConfiguration#log_group}
   */
@@ -48,31 +48,31 @@ export interface VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchL
 }
 
 export function verifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsToTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsOutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_group: cdktf.stringToTerraform(struct!.logGroup),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    log_group: cdktn.stringToTerraform(struct!.logGroup),
   }
 }
 
 
 export function verifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsToHclTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsOutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_group: {
-      value: cdktf.stringToHclTerraform(struct!.logGroup),
+      value: cdktn.stringToHclTerraform(struct!.logGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,14 +83,14 @@ export function verifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -122,11 +122,11 @@ export class VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsO
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -158,35 +158,35 @@ export interface VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisData
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration#enabled VerifiedaccessInstanceLoggingConfiguration#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function verifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseToTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseOutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delivery_stream: cdktf.stringToTerraform(struct!.deliveryStream),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    delivery_stream: cdktn.stringToTerraform(struct!.deliveryStream),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function verifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseToHclTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseOutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehose): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delivery_stream: {
-      value: cdktf.stringToHclTerraform(struct!.deliveryStream),
+      value: cdktn.stringToHclTerraform(struct!.deliveryStream),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -197,14 +197,14 @@ export function verifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -252,11 +252,11 @@ export class VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFire
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -276,7 +276,7 @@ export interface VerifiedaccessInstanceLoggingConfigurationAccessLogsS3 {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration#enabled VerifiedaccessInstanceLoggingConfiguration#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration#prefix VerifiedaccessInstanceLoggingConfiguration#prefix}
   */
@@ -284,45 +284,45 @@ export interface VerifiedaccessInstanceLoggingConfigurationAccessLogsS3 {
 }
 
 export function verifiedaccessInstanceLoggingConfigurationAccessLogsS3ToTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    bucket_owner: cdktf.stringToTerraform(struct!.bucketOwner),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    bucket_owner: cdktn.stringToTerraform(struct!.bucketOwner),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
 export function verifiedaccessInstanceLoggingConfigurationAccessLogsS3ToHclTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_owner: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwner),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -333,14 +333,14 @@ export function verifiedaccessInstanceLoggingConfigurationAccessLogsS3ToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -416,11 +416,11 @@ export class VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReferen
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -448,7 +448,7 @@ export interface VerifiedaccessInstanceLoggingConfigurationAccessLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration#include_trust_context VerifiedaccessInstanceLoggingConfiguration#include_trust_context}
   */
-  readonly includeTrustContext?: boolean | cdktf.IResolvable;
+  readonly includeTrustContext?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration#log_version VerifiedaccessInstanceLoggingConfiguration#log_version}
   */
@@ -474,13 +474,13 @@ export interface VerifiedaccessInstanceLoggingConfigurationAccessLogs {
 }
 
 export function verifiedaccessInstanceLoggingConfigurationAccessLogsToTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_trust_context: cdktf.booleanToTerraform(struct!.includeTrustContext),
-    log_version: cdktf.stringToTerraform(struct!.logVersion),
+    include_trust_context: cdktn.booleanToTerraform(struct!.includeTrustContext),
+    log_version: cdktn.stringToTerraform(struct!.logVersion),
     cloudwatch_logs: verifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsToTerraform(struct!.cloudwatchLogs),
     kinesis_data_firehose: verifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseToTerraform(struct!.kinesisDataFirehose),
     s3: verifiedaccessInstanceLoggingConfigurationAccessLogsS3ToTerraform(struct!.s3),
@@ -489,19 +489,19 @@ export function verifiedaccessInstanceLoggingConfigurationAccessLogsToTerraform(
 
 
 export function verifiedaccessInstanceLoggingConfigurationAccessLogsToHclTerraform(struct?: VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference | VerifiedaccessInstanceLoggingConfigurationAccessLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_trust_context: {
-      value: cdktf.booleanToHclTerraform(struct!.includeTrustContext),
+      value: cdktn.booleanToHclTerraform(struct!.includeTrustContext),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     log_version: {
-      value: cdktf.stringToHclTerraform(struct!.logVersion),
+      value: cdktn.stringToHclTerraform(struct!.logVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -530,14 +530,14 @@ export function verifiedaccessInstanceLoggingConfigurationAccessLogsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference extends cdktf.ComplexObject {
+export class VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -587,11 +587,11 @@ export class VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference
   }
 
   // include_trust_context - computed: true, optional: true, required: false
-  private _includeTrustContext?: boolean | cdktf.IResolvable; 
+  private _includeTrustContext?: boolean | cdktn.IResolvable; 
   public get includeTrustContext() {
     return this.getBooleanAttribute('include_trust_context');
   }
-  public set includeTrustContext(value: boolean | cdktf.IResolvable) {
+  public set includeTrustContext(value: boolean | cdktn.IResolvable) {
     this._includeTrustContext = value;
   }
   public resetIncludeTrustContext() {
@@ -670,7 +670,7 @@ export class VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration aws_verifiedaccess_instance_logging_configuration}
 */
-export class VerifiedaccessInstanceLoggingConfiguration extends cdktf.TerraformResource {
+export class VerifiedaccessInstanceLoggingConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -681,14 +681,14 @@ export class VerifiedaccessInstanceLoggingConfiguration extends cdktf.TerraformR
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VerifiedaccessInstanceLoggingConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VerifiedaccessInstanceLoggingConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessInstanceLoggingConfiguration to import
   * @param importFromId The id of the existing VerifiedaccessInstanceLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/verifiedaccess_instance_logging_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessInstanceLoggingConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_instance_logging_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_verifiedaccess_instance_logging_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -792,9 +792,9 @@ export class VerifiedaccessInstanceLoggingConfiguration extends cdktf.TerraformR
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      verifiedaccess_instance_id: cdktf.stringToTerraform(this._verifiedaccessInstanceId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      verifiedaccess_instance_id: cdktn.stringToTerraform(this._verifiedaccessInstanceId),
       access_logs: verifiedaccessInstanceLoggingConfigurationAccessLogsToTerraform(this._accessLogs.internalValue),
     };
   }
@@ -802,19 +802,19 @@ export class VerifiedaccessInstanceLoggingConfiguration extends cdktf.TerraformR
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       verifiedaccess_instance_id: {
-        value: cdktf.stringToHclTerraform(this._verifiedaccessInstanceId),
+        value: cdktn.stringToHclTerraform(this._verifiedaccessInstanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

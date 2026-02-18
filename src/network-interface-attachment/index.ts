@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkInterfaceAttachmentAConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkInterfaceAttachmentAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface_attachment#device_index NetworkInterfaceAttachmentA#device_index}
   */
@@ -46,7 +46,7 @@ export interface NetworkInterfaceAttachmentAConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface_attachment aws_network_interface_attachment}
 */
-export class NetworkInterfaceAttachmentA extends cdktf.TerraformResource {
+export class NetworkInterfaceAttachmentA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class NetworkInterfaceAttachmentA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkInterfaceAttachmentA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkInterfaceAttachmentA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkInterfaceAttachmentA to import
   * @param importFromId The id of the existing NetworkInterfaceAttachmentA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/network_interface_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkInterfaceAttachmentA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_interface_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_interface_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -209,49 +209,49 @@ export class NetworkInterfaceAttachmentA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      device_index: cdktf.numberToTerraform(this._deviceIndex),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      network_card_index: cdktf.numberToTerraform(this._networkCardIndex),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      region: cdktf.stringToTerraform(this._region),
+      device_index: cdktn.numberToTerraform(this._deviceIndex),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      network_card_index: cdktn.numberToTerraform(this._networkCardIndex),
+      network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       device_index: {
-        value: cdktf.numberToHclTerraform(this._deviceIndex),
+        value: cdktn.numberToHclTerraform(this._deviceIndex),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_card_index: {
-        value: cdktf.numberToHclTerraform(this._networkCardIndex),
+        value: cdktn.numberToHclTerraform(this._networkCardIndex),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       network_interface_id: {
-        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        value: cdktn.stringToHclTerraform(this._networkInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

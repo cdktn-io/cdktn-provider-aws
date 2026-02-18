@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2InstanceMetadataDefaultsConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2InstanceMetadataDefaultsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_instance_metadata_defaults#http_endpoint Ec2InstanceMetadataDefaults#http_endpoint}
   */
@@ -39,7 +39,7 @@ export interface Ec2InstanceMetadataDefaultsConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults}
 */
-export class Ec2InstanceMetadataDefaults extends cdktf.TerraformResource {
+export class Ec2InstanceMetadataDefaults extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -50,14 +50,14 @@ export class Ec2InstanceMetadataDefaults extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2InstanceMetadataDefaults resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2InstanceMetadataDefaults resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2InstanceMetadataDefaults to import
   * @param importFromId The id of the existing Ec2InstanceMetadataDefaults that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_instance_metadata_defaults#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2InstanceMetadataDefaults to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_instance_metadata_defaults", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_instance_metadata_defaults", importId: importFromId, provider });
       }
 
   // ===========
@@ -189,42 +189,42 @@ export class Ec2InstanceMetadataDefaults extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      http_endpoint: cdktf.stringToTerraform(this._httpEndpoint),
-      http_put_response_hop_limit: cdktf.numberToTerraform(this._httpPutResponseHopLimit),
-      http_tokens: cdktf.stringToTerraform(this._httpTokens),
-      instance_metadata_tags: cdktf.stringToTerraform(this._instanceMetadataTags),
-      region: cdktf.stringToTerraform(this._region),
+      http_endpoint: cdktn.stringToTerraform(this._httpEndpoint),
+      http_put_response_hop_limit: cdktn.numberToTerraform(this._httpPutResponseHopLimit),
+      http_tokens: cdktn.stringToTerraform(this._httpTokens),
+      instance_metadata_tags: cdktn.stringToTerraform(this._instanceMetadataTags),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       http_endpoint: {
-        value: cdktf.stringToHclTerraform(this._httpEndpoint),
+        value: cdktn.stringToHclTerraform(this._httpEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_put_response_hop_limit: {
-        value: cdktf.numberToHclTerraform(this._httpPutResponseHopLimit),
+        value: cdktn.numberToHclTerraform(this._httpPutResponseHopLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       http_tokens: {
-        value: cdktf.stringToHclTerraform(this._httpTokens),
+        value: cdktn.stringToHclTerraform(this._httpTokens),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_metadata_tags: {
-        value: cdktf.stringToHclTerraform(this._instanceMetadataTags),
+        value: cdktn.stringToHclTerraform(this._instanceMetadataTags),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

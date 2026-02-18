@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SignerSigningProfilePermissionConfig extends cdktf.TerraformMetaArguments {
+export interface SignerSigningProfilePermissionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/signer_signing_profile_permission#action SignerSigningProfilePermission#action}
   */
@@ -54,7 +54,7 @@ export interface SignerSigningProfilePermissionConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission}
 */
-export class SignerSigningProfilePermission extends cdktf.TerraformResource {
+export class SignerSigningProfilePermission extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class SignerSigningProfilePermission extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SignerSigningProfilePermission resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SignerSigningProfilePermission resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SignerSigningProfilePermission to import
   * @param importFromId The id of the existing SignerSigningProfilePermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/signer_signing_profile_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SignerSigningProfilePermission to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_signer_signing_profile_permission", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_signer_signing_profile_permission", importId: importFromId, provider });
       }
 
   // ===========
@@ -241,63 +241,63 @@ export class SignerSigningProfilePermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      id: cdktf.stringToTerraform(this._id),
-      principal: cdktf.stringToTerraform(this._principal),
-      profile_name: cdktf.stringToTerraform(this._profileName),
-      profile_version: cdktf.stringToTerraform(this._profileVersion),
-      region: cdktf.stringToTerraform(this._region),
-      statement_id: cdktf.stringToTerraform(this._statementId),
-      statement_id_prefix: cdktf.stringToTerraform(this._statementIdPrefix),
+      action: cdktn.stringToTerraform(this._action),
+      id: cdktn.stringToTerraform(this._id),
+      principal: cdktn.stringToTerraform(this._principal),
+      profile_name: cdktn.stringToTerraform(this._profileName),
+      profile_version: cdktn.stringToTerraform(this._profileVersion),
+      region: cdktn.stringToTerraform(this._region),
+      statement_id: cdktn.stringToTerraform(this._statementId),
+      statement_id_prefix: cdktn.stringToTerraform(this._statementIdPrefix),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal: {
-        value: cdktf.stringToHclTerraform(this._principal),
+        value: cdktn.stringToHclTerraform(this._principal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile_name: {
-        value: cdktf.stringToHclTerraform(this._profileName),
+        value: cdktn.stringToHclTerraform(this._profileName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile_version: {
-        value: cdktf.stringToHclTerraform(this._profileVersion),
+        value: cdktn.stringToHclTerraform(this._profileVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statement_id: {
-        value: cdktf.stringToHclTerraform(this._statementId),
+        value: cdktn.stringToHclTerraform(this._statementId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statement_id_prefix: {
-        value: cdktf.stringToHclTerraform(this._statementIdPrefix),
+        value: cdktn.stringToHclTerraform(this._statementIdPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

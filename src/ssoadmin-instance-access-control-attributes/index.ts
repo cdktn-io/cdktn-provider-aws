@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoadminInstanceAccessControlAttributesConfig extends cdktf.TerraformMetaArguments {
+export interface SsoadminInstanceAccessControlAttributesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_instance_access_control_attributes#id SsoadminInstanceAccessControlAttributes#id}
   *
@@ -34,7 +34,7 @@ export interface SsoadminInstanceAccessControlAttributesConfig extends cdktf.Ter
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_instance_access_control_attributes#attribute SsoadminInstanceAccessControlAttributes#attribute}
   */
-  readonly attribute: SsoadminInstanceAccessControlAttributesAttribute[] | cdktf.IResolvable;
+  readonly attribute: SsoadminInstanceAccessControlAttributesAttribute[] | cdktn.IResolvable;
 }
 export interface SsoadminInstanceAccessControlAttributesAttributeValue {
   /**
@@ -43,25 +43,25 @@ export interface SsoadminInstanceAccessControlAttributesAttributeValue {
   readonly source: string[];
 }
 
-export function ssoadminInstanceAccessControlAttributesAttributeValueToTerraform(struct?: SsoadminInstanceAccessControlAttributesAttributeValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminInstanceAccessControlAttributesAttributeValueToTerraform(struct?: SsoadminInstanceAccessControlAttributesAttributeValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.source),
+    source: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.source),
   }
 }
 
 
-export function ssoadminInstanceAccessControlAttributesAttributeValueToHclTerraform(struct?: SsoadminInstanceAccessControlAttributesAttributeValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminInstanceAccessControlAttributesAttributeValueToHclTerraform(struct?: SsoadminInstanceAccessControlAttributesAttributeValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.source),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.source),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -72,9 +72,9 @@ export function ssoadminInstanceAccessControlAttributesAttributeValueToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminInstanceAccessControlAttributesAttributeValueOutputReference extends cdktf.ComplexObject {
+export class SsoadminInstanceAccessControlAttributesAttributeValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -82,11 +82,11 @@ export class SsoadminInstanceAccessControlAttributesAttributeValueOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsoadminInstanceAccessControlAttributesAttributeValue | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminInstanceAccessControlAttributesAttributeValue | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -99,13 +99,13 @@ export class SsoadminInstanceAccessControlAttributesAttributeValueOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminInstanceAccessControlAttributesAttributeValue | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminInstanceAccessControlAttributesAttributeValue | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -119,7 +119,7 @@ export class SsoadminInstanceAccessControlAttributesAttributeValueOutputReferenc
   // source - computed: false, optional: false, required: true
   private _source?: string[]; 
   public get source() {
-    return cdktf.Fn.tolist(this.getListAttribute('source'));
+    return cdktn.Fn.tolist(this.getListAttribute('source'));
   }
   public set source(value: string[]) {
     this._source = value;
@@ -130,15 +130,15 @@ export class SsoadminInstanceAccessControlAttributesAttributeValueOutputReferenc
   }
 }
 
-export class SsoadminInstanceAccessControlAttributesAttributeValueList extends cdktf.ComplexList {
-  public internalValue? : SsoadminInstanceAccessControlAttributesAttributeValue[] | cdktf.IResolvable
+export class SsoadminInstanceAccessControlAttributesAttributeValueList extends cdktn.ComplexList {
+  public internalValue? : SsoadminInstanceAccessControlAttributesAttributeValue[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -159,35 +159,35 @@ export interface SsoadminInstanceAccessControlAttributesAttribute {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_instance_access_control_attributes#value SsoadminInstanceAccessControlAttributes#value}
   */
-  readonly value: SsoadminInstanceAccessControlAttributesAttributeValue[] | cdktf.IResolvable;
+  readonly value: SsoadminInstanceAccessControlAttributesAttributeValue[] | cdktn.IResolvable;
 }
 
-export function ssoadminInstanceAccessControlAttributesAttributeToTerraform(struct?: SsoadminInstanceAccessControlAttributesAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminInstanceAccessControlAttributesAttributeToTerraform(struct?: SsoadminInstanceAccessControlAttributesAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.listMapper(ssoadminInstanceAccessControlAttributesAttributeValueToTerraform, true)(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.listMapper(ssoadminInstanceAccessControlAttributesAttributeValueToTerraform, true)(struct!.value),
   }
 }
 
 
-export function ssoadminInstanceAccessControlAttributesAttributeToHclTerraform(struct?: SsoadminInstanceAccessControlAttributesAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminInstanceAccessControlAttributesAttributeToHclTerraform(struct?: SsoadminInstanceAccessControlAttributesAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.listMapperHcl(ssoadminInstanceAccessControlAttributesAttributeValueToHclTerraform, true)(struct!.value),
+      value: cdktn.listMapperHcl(ssoadminInstanceAccessControlAttributesAttributeValueToHclTerraform, true)(struct!.value),
       isBlock: true,
       type: "set",
       storageClassType: "SsoadminInstanceAccessControlAttributesAttributeValueList",
@@ -198,9 +198,9 @@ export function ssoadminInstanceAccessControlAttributesAttributeToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminInstanceAccessControlAttributesAttributeOutputReference extends cdktf.ComplexObject {
+export class SsoadminInstanceAccessControlAttributesAttributeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -208,11 +208,11 @@ export class SsoadminInstanceAccessControlAttributesAttributeOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SsoadminInstanceAccessControlAttributesAttribute | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminInstanceAccessControlAttributesAttribute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -229,14 +229,14 @@ export class SsoadminInstanceAccessControlAttributesAttributeOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminInstanceAccessControlAttributesAttribute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminInstanceAccessControlAttributesAttribute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -266,7 +266,7 @@ export class SsoadminInstanceAccessControlAttributesAttributeOutputReference ext
   public get value() {
     return this._value;
   }
-  public putValue(value: SsoadminInstanceAccessControlAttributesAttributeValue[] | cdktf.IResolvable) {
+  public putValue(value: SsoadminInstanceAccessControlAttributesAttributeValue[] | cdktn.IResolvable) {
     this._value.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -275,15 +275,15 @@ export class SsoadminInstanceAccessControlAttributesAttributeOutputReference ext
   }
 }
 
-export class SsoadminInstanceAccessControlAttributesAttributeList extends cdktf.ComplexList {
-  public internalValue? : SsoadminInstanceAccessControlAttributesAttribute[] | cdktf.IResolvable
+export class SsoadminInstanceAccessControlAttributesAttributeList extends cdktn.ComplexList {
+  public internalValue? : SsoadminInstanceAccessControlAttributesAttribute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -298,7 +298,7 @@ export class SsoadminInstanceAccessControlAttributesAttributeList extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_instance_access_control_attributes aws_ssoadmin_instance_access_control_attributes}
 */
-export class SsoadminInstanceAccessControlAttributes extends cdktf.TerraformResource {
+export class SsoadminInstanceAccessControlAttributes extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -309,14 +309,14 @@ export class SsoadminInstanceAccessControlAttributes extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoadminInstanceAccessControlAttributes resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoadminInstanceAccessControlAttributes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminInstanceAccessControlAttributes to import
   * @param importFromId The id of the existing SsoadminInstanceAccessControlAttributes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_instance_access_control_attributes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminInstanceAccessControlAttributes to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_instance_access_control_attributes", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_instance_access_control_attributes", importId: importFromId, provider });
       }
 
   // ===========
@@ -416,7 +416,7 @@ export class SsoadminInstanceAccessControlAttributes extends cdktf.TerraformReso
   public get attribute() {
     return this._attribute;
   }
-  public putAttribute(value: SsoadminInstanceAccessControlAttributesAttribute[] | cdktf.IResolvable) {
+  public putAttribute(value: SsoadminInstanceAccessControlAttributesAttribute[] | cdktn.IResolvable) {
     this._attribute.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -430,35 +430,35 @@ export class SsoadminInstanceAccessControlAttributes extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_arn: cdktf.stringToTerraform(this._instanceArn),
-      region: cdktf.stringToTerraform(this._region),
-      attribute: cdktf.listMapper(ssoadminInstanceAccessControlAttributesAttributeToTerraform, true)(this._attribute.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      instance_arn: cdktn.stringToTerraform(this._instanceArn),
+      region: cdktn.stringToTerraform(this._region),
+      attribute: cdktn.listMapper(ssoadminInstanceAccessControlAttributesAttributeToTerraform, true)(this._attribute.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceArn),
+        value: cdktn.stringToHclTerraform(this._instanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attribute: {
-        value: cdktf.listMapperHcl(ssoadminInstanceAccessControlAttributesAttributeToHclTerraform, true)(this._attribute.internalValue),
+        value: cdktn.listMapperHcl(ssoadminInstanceAccessControlAttributesAttributeToHclTerraform, true)(this._attribute.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SsoadminInstanceAccessControlAttributesAttributeList",

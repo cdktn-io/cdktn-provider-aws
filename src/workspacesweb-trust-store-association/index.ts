@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebTrustStoreAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebTrustStoreAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_trust_store_association#portal_arn WorkspaceswebTrustStoreAssociation#portal_arn}
   */
@@ -31,7 +31,7 @@ export interface WorkspaceswebTrustStoreAssociationConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_trust_store_association aws_workspacesweb_trust_store_association}
 */
-export class WorkspaceswebTrustStoreAssociation extends cdktf.TerraformResource {
+export class WorkspaceswebTrustStoreAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class WorkspaceswebTrustStoreAssociation extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebTrustStoreAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebTrustStoreAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebTrustStoreAssociation to import
   * @param importFromId The id of the existing WorkspaceswebTrustStoreAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_trust_store_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebTrustStoreAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_trust_store_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_trust_store_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -136,28 +136,28 @@ export class WorkspaceswebTrustStoreAssociation extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      portal_arn: cdktf.stringToTerraform(this._portalArn),
-      region: cdktf.stringToTerraform(this._region),
-      trust_store_arn: cdktf.stringToTerraform(this._trustStoreArn),
+      portal_arn: cdktn.stringToTerraform(this._portalArn),
+      region: cdktn.stringToTerraform(this._region),
+      trust_store_arn: cdktn.stringToTerraform(this._trustStoreArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       portal_arn: {
-        value: cdktf.stringToHclTerraform(this._portalArn),
+        value: cdktn.stringToHclTerraform(this._portalArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trust_store_arn: {
-        value: cdktf.stringToHclTerraform(this._trustStoreArn),
+        value: cdktn.stringToHclTerraform(this._trustStoreArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

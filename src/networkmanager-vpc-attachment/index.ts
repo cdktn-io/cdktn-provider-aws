@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkmanagerVpcAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkmanagerVpcAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_vpc_attachment#core_network_id NetworkmanagerVpcAttachment#core_network_id}
   */
@@ -60,61 +60,61 @@ export interface NetworkmanagerVpcAttachmentOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_vpc_attachment#appliance_mode_support NetworkmanagerVpcAttachment#appliance_mode_support}
   */
-  readonly applianceModeSupport?: boolean | cdktf.IResolvable;
+  readonly applianceModeSupport?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_vpc_attachment#dns_support NetworkmanagerVpcAttachment#dns_support}
   */
-  readonly dnsSupport?: boolean | cdktf.IResolvable;
+  readonly dnsSupport?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_vpc_attachment#ipv6_support NetworkmanagerVpcAttachment#ipv6_support}
   */
-  readonly ipv6Support?: boolean | cdktf.IResolvable;
+  readonly ipv6Support?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_vpc_attachment#security_group_referencing_support NetworkmanagerVpcAttachment#security_group_referencing_support}
   */
-  readonly securityGroupReferencingSupport?: boolean | cdktf.IResolvable;
+  readonly securityGroupReferencingSupport?: boolean | cdktn.IResolvable;
 }
 
 export function networkmanagerVpcAttachmentOptionsToTerraform(struct?: NetworkmanagerVpcAttachmentOptionsOutputReference | NetworkmanagerVpcAttachmentOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    appliance_mode_support: cdktf.booleanToTerraform(struct!.applianceModeSupport),
-    dns_support: cdktf.booleanToTerraform(struct!.dnsSupport),
-    ipv6_support: cdktf.booleanToTerraform(struct!.ipv6Support),
-    security_group_referencing_support: cdktf.booleanToTerraform(struct!.securityGroupReferencingSupport),
+    appliance_mode_support: cdktn.booleanToTerraform(struct!.applianceModeSupport),
+    dns_support: cdktn.booleanToTerraform(struct!.dnsSupport),
+    ipv6_support: cdktn.booleanToTerraform(struct!.ipv6Support),
+    security_group_referencing_support: cdktn.booleanToTerraform(struct!.securityGroupReferencingSupport),
   }
 }
 
 
 export function networkmanagerVpcAttachmentOptionsToHclTerraform(struct?: NetworkmanagerVpcAttachmentOptionsOutputReference | NetworkmanagerVpcAttachmentOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     appliance_mode_support: {
-      value: cdktf.booleanToHclTerraform(struct!.applianceModeSupport),
+      value: cdktn.booleanToHclTerraform(struct!.applianceModeSupport),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dns_support: {
-      value: cdktf.booleanToHclTerraform(struct!.dnsSupport),
+      value: cdktn.booleanToHclTerraform(struct!.dnsSupport),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ipv6_support: {
-      value: cdktf.booleanToHclTerraform(struct!.ipv6Support),
+      value: cdktn.booleanToHclTerraform(struct!.ipv6Support),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     security_group_referencing_support: {
-      value: cdktf.booleanToHclTerraform(struct!.securityGroupReferencingSupport),
+      value: cdktn.booleanToHclTerraform(struct!.securityGroupReferencingSupport),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -125,14 +125,14 @@ export function networkmanagerVpcAttachmentOptionsToHclTerraform(struct?: Networ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.ComplexObject {
+export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -176,11 +176,11 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
   }
 
   // appliance_mode_support - computed: true, optional: true, required: false
-  private _applianceModeSupport?: boolean | cdktf.IResolvable; 
+  private _applianceModeSupport?: boolean | cdktn.IResolvable; 
   public get applianceModeSupport() {
     return this.getBooleanAttribute('appliance_mode_support');
   }
-  public set applianceModeSupport(value: boolean | cdktf.IResolvable) {
+  public set applianceModeSupport(value: boolean | cdktn.IResolvable) {
     this._applianceModeSupport = value;
   }
   public resetApplianceModeSupport() {
@@ -192,11 +192,11 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
   }
 
   // dns_support - computed: true, optional: true, required: false
-  private _dnsSupport?: boolean | cdktf.IResolvable; 
+  private _dnsSupport?: boolean | cdktn.IResolvable; 
   public get dnsSupport() {
     return this.getBooleanAttribute('dns_support');
   }
-  public set dnsSupport(value: boolean | cdktf.IResolvable) {
+  public set dnsSupport(value: boolean | cdktn.IResolvable) {
     this._dnsSupport = value;
   }
   public resetDnsSupport() {
@@ -208,11 +208,11 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
   }
 
   // ipv6_support - computed: true, optional: true, required: false
-  private _ipv6Support?: boolean | cdktf.IResolvable; 
+  private _ipv6Support?: boolean | cdktn.IResolvable; 
   public get ipv6Support() {
     return this.getBooleanAttribute('ipv6_support');
   }
-  public set ipv6Support(value: boolean | cdktf.IResolvable) {
+  public set ipv6Support(value: boolean | cdktn.IResolvable) {
     this._ipv6Support = value;
   }
   public resetIpv6Support() {
@@ -224,11 +224,11 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
   }
 
   // security_group_referencing_support - computed: true, optional: true, required: false
-  private _securityGroupReferencingSupport?: boolean | cdktf.IResolvable; 
+  private _securityGroupReferencingSupport?: boolean | cdktn.IResolvable; 
   public get securityGroupReferencingSupport() {
     return this.getBooleanAttribute('security_group_referencing_support');
   }
-  public set securityGroupReferencingSupport(value: boolean | cdktf.IResolvable) {
+  public set securityGroupReferencingSupport(value: boolean | cdktn.IResolvable) {
     this._securityGroupReferencingSupport = value;
   }
   public resetSecurityGroupReferencingSupport() {
@@ -254,39 +254,39 @@ export interface NetworkmanagerVpcAttachmentTimeouts {
   readonly update?: string;
 }
 
-export function networkmanagerVpcAttachmentTimeoutsToTerraform(struct?: NetworkmanagerVpcAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerVpcAttachmentTimeoutsToTerraform(struct?: NetworkmanagerVpcAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkmanagerVpcAttachmentTimeoutsToHclTerraform(struct?: NetworkmanagerVpcAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerVpcAttachmentTimeoutsToHclTerraform(struct?: NetworkmanagerVpcAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -297,19 +297,19 @@ export function networkmanagerVpcAttachmentTimeoutsToHclTerraform(struct?: Netwo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkmanagerVpcAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkmanagerVpcAttachmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkmanagerVpcAttachmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkmanagerVpcAttachmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -330,7 +330,7 @@ export class NetworkmanagerVpcAttachmentTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkmanagerVpcAttachmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkmanagerVpcAttachmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -338,7 +338,7 @@ export class NetworkmanagerVpcAttachmentTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -403,7 +403,7 @@ export class NetworkmanagerVpcAttachmentTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_vpc_attachment aws_networkmanager_vpc_attachment}
 */
-export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
+export class NetworkmanagerVpcAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -414,14 +414,14 @@ export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkmanagerVpcAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkmanagerVpcAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmanagerVpcAttachment to import
   * @param importFromId The id of the existing NetworkmanagerVpcAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_vpc_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmanagerVpcAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_vpc_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_vpc_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -559,7 +559,7 @@ export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
   // subnet_arns - computed: false, optional: false, required: true
   private _subnetArns?: string[]; 
   public get subnetArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_arns'));
   }
   public set subnetArns(value: string[]) {
     this._subnetArns = value;
@@ -652,13 +652,13 @@ export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      core_network_id: cdktf.stringToTerraform(this._coreNetworkId),
-      id: cdktf.stringToTerraform(this._id),
-      routing_policy_label: cdktf.stringToTerraform(this._routingPolicyLabel),
-      subnet_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetArns),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_arn: cdktf.stringToTerraform(this._vpcArn),
+      core_network_id: cdktn.stringToTerraform(this._coreNetworkId),
+      id: cdktn.stringToTerraform(this._id),
+      routing_policy_label: cdktn.stringToTerraform(this._routingPolicyLabel),
+      subnet_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetArns),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_arn: cdktn.stringToTerraform(this._vpcArn),
       options: networkmanagerVpcAttachmentOptionsToTerraform(this._options.internalValue),
       timeouts: networkmanagerVpcAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -667,43 +667,43 @@ export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       core_network_id: {
-        value: cdktf.stringToHclTerraform(this._coreNetworkId),
+        value: cdktn.stringToHclTerraform(this._coreNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_policy_label: {
-        value: cdktf.stringToHclTerraform(this._routingPolicyLabel),
+        value: cdktn.stringToHclTerraform(this._routingPolicyLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_arns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetArns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetArns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_arn: {
-        value: cdktf.stringToHclTerraform(this._vpcArn),
+        value: cdktn.stringToHclTerraform(this._vpcArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

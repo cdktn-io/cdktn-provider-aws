@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SagemakerFeatureGroupConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerFeatureGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_feature_group#description SagemakerFeatureGroup#description}
   */
@@ -58,7 +58,7 @@ export interface SagemakerFeatureGroupConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_feature_group#feature_definition SagemakerFeatureGroup#feature_definition}
   */
-  readonly featureDefinition: SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable;
+  readonly featureDefinition: SagemakerFeatureGroupFeatureDefinition[] | cdktn.IResolvable;
   /**
   * offline_store_config block
   *
@@ -86,24 +86,24 @@ export interface SagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorCon
 }
 
 export function sagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfigToTerraform(struct?: SagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfigOutputReference | SagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimension: cdktf.numberToTerraform(struct!.dimension),
+    dimension: cdktn.numberToTerraform(struct!.dimension),
   }
 }
 
 
 export function sagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfigToHclTerraform(struct?: SagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfigOutputReference | SagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dimension: {
-      value: cdktf.numberToHclTerraform(struct!.dimension),
+      value: cdktn.numberToHclTerraform(struct!.dimension),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -114,14 +114,14 @@ export function sagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -172,8 +172,8 @@ export interface SagemakerFeatureGroupFeatureDefinitionCollectionConfig {
 }
 
 export function sagemakerFeatureGroupFeatureDefinitionCollectionConfigToTerraform(struct?: SagemakerFeatureGroupFeatureDefinitionCollectionConfigOutputReference | SagemakerFeatureGroupFeatureDefinitionCollectionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -183,8 +183,8 @@ export function sagemakerFeatureGroupFeatureDefinitionCollectionConfigToTerrafor
 
 
 export function sagemakerFeatureGroupFeatureDefinitionCollectionConfigToHclTerraform(struct?: SagemakerFeatureGroupFeatureDefinitionCollectionConfigOutputReference | SagemakerFeatureGroupFeatureDefinitionCollectionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -200,14 +200,14 @@ export function sagemakerFeatureGroupFeatureDefinitionCollectionConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupFeatureDefinitionCollectionConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupFeatureDefinitionCollectionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -269,40 +269,40 @@ export interface SagemakerFeatureGroupFeatureDefinition {
   readonly collectionConfig?: SagemakerFeatureGroupFeatureDefinitionCollectionConfig;
 }
 
-export function sagemakerFeatureGroupFeatureDefinitionToTerraform(struct?: SagemakerFeatureGroupFeatureDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerFeatureGroupFeatureDefinitionToTerraform(struct?: SagemakerFeatureGroupFeatureDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    collection_type: cdktf.stringToTerraform(struct!.collectionType),
-    feature_name: cdktf.stringToTerraform(struct!.featureName),
-    feature_type: cdktf.stringToTerraform(struct!.featureType),
+    collection_type: cdktn.stringToTerraform(struct!.collectionType),
+    feature_name: cdktn.stringToTerraform(struct!.featureName),
+    feature_type: cdktn.stringToTerraform(struct!.featureType),
     collection_config: sagemakerFeatureGroupFeatureDefinitionCollectionConfigToTerraform(struct!.collectionConfig),
   }
 }
 
 
-export function sagemakerFeatureGroupFeatureDefinitionToHclTerraform(struct?: SagemakerFeatureGroupFeatureDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sagemakerFeatureGroupFeatureDefinitionToHclTerraform(struct?: SagemakerFeatureGroupFeatureDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     collection_type: {
-      value: cdktf.stringToHclTerraform(struct!.collectionType),
+      value: cdktn.stringToHclTerraform(struct!.collectionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     feature_name: {
-      value: cdktf.stringToHclTerraform(struct!.featureName),
+      value: cdktn.stringToHclTerraform(struct!.featureName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     feature_type: {
-      value: cdktf.stringToHclTerraform(struct!.featureType),
+      value: cdktn.stringToHclTerraform(struct!.featureType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -319,9 +319,9 @@ export function sagemakerFeatureGroupFeatureDefinitionToHclTerraform(struct?: Sa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupFeatureDefinitionOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupFeatureDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -329,11 +329,11 @@ export class SagemakerFeatureGroupFeatureDefinitionOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SagemakerFeatureGroupFeatureDefinition | cdktf.IResolvable | undefined {
+  public get internalValue(): SagemakerFeatureGroupFeatureDefinition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -358,7 +358,7 @@ export class SagemakerFeatureGroupFeatureDefinitionOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SagemakerFeatureGroupFeatureDefinition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SagemakerFeatureGroupFeatureDefinition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -367,7 +367,7 @@ export class SagemakerFeatureGroupFeatureDefinitionOutputReference extends cdktf
       this._featureType = undefined;
       this._collectionConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -446,15 +446,15 @@ export class SagemakerFeatureGroupFeatureDefinitionOutputReference extends cdktf
   }
 }
 
-export class SagemakerFeatureGroupFeatureDefinitionList extends cdktf.ComplexList {
-  public internalValue? : SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable
+export class SagemakerFeatureGroupFeatureDefinitionList extends cdktn.ComplexList {
+  public internalValue? : SagemakerFeatureGroupFeatureDefinition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -481,38 +481,38 @@ export interface SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig {
 }
 
 export function sagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigToTerraform(struct?: SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference | SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog: cdktf.stringToTerraform(struct!.catalog),
-    database: cdktf.stringToTerraform(struct!.database),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    catalog: cdktn.stringToTerraform(struct!.catalog),
+    database: cdktn.stringToTerraform(struct!.database),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
 export function sagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigToHclTerraform(struct?: SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference | SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog: {
-      value: cdktf.stringToHclTerraform(struct!.catalog),
+      value: cdktn.stringToHclTerraform(struct!.catalog),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -523,14 +523,14 @@ export function sagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -631,38 +631,38 @@ export interface SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig {
 }
 
 export function sagemakerFeatureGroupOfflineStoreConfigS3StorageConfigToTerraform(struct?: SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference | SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    resolved_output_s3_uri: cdktf.stringToTerraform(struct!.resolvedOutputS3Uri),
-    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
+    resolved_output_s3_uri: cdktn.stringToTerraform(struct!.resolvedOutputS3Uri),
+    s3_uri: cdktn.stringToTerraform(struct!.s3Uri),
   }
 }
 
 
 export function sagemakerFeatureGroupOfflineStoreConfigS3StorageConfigToHclTerraform(struct?: SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference | SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resolved_output_s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.resolvedOutputS3Uri),
+      value: cdktn.stringToHclTerraform(struct!.resolvedOutputS3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     s3_uri: {
-      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      value: cdktn.stringToHclTerraform(struct!.s3Uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -673,14 +673,14 @@ export function sagemakerFeatureGroupOfflineStoreConfigS3StorageConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -766,7 +766,7 @@ export interface SagemakerFeatureGroupOfflineStoreConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_feature_group#disable_glue_table_creation SagemakerFeatureGroup#disable_glue_table_creation}
   */
-  readonly disableGlueTableCreation?: boolean | cdktf.IResolvable;
+  readonly disableGlueTableCreation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_feature_group#table_format SagemakerFeatureGroup#table_format}
   */
@@ -786,13 +786,13 @@ export interface SagemakerFeatureGroupOfflineStoreConfig {
 }
 
 export function sagemakerFeatureGroupOfflineStoreConfigToTerraform(struct?: SagemakerFeatureGroupOfflineStoreConfigOutputReference | SagemakerFeatureGroupOfflineStoreConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_glue_table_creation: cdktf.booleanToTerraform(struct!.disableGlueTableCreation),
-    table_format: cdktf.stringToTerraform(struct!.tableFormat),
+    disable_glue_table_creation: cdktn.booleanToTerraform(struct!.disableGlueTableCreation),
+    table_format: cdktn.stringToTerraform(struct!.tableFormat),
     data_catalog_config: sagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigToTerraform(struct!.dataCatalogConfig),
     s3_storage_config: sagemakerFeatureGroupOfflineStoreConfigS3StorageConfigToTerraform(struct!.s3StorageConfig),
   }
@@ -800,19 +800,19 @@ export function sagemakerFeatureGroupOfflineStoreConfigToTerraform(struct?: Sage
 
 
 export function sagemakerFeatureGroupOfflineStoreConfigToHclTerraform(struct?: SagemakerFeatureGroupOfflineStoreConfigOutputReference | SagemakerFeatureGroupOfflineStoreConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_glue_table_creation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableGlueTableCreation),
+      value: cdktn.booleanToHclTerraform(struct!.disableGlueTableCreation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     table_format: {
-      value: cdktf.stringToHclTerraform(struct!.tableFormat),
+      value: cdktn.stringToHclTerraform(struct!.tableFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -835,14 +835,14 @@ export function sagemakerFeatureGroupOfflineStoreConfigToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -886,11 +886,11 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   }
 
   // disable_glue_table_creation - computed: false, optional: true, required: false
-  private _disableGlueTableCreation?: boolean | cdktf.IResolvable; 
+  private _disableGlueTableCreation?: boolean | cdktn.IResolvable; 
   public get disableGlueTableCreation() {
     return this.getBooleanAttribute('disable_glue_table_creation');
   }
-  public set disableGlueTableCreation(value: boolean | cdktf.IResolvable) {
+  public set disableGlueTableCreation(value: boolean | cdktn.IResolvable) {
     this._disableGlueTableCreation = value;
   }
   public resetDisableGlueTableCreation() {
@@ -954,24 +954,24 @@ export interface SagemakerFeatureGroupOnlineStoreConfigSecurityConfig {
 }
 
 export function sagemakerFeatureGroupOnlineStoreConfigSecurityConfigToTerraform(struct?: SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference | SagemakerFeatureGroupOnlineStoreConfigSecurityConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
   }
 }
 
 
 export function sagemakerFeatureGroupOnlineStoreConfigSecurityConfigToHclTerraform(struct?: SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference | SagemakerFeatureGroupOnlineStoreConfigSecurityConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -982,14 +982,14 @@ export function sagemakerFeatureGroupOnlineStoreConfigSecurityConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1042,31 +1042,31 @@ export interface SagemakerFeatureGroupOnlineStoreConfigTtlDuration {
 }
 
 export function sagemakerFeatureGroupOnlineStoreConfigTtlDurationToTerraform(struct?: SagemakerFeatureGroupOnlineStoreConfigTtlDurationOutputReference | SagemakerFeatureGroupOnlineStoreConfigTtlDuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value: cdktf.numberToTerraform(struct!.value),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
 export function sagemakerFeatureGroupOnlineStoreConfigTtlDurationToHclTerraform(struct?: SagemakerFeatureGroupOnlineStoreConfigTtlDurationOutputReference | SagemakerFeatureGroupOnlineStoreConfigTtlDuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1077,14 +1077,14 @@ export function sagemakerFeatureGroupOnlineStoreConfigTtlDurationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupOnlineStoreConfigTtlDurationOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupOnlineStoreConfigTtlDurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1151,7 +1151,7 @@ export interface SagemakerFeatureGroupOnlineStoreConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_feature_group#enable_online_store SagemakerFeatureGroup#enable_online_store}
   */
-  readonly enableOnlineStore?: boolean | cdktf.IResolvable;
+  readonly enableOnlineStore?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_feature_group#storage_type SagemakerFeatureGroup#storage_type}
   */
@@ -1171,13 +1171,13 @@ export interface SagemakerFeatureGroupOnlineStoreConfig {
 }
 
 export function sagemakerFeatureGroupOnlineStoreConfigToTerraform(struct?: SagemakerFeatureGroupOnlineStoreConfigOutputReference | SagemakerFeatureGroupOnlineStoreConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_online_store: cdktf.booleanToTerraform(struct!.enableOnlineStore),
-    storage_type: cdktf.stringToTerraform(struct!.storageType),
+    enable_online_store: cdktn.booleanToTerraform(struct!.enableOnlineStore),
+    storage_type: cdktn.stringToTerraform(struct!.storageType),
     security_config: sagemakerFeatureGroupOnlineStoreConfigSecurityConfigToTerraform(struct!.securityConfig),
     ttl_duration: sagemakerFeatureGroupOnlineStoreConfigTtlDurationToTerraform(struct!.ttlDuration),
   }
@@ -1185,19 +1185,19 @@ export function sagemakerFeatureGroupOnlineStoreConfigToTerraform(struct?: Sagem
 
 
 export function sagemakerFeatureGroupOnlineStoreConfigToHclTerraform(struct?: SagemakerFeatureGroupOnlineStoreConfigOutputReference | SagemakerFeatureGroupOnlineStoreConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_online_store: {
-      value: cdktf.booleanToHclTerraform(struct!.enableOnlineStore),
+      value: cdktn.booleanToHclTerraform(struct!.enableOnlineStore),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     storage_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageType),
+      value: cdktn.stringToHclTerraform(struct!.storageType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1220,14 +1220,14 @@ export function sagemakerFeatureGroupOnlineStoreConfigToHclTerraform(struct?: Sa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1271,11 +1271,11 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
   }
 
   // enable_online_store - computed: false, optional: true, required: false
-  private _enableOnlineStore?: boolean | cdktf.IResolvable; 
+  private _enableOnlineStore?: boolean | cdktn.IResolvable; 
   public get enableOnlineStore() {
     return this.getBooleanAttribute('enable_online_store');
   }
-  public set enableOnlineStore(value: boolean | cdktf.IResolvable) {
+  public set enableOnlineStore(value: boolean | cdktn.IResolvable) {
     this._enableOnlineStore = value;
   }
   public resetEnableOnlineStore() {
@@ -1350,38 +1350,38 @@ export interface SagemakerFeatureGroupThroughputConfig {
 }
 
 export function sagemakerFeatureGroupThroughputConfigToTerraform(struct?: SagemakerFeatureGroupThroughputConfigOutputReference | SagemakerFeatureGroupThroughputConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    provisioned_read_capacity_units: cdktf.numberToTerraform(struct!.provisionedReadCapacityUnits),
-    provisioned_write_capacity_units: cdktf.numberToTerraform(struct!.provisionedWriteCapacityUnits),
-    throughput_mode: cdktf.stringToTerraform(struct!.throughputMode),
+    provisioned_read_capacity_units: cdktn.numberToTerraform(struct!.provisionedReadCapacityUnits),
+    provisioned_write_capacity_units: cdktn.numberToTerraform(struct!.provisionedWriteCapacityUnits),
+    throughput_mode: cdktn.stringToTerraform(struct!.throughputMode),
   }
 }
 
 
 export function sagemakerFeatureGroupThroughputConfigToHclTerraform(struct?: SagemakerFeatureGroupThroughputConfigOutputReference | SagemakerFeatureGroupThroughputConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     provisioned_read_capacity_units: {
-      value: cdktf.numberToHclTerraform(struct!.provisionedReadCapacityUnits),
+      value: cdktn.numberToHclTerraform(struct!.provisionedReadCapacityUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     provisioned_write_capacity_units: {
-      value: cdktf.numberToHclTerraform(struct!.provisionedWriteCapacityUnits),
+      value: cdktn.numberToHclTerraform(struct!.provisionedWriteCapacityUnits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     throughput_mode: {
-      value: cdktf.stringToHclTerraform(struct!.throughputMode),
+      value: cdktn.stringToHclTerraform(struct!.throughputMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1392,14 +1392,14 @@ export function sagemakerFeatureGroupThroughputConfigToHclTerraform(struct?: Sag
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SagemakerFeatureGroupThroughputConfigOutputReference extends cdktf.ComplexObject {
+export class SagemakerFeatureGroupThroughputConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1488,7 +1488,7 @@ export class SagemakerFeatureGroupThroughputConfigOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group}
 */
-export class SagemakerFeatureGroup extends cdktf.TerraformResource {
+export class SagemakerFeatureGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1499,14 +1499,14 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SagemakerFeatureGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SagemakerFeatureGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerFeatureGroup to import
   * @param importFromId The id of the existing SagemakerFeatureGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sagemaker_feature_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerFeatureGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_feature_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sagemaker_feature_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -1697,7 +1697,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   public get featureDefinition() {
     return this._featureDefinition;
   }
-  public putFeatureDefinition(value: SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable) {
+  public putFeatureDefinition(value: SagemakerFeatureGroupFeatureDefinition[] | cdktn.IResolvable) {
     this._featureDefinition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1759,16 +1759,16 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      event_time_feature_name: cdktf.stringToTerraform(this._eventTimeFeatureName),
-      feature_group_name: cdktf.stringToTerraform(this._featureGroupName),
-      id: cdktf.stringToTerraform(this._id),
-      record_identifier_feature_name: cdktf.stringToTerraform(this._recordIdentifierFeatureName),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      feature_definition: cdktf.listMapper(sagemakerFeatureGroupFeatureDefinitionToTerraform, true)(this._featureDefinition.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      event_time_feature_name: cdktn.stringToTerraform(this._eventTimeFeatureName),
+      feature_group_name: cdktn.stringToTerraform(this._featureGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      record_identifier_feature_name: cdktn.stringToTerraform(this._recordIdentifierFeatureName),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      feature_definition: cdktn.listMapper(sagemakerFeatureGroupFeatureDefinitionToTerraform, true)(this._featureDefinition.internalValue),
       offline_store_config: sagemakerFeatureGroupOfflineStoreConfigToTerraform(this._offlineStoreConfig.internalValue),
       online_store_config: sagemakerFeatureGroupOnlineStoreConfigToTerraform(this._onlineStoreConfig.internalValue),
       throughput_config: sagemakerFeatureGroupThroughputConfigToTerraform(this._throughputConfig.internalValue),
@@ -1778,61 +1778,61 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_time_feature_name: {
-        value: cdktf.stringToHclTerraform(this._eventTimeFeatureName),
+        value: cdktn.stringToHclTerraform(this._eventTimeFeatureName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       feature_group_name: {
-        value: cdktf.stringToHclTerraform(this._featureGroupName),
+        value: cdktn.stringToHclTerraform(this._featureGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       record_identifier_feature_name: {
-        value: cdktf.stringToHclTerraform(this._recordIdentifierFeatureName),
+        value: cdktn.stringToHclTerraform(this._recordIdentifierFeatureName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       feature_definition: {
-        value: cdktf.listMapperHcl(sagemakerFeatureGroupFeatureDefinitionToHclTerraform, true)(this._featureDefinition.internalValue),
+        value: cdktn.listMapperHcl(sagemakerFeatureGroupFeatureDefinitionToHclTerraform, true)(this._featureDefinition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SagemakerFeatureGroupFeatureDefinitionList",

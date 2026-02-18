@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchLogDeliveryConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogDeliveryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery#delivery_destination_arn CloudwatchLogDelivery#delivery_destination_arn}
   */
@@ -37,7 +37,7 @@ export interface CloudwatchLogDeliveryConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery#s3_delivery_configuration CloudwatchLogDelivery#s3_delivery_configuration}
   */
-  readonly s3DeliveryConfiguration?: CloudwatchLogDeliveryS3DeliveryConfiguration[] | cdktf.IResolvable;
+  readonly s3DeliveryConfiguration?: CloudwatchLogDeliveryS3DeliveryConfiguration[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery#tags CloudwatchLogDelivery#tags}
   */
@@ -47,39 +47,39 @@ export interface CloudwatchLogDeliveryS3DeliveryConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery#enable_hive_compatible_path CloudwatchLogDelivery#enable_hive_compatible_path}
   */
-  readonly enableHiveCompatiblePath?: boolean | cdktf.IResolvable;
+  readonly enableHiveCompatiblePath?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery#suffix_path CloudwatchLogDelivery#suffix_path}
   */
   readonly suffixPath?: string;
 }
 
-export function cloudwatchLogDeliveryS3DeliveryConfigurationToTerraform(struct?: CloudwatchLogDeliveryS3DeliveryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogDeliveryS3DeliveryConfigurationToTerraform(struct?: CloudwatchLogDeliveryS3DeliveryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_hive_compatible_path: cdktf.booleanToTerraform(struct!.enableHiveCompatiblePath),
-    suffix_path: cdktf.stringToTerraform(struct!.suffixPath),
+    enable_hive_compatible_path: cdktn.booleanToTerraform(struct!.enableHiveCompatiblePath),
+    suffix_path: cdktn.stringToTerraform(struct!.suffixPath),
   }
 }
 
 
-export function cloudwatchLogDeliveryS3DeliveryConfigurationToHclTerraform(struct?: CloudwatchLogDeliveryS3DeliveryConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudwatchLogDeliveryS3DeliveryConfigurationToHclTerraform(struct?: CloudwatchLogDeliveryS3DeliveryConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_hive_compatible_path: {
-      value: cdktf.booleanToHclTerraform(struct!.enableHiveCompatiblePath),
+      value: cdktn.booleanToHclTerraform(struct!.enableHiveCompatiblePath),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     suffix_path: {
-      value: cdktf.stringToHclTerraform(struct!.suffixPath),
+      value: cdktn.stringToHclTerraform(struct!.suffixPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -90,9 +90,9 @@ export function cloudwatchLogDeliveryS3DeliveryConfigurationToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudwatchLogDeliveryS3DeliveryConfigurationOutputReference extends cdktf.ComplexObject {
+export class CloudwatchLogDeliveryS3DeliveryConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -100,11 +100,11 @@ export class CloudwatchLogDeliveryS3DeliveryConfigurationOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudwatchLogDeliveryS3DeliveryConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudwatchLogDeliveryS3DeliveryConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -121,14 +121,14 @@ export class CloudwatchLogDeliveryS3DeliveryConfigurationOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudwatchLogDeliveryS3DeliveryConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudwatchLogDeliveryS3DeliveryConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enableHiveCompatiblePath = undefined;
       this._suffixPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -141,11 +141,11 @@ export class CloudwatchLogDeliveryS3DeliveryConfigurationOutputReference extends
   }
 
   // enable_hive_compatible_path - computed: true, optional: true, required: false
-  private _enableHiveCompatiblePath?: boolean | cdktf.IResolvable; 
+  private _enableHiveCompatiblePath?: boolean | cdktn.IResolvable; 
   public get enableHiveCompatiblePath() {
     return this.getBooleanAttribute('enable_hive_compatible_path');
   }
-  public set enableHiveCompatiblePath(value: boolean | cdktf.IResolvable) {
+  public set enableHiveCompatiblePath(value: boolean | cdktn.IResolvable) {
     this._enableHiveCompatiblePath = value;
   }
   public resetEnableHiveCompatiblePath() {
@@ -173,15 +173,15 @@ export class CloudwatchLogDeliveryS3DeliveryConfigurationOutputReference extends
   }
 }
 
-export class CloudwatchLogDeliveryS3DeliveryConfigurationList extends cdktf.ComplexList {
-  public internalValue? : CloudwatchLogDeliveryS3DeliveryConfiguration[] | cdktf.IResolvable
+export class CloudwatchLogDeliveryS3DeliveryConfigurationList extends cdktn.ComplexList {
+  public internalValue? : CloudwatchLogDeliveryS3DeliveryConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -196,7 +196,7 @@ export class CloudwatchLogDeliveryS3DeliveryConfigurationList extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery aws_cloudwatch_log_delivery}
 */
-export class CloudwatchLogDelivery extends cdktf.TerraformResource {
+export class CloudwatchLogDelivery extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -207,14 +207,14 @@ export class CloudwatchLogDelivery extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchLogDelivery resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchLogDelivery resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogDelivery to import
   * @param importFromId The id of the existing CloudwatchLogDelivery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_delivery#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogDelivery to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_delivery", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_delivery", importId: importFromId, provider });
       }
 
   // ===========
@@ -346,7 +346,7 @@ export class CloudwatchLogDelivery extends cdktf.TerraformResource {
   public get s3DeliveryConfiguration() {
     return this._s3DeliveryConfiguration;
   }
-  public putS3DeliveryConfiguration(value: CloudwatchLogDeliveryS3DeliveryConfiguration[] | cdktf.IResolvable) {
+  public putS3DeliveryConfiguration(value: CloudwatchLogDeliveryS3DeliveryConfiguration[] | cdktn.IResolvable) {
     this._s3DeliveryConfiguration.internalValue = value;
   }
   public resetS3DeliveryConfiguration() {
@@ -374,7 +374,7 @@ export class CloudwatchLogDelivery extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -385,56 +385,56 @@ export class CloudwatchLogDelivery extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delivery_destination_arn: cdktf.stringToTerraform(this._deliveryDestinationArn),
-      delivery_source_name: cdktf.stringToTerraform(this._deliverySourceName),
-      field_delimiter: cdktf.stringToTerraform(this._fieldDelimiter),
-      record_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._recordFields),
-      region: cdktf.stringToTerraform(this._region),
-      s3_delivery_configuration: cdktf.listMapper(cloudwatchLogDeliveryS3DeliveryConfigurationToTerraform, false)(this._s3DeliveryConfiguration.internalValue),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      delivery_destination_arn: cdktn.stringToTerraform(this._deliveryDestinationArn),
+      delivery_source_name: cdktn.stringToTerraform(this._deliverySourceName),
+      field_delimiter: cdktn.stringToTerraform(this._fieldDelimiter),
+      record_fields: cdktn.listMapper(cdktn.stringToTerraform, false)(this._recordFields),
+      region: cdktn.stringToTerraform(this._region),
+      s3_delivery_configuration: cdktn.listMapper(cloudwatchLogDeliveryS3DeliveryConfigurationToTerraform, false)(this._s3DeliveryConfiguration.internalValue),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delivery_destination_arn: {
-        value: cdktf.stringToHclTerraform(this._deliveryDestinationArn),
+        value: cdktn.stringToHclTerraform(this._deliveryDestinationArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delivery_source_name: {
-        value: cdktf.stringToHclTerraform(this._deliverySourceName),
+        value: cdktn.stringToHclTerraform(this._deliverySourceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       field_delimiter: {
-        value: cdktf.stringToHclTerraform(this._fieldDelimiter),
+        value: cdktn.stringToHclTerraform(this._fieldDelimiter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       record_fields: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._recordFields),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._recordFields),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_delivery_configuration: {
-        value: cdktf.listMapperHcl(cloudwatchLogDeliveryS3DeliveryConfigurationToHclTerraform, false)(this._s3DeliveryConfiguration.internalValue),
+        value: cdktn.listMapperHcl(cloudwatchLogDeliveryS3DeliveryConfigurationToHclTerraform, false)(this._s3DeliveryConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CloudwatchLogDeliveryS3DeliveryConfigurationList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

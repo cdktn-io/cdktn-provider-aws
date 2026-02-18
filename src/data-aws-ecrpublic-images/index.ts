@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEcrpublicImagesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcrpublicImagesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -35,14 +35,14 @@ export interface DataAwsEcrpublicImagesConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecrpublic_images#image_ids DataAwsEcrpublicImages#image_ids}
   */
-  readonly imageIds?: DataAwsEcrpublicImagesImageIds[] | cdktf.IResolvable;
+  readonly imageIds?: DataAwsEcrpublicImagesImageIds[] | cdktn.IResolvable;
 }
 export interface DataAwsEcrpublicImagesImages {
 }
 
 export function dataAwsEcrpublicImagesImagesToTerraform(struct?: DataAwsEcrpublicImagesImages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -51,8 +51,8 @@ export function dataAwsEcrpublicImagesImagesToTerraform(struct?: DataAwsEcrpubli
 
 
 export function dataAwsEcrpublicImagesImagesToHclTerraform(struct?: DataAwsEcrpublicImagesImages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -60,7 +60,7 @@ export function dataAwsEcrpublicImagesImagesToHclTerraform(struct?: DataAwsEcrpu
   return attrs;
 }
 
-export class DataAwsEcrpublicImagesImagesOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcrpublicImagesImagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -69,7 +69,7 @@ export class DataAwsEcrpublicImagesImagesOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -129,14 +129,14 @@ export class DataAwsEcrpublicImagesImagesOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DataAwsEcrpublicImagesImagesList extends cdktf.ComplexList {
+export class DataAwsEcrpublicImagesImagesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -162,32 +162,32 @@ export interface DataAwsEcrpublicImagesImageIds {
   readonly imageTag?: string;
 }
 
-export function dataAwsEcrpublicImagesImageIdsToTerraform(struct?: DataAwsEcrpublicImagesImageIds | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcrpublicImagesImageIdsToTerraform(struct?: DataAwsEcrpublicImagesImageIds | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image_digest: cdktf.stringToTerraform(struct!.imageDigest),
-    image_tag: cdktf.stringToTerraform(struct!.imageTag),
+    image_digest: cdktn.stringToTerraform(struct!.imageDigest),
+    image_tag: cdktn.stringToTerraform(struct!.imageTag),
   }
 }
 
 
-export function dataAwsEcrpublicImagesImageIdsToHclTerraform(struct?: DataAwsEcrpublicImagesImageIds | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsEcrpublicImagesImageIdsToHclTerraform(struct?: DataAwsEcrpublicImagesImageIds | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image_digest: {
-      value: cdktf.stringToHclTerraform(struct!.imageDigest),
+      value: cdktn.stringToHclTerraform(struct!.imageDigest),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_tag: {
-      value: cdktf.stringToHclTerraform(struct!.imageTag),
+      value: cdktn.stringToHclTerraform(struct!.imageTag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -198,9 +198,9 @@ export function dataAwsEcrpublicImagesImageIdsToHclTerraform(struct?: DataAwsEcr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsEcrpublicImagesImageIdsOutputReference extends cdktf.ComplexObject {
+export class DataAwsEcrpublicImagesImageIdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -208,11 +208,11 @@ export class DataAwsEcrpublicImagesImageIdsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEcrpublicImagesImageIds | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsEcrpublicImagesImageIds | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -229,14 +229,14 @@ export class DataAwsEcrpublicImagesImageIdsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEcrpublicImagesImageIds | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEcrpublicImagesImageIds | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._imageDigest = undefined;
       this._imageTag = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -281,15 +281,15 @@ export class DataAwsEcrpublicImagesImageIdsOutputReference extends cdktf.Complex
   }
 }
 
-export class DataAwsEcrpublicImagesImageIdsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEcrpublicImagesImageIds[] | cdktf.IResolvable
+export class DataAwsEcrpublicImagesImageIdsList extends cdktn.ComplexList {
+  public internalValue? : DataAwsEcrpublicImagesImageIds[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -304,7 +304,7 @@ export class DataAwsEcrpublicImagesImageIdsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecrpublic_images aws_ecrpublic_images}
 */
-export class DataAwsEcrpublicImages extends cdktf.TerraformDataSource {
+export class DataAwsEcrpublicImages extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -315,14 +315,14 @@ export class DataAwsEcrpublicImages extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEcrpublicImages resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEcrpublicImages resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEcrpublicImages to import
   * @param importFromId The id of the existing DataAwsEcrpublicImages that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/ecrpublic_images#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEcrpublicImages to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecrpublic_images", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ecrpublic_images", importId: importFromId, provider });
       }
 
   // ===========
@@ -418,7 +418,7 @@ export class DataAwsEcrpublicImages extends cdktf.TerraformDataSource {
   public get imageIds() {
     return this._imageIds;
   }
-  public putImageIds(value: DataAwsEcrpublicImagesImageIds[] | cdktf.IResolvable) {
+  public putImageIds(value: DataAwsEcrpublicImagesImageIds[] | cdktn.IResolvable) {
     this._imageIds.internalValue = value;
   }
   public resetImageIds() {
@@ -435,35 +435,35 @@ export class DataAwsEcrpublicImages extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      registry_id: cdktf.stringToTerraform(this._registryId),
-      repository_name: cdktf.stringToTerraform(this._repositoryName),
-      image_ids: cdktf.listMapper(dataAwsEcrpublicImagesImageIdsToTerraform, true)(this._imageIds.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      registry_id: cdktn.stringToTerraform(this._registryId),
+      repository_name: cdktn.stringToTerraform(this._repositoryName),
+      image_ids: cdktn.listMapper(dataAwsEcrpublicImagesImageIdsToTerraform, true)(this._imageIds.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       registry_id: {
-        value: cdktf.stringToHclTerraform(this._registryId),
+        value: cdktn.stringToHclTerraform(this._registryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_name: {
-        value: cdktf.stringToHclTerraform(this._repositoryName),
+        value: cdktn.stringToHclTerraform(this._repositoryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_ids: {
-        value: cdktf.listMapperHcl(dataAwsEcrpublicImagesImageIdsToHclTerraform, true)(this._imageIds.internalValue),
+        value: cdktn.listMapperHcl(dataAwsEcrpublicImagesImageIdsToHclTerraform, true)(this._imageIds.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsEcrpublicImagesImageIdsList",

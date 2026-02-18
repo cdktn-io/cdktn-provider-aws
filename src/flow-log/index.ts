@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
+export interface FlowLogConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}
   */
@@ -100,46 +100,46 @@ export interface FlowLogDestinationOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}
   */
-  readonly hiveCompatiblePartitions?: boolean | cdktf.IResolvable;
+  readonly hiveCompatiblePartitions?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}
   */
-  readonly perHourPartition?: boolean | cdktf.IResolvable;
+  readonly perHourPartition?: boolean | cdktn.IResolvable;
 }
 
 export function flowLogDestinationOptionsToTerraform(struct?: FlowLogDestinationOptionsOutputReference | FlowLogDestinationOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_format: cdktf.stringToTerraform(struct!.fileFormat),
-    hive_compatible_partitions: cdktf.booleanToTerraform(struct!.hiveCompatiblePartitions),
-    per_hour_partition: cdktf.booleanToTerraform(struct!.perHourPartition),
+    file_format: cdktn.stringToTerraform(struct!.fileFormat),
+    hive_compatible_partitions: cdktn.booleanToTerraform(struct!.hiveCompatiblePartitions),
+    per_hour_partition: cdktn.booleanToTerraform(struct!.perHourPartition),
   }
 }
 
 
 export function flowLogDestinationOptionsToHclTerraform(struct?: FlowLogDestinationOptionsOutputReference | FlowLogDestinationOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_format: {
-      value: cdktf.stringToHclTerraform(struct!.fileFormat),
+      value: cdktn.stringToHclTerraform(struct!.fileFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hive_compatible_partitions: {
-      value: cdktf.booleanToHclTerraform(struct!.hiveCompatiblePartitions),
+      value: cdktn.booleanToHclTerraform(struct!.hiveCompatiblePartitions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     per_hour_partition: {
-      value: cdktf.booleanToHclTerraform(struct!.perHourPartition),
+      value: cdktn.booleanToHclTerraform(struct!.perHourPartition),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -150,14 +150,14 @@ export function flowLogDestinationOptionsToHclTerraform(struct?: FlowLogDestinat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObject {
+export class FlowLogDestinationOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -211,11 +211,11 @@ export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObjec
   }
 
   // hive_compatible_partitions - computed: false, optional: true, required: false
-  private _hiveCompatiblePartitions?: boolean | cdktf.IResolvable; 
+  private _hiveCompatiblePartitions?: boolean | cdktn.IResolvable; 
   public get hiveCompatiblePartitions() {
     return this.getBooleanAttribute('hive_compatible_partitions');
   }
-  public set hiveCompatiblePartitions(value: boolean | cdktf.IResolvable) {
+  public set hiveCompatiblePartitions(value: boolean | cdktn.IResolvable) {
     this._hiveCompatiblePartitions = value;
   }
   public resetHiveCompatiblePartitions() {
@@ -227,11 +227,11 @@ export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObjec
   }
 
   // per_hour_partition - computed: false, optional: true, required: false
-  private _perHourPartition?: boolean | cdktf.IResolvable; 
+  private _perHourPartition?: boolean | cdktn.IResolvable; 
   public get perHourPartition() {
     return this.getBooleanAttribute('per_hour_partition');
   }
-  public set perHourPartition(value: boolean | cdktf.IResolvable) {
+  public set perHourPartition(value: boolean | cdktn.IResolvable) {
     this._perHourPartition = value;
   }
   public resetPerHourPartition() {
@@ -246,7 +246,7 @@ export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/flow_log aws_flow_log}
 */
-export class FlowLog extends cdktf.TerraformResource {
+export class FlowLog extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -257,14 +257,14 @@ export class FlowLog extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FlowLog resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FlowLog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FlowLog to import
   * @param importFromId The id of the existing FlowLog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/flow_log#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FlowLog to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_flow_log", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_flow_log", importId: importFromId, provider });
       }
 
   // ===========
@@ -617,23 +617,23 @@ export class FlowLog extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deliver_cross_account_role: cdktf.stringToTerraform(this._deliverCrossAccountRole),
-      eni_id: cdktf.stringToTerraform(this._eniId),
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      log_destination: cdktf.stringToTerraform(this._logDestination),
-      log_destination_type: cdktf.stringToTerraform(this._logDestinationType),
-      log_format: cdktf.stringToTerraform(this._logFormat),
-      max_aggregation_interval: cdktf.numberToTerraform(this._maxAggregationInterval),
-      region: cdktf.stringToTerraform(this._region),
-      regional_nat_gateway_id: cdktf.stringToTerraform(this._regionalNatGatewayId),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      traffic_type: cdktf.stringToTerraform(this._trafficType),
-      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
-      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      deliver_cross_account_role: cdktn.stringToTerraform(this._deliverCrossAccountRole),
+      eni_id: cdktn.stringToTerraform(this._eniId),
+      iam_role_arn: cdktn.stringToTerraform(this._iamRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      log_destination: cdktn.stringToTerraform(this._logDestination),
+      log_destination_type: cdktn.stringToTerraform(this._logDestinationType),
+      log_format: cdktn.stringToTerraform(this._logFormat),
+      max_aggregation_interval: cdktn.numberToTerraform(this._maxAggregationInterval),
+      region: cdktn.stringToTerraform(this._region),
+      regional_nat_gateway_id: cdktn.stringToTerraform(this._regionalNatGatewayId),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      traffic_type: cdktn.stringToTerraform(this._trafficType),
+      transit_gateway_attachment_id: cdktn.stringToTerraform(this._transitGatewayAttachmentId),
+      transit_gateway_id: cdktn.stringToTerraform(this._transitGatewayId),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
       destination_options: flowLogDestinationOptionsToTerraform(this._destinationOptions.internalValue),
     };
   }
@@ -641,103 +641,103 @@ export class FlowLog extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deliver_cross_account_role: {
-        value: cdktf.stringToHclTerraform(this._deliverCrossAccountRole),
+        value: cdktn.stringToHclTerraform(this._deliverCrossAccountRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eni_id: {
-        value: cdktf.stringToHclTerraform(this._eniId),
+        value: cdktn.stringToHclTerraform(this._eniId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_destination: {
-        value: cdktf.stringToHclTerraform(this._logDestination),
+        value: cdktn.stringToHclTerraform(this._logDestination),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_destination_type: {
-        value: cdktf.stringToHclTerraform(this._logDestinationType),
+        value: cdktn.stringToHclTerraform(this._logDestinationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_format: {
-        value: cdktf.stringToHclTerraform(this._logFormat),
+        value: cdktn.stringToHclTerraform(this._logFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_aggregation_interval: {
-        value: cdktf.numberToHclTerraform(this._maxAggregationInterval),
+        value: cdktn.numberToHclTerraform(this._maxAggregationInterval),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       regional_nat_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._regionalNatGatewayId),
+        value: cdktn.stringToHclTerraform(this._regionalNatGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       traffic_type: {
-        value: cdktf.stringToHclTerraform(this._trafficType),
+        value: cdktn.stringToHclTerraform(this._trafficType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_attachment_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayAttachmentId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayAttachmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

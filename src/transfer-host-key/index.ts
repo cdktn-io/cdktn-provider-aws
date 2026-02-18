@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransferHostKeyConfig extends cdktf.TerraformMetaArguments {
+export interface TransferHostKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_host_key#description TransferHostKey#description}
   */
@@ -43,7 +43,7 @@ export interface TransferHostKeyConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_host_key aws_transfer_host_key}
 */
-export class TransferHostKey extends cdktf.TerraformResource {
+export class TransferHostKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +54,14 @@ export class TransferHostKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransferHostKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransferHostKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferHostKey to import
   * @param importFromId The id of the existing TransferHostKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/transfer_host_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferHostKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_host_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_transfer_host_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -212,7 +212,7 @@ export class TransferHostKey extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -223,49 +223,49 @@ export class TransferHostKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      host_key_body: cdktf.stringToTerraform(this._hostKeyBody),
-      host_key_body_wo: cdktf.stringToTerraform(this._hostKeyBodyWo),
-      region: cdktf.stringToTerraform(this._region),
-      server_id: cdktf.stringToTerraform(this._serverId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      description: cdktn.stringToTerraform(this._description),
+      host_key_body: cdktn.stringToTerraform(this._hostKeyBody),
+      host_key_body_wo: cdktn.stringToTerraform(this._hostKeyBodyWo),
+      region: cdktn.stringToTerraform(this._region),
+      server_id: cdktn.stringToTerraform(this._serverId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_key_body: {
-        value: cdktf.stringToHclTerraform(this._hostKeyBody),
+        value: cdktn.stringToHclTerraform(this._hostKeyBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_key_body_wo: {
-        value: cdktf.stringToHclTerraform(this._hostKeyBodyWo),
+        value: cdktn.stringToHclTerraform(this._hostKeyBodyWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_id: {
-        value: cdktf.stringToHclTerraform(this._serverId),
+        value: cdktn.stringToHclTerraform(this._serverId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

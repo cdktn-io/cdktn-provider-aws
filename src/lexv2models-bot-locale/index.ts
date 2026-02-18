@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Lexv2ModelsBotLocaleConfig extends cdktf.TerraformMetaArguments {
+export interface Lexv2ModelsBotLocaleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot_locale#bot_id Lexv2ModelsBotLocale#bot_id}
   */
@@ -53,7 +53,7 @@ export interface Lexv2ModelsBotLocaleConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot_locale#voice_settings Lexv2ModelsBotLocale#voice_settings}
   */
-  readonly voiceSettings?: Lexv2ModelsBotLocaleVoiceSettings[] | cdktf.IResolvable;
+  readonly voiceSettings?: Lexv2ModelsBotLocaleVoiceSettings[] | cdktn.IResolvable;
 }
 export interface Lexv2ModelsBotLocaleTimeouts {
   /**
@@ -76,39 +76,39 @@ export interface Lexv2ModelsBotLocaleTimeouts {
   readonly update?: string;
 }
 
-export function lexv2ModelsBotLocaleTimeoutsToTerraform(struct?: Lexv2ModelsBotLocaleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotLocaleTimeoutsToTerraform(struct?: Lexv2ModelsBotLocaleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lexv2ModelsBotLocaleTimeoutsToHclTerraform(struct?: Lexv2ModelsBotLocaleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotLocaleTimeoutsToHclTerraform(struct?: Lexv2ModelsBotLocaleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function lexv2ModelsBotLocaleTimeoutsToHclTerraform(struct?: Lexv2ModelsB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsBotLocaleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsBotLocaleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Lexv2ModelsBotLocaleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsBotLocaleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class Lexv2ModelsBotLocaleTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsBotLocaleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsBotLocaleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -160,7 +160,7 @@ export class Lexv2ModelsBotLocaleTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -232,32 +232,32 @@ export interface Lexv2ModelsBotLocaleVoiceSettings {
   readonly voiceId: string;
 }
 
-export function lexv2ModelsBotLocaleVoiceSettingsToTerraform(struct?: Lexv2ModelsBotLocaleVoiceSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotLocaleVoiceSettingsToTerraform(struct?: Lexv2ModelsBotLocaleVoiceSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    engine: cdktf.stringToTerraform(struct!.engine),
-    voice_id: cdktf.stringToTerraform(struct!.voiceId),
+    engine: cdktn.stringToTerraform(struct!.engine),
+    voice_id: cdktn.stringToTerraform(struct!.voiceId),
   }
 }
 
 
-export function lexv2ModelsBotLocaleVoiceSettingsToHclTerraform(struct?: Lexv2ModelsBotLocaleVoiceSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lexv2ModelsBotLocaleVoiceSettingsToHclTerraform(struct?: Lexv2ModelsBotLocaleVoiceSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     engine: {
-      value: cdktf.stringToHclTerraform(struct!.engine),
+      value: cdktn.stringToHclTerraform(struct!.engine),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     voice_id: {
-      value: cdktf.stringToHclTerraform(struct!.voiceId),
+      value: cdktn.stringToHclTerraform(struct!.voiceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -268,9 +268,9 @@ export function lexv2ModelsBotLocaleVoiceSettingsToHclTerraform(struct?: Lexv2Mo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsBotLocaleVoiceSettingsOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsBotLocaleVoiceSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -278,11 +278,11 @@ export class Lexv2ModelsBotLocaleVoiceSettingsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsBotLocaleVoiceSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsBotLocaleVoiceSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -299,14 +299,14 @@ export class Lexv2ModelsBotLocaleVoiceSettingsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsBotLocaleVoiceSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsBotLocaleVoiceSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._engine = undefined;
       this._voiceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -348,15 +348,15 @@ export class Lexv2ModelsBotLocaleVoiceSettingsOutputReference extends cdktf.Comp
   }
 }
 
-export class Lexv2ModelsBotLocaleVoiceSettingsList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsBotLocaleVoiceSettings[] | cdktf.IResolvable
+export class Lexv2ModelsBotLocaleVoiceSettingsList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsBotLocaleVoiceSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -371,7 +371,7 @@ export class Lexv2ModelsBotLocaleVoiceSettingsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale}
 */
-export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
+export class Lexv2ModelsBotLocale extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -382,14 +382,14 @@ export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Lexv2ModelsBotLocale resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Lexv2ModelsBotLocale resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lexv2ModelsBotLocale to import
   * @param importFromId The id of the existing Lexv2ModelsBotLocale that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_bot_locale#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lexv2ModelsBotLocale to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_bot_locale", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lexv2models_bot_locale", importId: importFromId, provider });
       }
 
   // ===========
@@ -560,7 +560,7 @@ export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
   public get voiceSettings() {
     return this._voiceSettings;
   }
-  public putVoiceSettings(value: Lexv2ModelsBotLocaleVoiceSettings[] | cdktf.IResolvable) {
+  public putVoiceSettings(value: Lexv2ModelsBotLocaleVoiceSettings[] | cdktn.IResolvable) {
     this._voiceSettings.internalValue = value;
   }
   public resetVoiceSettings() {
@@ -577,58 +577,58 @@ export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bot_id: cdktf.stringToTerraform(this._botId),
-      bot_version: cdktf.stringToTerraform(this._botVersion),
-      description: cdktf.stringToTerraform(this._description),
-      locale_id: cdktf.stringToTerraform(this._localeId),
-      n_lu_intent_confidence_threshold: cdktf.numberToTerraform(this._nLuIntentConfidenceThreshold),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      bot_id: cdktn.stringToTerraform(this._botId),
+      bot_version: cdktn.stringToTerraform(this._botVersion),
+      description: cdktn.stringToTerraform(this._description),
+      locale_id: cdktn.stringToTerraform(this._localeId),
+      n_lu_intent_confidence_threshold: cdktn.numberToTerraform(this._nLuIntentConfidenceThreshold),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: lexv2ModelsBotLocaleTimeoutsToTerraform(this._timeouts.internalValue),
-      voice_settings: cdktf.listMapper(lexv2ModelsBotLocaleVoiceSettingsToTerraform, true)(this._voiceSettings.internalValue),
+      voice_settings: cdktn.listMapper(lexv2ModelsBotLocaleVoiceSettingsToTerraform, true)(this._voiceSettings.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bot_id: {
-        value: cdktf.stringToHclTerraform(this._botId),
+        value: cdktn.stringToHclTerraform(this._botId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bot_version: {
-        value: cdktf.stringToHclTerraform(this._botVersion),
+        value: cdktn.stringToHclTerraform(this._botVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       locale_id: {
-        value: cdktf.stringToHclTerraform(this._localeId),
+        value: cdktn.stringToHclTerraform(this._localeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       n_lu_intent_confidence_threshold: {
-        value: cdktf.numberToHclTerraform(this._nLuIntentConfidenceThreshold),
+        value: cdktn.numberToHclTerraform(this._nLuIntentConfidenceThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -640,7 +640,7 @@ export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
         storageClassType: "Lexv2ModelsBotLocaleTimeouts",
       },
       voice_settings: {
-        value: cdktf.listMapperHcl(lexv2ModelsBotLocaleVoiceSettingsToHclTerraform, true)(this._voiceSettings.internalValue),
+        value: cdktn.listMapperHcl(lexv2ModelsBotLocaleVoiceSettingsToHclTerraform, true)(this._voiceSettings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "Lexv2ModelsBotLocaleVoiceSettingsList",

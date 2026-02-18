@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EksIdentityProviderConfigConfig extends cdktf.TerraformMetaArguments {
+export interface EksIdentityProviderConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_identity_provider_config#cluster_name EksIdentityProviderConfig#cluster_name}
   */
@@ -86,73 +86,73 @@ export interface EksIdentityProviderConfigOidc {
 }
 
 export function eksIdentityProviderConfigOidcToTerraform(struct?: EksIdentityProviderConfigOidcOutputReference | EksIdentityProviderConfigOidc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    groups_claim: cdktf.stringToTerraform(struct!.groupsClaim),
-    groups_prefix: cdktf.stringToTerraform(struct!.groupsPrefix),
-    identity_provider_config_name: cdktf.stringToTerraform(struct!.identityProviderConfigName),
-    issuer_url: cdktf.stringToTerraform(struct!.issuerUrl),
-    required_claims: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requiredClaims),
-    username_claim: cdktf.stringToTerraform(struct!.usernameClaim),
-    username_prefix: cdktf.stringToTerraform(struct!.usernamePrefix),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    groups_claim: cdktn.stringToTerraform(struct!.groupsClaim),
+    groups_prefix: cdktn.stringToTerraform(struct!.groupsPrefix),
+    identity_provider_config_name: cdktn.stringToTerraform(struct!.identityProviderConfigName),
+    issuer_url: cdktn.stringToTerraform(struct!.issuerUrl),
+    required_claims: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.requiredClaims),
+    username_claim: cdktn.stringToTerraform(struct!.usernameClaim),
+    username_prefix: cdktn.stringToTerraform(struct!.usernamePrefix),
   }
 }
 
 
 export function eksIdentityProviderConfigOidcToHclTerraform(struct?: EksIdentityProviderConfigOidcOutputReference | EksIdentityProviderConfigOidc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     groups_claim: {
-      value: cdktf.stringToHclTerraform(struct!.groupsClaim),
+      value: cdktn.stringToHclTerraform(struct!.groupsClaim),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     groups_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.groupsPrefix),
+      value: cdktn.stringToHclTerraform(struct!.groupsPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_config_name: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderConfigName),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderConfigName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer_url: {
-      value: cdktf.stringToHclTerraform(struct!.issuerUrl),
+      value: cdktn.stringToHclTerraform(struct!.issuerUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required_claims: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requiredClaims),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.requiredClaims),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     username_claim: {
-      value: cdktf.stringToHclTerraform(struct!.usernameClaim),
+      value: cdktn.stringToHclTerraform(struct!.usernameClaim),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.usernamePrefix),
+      value: cdktn.stringToHclTerraform(struct!.usernamePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -163,14 +163,14 @@ export function eksIdentityProviderConfigOidcToHclTerraform(struct?: EksIdentity
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksIdentityProviderConfigOidcOutputReference extends cdktf.ComplexObject {
+export class EksIdentityProviderConfigOidcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -367,32 +367,32 @@ export interface EksIdentityProviderConfigTimeouts {
   readonly delete?: string;
 }
 
-export function eksIdentityProviderConfigTimeoutsToTerraform(struct?: EksIdentityProviderConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksIdentityProviderConfigTimeoutsToTerraform(struct?: EksIdentityProviderConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function eksIdentityProviderConfigTimeoutsToHclTerraform(struct?: EksIdentityProviderConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eksIdentityProviderConfigTimeoutsToHclTerraform(struct?: EksIdentityProviderConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -403,19 +403,19 @@ export function eksIdentityProviderConfigTimeoutsToHclTerraform(struct?: EksIden
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EksIdentityProviderConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EksIdentityProviderConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EksIdentityProviderConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EksIdentityProviderConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -432,14 +432,14 @@ export class EksIdentityProviderConfigTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksIdentityProviderConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EksIdentityProviderConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -487,7 +487,7 @@ export class EksIdentityProviderConfigTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_identity_provider_config aws_eks_identity_provider_config}
 */
-export class EksIdentityProviderConfig extends cdktf.TerraformResource {
+export class EksIdentityProviderConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -498,14 +498,14 @@ export class EksIdentityProviderConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EksIdentityProviderConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EksIdentityProviderConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksIdentityProviderConfig to import
   * @param importFromId The id of the existing EksIdentityProviderConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/eks_identity_provider_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksIdentityProviderConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_identity_provider_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_identity_provider_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -670,11 +670,11 @@ export class EksIdentityProviderConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       oidc: eksIdentityProviderConfigOidcToTerraform(this._oidc.internalValue),
       timeouts: eksIdentityProviderConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -683,31 +683,31 @@ export class EksIdentityProviderConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

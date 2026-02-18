@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoadBalancerBackendServerPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface LoadBalancerBackendServerPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/load_balancer_backend_server_policy#id LoadBalancerBackendServerPolicy#id}
   *
@@ -42,7 +42,7 @@ export interface LoadBalancerBackendServerPolicyConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/load_balancer_backend_server_policy aws_load_balancer_backend_server_policy}
 */
-export class LoadBalancerBackendServerPolicy extends cdktf.TerraformResource {
+export class LoadBalancerBackendServerPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class LoadBalancerBackendServerPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoadBalancerBackendServerPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoadBalancerBackendServerPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadBalancerBackendServerPolicy to import
   * @param importFromId The id of the existing LoadBalancerBackendServerPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/load_balancer_backend_server_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadBalancerBackendServerPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_load_balancer_backend_server_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_load_balancer_backend_server_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -146,7 +146,7 @@ export class LoadBalancerBackendServerPolicy extends cdktf.TerraformResource {
   // policy_names - computed: false, optional: true, required: false
   private _policyNames?: string[]; 
   public get policyNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('policy_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('policy_names'));
   }
   public set policyNames(value: string[]) {
     this._policyNames = value;
@@ -181,42 +181,42 @@ export class LoadBalancerBackendServerPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_port: cdktf.numberToTerraform(this._instancePort),
-      load_balancer_name: cdktf.stringToTerraform(this._loadBalancerName),
-      policy_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyNames),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      instance_port: cdktn.numberToTerraform(this._instancePort),
+      load_balancer_name: cdktn.stringToTerraform(this._loadBalancerName),
+      policy_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policyNames),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_port: {
-        value: cdktf.numberToHclTerraform(this._instancePort),
+        value: cdktn.numberToHclTerraform(this._instancePort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       load_balancer_name: {
-        value: cdktf.stringToHclTerraform(this._loadBalancerName),
+        value: cdktn.stringToHclTerraform(this._loadBalancerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policyNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

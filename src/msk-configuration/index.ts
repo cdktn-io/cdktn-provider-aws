@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MskConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface MskConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_configuration#description MskConfiguration#description}
   */
@@ -46,7 +46,7 @@ export interface MskConfigurationConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_configuration aws_msk_configuration}
 */
-export class MskConfiguration extends cdktf.TerraformResource {
+export class MskConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class MskConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MskConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MskConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MskConfiguration to import
   * @param importFromId The id of the existing MskConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/msk_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MskConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_msk_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -146,7 +146,7 @@ export class MskConfiguration extends cdktf.TerraformResource {
   // kafka_versions - computed: false, optional: true, required: false
   private _kafkaVersions?: string[]; 
   public get kafkaVersions() {
-    return cdktf.Fn.tolist(this.getListAttribute('kafka_versions'));
+    return cdktn.Fn.tolist(this.getListAttribute('kafka_versions'));
   }
   public set kafkaVersions(value: string[]) {
     this._kafkaVersions = value;
@@ -212,49 +212,49 @@ export class MskConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      kafka_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._kafkaVersions),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      server_properties: cdktf.stringToTerraform(this._serverProperties),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      kafka_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._kafkaVersions),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      server_properties: cdktn.stringToTerraform(this._serverProperties),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kafka_versions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._kafkaVersions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._kafkaVersions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_properties: {
-        value: cdktf.stringToHclTerraform(this._serverProperties),
+        value: cdktn.stringToHclTerraform(this._serverProperties),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

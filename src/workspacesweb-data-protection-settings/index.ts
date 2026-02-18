@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebDataProtectionSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebDataProtectionSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings#additional_encryption_context WorkspaceswebDataProtectionSettings#additional_encryption_context}
   */
@@ -43,7 +43,7 @@ export interface WorkspaceswebDataProtectionSettingsConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings#inline_redaction_configuration WorkspaceswebDataProtectionSettings#inline_redaction_configuration}
   */
-  readonly inlineRedactionConfiguration?: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration[] | cdktf.IResolvable;
+  readonly inlineRedactionConfiguration?: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration[] | cdktn.IResolvable;
 }
 export interface WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern {
   /**
@@ -64,46 +64,46 @@ export interface WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration
   readonly patternRegex: string;
 }
 
-export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternToTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternToTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    keyword_regex: cdktf.stringToTerraform(struct!.keywordRegex),
-    pattern_description: cdktf.stringToTerraform(struct!.patternDescription),
-    pattern_name: cdktf.stringToTerraform(struct!.patternName),
-    pattern_regex: cdktf.stringToTerraform(struct!.patternRegex),
+    keyword_regex: cdktn.stringToTerraform(struct!.keywordRegex),
+    pattern_description: cdktn.stringToTerraform(struct!.patternDescription),
+    pattern_name: cdktn.stringToTerraform(struct!.patternName),
+    pattern_regex: cdktn.stringToTerraform(struct!.patternRegex),
   }
 }
 
 
-export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternToHclTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternToHclTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     keyword_regex: {
-      value: cdktf.stringToHclTerraform(struct!.keywordRegex),
+      value: cdktn.stringToHclTerraform(struct!.keywordRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pattern_description: {
-      value: cdktf.stringToHclTerraform(struct!.patternDescription),
+      value: cdktn.stringToHclTerraform(struct!.patternDescription),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pattern_name: {
-      value: cdktf.stringToHclTerraform(struct!.patternName),
+      value: cdktn.stringToHclTerraform(struct!.patternName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pattern_regex: {
-      value: cdktf.stringToHclTerraform(struct!.patternRegex),
+      value: cdktn.stringToHclTerraform(struct!.patternRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,9 +114,9 @@ export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -124,11 +124,11 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,7 +153,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -162,7 +162,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
       this._patternName = undefined;
       this._patternRegex = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,15 +235,15 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
   }
 }
 
-export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern[] | cdktf.IResolvable
+export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -265,32 +265,32 @@ export interface WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration
   readonly redactionPlaceHolderType: string;
 }
 
-export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderToTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderToTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    redaction_place_holder_text: cdktf.stringToTerraform(struct!.redactionPlaceHolderText),
-    redaction_place_holder_type: cdktf.stringToTerraform(struct!.redactionPlaceHolderType),
+    redaction_place_holder_text: cdktn.stringToTerraform(struct!.redactionPlaceHolderText),
+    redaction_place_holder_type: cdktn.stringToTerraform(struct!.redactionPlaceHolderType),
   }
 }
 
 
-export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderToHclTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderToHclTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     redaction_place_holder_text: {
-      value: cdktf.stringToHclTerraform(struct!.redactionPlaceHolderText),
+      value: cdktn.stringToHclTerraform(struct!.redactionPlaceHolderText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redaction_place_holder_type: {
-      value: cdktf.stringToHclTerraform(struct!.redactionPlaceHolderType),
+      value: cdktn.stringToHclTerraform(struct!.redactionPlaceHolderType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -301,9 +301,9 @@ export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -311,11 +311,11 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -332,14 +332,14 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._redactionPlaceHolderText = undefined;
       this._redactionPlaceHolderType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -381,15 +381,15 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
   }
 }
 
-export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder[] | cdktf.IResolvable
+export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -422,69 +422,69 @@ export interface WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings#custom_pattern WorkspaceswebDataProtectionSettings#custom_pattern}
   */
-  readonly customPattern?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern[] | cdktf.IResolvable;
+  readonly customPattern?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern[] | cdktn.IResolvable;
   /**
   * redaction_place_holder block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings#redaction_place_holder WorkspaceswebDataProtectionSettings#redaction_place_holder}
   */
-  readonly redactionPlaceHolder?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder[] | cdktf.IResolvable;
+  readonly redactionPlaceHolder?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder[] | cdktn.IResolvable;
 }
 
-export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternToTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternToTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    built_in_pattern_id: cdktf.stringToTerraform(struct!.builtInPatternId),
-    confidence_level: cdktf.numberToTerraform(struct!.confidenceLevel),
-    enforced_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enforcedUrls),
-    exempt_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exemptUrls),
-    custom_pattern: cdktf.listMapper(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternToTerraform, true)(struct!.customPattern),
-    redaction_place_holder: cdktf.listMapper(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderToTerraform, true)(struct!.redactionPlaceHolder),
+    built_in_pattern_id: cdktn.stringToTerraform(struct!.builtInPatternId),
+    confidence_level: cdktn.numberToTerraform(struct!.confidenceLevel),
+    enforced_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.enforcedUrls),
+    exempt_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exemptUrls),
+    custom_pattern: cdktn.listMapper(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternToTerraform, true)(struct!.customPattern),
+    redaction_place_holder: cdktn.listMapper(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderToTerraform, true)(struct!.redactionPlaceHolder),
   }
 }
 
 
-export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternToHclTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternToHclTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     built_in_pattern_id: {
-      value: cdktf.stringToHclTerraform(struct!.builtInPatternId),
+      value: cdktn.stringToHclTerraform(struct!.builtInPatternId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     confidence_level: {
-      value: cdktf.numberToHclTerraform(struct!.confidenceLevel),
+      value: cdktn.numberToHclTerraform(struct!.confidenceLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enforced_urls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.enforcedUrls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.enforcedUrls),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     exempt_urls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exemptUrls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exemptUrls),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     custom_pattern: {
-      value: cdktf.listMapperHcl(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternToHclTerraform, true)(struct!.customPattern),
+      value: cdktn.listMapperHcl(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternToHclTerraform, true)(struct!.customPattern),
       isBlock: true,
       type: "list",
       storageClassType: "WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternList",
     },
     redaction_place_holder: {
-      value: cdktf.listMapperHcl(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderToHclTerraform, true)(struct!.redactionPlaceHolder),
+      value: cdktn.listMapperHcl(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderToHclTerraform, true)(struct!.redactionPlaceHolder),
       isBlock: true,
       type: "list",
       storageClassType: "WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderList",
@@ -495,9 +495,9 @@ export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -505,11 +505,11 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -542,7 +542,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -553,7 +553,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
       this._customPattern.internalValue = undefined;
       this._redactionPlaceHolder.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -638,7 +638,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
   public get customPattern() {
     return this._customPattern;
   }
-  public putCustomPattern(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern[] | cdktf.IResolvable) {
+  public putCustomPattern(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern[] | cdktn.IResolvable) {
     this._customPattern.internalValue = value;
   }
   public resetCustomPattern() {
@@ -654,7 +654,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
   public get redactionPlaceHolder() {
     return this._redactionPlaceHolder;
   }
-  public putRedactionPlaceHolder(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder[] | cdktf.IResolvable) {
+  public putRedactionPlaceHolder(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder[] | cdktn.IResolvable) {
     this._redactionPlaceHolder.internalValue = value;
   }
   public resetRedactionPlaceHolder() {
@@ -666,15 +666,15 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInli
   }
 }
 
-export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern[] | cdktf.IResolvable
+export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -703,49 +703,49 @@ export interface WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings#inline_redaction_pattern WorkspaceswebDataProtectionSettings#inline_redaction_pattern}
   */
-  readonly inlineRedactionPattern?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern[] | cdktf.IResolvable;
+  readonly inlineRedactionPattern?: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern[] | cdktn.IResolvable;
 }
 
-export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationToTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationToTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    global_confidence_level: cdktf.numberToTerraform(struct!.globalConfidenceLevel),
-    global_enforced_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.globalEnforcedUrls),
-    global_exempt_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.globalExemptUrls),
-    inline_redaction_pattern: cdktf.listMapper(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternToTerraform, true)(struct!.inlineRedactionPattern),
+    global_confidence_level: cdktn.numberToTerraform(struct!.globalConfidenceLevel),
+    global_enforced_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.globalEnforcedUrls),
+    global_exempt_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.globalExemptUrls),
+    inline_redaction_pattern: cdktn.listMapper(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternToTerraform, true)(struct!.inlineRedactionPattern),
   }
 }
 
 
-export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationToHclTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationToHclTerraform(struct?: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     global_confidence_level: {
-      value: cdktf.numberToHclTerraform(struct!.globalConfidenceLevel),
+      value: cdktn.numberToHclTerraform(struct!.globalConfidenceLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     global_enforced_urls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.globalEnforcedUrls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.globalEnforcedUrls),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     global_exempt_urls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.globalExemptUrls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.globalExemptUrls),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     inline_redaction_pattern: {
-      value: cdktf.listMapperHcl(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternToHclTerraform, true)(struct!.inlineRedactionPattern),
+      value: cdktn.listMapperHcl(workspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternToHclTerraform, true)(struct!.inlineRedactionPattern),
       isBlock: true,
       type: "list",
       storageClassType: "WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternList",
@@ -756,9 +756,9 @@ export function workspaceswebDataProtectionSettingsInlineRedactionConfigurationT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -766,11 +766,11 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -795,7 +795,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -804,7 +804,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutp
       this._globalExemptUrls = undefined;
       this._inlineRedactionPattern.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -871,7 +871,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutp
   public get inlineRedactionPattern() {
     return this._inlineRedactionPattern;
   }
-  public putInlineRedactionPattern(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern[] | cdktf.IResolvable) {
+  public putInlineRedactionPattern(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern[] | cdktn.IResolvable) {
     this._inlineRedactionPattern.internalValue = value;
   }
   public resetInlineRedactionPattern() {
@@ -883,15 +883,15 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutp
   }
 }
 
-export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration[] | cdktf.IResolvable
+export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -906,7 +906,7 @@ export class WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings}
 */
-export class WorkspaceswebDataProtectionSettings extends cdktf.TerraformResource {
+export class WorkspaceswebDataProtectionSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -917,14 +917,14 @@ export class WorkspaceswebDataProtectionSettings extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebDataProtectionSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebDataProtectionSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebDataProtectionSettings to import
   * @param importFromId The id of the existing WorkspaceswebDataProtectionSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_data_protection_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebDataProtectionSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_data_protection_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_data_protection_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -1071,7 +1071,7 @@ export class WorkspaceswebDataProtectionSettings extends cdktf.TerraformResource
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1081,7 +1081,7 @@ export class WorkspaceswebDataProtectionSettings extends cdktf.TerraformResource
   public get inlineRedactionConfiguration() {
     return this._inlineRedactionConfiguration;
   }
-  public putInlineRedactionConfiguration(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration[] | cdktf.IResolvable) {
+  public putInlineRedactionConfiguration(value: WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration[] | cdktn.IResolvable) {
     this._inlineRedactionConfiguration.internalValue = value;
   }
   public resetInlineRedactionConfiguration() {
@@ -1098,56 +1098,56 @@ export class WorkspaceswebDataProtectionSettings extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_encryption_context: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalEncryptionContext),
-      customer_managed_key: cdktf.stringToTerraform(this._customerManagedKey),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      inline_redaction_configuration: cdktf.listMapper(workspaceswebDataProtectionSettingsInlineRedactionConfigurationToTerraform, true)(this._inlineRedactionConfiguration.internalValue),
+      additional_encryption_context: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalEncryptionContext),
+      customer_managed_key: cdktn.stringToTerraform(this._customerManagedKey),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      inline_redaction_configuration: cdktn.listMapper(workspaceswebDataProtectionSettingsInlineRedactionConfigurationToTerraform, true)(this._inlineRedactionConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_encryption_context: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalEncryptionContext),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalEncryptionContext),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       customer_managed_key: {
-        value: cdktf.stringToHclTerraform(this._customerManagedKey),
+        value: cdktn.stringToHclTerraform(this._customerManagedKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       inline_redaction_configuration: {
-        value: cdktf.listMapperHcl(workspaceswebDataProtectionSettingsInlineRedactionConfigurationToHclTerraform, true)(this._inlineRedactionConfiguration.internalValue),
+        value: cdktn.listMapperHcl(workspaceswebDataProtectionSettingsInlineRedactionConfigurationToHclTerraform, true)(this._inlineRedactionConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationList",

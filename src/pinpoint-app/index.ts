@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PinpointAppConfig extends cdktf.TerraformMetaArguments {
+export interface PinpointAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_app#id PinpointApp#id}
   *
@@ -76,38 +76,38 @@ export interface PinpointAppCampaignHook {
 }
 
 export function pinpointAppCampaignHookToTerraform(struct?: PinpointAppCampaignHookOutputReference | PinpointAppCampaignHook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lambda_function_name: cdktf.stringToTerraform(struct!.lambdaFunctionName),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    web_url: cdktf.stringToTerraform(struct!.webUrl),
+    lambda_function_name: cdktn.stringToTerraform(struct!.lambdaFunctionName),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    web_url: cdktn.stringToTerraform(struct!.webUrl),
   }
 }
 
 
 export function pinpointAppCampaignHookToHclTerraform(struct?: PinpointAppCampaignHookOutputReference | PinpointAppCampaignHook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lambda_function_name: {
-      value: cdktf.stringToHclTerraform(struct!.lambdaFunctionName),
+      value: cdktn.stringToHclTerraform(struct!.lambdaFunctionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     web_url: {
-      value: cdktf.stringToHclTerraform(struct!.webUrl),
+      value: cdktn.stringToHclTerraform(struct!.webUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,14 +118,14 @@ export function pinpointAppCampaignHookToHclTerraform(struct?: PinpointAppCampai
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PinpointAppCampaignHookOutputReference extends cdktf.ComplexObject {
+export class PinpointAppCampaignHookOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -230,45 +230,45 @@ export interface PinpointAppLimits {
 }
 
 export function pinpointAppLimitsToTerraform(struct?: PinpointAppLimitsOutputReference | PinpointAppLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    daily: cdktf.numberToTerraform(struct!.daily),
-    maximum_duration: cdktf.numberToTerraform(struct!.maximumDuration),
-    messages_per_second: cdktf.numberToTerraform(struct!.messagesPerSecond),
-    total: cdktf.numberToTerraform(struct!.total),
+    daily: cdktn.numberToTerraform(struct!.daily),
+    maximum_duration: cdktn.numberToTerraform(struct!.maximumDuration),
+    messages_per_second: cdktn.numberToTerraform(struct!.messagesPerSecond),
+    total: cdktn.numberToTerraform(struct!.total),
   }
 }
 
 
 export function pinpointAppLimitsToHclTerraform(struct?: PinpointAppLimitsOutputReference | PinpointAppLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     daily: {
-      value: cdktf.numberToHclTerraform(struct!.daily),
+      value: cdktn.numberToHclTerraform(struct!.daily),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_duration: {
-      value: cdktf.numberToHclTerraform(struct!.maximumDuration),
+      value: cdktn.numberToHclTerraform(struct!.maximumDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     messages_per_second: {
-      value: cdktf.numberToHclTerraform(struct!.messagesPerSecond),
+      value: cdktn.numberToHclTerraform(struct!.messagesPerSecond),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     total: {
-      value: cdktf.numberToHclTerraform(struct!.total),
+      value: cdktn.numberToHclTerraform(struct!.total),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -279,14 +279,14 @@ export function pinpointAppLimitsToHclTerraform(struct?: PinpointAppLimitsOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PinpointAppLimitsOutputReference extends cdktf.ComplexObject {
+export class PinpointAppLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -405,31 +405,31 @@ export interface PinpointAppQuietTime {
 }
 
 export function pinpointAppQuietTimeToTerraform(struct?: PinpointAppQuietTimeOutputReference | PinpointAppQuietTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.stringToTerraform(struct!.end),
-    start: cdktf.stringToTerraform(struct!.start),
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
   }
 }
 
 
 export function pinpointAppQuietTimeToHclTerraform(struct?: PinpointAppQuietTimeOutputReference | PinpointAppQuietTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.stringToHclTerraform(struct!.end),
+      value: cdktn.stringToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -440,14 +440,14 @@ export function pinpointAppQuietTimeToHclTerraform(struct?: PinpointAppQuietTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PinpointAppQuietTimeOutputReference extends cdktf.ComplexObject {
+export class PinpointAppQuietTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -514,7 +514,7 @@ export class PinpointAppQuietTimeOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_app aws_pinpoint_app}
 */
-export class PinpointApp extends cdktf.TerraformResource {
+export class PinpointApp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -525,14 +525,14 @@ export class PinpointApp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PinpointApp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PinpointApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PinpointApp to import
   * @param importFromId The id of the existing PinpointApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PinpointApp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_app", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_app", importId: importFromId, provider });
       }
 
   // ===========
@@ -737,12 +737,12 @@ export class PinpointApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       campaign_hook: pinpointAppCampaignHookToTerraform(this._campaignHook.internalValue),
       limits: pinpointAppLimitsToTerraform(this._limits.internalValue),
       quiet_time: pinpointAppQuietTimeToTerraform(this._quietTime.internalValue),
@@ -752,37 +752,37 @@ export class PinpointApp extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

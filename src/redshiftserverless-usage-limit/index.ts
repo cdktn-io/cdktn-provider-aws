@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftserverlessUsageLimitConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftserverlessUsageLimitConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_usage_limit#amount RedshiftserverlessUsageLimit#amount}
   */
@@ -50,7 +50,7 @@ export interface RedshiftserverlessUsageLimitConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit}
 */
-export class RedshiftserverlessUsageLimit extends cdktf.TerraformResource {
+export class RedshiftserverlessUsageLimit extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class RedshiftserverlessUsageLimit extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftserverlessUsageLimit resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftserverlessUsageLimit resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftserverlessUsageLimit to import
   * @param importFromId The id of the existing RedshiftserverlessUsageLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshiftserverless_usage_limit#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftserverlessUsageLimit to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_usage_limit", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshiftserverless_usage_limit", importId: importFromId, provider });
       }
 
   // ===========
@@ -225,56 +225,56 @@ export class RedshiftserverlessUsageLimit extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amount: cdktf.numberToTerraform(this._amount),
-      breach_action: cdktf.stringToTerraform(this._breachAction),
-      id: cdktf.stringToTerraform(this._id),
-      period: cdktf.stringToTerraform(this._period),
-      region: cdktf.stringToTerraform(this._region),
-      resource_arn: cdktf.stringToTerraform(this._resourceArn),
-      usage_type: cdktf.stringToTerraform(this._usageType),
+      amount: cdktn.numberToTerraform(this._amount),
+      breach_action: cdktn.stringToTerraform(this._breachAction),
+      id: cdktn.stringToTerraform(this._id),
+      period: cdktn.stringToTerraform(this._period),
+      region: cdktn.stringToTerraform(this._region),
+      resource_arn: cdktn.stringToTerraform(this._resourceArn),
+      usage_type: cdktn.stringToTerraform(this._usageType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       amount: {
-        value: cdktf.numberToHclTerraform(this._amount),
+        value: cdktn.numberToHclTerraform(this._amount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       breach_action: {
-        value: cdktf.stringToHclTerraform(this._breachAction),
+        value: cdktn.stringToHclTerraform(this._breachAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       period: {
-        value: cdktf.stringToHclTerraform(this._period),
+        value: cdktn.stringToHclTerraform(this._period),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_arn: {
-        value: cdktf.stringToHclTerraform(this._resourceArn),
+        value: cdktn.stringToHclTerraform(this._resourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       usage_type: {
-        value: cdktf.stringToHclTerraform(this._usageType),
+        value: cdktn.stringToHclTerraform(this._usageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

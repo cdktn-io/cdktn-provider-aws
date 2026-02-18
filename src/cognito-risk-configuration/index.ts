@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitoRiskConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoRiskConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_risk_configuration#client_id CognitoRiskConfiguration#client_id}
   */
@@ -60,35 +60,35 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}
   */
-  readonly notify: boolean | cdktf.IResolvable;
+  readonly notify: boolean | cdktn.IResolvable;
 }
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionToTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_action: cdktf.stringToTerraform(struct!.eventAction),
-    notify: cdktf.booleanToTerraform(struct!.notify),
+    event_action: cdktn.stringToTerraform(struct!.eventAction),
+    notify: cdktn.booleanToTerraform(struct!.notify),
   }
 }
 
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_action: {
-      value: cdktf.stringToHclTerraform(struct!.eventAction),
+      value: cdktn.stringToHclTerraform(struct!.eventAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     notify: {
-      value: cdktf.booleanToHclTerraform(struct!.notify),
+      value: cdktn.booleanToHclTerraform(struct!.notify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -99,14 +99,14 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -151,11 +151,11 @@ export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHigh
   }
 
   // notify - computed: false, optional: false, required: true
-  private _notify?: boolean | cdktf.IResolvable; 
+  private _notify?: boolean | cdktn.IResolvable; 
   public get notify() {
     return this.getBooleanAttribute('notify');
   }
-  public set notify(value: boolean | cdktf.IResolvable) {
+  public set notify(value: boolean | cdktn.IResolvable) {
     this._notify = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -171,35 +171,35 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}
   */
-  readonly notify: boolean | cdktf.IResolvable;
+  readonly notify: boolean | cdktn.IResolvable;
 }
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionToTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_action: cdktf.stringToTerraform(struct!.eventAction),
-    notify: cdktf.booleanToTerraform(struct!.notify),
+    event_action: cdktn.stringToTerraform(struct!.eventAction),
+    notify: cdktn.booleanToTerraform(struct!.notify),
   }
 }
 
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_action: {
-      value: cdktf.stringToHclTerraform(struct!.eventAction),
+      value: cdktn.stringToHclTerraform(struct!.eventAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     notify: {
-      value: cdktf.booleanToHclTerraform(struct!.notify),
+      value: cdktn.booleanToHclTerraform(struct!.notify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -210,14 +210,14 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -262,11 +262,11 @@ export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowA
   }
 
   // notify - computed: false, optional: false, required: true
-  private _notify?: boolean | cdktf.IResolvable; 
+  private _notify?: boolean | cdktn.IResolvable; 
   public get notify() {
     return this.getBooleanAttribute('notify');
   }
-  public set notify(value: boolean | cdktf.IResolvable) {
+  public set notify(value: boolean | cdktn.IResolvable) {
     this._notify = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -282,35 +282,35 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}
   */
-  readonly notify: boolean | cdktf.IResolvable;
+  readonly notify: boolean | cdktn.IResolvable;
 }
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionToTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_action: cdktf.stringToTerraform(struct!.eventAction),
-    notify: cdktf.booleanToTerraform(struct!.notify),
+    event_action: cdktn.stringToTerraform(struct!.eventAction),
+    notify: cdktn.booleanToTerraform(struct!.notify),
   }
 }
 
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_action: {
-      value: cdktf.stringToHclTerraform(struct!.eventAction),
+      value: cdktn.stringToHclTerraform(struct!.eventAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     notify: {
-      value: cdktf.booleanToHclTerraform(struct!.notify),
+      value: cdktn.booleanToHclTerraform(struct!.notify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -321,14 +321,14 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -373,11 +373,11 @@ export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMedi
   }
 
   // notify - computed: false, optional: false, required: true
-  private _notify?: boolean | cdktf.IResolvable; 
+  private _notify?: boolean | cdktn.IResolvable; 
   public get notify() {
     return this.getBooleanAttribute('notify');
   }
-  public set notify(value: boolean | cdktf.IResolvable) {
+  public set notify(value: boolean | cdktn.IResolvable) {
     this._notify = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -407,8 +407,8 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions
 }
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsToTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -420,8 +420,8 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsT
 
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -449,14 +449,14 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -557,38 +557,38 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyC
 }
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailToTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    html_body: cdktf.stringToTerraform(struct!.htmlBody),
-    subject: cdktf.stringToTerraform(struct!.subject),
-    text_body: cdktf.stringToTerraform(struct!.textBody),
+    html_body: cdktn.stringToTerraform(struct!.htmlBody),
+    subject: cdktn.stringToTerraform(struct!.subject),
+    text_body: cdktn.stringToTerraform(struct!.textBody),
   }
 }
 
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     html_body: {
-      value: cdktf.stringToHclTerraform(struct!.htmlBody),
+      value: cdktn.stringToHclTerraform(struct!.htmlBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_body: {
-      value: cdktf.stringToHclTerraform(struct!.textBody),
+      value: cdktn.stringToHclTerraform(struct!.textBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -599,14 +599,14 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -698,38 +698,38 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyC
 }
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailToTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    html_body: cdktf.stringToTerraform(struct!.htmlBody),
-    subject: cdktf.stringToTerraform(struct!.subject),
-    text_body: cdktf.stringToTerraform(struct!.textBody),
+    html_body: cdktn.stringToTerraform(struct!.htmlBody),
+    subject: cdktn.stringToTerraform(struct!.subject),
+    text_body: cdktn.stringToTerraform(struct!.textBody),
   }
 }
 
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     html_body: {
-      value: cdktf.stringToHclTerraform(struct!.htmlBody),
+      value: cdktn.stringToHclTerraform(struct!.htmlBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_body: {
-      value: cdktf.stringToHclTerraform(struct!.textBody),
+      value: cdktn.stringToHclTerraform(struct!.textBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -740,14 +740,14 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -839,38 +839,38 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyC
 }
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailToTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    html_body: cdktf.stringToTerraform(struct!.htmlBody),
-    subject: cdktf.stringToTerraform(struct!.subject),
-    text_body: cdktf.stringToTerraform(struct!.textBody),
+    html_body: cdktn.stringToTerraform(struct!.htmlBody),
+    subject: cdktn.stringToTerraform(struct!.subject),
+    text_body: cdktn.stringToTerraform(struct!.textBody),
   }
 }
 
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     html_body: {
-      value: cdktf.stringToHclTerraform(struct!.htmlBody),
+      value: cdktn.stringToHclTerraform(struct!.htmlBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_body: {
-      value: cdktf.stringToHclTerraform(struct!.textBody),
+      value: cdktn.stringToHclTerraform(struct!.textBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -881,14 +881,14 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -998,14 +998,14 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyC
 }
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationToTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    reply_to: cdktf.stringToTerraform(struct!.replyTo),
-    source_arn: cdktf.stringToTerraform(struct!.sourceArn),
+    from: cdktn.stringToTerraform(struct!.from),
+    reply_to: cdktn.stringToTerraform(struct!.replyTo),
+    source_arn: cdktn.stringToTerraform(struct!.sourceArn),
     block_email: cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailToTerraform(struct!.blockEmail),
     mfa_email: cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailToTerraform(struct!.mfaEmail),
     no_action_email: cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailToTerraform(struct!.noActionEmail),
@@ -1014,25 +1014,25 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyCo
 
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     reply_to: {
-      value: cdktf.stringToHclTerraform(struct!.replyTo),
+      value: cdktn.stringToHclTerraform(struct!.replyTo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_arn: {
-      value: cdktf.stringToHclTerraform(struct!.sourceArn),
+      value: cdktn.stringToHclTerraform(struct!.sourceArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1061,14 +1061,14 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1232,8 +1232,8 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfiguration {
 }
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationToTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1244,8 +1244,8 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationToTerraf
 
 
 export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationToHclTerraform(struct?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference | CognitoRiskConfigurationAccountTakeoverRiskConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1267,14 +1267,14 @@ export function cognitoRiskConfigurationAccountTakeoverRiskConfigurationToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1342,24 +1342,24 @@ export interface CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration
 }
 
 export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsToTerraform(struct?: CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference | CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_action: cdktf.stringToTerraform(struct!.eventAction),
+    event_action: cdktn.stringToTerraform(struct!.eventAction),
   }
 }
 
 
 export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsToHclTerraform(struct?: CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference | CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_action: {
-      value: cdktf.stringToHclTerraform(struct!.eventAction),
+      value: cdktn.stringToHclTerraform(struct!.eventAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1370,14 +1370,14 @@ export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1429,25 +1429,25 @@ export interface CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration
 }
 
 export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationToTerraform(struct?: CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference | CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventFilter),
+    event_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.eventFilter),
     actions: cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsToTerraform(struct!.actions),
   }
 }
 
 
 export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationToHclTerraform(struct?: CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference | CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_filter: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eventFilter),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.eventFilter),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1464,14 +1464,14 @@ export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1505,7 +1505,7 @@ export class CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutp
   // event_filter - computed: true, optional: true, required: false
   private _eventFilter?: string[]; 
   public get eventFilter() {
-    return cdktf.Fn.tolist(this.getListAttribute('event_filter'));
+    return cdktn.Fn.tolist(this.getListAttribute('event_filter'));
   }
   public set eventFilter(value: string[]) {
     this._eventFilter = value;
@@ -1543,31 +1543,31 @@ export interface CognitoRiskConfigurationRiskExceptionConfiguration {
 }
 
 export function cognitoRiskConfigurationRiskExceptionConfigurationToTerraform(struct?: CognitoRiskConfigurationRiskExceptionConfigurationOutputReference | CognitoRiskConfigurationRiskExceptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    blocked_ip_range_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.blockedIpRangeList),
-    skipped_ip_range_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.skippedIpRangeList),
+    blocked_ip_range_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.blockedIpRangeList),
+    skipped_ip_range_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.skippedIpRangeList),
   }
 }
 
 
 export function cognitoRiskConfigurationRiskExceptionConfigurationToHclTerraform(struct?: CognitoRiskConfigurationRiskExceptionConfigurationOutputReference | CognitoRiskConfigurationRiskExceptionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     blocked_ip_range_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.blockedIpRangeList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.blockedIpRangeList),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     skipped_ip_range_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.skippedIpRangeList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.skippedIpRangeList),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1578,14 +1578,14 @@ export function cognitoRiskConfigurationRiskExceptionConfigurationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoRiskConfigurationRiskExceptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class CognitoRiskConfigurationRiskExceptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1619,7 +1619,7 @@ export class CognitoRiskConfigurationRiskExceptionConfigurationOutputReference e
   // blocked_ip_range_list - computed: false, optional: true, required: false
   private _blockedIpRangeList?: string[]; 
   public get blockedIpRangeList() {
-    return cdktf.Fn.tolist(this.getListAttribute('blocked_ip_range_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('blocked_ip_range_list'));
   }
   public set blockedIpRangeList(value: string[]) {
     this._blockedIpRangeList = value;
@@ -1635,7 +1635,7 @@ export class CognitoRiskConfigurationRiskExceptionConfigurationOutputReference e
   // skipped_ip_range_list - computed: false, optional: true, required: false
   private _skippedIpRangeList?: string[]; 
   public get skippedIpRangeList() {
-    return cdktf.Fn.tolist(this.getListAttribute('skipped_ip_range_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('skipped_ip_range_list'));
   }
   public set skippedIpRangeList(value: string[]) {
     this._skippedIpRangeList = value;
@@ -1652,7 +1652,7 @@ export class CognitoRiskConfigurationRiskExceptionConfigurationOutputReference e
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration}
 */
-export class CognitoRiskConfiguration extends cdktf.TerraformResource {
+export class CognitoRiskConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1663,14 +1663,14 @@ export class CognitoRiskConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitoRiskConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitoRiskConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoRiskConfiguration to import
   * @param importFromId The id of the existing CognitoRiskConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_risk_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoRiskConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_risk_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_risk_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1828,10 +1828,10 @@ export class CognitoRiskConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_id: cdktf.stringToTerraform(this._clientId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      user_pool_id: cdktn.stringToTerraform(this._userPoolId),
       account_takeover_risk_configuration: cognitoRiskConfigurationAccountTakeoverRiskConfigurationToTerraform(this._accountTakeoverRiskConfiguration.internalValue),
       compromised_credentials_risk_configuration: cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationToTerraform(this._compromisedCredentialsRiskConfiguration.internalValue),
       risk_exception_configuration: cognitoRiskConfigurationRiskExceptionConfigurationToTerraform(this._riskExceptionConfiguration.internalValue),
@@ -1841,25 +1841,25 @@ export class CognitoRiskConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_pool_id: {
-        value: cdktf.stringToHclTerraform(this._userPoolId),
+        value: cdktn.stringToHclTerraform(this._userPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

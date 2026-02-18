@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupLogicallyAirGappedVaultConfig extends cdktf.TerraformMetaArguments {
+export interface BackupLogicallyAirGappedVaultConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_logically_air_gapped_vault#encryption_key_arn BackupLogicallyAirGappedVault#encryption_key_arn}
   */
@@ -54,25 +54,25 @@ export interface BackupLogicallyAirGappedVaultTimeouts {
   readonly create?: string;
 }
 
-export function backupLogicallyAirGappedVaultTimeoutsToTerraform(struct?: BackupLogicallyAirGappedVaultTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupLogicallyAirGappedVaultTimeoutsToTerraform(struct?: BackupLogicallyAirGappedVaultTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function backupLogicallyAirGappedVaultTimeoutsToHclTerraform(struct?: BackupLogicallyAirGappedVaultTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupLogicallyAirGappedVaultTimeoutsToHclTerraform(struct?: BackupLogicallyAirGappedVaultTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,19 +83,19 @@ export function backupLogicallyAirGappedVaultTimeoutsToHclTerraform(struct?: Bac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupLogicallyAirGappedVaultTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BackupLogicallyAirGappedVaultTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BackupLogicallyAirGappedVaultTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupLogicallyAirGappedVaultTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -108,13 +108,13 @@ export class BackupLogicallyAirGappedVaultTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupLogicallyAirGappedVaultTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupLogicallyAirGappedVaultTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -145,7 +145,7 @@ export class BackupLogicallyAirGappedVaultTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault}
 */
-export class BackupLogicallyAirGappedVault extends cdktf.TerraformResource {
+export class BackupLogicallyAirGappedVault extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -156,14 +156,14 @@ export class BackupLogicallyAirGappedVault extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupLogicallyAirGappedVault resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupLogicallyAirGappedVault resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupLogicallyAirGappedVault to import
   * @param importFromId The id of the existing BackupLogicallyAirGappedVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/backup_logically_air_gapped_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupLogicallyAirGappedVault to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_logically_air_gapped_vault", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_logically_air_gapped_vault", importId: importFromId, provider });
       }
 
   // ===========
@@ -304,7 +304,7 @@ export class BackupLogicallyAirGappedVault extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -331,12 +331,12 @@ export class BackupLogicallyAirGappedVault extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      encryption_key_arn: cdktf.stringToTerraform(this._encryptionKeyArn),
-      max_retention_days: cdktf.numberToTerraform(this._maxRetentionDays),
-      min_retention_days: cdktf.numberToTerraform(this._minRetentionDays),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      encryption_key_arn: cdktn.stringToTerraform(this._encryptionKeyArn),
+      max_retention_days: cdktn.numberToTerraform(this._maxRetentionDays),
+      min_retention_days: cdktn.numberToTerraform(this._minRetentionDays),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: backupLogicallyAirGappedVaultTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -344,37 +344,37 @@ export class BackupLogicallyAirGappedVault extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       encryption_key_arn: {
-        value: cdktf.stringToHclTerraform(this._encryptionKeyArn),
+        value: cdktn.stringToHclTerraform(this._encryptionKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_retention_days: {
-        value: cdktf.numberToHclTerraform(this._maxRetentionDays),
+        value: cdktn.numberToHclTerraform(this._maxRetentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_retention_days: {
-        value: cdktf.numberToHclTerraform(this._minRetentionDays),
+        value: cdktn.numberToHclTerraform(this._minRetentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

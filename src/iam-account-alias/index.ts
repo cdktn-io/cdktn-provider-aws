@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamAccountAliasConfig extends cdktf.TerraformMetaArguments {
+export interface IamAccountAliasConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_alias#account_alias IamAccountAlias#account_alias}
   */
@@ -28,7 +28,7 @@ export interface IamAccountAliasConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_alias aws_iam_account_alias}
 */
-export class IamAccountAlias extends cdktf.TerraformResource {
+export class IamAccountAlias extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class IamAccountAlias extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamAccountAlias resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamAccountAlias resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamAccountAlias to import
   * @param importFromId The id of the existing IamAccountAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_alias#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamAccountAlias to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_account_alias", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_account_alias", importId: importFromId, provider });
       }
 
   // ===========
@@ -119,21 +119,21 @@ export class IamAccountAlias extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_alias: cdktf.stringToTerraform(this._accountAlias),
-      id: cdktf.stringToTerraform(this._id),
+      account_alias: cdktn.stringToTerraform(this._accountAlias),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_alias: {
-        value: cdktf.stringToHclTerraform(this._accountAlias),
+        value: cdktn.stringToHclTerraform(this._accountAlias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

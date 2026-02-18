@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpcSecurityGroupRulesExclusiveConfig extends cdktf.TerraformMetaArguments {
+export interface VpcSecurityGroupRulesExclusiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_security_group_rules_exclusive#egress_rule_ids VpcSecurityGroupRulesExclusive#egress_rule_ids}
   */
@@ -35,7 +35,7 @@ export interface VpcSecurityGroupRulesExclusiveConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_security_group_rules_exclusive aws_vpc_security_group_rules_exclusive}
 */
-export class VpcSecurityGroupRulesExclusive extends cdktf.TerraformResource {
+export class VpcSecurityGroupRulesExclusive extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class VpcSecurityGroupRulesExclusive extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpcSecurityGroupRulesExclusive resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpcSecurityGroupRulesExclusive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcSecurityGroupRulesExclusive to import
   * @param importFromId The id of the existing VpcSecurityGroupRulesExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpc_security_group_rules_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcSecurityGroupRulesExclusive to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_security_group_rules_exclusive", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_security_group_rules_exclusive", importId: importFromId, provider });
       }
 
   // ===========
@@ -96,7 +96,7 @@ export class VpcSecurityGroupRulesExclusive extends cdktf.TerraformResource {
   // egress_rule_ids - computed: false, optional: false, required: true
   private _egressRuleIds?: string[]; 
   public get egressRuleIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('egress_rule_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('egress_rule_ids'));
   }
   public set egressRuleIds(value: string[]) {
     this._egressRuleIds = value;
@@ -109,7 +109,7 @@ export class VpcSecurityGroupRulesExclusive extends cdktf.TerraformResource {
   // ingress_rule_ids - computed: false, optional: false, required: true
   private _ingressRuleIds?: string[]; 
   public get ingressRuleIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('ingress_rule_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('ingress_rule_ids'));
   }
   public set ingressRuleIds(value: string[]) {
     this._ingressRuleIds = value;
@@ -154,35 +154,35 @@ export class VpcSecurityGroupRulesExclusive extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      egress_rule_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._egressRuleIds),
-      ingress_rule_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ingressRuleIds),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
+      egress_rule_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._egressRuleIds),
+      ingress_rule_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ingressRuleIds),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_id: cdktn.stringToTerraform(this._securityGroupId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       egress_rule_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._egressRuleIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._egressRuleIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       ingress_rule_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ingressRuleIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ingressRuleIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_id: {
-        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        value: cdktn.stringToHclTerraform(this._securityGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

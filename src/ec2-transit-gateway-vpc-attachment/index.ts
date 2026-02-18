@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_vpc_attachment#appliance_mode_support Ec2TransitGatewayVpcAttachment#appliance_mode_support}
   */
@@ -56,11 +56,11 @@ export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_vpc_attachment#transit_gateway_default_route_table_association Ec2TransitGatewayVpcAttachment#transit_gateway_default_route_table_association}
   */
-  readonly transitGatewayDefaultRouteTableAssociation?: boolean | cdktf.IResolvable;
+  readonly transitGatewayDefaultRouteTableAssociation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_vpc_attachment#transit_gateway_default_route_table_propagation Ec2TransitGatewayVpcAttachment#transit_gateway_default_route_table_propagation}
   */
-  readonly transitGatewayDefaultRouteTablePropagation?: boolean | cdktf.IResolvable;
+  readonly transitGatewayDefaultRouteTablePropagation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_vpc_attachment#transit_gateway_id Ec2TransitGatewayVpcAttachment#transit_gateway_id}
   */
@@ -74,7 +74,7 @@ export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_vpc_attachment aws_ec2_transit_gateway_vpc_attachment}
 */
-export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
+export class Ec2TransitGatewayVpcAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -85,14 +85,14 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Ec2TransitGatewayVpcAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Ec2TransitGatewayVpcAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TransitGatewayVpcAttachment to import
   * @param importFromId The id of the existing Ec2TransitGatewayVpcAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_transit_gateway_vpc_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TransitGatewayVpcAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_vpc_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ec2_transit_gateway_vpc_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -245,7 +245,7 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -288,11 +288,11 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   }
 
   // transit_gateway_default_route_table_association - computed: true, optional: true, required: false
-  private _transitGatewayDefaultRouteTableAssociation?: boolean | cdktf.IResolvable; 
+  private _transitGatewayDefaultRouteTableAssociation?: boolean | cdktn.IResolvable; 
   public get transitGatewayDefaultRouteTableAssociation() {
     return this.getBooleanAttribute('transit_gateway_default_route_table_association');
   }
-  public set transitGatewayDefaultRouteTableAssociation(value: boolean | cdktf.IResolvable) {
+  public set transitGatewayDefaultRouteTableAssociation(value: boolean | cdktn.IResolvable) {
     this._transitGatewayDefaultRouteTableAssociation = value;
   }
   public resetTransitGatewayDefaultRouteTableAssociation() {
@@ -304,11 +304,11 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   }
 
   // transit_gateway_default_route_table_propagation - computed: true, optional: true, required: false
-  private _transitGatewayDefaultRouteTablePropagation?: boolean | cdktf.IResolvable; 
+  private _transitGatewayDefaultRouteTablePropagation?: boolean | cdktn.IResolvable; 
   public get transitGatewayDefaultRouteTablePropagation() {
     return this.getBooleanAttribute('transit_gateway_default_route_table_propagation');
   }
-  public set transitGatewayDefaultRouteTablePropagation(value: boolean | cdktf.IResolvable) {
+  public set transitGatewayDefaultRouteTablePropagation(value: boolean | cdktn.IResolvable) {
     this._transitGatewayDefaultRouteTablePropagation = value;
   }
   public resetTransitGatewayDefaultRouteTablePropagation() {
@@ -356,98 +356,98 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      appliance_mode_support: cdktf.stringToTerraform(this._applianceModeSupport),
-      dns_support: cdktf.stringToTerraform(this._dnsSupport),
-      id: cdktf.stringToTerraform(this._id),
-      ipv6_support: cdktf.stringToTerraform(this._ipv6Support),
-      region: cdktf.stringToTerraform(this._region),
-      security_group_referencing_support: cdktf.stringToTerraform(this._securityGroupReferencingSupport),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      transit_gateway_default_route_table_association: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTableAssociation),
-      transit_gateway_default_route_table_propagation: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTablePropagation),
-      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      appliance_mode_support: cdktn.stringToTerraform(this._applianceModeSupport),
+      dns_support: cdktn.stringToTerraform(this._dnsSupport),
+      id: cdktn.stringToTerraform(this._id),
+      ipv6_support: cdktn.stringToTerraform(this._ipv6Support),
+      region: cdktn.stringToTerraform(this._region),
+      security_group_referencing_support: cdktn.stringToTerraform(this._securityGroupReferencingSupport),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      transit_gateway_default_route_table_association: cdktn.booleanToTerraform(this._transitGatewayDefaultRouteTableAssociation),
+      transit_gateway_default_route_table_propagation: cdktn.booleanToTerraform(this._transitGatewayDefaultRouteTablePropagation),
+      transit_gateway_id: cdktn.stringToTerraform(this._transitGatewayId),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       appliance_mode_support: {
-        value: cdktf.stringToHclTerraform(this._applianceModeSupport),
+        value: cdktn.stringToHclTerraform(this._applianceModeSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_support: {
-        value: cdktf.stringToHclTerraform(this._dnsSupport),
+        value: cdktn.stringToHclTerraform(this._dnsSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipv6_support: {
-        value: cdktf.stringToHclTerraform(this._ipv6Support),
+        value: cdktn.stringToHclTerraform(this._ipv6Support),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_referencing_support: {
-        value: cdktf.stringToHclTerraform(this._securityGroupReferencingSupport),
+        value: cdktn.stringToHclTerraform(this._securityGroupReferencingSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       transit_gateway_default_route_table_association: {
-        value: cdktf.booleanToHclTerraform(this._transitGatewayDefaultRouteTableAssociation),
+        value: cdktn.booleanToHclTerraform(this._transitGatewayDefaultRouteTableAssociation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       transit_gateway_default_route_table_propagation: {
-        value: cdktf.booleanToHclTerraform(this._transitGatewayDefaultRouteTablePropagation),
+        value: cdktn.booleanToHclTerraform(this._transitGatewayDefaultRouteTablePropagation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       transit_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        value: cdktn.stringToHclTerraform(this._transitGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

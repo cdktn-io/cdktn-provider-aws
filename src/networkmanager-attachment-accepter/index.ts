@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkmanagerAttachmentAccepterConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkmanagerAttachmentAccepterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_attachment_accepter#attachment_id NetworkmanagerAttachmentAccepter#attachment_id}
   */
@@ -41,25 +41,25 @@ export interface NetworkmanagerAttachmentAccepterTimeouts {
   readonly create?: string;
 }
 
-export function networkmanagerAttachmentAccepterTimeoutsToTerraform(struct?: NetworkmanagerAttachmentAccepterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerAttachmentAccepterTimeoutsToTerraform(struct?: NetworkmanagerAttachmentAccepterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function networkmanagerAttachmentAccepterTimeoutsToHclTerraform(struct?: NetworkmanagerAttachmentAccepterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkmanagerAttachmentAccepterTimeoutsToHclTerraform(struct?: NetworkmanagerAttachmentAccepterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -70,19 +70,19 @@ export function networkmanagerAttachmentAccepterTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkmanagerAttachmentAccepterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkmanagerAttachmentAccepterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkmanagerAttachmentAccepterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkmanagerAttachmentAccepterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -95,13 +95,13 @@ export class NetworkmanagerAttachmentAccepterTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkmanagerAttachmentAccepterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkmanagerAttachmentAccepterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -132,7 +132,7 @@ export class NetworkmanagerAttachmentAccepterTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter}
 */
-export class NetworkmanagerAttachmentAccepter extends cdktf.TerraformResource {
+export class NetworkmanagerAttachmentAccepter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -143,14 +143,14 @@ export class NetworkmanagerAttachmentAccepter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkmanagerAttachmentAccepter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkmanagerAttachmentAccepter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmanagerAttachmentAccepter to import
   * @param importFromId The id of the existing NetworkmanagerAttachmentAccepter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkmanager_attachment_accepter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmanagerAttachmentAccepter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_attachment_accepter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkmanager_attachment_accepter", importId: importFromId, provider });
       }
 
   // ===========
@@ -299,9 +299,9 @@ export class NetworkmanagerAttachmentAccepter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attachment_id: cdktf.stringToTerraform(this._attachmentId),
-      attachment_type: cdktf.stringToTerraform(this._attachmentType),
-      id: cdktf.stringToTerraform(this._id),
+      attachment_id: cdktn.stringToTerraform(this._attachmentId),
+      attachment_type: cdktn.stringToTerraform(this._attachmentType),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: networkmanagerAttachmentAccepterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -309,19 +309,19 @@ export class NetworkmanagerAttachmentAccepter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       attachment_id: {
-        value: cdktf.stringToHclTerraform(this._attachmentId),
+        value: cdktn.stringToHclTerraform(this._attachmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attachment_type: {
-        value: cdktf.stringToHclTerraform(this._attachmentType),
+        value: cdktn.stringToHclTerraform(this._attachmentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

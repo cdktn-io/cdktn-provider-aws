@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiGatewayUsagePlanKeyConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayUsagePlanKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_usage_plan_key#id ApiGatewayUsagePlanKey#id}
   *
@@ -42,7 +42,7 @@ export interface ApiGatewayUsagePlanKeyConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_usage_plan_key aws_api_gateway_usage_plan_key}
 */
-export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
+export class ApiGatewayUsagePlanKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiGatewayUsagePlanKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiGatewayUsagePlanKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayUsagePlanKey to import
   * @param importFromId The id of the existing ApiGatewayUsagePlanKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/api_gateway_usage_plan_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayUsagePlanKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_usage_plan_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_usage_plan_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -188,42 +188,42 @@ export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      key_id: cdktf.stringToTerraform(this._keyId),
-      key_type: cdktf.stringToTerraform(this._keyType),
-      region: cdktf.stringToTerraform(this._region),
-      usage_plan_id: cdktf.stringToTerraform(this._usagePlanId),
+      id: cdktn.stringToTerraform(this._id),
+      key_id: cdktn.stringToTerraform(this._keyId),
+      key_type: cdktn.stringToTerraform(this._keyType),
+      region: cdktn.stringToTerraform(this._region),
+      usage_plan_id: cdktn.stringToTerraform(this._usagePlanId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_id: {
-        value: cdktf.stringToHclTerraform(this._keyId),
+        value: cdktn.stringToHclTerraform(this._keyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_type: {
-        value: cdktf.stringToHclTerraform(this._keyType),
+        value: cdktn.stringToHclTerraform(this._keyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       usage_plan_id: {
-        value: cdktf.stringToHclTerraform(this._usagePlanId),
+        value: cdktn.stringToHclTerraform(this._usagePlanId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

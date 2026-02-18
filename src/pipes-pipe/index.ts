@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PipesPipeConfig extends cdktf.TerraformMetaArguments {
+export interface PipesPipeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#description PipesPipe#description}
   */
@@ -116,38 +116,38 @@ export interface PipesPipeEnrichmentParametersHttpParameters {
 }
 
 export function pipesPipeEnrichmentParametersHttpParametersToTerraform(struct?: PipesPipeEnrichmentParametersHttpParametersOutputReference | PipesPipeEnrichmentParametersHttpParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.headerParameters),
-    path_parameter_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pathParameterValues),
-    query_string_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.queryStringParameters),
+    header_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.headerParameters),
+    path_parameter_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pathParameterValues),
+    query_string_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.queryStringParameters),
   }
 }
 
 
 export function pipesPipeEnrichmentParametersHttpParametersToHclTerraform(struct?: PipesPipeEnrichmentParametersHttpParametersOutputReference | PipesPipeEnrichmentParametersHttpParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.headerParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.headerParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     path_parameter_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pathParameterValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pathParameterValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     query_string_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.queryStringParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.queryStringParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -158,14 +158,14 @@ export function pipesPipeEnrichmentParametersHttpParametersToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeEnrichmentParametersHttpParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeEnrichmentParametersHttpParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -264,25 +264,25 @@ export interface PipesPipeEnrichmentParameters {
 }
 
 export function pipesPipeEnrichmentParametersToTerraform(struct?: PipesPipeEnrichmentParametersOutputReference | PipesPipeEnrichmentParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    input_template: cdktf.stringToTerraform(struct!.inputTemplate),
+    input_template: cdktn.stringToTerraform(struct!.inputTemplate),
     http_parameters: pipesPipeEnrichmentParametersHttpParametersToTerraform(struct!.httpParameters),
   }
 }
 
 
 export function pipesPipeEnrichmentParametersToHclTerraform(struct?: PipesPipeEnrichmentParametersOutputReference | PipesPipeEnrichmentParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     input_template: {
-      value: cdktf.stringToHclTerraform(struct!.inputTemplate),
+      value: cdktn.stringToHclTerraform(struct!.inputTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -299,14 +299,14 @@ export function pipesPipeEnrichmentParametersToHclTerraform(struct?: PipesPipeEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeEnrichmentParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeEnrichmentParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -377,24 +377,24 @@ export interface PipesPipeLogConfigurationCloudwatchLogsLogDestination {
 }
 
 export function pipesPipeLogConfigurationCloudwatchLogsLogDestinationToTerraform(struct?: PipesPipeLogConfigurationCloudwatchLogsLogDestinationOutputReference | PipesPipeLogConfigurationCloudwatchLogsLogDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_group_arn: cdktf.stringToTerraform(struct!.logGroupArn),
+    log_group_arn: cdktn.stringToTerraform(struct!.logGroupArn),
   }
 }
 
 
 export function pipesPipeLogConfigurationCloudwatchLogsLogDestinationToHclTerraform(struct?: PipesPipeLogConfigurationCloudwatchLogsLogDestinationOutputReference | PipesPipeLogConfigurationCloudwatchLogsLogDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.logGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -405,14 +405,14 @@ export function pipesPipeLogConfigurationCloudwatchLogsLogDestinationToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeLogConfigurationCloudwatchLogsLogDestinationOutputReference extends cdktf.ComplexObject {
+export class PipesPipeLogConfigurationCloudwatchLogsLogDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -458,24 +458,24 @@ export interface PipesPipeLogConfigurationFirehoseLogDestination {
 }
 
 export function pipesPipeLogConfigurationFirehoseLogDestinationToTerraform(struct?: PipesPipeLogConfigurationFirehoseLogDestinationOutputReference | PipesPipeLogConfigurationFirehoseLogDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delivery_stream_arn: cdktf.stringToTerraform(struct!.deliveryStreamArn),
+    delivery_stream_arn: cdktn.stringToTerraform(struct!.deliveryStreamArn),
   }
 }
 
 
 export function pipesPipeLogConfigurationFirehoseLogDestinationToHclTerraform(struct?: PipesPipeLogConfigurationFirehoseLogDestinationOutputReference | PipesPipeLogConfigurationFirehoseLogDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delivery_stream_arn: {
-      value: cdktf.stringToHclTerraform(struct!.deliveryStreamArn),
+      value: cdktn.stringToHclTerraform(struct!.deliveryStreamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -486,14 +486,14 @@ export function pipesPipeLogConfigurationFirehoseLogDestinationToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeLogConfigurationFirehoseLogDestinationOutputReference extends cdktf.ComplexObject {
+export class PipesPipeLogConfigurationFirehoseLogDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -551,45 +551,45 @@ export interface PipesPipeLogConfigurationS3LogDestination {
 }
 
 export function pipesPipeLogConfigurationS3LogDestinationToTerraform(struct?: PipesPipeLogConfigurationS3LogDestinationOutputReference | PipesPipeLogConfigurationS3LogDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    bucket_owner: cdktf.stringToTerraform(struct!.bucketOwner),
-    output_format: cdktf.stringToTerraform(struct!.outputFormat),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    bucket_owner: cdktn.stringToTerraform(struct!.bucketOwner),
+    output_format: cdktn.stringToTerraform(struct!.outputFormat),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
 export function pipesPipeLogConfigurationS3LogDestinationToHclTerraform(struct?: PipesPipeLogConfigurationS3LogDestinationOutputReference | PipesPipeLogConfigurationS3LogDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_owner: {
-      value: cdktf.stringToHclTerraform(struct!.bucketOwner),
+      value: cdktn.stringToHclTerraform(struct!.bucketOwner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_format: {
-      value: cdktf.stringToHclTerraform(struct!.outputFormat),
+      value: cdktn.stringToHclTerraform(struct!.outputFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -600,14 +600,14 @@ export function pipesPipeLogConfigurationS3LogDestinationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeLogConfigurationS3LogDestinationOutputReference extends cdktf.ComplexObject {
+export class PipesPipeLogConfigurationS3LogDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -738,13 +738,13 @@ export interface PipesPipeLogConfiguration {
 }
 
 export function pipesPipeLogConfigurationToTerraform(struct?: PipesPipeLogConfigurationOutputReference | PipesPipeLogConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_execution_data: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeExecutionData),
-    level: cdktf.stringToTerraform(struct!.level),
+    include_execution_data: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeExecutionData),
+    level: cdktn.stringToTerraform(struct!.level),
     cloudwatch_logs_log_destination: pipesPipeLogConfigurationCloudwatchLogsLogDestinationToTerraform(struct!.cloudwatchLogsLogDestination),
     firehose_log_destination: pipesPipeLogConfigurationFirehoseLogDestinationToTerraform(struct!.firehoseLogDestination),
     s3_log_destination: pipesPipeLogConfigurationS3LogDestinationToTerraform(struct!.s3LogDestination),
@@ -753,19 +753,19 @@ export function pipesPipeLogConfigurationToTerraform(struct?: PipesPipeLogConfig
 
 
 export function pipesPipeLogConfigurationToHclTerraform(struct?: PipesPipeLogConfigurationOutputReference | PipesPipeLogConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_execution_data: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeExecutionData),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeExecutionData),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -794,14 +794,14 @@ export function pipesPipeLogConfigurationToHclTerraform(struct?: PipesPipeLogCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeLogConfigurationOutputReference extends cdktf.ComplexObject {
+export class PipesPipeLogConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -853,7 +853,7 @@ export class PipesPipeLogConfigurationOutputReference extends cdktf.ComplexObjec
   // include_execution_data - computed: false, optional: true, required: false
   private _includeExecutionData?: string[]; 
   public get includeExecutionData() {
-    return cdktf.Fn.tolist(this.getListAttribute('include_execution_data'));
+    return cdktn.Fn.tolist(this.getListAttribute('include_execution_data'));
   }
   public set includeExecutionData(value: string[]) {
     this._includeExecutionData = value;
@@ -935,24 +935,24 @@ export interface PipesPipeSourceParametersActivemqBrokerParametersCredentials {
 }
 
 export function pipesPipeSourceParametersActivemqBrokerParametersCredentialsToTerraform(struct?: PipesPipeSourceParametersActivemqBrokerParametersCredentialsOutputReference | PipesPipeSourceParametersActivemqBrokerParametersCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    basic_auth: cdktf.stringToTerraform(struct!.basicAuth),
+    basic_auth: cdktn.stringToTerraform(struct!.basicAuth),
   }
 }
 
 
 export function pipesPipeSourceParametersActivemqBrokerParametersCredentialsToHclTerraform(struct?: PipesPipeSourceParametersActivemqBrokerParametersCredentialsOutputReference | PipesPipeSourceParametersActivemqBrokerParametersCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     basic_auth: {
-      value: cdktf.stringToHclTerraform(struct!.basicAuth),
+      value: cdktn.stringToHclTerraform(struct!.basicAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -963,14 +963,14 @@ export function pipesPipeSourceParametersActivemqBrokerParametersCredentialsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersActivemqBrokerParametersCredentialsOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersActivemqBrokerParametersCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1030,39 +1030,39 @@ export interface PipesPipeSourceParametersActivemqBrokerParameters {
 }
 
 export function pipesPipeSourceParametersActivemqBrokerParametersToTerraform(struct?: PipesPipeSourceParametersActivemqBrokerParametersOutputReference | PipesPipeSourceParametersActivemqBrokerParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_size: cdktf.numberToTerraform(struct!.batchSize),
-    maximum_batching_window_in_seconds: cdktf.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
-    queue_name: cdktf.stringToTerraform(struct!.queueName),
+    batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    maximum_batching_window_in_seconds: cdktn.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
+    queue_name: cdktn.stringToTerraform(struct!.queueName),
     credentials: pipesPipeSourceParametersActivemqBrokerParametersCredentialsToTerraform(struct!.credentials),
   }
 }
 
 
 export function pipesPipeSourceParametersActivemqBrokerParametersToHclTerraform(struct?: PipesPipeSourceParametersActivemqBrokerParametersOutputReference | PipesPipeSourceParametersActivemqBrokerParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_size: {
-      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      value: cdktn.numberToHclTerraform(struct!.batchSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_batching_window_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     queue_name: {
-      value: cdktf.stringToHclTerraform(struct!.queueName),
+      value: cdktn.stringToHclTerraform(struct!.queueName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1079,14 +1079,14 @@ export function pipesPipeSourceParametersActivemqBrokerParametersToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersActivemqBrokerParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersActivemqBrokerParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1195,24 +1195,24 @@ export interface PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConf
 }
 
 export function pipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigToTerraform(struct?: PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference | PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
+    arn: cdktn.stringToTerraform(struct!.arn),
   }
 }
 
 
 export function pipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigToHclTerraform(struct?: PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference | PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1223,14 +1223,14 @@ export function pipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1309,67 +1309,67 @@ export interface PipesPipeSourceParametersDynamodbStreamParameters {
 }
 
 export function pipesPipeSourceParametersDynamodbStreamParametersToTerraform(struct?: PipesPipeSourceParametersDynamodbStreamParametersOutputReference | PipesPipeSourceParametersDynamodbStreamParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_size: cdktf.numberToTerraform(struct!.batchSize),
-    maximum_batching_window_in_seconds: cdktf.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
-    maximum_record_age_in_seconds: cdktf.numberToTerraform(struct!.maximumRecordAgeInSeconds),
-    maximum_retry_attempts: cdktf.numberToTerraform(struct!.maximumRetryAttempts),
-    on_partial_batch_item_failure: cdktf.stringToTerraform(struct!.onPartialBatchItemFailure),
-    parallelization_factor: cdktf.numberToTerraform(struct!.parallelizationFactor),
-    starting_position: cdktf.stringToTerraform(struct!.startingPosition),
+    batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    maximum_batching_window_in_seconds: cdktn.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
+    maximum_record_age_in_seconds: cdktn.numberToTerraform(struct!.maximumRecordAgeInSeconds),
+    maximum_retry_attempts: cdktn.numberToTerraform(struct!.maximumRetryAttempts),
+    on_partial_batch_item_failure: cdktn.stringToTerraform(struct!.onPartialBatchItemFailure),
+    parallelization_factor: cdktn.numberToTerraform(struct!.parallelizationFactor),
+    starting_position: cdktn.stringToTerraform(struct!.startingPosition),
     dead_letter_config: pipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigToTerraform(struct!.deadLetterConfig),
   }
 }
 
 
 export function pipesPipeSourceParametersDynamodbStreamParametersToHclTerraform(struct?: PipesPipeSourceParametersDynamodbStreamParametersOutputReference | PipesPipeSourceParametersDynamodbStreamParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_size: {
-      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      value: cdktn.numberToHclTerraform(struct!.batchSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_batching_window_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_record_age_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumRecordAgeInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumRecordAgeInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_retry_attempts: {
-      value: cdktf.numberToHclTerraform(struct!.maximumRetryAttempts),
+      value: cdktn.numberToHclTerraform(struct!.maximumRetryAttempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     on_partial_batch_item_failure: {
-      value: cdktf.stringToHclTerraform(struct!.onPartialBatchItemFailure),
+      value: cdktn.stringToHclTerraform(struct!.onPartialBatchItemFailure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parallelization_factor: {
-      value: cdktf.numberToHclTerraform(struct!.parallelizationFactor),
+      value: cdktn.numberToHclTerraform(struct!.parallelizationFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     starting_position: {
-      value: cdktf.stringToHclTerraform(struct!.startingPosition),
+      value: cdktn.stringToHclTerraform(struct!.startingPosition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1386,14 +1386,14 @@ export function pipesPipeSourceParametersDynamodbStreamParametersToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersDynamodbStreamParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersDynamodbStreamParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1592,25 +1592,25 @@ export interface PipesPipeSourceParametersFilterCriteriaFilter {
   readonly pattern: string;
 }
 
-export function pipesPipeSourceParametersFilterCriteriaFilterToTerraform(struct?: PipesPipeSourceParametersFilterCriteriaFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeSourceParametersFilterCriteriaFilterToTerraform(struct?: PipesPipeSourceParametersFilterCriteriaFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pattern: cdktf.stringToTerraform(struct!.pattern),
+    pattern: cdktn.stringToTerraform(struct!.pattern),
   }
 }
 
 
-export function pipesPipeSourceParametersFilterCriteriaFilterToHclTerraform(struct?: PipesPipeSourceParametersFilterCriteriaFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeSourceParametersFilterCriteriaFilterToHclTerraform(struct?: PipesPipeSourceParametersFilterCriteriaFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pattern: {
-      value: cdktf.stringToHclTerraform(struct!.pattern),
+      value: cdktn.stringToHclTerraform(struct!.pattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1621,9 +1621,9 @@ export function pipesPipeSourceParametersFilterCriteriaFilterToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersFilterCriteriaFilterOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersFilterCriteriaFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1631,11 +1631,11 @@ export class PipesPipeSourceParametersFilterCriteriaFilterOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeSourceParametersFilterCriteriaFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeSourceParametersFilterCriteriaFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1648,13 +1648,13 @@ export class PipesPipeSourceParametersFilterCriteriaFilterOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeSourceParametersFilterCriteriaFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeSourceParametersFilterCriteriaFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._pattern = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1679,15 +1679,15 @@ export class PipesPipeSourceParametersFilterCriteriaFilterOutputReference extend
   }
 }
 
-export class PipesPipeSourceParametersFilterCriteriaFilterList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeSourceParametersFilterCriteriaFilter[] | cdktf.IResolvable
+export class PipesPipeSourceParametersFilterCriteriaFilterList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeSourceParametersFilterCriteriaFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1704,28 +1704,28 @@ export interface PipesPipeSourceParametersFilterCriteria {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#filter PipesPipe#filter}
   */
-  readonly filter?: PipesPipeSourceParametersFilterCriteriaFilter[] | cdktf.IResolvable;
+  readonly filter?: PipesPipeSourceParametersFilterCriteriaFilter[] | cdktn.IResolvable;
 }
 
 export function pipesPipeSourceParametersFilterCriteriaToTerraform(struct?: PipesPipeSourceParametersFilterCriteriaOutputReference | PipesPipeSourceParametersFilterCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.listMapper(pipesPipeSourceParametersFilterCriteriaFilterToTerraform, true)(struct!.filter),
+    filter: cdktn.listMapper(pipesPipeSourceParametersFilterCriteriaFilterToTerraform, true)(struct!.filter),
   }
 }
 
 
 export function pipesPipeSourceParametersFilterCriteriaToHclTerraform(struct?: PipesPipeSourceParametersFilterCriteriaOutputReference | PipesPipeSourceParametersFilterCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter: {
-      value: cdktf.listMapperHcl(pipesPipeSourceParametersFilterCriteriaFilterToHclTerraform, true)(struct!.filter),
+      value: cdktn.listMapperHcl(pipesPipeSourceParametersFilterCriteriaFilterToHclTerraform, true)(struct!.filter),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeSourceParametersFilterCriteriaFilterList",
@@ -1736,14 +1736,14 @@ export function pipesPipeSourceParametersFilterCriteriaToHclTerraform(struct?: P
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersFilterCriteriaOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersFilterCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1773,7 +1773,7 @@ export class PipesPipeSourceParametersFilterCriteriaOutputReference extends cdkt
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: PipesPipeSourceParametersFilterCriteriaFilter[] | cdktf.IResolvable) {
+  public putFilter(value: PipesPipeSourceParametersFilterCriteriaFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -1792,24 +1792,24 @@ export interface PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfi
 }
 
 export function pipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigToTerraform(struct?: PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigOutputReference | PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
+    arn: cdktn.stringToTerraform(struct!.arn),
   }
 }
 
 
 export function pipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigToHclTerraform(struct?: PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigOutputReference | PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1820,14 +1820,14 @@ export function pipesPipeSourceParametersKinesisStreamParametersDeadLetterConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1910,74 +1910,74 @@ export interface PipesPipeSourceParametersKinesisStreamParameters {
 }
 
 export function pipesPipeSourceParametersKinesisStreamParametersToTerraform(struct?: PipesPipeSourceParametersKinesisStreamParametersOutputReference | PipesPipeSourceParametersKinesisStreamParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_size: cdktf.numberToTerraform(struct!.batchSize),
-    maximum_batching_window_in_seconds: cdktf.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
-    maximum_record_age_in_seconds: cdktf.numberToTerraform(struct!.maximumRecordAgeInSeconds),
-    maximum_retry_attempts: cdktf.numberToTerraform(struct!.maximumRetryAttempts),
-    on_partial_batch_item_failure: cdktf.stringToTerraform(struct!.onPartialBatchItemFailure),
-    parallelization_factor: cdktf.numberToTerraform(struct!.parallelizationFactor),
-    starting_position: cdktf.stringToTerraform(struct!.startingPosition),
-    starting_position_timestamp: cdktf.stringToTerraform(struct!.startingPositionTimestamp),
+    batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    maximum_batching_window_in_seconds: cdktn.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
+    maximum_record_age_in_seconds: cdktn.numberToTerraform(struct!.maximumRecordAgeInSeconds),
+    maximum_retry_attempts: cdktn.numberToTerraform(struct!.maximumRetryAttempts),
+    on_partial_batch_item_failure: cdktn.stringToTerraform(struct!.onPartialBatchItemFailure),
+    parallelization_factor: cdktn.numberToTerraform(struct!.parallelizationFactor),
+    starting_position: cdktn.stringToTerraform(struct!.startingPosition),
+    starting_position_timestamp: cdktn.stringToTerraform(struct!.startingPositionTimestamp),
     dead_letter_config: pipesPipeSourceParametersKinesisStreamParametersDeadLetterConfigToTerraform(struct!.deadLetterConfig),
   }
 }
 
 
 export function pipesPipeSourceParametersKinesisStreamParametersToHclTerraform(struct?: PipesPipeSourceParametersKinesisStreamParametersOutputReference | PipesPipeSourceParametersKinesisStreamParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_size: {
-      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      value: cdktn.numberToHclTerraform(struct!.batchSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_batching_window_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_record_age_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumRecordAgeInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumRecordAgeInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_retry_attempts: {
-      value: cdktf.numberToHclTerraform(struct!.maximumRetryAttempts),
+      value: cdktn.numberToHclTerraform(struct!.maximumRetryAttempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     on_partial_batch_item_failure: {
-      value: cdktf.stringToHclTerraform(struct!.onPartialBatchItemFailure),
+      value: cdktn.stringToHclTerraform(struct!.onPartialBatchItemFailure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parallelization_factor: {
-      value: cdktf.numberToHclTerraform(struct!.parallelizationFactor),
+      value: cdktn.numberToHclTerraform(struct!.parallelizationFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     starting_position: {
-      value: cdktf.stringToHclTerraform(struct!.startingPosition),
+      value: cdktn.stringToHclTerraform(struct!.startingPosition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     starting_position_timestamp: {
-      value: cdktf.stringToHclTerraform(struct!.startingPositionTimestamp),
+      value: cdktn.stringToHclTerraform(struct!.startingPositionTimestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1994,14 +1994,14 @@ export function pipesPipeSourceParametersKinesisStreamParametersToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersKinesisStreamParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersKinesisStreamParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2227,31 +2227,31 @@ export interface PipesPipeSourceParametersManagedStreamingKafkaParametersCredent
 }
 
 export function pipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsToTerraform(struct?: PipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsOutputReference | PipesPipeSourceParametersManagedStreamingKafkaParametersCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_certificate_tls_auth: cdktf.stringToTerraform(struct!.clientCertificateTlsAuth),
-    sasl_scram_512_auth: cdktf.stringToTerraform(struct!.saslScram512Auth),
+    client_certificate_tls_auth: cdktn.stringToTerraform(struct!.clientCertificateTlsAuth),
+    sasl_scram_512_auth: cdktn.stringToTerraform(struct!.saslScram512Auth),
   }
 }
 
 
 export function pipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsToHclTerraform(struct?: PipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsOutputReference | PipesPipeSourceParametersManagedStreamingKafkaParametersCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_certificate_tls_auth: {
-      value: cdktf.stringToHclTerraform(struct!.clientCertificateTlsAuth),
+      value: cdktn.stringToHclTerraform(struct!.clientCertificateTlsAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sasl_scram_512_auth: {
-      value: cdktf.stringToHclTerraform(struct!.saslScram512Auth),
+      value: cdktn.stringToHclTerraform(struct!.saslScram512Auth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2262,14 +2262,14 @@ export function pipesPipeSourceParametersManagedStreamingKafkaParametersCredenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2362,53 +2362,53 @@ export interface PipesPipeSourceParametersManagedStreamingKafkaParameters {
 }
 
 export function pipesPipeSourceParametersManagedStreamingKafkaParametersToTerraform(struct?: PipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference | PipesPipeSourceParametersManagedStreamingKafkaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_size: cdktf.numberToTerraform(struct!.batchSize),
-    consumer_group_id: cdktf.stringToTerraform(struct!.consumerGroupId),
-    maximum_batching_window_in_seconds: cdktf.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
-    starting_position: cdktf.stringToTerraform(struct!.startingPosition),
-    topic_name: cdktf.stringToTerraform(struct!.topicName),
+    batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    consumer_group_id: cdktn.stringToTerraform(struct!.consumerGroupId),
+    maximum_batching_window_in_seconds: cdktn.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
+    starting_position: cdktn.stringToTerraform(struct!.startingPosition),
+    topic_name: cdktn.stringToTerraform(struct!.topicName),
     credentials: pipesPipeSourceParametersManagedStreamingKafkaParametersCredentialsToTerraform(struct!.credentials),
   }
 }
 
 
 export function pipesPipeSourceParametersManagedStreamingKafkaParametersToHclTerraform(struct?: PipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference | PipesPipeSourceParametersManagedStreamingKafkaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_size: {
-      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      value: cdktn.numberToHclTerraform(struct!.batchSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     consumer_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.consumerGroupId),
+      value: cdktn.stringToHclTerraform(struct!.consumerGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     maximum_batching_window_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     starting_position: {
-      value: cdktf.stringToHclTerraform(struct!.startingPosition),
+      value: cdktn.stringToHclTerraform(struct!.startingPosition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic_name: {
-      value: cdktf.stringToHclTerraform(struct!.topicName),
+      value: cdktn.stringToHclTerraform(struct!.topicName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2425,14 +2425,14 @@ export function pipesPipeSourceParametersManagedStreamingKafkaParametersToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2588,24 +2588,24 @@ export interface PipesPipeSourceParametersRabbitmqBrokerParametersCredentials {
 }
 
 export function pipesPipeSourceParametersRabbitmqBrokerParametersCredentialsToTerraform(struct?: PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference | PipesPipeSourceParametersRabbitmqBrokerParametersCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    basic_auth: cdktf.stringToTerraform(struct!.basicAuth),
+    basic_auth: cdktn.stringToTerraform(struct!.basicAuth),
   }
 }
 
 
 export function pipesPipeSourceParametersRabbitmqBrokerParametersCredentialsToHclTerraform(struct?: PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference | PipesPipeSourceParametersRabbitmqBrokerParametersCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     basic_auth: {
-      value: cdktf.stringToHclTerraform(struct!.basicAuth),
+      value: cdktn.stringToHclTerraform(struct!.basicAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2616,14 +2616,14 @@ export function pipesPipeSourceParametersRabbitmqBrokerParametersCredentialsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2687,46 +2687,46 @@ export interface PipesPipeSourceParametersRabbitmqBrokerParameters {
 }
 
 export function pipesPipeSourceParametersRabbitmqBrokerParametersToTerraform(struct?: PipesPipeSourceParametersRabbitmqBrokerParametersOutputReference | PipesPipeSourceParametersRabbitmqBrokerParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_size: cdktf.numberToTerraform(struct!.batchSize),
-    maximum_batching_window_in_seconds: cdktf.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
-    queue_name: cdktf.stringToTerraform(struct!.queueName),
-    virtual_host: cdktf.stringToTerraform(struct!.virtualHost),
+    batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    maximum_batching_window_in_seconds: cdktn.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
+    queue_name: cdktn.stringToTerraform(struct!.queueName),
+    virtual_host: cdktn.stringToTerraform(struct!.virtualHost),
     credentials: pipesPipeSourceParametersRabbitmqBrokerParametersCredentialsToTerraform(struct!.credentials),
   }
 }
 
 
 export function pipesPipeSourceParametersRabbitmqBrokerParametersToHclTerraform(struct?: PipesPipeSourceParametersRabbitmqBrokerParametersOutputReference | PipesPipeSourceParametersRabbitmqBrokerParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_size: {
-      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      value: cdktn.numberToHclTerraform(struct!.batchSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_batching_window_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     queue_name: {
-      value: cdktf.stringToHclTerraform(struct!.queueName),
+      value: cdktn.stringToHclTerraform(struct!.queueName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_host: {
-      value: cdktf.stringToHclTerraform(struct!.virtualHost),
+      value: cdktn.stringToHclTerraform(struct!.virtualHost),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2743,14 +2743,14 @@ export function pipesPipeSourceParametersRabbitmqBrokerParametersToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersRabbitmqBrokerParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersRabbitmqBrokerParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2893,45 +2893,45 @@ export interface PipesPipeSourceParametersSelfManagedKafkaParametersCredentials 
 }
 
 export function pipesPipeSourceParametersSelfManagedKafkaParametersCredentialsToTerraform(struct?: PipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReference | PipesPipeSourceParametersSelfManagedKafkaParametersCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    basic_auth: cdktf.stringToTerraform(struct!.basicAuth),
-    client_certificate_tls_auth: cdktf.stringToTerraform(struct!.clientCertificateTlsAuth),
-    sasl_scram_256_auth: cdktf.stringToTerraform(struct!.saslScram256Auth),
-    sasl_scram_512_auth: cdktf.stringToTerraform(struct!.saslScram512Auth),
+    basic_auth: cdktn.stringToTerraform(struct!.basicAuth),
+    client_certificate_tls_auth: cdktn.stringToTerraform(struct!.clientCertificateTlsAuth),
+    sasl_scram_256_auth: cdktn.stringToTerraform(struct!.saslScram256Auth),
+    sasl_scram_512_auth: cdktn.stringToTerraform(struct!.saslScram512Auth),
   }
 }
 
 
 export function pipesPipeSourceParametersSelfManagedKafkaParametersCredentialsToHclTerraform(struct?: PipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReference | PipesPipeSourceParametersSelfManagedKafkaParametersCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     basic_auth: {
-      value: cdktf.stringToHclTerraform(struct!.basicAuth),
+      value: cdktn.stringToHclTerraform(struct!.basicAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_certificate_tls_auth: {
-      value: cdktf.stringToHclTerraform(struct!.clientCertificateTlsAuth),
+      value: cdktn.stringToHclTerraform(struct!.clientCertificateTlsAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sasl_scram_256_auth: {
-      value: cdktf.stringToHclTerraform(struct!.saslScram256Auth),
+      value: cdktn.stringToHclTerraform(struct!.saslScram256Auth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sasl_scram_512_auth: {
-      value: cdktf.stringToHclTerraform(struct!.saslScram512Auth),
+      value: cdktn.stringToHclTerraform(struct!.saslScram512Auth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2942,14 +2942,14 @@ export function pipesPipeSourceParametersSelfManagedKafkaParametersCredentialsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3068,31 +3068,31 @@ export interface PipesPipeSourceParametersSelfManagedKafkaParametersVpc {
 }
 
 export function pipesPipeSourceParametersSelfManagedKafkaParametersVpcToTerraform(struct?: PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference | PipesPipeSourceParametersSelfManagedKafkaParametersVpc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
+    security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroups),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
   }
 }
 
 
 export function pipesPipeSourceParametersSelfManagedKafkaParametersVpcToHclTerraform(struct?: PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference | PipesPipeSourceParametersSelfManagedKafkaParametersVpc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     security_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3103,14 +3103,14 @@ export function pipesPipeSourceParametersSelfManagedKafkaParametersVpcToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3144,7 +3144,7 @@ export class PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReferen
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -3160,7 +3160,7 @@ export class PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReferen
   // subnets - computed: false, optional: true, required: false
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -3217,18 +3217,18 @@ export interface PipesPipeSourceParametersSelfManagedKafkaParameters {
 }
 
 export function pipesPipeSourceParametersSelfManagedKafkaParametersToTerraform(struct?: PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference | PipesPipeSourceParametersSelfManagedKafkaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_bootstrap_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalBootstrapServers),
-    batch_size: cdktf.numberToTerraform(struct!.batchSize),
-    consumer_group_id: cdktf.stringToTerraform(struct!.consumerGroupId),
-    maximum_batching_window_in_seconds: cdktf.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
-    server_root_ca_certificate: cdktf.stringToTerraform(struct!.serverRootCaCertificate),
-    starting_position: cdktf.stringToTerraform(struct!.startingPosition),
-    topic_name: cdktf.stringToTerraform(struct!.topicName),
+    additional_bootstrap_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalBootstrapServers),
+    batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    consumer_group_id: cdktn.stringToTerraform(struct!.consumerGroupId),
+    maximum_batching_window_in_seconds: cdktn.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
+    server_root_ca_certificate: cdktn.stringToTerraform(struct!.serverRootCaCertificate),
+    starting_position: cdktn.stringToTerraform(struct!.startingPosition),
+    topic_name: cdktn.stringToTerraform(struct!.topicName),
     credentials: pipesPipeSourceParametersSelfManagedKafkaParametersCredentialsToTerraform(struct!.credentials),
     vpc: pipesPipeSourceParametersSelfManagedKafkaParametersVpcToTerraform(struct!.vpc),
   }
@@ -3236,49 +3236,49 @@ export function pipesPipeSourceParametersSelfManagedKafkaParametersToTerraform(s
 
 
 export function pipesPipeSourceParametersSelfManagedKafkaParametersToHclTerraform(struct?: PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference | PipesPipeSourceParametersSelfManagedKafkaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_bootstrap_servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalBootstrapServers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalBootstrapServers),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     batch_size: {
-      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      value: cdktn.numberToHclTerraform(struct!.batchSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     consumer_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.consumerGroupId),
+      value: cdktn.stringToHclTerraform(struct!.consumerGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     maximum_batching_window_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     server_root_ca_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.serverRootCaCertificate),
+      value: cdktn.stringToHclTerraform(struct!.serverRootCaCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     starting_position: {
-      value: cdktf.stringToHclTerraform(struct!.startingPosition),
+      value: cdktn.stringToHclTerraform(struct!.startingPosition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic_name: {
-      value: cdktf.stringToHclTerraform(struct!.topicName),
+      value: cdktn.stringToHclTerraform(struct!.topicName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3301,14 +3301,14 @@ export function pipesPipeSourceParametersSelfManagedKafkaParametersToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3384,7 +3384,7 @@ export class PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference 
   // additional_bootstrap_servers - computed: false, optional: true, required: false
   private _additionalBootstrapServers?: string[]; 
   public get additionalBootstrapServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_bootstrap_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_bootstrap_servers'));
   }
   public set additionalBootstrapServers(value: string[]) {
     this._additionalBootstrapServers = value;
@@ -3534,31 +3534,31 @@ export interface PipesPipeSourceParametersSqsQueueParameters {
 }
 
 export function pipesPipeSourceParametersSqsQueueParametersToTerraform(struct?: PipesPipeSourceParametersSqsQueueParametersOutputReference | PipesPipeSourceParametersSqsQueueParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_size: cdktf.numberToTerraform(struct!.batchSize),
-    maximum_batching_window_in_seconds: cdktf.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
+    batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    maximum_batching_window_in_seconds: cdktn.numberToTerraform(struct!.maximumBatchingWindowInSeconds),
   }
 }
 
 
 export function pipesPipeSourceParametersSqsQueueParametersToHclTerraform(struct?: PipesPipeSourceParametersSqsQueueParametersOutputReference | PipesPipeSourceParametersSqsQueueParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_size: {
-      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      value: cdktn.numberToHclTerraform(struct!.batchSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_batching_window_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maximumBatchingWindowInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3569,14 +3569,14 @@ export function pipesPipeSourceParametersSqsQueueParametersToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersSqsQueueParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersSqsQueueParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3691,8 +3691,8 @@ export interface PipesPipeSourceParameters {
 }
 
 export function pipesPipeSourceParametersToTerraform(struct?: PipesPipeSourceParametersOutputReference | PipesPipeSourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3709,8 +3709,8 @@ export function pipesPipeSourceParametersToTerraform(struct?: PipesPipeSourcePar
 
 
 export function pipesPipeSourceParametersToHclTerraform(struct?: PipesPipeSourceParametersOutputReference | PipesPipeSourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3768,14 +3768,14 @@ export function pipesPipeSourceParametersToHclTerraform(struct?: PipesPipeSource
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeSourceParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeSourceParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3978,24 +3978,24 @@ export interface PipesPipeTargetParametersBatchJobParametersArrayProperties {
 }
 
 export function pipesPipeTargetParametersBatchJobParametersArrayPropertiesToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersArrayPropertiesOutputReference | PipesPipeTargetParametersBatchJobParametersArrayProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    size: cdktf.numberToTerraform(struct!.size),
+    size: cdktn.numberToTerraform(struct!.size),
   }
 }
 
 
 export function pipesPipeTargetParametersBatchJobParametersArrayPropertiesToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersArrayPropertiesOutputReference | PipesPipeTargetParametersBatchJobParametersArrayProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
+      value: cdktn.numberToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4006,14 +4006,14 @@ export function pipesPipeTargetParametersBatchJobParametersArrayPropertiesToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersBatchJobParametersArrayPropertiesOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersBatchJobParametersArrayPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4065,32 +4065,32 @@ export interface PipesPipeTargetParametersBatchJobParametersContainerOverridesEn
   readonly value?: string;
 }
 
-export function pipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function pipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4101,9 +4101,9 @@ export function pipesPipeTargetParametersBatchJobParametersContainerOverridesEnv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4111,11 +4111,11 @@ export class PipesPipeTargetParametersBatchJobParametersContainerOverridesEnviro
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4132,14 +4132,14 @@ export class PipesPipeTargetParametersBatchJobParametersContainerOverridesEnviro
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4184,15 +4184,15 @@ export class PipesPipeTargetParametersBatchJobParametersContainerOverridesEnviro
   }
 }
 
-export class PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] | cdktf.IResolvable
+export class PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4214,32 +4214,32 @@ export interface PipesPipeTargetParametersBatchJobParametersContainerOverridesRe
   readonly value: string;
 }
 
-export function pipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function pipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4250,9 +4250,9 @@ export function pipesPipeTargetParametersBatchJobParametersContainerOverridesRes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4260,11 +4260,11 @@ export class PipesPipeTargetParametersBatchJobParametersContainerOverridesResour
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4281,14 +4281,14 @@ export class PipesPipeTargetParametersBatchJobParametersContainerOverridesResour
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4327,15 +4327,15 @@ export class PipesPipeTargetParametersBatchJobParametersContainerOverridesResour
   }
 }
 
-export class PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] | cdktf.IResolvable
+export class PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4360,55 +4360,55 @@ export interface PipesPipeTargetParametersBatchJobParametersContainerOverrides {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#environment PipesPipe#environment}
   */
-  readonly environment?: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] | cdktf.IResolvable;
+  readonly environment?: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] | cdktn.IResolvable;
   /**
   * resource_requirement block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#resource_requirement PipesPipe#resource_requirement}
   */
-  readonly resourceRequirement?: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] | cdktf.IResolvable;
+  readonly resourceRequirement?: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] | cdktn.IResolvable;
 }
 
 export function pipesPipeTargetParametersBatchJobParametersContainerOverridesToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference | PipesPipeTargetParametersBatchJobParametersContainerOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    environment: cdktf.listMapper(pipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentToTerraform, true)(struct!.environment),
-    resource_requirement: cdktf.listMapper(pipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementToTerraform, true)(struct!.resourceRequirement),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
+    instance_type: cdktn.stringToTerraform(struct!.instanceType),
+    environment: cdktn.listMapper(pipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentToTerraform, true)(struct!.environment),
+    resource_requirement: cdktn.listMapper(pipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementToTerraform, true)(struct!.resourceRequirement),
   }
 }
 
 
 export function pipesPipeTargetParametersBatchJobParametersContainerOverridesToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference | PipesPipeTargetParametersBatchJobParametersContainerOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      value: cdktn.stringToHclTerraform(struct!.instanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     environment: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentToHclTerraform, true)(struct!.environment),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentToHclTerraform, true)(struct!.environment),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList",
     },
     resource_requirement: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementToHclTerraform, true)(struct!.resourceRequirement),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementToHclTerraform, true)(struct!.resourceRequirement),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList",
@@ -4419,14 +4419,14 @@ export function pipesPipeTargetParametersBatchJobParametersContainerOverridesToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4506,7 +4506,7 @@ export class PipesPipeTargetParametersBatchJobParametersContainerOverridesOutput
   public get environment() {
     return this._environment;
   }
-  public putEnvironment(value: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] | cdktf.IResolvable) {
+  public putEnvironment(value: PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] | cdktn.IResolvable) {
     this._environment.internalValue = value;
   }
   public resetEnvironment() {
@@ -4522,7 +4522,7 @@ export class PipesPipeTargetParametersBatchJobParametersContainerOverridesOutput
   public get resourceRequirement() {
     return this._resourceRequirement;
   }
-  public putResourceRequirement(value: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] | cdktf.IResolvable) {
+  public putResourceRequirement(value: PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] | cdktn.IResolvable) {
     this._resourceRequirement.internalValue = value;
   }
   public resetResourceRequirement() {
@@ -4544,32 +4544,32 @@ export interface PipesPipeTargetParametersBatchJobParametersDependsOn {
   readonly type?: string;
 }
 
-export function pipesPipeTargetParametersBatchJobParametersDependsOnToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersDependsOn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersBatchJobParametersDependsOnToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersDependsOn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    job_id: cdktf.stringToTerraform(struct!.jobId),
-    type: cdktf.stringToTerraform(struct!.type),
+    job_id: cdktn.stringToTerraform(struct!.jobId),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function pipesPipeTargetParametersBatchJobParametersDependsOnToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersDependsOn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersBatchJobParametersDependsOnToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersDependsOn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     job_id: {
-      value: cdktf.stringToHclTerraform(struct!.jobId),
+      value: cdktn.stringToHclTerraform(struct!.jobId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4580,9 +4580,9 @@ export function pipesPipeTargetParametersBatchJobParametersDependsOnToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4590,11 +4590,11 @@ export class PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersBatchJobParametersDependsOn | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersBatchJobParametersDependsOn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4611,14 +4611,14 @@ export class PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersBatchJobParametersDependsOn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersBatchJobParametersDependsOn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._jobId = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4663,15 +4663,15 @@ export class PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference
   }
 }
 
-export class PipesPipeTargetParametersBatchJobParametersDependsOnList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersBatchJobParametersDependsOn[] | cdktf.IResolvable
+export class PipesPipeTargetParametersBatchJobParametersDependsOnList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersBatchJobParametersDependsOn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4690,24 +4690,24 @@ export interface PipesPipeTargetParametersBatchJobParametersRetryStrategy {
 }
 
 export function pipesPipeTargetParametersBatchJobParametersRetryStrategyToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference | PipesPipeTargetParametersBatchJobParametersRetryStrategy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attempts: cdktf.numberToTerraform(struct!.attempts),
+    attempts: cdktn.numberToTerraform(struct!.attempts),
   }
 }
 
 
 export function pipesPipeTargetParametersBatchJobParametersRetryStrategyToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference | PipesPipeTargetParametersBatchJobParametersRetryStrategy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attempts: {
-      value: cdktf.numberToHclTerraform(struct!.attempts),
+      value: cdktn.numberToHclTerraform(struct!.attempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4718,14 +4718,14 @@ export function pipesPipeTargetParametersBatchJobParametersRetryStrategyToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4796,7 +4796,7 @@ export interface PipesPipeTargetParametersBatchJobParameters {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#depends_on PipesPipe#depends_on}
   */
-  readonly dependsOn?: PipesPipeTargetParametersBatchJobParametersDependsOn[] | cdktf.IResolvable;
+  readonly dependsOn?: PipesPipeTargetParametersBatchJobParametersDependsOn[] | cdktn.IResolvable;
   /**
   * retry_strategy block
   *
@@ -4806,42 +4806,42 @@ export interface PipesPipeTargetParametersBatchJobParameters {
 }
 
 export function pipesPipeTargetParametersBatchJobParametersToTerraform(struct?: PipesPipeTargetParametersBatchJobParametersOutputReference | PipesPipeTargetParametersBatchJobParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    job_definition: cdktf.stringToTerraform(struct!.jobDefinition),
-    job_name: cdktf.stringToTerraform(struct!.jobName),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
+    job_definition: cdktn.stringToTerraform(struct!.jobDefinition),
+    job_name: cdktn.stringToTerraform(struct!.jobName),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
     array_properties: pipesPipeTargetParametersBatchJobParametersArrayPropertiesToTerraform(struct!.arrayProperties),
     container_overrides: pipesPipeTargetParametersBatchJobParametersContainerOverridesToTerraform(struct!.containerOverrides),
-    depends_on: cdktf.listMapper(pipesPipeTargetParametersBatchJobParametersDependsOnToTerraform, true)(struct!.dependsOn),
+    depends_on: cdktn.listMapper(pipesPipeTargetParametersBatchJobParametersDependsOnToTerraform, true)(struct!.dependsOn),
     retry_strategy: pipesPipeTargetParametersBatchJobParametersRetryStrategyToTerraform(struct!.retryStrategy),
   }
 }
 
 
 export function pipesPipeTargetParametersBatchJobParametersToHclTerraform(struct?: PipesPipeTargetParametersBatchJobParametersOutputReference | PipesPipeTargetParametersBatchJobParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     job_definition: {
-      value: cdktf.stringToHclTerraform(struct!.jobDefinition),
+      value: cdktn.stringToHclTerraform(struct!.jobDefinition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     job_name: {
-      value: cdktf.stringToHclTerraform(struct!.jobName),
+      value: cdktn.stringToHclTerraform(struct!.jobName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -4859,7 +4859,7 @@ export function pipesPipeTargetParametersBatchJobParametersToHclTerraform(struct
       storageClassType: "PipesPipeTargetParametersBatchJobParametersContainerOverridesList",
     },
     depends_on: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersBatchJobParametersDependsOnToHclTerraform, true)(struct!.dependsOn),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersBatchJobParametersDependsOnToHclTerraform, true)(struct!.dependsOn),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersBatchJobParametersDependsOnList",
@@ -4876,14 +4876,14 @@ export function pipesPipeTargetParametersBatchJobParametersToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersBatchJobParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersBatchJobParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5023,7 +5023,7 @@ export class PipesPipeTargetParametersBatchJobParametersOutputReference extends 
   public get dependsOn() {
     return this._dependsOn;
   }
-  public putDependsOn(value: PipesPipeTargetParametersBatchJobParametersDependsOn[] | cdktf.IResolvable) {
+  public putDependsOn(value: PipesPipeTargetParametersBatchJobParametersDependsOn[] | cdktn.IResolvable) {
     this._dependsOn.internalValue = value;
   }
   public resetDependsOn() {
@@ -5062,31 +5062,31 @@ export interface PipesPipeTargetParametersCloudwatchLogsParameters {
 }
 
 export function pipesPipeTargetParametersCloudwatchLogsParametersToTerraform(struct?: PipesPipeTargetParametersCloudwatchLogsParametersOutputReference | PipesPipeTargetParametersCloudwatchLogsParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
-    timestamp: cdktf.stringToTerraform(struct!.timestamp),
+    log_stream_name: cdktn.stringToTerraform(struct!.logStreamName),
+    timestamp: cdktn.stringToTerraform(struct!.timestamp),
   }
 }
 
 
 export function pipesPipeTargetParametersCloudwatchLogsParametersToHclTerraform(struct?: PipesPipeTargetParametersCloudwatchLogsParametersOutputReference | PipesPipeTargetParametersCloudwatchLogsParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      value: cdktn.stringToHclTerraform(struct!.logStreamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timestamp: {
-      value: cdktf.stringToHclTerraform(struct!.timestamp),
+      value: cdktn.stringToHclTerraform(struct!.timestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5097,14 +5097,14 @@ export function pipesPipeTargetParametersCloudwatchLogsParametersToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersCloudwatchLogsParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersCloudwatchLogsParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5182,39 +5182,39 @@ export interface PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrat
   readonly weight?: number;
 }
 
-export function pipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    base: cdktf.numberToTerraform(struct!.base),
-    capacity_provider: cdktf.stringToTerraform(struct!.capacityProvider),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    base: cdktn.numberToTerraform(struct!.base),
+    capacity_provider: cdktn.stringToTerraform(struct!.capacityProvider),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
-export function pipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     base: {
-      value: cdktf.numberToHclTerraform(struct!.base),
+      value: cdktn.numberToHclTerraform(struct!.base),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     capacity_provider: {
-      value: cdktf.stringToHclTerraform(struct!.capacityProvider),
+      value: cdktn.stringToHclTerraform(struct!.capacityProvider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5225,9 +5225,9 @@ export function pipesPipeTargetParametersEcsTaskParametersCapacityProviderStrate
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5235,11 +5235,11 @@ export class PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5260,7 +5260,7 @@ export class PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5268,7 +5268,7 @@ export class PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyO
       this._capacityProvider = undefined;
       this._weight = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5327,15 +5327,15 @@ export class PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyO
   }
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] | cdktf.IResolvable
+export class PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5362,38 +5362,38 @@ export interface PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationA
 }
 
 export function pipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationOutputReference | PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    assign_public_ip: cdktf.stringToTerraform(struct!.assignPublicIp),
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
+    assign_public_ip: cdktn.stringToTerraform(struct!.assignPublicIp),
+    security_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroups),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
   }
 }
 
 
 export function pipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationOutputReference | PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     assign_public_ip: {
-      value: cdktf.stringToHclTerraform(struct!.assignPublicIp),
+      value: cdktn.stringToHclTerraform(struct!.assignPublicIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -5404,14 +5404,14 @@ export function pipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5467,7 +5467,7 @@ export class PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVp
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -5483,7 +5483,7 @@ export class PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVp
   // subnets - computed: false, optional: true, required: false
   private _subnets?: string[]; 
   public get subnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -5506,8 +5506,8 @@ export interface PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration 
 }
 
 export function pipesPipeTargetParametersEcsTaskParametersNetworkConfigurationToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationOutputReference | PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5517,8 +5517,8 @@ export function pipesPipeTargetParametersEcsTaskParametersNetworkConfigurationTo
 
 
 export function pipesPipeTargetParametersEcsTaskParametersNetworkConfigurationToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationOutputReference | PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5534,14 +5534,14 @@ export function pipesPipeTargetParametersEcsTaskParametersNetworkConfigurationTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5593,32 +5593,32 @@ export interface PipesPipeTargetParametersEcsTaskParametersOverridesContainerOve
   readonly value?: string;
 }
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5629,9 +5629,9 @@ export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOver
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5639,11 +5639,11 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5660,14 +5660,14 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5712,15 +5712,15 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   }
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] | cdktf.IResolvable
+export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5742,32 +5742,32 @@ export interface PipesPipeTargetParametersEcsTaskParametersOverridesContainerOve
   readonly value: string;
 }
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5778,9 +5778,9 @@ export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOver
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5788,11 +5788,11 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5809,14 +5809,14 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5855,15 +5855,15 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   }
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] | cdktf.IResolvable
+export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5885,32 +5885,32 @@ export interface PipesPipeTargetParametersEcsTaskParametersOverridesContainerOve
   readonly value: string;
 }
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5921,9 +5921,9 @@ export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOver
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5931,11 +5931,11 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5952,14 +5952,14 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5998,15 +5998,15 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   }
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] | cdktf.IResolvable
+export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6043,89 +6043,89 @@ export interface PipesPipeTargetParametersEcsTaskParametersOverridesContainerOve
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#environment PipesPipe#environment}
   */
-  readonly environment?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] | cdktf.IResolvable;
+  readonly environment?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] | cdktn.IResolvable;
   /**
   * environment_file block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#environment_file PipesPipe#environment_file}
   */
-  readonly environmentFile?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] | cdktf.IResolvable;
+  readonly environmentFile?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] | cdktn.IResolvable;
   /**
   * resource_requirement block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#resource_requirement PipesPipe#resource_requirement}
   */
-  readonly resourceRequirement?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] | cdktf.IResolvable;
+  readonly resourceRequirement?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] | cdktn.IResolvable;
 }
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
-    cpu: cdktf.numberToTerraform(struct!.cpu),
-    memory: cdktf.numberToTerraform(struct!.memory),
-    memory_reservation: cdktf.numberToTerraform(struct!.memoryReservation),
-    name: cdktf.stringToTerraform(struct!.name),
-    environment: cdktf.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentToTerraform, true)(struct!.environment),
-    environment_file: cdktf.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileToTerraform, true)(struct!.environmentFile),
-    resource_requirement: cdktf.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementToTerraform, true)(struct!.resourceRequirement),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
+    cpu: cdktn.numberToTerraform(struct!.cpu),
+    memory: cdktn.numberToTerraform(struct!.memory),
+    memory_reservation: cdktn.numberToTerraform(struct!.memoryReservation),
+    name: cdktn.stringToTerraform(struct!.name),
+    environment: cdktn.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentToTerraform, true)(struct!.environment),
+    environment_file: cdktn.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileToTerraform, true)(struct!.environmentFile),
+    resource_requirement: cdktn.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementToTerraform, true)(struct!.resourceRequirement),
   }
 }
 
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     cpu: {
-      value: cdktf.numberToHclTerraform(struct!.cpu),
+      value: cdktn.numberToHclTerraform(struct!.cpu),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     memory: {
-      value: cdktf.numberToHclTerraform(struct!.memory),
+      value: cdktn.numberToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     memory_reservation: {
-      value: cdktf.numberToHclTerraform(struct!.memoryReservation),
+      value: cdktn.numberToHclTerraform(struct!.memoryReservation),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     environment: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentToHclTerraform, true)(struct!.environment),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentToHclTerraform, true)(struct!.environment),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList",
     },
     environment_file: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileToHclTerraform, true)(struct!.environmentFile),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileToHclTerraform, true)(struct!.environmentFile),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList",
     },
     resource_requirement: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementToHclTerraform, true)(struct!.resourceRequirement),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementToHclTerraform, true)(struct!.resourceRequirement),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList",
@@ -6136,9 +6136,9 @@ export function pipesPipeTargetParametersEcsTaskParametersOverridesContainerOver
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6146,11 +6146,11 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6191,7 +6191,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6204,7 +6204,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
       this._environmentFile.internalValue = undefined;
       this._resourceRequirement.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6307,7 +6307,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   public get environment() {
     return this._environment;
   }
-  public putEnvironment(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] | cdktf.IResolvable) {
+  public putEnvironment(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] | cdktn.IResolvable) {
     this._environment.internalValue = value;
   }
   public resetEnvironment() {
@@ -6323,7 +6323,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   public get environmentFile() {
     return this._environmentFile;
   }
-  public putEnvironmentFile(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] | cdktf.IResolvable) {
+  public putEnvironmentFile(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] | cdktn.IResolvable) {
     this._environmentFile.internalValue = value;
   }
   public resetEnvironmentFile() {
@@ -6339,7 +6339,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   public get resourceRequirement() {
     return this._resourceRequirement;
   }
-  public putResourceRequirement(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] | cdktf.IResolvable) {
+  public putResourceRequirement(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] | cdktn.IResolvable) {
     this._resourceRequirement.internalValue = value;
   }
   public resetResourceRequirement() {
@@ -6351,15 +6351,15 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrid
   }
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] | cdktf.IResolvable
+export class PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6378,24 +6378,24 @@ export interface PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralSto
 }
 
 export function pipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference | PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    size_in_gib: cdktf.numberToTerraform(struct!.sizeInGib),
+    size_in_gib: cdktn.numberToTerraform(struct!.sizeInGib),
   }
 }
 
 
 export function pipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference | PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     size_in_gib: {
-      value: cdktf.numberToHclTerraform(struct!.sizeInGib),
+      value: cdktn.numberToHclTerraform(struct!.sizeInGib),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6406,14 +6406,14 @@ export function pipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6462,32 +6462,32 @@ export interface PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcc
   readonly deviceType?: string;
 }
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    device_type: cdktf.stringToTerraform(struct!.deviceType),
+    device_name: cdktn.stringToTerraform(struct!.deviceName),
+    device_type: cdktn.stringToTerraform(struct!.deviceType),
   }
 }
 
 
-export function pipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     device_name: {
-      value: cdktf.stringToHclTerraform(struct!.deviceName),
+      value: cdktn.stringToHclTerraform(struct!.deviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     device_type: {
-      value: cdktf.stringToHclTerraform(struct!.deviceType),
+      value: cdktn.stringToHclTerraform(struct!.deviceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6498,9 +6498,9 @@ export function pipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6508,11 +6508,11 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceler
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6529,14 +6529,14 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceler
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._deviceName = undefined;
       this._deviceType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6581,15 +6581,15 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceler
   }
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] | cdktf.IResolvable
+export class PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6622,7 +6622,7 @@ export interface PipesPipeTargetParametersEcsTaskParametersOverrides {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#container_override PipesPipe#container_override}
   */
-  readonly containerOverride?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] | cdktf.IResolvable;
+  readonly containerOverride?: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] | cdktn.IResolvable;
   /**
   * ephemeral_storage block
   *
@@ -6634,58 +6634,58 @@ export interface PipesPipeTargetParametersEcsTaskParametersOverrides {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#inference_accelerator_override PipesPipe#inference_accelerator_override}
   */
-  readonly inferenceAcceleratorOverride?: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] | cdktf.IResolvable;
+  readonly inferenceAcceleratorOverride?: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] | cdktn.IResolvable;
 }
 
 export function pipesPipeTargetParametersEcsTaskParametersOverridesToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference | PipesPipeTargetParametersEcsTaskParametersOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu: cdktf.stringToTerraform(struct!.cpu),
-    execution_role_arn: cdktf.stringToTerraform(struct!.executionRoleArn),
-    memory: cdktf.stringToTerraform(struct!.memory),
-    task_role_arn: cdktf.stringToTerraform(struct!.taskRoleArn),
-    container_override: cdktf.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideToTerraform, true)(struct!.containerOverride),
+    cpu: cdktn.stringToTerraform(struct!.cpu),
+    execution_role_arn: cdktn.stringToTerraform(struct!.executionRoleArn),
+    memory: cdktn.stringToTerraform(struct!.memory),
+    task_role_arn: cdktn.stringToTerraform(struct!.taskRoleArn),
+    container_override: cdktn.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideToTerraform, true)(struct!.containerOverride),
     ephemeral_storage: pipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageToTerraform(struct!.ephemeralStorage),
-    inference_accelerator_override: cdktf.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideToTerraform, true)(struct!.inferenceAcceleratorOverride),
+    inference_accelerator_override: cdktn.listMapper(pipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideToTerraform, true)(struct!.inferenceAcceleratorOverride),
   }
 }
 
 
 export function pipesPipeTargetParametersEcsTaskParametersOverridesToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference | PipesPipeTargetParametersEcsTaskParametersOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu: {
-      value: cdktf.stringToHclTerraform(struct!.cpu),
+      value: cdktn.stringToHclTerraform(struct!.cpu),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.executionRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.executionRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     memory: {
-      value: cdktf.stringToHclTerraform(struct!.memory),
+      value: cdktn.stringToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.taskRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.taskRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container_override: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideToHclTerraform, true)(struct!.containerOverride),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideToHclTerraform, true)(struct!.containerOverride),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList",
@@ -6697,7 +6697,7 @@ export function pipesPipeTargetParametersEcsTaskParametersOverridesToHclTerrafor
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageList",
     },
     inference_accelerator_override: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideToHclTerraform, true)(struct!.inferenceAcceleratorOverride),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideToHclTerraform, true)(struct!.inferenceAcceleratorOverride),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList",
@@ -6708,14 +6708,14 @@ export function pipesPipeTargetParametersEcsTaskParametersOverridesToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6845,7 +6845,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference 
   public get containerOverride() {
     return this._containerOverride;
   }
-  public putContainerOverride(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] | cdktf.IResolvable) {
+  public putContainerOverride(value: PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] | cdktn.IResolvable) {
     this._containerOverride.internalValue = value;
   }
   public resetContainerOverride() {
@@ -6877,7 +6877,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference 
   public get inferenceAcceleratorOverride() {
     return this._inferenceAcceleratorOverride;
   }
-  public putInferenceAcceleratorOverride(value: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] | cdktf.IResolvable) {
+  public putInferenceAcceleratorOverride(value: PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] | cdktn.IResolvable) {
     this._inferenceAcceleratorOverride.internalValue = value;
   }
   public resetInferenceAcceleratorOverride() {
@@ -6899,32 +6899,32 @@ export interface PipesPipeTargetParametersEcsTaskParametersPlacementConstraint {
   readonly type?: string;
 }
 
-export function pipesPipeTargetParametersEcsTaskParametersPlacementConstraintToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersPlacementConstraintToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expression: cdktf.stringToTerraform(struct!.expression),
-    type: cdktf.stringToTerraform(struct!.type),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function pipesPipeTargetParametersEcsTaskParametersPlacementConstraintToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersPlacementConstraintToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6935,9 +6935,9 @@ export function pipesPipeTargetParametersEcsTaskParametersPlacementConstraintToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6945,11 +6945,11 @@ export class PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersPlacementConstraint | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersPlacementConstraint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6966,14 +6966,14 @@ export class PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._expression = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7018,15 +7018,15 @@ export class PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutput
   }
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] | cdktf.IResolvable
+export class PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7048,32 +7048,32 @@ export interface PipesPipeTargetParametersEcsTaskParametersPlacementStrategy {
   readonly type?: string;
 }
 
-export function pipesPipeTargetParametersEcsTaskParametersPlacementStrategyToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersPlacementStrategyToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    field: cdktf.stringToTerraform(struct!.field),
-    type: cdktf.stringToTerraform(struct!.type),
+    field: cdktn.stringToTerraform(struct!.field),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function pipesPipeTargetParametersEcsTaskParametersPlacementStrategyToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersEcsTaskParametersPlacementStrategyToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     field: {
-      value: cdktf.stringToHclTerraform(struct!.field),
+      value: cdktn.stringToHclTerraform(struct!.field),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7084,9 +7084,9 @@ export function pipesPipeTargetParametersEcsTaskParametersPlacementStrategyToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7094,11 +7094,11 @@ export class PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersPlacementStrategy | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersEcsTaskParametersPlacementStrategy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7115,14 +7115,14 @@ export class PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._field = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7167,15 +7167,15 @@ export class PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputRe
   }
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] | cdktf.IResolvable
+export class PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7190,11 +7190,11 @@ export interface PipesPipeTargetParametersEcsTaskParameters {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#enable_ecs_managed_tags PipesPipe#enable_ecs_managed_tags}
   */
-  readonly enableEcsManagedTags?: boolean | cdktf.IResolvable;
+  readonly enableEcsManagedTags?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#enable_execute_command PipesPipe#enable_execute_command}
   */
-  readonly enableExecuteCommand?: boolean | cdktf.IResolvable;
+  readonly enableExecuteCommand?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#group PipesPipe#group}
   */
@@ -7232,7 +7232,7 @@ export interface PipesPipeTargetParametersEcsTaskParameters {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#capacity_provider_strategy PipesPipe#capacity_provider_strategy}
   */
-  readonly capacityProviderStrategy?: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] | cdktf.IResolvable;
+  readonly capacityProviderStrategy?: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] | cdktn.IResolvable;
   /**
   * network_configuration block
   *
@@ -7250,108 +7250,108 @@ export interface PipesPipeTargetParametersEcsTaskParameters {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#placement_constraint PipesPipe#placement_constraint}
   */
-  readonly placementConstraint?: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] | cdktf.IResolvable;
+  readonly placementConstraint?: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] | cdktn.IResolvable;
   /**
   * placement_strategy block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#placement_strategy PipesPipe#placement_strategy}
   */
-  readonly placementStrategy?: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] | cdktf.IResolvable;
+  readonly placementStrategy?: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] | cdktn.IResolvable;
 }
 
 export function pipesPipeTargetParametersEcsTaskParametersToTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOutputReference | PipesPipeTargetParametersEcsTaskParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_ecs_managed_tags: cdktf.booleanToTerraform(struct!.enableEcsManagedTags),
-    enable_execute_command: cdktf.booleanToTerraform(struct!.enableExecuteCommand),
-    group: cdktf.stringToTerraform(struct!.group),
-    launch_type: cdktf.stringToTerraform(struct!.launchType),
-    platform_version: cdktf.stringToTerraform(struct!.platformVersion),
-    propagate_tags: cdktf.stringToTerraform(struct!.propagateTags),
-    reference_id: cdktf.stringToTerraform(struct!.referenceId),
-    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
-    task_count: cdktf.numberToTerraform(struct!.taskCount),
-    task_definition_arn: cdktf.stringToTerraform(struct!.taskDefinitionArn),
-    capacity_provider_strategy: cdktf.listMapper(pipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyToTerraform, true)(struct!.capacityProviderStrategy),
+    enable_ecs_managed_tags: cdktn.booleanToTerraform(struct!.enableEcsManagedTags),
+    enable_execute_command: cdktn.booleanToTerraform(struct!.enableExecuteCommand),
+    group: cdktn.stringToTerraform(struct!.group),
+    launch_type: cdktn.stringToTerraform(struct!.launchType),
+    platform_version: cdktn.stringToTerraform(struct!.platformVersion),
+    propagate_tags: cdktn.stringToTerraform(struct!.propagateTags),
+    reference_id: cdktn.stringToTerraform(struct!.referenceId),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
+    task_count: cdktn.numberToTerraform(struct!.taskCount),
+    task_definition_arn: cdktn.stringToTerraform(struct!.taskDefinitionArn),
+    capacity_provider_strategy: cdktn.listMapper(pipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyToTerraform, true)(struct!.capacityProviderStrategy),
     network_configuration: pipesPipeTargetParametersEcsTaskParametersNetworkConfigurationToTerraform(struct!.networkConfiguration),
     overrides: pipesPipeTargetParametersEcsTaskParametersOverridesToTerraform(struct!.overrides),
-    placement_constraint: cdktf.listMapper(pipesPipeTargetParametersEcsTaskParametersPlacementConstraintToTerraform, true)(struct!.placementConstraint),
-    placement_strategy: cdktf.listMapper(pipesPipeTargetParametersEcsTaskParametersPlacementStrategyToTerraform, true)(struct!.placementStrategy),
+    placement_constraint: cdktn.listMapper(pipesPipeTargetParametersEcsTaskParametersPlacementConstraintToTerraform, true)(struct!.placementConstraint),
+    placement_strategy: cdktn.listMapper(pipesPipeTargetParametersEcsTaskParametersPlacementStrategyToTerraform, true)(struct!.placementStrategy),
   }
 }
 
 
 export function pipesPipeTargetParametersEcsTaskParametersToHclTerraform(struct?: PipesPipeTargetParametersEcsTaskParametersOutputReference | PipesPipeTargetParametersEcsTaskParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_ecs_managed_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.enableEcsManagedTags),
+      value: cdktn.booleanToHclTerraform(struct!.enableEcsManagedTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_execute_command: {
-      value: cdktf.booleanToHclTerraform(struct!.enableExecuteCommand),
+      value: cdktn.booleanToHclTerraform(struct!.enableExecuteCommand),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     group: {
-      value: cdktf.stringToHclTerraform(struct!.group),
+      value: cdktn.stringToHclTerraform(struct!.group),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     launch_type: {
-      value: cdktf.stringToHclTerraform(struct!.launchType),
+      value: cdktn.stringToHclTerraform(struct!.launchType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     platform_version: {
-      value: cdktf.stringToHclTerraform(struct!.platformVersion),
+      value: cdktn.stringToHclTerraform(struct!.platformVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     propagate_tags: {
-      value: cdktf.stringToHclTerraform(struct!.propagateTags),
+      value: cdktn.stringToHclTerraform(struct!.propagateTags),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     reference_id: {
-      value: cdktf.stringToHclTerraform(struct!.referenceId),
+      value: cdktn.stringToHclTerraform(struct!.referenceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     task_count: {
-      value: cdktf.numberToHclTerraform(struct!.taskCount),
+      value: cdktn.numberToHclTerraform(struct!.taskCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     task_definition_arn: {
-      value: cdktf.stringToHclTerraform(struct!.taskDefinitionArn),
+      value: cdktn.stringToHclTerraform(struct!.taskDefinitionArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     capacity_provider_strategy: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyToHclTerraform, true)(struct!.capacityProviderStrategy),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyToHclTerraform, true)(struct!.capacityProviderStrategy),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList",
@@ -7369,13 +7369,13 @@ export function pipesPipeTargetParametersEcsTaskParametersToHclTerraform(struct?
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersOverridesList",
     },
     placement_constraint: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersPlacementConstraintToHclTerraform, true)(struct!.placementConstraint),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersPlacementConstraintToHclTerraform, true)(struct!.placementConstraint),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList",
     },
     placement_strategy: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersPlacementStrategyToHclTerraform, true)(struct!.placementStrategy),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersEcsTaskParametersPlacementStrategyToHclTerraform, true)(struct!.placementStrategy),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList",
@@ -7386,14 +7386,14 @@ export function pipesPipeTargetParametersEcsTaskParametersToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEcsTaskParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEcsTaskParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7503,11 +7503,11 @@ export class PipesPipeTargetParametersEcsTaskParametersOutputReference extends c
   }
 
   // enable_ecs_managed_tags - computed: false, optional: true, required: false
-  private _enableEcsManagedTags?: boolean | cdktf.IResolvable; 
+  private _enableEcsManagedTags?: boolean | cdktn.IResolvable; 
   public get enableEcsManagedTags() {
     return this.getBooleanAttribute('enable_ecs_managed_tags');
   }
-  public set enableEcsManagedTags(value: boolean | cdktf.IResolvable) {
+  public set enableEcsManagedTags(value: boolean | cdktn.IResolvable) {
     this._enableEcsManagedTags = value;
   }
   public resetEnableEcsManagedTags() {
@@ -7519,11 +7519,11 @@ export class PipesPipeTargetParametersEcsTaskParametersOutputReference extends c
   }
 
   // enable_execute_command - computed: false, optional: true, required: false
-  private _enableExecuteCommand?: boolean | cdktf.IResolvable; 
+  private _enableExecuteCommand?: boolean | cdktn.IResolvable; 
   public get enableExecuteCommand() {
     return this.getBooleanAttribute('enable_execute_command');
   }
-  public set enableExecuteCommand(value: boolean | cdktf.IResolvable) {
+  public set enableExecuteCommand(value: boolean | cdktn.IResolvable) {
     this._enableExecuteCommand = value;
   }
   public resetEnableExecuteCommand() {
@@ -7664,7 +7664,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOutputReference extends c
   public get capacityProviderStrategy() {
     return this._capacityProviderStrategy;
   }
-  public putCapacityProviderStrategy(value: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] | cdktf.IResolvable) {
+  public putCapacityProviderStrategy(value: PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] | cdktn.IResolvable) {
     this._capacityProviderStrategy.internalValue = value;
   }
   public resetCapacityProviderStrategy() {
@@ -7712,7 +7712,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOutputReference extends c
   public get placementConstraint() {
     return this._placementConstraint;
   }
-  public putPlacementConstraint(value: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] | cdktf.IResolvable) {
+  public putPlacementConstraint(value: PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] | cdktn.IResolvable) {
     this._placementConstraint.internalValue = value;
   }
   public resetPlacementConstraint() {
@@ -7728,7 +7728,7 @@ export class PipesPipeTargetParametersEcsTaskParametersOutputReference extends c
   public get placementStrategy() {
     return this._placementStrategy;
   }
-  public putPlacementStrategy(value: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] | cdktf.IResolvable) {
+  public putPlacementStrategy(value: PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] | cdktn.IResolvable) {
     this._placementStrategy.internalValue = value;
   }
   public resetPlacementStrategy() {
@@ -7763,52 +7763,52 @@ export interface PipesPipeTargetParametersEventbridgeEventBusParameters {
 }
 
 export function pipesPipeTargetParametersEventbridgeEventBusParametersToTerraform(struct?: PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference | PipesPipeTargetParametersEventbridgeEventBusParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    detail_type: cdktf.stringToTerraform(struct!.detailType),
-    endpoint_id: cdktf.stringToTerraform(struct!.endpointId),
-    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
-    source: cdktf.stringToTerraform(struct!.source),
-    time: cdktf.stringToTerraform(struct!.time),
+    detail_type: cdktn.stringToTerraform(struct!.detailType),
+    endpoint_id: cdktn.stringToTerraform(struct!.endpointId),
+    resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resources),
+    source: cdktn.stringToTerraform(struct!.source),
+    time: cdktn.stringToTerraform(struct!.time),
   }
 }
 
 
 export function pipesPipeTargetParametersEventbridgeEventBusParametersToHclTerraform(struct?: PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference | PipesPipeTargetParametersEventbridgeEventBusParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     detail_type: {
-      value: cdktf.stringToHclTerraform(struct!.detailType),
+      value: cdktn.stringToHclTerraform(struct!.detailType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint_id: {
-      value: cdktf.stringToHclTerraform(struct!.endpointId),
+      value: cdktn.stringToHclTerraform(struct!.endpointId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time: {
-      value: cdktf.stringToHclTerraform(struct!.time),
+      value: cdktn.stringToHclTerraform(struct!.time),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7819,14 +7819,14 @@ export function pipesPipeTargetParametersEventbridgeEventBusParametersToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7910,7 +7910,7 @@ export class PipesPipeTargetParametersEventbridgeEventBusParametersOutputReferen
   // resources - computed: false, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -7971,38 +7971,38 @@ export interface PipesPipeTargetParametersHttpParameters {
 }
 
 export function pipesPipeTargetParametersHttpParametersToTerraform(struct?: PipesPipeTargetParametersHttpParametersOutputReference | PipesPipeTargetParametersHttpParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.headerParameters),
-    path_parameter_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pathParameterValues),
-    query_string_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.queryStringParameters),
+    header_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.headerParameters),
+    path_parameter_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pathParameterValues),
+    query_string_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.queryStringParameters),
   }
 }
 
 
 export function pipesPipeTargetParametersHttpParametersToHclTerraform(struct?: PipesPipeTargetParametersHttpParametersOutputReference | PipesPipeTargetParametersHttpParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.headerParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.headerParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     path_parameter_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pathParameterValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pathParameterValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     query_string_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.queryStringParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.queryStringParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -8013,14 +8013,14 @@ export function pipesPipeTargetParametersHttpParametersToHclTerraform(struct?: P
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersHttpParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersHttpParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8113,24 +8113,24 @@ export interface PipesPipeTargetParametersKinesisStreamParameters {
 }
 
 export function pipesPipeTargetParametersKinesisStreamParametersToTerraform(struct?: PipesPipeTargetParametersKinesisStreamParametersOutputReference | PipesPipeTargetParametersKinesisStreamParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    partition_key: cdktf.stringToTerraform(struct!.partitionKey),
+    partition_key: cdktn.stringToTerraform(struct!.partitionKey),
   }
 }
 
 
 export function pipesPipeTargetParametersKinesisStreamParametersToHclTerraform(struct?: PipesPipeTargetParametersKinesisStreamParametersOutputReference | PipesPipeTargetParametersKinesisStreamParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     partition_key: {
-      value: cdktf.stringToHclTerraform(struct!.partitionKey),
+      value: cdktn.stringToHclTerraform(struct!.partitionKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8141,14 +8141,14 @@ export function pipesPipeTargetParametersKinesisStreamParametersToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersKinesisStreamParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersKinesisStreamParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8194,24 +8194,24 @@ export interface PipesPipeTargetParametersLambdaFunctionParameters {
 }
 
 export function pipesPipeTargetParametersLambdaFunctionParametersToTerraform(struct?: PipesPipeTargetParametersLambdaFunctionParametersOutputReference | PipesPipeTargetParametersLambdaFunctionParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    invocation_type: cdktf.stringToTerraform(struct!.invocationType),
+    invocation_type: cdktn.stringToTerraform(struct!.invocationType),
   }
 }
 
 
 export function pipesPipeTargetParametersLambdaFunctionParametersToHclTerraform(struct?: PipesPipeTargetParametersLambdaFunctionParametersOutputReference | PipesPipeTargetParametersLambdaFunctionParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     invocation_type: {
-      value: cdktf.stringToHclTerraform(struct!.invocationType),
+      value: cdktn.stringToHclTerraform(struct!.invocationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8222,14 +8222,14 @@ export function pipesPipeTargetParametersLambdaFunctionParametersToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersLambdaFunctionParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersLambdaFunctionParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8291,63 +8291,63 @@ export interface PipesPipeTargetParametersRedshiftDataParameters {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#with_event PipesPipe#with_event}
   */
-  readonly withEvent?: boolean | cdktf.IResolvable;
+  readonly withEvent?: boolean | cdktn.IResolvable;
 }
 
 export function pipesPipeTargetParametersRedshiftDataParametersToTerraform(struct?: PipesPipeTargetParametersRedshiftDataParametersOutputReference | PipesPipeTargetParametersRedshiftDataParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    db_user: cdktf.stringToTerraform(struct!.dbUser),
-    secret_manager_arn: cdktf.stringToTerraform(struct!.secretManagerArn),
-    sqls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sqls),
-    statement_name: cdktf.stringToTerraform(struct!.statementName),
-    with_event: cdktf.booleanToTerraform(struct!.withEvent),
+    database: cdktn.stringToTerraform(struct!.database),
+    db_user: cdktn.stringToTerraform(struct!.dbUser),
+    secret_manager_arn: cdktn.stringToTerraform(struct!.secretManagerArn),
+    sqls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sqls),
+    statement_name: cdktn.stringToTerraform(struct!.statementName),
+    with_event: cdktn.booleanToTerraform(struct!.withEvent),
   }
 }
 
 
 export function pipesPipeTargetParametersRedshiftDataParametersToHclTerraform(struct?: PipesPipeTargetParametersRedshiftDataParametersOutputReference | PipesPipeTargetParametersRedshiftDataParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     db_user: {
-      value: cdktf.stringToHclTerraform(struct!.dbUser),
+      value: cdktn.stringToHclTerraform(struct!.dbUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_manager_arn: {
-      value: cdktf.stringToHclTerraform(struct!.secretManagerArn),
+      value: cdktn.stringToHclTerraform(struct!.secretManagerArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sqls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sqls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sqls),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     statement_name: {
-      value: cdktf.stringToHclTerraform(struct!.statementName),
+      value: cdktn.stringToHclTerraform(struct!.statementName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     with_event: {
-      value: cdktf.booleanToHclTerraform(struct!.withEvent),
+      value: cdktn.booleanToHclTerraform(struct!.withEvent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -8358,14 +8358,14 @@ export function pipesPipeTargetParametersRedshiftDataParametersToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersRedshiftDataParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersRedshiftDataParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8468,7 +8468,7 @@ export class PipesPipeTargetParametersRedshiftDataParametersOutputReference exte
   // sqls - computed: false, optional: false, required: true
   private _sqls?: string[]; 
   public get sqls() {
-    return cdktf.Fn.tolist(this.getListAttribute('sqls'));
+    return cdktn.Fn.tolist(this.getListAttribute('sqls'));
   }
   public set sqls(value: string[]) {
     this._sqls = value;
@@ -8495,11 +8495,11 @@ export class PipesPipeTargetParametersRedshiftDataParametersOutputReference exte
   }
 
   // with_event - computed: false, optional: true, required: false
-  private _withEvent?: boolean | cdktf.IResolvable; 
+  private _withEvent?: boolean | cdktn.IResolvable; 
   public get withEvent() {
     return this.getBooleanAttribute('with_event');
   }
-  public set withEvent(value: boolean | cdktf.IResolvable) {
+  public set withEvent(value: boolean | cdktn.IResolvable) {
     this._withEvent = value;
   }
   public resetWithEvent() {
@@ -8521,32 +8521,32 @@ export interface PipesPipeTargetParametersSagemakerPipelineParametersPipelinePar
   readonly value: string;
 }
 
-export function pipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterToTerraform(struct?: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterToTerraform(struct?: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function pipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterToHclTerraform(struct?: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterToHclTerraform(struct?: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8557,9 +8557,9 @@ export function pipesPipeTargetParametersSagemakerPipelineParametersPipelinePara
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8567,11 +8567,11 @@ export class PipesPipeTargetParametersSagemakerPipelineParametersPipelineParamet
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8588,14 +8588,14 @@ export class PipesPipeTargetParametersSagemakerPipelineParametersPipelineParamet
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8634,15 +8634,15 @@ export class PipesPipeTargetParametersSagemakerPipelineParametersPipelineParamet
   }
 }
 
-export class PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList extends cdktf.ComplexList {
-  public internalValue? : PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] | cdktf.IResolvable
+export class PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList extends cdktn.ComplexList {
+  public internalValue? : PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8659,28 +8659,28 @@ export interface PipesPipeTargetParametersSagemakerPipelineParameters {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#pipeline_parameter PipesPipe#pipeline_parameter}
   */
-  readonly pipelineParameter?: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] | cdktf.IResolvable;
+  readonly pipelineParameter?: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] | cdktn.IResolvable;
 }
 
 export function pipesPipeTargetParametersSagemakerPipelineParametersToTerraform(struct?: PipesPipeTargetParametersSagemakerPipelineParametersOutputReference | PipesPipeTargetParametersSagemakerPipelineParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pipeline_parameter: cdktf.listMapper(pipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterToTerraform, true)(struct!.pipelineParameter),
+    pipeline_parameter: cdktn.listMapper(pipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterToTerraform, true)(struct!.pipelineParameter),
   }
 }
 
 
 export function pipesPipeTargetParametersSagemakerPipelineParametersToHclTerraform(struct?: PipesPipeTargetParametersSagemakerPipelineParametersOutputReference | PipesPipeTargetParametersSagemakerPipelineParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pipeline_parameter: {
-      value: cdktf.listMapperHcl(pipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterToHclTerraform, true)(struct!.pipelineParameter),
+      value: cdktn.listMapperHcl(pipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterToHclTerraform, true)(struct!.pipelineParameter),
       isBlock: true,
       type: "list",
       storageClassType: "PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList",
@@ -8691,14 +8691,14 @@ export function pipesPipeTargetParametersSagemakerPipelineParametersToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersSagemakerPipelineParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersSagemakerPipelineParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8728,7 +8728,7 @@ export class PipesPipeTargetParametersSagemakerPipelineParametersOutputReference
   public get pipelineParameter() {
     return this._pipelineParameter;
   }
-  public putPipelineParameter(value: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] | cdktf.IResolvable) {
+  public putPipelineParameter(value: PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] | cdktn.IResolvable) {
     this._pipelineParameter.internalValue = value;
   }
   public resetPipelineParameter() {
@@ -8751,31 +8751,31 @@ export interface PipesPipeTargetParametersSqsQueueParameters {
 }
 
 export function pipesPipeTargetParametersSqsQueueParametersToTerraform(struct?: PipesPipeTargetParametersSqsQueueParametersOutputReference | PipesPipeTargetParametersSqsQueueParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message_deduplication_id: cdktf.stringToTerraform(struct!.messageDeduplicationId),
-    message_group_id: cdktf.stringToTerraform(struct!.messageGroupId),
+    message_deduplication_id: cdktn.stringToTerraform(struct!.messageDeduplicationId),
+    message_group_id: cdktn.stringToTerraform(struct!.messageGroupId),
   }
 }
 
 
 export function pipesPipeTargetParametersSqsQueueParametersToHclTerraform(struct?: PipesPipeTargetParametersSqsQueueParametersOutputReference | PipesPipeTargetParametersSqsQueueParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message_deduplication_id: {
-      value: cdktf.stringToHclTerraform(struct!.messageDeduplicationId),
+      value: cdktn.stringToHclTerraform(struct!.messageDeduplicationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.messageGroupId),
+      value: cdktn.stringToHclTerraform(struct!.messageGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8786,14 +8786,14 @@ export function pipesPipeTargetParametersSqsQueueParametersToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersSqsQueueParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersSqsQueueParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8864,24 +8864,24 @@ export interface PipesPipeTargetParametersStepFunctionStateMachineParameters {
 }
 
 export function pipesPipeTargetParametersStepFunctionStateMachineParametersToTerraform(struct?: PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference | PipesPipeTargetParametersStepFunctionStateMachineParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    invocation_type: cdktf.stringToTerraform(struct!.invocationType),
+    invocation_type: cdktn.stringToTerraform(struct!.invocationType),
   }
 }
 
 
 export function pipesPipeTargetParametersStepFunctionStateMachineParametersToHclTerraform(struct?: PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference | PipesPipeTargetParametersStepFunctionStateMachineParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     invocation_type: {
-      value: cdktf.stringToHclTerraform(struct!.invocationType),
+      value: cdktn.stringToHclTerraform(struct!.invocationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8892,14 +8892,14 @@ export function pipesPipeTargetParametersStepFunctionStateMachineParametersToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9011,12 +9011,12 @@ export interface PipesPipeTargetParameters {
 }
 
 export function pipesPipeTargetParametersToTerraform(struct?: PipesPipeTargetParametersOutputReference | PipesPipeTargetParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    input_template: cdktf.stringToTerraform(struct!.inputTemplate),
+    input_template: cdktn.stringToTerraform(struct!.inputTemplate),
     batch_job_parameters: pipesPipeTargetParametersBatchJobParametersToTerraform(struct!.batchJobParameters),
     cloudwatch_logs_parameters: pipesPipeTargetParametersCloudwatchLogsParametersToTerraform(struct!.cloudwatchLogsParameters),
     ecs_task_parameters: pipesPipeTargetParametersEcsTaskParametersToTerraform(struct!.ecsTaskParameters),
@@ -9033,13 +9033,13 @@ export function pipesPipeTargetParametersToTerraform(struct?: PipesPipeTargetPar
 
 
 export function pipesPipeTargetParametersToHclTerraform(struct?: PipesPipeTargetParametersOutputReference | PipesPipeTargetParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     input_template: {
-      value: cdktf.stringToHclTerraform(struct!.inputTemplate),
+      value: cdktn.stringToHclTerraform(struct!.inputTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9116,14 +9116,14 @@ export function pipesPipeTargetParametersToHclTerraform(struct?: PipesPipeTarget
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTargetParametersOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTargetParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9421,39 +9421,39 @@ export interface PipesPipeTimeouts {
   readonly update?: string;
 }
 
-export function pipesPipeTimeoutsToTerraform(struct?: PipesPipeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTimeoutsToTerraform(struct?: PipesPipeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function pipesPipeTimeoutsToHclTerraform(struct?: PipesPipeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipesPipeTimeoutsToHclTerraform(struct?: PipesPipeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9464,19 +9464,19 @@ export function pipesPipeTimeoutsToHclTerraform(struct?: PipesPipeTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipesPipeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PipesPipeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PipesPipeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PipesPipeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9497,7 +9497,7 @@ export class PipesPipeTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipesPipeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipesPipeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9505,7 +9505,7 @@ export class PipesPipeTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9570,7 +9570,7 @@ export class PipesPipeTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe aws_pipes_pipe}
 */
-export class PipesPipe extends cdktf.TerraformResource {
+export class PipesPipe extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -9581,14 +9581,14 @@ export class PipesPipe extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PipesPipe resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PipesPipe resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PipesPipe to import
   * @param importFromId The id of the existing PipesPipe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pipes_pipe#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PipesPipe to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_pipes_pipe", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_pipes_pipe", importId: importFromId, provider });
       }
 
   // ===========
@@ -9932,19 +9932,19 @@ export class PipesPipe extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      desired_state: cdktf.stringToTerraform(this._desiredState),
-      enrichment: cdktf.stringToTerraform(this._enrichment),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_identifier: cdktf.stringToTerraform(this._kmsKeyIdentifier),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      source: cdktf.stringToTerraform(this._source),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target: cdktf.stringToTerraform(this._target),
+      description: cdktn.stringToTerraform(this._description),
+      desired_state: cdktn.stringToTerraform(this._desiredState),
+      enrichment: cdktn.stringToTerraform(this._enrichment),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_identifier: cdktn.stringToTerraform(this._kmsKeyIdentifier),
+      name: cdktn.stringToTerraform(this._name),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      source: cdktn.stringToTerraform(this._source),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      target: cdktn.stringToTerraform(this._target),
       enrichment_parameters: pipesPipeEnrichmentParametersToTerraform(this._enrichmentParameters.internalValue),
       log_configuration: pipesPipeLogConfigurationToTerraform(this._logConfiguration.internalValue),
       source_parameters: pipesPipeSourceParametersToTerraform(this._sourceParameters.internalValue),
@@ -9956,79 +9956,79 @@ export class PipesPipe extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       desired_state: {
-        value: cdktf.stringToHclTerraform(this._desiredState),
+        value: cdktn.stringToHclTerraform(this._desiredState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enrichment: {
-        value: cdktf.stringToHclTerraform(this._enrichment),
+        value: cdktn.stringToHclTerraform(this._enrichment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_identifier: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyIdentifier),
+        value: cdktn.stringToHclTerraform(this._kmsKeyIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target: {
-        value: cdktf.stringToHclTerraform(this._target),
+        value: cdktn.stringToHclTerraform(this._target),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

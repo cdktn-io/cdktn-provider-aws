@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamAccountPasswordPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface IamAccountPasswordPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_password_policy#allow_users_to_change_password IamAccountPasswordPolicy#allow_users_to_change_password}
   */
-  readonly allowUsersToChangePassword?: boolean | cdktf.IResolvable;
+  readonly allowUsersToChangePassword?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_password_policy#hard_expiry IamAccountPasswordPolicy#hard_expiry}
   */
-  readonly hardExpiry?: boolean | cdktf.IResolvable;
+  readonly hardExpiry?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_password_policy#id IamAccountPasswordPolicy#id}
   *
@@ -42,25 +42,25 @@ export interface IamAccountPasswordPolicyConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_password_policy#require_lowercase_characters IamAccountPasswordPolicy#require_lowercase_characters}
   */
-  readonly requireLowercaseCharacters?: boolean | cdktf.IResolvable;
+  readonly requireLowercaseCharacters?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_password_policy#require_numbers IamAccountPasswordPolicy#require_numbers}
   */
-  readonly requireNumbers?: boolean | cdktf.IResolvable;
+  readonly requireNumbers?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_password_policy#require_symbols IamAccountPasswordPolicy#require_symbols}
   */
-  readonly requireSymbols?: boolean | cdktf.IResolvable;
+  readonly requireSymbols?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_password_policy#require_uppercase_characters IamAccountPasswordPolicy#require_uppercase_characters}
   */
-  readonly requireUppercaseCharacters?: boolean | cdktf.IResolvable;
+  readonly requireUppercaseCharacters?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_password_policy aws_iam_account_password_policy}
 */
-export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
+export class IamAccountPasswordPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamAccountPasswordPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamAccountPasswordPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamAccountPasswordPolicy to import
   * @param importFromId The id of the existing IamAccountPasswordPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_account_password_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamAccountPasswordPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_account_password_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_account_password_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -125,11 +125,11 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   // ==========
 
   // allow_users_to_change_password - computed: false, optional: true, required: false
-  private _allowUsersToChangePassword?: boolean | cdktf.IResolvable; 
+  private _allowUsersToChangePassword?: boolean | cdktn.IResolvable; 
   public get allowUsersToChangePassword() {
     return this.getBooleanAttribute('allow_users_to_change_password');
   }
-  public set allowUsersToChangePassword(value: boolean | cdktf.IResolvable) {
+  public set allowUsersToChangePassword(value: boolean | cdktn.IResolvable) {
     this._allowUsersToChangePassword = value;
   }
   public resetAllowUsersToChangePassword() {
@@ -146,11 +146,11 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   }
 
   // hard_expiry - computed: true, optional: true, required: false
-  private _hardExpiry?: boolean | cdktf.IResolvable; 
+  private _hardExpiry?: boolean | cdktn.IResolvable; 
   public get hardExpiry() {
     return this.getBooleanAttribute('hard_expiry');
   }
-  public set hardExpiry(value: boolean | cdktf.IResolvable) {
+  public set hardExpiry(value: boolean | cdktn.IResolvable) {
     this._hardExpiry = value;
   }
   public resetHardExpiry() {
@@ -226,11 +226,11 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   }
 
   // require_lowercase_characters - computed: true, optional: true, required: false
-  private _requireLowercaseCharacters?: boolean | cdktf.IResolvable; 
+  private _requireLowercaseCharacters?: boolean | cdktn.IResolvable; 
   public get requireLowercaseCharacters() {
     return this.getBooleanAttribute('require_lowercase_characters');
   }
-  public set requireLowercaseCharacters(value: boolean | cdktf.IResolvable) {
+  public set requireLowercaseCharacters(value: boolean | cdktn.IResolvable) {
     this._requireLowercaseCharacters = value;
   }
   public resetRequireLowercaseCharacters() {
@@ -242,11 +242,11 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   }
 
   // require_numbers - computed: true, optional: true, required: false
-  private _requireNumbers?: boolean | cdktf.IResolvable; 
+  private _requireNumbers?: boolean | cdktn.IResolvable; 
   public get requireNumbers() {
     return this.getBooleanAttribute('require_numbers');
   }
-  public set requireNumbers(value: boolean | cdktf.IResolvable) {
+  public set requireNumbers(value: boolean | cdktn.IResolvable) {
     this._requireNumbers = value;
   }
   public resetRequireNumbers() {
@@ -258,11 +258,11 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   }
 
   // require_symbols - computed: true, optional: true, required: false
-  private _requireSymbols?: boolean | cdktf.IResolvable; 
+  private _requireSymbols?: boolean | cdktn.IResolvable; 
   public get requireSymbols() {
     return this.getBooleanAttribute('require_symbols');
   }
-  public set requireSymbols(value: boolean | cdktf.IResolvable) {
+  public set requireSymbols(value: boolean | cdktn.IResolvable) {
     this._requireSymbols = value;
   }
   public resetRequireSymbols() {
@@ -274,11 +274,11 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   }
 
   // require_uppercase_characters - computed: true, optional: true, required: false
-  private _requireUppercaseCharacters?: boolean | cdktf.IResolvable; 
+  private _requireUppercaseCharacters?: boolean | cdktn.IResolvable; 
   public get requireUppercaseCharacters() {
     return this.getBooleanAttribute('require_uppercase_characters');
   }
-  public set requireUppercaseCharacters(value: boolean | cdktf.IResolvable) {
+  public set requireUppercaseCharacters(value: boolean | cdktn.IResolvable) {
     this._requireUppercaseCharacters = value;
   }
   public resetRequireUppercaseCharacters() {
@@ -295,77 +295,77 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_users_to_change_password: cdktf.booleanToTerraform(this._allowUsersToChangePassword),
-      hard_expiry: cdktf.booleanToTerraform(this._hardExpiry),
-      id: cdktf.stringToTerraform(this._id),
-      max_password_age: cdktf.numberToTerraform(this._maxPasswordAge),
-      minimum_password_length: cdktf.numberToTerraform(this._minimumPasswordLength),
-      password_reuse_prevention: cdktf.numberToTerraform(this._passwordReusePrevention),
-      require_lowercase_characters: cdktf.booleanToTerraform(this._requireLowercaseCharacters),
-      require_numbers: cdktf.booleanToTerraform(this._requireNumbers),
-      require_symbols: cdktf.booleanToTerraform(this._requireSymbols),
-      require_uppercase_characters: cdktf.booleanToTerraform(this._requireUppercaseCharacters),
+      allow_users_to_change_password: cdktn.booleanToTerraform(this._allowUsersToChangePassword),
+      hard_expiry: cdktn.booleanToTerraform(this._hardExpiry),
+      id: cdktn.stringToTerraform(this._id),
+      max_password_age: cdktn.numberToTerraform(this._maxPasswordAge),
+      minimum_password_length: cdktn.numberToTerraform(this._minimumPasswordLength),
+      password_reuse_prevention: cdktn.numberToTerraform(this._passwordReusePrevention),
+      require_lowercase_characters: cdktn.booleanToTerraform(this._requireLowercaseCharacters),
+      require_numbers: cdktn.booleanToTerraform(this._requireNumbers),
+      require_symbols: cdktn.booleanToTerraform(this._requireSymbols),
+      require_uppercase_characters: cdktn.booleanToTerraform(this._requireUppercaseCharacters),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_users_to_change_password: {
-        value: cdktf.booleanToHclTerraform(this._allowUsersToChangePassword),
+        value: cdktn.booleanToHclTerraform(this._allowUsersToChangePassword),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hard_expiry: {
-        value: cdktf.booleanToHclTerraform(this._hardExpiry),
+        value: cdktn.booleanToHclTerraform(this._hardExpiry),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_password_age: {
-        value: cdktf.numberToHclTerraform(this._maxPasswordAge),
+        value: cdktn.numberToHclTerraform(this._maxPasswordAge),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       minimum_password_length: {
-        value: cdktf.numberToHclTerraform(this._minimumPasswordLength),
+        value: cdktn.numberToHclTerraform(this._minimumPasswordLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       password_reuse_prevention: {
-        value: cdktf.numberToHclTerraform(this._passwordReusePrevention),
+        value: cdktn.numberToHclTerraform(this._passwordReusePrevention),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       require_lowercase_characters: {
-        value: cdktf.booleanToHclTerraform(this._requireLowercaseCharacters),
+        value: cdktn.booleanToHclTerraform(this._requireLowercaseCharacters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       require_numbers: {
-        value: cdktf.booleanToHclTerraform(this._requireNumbers),
+        value: cdktn.booleanToHclTerraform(this._requireNumbers),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       require_symbols: {
-        value: cdktf.booleanToHclTerraform(this._requireSymbols),
+        value: cdktn.booleanToHclTerraform(this._requireSymbols),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       require_uppercase_characters: {
-        value: cdktf.booleanToHclTerraform(this._requireUppercaseCharacters),
+        value: cdktn.booleanToHclTerraform(this._requireUppercaseCharacters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

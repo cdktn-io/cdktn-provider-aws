@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppfabricAppAuthorizationConfig extends cdktf.TerraformMetaArguments {
+export interface AppfabricAppAuthorizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization#app AppfabricAppAuthorization#app}
   */
@@ -39,13 +39,13 @@ export interface AppfabricAppAuthorizationConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization#credential AppfabricAppAuthorization#credential}
   */
-  readonly credential?: AppfabricAppAuthorizationCredential[] | cdktf.IResolvable;
+  readonly credential?: AppfabricAppAuthorizationCredential[] | cdktn.IResolvable;
   /**
   * tenant block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization#tenant AppfabricAppAuthorization#tenant}
   */
-  readonly tenant?: AppfabricAppAuthorizationTenant[] | cdktf.IResolvable;
+  readonly tenant?: AppfabricAppAuthorizationTenant[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -60,25 +60,25 @@ export interface AppfabricAppAuthorizationCredentialApiKeyCredential {
   readonly apiKey: string;
 }
 
-export function appfabricAppAuthorizationCredentialApiKeyCredentialToTerraform(struct?: AppfabricAppAuthorizationCredentialApiKeyCredential | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationCredentialApiKeyCredentialToTerraform(struct?: AppfabricAppAuthorizationCredentialApiKeyCredential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key: cdktf.stringToTerraform(struct!.apiKey),
+    api_key: cdktn.stringToTerraform(struct!.apiKey),
   }
 }
 
 
-export function appfabricAppAuthorizationCredentialApiKeyCredentialToHclTerraform(struct?: AppfabricAppAuthorizationCredentialApiKeyCredential | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationCredentialApiKeyCredentialToHclTerraform(struct?: AppfabricAppAuthorizationCredentialApiKeyCredential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      value: cdktn.stringToHclTerraform(struct!.apiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -89,9 +89,9 @@ export function appfabricAppAuthorizationCredentialApiKeyCredentialToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricAppAuthorizationCredentialApiKeyCredentialOutputReference extends cdktf.ComplexObject {
+export class AppfabricAppAuthorizationCredentialApiKeyCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,11 +99,11 @@ export class AppfabricAppAuthorizationCredentialApiKeyCredentialOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricAppAuthorizationCredentialApiKeyCredential | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricAppAuthorizationCredentialApiKeyCredential | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -116,13 +116,13 @@ export class AppfabricAppAuthorizationCredentialApiKeyCredentialOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricAppAuthorizationCredentialApiKeyCredential | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricAppAuthorizationCredentialApiKeyCredential | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._apiKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -147,15 +147,15 @@ export class AppfabricAppAuthorizationCredentialApiKeyCredentialOutputReference 
   }
 }
 
-export class AppfabricAppAuthorizationCredentialApiKeyCredentialList extends cdktf.ComplexList {
-  public internalValue? : AppfabricAppAuthorizationCredentialApiKeyCredential[] | cdktf.IResolvable
+export class AppfabricAppAuthorizationCredentialApiKeyCredentialList extends cdktn.ComplexList {
+  public internalValue? : AppfabricAppAuthorizationCredentialApiKeyCredential[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -177,32 +177,32 @@ export interface AppfabricAppAuthorizationCredentialOauth2Credential {
   readonly clientSecret: string;
 }
 
-export function appfabricAppAuthorizationCredentialOauth2CredentialToTerraform(struct?: AppfabricAppAuthorizationCredentialOauth2Credential | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationCredentialOauth2CredentialToTerraform(struct?: AppfabricAppAuthorizationCredentialOauth2Credential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
   }
 }
 
 
-export function appfabricAppAuthorizationCredentialOauth2CredentialToHclTerraform(struct?: AppfabricAppAuthorizationCredentialOauth2Credential | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationCredentialOauth2CredentialToHclTerraform(struct?: AppfabricAppAuthorizationCredentialOauth2Credential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -213,9 +213,9 @@ export function appfabricAppAuthorizationCredentialOauth2CredentialToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricAppAuthorizationCredentialOauth2CredentialOutputReference extends cdktf.ComplexObject {
+export class AppfabricAppAuthorizationCredentialOauth2CredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -223,11 +223,11 @@ export class AppfabricAppAuthorizationCredentialOauth2CredentialOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricAppAuthorizationCredentialOauth2Credential | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricAppAuthorizationCredentialOauth2Credential | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -244,14 +244,14 @@ export class AppfabricAppAuthorizationCredentialOauth2CredentialOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricAppAuthorizationCredentialOauth2Credential | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricAppAuthorizationCredentialOauth2Credential | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._clientId = undefined;
       this._clientSecret = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -290,15 +290,15 @@ export class AppfabricAppAuthorizationCredentialOauth2CredentialOutputReference 
   }
 }
 
-export class AppfabricAppAuthorizationCredentialOauth2CredentialList extends cdktf.ComplexList {
-  public internalValue? : AppfabricAppAuthorizationCredentialOauth2Credential[] | cdktf.IResolvable
+export class AppfabricAppAuthorizationCredentialOauth2CredentialList extends cdktn.ComplexList {
+  public internalValue? : AppfabricAppAuthorizationCredentialOauth2Credential[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -315,41 +315,41 @@ export interface AppfabricAppAuthorizationCredential {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization#api_key_credential AppfabricAppAuthorization#api_key_credential}
   */
-  readonly apiKeyCredential?: AppfabricAppAuthorizationCredentialApiKeyCredential[] | cdktf.IResolvable;
+  readonly apiKeyCredential?: AppfabricAppAuthorizationCredentialApiKeyCredential[] | cdktn.IResolvable;
   /**
   * oauth2_credential block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization#oauth2_credential AppfabricAppAuthorization#oauth2_credential}
   */
-  readonly oauth2Credential?: AppfabricAppAuthorizationCredentialOauth2Credential[] | cdktf.IResolvable;
+  readonly oauth2Credential?: AppfabricAppAuthorizationCredentialOauth2Credential[] | cdktn.IResolvable;
 }
 
-export function appfabricAppAuthorizationCredentialToTerraform(struct?: AppfabricAppAuthorizationCredential | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationCredentialToTerraform(struct?: AppfabricAppAuthorizationCredential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key_credential: cdktf.listMapper(appfabricAppAuthorizationCredentialApiKeyCredentialToTerraform, true)(struct!.apiKeyCredential),
-    oauth2_credential: cdktf.listMapper(appfabricAppAuthorizationCredentialOauth2CredentialToTerraform, true)(struct!.oauth2Credential),
+    api_key_credential: cdktn.listMapper(appfabricAppAuthorizationCredentialApiKeyCredentialToTerraform, true)(struct!.apiKeyCredential),
+    oauth2_credential: cdktn.listMapper(appfabricAppAuthorizationCredentialOauth2CredentialToTerraform, true)(struct!.oauth2Credential),
   }
 }
 
 
-export function appfabricAppAuthorizationCredentialToHclTerraform(struct?: AppfabricAppAuthorizationCredential | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationCredentialToHclTerraform(struct?: AppfabricAppAuthorizationCredential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key_credential: {
-      value: cdktf.listMapperHcl(appfabricAppAuthorizationCredentialApiKeyCredentialToHclTerraform, true)(struct!.apiKeyCredential),
+      value: cdktn.listMapperHcl(appfabricAppAuthorizationCredentialApiKeyCredentialToHclTerraform, true)(struct!.apiKeyCredential),
       isBlock: true,
       type: "list",
       storageClassType: "AppfabricAppAuthorizationCredentialApiKeyCredentialList",
     },
     oauth2_credential: {
-      value: cdktf.listMapperHcl(appfabricAppAuthorizationCredentialOauth2CredentialToHclTerraform, true)(struct!.oauth2Credential),
+      value: cdktn.listMapperHcl(appfabricAppAuthorizationCredentialOauth2CredentialToHclTerraform, true)(struct!.oauth2Credential),
       isBlock: true,
       type: "list",
       storageClassType: "AppfabricAppAuthorizationCredentialOauth2CredentialList",
@@ -360,9 +360,9 @@ export function appfabricAppAuthorizationCredentialToHclTerraform(struct?: Appfa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricAppAuthorizationCredentialOutputReference extends cdktf.ComplexObject {
+export class AppfabricAppAuthorizationCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -370,11 +370,11 @@ export class AppfabricAppAuthorizationCredentialOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricAppAuthorizationCredential | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricAppAuthorizationCredential | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -391,14 +391,14 @@ export class AppfabricAppAuthorizationCredentialOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricAppAuthorizationCredential | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricAppAuthorizationCredential | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._apiKeyCredential.internalValue = undefined;
       this._oauth2Credential.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -415,7 +415,7 @@ export class AppfabricAppAuthorizationCredentialOutputReference extends cdktf.Co
   public get apiKeyCredential() {
     return this._apiKeyCredential;
   }
-  public putApiKeyCredential(value: AppfabricAppAuthorizationCredentialApiKeyCredential[] | cdktf.IResolvable) {
+  public putApiKeyCredential(value: AppfabricAppAuthorizationCredentialApiKeyCredential[] | cdktn.IResolvable) {
     this._apiKeyCredential.internalValue = value;
   }
   public resetApiKeyCredential() {
@@ -431,7 +431,7 @@ export class AppfabricAppAuthorizationCredentialOutputReference extends cdktf.Co
   public get oauth2Credential() {
     return this._oauth2Credential;
   }
-  public putOauth2Credential(value: AppfabricAppAuthorizationCredentialOauth2Credential[] | cdktf.IResolvable) {
+  public putOauth2Credential(value: AppfabricAppAuthorizationCredentialOauth2Credential[] | cdktn.IResolvable) {
     this._oauth2Credential.internalValue = value;
   }
   public resetOauth2Credential() {
@@ -443,15 +443,15 @@ export class AppfabricAppAuthorizationCredentialOutputReference extends cdktf.Co
   }
 }
 
-export class AppfabricAppAuthorizationCredentialList extends cdktf.ComplexList {
-  public internalValue? : AppfabricAppAuthorizationCredential[] | cdktf.IResolvable
+export class AppfabricAppAuthorizationCredentialList extends cdktn.ComplexList {
+  public internalValue? : AppfabricAppAuthorizationCredential[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -473,32 +473,32 @@ export interface AppfabricAppAuthorizationTenant {
   readonly tenantIdentifier: string;
 }
 
-export function appfabricAppAuthorizationTenantToTerraform(struct?: AppfabricAppAuthorizationTenant | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationTenantToTerraform(struct?: AppfabricAppAuthorizationTenant | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tenant_display_name: cdktf.stringToTerraform(struct!.tenantDisplayName),
-    tenant_identifier: cdktf.stringToTerraform(struct!.tenantIdentifier),
+    tenant_display_name: cdktn.stringToTerraform(struct!.tenantDisplayName),
+    tenant_identifier: cdktn.stringToTerraform(struct!.tenantIdentifier),
   }
 }
 
 
-export function appfabricAppAuthorizationTenantToHclTerraform(struct?: AppfabricAppAuthorizationTenant | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationTenantToHclTerraform(struct?: AppfabricAppAuthorizationTenant | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tenant_display_name: {
-      value: cdktf.stringToHclTerraform(struct!.tenantDisplayName),
+      value: cdktn.stringToHclTerraform(struct!.tenantDisplayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.tenantIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.tenantIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -509,9 +509,9 @@ export function appfabricAppAuthorizationTenantToHclTerraform(struct?: Appfabric
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricAppAuthorizationTenantOutputReference extends cdktf.ComplexObject {
+export class AppfabricAppAuthorizationTenantOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -519,11 +519,11 @@ export class AppfabricAppAuthorizationTenantOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppfabricAppAuthorizationTenant | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricAppAuthorizationTenant | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -540,14 +540,14 @@ export class AppfabricAppAuthorizationTenantOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricAppAuthorizationTenant | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricAppAuthorizationTenant | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tenantDisplayName = undefined;
       this._tenantIdentifier = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -586,15 +586,15 @@ export class AppfabricAppAuthorizationTenantOutputReference extends cdktf.Comple
   }
 }
 
-export class AppfabricAppAuthorizationTenantList extends cdktf.ComplexList {
-  public internalValue? : AppfabricAppAuthorizationTenant[] | cdktf.IResolvable
+export class AppfabricAppAuthorizationTenantList extends cdktn.ComplexList {
+  public internalValue? : AppfabricAppAuthorizationTenant[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -626,39 +626,39 @@ export interface AppfabricAppAuthorizationTimeouts {
   readonly update?: string;
 }
 
-export function appfabricAppAuthorizationTimeoutsToTerraform(struct?: AppfabricAppAuthorizationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationTimeoutsToTerraform(struct?: AppfabricAppAuthorizationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appfabricAppAuthorizationTimeoutsToHclTerraform(struct?: AppfabricAppAuthorizationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appfabricAppAuthorizationTimeoutsToHclTerraform(struct?: AppfabricAppAuthorizationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -669,19 +669,19 @@ export function appfabricAppAuthorizationTimeoutsToHclTerraform(struct?: Appfabr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppfabricAppAuthorizationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppfabricAppAuthorizationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppfabricAppAuthorizationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppfabricAppAuthorizationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -702,7 +702,7 @@ export class AppfabricAppAuthorizationTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppfabricAppAuthorizationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppfabricAppAuthorizationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -710,7 +710,7 @@ export class AppfabricAppAuthorizationTimeoutsOutputReference extends cdktf.Comp
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -775,7 +775,7 @@ export class AppfabricAppAuthorizationTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization}
 */
-export class AppfabricAppAuthorization extends cdktf.TerraformResource {
+export class AppfabricAppAuthorization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -786,14 +786,14 @@ export class AppfabricAppAuthorization extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppfabricAppAuthorization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppfabricAppAuthorization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppfabricAppAuthorization to import
   * @param importFromId The id of the existing AppfabricAppAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appfabric_app_authorization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppfabricAppAuthorization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appfabric_app_authorization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appfabric_app_authorization", importId: importFromId, provider });
       }
 
   // ===========
@@ -934,7 +934,7 @@ export class AppfabricAppAuthorization extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -949,7 +949,7 @@ export class AppfabricAppAuthorization extends cdktf.TerraformResource {
   public get credential() {
     return this._credential;
   }
-  public putCredential(value: AppfabricAppAuthorizationCredential[] | cdktf.IResolvable) {
+  public putCredential(value: AppfabricAppAuthorizationCredential[] | cdktn.IResolvable) {
     this._credential.internalValue = value;
   }
   public resetCredential() {
@@ -965,7 +965,7 @@ export class AppfabricAppAuthorization extends cdktf.TerraformResource {
   public get tenant() {
     return this._tenant;
   }
-  public putTenant(value: AppfabricAppAuthorizationTenant[] | cdktf.IResolvable) {
+  public putTenant(value: AppfabricAppAuthorizationTenant[] | cdktn.IResolvable) {
     this._tenant.internalValue = value;
   }
   public resetTenant() {
@@ -998,13 +998,13 @@ export class AppfabricAppAuthorization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app: cdktf.stringToTerraform(this._app),
-      app_bundle_arn: cdktf.stringToTerraform(this._appBundleArn),
-      auth_type: cdktf.stringToTerraform(this._authType),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      credential: cdktf.listMapper(appfabricAppAuthorizationCredentialToTerraform, true)(this._credential.internalValue),
-      tenant: cdktf.listMapper(appfabricAppAuthorizationTenantToTerraform, true)(this._tenant.internalValue),
+      app: cdktn.stringToTerraform(this._app),
+      app_bundle_arn: cdktn.stringToTerraform(this._appBundleArn),
+      auth_type: cdktn.stringToTerraform(this._authType),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      credential: cdktn.listMapper(appfabricAppAuthorizationCredentialToTerraform, true)(this._credential.internalValue),
+      tenant: cdktn.listMapper(appfabricAppAuthorizationTenantToTerraform, true)(this._tenant.internalValue),
       timeouts: appfabricAppAuthorizationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1012,43 +1012,43 @@ export class AppfabricAppAuthorization extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app: {
-        value: cdktf.stringToHclTerraform(this._app),
+        value: cdktn.stringToHclTerraform(this._app),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       app_bundle_arn: {
-        value: cdktf.stringToHclTerraform(this._appBundleArn),
+        value: cdktn.stringToHclTerraform(this._appBundleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auth_type: {
-        value: cdktf.stringToHclTerraform(this._authType),
+        value: cdktn.stringToHclTerraform(this._authType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       credential: {
-        value: cdktf.listMapperHcl(appfabricAppAuthorizationCredentialToHclTerraform, true)(this._credential.internalValue),
+        value: cdktn.listMapperHcl(appfabricAppAuthorizationCredentialToHclTerraform, true)(this._credential.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppfabricAppAuthorizationCredentialList",
       },
       tenant: {
-        value: cdktf.listMapperHcl(appfabricAppAuthorizationTenantToHclTerraform, true)(this._tenant.internalValue),
+        value: cdktn.listMapperHcl(appfabricAppAuthorizationTenantToHclTerraform, true)(this._tenant.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppfabricAppAuthorizationTenantList",

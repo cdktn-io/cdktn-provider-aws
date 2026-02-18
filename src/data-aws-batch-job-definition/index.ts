@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsBatchJobDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBatchJobDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}
   */
@@ -39,8 +39,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEn
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnv): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -49,8 +49,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnv
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnv): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -58,7 +58,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnv
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -67,7 +67,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -97,14 +97,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOut
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -119,8 +119,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersRe
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -129,8 +129,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersRes
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -138,7 +138,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersRes
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -147,7 +147,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResour
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -167,26 +167,26 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResour
   }
 
   // limits - computed: true, optional: false, required: false
-  private _limits = new cdktf.StringMap(this, "limits");
+  private _limits = new cdktn.StringMap(this, "limits");
   public get limits() {
     return this._limits;
   }
 
   // requests - computed: true, optional: false, required: false
-  private _requests = new cdktf.StringMap(this, "requests");
+  private _requests = new cdktn.StringMap(this, "requests");
   public get requests() {
     return this._requests;
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -201,8 +201,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSe
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -211,8 +211,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSec
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -220,7 +220,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSec
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -229,7 +229,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecuri
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -279,14 +279,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecuri
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -301,8 +301,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVo
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -311,8 +311,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVol
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -320,7 +320,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVol
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -329,7 +329,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolume
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -364,14 +364,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolume
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -386,8 +386,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainers {
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -396,8 +396,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersToT
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -405,7 +405,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersToH
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -414,7 +414,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -483,14 +483,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersOutput
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -505,8 +505,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSec
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -515,8 +515,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecr
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -524,7 +524,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecr
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -533,7 +533,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecrets
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -558,14 +558,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecrets
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -580,8 +580,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContaine
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnv): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -590,8 +590,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnv): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -599,7 +599,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -608,7 +608,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEn
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -638,14 +638,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEn
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -660,8 +660,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContaine
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -670,8 +670,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -679,7 +679,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -688,7 +688,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -708,26 +708,26 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersRe
   }
 
   // limits - computed: true, optional: false, required: false
-  private _limits = new cdktf.StringMap(this, "limits");
+  private _limits = new cdktn.StringMap(this, "limits");
   public get limits() {
     return this._limits;
   }
 
   // requests - computed: true, optional: false, required: false
-  private _requests = new cdktf.StringMap(this, "requests");
+  private _requests = new cdktn.StringMap(this, "requests");
   public get requests() {
     return this._requests;
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -742,8 +742,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContaine
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -752,8 +752,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -761,7 +761,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -770,7 +770,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -820,14 +820,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSe
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -842,8 +842,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContaine
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -852,8 +852,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -861,7 +861,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -870,7 +870,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -905,14 +905,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVo
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -927,8 +927,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContaine
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -937,8 +937,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -946,7 +946,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainer
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -955,7 +955,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1024,14 +1024,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersOu
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1046,8 +1046,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadata {
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1056,8 +1056,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataToTer
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1065,7 +1065,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataToHcl
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1074,7 +1074,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1094,20 +1094,20 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputRe
   }
 
   // labels - computed: true, optional: false, required: false
-  private _labels = new cdktf.StringMap(this, "labels");
+  private _labels = new cdktn.StringMap(this, "labels");
   public get labels() {
     return this._labels;
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1122,8 +1122,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmpty
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1132,8 +1132,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyD
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1141,7 +1141,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyD
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1150,7 +1150,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1180,14 +1180,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirO
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1202,8 +1202,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostP
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1212,8 +1212,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPa
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1221,7 +1221,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPa
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1230,7 +1230,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1255,14 +1255,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathO
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1277,8 +1277,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecre
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1287,8 +1287,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1296,7 +1296,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1305,7 +1305,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1335,14 +1335,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOut
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1357,8 +1357,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumes {
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1367,8 +1367,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesToTerr
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1376,7 +1376,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesToHclT
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1385,7 +1385,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1428,14 +1428,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputRef
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1450,8 +1450,8 @@ export interface DataAwsBatchJobDefinitionEksPropertiesPodProperties {
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesToTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1460,8 +1460,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesToTerraform(s
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesToHclTerraform(struct?: DataAwsBatchJobDefinitionEksPropertiesPodProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1469,7 +1469,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesPodPropertiesToHclTerrafor
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1478,7 +1478,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1548,14 +1548,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesOutputReference 
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1570,8 +1570,8 @@ export interface DataAwsBatchJobDefinitionEksProperties {
 }
 
 export function dataAwsBatchJobDefinitionEksPropertiesToTerraform(struct?: DataAwsBatchJobDefinitionEksProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1580,8 +1580,8 @@ export function dataAwsBatchJobDefinitionEksPropertiesToTerraform(struct?: DataA
 
 
 export function dataAwsBatchJobDefinitionEksPropertiesToHclTerraform(struct?: DataAwsBatchJobDefinitionEksProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1589,7 +1589,7 @@ export function dataAwsBatchJobDefinitionEksPropertiesToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionEksPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1598,7 +1598,7 @@ export class DataAwsBatchJobDefinitionEksPropertiesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1624,14 +1624,14 @@ export class DataAwsBatchJobDefinitionEksPropertiesOutputReference extends cdktf
   }
 }
 
-export class DataAwsBatchJobDefinitionEksPropertiesList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionEksPropertiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1646,8 +1646,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1656,8 +1656,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1665,7 +1665,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1674,7 +1674,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1704,14 +1704,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1726,8 +1726,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1736,8 +1736,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1745,7 +1745,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1754,7 +1754,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1779,14 +1779,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1801,8 +1801,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1811,8 +1811,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1820,7 +1820,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1829,7 +1829,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1854,14 +1854,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1876,8 +1876,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1886,8 +1886,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1895,7 +1895,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1904,7 +1904,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1939,14 +1939,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1961,8 +1961,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1971,8 +1971,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1980,7 +1980,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1989,7 +1989,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2024,14 +2024,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2046,8 +2046,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2056,8 +2056,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2065,7 +2065,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2074,7 +2074,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2126,14 +2126,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2148,8 +2148,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2158,8 +2158,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2167,7 +2167,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2176,7 +2176,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2206,14 +2206,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2228,8 +2228,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2238,8 +2238,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2247,7 +2247,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2256,7 +2256,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2281,7 +2281,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 
   // options - computed: true, optional: false, required: false
-  private _options = new cdktf.StringMap(this, "options");
+  private _options = new cdktn.StringMap(this, "options");
   public get options() {
     return this._options;
   }
@@ -2293,14 +2293,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2315,8 +2315,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2325,8 +2325,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2334,7 +2334,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2343,7 +2343,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2378,14 +2378,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2400,8 +2400,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2410,8 +2410,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2419,7 +2419,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2428,7 +2428,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2453,14 +2453,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2475,8 +2475,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirements): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2485,8 +2485,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirements): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2494,7 +2494,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2503,7 +2503,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2533,14 +2533,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2555,8 +2555,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatform): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2565,8 +2565,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatform): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2574,7 +2574,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2583,7 +2583,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2613,14 +2613,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2635,8 +2635,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2645,8 +2645,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2654,7 +2654,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2663,7 +2663,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2693,14 +2693,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2715,8 +2715,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2725,8 +2725,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2734,7 +2734,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2743,7 +2743,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2778,14 +2778,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2800,8 +2800,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2810,8 +2810,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2819,7 +2819,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2828,7 +2828,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2858,14 +2858,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2880,8 +2880,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2890,8 +2890,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2899,7 +2899,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2908,7 +2908,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2954,14 +2954,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2976,8 +2976,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHost): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2986,8 +2986,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHost): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2995,7 +2995,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3004,7 +3004,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3029,14 +3029,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3051,8 +3051,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3061,8 +3061,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3070,7 +3070,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3079,7 +3079,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3116,14 +3116,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3138,8 +3138,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesConta
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3148,8 +3148,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3157,7 +3157,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContai
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3166,7 +3166,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3298,14 +3298,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3320,8 +3320,8 @@ export interface DataAwsBatchJobDefinitionNodePropertiesNodeRangeProperties {
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesToTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangeProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3330,8 +3330,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesToTerr
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesToHclTerraform(struct?: DataAwsBatchJobDefinitionNodePropertiesNodeRangeProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3339,7 +3339,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesToHclT
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3348,7 +3348,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3379,14 +3379,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesOutputRef
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3401,8 +3401,8 @@ export interface DataAwsBatchJobDefinitionNodeProperties {
 }
 
 export function dataAwsBatchJobDefinitionNodePropertiesToTerraform(struct?: DataAwsBatchJobDefinitionNodeProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3411,8 +3411,8 @@ export function dataAwsBatchJobDefinitionNodePropertiesToTerraform(struct?: Data
 
 
 export function dataAwsBatchJobDefinitionNodePropertiesToHclTerraform(struct?: DataAwsBatchJobDefinitionNodeProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3420,7 +3420,7 @@ export function dataAwsBatchJobDefinitionNodePropertiesToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionNodePropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3429,7 +3429,7 @@ export class DataAwsBatchJobDefinitionNodePropertiesOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3465,14 +3465,14 @@ export class DataAwsBatchJobDefinitionNodePropertiesOutputReference extends cdkt
   }
 }
 
-export class DataAwsBatchJobDefinitionNodePropertiesList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionNodePropertiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3487,8 +3487,8 @@ export interface DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExit {
 }
 
 export function dataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitToTerraform(struct?: DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3497,8 +3497,8 @@ export function dataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitToTerraform(
 
 
 export function dataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitToHclTerraform(struct?: DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3506,7 +3506,7 @@ export function dataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitToHclTerrafo
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3515,7 +3515,7 @@ export class DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3555,14 +3555,14 @@ export class DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference
   }
 }
 
-export class DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3577,8 +3577,8 @@ export interface DataAwsBatchJobDefinitionRetryStrategy {
 }
 
 export function dataAwsBatchJobDefinitionRetryStrategyToTerraform(struct?: DataAwsBatchJobDefinitionRetryStrategy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3587,8 +3587,8 @@ export function dataAwsBatchJobDefinitionRetryStrategyToTerraform(struct?: DataA
 
 
 export function dataAwsBatchJobDefinitionRetryStrategyToHclTerraform(struct?: DataAwsBatchJobDefinitionRetryStrategy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3596,7 +3596,7 @@ export function dataAwsBatchJobDefinitionRetryStrategyToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionRetryStrategyOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionRetryStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3605,7 +3605,7 @@ export class DataAwsBatchJobDefinitionRetryStrategyOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3636,14 +3636,14 @@ export class DataAwsBatchJobDefinitionRetryStrategyOutputReference extends cdktf
   }
 }
 
-export class DataAwsBatchJobDefinitionRetryStrategyList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionRetryStrategyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3658,8 +3658,8 @@ export interface DataAwsBatchJobDefinitionTimeout {
 }
 
 export function dataAwsBatchJobDefinitionTimeoutToTerraform(struct?: DataAwsBatchJobDefinitionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3668,8 +3668,8 @@ export function dataAwsBatchJobDefinitionTimeoutToTerraform(struct?: DataAwsBatc
 
 
 export function dataAwsBatchJobDefinitionTimeoutToHclTerraform(struct?: DataAwsBatchJobDefinitionTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3677,7 +3677,7 @@ export function dataAwsBatchJobDefinitionTimeoutToHclTerraform(struct?: DataAwsB
   return attrs;
 }
 
-export class DataAwsBatchJobDefinitionTimeoutOutputReference extends cdktf.ComplexObject {
+export class DataAwsBatchJobDefinitionTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3686,7 +3686,7 @@ export class DataAwsBatchJobDefinitionTimeoutOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3711,14 +3711,14 @@ export class DataAwsBatchJobDefinitionTimeoutOutputReference extends cdktf.Compl
   }
 }
 
-export class DataAwsBatchJobDefinitionTimeoutList extends cdktf.ComplexList {
+export class DataAwsBatchJobDefinitionTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3733,7 +3733,7 @@ export class DataAwsBatchJobDefinitionTimeoutList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/batch_job_definition aws_batch_job_definition}
 */
-export class DataAwsBatchJobDefinition extends cdktf.TerraformDataSource {
+export class DataAwsBatchJobDefinition extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -3744,14 +3744,14 @@ export class DataAwsBatchJobDefinition extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsBatchJobDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsBatchJobDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBatchJobDefinition to import
   * @param importFromId The id of the existing DataAwsBatchJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/batch_job_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBatchJobDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_batch_job_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_batch_job_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -3911,7 +3911,7 @@ export class DataAwsBatchJobDefinition extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -3933,42 +3933,42 @@ export class DataAwsBatchJobDefinition extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      revision: cdktf.numberToTerraform(this._revision),
-      status: cdktf.stringToTerraform(this._status),
+      arn: cdktn.stringToTerraform(this._arn),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      revision: cdktn.numberToTerraform(this._revision),
+      status: cdktn.stringToTerraform(this._status),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arn: {
-        value: cdktf.stringToHclTerraform(this._arn),
+        value: cdktn.stringToHclTerraform(this._arn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       revision: {
-        value: cdktf.numberToHclTerraform(this._revision),
+        value: cdktn.numberToHclTerraform(this._revision),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

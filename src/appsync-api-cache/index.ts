@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsyncApiCacheConfig extends cdktf.TerraformMetaArguments {
+export interface AppsyncApiCacheConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api_cache#api_caching_behavior AppsyncApiCache#api_caching_behavior}
   */
@@ -23,7 +23,7 @@ export interface AppsyncApiCacheConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api_cache#at_rest_encryption_enabled AppsyncApiCache#at_rest_encryption_enabled}
   */
-  readonly atRestEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly atRestEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api_cache#id AppsyncApiCache#id}
   *
@@ -40,7 +40,7 @@ export interface AppsyncApiCacheConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api_cache#transit_encryption_enabled AppsyncApiCache#transit_encryption_enabled}
   */
-  readonly transitEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly transitEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api_cache#ttl AppsyncApiCache#ttl}
   */
@@ -54,7 +54,7 @@ export interface AppsyncApiCacheConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api_cache aws_appsync_api_cache}
 */
-export class AppsyncApiCache extends cdktf.TerraformResource {
+export class AppsyncApiCache extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsyncApiCache resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsyncApiCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsyncApiCache to import
   * @param importFromId The id of the existing AppsyncApiCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_api_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsyncApiCache to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_api_cache", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_api_cache", importId: importFromId, provider });
       }
 
   // ===========
@@ -143,11 +143,11 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
   }
 
   // at_rest_encryption_enabled - computed: true, optional: true, required: false
-  private _atRestEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _atRestEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get atRestEncryptionEnabled() {
     return this.getBooleanAttribute('at_rest_encryption_enabled');
   }
-  public set atRestEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set atRestEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._atRestEncryptionEnabled = value;
   }
   public resetAtRestEncryptionEnabled() {
@@ -191,11 +191,11 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
   }
 
   // transit_encryption_enabled - computed: true, optional: true, required: false
-  private _transitEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _transitEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get transitEncryptionEnabled() {
     return this.getBooleanAttribute('transit_encryption_enabled');
   }
-  public set transitEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set transitEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._transitEncryptionEnabled = value;
   }
   public resetTransitEncryptionEnabled() {
@@ -238,63 +238,63 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_caching_behavior: cdktf.stringToTerraform(this._apiCachingBehavior),
-      api_id: cdktf.stringToTerraform(this._apiId),
-      at_rest_encryption_enabled: cdktf.booleanToTerraform(this._atRestEncryptionEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      transit_encryption_enabled: cdktf.booleanToTerraform(this._transitEncryptionEnabled),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      type: cdktf.stringToTerraform(this._type),
+      api_caching_behavior: cdktn.stringToTerraform(this._apiCachingBehavior),
+      api_id: cdktn.stringToTerraform(this._apiId),
+      at_rest_encryption_enabled: cdktn.booleanToTerraform(this._atRestEncryptionEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      transit_encryption_enabled: cdktn.booleanToTerraform(this._transitEncryptionEnabled),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_caching_behavior: {
-        value: cdktf.stringToHclTerraform(this._apiCachingBehavior),
+        value: cdktn.stringToHclTerraform(this._apiCachingBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       api_id: {
-        value: cdktf.stringToHclTerraform(this._apiId),
+        value: cdktn.stringToHclTerraform(this._apiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       at_rest_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._atRestEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._atRestEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transit_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._transitEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._transitEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

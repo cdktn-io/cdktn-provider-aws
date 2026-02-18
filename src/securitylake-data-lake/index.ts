@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecuritylakeDataLakeConfig extends cdktf.TerraformMetaArguments {
+export interface SecuritylakeDataLakeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}
   */
@@ -31,7 +31,7 @@ export interface SecuritylakeDataLakeConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake#configuration SecuritylakeDataLake#configuration}
   */
-  readonly configuration?: SecuritylakeDataLakeConfiguration[] | cdktf.IResolvable;
+  readonly configuration?: SecuritylakeDataLakeConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -46,25 +46,25 @@ export interface SecuritylakeDataLakeConfigurationEncryptionConfiguration {
   readonly kmsKeyId?: string;
 }
 
-export function securitylakeDataLakeConfigurationEncryptionConfigurationToTerraform(struct?: SecuritylakeDataLakeConfigurationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationEncryptionConfigurationToTerraform(struct?: SecuritylakeDataLakeConfigurationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    kms_key_id: cdktn.stringToTerraform(struct!.kmsKeyId),
   }
 }
 
 
-export function securitylakeDataLakeConfigurationEncryptionConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationEncryptionConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationEncryptionConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kms_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -75,9 +75,9 @@ export function securitylakeDataLakeConfigurationEncryptionConfigurationToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -85,11 +85,11 @@ export class SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeDataLakeConfigurationEncryptionConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeDataLakeConfigurationEncryptionConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -102,13 +102,13 @@ export class SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeDataLakeConfigurationEncryptionConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeDataLakeConfigurationEncryptionConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._kmsKeyId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -136,15 +136,15 @@ export class SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputRefer
   }
 }
 
-export class SecuritylakeDataLakeConfigurationEncryptionConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeDataLakeConfigurationEncryptionConfiguration[] | cdktf.IResolvable
+export class SecuritylakeDataLakeConfigurationEncryptionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeDataLakeConfigurationEncryptionConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -162,25 +162,25 @@ export interface SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirati
   readonly days?: number;
 }
 
-export function securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days: cdktf.numberToTerraform(struct!.days),
+    days: cdktn.numberToTerraform(struct!.days),
   }
 }
 
 
-export function securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days: {
-      value: cdktf.numberToHclTerraform(struct!.days),
+      value: cdktn.numberToHclTerraform(struct!.days),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -191,9 +191,9 @@ export function securitylakeDataLakeConfigurationLifecycleConfigurationExpiratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -201,11 +201,11 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -218,13 +218,13 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._days = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -252,15 +252,15 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOu
   }
 }
 
-export class SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration[] | cdktf.IResolvable
+export class SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -282,32 +282,32 @@ export interface SecuritylakeDataLakeConfigurationLifecycleConfigurationTransiti
   readonly storageClass?: string;
 }
 
-export function securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days: cdktf.numberToTerraform(struct!.days),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
+    days: cdktn.numberToTerraform(struct!.days),
+    storage_class: cdktn.stringToTerraform(struct!.storageClass),
   }
 }
 
 
-export function securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToHclTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToHclTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days: {
-      value: cdktf.numberToHclTerraform(struct!.days),
+      value: cdktn.numberToHclTerraform(struct!.days),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_class: {
-      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      value: cdktn.stringToHclTerraform(struct!.storageClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -318,9 +318,9 @@ export function securitylakeDataLakeConfigurationLifecycleConfigurationTransitio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -328,11 +328,11 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -349,14 +349,14 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._days = undefined;
       this._storageClass = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -401,15 +401,15 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOu
   }
 }
 
-export class SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition[] | cdktf.IResolvable
+export class SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -426,41 +426,41 @@ export interface SecuritylakeDataLakeConfigurationLifecycleConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake#expiration SecuritylakeDataLake#expiration}
   */
-  readonly expiration?: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration[] | cdktf.IResolvable;
+  readonly expiration?: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration[] | cdktn.IResolvable;
   /**
   * transition block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake#transition SecuritylakeDataLake#transition}
   */
-  readonly transition?: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition[] | cdktf.IResolvable;
+  readonly transition?: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition[] | cdktn.IResolvable;
 }
 
-export function securitylakeDataLakeConfigurationLifecycleConfigurationToTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationLifecycleConfigurationToTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expiration: cdktf.listMapper(securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToTerraform, true)(struct!.expiration),
-    transition: cdktf.listMapper(securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToTerraform, true)(struct!.transition),
+    expiration: cdktn.listMapper(securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToTerraform, true)(struct!.expiration),
+    transition: cdktn.listMapper(securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToTerraform, true)(struct!.transition),
   }
 }
 
 
-export function securitylakeDataLakeConfigurationLifecycleConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationLifecycleConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationLifecycleConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expiration: {
-      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToHclTerraform, true)(struct!.expiration),
+      value: cdktn.listMapperHcl(securitylakeDataLakeConfigurationLifecycleConfigurationExpirationToHclTerraform, true)(struct!.expiration),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList",
     },
     transition: {
-      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToHclTerraform, true)(struct!.transition),
+      value: cdktn.listMapperHcl(securitylakeDataLakeConfigurationLifecycleConfigurationTransitionToHclTerraform, true)(struct!.transition),
       isBlock: true,
       type: "set",
       storageClassType: "SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList",
@@ -471,9 +471,9 @@ export function securitylakeDataLakeConfigurationLifecycleConfigurationToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -481,11 +481,11 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeDataLakeConfigurationLifecycleConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeDataLakeConfigurationLifecycleConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -502,14 +502,14 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeDataLakeConfigurationLifecycleConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeDataLakeConfigurationLifecycleConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._expiration.internalValue = undefined;
       this._transition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -526,7 +526,7 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputRefere
   public get expiration() {
     return this._expiration;
   }
-  public putExpiration(value: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration[] | cdktf.IResolvable) {
+  public putExpiration(value: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration[] | cdktn.IResolvable) {
     this._expiration.internalValue = value;
   }
   public resetExpiration() {
@@ -542,7 +542,7 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputRefere
   public get transition() {
     return this._transition;
   }
-  public putTransition(value: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition[] | cdktf.IResolvable) {
+  public putTransition(value: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition[] | cdktn.IResolvable) {
     this._transition.internalValue = value;
   }
   public resetTransition() {
@@ -554,15 +554,15 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputRefere
   }
 }
 
-export class SecuritylakeDataLakeConfigurationLifecycleConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeDataLakeConfigurationLifecycleConfiguration[] | cdktf.IResolvable
+export class SecuritylakeDataLakeConfigurationLifecycleConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeDataLakeConfigurationLifecycleConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -584,32 +584,32 @@ export interface SecuritylakeDataLakeConfigurationReplicationConfiguration {
   readonly roleArn?: string;
 }
 
-export function securitylakeDataLakeConfigurationReplicationConfigurationToTerraform(struct?: SecuritylakeDataLakeConfigurationReplicationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationReplicationConfigurationToTerraform(struct?: SecuritylakeDataLakeConfigurationReplicationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regions),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
-export function securitylakeDataLakeConfigurationReplicationConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationReplicationConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationReplicationConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfigurationReplicationConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.regions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -620,9 +620,9 @@ export function securitylakeDataLakeConfigurationReplicationConfigurationToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -630,11 +630,11 @@ export class SecuritylakeDataLakeConfigurationReplicationConfigurationOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeDataLakeConfigurationReplicationConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeDataLakeConfigurationReplicationConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -651,14 +651,14 @@ export class SecuritylakeDataLakeConfigurationReplicationConfigurationOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeDataLakeConfigurationReplicationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeDataLakeConfigurationReplicationConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._regions = undefined;
       this._roleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -673,7 +673,7 @@ export class SecuritylakeDataLakeConfigurationReplicationConfigurationOutputRefe
   // regions - computed: false, optional: true, required: false
   private _regions?: string[]; 
   public get regions() {
-    return cdktf.Fn.tolist(this.getListAttribute('regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('regions'));
   }
   public set regions(value: string[]) {
     this._regions = value;
@@ -703,15 +703,15 @@ export class SecuritylakeDataLakeConfigurationReplicationConfigurationOutputRefe
   }
 }
 
-export class SecuritylakeDataLakeConfigurationReplicationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeDataLakeConfigurationReplicationConfiguration[] | cdktf.IResolvable
+export class SecuritylakeDataLakeConfigurationReplicationConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeDataLakeConfigurationReplicationConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -726,7 +726,7 @@ export interface SecuritylakeDataLakeConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}
   */
-  readonly encryptionConfiguration?: SecuritylakeDataLakeConfigurationEncryptionConfiguration[] | cdktf.IResolvable;
+  readonly encryptionConfiguration?: SecuritylakeDataLakeConfigurationEncryptionConfiguration[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}
   */
@@ -736,55 +736,55 @@ export interface SecuritylakeDataLakeConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake#lifecycle_configuration SecuritylakeDataLake#lifecycle_configuration}
   */
-  readonly lifecycleConfiguration?: SecuritylakeDataLakeConfigurationLifecycleConfiguration[] | cdktf.IResolvable;
+  readonly lifecycleConfiguration?: SecuritylakeDataLakeConfigurationLifecycleConfiguration[] | cdktn.IResolvable;
   /**
   * replication_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake#replication_configuration SecuritylakeDataLake#replication_configuration}
   */
-  readonly replicationConfiguration?: SecuritylakeDataLakeConfigurationReplicationConfiguration[] | cdktf.IResolvable;
+  readonly replicationConfiguration?: SecuritylakeDataLakeConfigurationReplicationConfiguration[] | cdktn.IResolvable;
 }
 
-export function securitylakeDataLakeConfigurationToTerraform(struct?: SecuritylakeDataLakeConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationToTerraform(struct?: SecuritylakeDataLakeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption_configuration: cdktf.listMapper(securitylakeDataLakeConfigurationEncryptionConfigurationToTerraform, false)(struct!.encryptionConfiguration),
-    region: cdktf.stringToTerraform(struct!.region),
-    lifecycle_configuration: cdktf.listMapper(securitylakeDataLakeConfigurationLifecycleConfigurationToTerraform, true)(struct!.lifecycleConfiguration),
-    replication_configuration: cdktf.listMapper(securitylakeDataLakeConfigurationReplicationConfigurationToTerraform, true)(struct!.replicationConfiguration),
+    encryption_configuration: cdktn.listMapper(securitylakeDataLakeConfigurationEncryptionConfigurationToTerraform, false)(struct!.encryptionConfiguration),
+    region: cdktn.stringToTerraform(struct!.region),
+    lifecycle_configuration: cdktn.listMapper(securitylakeDataLakeConfigurationLifecycleConfigurationToTerraform, true)(struct!.lifecycleConfiguration),
+    replication_configuration: cdktn.listMapper(securitylakeDataLakeConfigurationReplicationConfigurationToTerraform, true)(struct!.replicationConfiguration),
   }
 }
 
 
-export function securitylakeDataLakeConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeConfigurationToHclTerraform(struct?: SecuritylakeDataLakeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption_configuration: {
-      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationEncryptionConfigurationToHclTerraform, false)(struct!.encryptionConfiguration),
+      value: cdktn.listMapperHcl(securitylakeDataLakeConfigurationEncryptionConfigurationToHclTerraform, false)(struct!.encryptionConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeDataLakeConfigurationEncryptionConfigurationList",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lifecycle_configuration: {
-      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationLifecycleConfigurationToHclTerraform, true)(struct!.lifecycleConfiguration),
+      value: cdktn.listMapperHcl(securitylakeDataLakeConfigurationLifecycleConfigurationToHclTerraform, true)(struct!.lifecycleConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeDataLakeConfigurationLifecycleConfigurationList",
     },
     replication_configuration: {
-      value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationReplicationConfigurationToHclTerraform, true)(struct!.replicationConfiguration),
+      value: cdktn.listMapperHcl(securitylakeDataLakeConfigurationReplicationConfigurationToHclTerraform, true)(struct!.replicationConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "SecuritylakeDataLakeConfigurationReplicationConfigurationList",
@@ -795,9 +795,9 @@ export function securitylakeDataLakeConfigurationToHclTerraform(struct?: Securit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeDataLakeConfigurationOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeDataLakeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -805,11 +805,11 @@ export class SecuritylakeDataLakeConfigurationOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecuritylakeDataLakeConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeDataLakeConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -834,7 +834,7 @@ export class SecuritylakeDataLakeConfigurationOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeDataLakeConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeDataLakeConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -843,7 +843,7 @@ export class SecuritylakeDataLakeConfigurationOutputReference extends cdktf.Comp
       this._lifecycleConfiguration.internalValue = undefined;
       this._replicationConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -862,7 +862,7 @@ export class SecuritylakeDataLakeConfigurationOutputReference extends cdktf.Comp
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
-  public putEncryptionConfiguration(value: SecuritylakeDataLakeConfigurationEncryptionConfiguration[] | cdktf.IResolvable) {
+  public putEncryptionConfiguration(value: SecuritylakeDataLakeConfigurationEncryptionConfiguration[] | cdktn.IResolvable) {
     this._encryptionConfiguration.internalValue = value;
   }
   public resetEncryptionConfiguration() {
@@ -891,7 +891,7 @@ export class SecuritylakeDataLakeConfigurationOutputReference extends cdktf.Comp
   public get lifecycleConfiguration() {
     return this._lifecycleConfiguration;
   }
-  public putLifecycleConfiguration(value: SecuritylakeDataLakeConfigurationLifecycleConfiguration[] | cdktf.IResolvable) {
+  public putLifecycleConfiguration(value: SecuritylakeDataLakeConfigurationLifecycleConfiguration[] | cdktn.IResolvable) {
     this._lifecycleConfiguration.internalValue = value;
   }
   public resetLifecycleConfiguration() {
@@ -907,7 +907,7 @@ export class SecuritylakeDataLakeConfigurationOutputReference extends cdktf.Comp
   public get replicationConfiguration() {
     return this._replicationConfiguration;
   }
-  public putReplicationConfiguration(value: SecuritylakeDataLakeConfigurationReplicationConfiguration[] | cdktf.IResolvable) {
+  public putReplicationConfiguration(value: SecuritylakeDataLakeConfigurationReplicationConfiguration[] | cdktn.IResolvable) {
     this._replicationConfiguration.internalValue = value;
   }
   public resetReplicationConfiguration() {
@@ -919,15 +919,15 @@ export class SecuritylakeDataLakeConfigurationOutputReference extends cdktf.Comp
   }
 }
 
-export class SecuritylakeDataLakeConfigurationList extends cdktf.ComplexList {
-  public internalValue? : SecuritylakeDataLakeConfiguration[] | cdktf.IResolvable
+export class SecuritylakeDataLakeConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecuritylakeDataLakeConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -959,39 +959,39 @@ export interface SecuritylakeDataLakeTimeouts {
   readonly update?: string;
 }
 
-export function securitylakeDataLakeTimeoutsToTerraform(struct?: SecuritylakeDataLakeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeTimeoutsToTerraform(struct?: SecuritylakeDataLakeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function securitylakeDataLakeTimeoutsToHclTerraform(struct?: SecuritylakeDataLakeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securitylakeDataLakeTimeoutsToHclTerraform(struct?: SecuritylakeDataLakeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1002,19 +1002,19 @@ export function securitylakeDataLakeTimeoutsToHclTerraform(struct?: Securitylake
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecuritylakeDataLakeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecuritylakeDataLakeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecuritylakeDataLakeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecuritylakeDataLakeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1035,7 +1035,7 @@ export class SecuritylakeDataLakeTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecuritylakeDataLakeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecuritylakeDataLakeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1043,7 +1043,7 @@ export class SecuritylakeDataLakeTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1108,7 +1108,7 @@ export class SecuritylakeDataLakeTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake aws_securitylake_data_lake}
 */
-export class SecuritylakeDataLake extends cdktf.TerraformResource {
+export class SecuritylakeDataLake extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1119,14 +1119,14 @@ export class SecuritylakeDataLake extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecuritylakeDataLake resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecuritylakeDataLake resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecuritylakeDataLake to import
   * @param importFromId The id of the existing SecuritylakeDataLake that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securitylake_data_lake#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecuritylakeDataLake to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_data_lake", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securitylake_data_lake", importId: importFromId, provider });
       }
 
   // ===========
@@ -1228,7 +1228,7 @@ export class SecuritylakeDataLake extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -1238,7 +1238,7 @@ export class SecuritylakeDataLake extends cdktf.TerraformResource {
   public get configuration() {
     return this._configuration;
   }
-  public putConfiguration(value: SecuritylakeDataLakeConfiguration[] | cdktf.IResolvable) {
+  public putConfiguration(value: SecuritylakeDataLakeConfiguration[] | cdktn.IResolvable) {
     this._configuration.internalValue = value;
   }
   public resetConfiguration() {
@@ -1271,10 +1271,10 @@ export class SecuritylakeDataLake extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      meta_store_manager_role_arn: cdktf.stringToTerraform(this._metaStoreManagerRoleArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      configuration: cdktf.listMapper(securitylakeDataLakeConfigurationToTerraform, true)(this._configuration.internalValue),
+      meta_store_manager_role_arn: cdktn.stringToTerraform(this._metaStoreManagerRoleArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      configuration: cdktn.listMapper(securitylakeDataLakeConfigurationToTerraform, true)(this._configuration.internalValue),
       timeouts: securitylakeDataLakeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1282,25 +1282,25 @@ export class SecuritylakeDataLake extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       meta_store_manager_role_arn: {
-        value: cdktf.stringToHclTerraform(this._metaStoreManagerRoleArn),
+        value: cdktn.stringToHclTerraform(this._metaStoreManagerRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       configuration: {
-        value: cdktf.listMapperHcl(securitylakeDataLakeConfigurationToHclTerraform, true)(this._configuration.internalValue),
+        value: cdktn.listMapperHcl(securitylakeDataLakeConfigurationToHclTerraform, true)(this._configuration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SecuritylakeDataLakeConfigurationList",

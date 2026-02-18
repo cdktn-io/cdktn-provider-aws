@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOpensearchDomainConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOpensearchDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/opensearch_domain#domain_name DataAwsOpensearchDomain#domain_name}
   */
@@ -38,8 +38,8 @@ export interface DataAwsOpensearchDomainAdvancedSecurityOptions {
 }
 
 export function dataAwsOpensearchDomainAdvancedSecurityOptionsToTerraform(struct?: DataAwsOpensearchDomainAdvancedSecurityOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAwsOpensearchDomainAdvancedSecurityOptionsToTerraform(struct
 
 
 export function dataAwsOpensearchDomainAdvancedSecurityOptionsToHclTerraform(struct?: DataAwsOpensearchDomainAdvancedSecurityOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAwsOpensearchDomainAdvancedSecurityOptionsToHclTerraform(str
   return attrs;
 }
 
-export class DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,14 +101,14 @@ export class DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference exten
   }
 }
 
-export class DataAwsOpensearchDomainAdvancedSecurityOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainAdvancedSecurityOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -123,8 +123,8 @@ export interface DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurati
 }
 
 export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationToTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -133,8 +133,8 @@ export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuratio
 
 
 export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationToHclTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -142,7 +142,7 @@ export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuratio
   return attrs;
 }
 
-export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -151,7 +151,7 @@ export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -181,14 +181,14 @@ export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOu
   }
 }
 
-export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,8 +203,8 @@ export interface DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule {
 }
 
 export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -213,8 +213,8 @@ export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleToTerra
 
 
 export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleToHclTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -222,7 +222,7 @@ export function dataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleToHclTe
   return attrs;
 }
 
-export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -231,7 +231,7 @@ export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -267,14 +267,14 @@ export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputRefe
   }
 }
 
-export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -289,8 +289,8 @@ export interface DataAwsOpensearchDomainAutoTuneOptions {
 }
 
 export function dataAwsOpensearchDomainAutoTuneOptionsToTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -299,8 +299,8 @@ export function dataAwsOpensearchDomainAutoTuneOptionsToTerraform(struct?: DataA
 
 
 export function dataAwsOpensearchDomainAutoTuneOptionsToHclTerraform(struct?: DataAwsOpensearchDomainAutoTuneOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -308,7 +308,7 @@ export function dataAwsOpensearchDomainAutoTuneOptionsToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsOpensearchDomainAutoTuneOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainAutoTuneOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -317,7 +317,7 @@ export class DataAwsOpensearchDomainAutoTuneOptionsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -358,14 +358,14 @@ export class DataAwsOpensearchDomainAutoTuneOptionsOutputReference extends cdktf
   }
 }
 
-export class DataAwsOpensearchDomainAutoTuneOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainAutoTuneOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -380,8 +380,8 @@ export interface DataAwsOpensearchDomainClusterConfigColdStorageOptions {
 }
 
 export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToTerraform(struct?: DataAwsOpensearchDomainClusterConfigColdStorageOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -390,8 +390,8 @@ export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToTerrafor
 
 
 export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigColdStorageOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -399,7 +399,7 @@ export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToHclTerra
   return attrs;
 }
 
-export class DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -408,7 +408,7 @@ export class DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -433,14 +433,14 @@ export class DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReferen
   }
 }
 
-export class DataAwsOpensearchDomainClusterConfigColdStorageOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainClusterConfigColdStorageOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -455,8 +455,8 @@ export interface DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfig {
 }
 
 export function dataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigToTerraform(struct?: DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -465,8 +465,8 @@ export function dataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigToTerra
 
 
 export function dataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -474,7 +474,7 @@ export function dataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigToHclTe
   return attrs;
 }
 
-export class DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -483,7 +483,7 @@ export class DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -518,14 +518,14 @@ export class DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigOutputRefe
   }
 }
 
-export class DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainClusterConfigNodeOptionsNodeConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -540,8 +540,8 @@ export interface DataAwsOpensearchDomainClusterConfigNodeOptions {
 }
 
 export function dataAwsOpensearchDomainClusterConfigNodeOptionsToTerraform(struct?: DataAwsOpensearchDomainClusterConfigNodeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -550,8 +550,8 @@ export function dataAwsOpensearchDomainClusterConfigNodeOptionsToTerraform(struc
 
 
 export function dataAwsOpensearchDomainClusterConfigNodeOptionsToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigNodeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -559,7 +559,7 @@ export function dataAwsOpensearchDomainClusterConfigNodeOptionsToHclTerraform(st
   return attrs;
 }
 
-export class DataAwsOpensearchDomainClusterConfigNodeOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainClusterConfigNodeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -568,7 +568,7 @@ export class DataAwsOpensearchDomainClusterConfigNodeOptionsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -599,14 +599,14 @@ export class DataAwsOpensearchDomainClusterConfigNodeOptionsOutputReference exte
   }
 }
 
-export class DataAwsOpensearchDomainClusterConfigNodeOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainClusterConfigNodeOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -621,8 +621,8 @@ export interface DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig {
 }
 
 export function dataAwsOpensearchDomainClusterConfigZoneAwarenessConfigToTerraform(struct?: DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -631,8 +631,8 @@ export function dataAwsOpensearchDomainClusterConfigZoneAwarenessConfigToTerrafo
 
 
 export function dataAwsOpensearchDomainClusterConfigZoneAwarenessConfigToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -640,7 +640,7 @@ export function dataAwsOpensearchDomainClusterConfigZoneAwarenessConfigToHclTerr
   return attrs;
 }
 
-export class DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -649,7 +649,7 @@ export class DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -674,14 +674,14 @@ export class DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputRefere
   }
 }
 
-export class DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -696,8 +696,8 @@ export interface DataAwsOpensearchDomainClusterConfig {
 }
 
 export function dataAwsOpensearchDomainClusterConfigToTerraform(struct?: DataAwsOpensearchDomainClusterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -706,8 +706,8 @@ export function dataAwsOpensearchDomainClusterConfigToTerraform(struct?: DataAws
 
 
 export function dataAwsOpensearchDomainClusterConfigToHclTerraform(struct?: DataAwsOpensearchDomainClusterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -715,7 +715,7 @@ export function dataAwsOpensearchDomainClusterConfigToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsOpensearchDomainClusterConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainClusterConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -724,7 +724,7 @@ export class DataAwsOpensearchDomainClusterConfigOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -812,14 +812,14 @@ export class DataAwsOpensearchDomainClusterConfigOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsOpensearchDomainClusterConfigList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainClusterConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -834,8 +834,8 @@ export interface DataAwsOpensearchDomainCognitoOptions {
 }
 
 export function dataAwsOpensearchDomainCognitoOptionsToTerraform(struct?: DataAwsOpensearchDomainCognitoOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -844,8 +844,8 @@ export function dataAwsOpensearchDomainCognitoOptionsToTerraform(struct?: DataAw
 
 
 export function dataAwsOpensearchDomainCognitoOptionsToHclTerraform(struct?: DataAwsOpensearchDomainCognitoOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -853,7 +853,7 @@ export function dataAwsOpensearchDomainCognitoOptionsToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsOpensearchDomainCognitoOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainCognitoOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -862,7 +862,7 @@ export class DataAwsOpensearchDomainCognitoOptionsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -902,14 +902,14 @@ export class DataAwsOpensearchDomainCognitoOptionsOutputReference extends cdktf.
   }
 }
 
-export class DataAwsOpensearchDomainCognitoOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainCognitoOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -924,8 +924,8 @@ export interface DataAwsOpensearchDomainEbsOptions {
 }
 
 export function dataAwsOpensearchDomainEbsOptionsToTerraform(struct?: DataAwsOpensearchDomainEbsOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -934,8 +934,8 @@ export function dataAwsOpensearchDomainEbsOptionsToTerraform(struct?: DataAwsOpe
 
 
 export function dataAwsOpensearchDomainEbsOptionsToHclTerraform(struct?: DataAwsOpensearchDomainEbsOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -943,7 +943,7 @@ export function dataAwsOpensearchDomainEbsOptionsToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsOpensearchDomainEbsOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainEbsOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -952,7 +952,7 @@ export class DataAwsOpensearchDomainEbsOptionsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -997,14 +997,14 @@ export class DataAwsOpensearchDomainEbsOptionsOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsOpensearchDomainEbsOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainEbsOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1019,8 +1019,8 @@ export interface DataAwsOpensearchDomainEncryptionAtRest {
 }
 
 export function dataAwsOpensearchDomainEncryptionAtRestToTerraform(struct?: DataAwsOpensearchDomainEncryptionAtRest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1029,8 +1029,8 @@ export function dataAwsOpensearchDomainEncryptionAtRestToTerraform(struct?: Data
 
 
 export function dataAwsOpensearchDomainEncryptionAtRestToHclTerraform(struct?: DataAwsOpensearchDomainEncryptionAtRest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1038,7 +1038,7 @@ export function dataAwsOpensearchDomainEncryptionAtRestToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAwsOpensearchDomainEncryptionAtRestOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainEncryptionAtRestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1047,7 +1047,7 @@ export class DataAwsOpensearchDomainEncryptionAtRestOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1077,14 +1077,14 @@ export class DataAwsOpensearchDomainEncryptionAtRestOutputReference extends cdkt
   }
 }
 
-export class DataAwsOpensearchDomainEncryptionAtRestList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainEncryptionAtRestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1099,8 +1099,8 @@ export interface DataAwsOpensearchDomainIdentityCenterOptions {
 }
 
 export function dataAwsOpensearchDomainIdentityCenterOptionsToTerraform(struct?: DataAwsOpensearchDomainIdentityCenterOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1109,8 +1109,8 @@ export function dataAwsOpensearchDomainIdentityCenterOptionsToTerraform(struct?:
 
 
 export function dataAwsOpensearchDomainIdentityCenterOptionsToHclTerraform(struct?: DataAwsOpensearchDomainIdentityCenterOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1118,7 +1118,7 @@ export function dataAwsOpensearchDomainIdentityCenterOptionsToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsOpensearchDomainIdentityCenterOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainIdentityCenterOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1127,7 +1127,7 @@ export class DataAwsOpensearchDomainIdentityCenterOptionsOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1167,14 +1167,14 @@ export class DataAwsOpensearchDomainIdentityCenterOptionsOutputReference extends
   }
 }
 
-export class DataAwsOpensearchDomainIdentityCenterOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainIdentityCenterOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1189,8 +1189,8 @@ export interface DataAwsOpensearchDomainLogPublishingOptions {
 }
 
 export function dataAwsOpensearchDomainLogPublishingOptionsToTerraform(struct?: DataAwsOpensearchDomainLogPublishingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1199,8 +1199,8 @@ export function dataAwsOpensearchDomainLogPublishingOptionsToTerraform(struct?: 
 
 
 export function dataAwsOpensearchDomainLogPublishingOptionsToHclTerraform(struct?: DataAwsOpensearchDomainLogPublishingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1208,7 +1208,7 @@ export function dataAwsOpensearchDomainLogPublishingOptionsToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsOpensearchDomainLogPublishingOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainLogPublishingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1217,7 +1217,7 @@ export class DataAwsOpensearchDomainLogPublishingOptionsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1252,14 +1252,14 @@ export class DataAwsOpensearchDomainLogPublishingOptionsOutputReference extends 
   }
 }
 
-export class DataAwsOpensearchDomainLogPublishingOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainLogPublishingOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1274,8 +1274,8 @@ export interface DataAwsOpensearchDomainNodeToNodeEncryption {
 }
 
 export function dataAwsOpensearchDomainNodeToNodeEncryptionToTerraform(struct?: DataAwsOpensearchDomainNodeToNodeEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1284,8 +1284,8 @@ export function dataAwsOpensearchDomainNodeToNodeEncryptionToTerraform(struct?: 
 
 
 export function dataAwsOpensearchDomainNodeToNodeEncryptionToHclTerraform(struct?: DataAwsOpensearchDomainNodeToNodeEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1293,7 +1293,7 @@ export function dataAwsOpensearchDomainNodeToNodeEncryptionToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1302,7 +1302,7 @@ export class DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1327,14 +1327,14 @@ export class DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference extends 
   }
 }
 
-export class DataAwsOpensearchDomainNodeToNodeEncryptionList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainNodeToNodeEncryptionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1349,8 +1349,8 @@ export interface DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowS
 }
 
 export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1359,8 +1359,8 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowSt
 
 
 export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1368,7 +1368,7 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowSt
   return attrs;
 }
 
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1377,7 +1377,7 @@ export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStart
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1407,14 +1407,14 @@ export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStart
   }
 }
 
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1429,8 +1429,8 @@ export interface DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow {
 }
 
 export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1439,8 +1439,8 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToTerraf
 
 
 export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1448,7 +1448,7 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToHclTer
   return attrs;
 }
 
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1457,7 +1457,7 @@ export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1483,14 +1483,14 @@ export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputRefer
   }
 }
 
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1505,8 +1505,8 @@ export interface DataAwsOpensearchDomainOffPeakWindowOptions {
 }
 
 export function dataAwsOpensearchDomainOffPeakWindowOptionsToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1515,8 +1515,8 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsToTerraform(struct?: 
 
 
 export function dataAwsOpensearchDomainOffPeakWindowOptionsToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1524,7 +1524,7 @@ export function dataAwsOpensearchDomainOffPeakWindowOptionsToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1533,7 +1533,7 @@ export class DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1564,14 +1564,14 @@ export class DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference extends 
   }
 }
 
-export class DataAwsOpensearchDomainOffPeakWindowOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainOffPeakWindowOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1586,8 +1586,8 @@ export interface DataAwsOpensearchDomainSnapshotOptions {
 }
 
 export function dataAwsOpensearchDomainSnapshotOptionsToTerraform(struct?: DataAwsOpensearchDomainSnapshotOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1596,8 +1596,8 @@ export function dataAwsOpensearchDomainSnapshotOptionsToTerraform(struct?: DataA
 
 
 export function dataAwsOpensearchDomainSnapshotOptionsToHclTerraform(struct?: DataAwsOpensearchDomainSnapshotOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1605,7 +1605,7 @@ export function dataAwsOpensearchDomainSnapshotOptionsToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsOpensearchDomainSnapshotOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainSnapshotOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1614,7 +1614,7 @@ export class DataAwsOpensearchDomainSnapshotOptionsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1639,14 +1639,14 @@ export class DataAwsOpensearchDomainSnapshotOptionsOutputReference extends cdktf
   }
 }
 
-export class DataAwsOpensearchDomainSnapshotOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainSnapshotOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1661,8 +1661,8 @@ export interface DataAwsOpensearchDomainSoftwareUpdateOptions {
 }
 
 export function dataAwsOpensearchDomainSoftwareUpdateOptionsToTerraform(struct?: DataAwsOpensearchDomainSoftwareUpdateOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1671,8 +1671,8 @@ export function dataAwsOpensearchDomainSoftwareUpdateOptionsToTerraform(struct?:
 
 
 export function dataAwsOpensearchDomainSoftwareUpdateOptionsToHclTerraform(struct?: DataAwsOpensearchDomainSoftwareUpdateOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1680,7 +1680,7 @@ export function dataAwsOpensearchDomainSoftwareUpdateOptionsToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsOpensearchDomainSoftwareUpdateOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainSoftwareUpdateOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1689,7 +1689,7 @@ export class DataAwsOpensearchDomainSoftwareUpdateOptionsOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1714,14 +1714,14 @@ export class DataAwsOpensearchDomainSoftwareUpdateOptionsOutputReference extends
   }
 }
 
-export class DataAwsOpensearchDomainSoftwareUpdateOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainSoftwareUpdateOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1736,8 +1736,8 @@ export interface DataAwsOpensearchDomainVpcOptions {
 }
 
 export function dataAwsOpensearchDomainVpcOptionsToTerraform(struct?: DataAwsOpensearchDomainVpcOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1746,8 +1746,8 @@ export function dataAwsOpensearchDomainVpcOptionsToTerraform(struct?: DataAwsOpe
 
 
 export function dataAwsOpensearchDomainVpcOptionsToHclTerraform(struct?: DataAwsOpensearchDomainVpcOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1755,7 +1755,7 @@ export function dataAwsOpensearchDomainVpcOptionsToHclTerraform(struct?: DataAws
   return attrs;
 }
 
-export class DataAwsOpensearchDomainVpcOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOpensearchDomainVpcOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1764,7 +1764,7 @@ export class DataAwsOpensearchDomainVpcOptionsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1785,17 +1785,17 @@ export class DataAwsOpensearchDomainVpcOptionsOutputReference extends cdktf.Comp
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // security_group_ids - computed: true, optional: false, required: false
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // vpc_id - computed: true, optional: false, required: false
@@ -1804,14 +1804,14 @@ export class DataAwsOpensearchDomainVpcOptionsOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsOpensearchDomainVpcOptionsList extends cdktf.ComplexList {
+export class DataAwsOpensearchDomainVpcOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1826,7 +1826,7 @@ export class DataAwsOpensearchDomainVpcOptionsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/opensearch_domain aws_opensearch_domain}
 */
-export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
+export class DataAwsOpensearchDomain extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1837,14 +1837,14 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOpensearchDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOpensearchDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOpensearchDomain to import
   * @param importFromId The id of the existing DataAwsOpensearchDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/opensearch_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOpensearchDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -1890,7 +1890,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
   }
 
   // advanced_options - computed: true, optional: false, required: false
-  private _advancedOptions = new cdktf.StringMap(this, "advanced_options");
+  private _advancedOptions = new cdktn.StringMap(this, "advanced_options");
   public get advancedOptions() {
     return this._advancedOptions;
   }
@@ -2100,35 +2100,35 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

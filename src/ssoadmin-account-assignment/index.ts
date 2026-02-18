@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoadminAccountAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface SsoadminAccountAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_account_assignment#id SsoadminAccountAssignment#id}
   *
@@ -67,32 +67,32 @@ export interface SsoadminAccountAssignmentTimeouts {
   readonly delete?: string;
 }
 
-export function ssoadminAccountAssignmentTimeoutsToTerraform(struct?: SsoadminAccountAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminAccountAssignmentTimeoutsToTerraform(struct?: SsoadminAccountAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function ssoadminAccountAssignmentTimeoutsToHclTerraform(struct?: SsoadminAccountAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ssoadminAccountAssignmentTimeoutsToHclTerraform(struct?: SsoadminAccountAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,19 +103,19 @@ export function ssoadminAccountAssignmentTimeoutsToHclTerraform(struct?: Ssoadmi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SsoadminAccountAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SsoadminAccountAssignmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SsoadminAccountAssignmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SsoadminAccountAssignmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class SsoadminAccountAssignmentTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SsoadminAccountAssignmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SsoadminAccountAssignmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,7 +187,7 @@ export class SsoadminAccountAssignmentTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment}
 */
-export class SsoadminAccountAssignment extends cdktf.TerraformResource {
+export class SsoadminAccountAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -198,14 +198,14 @@ export class SsoadminAccountAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoadminAccountAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoadminAccountAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminAccountAssignment to import
   * @param importFromId The id of the existing SsoadminAccountAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ssoadmin_account_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminAccountAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_account_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_account_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -382,14 +382,14 @@ export class SsoadminAccountAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_arn: cdktf.stringToTerraform(this._instanceArn),
-      permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),
-      principal_id: cdktf.stringToTerraform(this._principalId),
-      principal_type: cdktf.stringToTerraform(this._principalType),
-      region: cdktf.stringToTerraform(this._region),
-      target_id: cdktf.stringToTerraform(this._targetId),
-      target_type: cdktf.stringToTerraform(this._targetType),
+      id: cdktn.stringToTerraform(this._id),
+      instance_arn: cdktn.stringToTerraform(this._instanceArn),
+      permission_set_arn: cdktn.stringToTerraform(this._permissionSetArn),
+      principal_id: cdktn.stringToTerraform(this._principalId),
+      principal_type: cdktn.stringToTerraform(this._principalType),
+      region: cdktn.stringToTerraform(this._region),
+      target_id: cdktn.stringToTerraform(this._targetId),
+      target_type: cdktn.stringToTerraform(this._targetType),
       timeouts: ssoadminAccountAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -397,49 +397,49 @@ export class SsoadminAccountAssignment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceArn),
+        value: cdktn.stringToHclTerraform(this._instanceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission_set_arn: {
-        value: cdktf.stringToHclTerraform(this._permissionSetArn),
+        value: cdktn.stringToHclTerraform(this._permissionSetArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_id: {
-        value: cdktf.stringToHclTerraform(this._principalId),
+        value: cdktn.stringToHclTerraform(this._principalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_type: {
-        value: cdktf.stringToHclTerraform(this._principalType),
+        value: cdktn.stringToHclTerraform(this._principalType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_id: {
-        value: cdktf.stringToHclTerraform(this._targetId),
+        value: cdktn.stringToHclTerraform(this._targetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_type: {
-        value: cdktf.stringToHclTerraform(this._targetType),
+        value: cdktn.stringToHclTerraform(this._targetType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

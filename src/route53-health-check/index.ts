@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
+export interface Route53HealthCheckConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check#child_health_threshold Route53HealthCheck#child_health_threshold}
   */
@@ -31,11 +31,11 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check#disabled Route53HealthCheck#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check#enable_sni Route53HealthCheck#enable_sni}
   */
-  readonly enableSni?: boolean | cdktf.IResolvable;
+  readonly enableSni?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check#failure_threshold Route53HealthCheck#failure_threshold}
   */
@@ -58,7 +58,7 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check#invert_healthcheck Route53HealthCheck#invert_healthcheck}
   */
-  readonly invertHealthcheck?: boolean | cdktf.IResolvable;
+  readonly invertHealthcheck?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check#ip_address Route53HealthCheck#ip_address}
   */
@@ -66,7 +66,7 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check#measure_latency Route53HealthCheck#measure_latency}
   */
-  readonly measureLatency?: boolean | cdktf.IResolvable;
+  readonly measureLatency?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check#port Route53HealthCheck#port}
   */
@@ -116,7 +116,7 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check aws_route53_health_check}
 */
-export class Route53HealthCheck extends cdktf.TerraformResource {
+export class Route53HealthCheck extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -127,14 +127,14 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Route53HealthCheck resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Route53HealthCheck resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53HealthCheck to import
   * @param importFromId The id of the existing Route53HealthCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/route53_health_check#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53HealthCheck to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_health_check", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_health_check", importId: importFromId, provider });
       }
 
   // ===========
@@ -218,7 +218,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // child_healthchecks - computed: false, optional: true, required: false
   private _childHealthchecks?: string[]; 
   public get childHealthchecks() {
-    return cdktf.Fn.tolist(this.getListAttribute('child_healthchecks'));
+    return cdktn.Fn.tolist(this.getListAttribute('child_healthchecks'));
   }
   public set childHealthchecks(value: string[]) {
     this._childHealthchecks = value;
@@ -264,11 +264,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -280,11 +280,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // enable_sni - computed: true, optional: true, required: false
-  private _enableSni?: boolean | cdktf.IResolvable; 
+  private _enableSni?: boolean | cdktn.IResolvable; 
   public get enableSni() {
     return this.getBooleanAttribute('enable_sni');
   }
-  public set enableSni(value: boolean | cdktf.IResolvable) {
+  public set enableSni(value: boolean | cdktn.IResolvable) {
     this._enableSni = value;
   }
   public resetEnableSni() {
@@ -360,11 +360,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // invert_healthcheck - computed: false, optional: true, required: false
-  private _invertHealthcheck?: boolean | cdktf.IResolvable; 
+  private _invertHealthcheck?: boolean | cdktn.IResolvable; 
   public get invertHealthcheck() {
     return this.getBooleanAttribute('invert_healthcheck');
   }
-  public set invertHealthcheck(value: boolean | cdktf.IResolvable) {
+  public set invertHealthcheck(value: boolean | cdktn.IResolvable) {
     this._invertHealthcheck = value;
   }
   public resetInvertHealthcheck() {
@@ -392,11 +392,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // measure_latency - computed: false, optional: true, required: false
-  private _measureLatency?: boolean | cdktf.IResolvable; 
+  private _measureLatency?: boolean | cdktn.IResolvable; 
   public get measureLatency() {
     return this.getBooleanAttribute('measure_latency');
   }
-  public set measureLatency(value: boolean | cdktf.IResolvable) {
+  public set measureLatency(value: boolean | cdktn.IResolvable) {
     this._measureLatency = value;
   }
   public resetMeasureLatency() {
@@ -442,7 +442,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // regions - computed: true, optional: true, required: false
   private _regions?: string[]; 
   public get regions() {
-    return cdktf.Fn.tolist(this.getListAttribute('regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('regions'));
   }
   public set regions(value: string[]) {
     this._regions = value;
@@ -586,175 +586,175 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      child_health_threshold: cdktf.numberToTerraform(this._childHealthThreshold),
-      child_healthchecks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._childHealthchecks),
-      cloudwatch_alarm_name: cdktf.stringToTerraform(this._cloudwatchAlarmName),
-      cloudwatch_alarm_region: cdktf.stringToTerraform(this._cloudwatchAlarmRegion),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      enable_sni: cdktf.booleanToTerraform(this._enableSni),
-      failure_threshold: cdktf.numberToTerraform(this._failureThreshold),
-      fqdn: cdktf.stringToTerraform(this._fqdn),
-      id: cdktf.stringToTerraform(this._id),
-      insufficient_data_health_status: cdktf.stringToTerraform(this._insufficientDataHealthStatus),
-      invert_healthcheck: cdktf.booleanToTerraform(this._invertHealthcheck),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      measure_latency: cdktf.booleanToTerraform(this._measureLatency),
-      port: cdktf.numberToTerraform(this._port),
-      reference_name: cdktf.stringToTerraform(this._referenceName),
-      regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._regions),
-      request_interval: cdktf.numberToTerraform(this._requestInterval),
-      resource_path: cdktf.stringToTerraform(this._resourcePath),
-      routing_control_arn: cdktf.stringToTerraform(this._routingControlArn),
-      search_string: cdktf.stringToTerraform(this._searchString),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
-      type: cdktf.stringToTerraform(this._type),
+      child_health_threshold: cdktn.numberToTerraform(this._childHealthThreshold),
+      child_healthchecks: cdktn.listMapper(cdktn.stringToTerraform, false)(this._childHealthchecks),
+      cloudwatch_alarm_name: cdktn.stringToTerraform(this._cloudwatchAlarmName),
+      cloudwatch_alarm_region: cdktn.stringToTerraform(this._cloudwatchAlarmRegion),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      enable_sni: cdktn.booleanToTerraform(this._enableSni),
+      failure_threshold: cdktn.numberToTerraform(this._failureThreshold),
+      fqdn: cdktn.stringToTerraform(this._fqdn),
+      id: cdktn.stringToTerraform(this._id),
+      insufficient_data_health_status: cdktn.stringToTerraform(this._insufficientDataHealthStatus),
+      invert_healthcheck: cdktn.booleanToTerraform(this._invertHealthcheck),
+      ip_address: cdktn.stringToTerraform(this._ipAddress),
+      measure_latency: cdktn.booleanToTerraform(this._measureLatency),
+      port: cdktn.numberToTerraform(this._port),
+      reference_name: cdktn.stringToTerraform(this._referenceName),
+      regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._regions),
+      request_interval: cdktn.numberToTerraform(this._requestInterval),
+      resource_path: cdktn.stringToTerraform(this._resourcePath),
+      routing_control_arn: cdktn.stringToTerraform(this._routingControlArn),
+      search_string: cdktn.stringToTerraform(this._searchString),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      triggers: cdktn.hashMapper(cdktn.stringToTerraform)(this._triggers),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       child_health_threshold: {
-        value: cdktf.numberToHclTerraform(this._childHealthThreshold),
+        value: cdktn.numberToHclTerraform(this._childHealthThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       child_healthchecks: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._childHealthchecks),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._childHealthchecks),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       cloudwatch_alarm_name: {
-        value: cdktf.stringToHclTerraform(this._cloudwatchAlarmName),
+        value: cdktn.stringToHclTerraform(this._cloudwatchAlarmName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloudwatch_alarm_region: {
-        value: cdktf.stringToHclTerraform(this._cloudwatchAlarmRegion),
+        value: cdktn.stringToHclTerraform(this._cloudwatchAlarmRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_sni: {
-        value: cdktf.booleanToHclTerraform(this._enableSni),
+        value: cdktn.booleanToHclTerraform(this._enableSni),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       failure_threshold: {
-        value: cdktf.numberToHclTerraform(this._failureThreshold),
+        value: cdktn.numberToHclTerraform(this._failureThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       fqdn: {
-        value: cdktf.stringToHclTerraform(this._fqdn),
+        value: cdktn.stringToHclTerraform(this._fqdn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insufficient_data_health_status: {
-        value: cdktf.stringToHclTerraform(this._insufficientDataHealthStatus),
+        value: cdktn.stringToHclTerraform(this._insufficientDataHealthStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invert_healthcheck: {
-        value: cdktf.booleanToHclTerraform(this._invertHealthcheck),
+        value: cdktn.booleanToHclTerraform(this._invertHealthcheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ip_address: {
-        value: cdktf.stringToHclTerraform(this._ipAddress),
+        value: cdktn.stringToHclTerraform(this._ipAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       measure_latency: {
-        value: cdktf.booleanToHclTerraform(this._measureLatency),
+        value: cdktn.booleanToHclTerraform(this._measureLatency),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       reference_name: {
-        value: cdktf.stringToHclTerraform(this._referenceName),
+        value: cdktn.stringToHclTerraform(this._referenceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       regions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._regions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._regions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       request_interval: {
-        value: cdktf.numberToHclTerraform(this._requestInterval),
+        value: cdktn.numberToHclTerraform(this._requestInterval),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_path: {
-        value: cdktf.stringToHclTerraform(this._resourcePath),
+        value: cdktn.stringToHclTerraform(this._resourcePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_control_arn: {
-        value: cdktf.stringToHclTerraform(this._routingControlArn),
+        value: cdktn.stringToHclTerraform(this._routingControlArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       search_string: {
-        value: cdktf.stringToHclTerraform(this._searchString),
+        value: cdktn.stringToHclTerraform(this._searchString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       triggers: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._triggers),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._triggers),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

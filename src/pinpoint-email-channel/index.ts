@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PinpointEmailChannelConfig extends cdktf.TerraformMetaArguments {
+export interface PinpointEmailChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_email_channel#application_id PinpointEmailChannel#application_id}
   */
@@ -23,7 +23,7 @@ export interface PinpointEmailChannelConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_email_channel#enabled PinpointEmailChannel#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_email_channel#from_address PinpointEmailChannel#from_address}
   */
@@ -58,7 +58,7 @@ export interface PinpointEmailChannelConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel}
 */
-export class PinpointEmailChannel extends cdktf.TerraformResource {
+export class PinpointEmailChannel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -69,14 +69,14 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PinpointEmailChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PinpointEmailChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PinpointEmailChannel to import
   * @param importFromId The id of the existing PinpointEmailChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_email_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PinpointEmailChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_email_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_email_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -151,11 +151,11 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -267,70 +267,70 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      configuration_set: cdktf.stringToTerraform(this._configurationSet),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      from_address: cdktf.stringToTerraform(this._fromAddress),
-      id: cdktf.stringToTerraform(this._id),
-      identity: cdktf.stringToTerraform(this._identity),
-      orchestration_sending_role_arn: cdktf.stringToTerraform(this._orchestrationSendingRoleArn),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      configuration_set: cdktn.stringToTerraform(this._configurationSet),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      from_address: cdktn.stringToTerraform(this._fromAddress),
+      id: cdktn.stringToTerraform(this._id),
+      identity: cdktn.stringToTerraform(this._identity),
+      orchestration_sending_role_arn: cdktn.stringToTerraform(this._orchestrationSendingRoleArn),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       configuration_set: {
-        value: cdktf.stringToHclTerraform(this._configurationSet),
+        value: cdktn.stringToHclTerraform(this._configurationSet),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       from_address: {
-        value: cdktf.stringToHclTerraform(this._fromAddress),
+        value: cdktn.stringToHclTerraform(this._fromAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity: {
-        value: cdktf.stringToHclTerraform(this._identity),
+        value: cdktn.stringToHclTerraform(this._identity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       orchestration_sending_role_arn: {
-        value: cdktf.stringToHclTerraform(this._orchestrationSendingRoleArn),
+        value: cdktn.stringToHclTerraform(this._orchestrationSendingRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

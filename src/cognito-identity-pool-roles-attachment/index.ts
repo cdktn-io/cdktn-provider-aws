@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitoIdentityPoolRolesAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoIdentityPoolRolesAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_pool_roles_attachment#id CognitoIdentityPoolRolesAttachment#id}
   *
@@ -38,7 +38,7 @@ export interface CognitoIdentityPoolRolesAttachmentConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_pool_roles_attachment#role_mapping CognitoIdentityPoolRolesAttachment#role_mapping}
   */
-  readonly roleMapping?: CognitoIdentityPoolRolesAttachmentRoleMapping[] | cdktf.IResolvable;
+  readonly roleMapping?: CognitoIdentityPoolRolesAttachmentRoleMapping[] | cdktn.IResolvable;
 }
 export interface CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule {
   /**
@@ -59,46 +59,46 @@ export interface CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule {
   readonly value: string;
 }
 
-export function cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    claim: cdktf.stringToTerraform(struct!.claim),
-    match_type: cdktf.stringToTerraform(struct!.matchType),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    value: cdktf.stringToTerraform(struct!.value),
+    claim: cdktn.stringToTerraform(struct!.claim),
+    match_type: cdktn.stringToTerraform(struct!.matchType),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToHclTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToHclTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     claim: {
-      value: cdktf.stringToHclTerraform(struct!.claim),
+      value: cdktn.stringToHclTerraform(struct!.claim),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_type: {
-      value: cdktf.stringToHclTerraform(struct!.matchType),
+      value: cdktn.stringToHclTerraform(struct!.matchType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,9 +109,9 @@ export function cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference extends cdktf.ComplexObject {
+export class CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -119,11 +119,11 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputRefer
       this._roleArn = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -224,15 +224,15 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputRefer
   }
 }
 
-export class CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList extends cdktf.ComplexList {
-  public internalValue? : CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule[] | cdktf.IResolvable
+export class CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList extends cdktn.ComplexList {
+  public internalValue? : CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -261,49 +261,49 @@ export interface CognitoIdentityPoolRolesAttachmentRoleMapping {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_pool_roles_attachment#mapping_rule CognitoIdentityPoolRolesAttachment#mapping_rule}
   */
-  readonly mappingRule?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule[] | cdktf.IResolvable;
+  readonly mappingRule?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule[] | cdktn.IResolvable;
 }
 
-export function cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ambiguous_role_resolution: cdktf.stringToTerraform(struct!.ambiguousRoleResolution),
-    identity_provider: cdktf.stringToTerraform(struct!.identityProvider),
-    type: cdktf.stringToTerraform(struct!.type),
-    mapping_rule: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraform, true)(struct!.mappingRule),
+    ambiguous_role_resolution: cdktn.stringToTerraform(struct!.ambiguousRoleResolution),
+    identity_provider: cdktn.stringToTerraform(struct!.identityProvider),
+    type: cdktn.stringToTerraform(struct!.type),
+    mapping_rule: cdktn.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraform, true)(struct!.mappingRule),
   }
 }
 
 
-export function cognitoIdentityPoolRolesAttachmentRoleMappingToHclTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitoIdentityPoolRolesAttachmentRoleMappingToHclTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ambiguous_role_resolution: {
-      value: cdktf.stringToHclTerraform(struct!.ambiguousRoleResolution),
+      value: cdktn.stringToHclTerraform(struct!.ambiguousRoleResolution),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider: {
-      value: cdktf.stringToHclTerraform(struct!.identityProvider),
+      value: cdktn.stringToHclTerraform(struct!.identityProvider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mapping_rule: {
-      value: cdktf.listMapperHcl(cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToHclTerraform, true)(struct!.mappingRule),
+      value: cdktn.listMapperHcl(cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToHclTerraform, true)(struct!.mappingRule),
       isBlock: true,
       type: "list",
       storageClassType: "CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList",
@@ -314,9 +314,9 @@ export function cognitoIdentityPoolRolesAttachmentRoleMappingToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference extends cdktf.ComplexObject {
+export class CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -324,11 +324,11 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitoIdentityPoolRolesAttachmentRoleMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitoIdentityPoolRolesAttachmentRoleMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -353,7 +353,7 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitoIdentityPoolRolesAttachmentRoleMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitoIdentityPoolRolesAttachmentRoleMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -362,7 +362,7 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference extend
       this._type = undefined;
       this._mappingRule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -423,7 +423,7 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference extend
   public get mappingRule() {
     return this._mappingRule;
   }
-  public putMappingRule(value: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule[] | cdktf.IResolvable) {
+  public putMappingRule(value: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule[] | cdktn.IResolvable) {
     this._mappingRule.internalValue = value;
   }
   public resetMappingRule() {
@@ -435,15 +435,15 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference extend
   }
 }
 
-export class CognitoIdentityPoolRolesAttachmentRoleMappingList extends cdktf.ComplexList {
-  public internalValue? : CognitoIdentityPoolRolesAttachmentRoleMapping[] | cdktf.IResolvable
+export class CognitoIdentityPoolRolesAttachmentRoleMappingList extends cdktn.ComplexList {
+  public internalValue? : CognitoIdentityPoolRolesAttachmentRoleMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -458,7 +458,7 @@ export class CognitoIdentityPoolRolesAttachmentRoleMappingList extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_pool_roles_attachment aws_cognito_identity_pool_roles_attachment}
 */
-export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource {
+export class CognitoIdentityPoolRolesAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -469,14 +469,14 @@ export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitoIdentityPoolRolesAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitoIdentityPoolRolesAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoIdentityPoolRolesAttachment to import
   * @param importFromId The id of the existing CognitoIdentityPoolRolesAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_pool_roles_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoIdentityPoolRolesAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_identity_pool_roles_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_identity_pool_roles_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -580,7 +580,7 @@ export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource 
   public get roleMapping() {
     return this._roleMapping;
   }
-  public putRoleMapping(value: CognitoIdentityPoolRolesAttachmentRoleMapping[] | cdktf.IResolvable) {
+  public putRoleMapping(value: CognitoIdentityPoolRolesAttachmentRoleMapping[] | cdktn.IResolvable) {
     this._roleMapping.internalValue = value;
   }
   public resetRoleMapping() {
@@ -597,42 +597,42 @@ export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      identity_pool_id: cdktf.stringToTerraform(this._identityPoolId),
-      region: cdktf.stringToTerraform(this._region),
-      roles: cdktf.hashMapper(cdktf.stringToTerraform)(this._roles),
-      role_mapping: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform, true)(this._roleMapping.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      identity_pool_id: cdktn.stringToTerraform(this._identityPoolId),
+      region: cdktn.stringToTerraform(this._region),
+      roles: cdktn.hashMapper(cdktn.stringToTerraform)(this._roles),
+      role_mapping: cdktn.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform, true)(this._roleMapping.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_pool_id: {
-        value: cdktf.stringToHclTerraform(this._identityPoolId),
+        value: cdktn.stringToHclTerraform(this._identityPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       roles: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._roles),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._roles),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       role_mapping: {
-        value: cdktf.listMapperHcl(cognitoIdentityPoolRolesAttachmentRoleMappingToHclTerraform, true)(this._roleMapping.internalValue),
+        value: cdktn.listMapperHcl(cognitoIdentityPoolRolesAttachmentRoleMappingToHclTerraform, true)(this._roleMapping.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CognitoIdentityPoolRolesAttachmentRoleMappingList",

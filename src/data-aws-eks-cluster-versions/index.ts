@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEksClusterVersionsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEksClusterVersionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/eks_cluster_versions#cluster_type DataAwsEksClusterVersions#cluster_type}
   */
@@ -23,11 +23,11 @@ export interface DataAwsEksClusterVersionsConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/eks_cluster_versions#default_only DataAwsEksClusterVersions#default_only}
   */
-  readonly defaultOnly?: boolean | cdktf.IResolvable;
+  readonly defaultOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/eks_cluster_versions#include_all DataAwsEksClusterVersions#include_all}
   */
-  readonly includeAll?: boolean | cdktf.IResolvable;
+  readonly includeAll?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -43,8 +43,8 @@ export interface DataAwsEksClusterVersionsClusterVersions {
 }
 
 export function dataAwsEksClusterVersionsClusterVersionsToTerraform(struct?: DataAwsEksClusterVersionsClusterVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -53,8 +53,8 @@ export function dataAwsEksClusterVersionsClusterVersionsToTerraform(struct?: Dat
 
 
 export function dataAwsEksClusterVersionsClusterVersionsToHclTerraform(struct?: DataAwsEksClusterVersionsClusterVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -62,7 +62,7 @@ export function dataAwsEksClusterVersionsClusterVersionsToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsEksClusterVersionsClusterVersionsOutputReference extends cdktf.ComplexObject {
+export class DataAwsEksClusterVersionsClusterVersionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -71,7 +71,7 @@ export class DataAwsEksClusterVersionsClusterVersionsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -136,14 +136,14 @@ export class DataAwsEksClusterVersionsClusterVersionsOutputReference extends cdk
   }
 }
 
-export class DataAwsEksClusterVersionsClusterVersionsList extends cdktf.ComplexList {
+export class DataAwsEksClusterVersionsClusterVersionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -158,7 +158,7 @@ export class DataAwsEksClusterVersionsClusterVersionsList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/eks_cluster_versions aws_eks_cluster_versions}
 */
-export class DataAwsEksClusterVersions extends cdktf.TerraformDataSource {
+export class DataAwsEksClusterVersions extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -169,14 +169,14 @@ export class DataAwsEksClusterVersions extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEksClusterVersions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEksClusterVersions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEksClusterVersions to import
   * @param importFromId The id of the existing DataAwsEksClusterVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/eks_cluster_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEksClusterVersions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_cluster_versions", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_eks_cluster_versions", importId: importFromId, provider });
       }
 
   // ===========
@@ -257,11 +257,11 @@ export class DataAwsEksClusterVersions extends cdktf.TerraformDataSource {
   }
 
   // default_only - computed: false, optional: true, required: false
-  private _defaultOnly?: boolean | cdktf.IResolvable; 
+  private _defaultOnly?: boolean | cdktn.IResolvable; 
   public get defaultOnly() {
     return this.getBooleanAttribute('default_only');
   }
-  public set defaultOnly(value: boolean | cdktf.IResolvable) {
+  public set defaultOnly(value: boolean | cdktn.IResolvable) {
     this._defaultOnly = value;
   }
   public resetDefaultOnly() {
@@ -273,11 +273,11 @@ export class DataAwsEksClusterVersions extends cdktf.TerraformDataSource {
   }
 
   // include_all - computed: false, optional: true, required: false
-  private _includeAll?: boolean | cdktf.IResolvable; 
+  private _includeAll?: boolean | cdktn.IResolvable; 
   public get includeAll() {
     return this.getBooleanAttribute('include_all');
   }
-  public set includeAll(value: boolean | cdktf.IResolvable) {
+  public set includeAll(value: boolean | cdktn.IResolvable) {
     this._includeAll = value;
   }
   public resetIncludeAll() {
@@ -326,49 +326,49 @@ export class DataAwsEksClusterVersions extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_type: cdktf.stringToTerraform(this._clusterType),
-      cluster_versions_only: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clusterVersionsOnly),
-      default_only: cdktf.booleanToTerraform(this._defaultOnly),
-      include_all: cdktf.booleanToTerraform(this._includeAll),
-      region: cdktf.stringToTerraform(this._region),
-      version_status: cdktf.stringToTerraform(this._versionStatus),
+      cluster_type: cdktn.stringToTerraform(this._clusterType),
+      cluster_versions_only: cdktn.listMapper(cdktn.stringToTerraform, false)(this._clusterVersionsOnly),
+      default_only: cdktn.booleanToTerraform(this._defaultOnly),
+      include_all: cdktn.booleanToTerraform(this._includeAll),
+      region: cdktn.stringToTerraform(this._region),
+      version_status: cdktn.stringToTerraform(this._versionStatus),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_type: {
-        value: cdktf.stringToHclTerraform(this._clusterType),
+        value: cdktn.stringToHclTerraform(this._clusterType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_versions_only: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._clusterVersionsOnly),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._clusterVersionsOnly),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       default_only: {
-        value: cdktf.booleanToHclTerraform(this._defaultOnly),
+        value: cdktn.booleanToHclTerraform(this._defaultOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       include_all: {
-        value: cdktf.booleanToHclTerraform(this._includeAll),
+        value: cdktn.booleanToHclTerraform(this._includeAll),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_status: {
-        value: cdktf.stringToHclTerraform(this._versionStatus),
+        value: cdktn.stringToHclTerraform(this._versionStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

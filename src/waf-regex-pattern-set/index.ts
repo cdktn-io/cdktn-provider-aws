@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WafRegexPatternSetConfig extends cdktf.TerraformMetaArguments {
+export interface WafRegexPatternSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}
   *
@@ -32,7 +32,7 @@ export interface WafRegexPatternSetConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_regex_pattern_set aws_waf_regex_pattern_set}
 */
-export class WafRegexPatternSet extends cdktf.TerraformResource {
+export class WafRegexPatternSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class WafRegexPatternSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WafRegexPatternSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WafRegexPatternSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafRegexPatternSet to import
   * @param importFromId The id of the existing WafRegexPatternSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/waf_regex_pattern_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafRegexPatternSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_regex_pattern_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_waf_regex_pattern_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -126,7 +126,7 @@ export class WafRegexPatternSet extends cdktf.TerraformResource {
   // regex_pattern_strings - computed: false, optional: true, required: false
   private _regexPatternStrings?: string[]; 
   public get regexPatternStrings() {
-    return cdktf.Fn.tolist(this.getListAttribute('regex_pattern_strings'));
+    return cdktn.Fn.tolist(this.getListAttribute('regex_pattern_strings'));
   }
   public set regexPatternStrings(value: string[]) {
     this._regexPatternStrings = value;
@@ -145,28 +145,28 @@ export class WafRegexPatternSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      regex_pattern_strings: cdktf.listMapper(cdktf.stringToTerraform, false)(this._regexPatternStrings),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      regex_pattern_strings: cdktn.listMapper(cdktn.stringToTerraform, false)(this._regexPatternStrings),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       regex_pattern_strings: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._regexPatternStrings),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._regexPatternStrings),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LbTrustStoreRevocationConfig extends cdktf.TerraformMetaArguments {
+export interface LbTrustStoreRevocationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_trust_store_revocation#id LbTrustStoreRevocation#id}
   *
@@ -55,25 +55,25 @@ export interface LbTrustStoreRevocationTimeouts {
   readonly create?: string;
 }
 
-export function lbTrustStoreRevocationTimeoutsToTerraform(struct?: LbTrustStoreRevocationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbTrustStoreRevocationTimeoutsToTerraform(struct?: LbTrustStoreRevocationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function lbTrustStoreRevocationTimeoutsToHclTerraform(struct?: LbTrustStoreRevocationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbTrustStoreRevocationTimeoutsToHclTerraform(struct?: LbTrustStoreRevocationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -84,19 +84,19 @@ export function lbTrustStoreRevocationTimeoutsToHclTerraform(struct?: LbTrustSto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LbTrustStoreRevocationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LbTrustStoreRevocationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LbTrustStoreRevocationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LbTrustStoreRevocationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -109,13 +109,13 @@ export class LbTrustStoreRevocationTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbTrustStoreRevocationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LbTrustStoreRevocationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -146,7 +146,7 @@ export class LbTrustStoreRevocationTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_trust_store_revocation aws_lb_trust_store_revocation}
 */
-export class LbTrustStoreRevocation extends cdktf.TerraformResource {
+export class LbTrustStoreRevocation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -157,14 +157,14 @@ export class LbTrustStoreRevocation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LbTrustStoreRevocation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LbTrustStoreRevocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbTrustStoreRevocation to import
   * @param importFromId The id of the existing LbTrustStoreRevocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_trust_store_revocation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbTrustStoreRevocation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lb_trust_store_revocation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_lb_trust_store_revocation", importId: importFromId, provider });
       }
 
   // ===========
@@ -321,12 +321,12 @@ export class LbTrustStoreRevocation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      revocations_s3_bucket: cdktf.stringToTerraform(this._revocationsS3Bucket),
-      revocations_s3_key: cdktf.stringToTerraform(this._revocationsS3Key),
-      revocations_s3_object_version: cdktf.stringToTerraform(this._revocationsS3ObjectVersion),
-      trust_store_arn: cdktf.stringToTerraform(this._trustStoreArn),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      revocations_s3_bucket: cdktn.stringToTerraform(this._revocationsS3Bucket),
+      revocations_s3_key: cdktn.stringToTerraform(this._revocationsS3Key),
+      revocations_s3_object_version: cdktn.stringToTerraform(this._revocationsS3ObjectVersion),
+      trust_store_arn: cdktn.stringToTerraform(this._trustStoreArn),
       timeouts: lbTrustStoreRevocationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -334,37 +334,37 @@ export class LbTrustStoreRevocation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       revocations_s3_bucket: {
-        value: cdktf.stringToHclTerraform(this._revocationsS3Bucket),
+        value: cdktn.stringToHclTerraform(this._revocationsS3Bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       revocations_s3_key: {
-        value: cdktf.stringToHclTerraform(this._revocationsS3Key),
+        value: cdktn.stringToHclTerraform(this._revocationsS3Key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       revocations_s3_object_version: {
-        value: cdktf.stringToHclTerraform(this._revocationsS3ObjectVersion),
+        value: cdktn.stringToHclTerraform(this._revocationsS3ObjectVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trust_store_arn: {
-        value: cdktf.stringToHclTerraform(this._trustStoreArn),
+        value: cdktn.stringToHclTerraform(this._trustStoreArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

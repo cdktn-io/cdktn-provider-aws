@@ -7,21 +7,21 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CostoptimizationhubEnrollmentStatusConfig extends cdktf.TerraformMetaArguments {
+export interface CostoptimizationhubEnrollmentStatusConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}
   */
-  readonly includeMemberAccounts?: boolean | cdktf.IResolvable;
+  readonly includeMemberAccounts?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/costoptimizationhub_enrollment_status aws_costoptimizationhub_enrollment_status}
 */
-export class CostoptimizationhubEnrollmentStatus extends cdktf.TerraformResource {
+export class CostoptimizationhubEnrollmentStatus extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -32,14 +32,14 @@ export class CostoptimizationhubEnrollmentStatus extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CostoptimizationhubEnrollmentStatus resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CostoptimizationhubEnrollmentStatus resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CostoptimizationhubEnrollmentStatus to import
   * @param importFromId The id of the existing CostoptimizationhubEnrollmentStatus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/costoptimizationhub_enrollment_status#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CostoptimizationhubEnrollmentStatus to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_costoptimizationhub_enrollment_status", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_costoptimizationhub_enrollment_status", importId: importFromId, provider });
       }
 
   // ===========
@@ -82,11 +82,11 @@ export class CostoptimizationhubEnrollmentStatus extends cdktf.TerraformResource
   }
 
   // include_member_accounts - computed: true, optional: true, required: false
-  private _includeMemberAccounts?: boolean | cdktf.IResolvable; 
+  private _includeMemberAccounts?: boolean | cdktn.IResolvable; 
   public get includeMemberAccounts() {
     return this.getBooleanAttribute('include_member_accounts');
   }
-  public set includeMemberAccounts(value: boolean | cdktf.IResolvable) {
+  public set includeMemberAccounts(value: boolean | cdktn.IResolvable) {
     this._includeMemberAccounts = value;
   }
   public resetIncludeMemberAccounts() {
@@ -108,14 +108,14 @@ export class CostoptimizationhubEnrollmentStatus extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      include_member_accounts: cdktf.booleanToTerraform(this._includeMemberAccounts),
+      include_member_accounts: cdktn.booleanToTerraform(this._includeMemberAccounts),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       include_member_accounts: {
-        value: cdktf.booleanToHclTerraform(this._includeMemberAccounts),
+        value: cdktn.booleanToHclTerraform(this._includeMemberAccounts),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpclatticeServiceNetworkResourceAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface VpclatticeServiceNetworkResourceAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_service_network_resource_association#private_dns_enabled VpclatticeServiceNetworkResourceAssociation#private_dns_enabled}
   */
-  readonly privateDnsEnabled?: boolean | cdktf.IResolvable;
+  readonly privateDnsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -45,8 +45,8 @@ export interface VpclatticeServiceNetworkResourceAssociationDnsEntry {
 }
 
 export function vpclatticeServiceNetworkResourceAssociationDnsEntryToTerraform(struct?: VpclatticeServiceNetworkResourceAssociationDnsEntry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -55,8 +55,8 @@ export function vpclatticeServiceNetworkResourceAssociationDnsEntryToTerraform(s
 
 
 export function vpclatticeServiceNetworkResourceAssociationDnsEntryToHclTerraform(struct?: VpclatticeServiceNetworkResourceAssociationDnsEntry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -64,7 +64,7 @@ export function vpclatticeServiceNetworkResourceAssociationDnsEntryToHclTerrafor
   return attrs;
 }
 
-export class VpclatticeServiceNetworkResourceAssociationDnsEntryOutputReference extends cdktf.ComplexObject {
+export class VpclatticeServiceNetworkResourceAssociationDnsEntryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -73,7 +73,7 @@ export class VpclatticeServiceNetworkResourceAssociationDnsEntryOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -103,14 +103,14 @@ export class VpclatticeServiceNetworkResourceAssociationDnsEntryOutputReference 
   }
 }
 
-export class VpclatticeServiceNetworkResourceAssociationDnsEntryList extends cdktf.ComplexList {
+export class VpclatticeServiceNetworkResourceAssociationDnsEntryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -136,32 +136,32 @@ export interface VpclatticeServiceNetworkResourceAssociationTimeouts {
   readonly delete?: string;
 }
 
-export function vpclatticeServiceNetworkResourceAssociationTimeoutsToTerraform(struct?: VpclatticeServiceNetworkResourceAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpclatticeServiceNetworkResourceAssociationTimeoutsToTerraform(struct?: VpclatticeServiceNetworkResourceAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function vpclatticeServiceNetworkResourceAssociationTimeoutsToHclTerraform(struct?: VpclatticeServiceNetworkResourceAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpclatticeServiceNetworkResourceAssociationTimeoutsToHclTerraform(struct?: VpclatticeServiceNetworkResourceAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -172,19 +172,19 @@ export function vpclatticeServiceNetworkResourceAssociationTimeoutsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpclatticeServiceNetworkResourceAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpclatticeServiceNetworkResourceAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpclatticeServiceNetworkResourceAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpclatticeServiceNetworkResourceAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -201,14 +201,14 @@ export class VpclatticeServiceNetworkResourceAssociationTimeoutsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpclatticeServiceNetworkResourceAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpclatticeServiceNetworkResourceAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -256,7 +256,7 @@ export class VpclatticeServiceNetworkResourceAssociationTimeoutsOutputReference 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_service_network_resource_association aws_vpclattice_service_network_resource_association}
 */
-export class VpclatticeServiceNetworkResourceAssociation extends cdktf.TerraformResource {
+export class VpclatticeServiceNetworkResourceAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -267,14 +267,14 @@ export class VpclatticeServiceNetworkResourceAssociation extends cdktf.Terraform
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpclatticeServiceNetworkResourceAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpclatticeServiceNetworkResourceAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpclatticeServiceNetworkResourceAssociation to import
   * @param importFromId The id of the existing VpclatticeServiceNetworkResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/vpclattice_service_network_resource_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpclatticeServiceNetworkResourceAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_service_network_resource_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpclattice_service_network_resource_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -333,11 +333,11 @@ export class VpclatticeServiceNetworkResourceAssociation extends cdktf.Terraform
   }
 
   // private_dns_enabled - computed: true, optional: true, required: false
-  private _privateDnsEnabled?: boolean | cdktf.IResolvable; 
+  private _privateDnsEnabled?: boolean | cdktn.IResolvable; 
   public get privateDnsEnabled() {
     return this.getBooleanAttribute('private_dns_enabled');
   }
-  public set privateDnsEnabled(value: boolean | cdktf.IResolvable) {
+  public set privateDnsEnabled(value: boolean | cdktn.IResolvable) {
     this._privateDnsEnabled = value;
   }
   public resetPrivateDnsEnabled() {
@@ -407,7 +407,7 @@ export class VpclatticeServiceNetworkResourceAssociation extends cdktf.Terraform
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -434,11 +434,11 @@ export class VpclatticeServiceNetworkResourceAssociation extends cdktf.Terraform
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      private_dns_enabled: cdktf.booleanToTerraform(this._privateDnsEnabled),
-      region: cdktf.stringToTerraform(this._region),
-      resource_configuration_identifier: cdktf.stringToTerraform(this._resourceConfigurationIdentifier),
-      service_network_identifier: cdktf.stringToTerraform(this._serviceNetworkIdentifier),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      private_dns_enabled: cdktn.booleanToTerraform(this._privateDnsEnabled),
+      region: cdktn.stringToTerraform(this._region),
+      resource_configuration_identifier: cdktn.stringToTerraform(this._resourceConfigurationIdentifier),
+      service_network_identifier: cdktn.stringToTerraform(this._serviceNetworkIdentifier),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: vpclatticeServiceNetworkResourceAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -446,31 +446,31 @@ export class VpclatticeServiceNetworkResourceAssociation extends cdktf.Terraform
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       private_dns_enabled: {
-        value: cdktf.booleanToHclTerraform(this._privateDnsEnabled),
+        value: cdktn.booleanToHclTerraform(this._privateDnsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_configuration_identifier: {
-        value: cdktf.stringToHclTerraform(this._resourceConfigurationIdentifier),
+        value: cdktn.stringToHclTerraform(this._resourceConfigurationIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_network_identifier: {
-        value: cdktf.stringToHclTerraform(this._serviceNetworkIdentifier),
+        value: cdktn.stringToHclTerraform(this._serviceNetworkIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

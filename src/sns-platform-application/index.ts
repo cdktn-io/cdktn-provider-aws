@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SnsPlatformApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface SnsPlatformApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_platform_application#apple_platform_bundle_id SnsPlatformApplication#apple_platform_bundle_id}
   */
@@ -82,7 +82,7 @@ export interface SnsPlatformApplicationConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_platform_application aws_sns_platform_application}
 */
-export class SnsPlatformApplication extends cdktf.TerraformResource {
+export class SnsPlatformApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -93,14 +93,14 @@ export class SnsPlatformApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SnsPlatformApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SnsPlatformApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SnsPlatformApplication to import
   * @param importFromId The id of the existing SnsPlatformApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sns_platform_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SnsPlatformApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sns_platform_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sns_platform_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -393,112 +393,112 @@ export class SnsPlatformApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apple_platform_bundle_id: cdktf.stringToTerraform(this._applePlatformBundleId),
-      apple_platform_team_id: cdktf.stringToTerraform(this._applePlatformTeamId),
-      event_delivery_failure_topic_arn: cdktf.stringToTerraform(this._eventDeliveryFailureTopicArn),
-      event_endpoint_created_topic_arn: cdktf.stringToTerraform(this._eventEndpointCreatedTopicArn),
-      event_endpoint_deleted_topic_arn: cdktf.stringToTerraform(this._eventEndpointDeletedTopicArn),
-      event_endpoint_updated_topic_arn: cdktf.stringToTerraform(this._eventEndpointUpdatedTopicArn),
-      failure_feedback_role_arn: cdktf.stringToTerraform(this._failureFeedbackRoleArn),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      platform: cdktf.stringToTerraform(this._platform),
-      platform_credential: cdktf.stringToTerraform(this._platformCredential),
-      platform_principal: cdktf.stringToTerraform(this._platformPrincipal),
-      region: cdktf.stringToTerraform(this._region),
-      success_feedback_role_arn: cdktf.stringToTerraform(this._successFeedbackRoleArn),
-      success_feedback_sample_rate: cdktf.stringToTerraform(this._successFeedbackSampleRate),
+      apple_platform_bundle_id: cdktn.stringToTerraform(this._applePlatformBundleId),
+      apple_platform_team_id: cdktn.stringToTerraform(this._applePlatformTeamId),
+      event_delivery_failure_topic_arn: cdktn.stringToTerraform(this._eventDeliveryFailureTopicArn),
+      event_endpoint_created_topic_arn: cdktn.stringToTerraform(this._eventEndpointCreatedTopicArn),
+      event_endpoint_deleted_topic_arn: cdktn.stringToTerraform(this._eventEndpointDeletedTopicArn),
+      event_endpoint_updated_topic_arn: cdktn.stringToTerraform(this._eventEndpointUpdatedTopicArn),
+      failure_feedback_role_arn: cdktn.stringToTerraform(this._failureFeedbackRoleArn),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      platform: cdktn.stringToTerraform(this._platform),
+      platform_credential: cdktn.stringToTerraform(this._platformCredential),
+      platform_principal: cdktn.stringToTerraform(this._platformPrincipal),
+      region: cdktn.stringToTerraform(this._region),
+      success_feedback_role_arn: cdktn.stringToTerraform(this._successFeedbackRoleArn),
+      success_feedback_sample_rate: cdktn.stringToTerraform(this._successFeedbackSampleRate),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apple_platform_bundle_id: {
-        value: cdktf.stringToHclTerraform(this._applePlatformBundleId),
+        value: cdktn.stringToHclTerraform(this._applePlatformBundleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       apple_platform_team_id: {
-        value: cdktf.stringToHclTerraform(this._applePlatformTeamId),
+        value: cdktn.stringToHclTerraform(this._applePlatformTeamId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_delivery_failure_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._eventDeliveryFailureTopicArn),
+        value: cdktn.stringToHclTerraform(this._eventDeliveryFailureTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_endpoint_created_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._eventEndpointCreatedTopicArn),
+        value: cdktn.stringToHclTerraform(this._eventEndpointCreatedTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_endpoint_deleted_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._eventEndpointDeletedTopicArn),
+        value: cdktn.stringToHclTerraform(this._eventEndpointDeletedTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_endpoint_updated_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._eventEndpointUpdatedTopicArn),
+        value: cdktn.stringToHclTerraform(this._eventEndpointUpdatedTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       failure_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._failureFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._failureFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform: {
-        value: cdktf.stringToHclTerraform(this._platform),
+        value: cdktn.stringToHclTerraform(this._platform),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform_credential: {
-        value: cdktf.stringToHclTerraform(this._platformCredential),
+        value: cdktn.stringToHclTerraform(this._platformCredential),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform_principal: {
-        value: cdktf.stringToHclTerraform(this._platformPrincipal),
+        value: cdktn.stringToHclTerraform(this._platformPrincipal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       success_feedback_role_arn: {
-        value: cdktf.stringToHclTerraform(this._successFeedbackRoleArn),
+        value: cdktn.stringToHclTerraform(this._successFeedbackRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       success_feedback_sample_rate: {
-        value: cdktf.stringToHclTerraform(this._successFeedbackSampleRate),
+        value: cdktn.stringToHclTerraform(this._successFeedbackSampleRate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsyncSourceApiAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface AppsyncSourceApiAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_source_api_association#description AppsyncSourceApiAssociation#description}
   */
@@ -37,7 +37,7 @@ export interface AppsyncSourceApiAssociationConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_source_api_association#source_api_association_config AppsyncSourceApiAssociation#source_api_association_config}
   */
-  readonly sourceApiAssociationConfig?: AppsyncSourceApiAssociationSourceApiAssociationConfig[] | cdktf.IResolvable;
+  readonly sourceApiAssociationConfig?: AppsyncSourceApiAssociationSourceApiAssociationConfig[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_source_api_association#source_api_id AppsyncSourceApiAssociation#source_api_id}
   */
@@ -56,25 +56,25 @@ export interface AppsyncSourceApiAssociationSourceApiAssociationConfig {
   readonly mergeType?: string;
 }
 
-export function appsyncSourceApiAssociationSourceApiAssociationConfigToTerraform(struct?: AppsyncSourceApiAssociationSourceApiAssociationConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncSourceApiAssociationSourceApiAssociationConfigToTerraform(struct?: AppsyncSourceApiAssociationSourceApiAssociationConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    merge_type: cdktf.stringToTerraform(struct!.mergeType),
+    merge_type: cdktn.stringToTerraform(struct!.mergeType),
   }
 }
 
 
-export function appsyncSourceApiAssociationSourceApiAssociationConfigToHclTerraform(struct?: AppsyncSourceApiAssociationSourceApiAssociationConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncSourceApiAssociationSourceApiAssociationConfigToHclTerraform(struct?: AppsyncSourceApiAssociationSourceApiAssociationConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     merge_type: {
-      value: cdktf.stringToHclTerraform(struct!.mergeType),
+      value: cdktn.stringToHclTerraform(struct!.mergeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -85,9 +85,9 @@ export function appsyncSourceApiAssociationSourceApiAssociationConfigToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncSourceApiAssociationSourceApiAssociationConfigOutputReference extends cdktf.ComplexObject {
+export class AppsyncSourceApiAssociationSourceApiAssociationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -95,11 +95,11 @@ export class AppsyncSourceApiAssociationSourceApiAssociationConfigOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsyncSourceApiAssociationSourceApiAssociationConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncSourceApiAssociationSourceApiAssociationConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -112,13 +112,13 @@ export class AppsyncSourceApiAssociationSourceApiAssociationConfigOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncSourceApiAssociationSourceApiAssociationConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncSourceApiAssociationSourceApiAssociationConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mergeType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -146,15 +146,15 @@ export class AppsyncSourceApiAssociationSourceApiAssociationConfigOutputReferenc
   }
 }
 
-export class AppsyncSourceApiAssociationSourceApiAssociationConfigList extends cdktf.ComplexList {
-  public internalValue? : AppsyncSourceApiAssociationSourceApiAssociationConfig[] | cdktf.IResolvable
+export class AppsyncSourceApiAssociationSourceApiAssociationConfigList extends cdktn.ComplexList {
+  public internalValue? : AppsyncSourceApiAssociationSourceApiAssociationConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -186,39 +186,39 @@ export interface AppsyncSourceApiAssociationTimeouts {
   readonly update?: string;
 }
 
-export function appsyncSourceApiAssociationTimeoutsToTerraform(struct?: AppsyncSourceApiAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncSourceApiAssociationTimeoutsToTerraform(struct?: AppsyncSourceApiAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appsyncSourceApiAssociationTimeoutsToHclTerraform(struct?: AppsyncSourceApiAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsyncSourceApiAssociationTimeoutsToHclTerraform(struct?: AppsyncSourceApiAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -229,19 +229,19 @@ export function appsyncSourceApiAssociationTimeoutsToHclTerraform(struct?: Appsy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsyncSourceApiAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppsyncSourceApiAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsyncSourceApiAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsyncSourceApiAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -262,7 +262,7 @@ export class AppsyncSourceApiAssociationTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsyncSourceApiAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsyncSourceApiAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -270,7 +270,7 @@ export class AppsyncSourceApiAssociationTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -335,7 +335,7 @@ export class AppsyncSourceApiAssociationTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_source_api_association aws_appsync_source_api_association}
 */
-export class AppsyncSourceApiAssociation extends cdktf.TerraformResource {
+export class AppsyncSourceApiAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -346,14 +346,14 @@ export class AppsyncSourceApiAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsyncSourceApiAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsyncSourceApiAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsyncSourceApiAssociation to import
   * @param importFromId The id of the existing AppsyncSourceApiAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/appsync_source_api_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsyncSourceApiAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_source_api_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_appsync_source_api_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -497,7 +497,7 @@ export class AppsyncSourceApiAssociation extends cdktf.TerraformResource {
   public get sourceApiAssociationConfig() {
     return this._sourceApiAssociationConfig;
   }
-  public putSourceApiAssociationConfig(value: AppsyncSourceApiAssociationSourceApiAssociationConfig[] | cdktf.IResolvable) {
+  public putSourceApiAssociationConfig(value: AppsyncSourceApiAssociationSourceApiAssociationConfig[] | cdktn.IResolvable) {
     this._sourceApiAssociationConfig.internalValue = value;
   }
   public resetSourceApiAssociationConfig() {
@@ -546,13 +546,13 @@ export class AppsyncSourceApiAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      merged_api_arn: cdktf.stringToTerraform(this._mergedApiArn),
-      merged_api_id: cdktf.stringToTerraform(this._mergedApiId),
-      region: cdktf.stringToTerraform(this._region),
-      source_api_arn: cdktf.stringToTerraform(this._sourceApiArn),
-      source_api_association_config: cdktf.listMapper(appsyncSourceApiAssociationSourceApiAssociationConfigToTerraform, false)(this._sourceApiAssociationConfig.internalValue),
-      source_api_id: cdktf.stringToTerraform(this._sourceApiId),
+      description: cdktn.stringToTerraform(this._description),
+      merged_api_arn: cdktn.stringToTerraform(this._mergedApiArn),
+      merged_api_id: cdktn.stringToTerraform(this._mergedApiId),
+      region: cdktn.stringToTerraform(this._region),
+      source_api_arn: cdktn.stringToTerraform(this._sourceApiArn),
+      source_api_association_config: cdktn.listMapper(appsyncSourceApiAssociationSourceApiAssociationConfigToTerraform, false)(this._sourceApiAssociationConfig.internalValue),
+      source_api_id: cdktn.stringToTerraform(this._sourceApiId),
       timeouts: appsyncSourceApiAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -560,43 +560,43 @@ export class AppsyncSourceApiAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       merged_api_arn: {
-        value: cdktf.stringToHclTerraform(this._mergedApiArn),
+        value: cdktn.stringToHclTerraform(this._mergedApiArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       merged_api_id: {
-        value: cdktf.stringToHclTerraform(this._mergedApiId),
+        value: cdktn.stringToHclTerraform(this._mergedApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_api_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceApiArn),
+        value: cdktn.stringToHclTerraform(this._sourceApiArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_api_association_config: {
-        value: cdktf.listMapperHcl(appsyncSourceApiAssociationSourceApiAssociationConfigToHclTerraform, false)(this._sourceApiAssociationConfig.internalValue),
+        value: cdktn.listMapperHcl(appsyncSourceApiAssociationSourceApiAssociationConfigToHclTerraform, false)(this._sourceApiAssociationConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsyncSourceApiAssociationSourceApiAssociationConfigList",
       },
       source_api_id: {
-        value: cdktf.stringToHclTerraform(this._sourceApiId),
+        value: cdktn.stringToHclTerraform(this._sourceApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

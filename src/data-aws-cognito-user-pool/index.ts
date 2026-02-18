@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsCognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCognitoUserPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -27,8 +27,8 @@ export interface DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanism {
 }
 
 export function dataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismToTerraform(struct?: DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanism): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -37,8 +37,8 @@ export function dataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismToT
 
 
 export function dataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismToHclTerraform(struct?: DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanism): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -46,7 +46,7 @@ export function dataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismToH
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -55,7 +55,7 @@ export class DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -85,14 +85,14 @@ export class DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismOutput
   }
 }
 
-export class DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolAccountRecoverySettingRecoveryMechanismList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -107,8 +107,8 @@ export interface DataAwsCognitoUserPoolAccountRecoverySetting {
 }
 
 export function dataAwsCognitoUserPoolAccountRecoverySettingToTerraform(struct?: DataAwsCognitoUserPoolAccountRecoverySetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -117,8 +117,8 @@ export function dataAwsCognitoUserPoolAccountRecoverySettingToTerraform(struct?:
 
 
 export function dataAwsCognitoUserPoolAccountRecoverySettingToHclTerraform(struct?: DataAwsCognitoUserPoolAccountRecoverySetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -126,7 +126,7 @@ export function dataAwsCognitoUserPoolAccountRecoverySettingToHclTerraform(struc
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolAccountRecoverySettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -135,7 +135,7 @@ export class DataAwsCognitoUserPoolAccountRecoverySettingOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -161,14 +161,14 @@ export class DataAwsCognitoUserPoolAccountRecoverySettingOutputReference extends
   }
 }
 
-export class DataAwsCognitoUserPoolAccountRecoverySettingList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolAccountRecoverySettingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -183,8 +183,8 @@ export interface DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplat
 }
 
 export function dataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToTerraform(struct?: DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -193,8 +193,8 @@ export function dataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplate
 
 
 export function dataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToHclTerraform(struct?: DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -202,7 +202,7 @@ export function dataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplate
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -211,7 +211,7 @@ export class DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -246,14 +246,14 @@ export class DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOut
   }
 }
 
-export class DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -268,8 +268,8 @@ export interface DataAwsCognitoUserPoolAdminCreateUserConfig {
 }
 
 export function dataAwsCognitoUserPoolAdminCreateUserConfigToTerraform(struct?: DataAwsCognitoUserPoolAdminCreateUserConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -278,8 +278,8 @@ export function dataAwsCognitoUserPoolAdminCreateUserConfigToTerraform(struct?: 
 
 
 export function dataAwsCognitoUserPoolAdminCreateUserConfigToHclTerraform(struct?: DataAwsCognitoUserPoolAdminCreateUserConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -287,7 +287,7 @@ export function dataAwsCognitoUserPoolAdminCreateUserConfigToHclTerraform(struct
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolAdminCreateUserConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolAdminCreateUserConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -296,7 +296,7 @@ export class DataAwsCognitoUserPoolAdminCreateUserConfigOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -332,14 +332,14 @@ export class DataAwsCognitoUserPoolAdminCreateUserConfigOutputReference extends 
   }
 }
 
-export class DataAwsCognitoUserPoolAdminCreateUserConfigList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolAdminCreateUserConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -354,8 +354,8 @@ export interface DataAwsCognitoUserPoolDeviceConfiguration {
 }
 
 export function dataAwsCognitoUserPoolDeviceConfigurationToTerraform(struct?: DataAwsCognitoUserPoolDeviceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -364,8 +364,8 @@ export function dataAwsCognitoUserPoolDeviceConfigurationToTerraform(struct?: Da
 
 
 export function dataAwsCognitoUserPoolDeviceConfigurationToHclTerraform(struct?: DataAwsCognitoUserPoolDeviceConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -373,7 +373,7 @@ export function dataAwsCognitoUserPoolDeviceConfigurationToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolDeviceConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolDeviceConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -382,7 +382,7 @@ export class DataAwsCognitoUserPoolDeviceConfigurationOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -412,14 +412,14 @@ export class DataAwsCognitoUserPoolDeviceConfigurationOutputReference extends cd
   }
 }
 
-export class DataAwsCognitoUserPoolDeviceConfigurationList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolDeviceConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -434,8 +434,8 @@ export interface DataAwsCognitoUserPoolEmailConfiguration {
 }
 
 export function dataAwsCognitoUserPoolEmailConfigurationToTerraform(struct?: DataAwsCognitoUserPoolEmailConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -444,8 +444,8 @@ export function dataAwsCognitoUserPoolEmailConfigurationToTerraform(struct?: Dat
 
 
 export function dataAwsCognitoUserPoolEmailConfigurationToHclTerraform(struct?: DataAwsCognitoUserPoolEmailConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -453,7 +453,7 @@ export function dataAwsCognitoUserPoolEmailConfigurationToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolEmailConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolEmailConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -462,7 +462,7 @@ export class DataAwsCognitoUserPoolEmailConfigurationOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -507,14 +507,14 @@ export class DataAwsCognitoUserPoolEmailConfigurationOutputReference extends cdk
   }
 }
 
-export class DataAwsCognitoUserPoolEmailConfigurationList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolEmailConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -529,8 +529,8 @@ export interface DataAwsCognitoUserPoolLambdaConfigCustomEmailSender {
 }
 
 export function dataAwsCognitoUserPoolLambdaConfigCustomEmailSenderToTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigCustomEmailSender): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -539,8 +539,8 @@ export function dataAwsCognitoUserPoolLambdaConfigCustomEmailSenderToTerraform(s
 
 
 export function dataAwsCognitoUserPoolLambdaConfigCustomEmailSenderToHclTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigCustomEmailSender): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -548,7 +548,7 @@ export function dataAwsCognitoUserPoolLambdaConfigCustomEmailSenderToHclTerrafor
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolLambdaConfigCustomEmailSenderOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolLambdaConfigCustomEmailSenderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -557,7 +557,7 @@ export class DataAwsCognitoUserPoolLambdaConfigCustomEmailSenderOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -587,14 +587,14 @@ export class DataAwsCognitoUserPoolLambdaConfigCustomEmailSenderOutputReference 
   }
 }
 
-export class DataAwsCognitoUserPoolLambdaConfigCustomEmailSenderList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolLambdaConfigCustomEmailSenderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -609,8 +609,8 @@ export interface DataAwsCognitoUserPoolLambdaConfigCustomSmsSender {
 }
 
 export function dataAwsCognitoUserPoolLambdaConfigCustomSmsSenderToTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigCustomSmsSender): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -619,8 +619,8 @@ export function dataAwsCognitoUserPoolLambdaConfigCustomSmsSenderToTerraform(str
 
 
 export function dataAwsCognitoUserPoolLambdaConfigCustomSmsSenderToHclTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigCustomSmsSender): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -628,7 +628,7 @@ export function dataAwsCognitoUserPoolLambdaConfigCustomSmsSenderToHclTerraform(
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -637,7 +637,7 @@ export class DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -667,14 +667,14 @@ export class DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference ex
   }
 }
 
-export class DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -689,8 +689,8 @@ export interface DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfig {
 }
 
 export function dataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigToTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -699,8 +699,8 @@ export function dataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigToTerr
 
 
 export function dataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigToHclTerraform(struct?: DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -708,7 +708,7 @@ export function dataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigToHclT
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -717,7 +717,7 @@ export class DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -747,14 +747,14 @@ export class DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputRef
   }
 }
 
-export class DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -769,8 +769,8 @@ export interface DataAwsCognitoUserPoolLambdaConfig {
 }
 
 export function dataAwsCognitoUserPoolLambdaConfigToTerraform(struct?: DataAwsCognitoUserPoolLambdaConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -779,8 +779,8 @@ export function dataAwsCognitoUserPoolLambdaConfigToTerraform(struct?: DataAwsCo
 
 
 export function dataAwsCognitoUserPoolLambdaConfigToHclTerraform(struct?: DataAwsCognitoUserPoolLambdaConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -788,7 +788,7 @@ export function dataAwsCognitoUserPoolLambdaConfigToHclTerraform(struct?: DataAw
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolLambdaConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -797,7 +797,7 @@ export class DataAwsCognitoUserPoolLambdaConfigOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -890,14 +890,14 @@ export class DataAwsCognitoUserPoolLambdaConfigOutputReference extends cdktf.Com
   }
 }
 
-export class DataAwsCognitoUserPoolLambdaConfigList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolLambdaConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -912,8 +912,8 @@ export interface DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraint
 }
 
 export function dataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsToTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -922,8 +922,8 @@ export function dataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraints
 
 
 export function dataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsToHclTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -931,7 +931,7 @@ export function dataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraints
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -940,7 +940,7 @@ export class DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -970,14 +970,14 @@ export class DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsOut
   }
 }
 
-export class DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -992,8 +992,8 @@ export interface DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraint
 }
 
 export function dataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsToTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1002,8 +1002,8 @@ export function dataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraints
 
 
 export function dataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsToHclTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1011,7 +1011,7 @@ export function dataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraints
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1020,7 +1020,7 @@ export class DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1050,14 +1050,14 @@ export class DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsOut
   }
 }
 
-export class DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolSchemaAttributesStringAttributeConstraintsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1072,8 +1072,8 @@ export interface DataAwsCognitoUserPoolSchemaAttributes {
 }
 
 export function dataAwsCognitoUserPoolSchemaAttributesToTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1082,8 +1082,8 @@ export function dataAwsCognitoUserPoolSchemaAttributesToTerraform(struct?: DataA
 
 
 export function dataAwsCognitoUserPoolSchemaAttributesToHclTerraform(struct?: DataAwsCognitoUserPoolSchemaAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1091,7 +1091,7 @@ export function dataAwsCognitoUserPoolSchemaAttributesToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolSchemaAttributesOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolSchemaAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1100,7 +1100,7 @@ export class DataAwsCognitoUserPoolSchemaAttributesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1157,14 +1157,14 @@ export class DataAwsCognitoUserPoolSchemaAttributesOutputReference extends cdktf
   }
 }
 
-export class DataAwsCognitoUserPoolSchemaAttributesList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolSchemaAttributesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1179,8 +1179,8 @@ export interface DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalF
 }
 
 export function dataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsToTerraform(struct?: DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1189,8 +1189,8 @@ export function dataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFl
 
 
 export function dataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsToHclTerraform(struct?: DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1198,7 +1198,7 @@ export function dataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFl
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1207,7 +1207,7 @@ export class DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1232,14 +1232,14 @@ export class DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows
   }
 }
 
-export class DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1254,8 +1254,8 @@ export interface DataAwsCognitoUserPoolUserPoolAddOns {
 }
 
 export function dataAwsCognitoUserPoolUserPoolAddOnsToTerraform(struct?: DataAwsCognitoUserPoolUserPoolAddOns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1264,8 +1264,8 @@ export function dataAwsCognitoUserPoolUserPoolAddOnsToTerraform(struct?: DataAws
 
 
 export function dataAwsCognitoUserPoolUserPoolAddOnsToHclTerraform(struct?: DataAwsCognitoUserPoolUserPoolAddOns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1273,7 +1273,7 @@ export function dataAwsCognitoUserPoolUserPoolAddOnsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAwsCognitoUserPoolUserPoolAddOnsOutputReference extends cdktf.ComplexObject {
+export class DataAwsCognitoUserPoolUserPoolAddOnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1282,7 +1282,7 @@ export class DataAwsCognitoUserPoolUserPoolAddOnsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1313,14 +1313,14 @@ export class DataAwsCognitoUserPoolUserPoolAddOnsOutputReference extends cdktf.C
   }
 }
 
-export class DataAwsCognitoUserPoolUserPoolAddOnsList extends cdktf.ComplexList {
+export class DataAwsCognitoUserPoolUserPoolAddOnsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1335,7 +1335,7 @@ export class DataAwsCognitoUserPoolUserPoolAddOnsList extends cdktf.ComplexList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cognito_user_pool aws_cognito_user_pool}
 */
-export class DataAwsCognitoUserPool extends cdktf.TerraformDataSource {
+export class DataAwsCognitoUserPool extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1346,14 +1346,14 @@ export class DataAwsCognitoUserPool extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsCognitoUserPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsCognitoUserPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCognitoUserPool to import
   * @param importFromId The id of the existing DataAwsCognitoUserPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/cognito_user_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCognitoUserPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_user_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_user_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -1514,7 +1514,7 @@ export class DataAwsCognitoUserPool extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -1539,7 +1539,7 @@ export class DataAwsCognitoUserPool extends cdktf.TerraformDataSource {
   }
 
   // user_pool_tags - computed: true, optional: false, required: false
-  private _userPoolTags = new cdktf.StringMap(this, "user_pool_tags");
+  private _userPoolTags = new cdktn.StringMap(this, "user_pool_tags");
   public get userPoolTags() {
     return this._userPoolTags;
   }
@@ -1555,21 +1555,21 @@ export class DataAwsCognitoUserPool extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
+      region: cdktn.stringToTerraform(this._region),
+      user_pool_id: cdktn.stringToTerraform(this._userPoolId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_pool_id: {
-        value: cdktf.stringToHclTerraform(this._userPoolId),
+        value: cdktn.stringToHclTerraform(this._userPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudformationStackSetConfig extends cdktf.TerraformMetaArguments {
+export interface CloudformationStackSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}
   */
@@ -102,39 +102,39 @@ export interface CloudformationStackSetAutoDeployment {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudformation_stack_set#enabled CloudformationStackSet#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudformation_stack_set#retain_stacks_on_account_removal CloudformationStackSet#retain_stacks_on_account_removal}
   */
-  readonly retainStacksOnAccountRemoval?: boolean | cdktf.IResolvable;
+  readonly retainStacksOnAccountRemoval?: boolean | cdktn.IResolvable;
 }
 
 export function cloudformationStackSetAutoDeploymentToTerraform(struct?: CloudformationStackSetAutoDeploymentOutputReference | CloudformationStackSetAutoDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    retain_stacks_on_account_removal: cdktf.booleanToTerraform(struct!.retainStacksOnAccountRemoval),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    retain_stacks_on_account_removal: cdktn.booleanToTerraform(struct!.retainStacksOnAccountRemoval),
   }
 }
 
 
 export function cloudformationStackSetAutoDeploymentToHclTerraform(struct?: CloudformationStackSetAutoDeploymentOutputReference | CloudformationStackSetAutoDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     retain_stacks_on_account_removal: {
-      value: cdktf.booleanToHclTerraform(struct!.retainStacksOnAccountRemoval),
+      value: cdktn.booleanToHclTerraform(struct!.retainStacksOnAccountRemoval),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -145,14 +145,14 @@ export function cloudformationStackSetAutoDeploymentToHclTerraform(struct?: Clou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudformationStackSetAutoDeploymentOutputReference extends cdktf.ComplexObject {
+export class CloudformationStackSetAutoDeploymentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -184,11 +184,11 @@ export class CloudformationStackSetAutoDeploymentOutputReference extends cdktf.C
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -200,11 +200,11 @@ export class CloudformationStackSetAutoDeploymentOutputReference extends cdktf.C
   }
 
   // retain_stacks_on_account_removal - computed: false, optional: true, required: false
-  private _retainStacksOnAccountRemoval?: boolean | cdktf.IResolvable; 
+  private _retainStacksOnAccountRemoval?: boolean | cdktn.IResolvable; 
   public get retainStacksOnAccountRemoval() {
     return this.getBooleanAttribute('retain_stacks_on_account_removal');
   }
-  public set retainStacksOnAccountRemoval(value: boolean | cdktf.IResolvable) {
+  public set retainStacksOnAccountRemoval(value: boolean | cdktn.IResolvable) {
     this._retainStacksOnAccountRemoval = value;
   }
   public resetRetainStacksOnAccountRemoval() {
@@ -219,28 +219,28 @@ export interface CloudformationStackSetManagedExecution {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudformation_stack_set#active CloudformationStackSet#active}
   */
-  readonly active?: boolean | cdktf.IResolvable;
+  readonly active?: boolean | cdktn.IResolvable;
 }
 
 export function cloudformationStackSetManagedExecutionToTerraform(struct?: CloudformationStackSetManagedExecutionOutputReference | CloudformationStackSetManagedExecution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active: cdktf.booleanToTerraform(struct!.active),
+    active: cdktn.booleanToTerraform(struct!.active),
   }
 }
 
 
 export function cloudformationStackSetManagedExecutionToHclTerraform(struct?: CloudformationStackSetManagedExecutionOutputReference | CloudformationStackSetManagedExecution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     active: {
-      value: cdktf.booleanToHclTerraform(struct!.active),
+      value: cdktn.booleanToHclTerraform(struct!.active),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -251,14 +251,14 @@ export function cloudformationStackSetManagedExecutionToHclTerraform(struct?: Cl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudformationStackSetManagedExecutionOutputReference extends cdktf.ComplexObject {
+export class CloudformationStackSetManagedExecutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -284,11 +284,11 @@ export class CloudformationStackSetManagedExecutionOutputReference extends cdktf
   }
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean | cdktf.IResolvable; 
+  private _active?: boolean | cdktn.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | cdktf.IResolvable) {
+  public set active(value: boolean | cdktn.IResolvable) {
     this._active = value;
   }
   public resetActive() {
@@ -327,59 +327,59 @@ export interface CloudformationStackSetOperationPreferences {
 }
 
 export function cloudformationStackSetOperationPreferencesToTerraform(struct?: CloudformationStackSetOperationPreferencesOutputReference | CloudformationStackSetOperationPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failure_tolerance_count: cdktf.numberToTerraform(struct!.failureToleranceCount),
-    failure_tolerance_percentage: cdktf.numberToTerraform(struct!.failureTolerancePercentage),
-    max_concurrent_count: cdktf.numberToTerraform(struct!.maxConcurrentCount),
-    max_concurrent_percentage: cdktf.numberToTerraform(struct!.maxConcurrentPercentage),
-    region_concurrency_type: cdktf.stringToTerraform(struct!.regionConcurrencyType),
-    region_order: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regionOrder),
+    failure_tolerance_count: cdktn.numberToTerraform(struct!.failureToleranceCount),
+    failure_tolerance_percentage: cdktn.numberToTerraform(struct!.failureTolerancePercentage),
+    max_concurrent_count: cdktn.numberToTerraform(struct!.maxConcurrentCount),
+    max_concurrent_percentage: cdktn.numberToTerraform(struct!.maxConcurrentPercentage),
+    region_concurrency_type: cdktn.stringToTerraform(struct!.regionConcurrencyType),
+    region_order: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regionOrder),
   }
 }
 
 
 export function cloudformationStackSetOperationPreferencesToHclTerraform(struct?: CloudformationStackSetOperationPreferencesOutputReference | CloudformationStackSetOperationPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failure_tolerance_count: {
-      value: cdktf.numberToHclTerraform(struct!.failureToleranceCount),
+      value: cdktn.numberToHclTerraform(struct!.failureToleranceCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     failure_tolerance_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.failureTolerancePercentage),
+      value: cdktn.numberToHclTerraform(struct!.failureTolerancePercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_concurrent_count: {
-      value: cdktf.numberToHclTerraform(struct!.maxConcurrentCount),
+      value: cdktn.numberToHclTerraform(struct!.maxConcurrentCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_concurrent_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.maxConcurrentPercentage),
+      value: cdktn.numberToHclTerraform(struct!.maxConcurrentPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     region_concurrency_type: {
-      value: cdktf.stringToHclTerraform(struct!.regionConcurrencyType),
+      value: cdktn.stringToHclTerraform(struct!.regionConcurrencyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region_order: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regionOrder),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.regionOrder),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -390,14 +390,14 @@ export function cloudformationStackSetOperationPreferencesToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudformationStackSetOperationPreferencesOutputReference extends cdktf.ComplexObject {
+export class CloudformationStackSetOperationPreferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -555,25 +555,25 @@ export interface CloudformationStackSetTimeouts {
   readonly update?: string;
 }
 
-export function cloudformationStackSetTimeoutsToTerraform(struct?: CloudformationStackSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudformationStackSetTimeoutsToTerraform(struct?: CloudformationStackSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    update: cdktf.stringToTerraform(struct!.update),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudformationStackSetTimeoutsToHclTerraform(struct?: CloudformationStackSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudformationStackSetTimeoutsToHclTerraform(struct?: CloudformationStackSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -584,19 +584,19 @@ export function cloudformationStackSetTimeoutsToHclTerraform(struct?: Cloudforma
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudformationStackSetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudformationStackSetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudformationStackSetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudformationStackSetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -609,13 +609,13 @@ export class CloudformationStackSetTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudformationStackSetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudformationStackSetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -646,7 +646,7 @@ export class CloudformationStackSetTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}
 */
-export class CloudformationStackSet extends cdktf.TerraformResource {
+export class CloudformationStackSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -657,14 +657,14 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudformationStackSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudformationStackSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudformationStackSet to import
   * @param importFromId The id of the existing CloudformationStackSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudformation_stack_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudformationStackSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudformation_stack_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudformation_stack_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -758,7 +758,7 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
   // capabilities - computed: false, optional: true, required: false
   private _capabilities?: string[]; 
   public get capabilities() {
-    return cdktf.Fn.tolist(this.getListAttribute('capabilities'));
+    return cdktn.Fn.tolist(this.getListAttribute('capabilities'));
   }
   public set capabilities(value: string[]) {
     this._capabilities = value;
@@ -1019,20 +1019,20 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administration_role_arn: cdktf.stringToTerraform(this._administrationRoleArn),
-      call_as: cdktf.stringToTerraform(this._callAs),
-      capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._capabilities),
-      description: cdktf.stringToTerraform(this._description),
-      execution_role_name: cdktf.stringToTerraform(this._executionRoleName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      permission_model: cdktf.stringToTerraform(this._permissionModel),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      template_body: cdktf.stringToTerraform(this._templateBody),
-      template_url: cdktf.stringToTerraform(this._templateUrl),
+      administration_role_arn: cdktn.stringToTerraform(this._administrationRoleArn),
+      call_as: cdktn.stringToTerraform(this._callAs),
+      capabilities: cdktn.listMapper(cdktn.stringToTerraform, false)(this._capabilities),
+      description: cdktn.stringToTerraform(this._description),
+      execution_role_name: cdktn.stringToTerraform(this._executionRoleName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      permission_model: cdktn.stringToTerraform(this._permissionModel),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      template_body: cdktn.stringToTerraform(this._templateBody),
+      template_url: cdktn.stringToTerraform(this._templateUrl),
       auto_deployment: cloudformationStackSetAutoDeploymentToTerraform(this._autoDeployment.internalValue),
       managed_execution: cloudformationStackSetManagedExecutionToTerraform(this._managedExecution.internalValue),
       operation_preferences: cloudformationStackSetOperationPreferencesToTerraform(this._operationPreferences.internalValue),
@@ -1043,85 +1043,85 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       administration_role_arn: {
-        value: cdktf.stringToHclTerraform(this._administrationRoleArn),
+        value: cdktn.stringToHclTerraform(this._administrationRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       call_as: {
-        value: cdktf.stringToHclTerraform(this._callAs),
+        value: cdktn.stringToHclTerraform(this._callAs),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       capabilities: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._capabilities),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._capabilities),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       execution_role_name: {
-        value: cdktf.stringToHclTerraform(this._executionRoleName),
+        value: cdktn.stringToHclTerraform(this._executionRoleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       permission_model: {
-        value: cdktf.stringToHclTerraform(this._permissionModel),
+        value: cdktn.stringToHclTerraform(this._permissionModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       template_body: {
-        value: cdktf.stringToHclTerraform(this._templateBody),
+        value: cdktn.stringToHclTerraform(this._templateBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_url: {
-        value: cdktf.stringToHclTerraform(this._templateUrl),
+        value: cdktn.stringToHclTerraform(this._templateUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

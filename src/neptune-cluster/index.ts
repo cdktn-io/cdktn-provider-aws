@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
+export interface NeptuneClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#allow_major_version_upgrade NeptuneCluster#allow_major_version_upgrade}
   */
-  readonly allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
+  readonly allowMajorVersionUpgrade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#apply_immediately NeptuneCluster#apply_immediately}
   */
-  readonly applyImmediately?: boolean | cdktf.IResolvable;
+  readonly applyImmediately?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#availability_zones NeptuneCluster#availability_zones}
   */
@@ -39,11 +39,11 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#copy_tags_to_snapshot NeptuneCluster#copy_tags_to_snapshot}
   */
-  readonly copyTagsToSnapshot?: boolean | cdktf.IResolvable;
+  readonly copyTagsToSnapshot?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#deletion_protection NeptuneCluster#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#enable_cloudwatch_logs_exports NeptuneCluster#enable_cloudwatch_logs_exports}
   */
@@ -67,7 +67,7 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#iam_database_authentication_enabled NeptuneCluster#iam_database_authentication_enabled}
   */
-  readonly iamDatabaseAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly iamDatabaseAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#iam_roles NeptuneCluster#iam_roles}
   */
@@ -120,7 +120,7 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#skip_final_snapshot NeptuneCluster#skip_final_snapshot}
   */
-  readonly skipFinalSnapshot?: boolean | cdktf.IResolvable;
+  readonly skipFinalSnapshot?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#snapshot_identifier NeptuneCluster#snapshot_identifier}
   */
@@ -128,7 +128,7 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#storage_encrypted NeptuneCluster#storage_encrypted}
   */
-  readonly storageEncrypted?: boolean | cdktf.IResolvable;
+  readonly storageEncrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#storage_type NeptuneCluster#storage_type}
   */
@@ -170,31 +170,31 @@ export interface NeptuneClusterServerlessV2ScalingConfiguration {
 }
 
 export function neptuneClusterServerlessV2ScalingConfigurationToTerraform(struct?: NeptuneClusterServerlessV2ScalingConfigurationOutputReference | NeptuneClusterServerlessV2ScalingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_capacity: cdktf.numberToTerraform(struct!.maxCapacity),
-    min_capacity: cdktf.numberToTerraform(struct!.minCapacity),
+    max_capacity: cdktn.numberToTerraform(struct!.maxCapacity),
+    min_capacity: cdktn.numberToTerraform(struct!.minCapacity),
   }
 }
 
 
 export function neptuneClusterServerlessV2ScalingConfigurationToHclTerraform(struct?: NeptuneClusterServerlessV2ScalingConfigurationOutputReference | NeptuneClusterServerlessV2ScalingConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.maxCapacity),
+      value: cdktn.numberToHclTerraform(struct!.maxCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.minCapacity),
+      value: cdktn.numberToHclTerraform(struct!.minCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -205,14 +205,14 @@ export function neptuneClusterServerlessV2ScalingConfigurationToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NeptuneClusterServerlessV2ScalingConfigurationOutputReference extends cdktf.ComplexObject {
+export class NeptuneClusterServerlessV2ScalingConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -290,39 +290,39 @@ export interface NeptuneClusterTimeouts {
   readonly update?: string;
 }
 
-export function neptuneClusterTimeoutsToTerraform(struct?: NeptuneClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function neptuneClusterTimeoutsToTerraform(struct?: NeptuneClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function neptuneClusterTimeoutsToHclTerraform(struct?: NeptuneClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function neptuneClusterTimeoutsToHclTerraform(struct?: NeptuneClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -333,19 +333,19 @@ export function neptuneClusterTimeoutsToHclTerraform(struct?: NeptuneClusterTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NeptuneClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NeptuneClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NeptuneClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NeptuneClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -366,7 +366,7 @@ export class NeptuneClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NeptuneClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NeptuneClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -374,7 +374,7 @@ export class NeptuneClusterTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -439,7 +439,7 @@ export class NeptuneClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster aws_neptune_cluster}
 */
-export class NeptuneCluster extends cdktf.TerraformResource {
+export class NeptuneCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -450,14 +450,14 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NeptuneCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NeptuneCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NeptuneCluster to import
   * @param importFromId The id of the existing NeptuneCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/neptune_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NeptuneCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_neptune_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_neptune_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -528,11 +528,11 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // ==========
 
   // allow_major_version_upgrade - computed: true, optional: true, required: false
-  private _allowMajorVersionUpgrade?: boolean | cdktf.IResolvable; 
+  private _allowMajorVersionUpgrade?: boolean | cdktn.IResolvable; 
   public get allowMajorVersionUpgrade() {
     return this.getBooleanAttribute('allow_major_version_upgrade');
   }
-  public set allowMajorVersionUpgrade(value: boolean | cdktf.IResolvable) {
+  public set allowMajorVersionUpgrade(value: boolean | cdktn.IResolvable) {
     this._allowMajorVersionUpgrade = value;
   }
   public resetAllowMajorVersionUpgrade() {
@@ -544,11 +544,11 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // apply_immediately - computed: true, optional: true, required: false
-  private _applyImmediately?: boolean | cdktf.IResolvable; 
+  private _applyImmediately?: boolean | cdktn.IResolvable; 
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | cdktf.IResolvable) {
+  public set applyImmediately(value: boolean | cdktn.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -567,7 +567,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[]; 
   public get availabilityZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
   }
   public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
@@ -630,7 +630,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
 
   // cluster_members - computed: true, optional: false, required: false
   public get clusterMembers() {
-    return cdktf.Fn.tolist(this.getListAttribute('cluster_members'));
+    return cdktn.Fn.tolist(this.getListAttribute('cluster_members'));
   }
 
   // cluster_resource_id - computed: true, optional: false, required: false
@@ -639,11 +639,11 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
-  private _copyTagsToSnapshot?: boolean | cdktf.IResolvable; 
+  private _copyTagsToSnapshot?: boolean | cdktn.IResolvable; 
   public get copyTagsToSnapshot() {
     return this.getBooleanAttribute('copy_tags_to_snapshot');
   }
-  public set copyTagsToSnapshot(value: boolean | cdktf.IResolvable) {
+  public set copyTagsToSnapshot(value: boolean | cdktn.IResolvable) {
     this._copyTagsToSnapshot = value;
   }
   public resetCopyTagsToSnapshot() {
@@ -655,11 +655,11 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -673,7 +673,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // enable_cloudwatch_logs_exports - computed: false, optional: true, required: false
   private _enableCloudwatchLogsExports?: string[]; 
   public get enableCloudwatchLogsExports() {
-    return cdktf.Fn.tolist(this.getListAttribute('enable_cloudwatch_logs_exports'));
+    return cdktn.Fn.tolist(this.getListAttribute('enable_cloudwatch_logs_exports'));
   }
   public set enableCloudwatchLogsExports(value: string[]) {
     this._enableCloudwatchLogsExports = value;
@@ -761,11 +761,11 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // iam_database_authentication_enabled - computed: false, optional: true, required: false
-  private _iamDatabaseAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _iamDatabaseAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get iamDatabaseAuthenticationEnabled() {
     return this.getBooleanAttribute('iam_database_authentication_enabled');
   }
-  public set iamDatabaseAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set iamDatabaseAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._iamDatabaseAuthenticationEnabled = value;
   }
   public resetIamDatabaseAuthenticationEnabled() {
@@ -779,7 +779,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // iam_roles - computed: false, optional: true, required: false
   private _iamRoles?: string[]; 
   public get iamRoles() {
-    return cdktf.Fn.tolist(this.getListAttribute('iam_roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('iam_roles'));
   }
   public set iamRoles(value: string[]) {
     this._iamRoles = value;
@@ -958,11 +958,11 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
-  private _skipFinalSnapshot?: boolean | cdktf.IResolvable; 
+  private _skipFinalSnapshot?: boolean | cdktn.IResolvable; 
   public get skipFinalSnapshot() {
     return this.getBooleanAttribute('skip_final_snapshot');
   }
-  public set skipFinalSnapshot(value: boolean | cdktf.IResolvable) {
+  public set skipFinalSnapshot(value: boolean | cdktn.IResolvable) {
     this._skipFinalSnapshot = value;
   }
   public resetSkipFinalSnapshot() {
@@ -990,11 +990,11 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // storage_encrypted - computed: false, optional: true, required: false
-  private _storageEncrypted?: boolean | cdktf.IResolvable; 
+  private _storageEncrypted?: boolean | cdktn.IResolvable; 
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean | cdktf.IResolvable) {
+  public set storageEncrypted(value: boolean | cdktn.IResolvable) {
     this._storageEncrypted = value;
   }
   public resetStorageEncrypted() {
@@ -1056,7 +1056,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -1107,38 +1107,38 @@ export class NeptuneCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
-      backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      cluster_identifier_prefix: cdktf.stringToTerraform(this._clusterIdentifierPrefix),
-      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      enable_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enableCloudwatchLogsExports),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
-      global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
-      iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
-      iam_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamRoles),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      neptune_cluster_parameter_group_name: cdktf.stringToTerraform(this._neptuneClusterParameterGroupName),
-      neptune_instance_parameter_group_name: cdktf.stringToTerraform(this._neptuneInstanceParameterGroupName),
-      neptune_subnet_group_name: cdktf.stringToTerraform(this._neptuneSubnetGroupName),
-      port: cdktf.numberToTerraform(this._port),
-      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      region: cdktf.stringToTerraform(this._region),
-      replication_source_identifier: cdktf.stringToTerraform(this._replicationSourceIdentifier),
-      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
-      snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
-      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
-      storage_type: cdktf.stringToTerraform(this._storageType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
+      allow_major_version_upgrade: cdktn.booleanToTerraform(this._allowMajorVersionUpgrade),
+      apply_immediately: cdktn.booleanToTerraform(this._applyImmediately),
+      availability_zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._availabilityZones),
+      backup_retention_period: cdktn.numberToTerraform(this._backupRetentionPeriod),
+      cluster_identifier: cdktn.stringToTerraform(this._clusterIdentifier),
+      cluster_identifier_prefix: cdktn.stringToTerraform(this._clusterIdentifierPrefix),
+      copy_tags_to_snapshot: cdktn.booleanToTerraform(this._copyTagsToSnapshot),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      enable_cloudwatch_logs_exports: cdktn.listMapper(cdktn.stringToTerraform, false)(this._enableCloudwatchLogsExports),
+      engine: cdktn.stringToTerraform(this._engine),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      final_snapshot_identifier: cdktn.stringToTerraform(this._finalSnapshotIdentifier),
+      global_cluster_identifier: cdktn.stringToTerraform(this._globalClusterIdentifier),
+      iam_database_authentication_enabled: cdktn.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
+      iam_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._iamRoles),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+      neptune_cluster_parameter_group_name: cdktn.stringToTerraform(this._neptuneClusterParameterGroupName),
+      neptune_instance_parameter_group_name: cdktn.stringToTerraform(this._neptuneInstanceParameterGroupName),
+      neptune_subnet_group_name: cdktn.stringToTerraform(this._neptuneSubnetGroupName),
+      port: cdktn.numberToTerraform(this._port),
+      preferred_backup_window: cdktn.stringToTerraform(this._preferredBackupWindow),
+      preferred_maintenance_window: cdktn.stringToTerraform(this._preferredMaintenanceWindow),
+      region: cdktn.stringToTerraform(this._region),
+      replication_source_identifier: cdktn.stringToTerraform(this._replicationSourceIdentifier),
+      skip_final_snapshot: cdktn.booleanToTerraform(this._skipFinalSnapshot),
+      snapshot_identifier: cdktn.stringToTerraform(this._snapshotIdentifier),
+      storage_encrypted: cdktn.booleanToTerraform(this._storageEncrypted),
+      storage_type: cdktn.stringToTerraform(this._storageType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      vpc_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._vpcSecurityGroupIds),
       serverless_v2_scaling_configuration: neptuneClusterServerlessV2ScalingConfigurationToTerraform(this._serverlessV2ScalingConfiguration.internalValue),
       timeouts: neptuneClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1147,193 +1147,193 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_major_version_upgrade: {
-        value: cdktf.booleanToHclTerraform(this._allowMajorVersionUpgrade),
+        value: cdktn.booleanToHclTerraform(this._allowMajorVersionUpgrade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       apply_immediately: {
-        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        value: cdktn.booleanToHclTerraform(this._applyImmediately),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       availability_zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._availabilityZones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._availabilityZones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       backup_retention_period: {
-        value: cdktf.numberToHclTerraform(this._backupRetentionPeriod),
+        value: cdktn.numberToHclTerraform(this._backupRetentionPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_identifier_prefix: {
-        value: cdktf.stringToHclTerraform(this._clusterIdentifierPrefix),
+        value: cdktn.stringToHclTerraform(this._clusterIdentifierPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_tags_to_snapshot: {
-        value: cdktf.booleanToHclTerraform(this._copyTagsToSnapshot),
+        value: cdktn.booleanToHclTerraform(this._copyTagsToSnapshot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_cloudwatch_logs_exports: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._enableCloudwatchLogsExports),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._enableCloudwatchLogsExports),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       final_snapshot_identifier: {
-        value: cdktf.stringToHclTerraform(this._finalSnapshotIdentifier),
+        value: cdktn.stringToHclTerraform(this._finalSnapshotIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       global_cluster_identifier: {
-        value: cdktf.stringToHclTerraform(this._globalClusterIdentifier),
+        value: cdktn.stringToHclTerraform(this._globalClusterIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_database_authentication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._iamDatabaseAuthenticationEnabled),
+        value: cdktn.booleanToHclTerraform(this._iamDatabaseAuthenticationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       iam_roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iamRoles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._iamRoles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_arn: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        value: cdktn.stringToHclTerraform(this._kmsKeyArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       neptune_cluster_parameter_group_name: {
-        value: cdktf.stringToHclTerraform(this._neptuneClusterParameterGroupName),
+        value: cdktn.stringToHclTerraform(this._neptuneClusterParameterGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       neptune_instance_parameter_group_name: {
-        value: cdktf.stringToHclTerraform(this._neptuneInstanceParameterGroupName),
+        value: cdktn.stringToHclTerraform(this._neptuneInstanceParameterGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       neptune_subnet_group_name: {
-        value: cdktf.stringToHclTerraform(this._neptuneSubnetGroupName),
+        value: cdktn.stringToHclTerraform(this._neptuneSubnetGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       preferred_backup_window: {
-        value: cdktf.stringToHclTerraform(this._preferredBackupWindow),
+        value: cdktn.stringToHclTerraform(this._preferredBackupWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_maintenance_window: {
-        value: cdktf.stringToHclTerraform(this._preferredMaintenanceWindow),
+        value: cdktn.stringToHclTerraform(this._preferredMaintenanceWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_source_identifier: {
-        value: cdktf.stringToHclTerraform(this._replicationSourceIdentifier),
+        value: cdktn.stringToHclTerraform(this._replicationSourceIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_final_snapshot: {
-        value: cdktf.booleanToHclTerraform(this._skipFinalSnapshot),
+        value: cdktn.booleanToHclTerraform(this._skipFinalSnapshot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       snapshot_identifier: {
-        value: cdktf.stringToHclTerraform(this._snapshotIdentifier),
+        value: cdktn.stringToHclTerraform(this._snapshotIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_encrypted: {
-        value: cdktf.booleanToHclTerraform(this._storageEncrypted),
+        value: cdktn.booleanToHclTerraform(this._storageEncrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_type: {
-        value: cdktf.stringToHclTerraform(this._storageType),
+        value: cdktn.stringToHclTerraform(this._storageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._vpcSecurityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

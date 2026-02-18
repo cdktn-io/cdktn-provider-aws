@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsEfsMountTargetConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEfsMountTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/efs_mount_target#access_point_id DataAwsEfsMountTarget#access_point_id}
   */
@@ -42,7 +42,7 @@ export interface DataAwsEfsMountTargetConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/efs_mount_target aws_efs_mount_target}
 */
-export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
+export class DataAwsEfsMountTarget extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsEfsMountTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsEfsMountTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEfsMountTarget to import
   * @param importFromId The id of the existing DataAwsEfsMountTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/efs_mount_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEfsMountTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_mount_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_mount_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -233,7 +233,7 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
 
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_groups'));
   }
 
   // subnet_id - computed: true, optional: false, required: false
@@ -247,42 +247,42 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_point_id: cdktf.stringToTerraform(this._accessPointId),
-      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
-      id: cdktf.stringToTerraform(this._id),
-      mount_target_id: cdktf.stringToTerraform(this._mountTargetId),
-      region: cdktf.stringToTerraform(this._region),
+      access_point_id: cdktn.stringToTerraform(this._accessPointId),
+      file_system_id: cdktn.stringToTerraform(this._fileSystemId),
+      id: cdktn.stringToTerraform(this._id),
+      mount_target_id: cdktn.stringToTerraform(this._mountTargetId),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_point_id: {
-        value: cdktf.stringToHclTerraform(this._accessPointId),
+        value: cdktn.stringToHclTerraform(this._accessPointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_system_id: {
-        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        value: cdktn.stringToHclTerraform(this._fileSystemId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mount_target_id: {
-        value: cdktf.stringToHclTerraform(this._mountTargetId),
+        value: cdktn.stringToHclTerraform(this._mountTargetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

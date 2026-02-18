@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PinpointEmailTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface PinpointEmailTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -31,7 +31,7 @@ export interface PinpointEmailTemplateConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_email_template#email_template PinpointEmailTemplate#email_template}
   */
-  readonly emailTemplate?: PinpointEmailTemplateEmailTemplate[] | cdktf.IResolvable;
+  readonly emailTemplate?: PinpointEmailTemplateEmailTemplate[] | cdktn.IResolvable;
 }
 export interface PinpointEmailTemplateEmailTemplateHeader {
   /**
@@ -44,32 +44,32 @@ export interface PinpointEmailTemplateEmailTemplateHeader {
   readonly value?: string;
 }
 
-export function pinpointEmailTemplateEmailTemplateHeaderToTerraform(struct?: PinpointEmailTemplateEmailTemplateHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pinpointEmailTemplateEmailTemplateHeaderToTerraform(struct?: PinpointEmailTemplateEmailTemplateHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function pinpointEmailTemplateEmailTemplateHeaderToHclTerraform(struct?: PinpointEmailTemplateEmailTemplateHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pinpointEmailTemplateEmailTemplateHeaderToHclTerraform(struct?: PinpointEmailTemplateEmailTemplateHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -80,9 +80,9 @@ export function pinpointEmailTemplateEmailTemplateHeaderToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PinpointEmailTemplateEmailTemplateHeaderOutputReference extends cdktf.ComplexObject {
+export class PinpointEmailTemplateEmailTemplateHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -90,11 +90,11 @@ export class PinpointEmailTemplateEmailTemplateHeaderOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PinpointEmailTemplateEmailTemplateHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): PinpointEmailTemplateEmailTemplateHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -111,14 +111,14 @@ export class PinpointEmailTemplateEmailTemplateHeaderOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PinpointEmailTemplateEmailTemplateHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PinpointEmailTemplateEmailTemplateHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -163,15 +163,15 @@ export class PinpointEmailTemplateEmailTemplateHeaderOutputReference extends cdk
   }
 }
 
-export class PinpointEmailTemplateEmailTemplateHeaderList extends cdktf.ComplexList {
-  public internalValue? : PinpointEmailTemplateEmailTemplateHeader[] | cdktf.IResolvable
+export class PinpointEmailTemplateEmailTemplateHeaderList extends cdktn.ComplexList {
+  public internalValue? : PinpointEmailTemplateEmailTemplateHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -212,70 +212,70 @@ export interface PinpointEmailTemplateEmailTemplate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_email_template#header PinpointEmailTemplate#header}
   */
-  readonly header?: PinpointEmailTemplateEmailTemplateHeader[] | cdktf.IResolvable;
+  readonly header?: PinpointEmailTemplateEmailTemplateHeader[] | cdktn.IResolvable;
 }
 
-export function pinpointEmailTemplateEmailTemplateToTerraform(struct?: PinpointEmailTemplateEmailTemplate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pinpointEmailTemplateEmailTemplateToTerraform(struct?: PinpointEmailTemplateEmailTemplate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_substitutions: cdktf.stringToTerraform(struct!.defaultSubstitutions),
-    description: cdktf.stringToTerraform(struct!.description),
-    html_part: cdktf.stringToTerraform(struct!.htmlPart),
-    recommender_id: cdktf.stringToTerraform(struct!.recommenderId),
-    subject: cdktf.stringToTerraform(struct!.subject),
-    text_part: cdktf.stringToTerraform(struct!.textPart),
-    header: cdktf.listMapper(pinpointEmailTemplateEmailTemplateHeaderToTerraform, true)(struct!.header),
+    default_substitutions: cdktn.stringToTerraform(struct!.defaultSubstitutions),
+    description: cdktn.stringToTerraform(struct!.description),
+    html_part: cdktn.stringToTerraform(struct!.htmlPart),
+    recommender_id: cdktn.stringToTerraform(struct!.recommenderId),
+    subject: cdktn.stringToTerraform(struct!.subject),
+    text_part: cdktn.stringToTerraform(struct!.textPart),
+    header: cdktn.listMapper(pinpointEmailTemplateEmailTemplateHeaderToTerraform, true)(struct!.header),
   }
 }
 
 
-export function pinpointEmailTemplateEmailTemplateToHclTerraform(struct?: PinpointEmailTemplateEmailTemplate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pinpointEmailTemplateEmailTemplateToHclTerraform(struct?: PinpointEmailTemplateEmailTemplate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_substitutions: {
-      value: cdktf.stringToHclTerraform(struct!.defaultSubstitutions),
+      value: cdktn.stringToHclTerraform(struct!.defaultSubstitutions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     html_part: {
-      value: cdktf.stringToHclTerraform(struct!.htmlPart),
+      value: cdktn.stringToHclTerraform(struct!.htmlPart),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recommender_id: {
-      value: cdktf.stringToHclTerraform(struct!.recommenderId),
+      value: cdktn.stringToHclTerraform(struct!.recommenderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_part: {
-      value: cdktf.stringToHclTerraform(struct!.textPart),
+      value: cdktn.stringToHclTerraform(struct!.textPart),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header: {
-      value: cdktf.listMapperHcl(pinpointEmailTemplateEmailTemplateHeaderToHclTerraform, true)(struct!.header),
+      value: cdktn.listMapperHcl(pinpointEmailTemplateEmailTemplateHeaderToHclTerraform, true)(struct!.header),
       isBlock: true,
       type: "list",
       storageClassType: "PinpointEmailTemplateEmailTemplateHeaderList",
@@ -286,9 +286,9 @@ export function pinpointEmailTemplateEmailTemplateToHclTerraform(struct?: Pinpoi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PinpointEmailTemplateEmailTemplateOutputReference extends cdktf.ComplexObject {
+export class PinpointEmailTemplateEmailTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -296,11 +296,11 @@ export class PinpointEmailTemplateEmailTemplateOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PinpointEmailTemplateEmailTemplate | cdktf.IResolvable | undefined {
+  public get internalValue(): PinpointEmailTemplateEmailTemplate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -337,7 +337,7 @@ export class PinpointEmailTemplateEmailTemplateOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PinpointEmailTemplateEmailTemplate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PinpointEmailTemplateEmailTemplate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -349,7 +349,7 @@ export class PinpointEmailTemplateEmailTemplateOutputReference extends cdktf.Com
       this._textPart = undefined;
       this._header.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -467,7 +467,7 @@ export class PinpointEmailTemplateEmailTemplateOutputReference extends cdktf.Com
   public get header() {
     return this._header;
   }
-  public putHeader(value: PinpointEmailTemplateEmailTemplateHeader[] | cdktf.IResolvable) {
+  public putHeader(value: PinpointEmailTemplateEmailTemplateHeader[] | cdktn.IResolvable) {
     this._header.internalValue = value;
   }
   public resetHeader() {
@@ -479,15 +479,15 @@ export class PinpointEmailTemplateEmailTemplateOutputReference extends cdktf.Com
   }
 }
 
-export class PinpointEmailTemplateEmailTemplateList extends cdktf.ComplexList {
-  public internalValue? : PinpointEmailTemplateEmailTemplate[] | cdktf.IResolvable
+export class PinpointEmailTemplateEmailTemplateList extends cdktn.ComplexList {
+  public internalValue? : PinpointEmailTemplateEmailTemplate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -502,7 +502,7 @@ export class PinpointEmailTemplateEmailTemplateList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_email_template aws_pinpoint_email_template}
 */
-export class PinpointEmailTemplate extends cdktf.TerraformResource {
+export class PinpointEmailTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -513,14 +513,14 @@ export class PinpointEmailTemplate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PinpointEmailTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PinpointEmailTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PinpointEmailTemplate to import
   * @param importFromId The id of the existing PinpointEmailTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/pinpoint_email_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PinpointEmailTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_email_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_pinpoint_email_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -598,7 +598,7 @@ export class PinpointEmailTemplate extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -621,7 +621,7 @@ export class PinpointEmailTemplate extends cdktf.TerraformResource {
   public get emailTemplate() {
     return this._emailTemplate;
   }
-  public putEmailTemplate(value: PinpointEmailTemplateEmailTemplate[] | cdktf.IResolvable) {
+  public putEmailTemplate(value: PinpointEmailTemplateEmailTemplate[] | cdktn.IResolvable) {
     this._emailTemplate.internalValue = value;
   }
   public resetEmailTemplate() {
@@ -638,35 +638,35 @@ export class PinpointEmailTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      template_name: cdktf.stringToTerraform(this._templateName),
-      email_template: cdktf.listMapper(pinpointEmailTemplateEmailTemplateToTerraform, true)(this._emailTemplate.internalValue),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      template_name: cdktn.stringToTerraform(this._templateName),
+      email_template: cdktn.listMapper(pinpointEmailTemplateEmailTemplateToTerraform, true)(this._emailTemplate.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       template_name: {
-        value: cdktf.stringToHclTerraform(this._templateName),
+        value: cdktn.stringToHclTerraform(this._templateName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_template: {
-        value: cdktf.listMapperHcl(pinpointEmailTemplateEmailTemplateToHclTerraform, true)(this._emailTemplate.internalValue),
+        value: cdktn.listMapperHcl(pinpointEmailTemplateEmailTemplateToHclTerraform, true)(this._emailTemplate.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PinpointEmailTemplateEmailTemplateList",

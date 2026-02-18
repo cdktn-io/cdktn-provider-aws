@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceswebIdentityProviderConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspaceswebIdentityProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_identity_provider#identity_provider_details WorkspaceswebIdentityProvider#identity_provider_details}
   */
@@ -43,7 +43,7 @@ export interface WorkspaceswebIdentityProviderConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_identity_provider aws_workspacesweb_identity_provider}
 */
-export class WorkspaceswebIdentityProvider extends cdktf.TerraformResource {
+export class WorkspaceswebIdentityProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +54,14 @@ export class WorkspaceswebIdentityProvider extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceswebIdentityProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceswebIdentityProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebIdentityProvider to import
   * @param importFromId The id of the existing WorkspaceswebIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_identity_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebIdentityProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_identity_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_workspacesweb_identity_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -193,7 +193,7 @@ export class WorkspaceswebIdentityProvider extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -204,49 +204,49 @@ export class WorkspaceswebIdentityProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      identity_provider_details: cdktf.hashMapper(cdktf.stringToTerraform)(this._identityProviderDetails),
-      identity_provider_name: cdktf.stringToTerraform(this._identityProviderName),
-      identity_provider_type: cdktf.stringToTerraform(this._identityProviderType),
-      portal_arn: cdktf.stringToTerraform(this._portalArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      identity_provider_details: cdktn.hashMapper(cdktn.stringToTerraform)(this._identityProviderDetails),
+      identity_provider_name: cdktn.stringToTerraform(this._identityProviderName),
+      identity_provider_type: cdktn.stringToTerraform(this._identityProviderType),
+      portal_arn: cdktn.stringToTerraform(this._portalArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       identity_provider_details: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._identityProviderDetails),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._identityProviderDetails),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       identity_provider_name: {
-        value: cdktf.stringToHclTerraform(this._identityProviderName),
+        value: cdktn.stringToHclTerraform(this._identityProviderName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_provider_type: {
-        value: cdktf.stringToHclTerraform(this._identityProviderType),
+        value: cdktn.stringToHclTerraform(this._identityProviderType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       portal_arn: {
-        value: cdktf.stringToHclTerraform(this._portalArn),
+        value: cdktn.stringToHclTerraform(this._portalArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

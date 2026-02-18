@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsVpcIpamPreviewNextCidrConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsVpcIpamPreviewNextCidrConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpc_ipam_preview_next_cidr#disallowed_cidrs DataAwsVpcIpamPreviewNextCidr#disallowed_cidrs}
   */
@@ -51,25 +51,25 @@ export interface DataAwsVpcIpamPreviewNextCidrTimeouts {
   readonly read?: string;
 }
 
-export function dataAwsVpcIpamPreviewNextCidrTimeoutsToTerraform(struct?: DataAwsVpcIpamPreviewNextCidrTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsVpcIpamPreviewNextCidrTimeoutsToTerraform(struct?: DataAwsVpcIpamPreviewNextCidrTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAwsVpcIpamPreviewNextCidrTimeoutsToHclTerraform(struct?: DataAwsVpcIpamPreviewNextCidrTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsVpcIpamPreviewNextCidrTimeoutsToHclTerraform(struct?: DataAwsVpcIpamPreviewNextCidrTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -80,19 +80,19 @@ export function dataAwsVpcIpamPreviewNextCidrTimeoutsToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAwsVpcIpamPreviewNextCidrTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsVpcIpamPreviewNextCidrTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -105,13 +105,13 @@ export class DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsVpcIpamPreviewNextCidrTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsVpcIpamPreviewNextCidrTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -142,7 +142,7 @@ export class DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr}
 */
-export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
+export class DataAwsVpcIpamPreviewNextCidr extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -153,14 +153,14 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsVpcIpamPreviewNextCidr resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsVpcIpamPreviewNextCidr resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsVpcIpamPreviewNextCidr to import
   * @param importFromId The id of the existing DataAwsVpcIpamPreviewNextCidr that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/vpc_ipam_preview_next_cidr#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsVpcIpamPreviewNextCidr to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_preview_next_cidr", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_ipam_preview_next_cidr", importId: importFromId, provider });
       }
 
   // ===========
@@ -210,7 +210,7 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
   // disallowed_cidrs - computed: false, optional: true, required: false
   private _disallowedCidrs?: string[]; 
   public get disallowedCidrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('disallowed_cidrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('disallowed_cidrs'));
   }
   public set disallowedCidrs(value: string[]) {
     this._disallowedCidrs = value;
@@ -306,11 +306,11 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disallowed_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._disallowedCidrs),
-      id: cdktf.stringToTerraform(this._id),
-      ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
-      netmask_length: cdktf.numberToTerraform(this._netmaskLength),
-      region: cdktf.stringToTerraform(this._region),
+      disallowed_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._disallowedCidrs),
+      id: cdktn.stringToTerraform(this._id),
+      ipam_pool_id: cdktn.stringToTerraform(this._ipamPoolId),
+      netmask_length: cdktn.numberToTerraform(this._netmaskLength),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: dataAwsVpcIpamPreviewNextCidrTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -318,31 +318,31 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disallowed_cidrs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._disallowedCidrs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._disallowedCidrs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ipam_pool_id: {
-        value: cdktf.stringToHclTerraform(this._ipamPoolId),
+        value: cdktn.stringToHclTerraform(this._ipamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       netmask_length: {
-        value: cdktf.numberToHclTerraform(this._netmaskLength),
+        value: cdktn.numberToHclTerraform(this._netmaskLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

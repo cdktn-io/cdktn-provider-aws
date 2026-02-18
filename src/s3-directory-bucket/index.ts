@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface S3DirectoryBucketConfig extends cdktf.TerraformMetaArguments {
+export interface S3DirectoryBucketConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_directory_bucket#bucket S3DirectoryBucket#bucket}
   */
@@ -23,7 +23,7 @@ export interface S3DirectoryBucketConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_directory_bucket#force_destroy S3DirectoryBucket#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
@@ -43,7 +43,7 @@ export interface S3DirectoryBucketConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_directory_bucket#location S3DirectoryBucket#location}
   */
-  readonly location?: S3DirectoryBucketLocation[] | cdktf.IResolvable;
+  readonly location?: S3DirectoryBucketLocation[] | cdktn.IResolvable;
 }
 export interface S3DirectoryBucketLocation {
   /**
@@ -56,32 +56,32 @@ export interface S3DirectoryBucketLocation {
   readonly type?: string;
 }
 
-export function s3DirectoryBucketLocationToTerraform(struct?: S3DirectoryBucketLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3DirectoryBucketLocationToTerraform(struct?: S3DirectoryBucketLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function s3DirectoryBucketLocationToHclTerraform(struct?: S3DirectoryBucketLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function s3DirectoryBucketLocationToHclTerraform(struct?: S3DirectoryBucketLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,9 +92,9 @@ export function s3DirectoryBucketLocationToHclTerraform(struct?: S3DirectoryBuck
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class S3DirectoryBucketLocationOutputReference extends cdktf.ComplexObject {
+export class S3DirectoryBucketLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -102,11 +102,11 @@ export class S3DirectoryBucketLocationOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3DirectoryBucketLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): S3DirectoryBucketLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -123,14 +123,14 @@ export class S3DirectoryBucketLocationOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3DirectoryBucketLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: S3DirectoryBucketLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -172,15 +172,15 @@ export class S3DirectoryBucketLocationOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class S3DirectoryBucketLocationList extends cdktf.ComplexList {
-  public internalValue? : S3DirectoryBucketLocation[] | cdktf.IResolvable
+export class S3DirectoryBucketLocationList extends cdktn.ComplexList {
+  public internalValue? : S3DirectoryBucketLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -195,7 +195,7 @@ export class S3DirectoryBucketLocationList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_directory_bucket aws_s3_directory_bucket}
 */
-export class S3DirectoryBucket extends cdktf.TerraformResource {
+export class S3DirectoryBucket extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -206,14 +206,14 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a S3DirectoryBucket resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a S3DirectoryBucket resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3DirectoryBucket to import
   * @param importFromId The id of the existing S3DirectoryBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/s3_directory_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3DirectoryBucket to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_directory_bucket", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_s3_directory_bucket", importId: importFromId, provider });
       }
 
   // ===========
@@ -291,11 +291,11 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: true, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -344,7 +344,7 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -370,7 +370,7 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
   public get location() {
     return this._location;
   }
-  public putLocation(value: S3DirectoryBucketLocation[] | cdktf.IResolvable) {
+  public putLocation(value: S3DirectoryBucketLocation[] | cdktn.IResolvable) {
     this._location.internalValue = value;
   }
   public resetLocation() {
@@ -387,56 +387,56 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      data_redundancy: cdktf.stringToTerraform(this._dataRedundancy),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
-      location: cdktf.listMapper(s3DirectoryBucketLocationToTerraform, true)(this._location.internalValue),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      data_redundancy: cdktn.stringToTerraform(this._dataRedundancy),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      type: cdktn.stringToTerraform(this._type),
+      location: cdktn.listMapper(s3DirectoryBucketLocationToTerraform, true)(this._location.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_redundancy: {
-        value: cdktf.stringToHclTerraform(this._dataRedundancy),
+        value: cdktn.stringToHclTerraform(this._dataRedundancy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.listMapperHcl(s3DirectoryBucketLocationToHclTerraform, true)(this._location.internalValue),
+        value: cdktn.listMapperHcl(s3DirectoryBucketLocationToHclTerraform, true)(this._location.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "S3DirectoryBucketLocationList",

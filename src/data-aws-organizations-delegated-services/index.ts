@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOrganizationsDelegatedServicesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOrganizationsDelegatedServicesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_delegated_services#account_id DataAwsOrganizationsDelegatedServices#account_id}
   */
@@ -28,8 +28,8 @@ export interface DataAwsOrganizationsDelegatedServicesDelegatedServices {
 }
 
 export function dataAwsOrganizationsDelegatedServicesDelegatedServicesToTerraform(struct?: DataAwsOrganizationsDelegatedServicesDelegatedServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -38,8 +38,8 @@ export function dataAwsOrganizationsDelegatedServicesDelegatedServicesToTerrafor
 
 
 export function dataAwsOrganizationsDelegatedServicesDelegatedServicesToHclTerraform(struct?: DataAwsOrganizationsDelegatedServicesDelegatedServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -47,7 +47,7 @@ export function dataAwsOrganizationsDelegatedServicesDelegatedServicesToHclTerra
   return attrs;
 }
 
-export class DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference extends cdktf.ComplexObject {
+export class DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -56,7 +56,7 @@ export class DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -86,14 +86,14 @@ export class DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReferen
   }
 }
 
-export class DataAwsOrganizationsDelegatedServicesDelegatedServicesList extends cdktf.ComplexList {
+export class DataAwsOrganizationsDelegatedServicesDelegatedServicesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -108,7 +108,7 @@ export class DataAwsOrganizationsDelegatedServicesDelegatedServicesList extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_delegated_services aws_organizations_delegated_services}
 */
-export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSource {
+export class DataAwsOrganizationsDelegatedServices extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -119,14 +119,14 @@ export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOrganizationsDelegatedServices resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOrganizationsDelegatedServices resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOrganizationsDelegatedServices to import
   * @param importFromId The id of the existing DataAwsOrganizationsDelegatedServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_delegated_services#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOrganizationsDelegatedServices to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_delegated_services", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_delegated_services", importId: importFromId, provider });
       }
 
   // ===========
@@ -205,21 +205,21 @@ export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

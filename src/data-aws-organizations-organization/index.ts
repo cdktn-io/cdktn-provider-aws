@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsOrganizationsOrganizationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOrganizationsOrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_organization#id DataAwsOrganizationsOrganization#id}
   *
@@ -22,14 +22,14 @@ export interface DataAwsOrganizationsOrganizationConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_organization#return_organization_only DataAwsOrganizationsOrganization#return_organization_only}
   */
-  readonly returnOrganizationOnly?: boolean | cdktf.IResolvable;
+  readonly returnOrganizationOnly?: boolean | cdktn.IResolvable;
 }
 export interface DataAwsOrganizationsOrganizationAccounts {
 }
 
 export function dataAwsOrganizationsOrganizationAccountsToTerraform(struct?: DataAwsOrganizationsOrganizationAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -38,8 +38,8 @@ export function dataAwsOrganizationsOrganizationAccountsToTerraform(struct?: Dat
 
 
 export function dataAwsOrganizationsOrganizationAccountsToHclTerraform(struct?: DataAwsOrganizationsOrganizationAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -47,7 +47,7 @@ export function dataAwsOrganizationsOrganizationAccountsToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAwsOrganizationsOrganizationAccountsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOrganizationsOrganizationAccountsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -56,7 +56,7 @@ export class DataAwsOrganizationsOrganizationAccountsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -116,14 +116,14 @@ export class DataAwsOrganizationsOrganizationAccountsOutputReference extends cdk
   }
 }
 
-export class DataAwsOrganizationsOrganizationAccountsList extends cdktf.ComplexList {
+export class DataAwsOrganizationsOrganizationAccountsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -138,8 +138,8 @@ export interface DataAwsOrganizationsOrganizationNonMasterAccounts {
 }
 
 export function dataAwsOrganizationsOrganizationNonMasterAccountsToTerraform(struct?: DataAwsOrganizationsOrganizationNonMasterAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -148,8 +148,8 @@ export function dataAwsOrganizationsOrganizationNonMasterAccountsToTerraform(str
 
 
 export function dataAwsOrganizationsOrganizationNonMasterAccountsToHclTerraform(struct?: DataAwsOrganizationsOrganizationNonMasterAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -157,7 +157,7 @@ export function dataAwsOrganizationsOrganizationNonMasterAccountsToHclTerraform(
   return attrs;
 }
 
-export class DataAwsOrganizationsOrganizationNonMasterAccountsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOrganizationsOrganizationNonMasterAccountsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -166,7 +166,7 @@ export class DataAwsOrganizationsOrganizationNonMasterAccountsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -226,14 +226,14 @@ export class DataAwsOrganizationsOrganizationNonMasterAccountsOutputReference ex
   }
 }
 
-export class DataAwsOrganizationsOrganizationNonMasterAccountsList extends cdktf.ComplexList {
+export class DataAwsOrganizationsOrganizationNonMasterAccountsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -248,8 +248,8 @@ export interface DataAwsOrganizationsOrganizationRootsPolicyTypes {
 }
 
 export function dataAwsOrganizationsOrganizationRootsPolicyTypesToTerraform(struct?: DataAwsOrganizationsOrganizationRootsPolicyTypes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -258,8 +258,8 @@ export function dataAwsOrganizationsOrganizationRootsPolicyTypesToTerraform(stru
 
 
 export function dataAwsOrganizationsOrganizationRootsPolicyTypesToHclTerraform(struct?: DataAwsOrganizationsOrganizationRootsPolicyTypes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -267,7 +267,7 @@ export function dataAwsOrganizationsOrganizationRootsPolicyTypesToHclTerraform(s
   return attrs;
 }
 
-export class DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference extends cdktf.ComplexObject {
+export class DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -276,7 +276,7 @@ export class DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -306,14 +306,14 @@ export class DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference ext
   }
 }
 
-export class DataAwsOrganizationsOrganizationRootsPolicyTypesList extends cdktf.ComplexList {
+export class DataAwsOrganizationsOrganizationRootsPolicyTypesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -328,8 +328,8 @@ export interface DataAwsOrganizationsOrganizationRoots {
 }
 
 export function dataAwsOrganizationsOrganizationRootsToTerraform(struct?: DataAwsOrganizationsOrganizationRoots): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -338,8 +338,8 @@ export function dataAwsOrganizationsOrganizationRootsToTerraform(struct?: DataAw
 
 
 export function dataAwsOrganizationsOrganizationRootsToHclTerraform(struct?: DataAwsOrganizationsOrganizationRoots): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -347,7 +347,7 @@ export function dataAwsOrganizationsOrganizationRootsToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAwsOrganizationsOrganizationRootsOutputReference extends cdktf.ComplexObject {
+export class DataAwsOrganizationsOrganizationRootsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -356,7 +356,7 @@ export class DataAwsOrganizationsOrganizationRootsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -397,14 +397,14 @@ export class DataAwsOrganizationsOrganizationRootsOutputReference extends cdktf.
   }
 }
 
-export class DataAwsOrganizationsOrganizationRootsList extends cdktf.ComplexList {
+export class DataAwsOrganizationsOrganizationRootsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -419,7 +419,7 @@ export class DataAwsOrganizationsOrganizationRootsList extends cdktf.ComplexList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_organization aws_organizations_organization}
 */
-export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource {
+export class DataAwsOrganizationsOrganization extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -430,14 +430,14 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsOrganizationsOrganization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsOrganizationsOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOrganizationsOrganization to import
   * @param importFromId The id of the existing DataAwsOrganizationsOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/organizations_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOrganizationsOrganization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_organization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_organizations_organization", importId: importFromId, provider });
       }
 
   // ===========
@@ -488,12 +488,12 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
 
   // aws_service_access_principals - computed: true, optional: false, required: false
   public get awsServiceAccessPrincipals() {
-    return cdktf.Fn.tolist(this.getListAttribute('aws_service_access_principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('aws_service_access_principals'));
   }
 
   // enabled_policy_types - computed: true, optional: false, required: false
   public get enabledPolicyTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('enabled_policy_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('enabled_policy_types'));
   }
 
   // feature_set - computed: true, optional: false, required: false
@@ -544,11 +544,11 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
   }
 
   // return_organization_only - computed: false, optional: true, required: false
-  private _returnOrganizationOnly?: boolean | cdktf.IResolvable; 
+  private _returnOrganizationOnly?: boolean | cdktn.IResolvable; 
   public get returnOrganizationOnly() {
     return this.getBooleanAttribute('return_organization_only');
   }
-  public set returnOrganizationOnly(value: boolean | cdktf.IResolvable) {
+  public set returnOrganizationOnly(value: boolean | cdktn.IResolvable) {
     this._returnOrganizationOnly = value;
   }
   public resetReturnOrganizationOnly() {
@@ -571,21 +571,21 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      return_organization_only: cdktf.booleanToTerraform(this._returnOrganizationOnly),
+      id: cdktn.stringToTerraform(this._id),
+      return_organization_only: cdktn.booleanToTerraform(this._returnOrganizationOnly),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       return_organization_only: {
-        value: cdktf.booleanToHclTerraform(this._returnOrganizationOnly),
+        value: cdktn.booleanToHclTerraform(this._returnOrganizationOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

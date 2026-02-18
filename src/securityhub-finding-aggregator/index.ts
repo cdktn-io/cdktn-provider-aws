@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityhubFindingAggregatorConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityhubFindingAggregatorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_finding_aggregator#id SecurityhubFindingAggregator#id}
   *
@@ -38,7 +38,7 @@ export interface SecurityhubFindingAggregatorConfig extends cdktf.TerraformMetaA
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator}
 */
-export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
+export class SecurityhubFindingAggregator extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityhubFindingAggregator resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityhubFindingAggregator resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityhubFindingAggregator to import
   * @param importFromId The id of the existing SecurityhubFindingAggregator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/securityhub_finding_aggregator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityhubFindingAggregator to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_finding_aggregator", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_finding_aggregator", importId: importFromId, provider });
       }
 
   // ===========
@@ -144,7 +144,7 @@ export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
   // specified_regions - computed: false, optional: true, required: false
   private _specifiedRegions?: string[]; 
   public get specifiedRegions() {
-    return cdktf.Fn.tolist(this.getListAttribute('specified_regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('specified_regions'));
   }
   public set specifiedRegions(value: string[]) {
     this._specifiedRegions = value;
@@ -163,35 +163,35 @@ export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      linking_mode: cdktf.stringToTerraform(this._linkingMode),
-      region: cdktf.stringToTerraform(this._region),
-      specified_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._specifiedRegions),
+      id: cdktn.stringToTerraform(this._id),
+      linking_mode: cdktn.stringToTerraform(this._linkingMode),
+      region: cdktn.stringToTerraform(this._region),
+      specified_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._specifiedRegions),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linking_mode: {
-        value: cdktf.stringToHclTerraform(this._linkingMode),
+        value: cdktn.stringToHclTerraform(this._linkingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       specified_regions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._specifiedRegions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._specifiedRegions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

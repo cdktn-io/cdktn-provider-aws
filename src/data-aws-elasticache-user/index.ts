@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsElasticacheUserConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsElasticacheUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_user#access_string DataAwsElasticacheUser#access_string}
   */
@@ -30,7 +30,7 @@ export interface DataAwsElasticacheUserConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_user#no_password_required DataAwsElasticacheUser#no_password_required}
   */
-  readonly noPasswordRequired?: boolean | cdktf.IResolvable;
+  readonly noPasswordRequired?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_user#passwords DataAwsElasticacheUser#passwords}
   */
@@ -54,7 +54,7 @@ export interface DataAwsElasticacheUserConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_user#authentication_mode DataAwsElasticacheUser#authentication_mode}
   */
-  readonly authenticationMode?: DataAwsElasticacheUserAuthenticationMode[] | cdktf.IResolvable;
+  readonly authenticationMode?: DataAwsElasticacheUserAuthenticationMode[] | cdktn.IResolvable;
 }
 export interface DataAwsElasticacheUserAuthenticationMode {
   /**
@@ -67,32 +67,32 @@ export interface DataAwsElasticacheUserAuthenticationMode {
   readonly type?: string;
 }
 
-export function dataAwsElasticacheUserAuthenticationModeToTerraform(struct?: DataAwsElasticacheUserAuthenticationMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsElasticacheUserAuthenticationModeToTerraform(struct?: DataAwsElasticacheUserAuthenticationMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password_count: cdktf.numberToTerraform(struct!.passwordCount),
-    type: cdktf.stringToTerraform(struct!.type),
+    password_count: cdktn.numberToTerraform(struct!.passwordCount),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataAwsElasticacheUserAuthenticationModeToHclTerraform(struct?: DataAwsElasticacheUserAuthenticationMode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAwsElasticacheUserAuthenticationModeToHclTerraform(struct?: DataAwsElasticacheUserAuthenticationMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password_count: {
-      value: cdktf.numberToHclTerraform(struct!.passwordCount),
+      value: cdktn.numberToHclTerraform(struct!.passwordCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,9 +103,9 @@ export function dataAwsElasticacheUserAuthenticationModeToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAwsElasticacheUserAuthenticationModeOutputReference extends cdktf.ComplexObject {
+export class DataAwsElasticacheUserAuthenticationModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -113,11 +113,11 @@ export class DataAwsElasticacheUserAuthenticationModeOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsElasticacheUserAuthenticationMode | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAwsElasticacheUserAuthenticationMode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -134,14 +134,14 @@ export class DataAwsElasticacheUserAuthenticationModeOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsElasticacheUserAuthenticationMode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsElasticacheUserAuthenticationMode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._passwordCount = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -186,15 +186,15 @@ export class DataAwsElasticacheUserAuthenticationModeOutputReference extends cdk
   }
 }
 
-export class DataAwsElasticacheUserAuthenticationModeList extends cdktf.ComplexList {
-  public internalValue? : DataAwsElasticacheUserAuthenticationMode[] | cdktf.IResolvable
+export class DataAwsElasticacheUserAuthenticationModeList extends cdktn.ComplexList {
+  public internalValue? : DataAwsElasticacheUserAuthenticationMode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -209,7 +209,7 @@ export class DataAwsElasticacheUserAuthenticationModeList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_user aws_elasticache_user}
 */
-export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
+export class DataAwsElasticacheUser extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -220,14 +220,14 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsElasticacheUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsElasticacheUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsElasticacheUser to import
   * @param importFromId The id of the existing DataAwsElasticacheUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/elasticache_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsElasticacheUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticache_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -321,11 +321,11 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
   }
 
   // no_password_required - computed: false, optional: true, required: false
-  private _noPasswordRequired?: boolean | cdktf.IResolvable; 
+  private _noPasswordRequired?: boolean | cdktn.IResolvable; 
   public get noPasswordRequired() {
     return this.getBooleanAttribute('no_password_required');
   }
-  public set noPasswordRequired(value: boolean | cdktf.IResolvable) {
+  public set noPasswordRequired(value: boolean | cdktn.IResolvable) {
     this._noPasswordRequired = value;
   }
   public resetNoPasswordRequired() {
@@ -339,7 +339,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
   // passwords - computed: false, optional: true, required: false
   private _passwords?: string[]; 
   public get passwords() {
-    return cdktf.Fn.tolist(this.getListAttribute('passwords'));
+    return cdktn.Fn.tolist(this.getListAttribute('passwords'));
   }
   public set passwords(value: string[]) {
     this._passwords = value;
@@ -402,7 +402,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
   public get authenticationMode() {
     return this._authenticationMode;
   }
-  public putAuthenticationMode(value: DataAwsElasticacheUserAuthenticationMode[] | cdktf.IResolvable) {
+  public putAuthenticationMode(value: DataAwsElasticacheUserAuthenticationMode[] | cdktn.IResolvable) {
     this._authenticationMode.internalValue = value;
   }
   public resetAuthenticationMode() {
@@ -419,70 +419,70 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_string: cdktf.stringToTerraform(this._accessString),
-      engine: cdktf.stringToTerraform(this._engine),
-      id: cdktf.stringToTerraform(this._id),
-      no_password_required: cdktf.booleanToTerraform(this._noPasswordRequired),
-      passwords: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passwords),
-      region: cdktf.stringToTerraform(this._region),
-      user_id: cdktf.stringToTerraform(this._userId),
-      user_name: cdktf.stringToTerraform(this._userName),
-      authentication_mode: cdktf.listMapper(dataAwsElasticacheUserAuthenticationModeToTerraform, true)(this._authenticationMode.internalValue),
+      access_string: cdktn.stringToTerraform(this._accessString),
+      engine: cdktn.stringToTerraform(this._engine),
+      id: cdktn.stringToTerraform(this._id),
+      no_password_required: cdktn.booleanToTerraform(this._noPasswordRequired),
+      passwords: cdktn.listMapper(cdktn.stringToTerraform, false)(this._passwords),
+      region: cdktn.stringToTerraform(this._region),
+      user_id: cdktn.stringToTerraform(this._userId),
+      user_name: cdktn.stringToTerraform(this._userName),
+      authentication_mode: cdktn.listMapper(dataAwsElasticacheUserAuthenticationModeToTerraform, true)(this._authenticationMode.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_string: {
-        value: cdktf.stringToHclTerraform(this._accessString),
+        value: cdktn.stringToHclTerraform(this._accessString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine: {
-        value: cdktf.stringToHclTerraform(this._engine),
+        value: cdktn.stringToHclTerraform(this._engine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       no_password_required: {
-        value: cdktf.booleanToHclTerraform(this._noPasswordRequired),
+        value: cdktn.booleanToHclTerraform(this._noPasswordRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       passwords: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passwords),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._passwords),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_id: {
-        value: cdktf.stringToHclTerraform(this._userId),
+        value: cdktn.stringToHclTerraform(this._userId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authentication_mode: {
-        value: cdktf.listMapperHcl(dataAwsElasticacheUserAuthenticationModeToHclTerraform, true)(this._authenticationMode.internalValue),
+        value: cdktn.listMapperHcl(dataAwsElasticacheUserAuthenticationModeToHclTerraform, true)(this._authenticationMode.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAwsElasticacheUserAuthenticationModeList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoIdentityProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_provider#attribute_mapping CognitoIdentityProvider#attribute_mapping}
   */
@@ -54,7 +54,7 @@ export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_provider aws_cognito_identity_provider}
 */
-export class CognitoIdentityProvider extends cdktf.TerraformResource {
+export class CognitoIdentityProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitoIdentityProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitoIdentityProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoIdentityProvider to import
   * @param importFromId The id of the existing CognitoIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cognito_identity_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoIdentityProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_identity_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_identity_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -238,63 +238,63 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attribute_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributeMapping),
-      id: cdktf.stringToTerraform(this._id),
-      idp_identifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._idpIdentifiers),
-      provider_details: cdktf.hashMapper(cdktf.stringToTerraform)(this._providerDetails),
-      provider_name: cdktf.stringToTerraform(this._providerName),
-      provider_type: cdktf.stringToTerraform(this._providerType),
-      region: cdktf.stringToTerraform(this._region),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
+      attribute_mapping: cdktn.hashMapper(cdktn.stringToTerraform)(this._attributeMapping),
+      id: cdktn.stringToTerraform(this._id),
+      idp_identifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._idpIdentifiers),
+      provider_details: cdktn.hashMapper(cdktn.stringToTerraform)(this._providerDetails),
+      provider_name: cdktn.stringToTerraform(this._providerName),
+      provider_type: cdktn.stringToTerraform(this._providerType),
+      region: cdktn.stringToTerraform(this._region),
+      user_pool_id: cdktn.stringToTerraform(this._userPoolId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       attribute_mapping: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._attributeMapping),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._attributeMapping),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idp_identifiers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._idpIdentifiers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._idpIdentifiers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       provider_details: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._providerDetails),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._providerDetails),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       provider_name: {
-        value: cdktf.stringToHclTerraform(this._providerName),
+        value: cdktn.stringToHclTerraform(this._providerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provider_type: {
-        value: cdktf.stringToHclTerraform(this._providerType),
+        value: cdktn.stringToHclTerraform(this._providerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_pool_id: {
-        value: cdktf.stringToHclTerraform(this._userPoolId),
+        value: cdktn.stringToHclTerraform(this._userPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

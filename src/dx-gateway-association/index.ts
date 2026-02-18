@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DxGatewayAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface DxGatewayAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_gateway_association#allowed_prefixes DxGatewayAssociation#allowed_prefixes}
   */
@@ -67,39 +67,39 @@ export interface DxGatewayAssociationTimeouts {
   readonly update?: string;
 }
 
-export function dxGatewayAssociationTimeoutsToTerraform(struct?: DxGatewayAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dxGatewayAssociationTimeoutsToTerraform(struct?: DxGatewayAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dxGatewayAssociationTimeoutsToHclTerraform(struct?: DxGatewayAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dxGatewayAssociationTimeoutsToHclTerraform(struct?: DxGatewayAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -110,19 +110,19 @@ export function dxGatewayAssociationTimeoutsToHclTerraform(struct?: DxGatewayAss
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DxGatewayAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DxGatewayAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DxGatewayAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DxGatewayAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -143,7 +143,7 @@ export class DxGatewayAssociationTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DxGatewayAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DxGatewayAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -151,7 +151,7 @@ export class DxGatewayAssociationTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -216,7 +216,7 @@ export class DxGatewayAssociationTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_gateway_association aws_dx_gateway_association}
 */
-export class DxGatewayAssociation extends cdktf.TerraformResource {
+export class DxGatewayAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -227,14 +227,14 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DxGatewayAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DxGatewayAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxGatewayAssociation to import
   * @param importFromId The id of the existing DxGatewayAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dx_gateway_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxGatewayAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_gateway_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_dx_gateway_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -281,7 +281,7 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
   // allowed_prefixes - computed: true, optional: true, required: false
   private _allowedPrefixes?: string[]; 
   public get allowedPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_prefixes'));
   }
   public set allowedPrefixes(value: string[]) {
     this._allowedPrefixes = value;
@@ -429,13 +429,13 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedPrefixes),
-      associated_gateway_id: cdktf.stringToTerraform(this._associatedGatewayId),
-      associated_gateway_owner_account_id: cdktf.stringToTerraform(this._associatedGatewayOwnerAccountId),
-      dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
-      id: cdktf.stringToTerraform(this._id),
-      proposal_id: cdktf.stringToTerraform(this._proposalId),
-      region: cdktf.stringToTerraform(this._region),
+      allowed_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedPrefixes),
+      associated_gateway_id: cdktn.stringToTerraform(this._associatedGatewayId),
+      associated_gateway_owner_account_id: cdktn.stringToTerraform(this._associatedGatewayOwnerAccountId),
+      dx_gateway_id: cdktn.stringToTerraform(this._dxGatewayId),
+      id: cdktn.stringToTerraform(this._id),
+      proposal_id: cdktn.stringToTerraform(this._proposalId),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: dxGatewayAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -443,43 +443,43 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedPrefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedPrefixes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       associated_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._associatedGatewayId),
+        value: cdktn.stringToHclTerraform(this._associatedGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       associated_gateway_owner_account_id: {
-        value: cdktf.stringToHclTerraform(this._associatedGatewayOwnerAccountId),
+        value: cdktn.stringToHclTerraform(this._associatedGatewayOwnerAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dx_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._dxGatewayId),
+        value: cdktn.stringToHclTerraform(this._dxGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       proposal_id: {
-        value: cdktf.stringToHclTerraform(this._proposalId),
+        value: cdktn.stringToHclTerraform(this._proposalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

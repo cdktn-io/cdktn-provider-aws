@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RdsExportTaskConfig extends cdktf.TerraformMetaArguments {
+export interface RdsExportTaskConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_export_task#export_only RdsExportTask#export_only}
   */
@@ -68,32 +68,32 @@ export interface RdsExportTaskTimeouts {
   readonly delete?: string;
 }
 
-export function rdsExportTaskTimeoutsToTerraform(struct?: RdsExportTaskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rdsExportTaskTimeoutsToTerraform(struct?: RdsExportTaskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function rdsExportTaskTimeoutsToHclTerraform(struct?: RdsExportTaskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rdsExportTaskTimeoutsToHclTerraform(struct?: RdsExportTaskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,19 +104,19 @@ export function rdsExportTaskTimeoutsToHclTerraform(struct?: RdsExportTaskTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RdsExportTaskTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RdsExportTaskTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RdsExportTaskTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RdsExportTaskTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,14 +133,14 @@ export class RdsExportTaskTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RdsExportTaskTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RdsExportTaskTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -188,7 +188,7 @@ export class RdsExportTaskTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_export_task aws_rds_export_task}
 */
-export class RdsExportTask extends cdktf.TerraformResource {
+export class RdsExportTask extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -199,14 +199,14 @@ export class RdsExportTask extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RdsExportTask resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RdsExportTask resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RdsExportTask to import
   * @param importFromId The id of the existing RdsExportTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/rds_export_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RdsExportTask to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_export_task", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_export_task", importId: importFromId, provider });
       }
 
   // ===========
@@ -431,14 +431,14 @@ export class RdsExportTask extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      export_only: cdktf.listMapper(cdktf.stringToTerraform, false)(this._exportOnly),
-      export_task_identifier: cdktf.stringToTerraform(this._exportTaskIdentifier),
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      region: cdktf.stringToTerraform(this._region),
-      s3_bucket_name: cdktf.stringToTerraform(this._s3BucketName),
-      s3_prefix: cdktf.stringToTerraform(this._s3Prefix),
-      source_arn: cdktf.stringToTerraform(this._sourceArn),
+      export_only: cdktn.listMapper(cdktn.stringToTerraform, false)(this._exportOnly),
+      export_task_identifier: cdktn.stringToTerraform(this._exportTaskIdentifier),
+      iam_role_arn: cdktn.stringToTerraform(this._iamRoleArn),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
+      region: cdktn.stringToTerraform(this._region),
+      s3_bucket_name: cdktn.stringToTerraform(this._s3BucketName),
+      s3_prefix: cdktn.stringToTerraform(this._s3Prefix),
+      source_arn: cdktn.stringToTerraform(this._sourceArn),
       timeouts: rdsExportTaskTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -446,49 +446,49 @@ export class RdsExportTask extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       export_only: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._exportOnly),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._exportOnly),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       export_task_identifier: {
-        value: cdktf.stringToHclTerraform(this._exportTaskIdentifier),
+        value: cdktn.stringToHclTerraform(this._exportTaskIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_role_arn: {
-        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        value: cdktn.stringToHclTerraform(this._iamRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_id: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_bucket_name: {
-        value: cdktf.stringToHclTerraform(this._s3BucketName),
+        value: cdktn.stringToHclTerraform(this._s3BucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       s3_prefix: {
-        value: cdktf.stringToHclTerraform(this._s3Prefix),
+        value: cdktn.stringToHclTerraform(this._s3Prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_arn: {
-        value: cdktf.stringToHclTerraform(this._sourceArn),
+        value: cdktn.stringToHclTerraform(this._sourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

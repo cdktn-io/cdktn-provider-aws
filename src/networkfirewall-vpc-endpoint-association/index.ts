@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkfirewallVpcEndpointAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkfirewallVpcEndpointAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_vpc_endpoint_association#description NetworkfirewallVpcEndpointAssociation#description}
   */
@@ -39,7 +39,7 @@ export interface NetworkfirewallVpcEndpointAssociationConfig extends cdktf.Terra
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_vpc_endpoint_association#subnet_mapping NetworkfirewallVpcEndpointAssociation#subnet_mapping}
   */
-  readonly subnetMapping?: NetworkfirewallVpcEndpointAssociationSubnetMapping[] | cdktf.IResolvable;
+  readonly subnetMapping?: NetworkfirewallVpcEndpointAssociationSubnetMapping[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -51,8 +51,8 @@ export interface NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStat
 }
 
 export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentToTerraform(struct?: NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -61,8 +61,8 @@ export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatu
 
 
 export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentToHclTerraform(struct?: NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -70,7 +70,7 @@ export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatu
   return attrs;
 }
 
-export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -79,7 +79,7 @@ export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAs
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -119,14 +119,14 @@ export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAs
   }
 }
 
-export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentList extends cdktf.ComplexList {
+export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -141,8 +141,8 @@ export interface NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStat
 }
 
 export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateToTerraform(struct?: NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncState): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -151,8 +151,8 @@ export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatu
 
 
 export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateToHclTerraform(struct?: NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncState): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -160,7 +160,7 @@ export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatu
   return attrs;
 }
 
-export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -169,7 +169,7 @@ export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAs
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -200,14 +200,14 @@ export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAs
   }
 }
 
-export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateList extends cdktf.ComplexList {
+export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -222,8 +222,8 @@ export interface NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStat
 }
 
 export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusToTerraform(struct?: NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -232,8 +232,8 @@ export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatu
 
 
 export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusToHclTerraform(struct?: NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -241,7 +241,7 @@ export function networkfirewallVpcEndpointAssociationVpcEndpointAssociationStatu
   return attrs;
 }
 
-export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -250,7 +250,7 @@ export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -276,14 +276,14 @@ export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusOu
   }
 }
 
-export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusList extends cdktf.ComplexList {
+export class NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -305,32 +305,32 @@ export interface NetworkfirewallVpcEndpointAssociationSubnetMapping {
   readonly subnetId: string;
 }
 
-export function networkfirewallVpcEndpointAssociationSubnetMappingToTerraform(struct?: NetworkfirewallVpcEndpointAssociationSubnetMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallVpcEndpointAssociationSubnetMappingToTerraform(struct?: NetworkfirewallVpcEndpointAssociationSubnetMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address_type: cdktf.stringToTerraform(struct!.ipAddressType),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    ip_address_type: cdktn.stringToTerraform(struct!.ipAddressType),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function networkfirewallVpcEndpointAssociationSubnetMappingToHclTerraform(struct?: NetworkfirewallVpcEndpointAssociationSubnetMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallVpcEndpointAssociationSubnetMappingToHclTerraform(struct?: NetworkfirewallVpcEndpointAssociationSubnetMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address_type: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddressType),
+      value: cdktn.stringToHclTerraform(struct!.ipAddressType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -341,9 +341,9 @@ export function networkfirewallVpcEndpointAssociationSubnetMappingToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallVpcEndpointAssociationSubnetMappingOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallVpcEndpointAssociationSubnetMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -351,11 +351,11 @@ export class NetworkfirewallVpcEndpointAssociationSubnetMappingOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkfirewallVpcEndpointAssociationSubnetMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallVpcEndpointAssociationSubnetMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -372,14 +372,14 @@ export class NetworkfirewallVpcEndpointAssociationSubnetMappingOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallVpcEndpointAssociationSubnetMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallVpcEndpointAssociationSubnetMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ipAddressType = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -421,15 +421,15 @@ export class NetworkfirewallVpcEndpointAssociationSubnetMappingOutputReference e
   }
 }
 
-export class NetworkfirewallVpcEndpointAssociationSubnetMappingList extends cdktf.ComplexList {
-  public internalValue? : NetworkfirewallVpcEndpointAssociationSubnetMapping[] | cdktf.IResolvable
+export class NetworkfirewallVpcEndpointAssociationSubnetMappingList extends cdktn.ComplexList {
+  public internalValue? : NetworkfirewallVpcEndpointAssociationSubnetMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -455,32 +455,32 @@ export interface NetworkfirewallVpcEndpointAssociationTimeouts {
   readonly delete?: string;
 }
 
-export function networkfirewallVpcEndpointAssociationTimeoutsToTerraform(struct?: NetworkfirewallVpcEndpointAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallVpcEndpointAssociationTimeoutsToTerraform(struct?: NetworkfirewallVpcEndpointAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function networkfirewallVpcEndpointAssociationTimeoutsToHclTerraform(struct?: NetworkfirewallVpcEndpointAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkfirewallVpcEndpointAssociationTimeoutsToHclTerraform(struct?: NetworkfirewallVpcEndpointAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -491,19 +491,19 @@ export function networkfirewallVpcEndpointAssociationTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkfirewallVpcEndpointAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkfirewallVpcEndpointAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -520,14 +520,14 @@ export class NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkfirewallVpcEndpointAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkfirewallVpcEndpointAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -575,7 +575,7 @@ export class NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_vpc_endpoint_association aws_networkfirewall_vpc_endpoint_association}
 */
-export class NetworkfirewallVpcEndpointAssociation extends cdktf.TerraformResource {
+export class NetworkfirewallVpcEndpointAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -586,14 +586,14 @@ export class NetworkfirewallVpcEndpointAssociation extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkfirewallVpcEndpointAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkfirewallVpcEndpointAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkfirewallVpcEndpointAssociation to import
   * @param importFromId The id of the existing NetworkfirewallVpcEndpointAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/networkfirewall_vpc_endpoint_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkfirewallVpcEndpointAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkfirewall_vpc_endpoint_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkfirewall_vpc_endpoint_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -698,7 +698,7 @@ export class NetworkfirewallVpcEndpointAssociation extends cdktf.TerraformResour
   }
 
   // tags_all - computed: true, optional: false, required: false
-  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  private _tagsAll = new cdktn.StringMap(this, "tags_all");
   public get tagsAll() {
     return this._tagsAll;
   }
@@ -737,7 +737,7 @@ export class NetworkfirewallVpcEndpointAssociation extends cdktf.TerraformResour
   public get subnetMapping() {
     return this._subnetMapping;
   }
-  public putSubnetMapping(value: NetworkfirewallVpcEndpointAssociationSubnetMapping[] | cdktf.IResolvable) {
+  public putSubnetMapping(value: NetworkfirewallVpcEndpointAssociationSubnetMapping[] | cdktn.IResolvable) {
     this._subnetMapping.internalValue = value;
   }
   public resetSubnetMapping() {
@@ -770,12 +770,12 @@ export class NetworkfirewallVpcEndpointAssociation extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      firewall_arn: cdktf.stringToTerraform(this._firewallArn),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      subnet_mapping: cdktf.listMapper(networkfirewallVpcEndpointAssociationSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      firewall_arn: cdktn.stringToTerraform(this._firewallArn),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      subnet_mapping: cdktn.listMapper(networkfirewallVpcEndpointAssociationSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
       timeouts: networkfirewallVpcEndpointAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -783,37 +783,37 @@ export class NetworkfirewallVpcEndpointAssociation extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       firewall_arn: {
-        value: cdktf.stringToHclTerraform(this._firewallArn),
+        value: cdktn.stringToHclTerraform(this._firewallArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_mapping: {
-        value: cdktf.listMapperHcl(networkfirewallVpcEndpointAssociationSubnetMappingToHclTerraform, true)(this._subnetMapping.internalValue),
+        value: cdktn.listMapperHcl(networkfirewallVpcEndpointAssociationSubnetMappingToHclTerraform, true)(this._subnetMapping.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkfirewallVpcEndpointAssociationSubnetMappingList",

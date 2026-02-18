@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlobalacceleratorEndpointGroupConfig extends cdktf.TerraformMetaArguments {
+export interface GlobalacceleratorEndpointGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_endpoint_group#endpoint_group_region GlobalacceleratorEndpointGroup#endpoint_group_region}
   */
@@ -56,13 +56,13 @@ export interface GlobalacceleratorEndpointGroupConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_endpoint_group#endpoint_configuration GlobalacceleratorEndpointGroup#endpoint_configuration}
   */
-  readonly endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable;
+  readonly endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktn.IResolvable;
   /**
   * port_override block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_endpoint_group#port_override GlobalacceleratorEndpointGroup#port_override}
   */
-  readonly portOverride?: GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable;
+  readonly portOverride?: GlobalacceleratorEndpointGroupPortOverride[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -78,7 +78,7 @@ export interface GlobalacceleratorEndpointGroupEndpointConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_endpoint_group#client_ip_preservation_enabled GlobalacceleratorEndpointGroup#client_ip_preservation_enabled}
   */
-  readonly clientIpPreservationEnabled?: boolean | cdktf.IResolvable;
+  readonly clientIpPreservationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_endpoint_group#endpoint_id GlobalacceleratorEndpointGroup#endpoint_id}
   */
@@ -89,46 +89,46 @@ export interface GlobalacceleratorEndpointGroupEndpointConfiguration {
   readonly weight?: number;
 }
 
-export function globalacceleratorEndpointGroupEndpointConfigurationToTerraform(struct?: GlobalacceleratorEndpointGroupEndpointConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorEndpointGroupEndpointConfigurationToTerraform(struct?: GlobalacceleratorEndpointGroupEndpointConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attachment_arn: cdktf.stringToTerraform(struct!.attachmentArn),
-    client_ip_preservation_enabled: cdktf.booleanToTerraform(struct!.clientIpPreservationEnabled),
-    endpoint_id: cdktf.stringToTerraform(struct!.endpointId),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    attachment_arn: cdktn.stringToTerraform(struct!.attachmentArn),
+    client_ip_preservation_enabled: cdktn.booleanToTerraform(struct!.clientIpPreservationEnabled),
+    endpoint_id: cdktn.stringToTerraform(struct!.endpointId),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
-export function globalacceleratorEndpointGroupEndpointConfigurationToHclTerraform(struct?: GlobalacceleratorEndpointGroupEndpointConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorEndpointGroupEndpointConfigurationToHclTerraform(struct?: GlobalacceleratorEndpointGroupEndpointConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attachment_arn: {
-      value: cdktf.stringToHclTerraform(struct!.attachmentArn),
+      value: cdktn.stringToHclTerraform(struct!.attachmentArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_ip_preservation_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.clientIpPreservationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.clientIpPreservationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     endpoint_id: {
-      value: cdktf.stringToHclTerraform(struct!.endpointId),
+      value: cdktn.stringToHclTerraform(struct!.endpointId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -139,9 +139,9 @@ export function globalacceleratorEndpointGroupEndpointConfigurationToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference extends cdktf.ComplexObject {
+export class GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -149,11 +149,11 @@ export class GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlobalacceleratorEndpointGroupEndpointConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): GlobalacceleratorEndpointGroupEndpointConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -178,7 +178,7 @@ export class GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalacceleratorEndpointGroupEndpointConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlobalacceleratorEndpointGroupEndpointConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -187,7 +187,7 @@ export class GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference 
       this._endpointId = undefined;
       this._weight = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -218,11 +218,11 @@ export class GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference 
   }
 
   // client_ip_preservation_enabled - computed: true, optional: true, required: false
-  private _clientIpPreservationEnabled?: boolean | cdktf.IResolvable; 
+  private _clientIpPreservationEnabled?: boolean | cdktn.IResolvable; 
   public get clientIpPreservationEnabled() {
     return this.getBooleanAttribute('client_ip_preservation_enabled');
   }
-  public set clientIpPreservationEnabled(value: boolean | cdktf.IResolvable) {
+  public set clientIpPreservationEnabled(value: boolean | cdktn.IResolvable) {
     this._clientIpPreservationEnabled = value;
   }
   public resetClientIpPreservationEnabled() {
@@ -266,15 +266,15 @@ export class GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference 
   }
 }
 
-export class GlobalacceleratorEndpointGroupEndpointConfigurationList extends cdktf.ComplexList {
-  public internalValue? : GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable
+export class GlobalacceleratorEndpointGroupEndpointConfigurationList extends cdktn.ComplexList {
+  public internalValue? : GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -296,32 +296,32 @@ export interface GlobalacceleratorEndpointGroupPortOverride {
   readonly listenerPort: number;
 }
 
-export function globalacceleratorEndpointGroupPortOverrideToTerraform(struct?: GlobalacceleratorEndpointGroupPortOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorEndpointGroupPortOverrideToTerraform(struct?: GlobalacceleratorEndpointGroupPortOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_port: cdktf.numberToTerraform(struct!.endpointPort),
-    listener_port: cdktf.numberToTerraform(struct!.listenerPort),
+    endpoint_port: cdktn.numberToTerraform(struct!.endpointPort),
+    listener_port: cdktn.numberToTerraform(struct!.listenerPort),
   }
 }
 
 
-export function globalacceleratorEndpointGroupPortOverrideToHclTerraform(struct?: GlobalacceleratorEndpointGroupPortOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorEndpointGroupPortOverrideToHclTerraform(struct?: GlobalacceleratorEndpointGroupPortOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_port: {
-      value: cdktf.numberToHclTerraform(struct!.endpointPort),
+      value: cdktn.numberToHclTerraform(struct!.endpointPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     listener_port: {
-      value: cdktf.numberToHclTerraform(struct!.listenerPort),
+      value: cdktn.numberToHclTerraform(struct!.listenerPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -332,9 +332,9 @@ export function globalacceleratorEndpointGroupPortOverrideToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlobalacceleratorEndpointGroupPortOverrideOutputReference extends cdktf.ComplexObject {
+export class GlobalacceleratorEndpointGroupPortOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -342,11 +342,11 @@ export class GlobalacceleratorEndpointGroupPortOverrideOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GlobalacceleratorEndpointGroupPortOverride | cdktf.IResolvable | undefined {
+  public get internalValue(): GlobalacceleratorEndpointGroupPortOverride | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -363,14 +363,14 @@ export class GlobalacceleratorEndpointGroupPortOverrideOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalacceleratorEndpointGroupPortOverride | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlobalacceleratorEndpointGroupPortOverride | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endpointPort = undefined;
       this._listenerPort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -409,15 +409,15 @@ export class GlobalacceleratorEndpointGroupPortOverrideOutputReference extends c
   }
 }
 
-export class GlobalacceleratorEndpointGroupPortOverrideList extends cdktf.ComplexList {
-  public internalValue? : GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable
+export class GlobalacceleratorEndpointGroupPortOverrideList extends cdktn.ComplexList {
+  public internalValue? : GlobalacceleratorEndpointGroupPortOverride[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -443,39 +443,39 @@ export interface GlobalacceleratorEndpointGroupTimeouts {
   readonly update?: string;
 }
 
-export function globalacceleratorEndpointGroupTimeoutsToTerraform(struct?: GlobalacceleratorEndpointGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorEndpointGroupTimeoutsToTerraform(struct?: GlobalacceleratorEndpointGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function globalacceleratorEndpointGroupTimeoutsToHclTerraform(struct?: GlobalacceleratorEndpointGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalacceleratorEndpointGroupTimeoutsToHclTerraform(struct?: GlobalacceleratorEndpointGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -486,19 +486,19 @@ export function globalacceleratorEndpointGroupTimeoutsToHclTerraform(struct?: Gl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GlobalacceleratorEndpointGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GlobalacceleratorEndpointGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GlobalacceleratorEndpointGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GlobalacceleratorEndpointGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -519,7 +519,7 @@ export class GlobalacceleratorEndpointGroupTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalacceleratorEndpointGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlobalacceleratorEndpointGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -527,7 +527,7 @@ export class GlobalacceleratorEndpointGroupTimeoutsOutputReference extends cdktf
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -592,7 +592,7 @@ export class GlobalacceleratorEndpointGroupTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_endpoint_group aws_globalaccelerator_endpoint_group}
 */
-export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
+export class GlobalacceleratorEndpointGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -603,14 +603,14 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlobalacceleratorEndpointGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlobalacceleratorEndpointGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlobalacceleratorEndpointGroup to import
   * @param importFromId The id of the existing GlobalacceleratorEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/globalaccelerator_endpoint_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlobalacceleratorEndpointGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_globalaccelerator_endpoint_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_globalaccelerator_endpoint_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -809,7 +809,7 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
   public get endpointConfiguration() {
     return this._endpointConfiguration;
   }
-  public putEndpointConfiguration(value: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable) {
+  public putEndpointConfiguration(value: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktn.IResolvable) {
     this._endpointConfiguration.internalValue = value;
   }
   public resetEndpointConfiguration() {
@@ -825,7 +825,7 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
   public get portOverride() {
     return this._portOverride;
   }
-  public putPortOverride(value: GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable) {
+  public putPortOverride(value: GlobalacceleratorEndpointGroupPortOverride[] | cdktn.IResolvable) {
     this._portOverride.internalValue = value;
   }
   public resetPortOverride() {
@@ -858,17 +858,17 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint_group_region: cdktf.stringToTerraform(this._endpointGroupRegion),
-      health_check_interval_seconds: cdktf.numberToTerraform(this._healthCheckIntervalSeconds),
-      health_check_path: cdktf.stringToTerraform(this._healthCheckPath),
-      health_check_port: cdktf.numberToTerraform(this._healthCheckPort),
-      health_check_protocol: cdktf.stringToTerraform(this._healthCheckProtocol),
-      id: cdktf.stringToTerraform(this._id),
-      listener_arn: cdktf.stringToTerraform(this._listenerArn),
-      threshold_count: cdktf.numberToTerraform(this._thresholdCount),
-      traffic_dial_percentage: cdktf.numberToTerraform(this._trafficDialPercentage),
-      endpoint_configuration: cdktf.listMapper(globalacceleratorEndpointGroupEndpointConfigurationToTerraform, true)(this._endpointConfiguration.internalValue),
-      port_override: cdktf.listMapper(globalacceleratorEndpointGroupPortOverrideToTerraform, true)(this._portOverride.internalValue),
+      endpoint_group_region: cdktn.stringToTerraform(this._endpointGroupRegion),
+      health_check_interval_seconds: cdktn.numberToTerraform(this._healthCheckIntervalSeconds),
+      health_check_path: cdktn.stringToTerraform(this._healthCheckPath),
+      health_check_port: cdktn.numberToTerraform(this._healthCheckPort),
+      health_check_protocol: cdktn.stringToTerraform(this._healthCheckProtocol),
+      id: cdktn.stringToTerraform(this._id),
+      listener_arn: cdktn.stringToTerraform(this._listenerArn),
+      threshold_count: cdktn.numberToTerraform(this._thresholdCount),
+      traffic_dial_percentage: cdktn.numberToTerraform(this._trafficDialPercentage),
+      endpoint_configuration: cdktn.listMapper(globalacceleratorEndpointGroupEndpointConfigurationToTerraform, true)(this._endpointConfiguration.internalValue),
+      port_override: cdktn.listMapper(globalacceleratorEndpointGroupPortOverrideToTerraform, true)(this._portOverride.internalValue),
       timeouts: globalacceleratorEndpointGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -876,67 +876,67 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       endpoint_group_region: {
-        value: cdktf.stringToHclTerraform(this._endpointGroupRegion),
+        value: cdktn.stringToHclTerraform(this._endpointGroupRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       health_check_interval_seconds: {
-        value: cdktf.numberToHclTerraform(this._healthCheckIntervalSeconds),
+        value: cdktn.numberToHclTerraform(this._healthCheckIntervalSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       health_check_path: {
-        value: cdktf.stringToHclTerraform(this._healthCheckPath),
+        value: cdktn.stringToHclTerraform(this._healthCheckPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       health_check_port: {
-        value: cdktf.numberToHclTerraform(this._healthCheckPort),
+        value: cdktn.numberToHclTerraform(this._healthCheckPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       health_check_protocol: {
-        value: cdktf.stringToHclTerraform(this._healthCheckProtocol),
+        value: cdktn.stringToHclTerraform(this._healthCheckProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       listener_arn: {
-        value: cdktf.stringToHclTerraform(this._listenerArn),
+        value: cdktn.stringToHclTerraform(this._listenerArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       threshold_count: {
-        value: cdktf.numberToHclTerraform(this._thresholdCount),
+        value: cdktn.numberToHclTerraform(this._thresholdCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       traffic_dial_percentage: {
-        value: cdktf.numberToHclTerraform(this._trafficDialPercentage),
+        value: cdktn.numberToHclTerraform(this._trafficDialPercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       endpoint_configuration: {
-        value: cdktf.listMapperHcl(globalacceleratorEndpointGroupEndpointConfigurationToHclTerraform, true)(this._endpointConfiguration.internalValue),
+        value: cdktn.listMapperHcl(globalacceleratorEndpointGroupEndpointConfigurationToHclTerraform, true)(this._endpointConfiguration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "GlobalacceleratorEndpointGroupEndpointConfigurationList",
       },
       port_override: {
-        value: cdktf.listMapperHcl(globalacceleratorEndpointGroupPortOverrideToHclTerraform, true)(this._portOverride.internalValue),
+        value: cdktn.listMapperHcl(globalacceleratorEndpointGroupPortOverrideToHclTerraform, true)(this._portOverride.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "GlobalacceleratorEndpointGroupPortOverrideList",

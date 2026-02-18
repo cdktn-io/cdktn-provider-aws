@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FisExperimentTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface FisExperimentTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template#description FisExperimentTemplate#description}
   */
@@ -46,7 +46,7 @@ export interface FisExperimentTemplateConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template#action FisExperimentTemplate#action}
   */
-  readonly action: FisExperimentTemplateAction[] | cdktf.IResolvable;
+  readonly action: FisExperimentTemplateAction[] | cdktn.IResolvable;
   /**
   * experiment_options block
   *
@@ -70,13 +70,13 @@ export interface FisExperimentTemplateConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template#stop_condition FisExperimentTemplate#stop_condition}
   */
-  readonly stopCondition: FisExperimentTemplateStopCondition[] | cdktf.IResolvable;
+  readonly stopCondition: FisExperimentTemplateStopCondition[] | cdktn.IResolvable;
   /**
   * target block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template#target FisExperimentTemplate#target}
   */
-  readonly target?: FisExperimentTemplateTarget[] | cdktf.IResolvable;
+  readonly target?: FisExperimentTemplateTarget[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -95,32 +95,32 @@ export interface FisExperimentTemplateActionParameter {
   readonly value: string;
 }
 
-export function fisExperimentTemplateActionParameterToTerraform(struct?: FisExperimentTemplateActionParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateActionParameterToTerraform(struct?: FisExperimentTemplateActionParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function fisExperimentTemplateActionParameterToHclTerraform(struct?: FisExperimentTemplateActionParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateActionParameterToHclTerraform(struct?: FisExperimentTemplateActionParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,9 +131,9 @@ export function fisExperimentTemplateActionParameterToHclTerraform(struct?: FisE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateActionParameterOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateActionParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -141,11 +141,11 @@ export class FisExperimentTemplateActionParameterOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FisExperimentTemplateActionParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): FisExperimentTemplateActionParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,14 +162,14 @@ export class FisExperimentTemplateActionParameterOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FisExperimentTemplateActionParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FisExperimentTemplateActionParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -208,15 +208,15 @@ export class FisExperimentTemplateActionParameterOutputReference extends cdktf.C
   }
 }
 
-export class FisExperimentTemplateActionParameterList extends cdktf.ComplexList {
-  public internalValue? : FisExperimentTemplateActionParameter[] | cdktf.IResolvable
+export class FisExperimentTemplateActionParameterList extends cdktn.ComplexList {
+  public internalValue? : FisExperimentTemplateActionParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -239,31 +239,31 @@ export interface FisExperimentTemplateActionTarget {
 }
 
 export function fisExperimentTemplateActionTargetToTerraform(struct?: FisExperimentTemplateActionTargetOutputReference | FisExperimentTemplateActionTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function fisExperimentTemplateActionTargetToHclTerraform(struct?: FisExperimentTemplateActionTargetOutputReference | FisExperimentTemplateActionTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -274,14 +274,14 @@ export function fisExperimentTemplateActionTargetToHclTerraform(struct?: FisExpe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateActionTargetOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateActionTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -360,7 +360,7 @@ export interface FisExperimentTemplateAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template#parameter FisExperimentTemplate#parameter}
   */
-  readonly parameter?: FisExperimentTemplateActionParameter[] | cdktf.IResolvable;
+  readonly parameter?: FisExperimentTemplateActionParameter[] | cdktn.IResolvable;
   /**
   * target block
   *
@@ -369,54 +369,54 @@ export interface FisExperimentTemplateAction {
   readonly target?: FisExperimentTemplateActionTarget;
 }
 
-export function fisExperimentTemplateActionToTerraform(struct?: FisExperimentTemplateAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateActionToTerraform(struct?: FisExperimentTemplateAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action_id: cdktf.stringToTerraform(struct!.actionId),
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    start_after: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.startAfter),
-    parameter: cdktf.listMapper(fisExperimentTemplateActionParameterToTerraform, true)(struct!.parameter),
+    action_id: cdktn.stringToTerraform(struct!.actionId),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    start_after: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.startAfter),
+    parameter: cdktn.listMapper(fisExperimentTemplateActionParameterToTerraform, true)(struct!.parameter),
     target: fisExperimentTemplateActionTargetToTerraform(struct!.target),
   }
 }
 
 
-export function fisExperimentTemplateActionToHclTerraform(struct?: FisExperimentTemplateAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateActionToHclTerraform(struct?: FisExperimentTemplateAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action_id: {
-      value: cdktf.stringToHclTerraform(struct!.actionId),
+      value: cdktn.stringToHclTerraform(struct!.actionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_after: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.startAfter),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.startAfter),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     parameter: {
-      value: cdktf.listMapperHcl(fisExperimentTemplateActionParameterToHclTerraform, true)(struct!.parameter),
+      value: cdktn.listMapperHcl(fisExperimentTemplateActionParameterToHclTerraform, true)(struct!.parameter),
       isBlock: true,
       type: "set",
       storageClassType: "FisExperimentTemplateActionParameterList",
@@ -433,9 +433,9 @@ export function fisExperimentTemplateActionToHclTerraform(struct?: FisExperiment
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateActionOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -443,11 +443,11 @@ export class FisExperimentTemplateActionOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FisExperimentTemplateAction | cdktf.IResolvable | undefined {
+  public get internalValue(): FisExperimentTemplateAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -480,7 +480,7 @@ export class FisExperimentTemplateActionOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FisExperimentTemplateAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FisExperimentTemplateAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -491,7 +491,7 @@ export class FisExperimentTemplateActionOutputReference extends cdktf.ComplexObj
       this._parameter.internalValue = undefined;
       this._target.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -552,7 +552,7 @@ export class FisExperimentTemplateActionOutputReference extends cdktf.ComplexObj
   // start_after - computed: false, optional: true, required: false
   private _startAfter?: string[]; 
   public get startAfter() {
-    return cdktf.Fn.tolist(this.getListAttribute('start_after'));
+    return cdktn.Fn.tolist(this.getListAttribute('start_after'));
   }
   public set startAfter(value: string[]) {
     this._startAfter = value;
@@ -570,7 +570,7 @@ export class FisExperimentTemplateActionOutputReference extends cdktf.ComplexObj
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: FisExperimentTemplateActionParameter[] | cdktf.IResolvable) {
+  public putParameter(value: FisExperimentTemplateActionParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -598,15 +598,15 @@ export class FisExperimentTemplateActionOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class FisExperimentTemplateActionList extends cdktf.ComplexList {
-  public internalValue? : FisExperimentTemplateAction[] | cdktf.IResolvable
+export class FisExperimentTemplateActionList extends cdktn.ComplexList {
+  public internalValue? : FisExperimentTemplateAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -629,31 +629,31 @@ export interface FisExperimentTemplateExperimentOptions {
 }
 
 export function fisExperimentTemplateExperimentOptionsToTerraform(struct?: FisExperimentTemplateExperimentOptionsOutputReference | FisExperimentTemplateExperimentOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_targeting: cdktf.stringToTerraform(struct!.accountTargeting),
-    empty_target_resolution_mode: cdktf.stringToTerraform(struct!.emptyTargetResolutionMode),
+    account_targeting: cdktn.stringToTerraform(struct!.accountTargeting),
+    empty_target_resolution_mode: cdktn.stringToTerraform(struct!.emptyTargetResolutionMode),
   }
 }
 
 
 export function fisExperimentTemplateExperimentOptionsToHclTerraform(struct?: FisExperimentTemplateExperimentOptionsOutputReference | FisExperimentTemplateExperimentOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_targeting: {
-      value: cdktf.stringToHclTerraform(struct!.accountTargeting),
+      value: cdktn.stringToHclTerraform(struct!.accountTargeting),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     empty_target_resolution_mode: {
-      value: cdktf.stringToHclTerraform(struct!.emptyTargetResolutionMode),
+      value: cdktn.stringToHclTerraform(struct!.emptyTargetResolutionMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -664,14 +664,14 @@ export function fisExperimentTemplateExperimentOptionsToHclTerraform(struct?: Fi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateExperimentOptionsOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateExperimentOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -741,25 +741,25 @@ export interface FisExperimentTemplateExperimentReportConfigurationDataSourcesCl
   readonly dashboardArn?: string;
 }
 
-export function fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dashboard_arn: cdktf.stringToTerraform(struct!.dashboardArn),
+    dashboard_arn: cdktn.stringToTerraform(struct!.dashboardArn),
   }
 }
 
 
-export function fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dashboard_arn: {
-      value: cdktf.stringToHclTerraform(struct!.dashboardArn),
+      value: cdktn.stringToHclTerraform(struct!.dashboardArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -770,9 +770,9 @@ export function fisExperimentTemplateExperimentReportConfigurationDataSourcesClo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -780,11 +780,11 @@ export class FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudw
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktf.IResolvable | undefined {
+  public get internalValue(): FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -797,13 +797,13 @@ export class FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudw
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dashboardArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -831,15 +831,15 @@ export class FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudw
   }
 }
 
-export class FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardList extends cdktf.ComplexList {
-  public internalValue? : FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard[] | cdktf.IResolvable
+export class FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardList extends cdktn.ComplexList {
+  public internalValue? : FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -856,28 +856,28 @@ export interface FisExperimentTemplateExperimentReportConfigurationDataSources {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template#cloudwatch_dashboard FisExperimentTemplate#cloudwatch_dashboard}
   */
-  readonly cloudwatchDashboard?: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard[] | cdktf.IResolvable;
+  readonly cloudwatchDashboard?: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard[] | cdktn.IResolvable;
 }
 
 export function fisExperimentTemplateExperimentReportConfigurationDataSourcesToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesOutputReference | FisExperimentTemplateExperimentReportConfigurationDataSources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_dashboard: cdktf.listMapper(fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToTerraform, true)(struct!.cloudwatchDashboard),
+    cloudwatch_dashboard: cdktn.listMapper(fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToTerraform, true)(struct!.cloudwatchDashboard),
   }
 }
 
 
 export function fisExperimentTemplateExperimentReportConfigurationDataSourcesToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationDataSourcesOutputReference | FisExperimentTemplateExperimentReportConfigurationDataSources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_dashboard: {
-      value: cdktf.listMapperHcl(fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToHclTerraform, true)(struct!.cloudwatchDashboard),
+      value: cdktn.listMapperHcl(fisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardToHclTerraform, true)(struct!.cloudwatchDashboard),
       isBlock: true,
       type: "list",
       storageClassType: "FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardList",
@@ -888,14 +888,14 @@ export function fisExperimentTemplateExperimentReportConfigurationDataSourcesToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateExperimentReportConfigurationDataSourcesOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateExperimentReportConfigurationDataSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -925,7 +925,7 @@ export class FisExperimentTemplateExperimentReportConfigurationDataSourcesOutput
   public get cloudwatchDashboard() {
     return this._cloudwatchDashboard;
   }
-  public putCloudwatchDashboard(value: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard[] | cdktf.IResolvable) {
+  public putCloudwatchDashboard(value: FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboard[] | cdktn.IResolvable) {
     this._cloudwatchDashboard.internalValue = value;
   }
   public resetCloudwatchDashboard() {
@@ -948,31 +948,31 @@ export interface FisExperimentTemplateExperimentReportConfigurationOutputsS3Conf
 }
 
 export function fisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference | FisExperimentTemplateExperimentReportConfigurationOutputsS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
 export function fisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference | FisExperimentTemplateExperimentReportConfigurationOutputsS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -983,14 +983,14 @@ export function fisExperimentTemplateExperimentReportConfigurationOutputsS3Confi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1060,8 +1060,8 @@ export interface FisExperimentTemplateExperimentReportConfigurationOutputs {
 }
 
 export function fisExperimentTemplateExperimentReportConfigurationOutputsToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputsOutputReference | FisExperimentTemplateExperimentReportConfigurationOutputs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1071,8 +1071,8 @@ export function fisExperimentTemplateExperimentReportConfigurationOutputsToTerra
 
 
 export function fisExperimentTemplateExperimentReportConfigurationOutputsToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputsOutputReference | FisExperimentTemplateExperimentReportConfigurationOutputs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1088,14 +1088,14 @@ export function fisExperimentTemplateExperimentReportConfigurationOutputsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateExperimentReportConfigurationOutputsOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateExperimentReportConfigurationOutputsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1160,13 +1160,13 @@ export interface FisExperimentTemplateExperimentReportConfiguration {
 }
 
 export function fisExperimentTemplateExperimentReportConfigurationToTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputReference | FisExperimentTemplateExperimentReportConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    post_experiment_duration: cdktf.stringToTerraform(struct!.postExperimentDuration),
-    pre_experiment_duration: cdktf.stringToTerraform(struct!.preExperimentDuration),
+    post_experiment_duration: cdktn.stringToTerraform(struct!.postExperimentDuration),
+    pre_experiment_duration: cdktn.stringToTerraform(struct!.preExperimentDuration),
     data_sources: fisExperimentTemplateExperimentReportConfigurationDataSourcesToTerraform(struct!.dataSources),
     outputs: fisExperimentTemplateExperimentReportConfigurationOutputsToTerraform(struct!.outputs),
   }
@@ -1174,19 +1174,19 @@ export function fisExperimentTemplateExperimentReportConfigurationToTerraform(st
 
 
 export function fisExperimentTemplateExperimentReportConfigurationToHclTerraform(struct?: FisExperimentTemplateExperimentReportConfigurationOutputReference | FisExperimentTemplateExperimentReportConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     post_experiment_duration: {
-      value: cdktf.stringToHclTerraform(struct!.postExperimentDuration),
+      value: cdktn.stringToHclTerraform(struct!.postExperimentDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pre_experiment_duration: {
-      value: cdktf.stringToHclTerraform(struct!.preExperimentDuration),
+      value: cdktn.stringToHclTerraform(struct!.preExperimentDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1209,14 +1209,14 @@ export function fisExperimentTemplateExperimentReportConfigurationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateExperimentReportConfigurationOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateExperimentReportConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1331,24 +1331,24 @@ export interface FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguratio
 }
 
 export function fisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationToTerraform(struct?: FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference | FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_group_arn: cdktf.stringToTerraform(struct!.logGroupArn),
+    log_group_arn: cdktn.stringToTerraform(struct!.logGroupArn),
   }
 }
 
 
 export function fisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationToHclTerraform(struct?: FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference | FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_group_arn: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupArn),
+      value: cdktn.stringToHclTerraform(struct!.logGroupArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1359,14 +1359,14 @@ export function fisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1416,31 +1416,31 @@ export interface FisExperimentTemplateLogConfigurationS3Configuration {
 }
 
 export function fisExperimentTemplateLogConfigurationS3ConfigurationToTerraform(struct?: FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference | FisExperimentTemplateLogConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
 export function fisExperimentTemplateLogConfigurationS3ConfigurationToHclTerraform(struct?: FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference | FisExperimentTemplateLogConfigurationS3Configuration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1451,14 +1451,14 @@ export function fisExperimentTemplateLogConfigurationS3ConfigurationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1538,12 +1538,12 @@ export interface FisExperimentTemplateLogConfiguration {
 }
 
 export function fisExperimentTemplateLogConfigurationToTerraform(struct?: FisExperimentTemplateLogConfigurationOutputReference | FisExperimentTemplateLogConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_schema_version: cdktf.numberToTerraform(struct!.logSchemaVersion),
+    log_schema_version: cdktn.numberToTerraform(struct!.logSchemaVersion),
     cloudwatch_logs_configuration: fisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationToTerraform(struct!.cloudwatchLogsConfiguration),
     s3_configuration: fisExperimentTemplateLogConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
   }
@@ -1551,13 +1551,13 @@ export function fisExperimentTemplateLogConfigurationToTerraform(struct?: FisExp
 
 
 export function fisExperimentTemplateLogConfigurationToHclTerraform(struct?: FisExperimentTemplateLogConfigurationOutputReference | FisExperimentTemplateLogConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_schema_version: {
-      value: cdktf.numberToHclTerraform(struct!.logSchemaVersion),
+      value: cdktn.numberToHclTerraform(struct!.logSchemaVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1580,14 +1580,14 @@ export function fisExperimentTemplateLogConfigurationToHclTerraform(struct?: Fis
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateLogConfigurationOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateLogConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1680,32 +1680,32 @@ export interface FisExperimentTemplateStopCondition {
   readonly value?: string;
 }
 
-export function fisExperimentTemplateStopConditionToTerraform(struct?: FisExperimentTemplateStopCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateStopConditionToTerraform(struct?: FisExperimentTemplateStopCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
-    value: cdktf.stringToTerraform(struct!.value),
+    source: cdktn.stringToTerraform(struct!.source),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function fisExperimentTemplateStopConditionToHclTerraform(struct?: FisExperimentTemplateStopCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateStopConditionToHclTerraform(struct?: FisExperimentTemplateStopCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1716,9 +1716,9 @@ export function fisExperimentTemplateStopConditionToHclTerraform(struct?: FisExp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateStopConditionOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateStopConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1726,11 +1726,11 @@ export class FisExperimentTemplateStopConditionOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FisExperimentTemplateStopCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): FisExperimentTemplateStopCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1747,14 +1747,14 @@ export class FisExperimentTemplateStopConditionOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FisExperimentTemplateStopCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FisExperimentTemplateStopCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1796,15 +1796,15 @@ export class FisExperimentTemplateStopConditionOutputReference extends cdktf.Com
   }
 }
 
-export class FisExperimentTemplateStopConditionList extends cdktf.ComplexList {
-  public internalValue? : FisExperimentTemplateStopCondition[] | cdktf.IResolvable
+export class FisExperimentTemplateStopConditionList extends cdktn.ComplexList {
+  public internalValue? : FisExperimentTemplateStopCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1826,32 +1826,32 @@ export interface FisExperimentTemplateTargetFilter {
   readonly values: string[];
 }
 
-export function fisExperimentTemplateTargetFilterToTerraform(struct?: FisExperimentTemplateTargetFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateTargetFilterToTerraform(struct?: FisExperimentTemplateTargetFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    path: cdktn.stringToTerraform(struct!.path),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function fisExperimentTemplateTargetFilterToHclTerraform(struct?: FisExperimentTemplateTargetFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateTargetFilterToHclTerraform(struct?: FisExperimentTemplateTargetFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1862,9 +1862,9 @@ export function fisExperimentTemplateTargetFilterToHclTerraform(struct?: FisExpe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateTargetFilterOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateTargetFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1872,11 +1872,11 @@ export class FisExperimentTemplateTargetFilterOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FisExperimentTemplateTargetFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): FisExperimentTemplateTargetFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1893,14 +1893,14 @@ export class FisExperimentTemplateTargetFilterOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FisExperimentTemplateTargetFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FisExperimentTemplateTargetFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._path = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1928,7 +1928,7 @@ export class FisExperimentTemplateTargetFilterOutputReference extends cdktf.Comp
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1939,15 +1939,15 @@ export class FisExperimentTemplateTargetFilterOutputReference extends cdktf.Comp
   }
 }
 
-export class FisExperimentTemplateTargetFilterList extends cdktf.ComplexList {
-  public internalValue? : FisExperimentTemplateTargetFilter[] | cdktf.IResolvable
+export class FisExperimentTemplateTargetFilterList extends cdktn.ComplexList {
+  public internalValue? : FisExperimentTemplateTargetFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1969,32 +1969,32 @@ export interface FisExperimentTemplateTargetResourceTag {
   readonly value: string;
 }
 
-export function fisExperimentTemplateTargetResourceTagToTerraform(struct?: FisExperimentTemplateTargetResourceTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateTargetResourceTagToTerraform(struct?: FisExperimentTemplateTargetResourceTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function fisExperimentTemplateTargetResourceTagToHclTerraform(struct?: FisExperimentTemplateTargetResourceTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateTargetResourceTagToHclTerraform(struct?: FisExperimentTemplateTargetResourceTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2005,9 +2005,9 @@ export function fisExperimentTemplateTargetResourceTagToHclTerraform(struct?: Fi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateTargetResourceTagOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateTargetResourceTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2015,11 +2015,11 @@ export class FisExperimentTemplateTargetResourceTagOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FisExperimentTemplateTargetResourceTag | cdktf.IResolvable | undefined {
+  public get internalValue(): FisExperimentTemplateTargetResourceTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2036,14 +2036,14 @@ export class FisExperimentTemplateTargetResourceTagOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FisExperimentTemplateTargetResourceTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FisExperimentTemplateTargetResourceTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2082,15 +2082,15 @@ export class FisExperimentTemplateTargetResourceTagOutputReference extends cdktf
   }
 }
 
-export class FisExperimentTemplateTargetResourceTagList extends cdktf.ComplexList {
-  public internalValue? : FisExperimentTemplateTargetResourceTag[] | cdktf.IResolvable
+export class FisExperimentTemplateTargetResourceTagList extends cdktn.ComplexList {
+  public internalValue? : FisExperimentTemplateTargetResourceTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2127,76 +2127,76 @@ export interface FisExperimentTemplateTarget {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template#filter FisExperimentTemplate#filter}
   */
-  readonly filter?: FisExperimentTemplateTargetFilter[] | cdktf.IResolvable;
+  readonly filter?: FisExperimentTemplateTargetFilter[] | cdktn.IResolvable;
   /**
   * resource_tag block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template#resource_tag FisExperimentTemplate#resource_tag}
   */
-  readonly resourceTag?: FisExperimentTemplateTargetResourceTag[] | cdktf.IResolvable;
+  readonly resourceTag?: FisExperimentTemplateTargetResourceTag[] | cdktn.IResolvable;
 }
 
-export function fisExperimentTemplateTargetToTerraform(struct?: FisExperimentTemplateTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateTargetToTerraform(struct?: FisExperimentTemplateTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    resource_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceArns),
-    resource_type: cdktf.stringToTerraform(struct!.resourceType),
-    selection_mode: cdktf.stringToTerraform(struct!.selectionMode),
-    filter: cdktf.listMapper(fisExperimentTemplateTargetFilterToTerraform, true)(struct!.filter),
-    resource_tag: cdktf.listMapper(fisExperimentTemplateTargetResourceTagToTerraform, true)(struct!.resourceTag),
+    name: cdktn.stringToTerraform(struct!.name),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    resource_arns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceArns),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
+    selection_mode: cdktn.stringToTerraform(struct!.selectionMode),
+    filter: cdktn.listMapper(fisExperimentTemplateTargetFilterToTerraform, true)(struct!.filter),
+    resource_tag: cdktn.listMapper(fisExperimentTemplateTargetResourceTagToTerraform, true)(struct!.resourceTag),
   }
 }
 
 
-export function fisExperimentTemplateTargetToHclTerraform(struct?: FisExperimentTemplateTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateTargetToHclTerraform(struct?: FisExperimentTemplateTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     resource_arns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceArns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceArns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selection_mode: {
-      value: cdktf.stringToHclTerraform(struct!.selectionMode),
+      value: cdktn.stringToHclTerraform(struct!.selectionMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter: {
-      value: cdktf.listMapperHcl(fisExperimentTemplateTargetFilterToHclTerraform, true)(struct!.filter),
+      value: cdktn.listMapperHcl(fisExperimentTemplateTargetFilterToHclTerraform, true)(struct!.filter),
       isBlock: true,
       type: "list",
       storageClassType: "FisExperimentTemplateTargetFilterList",
     },
     resource_tag: {
-      value: cdktf.listMapperHcl(fisExperimentTemplateTargetResourceTagToHclTerraform, true)(struct!.resourceTag),
+      value: cdktn.listMapperHcl(fisExperimentTemplateTargetResourceTagToHclTerraform, true)(struct!.resourceTag),
       isBlock: true,
       type: "set",
       storageClassType: "FisExperimentTemplateTargetResourceTagList",
@@ -2207,9 +2207,9 @@ export function fisExperimentTemplateTargetToHclTerraform(struct?: FisExperiment
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateTargetOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2217,11 +2217,11 @@ export class FisExperimentTemplateTargetOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FisExperimentTemplateTarget | cdktf.IResolvable | undefined {
+  public get internalValue(): FisExperimentTemplateTarget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2258,7 +2258,7 @@ export class FisExperimentTemplateTargetOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FisExperimentTemplateTarget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FisExperimentTemplateTarget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2270,7 +2270,7 @@ export class FisExperimentTemplateTargetOutputReference extends cdktf.ComplexObj
       this._filter.internalValue = undefined;
       this._resourceTag.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2319,7 +2319,7 @@ export class FisExperimentTemplateTargetOutputReference extends cdktf.ComplexObj
   // resource_arns - computed: false, optional: true, required: false
   private _resourceArns?: string[]; 
   public get resourceArns() {
-    return cdktf.Fn.tolist(this.getListAttribute('resource_arns'));
+    return cdktn.Fn.tolist(this.getListAttribute('resource_arns'));
   }
   public set resourceArns(value: string[]) {
     this._resourceArns = value;
@@ -2363,7 +2363,7 @@ export class FisExperimentTemplateTargetOutputReference extends cdktf.ComplexObj
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: FisExperimentTemplateTargetFilter[] | cdktf.IResolvable) {
+  public putFilter(value: FisExperimentTemplateTargetFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -2379,7 +2379,7 @@ export class FisExperimentTemplateTargetOutputReference extends cdktf.ComplexObj
   public get resourceTag() {
     return this._resourceTag;
   }
-  public putResourceTag(value: FisExperimentTemplateTargetResourceTag[] | cdktf.IResolvable) {
+  public putResourceTag(value: FisExperimentTemplateTargetResourceTag[] | cdktn.IResolvable) {
     this._resourceTag.internalValue = value;
   }
   public resetResourceTag() {
@@ -2391,15 +2391,15 @@ export class FisExperimentTemplateTargetOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class FisExperimentTemplateTargetList extends cdktf.ComplexList {
-  public internalValue? : FisExperimentTemplateTarget[] | cdktf.IResolvable
+export class FisExperimentTemplateTargetList extends cdktn.ComplexList {
+  public internalValue? : FisExperimentTemplateTarget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2425,39 +2425,39 @@ export interface FisExperimentTemplateTimeouts {
   readonly update?: string;
 }
 
-export function fisExperimentTemplateTimeoutsToTerraform(struct?: FisExperimentTemplateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateTimeoutsToTerraform(struct?: FisExperimentTemplateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function fisExperimentTemplateTimeoutsToHclTerraform(struct?: FisExperimentTemplateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function fisExperimentTemplateTimeoutsToHclTerraform(struct?: FisExperimentTemplateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2468,19 +2468,19 @@ export function fisExperimentTemplateTimeoutsToHclTerraform(struct?: FisExperime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FisExperimentTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FisExperimentTemplateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FisExperimentTemplateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FisExperimentTemplateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2501,7 +2501,7 @@ export class FisExperimentTemplateTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FisExperimentTemplateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FisExperimentTemplateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2509,7 +2509,7 @@ export class FisExperimentTemplateTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2574,7 +2574,7 @@ export class FisExperimentTemplateTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template aws_fis_experiment_template}
 */
-export class FisExperimentTemplate extends cdktf.TerraformResource {
+export class FisExperimentTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2585,14 +2585,14 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FisExperimentTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FisExperimentTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FisExperimentTemplate to import
   * @param importFromId The id of the existing FisExperimentTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/fis_experiment_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FisExperimentTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_fis_experiment_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_fis_experiment_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -2736,7 +2736,7 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
   public get action() {
     return this._action;
   }
-  public putAction(value: FisExperimentTemplateAction[] | cdktf.IResolvable) {
+  public putAction(value: FisExperimentTemplateAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2797,7 +2797,7 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
   public get stopCondition() {
     return this._stopCondition;
   }
-  public putStopCondition(value: FisExperimentTemplateStopCondition[] | cdktf.IResolvable) {
+  public putStopCondition(value: FisExperimentTemplateStopCondition[] | cdktn.IResolvable) {
     this._stopCondition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2810,7 +2810,7 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
   public get target() {
     return this._target;
   }
-  public putTarget(value: FisExperimentTemplateTarget[] | cdktf.IResolvable) {
+  public putTarget(value: FisExperimentTemplateTarget[] | cdktn.IResolvable) {
     this._target.internalValue = value;
   }
   public resetTarget() {
@@ -2843,18 +2843,18 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      action: cdktf.listMapper(fisExperimentTemplateActionToTerraform, true)(this._action.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      action: cdktn.listMapper(fisExperimentTemplateActionToTerraform, true)(this._action.internalValue),
       experiment_options: fisExperimentTemplateExperimentOptionsToTerraform(this._experimentOptions.internalValue),
       experiment_report_configuration: fisExperimentTemplateExperimentReportConfigurationToTerraform(this._experimentReportConfiguration.internalValue),
       log_configuration: fisExperimentTemplateLogConfigurationToTerraform(this._logConfiguration.internalValue),
-      stop_condition: cdktf.listMapper(fisExperimentTemplateStopConditionToTerraform, true)(this._stopCondition.internalValue),
-      target: cdktf.listMapper(fisExperimentTemplateTargetToTerraform, true)(this._target.internalValue),
+      stop_condition: cdktn.listMapper(fisExperimentTemplateStopConditionToTerraform, true)(this._stopCondition.internalValue),
+      target: cdktn.listMapper(fisExperimentTemplateTargetToTerraform, true)(this._target.internalValue),
       timeouts: fisExperimentTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2862,43 +2862,43 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       action: {
-        value: cdktf.listMapperHcl(fisExperimentTemplateActionToHclTerraform, true)(this._action.internalValue),
+        value: cdktn.listMapperHcl(fisExperimentTemplateActionToHclTerraform, true)(this._action.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "FisExperimentTemplateActionList",
@@ -2922,13 +2922,13 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
         storageClassType: "FisExperimentTemplateLogConfigurationList",
       },
       stop_condition: {
-        value: cdktf.listMapperHcl(fisExperimentTemplateStopConditionToHclTerraform, true)(this._stopCondition.internalValue),
+        value: cdktn.listMapperHcl(fisExperimentTemplateStopConditionToHclTerraform, true)(this._stopCondition.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "FisExperimentTemplateStopConditionList",
       },
       target: {
-        value: cdktf.listMapperHcl(fisExperimentTemplateTargetToHclTerraform, true)(this._target.internalValue),
+        value: cdktn.listMapperHcl(fisExperimentTemplateTargetToHclTerraform, true)(this._target.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "FisExperimentTemplateTargetList",

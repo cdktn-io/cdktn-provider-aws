@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchEventApiDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchEventApiDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_api_destination#connection_arn CloudwatchEventApiDestination#connection_arn}
   */
@@ -54,7 +54,7 @@ export interface CloudwatchEventApiDestinationConfig extends cdktf.TerraformMeta
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination}
 */
-export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
+export class CloudwatchEventApiDestination extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchEventApiDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchEventApiDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchEventApiDestination to import
   * @param importFromId The id of the existing CloudwatchEventApiDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_event_api_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchEventApiDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_event_api_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_event_api_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -243,63 +243,63 @@ export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_arn: cdktf.stringToTerraform(this._connectionArn),
-      description: cdktf.stringToTerraform(this._description),
-      http_method: cdktf.stringToTerraform(this._httpMethod),
-      id: cdktf.stringToTerraform(this._id),
-      invocation_endpoint: cdktf.stringToTerraform(this._invocationEndpoint),
-      invocation_rate_limit_per_second: cdktf.numberToTerraform(this._invocationRateLimitPerSecond),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      connection_arn: cdktn.stringToTerraform(this._connectionArn),
+      description: cdktn.stringToTerraform(this._description),
+      http_method: cdktn.stringToTerraform(this._httpMethod),
+      id: cdktn.stringToTerraform(this._id),
+      invocation_endpoint: cdktn.stringToTerraform(this._invocationEndpoint),
+      invocation_rate_limit_per_second: cdktn.numberToTerraform(this._invocationRateLimitPerSecond),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_arn: {
-        value: cdktf.stringToHclTerraform(this._connectionArn),
+        value: cdktn.stringToHclTerraform(this._connectionArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_method: {
-        value: cdktf.stringToHclTerraform(this._httpMethod),
+        value: cdktn.stringToHclTerraform(this._httpMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invocation_endpoint: {
-        value: cdktf.stringToHclTerraform(this._invocationEndpoint),
+        value: cdktn.stringToHclTerraform(this._invocationEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invocation_rate_limit_per_second: {
-        value: cdktf.numberToHclTerraform(this._invocationRateLimitPerSecond),
+        value: cdktn.numberToHclTerraform(this._invocationRateLimitPerSecond),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

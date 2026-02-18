@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Sesv2ContactListConfig extends cdktf.TerraformMetaArguments {
+export interface Sesv2ContactListConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_contact_list#contact_list_name Sesv2ContactList#contact_list_name}
   */
@@ -46,7 +46,7 @@ export interface Sesv2ContactListConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_contact_list#topic Sesv2ContactList#topic}
   */
-  readonly topic?: Sesv2ContactListTopic[] | cdktf.IResolvable;
+  readonly topic?: Sesv2ContactListTopic[] | cdktn.IResolvable;
 }
 export interface Sesv2ContactListTopic {
   /**
@@ -67,46 +67,46 @@ export interface Sesv2ContactListTopic {
   readonly topicName: string;
 }
 
-export function sesv2ContactListTopicToTerraform(struct?: Sesv2ContactListTopic | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesv2ContactListTopicToTerraform(struct?: Sesv2ContactListTopic | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_subscription_status: cdktf.stringToTerraform(struct!.defaultSubscriptionStatus),
-    description: cdktf.stringToTerraform(struct!.description),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    topic_name: cdktf.stringToTerraform(struct!.topicName),
+    default_subscription_status: cdktn.stringToTerraform(struct!.defaultSubscriptionStatus),
+    description: cdktn.stringToTerraform(struct!.description),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    topic_name: cdktn.stringToTerraform(struct!.topicName),
   }
 }
 
 
-export function sesv2ContactListTopicToHclTerraform(struct?: Sesv2ContactListTopic | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sesv2ContactListTopicToHclTerraform(struct?: Sesv2ContactListTopic | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_subscription_status: {
-      value: cdktf.stringToHclTerraform(struct!.defaultSubscriptionStatus),
+      value: cdktn.stringToHclTerraform(struct!.defaultSubscriptionStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic_name: {
-      value: cdktf.stringToHclTerraform(struct!.topicName),
+      value: cdktn.stringToHclTerraform(struct!.topicName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,9 +117,9 @@ export function sesv2ContactListTopicToHclTerraform(struct?: Sesv2ContactListTop
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Sesv2ContactListTopicOutputReference extends cdktf.ComplexObject {
+export class Sesv2ContactListTopicOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class Sesv2ContactListTopicOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Sesv2ContactListTopic | cdktf.IResolvable | undefined {
+  public get internalValue(): Sesv2ContactListTopic | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class Sesv2ContactListTopicOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Sesv2ContactListTopic | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Sesv2ContactListTopic | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class Sesv2ContactListTopicOutputReference extends cdktf.ComplexObject {
       this._displayName = undefined;
       this._topicName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,15 +235,15 @@ export class Sesv2ContactListTopicOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class Sesv2ContactListTopicList extends cdktf.ComplexList {
-  public internalValue? : Sesv2ContactListTopic[] | cdktf.IResolvable
+export class Sesv2ContactListTopicList extends cdktn.ComplexList {
+  public internalValue? : Sesv2ContactListTopic[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -258,7 +258,7 @@ export class Sesv2ContactListTopicList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_contact_list aws_sesv2_contact_list}
 */
-export class Sesv2ContactList extends cdktf.TerraformResource {
+export class Sesv2ContactList extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -269,14 +269,14 @@ export class Sesv2ContactList extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Sesv2ContactList resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Sesv2ContactList resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2ContactList to import
   * @param importFromId The id of the existing Sesv2ContactList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_contact_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2ContactList to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_contact_list", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_sesv2_contact_list", importId: importFromId, provider });
       }
 
   // ===========
@@ -432,7 +432,7 @@ export class Sesv2ContactList extends cdktf.TerraformResource {
   public get topic() {
     return this._topic;
   }
-  public putTopic(value: Sesv2ContactListTopic[] | cdktf.IResolvable) {
+  public putTopic(value: Sesv2ContactListTopic[] | cdktn.IResolvable) {
     this._topic.internalValue = value;
   }
   public resetTopic() {
@@ -449,56 +449,56 @@ export class Sesv2ContactList extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      contact_list_name: cdktf.stringToTerraform(this._contactListName),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      topic: cdktf.listMapper(sesv2ContactListTopicToTerraform, true)(this._topic.internalValue),
+      contact_list_name: cdktn.stringToTerraform(this._contactListName),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      topic: cdktn.listMapper(sesv2ContactListTopicToTerraform, true)(this._topic.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       contact_list_name: {
-        value: cdktf.stringToHclTerraform(this._contactListName),
+        value: cdktn.stringToHclTerraform(this._contactListName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tags_all: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       topic: {
-        value: cdktf.listMapperHcl(sesv2ContactListTopicToHclTerraform, true)(this._topic.internalValue),
+        value: cdktn.listMapperHcl(sesv2ContactListTopicToHclTerraform, true)(this._topic.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "Sesv2ContactListTopicList",

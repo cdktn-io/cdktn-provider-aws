@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoadBalancerPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface LoadBalancerPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/load_balancer_policy#id LoadBalancerPolicy#id}
   *
@@ -42,7 +42,7 @@ export interface LoadBalancerPolicyConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/load_balancer_policy#policy_attribute LoadBalancerPolicy#policy_attribute}
   */
-  readonly policyAttribute?: LoadBalancerPolicyPolicyAttribute[] | cdktf.IResolvable;
+  readonly policyAttribute?: LoadBalancerPolicyPolicyAttribute[] | cdktn.IResolvable;
 }
 export interface LoadBalancerPolicyPolicyAttribute {
   /**
@@ -55,32 +55,32 @@ export interface LoadBalancerPolicyPolicyAttribute {
   readonly value?: string;
 }
 
-export function loadBalancerPolicyPolicyAttributeToTerraform(struct?: LoadBalancerPolicyPolicyAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerPolicyPolicyAttributeToTerraform(struct?: LoadBalancerPolicyPolicyAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function loadBalancerPolicyPolicyAttributeToHclTerraform(struct?: LoadBalancerPolicyPolicyAttribute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerPolicyPolicyAttributeToHclTerraform(struct?: LoadBalancerPolicyPolicyAttribute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,9 +91,9 @@ export function loadBalancerPolicyPolicyAttributeToHclTerraform(struct?: LoadBal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerPolicyPolicyAttributeOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerPolicyPolicyAttributeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -101,11 +101,11 @@ export class LoadBalancerPolicyPolicyAttributeOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoadBalancerPolicyPolicyAttribute | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerPolicyPolicyAttribute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,14 +122,14 @@ export class LoadBalancerPolicyPolicyAttributeOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerPolicyPolicyAttribute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerPolicyPolicyAttribute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -174,15 +174,15 @@ export class LoadBalancerPolicyPolicyAttributeOutputReference extends cdktf.Comp
   }
 }
 
-export class LoadBalancerPolicyPolicyAttributeList extends cdktf.ComplexList {
-  public internalValue? : LoadBalancerPolicyPolicyAttribute[] | cdktf.IResolvable
+export class LoadBalancerPolicyPolicyAttributeList extends cdktn.ComplexList {
+  public internalValue? : LoadBalancerPolicyPolicyAttribute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -197,7 +197,7 @@ export class LoadBalancerPolicyPolicyAttributeList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/load_balancer_policy aws_load_balancer_policy}
 */
-export class LoadBalancerPolicy extends cdktf.TerraformResource {
+export class LoadBalancerPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -208,14 +208,14 @@ export class LoadBalancerPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoadBalancerPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoadBalancerPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadBalancerPolicy to import
   * @param importFromId The id of the existing LoadBalancerPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/load_balancer_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadBalancerPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_load_balancer_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_load_balancer_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -333,7 +333,7 @@ export class LoadBalancerPolicy extends cdktf.TerraformResource {
   public get policyAttribute() {
     return this._policyAttribute;
   }
-  public putPolicyAttribute(value: LoadBalancerPolicyPolicyAttribute[] | cdktf.IResolvable) {
+  public putPolicyAttribute(value: LoadBalancerPolicyPolicyAttribute[] | cdktn.IResolvable) {
     this._policyAttribute.internalValue = value;
   }
   public resetPolicyAttribute() {
@@ -350,49 +350,49 @@ export class LoadBalancerPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      load_balancer_name: cdktf.stringToTerraform(this._loadBalancerName),
-      policy_name: cdktf.stringToTerraform(this._policyName),
-      policy_type_name: cdktf.stringToTerraform(this._policyTypeName),
-      region: cdktf.stringToTerraform(this._region),
-      policy_attribute: cdktf.listMapper(loadBalancerPolicyPolicyAttributeToTerraform, true)(this._policyAttribute.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      load_balancer_name: cdktn.stringToTerraform(this._loadBalancerName),
+      policy_name: cdktn.stringToTerraform(this._policyName),
+      policy_type_name: cdktn.stringToTerraform(this._policyTypeName),
+      region: cdktn.stringToTerraform(this._region),
+      policy_attribute: cdktn.listMapper(loadBalancerPolicyPolicyAttributeToTerraform, true)(this._policyAttribute.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       load_balancer_name: {
-        value: cdktf.stringToHclTerraform(this._loadBalancerName),
+        value: cdktn.stringToHclTerraform(this._loadBalancerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_name: {
-        value: cdktf.stringToHclTerraform(this._policyName),
+        value: cdktn.stringToHclTerraform(this._policyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_type_name: {
-        value: cdktf.stringToHclTerraform(this._policyTypeName),
+        value: cdktn.stringToHclTerraform(this._policyTypeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_attribute: {
-        value: cdktf.listMapperHcl(loadBalancerPolicyPolicyAttributeToHclTerraform, true)(this._policyAttribute.internalValue),
+        value: cdktn.listMapperHcl(loadBalancerPolicyPolicyAttributeToHclTerraform, true)(this._policyAttribute.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LoadBalancerPolicyPolicyAttributeList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudwatchLogIndexPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogIndexPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_index_policy#log_group_name CloudwatchLogIndexPolicy#log_group_name}
   */
@@ -33,7 +33,7 @@ export interface CloudwatchLogIndexPolicyConfig extends cdktf.TerraformMetaArgum
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_index_policy aws_cloudwatch_log_index_policy}
 */
-export class CloudwatchLogIndexPolicy extends cdktf.TerraformResource {
+export class CloudwatchLogIndexPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -44,14 +44,14 @@ export class CloudwatchLogIndexPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudwatchLogIndexPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudwatchLogIndexPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogIndexPolicy to import
   * @param importFromId The id of the existing CloudwatchLogIndexPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_index_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogIndexPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_index_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudwatch_log_index_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -138,28 +138,28 @@ export class CloudwatchLogIndexPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      log_group_name: cdktf.stringToTerraform(this._logGroupName),
-      policy_document: cdktf.stringToTerraform(this._policyDocument),
-      region: cdktf.stringToTerraform(this._region),
+      log_group_name: cdktn.stringToTerraform(this._logGroupName),
+      policy_document: cdktn.stringToTerraform(this._policyDocument),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       log_group_name: {
-        value: cdktf.stringToHclTerraform(this._logGroupName),
+        value: cdktn.stringToHclTerraform(this._logGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_document: {
-        value: cdktf.stringToHclTerraform(this._policyDocument),
+        value: cdktn.stringToHclTerraform(this._policyDocument),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

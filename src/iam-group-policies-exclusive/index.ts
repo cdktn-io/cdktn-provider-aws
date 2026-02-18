@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamGroupPoliciesExclusiveConfig extends cdktf.TerraformMetaArguments {
+export interface IamGroupPoliciesExclusiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_group_policies_exclusive#group_name IamGroupPoliciesExclusive#group_name}
   */
@@ -25,7 +25,7 @@ export interface IamGroupPoliciesExclusiveConfig extends cdktf.TerraformMetaArgu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_group_policies_exclusive aws_iam_group_policies_exclusive}
 */
-export class IamGroupPoliciesExclusive extends cdktf.TerraformResource {
+export class IamGroupPoliciesExclusive extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -36,14 +36,14 @@ export class IamGroupPoliciesExclusive extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamGroupPoliciesExclusive resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamGroupPoliciesExclusive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamGroupPoliciesExclusive to import
   * @param importFromId The id of the existing IamGroupPoliciesExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/iam_group_policies_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamGroupPoliciesExclusive to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_group_policies_exclusive", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_group_policies_exclusive", importId: importFromId, provider });
       }
 
   // ===========
@@ -97,7 +97,7 @@ export class IamGroupPoliciesExclusive extends cdktf.TerraformResource {
   // policy_names - computed: false, optional: false, required: true
   private _policyNames?: string[]; 
   public get policyNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('policy_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('policy_names'));
   }
   public set policyNames(value: string[]) {
     this._policyNames = value;
@@ -113,21 +113,21 @@ export class IamGroupPoliciesExclusive extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_name: cdktf.stringToTerraform(this._groupName),
-      policy_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyNames),
+      group_name: cdktn.stringToTerraform(this._groupName),
+      policy_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policyNames),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group_name: {
-        value: cdktf.stringToHclTerraform(this._groupName),
+        value: cdktn.stringToHclTerraform(this._groupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policyNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

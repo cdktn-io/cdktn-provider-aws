@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedshiftDataShareAuthorizationConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftDataShareAuthorizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_data_share_authorization#allow_writes RedshiftDataShareAuthorization#allow_writes}
   */
-  readonly allowWrites?: boolean | cdktf.IResolvable;
+  readonly allowWrites?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_data_share_authorization#consumer_identifier RedshiftDataShareAuthorization#consumer_identifier}
   */
@@ -35,7 +35,7 @@ export interface RedshiftDataShareAuthorizationConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_data_share_authorization aws_redshift_data_share_authorization}
 */
-export class RedshiftDataShareAuthorization extends cdktf.TerraformResource {
+export class RedshiftDataShareAuthorization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class RedshiftDataShareAuthorization extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedshiftDataShareAuthorization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedshiftDataShareAuthorization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftDataShareAuthorization to import
   * @param importFromId The id of the existing RedshiftDataShareAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/redshift_data_share_authorization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftDataShareAuthorization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_data_share_authorization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_redshift_data_share_authorization", importId: importFromId, provider });
       }
 
   // ===========
@@ -94,11 +94,11 @@ export class RedshiftDataShareAuthorization extends cdktf.TerraformResource {
   // ==========
 
   // allow_writes - computed: false, optional: true, required: false
-  private _allowWrites?: boolean | cdktf.IResolvable; 
+  private _allowWrites?: boolean | cdktn.IResolvable; 
   public get allowWrites() {
     return this.getBooleanAttribute('allow_writes');
   }
-  public set allowWrites(value: boolean | cdktf.IResolvable) {
+  public set allowWrites(value: boolean | cdktn.IResolvable) {
     this._allowWrites = value;
   }
   public resetAllowWrites() {
@@ -172,35 +172,35 @@ export class RedshiftDataShareAuthorization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_writes: cdktf.booleanToTerraform(this._allowWrites),
-      consumer_identifier: cdktf.stringToTerraform(this._consumerIdentifier),
-      data_share_arn: cdktf.stringToTerraform(this._dataShareArn),
-      region: cdktf.stringToTerraform(this._region),
+      allow_writes: cdktn.booleanToTerraform(this._allowWrites),
+      consumer_identifier: cdktn.stringToTerraform(this._consumerIdentifier),
+      data_share_arn: cdktn.stringToTerraform(this._dataShareArn),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_writes: {
-        value: cdktf.booleanToHclTerraform(this._allowWrites),
+        value: cdktn.booleanToHclTerraform(this._allowWrites),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       consumer_identifier: {
-        value: cdktf.stringToHclTerraform(this._consumerIdentifier),
+        value: cdktn.stringToHclTerraform(this._consumerIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_share_arn: {
-        value: cdktf.stringToHclTerraform(this._dataShareArn),
+        value: cdktn.stringToHclTerraform(this._dataShareArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

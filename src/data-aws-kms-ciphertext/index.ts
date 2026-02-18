@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAwsKmsCiphertextConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsKmsCiphertextConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_ciphertext#context DataAwsKmsCiphertext#context}
   */
@@ -42,7 +42,7 @@ export interface DataAwsKmsCiphertextConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_ciphertext aws_kms_ciphertext}
 */
-export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
+export class DataAwsKmsCiphertext extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAwsKmsCiphertext resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAwsKmsCiphertext resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsKmsCiphertext to import
   * @param importFromId The id of the existing DataAwsKmsCiphertext that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/kms_ciphertext#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsKmsCiphertext to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_ciphertext", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_ciphertext", importId: importFromId, provider });
       }
 
   // ===========
@@ -186,42 +186,42 @@ export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      context: cdktf.hashMapper(cdktf.stringToTerraform)(this._context),
-      id: cdktf.stringToTerraform(this._id),
-      key_id: cdktf.stringToTerraform(this._keyId),
-      plaintext: cdktf.stringToTerraform(this._plaintext),
-      region: cdktf.stringToTerraform(this._region),
+      context: cdktn.hashMapper(cdktn.stringToTerraform)(this._context),
+      id: cdktn.stringToTerraform(this._id),
+      key_id: cdktn.stringToTerraform(this._keyId),
+      plaintext: cdktn.stringToTerraform(this._plaintext),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       context: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._context),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._context),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_id: {
-        value: cdktf.stringToHclTerraform(this._keyId),
+        value: cdktn.stringToHclTerraform(this._keyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plaintext: {
-        value: cdktf.stringToHclTerraform(this._plaintext),
+        value: cdktn.stringToHclTerraform(this._plaintext),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

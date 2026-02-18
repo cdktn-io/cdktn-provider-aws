@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConfigOrganizationConformancePackConfig extends cdktf.TerraformMetaArguments {
+export interface ConfigOrganizationConformancePackConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_organization_conformance_pack#delivery_s3_bucket ConfigOrganizationConformancePack#delivery_s3_bucket}
   */
@@ -54,7 +54,7 @@ export interface ConfigOrganizationConformancePackConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_organization_conformance_pack#input_parameter ConfigOrganizationConformancePack#input_parameter}
   */
-  readonly inputParameter?: ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable;
+  readonly inputParameter?: ConfigOrganizationConformancePackInputParameter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -73,32 +73,32 @@ export interface ConfigOrganizationConformancePackInputParameter {
   readonly parameterValue: string;
 }
 
-export function configOrganizationConformancePackInputParameterToTerraform(struct?: ConfigOrganizationConformancePackInputParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configOrganizationConformancePackInputParameterToTerraform(struct?: ConfigOrganizationConformancePackInputParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
-    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+    parameter_name: cdktn.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktn.stringToTerraform(struct!.parameterValue),
   }
 }
 
 
-export function configOrganizationConformancePackInputParameterToHclTerraform(struct?: ConfigOrganizationConformancePackInputParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configOrganizationConformancePackInputParameterToHclTerraform(struct?: ConfigOrganizationConformancePackInputParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_name: {
-      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      value: cdktn.stringToHclTerraform(struct!.parameterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_value: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      value: cdktn.stringToHclTerraform(struct!.parameterValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,9 +109,9 @@ export function configOrganizationConformancePackInputParameterToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigOrganizationConformancePackInputParameterOutputReference extends cdktf.ComplexObject {
+export class ConfigOrganizationConformancePackInputParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -119,11 +119,11 @@ export class ConfigOrganizationConformancePackInputParameterOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConfigOrganizationConformancePackInputParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): ConfigOrganizationConformancePackInputParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,14 +140,14 @@ export class ConfigOrganizationConformancePackInputParameterOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConfigOrganizationConformancePackInputParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConfigOrganizationConformancePackInputParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterName = undefined;
       this._parameterValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -186,15 +186,15 @@ export class ConfigOrganizationConformancePackInputParameterOutputReference exte
   }
 }
 
-export class ConfigOrganizationConformancePackInputParameterList extends cdktf.ComplexList {
-  public internalValue? : ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable
+export class ConfigOrganizationConformancePackInputParameterList extends cdktn.ComplexList {
+  public internalValue? : ConfigOrganizationConformancePackInputParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -220,39 +220,39 @@ export interface ConfigOrganizationConformancePackTimeouts {
   readonly update?: string;
 }
 
-export function configOrganizationConformancePackTimeoutsToTerraform(struct?: ConfigOrganizationConformancePackTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configOrganizationConformancePackTimeoutsToTerraform(struct?: ConfigOrganizationConformancePackTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function configOrganizationConformancePackTimeoutsToHclTerraform(struct?: ConfigOrganizationConformancePackTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function configOrganizationConformancePackTimeoutsToHclTerraform(struct?: ConfigOrganizationConformancePackTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -263,19 +263,19 @@ export function configOrganizationConformancePackTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ConfigOrganizationConformancePackTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ConfigOrganizationConformancePackTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -296,7 +296,7 @@ export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConfigOrganizationConformancePackTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConfigOrganizationConformancePackTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -304,7 +304,7 @@ export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cd
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -369,7 +369,7 @@ export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack}
 */
-export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
+export class ConfigOrganizationConformancePack extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -380,14 +380,14 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConfigOrganizationConformancePack resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConfigOrganizationConformancePack resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigOrganizationConformancePack to import
   * @param importFromId The id of the existing ConfigOrganizationConformancePack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/config_organization_conformance_pack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigOrganizationConformancePack to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_organization_conformance_pack", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_config_organization_conformance_pack", importId: importFromId, provider });
       }
 
   // ===========
@@ -473,7 +473,7 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
   // excluded_accounts - computed: false, optional: true, required: false
   private _excludedAccounts?: string[]; 
   public get excludedAccounts() {
-    return cdktf.Fn.tolist(this.getListAttribute('excluded_accounts'));
+    return cdktn.Fn.tolist(this.getListAttribute('excluded_accounts'));
   }
   public set excludedAccounts(value: string[]) {
     this._excludedAccounts = value;
@@ -568,7 +568,7 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
   public get inputParameter() {
     return this._inputParameter;
   }
-  public putInputParameter(value: ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable) {
+  public putInputParameter(value: ConfigOrganizationConformancePackInputParameter[] | cdktn.IResolvable) {
     this._inputParameter.internalValue = value;
   }
   public resetInputParameter() {
@@ -601,15 +601,15 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delivery_s3_bucket: cdktf.stringToTerraform(this._deliveryS3Bucket),
-      delivery_s3_key_prefix: cdktf.stringToTerraform(this._deliveryS3KeyPrefix),
-      excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedAccounts),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
-      template_body: cdktf.stringToTerraform(this._templateBody),
-      template_s3_uri: cdktf.stringToTerraform(this._templateS3Uri),
-      input_parameter: cdktf.listMapper(configOrganizationConformancePackInputParameterToTerraform, true)(this._inputParameter.internalValue),
+      delivery_s3_bucket: cdktn.stringToTerraform(this._deliveryS3Bucket),
+      delivery_s3_key_prefix: cdktn.stringToTerraform(this._deliveryS3KeyPrefix),
+      excluded_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludedAccounts),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
+      template_body: cdktn.stringToTerraform(this._templateBody),
+      template_s3_uri: cdktn.stringToTerraform(this._templateS3Uri),
+      input_parameter: cdktn.listMapper(configOrganizationConformancePackInputParameterToTerraform, true)(this._inputParameter.internalValue),
       timeouts: configOrganizationConformancePackTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -617,55 +617,55 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delivery_s3_bucket: {
-        value: cdktf.stringToHclTerraform(this._deliveryS3Bucket),
+        value: cdktn.stringToHclTerraform(this._deliveryS3Bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delivery_s3_key_prefix: {
-        value: cdktf.stringToHclTerraform(this._deliveryS3KeyPrefix),
+        value: cdktn.stringToHclTerraform(this._deliveryS3KeyPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       excluded_accounts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedAccounts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludedAccounts),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_body: {
-        value: cdktf.stringToHclTerraform(this._templateBody),
+        value: cdktn.stringToHclTerraform(this._templateBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_s3_uri: {
-        value: cdktf.stringToHclTerraform(this._templateS3Uri),
+        value: cdktn.stringToHclTerraform(this._templateS3Uri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input_parameter: {
-        value: cdktf.listMapperHcl(configOrganizationConformancePackInputParameterToHclTerraform, true)(this._inputParameter.internalValue),
+        value: cdktn.listMapperHcl(configOrganizationConformancePackInputParameterToHclTerraform, true)(this._inputParameter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ConfigOrganizationConformancePackInputParameterList",
