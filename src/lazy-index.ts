@@ -534,6 +534,8 @@ Object.defineProperty(exports, 'ec2ManagedPrefixList', { get: function () { retu
 Object.defineProperty(exports, 'ec2ManagedPrefixListEntry', { get: function () { return require('./ec2-managed-prefix-list-entry'); } });
 Object.defineProperty(exports, 'ec2NetworkInsightsAnalysis', { get: function () { return require('./ec2-network-insights-analysis'); } });
 Object.defineProperty(exports, 'ec2NetworkInsightsPath', { get: function () { return require('./ec2-network-insights-path'); } });
+Object.defineProperty(exports, 'ec2SecondaryNetwork', { get: function () { return require('./ec2-secondary-network'); } });
+Object.defineProperty(exports, 'ec2SecondarySubnet', { get: function () { return require('./ec2-secondary-subnet'); } });
 Object.defineProperty(exports, 'ec2SerialConsoleAccess', { get: function () { return require('./ec2-serial-console-access'); } });
 Object.defineProperty(exports, 'ec2SubnetCidrReservation', { get: function () { return require('./ec2-subnet-cidr-reservation'); } });
 Object.defineProperty(exports, 'ec2Tag', { get: function () { return require('./ec2-tag'); } });

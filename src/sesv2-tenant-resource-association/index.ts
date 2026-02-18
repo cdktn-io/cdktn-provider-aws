@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant_resource_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_tenant_resource_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,21 +15,21 @@ export interface Sesv2TenantResourceAssociationConfig extends cdktf.TerraformMet
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant_resource_association#region Sesv2TenantResourceAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_tenant_resource_association#region Sesv2TenantResourceAssociation#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant_resource_association#resource_arn Sesv2TenantResourceAssociation#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_tenant_resource_association#resource_arn Sesv2TenantResourceAssociation#resource_arn}
   */
   readonly resourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant_resource_association#tenant_name Sesv2TenantResourceAssociation#tenant_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_tenant_resource_association#tenant_name Sesv2TenantResourceAssociation#tenant_name}
   */
   readonly tenantName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant_resource_association aws_sesv2_tenant_resource_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_tenant_resource_association aws_sesv2_tenant_resource_association}
 */
 export class Sesv2TenantResourceAssociation extends cdktf.TerraformResource {
 
@@ -45,7 +45,7 @@ export class Sesv2TenantResourceAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Sesv2TenantResourceAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2TenantResourceAssociation to import
-  * @param importFromId The id of the existing Sesv2TenantResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant_resource_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Sesv2TenantResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_tenant_resource_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2TenantResourceAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -57,7 +57,7 @@ export class Sesv2TenantResourceAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant_resource_association aws_sesv2_tenant_resource_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/sesv2_tenant_resource_association aws_sesv2_tenant_resource_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class Sesv2TenantResourceAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sesv2_tenant_resource_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.31.0',
+        providerVersion: '6.32.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request
+// https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,262 +13,268 @@ import * as cdktf from 'cdktf';
 
 export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#ami SpotInstanceRequest#ami}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#ami SpotInstanceRequest#ami}
   */
   readonly ami?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#associate_public_ip_address SpotInstanceRequest#associate_public_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#associate_public_ip_address SpotInstanceRequest#associate_public_ip_address}
   */
   readonly associatePublicIpAddress?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#availability_zone SpotInstanceRequest#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#availability_zone SpotInstanceRequest#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#disable_api_stop SpotInstanceRequest#disable_api_stop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#disable_api_stop SpotInstanceRequest#disable_api_stop}
   */
   readonly disableApiStop?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#disable_api_termination SpotInstanceRequest#disable_api_termination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#disable_api_termination SpotInstanceRequest#disable_api_termination}
   */
   readonly disableApiTermination?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#ebs_optimized SpotInstanceRequest#ebs_optimized}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#ebs_optimized SpotInstanceRequest#ebs_optimized}
   */
   readonly ebsOptimized?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#enable_primary_ipv6 SpotInstanceRequest#enable_primary_ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#enable_primary_ipv6 SpotInstanceRequest#enable_primary_ipv6}
   */
   readonly enablePrimaryIpv6?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#force_destroy SpotInstanceRequest#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#force_destroy SpotInstanceRequest#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#get_password_data SpotInstanceRequest#get_password_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#get_password_data SpotInstanceRequest#get_password_data}
   */
   readonly fetchPasswordData?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#hibernation SpotInstanceRequest#hibernation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#hibernation SpotInstanceRequest#hibernation}
   */
   readonly hibernation?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#host_id SpotInstanceRequest#host_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#host_id SpotInstanceRequest#host_id}
   */
   readonly hostId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#host_resource_group_arn SpotInstanceRequest#host_resource_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#host_resource_group_arn SpotInstanceRequest#host_resource_group_arn}
   */
   readonly hostResourceGroupArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#iam_instance_profile SpotInstanceRequest#iam_instance_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#iam_instance_profile SpotInstanceRequest#iam_instance_profile}
   */
   readonly iamInstanceProfile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#id SpotInstanceRequest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#id SpotInstanceRequest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#instance_initiated_shutdown_behavior SpotInstanceRequest#instance_initiated_shutdown_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#instance_initiated_shutdown_behavior SpotInstanceRequest#instance_initiated_shutdown_behavior}
   */
   readonly instanceInitiatedShutdownBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#instance_interruption_behavior SpotInstanceRequest#instance_interruption_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#instance_interruption_behavior SpotInstanceRequest#instance_interruption_behavior}
   */
   readonly instanceInterruptionBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#instance_type SpotInstanceRequest#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#instance_type SpotInstanceRequest#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#ipv6_address_count SpotInstanceRequest#ipv6_address_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#ipv6_address_count SpotInstanceRequest#ipv6_address_count}
   */
   readonly ipv6AddressCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#ipv6_addresses SpotInstanceRequest#ipv6_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#ipv6_addresses SpotInstanceRequest#ipv6_addresses}
   */
   readonly ipv6Addresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#key_name SpotInstanceRequest#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#key_name SpotInstanceRequest#key_name}
   */
   readonly keyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#launch_group SpotInstanceRequest#launch_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#launch_group SpotInstanceRequest#launch_group}
   */
   readonly launchGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#monitoring SpotInstanceRequest#monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#monitoring SpotInstanceRequest#monitoring}
   */
   readonly monitoring?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#placement_group SpotInstanceRequest#placement_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#placement_group SpotInstanceRequest#placement_group}
   */
   readonly placementGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#placement_group_id SpotInstanceRequest#placement_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#placement_group_id SpotInstanceRequest#placement_group_id}
   */
   readonly placementGroupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#placement_partition_number SpotInstanceRequest#placement_partition_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#placement_partition_number SpotInstanceRequest#placement_partition_number}
   */
   readonly placementPartitionNumber?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#private_ip SpotInstanceRequest#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#private_ip SpotInstanceRequest#private_ip}
   */
   readonly privateIp?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#region SpotInstanceRequest#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#region SpotInstanceRequest#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#secondary_private_ips SpotInstanceRequest#secondary_private_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#secondary_private_ips SpotInstanceRequest#secondary_private_ips}
   */
   readonly secondaryPrivateIps?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#security_groups SpotInstanceRequest#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#security_groups SpotInstanceRequest#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#source_dest_check SpotInstanceRequest#source_dest_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#source_dest_check SpotInstanceRequest#source_dest_check}
   */
   readonly sourceDestCheck?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#spot_price SpotInstanceRequest#spot_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#spot_price SpotInstanceRequest#spot_price}
   */
   readonly spotPrice?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#spot_type SpotInstanceRequest#spot_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#spot_type SpotInstanceRequest#spot_type}
   */
   readonly spotType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#subnet_id SpotInstanceRequest#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#subnet_id SpotInstanceRequest#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#tags SpotInstanceRequest#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#tags SpotInstanceRequest#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#tags_all SpotInstanceRequest#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#tags_all SpotInstanceRequest#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#tenancy SpotInstanceRequest#tenancy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#tenancy SpotInstanceRequest#tenancy}
   */
   readonly tenancy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#user_data SpotInstanceRequest#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#user_data SpotInstanceRequest#user_data}
   */
   readonly userData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#user_data_base64 SpotInstanceRequest#user_data_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#user_data_base64 SpotInstanceRequest#user_data_base64}
   */
   readonly userDataBase64?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#user_data_replace_on_change SpotInstanceRequest#user_data_replace_on_change}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#user_data_replace_on_change SpotInstanceRequest#user_data_replace_on_change}
   */
   readonly userDataReplaceOnChange?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#valid_from SpotInstanceRequest#valid_from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#valid_from SpotInstanceRequest#valid_from}
   */
   readonly validFrom?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#valid_until SpotInstanceRequest#valid_until}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#valid_until SpotInstanceRequest#valid_until}
   */
   readonly validUntil?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#volume_tags SpotInstanceRequest#volume_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#volume_tags SpotInstanceRequest#volume_tags}
   */
   readonly volumeTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#vpc_security_group_ids SpotInstanceRequest#vpc_security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#vpc_security_group_ids SpotInstanceRequest#vpc_security_group_ids}
   */
   readonly vpcSecurityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#wait_for_fulfillment SpotInstanceRequest#wait_for_fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#wait_for_fulfillment SpotInstanceRequest#wait_for_fulfillment}
   */
   readonly waitForFulfillment?: boolean | cdktf.IResolvable;
   /**
   * capacity_reservation_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#capacity_reservation_specification SpotInstanceRequest#capacity_reservation_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#capacity_reservation_specification SpotInstanceRequest#capacity_reservation_specification}
   */
   readonly capacityReservationSpecification?: SpotInstanceRequestCapacityReservationSpecification;
   /**
   * cpu_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#cpu_options SpotInstanceRequest#cpu_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#cpu_options SpotInstanceRequest#cpu_options}
   */
   readonly cpuOptions?: SpotInstanceRequestCpuOptions;
   /**
   * credit_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#credit_specification SpotInstanceRequest#credit_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#credit_specification SpotInstanceRequest#credit_specification}
   */
   readonly creditSpecification?: SpotInstanceRequestCreditSpecification;
   /**
   * ebs_block_device block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#ebs_block_device SpotInstanceRequest#ebs_block_device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#ebs_block_device SpotInstanceRequest#ebs_block_device}
   */
   readonly ebsBlockDevice?: SpotInstanceRequestEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * enclave_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#enclave_options SpotInstanceRequest#enclave_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#enclave_options SpotInstanceRequest#enclave_options}
   */
   readonly enclaveOptions?: SpotInstanceRequestEnclaveOptions;
   /**
   * ephemeral_block_device block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#ephemeral_block_device SpotInstanceRequest#ephemeral_block_device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#ephemeral_block_device SpotInstanceRequest#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: SpotInstanceRequestEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * launch_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#launch_template SpotInstanceRequest#launch_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#launch_template SpotInstanceRequest#launch_template}
   */
   readonly launchTemplate?: SpotInstanceRequestLaunchTemplate;
   /**
   * maintenance_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#maintenance_options SpotInstanceRequest#maintenance_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#maintenance_options SpotInstanceRequest#maintenance_options}
   */
   readonly maintenanceOptions?: SpotInstanceRequestMaintenanceOptions;
   /**
   * metadata_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#metadata_options SpotInstanceRequest#metadata_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#metadata_options SpotInstanceRequest#metadata_options}
   */
   readonly metadataOptions?: SpotInstanceRequestMetadataOptions;
   /**
   * network_interface block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#network_interface SpotInstanceRequest#network_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#network_interface SpotInstanceRequest#network_interface}
   */
   readonly networkInterface?: SpotInstanceRequestNetworkInterface[] | cdktf.IResolvable;
   /**
   * private_dns_name_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#private_dns_name_options SpotInstanceRequest#private_dns_name_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#private_dns_name_options SpotInstanceRequest#private_dns_name_options}
   */
   readonly privateDnsNameOptions?: SpotInstanceRequestPrivateDnsNameOptions;
   /**
   * root_block_device block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#root_block_device SpotInstanceRequest#root_block_device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#root_block_device SpotInstanceRequest#root_block_device}
   */
   readonly rootBlockDevice?: SpotInstanceRequestRootBlockDevice;
   /**
+  * secondary_network_interface block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#secondary_network_interface SpotInstanceRequest#secondary_network_interface}
+  */
+  readonly secondaryNetworkInterface?: SpotInstanceRequestSecondaryNetworkInterface[] | cdktf.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#timeouts SpotInstanceRequest#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#timeouts SpotInstanceRequest#timeouts}
   */
   readonly timeouts?: SpotInstanceRequestTimeouts;
 }
@@ -354,11 +360,11 @@ export class SpotInstanceRequestPrimaryNetworkInterfaceList extends cdktf.Comple
 }
 export interface SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#capacity_reservation_id SpotInstanceRequest#capacity_reservation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#capacity_reservation_id SpotInstanceRequest#capacity_reservation_id}
   */
   readonly capacityReservationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#capacity_reservation_resource_group_arn SpotInstanceRequest#capacity_reservation_resource_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#capacity_reservation_resource_group_arn SpotInstanceRequest#capacity_reservation_resource_group_arn}
   */
   readonly capacityReservationResourceGroupArn?: string;
 }
@@ -471,13 +477,13 @@ export class SpotInstanceRequestCapacityReservationSpecificationCapacityReservat
 }
 export interface SpotInstanceRequestCapacityReservationSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#capacity_reservation_preference SpotInstanceRequest#capacity_reservation_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#capacity_reservation_preference SpotInstanceRequest#capacity_reservation_preference}
   */
   readonly capacityReservationPreference?: string;
   /**
   * capacity_reservation_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#capacity_reservation_target SpotInstanceRequest#capacity_reservation_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#capacity_reservation_target SpotInstanceRequest#capacity_reservation_target}
   */
   readonly capacityReservationTarget?: SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget;
 }
@@ -590,15 +596,15 @@ export class SpotInstanceRequestCapacityReservationSpecificationOutputReference 
 }
 export interface SpotInstanceRequestCpuOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#amd_sev_snp SpotInstanceRequest#amd_sev_snp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#amd_sev_snp SpotInstanceRequest#amd_sev_snp}
   */
   readonly amdSevSnp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#core_count SpotInstanceRequest#core_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#core_count SpotInstanceRequest#core_count}
   */
   readonly coreCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#threads_per_core SpotInstanceRequest#threads_per_core}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#threads_per_core SpotInstanceRequest#threads_per_core}
   */
   readonly threadsPerCore?: number;
 }
@@ -740,7 +746,7 @@ export class SpotInstanceRequestCpuOptionsOutputReference extends cdktf.ComplexO
 }
 export interface SpotInstanceRequestCreditSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#cpu_credits SpotInstanceRequest#cpu_credits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#cpu_credits SpotInstanceRequest#cpu_credits}
   */
   readonly cpuCredits?: string;
 }
@@ -824,47 +830,47 @@ export class SpotInstanceRequestCreditSpecificationOutputReference extends cdktf
 }
 export interface SpotInstanceRequestEbsBlockDevice {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#delete_on_termination SpotInstanceRequest#delete_on_termination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#delete_on_termination SpotInstanceRequest#delete_on_termination}
   */
   readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#device_name SpotInstanceRequest#device_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#device_name SpotInstanceRequest#device_name}
   */
   readonly deviceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#encrypted SpotInstanceRequest#encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#encrypted SpotInstanceRequest#encrypted}
   */
   readonly encrypted?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#iops SpotInstanceRequest#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#iops SpotInstanceRequest#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#kms_key_id SpotInstanceRequest#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#kms_key_id SpotInstanceRequest#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#snapshot_id SpotInstanceRequest#snapshot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#snapshot_id SpotInstanceRequest#snapshot_id}
   */
   readonly snapshotId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#tags SpotInstanceRequest#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#tags SpotInstanceRequest#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#tags_all SpotInstanceRequest#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#tags_all SpotInstanceRequest#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#throughput SpotInstanceRequest#throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#throughput SpotInstanceRequest#throughput}
   */
   readonly throughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#volume_size SpotInstanceRequest#volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#volume_size SpotInstanceRequest#volume_size}
   */
   readonly volumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#volume_type SpotInstanceRequest#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#volume_type SpotInstanceRequest#volume_type}
   */
   readonly volumeType?: string;
 }
@@ -1272,7 +1278,7 @@ export class SpotInstanceRequestEbsBlockDeviceList extends cdktf.ComplexList {
 }
 export interface SpotInstanceRequestEnclaveOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#enabled SpotInstanceRequest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#enabled SpotInstanceRequest#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -1356,15 +1362,15 @@ export class SpotInstanceRequestEnclaveOptionsOutputReference extends cdktf.Comp
 }
 export interface SpotInstanceRequestEphemeralBlockDevice {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#device_name SpotInstanceRequest#device_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#device_name SpotInstanceRequest#device_name}
   */
   readonly deviceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#no_device SpotInstanceRequest#no_device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#no_device SpotInstanceRequest#no_device}
   */
   readonly noDevice?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#virtual_name SpotInstanceRequest#virtual_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#virtual_name SpotInstanceRequest#virtual_name}
   */
   readonly virtualName?: string;
 }
@@ -1535,18 +1541,18 @@ export class SpotInstanceRequestEphemeralBlockDeviceList extends cdktf.ComplexLi
 }
 export interface SpotInstanceRequestLaunchTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#id SpotInstanceRequest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#id SpotInstanceRequest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#name SpotInstanceRequest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#name SpotInstanceRequest#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#version SpotInstanceRequest#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#version SpotInstanceRequest#version}
   */
   readonly version?: string;
 }
@@ -1688,7 +1694,7 @@ export class SpotInstanceRequestLaunchTemplateOutputReference extends cdktf.Comp
 }
 export interface SpotInstanceRequestMaintenanceOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#auto_recovery SpotInstanceRequest#auto_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#auto_recovery SpotInstanceRequest#auto_recovery}
   */
   readonly autoRecovery?: string;
 }
@@ -1772,23 +1778,23 @@ export class SpotInstanceRequestMaintenanceOptionsOutputReference extends cdktf.
 }
 export interface SpotInstanceRequestMetadataOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#http_endpoint SpotInstanceRequest#http_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#http_endpoint SpotInstanceRequest#http_endpoint}
   */
   readonly httpEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#http_protocol_ipv6 SpotInstanceRequest#http_protocol_ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#http_protocol_ipv6 SpotInstanceRequest#http_protocol_ipv6}
   */
   readonly httpProtocolIpv6?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#http_put_response_hop_limit SpotInstanceRequest#http_put_response_hop_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#http_put_response_hop_limit SpotInstanceRequest#http_put_response_hop_limit}
   */
   readonly httpPutResponseHopLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#http_tokens SpotInstanceRequest#http_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#http_tokens SpotInstanceRequest#http_tokens}
   */
   readonly httpTokens?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#instance_metadata_tags SpotInstanceRequest#instance_metadata_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#instance_metadata_tags SpotInstanceRequest#instance_metadata_tags}
   */
   readonly instanceMetadataTags?: string;
 }
@@ -1988,15 +1994,15 @@ export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.Com
 }
 export interface SpotInstanceRequestNetworkInterface {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#delete_on_termination SpotInstanceRequest#delete_on_termination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#delete_on_termination SpotInstanceRequest#delete_on_termination}
   */
   readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#device_index SpotInstanceRequest#device_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#device_index SpotInstanceRequest#device_index}
   */
   readonly deviceIndex: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#network_interface_id SpotInstanceRequest#network_interface_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#network_interface_id SpotInstanceRequest#network_interface_id}
   */
   readonly networkInterfaceId: string;
 }
@@ -2169,15 +2175,15 @@ export class SpotInstanceRequestNetworkInterfaceList extends cdktf.ComplexList {
 }
 export interface SpotInstanceRequestPrivateDnsNameOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#enable_resource_name_dns_a_record SpotInstanceRequest#enable_resource_name_dns_a_record}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#enable_resource_name_dns_a_record SpotInstanceRequest#enable_resource_name_dns_a_record}
   */
   readonly enableResourceNameDnsARecord?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#enable_resource_name_dns_aaaa_record SpotInstanceRequest#enable_resource_name_dns_aaaa_record}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#enable_resource_name_dns_aaaa_record SpotInstanceRequest#enable_resource_name_dns_aaaa_record}
   */
   readonly enableResourceNameDnsAaaaRecord?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#hostname_type SpotInstanceRequest#hostname_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#hostname_type SpotInstanceRequest#hostname_type}
   */
   readonly hostnameType?: string;
 }
@@ -2319,39 +2325,39 @@ export class SpotInstanceRequestPrivateDnsNameOptionsOutputReference extends cdk
 }
 export interface SpotInstanceRequestRootBlockDevice {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#delete_on_termination SpotInstanceRequest#delete_on_termination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#delete_on_termination SpotInstanceRequest#delete_on_termination}
   */
   readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#encrypted SpotInstanceRequest#encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#encrypted SpotInstanceRequest#encrypted}
   */
   readonly encrypted?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#iops SpotInstanceRequest#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#iops SpotInstanceRequest#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#kms_key_id SpotInstanceRequest#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#kms_key_id SpotInstanceRequest#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#tags SpotInstanceRequest#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#tags SpotInstanceRequest#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#tags_all SpotInstanceRequest#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#tags_all SpotInstanceRequest#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#throughput SpotInstanceRequest#throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#throughput SpotInstanceRequest#throughput}
   */
   readonly throughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#volume_size SpotInstanceRequest#volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#volume_size SpotInstanceRequest#volume_size}
   */
   readonly volumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#volume_type SpotInstanceRequest#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#volume_type SpotInstanceRequest#volume_type}
   */
   readonly volumeType?: string;
 }
@@ -2675,17 +2681,322 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
     return this._volumeType;
   }
 }
+export interface SpotInstanceRequestSecondaryNetworkInterface {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#delete_on_termination SpotInstanceRequest#delete_on_termination}
+  */
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#device_index SpotInstanceRequest#device_index}
+  */
+  readonly deviceIndex?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#interface_type SpotInstanceRequest#interface_type}
+  */
+  readonly interfaceType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#network_card_index SpotInstanceRequest#network_card_index}
+  */
+  readonly networkCardIndex: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#private_ip_address_count SpotInstanceRequest#private_ip_address_count}
+  */
+  readonly privateIpAddressCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#secondary_subnet_id SpotInstanceRequest#secondary_subnet_id}
+  */
+  readonly secondarySubnetId: string;
+}
+
+export function spotInstanceRequestSecondaryNetworkInterfaceToTerraform(struct?: SpotInstanceRequestSecondaryNetworkInterface | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    device_index: cdktf.numberToTerraform(struct!.deviceIndex),
+    interface_type: cdktf.stringToTerraform(struct!.interfaceType),
+    network_card_index: cdktf.numberToTerraform(struct!.networkCardIndex),
+    private_ip_address_count: cdktf.numberToTerraform(struct!.privateIpAddressCount),
+    secondary_subnet_id: cdktf.stringToTerraform(struct!.secondarySubnetId),
+  }
+}
+
+
+export function spotInstanceRequestSecondaryNetworkInterfaceToHclTerraform(struct?: SpotInstanceRequestSecondaryNetworkInterface | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete_on_termination: {
+      value: cdktf.booleanToHclTerraform(struct!.deleteOnTermination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    device_index: {
+      value: cdktf.numberToHclTerraform(struct!.deviceIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interface_type: {
+      value: cdktf.stringToHclTerraform(struct!.interfaceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network_card_index: {
+      value: cdktf.numberToHclTerraform(struct!.networkCardIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    private_ip_address_count: {
+      value: cdktf.numberToHclTerraform(struct!.privateIpAddressCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    secondary_subnet_id: {
+      value: cdktf.stringToHclTerraform(struct!.secondarySubnetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SpotInstanceRequestSecondaryNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SpotInstanceRequestSecondaryNetworkInterface | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deleteOnTermination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteOnTermination = this._deleteOnTermination;
+    }
+    if (this._deviceIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceIndex = this._deviceIndex;
+    }
+    if (this._interfaceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interfaceType = this._interfaceType;
+    }
+    if (this._networkCardIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkCardIndex = this._networkCardIndex;
+    }
+    if (this._privateIpAddressCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateIpAddressCount = this._privateIpAddressCount;
+    }
+    if (this._secondarySubnetId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secondarySubnetId = this._secondarySubnetId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SpotInstanceRequestSecondaryNetworkInterface | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deleteOnTermination = undefined;
+      this._deviceIndex = undefined;
+      this._interfaceType = undefined;
+      this._networkCardIndex = undefined;
+      this._privateIpAddressCount = undefined;
+      this._secondarySubnetId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deleteOnTermination = value.deleteOnTermination;
+      this._deviceIndex = value.deviceIndex;
+      this._interfaceType = value.interfaceType;
+      this._networkCardIndex = value.networkCardIndex;
+      this._privateIpAddressCount = value.privateIpAddressCount;
+      this._secondarySubnetId = value.secondarySubnetId;
+    }
+  }
+
+  // delete_on_termination - computed: false, optional: true, required: false
+  private _deleteOnTermination?: boolean | cdktf.IResolvable; 
+  public get deleteOnTermination() {
+    return this.getBooleanAttribute('delete_on_termination');
+  }
+  public set deleteOnTermination(value: boolean | cdktf.IResolvable) {
+    this._deleteOnTermination = value;
+  }
+  public resetDeleteOnTermination() {
+    this._deleteOnTermination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteOnTerminationInput() {
+    return this._deleteOnTermination;
+  }
+
+  // device_index - computed: false, optional: true, required: false
+  private _deviceIndex?: number; 
+  public get deviceIndex() {
+    return this.getNumberAttribute('device_index');
+  }
+  public set deviceIndex(value: number) {
+    this._deviceIndex = value;
+  }
+  public resetDeviceIndex() {
+    this._deviceIndex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceIndexInput() {
+    return this._deviceIndex;
+  }
+
+  // interface_type - computed: false, optional: true, required: false
+  private _interfaceType?: string; 
+  public get interfaceType() {
+    return this.getStringAttribute('interface_type');
+  }
+  public set interfaceType(value: string) {
+    this._interfaceType = value;
+  }
+  public resetInterfaceType() {
+    this._interfaceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get interfaceTypeInput() {
+    return this._interfaceType;
+  }
+
+  // mac_address - computed: true, optional: false, required: false
+  public get macAddress() {
+    return this.getStringAttribute('mac_address');
+  }
+
+  // network_card_index - computed: false, optional: false, required: true
+  private _networkCardIndex?: number; 
+  public get networkCardIndex() {
+    return this.getNumberAttribute('network_card_index');
+  }
+  public set networkCardIndex(value: number) {
+    this._networkCardIndex = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkCardIndexInput() {
+    return this._networkCardIndex;
+  }
+
+  // private_ip_address_count - computed: false, optional: true, required: false
+  private _privateIpAddressCount?: number; 
+  public get privateIpAddressCount() {
+    return this.getNumberAttribute('private_ip_address_count');
+  }
+  public set privateIpAddressCount(value: number) {
+    this._privateIpAddressCount = value;
+  }
+  public resetPrivateIpAddressCount() {
+    this._privateIpAddressCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpAddressCountInput() {
+    return this._privateIpAddressCount;
+  }
+
+  // private_ip_addresses - computed: true, optional: false, required: false
+  public get privateIpAddresses() {
+    return this.getListAttribute('private_ip_addresses');
+  }
+
+  // secondary_interface_id - computed: true, optional: false, required: false
+  public get secondaryInterfaceId() {
+    return this.getStringAttribute('secondary_interface_id');
+  }
+
+  // secondary_network_id - computed: true, optional: false, required: false
+  public get secondaryNetworkId() {
+    return this.getStringAttribute('secondary_network_id');
+  }
+
+  // secondary_subnet_id - computed: false, optional: false, required: true
+  private _secondarySubnetId?: string; 
+  public get secondarySubnetId() {
+    return this.getStringAttribute('secondary_subnet_id');
+  }
+  public set secondarySubnetId(value: string) {
+    this._secondarySubnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondarySubnetIdInput() {
+    return this._secondarySubnetId;
+  }
+
+  // source_dest_check - computed: true, optional: false, required: false
+  public get sourceDestCheck() {
+    return this.getBooleanAttribute('source_dest_check');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+}
+
+export class SpotInstanceRequestSecondaryNetworkInterfaceList extends cdktf.ComplexList {
+  public internalValue? : SpotInstanceRequestSecondaryNetworkInterface[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SpotInstanceRequestSecondaryNetworkInterfaceOutputReference {
+    return new SpotInstanceRequestSecondaryNetworkInterfaceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SpotInstanceRequestTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#create SpotInstanceRequest#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#create SpotInstanceRequest#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#delete SpotInstanceRequest#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#delete SpotInstanceRequest#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#read SpotInstanceRequest#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#read SpotInstanceRequest#read}
   */
   readonly read?: string;
 }
@@ -2837,7 +3148,7 @@ export class SpotInstanceRequestTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request aws_spot_instance_request}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request aws_spot_instance_request}
 */
 export class SpotInstanceRequest extends cdktf.TerraformResource {
 
@@ -2853,7 +3164,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SpotInstanceRequest resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpotInstanceRequest to import
-  * @param importFromId The id of the existing SpotInstanceRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SpotInstanceRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpotInstanceRequest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2865,7 +3176,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/spot_instance_request aws_spot_instance_request} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2876,7 +3187,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       terraformResourceType: 'aws_spot_instance_request',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.31.0',
+        providerVersion: '6.32.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -2943,6 +3254,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     this._networkInterface.internalValue = config.networkInterface;
     this._privateDnsNameOptions.internalValue = config.privateDnsNameOptions;
     this._rootBlockDevice.internalValue = config.rootBlockDevice;
+    this._secondaryNetworkInterface.internalValue = config.secondaryNetworkInterface;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -3907,6 +4219,22 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._rootBlockDevice.internalValue;
   }
 
+  // secondary_network_interface - computed: false, optional: true, required: false
+  private _secondaryNetworkInterface = new SpotInstanceRequestSecondaryNetworkInterfaceList(this, "secondary_network_interface", true);
+  public get secondaryNetworkInterface() {
+    return this._secondaryNetworkInterface;
+  }
+  public putSecondaryNetworkInterface(value: SpotInstanceRequestSecondaryNetworkInterface[] | cdktf.IResolvable) {
+    this._secondaryNetworkInterface.internalValue = value;
+  }
+  public resetSecondaryNetworkInterface() {
+    this._secondaryNetworkInterface.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryNetworkInterfaceInput() {
+    return this._secondaryNetworkInterface.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new SpotInstanceRequestTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -3985,6 +4313,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       network_interface: cdktf.listMapper(spotInstanceRequestNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       private_dns_name_options: spotInstanceRequestPrivateDnsNameOptionsToTerraform(this._privateDnsNameOptions.internalValue),
       root_block_device: spotInstanceRequestRootBlockDeviceToTerraform(this._rootBlockDevice.internalValue),
+      secondary_network_interface: cdktf.listMapper(spotInstanceRequestSecondaryNetworkInterfaceToTerraform, true)(this._secondaryNetworkInterface.internalValue),
       timeouts: spotInstanceRequestTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -4326,6 +4655,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "SpotInstanceRequestRootBlockDeviceList",
+      },
+      secondary_network_interface: {
+        value: cdktf.listMapperHcl(spotInstanceRequestSecondaryNetworkInterfaceToHclTerraform, true)(this._secondaryNetworkInterface.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SpotInstanceRequestSecondaryNetworkInterfaceList",
       },
       timeouts: {
         value: spotInstanceRequestTimeoutsToHclTerraform(this._timeouts.internalValue),
